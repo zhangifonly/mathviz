@@ -1,0 +1,389 @@
+{
+  "script_id": "quadratic-function",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "quadratic-function",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.69,
+      "size": 43056,
+      "text": "欢迎来到二次函数实验！今天我们要学习一种非常重要的函数——二次函数。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/intro-intro-2.mp3",
+      "duration": 3.05,
+      "size": 48816,
+      "text": "二次函数的图像是一条优美的曲线，叫做抛物线。它在物理和工程中有广泛应用。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "比如投篮时篮球的运动轨迹、喷泉的水流形状，都是抛物线。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "formula",
+      "line_id": "formula-1",
+      "filename": "formula-formula-1.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/formula-formula-1.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "二次函数的一般形式是y等于ax平方加bx加c，其中a不等于0。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "formula",
+      "line_id": "formula-2",
+      "filename": "formula-formula-2.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/formula-formula-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "a是二次项系数，它决定了抛物线的开口方向和宽窄。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "formula",
+      "line_id": "formula-3",
+      "filename": "formula-formula-3.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/formula-formula-3.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "b是一次项系数，c是常数项，它们共同决定了抛物线的位置。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "formula",
+      "line_id": "formula-4",
+      "filename": "formula-formula-4.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/formula-formula-4.mp3",
+      "duration": 3.27,
+      "size": 52272,
+      "text": "除了一般式，还有顶点式y等于a乘以x减h的平方加k，其中h和k是顶点坐标。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "coefficient-a",
+      "line_id": "coefficient-a-1",
+      "filename": "coefficient-a-coefficient-a-1.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/coefficient-a-coefficient-a-1.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "系数a是二次函数中最重要的参数，它决定了抛物线的基本形态。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "coefficient-a",
+      "line_id": "coefficient-a-2",
+      "filename": "coefficient-a-coefficient-a-2.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/coefficient-a-coefficient-a-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "当a大于0时，抛物线开口向上，像一个碗，有最低点。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "coefficient-a",
+      "line_id": "coefficient-a-3",
+      "filename": "coefficient-a-coefficient-a-3.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/coefficient-a-coefficient-a-3.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "当a小于0时，抛物线开口向下，像一座山，有最高点。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "coefficient-a",
+      "line_id": "coefficient-a-4",
+      "filename": "coefficient-a-coefficient-a-4.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/coefficient-a-coefficient-a-4.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "a的绝对值越大，抛物线越窄越陡；绝对值越小，抛物线越宽越平缓。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "coefficient-a",
+      "line_id": "coefficient-a-5",
+      "filename": "coefficient-a-coefficient-a-5.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/coefficient-a-coefficient-a-5.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "试着调整a的值，观察抛物线如何变化。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "vertex",
+      "line_id": "vertex-1",
+      "filename": "vertex-vertex-1.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/vertex-vertex-1.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "抛物线有一个特殊的点叫做顶点，它是抛物线的最高点或最低点。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "vertex",
+      "line_id": "vertex-2",
+      "filename": "vertex-vertex-2.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/vertex-vertex-2.mp3",
+      "duration": 2.64,
+      "size": 42192,
+      "text": "顶点的横坐标公式是x等于负b除以2a，纵坐标可以代入函数求得。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "vertex",
+      "line_id": "vertex-3",
+      "filename": "vertex-vertex-3.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/vertex-vertex-3.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "过顶点且垂直于x轴的直线叫做对称轴，抛物线关于它左右对称。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "vertex",
+      "line_id": "vertex-4",
+      "filename": "vertex-vertex-4.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/vertex-vertex-4.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "图中红色的点就是顶点，灰色虚线就是对称轴。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "roots",
+      "line_id": "roots-1",
+      "filename": "roots-roots-1.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/roots-roots-1.mp3",
+      "duration": 3.45,
+      "size": 55152,
+      "text": "抛物线与x轴的交点叫做函数的根或零点，也就是方程ax平方加bx加c等于0的解。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "roots",
+      "line_id": "roots-2",
+      "filename": "roots-roots-2.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/roots-roots-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "判别式Δ等于b平方减4ac，它决定了根的情况。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "roots",
+      "line_id": "roots-3",
+      "filename": "roots-roots-3.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/roots-roots-3.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "当Δ大于0时，有两个不相等的实根，抛物线与x轴有两个交点。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "roots",
+      "line_id": "roots-4",
+      "filename": "roots-roots-4.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/roots-roots-4.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "当Δ等于0时，有一个重根，抛物线与x轴相切。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "roots",
+      "line_id": "roots-5",
+      "filename": "roots-roots-5.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/roots-roots-5.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "当Δ小于0时，没有实根，抛物线与x轴没有交点。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "roots",
+      "line_id": "roots-6",
+      "filename": "roots-roots-6.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/roots-roots-6.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "图中绿色的点就是根，你可以用快速设置按钮查看不同情况。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "animation",
+      "line_id": "animation-1",
+      "filename": "animation-animation-1.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/animation-animation-1.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "点击播放动画按钮，可以看到系数a从负2变化到正2的过程。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "animation",
+      "line_id": "animation-2",
+      "filename": "animation-animation-2.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/animation-animation-2.mp3",
+      "duration": 2.89,
+      "size": 46224,
+      "text": "观察抛物线如何从开口向下变成开口向上，中间经过a等于0时退化为直线。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "animation",
+      "line_id": "animation-3",
+      "filename": "animation-animation-3.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/animation-animation-3.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "这个动画帮助你理解系数a对抛物线形态的影响。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "examples",
+      "line_id": "examples-1",
+      "filename": "examples-examples-1.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/examples-examples-1.mp3",
+      "duration": 1.11,
+      "size": 17712,
+      "text": "让我们看几个典型的二次函数。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "examples",
+      "line_id": "examples-2",
+      "filename": "examples-examples-2.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/examples-examples-2.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "y等于x平方是最简单的二次函数，顶点在原点，开口向上。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "examples",
+      "line_id": "examples-3",
+      "filename": "examples-examples-3.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/examples-examples-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "y等于负x平方开口向下，顶点也在原点。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "examples",
+      "line_id": "examples-4",
+      "filename": "examples-examples-4.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/examples-examples-4.mp3",
+      "duration": 3.14,
+      "size": 50256,
+      "text": "y等于x平方减4向下平移了4个单位，与x轴交于x等于2和x等于负2。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "examples",
+      "line_id": "examples-5",
+      "filename": "examples-examples-5.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/examples-examples-5.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "y等于x减1的平方向右平移了1个单位，顶点在1和0。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "application",
+      "line_id": "application-1",
+      "filename": "application-application-1.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/application-application-1.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "二次函数在物理中描述抛体运动，比如投篮、发射炮弹的轨迹。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "application",
+      "line_id": "application-2",
+      "filename": "application-application-2.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/application-application-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "在工程中，拱桥、抛物面天线都利用了抛物线的性质。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "application",
+      "line_id": "application-3",
+      "filename": "application-application-3.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/application-application-3.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "在经济学中，利润函数常常是二次函数，顶点对应最大利润。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/summary-summary-1.mp3",
+      "duration": 1.26,
+      "size": 20160,
+      "text": "让我们总结一下今天学到的内容。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/summary-summary-2.mp3",
+      "duration": 3.06,
+      "size": 48960,
+      "text": "二次函数y等于ax平方加bx加c的图像是抛物线，a决定开口方向和宽窄。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/summary-summary-3.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "顶点是抛物线的最值点，对称轴过顶点且垂直于x轴。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/summary-summary-4.mp3",
+      "duration": 3.26,
+      "size": 52128,
+      "text": "判别式Δ决定根的个数：Δ大于0两根，Δ等于0一根，Δ小于0无实根。"
+    },
+    {
+      "script_id": "quadratic-function",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/quadratic-function/xiaoxiao/summary-summary-5.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "希望通过这个实验，你对二次函数有了更深入的理解！"
+    }
+  ],
+  "total_duration": 88.60000000000004,
+  "total_size": 1417536
+}

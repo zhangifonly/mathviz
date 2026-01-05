@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "export-narrations": "npx ts-node --esm scripts/export-narrations.ts",
+    "generate-audio": "python3 scripts/generate_audio.py"
   },
   "dependencies": {
     "katex": "^0.16.27",

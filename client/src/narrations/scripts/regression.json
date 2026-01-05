@@ -1,0 +1,130 @@
+{
+  "id": "regression",
+  "title": "回归分析",
+  "subtitle": "用直线拟合数据",
+  "difficulty": "intermediate",
+  "targetAge": "高中 15-18岁",
+  "voice": "yunxi",
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": { "type": "auto", "delay": 1000 },
+      "lines": [
+        { "id": "intro-1", "text": "欢迎来到回归分析实验！今天我们要学习如何从数据中发现规律。" },
+        { "id": "intro-2", "text": "假设你收集了一些数据点，它们大致呈线性关系。" },
+        { "id": "intro-3", "text": "如何找到一条最佳的直线来描述这种关系？这就是回归分析要解决的问题。" }
+      ]
+    },
+    {
+      "id": "scatter-plot",
+      "type": "concept",
+      "title": "散点图",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "scatter-plot-1", "text": "首先，我们把数据画成散点图。" },
+        { "id": "scatter-plot-2", "text": "每个点代表一对观测值 (x, y)。" },
+        { "id": "scatter-plot-3", "text": "如果点大致沿着一条直线分布，我们说 x 和 y 有线性关系。" },
+        { "id": "scatter-plot-4", "text": "但由于测量误差和随机因素，点不会完全落在一条直线上。" }
+      ]
+    },
+    {
+      "id": "best-fit",
+      "type": "concept",
+      "title": "最佳拟合直线",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "best-fit-1", "text": "我们的目标是找到一条直线 y 等于 ax 加 b，最好地拟合这些点。" },
+        { "id": "best-fit-2", "text": "但什么叫最好？我们需要一个标准来衡量。" },
+        { "id": "best-fit-3", "text": "最常用的标准是最小二乘法：使所有点到直线的垂直距离的平方和最小。" },
+        { "id": "best-fit-4", "text": "这个距离叫做残差，残差平方和越小，拟合越好。" }
+      ]
+    },
+    {
+      "id": "least-squares",
+      "type": "formula",
+      "title": "最小二乘法",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "least-squares-1", "text": "最小二乘法给出了计算 a 和 b 的公式。" },
+        { "id": "least-squares-2", "text": "斜率 a 等于 x 和 y 的协方差除以 x 的方差。" },
+        { "id": "least-squares-3", "text": "截距 b 等于 y 的均值减去 a 乘以 x 的均值。" },
+        { "id": "least-squares-4", "text": "这条直线一定经过点 (x 的均值, y 的均值)。" }
+      ]
+    },
+    {
+      "id": "demo",
+      "type": "animation",
+      "title": "拟合演示",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "demo-1", "text": "图中蓝色的点是数据，红色的直线是回归线。" },
+        { "id": "demo-2", "text": "绿色的线段显示每个点的残差。" },
+        { "id": "demo-3", "text": "你可以拖动点来改变数据，观察回归线如何自动调整。" },
+        { "id": "demo-4", "text": "注意残差平方和的变化，回归线总是使它最小。" }
+      ]
+    },
+    {
+      "id": "correlation",
+      "type": "concept",
+      "title": "相关系数",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "correlation-1", "text": "相关系数 r 衡量线性关系的强度。" },
+        { "id": "correlation-2", "text": "r 的取值在负 1 到 1 之间。" },
+        { "id": "correlation-3", "text": "r 接近 1 表示强正相关，接近负 1 表示强负相关，接近 0 表示无线性关系。" },
+        { "id": "correlation-4", "text": "r 的平方叫做决定系数，表示回归线解释了多少数据的变异。" }
+      ]
+    },
+    {
+      "id": "prediction",
+      "type": "interaction",
+      "title": "预测",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "prediction-1", "text": "有了回归线，我们就可以进行预测。" },
+        { "id": "prediction-2", "text": "给定一个新的 x 值，代入回归方程就能预测 y。" },
+        { "id": "prediction-3", "text": "但要注意，预测只在数据范围内比较可靠。" },
+        { "id": "prediction-4", "text": "超出数据范围的外推可能很不准确。" }
+      ]
+    },
+    {
+      "id": "caution",
+      "type": "concept",
+      "title": "注意事项",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "caution-1", "text": "使用回归分析时要注意几点。" },
+        { "id": "caution-2", "text": "相关不等于因果。两个变量相关，不一定有因果关系。" },
+        { "id": "caution-3", "text": "异常值可能严重影响回归结果，需要特别关注。" },
+        { "id": "caution-4", "text": "如果数据不是线性关系，线性回归可能不适用。" }
+      ]
+    },
+    {
+      "id": "applications",
+      "type": "application",
+      "title": "实际应用",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "applications-1", "text": "回归分析有广泛的应用。" },
+        { "id": "applications-2", "text": "经济学中，用回归分析研究收入与消费的关系。" },
+        { "id": "applications-3", "text": "医学中，用回归分析研究药物剂量与疗效的关系。" },
+        { "id": "applications-4", "text": "机器学习中，线性回归是最基础的预测模型。" }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "summary-1", "text": "让我们总结一下今天学到的内容。" },
+        { "id": "summary-2", "text": "线性回归用一条直线来拟合数据点。" },
+        { "id": "summary-3", "text": "最小二乘法使残差平方和最小，给出最佳拟合。" },
+        { "id": "summary-4", "text": "相关系数衡量线性关系的强度，但相关不等于因果。" },
+        { "id": "summary-5", "text": "希望通过这个实验，你对回归分析有了更直观的理解！" }
+      ]
+    }
+  ]
+}

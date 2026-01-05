@@ -1,0 +1,429 @@
+{
+  "script_id": "fourier",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "fourier",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.07,
+      "size": 17136,
+      "text": "欢迎来到傅里叶变换实验。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "你有没有想过，为什么我们能在嘈杂的音乐会现场，依然听清朋友说的话？"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "或者，手机里的均衡器是如何单独调节低音和高音的？"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/intro-intro-4.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "这背后的秘密，就是今天我们要探索的傅里叶变换。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/concept-concept-1.mp3",
+      "duration": 3.39,
+      "size": 54288,
+      "text": "傅里叶变换的核心思想非常优美：任何复杂的周期信号，都可以分解成一系列简单正弦波的叠加。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/concept-concept-2.mp3",
+      "duration": 3.21,
+      "size": 51408,
+      "text": "就像白光可以被棱镜分解成七色光谱一样，声音和其他信号也可以被分解成不同频率的成分。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/concept-concept-3.mp3",
+      "duration": 2.88,
+      "size": 46080,
+      "text": "我们把信号随时间变化的表示叫做时域，把信号按频率分解后的表示叫做频域。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/concept-concept-4.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "傅里叶变换，就是连接时域和频域的桥梁。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "formula",
+      "line_id": "formula-1",
+      "filename": "formula-formula-1.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/formula-formula-1.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "让我们看看傅里叶级数的数学表达式。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "formula",
+      "line_id": "formula-2",
+      "filename": "formula-formula-2.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/formula-formula-2.mp3",
+      "duration": 3.22,
+      "size": 51552,
+      "text": "以方波为例，它的傅里叶级数展开式是：f(t) 等于 4A 除以 派，乘以一个无穷级数。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "formula",
+      "line_id": "formula-3",
+      "filename": "formula-formula-3.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/formula-formula-3.mp3",
+      "duration": 2.83,
+      "size": 45216,
+      "text": "这个级数只包含奇数次谐波，也就是基频的1倍、3倍、5倍频率的正弦波。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "formula",
+      "line_id": "formula-4",
+      "filename": "formula-formula-4.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/formula-formula-4.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "每一项的振幅是 n 分之一，这意味着高频成分的贡献越来越小。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "wave-selection",
+      "line_id": "wave-1",
+      "filename": "wave-selection-wave-1.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/wave-selection-wave-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "现在，让我们选择不同的波形来观察它们的傅里叶分解。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "wave-selection",
+      "line_id": "wave-sine",
+      "filename": "wave-selection-wave-sine.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/wave-selection-wave-sine.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "正弦波是最简单的情况，它本身就是一个纯净的单一频率，不需要分解。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "wave-selection",
+      "line_id": "wave-square",
+      "filename": "wave-selection-wave-square.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/wave-selection-wave-square.mp3",
+      "duration": 3.36,
+      "size": 53712,
+      "text": "方波看起来很简单，但它包含了无穷多个奇次谐波。这就是为什么方波听起来比正弦波更尖锐。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "wave-selection",
+      "line_id": "wave-sawtooth",
+      "filename": "wave-selection-wave-sawtooth.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/wave-selection-wave-sawtooth.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "锯齿波包含所有整数次谐波，所以它的频谱最丰富，声音也最明亮。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "wave-selection",
+      "line_id": "wave-triangle",
+      "filename": "wave-selection-wave-triangle.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/wave-selection-wave-triangle.mp3",
+      "duration": 3.11,
+      "size": 49824,
+      "text": "三角波也只包含奇次谐波，但振幅衰减得更快，是 n 平方分之一，所以听起来更柔和。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "animation",
+      "line_id": "anim-1",
+      "filename": "animation-anim-1.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/animation-anim-1.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "现在点击播放按钮，观察傅里叶级数是如何逐步逼近原始波形的。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "animation",
+      "line_id": "anim-2",
+      "filename": "animation-anim-2.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/animation-anim-2.mp3",
+      "duration": 1.34,
+      "size": 21456,
+      "text": "蓝色实线是我们要逼近的目标波形。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "animation",
+      "line_id": "anim-3",
+      "filename": "animation-anim-3.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/animation-anim-3.mp3",
+      "duration": 2.84,
+      "size": 45504,
+      "text": "红色虚线是傅里叶级数的部分和，也就是我们用有限项正弦波叠加得到的结果。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "animation",
+      "line_id": "anim-4",
+      "filename": "animation-anim-4.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/animation-anim-4.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "观察！随着项数增加，红色虚线越来越接近蓝色实线。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "animation",
+      "line_id": "anim-5",
+      "filename": "animation-anim-5.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/animation-anim-5.mp3",
+      "duration": 3.26,
+      "size": 52128,
+      "text": "但是注意看方波的拐角处，即使项数很多，那里仍然有一些过冲。这就是著名的吉布斯现象。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "animation",
+      "line_id": "anim-6",
+      "filename": "animation-anim-6.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/animation-anim-6.mp3",
+      "duration": 3.71,
+      "size": 59328,
+      "text": "吉布斯现象告诉我们，用有限项傅里叶级数逼近不连续函数时，在跳变点附近总会有大约百分之九的过冲。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "spectrum",
+      "line_id": "spectrum-1",
+      "filename": "spectrum-spectrum-1.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/spectrum-spectrum-1.mp3",
+      "duration": 1.2,
+      "size": 19152,
+      "text": "现在让我们看看下方的频谱图。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "spectrum",
+      "line_id": "spectrum-2",
+      "filename": "spectrum-spectrum-2.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/spectrum-spectrum-2.mp3",
+      "duration": 2.75,
+      "size": 44064,
+      "text": "频谱图显示了信号中各个频率成分的强度。横轴是频率，纵轴是振幅。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "spectrum",
+      "line_id": "spectrum-3",
+      "filename": "spectrum-spectrum-3.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/spectrum-spectrum-3.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "对于方波，你可以看到只有奇数倍频率处有能量，而且振幅随频率增加而递减。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "spectrum",
+      "line_id": "spectrum-4",
+      "filename": "spectrum-spectrum-4.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/spectrum-spectrum-4.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "这就是傅里叶变换的威力：它让我们能够看到信号内部的频率结构。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "parameters",
+      "line_id": "param-1",
+      "filename": "parameters-param-1.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/parameters-param-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "现在，让我们通过调整参数来深入理解傅里叶变换。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "parameters",
+      "line_id": "param-freq",
+      "filename": "parameters-param-freq.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/parameters-param-freq.mp3",
+      "duration": 2.99,
+      "size": 47808,
+      "text": "调整基频参数，观察波形如何被压缩或拉伸。频率越高，波形振荡越快。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "parameters",
+      "line_id": "param-amp",
+      "filename": "parameters-param-amp.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/parameters-param-amp.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "调整振幅参数，波形的高度会相应变化，但形状保持不变。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "parameters",
+      "line_id": "param-terms",
+      "filename": "parameters-param-terms.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/parameters-param-terms.mp3",
+      "duration": 3.73,
+      "size": 59760,
+      "text": "这是最关键的参数：傅里叶项数。增加项数，逼近效果越好。试着把它调到50，看看效果如何！"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/application-app-1.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "傅里叶变换在现实世界中有着广泛的应用。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/application-app-2.mp3",
+      "duration": 3.38,
+      "size": 54144,
+      "text": "在音频处理中，均衡器就是通过傅里叶变换将声音分解到频域，然后分别调节各频段的音量。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/application-app-3.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "在图像处理中，JPEG压缩算法使用离散余弦变换来压缩图片。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/application-app-4.mp3",
+      "duration": 2.98,
+      "size": 47664,
+      "text": "在通信领域，手机信号的调制解调、WiFi的OFDM技术，都离不开傅里叶变换。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "application",
+      "line_id": "app-5",
+      "filename": "application-app-5.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/application-app-5.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "甚至在医学成像中，CT和核磁共振的图像重建也依赖傅里叶变换。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/summary-summary-1.mp3",
+      "duration": 1.24,
+      "size": 19872,
+      "text": "让我们回顾一下今天学到的内容。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/summary-summary-2.mp3",
+      "duration": 2.77,
+      "size": 44352,
+      "text": "第一，傅里叶变换的核心思想是：任何周期信号都可以分解为正弦波的叠加。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/summary-summary-3.mp3",
+      "duration": 3.65,
+      "size": 58320,
+      "text": "第二，时域描述信号随时间的变化，频域描述信号的频率组成。傅里叶变换是它们之间的桥梁。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/summary-summary-4.mp3",
+      "duration": 3.77,
+      "size": 60336,
+      "text": "第三，不同波形有不同的频谱特征：方波只有奇次谐波，锯齿波有所有谐波，三角波的谐波衰减更快。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/summary-summary-5.mp3",
+      "duration": 2.63,
+      "size": 42048,
+      "text": "第四，吉布斯现象提醒我们，有限项傅里叶级数在不连续点处会有过冲。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "summary",
+      "line_id": "summary-6",
+      "filename": "summary-summary-6.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/summary-summary-6.mp3",
+      "duration": 3.48,
+      "size": 55728,
+      "text": "希望通过这个实验，你对傅里叶变换有了更直观的理解。继续探索其他实验，发现更多数学之美！"
+    }
+  ],
+  "total_duration": 108.13,
+  "total_size": 1730160
+}

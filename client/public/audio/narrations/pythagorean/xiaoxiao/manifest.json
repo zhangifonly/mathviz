@@ -1,0 +1,339 @@
+{
+  "script_id": "pythagorean",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "pythagorean",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "欢迎来到勾股定理实验！今天我们要学习几何学中最著名的定理之一。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "勾股定理揭示了直角三角形三边之间的神奇关系，已有数千年的历史。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "在中国古代叫做勾三股四弦五，在西方叫做毕达哥拉斯定理。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "theorem",
+      "line_id": "theorem-1",
+      "filename": "theorem-theorem-1.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/theorem-theorem-1.mp3",
+      "duration": 2.58,
+      "size": 41328,
+      "text": "勾股定理说：在直角三角形中，两条直角边的平方和等于斜边的平方。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "theorem",
+      "line_id": "theorem-2",
+      "filename": "theorem-theorem-2.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/theorem-theorem-2.mp3",
+      "duration": 3.18,
+      "size": 50832,
+      "text": "用公式表示就是a平方加b平方等于c平方，其中a和b是直角边，c是斜边。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "theorem",
+      "line_id": "theorem-3",
+      "filename": "theorem-theorem-3.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/theorem-theorem-3.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "斜边是直角三角形中最长的边，它对着直角。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "theorem",
+      "line_id": "theorem-4",
+      "filename": "theorem-theorem-4.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/theorem-theorem-4.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "这个定理可以用来求直角三角形中任意一边的长度。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "visualization",
+      "line_id": "visualization-1",
+      "filename": "visualization-visualization-1.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/visualization-visualization-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "图中蓝色的三角形就是直角三角形，直角用小方块标记。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "visualization",
+      "line_id": "visualization-2",
+      "filename": "visualization-visualization-2.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/visualization-visualization-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "红色正方形的面积是a平方，绿色正方形的面积是b平方。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "visualization",
+      "line_id": "visualization-3",
+      "filename": "visualization-visualization-3.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/visualization-visualization-3.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "勾股定理告诉我们，这两个正方形的面积之和等于斜边上正方形的面积c平方。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "visualization",
+      "line_id": "visualization-4",
+      "filename": "visualization-visualization-4.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/visualization-visualization-4.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "你可以勾选显示正方形来观察这个面积关系。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "proof",
+      "line_id": "proof-1",
+      "filename": "proof-proof-1.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/proof-proof-1.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "切换到几何证明模式，我们用面积法来证明勾股定理。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "proof",
+      "line_id": "proof-2",
+      "filename": "proof-proof-2.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/proof-proof-2.mp3",
+      "duration": 2.5,
+      "size": 40032,
+      "text": "在直角边上分别构建正方形，边长为a的正方形面积是a平方。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "proof",
+      "line_id": "proof-3",
+      "filename": "proof-proof-3.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/proof-proof-3.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "边长为b的正方形面积是b平方，两者之和是a平方加b平方。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "proof",
+      "line_id": "proof-4",
+      "filename": "proof-proof-4.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/proof-proof-4.mp3",
+      "duration": 3.29,
+      "size": 52560,
+      "text": "在斜边上构建正方形，面积是c平方，通过几何变换可以证明它等于a平方加b平方。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "proof",
+      "line_id": "proof-5",
+      "filename": "proof-proof-5.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/proof-proof-5.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "点击播放动画可以看到正方形逐渐出现的过程。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "pythagorean-triples",
+      "line_id": "pythagorean-triples-1",
+      "filename": "pythagorean-triples-pythagorean-triples-1.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/pythagorean-triples-pythagorean-triples-1.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "满足a平方加b平方等于c平方的正整数组合叫做勾股数。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "pythagorean-triples",
+      "line_id": "pythagorean-triples-2",
+      "filename": "pythagorean-triples-pythagorean-triples-2.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/pythagorean-triples-pythagorean-triples-2.mp3",
+      "duration": 3.29,
+      "size": 52560,
+      "text": "最小的勾股数是3, 4, 5，因为3平方加4平方等于9加16等于25等于5平方。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "pythagorean-triples",
+      "line_id": "pythagorean-triples-3",
+      "filename": "pythagorean-triples-pythagorean-triples-3.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/pythagorean-triples-pythagorean-triples-3.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "其他常见的勾股数有5, 12, 13和8, 15, 17。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "pythagorean-triples",
+      "line_id": "pythagorean-triples-4",
+      "filename": "pythagorean-triples-pythagorean-triples-4.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/pythagorean-triples-pythagorean-triples-4.mp3",
+      "duration": 2.63,
+      "size": 42048,
+      "text": "勾股数的倍数也是勾股数，比如6, 8, 10是3, 4, 5的两倍。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "pythagorean-triples",
+      "line_id": "pythagorean-triples-5",
+      "filename": "pythagorean-triples-pythagorean-triples-5.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/pythagorean-triples-pythagorean-triples-5.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "右侧有快速设置按钮，你可以点击查看这些勾股数。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "application",
+      "line_id": "application-1",
+      "filename": "application-application-1.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/application-application-1.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "切换到实际应用模式，我们来看一个梯子靠墙的问题。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "application",
+      "line_id": "application-2",
+      "filename": "application-application-2.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/application-application-2.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "一个梯子靠在墙上，梯子底部距墙一定距离，求梯子顶端离地高度。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "application",
+      "line_id": "application-3",
+      "filename": "application-application-3.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/application-application-3.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "这就是一个直角三角形问题，梯子是斜边，墙和地面是两条直角边。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "application",
+      "line_id": "application-4",
+      "filename": "application-application-4.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/application-application-4.mp3",
+      "duration": 1.54,
+      "size": 24624,
+      "text": "用勾股定理可以轻松求出任意一边的长度。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "parameters",
+      "line_id": "parameters-1",
+      "filename": "parameters-parameters-1.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/parameters-parameters-1.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "你可以用右侧的滑块调整直角边a和b的长度。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "parameters",
+      "line_id": "parameters-2",
+      "filename": "parameters-parameters-2.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/parameters-parameters-2.mp3",
+      "duration": 1.48,
+      "size": 23616,
+      "text": "斜边c会自动根据勾股定理计算出来。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "parameters",
+      "line_id": "parameters-3",
+      "filename": "parameters-parameters-3.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/parameters-parameters-3.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "观察当a和b变化时，c如何变化，以及正方形面积的关系。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/summary-summary-1.mp3",
+      "duration": 1.26,
+      "size": 20160,
+      "text": "让我们总结一下今天学到的内容。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/summary-summary-2.mp3",
+      "duration": 2.8,
+      "size": 44784,
+      "text": "勾股定理：直角三角形中，a平方加b平方等于c平方，其中c是斜边。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/summary-summary-3.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "这个定理可以用面积法证明，也有很多其他证明方法。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/summary-summary-4.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "勾股定理在测量、建筑、导航等领域有广泛应用。"
+    },
+    {
+      "script_id": "pythagorean",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/pythagorean/xiaoxiao/summary-summary-5.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "希望通过这个实验，你对勾股定理有了更直观的理解！"
+    }
+  ],
+  "total_duration": 73.81,
+  "total_size": 1180512
+}

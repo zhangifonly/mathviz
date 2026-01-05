@@ -1,0 +1,509 @@
+{
+  "script_id": "set-theory",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "set-theory",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/set-theory/yunxi/intro-intro-1.mp3",
+      "duration": 1.77,
+      "size": 27792,
+      "text": "小朋友们好！欢迎来到集合论可视化实验。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/set-theory/yunxi/intro-intro-2.mp3",
+      "duration": 2.24,
+      "size": 34992,
+      "text": "你有没有把玩具分过类？比如把汽车放一堆，把积木放一堆？"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/set-theory/yunxi/intro-intro-3.mp3",
+      "duration": 1.96,
+      "size": 30672,
+      "text": "这种把东西分成不同组的方法，在数学里叫做集合。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/set-theory/yunxi/intro-intro-4.mp3",
+      "duration": 2.35,
+      "size": 38592,
+      "text": "今天，我们要用漂亮的韦恩图来学习集合运算。准备好了吗？"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/set-theory/yunxi/concept-concept-1.mp3",
+      "duration": 1.51,
+      "size": 21168,
+      "text": "集合就是把有共同特点的东西放在一起。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/set-theory/yunxi/concept-concept-2.mp3",
+      "duration": 2.83,
+      "size": 49968,
+      "text": "比如，集合A可以是1到5的数字，写成 A = {1, 2, 3, 4, 5}。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/set-theory/yunxi/concept-concept-3.mp3",
+      "duration": 2.66,
+      "size": 46224,
+      "text": "集合B可以是4到8的数字，写成 B = {4, 5, 6, 7, 8}。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/set-theory/yunxi/concept-concept-4.mp3",
+      "duration": 1.31,
+      "size": 21600,
+      "text": "大括号里的数字叫做集合的元素。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "concept",
+      "line_id": "concept-5",
+      "filename": "concept-concept-5.mp3",
+      "path": "audio/narrations/set-theory/yunxi/concept-concept-5.mp3",
+      "duration": 1.75,
+      "size": 26784,
+      "text": "如果一个数字在集合里，我们说它属于这个集合。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "venn",
+      "line_id": "venn-1",
+      "filename": "venn-venn-1.mp3",
+      "path": "audio/narrations/set-theory/yunxi/venn-venn-1.mp3",
+      "duration": 1.46,
+      "size": 21744,
+      "text": "韦恩图是用圆圈来表示集合的图形。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "venn",
+      "line_id": "venn-2",
+      "filename": "venn-venn-2.mp3",
+      "path": "audio/narrations/set-theory/yunxi/venn-venn-2.mp3",
+      "duration": 1.87,
+      "size": 28944,
+      "text": "蓝色的圆圈代表集合A，绿色的圆圈代表集合B。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "venn",
+      "line_id": "venn-3",
+      "filename": "venn-venn-3.mp3",
+      "path": "audio/narrations/set-theory/yunxi/venn-venn-3.mp3",
+      "duration": 1.73,
+      "size": 27936,
+      "text": "两个圆圈重叠的部分，表示两个集合都有的元素。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "venn",
+      "line_id": "venn-4",
+      "filename": "venn-venn-4.mp3",
+      "path": "audio/narrations/set-theory/yunxi/venn-venn-4.mp3",
+      "duration": 2.41,
+      "size": 41040,
+      "text": "看！4和5既在A里，也在B里，所以它们在重叠的区域。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "venn",
+      "line_id": "venn-5",
+      "filename": "venn-venn-5.mp3",
+      "path": "audio/narrations/set-theory/yunxi/venn-venn-5.mp3",
+      "duration": 1.6,
+      "size": 27792,
+      "text": "韦恩图让我们一眼就能看出集合之间的关系！"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "union",
+      "line_id": "union-1",
+      "filename": "union-union-1.mp3",
+      "path": "audio/narrations/set-theory/yunxi/union-union-1.mp3",
+      "duration": 1.57,
+      "size": 23904,
+      "text": "并集就是把两个集合的所有元素合在一起。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "union",
+      "line_id": "union-2",
+      "filename": "union-union-2.mp3",
+      "path": "audio/narrations/set-theory/yunxi/union-union-2.mp3",
+      "duration": 1.67,
+      "size": 30096,
+      "text": "符号是∪，读作并。A ∪ B 就是A并B。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "union",
+      "line_id": "union-3",
+      "filename": "union-union-3.mp3",
+      "path": "audio/narrations/set-theory/yunxi/union-union-3.mp3",
+      "duration": 2.38,
+      "size": 37440,
+      "text": "看韦恩图，紫色高亮的部分就是并集，包括两个圆圈的所有区域。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "union",
+      "line_id": "union-4",
+      "filename": "union-union-4.mp3",
+      "path": "audio/narrations/set-theory/yunxi/union-union-4.mp3",
+      "duration": 4.46,
+      "size": 89424,
+      "text": "A = {1,2,3,4,5}，B = {4,5,6,7,8}，A ∪ B = {1,2,3,4,5,6,7,8}。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "union",
+      "line_id": "union-5",
+      "filename": "union-union-5.mp3",
+      "path": "audio/narrations/set-theory/yunxi/union-union-5.mp3",
+      "duration": 2.46,
+      "size": 37440,
+      "text": "注意！4和5虽然在两个集合里都有，但在并集里只写一次。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "intersection",
+      "line_id": "inter-1",
+      "filename": "intersection-inter-1.mp3",
+      "path": "audio/narrations/set-theory/yunxi/intersection-inter-1.mp3",
+      "duration": 1.31,
+      "size": 21168,
+      "text": "交集是两个集合共同拥有的元素。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "intersection",
+      "line_id": "inter-2",
+      "filename": "intersection-inter-2.mp3",
+      "path": "audio/narrations/set-theory/yunxi/intersection-inter-2.mp3",
+      "duration": 1.67,
+      "size": 31392,
+      "text": "符号是∩，读作交。A ∩ B 就是A交B。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "intersection",
+      "line_id": "inter-3",
+      "filename": "intersection-inter-3.mp3",
+      "path": "audio/narrations/set-theory/yunxi/intersection-inter-3.mp3",
+      "duration": 2.39,
+      "size": 38448,
+      "text": "看韦恩图，紫色高亮的部分就是交集，只有两个圆圈重叠的区域。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "intersection",
+      "line_id": "inter-4",
+      "filename": "intersection-inter-4.mp3",
+      "path": "audio/narrations/set-theory/yunxi/intersection-inter-4.mp3",
+      "duration": 3.3,
+      "size": 65664,
+      "text": "A = {1,2,3,4,5}，B = {4,5,6,7,8}，A ∩ B = {4,5}。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "intersection",
+      "line_id": "inter-5",
+      "filename": "intersection-inter-5.mp3",
+      "path": "audio/narrations/set-theory/yunxi/intersection-inter-5.mp3",
+      "duration": 2.12,
+      "size": 34560,
+      "text": "只有4和5同时在A和B里，所以交集就是{4,5}。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "difference",
+      "line_id": "diff-1",
+      "filename": "difference-diff-1.mp3",
+      "path": "audio/narrations/set-theory/yunxi/difference-diff-1.mp3",
+      "duration": 1.66,
+      "size": 25776,
+      "text": "差集是从一个集合里去掉另一个集合的元素。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "difference",
+      "line_id": "diff-2",
+      "filename": "difference-diff-2.mp3",
+      "path": "audio/narrations/set-theory/yunxi/difference-diff-2.mp3",
+      "duration": 1.46,
+      "size": 25632,
+      "text": "符号是反斜杠，A减B读作A减B。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "difference",
+      "line_id": "diff-3",
+      "filename": "difference-diff-3.mp3",
+      "path": "audio/narrations/set-theory/yunxi/difference-diff-3.mp3",
+      "duration": 2.02,
+      "size": 33696,
+      "text": "看韦恩图，紫色高亮的部分是A里有但B里没有的元素。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "difference",
+      "line_id": "diff-4",
+      "filename": "difference-diff-4.mp3",
+      "path": "audio/narrations/set-theory/yunxi/difference-diff-4.mp3",
+      "duration": 3.72,
+      "size": 71568,
+      "text": "A = {1,2,3,4,5}，B = {4,5,6,7,8}，A \\ B = {1,2,3}。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "difference",
+      "line_id": "diff-5",
+      "filename": "difference-diff-5.mp3",
+      "path": "audio/narrations/set-theory/yunxi/difference-diff-5.mp3",
+      "duration": 2.06,
+      "size": 36720,
+      "text": "1、2、3只在A里，不在B里，所以它们是差集的元素。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "symmetric",
+      "line_id": "sym-1",
+      "filename": "symmetric-sym-1.mp3",
+      "path": "audio/narrations/set-theory/yunxi/symmetric-sym-1.mp3",
+      "duration": 1.4,
+      "size": 21600,
+      "text": "对称差是两个集合各自独有的元素。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "symmetric",
+      "line_id": "sym-2",
+      "filename": "symmetric-sym-2.mp3",
+      "path": "audio/narrations/set-theory/yunxi/symmetric-sym-2.mp3",
+      "duration": 1.37,
+      "size": 24624,
+      "text": "符号是△，A △ B 读作A对称差B。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "symmetric",
+      "line_id": "sym-3",
+      "filename": "symmetric-sym-3.mp3",
+      "path": "audio/narrations/set-theory/yunxi/symmetric-sym-3.mp3",
+      "duration": 2.0,
+      "size": 31104,
+      "text": "看韦恩图，紫色高亮的部分是两个圆圈不重叠的区域。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "symmetric",
+      "line_id": "sym-4",
+      "filename": "symmetric-sym-4.mp3",
+      "path": "audio/narrations/set-theory/yunxi/symmetric-sym-4.mp3",
+      "duration": 2.55,
+      "size": 47808,
+      "text": "A △ B = {1,2,3,6,7,8}，就是去掉了共同的4和5。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "symmetric",
+      "line_id": "sym-5",
+      "filename": "symmetric-sym-5.mp3",
+      "path": "audio/narrations/set-theory/yunxi/symmetric-sym-5.mp3",
+      "duration": 1.5,
+      "size": 23904,
+      "text": "对称差也可以理解为：并集减去交集。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "parameters",
+      "line_id": "param-1",
+      "filename": "parameters-param-1.mp3",
+      "path": "audio/narrations/set-theory/yunxi/parameters-param-1.mp3",
+      "duration": 0.84,
+      "size": 13824,
+      "text": "现在轮到你来试试了！"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "parameters",
+      "line_id": "param-2",
+      "filename": "parameters-param-2.mp3",
+      "path": "audio/narrations/set-theory/yunxi/parameters-param-2.mp3",
+      "duration": 1.99,
+      "size": 31968,
+      "text": "在右边的控制面板，你可以修改集合A和集合B的元素。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "parameters",
+      "line_id": "param-3",
+      "filename": "parameters-param-3.mp3",
+      "path": "audio/narrations/set-theory/yunxi/parameters-param-3.mp3",
+      "duration": 1.72,
+      "size": 27360,
+      "text": "点击不同的运算按钮，看看韦恩图会怎么变化？"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "parameters",
+      "line_id": "param-4",
+      "filename": "parameters-param-4.mp3",
+      "path": "audio/narrations/set-theory/yunxi/parameters-param-4.mp3",
+      "duration": 1.81,
+      "size": 30384,
+      "text": "试试让两个集合完全不重叠，交集会变成什么？"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "parameters",
+      "line_id": "param-5",
+      "filename": "parameters-param-5.mp3",
+      "path": "audio/narrations/set-theory/yunxi/parameters-param-5.mp3",
+      "duration": 1.94,
+      "size": 31536,
+      "text": "再试试让一个集合完全包含另一个，差集会变成什么？"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/set-theory/yunxi/application-app-1.mp3",
+      "duration": 1.3,
+      "size": 21456,
+      "text": "集合运算在生活中到处都能用到！"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/set-theory/yunxi/application-app-2.mp3",
+      "duration": 2.26,
+      "size": 37008,
+      "text": "比如，喜欢足球的同学是集合A，喜欢篮球的同学是集合B。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/set-theory/yunxi/application-app-3.mp3",
+      "duration": 2.13,
+      "size": 34992,
+      "text": "两种都喜欢的同学就是交集，至少喜欢一种的就是并集。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/set-theory/yunxi/application-app-4.mp3",
+      "duration": 3.05,
+      "size": 48672,
+      "text": "搜索引擎也用集合运算：搜苹果 AND 手机就是交集，苹果 OR 水果就是并集。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "application",
+      "line_id": "app-5",
+      "filename": "application-app-5.mp3",
+      "path": "audio/narrations/set-theory/yunxi/application-app-5.mp3",
+      "duration": 1.62,
+      "size": 26928,
+      "text": "学好集合，你就能更好地分类和整理信息啦！"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/set-theory/yunxi/summary-summary-1.mp3",
+      "duration": 1.61,
+      "size": 23760,
+      "text": "今天我们学习了集合运算，让我们来回顾一下。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/set-theory/yunxi/summary-summary-2.mp3",
+      "duration": 1.96,
+      "size": 31824,
+      "text": "集合是把有共同特点的元素放在一起，用大括号表示。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/set-theory/yunxi/summary-summary-3.mp3",
+      "duration": 1.92,
+      "size": 30240,
+      "text": "韦恩图用圆圈来表示集合，重叠部分是共同元素。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/set-theory/yunxi/summary-summary-4.mp3",
+      "duration": 2.42,
+      "size": 38160,
+      "text": "并集∪是所有元素，交集∩是共同元素，差集\\是独有元素。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/set-theory/yunxi/summary-summary-5.mp3",
+      "duration": 1.67,
+      "size": 24480,
+      "text": "对称差△是两个集合各自独有的元素合在一起。"
+    },
+    {
+      "script_id": "set-theory",
+      "section_id": "summary",
+      "line_id": "summary-6",
+      "filename": "summary-summary-6.mp3",
+      "path": "audio/narrations/set-theory/yunxi/summary-summary-6.mp3",
+      "duration": 3.26,
+      "size": 51984,
+      "text": "太棒了！你已经掌握了集合运算的基本知识。继续探索其他实验，发现更多数学的乐趣吧！"
+    }
+  ],
+  "total_duration": 102.02,
+  "total_size": 1701792
+}

@@ -1,0 +1,118 @@
+{
+  "id": "taylor",
+  "title": "泰勒级数",
+  "subtitle": "用多项式逼近任意函数",
+  "difficulty": "intermediate",
+  "targetAge": "高中 15-18岁",
+  "voice": "yunxi",
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": { "type": "auto", "delay": 1000 },
+      "lines": [
+        { "id": "intro-1", "text": "欢迎来到泰勒级数实验！今天我们要学习一个强大的数学工具。" },
+        { "id": "intro-2", "text": "你有没有想过，计算器是怎么算出 sin 30 度的值的？" },
+        { "id": "intro-3", "text": "答案就是泰勒级数——用简单的多项式来逼近复杂的函数。" }
+      ]
+    },
+    {
+      "id": "basic-idea",
+      "type": "concept",
+      "title": "基本思想",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "basic-idea-1", "text": "泰勒级数的核心思想是：用多项式来近似任意函数。" },
+        { "id": "basic-idea-2", "text": "多项式只涉及加减乘和幂运算，计算机很容易计算。" },
+        { "id": "basic-idea-3", "text": "而像 sin、cos、e 的 x 次方这样的函数，直接计算很困难。" },
+        { "id": "basic-idea-4", "text": "泰勒级数就是连接这两者的桥梁。" }
+      ]
+    },
+    {
+      "id": "taylor-formula",
+      "type": "formula",
+      "title": "泰勒公式",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "taylor-formula-1", "text": "泰勒公式说，函数 f(x) 可以展开成无穷级数。" },
+        { "id": "taylor-formula-2", "text": "展开式是 f(a) 加 f 撇 a 乘以 x 减 a，加 f 双撇 a 除以 2 阶乘乘以 x 减 a 的平方，以此类推。" },
+        { "id": "taylor-formula-3", "text": "当 a 等于 0 时，这个展开叫做麦克劳林级数。" },
+        { "id": "taylor-formula-4", "text": "每一项的系数由函数在 a 点的各阶导数决定。" }
+      ]
+    },
+    {
+      "id": "exp-series",
+      "type": "example",
+      "title": "指数函数展开",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "exp-series-1", "text": "让我们看一个最简单的例子：e 的 x 次方。" },
+        { "id": "exp-series-2", "text": "e 的 x 次方的所有阶导数都是它自己，在 x 等于 0 处都等于 1。" },
+        { "id": "exp-series-3", "text": "所以展开式是 1 加 x 加 x 平方除以 2 阶乘加 x 立方除以 3 阶乘，以此类推。" },
+        { "id": "exp-series-4", "text": "这个级数对所有 x 都收敛，而且收敛得很快。" }
+      ]
+    },
+    {
+      "id": "sin-series",
+      "type": "example",
+      "title": "正弦函数展开",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "sin-series-1", "text": "再来看 sin x 的泰勒展开。" },
+        { "id": "sin-series-2", "text": "sin x 等于 x 减 x 立方除以 3 阶乘加 x 的 5 次方除以 5 阶乘，以此类推。" },
+        { "id": "sin-series-3", "text": "注意只有奇数次幂的项，而且正负交替。" },
+        { "id": "sin-series-4", "text": "这就是计算器计算 sin 值的基本原理。" }
+      ]
+    },
+    {
+      "id": "approximation",
+      "type": "animation",
+      "title": "逼近演示",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "approximation-1", "text": "图中蓝色曲线是原函数，红色曲线是泰勒多项式。" },
+        { "id": "approximation-2", "text": "调整项数 n，观察多项式如何越来越接近原函数。" },
+        { "id": "approximation-3", "text": "在展开点附近，逼近效果最好。" },
+        { "id": "approximation-4", "text": "离展开点越远，需要的项数越多才能达到相同的精度。" }
+      ]
+    },
+    {
+      "id": "convergence",
+      "type": "concept",
+      "title": "收敛性",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "convergence-1", "text": "泰勒级数不是对所有函数、所有点都收敛的。" },
+        { "id": "convergence-2", "text": "收敛半径描述了级数在多大范围内有效。" },
+        { "id": "convergence-3", "text": "e 的 x 次方和 sin x 的收敛半径是无穷大，对所有 x 都收敛。" },
+        { "id": "convergence-4", "text": "但 1 除以 1 减 x 的级数只在负 1 到 1 之间收敛。" }
+      ]
+    },
+    {
+      "id": "applications",
+      "type": "application",
+      "title": "实际应用",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "applications-1", "text": "泰勒级数在科学计算中有广泛应用。" },
+        { "id": "applications-2", "text": "计算器和计算机用它来计算三角函数、指数函数等。" },
+        { "id": "applications-3", "text": "物理学中，小角度近似 sin θ 约等于 θ 就是泰勒展开的第一项。" },
+        { "id": "applications-4", "text": "数值分析中，泰勒级数是很多算法的基础。" }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "summary-1", "text": "让我们总结一下今天学到的内容。" },
+        { "id": "summary-2", "text": "泰勒级数用多项式来逼近复杂函数。" },
+        { "id": "summary-3", "text": "展开式的系数由函数的各阶导数决定。" },
+        { "id": "summary-4", "text": "项数越多，逼近越精确，但要注意收敛范围。" },
+        { "id": "summary-5", "text": "希望通过这个实验，你对泰勒级数有了更直观的理解！" }
+      ]
+    }
+  ]
+}

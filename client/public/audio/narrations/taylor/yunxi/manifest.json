@@ -1,0 +1,369 @@
+{
+  "script_id": "taylor",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "taylor",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/taylor/yunxi/intro-intro-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "欢迎来到泰勒级数实验！今天我们要学习一个强大的数学工具。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/taylor/yunxi/intro-intro-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "你有没有想过，计算器是怎么算出 sin 30 度的值的？"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/taylor/yunxi/intro-intro-3.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "答案就是泰勒级数——用简单的多项式来逼近复杂的函数。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "basic-idea",
+      "line_id": "basic-idea-1",
+      "filename": "basic-idea-basic-idea-1.mp3",
+      "path": "audio/narrations/taylor/yunxi/basic-idea-basic-idea-1.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "泰勒级数的核心思想是：用多项式来近似任意函数。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "basic-idea",
+      "line_id": "basic-idea-2",
+      "filename": "basic-idea-basic-idea-2.mp3",
+      "path": "audio/narrations/taylor/yunxi/basic-idea-basic-idea-2.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "多项式只涉及加减乘和幂运算，计算机很容易计算。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "basic-idea",
+      "line_id": "basic-idea-3",
+      "filename": "basic-idea-basic-idea-3.mp3",
+      "path": "audio/narrations/taylor/yunxi/basic-idea-basic-idea-3.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "而像 sin、cos、e 的 x 次方这样的函数，直接计算很困难。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "basic-idea",
+      "line_id": "basic-idea-4",
+      "filename": "basic-idea-basic-idea-4.mp3",
+      "path": "audio/narrations/taylor/yunxi/basic-idea-basic-idea-4.mp3",
+      "duration": 1.37,
+      "size": 21888,
+      "text": "泰勒级数就是连接这两者的桥梁。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "taylor-formula",
+      "line_id": "taylor-formula-1",
+      "filename": "taylor-formula-taylor-formula-1.mp3",
+      "path": "audio/narrations/taylor/yunxi/taylor-formula-taylor-formula-1.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "泰勒公式说，函数 f(x) 可以展开成无穷级数。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "taylor-formula",
+      "line_id": "taylor-formula-2",
+      "filename": "taylor-formula-taylor-formula-2.mp3",
+      "path": "audio/narrations/taylor/yunxi/taylor-formula-taylor-formula-2.mp3",
+      "duration": 3.83,
+      "size": 61200,
+      "text": "展开式是 f(a) 加 f 撇 a 乘以 x 减 a，加 f 双撇 a 除以 2 阶乘乘以 x 减 a 的平方，以此类推。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "taylor-formula",
+      "line_id": "taylor-formula-3",
+      "filename": "taylor-formula-taylor-formula-3.mp3",
+      "path": "audio/narrations/taylor/yunxi/taylor-formula-taylor-formula-3.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "当 a 等于 0 时，这个展开叫做麦克劳林级数。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "taylor-formula",
+      "line_id": "taylor-formula-4",
+      "filename": "taylor-formula-taylor-formula-4.mp3",
+      "path": "audio/narrations/taylor/yunxi/taylor-formula-taylor-formula-4.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "每一项的系数由函数在 a 点的各阶导数决定。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "exp-series",
+      "line_id": "exp-series-1",
+      "filename": "exp-series-exp-series-1.mp3",
+      "path": "audio/narrations/taylor/yunxi/exp-series-exp-series-1.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "让我们看一个最简单的例子：e 的 x 次方。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "exp-series",
+      "line_id": "exp-series-2",
+      "filename": "exp-series-exp-series-2.mp3",
+      "path": "audio/narrations/taylor/yunxi/exp-series-exp-series-2.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "e 的 x 次方的所有阶导数都是它自己，在 x 等于 0 处都等于 1。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "exp-series",
+      "line_id": "exp-series-3",
+      "filename": "exp-series-exp-series-3.mp3",
+      "path": "audio/narrations/taylor/yunxi/exp-series-exp-series-3.mp3",
+      "duration": 3.03,
+      "size": 48528,
+      "text": "所以展开式是 1 加 x 加 x 平方除以 2 阶乘加 x 立方除以 3 阶乘，以此类推。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "exp-series",
+      "line_id": "exp-series-4",
+      "filename": "exp-series-exp-series-4.mp3",
+      "path": "audio/narrations/taylor/yunxi/exp-series-exp-series-4.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "这个级数对所有 x 都收敛，而且收敛得很快。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "sin-series",
+      "line_id": "sin-series-1",
+      "filename": "sin-series-sin-series-1.mp3",
+      "path": "audio/narrations/taylor/yunxi/sin-series-sin-series-1.mp3",
+      "duration": 1.24,
+      "size": 19872,
+      "text": "再来看 sin x 的泰勒展开。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "sin-series",
+      "line_id": "sin-series-2",
+      "filename": "sin-series-sin-series-2.mp3",
+      "path": "audio/narrations/taylor/yunxi/sin-series-sin-series-2.mp3",
+      "duration": 2.87,
+      "size": 45936,
+      "text": "sin x 等于 x 减 x 立方除以 3 阶乘加 x 的 5 次方除以 5 阶乘，以此类推。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "sin-series",
+      "line_id": "sin-series-3",
+      "filename": "sin-series-sin-series-3.mp3",
+      "path": "audio/narrations/taylor/yunxi/sin-series-sin-series-3.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "注意只有奇数次幂的项，而且正负交替。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "sin-series",
+      "line_id": "sin-series-4",
+      "filename": "sin-series-sin-series-4.mp3",
+      "path": "audio/narrations/taylor/yunxi/sin-series-sin-series-4.mp3",
+      "duration": 1.4,
+      "size": 22320,
+      "text": "这就是计算器计算 sin 值的基本原理。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "approximation",
+      "line_id": "approximation-1",
+      "filename": "approximation-approximation-1.mp3",
+      "path": "audio/narrations/taylor/yunxi/approximation-approximation-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "图中蓝色曲线是原函数，红色曲线是泰勒多项式。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "approximation",
+      "line_id": "approximation-2",
+      "filename": "approximation-approximation-2.mp3",
+      "path": "audio/narrations/taylor/yunxi/approximation-approximation-2.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "调整项数 n，观察多项式如何越来越接近原函数。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "approximation",
+      "line_id": "approximation-3",
+      "filename": "approximation-approximation-3.mp3",
+      "path": "audio/narrations/taylor/yunxi/approximation-approximation-3.mp3",
+      "duration": 1.25,
+      "size": 20016,
+      "text": "在展开点附近，逼近效果最好。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "approximation",
+      "line_id": "approximation-4",
+      "filename": "approximation-approximation-4.mp3",
+      "path": "audio/narrations/taylor/yunxi/approximation-approximation-4.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "离展开点越远，需要的项数越多才能达到相同的精度。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "convergence",
+      "line_id": "convergence-1",
+      "filename": "convergence-convergence-1.mp3",
+      "path": "audio/narrations/taylor/yunxi/convergence-convergence-1.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "泰勒级数不是对所有函数、所有点都收敛的。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "convergence",
+      "line_id": "convergence-2",
+      "filename": "convergence-convergence-2.mp3",
+      "path": "audio/narrations/taylor/yunxi/convergence-convergence-2.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "收敛半径描述了级数在多大范围内有效。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "convergence",
+      "line_id": "convergence-3",
+      "filename": "convergence-convergence-3.mp3",
+      "path": "audio/narrations/taylor/yunxi/convergence-convergence-3.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "e 的 x 次方和 sin x 的收敛半径是无穷大，对所有 x 都收敛。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "convergence",
+      "line_id": "convergence-4",
+      "filename": "convergence-convergence-4.mp3",
+      "path": "audio/narrations/taylor/yunxi/convergence-convergence-4.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "但 1 除以 1 减 x 的级数只在负 1 到 1 之间收敛。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "applications",
+      "line_id": "applications-1",
+      "filename": "applications-applications-1.mp3",
+      "path": "audio/narrations/taylor/yunxi/applications-applications-1.mp3",
+      "duration": 1.5,
+      "size": 24048,
+      "text": "泰勒级数在科学计算中有广泛应用。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "applications",
+      "line_id": "applications-2",
+      "filename": "applications-applications-2.mp3",
+      "path": "audio/narrations/taylor/yunxi/applications-applications-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "计算器和计算机用它来计算三角函数、指数函数等。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "applications",
+      "line_id": "applications-3",
+      "filename": "applications-applications-3.mp3",
+      "path": "audio/narrations/taylor/yunxi/applications-applications-3.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "物理学中，小角度近似 sin θ 约等于 θ 就是泰勒展开的第一项。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "applications",
+      "line_id": "applications-4",
+      "filename": "applications-applications-4.mp3",
+      "path": "audio/narrations/taylor/yunxi/applications-applications-4.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "数值分析中，泰勒级数是很多算法的基础。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/taylor/yunxi/summary-summary-1.mp3",
+      "duration": 1.25,
+      "size": 20016,
+      "text": "让我们总结一下今天学到的内容。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/taylor/yunxi/summary-summary-2.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "泰勒级数用多项式来逼近复杂函数。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/taylor/yunxi/summary-summary-3.mp3",
+      "duration": 1.54,
+      "size": 24624,
+      "text": "展开式的系数由函数的各阶导数决定。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/taylor/yunxi/summary-summary-4.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "项数越多，逼近越精确，但要注意收敛范围。"
+    },
+    {
+      "script_id": "taylor",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/taylor/yunxi/summary-summary-5.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "希望通过这个实验，你对泰勒级数有了更直观的理解！"
+    }
+  ],
+  "total_duration": 69.63,
+  "total_size": 1113840
+}

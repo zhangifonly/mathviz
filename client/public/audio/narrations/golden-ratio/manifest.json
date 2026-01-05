@@ -1,0 +1,409 @@
+{
+  "script_id": "golden-ratio",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "golden-ratio",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/golden-ratio/intro-intro-1.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "小朋友们好！欢迎来到黄金分割与斐波那契实验。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/golden-ratio/intro-intro-2.mp3",
+      "duration": 3.49,
+      "size": 55872,
+      "text": "你知道吗？大自然里藏着一个神奇的数字，它让花朵、贝壳、甚至银河系都变得特别美丽。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/golden-ratio/intro-intro-3.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "这个数字叫做\"黄金比例\"，大约等于1.618。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/golden-ratio/intro-intro-4.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "今天，我们要一起探索这个神奇数字的秘密！"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "fibonacci",
+      "line_id": "fib-1",
+      "filename": "fibonacci-fib-1.mp3",
+      "path": "audio/narrations/golden-ratio/fibonacci-fib-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "首先，我们来认识一个有趣的数列——斐波那契数列。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "fibonacci",
+      "line_id": "fib-2",
+      "filename": "fibonacci-fib-2.mp3",
+      "path": "audio/narrations/golden-ratio/fibonacci-fib-2.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "它的规则很简单：每个数等于前两个数相加。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "fibonacci",
+      "line_id": "fib-3",
+      "filename": "fibonacci-fib-3.mp3",
+      "path": "audio/narrations/golden-ratio/fibonacci-fib-3.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "从1、1开始：1加1等于2，1加2等于3，2加3等于5..."
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "fibonacci",
+      "line_id": "fib-4",
+      "filename": "fibonacci-fib-4.mp3",
+      "path": "audio/narrations/golden-ratio/fibonacci-fib-4.mp3",
+      "duration": 2.99,
+      "size": 47808,
+      "text": "所以数列是：1, 1, 2, 3, 5, 8, 13, 21, 34, 55..."
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "fibonacci",
+      "line_id": "fib-5",
+      "filename": "fibonacci-fib-5.mp3",
+      "path": "audio/narrations/golden-ratio/fibonacci-fib-5.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "这个数列是800多年前，一位叫斐波那契的数学家发现的！"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "golden-ratio",
+      "line_id": "phi-1",
+      "filename": "golden-ratio-phi-1.mp3",
+      "path": "audio/narrations/golden-ratio/golden-ratio-phi-1.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "现在来看神奇的事情！把斐波那契数列相邻两个数相除。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "golden-ratio",
+      "line_id": "phi-2",
+      "filename": "golden-ratio-phi-2.mp3",
+      "path": "audio/narrations/golden-ratio/golden-ratio-phi-2.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "2除以1等于2，3除以2等于1.5，5除以3约等于1.67..."
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "golden-ratio",
+      "line_id": "phi-3",
+      "filename": "golden-ratio-phi-3.mp3",
+      "path": "audio/narrations/golden-ratio/golden-ratio-phi-3.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "看图表！随着数字越来越大，这个比值越来越接近一个固定的数。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "golden-ratio",
+      "line_id": "phi-4",
+      "filename": "golden-ratio-phi-4.mp3",
+      "path": "audio/narrations/golden-ratio/golden-ratio-phi-4.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "这个数就是黄金比例，用希腊字母φ表示，约等于1.618。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "golden-ratio",
+      "line_id": "phi-5",
+      "filename": "golden-ratio-phi-5.mp3",
+      "path": "audio/narrations/golden-ratio/golden-ratio-phi-5.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "黄金比例有一个神奇的性质：φ的平方等于φ加1！"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "spiral",
+      "line_id": "spiral-1",
+      "filename": "spiral-spiral-1.mp3",
+      "path": "audio/narrations/golden-ratio/spiral-spiral-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "用黄金比例可以画出一条美丽的曲线——黄金螺线。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "spiral",
+      "line_id": "spiral-2",
+      "filename": "spiral-spiral-2.mp3",
+      "path": "audio/narrations/golden-ratio/spiral-spiral-2.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "看右边的图，这条螺线每转一圈，半径就变成原来的φ倍。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "spiral",
+      "line_id": "spiral-3",
+      "filename": "spiral-spiral-3.mp3",
+      "path": "audio/narrations/golden-ratio/spiral-spiral-3.mp3",
+      "duration": 1.11,
+      "size": 17712,
+      "text": "鹦鹉螺的贝壳就是这种形状！"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "spiral",
+      "line_id": "spiral-4",
+      "filename": "spiral-spiral-4.mp3",
+      "path": "audio/narrations/golden-ratio/spiral-spiral-4.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "你可以调整\"螺线圈数\"滑块，看看螺线是怎么一圈圈展开的。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "spiral",
+      "line_id": "spiral-5",
+      "filename": "spiral-spiral-5.mp3",
+      "path": "audio/narrations/golden-ratio/spiral-spiral-5.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "这种螺线在自然界中非常常见，因为它是最\"高效\"的生长方式。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "sunflower",
+      "line_id": "sun-1",
+      "filename": "sunflower-sun-1.mp3",
+      "path": "audio/narrations/golden-ratio/sunflower-sun-1.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "看下面的图，这是向日葵种子的排列方式。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "sunflower",
+      "line_id": "sun-2",
+      "filename": "sunflower-sun-2.mp3",
+      "path": "audio/narrations/golden-ratio/sunflower-sun-2.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "每颗种子相对于前一颗旋转一个特殊的角度——黄金角。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "sunflower",
+      "line_id": "sun-3",
+      "filename": "sunflower-sun-3.mp3",
+      "path": "audio/narrations/golden-ratio/sunflower-sun-3.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "黄金角大约是137.5度，它和黄金比例有密切关系。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "sunflower",
+      "line_id": "sun-4",
+      "filename": "sunflower-sun-4.mp3",
+      "path": "audio/narrations/golden-ratio/sunflower-sun-4.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "这种排列方式让种子之间的空隙最小，能装下最多的种子！"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "sunflower",
+      "line_id": "sun-5",
+      "filename": "sunflower-sun-5.mp3",
+      "path": "audio/narrations/golden-ratio/sunflower-sun-5.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "大自然真是太聪明了，用数学找到了最优的解决方案。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "parameters",
+      "line_id": "param-1",
+      "filename": "parameters-param-1.mp3",
+      "path": "audio/narrations/golden-ratio/parameters-param-1.mp3",
+      "duration": 0.84,
+      "size": 13392,
+      "text": "现在轮到你来试试了！"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "parameters",
+      "line_id": "param-2",
+      "filename": "parameters-param-2.mp3",
+      "path": "audio/narrations/golden-ratio/parameters-param-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "在右边的控制面板，你可以调整斐波那契数列的项数。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "parameters",
+      "line_id": "param-3",
+      "filename": "parameters-param-3.mp3",
+      "path": "audio/narrations/golden-ratio/parameters-param-3.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "看看项数越多，比值是不是越接近1.618？"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "parameters",
+      "line_id": "param-4",
+      "filename": "parameters-param-4.mp3",
+      "path": "audio/narrations/golden-ratio/parameters-param-4.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "试试调整螺线圈数，观察黄金螺线是怎么展开的。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "parameters",
+      "line_id": "param-5",
+      "filename": "parameters-param-5.mp3",
+      "path": "audio/narrations/golden-ratio/parameters-param-5.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "点击\"播放动画\"按钮，可以看到比值是怎么一步步收敛到黄金比例的。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "nature",
+      "line_id": "nature-1",
+      "filename": "nature-nature-1.mp3",
+      "path": "audio/narrations/golden-ratio/nature-nature-1.mp3",
+      "duration": 1.32,
+      "size": 21168,
+      "text": "黄金比例在自然界中无处不在！"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "nature",
+      "line_id": "nature-2",
+      "filename": "nature-nature-2.mp3",
+      "path": "audio/narrations/golden-ratio/nature-nature-2.mp3",
+      "duration": 1.33,
+      "size": 21312,
+      "text": "鹦鹉螺的贝壳是黄金螺线的形状。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "nature",
+      "line_id": "nature-3",
+      "filename": "nature-nature-3.mp3",
+      "path": "audio/narrations/golden-ratio/nature-nature-3.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "松果的鳞片、菠萝的纹路都按斐波那契数排列。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "nature",
+      "line_id": "nature-4",
+      "filename": "nature-nature-4.mp3",
+      "path": "audio/narrations/golden-ratio/nature-nature-4.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "甚至我们的身体也有黄金比例：手指骨节的长度比接近φ！"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "nature",
+      "line_id": "nature-5",
+      "filename": "nature-nature-5.mp3",
+      "path": "audio/narrations/golden-ratio/nature-nature-5.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "艺术家和建筑师也喜欢用黄金比例，因为它看起来特别和谐美观。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/golden-ratio/summary-summary-1.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "今天我们学习了黄金分割，让我们来回顾一下。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/golden-ratio/summary-summary-2.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "斐波那契数列：每个数等于前两个数之和。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/golden-ratio/summary-summary-3.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "黄金比例φ约等于1.618，是斐波那契数列相邻两数之比的极限。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/golden-ratio/summary-summary-4.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "黄金螺线和黄金角是黄金比例在几何中的体现。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/golden-ratio/summary-summary-5.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "自然界中到处都有黄金比例，它是大自然的\"美丽密码\"。"
+    },
+    {
+      "script_id": "golden-ratio",
+      "section_id": "summary",
+      "line_id": "summary-6",
+      "filename": "summary-summary-6.mp3",
+      "path": "audio/narrations/golden-ratio/summary-summary-6.mp3",
+      "duration": 3.26,
+      "size": 52128,
+      "text": "太棒了！你已经发现了数学中最美的秘密。继续探索其他实验，发现更多数学的乐趣吧！"
+    }
+  ],
+  "total_duration": 80.94000000000001,
+  "total_size": 1294704
+}

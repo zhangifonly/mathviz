@@ -1,0 +1,127 @@
+{
+  "id": "number-theory",
+  "title": "数论可视化",
+  "subtitle": "探索素数分布、Collatz 猜想和 Ulam 螺旋",
+  "difficulty": "beginner",
+  "targetAge": "小学 6-12岁",
+  "voice": "xiaoxiao",
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": { "type": "auto", "delay": 1000 },
+      "lines": [
+        { "id": "intro-1", "text": "小朋友们好！欢迎来到数论可视化实验。" },
+        { "id": "intro-2", "text": "数论是研究整数性质的数学分支，听起来很高深，其实很有趣！" },
+        { "id": "intro-3", "text": "今天我们要探索一些神奇的数字规律，包括素数、猜想和螺旋。" },
+        { "id": "intro-4", "text": "准备好了吗？让我们开始这场数字探险！" }
+      ]
+    },
+    {
+      "id": "primes",
+      "type": "concept",
+      "title": "认识素数",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "prime-1", "text": "首先，我们来认识素数。素数是只能被1和它自己整除的数。" },
+        { "id": "prime-2", "text": "比如2、3、5、7、11、13...这些都是素数。" },
+        { "id": "prime-3", "text": "2是最小的素数，也是唯一的偶数素数。" },
+        { "id": "prime-4", "text": "1不是素数，因为它只有一个因数。" },
+        { "id": "prime-5", "text": "素数就像数字世界的\"原子\"，所有整数都可以分解成素数的乘积！" }
+      ]
+    },
+    {
+      "id": "sieve",
+      "type": "concept",
+      "title": "埃氏筛法",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "sieve-1", "text": "怎么找出所有素数呢？古希腊数学家埃拉托斯特尼发明了一个聪明的方法。" },
+        { "id": "sieve-2", "text": "首先，把1划掉，因为1不是素数。" },
+        { "id": "sieve-3", "text": "然后从2开始，保留2，划掉所有2的倍数：4、6、8、10..." },
+        { "id": "sieve-4", "text": "接着保留3，划掉所有3的倍数：6、9、12、15..." },
+        { "id": "sieve-5", "text": "继续这样做，最后剩下的绿色数字就是素数！这就是\"筛法\"。" }
+      ]
+    },
+    {
+      "id": "distribution",
+      "type": "concept",
+      "title": "素数分布",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "dist-1", "text": "素数在数字中是怎么分布的呢？看图表！" },
+        { "id": "dist-2", "text": "蓝色线是素数计数函数，表示小于x的素数有多少个。" },
+        { "id": "dist-3", "text": "红色虚线是一个近似公式：x除以ln(x)。" },
+        { "id": "dist-4", "text": "神奇的是，这两条线越来越接近！这就是著名的素数定理。" },
+        { "id": "dist-5", "text": "素数虽然看起来随机，但其实有规律可循。" }
+      ]
+    },
+    {
+      "id": "collatz",
+      "type": "concept",
+      "title": "Collatz 猜想",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "coll-1", "text": "现在来看一个神秘的猜想——Collatz 猜想，也叫3n+1问题。" },
+        { "id": "coll-2", "text": "规则很简单：如果数字是偶数，就除以2；如果是奇数，就乘3加1。" },
+        { "id": "coll-3", "text": "比如从27开始：27是奇数，3×27+1=82；82是偶数，82÷2=41..." },
+        { "id": "coll-4", "text": "猜想说：不管从哪个正整数开始，最终都会到达1。" },
+        { "id": "coll-5", "text": "这个猜想至今没有被证明，但也没有找到反例！点击播放动画看看序列的变化。" }
+      ]
+    },
+    {
+      "id": "ulam",
+      "type": "concept",
+      "title": "Ulam 螺旋",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "ulam-1", "text": "最后来看一个美丽的图案——Ulam 螺旋。" },
+        { "id": "ulam-2", "text": "把自然数从中心开始螺旋排列：1在中心，2在右边，3在上面..." },
+        { "id": "ulam-3", "text": "然后把素数标成绿色。你发现了什么？" },
+        { "id": "ulam-4", "text": "素数竟然排成了对角线！这不是巧合，而是数学的奥秘。" },
+        { "id": "ulam-5", "text": "数学家乌拉姆在开会无聊时发现了这个规律，从此以他的名字命名。" }
+      ]
+    },
+    {
+      "id": "parameters",
+      "type": "interaction",
+      "title": "自己试试",
+      "trigger": { "type": "parameter" },
+      "lines": [
+        { "id": "param-1", "text": "现在轮到你来探索了！" },
+        { "id": "param-2", "text": "在右边的控制面板，你可以选择不同的主题。" },
+        { "id": "param-3", "text": "试试调整最大值N，看看素数分布会怎么变化。" },
+        { "id": "param-4", "text": "在Collatz猜想中，试试不同的起始值，看看序列有多长。" },
+        { "id": "param-5", "text": "调整Ulam螺旋的大小，观察素数的对角线规律。" }
+      ]
+    },
+    {
+      "id": "mysteries",
+      "type": "application",
+      "title": "未解之谜",
+      "trigger": { "type": "manual" },
+      "lines": [
+        { "id": "myst-1", "text": "数论中有很多至今未解的谜题！" },
+        { "id": "myst-2", "text": "孪生素数猜想：是否有无穷多对相差2的素数，比如11和13？" },
+        { "id": "myst-3", "text": "哥德巴赫猜想：每个大于2的偶数都能写成两个素数之和吗？" },
+        { "id": "myst-4", "text": "黎曼猜想：素数分布的精确规律是什么？这是数学界最重要的未解问题之一！" },
+        { "id": "myst-5", "text": "也许将来，你就是解开这些谜题的数学家！" }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结回顾",
+      "trigger": { "type": "manual" },
+      "lines": [
+        { "id": "summary-1", "text": "今天我们探索了数论的奥秘，让我们来回顾一下。" },
+        { "id": "summary-2", "text": "素数是只能被1和自己整除的数，是数字的\"原子\"。" },
+        { "id": "summary-3", "text": "埃氏筛法是找素数的聪明方法，一层层筛掉合数。" },
+        { "id": "summary-4", "text": "Collatz猜想说任何正整数最终都会到达1，但至今未被证明。" },
+        { "id": "summary-5", "text": "Ulam螺旋展示了素数分布的神秘规律。" },
+        { "id": "summary-6", "text": "太棒了！你已经开始探索数论的世界。继续探索其他实验，发现更多数学的乐趣吧！" }
+      ]
+    }
+  ]
+}

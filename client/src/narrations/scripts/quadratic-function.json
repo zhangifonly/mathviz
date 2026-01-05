@@ -1,0 +1,120 @@
+{
+  "id": "quadratic-function",
+  "title": "二次函数",
+  "subtitle": "探索抛物线的顶点、对称轴和根",
+  "difficulty": "elementary",
+  "targetAge": "初中 12-15岁",
+  "voice": "xiaoxiao",
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": { "type": "auto", "delay": 1000 },
+      "lines": [
+        { "id": "intro-1", "text": "欢迎来到二次函数实验！今天我们要学习一种非常重要的函数——二次函数。" },
+        { "id": "intro-2", "text": "二次函数的图像是一条优美的曲线，叫做抛物线。它在物理和工程中有广泛应用。" },
+        { "id": "intro-3", "text": "比如投篮时篮球的运动轨迹、喷泉的水流形状，都是抛物线。" }
+      ]
+    },
+    {
+      "id": "formula",
+      "type": "formula",
+      "title": "函数表达式",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "formula-1", "text": "二次函数的一般形式是y等于ax平方加bx加c，其中a不等于0。" },
+        { "id": "formula-2", "text": "a是二次项系数，它决定了抛物线的开口方向和宽窄。" },
+        { "id": "formula-3", "text": "b是一次项系数，c是常数项，它们共同决定了抛物线的位置。" },
+        { "id": "formula-4", "text": "除了一般式，还有顶点式y等于a乘以x减h的平方加k，其中h和k是顶点坐标。" }
+      ]
+    },
+    {
+      "id": "coefficient-a",
+      "type": "concept",
+      "title": "系数 a 的作用",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "coefficient-a-1", "text": "系数a是二次函数中最重要的参数，它决定了抛物线的基本形态。" },
+        { "id": "coefficient-a-2", "text": "当a大于0时，抛物线开口向上，像一个碗，有最低点。" },
+        { "id": "coefficient-a-3", "text": "当a小于0时，抛物线开口向下，像一座山，有最高点。" },
+        { "id": "coefficient-a-4", "text": "a的绝对值越大，抛物线越窄越陡；绝对值越小，抛物线越宽越平缓。" },
+        { "id": "coefficient-a-5", "text": "试着调整a的值，观察抛物线如何变化。" }
+      ]
+    },
+    {
+      "id": "vertex",
+      "type": "concept",
+      "title": "顶点和对称轴",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "vertex-1", "text": "抛物线有一个特殊的点叫做顶点，它是抛物线的最高点或最低点。" },
+        { "id": "vertex-2", "text": "顶点的横坐标公式是x等于负b除以2a，纵坐标可以代入函数求得。" },
+        { "id": "vertex-3", "text": "过顶点且垂直于x轴的直线叫做对称轴，抛物线关于它左右对称。" },
+        { "id": "vertex-4", "text": "图中红色的点就是顶点，灰色虚线就是对称轴。" }
+      ]
+    },
+    {
+      "id": "roots",
+      "type": "concept",
+      "title": "根与判别式",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "roots-1", "text": "抛物线与x轴的交点叫做函数的根或零点，也就是方程ax平方加bx加c等于0的解。" },
+        { "id": "roots-2", "text": "判别式Δ等于b平方减4ac，它决定了根的情况。" },
+        { "id": "roots-3", "text": "当Δ大于0时，有两个不相等的实根，抛物线与x轴有两个交点。" },
+        { "id": "roots-4", "text": "当Δ等于0时，有一个重根，抛物线与x轴相切。" },
+        { "id": "roots-5", "text": "当Δ小于0时，没有实根，抛物线与x轴没有交点。" },
+        { "id": "roots-6", "text": "图中绿色的点就是根，你可以用快速设置按钮查看不同情况。" }
+      ]
+    },
+    {
+      "id": "animation",
+      "type": "animation",
+      "title": "动画演示",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "animation-1", "text": "点击播放动画按钮，可以看到系数a从负2变化到正2的过程。" },
+        { "id": "animation-2", "text": "观察抛物线如何从开口向下变成开口向上，中间经过a等于0时退化为直线。" },
+        { "id": "animation-3", "text": "这个动画帮助你理解系数a对抛物线形态的影响。" }
+      ]
+    },
+    {
+      "id": "examples",
+      "type": "example",
+      "title": "典型例子",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "examples-1", "text": "让我们看几个典型的二次函数。" },
+        { "id": "examples-2", "text": "y等于x平方是最简单的二次函数，顶点在原点，开口向上。" },
+        { "id": "examples-3", "text": "y等于负x平方开口向下，顶点也在原点。" },
+        { "id": "examples-4", "text": "y等于x平方减4向下平移了4个单位，与x轴交于x等于2和x等于负2。" },
+        { "id": "examples-5", "text": "y等于x减1的平方向右平移了1个单位，顶点在1和0。" }
+      ]
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "title": "实际应用",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "application-1", "text": "二次函数在物理中描述抛体运动，比如投篮、发射炮弹的轨迹。" },
+        { "id": "application-2", "text": "在工程中，拱桥、抛物面天线都利用了抛物线的性质。" },
+        { "id": "application-3", "text": "在经济学中，利润函数常常是二次函数，顶点对应最大利润。" }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "summary-1", "text": "让我们总结一下今天学到的内容。" },
+        { "id": "summary-2", "text": "二次函数y等于ax平方加bx加c的图像是抛物线，a决定开口方向和宽窄。" },
+        { "id": "summary-3", "text": "顶点是抛物线的最值点，对称轴过顶点且垂直于x轴。" },
+        { "id": "summary-4", "text": "判别式Δ决定根的个数：Δ大于0两根，Δ等于0一根，Δ小于0无实根。" },
+        { "id": "summary-5", "text": "希望通过这个实验，你对二次函数有了更深入的理解！" }
+      ]
+    }
+  ]
+}

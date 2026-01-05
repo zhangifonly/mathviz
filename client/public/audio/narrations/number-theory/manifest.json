@@ -1,0 +1,459 @@
+{
+  "script_id": "number-theory",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "number-theory",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/number-theory/intro-intro-1.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "小朋友们好！欢迎来到数论可视化实验。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/number-theory/intro-intro-2.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "数论是研究整数性质的数学分支，听起来很高深，其实很有趣！"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/number-theory/intro-intro-3.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "今天我们要探索一些神奇的数字规律，包括素数、猜想和螺旋。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/number-theory/intro-intro-4.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "准备好了吗？让我们开始这场数字探险！"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "primes",
+      "line_id": "prime-1",
+      "filename": "primes-prime-1.mp3",
+      "path": "audio/narrations/number-theory/primes-prime-1.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "首先，我们来认识素数。素数是只能被1和它自己整除的数。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "primes",
+      "line_id": "prime-2",
+      "filename": "primes-prime-2.mp3",
+      "path": "audio/narrations/number-theory/primes-prime-2.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "比如2、3、5、7、11、13...这些都是素数。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "primes",
+      "line_id": "prime-3",
+      "filename": "primes-prime-3.mp3",
+      "path": "audio/narrations/number-theory/primes-prime-3.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "2是最小的素数，也是唯一的偶数素数。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "primes",
+      "line_id": "prime-4",
+      "filename": "primes-prime-4.mp3",
+      "path": "audio/narrations/number-theory/primes-prime-4.mp3",
+      "duration": 1.29,
+      "size": 20592,
+      "text": "1不是素数，因为它只有一个因数。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "primes",
+      "line_id": "prime-5",
+      "filename": "primes-prime-5.mp3",
+      "path": "audio/narrations/number-theory/primes-prime-5.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "素数就像数字世界的\"原子\"，所有整数都可以分解成素数的乘积！"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "sieve",
+      "line_id": "sieve-1",
+      "filename": "sieve-sieve-1.mp3",
+      "path": "audio/narrations/number-theory/sieve-sieve-1.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "怎么找出所有素数呢？古希腊数学家埃拉托斯特尼发明了一个聪明的方法。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "sieve",
+      "line_id": "sieve-2",
+      "filename": "sieve-sieve-2.mp3",
+      "path": "audio/narrations/number-theory/sieve-sieve-2.mp3",
+      "duration": 1.39,
+      "size": 22176,
+      "text": "首先，把1划掉，因为1不是素数。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "sieve",
+      "line_id": "sieve-3",
+      "filename": "sieve-sieve-3.mp3",
+      "path": "audio/narrations/number-theory/sieve-sieve-3.mp3",
+      "duration": 2.52,
+      "size": 40320,
+      "text": "然后从2开始，保留2，划掉所有2的倍数：4、6、8、10..."
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "sieve",
+      "line_id": "sieve-4",
+      "filename": "sieve-sieve-4.mp3",
+      "path": "audio/narrations/number-theory/sieve-sieve-4.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "接着保留3，划掉所有3的倍数：6、9、12、15..."
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "sieve",
+      "line_id": "sieve-5",
+      "filename": "sieve-sieve-5.mp3",
+      "path": "audio/narrations/number-theory/sieve-sieve-5.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "继续这样做，最后剩下的绿色数字就是素数！这就是\"筛法\"。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "distribution",
+      "line_id": "dist-1",
+      "filename": "distribution-dist-1.mp3",
+      "path": "audio/narrations/number-theory/distribution-dist-1.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "素数在数字中是怎么分布的呢？看图表！"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "distribution",
+      "line_id": "dist-2",
+      "filename": "distribution-dist-2.mp3",
+      "path": "audio/narrations/number-theory/distribution-dist-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "蓝色线是素数计数函数，表示小于x的素数有多少个。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "distribution",
+      "line_id": "dist-3",
+      "filename": "distribution-dist-3.mp3",
+      "path": "audio/narrations/number-theory/distribution-dist-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "红色虚线是一个近似公式：x除以ln(x)。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "distribution",
+      "line_id": "dist-4",
+      "filename": "distribution-dist-4.mp3",
+      "path": "audio/narrations/number-theory/distribution-dist-4.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "神奇的是，这两条线越来越接近！这就是著名的素数定理。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "distribution",
+      "line_id": "dist-5",
+      "filename": "distribution-dist-5.mp3",
+      "path": "audio/narrations/number-theory/distribution-dist-5.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "素数虽然看起来随机，但其实有规律可循。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "collatz",
+      "line_id": "coll-1",
+      "filename": "collatz-coll-1.mp3",
+      "path": "audio/narrations/number-theory/collatz-coll-1.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "现在来看一个神秘的猜想——Collatz 猜想，也叫3n+1问题。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "collatz",
+      "line_id": "coll-2",
+      "filename": "collatz-coll-2.mp3",
+      "path": "audio/narrations/number-theory/collatz-coll-2.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "规则很简单：如果数字是偶数，就除以2；如果是奇数，就乘3加1。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "collatz",
+      "line_id": "coll-3",
+      "filename": "collatz-coll-3.mp3",
+      "path": "audio/narrations/number-theory/collatz-coll-3.mp3",
+      "duration": 3.84,
+      "size": 61488,
+      "text": "比如从27开始：27是奇数，3×27+1=82；82是偶数，82÷2=41..."
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "collatz",
+      "line_id": "coll-4",
+      "filename": "collatz-coll-4.mp3",
+      "path": "audio/narrations/number-theory/collatz-coll-4.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "猜想说：不管从哪个正整数开始，最终都会到达1。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "collatz",
+      "line_id": "coll-5",
+      "filename": "collatz-coll-5.mp3",
+      "path": "audio/narrations/number-theory/collatz-coll-5.mp3",
+      "duration": 2.91,
+      "size": 46512,
+      "text": "这个猜想至今没有被证明，但也没有找到反例！点击播放动画看看序列的变化。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "ulam",
+      "line_id": "ulam-1",
+      "filename": "ulam-ulam-1.mp3",
+      "path": "audio/narrations/number-theory/ulam-ulam-1.mp3",
+      "duration": 1.46,
+      "size": 23328,
+      "text": "最后来看一个美丽的图案——Ulam 螺旋。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "ulam",
+      "line_id": "ulam-2",
+      "filename": "ulam-ulam-2.mp3",
+      "path": "audio/narrations/number-theory/ulam-ulam-2.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "把自然数从中心开始螺旋排列：1在中心，2在右边，3在上面..."
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "ulam",
+      "line_id": "ulam-3",
+      "filename": "ulam-ulam-3.mp3",
+      "path": "audio/narrations/number-theory/ulam-ulam-3.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "然后把素数标成绿色。你发现了什么？"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "ulam",
+      "line_id": "ulam-4",
+      "filename": "ulam-ulam-4.mp3",
+      "path": "audio/narrations/number-theory/ulam-ulam-4.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "素数竟然排成了对角线！这不是巧合，而是数学的奥秘。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "ulam",
+      "line_id": "ulam-5",
+      "filename": "ulam-ulam-5.mp3",
+      "path": "audio/narrations/number-theory/ulam-ulam-5.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "数学家乌拉姆在开会无聊时发现了这个规律，从此以他的名字命名。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "parameters",
+      "line_id": "param-1",
+      "filename": "parameters-param-1.mp3",
+      "path": "audio/narrations/number-theory/parameters-param-1.mp3",
+      "duration": 0.84,
+      "size": 13392,
+      "text": "现在轮到你来探索了！"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "parameters",
+      "line_id": "param-2",
+      "filename": "parameters-param-2.mp3",
+      "path": "audio/narrations/number-theory/parameters-param-2.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "在右边的控制面板，你可以选择不同的主题。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "parameters",
+      "line_id": "param-3",
+      "filename": "parameters-param-3.mp3",
+      "path": "audio/narrations/number-theory/parameters-param-3.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "试试调整最大值N，看看素数分布会怎么变化。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "parameters",
+      "line_id": "param-4",
+      "filename": "parameters-param-4.mp3",
+      "path": "audio/narrations/number-theory/parameters-param-4.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "在Collatz猜想中，试试不同的起始值，看看序列有多长。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "parameters",
+      "line_id": "param-5",
+      "filename": "parameters-param-5.mp3",
+      "path": "audio/narrations/number-theory/parameters-param-5.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "调整Ulam螺旋的大小，观察素数的对角线规律。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "mysteries",
+      "line_id": "myst-1",
+      "filename": "mysteries-myst-1.mp3",
+      "path": "audio/narrations/number-theory/mysteries-myst-1.mp3",
+      "duration": 1.25,
+      "size": 20016,
+      "text": "数论中有很多至今未解的谜题！"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "mysteries",
+      "line_id": "myst-2",
+      "filename": "mysteries-myst-2.mp3",
+      "path": "audio/narrations/number-theory/mysteries-myst-2.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "孪生素数猜想：是否有无穷多对相差2的素数，比如11和13？"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "mysteries",
+      "line_id": "myst-3",
+      "filename": "mysteries-myst-3.mp3",
+      "path": "audio/narrations/number-theory/mysteries-myst-3.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "哥德巴赫猜想：每个大于2的偶数都能写成两个素数之和吗？"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "mysteries",
+      "line_id": "myst-4",
+      "filename": "mysteries-myst-4.mp3",
+      "path": "audio/narrations/number-theory/mysteries-myst-4.mp3",
+      "duration": 2.84,
+      "size": 45504,
+      "text": "黎曼猜想：素数分布的精确规律是什么？这是数学界最重要的未解问题之一！"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "mysteries",
+      "line_id": "myst-5",
+      "filename": "mysteries-myst-5.mp3",
+      "path": "audio/narrations/number-theory/mysteries-myst-5.mp3",
+      "duration": 1.5,
+      "size": 24048,
+      "text": "也许将来，你就是解开这些谜题的数学家！"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/number-theory/summary-summary-1.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "今天我们探索了数论的奥秘，让我们来回顾一下。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/number-theory/summary-summary-2.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "素数是只能被1和自己整除的数，是数字的\"原子\"。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/number-theory/summary-summary-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "埃氏筛法是找素数的聪明方法，一层层筛掉合数。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/number-theory/summary-summary-4.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "Collatz猜想说任何正整数最终都会到达1，但至今未被证明。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/number-theory/summary-summary-5.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "Ulam螺旋展示了素数分布的神秘规律。"
+    },
+    {
+      "script_id": "number-theory",
+      "section_id": "summary",
+      "line_id": "summary-6",
+      "filename": "summary-summary-6.mp3",
+      "path": "audio/narrations/number-theory/summary-summary-6.mp3",
+      "duration": 3.09,
+      "size": 49392,
+      "text": "太棒了！你已经开始探索数论的世界。继续探索其他实验，发现更多数学的乐趣吧！"
+    }
+  ],
+  "total_duration": 92.75000000000003,
+  "total_size": 1483920
+}

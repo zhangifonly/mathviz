@@ -1,0 +1,295 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 黄金分割与斐波那契实验 - 口播稿件
+ *
+ * 核心概念：探索自然界中最美的数学比例
+ * 目标受众：小学生（6-12岁），数学入门
+ */
+export const goldenRatioNarration: NarrationScript = {
+  id: 'golden-ratio',
+  title: '黄金分割与斐波那契',
+  subtitle: '探索自然界中最美的数学比例',
+  difficulty: 'beginner',
+  targetAge: '小学 6-12岁',
+  voice: 'xiaoxiao',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-01-03',
+    updatedAt: '2026-01-03',
+  },
+
+  objectives: [
+    '认识斐波那契数列',
+    '理解黄金比例的概念',
+    '观察黄金螺线的形成',
+    '发现自然界中的黄金比例',
+  ],
+
+  prerequisites: [
+    '认识数字',
+    '会做简单的加法',
+    '理解"比例"的概念',
+  ],
+
+  sections: [
+    // ========== 第一部分：开场引入 ==========
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        {
+          id: 'intro-1',
+          text: '小朋友们好！欢迎来到黄金分割与斐波那契实验。',
+          animation: { action: 'reset' },
+        },
+        {
+          id: 'intro-2',
+          text: '你知道吗？大自然里藏着一个神奇的数字，它让花朵、贝壳、甚至银河系都变得特别美丽。',
+        },
+        {
+          id: 'intro-3',
+          text: '这个数字叫做"黄金比例"，大约等于1.618。',
+        },
+        {
+          id: 'intro-4',
+          text: '今天，我们要一起探索这个神奇数字的秘密！',
+        },
+      ],
+    },
+
+    // ========== 第二部分：斐波那契数列 ==========
+    {
+      id: 'fibonacci',
+      type: 'concept',
+      title: '斐波那契数列',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'fib-1',
+          text: '首先，我们来认识一个有趣的数列——斐波那契数列。',
+        },
+        {
+          id: 'fib-2',
+          text: '它的规则很简单：每个数等于前两个数相加。',
+        },
+        {
+          id: 'fib-3',
+          text: '从1、1开始：1加1等于2，1加2等于3，2加3等于5...',
+        },
+        {
+          id: 'fib-4',
+          text: '所以数列是：1, 1, 2, 3, 5, 8, 13, 21, 34, 55...',
+        },
+        {
+          id: 'fib-5',
+          text: '这个数列是800多年前，一位叫斐波那契的数学家发现的！',
+        },
+      ],
+    },
+
+    // ========== 第三部分：黄金比例 ==========
+    {
+      id: 'golden-ratio',
+      type: 'concept',
+      title: '黄金比例',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'phi-1',
+          text: '现在来看神奇的事情！把斐波那契数列相邻两个数相除。',
+        },
+        {
+          id: 'phi-2',
+          text: '2除以1等于2，3除以2等于1.5，5除以3约等于1.67...',
+        },
+        {
+          id: 'phi-3',
+          text: '看图表！随着数字越来越大，这个比值越来越接近一个固定的数。',
+        },
+        {
+          id: 'phi-4',
+          text: '这个数就是黄金比例，用希腊字母φ表示，约等于1.618。',
+        },
+        {
+          id: 'phi-5',
+          text: '黄金比例有一个神奇的性质：φ的平方等于φ加1！',
+        },
+      ],
+    },
+
+    // ========== 第四部分：黄金螺线 ==========
+    {
+      id: 'spiral',
+      type: 'concept',
+      title: '黄金螺线',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'spiral-1',
+          text: '用黄金比例可以画出一条美丽的曲线——黄金螺线。',
+        },
+        {
+          id: 'spiral-2',
+          text: '看右边的图，这条螺线每转一圈，半径就变成原来的φ倍。',
+        },
+        {
+          id: 'spiral-3',
+          text: '鹦鹉螺的贝壳就是这种形状！',
+        },
+        {
+          id: 'spiral-4',
+          text: '你可以调整"螺线圈数"滑块，看看螺线是怎么一圈圈展开的。',
+        },
+        {
+          id: 'spiral-5',
+          text: '这种螺线在自然界中非常常见，因为它是最"高效"的生长方式。',
+        },
+      ],
+    },
+
+    // ========== 第五部分：向日葵种子 ==========
+    {
+      id: 'sunflower',
+      type: 'concept',
+      title: '向日葵种子',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'sun-1',
+          text: '看下面的图，这是向日葵种子的排列方式。',
+        },
+        {
+          id: 'sun-2',
+          text: '每颗种子相对于前一颗旋转一个特殊的角度——黄金角。',
+        },
+        {
+          id: 'sun-3',
+          text: '黄金角大约是137.5度，它和黄金比例有密切关系。',
+        },
+        {
+          id: 'sun-4',
+          text: '这种排列方式让种子之间的空隙最小，能装下最多的种子！',
+        },
+        {
+          id: 'sun-5',
+          text: '大自然真是太聪明了，用数学找到了最优的解决方案。',
+        },
+      ],
+    },
+
+    // ========== 第六部分：参数互动 ==========
+    {
+      id: 'parameters',
+      type: 'interaction',
+      title: '自己试试',
+      trigger: { type: 'parameter' },
+      lines: [
+        {
+          id: 'param-1',
+          text: '现在轮到你来试试了！',
+        },
+        {
+          id: 'param-2',
+          text: '在右边的控制面板，你可以调整斐波那契数列的项数。',
+        },
+        {
+          id: 'param-3',
+          text: '看看项数越多，比值是不是越接近1.618？',
+        },
+        {
+          id: 'param-4',
+          text: '试试调整螺线圈数，观察黄金螺线是怎么展开的。',
+        },
+        {
+          id: 'param-5',
+          text: '点击"播放动画"按钮，可以看到比值是怎么一步步收敛到黄金比例的。',
+        },
+      ],
+    },
+
+    // ========== 第七部分：自然中的黄金比例 ==========
+    {
+      id: 'nature',
+      type: 'application',
+      title: '自然中的黄金比例',
+      trigger: { type: 'manual' },
+      lines: [
+        {
+          id: 'nature-1',
+          text: '黄金比例在自然界中无处不在！',
+        },
+        {
+          id: 'nature-2',
+          text: '鹦鹉螺的贝壳是黄金螺线的形状。',
+        },
+        {
+          id: 'nature-3',
+          text: '松果的鳞片、菠萝的纹路都按斐波那契数排列。',
+        },
+        {
+          id: 'nature-4',
+          text: '甚至我们的身体也有黄金比例：手指骨节的长度比接近φ！',
+        },
+        {
+          id: 'nature-5',
+          text: '艺术家和建筑师也喜欢用黄金比例，因为它看起来特别和谐美观。',
+        },
+      ],
+    },
+
+    // ========== 第八部分：总结 ==========
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结回顾',
+      trigger: { type: 'manual' },
+      lines: [
+        {
+          id: 'summary-1',
+          text: '今天我们学习了黄金分割，让我们来回顾一下。',
+          animation: { action: 'reset' },
+        },
+        {
+          id: 'summary-2',
+          text: '斐波那契数列：每个数等于前两个数之和。',
+        },
+        {
+          id: 'summary-3',
+          text: '黄金比例φ约等于1.618，是斐波那契数列相邻两数之比的极限。',
+        },
+        {
+          id: 'summary-4',
+          text: '黄金螺线和黄金角是黄金比例在几何中的体现。',
+        },
+        {
+          id: 'summary-5',
+          text: '自然界中到处都有黄金比例，它是大自然的"美丽密码"。',
+        },
+        {
+          id: 'summary-6',
+          text: '太棒了！你已经发现了数学中最美的秘密。继续探索其他实验，发现更多数学的乐趣吧！',
+        },
+      ],
+    },
+  ],
+
+  furtherReading: [
+    {
+      title: '分形几何',
+      description: '探索自相似的神奇图形',
+      link: '/fractals',
+    },
+    {
+      title: '数论探索',
+      description: '发现数字的更多奥秘',
+      link: '/number-theory',
+    },
+  ],
+}
+
+export default goldenRatioNarration

@@ -1,0 +1,449 @@
+{
+  "script_id": "basic-arithmetic",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "小朋友们好！欢迎来到加减乘除可视化实验。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "今天，我们要用彩色方块来学习数学中最基本的四种运算。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "加法、减法、乘法、除法，听起来是不是有点难？"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/intro-intro-4.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "别担心！跟着我一起，用眼睛看、用手指数，你很快就能学会！"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "addition",
+      "line_id": "add-1",
+      "filename": "addition-add-1.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/addition-add-1.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "首先，我们来认识加法。加法就是把两堆东西合在一起。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "addition",
+      "line_id": "add-2",
+      "filename": "addition-add-2.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/addition-add-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "看！蓝色方块是第一个数，绿色方块是第二个数。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "addition",
+      "line_id": "add-3",
+      "filename": "addition-add-3.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/addition-add-3.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "把它们放在一起，数一数一共有多少个，这就是加法的结果。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "addition",
+      "line_id": "add-4",
+      "filename": "addition-add-4.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/addition-add-4.mp3",
+      "duration": 3.15,
+      "size": 50400,
+      "text": "在数轴上，加法就像向右走。从零出发，先走第一个数的步数，再走第二个数的步数。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "addition",
+      "line_id": "add-5",
+      "filename": "addition-add-5.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/addition-add-5.mp3",
+      "duration": 3.18,
+      "size": 50832,
+      "text": "加法有一个神奇的特点：交换两个数的位置，结果不变。7加5等于5加7，都是12！"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "subtraction",
+      "line_id": "sub-1",
+      "filename": "subtraction-sub-1.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/subtraction-sub-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "接下来是减法。减法就是从一堆东西里拿走一些。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "subtraction",
+      "line_id": "sub-2",
+      "filename": "subtraction-sub-2.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/subtraction-sub-2.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "看这些方块，开始有7个。现在我们要拿走5个。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "subtraction",
+      "line_id": "sub-3",
+      "filename": "subtraction-sub-3.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/subtraction-sub-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "被拿走的方块变淡了，剩下的就是减法的结果。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "subtraction",
+      "line_id": "sub-4",
+      "filename": "subtraction-sub-4.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/subtraction-sub-4.mp3",
+      "duration": 2.91,
+      "size": 46512,
+      "text": "在数轴上，减法就像向左走。从第一个数的位置出发，向左走第二个数的步数。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "subtraction",
+      "line_id": "sub-5",
+      "filename": "subtraction-sub-5.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/subtraction-sub-5.mp3",
+      "duration": 2.75,
+      "size": 43920,
+      "text": "减法是加法的\"反向操作\"。如果7加5等于12，那么12减5就等于7。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "multiplication",
+      "line_id": "mul-1",
+      "filename": "multiplication-mul-1.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/multiplication-mul-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "现在来学习乘法。乘法其实是加法的快捷方式！"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "multiplication",
+      "line_id": "mul-2",
+      "filename": "multiplication-mul-2.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/multiplication-mul-2.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "比如3乘以4，就是把4个3加在一起，或者把3个4加在一起。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "multiplication",
+      "line_id": "mul-3",
+      "filename": "multiplication-mul-3.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/multiplication-mul-3.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "看！方块排成了整齐的行和列。数一数，一共有多少个？"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "multiplication",
+      "line_id": "mul-4",
+      "filename": "multiplication-mul-4.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/multiplication-mul-4.mp3",
+      "duration": 2.89,
+      "size": 46224,
+      "text": "乘法也有交换律：3乘4等于4乘3，都是12。只是方块的排列方式不同。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "multiplication",
+      "line_id": "mul-5",
+      "filename": "multiplication-mul-5.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/multiplication-mul-5.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "记住：乘法就是\"几个几\"的简便写法。5乘3就是\"3个5\"或\"5个3\"。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "division",
+      "line_id": "div-1",
+      "filename": "division-div-1.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/division-div-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "最后是除法。除法就是把东西平均分成几份。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "division",
+      "line_id": "div-2",
+      "filename": "division-div-2.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/division-div-2.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "比如12除以3，就是把12个方块平均分成3组。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "division",
+      "line_id": "div-3",
+      "filename": "division-div-3.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/division-div-3.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "看！每组分到了4个方块。所以12除以3等于4。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "division",
+      "line_id": "div-4",
+      "filename": "division-div-4.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/division-div-4.mp3",
+      "duration": 2.73,
+      "size": 43632,
+      "text": "有时候不能正好分完，会有剩余。比如7除以3，每组2个，还剩1个。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "division",
+      "line_id": "div-5",
+      "filename": "division-div-5.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/division-div-5.mp3",
+      "duration": 2.87,
+      "size": 45936,
+      "text": "除法是乘法的\"反向操作\"。如果3乘4等于12，那么12除以3就等于4。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "animation",
+      "line_id": "anim-1",
+      "filename": "animation-anim-1.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/animation-anim-1.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "现在点击\"播放动画\"按钮，看看运算过程是怎样一步步进行的。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "animation",
+      "line_id": "anim-2",
+      "filename": "animation-anim-2.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/animation-anim-2.mp3",
+      "duration": 1.22,
+      "size": 19584,
+      "text": "第一步，我们看到第一个数的方块。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "animation",
+      "line_id": "anim-3",
+      "filename": "animation-anim-3.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/animation-anim-3.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "第二步，根据运算类型，方块会发生变化。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "animation",
+      "line_id": "anim-4",
+      "filename": "animation-anim-4.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/animation-anim-4.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "第三步，我们得到最终结果！数一数，答案对不对？"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "parameters",
+      "line_id": "param-1",
+      "filename": "parameters-param-1.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/parameters-param-1.mp3",
+      "duration": 0.84,
+      "size": 13392,
+      "text": "现在轮到你来试试了！"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "parameters",
+      "line_id": "param-2",
+      "filename": "parameters-param-2.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/parameters-param-2.mp3",
+      "duration": 2.67,
+      "size": 42768,
+      "text": "在右边的控制面板，你可以选择不同的运算：加法、减法、乘法或除法。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "parameters",
+      "line_id": "param-3",
+      "filename": "parameters-param-3.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/parameters-param-3.mp3",
+      "duration": 2.56,
+      "size": 41040,
+      "text": "拖动滑块可以改变两个数字。看看不同的数字组合会得到什么结果？"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "parameters",
+      "line_id": "param-4",
+      "filename": "parameters-param-4.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/parameters-param-4.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "试着让第一个数小于第二个数，做减法会发生什么？"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "parameters",
+      "line_id": "param-5",
+      "filename": "parameters-param-5.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/parameters-param-5.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "试着做除法，看看什么时候会有余数，什么时候正好分完？"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/application-app-1.mp3",
+      "duration": 1.39,
+      "size": 22176,
+      "text": "加减乘除在生活中到处都能用到！"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/application-app-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "买东西时，算总价要用加法。找零钱要用减法。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/application-app-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "买3包糖，每包5颗，一共多少颗？这就是乘法！"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/application-app-4.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "12块饼干分给4个小朋友，每人几块？这就是除法！"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "application",
+      "line_id": "app-5",
+      "filename": "application-app-5.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/application-app-5.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "学好四则运算，你就能解决很多生活中的数学问题啦！"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/summary-summary-1.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "今天我们学习了四种基本运算，让我们来回顾一下。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/summary-summary-2.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "加法是把东西合在一起，在数轴上向右走。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/summary-summary-3.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "减法是从一堆里拿走一些，在数轴上向左走。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/summary-summary-4.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "乘法是重复加法的简便写法，方块排成整齐的行列。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/summary-summary-5.mp3",
+      "duration": 1.34,
+      "size": 21456,
+      "text": "除法是平均分配，有时会有余数。"
+    },
+    {
+      "script_id": "basic-arithmetic",
+      "section_id": "summary",
+      "line_id": "summary-6",
+      "filename": "summary-summary-6.mp3",
+      "path": "audio/narrations/basic-arithmetic/xiaoxiao/summary-summary-6.mp3",
+      "duration": 3.39,
+      "size": 54288,
+      "text": "太棒了！你已经掌握了加减乘除的基本概念。继续探索其他实验，发现更多数学的乐趣吧！"
+    }
+  ],
+  "total_duration": 94.53999999999999,
+  "total_size": 1513008
+}

@@ -1,0 +1,248 @@
+/**
+ * 微积分讲解稿件
+ * 适合高中生（15-18岁）
+ */
+
+import type { NarrationScript } from '../types'
+
+export const calculusNarration: NarrationScript = {
+  id: 'calculus',
+  title: '微积分入门',
+  subtitle: '探索导数与积分的几何意义',
+  targetAge: '高中 15-18岁',
+  difficulty: 'intermediate',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2025-01-03',
+    updatedAt: '2025-01-03',
+  },
+
+  objectives: [
+    '理解导数的几何意义——切线斜率',
+    '理解积分的几何意义——曲线下面积',
+    '掌握微积分基本定理的直观含义',
+    '了解导数与积分的互逆关系',
+  ],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        {
+          id: 'intro-1',
+          text: '欢迎来到微积分实验！微积分是数学中最伟大的发明之一。',
+        },
+        {
+          id: 'intro-2',
+          text: '它由牛顿和莱布尼茨在17世纪独立发明，彻底改变了我们理解变化的方式。',
+        },
+        {
+          id: 'intro-3',
+          text: '今天我们将通过可视化，直观地理解导数和积分的几何意义。',
+        },
+      ],
+    },
+    {
+      id: 'derivative-concept',
+      type: 'concept',
+      title: '导数的概念',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'derivative-concept-1',
+          text: '导数描述的是函数在某一点的瞬时变化率。',
+        },
+        {
+          id: 'derivative-concept-2',
+          text: '想象你在开车，速度表显示的就是位置对时间的导数。',
+        },
+        {
+          id: 'derivative-concept-3',
+          text: '在图形上，导数等于函数曲线在该点的切线斜率。',
+        },
+        {
+          id: 'derivative-concept-4',
+          text: '斜率为正表示函数在增加，斜率为负表示函数在减少。',
+        },
+      ],
+    },
+    {
+      id: 'tangent-line',
+      type: 'animation',
+      title: '切线演示',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'tangent-line-1',
+          text: '图中蓝色曲线是我们要研究的函数。',
+        },
+        {
+          id: 'tangent-line-2',
+          text: '红色的直线是在某一点的切线，它刚好"贴着"曲线。',
+        },
+        {
+          id: 'tangent-line-3',
+          text: '拖动滑块改变 x 的位置，观察切线如何随之变化。',
+        },
+        {
+          id: 'tangent-line-4',
+          text: '注意切线的斜率：在曲线上升的地方斜率为正，下降的地方斜率为负。',
+        },
+      ],
+    },
+    {
+      id: 'derivative-formula',
+      type: 'formula',
+      title: '导数公式',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'derivative-formula-1',
+          text: '导数的定义是极限：f撇x等于h趋近于0时，f(x+h)减f(x)除以h的极限。',
+        },
+        {
+          id: 'derivative-formula-2',
+          text: '这个极限描述的是割线斜率趋近于切线斜率的过程。',
+        },
+        {
+          id: 'derivative-formula-3',
+          text: '常见的导数公式：x的n次方的导数是n乘以x的n-1次方。',
+        },
+        {
+          id: 'derivative-formula-4',
+          text: '例如，x平方的导数是2x，x立方的导数是3x平方。',
+        },
+      ],
+    },
+    {
+      id: 'integral-concept',
+      type: 'concept',
+      title: '积分的概念',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'integral-concept-1',
+          text: '现在让我们来看积分。积分可以理解为"累加"的过程。',
+        },
+        {
+          id: 'integral-concept-2',
+          text: '定积分的几何意义是曲线与x轴之间的面积。',
+        },
+        {
+          id: 'integral-concept-3',
+          text: '如果曲线在x轴上方，面积为正；在x轴下方，面积为负。',
+        },
+        {
+          id: 'integral-concept-4',
+          text: '积分符号像一个拉长的S，代表"求和"的意思。',
+        },
+      ],
+    },
+    {
+      id: 'area-demo',
+      type: 'animation',
+      title: '面积演示',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'area-demo-1',
+          text: '图中阴影部分就是定积分的值——曲线下的面积。',
+        },
+        {
+          id: 'area-demo-2',
+          text: '调整积分的上下限，观察面积如何变化。',
+        },
+        {
+          id: 'area-demo-3',
+          text: '我们可以用很多小矩形来近似这个面积，这就是黎曼和的思想。',
+        },
+        {
+          id: 'area-demo-4',
+          text: '矩形越多越细，近似就越精确，极限就是精确的积分值。',
+        },
+      ],
+    },
+    {
+      id: 'ftc',
+      type: 'concept',
+      title: '微积分基本定理',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'ftc-1',
+          text: '微积分最重要的发现是：导数和积分是互逆运算！',
+        },
+        {
+          id: 'ftc-2',
+          text: '这就是微积分基本定理，它连接了微分和积分两个看似不同的概念。',
+        },
+        {
+          id: 'ftc-3',
+          text: '如果F是f的原函数，那么f从a到b的定积分等于F(b)减F(a)。',
+        },
+        {
+          id: 'ftc-4',
+          text: '这个定理让我们可以用求原函数的方法来计算定积分。',
+        },
+      ],
+    },
+    {
+      id: 'applications',
+      type: 'application',
+      title: '实际应用',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'applications-1',
+          text: '微积分在现实中有广泛的应用。',
+        },
+        {
+          id: 'applications-2',
+          text: '物理学中，速度是位置的导数，加速度是速度的导数。',
+        },
+        {
+          id: 'applications-3',
+          text: '经济学中，边际成本是总成本对产量的导数。',
+        },
+        {
+          id: 'applications-4',
+          text: '工程学中，积分用于计算不规则形状的面积和体积。',
+        },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'summary-1',
+          text: '让我们总结一下今天学到的内容。',
+        },
+        {
+          id: 'summary-2',
+          text: '导数描述瞬时变化率，几何上是切线斜率。',
+        },
+        {
+          id: 'summary-3',
+          text: '积分描述累积量，几何上是曲线下面积。',
+        },
+        {
+          id: 'summary-4',
+          text: '微积分基本定理告诉我们，导数和积分是互逆运算。',
+        },
+        {
+          id: 'summary-5',
+          text: '希望通过这个实验，你对微积分有了更直观的理解！',
+        },
+      ],
+    },
+  ],
+}

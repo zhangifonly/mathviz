@@ -1,7 +1,10 @@
-import { useState, useEffect, useRef, useMemo } from 'react'
+import { useState, useEffect, useRef, useMemo, useCallback } from 'react'
 import 'katex/dist/katex.min.css'
 // @ts-expect-error react-katex types
 import { InlineMath, BlockMath } from 'react-katex'
+import { NarrationPresenter } from '../../components/NarrationPresenter'
+import { useNarrationOptional } from '../../contexts/NarrationContext'
+import { geometryShapesNarration } from '../../narrations/scripts/geometry-shapes'
 
 type ShapeType = 'triangle' | 'rectangle' | 'square' | 'circle' | 'parallelogram' | 'trapezoid'
 
@@ -85,8 +88,36 @@ export default function GeometryShapesExperiment() {
   const [currentStep, setCurrentStep] = useState(0)
   const [showGrid, setShowGrid] = useState(true)
   const [showMeasurements, setShowMeasurements] = useState(true)
+  const [showPresenter, setShowPresenter] = useState(false)
   const animationRef = useRef<number | null>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
+
+  // 讲解系统
+  const narration = useNarrationOptional()
+
+  // 加载讲解稿件
+  useEffect(() => {
+    if (narration) {
+      narration.loadScript(geometryShapesNarration)
+    }
+  }, [narration])
+
+  // 开始讲解 - 进入全屏 PPT 模式
+  const handleStartNarration = useCallback(() => {
+    if (narration) {
+      narration.startNarration()
+      narration.setPresenterMode(true)
+      setShowPresenter(true)
+    }
+  }, [narration])
+
+  // 退出讲解
+  const handleExitPresenter = useCallback(() => {
+    if (narration) {
+      narration.setPresenterMode(false)
+    }
+    setShowPresenter(false)
+  }, [narration])
 
   // 计算面积和周长
   const calculations = useMemo(() => {
@@ -130,7 +161,6 @@ export default function GeometryShapesExperiment() {
 
   // 生成演示步骤
   const steps: Step[] = useMemo(() => {
-    const config = shapeConfigs[shape]
     switch (shape) {
       case 'triangle':
         return [
@@ -447,28 +477,45 @@ export default function GeometryShapesExperiment() {
   const paramLabels = getParamLabels()
 
   return (
-    <div className="space-y-6">
-      <header className="flex justify-between items-center">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-800">基础几何图形</h1>
-          <p className="text-gray-600">学习常见几何图形的面积和周长计算</p>
-        </div>
-        <button
-          onClick={() => {
-            if (!isAnimating) {
-              setCurrentStep(0)
-            }
-            setIsAnimating(!isAnimating)
-          }}
-          className={`px-4 py-2 rounded-lg text-sm font-medium ${
-            isAnimating ? 'bg-red-500 text-white' : 'bg-green-500 text-white'
-          }`}
-        >
-          {isAnimating ? '停止' : '播放动画'}
-        </button>
-      </header>
+    <>
+      {/* 全屏 PPT 讲解模式 */}
+      {showPresenter && (
+        <NarrationPresenter onExit={handleExitPresenter} />
+      )}
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="space-y-6">
+        <header className="flex justify-between items-center">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-800">基础几何图形</h1>
+            <p className="text-gray-600">学习常见几何图形的面积和周长计算</p>
+          </div>
+          <div className="flex gap-2">
+            <button
+              onClick={handleStartNarration}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:shadow-xl hover:shadow-indigo-500/30 transition-all duration-200 hover:scale-105 active:scale-95"
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clipRule="evenodd" />
+              </svg>
+              <span>开始讲解</span>
+            </button>
+            <button
+              onClick={() => {
+                if (!isAnimating) {
+                  setCurrentStep(0)
+                }
+                setIsAnimating(!isAnimating)
+              }}
+              className={`px-4 py-2 rounded-lg text-sm font-medium ${
+                isAnimating ? 'bg-red-500 text-white' : 'bg-green-500 text-white'
+              }`}
+            >
+              {isAnimating ? '停止' : '播放动画'}
+            </button>
+          </div>
+        </header>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-6">
           {/* 公式展示 */}
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
@@ -708,6 +755,7 @@ export default function GeometryShapesExperiment() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

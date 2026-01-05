@@ -1,0 +1,369 @@
+{
+  "script_id": "conic-sections",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "conic-sections",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/intro-intro-1.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "欢迎来到圆锥曲线实验！今天我们要探索三种美丽的曲线。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/intro-intro-2.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "椭圆、双曲线和抛物线，它们有一个共同的名字：圆锥曲线。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/intro-intro-3.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "为什么叫圆锥曲线？因为它们都可以通过切割圆锥得到。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "cone-cutting",
+      "line_id": "cone-cutting-1",
+      "filename": "cone-cutting-cone-cutting-1.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/cone-cutting-cone-cutting-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "想象一个双圆锥，就是两个圆锥顶点对顶点连在一起。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "cone-cutting",
+      "line_id": "cone-cutting-2",
+      "filename": "cone-cutting-cone-cutting-2.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/cone-cutting-cone-cutting-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "用一个平面去切割它，根据切割角度的不同，会得到不同的曲线。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "cone-cutting",
+      "line_id": "cone-cutting-3",
+      "filename": "cone-cutting-cone-cutting-3.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/cone-cutting-cone-cutting-3.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "水平切割得到圆，倾斜切割得到椭圆。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "cone-cutting",
+      "line_id": "cone-cutting-4",
+      "filename": "cone-cutting-cone-cutting-4.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/cone-cutting-cone-cutting-4.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "平行于母线切割得到抛物线，更陡的角度切割得到双曲线。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "ellipse",
+      "line_id": "ellipse-1",
+      "filename": "ellipse-ellipse-1.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/ellipse-ellipse-1.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "椭圆是到两个定点距离之和为常数的点的轨迹。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "ellipse",
+      "line_id": "ellipse-2",
+      "filename": "ellipse-ellipse-2.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/ellipse-ellipse-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "这两个定点叫做焦点，用F1和F2表示。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "ellipse",
+      "line_id": "ellipse-3",
+      "filename": "ellipse-ellipse-3.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/ellipse-ellipse-3.mp3",
+      "duration": 2.67,
+      "size": 42768,
+      "text": "椭圆的标准方程是x平方除以a平方加y平方除以b平方等于1。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "ellipse",
+      "line_id": "ellipse-4",
+      "filename": "ellipse-ellipse-4.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/ellipse-ellipse-4.mp3",
+      "duration": 3.09,
+      "size": 49392,
+      "text": "其中a是长半轴，b是短半轴，焦距c满足c平方等于a平方减b平方。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "ellipse-demo",
+      "line_id": "ellipse-demo-1",
+      "filename": "ellipse-demo-ellipse-demo-1.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/ellipse-demo-ellipse-demo-1.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "图中显示的是一个椭圆，两个红点是焦点。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "ellipse-demo",
+      "line_id": "ellipse-demo-2",
+      "filename": "ellipse-demo-ellipse-demo-2.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/ellipse-demo-ellipse-demo-2.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "拖动椭圆上的点，观察它到两个焦点的距离之和。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "ellipse-demo",
+      "line_id": "ellipse-demo-3",
+      "filename": "ellipse-demo-ellipse-demo-3.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/ellipse-demo-ellipse-demo-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "无论点在椭圆上的什么位置，这个距离之和始终不变。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "ellipse-demo",
+      "line_id": "ellipse-demo-4",
+      "filename": "ellipse-demo-ellipse-demo-4.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/ellipse-demo-ellipse-demo-4.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "调整参数a和b，观察椭圆形状的变化。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "hyperbola",
+      "line_id": "hyperbola-1",
+      "filename": "hyperbola-hyperbola-1.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/hyperbola-hyperbola-1.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "双曲线是到两个定点距离之差的绝对值为常数的点的轨迹。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "hyperbola",
+      "line_id": "hyperbola-2",
+      "filename": "hyperbola-hyperbola-2.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/hyperbola-hyperbola-2.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "注意是距离之差，而椭圆是距离之和。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "hyperbola",
+      "line_id": "hyperbola-3",
+      "filename": "hyperbola-hyperbola-3.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/hyperbola-hyperbola-3.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "双曲线有两支，分别在两个焦点的两侧。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "hyperbola",
+      "line_id": "hyperbola-4",
+      "filename": "hyperbola-hyperbola-4.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/hyperbola-hyperbola-4.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "双曲线还有两条渐近线，曲线会无限接近但永远不会碰到它们。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "parabola",
+      "line_id": "parabola-1",
+      "filename": "parabola-parabola-1.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/parabola-parabola-1.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "抛物线是到一个定点和一条定直线距离相等的点的轨迹。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "parabola",
+      "line_id": "parabola-2",
+      "filename": "parabola-parabola-2.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/parabola-parabola-2.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "这个定点叫做焦点，定直线叫做准线。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "parabola",
+      "line_id": "parabola-3",
+      "filename": "parabola-parabola-3.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/parabola-parabola-3.mp3",
+      "duration": 2.74,
+      "size": 43776,
+      "text": "抛物线的标准方程是y平方等于2px，其中p是焦点到准线的距离。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "parabola",
+      "line_id": "parabola-4",
+      "filename": "parabola-parabola-4.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/parabola-parabola-4.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "抛物线只有一支，向一个方向无限延伸。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "eccentricity",
+      "line_id": "eccentricity-1",
+      "filename": "eccentricity-eccentricity-1.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/eccentricity-eccentricity-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "离心率是描述圆锥曲线形状的重要参数，用e表示。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "eccentricity",
+      "line_id": "eccentricity-2",
+      "filename": "eccentricity-eccentricity-2.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/eccentricity-eccentricity-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "对于椭圆，e等于c除以a，取值在0到1之间。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "eccentricity",
+      "line_id": "eccentricity-3",
+      "filename": "eccentricity-eccentricity-3.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/eccentricity-eccentricity-3.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "e越接近0，椭圆越接近圆；e越接近1，椭圆越扁。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "eccentricity",
+      "line_id": "eccentricity-4",
+      "filename": "eccentricity-eccentricity-4.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/eccentricity-eccentricity-4.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "抛物线的离心率恰好等于1，双曲线的离心率大于1。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "applications",
+      "line_id": "applications-1",
+      "filename": "applications-applications-1.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/applications-applications-1.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "圆锥曲线在天文学中有重要应用。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "applications",
+      "line_id": "applications-2",
+      "filename": "applications-applications-2.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/applications-applications-2.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "开普勒发现，行星绑着太阳运动的轨道是椭圆，太阳在一个焦点上。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "applications",
+      "line_id": "applications-3",
+      "filename": "applications-applications-3.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/applications-applications-3.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "彗星的轨道可能是椭圆、抛物线或双曲线。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "applications",
+      "line_id": "applications-4",
+      "filename": "applications-applications-4.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/applications-applications-4.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "抛物面天线利用抛物线的反射性质来聚焦信号。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/summary-summary-1.mp3",
+      "duration": 1.25,
+      "size": 20016,
+      "text": "让我们总结一下今天学到的内容。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/summary-summary-2.mp3",
+      "duration": 2.52,
+      "size": 40320,
+      "text": "圆锥曲线包括椭圆、双曲线和抛物线，都可以通过切割圆锥得到。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/summary-summary-3.mp3",
+      "duration": 1.31,
+      "size": 21024,
+      "text": "它们都可以用焦点和距离关系来定义。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/summary-summary-4.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "离心率描述了曲线的形状，在天文学中有重要应用。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/summary-summary-5.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "希望通过这个实验，你对圆锥曲线有了更直观的理解！"
+    }
+  ],
+  "total_duration": 70.95,
+  "total_size": 1135008
+}

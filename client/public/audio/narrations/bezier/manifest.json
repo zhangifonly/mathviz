@@ -1,0 +1,399 @@
+{
+  "script_id": "bezier",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "bezier",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/bezier/intro-intro-1.mp3",
+      "duration": 2.78,
+      "size": 44496,
+      "text": "欢迎来到贝塞尔曲线实验！今天我们要学习计算机图形学中最重要的曲线。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/bezier/intro-intro-2.mp3",
+      "duration": 2.58,
+      "size": 41328,
+      "text": "贝塞尔曲线广泛应用于字体设计、动画制作、汽车外形设计等领域。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/bezier/intro-intro-3.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "你在Photoshop、Illustrator中使用的钢笔工具，画的就是贝塞尔曲线。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "control-points",
+      "line_id": "control-points-1",
+      "filename": "control-points-control-points-1.mp3",
+      "path": "audio/narrations/bezier/control-points-control-points-1.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "贝塞尔曲线由一组控制点定义，曲线会被这些点拉向特定的形状。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "control-points",
+      "line_id": "control-points-2",
+      "filename": "control-points-control-points-2.mp3",
+      "path": "audio/narrations/bezier/control-points-control-points-2.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "图中黑色的点就是控制点，用P0、P1、P2等标记。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "control-points",
+      "line_id": "control-points-3",
+      "filename": "control-points-control-points-3.mp3",
+      "path": "audio/narrations/bezier/control-points-control-points-3.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "曲线一定经过第一个和最后一个控制点，但不一定经过中间的点。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "control-points",
+      "line_id": "control-points-4",
+      "filename": "control-points-control-points-4.mp3",
+      "path": "audio/narrations/bezier/control-points-control-points-4.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "你可以用鼠标拖动控制点，观察曲线如何随之变化。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "construction",
+      "line_id": "construction-1",
+      "filename": "construction-construction-1.mp3",
+      "path": "audio/narrations/bezier/construction-construction-1.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "贝塞尔曲线的构造方法叫做de Casteljau算法，非常优雅。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "construction",
+      "line_id": "construction-2",
+      "filename": "construction-construction-2.mp3",
+      "path": "audio/narrations/bezier/construction-construction-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "算法的核心是线性插值：在两点之间按比例t找一个点。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "construction",
+      "line_id": "construction-3",
+      "filename": "construction-construction-3.mp3",
+      "path": "audio/narrations/bezier/construction-construction-3.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "对相邻的控制点两两做插值，得到新的一层点，然后继续插值。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "construction",
+      "line_id": "construction-4",
+      "filename": "construction-construction-4.mp3",
+      "path": "audio/narrations/bezier/construction-construction-4.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "重复这个过程，直到只剩一个点，这个点就在曲线上。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "construction",
+      "line_id": "construction-5",
+      "filename": "construction-construction-5.mp3",
+      "path": "audio/narrations/bezier/construction-construction-5.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "勾选显示构造，可以看到彩色的中间层点和连线。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "parameter-t",
+      "line_id": "parameter-t-1",
+      "filename": "parameter-t-parameter-t-1.mp3",
+      "path": "audio/narrations/bezier/parameter-t-parameter-t-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "参数t的取值范围是0到1，它决定了曲线上点的位置。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "parameter-t",
+      "line_id": "parameter-t-2",
+      "filename": "parameter-t-parameter-t-2.mp3",
+      "path": "audio/narrations/bezier/parameter-t-parameter-t-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "当t等于0时，点在曲线的起点，也就是第一个控制点。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "parameter-t",
+      "line_id": "parameter-t-3",
+      "filename": "parameter-t-parameter-t-3.mp3",
+      "path": "audio/narrations/bezier/parameter-t-parameter-t-3.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "当t等于1时，点在曲线的终点，也就是最后一个控制点。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "parameter-t",
+      "line_id": "parameter-t-4",
+      "filename": "parameter-t-parameter-t-4.mp3",
+      "path": "audio/narrations/bezier/parameter-t-parameter-t-4.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "当t等于0.5时，点大约在曲线的中间位置。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "parameter-t",
+      "line_id": "parameter-t-5",
+      "filename": "parameter-t-parameter-t-5.mp3",
+      "path": "audio/narrations/bezier/parameter-t-parameter-t-5.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "拖动t滑块，观察红色的点如何沿着曲线移动。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "degree",
+      "line_id": "degree-1",
+      "filename": "degree-degree-1.mp3",
+      "path": "audio/narrations/bezier/degree-degree-1.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "贝塞尔曲线的阶数等于控制点数减1。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "degree",
+      "line_id": "degree-2",
+      "filename": "degree-degree-2.mp3",
+      "path": "audio/narrations/bezier/degree-degree-2.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "2个控制点是一次曲线，其实就是一条直线。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "degree",
+      "line_id": "degree-3",
+      "filename": "degree-degree-3.mp3",
+      "path": "audio/narrations/bezier/degree-degree-3.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "3个控制点是二次曲线，也叫二次贝塞尔曲线。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "degree",
+      "line_id": "degree-4",
+      "filename": "degree-degree-4.mp3",
+      "path": "audio/narrations/bezier/degree-degree-4.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "4个控制点是三次曲线，这是最常用的贝塞尔曲线。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "degree",
+      "line_id": "degree-5",
+      "filename": "degree-degree-5.mp3",
+      "path": "audio/narrations/bezier/degree-degree-5.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "点击添加点和删除点按钮，可以改变控制点数量。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "bernstein",
+      "line_id": "bernstein-1",
+      "filename": "bernstein-bernstein-1.mp3",
+      "path": "audio/narrations/bezier/bernstein-bernstein-1.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "贝塞尔曲线还可以用伯恩斯坦多项式来表示。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "bernstein",
+      "line_id": "bernstein-2",
+      "filename": "bernstein-bernstein-2.mp3",
+      "path": "audio/narrations/bezier/bernstein-bernstein-2.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "下方的图显示了各个伯恩斯坦基函数随t变化的曲线。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "bernstein",
+      "line_id": "bernstein-3",
+      "filename": "bernstein-bernstein-3.mp3",
+      "path": "audio/narrations/bezier/bernstein-bernstein-3.mp3",
+      "duration": 1.71,
+      "size": 27360,
+      "text": "每个控制点对曲线的影响由对应的基函数决定。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "bernstein",
+      "line_id": "bernstein-4",
+      "filename": "bernstein-bernstein-4.mp3",
+      "path": "audio/narrations/bezier/bernstein-bernstein-4.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "所有基函数在任意t处的和等于1，这保证了曲线的稳定性。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "properties",
+      "line_id": "properties-1",
+      "filename": "properties-properties-1.mp3",
+      "path": "audio/narrations/bezier/properties-properties-1.mp3",
+      "duration": 1.22,
+      "size": 19584,
+      "text": "贝塞尔曲线有几个重要的性质。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "properties",
+      "line_id": "properties-2",
+      "filename": "properties-properties-2.mp3",
+      "path": "audio/narrations/bezier/properties-properties-2.mp3",
+      "duration": 1.44,
+      "size": 23040,
+      "text": "第一，曲线一定经过首尾两个控制点。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "properties",
+      "line_id": "properties-3",
+      "filename": "properties-properties-3.mp3",
+      "path": "audio/narrations/bezier/properties-properties-3.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "第二，曲线在端点处与控制多边形相切。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "properties",
+      "line_id": "properties-4",
+      "filename": "properties-properties-4.mp3",
+      "path": "audio/narrations/bezier/properties-properties-4.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "第三，曲线完全位于控制点形成的凸包内。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "properties",
+      "line_id": "properties-5",
+      "filename": "properties-properties-5.mp3",
+      "path": "audio/narrations/bezier/properties-properties-5.mp3",
+      "duration": 2.64,
+      "size": 42192,
+      "text": "第四，对曲线做平移、旋转、缩放，只需对控制点做同样的变换。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "animation",
+      "line_id": "animation-1",
+      "filename": "animation-animation-1.mp3",
+      "path": "audio/narrations/bezier/animation-animation-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "点击动画按钮，可以看到参数t从0变化到1的过程。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "animation",
+      "line_id": "animation-2",
+      "filename": "animation-animation-2.mp3",
+      "path": "audio/narrations/bezier/animation-animation-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "观察红色的点如何沿着曲线从起点移动到终点。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "animation",
+      "line_id": "animation-3",
+      "filename": "animation-animation-3.mp3",
+      "path": "audio/narrations/bezier/animation-animation-3.mp3",
+      "duration": 2.56,
+      "size": 41040,
+      "text": "同时观察中间层的点如何同步移动，这就是de Casteljau算法的可视化。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/bezier/summary-summary-1.mp3",
+      "duration": 1.26,
+      "size": 20160,
+      "text": "让我们总结一下今天学到的内容。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/bezier/summary-summary-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "贝塞尔曲线由控制点定义，通过de Casteljau算法构造。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/bezier/summary-summary-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "参数t从0到1变化，生成曲线上的所有点。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/bezier/summary-summary-4.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "贝塞尔曲线在计算机图形学中有广泛应用，是设计师的重要工具。"
+    },
+    {
+      "script_id": "bezier",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/bezier/summary-summary-5.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "希望通过这个实验，你对贝塞尔曲线有了更直观的理解！"
+    }
+  ],
+  "total_duration": 77.19000000000003,
+  "total_size": 1235376
+}

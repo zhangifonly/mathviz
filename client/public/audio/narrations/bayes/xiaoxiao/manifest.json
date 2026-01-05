@@ -1,0 +1,369 @@
+{
+  "script_id": "bayes",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "bayes",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "欢迎来到贝叶斯定理实验！今天我们要学习一种强大的推理方法。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "想象你是一名医生，病人的检测结果呈阳性，他真的患病的概率是多少？"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "答案可能会让你惊讶。贝叶斯定理帮助我们正确地思考这类问题。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "conditional-prob",
+      "line_id": "conditional-prob-1",
+      "filename": "conditional-prob-conditional-prob-1.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/conditional-prob-conditional-prob-1.mp3",
+      "duration": 1.07,
+      "size": 17136,
+      "text": "首先我们要理解条件概率。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "conditional-prob",
+      "line_id": "conditional-prob-2",
+      "filename": "conditional-prob-conditional-prob-2.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/conditional-prob-conditional-prob-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "P(A|B)表示在B发生的条件下，A发生的概率。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "conditional-prob",
+      "line_id": "conditional-prob-3",
+      "filename": "conditional-prob-conditional-prob-3.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/conditional-prob-conditional-prob-3.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "例如，P(患病|阳性)表示检测阳性的人中，真正患病的比例。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "conditional-prob",
+      "line_id": "conditional-prob-4",
+      "filename": "conditional-prob-conditional-prob-4.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/conditional-prob-conditional-prob-4.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "注意，P(A|B)和P(B|A)通常是不同的！"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "bayes-formula",
+      "line_id": "bayes-formula-1",
+      "filename": "bayes-formula-bayes-formula-1.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/bayes-formula-bayes-formula-1.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "贝叶斯定理给出了条件概率的计算公式。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "bayes-formula",
+      "line_id": "bayes-formula-2",
+      "filename": "bayes-formula-bayes-formula-2.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/bayes-formula-bayes-formula-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "P(A|B)等于P(B|A)乘以P(A)除以P(B)。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "bayes-formula",
+      "line_id": "bayes-formula-3",
+      "filename": "bayes-formula-bayes-formula-3.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/bayes-formula-bayes-formula-3.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "P(A)叫做先验概率，是我们在看到证据之前对A的信念。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "bayes-formula",
+      "line_id": "bayes-formula-4",
+      "filename": "bayes-formula-bayes-formula-4.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/bayes-formula-bayes-formula-4.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "P(A|B)叫做后验概率，是看到证据B之后更新的信念。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "medical-test",
+      "line_id": "medical-test-1",
+      "filename": "medical-test-medical-test-1.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/medical-test-medical-test-1.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "让我们用一个医学检测的例子来理解贝叶斯定理。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "medical-test",
+      "line_id": "medical-test-2",
+      "filename": "medical-test-medical-test-2.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/medical-test-medical-test-2.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "假设某种疾病的患病率是1%，检测的准确率是99%。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "medical-test",
+      "line_id": "medical-test-3",
+      "filename": "medical-test-medical-test-3.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/medical-test-medical-test-3.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "如果你检测呈阳性，你真正患病的概率是多少？"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "medical-test",
+      "line_id": "medical-test-4",
+      "filename": "medical-test-medical-test-4.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/medical-test-medical-test-4.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "很多人会说99%，但正确答案大约只有50%！"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "calculation",
+      "line_id": "calculation-1",
+      "filename": "calculation-calculation-1.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/calculation-calculation-1.mp3",
+      "duration": 1.07,
+      "size": 17136,
+      "text": "让我们用贝叶斯定理来计算。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "calculation",
+      "line_id": "calculation-2",
+      "filename": "calculation-calculation-2.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/calculation-calculation-2.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "在1000人中，大约10人患病，990人健康。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "calculation",
+      "line_id": "calculation-3",
+      "filename": "calculation-calculation-3.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/calculation-calculation-3.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "10个患病者中，约10人检测阳性。990个健康者中，约10人假阳性。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "calculation",
+      "line_id": "calculation-4",
+      "filename": "calculation-calculation-4.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/calculation-calculation-4.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "所以20个阳性中只有10个真正患病，概率是50%。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "base-rate",
+      "line_id": "base-rate-1",
+      "filename": "base-rate-base-rate-1.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/base-rate-base-rate-1.mp3",
+      "duration": 1.26,
+      "size": 20160,
+      "text": "这个例子说明了基础率的重要性。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "base-rate",
+      "line_id": "base-rate-2",
+      "filename": "base-rate-base-rate-2.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/base-rate-base-rate-2.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "因为患病率很低，即使检测很准确，假阳性的绝对数量也可能很大。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "base-rate",
+      "line_id": "base-rate-3",
+      "filename": "base-rate-base-rate-3.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/base-rate-base-rate-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "忽视基础率是人们常犯的推理错误，叫做基础率谬误。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "base-rate",
+      "line_id": "base-rate-4",
+      "filename": "base-rate-base-rate-4.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/base-rate-base-rate-4.mp3",
+      "duration": 1.31,
+      "size": 21024,
+      "text": "贝叶斯定理帮助我们避免这种错误。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "interactive",
+      "line_id": "interactive-1",
+      "filename": "interactive-interactive-1.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/interactive-interactive-1.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "调整图中的参数，观察后验概率如何变化。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "interactive",
+      "line_id": "interactive-2",
+      "filename": "interactive-interactive-2.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/interactive-interactive-2.mp3",
+      "duration": 1.29,
+      "size": 20592,
+      "text": "增加患病率，后验概率会上升。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "interactive",
+      "line_id": "interactive-3",
+      "filename": "interactive-interactive-3.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/interactive-interactive-3.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "提高检测准确率，后验概率也会上升。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "interactive",
+      "line_id": "interactive-4",
+      "filename": "interactive-interactive-4.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/interactive-interactive-4.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "但只有当两者都足够高时，阳性结果才真正可靠。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "applications",
+      "line_id": "applications-1",
+      "filename": "applications-applications-1.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/applications-applications-1.mp3",
+      "duration": 1.1,
+      "size": 17568,
+      "text": "贝叶斯定理有广泛的应用。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "applications",
+      "line_id": "applications-2",
+      "filename": "applications-applications-2.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/applications-applications-2.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "垃圾邮件过滤器用贝叶斯方法判断邮件是否是垃圾邮件。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "applications",
+      "line_id": "applications-3",
+      "filename": "applications-applications-3.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/applications-applications-3.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "机器学习中，贝叶斯分类器是重要的算法。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "applications",
+      "line_id": "applications-4",
+      "filename": "applications-applications-4.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/applications-applications-4.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "法庭上，DNA证据的解读也需要贝叶斯推理。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/summary-summary-1.mp3",
+      "duration": 1.26,
+      "size": 20160,
+      "text": "让我们总结一下今天学到的内容。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/summary-summary-2.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "贝叶斯定理告诉我们如何用新证据更新概率。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/summary-summary-3.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "先验概率加上似然比，得到后验概率。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/summary-summary-4.mp3",
+      "duration": 1.5,
+      "size": 24048,
+      "text": "基础率很重要，不能只看检测准确率。"
+    },
+    {
+      "script_id": "bayes",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/bayes/xiaoxiao/summary-summary-5.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "希望通过这个实验，你对贝叶斯定理有了更直观的理解！"
+    }
+  ],
+  "total_duration": 66.85000000000001,
+  "total_size": 1069776
+}

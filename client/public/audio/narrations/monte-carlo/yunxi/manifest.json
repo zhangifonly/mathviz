@@ -1,0 +1,319 @@
+{
+  "script_id": "monte-carlo",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "monte-carlo",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/intro-intro-1.mp3",
+      "duration": 2.56,
+      "size": 41040,
+      "text": "欢迎来到蒙特卡洛方法实验！今天我们要用一种神奇的方法来估算圆周率。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/intro-intro-2.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "蒙特卡洛方法是一种利用随机数来解决问题的计算方法。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/intro-intro-3.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "它的名字来自摩纳哥的蒙特卡洛赌场，因为这种方法和赌博一样依赖随机性。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "principle",
+      "line_id": "principle-1",
+      "filename": "principle-principle-1.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/principle-principle-1.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "想象一个边长为2的正方形，里面画一个半径为1的圆。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "principle",
+      "line_id": "principle-2",
+      "filename": "principle-principle-2.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/principle-principle-2.mp3",
+      "duration": 1.48,
+      "size": 23616,
+      "text": "正方形的面积是4，圆的面积是π。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "principle",
+      "line_id": "principle-3",
+      "filename": "principle-principle-3.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/principle-principle-3.mp3",
+      "duration": 3.07,
+      "size": 49104,
+      "text": "如果我们在正方形内随机撒点，落入圆内的概率就是圆面积除以正方形面积，等于π除以4。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "principle",
+      "line_id": "principle-4",
+      "filename": "principle-principle-4.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/principle-principle-4.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "所以，圆内点数除以总点数，再乘以4，就能估算出π的值。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "visualization",
+      "line_id": "visualization-1",
+      "filename": "visualization-visualization-1.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/visualization-visualization-1.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "图中蓝色的圆是单位圆，外面的方框是边长为2的正方形。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "visualization",
+      "line_id": "visualization-2",
+      "filename": "visualization-visualization-2.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/visualization-visualization-2.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "绿色的点落在圆内，红色的点落在圆外。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "visualization",
+      "line_id": "visualization-3",
+      "filename": "visualization-visualization-3.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/visualization-visualization-3.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "随着点数增加，绿点和红点的比例会越来越接近真实的面积比。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "experiment",
+      "line_id": "experiment-1",
+      "filename": "experiment-experiment-1.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/experiment-experiment-1.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "点击开始按钮，程序会不断生成随机点。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "experiment",
+      "line_id": "experiment-2",
+      "filename": "experiment-experiment-2.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/experiment-experiment-2.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "每个点的坐标是随机的，程序会判断它是否在圆内。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "experiment",
+      "line_id": "experiment-3",
+      "filename": "experiment-experiment-3.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/experiment-experiment-3.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "判断方法很简单：如果x平方加y平方小于等于1，点就在圆内。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "experiment",
+      "line_id": "experiment-4",
+      "filename": "experiment-experiment-4.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/experiment-experiment-4.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "你可以调整速度滑块，控制每帧生成的点数。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "convergence",
+      "line_id": "convergence-1",
+      "filename": "convergence-convergence-1.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/convergence-convergence-1.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "下方的图显示了π估计值随点数增加的变化过程。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "convergence",
+      "line_id": "convergence-2",
+      "filename": "convergence-convergence-2.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/convergence-convergence-2.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "红色虚线是π的真实值3.14159。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "convergence",
+      "line_id": "convergence-3",
+      "filename": "convergence-convergence-3.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/convergence-convergence-3.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "一开始估计值波动很大，但随着点数增加，会逐渐稳定在真实值附近。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "convergence",
+      "line_id": "convergence-4",
+      "filename": "convergence-convergence-4.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/convergence-convergence-4.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "这就是大数定律的体现：样本越多，估计越准确。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "accuracy",
+      "line_id": "accuracy-1",
+      "filename": "accuracy-accuracy-1.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/accuracy-accuracy-1.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "蒙特卡洛方法的精度与点数的平方根成正比。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "accuracy",
+      "line_id": "accuracy-2",
+      "filename": "accuracy-accuracy-2.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/accuracy-accuracy-2.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "要让误差减半，需要把点数增加到4倍。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "accuracy",
+      "line_id": "accuracy-3",
+      "filename": "accuracy-accuracy-3.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/accuracy-accuracy-3.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "所以这种方法收敛比较慢，但它的优点是简单且适用范围广。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "accuracy",
+      "line_id": "accuracy-4",
+      "filename": "accuracy-accuracy-4.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/accuracy-accuracy-4.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "右侧面板显示了当前的估计值和误差。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "application",
+      "line_id": "application-1",
+      "filename": "application-application-1.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/application-application-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "蒙特卡洛方法不仅能估算π，还有很多实际应用。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "application",
+      "line_id": "application-2",
+      "filename": "application-application-2.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/application-application-2.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "在金融领域，用于计算复杂金融产品的价格和风险。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "application",
+      "line_id": "application-3",
+      "filename": "application-application-3.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/application-application-3.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "在物理学中，用于模拟粒子运动和核反应。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "application",
+      "line_id": "application-4",
+      "filename": "application-application-4.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/application-application-4.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "在人工智能中，用于游戏AI和决策优化。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/summary-summary-1.mp3",
+      "duration": 1.25,
+      "size": 20016,
+      "text": "让我们总结一下今天学到的内容。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/summary-summary-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "蒙特卡洛方法利用随机采样来估算数学量，比如圆周率π。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/summary-summary-3.mp3",
+      "duration": 3.03,
+      "size": 48528,
+      "text": "原理是：圆内点数除以总点数约等于π除以4，所以π约等于4乘以这个比值。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/summary-summary-4.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "样本越多，估计越准确，这是大数定律的体现。"
+    },
+    {
+      "script_id": "monte-carlo",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/monte-carlo/yunxi/summary-summary-5.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "希望通过这个实验，你对蒙特卡洛方法有了更直观的理解！"
+    }
+  ],
+  "total_duration": 62.74,
+  "total_size": 1004112
+}

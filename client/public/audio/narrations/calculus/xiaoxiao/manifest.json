@@ -1,0 +1,369 @@
+{
+  "script_id": "calculus",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "calculus",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "欢迎来到微积分实验！微积分是数学中最伟大的发明之一。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "它由牛顿和莱布尼茨在17世纪独立发明，彻底改变了我们理解变化的方式。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "今天我们将通过可视化，直观地理解导数和积分的几何意义。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "derivative-concept",
+      "line_id": "derivative-concept-1",
+      "filename": "derivative-concept-derivative-concept-1.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/derivative-concept-derivative-concept-1.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "导数描述的是函数在某一点的瞬时变化率。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "derivative-concept",
+      "line_id": "derivative-concept-2",
+      "filename": "derivative-concept-derivative-concept-2.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/derivative-concept-derivative-concept-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "想象你在开车，速度表显示的就是位置对时间的导数。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "derivative-concept",
+      "line_id": "derivative-concept-3",
+      "filename": "derivative-concept-derivative-concept-3.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/derivative-concept-derivative-concept-3.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "在图形上，导数等于函数曲线在该点的切线斜率。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "derivative-concept",
+      "line_id": "derivative-concept-4",
+      "filename": "derivative-concept-derivative-concept-4.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/derivative-concept-derivative-concept-4.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "斜率为正表示函数在增加，斜率为负表示函数在减少。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "tangent-line",
+      "line_id": "tangent-line-1",
+      "filename": "tangent-line-tangent-line-1.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/tangent-line-tangent-line-1.mp3",
+      "duration": 1.41,
+      "size": 22608,
+      "text": "图中蓝色曲线是我们要研究的函数。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "tangent-line",
+      "line_id": "tangent-line-2",
+      "filename": "tangent-line-tangent-line-2.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/tangent-line-tangent-line-2.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "红色的直线是在某一点的切线，它刚好贴着曲线。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "tangent-line",
+      "line_id": "tangent-line-3",
+      "filename": "tangent-line-tangent-line-3.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/tangent-line-tangent-line-3.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "拖动滑块改变x的位置，观察切线如何随之变化。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "tangent-line",
+      "line_id": "tangent-line-4",
+      "filename": "tangent-line-tangent-line-4.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/tangent-line-tangent-line-4.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "注意切线的斜率：在曲线上升的地方斜率为正，下降的地方斜率为负。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "derivative-formula",
+      "line_id": "derivative-formula-1",
+      "filename": "derivative-formula-derivative-formula-1.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/derivative-formula-derivative-formula-1.mp3",
+      "duration": 3.44,
+      "size": 55008,
+      "text": "导数的定义是极限：f撇x等于h趋近于0时，f(x+h)减f(x)除以h的极限。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "derivative-formula",
+      "line_id": "derivative-formula-2",
+      "filename": "derivative-formula-derivative-formula-2.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/derivative-formula-derivative-formula-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "这个极限描述的是割线斜率趋近于切线斜率的过程。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "derivative-formula",
+      "line_id": "derivative-formula-3",
+      "filename": "derivative-formula-derivative-formula-3.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/derivative-formula-derivative-formula-3.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "常见的导数公式：x的n次方的导数是n乘以x的n-1次方。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "derivative-formula",
+      "line_id": "derivative-formula-4",
+      "filename": "derivative-formula-derivative-formula-4.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/derivative-formula-derivative-formula-4.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "例如，x平方的导数是2x，x立方的导数是3x平方。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "integral-concept",
+      "line_id": "integral-concept-1",
+      "filename": "integral-concept-integral-concept-1.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/integral-concept-integral-concept-1.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "现在让我们来看积分。积分可以理解为累加的过程。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "integral-concept",
+      "line_id": "integral-concept-2",
+      "filename": "integral-concept-integral-concept-2.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/integral-concept-integral-concept-2.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "定积分的几何意义是曲线与x轴之间的面积。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "integral-concept",
+      "line_id": "integral-concept-3",
+      "filename": "integral-concept-integral-concept-3.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/integral-concept-integral-concept-3.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "如果曲线在x轴上方，面积为正；在x轴下方，面积为负。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "integral-concept",
+      "line_id": "integral-concept-4",
+      "filename": "integral-concept-integral-concept-4.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/integral-concept-integral-concept-4.mp3",
+      "duration": 1.71,
+      "size": 27360,
+      "text": "积分符号像一个拉长的S，代表求和的意思。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "area-demo",
+      "line_id": "area-demo-1",
+      "filename": "area-demo-area-demo-1.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/area-demo-area-demo-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "图中阴影部分就是定积分的值——曲线下的面积。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "area-demo",
+      "line_id": "area-demo-2",
+      "filename": "area-demo-area-demo-2.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/area-demo-area-demo-2.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "调整积分的上下限，观察面积如何变化。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "area-demo",
+      "line_id": "area-demo-3",
+      "filename": "area-demo-area-demo-3.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/area-demo-area-demo-3.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "我们可以用很多小矩形来近似这个面积，这就是黎曼和的思想。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "area-demo",
+      "line_id": "area-demo-4",
+      "filename": "area-demo-area-demo-4.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/area-demo-area-demo-4.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "矩形越多越细，近似就越精确，极限就是精确的积分值。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "ftc",
+      "line_id": "ftc-1",
+      "filename": "ftc-ftc-1.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/ftc-ftc-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "微积分最重要的发现是：导数和积分是互逆运算！"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "ftc",
+      "line_id": "ftc-2",
+      "filename": "ftc-ftc-2.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/ftc-ftc-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "这就是微积分基本定理，它连接了微分和积分两个看似不同的概念。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "ftc",
+      "line_id": "ftc-3",
+      "filename": "ftc-ftc-3.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/ftc-ftc-3.mp3",
+      "duration": 2.75,
+      "size": 44064,
+      "text": "如果F是f的原函数，那么f从a到b的定积分等于F(b)减F(a)。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "ftc",
+      "line_id": "ftc-4",
+      "filename": "ftc-ftc-4.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/ftc-ftc-4.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "这个定理让我们可以用求原函数的方法来计算定积分。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "applications",
+      "line_id": "applications-1",
+      "filename": "applications-applications-1.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/applications-applications-1.mp3",
+      "duration": 1.25,
+      "size": 20016,
+      "text": "微积分在现实中有广泛的应用。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "applications",
+      "line_id": "applications-2",
+      "filename": "applications-applications-2.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/applications-applications-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "物理学中，速度是位置的导数，加速度是速度的导数。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "applications",
+      "line_id": "applications-3",
+      "filename": "applications-applications-3.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/applications-applications-3.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "经济学中，边际成本是总成本对产量的导数。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "applications",
+      "line_id": "applications-4",
+      "filename": "applications-applications-4.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/applications-applications-4.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "工程学中，积分用于计算不规则形状的面积和体积。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/summary-summary-1.mp3",
+      "duration": 1.26,
+      "size": 20160,
+      "text": "让我们总结一下今天学到的内容。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/summary-summary-2.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "导数描述瞬时变化率，几何上是切线斜率。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/summary-summary-3.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "积分描述累积量，几何上是曲线下面积。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/summary-summary-4.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "微积分基本定理告诉我们，导数和积分是互逆运算。"
+    },
+    {
+      "script_id": "calculus",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/calculus/xiaoxiao/summary-summary-5.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "希望通过这个实验，你对微积分有了更直观的理解！"
+    }
+  ],
+  "total_duration": 72.57000000000004,
+  "total_size": 1161648
+}

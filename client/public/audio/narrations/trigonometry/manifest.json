@@ -1,0 +1,369 @@
+{
+  "script_id": "trigonometry",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "trigonometry",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/trigonometry/intro-intro-1.mp3",
+      "duration": 2.58,
+      "size": 41328,
+      "text": "欢迎来到三角函数实验！今天我们要学习数学中非常重要的一类函数。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/trigonometry/intro-intro-2.mp3",
+      "duration": 2.65,
+      "size": 42336,
+      "text": "三角函数描述了角度与比值之间的关系，在物理、工程中有广泛应用。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/trigonometry/intro-intro-3.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "声音的波形、交流电的变化、物体的振动，都可以用三角函数来描述。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "unit-circle",
+      "line_id": "unit-circle-1",
+      "filename": "unit-circle-unit-circle-1.mp3",
+      "path": "audio/narrations/trigonometry/unit-circle-unit-circle-1.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "理解三角函数最好的方法是通过单位圆。单位圆是半径为1的圆。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "unit-circle",
+      "line_id": "unit-circle-2",
+      "filename": "unit-circle-unit-circle-2.mp3",
+      "path": "audio/narrations/trigonometry/unit-circle-unit-circle-2.mp3",
+      "duration": 3.24,
+      "size": 51840,
+      "text": "从原点出发，画一条射线与x轴正方向形成角度θ，射线与单位圆的交点就是关键。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "unit-circle",
+      "line_id": "unit-circle-3",
+      "filename": "unit-circle-unit-circle-3.mp3",
+      "path": "audio/narrations/trigonometry/unit-circle-unit-circle-3.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "这个交点的横坐标就是cos θ，纵坐标就是sin θ。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "unit-circle",
+      "line_id": "unit-circle-4",
+      "filename": "unit-circle-unit-circle-4.mp3",
+      "path": "audio/narrations/trigonometry/unit-circle-unit-circle-4.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "图中蓝色的线段是半径，红色虚线是sin θ，绿色虚线是cos θ。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "sine-cosine",
+      "line_id": "sine-cosine-1",
+      "filename": "sine-cosine-sine-cosine-1.mp3",
+      "path": "audio/narrations/trigonometry/sine-cosine-sine-cosine-1.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "正弦函数sin θ表示角θ对应的纵坐标，取值范围是负1到1。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "sine-cosine",
+      "line_id": "sine-cosine-2",
+      "filename": "sine-cosine-sine-cosine-2.mp3",
+      "path": "audio/narrations/trigonometry/sine-cosine-sine-cosine-2.mp3",
+      "duration": 2.72,
+      "size": 43488,
+      "text": "余弦函数cos θ表示角θ对应的横坐标，取值范围也是负1到1。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "sine-cosine",
+      "line_id": "sine-cosine-3",
+      "filename": "sine-cosine-sine-cosine-3.mp3",
+      "path": "audio/narrations/trigonometry/sine-cosine-sine-cosine-3.mp3",
+      "duration": 2.82,
+      "size": 45072,
+      "text": "当θ等于0度时，sin θ等于0，cos θ等于1，点在x轴正方向。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "sine-cosine",
+      "line_id": "sine-cosine-4",
+      "filename": "sine-cosine-sine-cosine-4.mp3",
+      "path": "audio/narrations/trigonometry/sine-cosine-sine-cosine-4.mp3",
+      "duration": 2.88,
+      "size": 46080,
+      "text": "当θ等于90度时，sin θ等于1，cos θ等于0，点在y轴正方向。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "sine-cosine",
+      "line_id": "sine-cosine-5",
+      "filename": "sine-cosine-sine-cosine-5.mp3",
+      "path": "audio/narrations/trigonometry/sine-cosine-sine-cosine-5.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "调整角度滑块，观察sin和cos值如何变化。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "tangent",
+      "line_id": "tangent-1",
+      "filename": "tangent-tangent-1.mp3",
+      "path": "audio/narrations/trigonometry/tangent-tangent-1.mp3",
+      "duration": 2.87,
+      "size": 45936,
+      "text": "正切函数tan θ等于sin θ除以cos θ，也就是纵坐标除以横坐标。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "tangent",
+      "line_id": "tangent-2",
+      "filename": "tangent-tangent-2.mp3",
+      "path": "audio/narrations/trigonometry/tangent-tangent-2.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "几何上，tan θ表示射线的斜率，即直线的倾斜程度。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "tangent",
+      "line_id": "tangent-3",
+      "filename": "tangent-tangent-3.mp3",
+      "path": "audio/narrations/trigonometry/tangent-tangent-3.mp3",
+      "duration": 2.97,
+      "size": 47520,
+      "text": "当θ等于45度时，tan θ等于1，因为sin 45度等于cos 45度。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "tangent",
+      "line_id": "tangent-4",
+      "filename": "tangent-tangent-4.mp3",
+      "path": "audio/narrations/trigonometry/tangent-tangent-4.mp3",
+      "duration": 2.57,
+      "size": 41184,
+      "text": "当θ接近90度时，cos θ接近0，tan θ趋向无穷大。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "identity",
+      "line_id": "identity-1",
+      "filename": "identity-identity-1.mp3",
+      "path": "audio/narrations/trigonometry/identity-identity-1.mp3",
+      "duration": 2.74,
+      "size": 43776,
+      "text": "三角函数有一个最重要的恒等式：sin平方θ加cos平方θ等于1。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "identity",
+      "line_id": "identity-2",
+      "filename": "identity-identity-2.mp3",
+      "path": "audio/narrations/trigonometry/identity-identity-2.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "这是因为单位圆上的点到原点距离为1，根据勾股定理得到。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "identity",
+      "line_id": "identity-3",
+      "filename": "identity-identity-3.mp3",
+      "path": "audio/narrations/trigonometry/identity-identity-3.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "无论角度θ是多少，这个等式永远成立。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "identity",
+      "line_id": "identity-4",
+      "filename": "identity-identity-4.mp3",
+      "path": "audio/narrations/trigonometry/identity-identity-4.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "你可以用右侧显示的sin和cos值验证这个恒等式。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "wave",
+      "line_id": "wave-1",
+      "filename": "wave-wave-1.mp3",
+      "path": "audio/narrations/trigonometry/wave-wave-1.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "下方的图展示了正弦波和余弦波的形状。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "wave",
+      "line_id": "wave-2",
+      "filename": "wave-wave-2.mp3",
+      "path": "audio/narrations/trigonometry/wave-wave-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "红色曲线是正弦波sin(x)，绿色曲线是余弦波cos(x)。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "wave",
+      "line_id": "wave-3",
+      "filename": "wave-wave-3.mp3",
+      "path": "audio/narrations/trigonometry/wave-wave-3.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "它们的形状完全相同，只是相位不同，余弦波比正弦波提前了90度。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "wave",
+      "line_id": "wave-4",
+      "filename": "wave-wave-4.mp3",
+      "path": "audio/narrations/trigonometry/wave-wave-4.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "你可以调整振幅、频率和相位参数，观察波形如何变化。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "animation",
+      "line_id": "animation-1",
+      "filename": "animation-animation-1.mp3",
+      "path": "audio/narrations/trigonometry/animation-animation-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "点击开始动画按钮，可以看到角度自动增加的过程。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "animation",
+      "line_id": "animation-2",
+      "filename": "animation-animation-2.mp3",
+      "path": "audio/narrations/trigonometry/animation-animation-2.mp3",
+      "duration": 2.67,
+      "size": 42768,
+      "text": "观察单位圆上的点如何绕圆周运动，同时sin和cos值如何周期性变化。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "animation",
+      "line_id": "animation-3",
+      "filename": "animation-animation-3.mp3",
+      "path": "audio/narrations/trigonometry/animation-animation-3.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "这就是三角函数周期性的直观体现，每转一圈，函数值重复一次。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "application",
+      "line_id": "application-1",
+      "filename": "application-application-1.mp3",
+      "path": "audio/narrations/trigonometry/application-application-1.mp3",
+      "duration": 1.35,
+      "size": 21600,
+      "text": "三角函数在生活中有很多应用。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "application",
+      "line_id": "application-2",
+      "filename": "application-application-2.mp3",
+      "path": "audio/narrations/trigonometry/application-application-2.mp3",
+      "duration": 2.99,
+      "size": 47808,
+      "text": "声音是空气的振动，可以用正弦波来描述。音乐中的音调就是不同频率的正弦波。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "application",
+      "line_id": "application-3",
+      "filename": "application-application-3.mp3",
+      "path": "audio/narrations/trigonometry/application-application-3.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "交流电的电压随时间按正弦规律变化，这就是为什么叫交流电。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "application",
+      "line_id": "application-4",
+      "filename": "application-application-4.mp3",
+      "path": "audio/narrations/trigonometry/application-application-4.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "在测量和导航中，三角函数用于计算距离和角度。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/trigonometry/summary-summary-1.mp3",
+      "duration": 1.26,
+      "size": 20160,
+      "text": "让我们总结一下今天学到的内容。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/trigonometry/summary-summary-2.mp3",
+      "duration": 3.49,
+      "size": 55872,
+      "text": "三角函数通过单位圆定义：cos θ是横坐标，sin θ是纵坐标，tan θ是它们的比值。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/trigonometry/summary-summary-3.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "基本恒等式sin²θ + cos²θ = 1永远成立。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/trigonometry/summary-summary-4.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "三角函数是周期函数，在描述振动和波动现象中非常重要。"
+    },
+    {
+      "script_id": "trigonometry",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/trigonometry/summary-summary-5.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "希望通过这个实验，你对三角函数有了更直观的理解！"
+    }
+  ],
+  "total_duration": 85.66,
+  "total_size": 1370448
+}

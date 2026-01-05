@@ -1,0 +1,449 @@
+{
+  "script_id": "geometry-shapes",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/geometry-shapes/intro-intro-1.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "小朋友们好！欢迎来到基础几何图形实验。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/geometry-shapes/intro-intro-2.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "你有没有注意过，我们身边到处都是几何图形？"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/geometry-shapes/intro-intro-3.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "窗户是长方形，钟表是圆形，三明治切开是三角形。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/geometry-shapes/intro-intro-4.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "今天，我们要学习这些图形的面积和周长怎么计算。准备好了吗？"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/geometry-shapes/concept-concept-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "首先，我们来认识两个重要的概念：面积和周长。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/geometry-shapes/concept-concept-2.mp3",
+      "duration": 2.96,
+      "size": 47376,
+      "text": "面积是图形所占的平面大小。想象一下，给图形涂颜色，涂满需要多少颜料。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/geometry-shapes/concept-concept-3.mp3",
+      "duration": 2.83,
+      "size": 45360,
+      "text": "周长是图形边界的总长度。想象一只蚂蚁沿着图形的边走一圈，走了多远。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/geometry-shapes/concept-concept-4.mp3",
+      "duration": 3.41,
+      "size": 54576,
+      "text": "面积的单位是\"平方单位\"，比如平方厘米、平方米。周长的单位是\"长度单位\"，比如厘米、米。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "triangle",
+      "line_id": "tri-1",
+      "filename": "triangle-tri-1.mp3",
+      "path": "audio/narrations/geometry-shapes/triangle-tri-1.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "先来看三角形。三角形有三条边和三个角。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "triangle",
+      "line_id": "tri-2",
+      "filename": "triangle-tri-2.mp3",
+      "path": "audio/narrations/geometry-shapes/triangle-tri-2.mp3",
+      "duration": 1.5,
+      "size": 24048,
+      "text": "三角形的面积公式是：底乘以高除以2。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "triangle",
+      "line_id": "tri-3",
+      "filename": "triangle-tri-3.mp3",
+      "path": "audio/narrations/geometry-shapes/triangle-tri-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "为什么要除以2呢？因为三角形是长方形的一半！"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "triangle",
+      "line_id": "tri-4",
+      "filename": "triangle-tri-4.mp3",
+      "path": "audio/narrations/geometry-shapes/triangle-tri-4.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "把两个相同的三角形拼在一起，就变成了一个长方形。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "triangle",
+      "line_id": "tri-5",
+      "filename": "triangle-tri-5.mp3",
+      "path": "audio/narrations/geometry-shapes/triangle-tri-5.mp3",
+      "duration": 1.32,
+      "size": 21168,
+      "text": "周长就是三条边加起来的总长度。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "rectangle",
+      "line_id": "rect-1",
+      "filename": "rectangle-rect-1.mp3",
+      "path": "audio/narrations/geometry-shapes/rectangle-rect-1.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "长方形有四条边，对边相等，四个角都是直角。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "rectangle",
+      "line_id": "rect-2",
+      "filename": "rectangle-rect-2.mp3",
+      "path": "audio/narrations/geometry-shapes/rectangle-rect-2.mp3",
+      "duration": 1.49,
+      "size": 23904,
+      "text": "长方形的面积公式最简单：长乘以宽。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "rectangle",
+      "line_id": "rect-3",
+      "filename": "rectangle-rect-3.mp3",
+      "path": "audio/narrations/geometry-shapes/rectangle-rect-3.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "周长是四条边加起来，也就是2乘以长加宽。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "rectangle",
+      "line_id": "rect-4",
+      "filename": "rectangle-rect-4.mp3",
+      "path": "audio/narrations/geometry-shapes/rectangle-rect-4.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "正方形是特殊的长方形，四条边都相等。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "rectangle",
+      "line_id": "rect-5",
+      "filename": "rectangle-rect-5.mp3",
+      "path": "audio/narrations/geometry-shapes/rectangle-rect-5.mp3",
+      "duration": 2.74,
+      "size": 43776,
+      "text": "正方形的面积是边长乘以边长，也叫边长的平方。周长是4乘以边长。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "circle",
+      "line_id": "circle-1",
+      "filename": "circle-circle-1.mp3",
+      "path": "audio/narrations/geometry-shapes/circle-circle-1.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "圆是一个特别的图形，它没有角，边是弯曲的。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "circle",
+      "line_id": "circle-2",
+      "filename": "circle-circle-2.mp3",
+      "path": "audio/narrations/geometry-shapes/circle-circle-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "圆的大小由半径决定。半径是从圆心到边上任意一点的距离。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "circle",
+      "line_id": "circle-3",
+      "filename": "circle-circle-3.mp3",
+      "path": "audio/narrations/geometry-shapes/circle-circle-3.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "圆的面积公式是：派乘以半径的平方。派约等于3.14。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "circle",
+      "line_id": "circle-4",
+      "filename": "circle-circle-4.mp3",
+      "path": "audio/narrations/geometry-shapes/circle-circle-4.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "圆的周长叫做圆周，公式是：2乘以派乘以半径。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "circle",
+      "line_id": "circle-5",
+      "filename": "circle-circle-5.mp3",
+      "path": "audio/narrations/geometry-shapes/circle-circle-5.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "派是一个神奇的数字，它是圆周长和直径的比值，永远不变！"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "parallelogram",
+      "line_id": "para-1",
+      "filename": "parallelogram-para-1.mp3",
+      "path": "audio/narrations/geometry-shapes/parallelogram-para-1.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "平行四边形的两组对边分别平行且相等。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "parallelogram",
+      "line_id": "para-2",
+      "filename": "parallelogram-para-2.mp3",
+      "path": "audio/narrations/geometry-shapes/parallelogram-para-2.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "平行四边形的面积公式和长方形一样：底乘以高。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "parallelogram",
+      "line_id": "para-3",
+      "filename": "parallelogram-para-3.mp3",
+      "path": "audio/narrations/geometry-shapes/parallelogram-para-3.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "注意！这里的高是垂直于底边的高度，不是斜边的长度。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "parallelogram",
+      "line_id": "para-4",
+      "filename": "parallelogram-para-4.mp3",
+      "path": "audio/narrations/geometry-shapes/parallelogram-para-4.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "梯形只有一组对边平行，叫做上底和下底。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "parallelogram",
+      "line_id": "para-5",
+      "filename": "parallelogram-para-5.mp3",
+      "path": "audio/narrations/geometry-shapes/parallelogram-para-5.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "梯形的面积公式是：上底加下底，乘以高，再除以2。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "parameters",
+      "line_id": "param-1",
+      "filename": "parameters-param-1.mp3",
+      "path": "audio/narrations/geometry-shapes/parameters-param-1.mp3",
+      "duration": 0.84,
+      "size": 13392,
+      "text": "现在轮到你来试试了！"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "parameters",
+      "line_id": "param-2",
+      "filename": "parameters-param-2.mp3",
+      "path": "audio/narrations/geometry-shapes/parameters-param-2.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "在右边的控制面板，你可以选择不同的图形。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "parameters",
+      "line_id": "param-3",
+      "filename": "parameters-param-3.mp3",
+      "path": "audio/narrations/geometry-shapes/parameters-param-3.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "拖动滑块可以改变图形的大小。看看面积和周长会怎么变化？"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "parameters",
+      "line_id": "param-4",
+      "filename": "parameters-param-4.mp3",
+      "path": "audio/narrations/geometry-shapes/parameters-param-4.mp3",
+      "duration": 1.51,
+      "size": 24192,
+      "text": "试试把边长变大一倍，面积会变成几倍？"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "parameters",
+      "line_id": "param-5",
+      "filename": "parameters-param-5.mp3",
+      "path": "audio/narrations/geometry-shapes/parameters-param-5.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "你可以打开或关闭网格和标注，更清楚地观察图形。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/geometry-shapes/application-app-1.mp3",
+      "duration": 1.32,
+      "size": 21168,
+      "text": "几何图形的计算在生活中非常有用！"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/geometry-shapes/application-app-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "装修房间时，要计算地板的面积，才知道买多少地砖。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/geometry-shapes/application-app-3.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "给花园围栅栏，要计算周长，才知道买多长的栅栏。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/geometry-shapes/application-app-4.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "做披萨时，圆形披萨的大小就是用面积来衡量的。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "application",
+      "line_id": "app-5",
+      "filename": "application-app-5.mp3",
+      "path": "audio/narrations/geometry-shapes/application-app-5.mp3",
+      "duration": 1.4,
+      "size": 22320,
+      "text": "学好几何，你就能解决很多实际问题啦！"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/geometry-shapes/summary-summary-1.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "今天我们学习了六种几何图形，让我们来回顾一下。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/geometry-shapes/summary-summary-2.mp3",
+      "duration": 1.24,
+      "size": 19872,
+      "text": "三角形面积等于底乘高除以2。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/geometry-shapes/summary-summary-3.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "长方形面积等于长乘宽，正方形面积等于边长的平方。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/geometry-shapes/summary-summary-4.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "圆的面积等于派乘半径的平方，周长等于2派r。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/geometry-shapes/summary-summary-5.mp3",
+      "duration": 2.56,
+      "size": 41040,
+      "text": "平行四边形面积等于底乘高，梯形面积等于上底加下底乘高除以2。"
+    },
+    {
+      "script_id": "geometry-shapes",
+      "section_id": "summary",
+      "line_id": "summary-6",
+      "filename": "summary-summary-6.mp3",
+      "path": "audio/narrations/geometry-shapes/summary-summary-6.mp3",
+      "duration": 3.35,
+      "size": 53568,
+      "text": "太棒了！你已经掌握了基础几何图形的知识。继续探索其他实验，发现更多数学的乐趣吧！"
+    }
+  ],
+  "total_duration": 86.31,
+  "total_size": 1381104
+}

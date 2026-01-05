@@ -1,0 +1,369 @@
+{
+  "script_id": "clt",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "clt",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/clt/intro-intro-1.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "欢迎来到中心极限定理实验！这是统计学中最重要的定理之一。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/clt/intro-intro-2.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "你有没有注意到，很多自然现象都服从正态分布，也就是钟形曲线？"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/clt/intro-intro-3.mp3",
+      "duration": 3.0,
+      "size": 47952,
+      "text": "身高、考试成绩、测量误差……为什么都是这个形状？中心极限定理给出了答案。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "theorem",
+      "line_id": "theorem-1",
+      "filename": "theorem-theorem-1.mp3",
+      "path": "audio/narrations/clt/theorem-theorem-1.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "中心极限定理说：大量独立随机变量的和，近似服从正态分布。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "theorem",
+      "line_id": "theorem-2",
+      "filename": "theorem-theorem-2.mp3",
+      "path": "audio/narrations/clt/theorem-theorem-2.mp3",
+      "duration": 2.71,
+      "size": 43344,
+      "text": "更准确地说，无论原始分布是什么形状，样本均值的分布都趋向正态分布。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "theorem",
+      "line_id": "theorem-3",
+      "filename": "theorem-theorem-3.mp3",
+      "path": "audio/narrations/clt/theorem-theorem-3.mp3",
+      "duration": 1.42,
+      "size": 22752,
+      "text": "样本量越大，这个近似就越精确。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "theorem",
+      "line_id": "theorem-4",
+      "filename": "theorem-theorem-4.mp3",
+      "path": "audio/narrations/clt/theorem-theorem-4.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "这就解释了为什么正态分布在自然界中如此普遍。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "dice-example",
+      "line_id": "dice-example-1",
+      "filename": "dice-example-dice-example-1.mp3",
+      "path": "audio/narrations/clt/dice-example-dice-example-1.mp3",
+      "duration": 1.24,
+      "size": 19872,
+      "text": "让我们用掷骰子来理解这个定理。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "dice-example",
+      "line_id": "dice-example-2",
+      "filename": "dice-example-dice-example-2.mp3",
+      "path": "audio/narrations/clt/dice-example-dice-example-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "掷一个骰子，点数是1到6的均匀分布，不是正态分布。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "dice-example",
+      "line_id": "dice-example-3",
+      "filename": "dice-example-dice-example-3.mp3",
+      "path": "audio/narrations/clt/dice-example-dice-example-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "但如果掷两个骰子求和，分布就开始有点像三角形了。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "dice-example",
+      "line_id": "dice-example-4",
+      "filename": "dice-example-dice-example-4.mp3",
+      "path": "audio/narrations/clt/dice-example-dice-example-4.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "掷更多骰子求和，分布会越来越接近正态分布。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "simulation",
+      "line_id": "simulation-1",
+      "filename": "simulation-simulation-1.mp3",
+      "path": "audio/narrations/clt/simulation-simulation-1.mp3",
+      "duration": 1.19,
+      "size": 19008,
+      "text": "图中显示的是样本均值的分布。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "simulation",
+      "line_id": "simulation-2",
+      "filename": "simulation-simulation-2.mp3",
+      "path": "audio/narrations/clt/simulation-simulation-2.mp3",
+      "duration": 1.48,
+      "size": 23616,
+      "text": "调整样本量n，观察分布形状的变化。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "simulation",
+      "line_id": "simulation-3",
+      "filename": "simulation-simulation-3.mp3",
+      "path": "audio/narrations/clt/simulation-simulation-3.mp3",
+      "duration": 1.29,
+      "size": 20592,
+      "text": "当n很小时，分布可能很不规则。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "simulation",
+      "line_id": "simulation-4",
+      "filename": "simulation-simulation-4.mp3",
+      "path": "audio/narrations/clt/simulation-simulation-4.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "随着n增大，分布越来越接近正态分布的钟形曲线。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "different-distributions",
+      "line_id": "different-distributions-1",
+      "filename": "different-distributions-different-distributions-1.mp3",
+      "path": "audio/narrations/clt/different-distributions-different-distributions-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "中心极限定理的神奇之处在于，它对几乎任何原始分布都成立。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "different-distributions",
+      "line_id": "different-distributions-2",
+      "filename": "different-distributions-different-distributions-2.mp3",
+      "path": "audio/narrations/clt/different-distributions-different-distributions-2.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "选择不同的原始分布：均匀分布、指数分布、甚至双峰分布。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "different-distributions",
+      "line_id": "different-distributions-3",
+      "filename": "different-distributions-different-distributions-3.mp3",
+      "path": "audio/narrations/clt/different-distributions-different-distributions-3.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "无论原始分布多么奇怪，样本均值的分布都会趋向正态。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "different-distributions",
+      "line_id": "different-distributions-4",
+      "filename": "different-distributions-different-distributions-4.mp3",
+      "path": "audio/narrations/clt/different-distributions-different-distributions-4.mp3",
+      "duration": 1.22,
+      "size": 19440,
+      "text": "这就是中心极限定理的普适性。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "parameters",
+      "line_id": "parameters-1",
+      "filename": "parameters-parameters-1.mp3",
+      "path": "audio/narrations/clt/parameters-parameters-1.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "中心极限定理还告诉我们样本均值的参数。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "parameters",
+      "line_id": "parameters-2",
+      "filename": "parameters-parameters-2.mp3",
+      "path": "audio/narrations/clt/parameters-parameters-2.mp3",
+      "duration": 1.33,
+      "size": 21312,
+      "text": "样本均值的期望等于总体均值μ。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "parameters",
+      "line_id": "parameters-3",
+      "filename": "parameters-parameters-3.mp3",
+      "path": "audio/narrations/clt/parameters-parameters-3.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "样本均值的标准差等于总体标准差σ除以根号n。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "parameters",
+      "line_id": "parameters-4",
+      "filename": "parameters-parameters-4.mp3",
+      "path": "audio/narrations/clt/parameters-parameters-4.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "这意味着样本量越大，样本均值的波动越小。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "sample-size",
+      "line_id": "sample-size-1",
+      "filename": "sample-size-sample-size-1.mp3",
+      "path": "audio/narrations/clt/sample-size-sample-size-1.mp3",
+      "duration": 1.36,
+      "size": 21744,
+      "text": "样本量n对近似效果有重要影响。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "sample-size",
+      "line_id": "sample-size-2",
+      "filename": "sample-size-sample-size-2.mp3",
+      "path": "audio/narrations/clt/sample-size-sample-size-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "一般来说，n大于30时，正态近似就相当好了。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "sample-size",
+      "line_id": "sample-size-3",
+      "filename": "sample-size-sample-size-3.mp3",
+      "path": "audio/narrations/clt/sample-size-sample-size-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "如果原始分布本身就接近正态，更小的n就足够了。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "sample-size",
+      "line_id": "sample-size-4",
+      "filename": "sample-size-sample-size-4.mp3",
+      "path": "audio/narrations/clt/sample-size-sample-size-4.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "如果原始分布很偏斜，可能需要更大的n。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "applications",
+      "line_id": "applications-1",
+      "filename": "applications-applications-1.mp3",
+      "path": "audio/narrations/clt/applications-applications-1.mp3",
+      "duration": 1.41,
+      "size": 22608,
+      "text": "中心极限定理是统计推断的基础。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "applications",
+      "line_id": "applications-2",
+      "filename": "applications-applications-2.mp3",
+      "path": "audio/narrations/clt/applications-applications-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "它让我们可以用正态分布来构造置信区间和假设检验。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "applications",
+      "line_id": "applications-3",
+      "filename": "applications-applications-3.mp3",
+      "path": "audio/narrations/clt/applications-applications-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "质量控制中，产品尺寸的平均值服从正态分布。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "applications",
+      "line_id": "applications-4",
+      "filename": "applications-applications-4.mp3",
+      "path": "audio/narrations/clt/applications-applications-4.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "民意调查中，样本比例的分布也近似正态。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/clt/summary-summary-1.mp3",
+      "duration": 1.26,
+      "size": 20160,
+      "text": "让我们总结一下今天学到的内容。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/clt/summary-summary-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "中心极限定理说，样本均值的分布趋向正态分布。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/clt/summary-summary-3.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "这个结论与原始分布的形状无关，只要样本量足够大。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/clt/summary-summary-4.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "这解释了为什么正态分布在自然界中如此普遍。"
+    },
+    {
+      "script_id": "clt",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/clt/summary-summary-5.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "希望通过这个实验，你对中心极限定理有了更直观的理解！"
+    }
+  ],
+  "total_duration": 66.39999999999999,
+  "total_size": 1062576
+}

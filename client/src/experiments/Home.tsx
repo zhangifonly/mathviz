@@ -16,13 +16,13 @@ interface Experiment {
   hasSteps: boolean
 }
 
-// 难度等级配置
-const difficultyConfig: Record<DifficultyLevel, { label: string; color: string; bgColor: string; ageRange: string }> = {
-  beginner: { label: '入门级', color: 'text-green-700', bgColor: 'bg-green-100', ageRange: '小学 6-12岁' },
-  elementary: { label: '基础级', color: 'text-blue-700', bgColor: 'bg-blue-100', ageRange: '初中 12-15岁' },
-  intermediate: { label: '中级', color: 'text-yellow-700', bgColor: 'bg-yellow-100', ageRange: '高中 15-18岁' },
-  advanced: { label: '高级', color: 'text-orange-700', bgColor: 'bg-orange-100', ageRange: '大学本科' },
-  expert: { label: '专业级', color: 'text-red-700', bgColor: 'bg-red-100', ageRange: '研究生+' },
+// 难度等级配置 - 使用更精美的渐变色
+const difficultyConfig: Record<DifficultyLevel, { label: string; color: string; bgColor: string; gradient: string; ageRange: string }> = {
+  beginner: { label: '入门级', color: 'text-emerald-700', bgColor: 'bg-emerald-50', gradient: 'from-emerald-400 to-teal-500', ageRange: '小学 6-12岁' },
+  elementary: { label: '基础级', color: 'text-blue-700', bgColor: 'bg-blue-50', gradient: 'from-blue-400 to-indigo-500', ageRange: '初中 12-15岁' },
+  intermediate: { label: '中级', color: 'text-amber-700', bgColor: 'bg-amber-50', gradient: 'from-amber-400 to-orange-500', ageRange: '高中 15-18岁' },
+  advanced: { label: '高级', color: 'text-purple-700', bgColor: 'bg-purple-50', gradient: 'from-purple-400 to-pink-500', ageRange: '大学本科' },
+  expert: { label: '专业级', color: 'text-rose-700', bgColor: 'bg-rose-50', gradient: 'from-rose-400 to-red-500', ageRange: '研究生+' },
 }
 
 // 主题分类
@@ -577,74 +577,95 @@ export default function Home() {
 
   return (
     <div className="max-w-7xl mx-auto">
-      {/* 头部 */}
-      <header className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-800 mb-2">数学之美</h1>
-        <p className="text-gray-600">
-          通过交互式可视化，探索数学的奥秘与美感。所有实验都配有详细说明、演示步骤和动画效果。
-        </p>
+      {/* 头部 - 更精美的设计 */}
+      <header className="mb-6 md:mb-10">
+        <div className="flex items-center gap-3 md:gap-4 mb-3">
+          <div className="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center shadow-xl shadow-indigo-500/30">
+            <span className="text-2xl md:text-3xl text-white">∑</span>
+          </div>
+          <div>
+            <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-slate-800 via-indigo-700 to-purple-700 bg-clip-text text-transparent">
+              数学之美
+            </h1>
+            <p className="text-slate-500 text-sm md:text-base mt-0.5 md:mt-1">
+              通过交互式可视化，探索数学的奥秘与美感
+            </p>
+          </div>
+        </div>
       </header>
 
-      {/* 统计卡片 */}
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
-        {(Object.keys(difficultyConfig) as DifficultyLevel[]).map((level) => (
-          <button
-            key={level}
-            onClick={() => setSelectedDifficulty(selectedDifficulty === level ? 'all' : level)}
-            className={`p-4 rounded-xl border-2 transition-all ${
-              selectedDifficulty === level
-                ? 'border-blue-500 bg-blue-50'
-                : 'border-gray-200 bg-white hover:border-gray-300'
-            }`}
-          >
-            <div className={`text-2xl font-bold ${difficultyConfig[level].color}`}>
-              {difficultyStats[level]}
-            </div>
-            <div className="text-sm font-medium text-gray-700">{difficultyConfig[level].label}</div>
-            <div className="text-xs text-gray-500">{difficultyConfig[level].ageRange}</div>
-          </button>
-        ))}
+      {/* 统计卡片 - 移动端横向滚动 */}
+      <div className="mb-6 md:mb-10 -mx-4 px-4 md:mx-0 md:px-0">
+        <div className="flex md:grid md:grid-cols-5 gap-3 md:gap-4 overflow-x-auto pb-2 md:pb-0 snap-x snap-mandatory md:snap-none">
+          {(Object.keys(difficultyConfig) as DifficultyLevel[]).map((level) => (
+            <button
+              key={level}
+              onClick={() => setSelectedDifficulty(selectedDifficulty === level ? 'all' : level)}
+              className={`relative flex-shrink-0 w-32 md:w-auto p-4 md:p-5 rounded-2xl border-2 transition-all duration-300 overflow-hidden group snap-start ${
+                selectedDifficulty === level
+                  ? 'border-indigo-400 shadow-lg shadow-indigo-500/20 scale-[1.02]'
+                  : 'border-slate-200 bg-white hover:border-slate-300 hover:shadow-md'
+              }`}
+            >
+              {/* 背景渐变装饰 */}
+              <div className={`absolute inset-0 bg-gradient-to-br ${difficultyConfig[level].gradient} opacity-0 group-hover:opacity-5 transition-opacity`} />
+
+              <div className={`text-2xl md:text-3xl font-bold bg-gradient-to-r ${difficultyConfig[level].gradient} bg-clip-text text-transparent`}>
+                {difficultyStats[level]}
+              </div>
+              <div className="text-xs md:text-sm font-semibold text-slate-700 mt-1">{difficultyConfig[level].label}</div>
+              <div className="text-xs text-slate-400 mt-0.5 hidden md:block">{difficultyConfig[level].ageRange}</div>
+            </button>
+          ))}
+        </div>
       </div>
 
-      {/* 筛选栏 */}
-      <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 mb-8">
-        <div className="flex flex-wrap gap-4 items-center">
+      {/* 筛选栏 - 玻璃态设计 */}
+      <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg shadow-slate-200/50 border border-slate-200/50 p-4 md:p-5 mb-6 md:mb-10">
+        <div className="space-y-3 md:space-y-0 md:flex md:flex-wrap md:gap-4 md:items-center">
           {/* 搜索框 */}
-          <div className="flex-1 min-w-[200px]">
+          <div className="w-full md:flex-1 md:min-w-[200px] relative">
+            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
             <input
               type="text"
               placeholder="搜索实验..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-400 transition-all outline-none text-base"
             />
           </div>
 
-          {/* 主题筛选 */}
-          <div className="flex flex-wrap gap-2">
-            <button
-              onClick={() => setSelectedTopic('all')}
-              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                selectedTopic === 'all'
-                  ? 'bg-blue-500 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              全部主题
-            </button>
-            {topicCategories.map((topic) => (
+          {/* 主题筛选 - 移动端横向滚动 */}
+          <div className="-mx-4 px-4 md:mx-0 md:px-0">
+            <div className="flex gap-2 overflow-x-auto pb-1 md:pb-0 md:flex-wrap">
               <button
-                key={topic.id}
-                onClick={() => setSelectedTopic(selectedTopic === topic.id ? 'all' : topic.id)}
-                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                  selectedTopic === topic.id
-                    ? 'bg-blue-500 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                onClick={() => setSelectedTopic('all')}
+                className={`flex-shrink-0 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
+                  selectedTopic === 'all'
+                    ? 'bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-lg shadow-indigo-500/25'
+                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                 }`}
               >
-                {topic.icon} {topic.label}
+                全部
               </button>
-            ))}
+              {topicCategories.map((topic) => (
+                <button
+                  key={topic.id}
+                  onClick={() => setSelectedTopic(selectedTopic === topic.id ? 'all' : topic.id)}
+                  className={`flex-shrink-0 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 whitespace-nowrap ${
+                    selectedTopic === topic.id
+                      ? 'bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-lg shadow-indigo-500/25'
+                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                  }`}
+                >
+                  {topic.icon} {topic.label}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -657,18 +678,20 @@ export default function Home() {
           if (levelExperiments.length === 0) return null
 
           return (
-            <section key={level} className="mb-10">
-              <div className="flex items-center gap-3 mb-4">
+            <section key={level} className="mb-8 md:mb-12">
+              <div className="flex items-center gap-2 md:gap-3 mb-4 md:mb-5">
+                <div className={`w-1 md:w-1.5 h-6 md:h-8 rounded-full bg-gradient-to-b ${difficultyConfig[level].gradient}`} />
                 <span
-                  className={`px-3 py-1 rounded-full text-sm font-medium ${difficultyConfig[level].bgColor} ${difficultyConfig[level].color}`}
+                  className={`px-3 md:px-4 py-1 md:py-1.5 rounded-full text-xs md:text-sm font-semibold ${difficultyConfig[level].bgColor} ${difficultyConfig[level].color}`}
                 >
                   {difficultyConfig[level].label}
                 </span>
-                <span className="text-gray-500 text-sm">{difficultyConfig[level].ageRange}</span>
-                <span className="text-gray-400 text-sm">({levelExperiments.length} 个实验)</span>
+                <span className="text-slate-400 text-xs md:text-sm hidden sm:inline">{difficultyConfig[level].ageRange}</span>
+                <span className="text-slate-300 text-xs md:text-sm hidden sm:inline">·</span>
+                <span className="text-slate-400 text-xs md:text-sm">{levelExperiments.length} 个</span>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
                 {levelExperiments.map((exp) => (
                   <ExperimentCard key={exp.path} experiment={exp} />
                 ))}
@@ -678,7 +701,7 @@ export default function Home() {
         })
       ) : (
         // 显示单个分组
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
           {filteredExperiments.map((exp) => (
             <ExperimentCard key={exp.path} experiment={exp} />
           ))}
@@ -687,36 +710,50 @@ export default function Home() {
 
       {/* 空状态 */}
       {filteredExperiments.length === 0 && (
-        <div className="text-center py-12">
-          <div className="text-4xl mb-4">🔍</div>
-          <h3 className="text-lg font-medium text-gray-700 mb-2">没有找到匹配的实验</h3>
-          <p className="text-gray-500">尝试调整筛选条件或搜索关键词</p>
+        <div className="text-center py-12 md:py-16">
+          <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 rounded-full bg-slate-100 flex items-center justify-center">
+            <span className="text-3xl md:text-4xl">🔍</span>
+          </div>
+          <h3 className="text-base md:text-lg font-semibold text-slate-700 mb-2">没有找到匹配的实验</h3>
+          <p className="text-slate-500 text-sm md:text-base">尝试调整筛选条件或搜索关键词</p>
         </div>
       )}
 
-      {/* 即将推出 */}
-      <section className="mt-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6">
-        <h2 className="text-xl font-bold text-gray-800 mb-4">🚀 即将推出</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {[
-            { title: '加减乘除可视化', level: '入门级', icon: '➕' },
-            { title: '分数可视化', level: '入门级', icon: '🥧' },
-            { title: '一次函数', level: '基础级', icon: '📏' },
-            { title: '二次函数', level: '基础级', icon: '📐' },
-            { title: '勾股定理', level: '基础级', icon: '📏' },
-            { title: '圆锥曲线', level: '中级', icon: '🔵' },
-            { title: '排列组合', level: '中级', icon: '🎰' },
-            { title: '拉普拉斯变换', level: '高级', icon: '🔄' },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="bg-white/60 backdrop-blur rounded-lg p-4 border border-white/50"
-            >
-              <span className="text-2xl">{item.icon}</span>
-              <h3 className="font-medium text-gray-700 mt-2">{item.title}</h3>
-              <span className="text-xs text-gray-500">{item.level}</span>
+      {/* 即将推出 - 更精美的设计 */}
+      <section className="mt-12 md:mt-16 relative overflow-hidden rounded-2xl md:rounded-3xl bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 p-5 md:p-8">
+        {/* 装饰性背景 */}
+        <div className="absolute top-0 right-0 w-48 md:w-64 h-48 md:h-64 bg-gradient-to-br from-indigo-200/30 to-purple-200/30 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-32 md:w-48 h-32 md:h-48 bg-gradient-to-br from-pink-200/30 to-rose-200/30 rounded-full blur-3xl" />
+
+        <div className="relative">
+          <div className="flex items-center gap-3 mb-5 md:mb-6">
+            <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center shadow-lg shadow-indigo-500/30">
+              <span className="text-lg md:text-xl">🚀</span>
             </div>
-          ))}
+            <h2 className="text-xl md:text-2xl font-bold text-slate-800">即将推出</h2>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+            {[
+              { title: '加减乘除可视化', level: '入门级', icon: '➕' },
+              { title: '分数可视化', level: '入门级', icon: '🥧' },
+              { title: '一次函数', level: '基础级', icon: '📏' },
+              { title: '二次函数', level: '基础级', icon: '📐' },
+              { title: '勾股定理', level: '基础级', icon: '📏' },
+              { title: '圆锥曲线', level: '中级', icon: '🔵' },
+              { title: '排列组合', level: '中级', icon: '🎰' },
+              { title: '拉普拉斯变换', level: '高级', icon: '🔄' },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white/70 backdrop-blur-sm rounded-xl p-3 md:p-4 border border-white/50 shadow-sm hover:shadow-md hover:bg-white/90 transition-all duration-300"
+              >
+                <span className="text-xl md:text-2xl">{item.icon}</span>
+                <h3 className="font-semibold text-slate-700 mt-2 text-sm md:text-base">{item.title}</h3>
+                <span className="text-xs text-slate-500">{item.level}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>
@@ -730,27 +767,31 @@ function ExperimentCard({ experiment }: { experiment: Experiment }) {
   return (
     <Link
       to={experiment.path}
-      className="block p-5 bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md hover:border-blue-300 transition-all group"
+      className="group block p-4 md:p-5 bg-white rounded-xl md:rounded-2xl shadow-sm border border-slate-200/50 hover:shadow-xl hover:shadow-slate-200/50 hover:border-indigo-200 transition-all duration-300 active:scale-[0.98] md:hover:-translate-y-1"
     >
-      <div className="flex items-start gap-4">
-        <span className="text-3xl group-hover:scale-110 transition-transform">{experiment.icon}</span>
+      <div className="flex items-start gap-3 md:gap-4">
+        <div className={`w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-gradient-to-br ${config.gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+          <span className="text-lg md:text-2xl filter drop-shadow-sm">{experiment.icon}</span>
+        </div>
         <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 mb-1">
-            <h2 className="text-lg font-semibold text-gray-800 truncate">{experiment.title}</h2>
+          <div className="flex items-center gap-2 mb-1 md:mb-1.5">
+            <h2 className="text-base md:text-lg font-bold text-slate-800 truncate group-hover:text-indigo-600 transition-colors">
+              {experiment.title}
+            </h2>
           </div>
-          <p className="text-gray-600 text-sm line-clamp-2 mb-3">{experiment.description}</p>
-          <div className="flex items-center gap-2 flex-wrap">
-            <span className={`px-2 py-0.5 rounded text-xs font-medium ${config.bgColor} ${config.color}`}>
+          <p className="text-slate-500 text-xs md:text-sm line-clamp-2 mb-2 md:mb-3 leading-relaxed">{experiment.description}</p>
+          <div className="flex items-center gap-1.5 md:gap-2 flex-wrap">
+            <span className={`px-2 md:px-2.5 py-0.5 md:py-1 rounded-md md:rounded-lg text-xs font-semibold ${config.bgColor} ${config.color}`}>
               {config.label}
             </span>
             {experiment.hasAnimation && (
-              <span className="px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700">
-                动画演示
+              <span className="px-2 md:px-2.5 py-0.5 md:py-1 rounded-md md:rounded-lg text-xs font-medium bg-violet-50 text-violet-600">
+                动画
               </span>
             )}
             {experiment.hasSteps && (
-              <span className="px-2 py-0.5 rounded text-xs font-medium bg-cyan-100 text-cyan-700">
-                步骤讲解
+              <span className="px-2 md:px-2.5 py-0.5 md:py-1 rounded-md md:rounded-lg text-xs font-medium bg-cyan-50 text-cyan-600 hidden sm:inline-block">
+                步骤
               </span>
             )}
           </div>

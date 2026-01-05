@@ -1,0 +1,115 @@
+{
+  "id": "linear-function",
+  "title": "一次函数",
+  "subtitle": "探索斜率和截距对直线的影响",
+  "difficulty": "elementary",
+  "targetAge": "初中 12-15岁",
+  "voice": "xiaoxiao",
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": { "type": "auto", "delay": 1000 },
+      "lines": [
+        { "id": "intro-1", "text": "欢迎来到一次函数实验！今天我们要学习数学中最基础也最重要的函数之一。" },
+        { "id": "intro-2", "text": "一次函数的图像是一条直线，它在生活中无处不在，比如出租车计费、手机话费等。" },
+        { "id": "intro-3", "text": "通过这个实验，你将理解斜率和截距如何决定一条直线的位置和方向。" }
+      ]
+    },
+    {
+      "id": "formula",
+      "type": "formula",
+      "title": "函数表达式",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "formula-1", "text": "一次函数的一般形式是y等于kx加b，写作y=kx+b。" },
+        { "id": "formula-2", "text": "其中k叫做斜率，它决定了直线的倾斜程度和方向。" },
+        { "id": "formula-3", "text": "b叫做y轴截距，它决定了直线与y轴的交点位置。" },
+        { "id": "formula-4", "text": "当k等于0时，函数变成y=b，这是一条水平线，叫做常数函数。" }
+      ]
+    },
+    {
+      "id": "slope",
+      "type": "concept",
+      "title": "斜率的意义",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "slope-1", "text": "斜率k表示x每增加1时，y增加多少。这就是斜率三角形的含义。" },
+        { "id": "slope-2", "text": "当k大于0时，直线向右上方倾斜，函数是递增的。" },
+        { "id": "slope-3", "text": "当k小于0时，直线向右下方倾斜，函数是递减的。" },
+        { "id": "slope-4", "text": "k的绝对值越大，直线越陡峭；绝对值越小，直线越平缓。" },
+        { "id": "slope-5", "text": "你可以拖动斜率滑块，观察直线如何随着k值变化而旋转。" }
+      ]
+    },
+    {
+      "id": "intercept",
+      "type": "concept",
+      "title": "截距的意义",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "intercept-1", "text": "y轴截距b是直线与y轴的交点的纵坐标，也就是当x等于0时y的值。" },
+        { "id": "intercept-2", "text": "改变b的值，直线会上下平移，但斜率保持不变。" },
+        { "id": "intercept-3", "text": "x轴截距是直线与x轴的交点，可以通过令y等于0求得，等于负b除以k。" },
+        { "id": "intercept-4", "text": "试着调整截距滑块，看看直线如何上下移动。" }
+      ]
+    },
+    {
+      "id": "graph",
+      "type": "concept",
+      "title": "图像特征",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "graph-1", "text": "图中蓝色的直线就是一次函数的图像。绿色点是y轴截距，红色点是x轴截距。" },
+        { "id": "graph-2", "text": "黄色的虚线三角形展示了斜率的几何意义：水平走1步，垂直走k步。" },
+        { "id": "graph-3", "text": "你可以勾选或取消复选框，显示或隐藏网格、截距点和斜率三角形。" }
+      ]
+    },
+    {
+      "id": "animation",
+      "type": "animation",
+      "title": "动画演示",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "animation-1", "text": "点击播放动画按钮，可以看到斜率k从负2变化到正2的过程。" },
+        { "id": "animation-2", "text": "观察直线如何绕着y轴截距点旋转，从向右下倾斜变成向右上倾斜。" },
+        { "id": "animation-3", "text": "这个动画帮助你理解斜率对直线方向的影响。" }
+      ]
+    },
+    {
+      "id": "examples",
+      "type": "example",
+      "title": "典型例子",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "examples-1", "text": "让我们看几个典型的一次函数。点击快速设置按钮可以切换不同的例子。" },
+        { "id": "examples-2", "text": "y等于x是最简单的一次函数，斜率为1，过原点，与两坐标轴成45度角。" },
+        { "id": "examples-3", "text": "y等于负x斜率为负1，也过原点，但方向相反。" },
+        { "id": "examples-4", "text": "y等于2x加1斜率为2，比y等于x更陡，y轴截距为1。" }
+      ]
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "title": "实际应用",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "application-1", "text": "一次函数在生活中有很多应用。比如出租车计费：起步价是截距b，每公里价格是斜率k。" },
+        { "id": "application-2", "text": "如果起步价10元，每公里2元，那么费用y等于2x加10，其中x是行驶公里数。" },
+        { "id": "application-3", "text": "手机话费、水电费等很多计费方式都可以用一次函数来描述。" }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": { "type": "auto" },
+      "lines": [
+        { "id": "summary-1", "text": "让我们总结一下今天学到的内容。" },
+        { "id": "summary-2", "text": "一次函数y等于kx加b的图像是一条直线，k是斜率，b是y轴截距。" },
+        { "id": "summary-3", "text": "斜率k决定直线的倾斜方向和程度，截距b决定直线与y轴的交点。" },
+        { "id": "summary-4", "text": "希望通过这个实验，你对一次函数有了更深入的理解！" }
+      ]
+    }
+  ]
+}

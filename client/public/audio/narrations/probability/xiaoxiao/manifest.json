@@ -1,0 +1,389 @@
+{
+  "script_id": "probability",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "probability",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "欢迎来到概率分布实验！今天我们要学习描述随机现象的数学工具。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "概率分布告诉我们随机事件各种结果出现的可能性有多大。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "从考试成绩到天气预报，从股票价格到产品质量，概率分布无处不在。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "normal",
+      "line_id": "normal-1",
+      "filename": "normal-normal-1.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/normal-normal-1.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "正态分布是最重要的概率分布，也叫高斯分布，它的图像像一座钟。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "normal",
+      "line_id": "normal-2",
+      "filename": "normal-normal-2.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/normal-normal-2.mp3",
+      "duration": 3.06,
+      "size": 48960,
+      "text": "正态分布由两个参数决定：均值μ决定中心位置，标准差σ决定分散程度。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "normal",
+      "line_id": "normal-3",
+      "filename": "normal-normal-3.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/normal-normal-3.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "均值μ越大，曲线越往右移；标准差σ越大，曲线越矮越宽。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "normal",
+      "line_id": "normal-4",
+      "filename": "normal-normal-4.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/normal-normal-4.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "自然界中很多现象服从正态分布，比如人的身高、考试成绩等。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "normal",
+      "line_id": "normal-5",
+      "filename": "normal-normal-5.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/normal-normal-5.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "试着调整μ和σ的值，观察曲线如何变化。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "uniform",
+      "line_id": "uniform-1",
+      "filename": "uniform-uniform-1.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/uniform-uniform-1.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "均匀分布是最简单的分布，在区间内每个值出现的概率相等。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "uniform",
+      "line_id": "uniform-2",
+      "filename": "uniform-uniform-2.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/uniform-uniform-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "它的图像是一个矩形，高度等于1除以区间长度。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "uniform",
+      "line_id": "uniform-3",
+      "filename": "uniform-uniform-3.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/uniform-uniform-3.mp3",
+      "duration": 2.58,
+      "size": 41328,
+      "text": "掷骰子就是均匀分布的例子，1到6每个点数出现的概率都是六分之一。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "uniform",
+      "line_id": "uniform-4",
+      "filename": "uniform-uniform-4.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/uniform-uniform-4.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "调整上界和下界，可以改变均匀分布的范围。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "exponential",
+      "line_id": "exponential-1",
+      "filename": "exponential-exponential-1.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/exponential-exponential-1.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "指数分布描述独立随机事件发生的时间间隔。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "exponential",
+      "line_id": "exponential-2",
+      "filename": "exponential-exponential-2.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/exponential-exponential-2.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "比如顾客到达商店的时间间隔、设备故障的等待时间等。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "exponential",
+      "line_id": "exponential-3",
+      "filename": "exponential-exponential-3.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/exponential-exponential-3.mp3",
+      "duration": 2.74,
+      "size": 43776,
+      "text": "参数λ叫做率参数，λ越大，事件发生越频繁，曲线下降越快。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "exponential",
+      "line_id": "exponential-4",
+      "filename": "exponential-exponential-4.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/exponential-exponential-4.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "指数分布有一个特殊性质叫无记忆性，过去不影响未来。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "poisson",
+      "line_id": "poisson-1",
+      "filename": "poisson-poisson-1.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/poisson-poisson-1.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "泊松分布描述单位时间内随机事件发生次数的分布。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "poisson",
+      "line_id": "poisson-2",
+      "filename": "poisson-poisson-2.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/poisson-poisson-2.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "比如一小时内接到的电话数、一天内发生的交通事故数等。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "poisson",
+      "line_id": "poisson-3",
+      "filename": "poisson-poisson-3.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/poisson-poisson-3.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "泊松分布是离散分布，只能取非负整数值，用柱状图表示。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "poisson",
+      "line_id": "poisson-4",
+      "filename": "poisson-poisson-4.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/poisson-poisson-4.mp3",
+      "duration": 3.45,
+      "size": 55152,
+      "text": "参数λ是期望值，表示平均发生次数。λ越大，分布越往右移，越接近正态分布。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "binomial",
+      "line_id": "binomial-1",
+      "filename": "binomial-binomial-1.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/binomial-binomial-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "二项分布描述n次独立试验中成功次数的分布。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "binomial",
+      "line_id": "binomial-2",
+      "filename": "binomial-binomial-2.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/binomial-binomial-2.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "比如抛10次硬币，正面朝上的次数就服从二项分布。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "binomial",
+      "line_id": "binomial-3",
+      "filename": "binomial-binomial-3.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/binomial-binomial-3.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "二项分布有两个参数：试验次数n和每次成功的概率p。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "binomial",
+      "line_id": "binomial-4",
+      "filename": "binomial-binomial-4.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/binomial-binomial-4.mp3",
+      "duration": 2.58,
+      "size": 41328,
+      "text": "当p等于0.5时，分布是对称的；当p偏离0.5时，分布会偏斜。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "binomial",
+      "line_id": "binomial-5",
+      "filename": "binomial-binomial-5.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/binomial-binomial-5.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "调整n和p的值，观察分布形态的变化。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "statistics",
+      "line_id": "statistics-1",
+      "filename": "statistics-statistics-1.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/statistics-statistics-1.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "每种分布都有两个重要的数字特征：期望和方差。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "statistics",
+      "line_id": "statistics-2",
+      "filename": "statistics-statistics-2.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/statistics-statistics-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "期望E(X)是分布的中心位置，表示平均值。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "statistics",
+      "line_id": "statistics-3",
+      "filename": "statistics-statistics-3.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/statistics-statistics-3.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "方差Var(X)衡量数据的分散程度，方差越大，数据越分散。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "statistics",
+      "line_id": "statistics-4",
+      "filename": "statistics-statistics-4.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/statistics-statistics-4.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "标准差是方差的平方根，与原数据单位相同，更容易理解。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "statistics",
+      "line_id": "statistics-5",
+      "filename": "statistics-statistics-5.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/statistics-statistics-5.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "右侧面板显示了当前分布的期望、方差和标准差。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "animation",
+      "line_id": "animation-1",
+      "filename": "animation-animation-1.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/animation-animation-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "点击播放动画按钮，可以看到参数变化时分布形态的变化。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "animation",
+      "line_id": "animation-2",
+      "filename": "animation-animation-2.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/animation-animation-2.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "对于正态分布，动画展示标准差从小到大的变化过程。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "animation",
+      "line_id": "animation-3",
+      "filename": "animation-animation-3.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/animation-animation-3.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "观察曲线如何从窄高变成宽矮，但面积始终等于1。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/summary-summary-1.mp3",
+      "duration": 1.26,
+      "size": 20160,
+      "text": "让我们总结一下今天学到的内容。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/summary-summary-2.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "概率分布描述随机变量取各种值的概率，分为连续分布和离散分布。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/summary-summary-3.mp3",
+      "duration": 2.75,
+      "size": 44064,
+      "text": "正态分布是最重要的连续分布，泊松分布和二项分布是常见的离散分布。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/summary-summary-4.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "期望和方差是描述分布的两个关键数字特征。"
+    },
+    {
+      "script_id": "probability",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/probability/xiaoxiao/summary-summary-5.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "希望通过这个实验，你对概率分布有了更直观的理解！"
+    }
+  ],
+  "total_duration": 82.68999999999998,
+  "total_size": 1322928
+}

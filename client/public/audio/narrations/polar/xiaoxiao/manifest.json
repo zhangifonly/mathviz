@@ -1,0 +1,339 @@
+{
+  "script_id": "polar",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "polar",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "欢迎来到极坐标图形实验！今天我们要探索一种不同的坐标系统。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "在极坐标系中，我们用距离和角度来描述点的位置，而不是横纵坐标。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "极坐标能画出很多美丽的曲线，比如玫瑰线、心形线、螺旋线等。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "polar-system",
+      "line_id": "polar-system-1",
+      "filename": "polar-system-polar-system-1.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/polar-system-polar-system-1.mp3",
+      "duration": 3.39,
+      "size": 54288,
+      "text": "在极坐标系中，每个点用r和θ表示，r是到原点的距离，θ是与x轴正方向的夹角。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "polar-system",
+      "line_id": "polar-system-2",
+      "filename": "polar-system-polar-system-2.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/polar-system-polar-system-2.mp3",
+      "duration": 3.16,
+      "size": 50544,
+      "text": "极坐标和直角坐标可以相互转换：x等于r乘以cos θ，y等于r乘以sin θ。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "polar-system",
+      "line_id": "polar-system-3",
+      "filename": "polar-system-polar-system-3.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/polar-system-polar-system-3.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "图中红色的线段就是半径r，它从原点指向曲线上的点。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "polar-system",
+      "line_id": "polar-system-4",
+      "filename": "polar-system-polar-system-4.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/polar-system-polar-system-4.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "点击开始绘制，可以看到点如何随着角度变化在曲线上移动。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "rose",
+      "line_id": "rose-1",
+      "filename": "rose-rose-1.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/rose-rose-1.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "玫瑰线的方程是r等于a乘以cos nθ，它的形状像一朵花。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "rose",
+      "line_id": "rose-2",
+      "filename": "rose-rose-2.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/rose-rose-2.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "参数n决定了花瓣的数量：当n是奇数时有n瓣，当n是偶数时有2n瓣。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "rose",
+      "line_id": "rose-3",
+      "filename": "rose-rose-3.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/rose-rose-3.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "参数a决定了花瓣的大小，a越大，花瓣越大。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "rose",
+      "line_id": "rose-4",
+      "filename": "rose-rose-4.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/rose-rose-4.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "试着调整n的值，看看花瓣数量如何变化。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "cardioid",
+      "line_id": "cardioid-1",
+      "filename": "cardioid-cardioid-1.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/cardioid-cardioid-1.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "心形线的方程是r等于a乘以1加cos θ，它的形状像一颗心。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "cardioid",
+      "line_id": "cardioid-2",
+      "filename": "cardioid-cardioid-2.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/cardioid-cardioid-2.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "心形线是蚶线的一种特殊情况，当两个参数相等时就得到心形。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "cardioid",
+      "line_id": "cardioid-3",
+      "filename": "cardioid-cardioid-3.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/cardioid-cardioid-3.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "心形线在数学和物理中有很多应用，比如麦克风的指向性图案。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "spiral",
+      "line_id": "spiral-1",
+      "filename": "spiral-spiral-1.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/spiral-spiral-1.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "阿基米德螺线的方程是r等于a加bθ，它是一种等距螺旋。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "spiral",
+      "line_id": "spiral-2",
+      "filename": "spiral-spiral-2.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/spiral-spiral-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "随着角度增加，半径均匀增大，每圈之间的间距相等。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "spiral",
+      "line_id": "spiral-3",
+      "filename": "spiral-spiral-3.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/spiral-spiral-3.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "这种螺旋在自然界中很常见，比如蜗牛壳的形状。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "spiral",
+      "line_id": "spiral-4",
+      "filename": "spiral-spiral-4.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/spiral-spiral-4.mp3",
+      "duration": 1.49,
+      "size": 23904,
+      "text": "调整参数b可以改变螺旋的疏密程度。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "lemniscate",
+      "line_id": "lemniscate-1",
+      "filename": "lemniscate-lemniscate-1.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/lemniscate-lemniscate-1.mp3",
+      "duration": 3.23,
+      "size": 51696,
+      "text": "双纽线的方程是r平方等于a平方乘以cos 2θ，它的形状像数字8或无穷符号。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "lemniscate",
+      "line_id": "lemniscate-2",
+      "filename": "lemniscate-lemniscate-2.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/lemniscate-lemniscate-2.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "双纽线关于原点对称，有两个叶子。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "lemniscate",
+      "line_id": "lemniscate-3",
+      "filename": "lemniscate-lemniscate-3.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/lemniscate-lemniscate-3.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "这种曲线在数学史上很有名，是伯努利研究的重要曲线之一。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "limacon",
+      "line_id": "limacon-1",
+      "filename": "limacon-limacon-1.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/limacon-limacon-1.mp3",
+      "duration": 3.09,
+      "size": 49392,
+      "text": "蚶线的方程是r等于a加b乘以cos θ，根据a和b的比值呈现不同形态。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "limacon",
+      "line_id": "limacon-2",
+      "filename": "limacon-limacon-2.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/limacon-limacon-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "当a等于b时，得到心形线；当a大于b时，是凸的蚶线。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "limacon",
+      "line_id": "limacon-3",
+      "filename": "limacon-limacon-3.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/limacon-limacon-3.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "当a小于b时，蚶线会有一个内环，形成更复杂的形状。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "limacon",
+      "line_id": "limacon-4",
+      "filename": "limacon-limacon-4.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/limacon-limacon-4.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "试着调整a和b的值，观察蚶线形态的变化。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "animation",
+      "line_id": "animation-1",
+      "filename": "animation-animation-1.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/animation-animation-1.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "点击开始绘制按钮，可以看到曲线是如何一点一点画出来的。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "animation",
+      "line_id": "animation-2",
+      "filename": "animation-animation-2.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/animation-animation-2.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "红色的点和线段显示当前的位置和半径。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "animation",
+      "line_id": "animation-3",
+      "filename": "animation-animation-3.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/animation-animation-3.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "观察角度θ如何从0增加到最大值，曲线逐渐成形。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/summary-summary-1.mp3",
+      "duration": 1.26,
+      "size": 20160,
+      "text": "让我们总结一下今天学到的内容。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/summary-summary-2.mp3",
+      "duration": 2.77,
+      "size": 44352,
+      "text": "极坐标用距离r和角度θ来描述点的位置，与直角坐标可以相互转换。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/summary-summary-3.mp3",
+      "duration": 3.2,
+      "size": 51264,
+      "text": "极坐标方程能画出很多美丽的曲线：玫瑰线、心形线、螺旋线、双纽线、蚶线等。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/summary-summary-4.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "这些曲线不仅美观，在科学和工程中也有实际应用。"
+    },
+    {
+      "script_id": "polar",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/polar/xiaoxiao/summary-summary-5.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "希望通过这个实验，你对极坐标有了更直观的理解！"
+    }
+  ],
+  "total_duration": 75.02,
+  "total_size": 1200384
+}

@@ -1,0 +1,339 @@
+{
+  "script_id": "linear-function",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "linear-function",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/linear-function/yunxi/intro-intro-1.mp3",
+      "duration": 2.8,
+      "size": 40464,
+      "text": "欢迎来到一次函数实验！今天我们要学习数学中最基础也最重要的函数之一。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/linear-function/yunxi/intro-intro-2.mp3",
+      "duration": 3.05,
+      "size": 48384,
+      "text": "一次函数的图像是一条直线，它在生活中无处不在，比如出租车计费、手机话费等。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/linear-function/yunxi/intro-intro-3.mp3",
+      "duration": 2.51,
+      "size": 42336,
+      "text": "通过这个实验，你将理解斜率和截距如何决定一条直线的位置和方向。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "formula",
+      "line_id": "formula-1",
+      "filename": "formula-formula-1.mp3",
+      "path": "audio/narrations/linear-function/yunxi/formula-formula-1.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "一次函数的一般形式是y等于kx加b，写作y=kx+b。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "formula",
+      "line_id": "formula-2",
+      "filename": "formula-formula-2.mp3",
+      "path": "audio/narrations/linear-function/yunxi/formula-formula-2.mp3",
+      "duration": 1.9,
+      "size": 34416,
+      "text": "其中k叫做斜率，它决定了直线的倾斜程度和方向。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "formula",
+      "line_id": "formula-3",
+      "filename": "formula-formula-3.mp3",
+      "path": "audio/narrations/linear-function/yunxi/formula-formula-3.mp3",
+      "duration": 1.93,
+      "size": 31680,
+      "text": "b叫做y轴截距，它决定了直线与y轴的交点位置。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "formula",
+      "line_id": "formula-4",
+      "filename": "formula-formula-4.mp3",
+      "path": "audio/narrations/linear-function/yunxi/formula-formula-4.mp3",
+      "duration": 2.58,
+      "size": 43776,
+      "text": "当k等于0时，函数变成y=b，这是一条水平线，叫做常数函数。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "slope",
+      "line_id": "slope-1",
+      "filename": "slope-slope-1.mp3",
+      "path": "audio/narrations/linear-function/yunxi/slope-slope-1.mp3",
+      "duration": 2.72,
+      "size": 44064,
+      "text": "斜率k表示x每增加1时，y增加多少。这就是斜率三角形的含义。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "slope",
+      "line_id": "slope-2",
+      "filename": "slope-slope-2.mp3",
+      "path": "audio/narrations/linear-function/yunxi/slope-slope-2.mp3",
+      "duration": 1.99,
+      "size": 35568,
+      "text": "当k大于0时，直线向右上方倾斜，函数是递增的。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "slope",
+      "line_id": "slope-3",
+      "filename": "slope-slope-3.mp3",
+      "path": "audio/narrations/linear-function/yunxi/slope-slope-3.mp3",
+      "duration": 1.98,
+      "size": 35280,
+      "text": "当k小于0时，直线向右下方倾斜，函数是递减的。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "slope",
+      "line_id": "slope-4",
+      "filename": "slope-slope-4.mp3",
+      "path": "audio/narrations/linear-function/yunxi/slope-slope-4.mp3",
+      "duration": 2.29,
+      "size": 38880,
+      "text": "k的绝对值越大，直线越陡峭；绝对值越小，直线越平缓。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "slope",
+      "line_id": "slope-5",
+      "filename": "slope-slope-5.mp3",
+      "path": "audio/narrations/linear-function/yunxi/slope-slope-5.mp3",
+      "duration": 2.12,
+      "size": 34272,
+      "text": "你可以拖动斜率滑块，观察直线如何随着k值变化而旋转。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "intercept",
+      "line_id": "intercept-1",
+      "filename": "intercept-intercept-1.mp3",
+      "path": "audio/narrations/linear-function/yunxi/intercept-intercept-1.mp3",
+      "duration": 2.75,
+      "size": 42912,
+      "text": "y轴截距b是直线与y轴的交点的纵坐标，也就是当x等于0时y的值。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "intercept",
+      "line_id": "intercept-2",
+      "filename": "intercept-intercept-2.mp3",
+      "path": "audio/narrations/linear-function/yunxi/intercept-intercept-2.mp3",
+      "duration": 1.93,
+      "size": 32112,
+      "text": "改变b的值，直线会上下平移，但斜率保持不变。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "intercept",
+      "line_id": "intercept-3",
+      "filename": "intercept-intercept-3.mp3",
+      "path": "audio/narrations/linear-function/yunxi/intercept-intercept-3.mp3",
+      "duration": 2.94,
+      "size": 46944,
+      "text": "x轴截距是直线与x轴的交点，可以通过令y等于0求得，等于负b除以k。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "intercept",
+      "line_id": "intercept-4",
+      "filename": "intercept-intercept-4.mp3",
+      "path": "audio/narrations/linear-function/yunxi/intercept-intercept-4.mp3",
+      "duration": 1.72,
+      "size": 30096,
+      "text": "试着调整截距滑块，看看直线如何上下移动。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "graph",
+      "line_id": "graph-1",
+      "filename": "graph-graph-1.mp3",
+      "path": "audio/narrations/linear-function/yunxi/graph-graph-1.mp3",
+      "duration": 3.16,
+      "size": 50400,
+      "text": "图中蓝色的直线就是一次函数的图像。绿色点是y轴截距，红色点是x轴截距。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "graph",
+      "line_id": "graph-2",
+      "filename": "graph-graph-2.mp3",
+      "path": "audio/narrations/linear-function/yunxi/graph-graph-2.mp3",
+      "duration": 2.62,
+      "size": 43344,
+      "text": "黄色的虚线三角形展示了斜率的几何意义：水平走1步，垂直走k步。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "graph",
+      "line_id": "graph-3",
+      "filename": "graph-graph-3.mp3",
+      "path": "audio/narrations/linear-function/yunxi/graph-graph-3.mp3",
+      "duration": 2.65,
+      "size": 42336,
+      "text": "你可以勾选或取消复选框，显示或隐藏网格、截距点和斜率三角形。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "animation",
+      "line_id": "animation-1",
+      "filename": "animation-animation-1.mp3",
+      "path": "audio/narrations/linear-function/yunxi/animation-animation-1.mp3",
+      "duration": 2.34,
+      "size": 36288,
+      "text": "点击播放动画按钮，可以看到斜率k从负2变化到正2的过程。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "animation",
+      "line_id": "animation-2",
+      "filename": "animation-animation-2.mp3",
+      "path": "audio/narrations/linear-function/yunxi/animation-animation-2.mp3",
+      "duration": 2.6,
+      "size": 40176,
+      "text": "观察直线如何绕着y轴截距点旋转，从向右下倾斜变成向右上倾斜。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "animation",
+      "line_id": "animation-3",
+      "filename": "animation-animation-3.mp3",
+      "path": "audio/narrations/linear-function/yunxi/animation-animation-3.mp3",
+      "duration": 1.7,
+      "size": 26496,
+      "text": "这个动画帮助你理解斜率对直线方向的影响。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "examples",
+      "line_id": "examples-1",
+      "filename": "examples-examples-1.mp3",
+      "path": "audio/narrations/linear-function/yunxi/examples-examples-1.mp3",
+      "duration": 2.55,
+      "size": 39168,
+      "text": "让我们看几个典型的一次函数。点击快速设置按钮可以切换不同的例子。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "examples",
+      "line_id": "examples-2",
+      "filename": "examples-examples-2.mp3",
+      "path": "audio/narrations/linear-function/yunxi/examples-examples-2.mp3",
+      "duration": 2.96,
+      "size": 46800,
+      "text": "y等于x是最简单的一次函数，斜率为1，过原点，与两坐标轴成45度角。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "examples",
+      "line_id": "examples-3",
+      "filename": "examples-examples-3.mp3",
+      "path": "audio/narrations/linear-function/yunxi/examples-examples-3.mp3",
+      "duration": 1.98,
+      "size": 32256,
+      "text": "y等于负x斜率为负1，也过原点，但方向相反。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "examples",
+      "line_id": "examples-4",
+      "filename": "examples-examples-4.mp3",
+      "path": "audio/narrations/linear-function/yunxi/examples-examples-4.mp3",
+      "duration": 2.4,
+      "size": 40176,
+      "text": "y等于2x加1斜率为2，比y等于x更陡，y轴截距为1。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "application",
+      "line_id": "application-1",
+      "filename": "application-application-1.mp3",
+      "path": "audio/narrations/linear-function/yunxi/application-application-1.mp3",
+      "duration": 3.56,
+      "size": 58032,
+      "text": "一次函数在生活中有很多应用。比如出租车计费：起步价是截距b，每公里价格是斜率k。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "application",
+      "line_id": "application-2",
+      "filename": "application-application-2.mp3",
+      "path": "audio/narrations/linear-function/yunxi/application-application-2.mp3",
+      "duration": 3.17,
+      "size": 51264,
+      "text": "如果起步价10元，每公里2元，那么费用y等于2x加10，其中x是行驶公里数。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "application",
+      "line_id": "application-3",
+      "filename": "application-application-3.mp3",
+      "path": "audio/narrations/linear-function/yunxi/application-application-3.mp3",
+      "duration": 2.22,
+      "size": 36288,
+      "text": "手机话费、水电费等很多计费方式都可以用一次函数来描述。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/linear-function/yunxi/summary-summary-1.mp3",
+      "duration": 1.26,
+      "size": 20016,
+      "text": "让我们总结一下今天学到的内容。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/linear-function/yunxi/summary-summary-2.mp3",
+      "duration": 2.8,
+      "size": 45504,
+      "text": "一次函数y等于kx加b的图像是一条直线，k是斜率，b是y轴截距。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/linear-function/yunxi/summary-summary-3.mp3",
+      "duration": 2.65,
+      "size": 42192,
+      "text": "斜率k决定直线的倾斜方向和程度，截距b决定直线与y轴的交点。"
+    },
+    {
+      "script_id": "linear-function",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/linear-function/yunxi/summary-summary-4.mp3",
+      "duration": 1.87,
+      "size": 32256,
+      "text": "希望通过这个实验，你对一次函数有了更深入的理解！"
+    }
+  ],
+  "total_duration": 80.23,
+  "total_size": 1304640
+}
