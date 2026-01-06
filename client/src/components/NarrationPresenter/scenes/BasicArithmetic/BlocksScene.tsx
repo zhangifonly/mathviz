@@ -33,7 +33,6 @@ export default function BlocksScene({
   num1,
   num2,
   lineState,
-  isInteractive,
 }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
@@ -57,9 +56,9 @@ export default function BlocksScene({
 
     // 从 lineState 获取参数，否则使用默认值
     const params = lineState?.params || {}
-    const actualNum1 = params.num1 ?? num1
-    const actualNum2 = params.num2 ?? num2
-    const actualOp = params.operation ?? operation
+    const actualNum1 = (params.num1 as number) ?? num1
+    const actualNum2 = (params.num2 as number) ?? num2
+    const actualOp = (params.operation as string) ?? operation
 
     // 绘制参数
     const blockSize = Math.min(40, width / 15)
@@ -112,7 +111,7 @@ interface DrawParams {
 
 // 绘制整个场景
 function drawScene(ctx: CanvasRenderingContext2D, params: DrawParams) {
-  const { width, height, blockSize, gap, num1, num2, operation, show, highlight, annotation } = params
+  const { width, height, operation, annotation } = params
   const centerY = height / 2 - 20
 
   // 根据运算类型绘制

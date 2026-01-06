@@ -63,7 +63,7 @@ export interface NarrationSection {
   id: string                    // 段落 ID
   type: SectionType             // 段落类型
   title: string                 // 段落标题（显示在 UI 上）
-  trigger: {
+  trigger?: {
     type: TriggerType           // 触发类型
     condition?: string          // 触发条件（如 "params.terms > 10"）
     delay?: number              // 延迟时间（毫秒）

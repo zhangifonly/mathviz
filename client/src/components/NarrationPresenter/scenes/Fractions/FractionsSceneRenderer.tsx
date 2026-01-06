@@ -27,8 +27,6 @@ export interface FractionsState {
 export default function FractionsSceneRenderer({
   scene,
   state,
-  onStateChange,
-  isInteractive,
 }: Props) {
   if (!scene) {
     return (

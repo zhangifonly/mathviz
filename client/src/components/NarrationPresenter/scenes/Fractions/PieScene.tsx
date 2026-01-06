@@ -11,7 +11,7 @@ interface Props {
   sectionId: string
 }
 
-export default function PieScene({ numerator, denominator, visualization, sectionId }: Props) {
+export default function PieScene({ numerator, denominator, visualization }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {

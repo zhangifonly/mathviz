@@ -65,6 +65,7 @@ interface AudioManifest {
     path: string
     duration: number
     text: string
+    filename?: string
   }[]
   total_duration: number
 }

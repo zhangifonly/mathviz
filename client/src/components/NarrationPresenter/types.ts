@@ -73,7 +73,7 @@ export interface SceneConfig {
  * 每一行口播对应一个精确的动画状态
  */
 export interface LineAnimationState {
-  // 显示哪些元素
+  // 显示哪些元素（支持任意元素名称）
   show?: {
     group1?: boolean | number    // 显示第一组方块（true=全部，数字=显示几个）
     group2?: boolean | number    // 显示第二组方块
@@ -81,6 +81,9 @@ export interface LineAnimationState {
     formula?: boolean            // 显示公式
     numberLine?: boolean         // 显示数轴
     arrow?: boolean              // 显示箭头动画
+    diagram?: boolean            // 显示图表
+    curve?: boolean              // 显示曲线
+    [key: string]: boolean | number | undefined  // 支持任意其他元素
   }
   // 高亮哪些元素
   highlight?: string[]           // 高亮的元素 ID 列表
@@ -90,12 +93,8 @@ export interface LineAnimationState {
     target?: string              // 动画目标
     duration?: number            // 动画时长 ms
   }
-  // 数值参数（覆盖默认值）
-  params?: {
-    num1?: number
-    num2?: number
-    operation?: 'addition' | 'subtraction' | 'multiplication' | 'division'
-  }
+  // 数值参数（覆盖默认值，支持任意参数）
+  params?: Record<string, unknown>
   // 文字标注
   annotation?: {
     text: string

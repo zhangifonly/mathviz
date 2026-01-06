@@ -67,9 +67,9 @@ export default function BasicArithmeticSceneRenderer({
     // 动画/交互场景 - 方块演示
     // 优先使用 lineState.params 中的参数
     const lineParams = scene.lineState?.params
-    const actualOperation = lineParams?.operation ?? state.operation
-    const actualNum1 = lineParams?.num1 ?? state.num1
-    const actualNum2 = lineParams?.num2 ?? state.num2
+    const actualOperation = (lineParams?.operation as BasicArithmeticState['operation']) ?? state.operation
+    const actualNum1 = (lineParams?.num1 as number) ?? state.num1
+    const actualNum2 = (lineParams?.num2 as number) ?? state.num2
 
     return (
       <BlocksScene
