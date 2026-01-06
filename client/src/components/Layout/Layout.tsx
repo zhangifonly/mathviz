@@ -1,14 +1,20 @@
 import { useState } from 'react'
-import { Outlet, Link } from 'react-router-dom'
+import { Outlet, Link, useLocation } from 'react-router-dom'
 import Sidebar from './Sidebar'
 import { NarrationProvider, useNarrationOptional } from '../../contexts/NarrationContext'
 import { NarrationController } from '../NarrationController'
+import { BugReportButton } from '../BugReport'
 
 function LayoutContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const narration = useNarrationOptional()
+  const location = useLocation()
   const isNarrationMode = narration?.playbackState.isNarrationMode || false
   const isPresenterMode = narration?.playbackState.isPresenterMode || false
+
+  // 获取当前实验名称（用于 Bug 报告）
+  const experimentPath = location.pathname
+  const isExperimentPage = experimentPath !== '/' && experimentPath.length > 1
 
   return (
     <div className="flex h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100">
@@ -70,6 +76,9 @@ function LayoutContent() {
 
       {/* 底部讲解控制条 - 仅在非演示模式下显示 */}
       {isNarrationMode && !isPresenterMode && <NarrationController />}
+
+      {/* Bug 报告按钮 - 仅在实验页面显示 */}
+      {isExperimentPage && <BugReportButton experimentPath={experimentPath} />}
     </div>
   )
 }

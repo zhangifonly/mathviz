@@ -45,6 +45,7 @@ import LinearFunctionExperiment from './experiments/linear-function/LinearFuncti
 import QuadraticFunctionExperiment from './experiments/quadratic-function/QuadraticFunctionExperiment'
 import PythagoreanExperiment from './experiments/pythagorean/PythagoreanExperiment'
 import ConicSectionsExperiment from './experiments/conic-sections/ConicSectionsExperiment'
+import BugAdminPage from './pages/BugAdminPage'
 
 export default function App() {
   return (
@@ -97,6 +98,7 @@ export default function App() {
           <Route path="pythagorean" element={<PythagoreanExperiment />} />
           <Route path="conic-sections" element={<ConicSectionsExperiment />} />
         </Route>
+        <Route path="/admin" element={<BugAdminPage />} />
       </Routes>
     </BrowserRouter>
   )
