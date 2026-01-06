@@ -1,0 +1,249 @@
+{
+  "script_id": "chaos",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "chaos",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.02,
+      "size": 16272,
+      "text": "欢迎来到混沌理论实验。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "你是否想过，为什么天气预报超过一周就变得不准确？"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "这背后隐藏着一个深刻的数学现象：混沌。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/intro-intro-4.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "混沌并不是随机，而是确定性系统中产生的看似随机的行为。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/concept-concept-1.mp3",
+      "duration": 3.07,
+      "size": 49104,
+      "text": "混沌系统有三个关键特征：对初始条件的敏感依赖、拓扑混合性和稠密的周期轨道。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/concept-concept-2.mp3",
+      "duration": 2.94,
+      "size": 47088,
+      "text": "最著名的是蝴蝶效应：巴西的一只蝴蝶扇动翅膀，可能在德克萨斯引发龙卷风。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/concept-concept-3.mp3",
+      "duration": 2.73,
+      "size": 43632,
+      "text": "这个比喻来自气象学家洛伦兹，他在1963年发现了著名的洛伦兹吸引子。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/concept-concept-4.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "让我们通过可视化来观察这个神奇的数学结构。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "visualization",
+      "line_id": "vis-1",
+      "filename": "visualization-vis-1.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/visualization-vis-1.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "屏幕上显示的是洛伦兹吸引子的三维轨迹。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "visualization",
+      "line_id": "vis-2",
+      "filename": "visualization-vis-2.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/visualization-vis-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "注意它的形状像一只蝴蝶，这正是蝴蝶效应名称的另一个来源。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "visualization",
+      "line_id": "vis-3",
+      "filename": "visualization-vis-3.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/visualization-vis-3.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "轨迹永远不会重复，但始终被限制在这个奇异吸引子内。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "visualization",
+      "line_id": "vis-4",
+      "filename": "visualization-vis-4.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/visualization-vis-4.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "这就是混沌的本质：有界但不周期，确定但不可预测。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "sensitivity",
+      "line_id": "sens-1",
+      "filename": "sensitivity-sens-1.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/sensitivity-sens-1.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "现在让我们观察两条初始位置非常接近的轨迹。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "sensitivity",
+      "line_id": "sens-2",
+      "filename": "sensitivity-sens-2.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/sensitivity-sens-2.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "起初它们几乎重合，但很快就会分道扬镳。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "sensitivity",
+      "line_id": "sens-3",
+      "filename": "sensitivity-sens-3.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/sensitivity-sens-3.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "这种指数级的分离速度，使得长期预测变得不可能。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "sensitivity",
+      "line_id": "sens-4",
+      "filename": "sensitivity-sens-4.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/sensitivity-sens-4.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "即使我们知道精确的运动方程，微小的测量误差也会被无限放大。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/application-app-1.mp3",
+      "duration": 1.42,
+      "size": 22752,
+      "text": "混沌理论在许多领域都有重要应用。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/application-app-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "在气象学中，它解释了为什么长期天气预报如此困难。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/application-app-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "在密码学中，混沌系统被用来生成伪随机数。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/application-app-4.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "在生态学中，它帮助我们理解种群数量的不规则波动。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.39,
+      "size": 22176,
+      "text": "今天我们探索了混沌理论的核心概念。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "混沌告诉我们，简单的规则可以产生极其复杂的行为。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "确定性并不意味着可预测性，这是混沌给我们的深刻启示。"
+    },
+    {
+      "script_id": "chaos",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/chaos/xiaoxiao/summary-sum-4.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "希望这次实验能激发你对非线性动力学的兴趣。"
+    }
+  ],
+  "total_duration": 47.07999999999999,
+  "total_size": 753264
+}

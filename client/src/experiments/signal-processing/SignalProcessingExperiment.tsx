@@ -1,11 +1,17 @@
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
+import { NarrationPresenter } from '../../components/NarrationPresenter'
+import { useNarrationOptional } from '../../contexts/NarrationContext'
+import { signalProcessingNarration } from '../../narrations/scripts/signal-processing'
 
 type FilterType = 'lowpass' | 'highpass' | 'bandpass' | 'notch'
 type WindowType = 'rectangular' | 'hamming' | 'hanning' | 'blackman'
 
 export default function SignalProcessingExperiment() {
+  const [showPresenter, setShowPresenter] = useState(false)
+  const narration = useNarrationOptional()
+
   const [signalFreq, setSignalFreq] = useState(5)
   const [noiseFreq, setNoiseFreq] = useState(50)
   const [noiseAmp, setNoiseAmp] = useState(0.3)
@@ -17,6 +23,28 @@ export default function SignalProcessingExperiment() {
   const [isAnimating, setIsAnimating] = useState(false)
   const [animatedCutoff, setAnimatedCutoff] = useState(5)
   const animationRef = useRef<number | null>(null)
+
+  // 讲解系统
+  useEffect(() => {
+    if (narration) {
+      narration.loadScript(signalProcessingNarration)
+    }
+  }, [narration])
+
+  const handleStartNarration = useCallback(() => {
+    if (narration) {
+      narration.startNarration()
+      narration.setPresenterMode(true)
+      setShowPresenter(true)
+    }
+  }, [narration])
+
+  const handleExitPresenter = useCallback(() => {
+    if (narration) {
+      narration.setPresenterMode(false)
+    }
+    setShowPresenter(false)
+  }, [narration])
 
   // 动画效果：截止频率扫描
   useEffect(() => {
@@ -212,26 +240,38 @@ export default function SignalProcessingExperiment() {
   }, [signalData.clean, noiseAmp])
 
   return (
-    <div className="space-y-6">
-      <header className="flex justify-between items-center">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-800">信号处理</h1>
-          <p className="text-gray-600">探索滤波器、频谱分析和窗函数</p>
-        </div>
-        <button
-          onClick={() => {
-            if (!isAnimating) {
-              setAnimatedCutoff(5)
-            }
-            setIsAnimating(!isAnimating)
-          }}
-          className={`px-4 py-2 rounded-lg text-sm font-medium ${
-            isAnimating ? 'bg-red-500 text-white' : 'bg-green-500 text-white'
-          }`}
-        >
-          {isAnimating ? '停止' : '播放动画'}
-        </button>
-      </header>
+    <>
+      {showPresenter && (
+        <NarrationPresenter onExit={handleExitPresenter} />
+      )}
+      <div className="space-y-6">
+        <header className="flex justify-between items-center">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-800">信号处理</h1>
+            <p className="text-gray-600">探索滤波器、频谱分析和窗函数</p>
+          </div>
+          <div className="flex gap-2">
+            <button
+              onClick={() => {
+                if (!isAnimating) {
+                  setAnimatedCutoff(5)
+                }
+                setIsAnimating(!isAnimating)
+              }}
+              className={`px-4 py-2 rounded-lg text-sm font-medium ${
+                isAnimating ? 'bg-red-500 text-white' : 'bg-green-500 text-white'
+              }`}
+            >
+              {isAnimating ? '停止' : '播放动画'}
+            </button>
+            <button
+              onClick={handleStartNarration}
+              className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
+            >
+              开始讲解
+            </button>
+          </div>
+        </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-6">
@@ -528,6 +568,7 @@ export default function SignalProcessingExperiment() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

@@ -1,5 +1,8 @@
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import MathFormula from '../../components/MathFormula/MathFormula'
+import { NarrationPresenter } from '../../components/NarrationPresenter'
+import { useNarrationOptional } from '../../contexts/NarrationContext'
+import { vectorFieldNarration } from '../../narrations/scripts/vector-field'
 
 type VectorField = {
   name: string
@@ -54,6 +57,9 @@ const fields: VectorField[] = [
 ]
 
 export default function VectorFieldExperiment() {
+  const [showPresenter, setShowPresenter] = useState(false)
+  const narration = useNarrationOptional()
+
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [selectedField, setSelectedField] = useState(0)
   const [gridDensity, setGridDensity] = useState(15)
@@ -62,6 +68,28 @@ export default function VectorFieldExperiment() {
   const [isAnimating, setIsAnimating] = useState(false)
   const [particles, setParticles] = useState<{ x: number; y: number; age: number }[]>([])
   const animationRef = useRef<number | null>(null)
+
+  // 讲解系统
+  useEffect(() => {
+    if (narration) {
+      narration.loadScript(vectorFieldNarration)
+    }
+  }, [narration])
+
+  const handleStartNarration = useCallback(() => {
+    if (narration) {
+      narration.startNarration()
+      narration.setPresenterMode(true)
+      setShowPresenter(true)
+    }
+  }, [narration])
+
+  const handleExitPresenter = useCallback(() => {
+    if (narration) {
+      narration.setPresenterMode(false)
+    }
+    setShowPresenter(false)
+  }, [narration])
 
   const field = fields[selectedField]
 
@@ -284,11 +312,23 @@ export default function VectorFieldExperiment() {
   }, [field, gridDensity, showStreamlines, arrowScale, isAnimating, particles])
 
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-bold text-gray-800">向量场可视化</h1>
-        <p className="text-gray-600">探索二维向量场的散度、旋度和流线</p>
-      </header>
+    <>
+      {showPresenter && (
+        <NarrationPresenter onExit={handleExitPresenter} />
+      )}
+      <div className="space-y-6">
+        <header className="flex justify-between items-center">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-800">向量场可视化</h1>
+            <p className="text-gray-600">探索二维向量场的散度、旋度和流线</p>
+          </div>
+          <button
+            onClick={handleStartNarration}
+            className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
+          >
+            开始讲解
+          </button>
+        </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-6">
@@ -430,6 +470,7 @@ export default function VectorFieldExperiment() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

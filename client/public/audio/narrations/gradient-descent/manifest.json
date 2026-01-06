@@ -1,0 +1,249 @@
+{
+  "script_id": "gradient-descent",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "gradient-descent",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/gradient-descent/intro-intro-1.mp3",
+      "duration": 1.01,
+      "size": 16128,
+      "text": "欢迎来到梯度下降实验。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/gradient-descent/intro-intro-2.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "想象你在一座雾蒙蒙的山上，看不见远处，只能感知脚下的坡度。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/gradient-descent/intro-intro-3.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "如何找到山谷的最低点？最直观的方法就是沿着最陡的下坡方向走。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/gradient-descent/intro-intro-4.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "这正是梯度下降算法的核心思想，也是现代机器学习的基石。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/gradient-descent/concept-concept-1.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "梯度是一个向量，指向函数增长最快的方向。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/gradient-descent/concept-concept-2.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "它的大小表示增长的速率，方向表示最陡上升的方向。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/gradient-descent/concept-concept-3.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "要找最小值，我们只需沿着梯度的反方向移动。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/gradient-descent/concept-concept-4.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "这就是梯度下降：不断沿着负梯度方向更新参数，直到收敛。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "algorithm",
+      "line_id": "algo-1",
+      "filename": "algorithm-algo-1.mp3",
+      "path": "audio/narrations/gradient-descent/algorithm-algo-1.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "让我们在二维函数上观察梯度下降的过程。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "algorithm",
+      "line_id": "algo-2",
+      "filename": "algorithm-algo-2.mp3",
+      "path": "audio/narrations/gradient-descent/algorithm-algo-2.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "红点表示当前位置，箭头表示负梯度方向。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "algorithm",
+      "line_id": "algo-3",
+      "filename": "algorithm-algo-3.mp3",
+      "path": "audio/narrations/gradient-descent/algorithm-algo-3.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "每一步，我们沿着箭头方向移动一小段距离。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "algorithm",
+      "line_id": "algo-4",
+      "filename": "algorithm-algo-4.mp3",
+      "path": "audio/narrations/gradient-descent/algorithm-algo-4.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "经过多次迭代，点逐渐接近函数的最小值。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "learning-rate",
+      "line_id": "lr-1",
+      "filename": "learning-rate-lr-1.mp3",
+      "path": "audio/narrations/gradient-descent/learning-rate-lr-1.mp3",
+      "duration": 1.29,
+      "size": 20592,
+      "text": "学习率决定了每一步移动的距离。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "learning-rate",
+      "line_id": "lr-2",
+      "filename": "learning-rate-lr-2.mp3",
+      "path": "audio/narrations/gradient-descent/learning-rate-lr-2.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "学习率太小，收敛会非常缓慢，需要很多步才能到达最小值。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "learning-rate",
+      "line_id": "lr-3",
+      "filename": "learning-rate-lr-3.mp3",
+      "path": "audio/narrations/gradient-descent/learning-rate-lr-3.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "学习率太大，可能会跳过最小值，甚至发散。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "learning-rate",
+      "line_id": "lr-4",
+      "filename": "learning-rate-lr-4.mp3",
+      "path": "audio/narrations/gradient-descent/learning-rate-lr-4.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "选择合适的学习率是梯度下降成功的关键。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/gradient-descent/application-app-1.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "梯度下降是训练神经网络的核心算法。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/gradient-descent/application-app-2.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "在深度学习中，我们用它来最小化损失函数，调整数百万个参数。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/gradient-descent/application-app-3.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "变体如随机梯度下降、Adam等，进一步提高了效率和稳定性。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/gradient-descent/application-app-4.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "可以说，没有梯度下降，就没有今天的人工智能革命。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/gradient-descent/summary-sum-1.mp3",
+      "duration": 1.17,
+      "size": 18720,
+      "text": "今天我们探索了梯度下降算法。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/gradient-descent/summary-sum-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "它的思想简单而强大：沿着最陡下降方向寻找最小值。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/gradient-descent/summary-sum-3.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "学习率的选择至关重要，需要在速度和稳定性之间取得平衡。"
+    },
+    {
+      "script_id": "gradient-descent",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/gradient-descent/summary-sum-4.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "希望这次实验能帮助你理解机器学习的数学基础。"
+    }
+  ],
+  "total_duration": 44.78000000000001,
+  "total_size": 716256
+}

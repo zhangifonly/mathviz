@@ -1,0 +1,177 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 常微分方程实验 - 口播稿件
+ *
+ * 核心概念：微分方程与动力系统
+ * 目标受众：大学本科生，有基础微积分知识
+ */
+export const odeNarration: NarrationScript = {
+  id: 'ode',
+  title: '常微分方程',
+  subtitle: '探索变化率与动力系统',
+  difficulty: 'advanced',
+  targetAge: '大学本科',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2025-01-06',
+    updatedAt: '2025-01-06',
+  },
+
+  objectives: [
+    '理解微分方程的基本概念',
+    '掌握常见微分方程的解法',
+    '观察相空间中的轨迹',
+    '了解微分方程在建模中的应用',
+  ],
+
+  prerequisites: [
+    '微积分基础',
+    '导数的概念',
+    '基础代数知识',
+  ],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      lines: [
+        {
+          id: 'intro-1',
+          text: '欢迎来到常微分方程实验。',
+        },
+        {
+          id: 'intro-2',
+          text: '你有没有想过，人口是如何增长的？放射性物质是如何衰变的？',
+        },
+        {
+          id: 'intro-3',
+          text: '这些问题都涉及到变化率，而微分方程正是描述变化率的数学语言。',
+        },
+        {
+          id: 'intro-4',
+          text: '今天我们将探索这个强大的数学工具。',
+        },
+      ],
+    },
+    {
+      id: 'concept',
+      type: 'concept',
+      title: '核心概念',
+      lines: [
+        {
+          id: 'concept-1',
+          text: '微分方程是包含未知函数及其导数的方程。',
+        },
+        {
+          id: 'concept-2',
+          text: '常微分方程只涉及一个自变量，通常是时间。',
+        },
+        {
+          id: 'concept-3',
+          text: '解微分方程就是找到满足方程的函数。',
+        },
+        {
+          id: 'concept-4',
+          text: '初始条件决定了众多解中的特定一个。',
+        },
+      ],
+    },
+    {
+      id: 'exponential',
+      type: 'animation',
+      title: '指数增长与衰减',
+      lines: [
+        {
+          id: 'exp-1',
+          text: '最简单的微分方程是：变化率与当前值成正比。',
+        },
+        {
+          id: 'exp-2',
+          text: '如果比例常数为正，得到指数增长，如细菌繁殖。',
+        },
+        {
+          id: 'exp-3',
+          text: '如果比例常数为负，得到指数衰减，如放射性衰变。',
+        },
+        {
+          id: 'exp-4',
+          text: '这个方程的解是指数函数，是自然界中最常见的模式之一。',
+        },
+      ],
+    },
+    {
+      id: 'oscillation',
+      type: 'animation',
+      title: '振动与周期运动',
+      lines: [
+        {
+          id: 'osc-1',
+          text: '二阶微分方程可以描述振动现象。',
+        },
+        {
+          id: 'osc-2',
+          text: '简谐振动方程的解是正弦和余弦函数。',
+        },
+        {
+          id: 'osc-3',
+          text: '加入阻尼项，振动会逐渐衰减。',
+        },
+        {
+          id: 'osc-4',
+          text: '这个模型描述了弹簧、钟摆等周期运动。',
+        },
+      ],
+    },
+    {
+      id: 'application',
+      type: 'application',
+      title: '实际应用',
+      lines: [
+        {
+          id: 'app-1',
+          text: '微分方程是科学建模的核心工具。',
+        },
+        {
+          id: 'app-2',
+          text: '物理学中的牛顿运动定律就是微分方程。',
+        },
+        {
+          id: 'app-3',
+          text: '生态学用它来模拟捕食者与猎物的动态平衡。',
+        },
+        {
+          id: 'app-4',
+          text: '流行病学用它来预测疾病的传播。',
+        },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      lines: [
+        {
+          id: 'sum-1',
+          text: '今天我们探索了常微分方程的基本概念。',
+        },
+        {
+          id: 'sum-2',
+          text: '微分方程是描述变化和动态系统的数学语言。',
+        },
+        {
+          id: 'sum-3',
+          text: '从指数增长到周期振动，它们无处不在。',
+        },
+        {
+          id: 'sum-4',
+          text: '希望这次实验能帮助你理解自然界中的变化规律。',
+        },
+      ],
+    },
+  ],
+}

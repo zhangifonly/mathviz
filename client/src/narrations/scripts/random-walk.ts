@@ -1,0 +1,177 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 随机游走实验 - 口播稿件
+ *
+ * 核心概念：随机过程与布朗运动
+ * 目标受众：大学本科生，有基础概率知识
+ */
+export const randomWalkNarration: NarrationScript = {
+  id: 'random-walk',
+  title: '随机游走',
+  subtitle: '探索随机过程的基础',
+  difficulty: 'intermediate',
+  targetAge: '大学本科',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2025-01-06',
+    updatedAt: '2025-01-06',
+  },
+
+  objectives: [
+    '理解随机游走的基本概念',
+    '掌握期望位移和方差的计算',
+    '观察大数定律的体现',
+    '了解随机游走的应用',
+  ],
+
+  prerequisites: [
+    '基础概率论',
+    '期望和方差的概念',
+    '极限的基本理解',
+  ],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      lines: [
+        {
+          id: 'intro-1',
+          text: '欢迎来到随机游走实验。',
+        },
+        {
+          id: 'intro-2',
+          text: '想象一个醉汉从酒吧出来，每一步随机向左或向右。',
+        },
+        {
+          id: 'intro-3',
+          text: '他最终会走到哪里？离起点有多远？',
+        },
+        {
+          id: 'intro-4',
+          text: '这个看似简单的问题，蕴含着深刻的数学原理。',
+        },
+      ],
+    },
+    {
+      id: 'concept',
+      type: 'concept',
+      title: '核心概念',
+      lines: [
+        {
+          id: 'concept-1',
+          text: '随机游走是一系列随机步骤的累积。',
+        },
+        {
+          id: 'concept-2',
+          text: '在一维情况下，每一步等概率向左或向右移动一个单位。',
+        },
+        {
+          id: 'concept-3',
+          text: '虽然每一步是随机的，但整体行为却有规律可循。',
+        },
+        {
+          id: 'concept-4',
+          text: '让我们通过模拟来观察这些规律。',
+        },
+      ],
+    },
+    {
+      id: 'simulation',
+      type: 'animation',
+      title: '模拟演示',
+      lines: [
+        {
+          id: 'sim-1',
+          text: '屏幕上显示的是多条随机游走的轨迹。',
+        },
+        {
+          id: 'sim-2',
+          text: '每条轨迹都是独立的，但它们呈现出相似的统计特性。',
+        },
+        {
+          id: 'sim-3',
+          text: '注意轨迹如何在零点附近波动，但偶尔会远离。',
+        },
+        {
+          id: 'sim-4',
+          text: '随着步数增加，轨迹的扩散范围也在增大。',
+        },
+      ],
+    },
+    {
+      id: 'statistics',
+      type: 'concept',
+      title: '统计特性',
+      lines: [
+        {
+          id: 'stat-1',
+          text: '随机游走的期望位置始终是起点。',
+        },
+        {
+          id: 'stat-2',
+          text: '但位置的方差随步数线性增长。',
+        },
+        {
+          id: 'stat-3',
+          text: '这意味着典型的偏离距离与步数的平方根成正比。',
+        },
+        {
+          id: 'stat-4',
+          text: '这个结果在物理学中被称为扩散定律。',
+        },
+      ],
+    },
+    {
+      id: 'application',
+      type: 'application',
+      title: '实际应用',
+      lines: [
+        {
+          id: 'app-1',
+          text: '随机游走在许多领域都有重要应用。',
+        },
+        {
+          id: 'app-2',
+          text: '金融学中，股票价格的短期波动可以用随机游走来建模。',
+        },
+        {
+          id: 'app-3',
+          text: '物理学中，布朗运动就是连续时间的随机游走。',
+        },
+        {
+          id: 'app-4',
+          text: '生态学中，它用来模拟动物的觅食行为。',
+        },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      lines: [
+        {
+          id: 'sum-1',
+          text: '今天我们探索了随机游走的基本原理。',
+        },
+        {
+          id: 'sum-2',
+          text: '随机游走展示了随机性中的规律性。',
+        },
+        {
+          id: 'sum-3',
+          text: '它是理解更复杂随机过程的基础。',
+        },
+        {
+          id: 'sum-4',
+          text: '希望这次实验能帮助你建立对随机现象的直觉。',
+        },
+      ],
+    },
+  ],
+}

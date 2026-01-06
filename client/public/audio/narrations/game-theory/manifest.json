@@ -1,0 +1,249 @@
+{
+  "script_id": "game-theory",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "game-theory",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/game-theory/intro-intro-1.mp3",
+      "duration": 0.92,
+      "size": 14688,
+      "text": "欢迎来到博弈论实验。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/game-theory/intro-intro-2.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "你有没有想过，为什么两家相邻的加油站价格总是差不多？"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/game-theory/intro-intro-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "或者，为什么国家之间会陷入军备竞赛的困境？"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/game-theory/intro-intro-4.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "博弈论正是研究这类策略互动的数学工具。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/game-theory/concept-concept-1.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "博弈论研究的是多个决策者之间的策略互动。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/game-theory/concept-concept-2.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "每个参与者都试图最大化自己的收益，同时考虑其他人的可能行动。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/game-theory/concept-concept-3.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "核心概念是纳什均衡：没有人能通过单方面改变策略来获得更好的结果。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/game-theory/concept-concept-4.mp3",
+      "duration": 2.85,
+      "size": 45648,
+      "text": "这个概念由约翰·纳什在1950年提出，他因此获得了诺贝尔经济学奖。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "prisoner",
+      "line_id": "prisoner-1",
+      "filename": "prisoner-prisoner-1.mp3",
+      "path": "audio/narrations/game-theory/prisoner-prisoner-1.mp3",
+      "duration": 1.42,
+      "size": 22752,
+      "text": "让我们来看最著名的博弈：囚徒困境。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "prisoner",
+      "line_id": "prisoner-2",
+      "filename": "prisoner-prisoner-2.mp3",
+      "path": "audio/narrations/game-theory/prisoner-prisoner-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "两个嫌疑人被分开审讯，每人可以选择沉默或背叛对方。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "prisoner",
+      "line_id": "prisoner-3",
+      "filename": "prisoner-prisoner-3.mp3",
+      "path": "audio/narrations/game-theory/prisoner-prisoner-3.mp3",
+      "duration": 3.68,
+      "size": 58896,
+      "text": "如果都沉默，各判1年；都背叛，各判3年；一人背叛一人沉默，背叛者释放，沉默者判5年。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "prisoner",
+      "line_id": "prisoner-4",
+      "filename": "prisoner-prisoner-4.mp3",
+      "path": "audio/narrations/game-theory/prisoner-prisoner-4.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "理性分析表明，双方都会选择背叛，尽管双方沉默对整体更好。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "nash",
+      "line_id": "nash-1",
+      "filename": "nash-nash-1.mp3",
+      "path": "audio/narrations/game-theory/nash-nash-1.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "囚徒困境中的双方背叛就是一个纳什均衡。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "nash",
+      "line_id": "nash-2",
+      "filename": "nash-nash-2.mp3",
+      "path": "audio/narrations/game-theory/nash-nash-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "在这个状态下，任何一方单独改变策略都会让自己更糟。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "nash",
+      "line_id": "nash-3",
+      "filename": "nash-nash-3.mp3",
+      "path": "audio/narrations/game-theory/nash-nash-3.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "纳什均衡不一定是最优结果，但它是一种稳定状态。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "nash",
+      "line_id": "nash-4",
+      "filename": "nash-nash-4.mp3",
+      "path": "audio/narrations/game-theory/nash-nash-4.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "纳什证明了每个有限博弈至少存在一个纳什均衡。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/game-theory/application-app-1.mp3",
+      "duration": 1.2,
+      "size": 19152,
+      "text": "博弈论在现实中有广泛应用。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/game-theory/application-app-2.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "在经济学中，它用于分析市场竞争和拍卖设计。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/game-theory/application-app-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "在政治学中，它帮助理解国际关系和投票行为。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/game-theory/application-app-4.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "在生物学中，它解释了动物的进化策略和合作行为。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/game-theory/summary-sum-1.mp3",
+      "duration": 1.27,
+      "size": 20304,
+      "text": "今天我们探索了博弈论的基本概念。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/game-theory/summary-sum-2.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "博弈论揭示了理性个体如何在互动中做出决策。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/game-theory/summary-sum-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "它告诉我们，个体理性有时会导致集体非理性的结果。"
+    },
+    {
+      "script_id": "game-theory",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/game-theory/summary-sum-4.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "希望这次实验能帮助你更好地理解策略思维。"
+    }
+  ],
+  "total_duration": 46.31000000000001,
+  "total_size": 741456
+}

@@ -1,0 +1,177 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 梯度下降实验 - 口播稿件
+ *
+ * 核心概念：优化算法与机器学习基础
+ * 目标受众：大学本科生，有基础微积分知识
+ */
+export const gradientDescentNarration: NarrationScript = {
+  id: 'gradient-descent',
+  title: '梯度下降',
+  subtitle: '探索机器学习的核心优化算法',
+  difficulty: 'advanced',
+  targetAge: '大学本科',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2025-01-06',
+    updatedAt: '2025-01-06',
+  },
+
+  objectives: [
+    '理解梯度的几何意义',
+    '掌握梯度下降算法的原理',
+    '观察学习率对收敛的影响',
+    '了解梯度下降在机器学习中的应用',
+  ],
+
+  prerequisites: [
+    '多元微积分基础',
+    '偏导数的概念',
+    '向量的基本运算',
+  ],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      lines: [
+        {
+          id: 'intro-1',
+          text: '欢迎来到梯度下降实验。',
+        },
+        {
+          id: 'intro-2',
+          text: '想象你在一座雾蒙蒙的山上，看不见远处，只能感知脚下的坡度。',
+        },
+        {
+          id: 'intro-3',
+          text: '如何找到山谷的最低点？最直观的方法就是沿着最陡的下坡方向走。',
+        },
+        {
+          id: 'intro-4',
+          text: '这正是梯度下降算法的核心思想，也是现代机器学习的基石。',
+        },
+      ],
+    },
+    {
+      id: 'concept',
+      type: 'concept',
+      title: '核心概念',
+      lines: [
+        {
+          id: 'concept-1',
+          text: '梯度是一个向量，指向函数增长最快的方向。',
+        },
+        {
+          id: 'concept-2',
+          text: '它的大小表示增长的速率，方向表示最陡上升的方向。',
+        },
+        {
+          id: 'concept-3',
+          text: '要找最小值，我们只需沿着梯度的反方向移动。',
+        },
+        {
+          id: 'concept-4',
+          text: '这就是梯度下降：不断沿着负梯度方向更新参数，直到收敛。',
+        },
+      ],
+    },
+    {
+      id: 'algorithm',
+      type: 'animation',
+      title: '算法演示',
+      lines: [
+        {
+          id: 'algo-1',
+          text: '让我们在二维函数上观察梯度下降的过程。',
+        },
+        {
+          id: 'algo-2',
+          text: '红点表示当前位置，箭头表示负梯度方向。',
+        },
+        {
+          id: 'algo-3',
+          text: '每一步，我们沿着箭头方向移动一小段距离。',
+        },
+        {
+          id: 'algo-4',
+          text: '经过多次迭代，点逐渐接近函数的最小值。',
+        },
+      ],
+    },
+    {
+      id: 'learning-rate',
+      type: 'interaction',
+      title: '学习率',
+      lines: [
+        {
+          id: 'lr-1',
+          text: '学习率决定了每一步移动的距离。',
+        },
+        {
+          id: 'lr-2',
+          text: '学习率太小，收敛会非常缓慢，需要很多步才能到达最小值。',
+        },
+        {
+          id: 'lr-3',
+          text: '学习率太大，可能会跳过最小值，甚至发散。',
+        },
+        {
+          id: 'lr-4',
+          text: '选择合适的学习率是梯度下降成功的关键。',
+        },
+      ],
+    },
+    {
+      id: 'application',
+      type: 'application',
+      title: '机器学习应用',
+      lines: [
+        {
+          id: 'app-1',
+          text: '梯度下降是训练神经网络的核心算法。',
+        },
+        {
+          id: 'app-2',
+          text: '在深度学习中，我们用它来最小化损失函数，调整数百万个参数。',
+        },
+        {
+          id: 'app-3',
+          text: '变体如随机梯度下降、Adam等，进一步提高了效率和稳定性。',
+        },
+        {
+          id: 'app-4',
+          text: '可以说，没有梯度下降，就没有今天的人工智能革命。',
+        },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      lines: [
+        {
+          id: 'sum-1',
+          text: '今天我们探索了梯度下降算法。',
+        },
+        {
+          id: 'sum-2',
+          text: '它的思想简单而强大：沿着最陡下降方向寻找最小值。',
+        },
+        {
+          id: 'sum-3',
+          text: '学习率的选择至关重要，需要在速度和稳定性之间取得平衡。',
+        },
+        {
+          id: 'sum-4',
+          text: '希望这次实验能帮助你理解机器学习的数学基础。',
+        },
+      ],
+    },
+  ],
+}

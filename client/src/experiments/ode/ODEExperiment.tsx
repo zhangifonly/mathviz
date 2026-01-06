@@ -1,7 +1,10 @@
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import ParameterPanel from '../../components/ParameterPanel/ParameterPanel'
+import { NarrationPresenter } from '../../components/NarrationPresenter'
+import { useNarrationOptional } from '../../contexts/NarrationContext'
+import { odeNarration } from '../../narrations/scripts/ode'
 
 type ODEType = 'harmonic' | 'damped' | 'logistic' | 'predator-prey' | 'pendulum'
 
@@ -43,6 +46,9 @@ function rk4(f: (t: number, y: number[]) => number[], t: number, y: number[], dt
 }
 
 export default function ODEExperiment() {
+  const [showPresenter, setShowPresenter] = useState(false)
+  const narration = useNarrationOptional()
+
   const [params, setParams] = useState({
     omega: 2,
     gamma: 0.3,
@@ -58,6 +64,28 @@ export default function ODEExperiment() {
     v0: 0,
   })
   const [odeType, setOdeType] = useState<ODEType>('harmonic')
+
+  // 讲解系统
+  useEffect(() => {
+    if (narration) {
+      narration.loadScript(odeNarration)
+    }
+  }, [narration])
+
+  const handleStartNarration = useCallback(() => {
+    if (narration) {
+      narration.startNarration()
+      narration.setPresenterMode(true)
+      setShowPresenter(true)
+    }
+  }, [narration])
+
+  const handleExitPresenter = useCallback(() => {
+    if (narration) {
+      narration.setPresenterMode(false)
+    }
+    setShowPresenter(false)
+  }, [narration])
   const [isAnimating, setIsAnimating] = useState(false)
   const animationRef = useRef<number | null>(null)
   const [animIndex, setAnimIndex] = useState(0)
@@ -141,11 +169,23 @@ export default function ODEExperiment() {
   }, [odeType, params])
 
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-bold text-gray-800">微分方程</h1>
-        <p className="text-gray-600">可视化常微分方程的解和相图</p>
-      </header>
+    <>
+      {showPresenter && (
+        <NarrationPresenter onExit={handleExitPresenter} />
+      )}
+      <div className="space-y-6">
+        <header className="flex justify-between items-center">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-800">微分方程</h1>
+            <p className="text-gray-600">可视化常微分方程的解和相图</p>
+          </div>
+          <button
+            onClick={handleStartNarration}
+            className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
+          >
+            开始讲解
+          </button>
+        </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-6">
@@ -321,6 +361,7 @@ export default function ODEExperiment() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

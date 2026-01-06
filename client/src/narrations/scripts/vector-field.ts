@@ -1,0 +1,177 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 向量场实验 - 口播稿件
+ *
+ * 核心概念：向量场与流线
+ * 目标受众：大学本科生，有基础微积分知识
+ */
+export const vectorFieldNarration: NarrationScript = {
+  id: 'vector-field',
+  title: '向量场',
+  subtitle: '探索空间中的向量分布',
+  difficulty: 'intermediate',
+  targetAge: '大学本科',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2025-01-06',
+    updatedAt: '2025-01-06',
+  },
+
+  objectives: [
+    '理解向量场的概念',
+    '掌握散度和旋度的几何意义',
+    '观察流线的形成',
+    '了解向量场在物理中的应用',
+  ],
+
+  prerequisites: [
+    '向量的基本运算',
+    '多元微积分',
+    '偏导数的概念',
+  ],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      lines: [
+        {
+          id: 'intro-1',
+          text: '欢迎来到向量场实验。',
+        },
+        {
+          id: 'intro-2',
+          text: '你有没有看过天气预报中的风向图？',
+        },
+        {
+          id: 'intro-3',
+          text: '每个位置都有一个箭头，表示那里的风向和风速。',
+        },
+        {
+          id: 'intro-4',
+          text: '这就是向量场的一个典型例子。',
+        },
+      ],
+    },
+    {
+      id: 'concept',
+      type: 'concept',
+      title: '核心概念',
+      lines: [
+        {
+          id: 'concept-1',
+          text: '向量场是空间中每一点都对应一个向量的函数。',
+        },
+        {
+          id: 'concept-2',
+          text: '它可以表示速度场、力场、电场等物理量。',
+        },
+        {
+          id: 'concept-3',
+          text: '向量场的可视化通常用箭头或流线来表示。',
+        },
+        {
+          id: 'concept-4',
+          text: '让我们通过几个例子来理解向量场的特性。',
+        },
+      ],
+    },
+    {
+      id: 'streamlines',
+      type: 'animation',
+      title: '流线',
+      lines: [
+        {
+          id: 'stream-1',
+          text: '流线是与向量场处处相切的曲线。',
+        },
+        {
+          id: 'stream-2',
+          text: '如果向量场表示流体速度，流线就是流体质点的运动轨迹。',
+        },
+        {
+          id: 'stream-3',
+          text: '观察屏幕上的流线如何展示向量场的整体结构。',
+        },
+        {
+          id: 'stream-4',
+          text: '流线永远不会相交，因为每点只有一个速度方向。',
+        },
+      ],
+    },
+    {
+      id: 'divergence-curl',
+      type: 'concept',
+      title: '散度与旋度',
+      lines: [
+        {
+          id: 'div-1',
+          text: '散度衡量向量场在某点的发散或汇聚程度。',
+        },
+        {
+          id: 'div-2',
+          text: '正散度表示源，负散度表示汇。',
+        },
+        {
+          id: 'div-3',
+          text: '旋度衡量向量场在某点的旋转程度。',
+        },
+        {
+          id: 'div-4',
+          text: '这两个量是分析向量场的核心工具。',
+        },
+      ],
+    },
+    {
+      id: 'application',
+      type: 'application',
+      title: '实际应用',
+      lines: [
+        {
+          id: 'app-1',
+          text: '向量场在物理学中无处不在。',
+        },
+        {
+          id: 'app-2',
+          text: '流体力学用它来描述流体的运动。',
+        },
+        {
+          id: 'app-3',
+          text: '电磁学中的电场和磁场都是向量场。',
+        },
+        {
+          id: 'app-4',
+          text: '计算机图形学用它来模拟烟雾和水流效果。',
+        },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      lines: [
+        {
+          id: 'sum-1',
+          text: '今天我们探索了向量场的基本概念。',
+        },
+        {
+          id: 'sum-2',
+          text: '向量场是描述空间中方向性物理量的数学工具。',
+        },
+        {
+          id: 'sum-3',
+          text: '散度和旋度揭示了向量场的局部特性。',
+        },
+        {
+          id: 'sum-4',
+          text: '希望这次实验能帮助你建立对向量场的直观理解。',
+        },
+      ],
+    },
+  ],
+}

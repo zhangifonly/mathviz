@@ -1,0 +1,249 @@
+{
+  "script_id": "fractal",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "fractal",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/fractal/yunxi/intro-intro-1.mp3",
+      "duration": 1.06,
+      "size": 16992,
+      "text": "欢迎来到分形几何实验。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/fractal/yunxi/intro-intro-2.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "你有没有注意过，海岸线的形状在不同尺度下看起来都很相似？"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/fractal/yunxi/intro-intro-3.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "或者树枝的分叉方式，与整棵树的形状惊人地相似？"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/fractal/yunxi/intro-intro-4.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "这种自相似性，正是分形几何研究的核心。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/fractal/yunxi/concept-concept-1.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "分形是一种具有自相似性的几何图形，无论放大多少倍，都能看到相似的结构。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/fractal/yunxi/concept-concept-2.mp3",
+      "duration": 2.77,
+      "size": 44352,
+      "text": "与传统几何不同，分形的维数可以是非整数，比如1.26维或2.58维。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/fractal/yunxi/concept-concept-3.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "这个概念由数学家曼德博在1975年提出，彻底改变了我们对几何的理解。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/fractal/yunxi/concept-concept-4.mp3",
+      "duration": 1.31,
+      "size": 21024,
+      "text": "让我们从最简单的分形开始探索。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "koch",
+      "line_id": "koch-1",
+      "filename": "koch-koch-1.mp3",
+      "path": "audio/narrations/fractal/yunxi/koch-koch-1.mp3",
+      "duration": 1.31,
+      "size": 21024,
+      "text": "科赫雪花是最经典的分形之一。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "koch",
+      "line_id": "koch-2",
+      "filename": "koch-koch-2.mp3",
+      "path": "audio/narrations/fractal/yunxi/koch-koch-2.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "它的构造很简单：取一条线段，将中间三分之一替换成等边三角形的两边。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "koch",
+      "line_id": "koch-3",
+      "filename": "koch-koch-3.mp3",
+      "path": "audio/narrations/fractal/yunxi/koch-koch-3.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "然后对每条新线段重复这个过程，无限次。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "koch",
+      "line_id": "koch-4",
+      "filename": "koch-koch-4.mp3",
+      "path": "audio/narrations/fractal/yunxi/koch-koch-4.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "神奇的是，科赫雪花的周长是无限的，但面积却是有限的。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "mandelbrot",
+      "line_id": "mandel-1",
+      "filename": "mandelbrot-mandel-1.mp3",
+      "path": "audio/narrations/fractal/yunxi/mandelbrot-mandel-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "现在让我们欣赏分形世界中最著名的图形：曼德博集合。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "mandelbrot",
+      "line_id": "mandel-2",
+      "filename": "mandelbrot-mandel-2.mp3",
+      "path": "audio/narrations/fractal/yunxi/mandelbrot-mandel-2.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "它由一个简单的迭代公式生成：z等于z的平方加c。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "mandelbrot",
+      "line_id": "mandel-3",
+      "filename": "mandelbrot-mandel-3.mp3",
+      "path": "audio/narrations/fractal/yunxi/mandelbrot-mandel-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "黑色区域是使迭代保持有界的复数c的集合。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "mandelbrot",
+      "line_id": "mandel-4",
+      "filename": "mandelbrot-mandel-4.mp3",
+      "path": "audio/narrations/fractal/yunxi/mandelbrot-mandel-4.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "放大边界，你会发现无穷无尽的精细结构，每一处都蕴含着整体的影子。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "nature",
+      "line_id": "nature-1",
+      "filename": "nature-nature-1.mp3",
+      "path": "audio/narrations/fractal/yunxi/nature-nature-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "分形不仅是数学抽象，它们无处不在于自然界中。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "nature",
+      "line_id": "nature-2",
+      "filename": "nature-nature-2.mp3",
+      "path": "audio/narrations/fractal/yunxi/nature-nature-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "树木的分枝、河流的支流、血管的网络，都呈现分形结构。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "nature",
+      "line_id": "nature-3",
+      "filename": "nature-nature-3.mp3",
+      "path": "audio/narrations/fractal/yunxi/nature-nature-3.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "闪电的路径、山脉的轮廓、云朵的形状，也都是分形。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "nature",
+      "line_id": "nature-4",
+      "filename": "nature-nature-4.mp3",
+      "path": "audio/narrations/fractal/yunxi/nature-nature-4.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "大自然似乎偏爱用分形来构建复杂的结构。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/fractal/yunxi/summary-sum-1.mp3",
+      "duration": 1.34,
+      "size": 21456,
+      "text": "今天我们探索了分形几何的奇妙世界。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/fractal/yunxi/summary-sum-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "分形告诉我们，简单的规则可以创造出无限复杂的美。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/fractal/yunxi/summary-sum-3.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "它们连接了数学与自然，揭示了隐藏在复杂性背后的秩序。"
+    },
+    {
+      "script_id": "fractal",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/fractal/yunxi/summary-sum-4.mp3",
+      "duration": 1.5,
+      "size": 24048,
+      "text": "希望你能继续探索这个迷人的数学领域。"
+    }
+  ],
+  "total_duration": 47.309999999999995,
+  "total_size": 757296
+}

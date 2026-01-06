@@ -1,0 +1,177 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * PCA主成分分析实验 - 口播稿件
+ *
+ * 核心概念：降维与特征提取
+ * 目标受众：大学本科生，有基础线性代数知识
+ */
+export const pcaNarration: NarrationScript = {
+  id: 'pca',
+  title: '主成分分析',
+  subtitle: '探索数据降维与特征提取',
+  difficulty: 'advanced',
+  targetAge: '大学本科',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2025-01-06',
+    updatedAt: '2025-01-06',
+  },
+
+  objectives: [
+    '理解降维的必要性',
+    '掌握PCA的数学原理',
+    '观察主成分的几何意义',
+    '了解PCA在数据分析中的应用',
+  ],
+
+  prerequisites: [
+    '线性代数基础',
+    '特征值和特征向量',
+    '协方差的概念',
+  ],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      lines: [
+        {
+          id: 'intro-1',
+          text: '欢迎来到主成分分析实验。',
+        },
+        {
+          id: 'intro-2',
+          text: '在数据科学中，我们经常面对高维数据：几十甚至几百个特征。',
+        },
+        {
+          id: 'intro-3',
+          text: '如何在保留重要信息的同时，简化数据的复杂性？',
+        },
+        {
+          id: 'intro-4',
+          text: 'PCA，主成分分析，正是解决这个问题的强大工具。',
+        },
+      ],
+    },
+    {
+      id: 'concept',
+      type: 'concept',
+      title: '核心概念',
+      lines: [
+        {
+          id: 'concept-1',
+          text: 'PCA的核心思想是找到数据变化最大的方向。',
+        },
+        {
+          id: 'concept-2',
+          text: '第一主成分是数据方差最大的方向。',
+        },
+        {
+          id: 'concept-3',
+          text: '第二主成分是与第一主成分垂直的方向中方差最大的。',
+        },
+        {
+          id: 'concept-4',
+          text: '以此类推，我们可以找到所有主成分。',
+        },
+      ],
+    },
+    {
+      id: 'visualization',
+      type: 'animation',
+      title: '几何演示',
+      lines: [
+        {
+          id: 'vis-1',
+          text: '让我们在二维数据上观察PCA的效果。',
+        },
+        {
+          id: 'vis-2',
+          text: '数据点形成一个椭圆形的分布。',
+        },
+        {
+          id: 'vis-3',
+          text: '第一主成分指向椭圆的长轴方向。',
+        },
+        {
+          id: 'vis-4',
+          text: '第二主成分指向短轴方向，与第一主成分垂直。',
+        },
+      ],
+    },
+    {
+      id: 'math',
+      type: 'concept',
+      title: '数学原理',
+      lines: [
+        {
+          id: 'math-1',
+          text: 'PCA的数学基础是协方差矩阵的特征分解。',
+        },
+        {
+          id: 'math-2',
+          text: '主成分就是协方差矩阵的特征向量。',
+        },
+        {
+          id: 'math-3',
+          text: '特征值表示每个主成分解释的方差大小。',
+        },
+        {
+          id: 'math-4',
+          text: '选择前几个最大特征值对应的主成分，就实现了降维。',
+        },
+      ],
+    },
+    {
+      id: 'application',
+      type: 'application',
+      title: '实际应用',
+      lines: [
+        {
+          id: 'app-1',
+          text: 'PCA在数据科学中有广泛应用。',
+        },
+        {
+          id: 'app-2',
+          text: '图像处理中，它用于人脸识别和图像压缩。',
+        },
+        {
+          id: 'app-3',
+          text: '金融分析中，它用于识别市场的主要驱动因素。',
+        },
+        {
+          id: 'app-4',
+          text: '生物信息学中，它用于分析基因表达数据。',
+        },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      lines: [
+        {
+          id: 'sum-1',
+          text: '今天我们探索了主成分分析的原理。',
+        },
+        {
+          id: 'sum-2',
+          text: 'PCA通过找到数据的主要变化方向来实现降维。',
+        },
+        {
+          id: 'sum-3',
+          text: '它是数据预处理和特征提取的重要工具。',
+        },
+        {
+          id: 'sum-4',
+          text: '希望这次实验能帮助你理解降维的数学本质。',
+        },
+      ],
+    },
+  ],
+}

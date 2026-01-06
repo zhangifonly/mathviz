@@ -1,0 +1,249 @@
+{
+  "script_id": "heat-equation",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "heat-equation",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/heat-equation/intro-intro-1.mp3",
+      "duration": 0.94,
+      "size": 15120,
+      "text": "欢迎来到热方程实验。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/heat-equation/intro-intro-2.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "你有没有注意过，热咖啡放在桌上会慢慢变凉？"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/heat-equation/intro-intro-3.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "或者冬天握着暖手宝，热量是如何传递到手上的？"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/heat-equation/intro-intro-4.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "热方程正是描述这种热传导过程的数学工具。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/heat-equation/concept-concept-1.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "热方程是最重要的偏微分方程之一，由傅里叶在1822年提出。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/heat-equation/concept-concept-2.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "它描述了温度如何随时间和空间变化。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/heat-equation/concept-concept-3.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "方程的核心思想是：热量从高温区域流向低温区域。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/heat-equation/concept-concept-4.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "温度变化的速率与温度的空间二阶导数成正比。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "visualization",
+      "line_id": "vis-1",
+      "filename": "visualization-vis-1.mp3",
+      "path": "audio/narrations/heat-equation/visualization-vis-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "让我们观察一根金属棒的温度分布如何随时间变化。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "visualization",
+      "line_id": "vis-2",
+      "filename": "visualization-vis-2.mp3",
+      "path": "audio/narrations/heat-equation/visualization-vis-2.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "初始时，棒的中间是热的，两端是冷的。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "visualization",
+      "line_id": "vis-3",
+      "filename": "visualization-vis-3.mp3",
+      "path": "audio/narrations/heat-equation/visualization-vis-3.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "随着时间推移，热量向两端扩散，温度分布逐渐变得平缓。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "visualization",
+      "line_id": "vis-4",
+      "filename": "visualization-vis-4.mp3",
+      "path": "audio/narrations/heat-equation/visualization-vis-4.mp3",
+      "duration": 1.3,
+      "size": 20736,
+      "text": "最终，整根棒会达到均匀的温度。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "boundary",
+      "line_id": "bound-1",
+      "filename": "boundary-bound-1.mp3",
+      "path": "audio/narrations/heat-equation/boundary-bound-1.mp3",
+      "duration": 1.31,
+      "size": 21024,
+      "text": "边界条件决定了热方程的具体解。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "boundary",
+      "line_id": "bound-2",
+      "filename": "boundary-bound-2.mp3",
+      "path": "audio/narrations/heat-equation/boundary-bound-2.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "固定温度边界：两端保持恒定温度。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "boundary",
+      "line_id": "bound-3",
+      "filename": "boundary-bound-3.mp3",
+      "path": "audio/narrations/heat-equation/boundary-bound-3.mp3",
+      "duration": 1.3,
+      "size": 20736,
+      "text": "绝热边界：两端没有热量流出。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "boundary",
+      "line_id": "bound-4",
+      "filename": "boundary-bound-4.mp3",
+      "path": "audio/narrations/heat-equation/boundary-bound-4.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "不同的边界条件会导致完全不同的温度演化。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/heat-equation/application-app-1.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "热方程在工程和科学中有广泛应用。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/heat-equation/application-app-2.mp3",
+      "duration": 1.54,
+      "size": 24624,
+      "text": "建筑设计中用它来分析墙体的保温性能。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/heat-equation/application-app-3.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "电子设备的散热设计依赖于热传导分析。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/heat-equation/application-app-4.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "有趣的是，热方程还用于图像处理中的模糊效果。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/heat-equation/summary-sum-1.mp3",
+      "duration": 1.3,
+      "size": 20880,
+      "text": "今天我们探索了热方程的基本原理。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/heat-equation/summary-sum-2.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "热方程描述了热量如何在空间中扩散。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/heat-equation/summary-sum-3.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "边界条件和初始条件决定了温度的具体演化。"
+    },
+    {
+      "script_id": "heat-equation",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/heat-equation/summary-sum-4.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "希望这次实验能帮助你理解偏微分方程的物理意义。"
+    }
+  ],
+  "total_duration": 39.55,
+  "total_size": 633024
+}

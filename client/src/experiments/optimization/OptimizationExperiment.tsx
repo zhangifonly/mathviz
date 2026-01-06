@@ -1,6 +1,9 @@
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
+import { NarrationPresenter } from '../../components/NarrationPresenter'
+import { useNarrationOptional } from '../../contexts/NarrationContext'
+import { optimizationNarration } from '../../narrations/scripts/optimization'
 
 type Algorithm = 'gradient' | 'momentum' | 'adam' | 'simulated-annealing' | 'genetic'
 type ObjectiveFunction = 'quadratic' | 'rosenbrock' | 'rastrigin' | 'ackley'
@@ -57,11 +60,36 @@ const FUNCTIONS: Record<ObjectiveFunction, {
 }
 
 export default function OptimizationExperiment() {
+  const [showPresenter, setShowPresenter] = useState(false)
+  const narration = useNarrationOptional()
+
   const [algorithm, setAlgorithm] = useState<Algorithm>('gradient')
   const [objective, setObjective] = useState<ObjectiveFunction>('quadratic')
   const [learningRate, setLearningRate] = useState(0.1)
   const [momentum, setMomentum] = useState(0.9)
   const [iterations, setIterations] = useState(50)
+
+  // 讲解系统
+  useEffect(() => {
+    if (narration) {
+      narration.loadScript(optimizationNarration)
+    }
+  }, [narration])
+
+  const handleStartNarration = useCallback(() => {
+    if (narration) {
+      narration.startNarration()
+      narration.setPresenterMode(true)
+      setShowPresenter(true)
+    }
+  }, [narration])
+
+  const handleExitPresenter = useCallback(() => {
+    if (narration) {
+      narration.setPresenterMode(false)
+    }
+    setShowPresenter(false)
+  }, [narration])
   const [startX, setStartX] = useState(-2)
   const [startY, setStartY] = useState(2)
   const [isRunning, setIsRunning] = useState(false)
@@ -193,11 +221,23 @@ export default function OptimizationExperiment() {
   const finalPoint = optimizationPath[optimizationPath.length - 1]
 
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-bold text-gray-800">优化算法</h1>
-        <p className="text-gray-600">比较梯度下降、动量、Adam、模拟退火等优化方法</p>
-      </header>
+    <>
+      {showPresenter && (
+        <NarrationPresenter onExit={handleExitPresenter} />
+      )}
+      <div className="space-y-6">
+        <header className="flex justify-between items-center">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-800">优化算法</h1>
+            <p className="text-gray-600">比较梯度下降、动量、Adam、模拟退火等优化方法</p>
+          </div>
+          <button
+            onClick={handleStartNarration}
+            className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
+          >
+            开始讲解
+          </button>
+        </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-6">
@@ -465,6 +505,7 @@ export default function OptimizationExperiment() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

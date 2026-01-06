@@ -1,10 +1,16 @@
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
+import { NarrationPresenter } from '../../components/NarrationPresenter'
+import { useNarrationOptional } from '../../contexts/NarrationContext'
+import { pcaNarration } from '../../narrations/scripts/pca'
 
 type DatasetType = 'random' | 'correlated' | 'clusters' | 'custom'
 
 export default function PCAExperiment() {
+  const [showPresenter, setShowPresenter] = useState(false)
+  const narration = useNarrationOptional()
+
   const [dataset, setDataset] = useState<DatasetType>('correlated')
   const [numPoints, setNumPoints] = useState(100)
   const [correlation, setCorrelation] = useState(0.8)
@@ -13,6 +19,28 @@ export default function PCAExperiment() {
   const [isAnimating, setIsAnimating] = useState(false)
   const [animatedCorrelation, setAnimatedCorrelation] = useState(-1)
   const animationRef = useRef<number | null>(null)
+
+  // 讲解系统
+  useEffect(() => {
+    if (narration) {
+      narration.loadScript(pcaNarration)
+    }
+  }, [narration])
+
+  const handleStartNarration = useCallback(() => {
+    if (narration) {
+      narration.startNarration()
+      narration.setPresenterMode(true)
+      setShowPresenter(true)
+    }
+  }, [narration])
+
+  const handleExitPresenter = useCallback(() => {
+    if (narration) {
+      narration.setPresenterMode(false)
+    }
+    setShowPresenter(false)
+  }, [narration])
 
   // 动画效果：相关系数从-1到1变化
   useEffect(() => {
@@ -188,28 +216,40 @@ export default function PCAExperiment() {
   if (!pcaResult) return <div>数据不足</div>
 
   return (
-    <div className="space-y-6">
-      <header className="flex justify-between items-center">
-        <div>
-          <h1 className="text-2xl font-bold text-gray-800">主成分分析 (PCA)</h1>
-          <p className="text-gray-600">可视化数据降维和特征提取</p>
-        </div>
-        {dataset === 'correlated' && (
-          <button
-            onClick={() => {
-              if (!isAnimating) {
-                setAnimatedCorrelation(-1)
-              }
-              setIsAnimating(!isAnimating)
-            }}
-            className={`px-4 py-2 rounded-lg text-sm font-medium ${
-              isAnimating ? 'bg-red-500 text-white' : 'bg-green-500 text-white'
-            }`}
-          >
-            {isAnimating ? '停止' : '播放动画'}
-          </button>
-        )}
-      </header>
+    <>
+      {showPresenter && (
+        <NarrationPresenter onExit={handleExitPresenter} />
+      )}
+      <div className="space-y-6">
+        <header className="flex justify-between items-center">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-800">主成分分析 (PCA)</h1>
+            <p className="text-gray-600">可视化数据降维和特征提取</p>
+          </div>
+          <div className="flex gap-2">
+            {dataset === 'correlated' && (
+              <button
+                onClick={() => {
+                  if (!isAnimating) {
+                    setAnimatedCorrelation(-1)
+                  }
+                  setIsAnimating(!isAnimating)
+                }}
+                className={`px-4 py-2 rounded-lg text-sm font-medium ${
+                  isAnimating ? 'bg-red-500 text-white' : 'bg-green-500 text-white'
+                }`}
+              >
+                {isAnimating ? '停止' : '播放动画'}
+              </button>
+            )}
+            <button
+              onClick={handleStartNarration}
+              className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
+            >
+              开始讲解
+            </button>
+          </div>
+        </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-6">
@@ -483,6 +523,7 @@ export default function PCAExperiment() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

@@ -1,6 +1,9 @@
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
+import { NarrationPresenter } from '../../components/NarrationPresenter'
+import { useNarrationOptional } from '../../contexts/NarrationContext'
+import { interpolationNarration } from '../../narrations/scripts/interpolation'
 
 type InterpolationMethod = 'linear' | 'lagrange' | 'newton' | 'spline'
 
@@ -17,6 +20,34 @@ export default function InterpolationExperiment() {
   const [evalX, setEvalX] = useState(1.5)
   const [isAnimating, setIsAnimating] = useState(false)
   const animationRef = useRef<number | null>(null)
+  const [showPresenter, setShowPresenter] = useState(false)
+
+  // 讲解系统
+  const narration = useNarrationOptional()
+
+  // 加载讲解稿件
+  useEffect(() => {
+    if (narration) {
+      narration.loadScript(interpolationNarration)
+    }
+  }, [narration])
+
+  // 开始讲解
+  const handleStartNarration = useCallback(() => {
+    if (narration) {
+      narration.startNarration()
+      narration.setPresenterMode(true)
+      setShowPresenter(true)
+    }
+  }, [narration])
+
+  // 退出讲解
+  const handleExitPresenter = useCallback(() => {
+    if (narration) {
+      narration.setPresenterMode(false)
+    }
+    setShowPresenter(false)
+  }, [narration])
 
   // 动画效果：求值点沿曲线移动
   useEffect(() => {
@@ -289,10 +320,22 @@ export default function InterpolationExperiment() {
   }
 
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-bold text-gray-800">插值方法</h1>
-        <p className="text-gray-600">比较线性、拉格朗日、牛顿和样条插值</p>
+    <>
+      {showPresenter && (
+        <NarrationPresenter onExit={handleExitPresenter} />
+      )}
+      <div className="space-y-6">
+      <header className="flex justify-between items-center">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-800">插值方法</h1>
+          <p className="text-gray-600">比较线性、拉格朗日、牛顿和样条插值</p>
+        </div>
+        <button
+          onClick={handleStartNarration}
+          className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
+        >
+          开始讲解
+        </button>
       </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -525,6 +568,7 @@ export default function InterpolationExperiment() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

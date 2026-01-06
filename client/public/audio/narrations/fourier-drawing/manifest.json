@@ -1,0 +1,249 @@
+{
+  "script_id": "fourier-drawing",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/fourier-drawing/intro-intro-1.mp3",
+      "duration": 1.06,
+      "size": 16992,
+      "text": "欢迎来到傅里叶绘图实验。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/fourier-drawing/intro-intro-2.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "你能想象用一系列旋转的圆来画出任何图形吗？"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/fourier-drawing/intro-intro-3.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "这听起来像魔法，但它背后是严谨的数学：傅里叶级数。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/fourier-drawing/intro-intro-4.mp3",
+      "duration": 1.42,
+      "size": 22752,
+      "text": "今天我们将亲眼见证这个神奇的过程。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/fourier-drawing/concept-concept-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "傅里叶级数告诉我们，任何周期函数都可以分解为正弦波的叠加。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/fourier-drawing/concept-concept-2.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "在复平面上，正弦波对应于匀速圆周运动。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/fourier-drawing/concept-concept-3.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "把多个圆周运动首尾相连，末端的轨迹就是我们要画的图形。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/fourier-drawing/concept-concept-4.mp3",
+      "duration": 1.4,
+      "size": 22464,
+      "text": "圆的半径和转速由傅里叶系数决定。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "visualization",
+      "line_id": "vis-1",
+      "filename": "visualization-vis-1.mp3",
+      "path": "audio/narrations/fourier-drawing/visualization-vis-1.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "让我们从一个简单的例子开始：画一个正方形。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "visualization",
+      "line_id": "vis-2",
+      "filename": "visualization-vis-2.mp3",
+      "path": "audio/narrations/fourier-drawing/visualization-vis-2.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "观察这些旋转的圆是如何连接在一起的。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "visualization",
+      "line_id": "vis-3",
+      "filename": "visualization-vis-3.mp3",
+      "path": "audio/narrations/fourier-drawing/visualization-vis-3.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "最后一个圆的圆心画出的轨迹，就是我们的目标图形。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "visualization",
+      "line_id": "vis-4",
+      "filename": "visualization-vis-4.mp3",
+      "path": "audio/narrations/fourier-drawing/visualization-vis-4.mp3",
+      "duration": 1.42,
+      "size": 22752,
+      "text": "增加圆的数量，图形会越来越精确。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "complex",
+      "line_id": "comp-1",
+      "filename": "complex-comp-1.mp3",
+      "path": "audio/narrations/fourier-drawing/complex-comp-1.mp3",
+      "duration": 1.19,
+      "size": 19008,
+      "text": "现在让我们尝试更复杂的图形。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "complex",
+      "line_id": "comp-2",
+      "filename": "complex-comp-2.mp3",
+      "path": "audio/narrations/fourier-drawing/complex-comp-2.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "理论上，任何闭合曲线都可以用这种方法绘制。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "complex",
+      "line_id": "comp-3",
+      "filename": "complex-comp-3.mp3",
+      "path": "audio/narrations/fourier-drawing/complex-comp-3.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "签名、卡通人物、甚至汉字都可以。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "complex",
+      "line_id": "comp-4",
+      "filename": "complex-comp-4.mp3",
+      "path": "audio/narrations/fourier-drawing/complex-comp-4.mp3",
+      "duration": 1.35,
+      "size": 21600,
+      "text": "这展示了傅里叶分析的强大表达能力。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/fourier-drawing/application-app-1.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "傅里叶绘图不仅是数学艺术，还有实际应用。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/fourier-drawing/application-app-2.mp3",
+      "duration": 1.49,
+      "size": 23904,
+      "text": "矢量图形的压缩可以用傅里叶描述符。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/fourier-drawing/application-app-3.mp3",
+      "duration": 1.39,
+      "size": 22176,
+      "text": "形状识别和匹配也常用这种方法。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/fourier-drawing/application-app-4.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "它帮助我们理解信号处理和图像分析的本质。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/fourier-drawing/summary-sum-1.mp3",
+      "duration": 1.4,
+      "size": 22320,
+      "text": "今天我们见证了傅里叶级数的神奇力量。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/fourier-drawing/summary-sum-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "简单的圆周运动叠加，可以创造出任意复杂的图形。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/fourier-drawing/summary-sum-3.mp3",
+      "duration": 1.06,
+      "size": 16992,
+      "text": "这是数学之美的完美体现。"
+    },
+    {
+      "script_id": "fourier-drawing",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/fourier-drawing/summary-sum-4.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "希望这次实验能激发你对傅里叶分析的兴趣。"
+    }
+  ],
+  "total_duration": 37.970000000000006,
+  "total_size": 607680
+}

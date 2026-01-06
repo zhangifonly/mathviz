@@ -1,6 +1,9 @@
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
+import { NarrationPresenter } from '../../components/NarrationPresenter'
+import { useNarrationOptional } from '../../contexts/NarrationContext'
+import { heatEquationNarration } from '../../narrations/scripts/heat-equation'
 
 type InitialCondition = 'step' | 'gaussian' | 'sine' | 'random'
 type BoundaryCondition = 'dirichlet' | 'neumann' | 'periodic'
@@ -14,6 +17,34 @@ export default function HeatEquationExperiment() {
   const [time, setTime] = useState(0)
   const animationRef = useRef<number | null>(null)
   const [temperature, setTemperature] = useState<number[]>([])
+  const [showPresenter, setShowPresenter] = useState(false)
+
+  // 讲解系统
+  const narration = useNarrationOptional()
+
+  // 加载讲解稿件
+  useEffect(() => {
+    if (narration) {
+      narration.loadScript(heatEquationNarration)
+    }
+  }, [narration])
+
+  // 开始讲解
+  const handleStartNarration = useCallback(() => {
+    if (narration) {
+      narration.startNarration()
+      narration.setPresenterMode(true)
+      setShowPresenter(true)
+    }
+  }, [narration])
+
+  // 退出讲解
+  const handleExitPresenter = useCallback(() => {
+    if (narration) {
+      narration.setPresenterMode(false)
+    }
+    setShowPresenter(false)
+  }, [narration])
 
   // 初始化温度分布
   useEffect(() => {
@@ -166,10 +197,22 @@ export default function HeatEquationExperiment() {
   }
 
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-bold text-gray-800">热传导方程</h1>
-        <p className="text-gray-600">可视化一维热扩散过程</p>
+    <>
+      {showPresenter && (
+        <NarrationPresenter onExit={handleExitPresenter} />
+      )}
+      <div className="space-y-6">
+      <header className="flex justify-between items-center">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-800">热传导方程</h1>
+          <p className="text-gray-600">可视化一维热扩散过程</p>
+        </div>
+        <button
+          onClick={handleStartNarration}
+          className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
+        >
+          开始讲解
+        </button>
       </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -394,6 +437,7 @@ export default function HeatEquationExperiment() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

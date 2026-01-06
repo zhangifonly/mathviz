@@ -1,6 +1,9 @@
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
+import { NarrationPresenter } from '../../components/NarrationPresenter'
+import { useNarrationOptional } from '../../contexts/NarrationContext'
+import { gameTheoryNarration } from '../../narrations/scripts/game-theory'
 
 type GameType = 'prisoners' | 'chicken' | 'stag' | 'matching' | 'custom'
 
@@ -54,6 +57,34 @@ export default function GameTheoryExperiment() {
   const [showEvolution, setShowEvolution] = useState(false)
   const [isAnimating, setIsAnimating] = useState(false)
   const animationRef = useRef<number | null>(null)
+  const [showPresenter, setShowPresenter] = useState(false)
+
+  // 讲解系统
+  const narration = useNarrationOptional()
+
+  // 加载讲解稿件
+  useEffect(() => {
+    if (narration) {
+      narration.loadScript(gameTheoryNarration)
+    }
+  }, [narration])
+
+  // 开始讲解
+  const handleStartNarration = useCallback(() => {
+    if (narration) {
+      narration.startNarration()
+      narration.setPresenterMode(true)
+      setShowPresenter(true)
+    }
+  }, [narration])
+
+  // 退出讲解
+  const handleExitPresenter = useCallback(() => {
+    if (narration) {
+      narration.setPresenterMode(false)
+    }
+    setShowPresenter(false)
+  }, [narration])
 
   // 动画效果：策略演化
   useEffect(() => {
@@ -220,20 +251,32 @@ export default function GameTheoryExperiment() {
   }
 
   return (
-    <div className="space-y-6">
+    <>
+      {showPresenter && (
+        <NarrationPresenter onExit={handleExitPresenter} />
+      )}
+      <div className="space-y-6">
       <header className="flex justify-between items-center">
         <div>
           <h1 className="text-2xl font-bold text-gray-800">博弈论</h1>
           <p className="text-gray-600">探索纳什均衡、最优响应和演化博弈</p>
         </div>
-        <button
-          onClick={() => setIsAnimating(!isAnimating)}
-          className={`px-4 py-2 rounded-lg text-sm font-medium ${
-            isAnimating ? 'bg-red-500 text-white' : 'bg-green-500 text-white'
-          }`}
-        >
-          {isAnimating ? '停止' : '播放动画'}
-        </button>
+        <div className="flex gap-2">
+          <button
+            onClick={() => setIsAnimating(!isAnimating)}
+            className={`px-4 py-2 rounded-lg text-sm font-medium ${
+              isAnimating ? 'bg-red-500 text-white' : 'bg-green-500 text-white'
+            }`}
+          >
+            {isAnimating ? '停止' : '播放动画'}
+          </button>
+          <button
+            onClick={handleStartNarration}
+            className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
+          >
+            开始讲解
+          </button>
+        </div>
       </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -545,6 +588,7 @@ export default function GameTheoryExperiment() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

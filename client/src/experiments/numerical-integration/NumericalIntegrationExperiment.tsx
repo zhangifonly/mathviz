@@ -1,6 +1,9 @@
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
+import { NarrationPresenter } from '../../components/NarrationPresenter'
+import { useNarrationOptional } from '../../contexts/NarrationContext'
+import { numericalIntegrationNarration } from '../../narrations/scripts/numerical-integration'
 
 type IntegrationMethod = 'rectangle-left' | 'rectangle-right' | 'midpoint' | 'trapezoidal' | 'simpson'
 type FunctionType = 'polynomial' | 'sine' | 'exponential' | 'gaussian'
@@ -48,11 +51,36 @@ const FUNCTIONS: Record<FunctionType, {
 }
 
 export default function NumericalIntegrationExperiment() {
+  const [showPresenter, setShowPresenter] = useState(false)
+  const narration = useNarrationOptional()
+
   const [method, setMethod] = useState<IntegrationMethod>('trapezoidal')
   const [funcType, setFuncType] = useState<FunctionType>('polynomial')
   const [lowerBound, setLowerBound] = useState(0)
   const [upperBound, setUpperBound] = useState(2)
   const [intervals, setIntervals] = useState(8)
+
+  // 讲解系统
+  useEffect(() => {
+    if (narration) {
+      narration.loadScript(numericalIntegrationNarration)
+    }
+  }, [narration])
+
+  const handleStartNarration = useCallback(() => {
+    if (narration) {
+      narration.startNarration()
+      narration.setPresenterMode(true)
+      setShowPresenter(true)
+    }
+  }, [narration])
+
+  const handleExitPresenter = useCallback(() => {
+    if (narration) {
+      narration.setPresenterMode(false)
+    }
+    setShowPresenter(false)
+  }, [narration])
   const [isAnimating, setIsAnimating] = useState(false)
   const [animatedIntervals, setAnimatedIntervals] = useState(2)
   const animationRef = useRef<number | null>(null)
@@ -287,11 +315,23 @@ export default function NumericalIntegrationExperiment() {
   }
 
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-bold text-gray-800">数值积分</h1>
-        <p className="text-gray-600">比较矩形法、梯形法和 Simpson 法</p>
-      </header>
+    <>
+      {showPresenter && (
+        <NarrationPresenter onExit={handleExitPresenter} />
+      )}
+      <div className="space-y-6">
+        <header className="flex justify-between items-center">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-800">数值积分</h1>
+            <p className="text-gray-600">比较矩形法、梯形法和 Simpson 法</p>
+          </div>
+          <button
+            onClick={handleStartNarration}
+            className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
+          >
+            开始讲解
+          </button>
+        </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 space-y-6">
@@ -506,6 +546,7 @@ export default function NumericalIntegrationExperiment() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

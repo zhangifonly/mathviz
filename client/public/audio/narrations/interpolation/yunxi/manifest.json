@@ -1,0 +1,249 @@
+{
+  "script_id": "interpolation",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "interpolation",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/interpolation/yunxi/intro-intro-1.mp3",
+      "duration": 0.98,
+      "size": 15696,
+      "text": "欢迎来到插值实验。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/interpolation/yunxi/intro-intro-2.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "假设你有几个测量数据点，想知道它们之间的值是多少。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/interpolation/yunxi/intro-intro-3.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "或者你想画一条平滑的曲线通过这些点。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/interpolation/yunxi/intro-intro-4.mp3",
+      "duration": 1.46,
+      "size": 23328,
+      "text": "插值正是解决这类问题的数学方法。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/interpolation/yunxi/concept-concept-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "插值是构造一个函数，使它精确通过给定的数据点。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/interpolation/yunxi/concept-concept-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "与回归不同，插值曲线必须经过每一个数据点。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/interpolation/yunxi/concept-concept-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "最简单的插值是线性插值：用直线连接相邻的点。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/interpolation/yunxi/concept-concept-4.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "但我们通常需要更平滑的曲线，这就需要更高级的方法。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "lagrange",
+      "line_id": "lag-1",
+      "filename": "lagrange-lag-1.mp3",
+      "path": "audio/narrations/interpolation/yunxi/lagrange-lag-1.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "拉格朗日插值用一个多项式来通过所有数据点。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "lagrange",
+      "line_id": "lag-2",
+      "filename": "lagrange-lag-2.mp3",
+      "path": "audio/narrations/interpolation/yunxi/lagrange-lag-2.mp3",
+      "duration": 1.42,
+      "size": 22752,
+      "text": "n个点可以确定一个n-1次多项式。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "lagrange",
+      "line_id": "lag-3",
+      "filename": "lagrange-lag-3.mp3",
+      "path": "audio/narrations/interpolation/yunxi/lagrange-lag-3.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "这个方法简单优雅，但有一个问题：龙格现象。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "lagrange",
+      "line_id": "lag-4",
+      "filename": "lagrange-lag-4.mp3",
+      "path": "audio/narrations/interpolation/yunxi/lagrange-lag-4.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "当点数增多时，多项式在边缘可能会剧烈振荡。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "spline",
+      "line_id": "spline-1",
+      "filename": "spline-spline-1.mp3",
+      "path": "audio/narrations/interpolation/yunxi/spline-spline-1.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "样条插值用分段多项式来避免龙格现象。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "spline",
+      "line_id": "spline-2",
+      "filename": "spline-spline-2.mp3",
+      "path": "audio/narrations/interpolation/yunxi/spline-spline-2.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "最常用的是三次样条：每段是三次多项式，在连接点处光滑。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "spline",
+      "line_id": "spline-3",
+      "filename": "spline-spline-3.mp3",
+      "path": "audio/narrations/interpolation/yunxi/spline-spline-3.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "样条这个名字来自绘图员用的弹性木条。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "spline",
+      "line_id": "spline-4",
+      "filename": "spline-spline-4.mp3",
+      "path": "audio/narrations/interpolation/yunxi/spline-spline-4.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "它在计算机图形学和CAD中被广泛使用。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/interpolation/yunxi/application-app-1.mp3",
+      "duration": 1.25,
+      "size": 20016,
+      "text": "插值在许多领域都有重要应用。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/interpolation/yunxi/application-app-2.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "图像处理中，放大图片需要插值来填充新像素。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/interpolation/yunxi/application-app-3.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "动画制作中，关键帧之间的过渡用插值来生成。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/interpolation/yunxi/application-app-4.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "科学计算中，它用于从离散数据估计连续函数。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/interpolation/yunxi/summary-sum-1.mp3",
+      "duration": 1.22,
+      "size": 19440,
+      "text": "今天我们探索了插值的基本方法。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/interpolation/yunxi/summary-sum-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "拉格朗日插值简单但可能振荡，样条插值更加稳定。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/interpolation/yunxi/summary-sum-3.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "选择合适的插值方法取决于具体应用场景。"
+    },
+    {
+      "script_id": "interpolation",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/interpolation/yunxi/summary-sum-4.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "希望这次实验能帮助你理解数据拟合的数学原理。"
+    }
+  ],
+  "total_duration": 41.62999999999999,
+  "total_size": 665712
+}

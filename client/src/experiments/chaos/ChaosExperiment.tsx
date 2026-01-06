@@ -1,12 +1,43 @@
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
+import { NarrationPresenter } from '../../components/NarrationPresenter'
+import { useNarrationOptional } from '../../contexts/NarrationContext'
+import { chaosNarration } from '../../narrations/scripts/chaos'
 
 type ChaosSystem = 'logistic' | 'lorenz' | 'henon'
 
 export default function ChaosExperiment() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [system, setSystem] = useState<ChaosSystem>('logistic')
+  const [showPresenter, setShowPresenter] = useState(false)
+
+  // 讲解系统
+  const narration = useNarrationOptional()
+
+  // 加载讲解稿件
+  useEffect(() => {
+    if (narration) {
+      narration.loadScript(chaosNarration)
+    }
+  }, [narration])
+
+  // 开始讲解
+  const handleStartNarration = useCallback(() => {
+    if (narration) {
+      narration.startNarration()
+      narration.setPresenterMode(true)
+      setShowPresenter(true)
+    }
+  }, [narration])
+
+  // 退出讲解
+  const handleExitPresenter = useCallback(() => {
+    if (narration) {
+      narration.setPresenterMode(false)
+    }
+    setShowPresenter(false)
+  }, [narration])
   const [logisticR, setLogisticR] = useState(3.5)
   const [lorenzSigma, setLorenzSigma] = useState(10)
   const [lorenzRho, setLorenzRho] = useState(28)
@@ -179,10 +210,22 @@ export default function ChaosExperiment() {
   }
 
   return (
-    <div className="space-y-6">
-      <header>
-        <h1 className="text-2xl font-bold text-gray-800">混沌理论</h1>
-        <p className="text-gray-600">探索确定性系统中的混沌行为</p>
+    <>
+      {showPresenter && (
+        <NarrationPresenter onExit={handleExitPresenter} />
+      )}
+      <div className="space-y-6">
+      <header className="flex justify-between items-center">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-800">混沌理论</h1>
+          <p className="text-gray-600">探索确定性系统中的混沌行为</p>
+        </div>
+        <button
+          onClick={handleStartNarration}
+          className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
+        >
+          开始讲解
+        </button>
       </header>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -466,6 +509,7 @@ export default function ChaosExperiment() {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }

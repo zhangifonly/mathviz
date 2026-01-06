@@ -1,0 +1,249 @@
+{
+  "script_id": "fourier-series",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "fourier-series",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/intro-intro-1.mp3",
+      "duration": 1.18,
+      "size": 18864,
+      "text": "欢迎来到傅里叶级数实验。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/intro-intro-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "傅里叶在研究热传导时发现了一个惊人的事实。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/intro-intro-3.mp3",
+      "duration": 2.81,
+      "size": 44928,
+      "text": "任何周期函数，无论多么复杂，都可以表示为正弦和余弦函数的无穷级数。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/intro-intro-4.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "这个发现彻底改变了数学和物理学。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/concept-concept-1.mp3",
+      "duration": 2.52,
+      "size": 40320,
+      "text": "傅里叶级数的形式是：常数项加上无穷多个正弦和余弦项的和。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/concept-concept-2.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "每一项的频率是基频的整数倍，叫做谐波。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/concept-concept-3.mp3",
+      "duration": 1.42,
+      "size": 22752,
+      "text": "傅里叶系数决定了每个谐波的振幅。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/concept-concept-4.mp3",
+      "duration": 1.39,
+      "size": 22176,
+      "text": "这些系数可以通过积分公式计算。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "square-wave",
+      "line_id": "sq-1",
+      "filename": "square-wave-sq-1.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/square-wave-sq-1.mp3",
+      "duration": 1.24,
+      "size": 19872,
+      "text": "让我们看看方波的傅里叶级数。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "square-wave",
+      "line_id": "sq-2",
+      "filename": "square-wave-sq-2.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/square-wave-sq-2.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "方波只包含奇次谐波，系数按1/n递减。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "square-wave",
+      "line_id": "sq-3",
+      "filename": "square-wave-sq-3.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/square-wave-sq-3.mp3",
+      "duration": 1.48,
+      "size": 23616,
+      "text": "随着项数增加，级数越来越接近方波。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "square-wave",
+      "line_id": "sq-4",
+      "filename": "square-wave-sq-4.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/square-wave-sq-4.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "但在跳变点附近，总有一些振荡，这就是吉布斯现象。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "gibbs",
+      "line_id": "gibbs-1",
+      "filename": "gibbs-gibbs-1.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/gibbs-gibbs-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "吉布斯现象是傅里叶级数在不连续点附近的过冲。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "gibbs",
+      "line_id": "gibbs-2",
+      "filename": "gibbs-gibbs-2.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/gibbs-gibbs-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "无论取多少项，过冲的幅度始终约为9%。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "gibbs",
+      "line_id": "gibbs-3",
+      "filename": "gibbs-gibbs-3.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/gibbs-gibbs-3.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "这不是计算误差，而是傅里叶级数的固有特性。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "gibbs",
+      "line_id": "gibbs-4",
+      "filename": "gibbs-gibbs-4.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/gibbs-gibbs-4.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "在信号处理中，需要特别注意这个现象。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/application-app-1.mp3",
+      "duration": 1.28,
+      "size": 20448,
+      "text": "傅里叶级数是信号分析的基础。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/application-app-2.mp3",
+      "duration": 1.4,
+      "size": 22320,
+      "text": "音乐合成器用它来创造各种音色。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/application-app-3.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "电路分析中，它用于研究周期信号的响应。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/application-app-4.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "图像压缩中的JPEG格式也基于类似的原理。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/summary-sum-1.mp3",
+      "duration": 1.34,
+      "size": 21456,
+      "text": "今天我们探索了傅里叶级数的数学原理。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/summary-sum-2.mp3",
+      "duration": 1.25,
+      "size": 20016,
+      "text": "它揭示了周期函数的频率结构。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/summary-sum-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "吉布斯现象提醒我们，数学逼近也有其局限性。"
+    },
+    {
+      "script_id": "fourier-series",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/fourier-series/yunxi/summary-sum-4.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "希望这次实验能帮助你深入理解傅里叶分析。"
+    }
+  ],
+  "total_duration": 39.34,
+  "total_size": 629280
+}
