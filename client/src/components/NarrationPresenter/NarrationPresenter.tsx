@@ -31,6 +31,28 @@ import { conicScenes, defaultConicState } from './conicScenes'
 import { parametricScenes, defaultParametricState } from './parametricScenes'
 import { regressionScenes, defaultRegressionState } from './regressionScenes'
 import { taylorScenes, defaultTaylorState } from './taylorScenes'
+// 新增21个高级实验场景
+import { chaosScenes, defaultChaosState } from './chaosScenes'
+import { fourierDrawingScenes, defaultFourierDrawingState } from './fourierDrawingScenes'
+import { fourierSeriesScenes, defaultFourierSeriesState } from './fourierSeriesScenes'
+import { fractalScenes, defaultFractalState } from './fractalScenes'
+import { gameTheoryScenes, defaultGameTheoryState } from './gameTheoryScenes'
+import { gradientDescentScenes, defaultGradientDescentState } from './gradientDescentScenes'
+import { graphTheoryScenes, defaultGraphTheoryState } from './graphTheoryScenes'
+import { heatEquationScenes, defaultHeatEquationState } from './heatEquationScenes'
+import { interpolationScenes, defaultInterpolationState } from './interpolationScenes'
+import { linearAlgebraScenes, defaultLinearAlgebraState } from './linearAlgebraScenes'
+import { markovChainScenes, defaultMarkovChainState } from './markovChainScenes'
+import { matrixDecompositionScenes, defaultMatrixDecompositionState } from './matrixDecompositionScenes'
+import { newtonMethodScenes, defaultNewtonMethodState } from './newtonMethodScenes'
+import { numericalIntegrationScenes, defaultNumericalIntegrationState } from './numericalIntegrationScenes'
+import { odeScenes, defaultOdeState } from './odeScenes'
+import { optimizationScenes, defaultOptimizationState } from './optimizationScenes'
+import { pcaScenes, defaultPcaState } from './pcaScenes'
+import { randomWalkScenes, defaultRandomWalkState } from './randomWalkScenes'
+import { signalProcessingScenes, defaultSignalProcessingState } from './signalProcessingScenes'
+import { vectorFieldScenes, defaultVectorFieldState } from './vectorFieldScenes'
+import { waveEquationScenes, defaultWaveEquationState } from './waveEquationScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -73,6 +95,28 @@ const sceneConfigMap: Record<string, {
   'parametric': { scenes: parametricScenes, defaultState: defaultParametricState },
   'regression': { scenes: regressionScenes, defaultState: defaultRegressionState },
   'taylor': { scenes: taylorScenes, defaultState: defaultTaylorState },
+  // 新增21个高级实验
+  'chaos': { scenes: chaosScenes, defaultState: defaultChaosState },
+  'fourier-drawing': { scenes: fourierDrawingScenes, defaultState: defaultFourierDrawingState },
+  'fourier-series': { scenes: fourierSeriesScenes, defaultState: defaultFourierSeriesState },
+  'fractal': { scenes: fractalScenes, defaultState: defaultFractalState },
+  'game-theory': { scenes: gameTheoryScenes, defaultState: defaultGameTheoryState },
+  'gradient-descent': { scenes: gradientDescentScenes, defaultState: defaultGradientDescentState },
+  'graph-theory': { scenes: graphTheoryScenes, defaultState: defaultGraphTheoryState },
+  'heat-equation': { scenes: heatEquationScenes, defaultState: defaultHeatEquationState },
+  'interpolation': { scenes: interpolationScenes, defaultState: defaultInterpolationState },
+  'linear-algebra': { scenes: linearAlgebraScenes, defaultState: defaultLinearAlgebraState },
+  'markov-chain': { scenes: markovChainScenes, defaultState: defaultMarkovChainState },
+  'matrix-decomposition': { scenes: matrixDecompositionScenes, defaultState: defaultMatrixDecompositionState },
+  'newton-method': { scenes: newtonMethodScenes, defaultState: defaultNewtonMethodState },
+  'numerical-integration': { scenes: numericalIntegrationScenes, defaultState: defaultNumericalIntegrationState },
+  'ode': { scenes: odeScenes, defaultState: defaultOdeState },
+  'optimization': { scenes: optimizationScenes, defaultState: defaultOptimizationState },
+  'pca': { scenes: pcaScenes, defaultState: defaultPcaState },
+  'random-walk': { scenes: randomWalkScenes, defaultState: defaultRandomWalkState },
+  'signal-processing': { scenes: signalProcessingScenes, defaultState: defaultSignalProcessingState },
+  'vector-field': { scenes: vectorFieldScenes, defaultState: defaultVectorFieldState },
+  'wave-equation': { scenes: waveEquationScenes, defaultState: defaultWaveEquationState },
 }
 
 // 检测是否为移动设备
