@@ -62,6 +62,7 @@ import { ApplicationScene } from './scenes/ApplicationScene'
 import { IllustrationScene } from './scenes/IllustrationScene'
 import { BasicArithmeticSceneRenderer } from './scenes/BasicArithmetic'
 import type { BasicArithmeticState } from './scenes/BasicArithmetic/BasicArithmeticSceneRenderer'
+import SceneRendererWrapper from './scenes/SceneRendererFactory'
 
 interface NarrationPresenterProps {
   onExit: () => void
@@ -286,7 +287,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
     const isInteractive = playbackState.isPlaying === false
     const scriptId = script?.id
 
-    // 使用专属场景渲染器
+    // 使用专属场景渲染器 - basic-arithmetic 有特殊处理
     if (scriptId === 'basic-arithmetic') {
       const arithmeticState: BasicArithmeticState = {
         operation: (sceneState as unknown as BasicArithmeticState).operation || 'addition',
@@ -300,6 +301,29 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
           scene={currentScene}
           state={arithmeticState}
           onStateChange={(updates) => updateSceneState(updates as Partial<SceneState>)}
+          isInteractive={isInteractive}
+        />
+      )
+    }
+
+    // 检查是否有专属场景渲染器（除了 fourier 使用默认渲染）
+    const experimentsWithCustomRenderer = [
+      'chaos', 'fractal', 'game-theory', 'taylor', 'calculus', 'bayes', 'clt',
+      'complex', 'conic-sections', 'parametric', 'regression', 'fourier-drawing',
+      'fourier-series', 'gradient-descent', 'graph-theory', 'heat-equation',
+      'interpolation', 'linear-algebra', 'markov-chain', 'matrix-decomposition',
+      'newton-method', 'numerical-integration', 'ode', 'optimization', 'pca',
+      'random-walk', 'signal-processing', 'vector-field', 'wave-equation',
+      'fractions', 'geometry-shapes', 'number-theory', 'golden-ratio', 'set-theory',
+      'probability', 'trigonometry', 'pythagorean', 'quadratic-function',
+      'linear-function', 'polar', 'bezier', 'monte-carlo'
+    ]
+
+    if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
+      return (
+        <SceneRendererWrapper
+          experimentId={scriptId}
+          scene={currentScene}
           isInteractive={isInteractive}
         />
       )
