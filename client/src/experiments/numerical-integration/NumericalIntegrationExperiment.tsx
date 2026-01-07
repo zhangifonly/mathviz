@@ -359,8 +359,8 @@ export default function NumericalIntegrationExperiment() {
                 {
                   x: curveData.x,
                   y: curveData.y,
-                  type: 'scatter',
-                  mode: 'lines',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
                   line: { color: '#3b82f6', width: 3 },
                   name: `f(x) = ${func.name}`,
                 },
@@ -376,15 +376,15 @@ export default function NumericalIntegrationExperiment() {
                       name: '积分区域',
                     }]
                   : []),
-              ]}
+              ] as any}
               layout={{
                 autosize: true,
                 height: 400,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: 'x' },
-                yaxis: { title: 'f(x)' },
-                shapes: method !== 'simpson' ? (fillData as { shapes: unknown[] }).shapes : [],
-                legend: { orientation: 'h', y: -0.15 },
+                xaxis: { title: { text: 'x' } },
+                yaxis: { title: { text: 'f(x)' } },
+                shapes: (method !== 'simpson' ? (fillData as { shapes: unknown[] }).shapes : []) as any,
+                legend: { orientation: 'h' as const, y: -0.15 },
               }}
               config={{ responsive: true }}
               className="w-full"
@@ -399,18 +399,18 @@ export default function NumericalIntegrationExperiment() {
                   {
                     x: convergenceData.n,
                     y: convergenceData.errors,
-                    type: 'scatter',
-                    mode: 'lines+markers',
+                    type: 'scatter' as const,
+                    mode: 'lines+markers' as const,
                     line: { color: '#ef4444', width: 2 },
                     marker: { size: 8 },
                   },
-                ]}
+                ] as any}
                 layout={{
                   autosize: true,
                   height: 250,
                   margin: { t: 30, r: 30, b: 40, l: 60 },
-                  xaxis: { title: '区间数 n', type: 'log' },
-                  yaxis: { title: '误差', type: 'log' },
+                  xaxis: { title: { text: '区间数 n' }, type: 'log' as const },
+                  yaxis: { title: { text: '误差' }, type: 'log' as const },
                 }}
                 config={{ responsive: true }}
                 className="w-full"

@@ -213,26 +213,26 @@ export default function FourierExperiment() {
                   {
                     x: timeData.t,
                     y: timeData.original,
-                    type: 'scatter',
-                    mode: 'lines',
+                    type: 'scatter' as const,
+                    mode: 'lines' as const,
                     name: '原始信号',
                     line: { color: '#6366f1', width: 2 },
                   },
                   {
                     x: timeData.t,
                     y: fourierApprox,
-                    type: 'scatter',
-                    mode: 'lines',
+                    type: 'scatter' as const,
+                    mode: 'lines' as const,
                     name: `傅里叶逼近 (${params.terms}项)`,
                     line: { color: '#f43f5e', width: 2, dash: 'dash' },
                   },
-                ]}
+                ] as any}
                 layout={{
                   autosize: true,
                   height: 250,
                   margin: { t: 20, r: 20, b: 40, l: 40 },
-                  xaxis: { title: '时间 t', gridcolor: '#f1f5f9' },
-                  yaxis: { title: '振幅', gridcolor: '#f1f5f9' },
+                  xaxis: { title: { text: '时间 t' }, gridcolor: '#f1f5f9' },
+                  yaxis: { title: { text: '振幅' }, gridcolor: '#f1f5f9' },
                   legend: { orientation: 'h', y: -0.25, font: { size: 10 } },
                   paper_bgcolor: 'transparent',
                   plot_bgcolor: 'transparent',
@@ -259,20 +259,20 @@ export default function FourierExperiment() {
                   {
                     x: frequencyData.freqBins,
                     y: frequencyData.magnitudes,
-                    type: 'bar',
+                    type: 'bar' as const,
                     marker: {
                       color: frequencyData.freqBins.map((_, i) =>
                         `rgba(139, 92, 246, ${0.5 + i * 0.05})`
                       )
                     },
                   },
-                ]}
+                ] as any}
                 layout={{
                   autosize: true,
                   height: 200,
                   margin: { t: 20, r: 20, b: 40, l: 40 },
-                  xaxis: { title: '频率 (Hz)', gridcolor: '#f1f5f9' },
-                  yaxis: { title: '幅度', gridcolor: '#f1f5f9' },
+                  xaxis: { title: { text: '频率 (Hz)' }, gridcolor: '#f1f5f9' },
+                  yaxis: { title: { text: '幅度' }, gridcolor: '#f1f5f9' },
                   paper_bgcolor: 'transparent',
                   plot_bgcolor: 'transparent',
                 }}

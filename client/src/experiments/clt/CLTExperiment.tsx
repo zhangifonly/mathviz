@@ -201,26 +201,26 @@ export default function CLTExperiment() {
                 data={[
                   {
                     x: histogram.x,
-                    type: 'histogram',
-                    histnorm: 'probability density',
+                    type: 'histogram' as const,
+                    histnorm: 'probability density' as const,
                     marker: { color: 'rgba(139, 92, 246, 0.6)' },
                     name: '样本均值直方图',
                   },
                   {
                     x: normalCurve.x,
                     y: normalCurve.y,
-                    type: 'scatter',
-                    mode: 'lines',
+                    type: 'scatter' as const,
+                    mode: 'lines' as const,
                     line: { color: '#ef4444', width: 3 },
                     name: '理论正态曲线',
                   },
-                ]}
+                ] as any}
                 layout={{
                   autosize: true,
                   height: 350,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  xaxis: { title: '样本均值' },
-                  yaxis: { title: '概率密度' },
+                  xaxis: { title: { text: '样本均值' } },
+                  yaxis: { title: { text: '概率密度' } },
                   legend: { orientation: 'h', y: -0.15 },
                   bargap: 0.05,
                 }}

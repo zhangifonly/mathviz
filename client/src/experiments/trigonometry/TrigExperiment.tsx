@@ -110,13 +110,13 @@ export default function TrigExperiment() {
               <h3 className="text-lg font-semibold mb-2">单位圆</h3>
               <Plot
                 data={[
-                  { x: circleX, y: circleY, type: 'scatter', mode: 'lines', name: '单位圆', line: { color: '#94a3b8', width: 2 } },
-                  { x: [-1.2, 1.2], y: [0, 0], type: 'scatter', mode: 'lines', showlegend: false, line: { color: '#cbd5e1', width: 1 } },
-                  { x: [0, 0], y: [-1.2, 1.2], type: 'scatter', mode: 'lines', showlegend: false, line: { color: '#cbd5e1', width: 1 } },
-                  { x: [0, cosValue], y: [0, sinValue], type: 'scatter', mode: 'lines', name: '半径', line: { color: '#3b82f6', width: 3 } },
-                  { x: [cosValue, cosValue], y: [0, sinValue], type: 'scatter', mode: 'lines', name: 'sin θ', line: { color: '#ef4444', width: 2, dash: 'dash' } },
-                  { x: [0, cosValue], y: [0, 0], type: 'scatter', mode: 'lines', name: 'cos θ', line: { color: '#22c55e', width: 2, dash: 'dash' } },
-                  { x: [cosValue], y: [sinValue], type: 'scatter', mode: 'markers', name: '点', marker: { color: '#3b82f6', size: 10 } },
+                  { x: circleX, y: circleY, type: 'scatter' as const, mode: 'lines' as const, name: '单位圆', line: { color: '#94a3b8', width: 2 } },
+                  { x: [-1.2, 1.2], y: [0, 0], type: 'scatter' as const, mode: 'lines' as const, showlegend: false, line: { color: '#cbd5e1', width: 1 } },
+                  { x: [0, 0], y: [-1.2, 1.2], type: 'scatter' as const, mode: 'lines' as const, showlegend: false, line: { color: '#cbd5e1', width: 1 } },
+                  { x: [0, cosValue], y: [0, sinValue], type: 'scatter' as const, mode: 'lines' as const, name: '半径', line: { color: '#3b82f6', width: 3 } },
+                  { x: [cosValue, cosValue], y: [0, sinValue], type: 'scatter' as const, mode: 'lines' as const, name: 'sin θ', line: { color: '#ef4444', width: 2, dash: 'dash' as const } },
+                  { x: [0, cosValue], y: [0, 0], type: 'scatter' as const, mode: 'lines' as const, name: 'cos θ', line: { color: '#22c55e', width: 2, dash: 'dash' as const } },
+                  { x: [cosValue], y: [sinValue], type: 'scatter' as const, mode: 'markers' as const, name: '点', marker: { color: '#3b82f6', size: 10 } },
                 ]}
                 layout={{
                   autosize: true,
@@ -160,15 +160,15 @@ export default function TrigExperiment() {
             <h3 className="text-lg font-semibold mb-2">正弦与余弦波形</h3>
             <Plot
               data={[
-                { x: t, y: sinWave, type: 'scatter', mode: 'lines', name: 'sin(x)', line: { color: '#ef4444', width: 2 } },
-                { x: t, y: cosWave, type: 'scatter', mode: 'lines', name: 'cos(x)', line: { color: '#22c55e', width: 2 } },
+                { x: t, y: sinWave, type: 'scatter' as const, mode: 'lines' as const, name: 'sin(x)', line: { color: '#ef4444', width: 2 } as const },
+                { x: t, y: cosWave, type: 'scatter' as const, mode: 'lines' as const, name: 'cos(x)', line: { color: '#22c55e', width: 2 } as const },
               ]}
               layout={{
                 autosize: true,
                 height: 250,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: 'x (rad)' },
-                yaxis: { title: 'y' },
+                xaxis: { title: { text: 'x (rad)' } },
+                yaxis: { title: { text: 'y' } },
                 legend: { orientation: 'h', y: -0.2 },
               }}
               config={{ responsive: true }}

@@ -224,10 +224,10 @@ export default function HeatEquationExperiment() {
                 {
                   x: xCoords,
                   y: temperature,
-                  type: 'scatter',
-                  mode: 'lines',
-                  fill: 'tozeroy',
-                  line: { color: '#ef4444', width: 2 },
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
+                  fill: 'tozeroy' as const,
+                  line: { color: '#ef4444', width: 2 } as const,
                   fillcolor: 'rgba(239, 68, 68, 0.3)',
                   name: '数值解',
                 },
@@ -237,7 +237,7 @@ export default function HeatEquationExperiment() {
                       y: analyticalSolution.y,
                       type: 'scatter' as const,
                       mode: 'lines' as const,
-                      line: { color: '#3b82f6', width: 2, dash: 'dash' as const },
+                      line: { color: '#3b82f6', width: 2, dash: 'dash' as const } as const,
                       name: '解析解',
                     }]
                   : []),
@@ -246,8 +246,8 @@ export default function HeatEquationExperiment() {
                 autosize: true,
                 height: 350,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: '位置 x', range: [0, 1] },
-                yaxis: { title: '温度 u(x,t)', range: [-0.1, 1.1] },
+                xaxis: { title: { text: '位置 x' }, range: [0, 1] },
+                yaxis: { title: { text: '温度 u(x,t)' }, range: [-0.1, 1.1] },
                 legend: { orientation: 'h', y: -0.15 },
               }}
               config={{ responsive: true }}
@@ -282,8 +282,8 @@ export default function HeatEquationExperiment() {
                   data={[
                     {
                       z: heatmapHistory,
-                      type: 'heatmap',
-                      colorscale: 'Hot',
+                      type: 'heatmap' as const,
+                      colorscale: 'Hot' as const,
                       showscale: true,
                     },
                   ]}
@@ -291,8 +291,8 @@ export default function HeatEquationExperiment() {
                     autosize: true,
                     height: 250,
                     margin: { t: 30, r: 50, b: 40, l: 50 },
-                    xaxis: { title: '位置' },
-                    yaxis: { title: '时间步' },
+                    xaxis: { title: { text: '位置' } },
+                    yaxis: { title: { text: '时间步' } },
                   }}
                   config={{ responsive: true }}
                   className="w-full"

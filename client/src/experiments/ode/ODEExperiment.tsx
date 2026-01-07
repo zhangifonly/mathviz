@@ -197,8 +197,8 @@ export default function ODEExperiment() {
                 {
                   x: tValues,
                   y: solution.map(s => s[0]),
-                  type: 'scatter',
-                  mode: 'lines',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
                   name: odeType === 'predator-prey' ? '猎物 x' : odeType === 'logistic' ? '种群 P' : '位移 x',
                   line: { color: '#3b82f6', width: 2 },
                 },
@@ -213,19 +213,19 @@ export default function ODEExperiment() {
                 {
                   x: [tValues[animIndex]],
                   y: [solution[animIndex][0]],
-                  type: 'scatter',
-                  mode: 'markers',
+                  type: 'scatter' as const,
+                  mode: 'markers' as const,
                   showlegend: false,
                   marker: { color: '#3b82f6', size: 10 },
                 },
-              ]}
+              ] as any}
               layout={{
                 autosize: true,
                 height: 280,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: '时间 t' },
-                yaxis: { title: '值' },
-                legend: { orientation: 'h', y: -0.2 },
+                xaxis: { title: { text: '时间 t' } },
+                yaxis: { title: { text: '值' } },
+                legend: { orientation: 'h' as const, y: -0.2 },
               }}
               config={{ responsive: true }}
               className="w-full"
@@ -241,26 +241,26 @@ export default function ODEExperiment() {
                   {
                     x: phaseX,
                     y: phaseY,
-                    type: 'scatter',
-                    mode: 'lines',
+                    type: 'scatter' as const,
+                    mode: 'lines' as const,
                     name: '相轨迹',
                     line: { color: '#8b5cf6', width: 2 },
                   },
                   {
                     x: [phaseX[animIndex]],
                     y: [phaseY[animIndex]],
-                    type: 'scatter',
-                    mode: 'markers',
+                    type: 'scatter' as const,
+                    mode: 'markers' as const,
                     name: '当前状态',
                     marker: { color: '#ef4444', size: 12 },
                   },
-                ]}
+                ] as any}
                 layout={{
                   autosize: true,
                   height: 300,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  xaxis: { title: odeType === 'predator-prey' ? '猎物 x' : '位移 x' },
-                  yaxis: { title: odeType === 'predator-prey' ? '捕食者 y' : '速度 v' },
+                  xaxis: { title: { text: odeType === 'predator-prey' ? '猎物 x' : '位移 x' } },
+                  yaxis: { title: { text: odeType === 'predator-prey' ? '捕食者 y' : '速度 v' } },
                   showlegend: false,
                 }}
                 config={{ responsive: true }}

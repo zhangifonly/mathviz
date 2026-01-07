@@ -198,16 +198,16 @@ export default function CalculusExperiment() {
             <div className="p-2 md:p-4">
               <Plot
                 data={[
-                  { x: xValues, y: yValues, type: 'scatter', mode: 'lines', name: 'f(x)', line: { color: '#6366f1', width: 2 } },
-                  { x: tangentLine.x, y: tangentLine.y, type: 'scatter', mode: 'lines', name: '切线', line: { color: '#f43f5e', width: 2 } },
-                  { x: [tangentLine.point.x], y: [tangentLine.point.y], type: 'scatter', mode: 'markers', name: '切点', marker: { color: '#f43f5e', size: 10 } },
-                ]}
+                  { x: xValues, y: yValues, type: 'scatter' as const, mode: 'lines' as const, name: 'f(x)', line: { color: '#6366f1', width: 2 } },
+                  { x: tangentLine.x, y: tangentLine.y, type: 'scatter' as const, mode: 'lines' as const, name: '切线', line: { color: '#f43f5e', width: 2 } },
+                  { x: [tangentLine.point.x], y: [tangentLine.point.y], type: 'scatter' as const, mode: 'markers' as const, name: '切点', marker: { color: '#f43f5e', size: 10 } },
+                ] as any}
                 layout={{
                   autosize: true,
                   height: 250,
                   margin: { t: 20, r: 20, b: 40, l: 40 },
-                  xaxis: { title: 'x', range: [-3, 3], gridcolor: '#f1f5f9' },
-                  yaxis: { title: 'y', range: [-2, 10], gridcolor: '#f1f5f9' },
+                  xaxis: { title: { text: 'x' }, range: [-3, 3], gridcolor: '#f1f5f9' },
+                  yaxis: { title: { text: 'y' }, range: [-2, 10], gridcolor: '#f1f5f9' },
                   legend: { orientation: 'h', y: -0.25, font: { size: 10 } },
                   paper_bgcolor: 'transparent',
                   plot_bgcolor: 'transparent',
@@ -238,23 +238,23 @@ export default function CalculusExperiment() {
             <div className="p-2 md:p-4">
               <Plot
                 data={[
-                  { x: xValues, y: yValues, type: 'scatter', mode: 'lines', name: 'f(x)', line: { color: '#6366f1', width: 2 } },
+                  { x: xValues, y: yValues, type: 'scatter' as const, mode: 'lines' as const, name: 'f(x)', line: { color: '#6366f1', width: 2 } },
                   {
                     x: [...integralArea.x, integralArea.x[integralArea.x.length - 1], integralArea.x[0]],
                     y: [...integralArea.y, 0, 0],
-                    type: 'scatter',
-                    fill: 'toself',
+                    type: 'scatter' as const,
+                    fill: 'toself' as const,
                     fillcolor: 'rgba(139, 92, 246, 0.3)',
                     line: { color: 'rgba(139, 92, 246, 0.5)' },
                     name: '积分区域',
                   },
-                ]}
+                ] as any}
                 layout={{
                   autosize: true,
                   height: 250,
                   margin: { t: 20, r: 20, b: 40, l: 40 },
-                  xaxis: { title: 'x', range: [-3, 3], gridcolor: '#f1f5f9' },
-                  yaxis: { title: 'y', range: [-2, 10], gridcolor: '#f1f5f9' },
+                  xaxis: { title: { text: 'x' }, range: [-3, 3], gridcolor: '#f1f5f9' },
+                  yaxis: { title: { text: 'y' }, range: [-2, 10], gridcolor: '#f1f5f9' },
                   legend: { orientation: 'h', y: -0.25, font: { size: 10 } },
                   paper_bgcolor: 'transparent',
                   plot_bgcolor: 'transparent',
@@ -278,14 +278,14 @@ export default function CalculusExperiment() {
             <div className="p-2 md:p-4">
               <Plot
                 data={[
-                  { x: xValues, y: derivativeValues, type: 'scatter', mode: 'lines', name: "f'(x)", line: { color: '#10b981', width: 2 } },
-                ]}
+                  { x: xValues, y: derivativeValues, type: 'scatter' as const, mode: 'lines' as const, name: "f'(x)", line: { color: '#10b981', width: 2 } },
+                ] as any}
                 layout={{
                   autosize: true,
                   height: 180,
                   margin: { t: 20, r: 20, b: 40, l: 40 },
-                  xaxis: { title: 'x', range: [-3, 3], gridcolor: '#f1f5f9' },
-                  yaxis: { title: "f'(x)", gridcolor: '#f1f5f9' },
+                  xaxis: { title: { text: 'x' }, range: [-3, 3], gridcolor: '#f1f5f9' },
+                  yaxis: { title: { text: "f'(x)" }, gridcolor: '#f1f5f9' },
                   paper_bgcolor: 'transparent',
                   plot_bgcolor: 'transparent',
                 }}

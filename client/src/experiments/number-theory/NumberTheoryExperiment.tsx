@@ -231,27 +231,27 @@ export default function NumberTheoryExperiment() {
                     {
                       x: primeCountingData.x,
                       y: primeCountingData.piX,
-                      type: 'scatter',
-                      mode: 'lines',
+                      type: 'scatter' as const,
+                      mode: 'lines' as const,
                       line: { color: '#3b82f6', width: 2 },
                       name: 'π(x)',
                     },
                     {
                       x: primeCountingData.x,
                       y: primeCountingData.approx,
-                      type: 'scatter',
-                      mode: 'lines',
-                      line: { color: '#ef4444', width: 2, dash: 'dash' },
+                      type: 'scatter' as const,
+                      mode: 'lines' as const,
+                      line: { color: '#ef4444', width: 2, dash: 'dash' as const },
                       name: 'x/ln(x)',
                     },
-                  ]}
+                  ] as any}
                   layout={{
                     autosize: true,
                     height: 350,
                     margin: { t: 30, r: 30, b: 40, l: 50 },
-                    xaxis: { title: 'x' },
-                    yaxis: { title: 'π(x)' },
-                    legend: { orientation: 'h', y: -0.15 },
+                    xaxis: { title: { text: 'x' } },
+                    yaxis: { title: { text: 'π(x)' } },
+                    legend: { orientation: 'h' as const, y: -0.15 },
                   }}
                   config={{ responsive: true }}
                   className="w-full"
@@ -265,17 +265,17 @@ export default function NumberTheoryExperiment() {
                     {
                       x: primeGaps.map((g) => g.n),
                       y: primeGaps.map((g) => g.gap),
-                      type: 'scatter',
-                      mode: 'markers',
+                      type: 'scatter' as const,
+                      mode: 'markers' as const,
                       marker: { size: 3, color: '#8b5cf6' },
                     },
-                  ]}
+                  ] as any}
                   layout={{
                     autosize: true,
                     height: 250,
                     margin: { t: 30, r: 30, b: 40, l: 50 },
-                    xaxis: { title: '素数 p' },
-                    yaxis: { title: '间隔 (p - 前一个素数)' },
+                    xaxis: { title: { text: '素数 p' } },
+                    yaxis: { title: { text: '间隔 (p - 前一个素数)' } },
                   }}
                   config={{ responsive: true }}
                   className="w-full"
@@ -339,18 +339,18 @@ export default function NumberTheoryExperiment() {
                   {
                     x: collatzSequence.slice(0, isAnimating ? animatedCollatzStep + 1 : collatzSequence.length).map((_, i) => i),
                     y: collatzSequence.slice(0, isAnimating ? animatedCollatzStep + 1 : collatzSequence.length),
-                    type: 'scatter',
-                    mode: 'lines+markers',
+                    type: 'scatter' as const,
+                    mode: 'lines+markers' as const,
                     line: { color: '#8b5cf6', width: 2 },
                     marker: { size: 4 },
                   },
-                ]}
+                ] as any}
                 layout={{
                   autosize: true,
                   height: 350,
                   margin: { t: 30, r: 30, b: 40, l: 60 },
-                  xaxis: { title: '步数' },
-                  yaxis: { title: '值', type: 'log' },
+                  xaxis: { title: { text: '步数' } },
+                  yaxis: { title: { text: '值' }, type: 'log' as const },
                 }}
                 config={{ responsive: true }}
                 className="w-full"

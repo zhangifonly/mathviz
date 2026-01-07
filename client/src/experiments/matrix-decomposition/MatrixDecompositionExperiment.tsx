@@ -246,23 +246,23 @@ export default function MatrixDecompositionExperiment() {
                 {
                   x: transformedPoints.original.map((p) => p.x),
                   y: transformedPoints.original.map((p) => p.y),
-                  type: 'scatter',
-                  mode: 'lines',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
                   line: { color: '#94a3b8', width: 2 },
                   name: '单位圆',
                 },
                 {
                   x: transformedPoints.transformed.map((p) => p.x),
                   y: transformedPoints.transformed.map((p) => p.y),
-                  type: 'scatter',
-                  mode: 'lines',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
                   line: { color: '#8b5cf6', width: 2 },
                   name: '变换后',
                 },
                 ...(eigenDecomp.valid
                   ? eigenDecomp.eigenvectors.map((v, i) => ({
-                      x: [0, v[0] * Math.abs(eigenDecomp.eigenvalues[i])],
-                      y: [0, v[1] * Math.abs(eigenDecomp.eigenvalues[i])],
+                      x: [0, v[0] * Math.abs(eigenDecomp.eigenvalues[i])] as number[],
+                      y: [0, v[1] * Math.abs(eigenDecomp.eigenvalues[i])] as number[],
                       type: 'scatter' as const,
                       mode: 'lines+markers' as const,
                       line: { color: i === 0 ? '#ef4444' : '#22c55e', width: 3 },
@@ -275,8 +275,8 @@ export default function MatrixDecompositionExperiment() {
                 autosize: true,
                 height: 400,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: 'x', range: [-5, 5], scaleanchor: 'y', scaleratio: 1 },
-                yaxis: { title: 'y', range: [-5, 5] },
+                xaxis: { title: { text: 'x' }, range: [-5, 5], scaleanchor: 'y', scaleratio: 1 },
+                yaxis: { title: { text: 'y' }, range: [-5, 5] },
                 legend: { orientation: 'h', y: -0.15 },
               }}
               config={{ responsive: true }}

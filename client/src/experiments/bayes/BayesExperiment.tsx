@@ -278,8 +278,8 @@ export default function BayesExperiment() {
                 {
                   x: calculations.updates.slice(0, currentUpdateStep + 1).map((u) => u.n),
                   y: calculations.updates.slice(0, currentUpdateStep + 1).map((u) => u.posterior),
-                  type: 'scatter',
-                  mode: 'lines+markers',
+                  type: 'scatter' as const,
+                  mode: 'lines+markers' as const,
                   line: { color: '#8b5cf6', width: 2 },
                   marker: { size: 8 },
                   name: 'P(A|B)',
@@ -287,18 +287,18 @@ export default function BayesExperiment() {
                 {
                   x: [0, 10],
                   y: [1, 1],
-                  type: 'scatter',
-                  mode: 'lines',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
                   line: { color: '#94a3b8', dash: 'dot' },
                   name: '确定性',
                 },
-              ]}
+              ] as any}
               layout={{
                 autosize: true,
                 height: 250,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: '观测次数' },
-                yaxis: { title: 'P(A|B)', range: [0, 1.05] },
+                xaxis: { title: { text: '观测次数' } },
+                yaxis: { title: { text: 'P(A|B)' }, range: [0, 1.05] },
                 legend: { orientation: 'h', y: -0.2 },
               }}
               config={{ responsive: true }}

@@ -165,18 +165,18 @@ export default function GoldenRatioExperiment() {
                   {
                     x: ratios.slice(0, isAnimating ? animatedFibIndex : ratios.length).map(r => r.n),
                     y: ratios.slice(0, isAnimating ? animatedFibIndex : ratios.length).map(r => r.ratio),
-                    type: 'scatter',
-                    mode: 'lines+markers',
-                    line: { color: '#8b5cf6', width: 2 },
-                    marker: { size: 6 },
+                    type: 'scatter' as const,
+                    mode: 'lines+markers' as const,
+                    line: { color: '#8b5cf6', width: 2 } as const,
+                    marker: { size: 6 } as const,
                     name: 'F(n)/F(n-1)',
                   },
                   {
                     x: [2, fibCount],
                     y: [PHI, PHI],
-                    type: 'scatter',
-                    mode: 'lines',
-                    line: { color: '#ef4444', width: 2, dash: 'dash' },
+                    type: 'scatter' as const,
+                    mode: 'lines' as const,
+                    line: { color: '#ef4444', width: 2, dash: 'dash' as const } as const,
                     name: 'φ',
                   },
                 ]}
@@ -184,8 +184,8 @@ export default function GoldenRatioExperiment() {
                   autosize: true,
                   height: 250,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  xaxis: { title: 'n' },
-                  yaxis: { title: 'F(n)/F(n-1)', range: [1, 2.2] },
+                  xaxis: { title: { text: 'n' } },
+                  yaxis: { title: { text: 'F(n)/F(n-1)' }, range: [1, 2.2] },
                   legend: { orientation: 'h', y: -0.2 },
                 }}
                 config={{ responsive: true }}
@@ -200,8 +200,8 @@ export default function GoldenRatioExperiment() {
                   {
                     x: goldenSpiral.x,
                     y: goldenSpiral.y,
-                    type: 'scatter',
-                    mode: 'lines',
+                    type: 'scatter' as const,
+                    mode: 'lines' as const,
                     line: { color: '#f59e0b', width: 2 },
                   },
                 ]}
@@ -226,8 +226,8 @@ export default function GoldenRatioExperiment() {
                 {
                   x: sunflowerSeeds.x,
                   y: sunflowerSeeds.y,
-                  type: 'scatter',
-                  mode: 'markers',
+                  type: 'scatter' as const,
+                  mode: 'markers' as const,
                   marker: {
                     size: 5,
                     color: sunflowerSeeds.x.map((_, i) => i),

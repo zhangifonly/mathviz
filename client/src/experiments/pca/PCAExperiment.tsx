@@ -260,29 +260,29 @@ export default function PCAExperiment() {
                 {
                   x: data.map((p) => p.x),
                   y: data.map((p) => p.y),
-                  type: 'scatter',
-                  mode: 'markers',
+                  type: 'scatter' as const,
+                  mode: 'markers' as const,
                   marker: { size: 6, color: '#3b82f6', opacity: 0.6 },
                   name: '原始数据',
-                },
+                } as const,
                 // PC1 向量
                 {
                   x: [pcaResult.mean.x, pcaResult.mean.x + pcaResult.eigenvectors[0][0] * Math.sqrt(pcaResult.eigenvalues[0]) * 2],
                   y: [pcaResult.mean.y, pcaResult.mean.y + pcaResult.eigenvectors[0][1] * Math.sqrt(pcaResult.eigenvalues[0]) * 2],
-                  type: 'scatter',
-                  mode: 'lines',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
                   line: { color: '#ef4444', width: 3 },
                   name: 'PC1',
-                },
+                } as const,
                 // PC2 向量
                 {
                   x: [pcaResult.mean.x, pcaResult.mean.x + pcaResult.eigenvectors[1][0] * Math.sqrt(pcaResult.eigenvalues[1]) * 2],
                   y: [pcaResult.mean.y, pcaResult.mean.y + pcaResult.eigenvectors[1][1] * Math.sqrt(pcaResult.eigenvalues[1]) * 2],
-                  type: 'scatter',
-                  mode: 'lines',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
                   line: { color: '#22c55e', width: 3 },
                   name: 'PC2',
-                },
+                } as const,
                 // 投影点
                 ...(showProjection
                   ? [{
@@ -292,24 +292,24 @@ export default function PCAExperiment() {
                       mode: 'markers' as const,
                       marker: { size: 6, color: '#f59e0b', opacity: 0.6 },
                       name: `PC${pcToShow}投影`,
-                    }]
+                    } as const]
                   : []),
                 // 均值点
                 {
                   x: [pcaResult.mean.x],
                   y: [pcaResult.mean.y],
-                  type: 'scatter',
-                  mode: 'markers',
+                  type: 'scatter' as const,
+                  mode: 'markers' as const,
                   marker: { size: 12, color: '#8b5cf6', symbol: 'x' },
                   name: '均值',
-                },
+                } as const,
               ]}
               layout={{
                 autosize: true,
                 height: 400,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: 'X', scaleanchor: 'y', scaleratio: 1 },
-                yaxis: { title: 'Y' },
+                xaxis: { title: { text: 'X' }, scaleanchor: 'y', scaleratio: 1 },
+                yaxis: { title: { text: 'Y' } },
                 legend: { orientation: 'h', y: -0.15 },
               }}
               config={{ responsive: true }}
@@ -325,17 +325,17 @@ export default function PCAExperiment() {
                   {
                     x: pcaResult.projections.map((p) => p.pc1),
                     y: pcaResult.projections.map((p) => p.pc2),
-                    type: 'scatter',
-                    mode: 'markers',
+                    type: 'scatter' as const,
+                    mode: 'markers' as const,
                     marker: { size: 6, color: '#8b5cf6', opacity: 0.6 },
-                  },
+                  } as const,
                 ]}
                 layout={{
                   autosize: true,
                   height: 250,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  xaxis: { title: 'PC1' },
-                  yaxis: { title: 'PC2' },
+                  xaxis: { title: { text: 'PC1' } },
+                  yaxis: { title: { text: 'PC2' } },
                 }}
                 config={{ responsive: true }}
                 className="w-full"
@@ -349,15 +349,15 @@ export default function PCAExperiment() {
                   {
                     x: ['PC1', 'PC2'],
                     y: pcaResult.explainedVariance.map((v) => v * 100),
-                    type: 'bar',
+                    type: 'bar' as const,
                     marker: { color: ['#ef4444', '#22c55e'] },
-                  },
+                  } as const,
                 ]}
                 layout={{
                   autosize: true,
                   height: 250,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  yaxis: { title: '方差解释 (%)', range: [0, 100] },
+                  yaxis: { title: { text: '方差解释 (%)' }, range: [0, 100] },
                 }}
                 config={{ responsive: true }}
                 className="w-full"

@@ -136,12 +136,12 @@ export function WaveformScene({
             autosize: true,
             margin: { t: 40, r: 40, b: 60, l: 60 },
             xaxis: {
-              title: '时间 t',
+              title: { text: '时间 t' },
               gridcolor: '#f1f5f9',
               zerolinecolor: '#e2e8f0',
             },
             yaxis: {
-              title: '振幅',
+              title: { text: '振幅' },
               gridcolor: '#f1f5f9',
               zerolinecolor: '#e2e8f0',
               range: [-2, 2],

@@ -244,34 +244,34 @@ export default function TaylorExperiment() {
                 {
                   x: xValues,
                   y: originalValues,
-                  type: 'scatter',
-                  mode: 'lines',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
                   name: `原函数 ${functionInfo[funcType].name}`,
-                  line: { color: '#3b82f6', width: 3 },
+                  line: { color: '#3b82f6', width: 3 } as const,
                 },
                 {
                   x: xValues,
                   y: taylorValues,
-                  type: 'scatter',
-                  mode: 'lines',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
                   name: `泰勒展开 (${params.terms}项)`,
-                  line: { color: '#ef4444', width: 2, dash: 'dash' },
+                  line: { color: '#ef4444', width: 2, dash: 'dash' as const } as const,
                 },
                 {
                   x: [params.xPoint],
                   y: [pointOriginal],
-                  type: 'scatter',
-                  mode: 'markers',
+                  type: 'scatter' as const,
+                  mode: 'markers' as const,
                   name: '采样点',
-                  marker: { color: '#22c55e', size: 12 },
+                  marker: { color: '#22c55e', size: 12 } as const,
                 },
               ]}
               layout={{
                 autosize: true,
                 height: 300,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: 'x' },
-                yaxis: { title: 'y', range: [-5, 5] },
+                xaxis: { title: { text: 'x' } },
+                yaxis: { title: { text: 'y' }, range: [-5, 5] },
                 legend: { orientation: 'h', y: -0.2 },
               }}
               config={{ responsive: true }}
@@ -287,11 +287,11 @@ export default function TaylorExperiment() {
                 {
                   x: xValues,
                   y: errorValues,
-                  type: 'scatter',
-                  mode: 'lines',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
                   name: '|f(x) - Tₙ(x)|',
-                  line: { color: '#8b5cf6', width: 2 },
-                  fill: 'tozeroy',
+                  line: { color: '#8b5cf6', width: 2 } as const,
+                  fill: 'tozeroy' as const,
                   fillcolor: 'rgba(139, 92, 246, 0.2)',
                 },
               ]}
@@ -299,8 +299,8 @@ export default function TaylorExperiment() {
                 autosize: true,
                 height: 200,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: 'x' },
-                yaxis: { title: '误差', type: 'log' },
+                xaxis: { title: { text: 'x' } },
+                yaxis: { title: { text: '误差' }, type: 'log' },
               }}
               config={{ responsive: true }}
               className="w-full"
@@ -315,10 +315,10 @@ export default function TaylorExperiment() {
                 {
                   x: xValues,
                   y: originalValues,
-                  type: 'scatter',
-                  mode: 'lines',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
                   name: '原函数',
-                  line: { color: '#3b82f6', width: 3 },
+                  line: { color: '#3b82f6', width: 3 } as const,
                 },
                 ...convergenceData.slice(0, params.terms).map((d, i) => ({
                   x: xValues,
@@ -326,7 +326,7 @@ export default function TaylorExperiment() {
                   type: 'scatter' as const,
                   mode: 'lines' as const,
                   name: `${d.terms}项`,
-                  line: { color: `hsl(${i * 36}, 70%, 50%)`, width: 1 },
+                  line: { color: `hsl(${i * 36}, 70%, 50%)`, width: 1 } as const,
                   opacity: 0.6,
                 })),
               ]}
@@ -334,8 +334,8 @@ export default function TaylorExperiment() {
                 autosize: true,
                 height: 250,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: 'x' },
-                yaxis: { title: 'y', range: [-5, 5] },
+                xaxis: { title: { text: 'x' } },
+                yaxis: { title: { text: 'y' }, range: [-5, 5] },
                 showlegend: false,
               }}
               config={{ responsive: true }}

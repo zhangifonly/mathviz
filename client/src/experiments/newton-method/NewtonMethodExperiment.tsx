@@ -226,16 +226,16 @@ export default function NewtonMethodExperiment() {
                 {
                   x: functionCurve.x,
                   y: functionCurve.y,
-                  type: 'scatter',
-                  mode: 'lines',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
                   line: { color: '#3b82f6', width: 2 },
                   name: 'f(x)',
                 },
                 {
                   x: [xRange[0], xRange[1]],
                   y: [0, 0],
-                  type: 'scatter',
-                  mode: 'lines',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
                   line: { color: '#94a3b8', width: 1 },
                   name: 'y=0',
                   showlegend: false,
@@ -260,8 +260,8 @@ export default function NewtonMethodExperiment() {
                 {
                   x: stepPoints.x,
                   y: stepPoints.y,
-                  type: 'scatter',
-                  mode: 'markers',
+                  type: 'scatter' as const,
+                  mode: 'markers' as const,
                   marker: { color: '#22c55e', size: 10 },
                   name: '迭代点',
                 },
@@ -270,17 +270,17 @@ export default function NewtonMethodExperiment() {
                   y: [0],
                   type: 'scatter' as const,
                   mode: 'markers' as const,
-                  marker: { color: '#f59e0b', size: 12, symbol: 'diamond' },
+                  marker: { color: '#f59e0b', size: 12, symbol: 'diamond' as const },
                   name: '下一点',
                 }] : []),
-              ]}
+              ] as any}
               layout={{
                 autosize: true,
                 height: 400,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: 'x', range: xRange },
-                yaxis: { title: 'f(x)' },
-                legend: { orientation: 'h', y: -0.15 },
+                xaxis: { title: { text: 'x' }, range: xRange },
+                yaxis: { title: { text: 'f(x)' } },
+                legend: { orientation: 'h' as const, y: -0.15 },
               }}
               config={{ responsive: true }}
               className="w-full"

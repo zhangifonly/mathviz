@@ -346,26 +346,26 @@ export default function FourierSeriesExperiment() {
                   {
                     x: originalWaveform.x,
                     y: originalWaveform.y,
-                    type: 'scatter',
-                    mode: 'lines',
+                    type: 'scatter' as const,
+                    mode: 'lines' as const,
                     line: { color: '#94a3b8', width: 1, dash: 'dash' },
                     name: '原始',
                   },
                   {
                     x: fourierApprox.x,
                     y: fourierApprox.y,
-                    type: 'scatter',
-                    mode: 'lines',
+                    type: 'scatter' as const,
+                    mode: 'lines' as const,
                     line: { color: '#8b5cf6', width: 2 },
                     name: `${terms}项近似`,
                   },
-                ]}
+                ] as any}
                 layout={{
                   autosize: true,
                   height: 250,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  xaxis: { title: 't' },
-                  yaxis: { title: 'f(t)', range: [-1.5, 1.5] },
+                  xaxis: { title: { text: 't' } },
+                  yaxis: { title: { text: 'f(t)' }, range: [-1.5, 1.5] },
                   legend: { orientation: 'h', y: -0.2 },
                 }}
                 config={{ responsive: true }}
@@ -380,16 +380,16 @@ export default function FourierSeriesExperiment() {
                   {
                     x: spectrum.freqs,
                     y: spectrum.amps,
-                    type: 'bar',
+                    type: 'bar' as const,
                     marker: { color: '#8b5cf6' },
                   },
-                ]}
+                ] as any}
                 layout={{
                   autosize: true,
                   height: 250,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  xaxis: { title: '谐波次数 n', dtick: 1 },
-                  yaxis: { title: '幅度' },
+                  xaxis: { title: { text: '谐波次数 n' }, dtick: 1 },
+                  yaxis: { title: { text: '幅度' } },
                 }}
                 config={{ responsive: true }}
                 className="w-full"

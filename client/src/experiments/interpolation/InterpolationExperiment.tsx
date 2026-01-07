@@ -359,24 +359,24 @@ export default function InterpolationExperiment() {
                 {
                   x: curveData.x,
                   y: curveData.y,
-                  type: 'scatter',
-                  mode: 'lines',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
                   line: { color: '#8b5cf6', width: 2 },
                   name: '插值曲线',
                 },
                 {
                   x: sortedPoints.map((p) => p.x),
                   y: sortedPoints.map((p) => p.y),
-                  type: 'scatter',
-                  mode: 'markers',
+                  type: 'scatter' as const,
+                  mode: 'markers' as const,
                   marker: { size: 12, color: '#3b82f6' },
                   name: '数据点',
                 },
                 {
                   x: [evalX],
                   y: [evalResult],
-                  type: 'scatter',
-                  mode: 'markers',
+                  type: 'scatter' as const,
+                  mode: 'markers' as const,
                   marker: { size: 10, color: '#ef4444', symbol: 'diamond' },
                   name: '求值点',
                 },
@@ -385,8 +385,8 @@ export default function InterpolationExperiment() {
                 autosize: true,
                 height: 400,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: 'x' },
-                yaxis: { title: 'y' },
+                xaxis: { title: { text: 'x' } },
+                yaxis: { title: { text: 'y' } },
                 legend: { orientation: 'h', y: -0.15 },
               }}
               config={{ responsive: true }}
@@ -404,13 +404,13 @@ export default function InterpolationExperiment() {
                   type: 'scatter' as const,
                   mode: 'lines' as const,
                   name: basis.name,
-                }))}
+                } as const))}
                 layout={{
                   autosize: true,
                   height: 300,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  xaxis: { title: 'x' },
-                  yaxis: { title: 'L(x)' },
+                  xaxis: { title: { text: 'x' } },
+                  yaxis: { title: { text: 'L(x)' } },
                   legend: { orientation: 'h', y: -0.2 },
                 }}
                 config={{ responsive: true }}

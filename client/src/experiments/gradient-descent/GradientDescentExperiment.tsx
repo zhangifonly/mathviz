@@ -221,16 +221,16 @@ export default function GradientDescentExperiment() {
                   x: contourData.x,
                   y: contourData.y,
                   z: contourData.z,
-                  type: 'contour',
-                  colorscale: 'Viridis',
+                  type: 'contour' as const,
+                  colorscale: 'Viridis' as const,
                   showscale: false,
-                  contours: { coloring: 'heatmap' },
+                  contours: { coloring: 'heatmap' as const },
                 },
                 {
                   x: visiblePath.map((p) => p.x),
                   y: visiblePath.map((p) => p.y),
-                  type: 'scatter',
-                  mode: 'lines+markers',
+                  type: 'scatter' as const,
+                  mode: 'lines+markers' as const,
                   line: { color: '#ef4444', width: 2 },
                   marker: { color: '#ef4444', size: 6 },
                   name: '优化路径',
@@ -238,8 +238,8 @@ export default function GradientDescentExperiment() {
                 {
                   x: [visiblePath[visiblePath.length - 1]?.x],
                   y: [visiblePath[visiblePath.length - 1]?.y],
-                  type: 'scatter',
-                  mode: 'markers',
+                  type: 'scatter' as const,
+                  mode: 'markers' as const,
                   marker: { color: '#22c55e', size: 14, symbol: 'star' },
                   name: '当前位置',
                 },
@@ -256,8 +256,8 @@ export default function GradientDescentExperiment() {
                 autosize: true,
                 height: 450,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: 'x', range: func.xRange },
-                yaxis: { title: 'y', range: func.yRange, scaleanchor: 'x', scaleratio: 1 },
+                xaxis: { title: { text: 'x' }, range: func.xRange },
+                yaxis: { title: { text: 'y' }, range: func.yRange, scaleanchor: 'x', scaleratio: 1 },
                 legend: { orientation: 'h', y: -0.15 },
               }}
               config={{ responsive: true }}
@@ -272,8 +272,8 @@ export default function GradientDescentExperiment() {
                 {
                   x: visiblePath.map((_, i) => i),
                   y: visiblePath.map((p) => p.f),
-                  type: 'scatter',
-                  mode: 'lines+markers',
+                  type: 'scatter' as const,
+                  mode: 'lines+markers' as const,
                   line: { color: '#8b5cf6', width: 2 },
                   marker: { size: 4 },
                 },
@@ -282,8 +282,8 @@ export default function GradientDescentExperiment() {
                 autosize: true,
                 height: 200,
                 margin: { t: 30, r: 30, b: 40, l: 60 },
-                xaxis: { title: '迭代次数' },
-                yaxis: { title: 'f(x,y)', type: 'log' },
+                xaxis: { title: { text: '迭代次数' } },
+                yaxis: { title: { text: 'f(x,y)' }, type: 'log' },
               }}
               config={{ responsive: true }}
               className="w-full"

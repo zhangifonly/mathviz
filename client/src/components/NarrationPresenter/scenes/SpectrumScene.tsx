@@ -79,12 +79,12 @@ export function SpectrumScene({
             autosize: true,
             margin: { t: 40, r: 40, b: 60, l: 60 },
             xaxis: {
-              title: '频率 (Hz)',
+              title: { text: '频率 (Hz)' },
               gridcolor: '#f1f5f9',
               dtick: state.frequency,
             },
             yaxis: {
-              title: '幅度',
+              title: { text: '幅度' },
               gridcolor: '#f1f5f9',
               range: [0, 1.5],
             },

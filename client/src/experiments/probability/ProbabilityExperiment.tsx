@@ -242,28 +242,28 @@ export default function ProbabilityExperiment() {
                 {
                   x: xDiscrete,
                   y: yDiscrete,
-                  type: 'bar',
+                  type: 'bar' as const,
                   marker: { color: '#8b5cf6' },
                   name: 'P(X=k)',
-                },
+                } as const,
               ] : [
                 {
                   x: xValues,
                   y: yValues,
-                  type: 'scatter',
-                  mode: 'lines',
-                  fill: 'tozeroy',
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
+                  fill: 'tozeroy' as const,
                   fillcolor: 'rgba(139, 92, 246, 0.3)',
                   line: { color: '#8b5cf6', width: 2 },
                   name: 'f(x)',
-                },
+                } as const,
               ]}
               layout={{
                 autosize: true,
                 height: 350,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: isDiscrete ? 'k' : 'x' },
-                yaxis: { title: isDiscrete ? 'P(X=k)' : 'f(x)' },
+                xaxis: { title: { text: isDiscrete ? 'k' : 'x' } },
+                yaxis: { title: { text: isDiscrete ? 'P(X=k)' : 'f(x)' } },
                 showlegend: false,
               }}
               config={{ responsive: true }}

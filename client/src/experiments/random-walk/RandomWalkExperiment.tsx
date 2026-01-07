@@ -196,13 +196,13 @@ export default function RandomWalkExperiment() {
                 mode: 'lines' as const,
                 line: { color: colors[i % colors.length], width: 1.5 },
                 name: `Walker ${i + 1}`,
-              }))}
+              } as const))}
               layout={{
                 autosize: true,
                 height: 400,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: walkType === '1d' ? '位置' : 'X' },
-                yaxis: { title: walkType === '1d' ? '时间步' : 'Y' },
+                xaxis: { title: { text: walkType === '1d' ? '位置' : 'X' } },
+                yaxis: { title: { text: walkType === '1d' ? '时间步' : 'Y' } },
                 showlegend: numWalkers <= 5,
                 legend: { orientation: 'h', y: -0.15 },
               }}
@@ -247,26 +247,26 @@ export default function RandomWalkExperiment() {
                   {
                     x: msdOverTime.times,
                     y: msdOverTime.msd,
-                    type: 'scatter',
-                    mode: 'lines',
+                    type: 'scatter' as const,
+                    mode: 'lines' as const,
                     line: { color: '#8b5cf6', width: 2 },
                     name: '实测 MSD',
-                  },
+                  } as const,
                   {
                     x: msdOverTime.times,
                     y: msdOverTime.times.map((t) => (walkType === '1d' ? t : 2 * t)),
-                    type: 'scatter',
-                    mode: 'lines',
-                    line: { color: '#94a3b8', width: 2, dash: 'dash' },
+                    type: 'scatter' as const,
+                    mode: 'lines' as const,
+                    line: { color: '#94a3b8', width: 2, dash: 'dash' as const },
                     name: '理论值',
-                  },
+                  } as const,
                 ]}
                 layout={{
                   autosize: true,
                   height: 250,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  xaxis: { title: '时间 t' },
-                  yaxis: { title: '⟨r²⟩' },
+                  xaxis: { title: { text: '时间 t' } },
+                  yaxis: { title: { text: '⟨r²⟩' } },
                   legend: { orientation: 'h', y: -0.2 },
                 }}
                 config={{ responsive: true }}
@@ -281,25 +281,25 @@ export default function RandomWalkExperiment() {
                   {
                     x: statistics.finalPositions.map((p) => p.x),
                     y: statistics.finalPositions.map((p) => p.y),
-                    type: 'scatter',
-                    mode: 'markers',
+                    type: 'scatter' as const,
+                    mode: 'markers' as const,
                     marker: { size: 8, color: '#3b82f6' },
-                  },
+                  } as const,
                   {
                     x: [0],
                     y: [0],
-                    type: 'scatter',
-                    mode: 'markers',
-                    marker: { size: 12, color: '#ef4444', symbol: 'x' },
+                    type: 'scatter' as const,
+                    mode: 'markers' as const,
+                    marker: { size: 12, color: '#ef4444', symbol: 'x' as const },
                     name: '起点',
-                  },
+                  } as const,
                 ]}
                 layout={{
                   autosize: true,
                   height: 250,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  xaxis: { title: 'X' },
-                  yaxis: { title: 'Y', scaleanchor: 'x', scaleratio: 1 },
+                  xaxis: { title: { text: 'X' } },
+                  yaxis: { title: { text: 'Y' }, scaleanchor: 'x', scaleratio: 1 },
                   showlegend: false,
                 }}
                 config={{ responsive: true }}

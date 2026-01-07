@@ -264,25 +264,25 @@ export default function ChaosExperiment() {
                     {
                       x: bifurcationData.r,
                       y: bifurcationData.x,
-                      type: 'scattergl',
-                      mode: 'markers',
+                      type: 'scattergl' as const,
+                      mode: 'markers' as const,
                       marker: { size: 0.5, color: '#8b5cf6' },
                     },
                     {
                       x: [logisticR, logisticR],
                       y: [0, 1],
-                      type: 'scatter',
-                      mode: 'lines',
+                      type: 'scatter' as const,
+                      mode: 'lines' as const,
                       line: { color: '#ef4444', width: 2 },
                       name: '当前 r',
                     },
-                  ]}
+                  ] as any}
                   layout={{
                     autosize: true,
                     height: 300,
                     margin: { t: 30, r: 30, b: 40, l: 50 },
-                    xaxis: { title: 'r', range: [2.5, 4] },
-                    yaxis: { title: 'x', range: [0, 1] },
+                    xaxis: { title: { text: 'r' }, range: [2.5, 4] },
+                    yaxis: { title: { text: 'x' }, range: [0, 1] },
                     showlegend: false,
                   }}
                   config={{ responsive: true }}
@@ -301,19 +301,19 @@ export default function ChaosExperiment() {
                     x: lorenzData.x,
                     y: lorenzData.y,
                     z: lorenzData.z,
-                    type: 'scatter3d',
-                    mode: 'lines',
+                    type: 'scatter3d' as const,
+                    mode: 'lines' as const,
                     line: { color: lorenzData.z, colorscale: 'Viridis', width: 1 },
                   },
-                ]}
+                ] as any}
                 layout={{
                   autosize: true,
                   height: 500,
                   margin: { t: 30, r: 30, b: 30, l: 30 },
                   scene: {
-                    xaxis: { title: 'X' },
-                    yaxis: { title: 'Y' },
-                    zaxis: { title: 'Z' },
+                    xaxis: { title: { text: 'X' } },
+                    yaxis: { title: { text: 'Y' } },
+                    zaxis: { title: { text: 'Z' } },
                   },
                 }}
                 config={{ responsive: true }}
@@ -330,17 +330,17 @@ export default function ChaosExperiment() {
                   {
                     x: henonData.x,
                     y: henonData.y,
-                    type: 'scattergl',
-                    mode: 'markers',
+                    type: 'scattergl' as const,
+                    mode: 'markers' as const,
                     marker: { size: 1, color: '#8b5cf6' },
                   },
-                ]}
+                ] as any}
                 layout={{
                   autosize: true,
                   height: 400,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  xaxis: { title: 'x' },
-                  yaxis: { title: 'y', scaleanchor: 'x', scaleratio: 1 },
+                  xaxis: { title: { text: 'x' } },
+                  yaxis: { title: { text: 'y' }, scaleanchor: 'x', scaleratio: 1 },
                 }}
                 config={{ responsive: true }}
                 className="w-full"

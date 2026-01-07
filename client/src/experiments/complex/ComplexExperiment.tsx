@@ -129,25 +129,25 @@ export default function ComplexExperiment() {
             <Plot
               data={[
                 // 坐标轴
-                { x: [-3, 3], y: [0, 0], type: 'scatter', mode: 'lines', showlegend: false, line: { color: '#cbd5e1', width: 1 } },
-                { x: [0, 0], y: [-3, 3], type: 'scatter', mode: 'lines', showlegend: false, line: { color: '#cbd5e1', width: 1 } },
+                { x: [-3, 3], y: [0, 0], type: 'scatter' as const, mode: 'lines' as const, showlegend: false, line: { color: '#cbd5e1', width: 1 } },
+                { x: [0, 0], y: [-3, 3], type: 'scatter' as const, mode: 'lines' as const, showlegend: false, line: { color: '#cbd5e1', width: 1 } },
                 // z1 向量
-                { x: [0, z1.re], y: [0, z1.im], type: 'scatter', mode: 'lines+markers', name: 'z₁', line: { color: '#3b82f6', width: 3 }, marker: { size: 10 } },
+                { x: [0, z1.re], y: [0, z1.im], type: 'scatter' as const, mode: 'lines+markers' as const, name: 'z₁', line: { color: '#3b82f6', width: 3 }, marker: { size: 10 } },
                 // z2 向量
-                { x: [0, z2.re], y: [0, z2.im], type: 'scatter', mode: 'lines+markers', name: 'z₂', line: { color: '#22c55e', width: 3 }, marker: { size: 10 } },
+                { x: [0, z2.re], y: [0, z2.im], type: 'scatter' as const, mode: 'lines+markers' as const, name: 'z₂', line: { color: '#22c55e', width: 3 }, marker: { size: 10 } },
                 // 加法结果 (平行四边形)
-                { x: [z1.re, zSum.re], y: [z1.im, zSum.im], type: 'scatter', mode: 'lines', showlegend: false, line: { color: '#22c55e', width: 1, dash: 'dash' } },
-                { x: [z2.re, zSum.re], y: [z2.im, zSum.im], type: 'scatter', mode: 'lines', showlegend: false, line: { color: '#3b82f6', width: 1, dash: 'dash' } },
-                { x: [0, zSum.re], y: [0, zSum.im], type: 'scatter', mode: 'lines+markers', name: 'z₁+z₂', line: { color: '#f59e0b', width: 3 }, marker: { size: 10 } },
+                { x: [z1.re, zSum.re], y: [z1.im, zSum.im], type: 'scatter' as const, mode: 'lines' as const, showlegend: false, line: { color: '#22c55e', width: 1, dash: 'dash' } },
+                { x: [z2.re, zSum.re], y: [z2.im, zSum.im], type: 'scatter' as const, mode: 'lines' as const, showlegend: false, line: { color: '#3b82f6', width: 1, dash: 'dash' } },
+                { x: [0, zSum.re], y: [0, zSum.im], type: 'scatter' as const, mode: 'lines+markers' as const, name: 'z₁+z₂', line: { color: '#f59e0b', width: 3 }, marker: { size: 10 } },
                 // 乘法结果
-                { x: [0, zProduct.re], y: [0, zProduct.im], type: 'scatter', mode: 'lines+markers', name: 'z₁×z₂', line: { color: '#ef4444', width: 3 }, marker: { size: 10 } },
-              ]}
+                { x: [0, zProduct.re], y: [0, zProduct.im], type: 'scatter' as const, mode: 'lines+markers' as const, name: 'z₁×z₂', line: { color: '#ef4444', width: 3 }, marker: { size: 10 } },
+              ] as any}
               layout={{
                 autosize: true,
                 height: 350,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: 'Re', range: [-3, 3], scaleanchor: 'y', scaleratio: 1 },
-                yaxis: { title: 'Im', range: [-3, 3] },
+                xaxis: { title: { text: 'Re' }, range: [-3, 3], scaleanchor: 'y', scaleratio: 1 },
+                yaxis: { title: { text: 'Im' }, range: [-3, 3] },
                 legend: { orientation: 'h', y: -0.15 },
               }}
               config={{ responsive: true }}

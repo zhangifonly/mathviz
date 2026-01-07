@@ -383,13 +383,13 @@ export default function MarkovChainExperiment() {
                   type: 'scatter' as const,
                   mode: 'lines' as const,
                   name: state,
-                }))}
+                } as const))}
                 layout={{
                   autosize: true,
                   height: 250,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  xaxis: { title: '时间步' },
-                  yaxis: { title: '概率', range: [0, 1] },
+                  xaxis: { title: { text: '时间步' } },
+                  yaxis: { title: { text: '概率' }, range: [0, 1] },
                   legend: { orientation: 'h', y: -0.2 },
                 }}
                 config={{ responsive: true }}
@@ -404,14 +404,14 @@ export default function MarkovChainExperiment() {
                   {
                     x: states,
                     y: stationaryDist,
-                    type: 'bar',
+                    type: 'bar' as const,
                     name: '稳态分布',
                     marker: { color: '#8b5cf6' },
                   },
                   {
                     x: states,
                     y: simulationStats,
-                    type: 'bar',
+                    type: 'bar' as const,
                     name: '模拟频率',
                     marker: { color: '#22c55e' },
                   },
@@ -420,7 +420,7 @@ export default function MarkovChainExperiment() {
                   autosize: true,
                   height: 250,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  yaxis: { title: '概率', range: [0, 1] },
+                  yaxis: { title: { text: '概率' }, range: [0, 1] },
                   barmode: 'group',
                   legend: { orientation: 'h', y: -0.2 },
                 }}

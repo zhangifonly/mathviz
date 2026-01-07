@@ -338,17 +338,17 @@ export default function GameTheoryExperiment() {
                   {
                     x: bestResponseData.br1.map((p) => p.x),
                     y: bestResponseData.br1.map((p) => p.y),
-                    type: 'scatter',
-                    mode: 'lines',
-                    line: { color: '#3b82f6', width: 2 },
+                    type: 'scatter' as const,
+                    mode: 'lines' as const,
+                    line: { color: '#3b82f6', width: 2 } as const,
                     name: 'BR1(q)',
                   },
                   {
                     x: bestResponseData.br2.map((p) => p.x),
                     y: bestResponseData.br2.map((p) => p.y),
-                    type: 'scatter',
-                    mode: 'lines',
-                    line: { color: '#22c55e', width: 2 },
+                    type: 'scatter' as const,
+                    mode: 'lines' as const,
+                    line: { color: '#22c55e', width: 2 } as const,
                     name: 'BR2(p)',
                   },
                   ...nashEquilibria.map((ne, i) => ({
@@ -362,8 +362,8 @@ export default function GameTheoryExperiment() {
                   {
                     x: [p2Strategy],
                     y: [p1Strategy],
-                    type: 'scatter',
-                    mode: 'markers',
+                    type: 'scatter' as const,
+                    mode: 'markers' as const,
                     marker: { size: 10, color: '#8b5cf6' },
                     name: '当前',
                   },
@@ -372,8 +372,8 @@ export default function GameTheoryExperiment() {
                   autosize: true,
                   height: 300,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  xaxis: { title: 'q (玩家2策略1概率)', range: [0, 1] },
-                  yaxis: { title: 'p (玩家1策略1概率)', range: [0, 1] },
+                  xaxis: { title: { text: 'q (玩家2策略1概率)' }, range: [0, 1] },
+                  yaxis: { title: { text: 'p (玩家1策略1概率)' }, range: [0, 1] },
                   legend: { orientation: 'h', y: -0.2 },
                 }}
                 config={{ responsive: true }}
@@ -389,17 +389,17 @@ export default function GameTheoryExperiment() {
                     {
                       x: evolutionData.t,
                       y: evolutionData.x,
-                      type: 'scatter',
-                      mode: 'lines',
-                      line: { color: '#3b82f6', width: 2 },
+                      type: 'scatter' as const,
+                      mode: 'lines' as const,
+                      line: { color: '#3b82f6', width: 2 } as const,
                       name: 'p (玩家1)',
                     },
                     {
                       x: evolutionData.t,
                       y: evolutionData.y,
-                      type: 'scatter',
-                      mode: 'lines',
-                      line: { color: '#22c55e', width: 2 },
+                      type: 'scatter' as const,
+                      mode: 'lines' as const,
+                      line: { color: '#22c55e', width: 2 } as const,
                       name: 'q (玩家2)',
                     },
                   ]}
@@ -407,8 +407,8 @@ export default function GameTheoryExperiment() {
                     autosize: true,
                     height: 300,
                     margin: { t: 30, r: 30, b: 40, l: 50 },
-                    xaxis: { title: '时间' },
-                    yaxis: { title: '策略概率', range: [0, 1] },
+                    xaxis: { title: { text: '时间' } },
+                    yaxis: { title: { text: '策略概率' }, range: [0, 1] },
                     legend: { orientation: 'h', y: -0.2 },
                   }}
                   config={{ responsive: true }}

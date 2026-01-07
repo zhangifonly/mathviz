@@ -362,17 +362,17 @@ export default function RegressionExperiment() {
                 {
                   x: points.map((p) => p.x),
                   y: points.map((p) => p.y),
-                  type: 'scatter',
-                  mode: 'markers',
-                  marker: { size: 10, color: '#3b82f6' },
+                  type: 'scatter' as const,
+                  mode: 'markers' as const,
+                  marker: { size: 10, color: '#3b82f6' } as const,
                   name: '数据点',
                 },
                 {
                   x: fittedCurve.x,
                   y: fittedCurve.y,
-                  type: 'scatter',
-                  mode: 'lines',
-                  line: { color: '#ef4444', width: 2 },
+                  type: 'scatter' as const,
+                  mode: 'lines' as const,
+                  line: { color: '#ef4444', width: 2 } as const,
                   name: '拟合曲线',
                 },
                 ...(showResiduals
@@ -381,7 +381,7 @@ export default function RegressionExperiment() {
                       y: [r.y, r.pred],
                       type: 'scatter' as const,
                       mode: 'lines' as const,
-                      line: { color: '#22c55e', width: 1, dash: 'dash' as const },
+                      line: { color: '#22c55e', width: 1, dash: 'dash' as const } as const,
                       showlegend: i === 0,
                       name: '残差',
                     }))
@@ -391,8 +391,8 @@ export default function RegressionExperiment() {
                 autosize: true,
                 height: 400,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
-                xaxis: { title: 'x' },
-                yaxis: { title: 'y' },
+                xaxis: { title: { text: 'x' } },
+                yaxis: { title: { text: 'y' } },
                 legend: { orientation: 'h', y: -0.15 },
               }}
               config={{ responsive: true }}
@@ -408,24 +408,24 @@ export default function RegressionExperiment() {
                   {
                     x: residuals.map((r) => r.x),
                     y: residuals.map((r) => r.residual),
-                    type: 'scatter',
-                    mode: 'markers',
-                    marker: { size: 8, color: '#8b5cf6' },
+                    type: 'scatter' as const,
+                    mode: 'markers' as const,
+                    marker: { size: 8, color: '#8b5cf6' } as const,
                   },
                   {
                     x: [Math.min(...points.map((p) => p.x)), Math.max(...points.map((p) => p.x))],
                     y: [0, 0],
-                    type: 'scatter',
-                    mode: 'lines',
-                    line: { color: '#94a3b8', dash: 'dash' },
+                    type: 'scatter' as const,
+                    mode: 'lines' as const,
+                    line: { color: '#94a3b8', dash: 'dash' as const } as const,
                   },
                 ]}
                 layout={{
                   autosize: true,
                   height: 250,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  xaxis: { title: 'x' },
-                  yaxis: { title: '残差' },
+                  xaxis: { title: { text: 'x' } },
+                  yaxis: { title: { text: '残差' } },
                   showlegend: false,
                 }}
                 config={{ responsive: true }}
@@ -440,17 +440,17 @@ export default function RegressionExperiment() {
                   {
                     x: ['线性', '多项式', '指数', '对数'],
                     y: [linearRegression.r2, polynomialRegression.r2, exponentialRegression.r2, logarithmicRegression.r2],
-                    type: 'bar',
+                    type: 'bar' as const,
                     marker: {
                       color: ['#3b82f6', '#8b5cf6', '#22c55e', '#f59e0b'],
-                    },
+                    } as const,
                   },
                 ]}
                 layout={{
                   autosize: true,
                   height: 250,
                   margin: { t: 30, r: 30, b: 40, l: 50 },
-                  yaxis: { title: 'R²', range: [0, 1] },
+                  yaxis: { title: { text: 'R²' }, range: [0, 1] },
                   showlegend: false,
                 }}
                 config={{ responsive: true }}

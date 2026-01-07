@@ -128,8 +128,8 @@ export function ComparisonScene({
               layout={{
                 autosize: true,
                 margin: { t: 20, r: 20, b: 40, l: 40 },
-                xaxis: { title: '时间 t', gridcolor: '#f1f5f9' },
-                yaxis: { title: '振幅', gridcolor: '#f1f5f9', range: [-1.5, 1.5] },
+                xaxis: { title: { text: '时间 t' }, gridcolor: '#f1f5f9' },
+                yaxis: { title: { text: '振幅' }, gridcolor: '#f1f5f9', range: [-1.5, 1.5] },
                 legend: { orientation: 'h', y: -0.2 },
                 paper_bgcolor: 'white',
                 plot_bgcolor: 'white',
@@ -162,8 +162,8 @@ export function ComparisonScene({
               layout={{
                 autosize: true,
                 margin: { t: 20, r: 20, b: 40, l: 40 },
-                xaxis: { title: '频率 (Hz)', gridcolor: '#f1f5f9' },
-                yaxis: { title: '幅度', gridcolor: '#f1f5f9', range: [0, 1.5] },
+                xaxis: { title: { text: '频率 (Hz)' }, gridcolor: '#f1f5f9' },
+                yaxis: { title: { text: '幅度' }, gridcolor: '#f1f5f9', range: [0, 1.5] },
                 paper_bgcolor: 'white',
                 plot_bgcolor: 'white',
               }}
