@@ -159,7 +159,7 @@ export default function MonteCarloExperiment() {
                   line: { color: '#94a3b8', width: 1 },
                 }],
               }}
-              config={{ responsive: true, displayModeBar: false }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>
@@ -194,7 +194,7 @@ export default function MonteCarloExperiment() {
                   yaxis: { title: { text: 'π 估计值' }, range: [2.5, 4] },
                   legend: { orientation: 'h', y: -0.25 },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>

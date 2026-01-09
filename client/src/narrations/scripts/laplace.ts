@@ -1,0 +1,187 @@
+/**
+ * 拉普拉斯变换讲解稿件
+ * 适合大学生
+ */
+
+import type { NarrationScript } from '../types'
+
+export const laplaceNarration: NarrationScript = {
+  id: 'laplace',
+  title: '拉普拉斯变换',
+  subtitle: '探索时域与复频域之间的桥梁',
+  targetAge: '大学',
+  difficulty: 'advanced',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2025-01-09',
+    updatedAt: '2025-01-09',
+  },
+
+  objectives: [
+    '理解拉普拉斯变换的定义和意义',
+    '掌握常用变换对',
+    '理解系统响应和极点零点分析',
+  ],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        {
+          id: 'intro-1',
+          text: '欢迎来到拉普拉斯变换的世界！拉普拉斯变换是数学中最强大的工具之一，它在工程和物理学中有着广泛的应用。',
+        },
+        {
+          id: 'intro-2',
+          text: '拉普拉斯变换的核心思想是将时域中的微分方程转换为复频域中的代数方程，从而大大简化问题的求解过程。',
+        },
+        {
+          id: 'intro-3',
+          text: '这个变换以法国数学家皮埃尔-西蒙·拉普拉斯的名字命名，他在18世纪末发展了这一理论。',
+        },
+      ],
+    },
+    {
+      id: 'definition',
+      type: 'formula',
+      title: '定义',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'definition-1',
+          text: '拉普拉斯变换的定义是：F(s) 等于从0到无穷大对 f(t) 乘以 e 的负 st 次方的积分。',
+        },
+        {
+          id: 'definition-2',
+          text: '这里的 s 是一个复数，通常写作 s = σ + jω，其中 σ 是实部，ω 是虚部。',
+        },
+        {
+          id: 'definition-3',
+          text: '这个积分将时域函数 f(t) 映射到复频域函数 F(s)，建立了两个域之间的桥梁。',
+        },
+      ],
+    },
+    {
+      id: 'basic-transforms',
+      type: 'concept',
+      title: '基本变换对',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'basic-transforms-1',
+          text: '让我们来看一些最基本的拉普拉斯变换对。首先是单位阶跃函数，它的变换结果是 1/s。',
+        },
+        {
+          id: 'basic-transforms-2',
+          text: '斜坡函数 t 的变换是 1/s²。指数函数 e 的 at 次方变换为 1/(s-a)。',
+        },
+        {
+          id: 'basic-transforms-3',
+          text: '正弦函数 sin(ωt) 变换为 ω/(s²+ω²)，余弦函数 cos(ωt) 变换为 s/(s²+ω²)。',
+        },
+        {
+          id: 'basic-transforms-4',
+          text: '这些基本变换对是解决更复杂问题的基础，需要牢记。',
+        },
+      ],
+    },
+    {
+      id: 'system-analysis',
+      type: 'concept',
+      title: '系统分析',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'system-analysis-1',
+          text: '拉普拉斯变换在系统分析中特别有用。我们可以用传递函数 H(s) 来描述线性时不变系统。',
+        },
+        {
+          id: 'system-analysis-2',
+          text: '一阶系统的传递函数是 1/(τs+1)，其中 τ 是时间常数。时间常数越大，系统响应越慢。',
+        },
+        {
+          id: 'system-analysis-3',
+          text: '二阶系统更加复杂，由阻尼比 ζ 和自然频率 ωn 两个参数决定其动态特性。',
+        },
+        {
+          id: 'system-analysis-4',
+          text: '当阻尼比小于1时，系统呈现欠阻尼状态，会产生振荡；等于1时是临界阻尼；大于1时是过阻尼。',
+        },
+      ],
+    },
+    {
+      id: 'pole-zero',
+      type: 'concept',
+      title: '极点与零点',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'pole-zero-1',
+          text: '在S平面上，极点和零点的位置决定了系统的稳定性和动态特性。',
+        },
+        {
+          id: 'pole-zero-2',
+          text: '极点是使传递函数分母为零的s值，用叉号表示。零点是使分子为零的s值，用圆圈表示。',
+        },
+        {
+          id: 'pole-zero-3',
+          text: '系统稳定的充要条件是所有极点都位于S平面的左半平面，即实部为负。',
+        },
+        {
+          id: 'pole-zero-4',
+          text: '极点越靠近虚轴，系统响应越慢；极点的虚部决定了振荡频率。',
+        },
+      ],
+    },
+    {
+      id: 'applications',
+      type: 'application',
+      title: '应用',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'applications-1',
+          text: '拉普拉斯变换在电路分析中非常重要。电阻、电容、电感在S域中分别表示为 R、1/sC 和 sL。',
+        },
+        {
+          id: 'applications-2',
+          text: '在控制系统设计中，我们使用拉普拉斯变换来分析系统稳定性、设计控制器。',
+        },
+        {
+          id: 'applications-3',
+          text: '信号处理领域也广泛使用拉普拉斯变换，特别是在滤波器设计和系统辨识方面。',
+        },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'summary-1',
+          text: '拉普拉斯变换是连接时域和复频域的桥梁，将微分方程转化为代数方程。',
+        },
+        {
+          id: 'summary-2',
+          text: '掌握基本变换对和系统分析方法，是学习控制理论和信号处理的基础。',
+        },
+        {
+          id: 'summary-3',
+          text: '通过极点零点分析，我们可以直观地理解系统的稳定性和动态特性。',
+        },
+        {
+          id: 'summary-4',
+          text: '希望这个可视化工具能帮助你更好地理解拉普拉斯变换的概念和应用！',
+        },
+      ],
+    },
+  ],
+}

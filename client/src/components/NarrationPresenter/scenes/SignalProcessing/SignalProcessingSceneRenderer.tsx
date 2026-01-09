@@ -213,7 +213,7 @@ function TimeDomainScene({
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
 
@@ -319,7 +319,7 @@ function FrequencyDomainScene({
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -385,7 +385,7 @@ function FilterScene({
               },
               showlegend: false,
             }}
-            config={{ responsive: true, displayModeBar: false }}
+            config={{ responsive: true, displayModeBar: false, displaylogo: false }}
             className="w-full"
           />
         </div>
@@ -422,7 +422,7 @@ function FilterScene({
               },
               showlegend: false,
             }}
-            config={{ responsive: true, displayModeBar: false }}
+            config={{ responsive: true, displayModeBar: false, displaylogo: false }}
             className="w-full"
           />
         </div>
@@ -505,7 +505,7 @@ function ComparisonScene({ signalType = 'sine', frequency = 5 }: { signalType?: 
             },
             showlegend: false,
           }}
-          config={{ responsive: true, displayModeBar: false }}
+          config={{ responsive: true, displayModeBar: false, displaylogo: false }}
           className="w-full"
         />
       </div>
@@ -544,7 +544,7 @@ function ComparisonScene({ signalType = 'sine', frequency = 5 }: { signalType?: 
             },
             showlegend: false,
           }}
-          config={{ responsive: true, displayModeBar: false }}
+          config={{ responsive: true, displayModeBar: false, displaylogo: false }}
           className="w-full"
         />
       </div>

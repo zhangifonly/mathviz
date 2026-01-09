@@ -395,7 +395,7 @@ export default function RegressionExperiment() {
                 yaxis: { title: { text: 'y' } },
                 legend: { orientation: 'h', y: -0.15 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>
@@ -428,7 +428,7 @@ export default function RegressionExperiment() {
                   yaxis: { title: { text: '残差' } },
                   showlegend: false,
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
@@ -453,7 +453,7 @@ export default function RegressionExperiment() {
                   yaxis: { title: { text: 'R²' }, range: [0, 1] },
                   showlegend: false,
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>

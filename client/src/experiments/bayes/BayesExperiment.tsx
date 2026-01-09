@@ -301,7 +301,7 @@ export default function BayesExperiment() {
                 yaxis: { title: { text: 'P(A|B)' }, range: [0, 1.05] },
                 legend: { orientation: 'h', y: -0.2 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
             <p className="text-sm text-gray-600 mt-2">

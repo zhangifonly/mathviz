@@ -126,7 +126,7 @@ export default function TrigExperiment() {
                   yaxis: { range: [-1.5, 1.5], showgrid: false, zeroline: false },
                   showlegend: false,
                 }}
-                config={{ responsive: true, displayModeBar: false }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
@@ -171,7 +171,7 @@ export default function TrigExperiment() {
                 yaxis: { title: { text: 'y' } },
                 legend: { orientation: 'h', y: -0.2 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>

@@ -225,7 +225,7 @@ function PrimeDistributionScene({ maxNumber = 1000 }: { maxNumber?: number }) {
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -312,7 +312,7 @@ function CollatzScene({ startNumber = 27, animate = false }: { startNumber?: num
             },
             showlegend: false,
           }}
-          config={{ responsive: true, displayModeBar: false }}
+          config={{ responsive: true, displayModeBar: false, displaylogo: false }}
           className="w-full"
         />
       </div>

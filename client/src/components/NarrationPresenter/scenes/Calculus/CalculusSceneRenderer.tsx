@@ -127,7 +127,7 @@ function DerivativeScene({ interactive = false }: { interactive?: boolean }) {
           },
           showlegend: true,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
 
@@ -265,7 +265,7 @@ function IntegralScene({ interactive = false }: { interactive?: boolean }) {
           },
           showlegend: true,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
 
@@ -508,7 +508,7 @@ function FTCScene() {
                 gridcolor: 'rgba(255,255,255,0.1)',
               },
             }}
-            config={{ responsive: true, displayModeBar: false }}
+            config={{ responsive: true, displayModeBar: false, displaylogo: false }}
             className="w-full"
           />
         </div>
@@ -554,7 +554,7 @@ function FTCScene() {
                 gridcolor: 'rgba(255,255,255,0.1)',
               },
             }}
-            config={{ responsive: true, displayModeBar: false }}
+            config={{ responsive: true, displayModeBar: false, displaylogo: false }}
             className="w-full"
           />
         </div>

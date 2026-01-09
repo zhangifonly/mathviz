@@ -224,7 +224,7 @@ export default function CLTExperiment() {
                   legend: { orientation: 'h', y: -0.15 },
                   bargap: 0.05,
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             ) : (

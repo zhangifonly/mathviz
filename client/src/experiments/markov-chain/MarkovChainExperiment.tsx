@@ -392,7 +392,7 @@ export default function MarkovChainExperiment() {
                   yaxis: { title: { text: '概率' }, range: [0, 1] },
                   legend: { orientation: 'h', y: -0.2 },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
@@ -424,7 +424,7 @@ export default function MarkovChainExperiment() {
                   barmode: 'group',
                   legend: { orientation: 'h', y: -0.2 },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>

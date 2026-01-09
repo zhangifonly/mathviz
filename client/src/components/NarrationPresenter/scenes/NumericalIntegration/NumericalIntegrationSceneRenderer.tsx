@@ -170,7 +170,7 @@ function RectangleRuleScene({
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <div className="text-white/80 text-sm space-y-1 text-center">
@@ -302,7 +302,7 @@ function TrapezoidRuleScene({
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <div className="text-white/80 text-sm space-y-1 text-center">
@@ -471,7 +471,7 @@ function SimpsonRuleScene({
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <div className="text-white/80 text-sm space-y-1 text-center">
@@ -587,7 +587,7 @@ function ComparisonScene({ n = 16 }: { n?: number }) {
             font: { color: 'white', size: 16 },
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <p className="text-white/70 text-sm text-center">

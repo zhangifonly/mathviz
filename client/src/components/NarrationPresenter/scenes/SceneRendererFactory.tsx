@@ -105,6 +105,10 @@ const PolarSceneRenderer = lazy(() => import('./Polar/PolarSceneRenderer'))
 const BezierSceneRenderer = lazy(() => import('./Bezier/BezierSceneRenderer'))
 // 蒙特卡罗场景渲染器
 const MonteCarloSceneRenderer = lazy(() => import('./MonteCarlo/MonteCarloSceneRenderer'))
+// 排列组合场景渲染器
+const PermutationCombinationSceneRenderer = lazy(() => import('./PermutationCombination/PermutationCombinationSceneRenderer'))
+// 拉普拉斯变换场景渲染器
+const LaplaceSceneRenderer = lazy(() => import('./Laplace/LaplaceSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -150,6 +154,8 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'polar': PolarSceneRenderer,
   'bezier': BezierSceneRenderer,
   'monte-carlo': MonteCarloSceneRenderer,
+  'permutation-combination': PermutationCombinationSceneRenderer,
+  'laplace': LaplaceSceneRenderer,
 }
 
 // 获取场景渲染器

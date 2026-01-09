@@ -312,7 +312,7 @@ export default function SignalProcessingExperiment() {
                 yaxis: { title: { text: '幅度' } },
                 legend: { orientation: 'h', y: -0.2 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>
@@ -356,7 +356,7 @@ export default function SignalProcessingExperiment() {
                   yaxis: { title: { text: '幅度' } },
                   showlegend: false,
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
@@ -390,7 +390,7 @@ export default function SignalProcessingExperiment() {
                   yaxis: { title: { text: '增益' }, range: [0, 1.1] },
                   showlegend: false,
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
@@ -417,7 +417,7 @@ export default function SignalProcessingExperiment() {
                   xaxis: { title: { text: '样本' } },
                   yaxis: { title: { text: '权重' }, range: [0, 1.1] },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>

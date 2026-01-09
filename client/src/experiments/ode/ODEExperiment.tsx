@@ -227,7 +227,7 @@ export default function ODEExperiment() {
                 yaxis: { title: { text: '值' } },
                 legend: { orientation: 'h' as const, y: -0.2 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>
@@ -263,7 +263,7 @@ export default function ODEExperiment() {
                   yaxis: { title: { text: odeType === 'predator-prey' ? '捕食者 y' : '速度 v' } },
                   showlegend: false,
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>

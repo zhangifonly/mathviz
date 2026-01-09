@@ -186,7 +186,7 @@ function SurfaceScene({ showPath = false, pathLength = 0 }: { showPath?: boolean
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -345,7 +345,7 @@ function LearningRateScene({ highlightRate }: { highlightRate?: 'small' | 'mediu
             y: 0.98,
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -528,7 +528,7 @@ function ConceptScene({ showGradient = false }: { showGradient?: boolean }) {
             gridcolor: 'rgba(255,255,255,0.1)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>

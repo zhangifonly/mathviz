@@ -86,7 +86,7 @@ function ProbabilityBarScene({
           showlegend: false,
           font: { color: 'white', size: 14 },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -168,7 +168,7 @@ function BayesUpdateScene({ animate = false }: { animate?: boolean }) {
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -488,7 +488,7 @@ function PriorPosteriorComparisonScene() {
             y: 0.95,
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>

@@ -123,7 +123,7 @@ function ScatterPlotScene({ showLine = false }: { showLine?: boolean }) {
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -215,7 +215,7 @@ function LeastSquaresScene({ animate = false }: { animate?: boolean }) {
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <div className="text-white/80 text-sm font-mono">
@@ -287,7 +287,7 @@ function ResidualScene() {
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -403,7 +403,7 @@ function CorrelationScene() {
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <div className="text-white text-lg font-mono">

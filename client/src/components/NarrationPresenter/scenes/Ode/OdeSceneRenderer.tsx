@@ -242,7 +242,7 @@ function SolutionCurveScene({ equation = 'exponential', showMultiple = false }: 
           },
           showlegend: showMultiple,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -367,7 +367,7 @@ function MethodComparisonScene() {
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -456,7 +456,7 @@ function PhaseSpaceScene({ damping = 0 }: { damping?: number }) {
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>

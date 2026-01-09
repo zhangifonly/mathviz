@@ -106,7 +106,7 @@ function LissajousScene({
             zerolinecolor: 'rgba(255,255,255,0.3)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <p className="text-white/60 text-sm font-mono">
@@ -373,7 +373,7 @@ function ParameterAnimationScene({
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -466,7 +466,7 @@ function Parametric3DScene({
             bgcolor: 'transparent',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>

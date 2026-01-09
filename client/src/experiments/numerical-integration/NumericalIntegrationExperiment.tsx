@@ -386,7 +386,7 @@ export default function NumericalIntegrationExperiment() {
                 shapes: (method !== 'simpson' ? (fillData as { shapes: unknown[] }).shapes : []) as any,
                 legend: { orientation: 'h' as const, y: -0.15 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>
@@ -412,7 +412,7 @@ export default function NumericalIntegrationExperiment() {
                   xaxis: { title: { text: '区间数 n' }, type: 'log' as const },
                   yaxis: { title: { text: '误差' }, type: 'log' as const },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>

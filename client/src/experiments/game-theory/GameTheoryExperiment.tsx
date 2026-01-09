@@ -376,7 +376,7 @@ export default function GameTheoryExperiment() {
                   yaxis: { title: { text: 'p (玩家1策略1概率)' }, range: [0, 1] },
                   legend: { orientation: 'h', y: -0.2 },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
@@ -411,7 +411,7 @@ export default function GameTheoryExperiment() {
                     yaxis: { title: { text: '策略概率' }, range: [0, 1] },
                     legend: { orientation: 'h', y: -0.2 },
                   }}
-                  config={{ responsive: true }}
+                  config={{ responsive: true, displaylogo: false }}
                   className="w-full"
                 />
               </div>

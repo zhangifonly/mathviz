@@ -176,7 +176,7 @@ function ContourScene({
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -332,7 +332,7 @@ function OptimizationPathScene({
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -449,7 +449,7 @@ function ConstraintScene({
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>

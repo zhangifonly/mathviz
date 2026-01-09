@@ -368,7 +368,7 @@ export default function FourierSeriesExperiment() {
                   yaxis: { title: { text: 'f(t)' }, range: [-1.5, 1.5] },
                   legend: { orientation: 'h', y: -0.2 },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
@@ -391,7 +391,7 @@ export default function FourierSeriesExperiment() {
                   xaxis: { title: { text: '谐波次数 n' }, dtick: 1 },
                   yaxis: { title: { text: '幅度' } },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>

@@ -153,7 +153,7 @@ function LagrangeScene() {
           },
           showlegend: true,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
 
@@ -234,7 +234,7 @@ function SplineScene() {
           },
           showlegend: true,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
 
@@ -326,7 +326,7 @@ function ComparisonScene() {
           },
           showlegend: true,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
 
@@ -437,7 +437,7 @@ function RungePhenomenonScene() {
           },
           showlegend: true,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
 

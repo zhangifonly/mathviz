@@ -312,7 +312,7 @@ export default function PCAExperiment() {
                 yaxis: { title: { text: 'Y' } },
                 legend: { orientation: 'h', y: -0.15 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>
@@ -337,7 +337,7 @@ export default function PCAExperiment() {
                   xaxis: { title: { text: 'PC1' } },
                   yaxis: { title: { text: 'PC2' } },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
@@ -359,7 +359,7 @@ export default function PCAExperiment() {
                   margin: { t: 30, r: 30, b: 40, l: 50 },
                   yaxis: { title: { text: '方差解释 (%)' }, range: [0, 100] },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>

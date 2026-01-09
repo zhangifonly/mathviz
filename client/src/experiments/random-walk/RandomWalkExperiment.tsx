@@ -206,7 +206,7 @@ export default function RandomWalkExperiment() {
                 showlegend: numWalkers <= 5,
                 legend: { orientation: 'h', y: -0.15 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
             <div className="flex items-center gap-4 mt-3">
@@ -269,7 +269,7 @@ export default function RandomWalkExperiment() {
                   yaxis: { title: { text: '⟨r²⟩' } },
                   legend: { orientation: 'h', y: -0.2 },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
@@ -302,7 +302,7 @@ export default function RandomWalkExperiment() {
                   yaxis: { title: { text: 'Y' }, scaleanchor: 'x', scaleratio: 1 },
                   showlegend: false,
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>

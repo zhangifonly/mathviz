@@ -254,7 +254,7 @@ export default function ParametricExperiment() {
                 yaxis: { range, showgrid: true, gridcolor: '#f1f5f9' },
                 showlegend: false,
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>

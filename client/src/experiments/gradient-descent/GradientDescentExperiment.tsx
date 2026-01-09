@@ -260,7 +260,7 @@ export default function GradientDescentExperiment() {
                 yaxis: { title: { text: 'y' }, range: func.yRange, scaleanchor: 'x', scaleratio: 1 },
                 legend: { orientation: 'h', y: -0.15 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>
@@ -285,7 +285,7 @@ export default function GradientDescentExperiment() {
                 xaxis: { title: { text: '迭代次数' } },
                 yaxis: { title: { text: 'f(x,y)' }, type: 'log' },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>

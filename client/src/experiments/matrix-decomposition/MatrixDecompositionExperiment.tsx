@@ -279,7 +279,7 @@ export default function MatrixDecompositionExperiment() {
                 yaxis: { title: { text: 'y' }, range: [-5, 5] },
                 legend: { orientation: 'h', y: -0.15 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>

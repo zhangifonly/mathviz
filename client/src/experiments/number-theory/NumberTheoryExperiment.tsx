@@ -253,7 +253,7 @@ export default function NumberTheoryExperiment() {
                     yaxis: { title: { text: 'π(x)' } },
                     legend: { orientation: 'h' as const, y: -0.15 },
                   }}
-                  config={{ responsive: true }}
+                  config={{ responsive: true, displaylogo: false }}
                   className="w-full"
                 />
               </div>
@@ -277,7 +277,7 @@ export default function NumberTheoryExperiment() {
                     xaxis: { title: { text: '素数 p' } },
                     yaxis: { title: { text: '间隔 (p - 前一个素数)' } },
                   }}
-                  config={{ responsive: true }}
+                  config={{ responsive: true, displaylogo: false }}
                   className="w-full"
                 />
               </div>
@@ -352,7 +352,7 @@ export default function NumberTheoryExperiment() {
                   xaxis: { title: { text: '步数' } },
                   yaxis: { title: { text: '值' }, type: 'log' as const },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
               <div className="mt-2 p-2 bg-gray-50 rounded text-sm">

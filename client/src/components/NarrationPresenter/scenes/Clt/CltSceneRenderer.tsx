@@ -174,7 +174,7 @@ function SamplingScene({
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <p className="text-white/60 text-sm">
@@ -283,7 +283,7 @@ function DistributionScene({
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <p className="text-white/60 text-sm">
@@ -356,7 +356,7 @@ function DiceScene({ numDice = 1 }: { numDice?: number }) {
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <p className="text-white/60 text-sm">
@@ -508,7 +508,7 @@ function SampleSizeComparisonScene() {
                   },
                   showlegend: false,
                 }}
-                config={{ responsive: true, displayModeBar: false }}
+                config={{ responsive: true, displayModeBar: false, displaylogo: false }}
                 className="w-full"
               />
             </div>

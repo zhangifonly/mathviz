@@ -282,7 +282,7 @@ export default function NewtonMethodExperiment() {
                 yaxis: { title: { text: 'f(x)' } },
                 legend: { orientation: 'h' as const, y: -0.15 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>

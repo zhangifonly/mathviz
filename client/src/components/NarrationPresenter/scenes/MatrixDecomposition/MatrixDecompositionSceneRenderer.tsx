@@ -75,7 +75,7 @@ function MatrixHeatmapScene({
           },
           font: { color: 'white', size: 12 },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>

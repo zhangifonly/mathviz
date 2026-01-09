@@ -182,7 +182,7 @@ function LineScene({
             y: 0.98,
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       {interactive && (
@@ -285,7 +285,7 @@ function SlopeScene({ highlightSlope }: { highlightSlope?: 'positive' | 'negativ
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -369,7 +369,7 @@ function InterceptScene({ animateIntercept = false }: { animateIntercept?: boole
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -451,7 +451,7 @@ function ParameterScene({ animateSlope = true }: { animateSlope?: boolean }) {
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <div className="text-white/70 text-sm">

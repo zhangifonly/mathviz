@@ -296,7 +296,7 @@ export default function OptimizationExperiment() {
                 yaxis: { title: { text: 'y' }, scaleanchor: 'x', scaleratio: 1 },
                 legend: { orientation: 'h', y: -0.15 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
             <div className="flex items-center gap-4 mt-3">
@@ -338,7 +338,7 @@ export default function OptimizationExperiment() {
                   xaxis: { title: { text: '迭代次数' } },
                   yaxis: { title: { text: 'f(x,y)' }, type: 'log' },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>

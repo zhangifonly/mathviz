@@ -250,7 +250,7 @@ export default function HeatEquationExperiment() {
                 yaxis: { title: { text: '温度 u(x,t)' }, range: [-0.1, 1.1] },
                 legend: { orientation: 'h', y: -0.15 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
             <div className="flex items-center gap-4 mt-3">
@@ -294,7 +294,7 @@ export default function HeatEquationExperiment() {
                     xaxis: { title: { text: '位置' } },
                     yaxis: { title: { text: '时间步' } },
                   }}
-                  config={{ responsive: true }}
+                  config={{ responsive: true, displaylogo: false }}
                   className="w-full"
                 />
               )}

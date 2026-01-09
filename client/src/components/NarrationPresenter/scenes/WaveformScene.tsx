@@ -156,7 +156,7 @@ export function WaveformScene({
             plot_bgcolor: 'white',
             font: { size: 14 },
           }}
-          config={{ responsive: true, displayModeBar: false }}
+          config={{ responsive: true, displayModeBar: false, displaylogo: false }}
           style={{ width: '100%', height: '100%' }}
         />
       </div>

@@ -168,7 +168,7 @@ function DataPointsScene({ showPCA = false }: { showPCA?: boolean }) {
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -266,7 +266,7 @@ function PrincipalComponentScene({ animate = false }: { animate?: boolean }) {
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <div className="text-white/70 text-sm">
@@ -373,7 +373,7 @@ function ProjectionScene() {
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <p className="text-white/70 text-sm">

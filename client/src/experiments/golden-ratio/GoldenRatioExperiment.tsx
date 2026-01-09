@@ -188,7 +188,7 @@ export default function GoldenRatioExperiment() {
                   yaxis: { title: { text: 'F(n)/F(n-1)' }, range: [1, 2.2] },
                   legend: { orientation: 'h', y: -0.2 },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
@@ -213,7 +213,7 @@ export default function GoldenRatioExperiment() {
                   yaxis: { showgrid: false },
                   showlegend: false,
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
@@ -243,7 +243,7 @@ export default function GoldenRatioExperiment() {
                 yaxis: { showgrid: false, zeroline: false },
                 showlegend: false,
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
             <p className="text-sm text-gray-600 mt-2">

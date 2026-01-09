@@ -96,7 +96,7 @@ export function SpectrumScene({
               font: { size: 18 },
             },
           }}
-          config={{ responsive: true, displayModeBar: false }}
+          config={{ responsive: true, displayModeBar: false, displaylogo: false }}
           style={{ width: '100%', height: '100%' }}
         />
       </div>

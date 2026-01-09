@@ -105,7 +105,7 @@ function Walk1DScene({ numPaths = 10, steps = 100, animated = false }: { numPath
             gridcolor: 'rgba(255,255,255,0.1)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -192,7 +192,7 @@ function Walk2DScene({ numPaths = 5, steps = 200 }: { numPaths?: number; steps?:
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -263,7 +263,7 @@ function DistributionScene({ steps = 100, numWalks = 1000 }: { steps?: number; n
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>

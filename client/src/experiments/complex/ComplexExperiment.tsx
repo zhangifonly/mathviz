@@ -150,7 +150,7 @@ export default function ComplexExperiment() {
                 yaxis: { title: { text: 'Im' }, range: [-3, 3] },
                 legend: { orientation: 'h', y: -0.15 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>
@@ -181,7 +181,7 @@ export default function ComplexExperiment() {
                   yaxis: { range: [-1.5, 1.5], showgrid: false },
                   showlegend: false,
                 }}
-                config={{ responsive: true, displayModeBar: false }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
               <div className="space-y-3">

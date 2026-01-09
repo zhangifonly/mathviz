@@ -274,7 +274,7 @@ export default function TaylorExperiment() {
                 yaxis: { title: { text: 'y' }, range: [-5, 5] },
                 legend: { orientation: 'h', y: -0.2 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>
@@ -302,7 +302,7 @@ export default function TaylorExperiment() {
                 xaxis: { title: { text: 'x' } },
                 yaxis: { title: { text: '误差' }, type: 'log' },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>
@@ -338,7 +338,7 @@ export default function TaylorExperiment() {
                 yaxis: { title: { text: 'y' }, range: [-5, 5] },
                 showlegend: false,
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>

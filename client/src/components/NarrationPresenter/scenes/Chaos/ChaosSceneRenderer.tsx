@@ -94,7 +94,7 @@ function LorenzScene({ animating = false }: { animating?: boolean }) {
             bgcolor: 'transparent',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -169,7 +169,7 @@ function BifurcationScene({ highlightR }: { highlightR?: number }) {
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>
@@ -264,7 +264,7 @@ function SensitivityScene() {
             bgcolor: 'transparent',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
     </div>

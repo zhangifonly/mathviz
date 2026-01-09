@@ -219,7 +219,7 @@ export default function CalculusExperiment() {
                     font: { color: '#f43f5e', size: 12 },
                   }],
                 }}
-                config={{ responsive: true, displayModeBar: false }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
@@ -259,7 +259,7 @@ export default function CalculusExperiment() {
                   paper_bgcolor: 'transparent',
                   plot_bgcolor: 'transparent',
                 }}
-                config={{ responsive: true, displayModeBar: false }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
@@ -289,7 +289,7 @@ export default function CalculusExperiment() {
                   paper_bgcolor: 'transparent',
                   plot_bgcolor: 'transparent',
                 }}
-                config={{ responsive: true, displayModeBar: false }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>

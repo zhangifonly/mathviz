@@ -285,7 +285,7 @@ export default function ChaosExperiment() {
                     yaxis: { title: { text: 'x' }, range: [0, 1] },
                     showlegend: false,
                   }}
-                  config={{ responsive: true }}
+                  config={{ responsive: true, displaylogo: false }}
                   className="w-full"
                 />
               </div>
@@ -316,7 +316,7 @@ export default function ChaosExperiment() {
                     zaxis: { title: { text: 'Z' } },
                   },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
@@ -342,7 +342,7 @@ export default function ChaosExperiment() {
                   xaxis: { title: { text: 'x' } },
                   yaxis: { title: { text: 'y' }, scaleanchor: 'x', scaleratio: 1 },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>

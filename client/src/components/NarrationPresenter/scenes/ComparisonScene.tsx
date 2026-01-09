@@ -134,7 +134,7 @@ export function ComparisonScene({
                 paper_bgcolor: 'white',
                 plot_bgcolor: 'white',
               }}
-              config={{ responsive: true, displayModeBar: false }}
+              config={{ responsive: true, displayModeBar: false, displaylogo: false }}
               style={{ width: '100%', height: '100%' }}
             />
           </div>
@@ -167,7 +167,7 @@ export function ComparisonScene({
                 paper_bgcolor: 'white',
                 plot_bgcolor: 'white',
               }}
-              config={{ responsive: true, displayModeBar: false }}
+              config={{ responsive: true, displayModeBar: false, displaylogo: false }}
               style={{ width: '100%', height: '100%' }}
             />
           </div>

@@ -266,7 +266,7 @@ export default function ProbabilityExperiment() {
                 yaxis: { title: { text: isDiscrete ? 'P(X=k)' : 'f(x)' } },
                 showlegend: false,
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>

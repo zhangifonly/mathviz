@@ -212,7 +212,7 @@ function EllipseScene({ interactive = false }: { interactive?: boolean }) {
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <div className="text-white/80 text-sm space-y-1">
@@ -324,7 +324,7 @@ function HyperbolaScene() {
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <div className="text-white/80 text-sm space-y-1">
@@ -455,7 +455,7 @@ function ParabolaScene({ interactive = false }: { interactive?: boolean }) {
             bgcolor: 'rgba(0,0,0,0.5)',
           },
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <div className="text-white/80 text-sm space-y-1">
@@ -543,7 +543,7 @@ function EccentricityScene() {
           },
           showlegend: false,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       <div className="text-white/80 text-lg">

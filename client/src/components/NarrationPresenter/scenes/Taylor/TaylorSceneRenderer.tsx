@@ -205,7 +205,7 @@ function TaylorApproximationScene({
           },
           showlegend: true,
         }}
-        config={{ responsive: true, displayModeBar: false }}
+        config={{ responsive: true, displayModeBar: false, displaylogo: false }}
         className="w-full"
       />
       {terms > 1 && (

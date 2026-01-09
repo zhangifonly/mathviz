@@ -209,6 +209,17 @@ const experiments: Experiment[] = [
 
   // ===== 中级 (高中 15-18岁) =====
   {
+    path: '/permutation-combination',
+    title: '排列组合',
+    description: '探索排列、组合与帕斯卡三角形的奥秘，理解计数原理和组合数学的应用。',
+    icon: '🎯',
+    difficulty: 'intermediate',
+    ageRange: '高中',
+    topics: ['probability', 'discrete'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
+  {
     path: '/calculus',
     title: '微积分',
     description: '可视化导数的几何意义（切线斜率）和积分的几何意义（曲线下面积）。',
@@ -531,6 +542,30 @@ const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+
+  // ===== 新增实验 =====
+  {
+    path: '/permutation-combination',
+    title: '排列组合',
+    description: '探索排列与组合的区别，可视化帕斯卡三角形和组合数的计算。',
+    icon: '🎰',
+    difficulty: 'intermediate',
+    ageRange: '高中',
+    topics: ['probability', 'discrete'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
+  {
+    path: '/laplace',
+    title: '拉普拉斯变换',
+    description: '探索时域与复频域之间的桥梁，理解系统响应和极点零点分析。',
+    icon: '🔄',
+    difficulty: 'advanced',
+    ageRange: '大学',
+    topics: ['calculus', 'applied'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]
 
 // 按难度分组
@@ -735,14 +770,10 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
             {[
-              { title: '加减乘除可视化', level: '入门级', icon: '➕' },
-              { title: '分数可视化', level: '入门级', icon: '🥧' },
-              { title: '一次函数', level: '基础级', icon: '📏' },
-              { title: '二次函数', level: '基础级', icon: '📐' },
-              { title: '勾股定理', level: '基础级', icon: '📏' },
-              { title: '圆锥曲线', level: '中级', icon: '🔵' },
-              { title: '排列组合', level: '中级', icon: '🎰' },
-              { title: '拉普拉斯变换', level: '高级', icon: '🔄' },
+              { title: '微分几何', level: '专业级', icon: '🌀' },
+              { title: '偏微分方程', level: '专业级', icon: '∂' },
+              { title: '数值分析', level: '高级', icon: '🔢' },
+              { title: '密码学基础', level: '高级', icon: '🔐' },
             ].map((item, index) => (
               <div
                 key={index}

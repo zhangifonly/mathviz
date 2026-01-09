@@ -389,7 +389,7 @@ export default function InterpolationExperiment() {
                 yaxis: { title: { text: 'y' } },
                 legend: { orientation: 'h', y: -0.15 },
               }}
-              config={{ responsive: true }}
+              config={{ responsive: true, displaylogo: false }}
               className="w-full"
             />
           </div>
@@ -413,7 +413,7 @@ export default function InterpolationExperiment() {
                   yaxis: { title: { text: 'L(x)' } },
                   legend: { orientation: 'h', y: -0.2 },
                 }}
-                config={{ responsive: true }}
+                config={{ responsive: true, displaylogo: false }}
                 className="w-full"
               />
             </div>
