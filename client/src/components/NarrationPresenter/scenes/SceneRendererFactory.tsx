@@ -117,6 +117,10 @@ const DifferentialGeometrySceneRenderer = lazy(() => import('./DifferentialGeome
 const NumericalAnalysisSceneRenderer = lazy(() => import('./NumericalAnalysis/NumericalAnalysisSceneRenderer'))
 // 密码学场景渲染器
 const CryptographySceneRenderer = lazy(() => import('./Cryptography/CryptographySceneRenderer'))
+// 傅里叶变换场景渲染器
+const FourierSceneRenderer = lazy(() => import('./Fourier/FourierSceneRenderer'))
+// 基础算术场景渲染器
+const BasicArithmeticSceneRenderer = lazy(() => import('./BasicArithmetic/BasicArithmeticSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -168,6 +172,8 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'differential-geometry': DifferentialGeometrySceneRenderer,
   'numerical-analysis': NumericalAnalysisSceneRenderer,
   'cryptography': CryptographySceneRenderer,
+  'fourier': FourierSceneRenderer,
+  'basic-arithmetic': BasicArithmeticSceneRenderer,
 }
 
 // 获取场景渲染器
