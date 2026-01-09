@@ -1,0 +1,166 @@
+{
+  "id": "markov-chain",
+  "title": "马尔可夫链",
+  "subtitle": "探索随机过程与状态转移",
+  "difficulty": "advanced",
+  "targetAge": "大学本科",
+  "voice": "yunxi",
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto"
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "欢迎来到马尔可夫链实验。"
+        },
+        {
+          "id": "intro-2",
+          "text": "你有没有想过，天气预报是如何预测明天的天气？"
+        },
+        {
+          "id": "intro-3",
+          "text": "或者搜索引擎是如何给网页排名的？"
+        },
+        {
+          "id": "intro-4",
+          "text": "这些问题都可以用马尔可夫链来建模和解决。"
+        }
+      ]
+    },
+    {
+      "id": "concept",
+      "type": "concept",
+      "title": "核心概念",
+      "trigger": {
+        "type": "auto"
+      },
+      "lines": [
+        {
+          "id": "concept-1",
+          "text": "马尔可夫链是一种随机过程，下一个状态只依赖于当前状态。"
+        },
+        {
+          "id": "concept-2",
+          "text": "这个性质叫做无记忆性：过去的历史不影响未来。"
+        },
+        {
+          "id": "concept-3",
+          "text": "状态之间的转移概率可以用一个矩阵来表示。"
+        },
+        {
+          "id": "concept-4",
+          "text": "让我们通过一个简单的例子来理解这个概念。"
+        }
+      ]
+    },
+    {
+      "id": "transition",
+      "type": "animation",
+      "title": "状态转移",
+      "trigger": {
+        "type": "auto"
+      },
+      "lines": [
+        {
+          "id": "trans-1",
+          "text": "假设天气只有晴天和雨天两种状态。"
+        },
+        {
+          "id": "trans-2",
+          "text": "如果今天是晴天，明天有70%的概率还是晴天，30%的概率变成雨天。"
+        },
+        {
+          "id": "trans-3",
+          "text": "如果今天是雨天，明天有40%的概率变成晴天，60%的概率还是雨天。"
+        },
+        {
+          "id": "trans-4",
+          "text": "这些概率构成了转移矩阵，决定了系统的长期行为。"
+        }
+      ]
+    },
+    {
+      "id": "steady-state",
+      "type": "concept",
+      "title": "稳态分布",
+      "trigger": {
+        "type": "auto"
+      },
+      "lines": [
+        {
+          "id": "steady-1",
+          "text": "经过足够长的时间，马尔可夫链会趋向一个稳态分布。"
+        },
+        {
+          "id": "steady-2",
+          "text": "在稳态下，各状态的概率不再随时间变化。"
+        },
+        {
+          "id": "steady-3",
+          "text": "稳态分布是转移矩阵的特征向量，对应特征值1。"
+        },
+        {
+          "id": "steady-4",
+          "text": "这个性质使得马尔可夫链成为分析长期行为的有力工具。"
+        }
+      ]
+    },
+    {
+      "id": "application",
+      "type": "application",
+      "title": "实际应用",
+      "trigger": {
+        "type": "auto"
+      },
+      "lines": [
+        {
+          "id": "app-1",
+          "text": "马尔可夫链在许多领域都有重要应用。"
+        },
+        {
+          "id": "app-2",
+          "text": "Google的PageRank算法就是基于马尔可夫链。"
+        },
+        {
+          "id": "app-3",
+          "text": "语音识别和自然语言处理大量使用隐马尔可夫模型。"
+        },
+        {
+          "id": "app-4",
+          "text": "金融领域用它来模拟股票价格和信用评级变化。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto"
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "今天我们探索了马尔可夫链的基本原理。"
+        },
+        {
+          "id": "sum-2",
+          "text": "马尔可夫性质简化了随机过程的分析。"
+        },
+        {
+          "id": "sum-3",
+          "text": "稳态分布揭示了系统的长期行为。"
+        },
+        {
+          "id": "sum-4",
+          "text": "希望这次实验能帮助你理解随机过程的数学基础。"
+        }
+      ]
+    }
+  ]
+}

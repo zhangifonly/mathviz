@@ -1,0 +1,449 @@
+{
+  "script_id": "differential-geometry",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "differential-geometry",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/differential-geometry/intro-intro-1.mp3",
+      "duration": 3.48,
+      "size": 55728,
+      "text": "欢迎来到微分几何的世界！微分几何是现代数学中最优美的分支之一，它将微积分与几何学完美结合。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/differential-geometry/intro-intro-2.mp3",
+      "duration": 3.95,
+      "size": 63216,
+      "text": "微分几何研究曲线和曲面的局部性质和整体性质，这些性质在物理学、工程学和计算机图形学中都有重要应用。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/differential-geometry/intro-intro-3.mp3",
+      "duration": 3.61,
+      "size": 57744,
+      "text": "从爱因斯坦的广义相对论到现代计算机视觉，微分几何无处不在。让我们一起探索这个迷人的领域。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "curvature",
+      "line_id": "curvature-1",
+      "filename": "curvature-curvature-1.mp3",
+      "path": "audio/narrations/differential-geometry/curvature-curvature-1.mp3",
+      "duration": 3.47,
+      "size": 55584,
+      "text": "曲率是描述曲线弯曲程度的量。对于空间曲线，曲率 κ 定义为切向量关于弧长的变化率。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "curvature",
+      "line_id": "curvature-2",
+      "filename": "curvature-curvature-2.mp3",
+      "path": "audio/narrations/differential-geometry/curvature-curvature-2.mp3",
+      "duration": 2.92,
+      "size": 46800,
+      "text": "直线的曲率为零，圆的曲率是其半径的倒数。曲率越大，曲线弯曲得越厉害。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "curvature",
+      "line_id": "curvature-3",
+      "filename": "curvature-curvature-3.mp3",
+      "path": "audio/narrations/differential-geometry/curvature-curvature-3.mp3",
+      "duration": 3.3,
+      "size": 52848,
+      "text": "曲率的几何意义是：在曲线上某点处，存在一个密切圆，其半径等于曲率的倒数，称为曲率半径。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "curvature",
+      "line_id": "curvature-4",
+      "filename": "curvature-curvature-4.mp3",
+      "path": "audio/narrations/differential-geometry/curvature-curvature-4.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "对于参数曲线 r(t)，曲率可以用公式 κ = |r\\"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "torsion",
+      "line_id": "torsion-1",
+      "filename": "torsion-torsion-1.mp3",
+      "path": "audio/narrations/differential-geometry/torsion-torsion-1.mp3",
+      "duration": 3.05,
+      "size": 48816,
+      "text": "挠率描述了空间曲线偏离其密切平面的程度。如果曲线是平面曲线，挠率为零。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "torsion",
+      "line_id": "torsion-2",
+      "filename": "torsion-torsion-2.mp3",
+      "path": "audio/narrations/differential-geometry/torsion-torsion-2.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "挠率 τ 定义为副法向量关于弧长的变化率在负主法向方向上的分量。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "torsion",
+      "line_id": "torsion-3",
+      "filename": "torsion-torsion-3.mp3",
+      "path": "audio/narrations/differential-geometry/torsion-torsion-3.mp3",
+      "duration": 2.71,
+      "size": 43344,
+      "text": "曲率和挠率一起完全决定了空间曲线的形状，这就是著名的曲线基本定理。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "frenet-frame",
+      "line_id": "frenet-1",
+      "filename": "frenet-frame-frenet-1.mp3",
+      "path": "audio/narrations/differential-geometry/frenet-frame-frenet-1.mp3",
+      "duration": 2.86,
+      "size": 45792,
+      "text": "Frenet标架由三个正交单位向量组成：切向量T、主法向量N和副法向量B。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "frenet-frame",
+      "line_id": "frenet-3",
+      "filename": "frenet-frame-frenet-3.mp3",
+      "path": "audio/narrations/differential-geometry/frenet-frame-frenet-3.mp3",
+      "duration": 1.18,
+      "size": 18864,
+      "text": "这些公式是：T\\"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "surface-basics",
+      "line_id": "surface-1",
+      "filename": "surface-basics-surface-1.mp3",
+      "path": "audio/narrations/differential-geometry/surface-basics-surface-1.mp3",
+      "duration": 2.64,
+      "size": 42192,
+      "text": "曲面可以用参数方程 r(u,v) 来表示，其中 u 和 v 是参数。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "surface-basics",
+      "line_id": "surface-2",
+      "filename": "surface-basics-surface-2.mp3",
+      "path": "audio/narrations/differential-geometry/surface-basics-surface-2.mp3",
+      "duration": 2.91,
+      "size": 46512,
+      "text": "曲面上每一点都有一个切平面，由两个偏导数向量 r_u 和 r_v 张成。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "surface-basics",
+      "line_id": "surface-3",
+      "filename": "surface-basics-surface-3.mp3",
+      "path": "audio/narrations/differential-geometry/surface-basics-surface-3.mp3",
+      "duration": 4.11,
+      "size": 65808,
+      "text": "单位法向量 n 垂直于切平面，定义为 n = (r_u × r_v) / |r_u × r_v|。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "first-fundamental-form",
+      "line_id": "first-form-1",
+      "filename": "first-fundamental-form-first-form-1.mp3",
+      "path": "audio/narrations/differential-geometry/first-fundamental-form-first-form-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "第一基本形式描述了曲面的内蕴几何性质，它定义了曲面上的度量。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "first-fundamental-form",
+      "line_id": "first-form-2",
+      "filename": "first-fundamental-form-first-form-2.mp3",
+      "path": "audio/narrations/differential-geometry/first-fundamental-form-first-form-2.mp3",
+      "duration": 3.78,
+      "size": 60480,
+      "text": "第一基本形式写作 I = E du² + 2F du dv + G dv²，其中 E、F、G 是第一基本量。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "first-fundamental-form",
+      "line_id": "first-form-3",
+      "filename": "first-fundamental-form-first-form-3.mp3",
+      "path": "audio/narrations/differential-geometry/first-fundamental-form-first-form-3.mp3",
+      "duration": 5.6,
+      "size": 89568,
+      "text": "E = r_u · r_u，F = r_u · r_v，G = r_v · r_v。它们决定了曲面上的长度、角度和面积。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "second-fundamental-form",
+      "line_id": "second-form-1",
+      "filename": "second-fundamental-form-second-form-1.mp3",
+      "path": "audio/narrations/differential-geometry/second-fundamental-form-second-form-1.mp3",
+      "duration": 2.57,
+      "size": 41184,
+      "text": "第二基本形式描述了曲面的外在几何性质，它度量曲面偏离切平面的程度。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "second-fundamental-form",
+      "line_id": "second-form-2",
+      "filename": "second-fundamental-form-second-form-2.mp3",
+      "path": "audio/narrations/differential-geometry/second-fundamental-form-second-form-2.mp3",
+      "duration": 3.77,
+      "size": 60336,
+      "text": "第二基本形式写作 II = L du² + 2M du dv + N dv²，其中 L、M、N 是第二基本量。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "second-fundamental-form",
+      "line_id": "second-form-3",
+      "filename": "second-fundamental-form-second-form-3.mp3",
+      "path": "audio/narrations/differential-geometry/second-fundamental-form-second-form-3.mp3",
+      "duration": 4.42,
+      "size": 70704,
+      "text": "L = r_uu · n，M = r_uv · n，N = r_vv · n。它们与曲面的曲率密切相关。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "gaussian-curvature",
+      "line_id": "gaussian-1",
+      "filename": "gaussian-curvature-gaussian-1.mp3",
+      "path": "audio/narrations/differential-geometry/gaussian-curvature-gaussian-1.mp3",
+      "duration": 2.38,
+      "size": 38160,
+      "text": "高斯曲率 K 是曲面上最重要的不变量之一，它等于两个主曲率的乘积。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "gaussian-curvature",
+      "line_id": "gaussian-2",
+      "filename": "gaussian-curvature-gaussian-2.mp3",
+      "path": "audio/narrations/differential-geometry/gaussian-curvature-gaussian-2.mp3",
+      "duration": 3.17,
+      "size": 50688,
+      "text": "高斯曲率可以用公式 K = (LN - M²) / (EG - F²) 计算。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "gaussian-curvature",
+      "line_id": "gaussian-3",
+      "filename": "gaussian-curvature-gaussian-3.mp3",
+      "path": "audio/narrations/differential-geometry/gaussian-curvature-gaussian-3.mp3",
+      "duration": 3.31,
+      "size": 52992,
+      "text": "高斯绝妙定理指出：高斯曲率是内蕴的，只依赖于第一基本形式，与曲面在空间中的嵌入方式无关。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "gaussian-curvature",
+      "line_id": "gaussian-4",
+      "filename": "gaussian-curvature-gaussian-4.mp3",
+      "path": "audio/narrations/differential-geometry/gaussian-curvature-gaussian-4.mp3",
+      "duration": 2.5,
+      "size": 40032,
+      "text": "球面的高斯曲率为正，马鞍面的高斯曲率为负，圆柱面的高斯曲率为零。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "mean-curvature",
+      "line_id": "mean-1",
+      "filename": "mean-curvature-mean-1.mp3",
+      "path": "audio/narrations/differential-geometry/mean-curvature-mean-1.mp3",
+      "duration": 2.38,
+      "size": 38160,
+      "text": "平均曲率 H 等于两个主曲率的平均值，它描述了曲面的平均弯曲程度。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "mean-curvature",
+      "line_id": "mean-2",
+      "filename": "mean-curvature-mean-2.mp3",
+      "path": "audio/narrations/differential-geometry/mean-curvature-mean-2.mp3",
+      "duration": 3.54,
+      "size": 56592,
+      "text": "平均曲率可以用公式 H = (EN - 2FM + GL) / (2(EG - F²)) 计算。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "mean-curvature",
+      "line_id": "mean-3",
+      "filename": "mean-curvature-mean-3.mp3",
+      "path": "audio/narrations/differential-geometry/mean-curvature-mean-3.mp3",
+      "duration": 2.61,
+      "size": 41760,
+      "text": "平均曲率为零的曲面称为极小曲面，肥皂膜就是极小曲面的物理实现。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "geodesic",
+      "line_id": "geodesic-1",
+      "filename": "geodesic-geodesic-1.mp3",
+      "path": "audio/narrations/differential-geometry/geodesic-geodesic-1.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "测地线是曲面上两点之间的最短路径，它是直线在曲面上的推广。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "geodesic",
+      "line_id": "geodesic-2",
+      "filename": "geodesic-geodesic-2.mp3",
+      "path": "audio/narrations/differential-geometry/geodesic-geodesic-2.mp3",
+      "duration": 2.63,
+      "size": 42048,
+      "text": "在球面上，测地线是大圆；在圆柱面上，测地线是螺旋线或直线。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "geodesic",
+      "line_id": "geodesic-3",
+      "filename": "geodesic-geodesic-3.mp3",
+      "path": "audio/narrations/differential-geometry/geodesic-geodesic-3.mp3",
+      "duration": 2.9,
+      "size": 46368,
+      "text": "测地线满足测地线方程，其测地曲率为零。这意味着测地线在曲面上是"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "geodesic",
+      "line_id": "geodesic-4",
+      "filename": "geodesic-geodesic-4.mp3",
+      "path": "audio/narrations/differential-geometry/geodesic-geodesic-4.mp3",
+      "duration": 2.38,
+      "size": 38160,
+      "text": "测地线在导航、机器人路径规划和计算机图形学中都有重要应用。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "gauss-bonnet",
+      "line_id": "gauss-bonnet-1",
+      "filename": "gauss-bonnet-gauss-bonnet-1.mp3",
+      "path": "audio/narrations/differential-geometry/gauss-bonnet-gauss-bonnet-1.mp3",
+      "duration": 2.94,
+      "size": 47088,
+      "text": "Gauss-Bonnet定理是微分几何中最深刻的定理之一，它将局部的曲率与全局的拓扑联系起来。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "gauss-bonnet",
+      "line_id": "gauss-bonnet-2",
+      "filename": "gauss-bonnet-gauss-bonnet-2.mp3",
+      "path": "audio/narrations/differential-geometry/gauss-bonnet-gauss-bonnet-2.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "对于紧致曲面，定理表述为：曲面上高斯曲率的积分等于 2π 乘以欧拉示性数。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "gauss-bonnet",
+      "line_id": "gauss-bonnet-3",
+      "filename": "gauss-bonnet-gauss-bonnet-3.mp3",
+      "path": "audio/narrations/differential-geometry/gauss-bonnet-gauss-bonnet-3.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "这个定理告诉我们：曲面的总曲率是一个拓扑不变量，不依赖于曲面的具体形状。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "applications",
+      "line_id": "applications-1",
+      "filename": "applications-applications-1.mp3",
+      "path": "audio/narrations/differential-geometry/applications-applications-1.mp3",
+      "duration": 2.8,
+      "size": 44784,
+      "text": "微分几何在广义相对论中扮演核心角色，时空被描述为一个四维黎曼流形。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "applications",
+      "line_id": "applications-2",
+      "filename": "applications-applications-2.mp3",
+      "path": "audio/narrations/differential-geometry/applications-applications-2.mp3",
+      "duration": 2.68,
+      "size": 42912,
+      "text": "在计算机图形学中，微分几何用于曲面建模、网格处理和形状分析。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "applications",
+      "line_id": "applications-3",
+      "filename": "applications-applications-3.mp3",
+      "path": "audio/narrations/differential-geometry/applications-applications-3.mp3",
+      "duration": 2.75,
+      "size": 44064,
+      "text": "在计算机视觉中，微分几何用于三维重建、形状识别和图像配准。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "applications",
+      "line_id": "applications-4",
+      "filename": "applications-applications-4.mp3",
+      "path": "audio/narrations/differential-geometry/applications-applications-4.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "在机器人学中，微分几何用于运动规划和控制理论。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/differential-geometry/summary-summary-1.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "微分几何为我们提供了研究曲线和曲面的强大工具。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/differential-geometry/summary-summary-2.mp3",
+      "duration": 2.78,
+      "size": 44496,
+      "text": "曲率和挠率描述了曲线的局部性质，第一和第二基本形式描述了曲面的几何。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/differential-geometry/summary-summary-3.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "高斯曲率是内蕴的，而平均曲率是外在的。测地线是曲面上的最短路径。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/differential-geometry/summary-summary-4.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "Gauss-Bonnet定理揭示了局部几何与全局拓扑之间的深刻联系。"
+    },
+    {
+      "script_id": "differential-geometry",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/differential-geometry/summary-summary-5.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "希望这个可视化工具能帮助你更好地理解微分几何的美妙世界！"
+    }
+  ],
+  "total_duration": 128.36,
+  "total_size": 2054448
+}

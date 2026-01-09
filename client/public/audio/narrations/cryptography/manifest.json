@@ -1,0 +1,729 @@
+{
+  "script_id": "cryptography",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "cryptography",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/cryptography/intro-intro-1.mp3",
+      "duration": 2.89,
+      "size": 46224,
+      "text": "欢迎来到密码学的世界！密码学是研究如何在不安全的环境中安全地传递信息的科学。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/cryptography/intro-intro-2.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "从古代的凯撒密码到现代的RSA加密，密码学一直在保护着我们的信息安全。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/cryptography/intro-intro-3.mp3",
+      "duration": 3.33,
+      "size": 53280,
+      "text": "在数字时代，密码学更是无处不在：网上银行、电子邮件、即时通讯，都依赖于密码学技术。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/cryptography/intro-intro-4.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "今天，我们将通过可视化的方式，探索密码学背后的数学原理。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "history",
+      "line_id": "history-1",
+      "filename": "history-history-1.mp3",
+      "path": "audio/narrations/cryptography/history-history-1.mp3",
+      "duration": 3.12,
+      "size": 49968,
+      "text": "密码学有着悠久的历史。早在公元前，人们就开始使用密码来保护军事和政治信息。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "history",
+      "line_id": "history-2",
+      "filename": "history-history-2.mp3",
+      "path": "audio/narrations/cryptography/history-history-2.mp3",
+      "duration": 2.71,
+      "size": 43344,
+      "text": "古典密码学主要使用替换和置换的方法。这些方法简单但容易被破解。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "history",
+      "line_id": "history-3",
+      "filename": "history-history-3.mp3",
+      "path": "audio/narrations/cryptography/history-history-3.mp3",
+      "duration": 2.85,
+      "size": 45648,
+      "text": "现代密码学始于20世纪70年代，公钥密码系统的发明彻底改变了密码学的面貌。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "history",
+      "line_id": "history-4",
+      "filename": "history-history-4.mp3",
+      "path": "audio/narrations/cryptography/history-history-4.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "今天的密码学建立在坚实的数学基础之上，包括数论、代数和计算复杂性理论。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "caesar-cipher",
+      "line_id": "caesar-1",
+      "filename": "caesar-cipher-caesar-1.mp3",
+      "path": "audio/narrations/cryptography/caesar-cipher-caesar-1.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "凯撒密码是最简单的替换密码之一，据说由古罗马的凯撒大帝使用。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "caesar-cipher",
+      "line_id": "caesar-2",
+      "filename": "caesar-cipher-caesar-2.mp3",
+      "path": "audio/narrations/cryptography/caesar-cipher-caesar-2.mp3",
+      "duration": 2.5,
+      "size": 40032,
+      "text": "加密方法很简单：将明文中的每个字母在字母表中向后移动固定的位数。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "caesar-cipher",
+      "line_id": "caesar-3",
+      "filename": "caesar-cipher-caesar-3.mp3",
+      "path": "audio/narrations/cryptography/caesar-cipher-caesar-3.mp3",
+      "duration": 3.99,
+      "size": 63792,
+      "text": "数学上，如果我们把字母A到Z映射为数字0到25，加密公式就是：密文等于明文加上密钥，再对26取模。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "caesar-cipher",
+      "line_id": "caesar-4",
+      "filename": "caesar-cipher-caesar-4.mp3",
+      "path": "audio/narrations/cryptography/caesar-cipher-caesar-4.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "解密则是反向操作：明文等于密文减去密钥，再对26取模。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "caesar-cipher",
+      "line_id": "caesar-5",
+      "filename": "caesar-cipher-caesar-5.mp3",
+      "path": "audio/narrations/cryptography/caesar-cipher-caesar-5.mp3",
+      "duration": 3.24,
+      "size": 51840,
+      "text": "凯撒密码虽然简单，但它引入了密码学的核心概念：密钥。只有知道密钥的人才能解密信息。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "caesar-cipher",
+      "line_id": "caesar-6",
+      "filename": "caesar-cipher-caesar-6.mp3",
+      "path": "audio/narrations/cryptography/caesar-cipher-caesar-6.mp3",
+      "duration": 2.5,
+      "size": 40032,
+      "text": "然而，凯撒密码只有26种可能的密钥，很容易通过暴力破解。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "frequency-analysis",
+      "line_id": "frequency-1",
+      "filename": "frequency-analysis-frequency-1.mp3",
+      "path": "audio/narrations/cryptography/frequency-analysis-frequency-1.mp3",
+      "duration": 1.54,
+      "size": 24624,
+      "text": "破解简单替换密码的经典方法是频率分析。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "frequency-analysis",
+      "line_id": "frequency-2",
+      "filename": "frequency-analysis-frequency-2.mp3",
+      "path": "audio/narrations/cryptography/frequency-analysis-frequency-2.mp3",
+      "duration": 3.25,
+      "size": 51984,
+      "text": "在任何语言中，不同字母出现的频率是不同的。例如，在英语中，字母E出现的频率最高。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "frequency-analysis",
+      "line_id": "frequency-3",
+      "filename": "frequency-analysis-frequency-3.mp3",
+      "path": "audio/narrations/cryptography/frequency-analysis-frequency-3.mp3",
+      "duration": 2.84,
+      "size": 45504,
+      "text": "通过统计密文中各字母的出现频率，并与语言的标准频率对比，可以推测出替换规则。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "frequency-analysis",
+      "line_id": "frequency-4",
+      "filename": "frequency-analysis-frequency-4.mp3",
+      "path": "audio/narrations/cryptography/frequency-analysis-frequency-4.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "这种攻击方法说明，简单的替换密码无法抵抗统计分析。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "modular-arithmetic",
+      "line_id": "modular-1",
+      "filename": "modular-arithmetic-modular-1.mp3",
+      "path": "audio/narrations/cryptography/modular-arithmetic-modular-1.mp3",
+      "duration": 1.43,
+      "size": 22896,
+      "text": "模运算是现代密码学的基础数学工具。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "modular-arithmetic",
+      "line_id": "modular-2",
+      "filename": "modular-arithmetic-modular-2.mp3",
+      "path": "audio/narrations/cryptography/modular-arithmetic-modular-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "模运算就是求余数。a模n等于a除以n的余数。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "modular-arithmetic",
+      "line_id": "modular-3",
+      "filename": "modular-arithmetic-modular-3.mp3",
+      "path": "audio/narrations/cryptography/modular-arithmetic-modular-3.mp3",
+      "duration": 2.61,
+      "size": 41760,
+      "text": "模运算有许多重要性质。例如，加法和乘法在模运算下是封闭的。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "modular-arithmetic",
+      "line_id": "modular-4",
+      "filename": "modular-arithmetic-modular-4.mp3",
+      "path": "audio/narrations/cryptography/modular-arithmetic-modular-4.mp3",
+      "duration": 3.19,
+      "size": 51120,
+      "text": "模逆元是密码学中的关键概念。如果a乘以b模n等于1，我们说b是a在模n下的逆元。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "modular-arithmetic",
+      "line_id": "modular-5",
+      "filename": "modular-arithmetic-modular-5.mp3",
+      "path": "audio/narrations/cryptography/modular-arithmetic-modular-5.mp3",
+      "duration": 3.02,
+      "size": 48384,
+      "text": "只有当a和n互质时，a才有模逆元。这个性质在RSA加密中起着核心作用。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-basics",
+      "line_id": "rsa-1",
+      "filename": "rsa-basics-rsa-1.mp3",
+      "path": "audio/narrations/cryptography/rsa-basics-rsa-1.mp3",
+      "duration": 3.1,
+      "size": 49680,
+      "text": "RSA是最著名的公钥密码系统，由Rivest、Shamir和Adleman在1977年提出。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-basics",
+      "line_id": "rsa-2",
+      "filename": "rsa-basics-rsa-2.mp3",
+      "path": "audio/narrations/cryptography/rsa-basics-rsa-2.mp3",
+      "duration": 3.72,
+      "size": 59472,
+      "text": "RSA的安全性基于大整数分解的困难性。将两个大质数相乘很容易，但将乘积分解回质数却非常困难。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-basics",
+      "line_id": "rsa-3",
+      "filename": "rsa-basics-rsa-3.mp3",
+      "path": "audio/narrations/cryptography/rsa-basics-rsa-3.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "RSA密钥生成的第一步是选择两个大质数p和q，计算它们的乘积n。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-basics",
+      "line_id": "rsa-4",
+      "filename": "rsa-basics-rsa-4.mp3",
+      "path": "audio/narrations/cryptography/rsa-basics-rsa-4.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "然后计算欧拉函数φ(n)，它等于p减1乘以q减1。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-basics",
+      "line_id": "rsa-5",
+      "filename": "rsa-basics-rsa-5.mp3",
+      "path": "audio/narrations/cryptography/rsa-basics-rsa-5.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "选择一个与φ(n)互质的整数e作为公钥指数，通常选择65537。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-basics",
+      "line_id": "rsa-6",
+      "filename": "rsa-basics-rsa-6.mp3",
+      "path": "audio/narrations/cryptography/rsa-basics-rsa-6.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "计算e在模φ(n)下的逆元d，这就是私钥指数。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-basics",
+      "line_id": "rsa-7",
+      "filename": "rsa-basics-rsa-7.mp3",
+      "path": "audio/narrations/cryptography/rsa-basics-rsa-7.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "加密时，将明文M的e次方对n取模，得到密文C。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-basics",
+      "line_id": "rsa-8",
+      "filename": "rsa-basics-rsa-8.mp3",
+      "path": "audio/narrations/cryptography/rsa-basics-rsa-8.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "解密时，将密文C的d次方对n取模，恢复明文M。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-basics",
+      "line_id": "rsa-9",
+      "filename": "rsa-basics-rsa-9.mp3",
+      "path": "audio/narrations/cryptography/rsa-basics-rsa-9.mp3",
+      "duration": 2.88,
+      "size": 46080,
+      "text": "RSA的巧妙之处在于：公钥(n, e)可以公开，但只有知道私钥d的人才能解密。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-example",
+      "line_id": "rsa-example-1",
+      "filename": "rsa-example-rsa-example-1.mp3",
+      "path": "audio/narrations/cryptography/rsa-example-rsa-example-1.mp3",
+      "duration": 3.37,
+      "size": 53856,
+      "text": "让我们通过一个简单的例子来理解RSA。选择两个小质数：p等于61，q等于53。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-example",
+      "line_id": "rsa-example-2",
+      "filename": "rsa-example-rsa-example-2.mp3",
+      "path": "audio/narrations/cryptography/rsa-example-rsa-example-2.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "计算n等于61乘以53，等于3233。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-example",
+      "line_id": "rsa-example-3",
+      "filename": "rsa-example-rsa-example-3.mp3",
+      "path": "audio/narrations/cryptography/rsa-example-rsa-example-3.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "计算φ(n)等于60乘以52，等于3120。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-example",
+      "line_id": "rsa-example-4",
+      "filename": "rsa-example-rsa-example-4.mp3",
+      "path": "audio/narrations/cryptography/rsa-example-rsa-example-4.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "选择e等于17，它与3120互质。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-example",
+      "line_id": "rsa-example-5",
+      "filename": "rsa-example-rsa-example-5.mp3",
+      "path": "audio/narrations/cryptography/rsa-example-rsa-example-5.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "计算d，使得17乘以d模3120等于1，得到d等于2753。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-example",
+      "line_id": "rsa-example-6",
+      "filename": "rsa-example-rsa-example-6.mp3",
+      "path": "audio/narrations/cryptography/rsa-example-rsa-example-6.mp3",
+      "duration": 3.25,
+      "size": 51984,
+      "text": "现在，公钥是(3233, 17)，私钥是(3233, 2753)。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-example",
+      "line_id": "rsa-example-7",
+      "filename": "rsa-example-rsa-example-7.mp3",
+      "path": "audio/narrations/cryptography/rsa-example-rsa-example-7.mp3",
+      "duration": 3.17,
+      "size": 50688,
+      "text": "假设明文M等于123，加密：123的17次方模3233等于855。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "rsa-example",
+      "line_id": "rsa-example-8",
+      "filename": "rsa-example-rsa-example-8.mp3",
+      "path": "audio/narrations/cryptography/rsa-example-rsa-example-8.mp3",
+      "duration": 3.17,
+      "size": 50688,
+      "text": "解密：855的2753次方模3233等于123，成功恢复明文！"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "hash-functions",
+      "line_id": "hash-1",
+      "filename": "hash-functions-hash-1.mp3",
+      "path": "audio/narrations/cryptography/hash-functions-hash-1.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "哈希函数是密码学的另一个重要工具。它将任意长度的输入映射为固定长度的输出。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "hash-functions",
+      "line_id": "hash-2",
+      "filename": "hash-functions-hash-2.mp3",
+      "path": "audio/narrations/cryptography/hash-functions-hash-2.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "密码学哈希函数必须满足三个关键性质：单向性、抗碰撞性和雪崩效应。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "hash-functions",
+      "line_id": "hash-3",
+      "filename": "hash-functions-hash-3.mp3",
+      "path": "audio/narrations/cryptography/hash-functions-hash-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "单向性意味着从哈希值反推原始输入在计算上是不可行的。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "hash-functions",
+      "line_id": "hash-4",
+      "filename": "hash-functions-hash-4.mp3",
+      "path": "audio/narrations/cryptography/hash-functions-hash-4.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "抗碰撞性意味着找到两个不同的输入产生相同的哈希值在计算上是不可行的。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "hash-functions",
+      "line_id": "hash-5",
+      "filename": "hash-functions-hash-5.mp3",
+      "path": "audio/narrations/cryptography/hash-functions-hash-5.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "雪崩效应意味着输入的微小变化会导致哈希值的巨大变化。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "hash-functions",
+      "line_id": "hash-6",
+      "filename": "hash-functions-hash-6.mp3",
+      "path": "audio/narrations/cryptography/hash-functions-hash-6.mp3",
+      "duration": 4.02,
+      "size": 64368,
+      "text": "常见的哈希函数包括MD5、SHA-1和SHA-256。其中SHA-256是目前最安全的选择。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "hash-applications",
+      "line_id": "hash-app-1",
+      "filename": "hash-applications-hash-app-1.mp3",
+      "path": "audio/narrations/cryptography/hash-applications-hash-app-1.mp3",
+      "duration": 1.41,
+      "size": 22608,
+      "text": "哈希函数在密码学中有广泛的应用。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "hash-applications",
+      "line_id": "hash-app-2",
+      "filename": "hash-applications-hash-app-2.mp3",
+      "path": "audio/narrations/cryptography/hash-applications-hash-app-2.mp3",
+      "duration": 3.49,
+      "size": 55872,
+      "text": "密码存储：系统不存储用户的明文密码，而是存储密码的哈希值。验证时比较哈希值即可。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "hash-applications",
+      "line_id": "hash-app-3",
+      "filename": "hash-applications-hash-app-3.mp3",
+      "path": "audio/narrations/cryptography/hash-applications-hash-app-3.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "数字签名：对消息的哈希值进行签名，而不是对整个消息签名，提高效率。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "hash-applications",
+      "line_id": "hash-app-4",
+      "filename": "hash-applications-hash-app-4.mp3",
+      "path": "audio/narrations/cryptography/hash-applications-hash-app-4.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "完整性校验：通过比较文件的哈希值，可以验证文件是否被篡改。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "hash-applications",
+      "line_id": "hash-app-5",
+      "filename": "hash-applications-hash-app-5.mp3",
+      "path": "audio/narrations/cryptography/hash-applications-hash-app-5.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "区块链：比特币等区块链技术大量使用哈希函数来保证数据的不可篡改性。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "symmetric-vs-asymmetric",
+      "line_id": "symmetric-1",
+      "filename": "symmetric-vs-asymmetric-symmetric-1.mp3",
+      "path": "audio/narrations/cryptography/symmetric-vs-asymmetric-symmetric-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "密码系统分为两大类：对称加密和非对称加密。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "symmetric-vs-asymmetric",
+      "line_id": "symmetric-2",
+      "filename": "symmetric-vs-asymmetric-symmetric-2.mp3",
+      "path": "audio/narrations/cryptography/symmetric-vs-asymmetric-symmetric-2.mp3",
+      "duration": 2.9,
+      "size": 46368,
+      "text": "对称加密使用相同的密钥进行加密和解密。凯撒密码就是一种对称加密。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "symmetric-vs-asymmetric",
+      "line_id": "symmetric-3",
+      "filename": "symmetric-vs-asymmetric-symmetric-3.mp3",
+      "path": "audio/narrations/cryptography/symmetric-vs-asymmetric-symmetric-3.mp3",
+      "duration": 3.02,
+      "size": 48240,
+      "text": "对称加密的优点是速度快，缺点是密钥分发困难。如何安全地将密钥传递给对方？"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "symmetric-vs-asymmetric",
+      "line_id": "symmetric-4",
+      "filename": "symmetric-vs-asymmetric-symmetric-4.mp3",
+      "path": "audio/narrations/cryptography/symmetric-vs-asymmetric-symmetric-4.mp3",
+      "duration": 3.32,
+      "size": 53136,
+      "text": "非对称加密使用一对密钥：公钥用于加密，私钥用于解密。RSA就是非对称加密。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "symmetric-vs-asymmetric",
+      "line_id": "symmetric-5",
+      "filename": "symmetric-vs-asymmetric-symmetric-5.mp3",
+      "path": "audio/narrations/cryptography/symmetric-vs-asymmetric-symmetric-5.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "非对称加密解决了密钥分发问题，但速度较慢。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "symmetric-vs-asymmetric",
+      "line_id": "symmetric-6",
+      "filename": "symmetric-vs-asymmetric-symmetric-6.mp3",
+      "path": "audio/narrations/cryptography/symmetric-vs-asymmetric-symmetric-6.mp3",
+      "duration": 3.24,
+      "size": 51840,
+      "text": "实际应用中，通常结合两者：用非对称加密传递对称密钥，然后用对称加密传递数据。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "applications",
+      "line_id": "applications-1",
+      "filename": "applications-applications-1.mp3",
+      "path": "audio/narrations/cryptography/applications-applications-1.mp3",
+      "duration": 1.39,
+      "size": 22176,
+      "text": "密码学在现代社会中无处不在。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "applications",
+      "line_id": "applications-2",
+      "filename": "applications-applications-2.mp3",
+      "path": "audio/narrations/cryptography/applications-applications-2.mp3",
+      "duration": 3.91,
+      "size": 62496,
+      "text": "HTTPS协议使用SSL/TLS加密，保护网页浏览的安全。每次你看到地址栏的小锁图标，就是密码学在工作。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "applications",
+      "line_id": "applications-3",
+      "filename": "applications-applications-3.mp3",
+      "path": "audio/narrations/cryptography/applications-applications-3.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "电子支付系统使用密码学保护交易信息，确保资金安全。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "applications",
+      "line_id": "applications-4",
+      "filename": "applications-applications-4.mp3",
+      "path": "audio/narrations/cryptography/applications-applications-4.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "即时通讯软件使用端到端加密，保护聊天内容的隐私。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "applications",
+      "line_id": "applications-5",
+      "filename": "applications-applications-5.mp3",
+      "path": "audio/narrations/cryptography/applications-applications-5.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "数字货币如比特币，其整个系统都建立在密码学基础之上。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "applications",
+      "line_id": "applications-6",
+      "filename": "applications-applications-6.mp3",
+      "path": "audio/narrations/cryptography/applications-applications-6.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "电子投票、数字版权保护、身份认证，都依赖于密码学技术。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "quantum-threat",
+      "line_id": "quantum-1",
+      "filename": "quantum-threat-quantum-1.mp3",
+      "path": "audio/narrations/cryptography/quantum-threat-quantum-1.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "量子计算机的发展给现代密码学带来了新的挑战。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "quantum-threat",
+      "line_id": "quantum-2",
+      "filename": "quantum-threat-quantum-2.mp3",
+      "path": "audio/narrations/cryptography/quantum-threat-quantum-2.mp3",
+      "duration": 2.97,
+      "size": 47520,
+      "text": "Shor算法可以在量子计算机上高效地分解大整数，这意味着RSA加密将不再安全。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "quantum-threat",
+      "line_id": "quantum-3",
+      "filename": "quantum-threat-quantum-3.mp3",
+      "path": "audio/narrations/cryptography/quantum-threat-quantum-3.mp3",
+      "duration": 3.21,
+      "size": 51408,
+      "text": "为了应对量子威胁，密码学家正在开发后量子密码学，寻找量子计算机也难以破解的加密方法。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "quantum-threat",
+      "line_id": "quantum-4",
+      "filename": "quantum-threat-quantum-4.mp3",
+      "path": "audio/narrations/cryptography/quantum-threat-quantum-4.mp3",
+      "duration": 2.66,
+      "size": 42624,
+      "text": "格密码、基于编码的密码、多变量密码等，都是后量子密码学的研究方向。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/cryptography/summary-summary-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "密码学是信息安全的基石，它保护着我们的数字生活。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/cryptography/summary-summary-2.mp3",
+      "duration": 2.84,
+      "size": 45504,
+      "text": "从简单的凯撒密码到复杂的RSA系统，密码学经历了漫长的发展历程。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/cryptography/summary-summary-3.mp3",
+      "duration": 2.82,
+      "size": 45072,
+      "text": "现代密码学建立在坚实的数学基础之上，包括数论、代数和计算复杂性理论。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/cryptography/summary-summary-4.mp3",
+      "duration": 2.87,
+      "size": 45936,
+      "text": "理解密码学的基本原理，不仅能帮助我们更好地保护信息安全，也能让我们欣赏数学之美。"
+    },
+    {
+      "script_id": "cryptography",
+      "section_id": "summary",
+      "line_id": "summary-5",
+      "filename": "summary-summary-5.mp3",
+      "path": "audio/narrations/cryptography/summary-summary-5.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "希望这个可视化工具能帮助你更好地理解密码学的奥秘！"
+    }
+  ],
+  "total_duration": 188.68,
+  "total_size": 3019248
+}

@@ -1,0 +1,249 @@
+{
+  "script_id": "laplace",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "laplace",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/laplace/intro-intro-1.mp3",
+      "duration": 3.7,
+      "size": 59184,
+      "text": "欢迎来到拉普拉斯变换的世界！拉普拉斯变换是数学中最强大的工具之一，它在工程和物理学中有着广泛的应用。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/laplace/intro-intro-2.mp3",
+      "duration": 3.71,
+      "size": 59328,
+      "text": "拉普拉斯变换的核心思想是将时域中的微分方程转换为复频域中的代数方程，从而大大简化问题的求解过程。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/laplace/intro-intro-3.mp3",
+      "duration": 3.29,
+      "size": 52560,
+      "text": "这个变换以法国数学家皮埃尔-西蒙·拉普拉斯的名字命名，他在18世纪末发展了这一理论。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "definition",
+      "line_id": "definition-1",
+      "filename": "definition-definition-1.mp3",
+      "path": "audio/narrations/laplace/definition-definition-1.mp3",
+      "duration": 3.38,
+      "size": 54000,
+      "text": "拉普拉斯变换的定义是：F(s) 等于从0到无穷大对 f(t) 乘以 e 的负 st 次方的积分。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "definition",
+      "line_id": "definition-2",
+      "filename": "definition-definition-2.mp3",
+      "path": "audio/narrations/laplace/definition-definition-2.mp3",
+      "duration": 3.5,
+      "size": 56016,
+      "text": "这里的 s 是一个复数，通常写作 s = σ + jω，其中 σ 是实部，ω 是虚部。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "definition",
+      "line_id": "definition-3",
+      "filename": "definition-definition-3.mp3",
+      "path": "audio/narrations/laplace/definition-definition-3.mp3",
+      "duration": 3.08,
+      "size": 49248,
+      "text": "这个积分将时域函数 f(t) 映射到复频域函数 F(s)，建立了两个域之间的桥梁。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "basic-transforms",
+      "line_id": "basic-transforms-1",
+      "filename": "basic-transforms-basic-transforms-1.mp3",
+      "path": "audio/narrations/laplace/basic-transforms-basic-transforms-1.mp3",
+      "duration": 3.02,
+      "size": 48384,
+      "text": "让我们来看一些最基本的拉普拉斯变换对。首先是单位阶跃函数，它的变换结果是 1/s。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "basic-transforms",
+      "line_id": "basic-transforms-2",
+      "filename": "basic-transforms-basic-transforms-2.mp3",
+      "path": "audio/narrations/laplace/basic-transforms-basic-transforms-2.mp3",
+      "duration": 2.98,
+      "size": 47664,
+      "text": "斜坡函数 t 的变换是 1/s²。指数函数 e 的 at 次方变换为 1/(s-a)。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "basic-transforms",
+      "line_id": "basic-transforms-3",
+      "filename": "basic-transforms-basic-transforms-3.mp3",
+      "path": "audio/narrations/laplace/basic-transforms-basic-transforms-3.mp3",
+      "duration": 4.87,
+      "size": 77904,
+      "text": "正弦函数 sin(ωt) 变换为 ω/(s²+ω²)，余弦函数 cos(ωt) 变换为 s/(s²+ω²)。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "basic-transforms",
+      "line_id": "basic-transforms-4",
+      "filename": "basic-transforms-basic-transforms-4.mp3",
+      "path": "audio/narrations/laplace/basic-transforms-basic-transforms-4.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "这些基本变换对是解决更复杂问题的基础，需要牢记。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "system-analysis",
+      "line_id": "system-analysis-1",
+      "filename": "system-analysis-system-analysis-1.mp3",
+      "path": "audio/narrations/laplace/system-analysis-system-analysis-1.mp3",
+      "duration": 3.42,
+      "size": 54720,
+      "text": "拉普拉斯变换在系统分析中特别有用。我们可以用传递函数 H(s) 来描述线性时不变系统。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "system-analysis",
+      "line_id": "system-analysis-3",
+      "filename": "system-analysis-system-analysis-3.mp3",
+      "path": "audio/narrations/laplace/system-analysis-system-analysis-3.mp3",
+      "duration": 2.96,
+      "size": 47376,
+      "text": "二阶系统更加复杂，由阻尼比 ζ 和自然频率 ωn 两个参数决定其动态特性。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "system-analysis",
+      "line_id": "system-analysis-4",
+      "filename": "system-analysis-system-analysis-4.mp3",
+      "path": "audio/narrations/laplace/system-analysis-system-analysis-4.mp3",
+      "duration": 3.72,
+      "size": 59472,
+      "text": "当阻尼比小于1时，系统呈现欠阻尼状态，会产生振荡；等于1时是临界阻尼；大于1时是过阻尼。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "pole-zero",
+      "line_id": "pole-zero-1",
+      "filename": "pole-zero-pole-zero-1.mp3",
+      "path": "audio/narrations/laplace/pole-zero-pole-zero-1.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "在S平面上，极点和零点的位置决定了系统的稳定性和动态特性。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "pole-zero",
+      "line_id": "pole-zero-2",
+      "filename": "pole-zero-pole-zero-2.mp3",
+      "path": "audio/narrations/laplace/pole-zero-pole-zero-2.mp3",
+      "duration": 3.44,
+      "size": 55008,
+      "text": "极点是使传递函数分母为零的s值，用叉号表示。零点是使分子为零的s值，用圆圈表示。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "pole-zero",
+      "line_id": "pole-zero-3",
+      "filename": "pole-zero-pole-zero-3.mp3",
+      "path": "audio/narrations/laplace/pole-zero-pole-zero-3.mp3",
+      "duration": 2.68,
+      "size": 42912,
+      "text": "系统稳定的充要条件是所有极点都位于S平面的左半平面，即实部为负。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "pole-zero",
+      "line_id": "pole-zero-4",
+      "filename": "pole-zero-pole-zero-4.mp3",
+      "path": "audio/narrations/laplace/pole-zero-pole-zero-4.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "极点越靠近虚轴，系统响应越慢；极点的虚部决定了振荡频率。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "applications",
+      "line_id": "applications-1",
+      "filename": "applications-applications-1.mp3",
+      "path": "audio/narrations/laplace/applications-applications-1.mp3",
+      "duration": 3.97,
+      "size": 63504,
+      "text": "拉普拉斯变换在电路分析中非常重要。电阻、电容、电感在S域中分别表示为 R、1/sC 和 sL。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "applications",
+      "line_id": "applications-2",
+      "filename": "applications-applications-2.mp3",
+      "path": "audio/narrations/laplace/applications-applications-2.mp3",
+      "duration": 2.65,
+      "size": 42336,
+      "text": "在控制系统设计中，我们使用拉普拉斯变换来分析系统稳定性、设计控制器。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "applications",
+      "line_id": "applications-3",
+      "filename": "applications-applications-3.mp3",
+      "path": "audio/narrations/laplace/applications-applications-3.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "信号处理领域也广泛使用拉普拉斯变换，特别是在滤波器设计和系统辨识方面。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/laplace/summary-summary-1.mp3",
+      "duration": 2.75,
+      "size": 43920,
+      "text": "拉普拉斯变换是连接时域和复频域的桥梁，将微分方程转化为代数方程。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/laplace/summary-summary-2.mp3",
+      "duration": 2.58,
+      "size": 41328,
+      "text": "掌握基本变换对和系统分析方法，是学习控制理论和信号处理的基础。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/laplace/summary-summary-3.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "通过极点零点分析，我们可以直观地理解系统的稳定性和动态特性。"
+    },
+    {
+      "script_id": "laplace",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/laplace/summary-summary-4.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "希望这个可视化工具能帮助你更好地理解拉普拉斯变换的概念和应用！"
+    }
+  ],
+  "total_duration": 74.09,
+  "total_size": 1185264
+}

@@ -1,0 +1,239 @@
+{
+  "script_id": "permutation-combination",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "permutation-combination",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/permutation-combination/intro-intro-1.mp3",
+      "duration": 4.05,
+      "size": 64800,
+      "text": "欢迎来到排列组合的世界！排列组合是组合数学的基础，在概率论、统计学和计算机科学中有着广泛的应用。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/permutation-combination/intro-intro-2.mp3",
+      "duration": 3.21,
+      "size": 51408,
+      "text": "排列和组合都是从一组元素中选取若干元素的方法，但它们的区别在于是否考虑顺序。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/permutation-combination/intro-intro-3.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "让我们通过可视化的方式，深入理解这两个重要的数学概念。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "permutation",
+      "line_id": "permutation-1",
+      "filename": "permutation-permutation-1.mp3",
+      "path": "audio/narrations/permutation-combination/permutation-permutation-1.mp3",
+      "duration": 2.63,
+      "size": 42048,
+      "text": "排列是指从n个不同元素中取出r个元素，按照一定的顺序排成一列。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "permutation",
+      "line_id": "permutation-2",
+      "filename": "permutation-permutation-2.mp3",
+      "path": "audio/narrations/permutation-combination/permutation-permutation-2.mp3",
+      "duration": 3.22,
+      "size": 51552,
+      "text": "排列数的计算公式是 P(n,r) = n! / (n-r)!，其中 n! 表示n的阶乘。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "permutation",
+      "line_id": "permutation-3",
+      "filename": "permutation-permutation-3.mp3",
+      "path": "audio/narrations/permutation-combination/permutation-permutation-3.mp3",
+      "duration": 3.28,
+      "size": 52416,
+      "text": "例如，从3个人中选2个人排队，有 P(3,2) = 3!/1! = 6 种不同的排法。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "permutation",
+      "line_id": "permutation-4",
+      "filename": "permutation-permutation-4.mp3",
+      "path": "audio/narrations/permutation-combination/permutation-permutation-4.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "排列强调顺序的重要性：ABC 和 BAC 是两种不同的排列。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "combination",
+      "line_id": "combination-1",
+      "filename": "combination-combination-1.mp3",
+      "path": "audio/narrations/permutation-combination/combination-combination-1.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "组合是指从n个不同元素中取出r个元素，不考虑顺序，组成一组。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "combination",
+      "line_id": "combination-2",
+      "filename": "combination-combination-2.mp3",
+      "path": "audio/narrations/permutation-combination/combination-combination-2.mp3",
+      "duration": 3.02,
+      "size": 48384,
+      "text": "组合数的计算公式是 C(n,r) = n! / (r!(n-r)!)，也常写作"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "combination",
+      "line_id": "combination-3",
+      "filename": "combination-combination-3.mp3",
+      "path": "audio/narrations/permutation-combination/combination-combination-3.mp3",
+      "duration": 3.57,
+      "size": 57168,
+      "text": "例如，从3个人中选2个人组成小组，有 C(3,2) = 3!/(2!×1!) = 3 种选法。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "combination",
+      "line_id": "combination-4",
+      "filename": "combination-combination-4.mp3",
+      "path": "audio/narrations/permutation-combination/combination-combination-4.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "组合不考虑顺序：选择AB和选择BA是同一种组合。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "pascal-triangle",
+      "line_id": "pascal-triangle-1",
+      "filename": "pascal-triangle-pascal-triangle-1.mp3",
+      "path": "audio/narrations/permutation-combination/pascal-triangle-pascal-triangle-1.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "帕斯卡三角形，在中国也叫杨辉三角，是一个展示组合数规律的美丽图形。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "pascal-triangle",
+      "line_id": "pascal-triangle-2",
+      "filename": "pascal-triangle-pascal-triangle-2.mp3",
+      "path": "audio/narrations/permutation-combination/pascal-triangle-pascal-triangle-2.mp3",
+      "duration": 4.71,
+      "size": 75312,
+      "text": "三角形的每个数字等于它上方两个数字之和，这正是组合数的递推公式：C(n,k) = C(n-1,k-1) + C(n-1,k)。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "pascal-triangle",
+      "line_id": "pascal-triangle-3",
+      "filename": "pascal-triangle-pascal-triangle-3.mp3",
+      "path": "audio/narrations/permutation-combination/pascal-triangle-pascal-triangle-3.mp3",
+      "duration": 3.67,
+      "size": 58752,
+      "text": "第n行的数字恰好是 C(n,0), C(n,1), ..., C(n,n)，即二项式展开的系数。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "pascal-triangle",
+      "line_id": "pascal-triangle-4",
+      "filename": "pascal-triangle-pascal-triangle-4.mp3",
+      "path": "audio/narrations/permutation-combination/pascal-triangle-pascal-triangle-4.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "帕斯卡三角形中隐藏着许多有趣的数学规律，比如斐波那契数列。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "applications",
+      "line_id": "applications-1",
+      "filename": "applications-applications-1.mp3",
+      "path": "audio/narrations/permutation-combination/applications-applications-1.mp3",
+      "duration": 3.09,
+      "size": 49392,
+      "text": "排列组合在日常生活中有很多应用。比如密码锁：4位数字密码有多少种可能？"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "applications",
+      "line_id": "applications-2",
+      "filename": "applications-applications-2.mp3",
+      "path": "audio/narrations/permutation-combination/applications-applications-2.mp3",
+      "duration": 3.87,
+      "size": 61920,
+      "text": "如果数字可以重复，就是 10^4 = 10000 种；如果不能重复，就是 P(10,4) = 5040 种。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "applications",
+      "line_id": "applications-3",
+      "filename": "applications-applications-3.mp3",
+      "path": "audio/narrations/permutation-combination/applications-applications-3.mp3",
+      "duration": 3.36,
+      "size": 53712,
+      "text": "彩票中奖概率的计算也用到组合：从35个数字中选7个，有 C(35,7) 种可能。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "applications",
+      "line_id": "applications-4",
+      "filename": "applications-applications-4.mp3",
+      "path": "audio/narrations/permutation-combination/applications-applications-4.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "在计算机科学中，排列组合用于算法分析、密码学和数据结构设计。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/permutation-combination/summary-summary-1.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "排列考虑顺序，组合不考虑顺序，这是两者最本质的区别。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/permutation-combination/summary-summary-2.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "排列数总是大于或等于组合数，因为同一组元素可以有多种排列方式。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/permutation-combination/summary-summary-3.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "帕斯卡三角形是理解组合数性质的绝佳工具，展示了数学的对称之美。"
+    },
+    {
+      "script_id": "permutation-combination",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/permutation-combination/summary-summary-4.mp3",
+      "duration": 3.26,
+      "size": 52128,
+      "text": "掌握排列组合，是学习概率论和统计学的重要基础。希望这个可视化能帮助你更好地理解！"
+    }
+  ],
+  "total_duration": 69.17,
+  "total_size": 1106496
+}

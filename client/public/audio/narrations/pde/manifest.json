@@ -1,0 +1,389 @@
+{
+  "script_id": "pde",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "pde",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/pde/intro-intro-1.mp3",
+      "duration": 3.01,
+      "size": 48096,
+      "text": "欢迎来到偏微分方程的世界！偏微分方程是描述自然界中连续变化现象的数学语言。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/pde/intro-intro-2.mp3",
+      "duration": 3.65,
+      "size": 58464,
+      "text": "从物理学中的波动、热传导、流体力学，到工程中的结构分析、电磁场理论，偏微分方程无处不在。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/pde/intro-intro-3.mp3",
+      "duration": 3.44,
+      "size": 55008,
+      "text": "与常微分方程不同，偏微分方程涉及多个自变量的偏导数，这使得问题变得更加复杂和丰富。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "classification",
+      "line_id": "classification-1",
+      "filename": "classification-classification-1.mp3",
+      "path": "audio/narrations/pde/classification-classification-1.mp3",
+      "duration": 3.8,
+      "size": 60768,
+      "text": "偏微分方程可以按照多种方式分类。最重要的分类是根据方程的类型：椭圆型、抛物型和双曲型。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "classification",
+      "line_id": "classification-2",
+      "filename": "classification-classification-2.mp3",
+      "path": "audio/narrations/pde/classification-classification-2.mp3",
+      "duration": 4.08,
+      "size": 65232,
+      "text": "椭圆型方程描述稳态问题，如拉普拉斯方程和泊松方程。这类方程没有时间变量，描述的是平衡状态。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "classification",
+      "line_id": "classification-3",
+      "filename": "classification-classification-3.mp3",
+      "path": "audio/narrations/pde/classification-classification-3.mp3",
+      "duration": 4.0,
+      "size": 63936,
+      "text": "抛物型方程描述扩散过程，典型代表是热传导方程。这类方程有一阶时间导数，描述不可逆的扩散过程。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "classification",
+      "line_id": "classification-4",
+      "filename": "classification-classification-4.mp3",
+      "path": "audio/narrations/pde/classification-classification-4.mp3",
+      "duration": 3.64,
+      "size": 58176,
+      "text": "双曲型方程描述波动现象，如波动方程。这类方程有二阶时间导数，描述可逆的振荡过程。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "laplace",
+      "line_id": "laplace-1",
+      "filename": "laplace-laplace-1.mp3",
+      "path": "audio/narrations/pde/laplace-laplace-1.mp3",
+      "duration": 2.94,
+      "size": 47088,
+      "text": "拉普拉斯方程是最基本的椭圆型方程，形式为：拉普拉斯算子作用于u等于零。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "laplace",
+      "line_id": "laplace-2",
+      "filename": "laplace-laplace-2.mp3",
+      "path": "audio/narrations/pde/laplace-laplace-2.mp3",
+      "duration": 2.9,
+      "size": 46368,
+      "text": "在二维情况下，拉普拉斯算子等于u对x的二阶偏导数加上u对y的二阶偏导数。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "laplace",
+      "line_id": "laplace-3",
+      "filename": "laplace-laplace-3.mp3",
+      "path": "audio/narrations/pde/laplace-laplace-3.mp3",
+      "duration": 2.94,
+      "size": 47088,
+      "text": "拉普拉斯方程描述无源的稳态场，如静电场、稳态温度分布、理想流体的势流等。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "laplace",
+      "line_id": "laplace-4",
+      "filename": "laplace-laplace-4.mp3",
+      "path": "audio/narrations/pde/laplace-laplace-4.mp3",
+      "duration": 2.63,
+      "size": 42048,
+      "text": "拉普拉斯方程的解具有调和性质，即内部任一点的值等于其周围点的平均值。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "poisson",
+      "line_id": "poisson-1",
+      "filename": "poisson-poisson-1.mp3",
+      "path": "audio/narrations/pde/poisson-poisson-1.mp3",
+      "duration": 2.72,
+      "size": 43488,
+      "text": "泊松方程是拉普拉斯方程的推广，右侧有一个源项函数f(x,y)。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "poisson",
+      "line_id": "poisson-2",
+      "filename": "poisson-poisson-2.mp3",
+      "path": "audio/narrations/pde/poisson-poisson-2.mp3",
+      "duration": 2.81,
+      "size": 44928,
+      "text": "当源项为零时，泊松方程退化为拉普拉斯方程。源项代表场的源或汇。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "poisson",
+      "line_id": "poisson-3",
+      "filename": "poisson-poisson-3.mp3",
+      "path": "audio/narrations/pde/poisson-poisson-3.mp3",
+      "duration": 3.59,
+      "size": 57456,
+      "text": "在静电学中，泊松方程描述电荷分布与电势的关系。在引力场中，它描述质量分布与引力势的关系。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "heat",
+      "line_id": "heat-1",
+      "filename": "heat-heat-1.mp3",
+      "path": "audio/narrations/pde/heat-heat-1.mp3",
+      "duration": 2.64,
+      "size": 42192,
+      "text": "热传导方程是典型的抛物型方程，描述热量在介质中的扩散过程。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "heat",
+      "line_id": "heat-2",
+      "filename": "heat-heat-2.mp3",
+      "path": "audio/narrations/pde/heat-heat-2.mp3",
+      "duration": 3.02,
+      "size": 48384,
+      "text": "方程的形式是：u对时间的偏导数等于热扩散系数α乘以拉普拉斯算子作用于u。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "heat",
+      "line_id": "heat-3",
+      "filename": "heat-heat-3.mp3",
+      "path": "audio/narrations/pde/heat-heat-3.mp3",
+      "duration": 2.56,
+      "size": 41040,
+      "text": "热传导方程具有平滑性质，初始的不连续温度分布会迅速变得光滑。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "heat",
+      "line_id": "heat-4",
+      "filename": "heat-heat-4.mp3",
+      "path": "audio/narrations/pde/heat-heat-4.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "这个方程也适用于其他扩散过程，如物质扩散、动量扩散等。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "wave",
+      "line_id": "wave-1",
+      "filename": "wave-wave-1.mp3",
+      "path": "audio/narrations/pde/wave-wave-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "波动方程是典型的双曲型方程，描述波的传播现象。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "wave",
+      "line_id": "wave-2",
+      "filename": "wave-wave-2.mp3",
+      "path": "audio/narrations/pde/wave-wave-2.mp3",
+      "duration": 3.02,
+      "size": 48240,
+      "text": "方程的形式是：u对时间的二阶偏导数等于波速c的平方乘以拉普拉斯算子作用于u。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "wave",
+      "line_id": "wave-3",
+      "filename": "wave-wave-3.mp3",
+      "path": "audio/narrations/pde/wave-wave-3.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "波动方程描述声波、光波、弦振动、膜振动等多种物理现象。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "wave",
+      "line_id": "wave-4",
+      "filename": "wave-wave-4.mp3",
+      "path": "audio/narrations/pde/wave-wave-4.mp3",
+      "duration": 2.68,
+      "size": 42912,
+      "text": "与热传导方程不同，波动方程是可逆的，能量在空间中传播而不耗散。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "boundary",
+      "line_id": "boundary-1",
+      "filename": "boundary-boundary-1.mp3",
+      "path": "audio/narrations/pde/boundary-boundary-1.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "偏微分方程的解不是唯一的，需要边界条件来确定特定的解。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "boundary",
+      "line_id": "boundary-2",
+      "filename": "boundary-boundary-2.mp3",
+      "path": "audio/narrations/pde/boundary-boundary-2.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "Dirichlet边界条件指定边界上函数的值，如固定温度或固定电势。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "boundary",
+      "line_id": "boundary-3",
+      "filename": "boundary-boundary-3.mp3",
+      "path": "audio/narrations/pde/boundary-boundary-3.mp3",
+      "duration": 2.72,
+      "size": 43488,
+      "text": "Neumann边界条件指定边界上函数的法向导数，如绝热边界或零通量边界。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "boundary",
+      "line_id": "boundary-4",
+      "filename": "boundary-boundary-4.mp3",
+      "path": "audio/narrations/pde/boundary-boundary-4.mp3",
+      "duration": 3.43,
+      "size": 54864,
+      "text": "混合边界条件在不同边界上使用不同类型的条件，或者使用Robin边界条件，它是前两者的线性组合。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "numerical",
+      "line_id": "numerical-1",
+      "filename": "numerical-numerical-1.mp3",
+      "path": "audio/narrations/pde/numerical-numerical-1.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "大多数偏微分方程没有解析解，需要使用数值方法求解。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "numerical",
+      "line_id": "numerical-2",
+      "filename": "numerical-numerical-2.mp3",
+      "path": "audio/narrations/pde/numerical-numerical-2.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "有限差分法是最直观的方法，将连续的偏导数用离散的差分近似。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "numerical",
+      "line_id": "numerical-3",
+      "filename": "numerical-numerical-3.mp3",
+      "path": "audio/narrations/pde/numerical-numerical-3.mp3",
+      "duration": 2.97,
+      "size": 47520,
+      "text": "五点差分格式是二维问题中最常用的方法，用中心点周围四个点的值来近似拉普拉斯算子。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "numerical",
+      "line_id": "numerical-4",
+      "filename": "numerical-numerical-4.mp3",
+      "path": "audio/narrations/pde/numerical-numerical-4.mp3",
+      "duration": 4.5,
+      "size": 72000,
+      "text": "对于时间相关的问题，可以使用显式或隐式时间步进方法。显式方法简单但有稳定性限制，隐式方法稳定但需要求解线性方程组。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "applications",
+      "line_id": "applications-1",
+      "filename": "applications-applications-1.mp3",
+      "path": "audio/narrations/pde/applications-applications-1.mp3",
+      "duration": 4.0,
+      "size": 64080,
+      "text": "偏微分方程在科学和工程中有广泛应用。在物理学中，它们描述电磁场、量子力学、相对论等基本理论。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "applications",
+      "line_id": "applications-2",
+      "filename": "applications-applications-2.mp3",
+      "path": "audio/narrations/pde/applications-applications-2.mp3",
+      "duration": 3.03,
+      "size": 48528,
+      "text": "在工程中，偏微分方程用于结构分析、流体力学、热传递、电路设计等领域。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "applications",
+      "line_id": "applications-3",
+      "filename": "applications-applications-3.mp3",
+      "path": "audio/narrations/pde/applications-applications-3.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "在金融数学中，Black-Scholes方程是一个抛物型偏微分方程，用于期权定价。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "applications",
+      "line_id": "applications-4",
+      "filename": "applications-applications-4.mp3",
+      "path": "audio/narrations/pde/applications-applications-4.mp3",
+      "duration": 3.13,
+      "size": 50112,
+      "text": "在图像处理和计算机视觉中，偏微分方程用于图像去噪、边缘检测、图像分割等任务。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/pde/summary-summary-1.mp3",
+      "duration": 2.83,
+      "size": 45360,
+      "text": "偏微分方程是描述连续变化现象的强大工具，涵盖了自然界和工程中的众多问题。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/pde/summary-summary-2.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "理解方程的类型、边界条件和数值求解方法，是掌握偏微分方程的关键。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/pde/summary-summary-3.mp3",
+      "duration": 3.43,
+      "size": 54864,
+      "text": "拉普拉斯方程、泊松方程、热传导方程和波动方程是四类最基本和重要的偏微分方程。"
+    },
+    {
+      "script_id": "pde",
+      "section_id": "summary",
+      "line_id": "summary-4",
+      "filename": "summary-summary-4.mp3",
+      "path": "audio/narrations/pde/summary-summary-4.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "希望这个可视化工具能帮助你更好地理解偏微分方程的概念和应用！"
+    }
+  ],
+  "total_duration": 114.08000000000004,
+  "total_size": 1825200
+}
