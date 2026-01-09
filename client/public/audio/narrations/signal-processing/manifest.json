@@ -1,8 +1,249 @@
 {
   "script_id": "signal-processing",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "voice_key": "xiaoxiao",
-  "files": [],
-  "total_duration": 0,
-  "total_size": 0
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "signal-processing",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/signal-processing/intro-intro-1.mp3",
+      "duration": 1.08,
+      "size": 17280,
+      "text": "欢迎来到信号处理实验。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/signal-processing/intro-intro-2.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "你每天都在与信号打交道：听音乐、打电话、看视频。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/signal-processing/intro-intro-3.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "这些信号是如何被处理、传输和存储的？"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/signal-processing/intro-intro-4.mp3",
+      "duration": 1.4,
+      "size": 22464,
+      "text": "信号处理正是研究这些问题的学科。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/signal-processing/concept-concept-1.mp3",
+      "duration": 1.3,
+      "size": 20736,
+      "text": "信号可以在时域或频域中分析。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/signal-processing/concept-concept-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "时域显示信号随时间的变化，频域显示信号包含的频率成分。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/signal-processing/concept-concept-3.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "傅里叶变换是连接时域和频域的桥梁。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/signal-processing/concept-concept-4.mp3",
+      "duration": 1.23,
+      "size": 19728,
+      "text": "让我们通过实例来理解这些概念。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "sampling",
+      "line_id": "samp-1",
+      "filename": "sampling-samp-1.mp3",
+      "path": "audio/narrations/signal-processing/sampling-samp-1.mp3",
+      "duration": 1.33,
+      "size": 21312,
+      "text": "数字信号是对连续信号的采样。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "sampling",
+      "line_id": "samp-2",
+      "filename": "sampling-samp-2.mp3",
+      "path": "audio/narrations/signal-processing/sampling-samp-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "采样定理告诉我们：采样频率必须大于信号最高频率的两倍。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "sampling",
+      "line_id": "samp-3",
+      "filename": "sampling-samp-3.mp3",
+      "path": "audio/narrations/signal-processing/sampling-samp-3.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "否则会产生混叠，无法正确恢复原信号。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "sampling",
+      "line_id": "samp-4",
+      "filename": "sampling-samp-4.mp3",
+      "path": "audio/narrations/signal-processing/sampling-samp-4.mp3",
+      "duration": 2.99,
+      "size": 47808,
+      "text": "这就是为什么CD的采样率是44.1kHz，因为人耳能听到的最高频率约20kHz。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "filter",
+      "line_id": "filt-1",
+      "filename": "filter-filt-1.mp3",
+      "path": "audio/narrations/signal-processing/filter-filt-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "滤波器用于选择性地保留或去除某些频率成分。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "filter",
+      "line_id": "filt-2",
+      "filename": "filter-filt-2.mp3",
+      "path": "audio/narrations/signal-processing/filter-filt-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "低通滤波器保留低频，去除高频，用于去噪。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "filter",
+      "line_id": "filt-3",
+      "filename": "filter-filt-3.mp3",
+      "path": "audio/narrations/signal-processing/filter-filt-3.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "高通滤波器保留高频，去除低频，用于边缘检测。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "filter",
+      "line_id": "filt-4",
+      "filename": "filter-filt-4.mp3",
+      "path": "audio/narrations/signal-processing/filter-filt-4.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "带通滤波器只保留特定频率范围，用于信号分离。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/signal-processing/application-app-1.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "信号处理在现代技术中无处不在。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/signal-processing/application-app-2.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "音频处理：降噪、均衡、压缩。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/signal-processing/application-app-3.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "图像处理：锐化、模糊、边缘检测。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/signal-processing/application-app-4.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "通信系统：调制、解调、编码。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/signal-processing/summary-sum-1.mp3",
+      "duration": 1.29,
+      "size": 20592,
+      "text": "今天我们探索了信号处理的基本概念。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/signal-processing/summary-sum-2.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "时域和频域是分析信号的两种视角。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/signal-processing/summary-sum-3.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "采样和滤波是数字信号处理的核心操作。"
+    },
+    {
+      "script_id": "signal-processing",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/signal-processing/summary-sum-4.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "希望这次实验能帮助你理解数字世界的信号处理原理。"
+    }
+  ],
+  "total_duration": 41.49,
+  "total_size": 663552
 }

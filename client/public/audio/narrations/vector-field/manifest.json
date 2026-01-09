@@ -1,8 +1,249 @@
 {
   "script_id": "vector-field",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "voice_key": "xiaoxiao",
-  "files": [],
-  "total_duration": 0,
-  "total_size": 0
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "vector-field",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/vector-field/intro-intro-1.mp3",
+      "duration": 1.02,
+      "size": 16272,
+      "text": "欢迎来到向量场实验。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/vector-field/intro-intro-2.mp3",
+      "duration": 1.42,
+      "size": 22752,
+      "text": "你有没有看过天气预报中的风向图？"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/vector-field/intro-intro-3.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "每个位置都有一个箭头，表示那里的风向和风速。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/vector-field/intro-intro-4.mp3",
+      "duration": 1.12,
+      "size": 18000,
+      "text": "这就是向量场的一个典型例子。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/vector-field/concept-concept-1.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "向量场是空间中每一点都对应一个向量的函数。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/vector-field/concept-concept-2.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "它可以表示速度场、力场、电场等物理量。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/vector-field/concept-concept-3.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "向量场的可视化通常用箭头或流线来表示。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/vector-field/concept-concept-4.mp3",
+      "duration": 1.44,
+      "size": 23040,
+      "text": "让我们通过几个例子来理解向量场的特性。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "streamlines",
+      "line_id": "stream-1",
+      "filename": "streamlines-stream-1.mp3",
+      "path": "audio/narrations/vector-field/streamlines-stream-1.mp3",
+      "duration": 1.32,
+      "size": 21168,
+      "text": "流线是与向量场处处相切的曲线。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "streamlines",
+      "line_id": "stream-2",
+      "filename": "streamlines-stream-2.mp3",
+      "path": "audio/narrations/vector-field/streamlines-stream-2.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "如果向量场表示流体速度，流线就是流体质点的运动轨迹。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "streamlines",
+      "line_id": "stream-3",
+      "filename": "streamlines-stream-3.mp3",
+      "path": "audio/narrations/vector-field/streamlines-stream-3.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "观察屏幕上的流线如何展示向量场的整体结构。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "streamlines",
+      "line_id": "stream-4",
+      "filename": "streamlines-stream-4.mp3",
+      "path": "audio/narrations/vector-field/streamlines-stream-4.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "流线永远不会相交，因为每点只有一个速度方向。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "divergence-curl",
+      "line_id": "div-1",
+      "filename": "divergence-curl-div-1.mp3",
+      "path": "audio/narrations/vector-field/divergence-curl-div-1.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "散度衡量向量场在某点的发散或汇聚程度。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "divergence-curl",
+      "line_id": "div-2",
+      "filename": "divergence-curl-div-2.mp3",
+      "path": "audio/narrations/vector-field/divergence-curl-div-2.mp3",
+      "duration": 1.38,
+      "size": 22032,
+      "text": "正散度表示源，负散度表示汇。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "divergence-curl",
+      "line_id": "div-3",
+      "filename": "divergence-curl-div-3.mp3",
+      "path": "audio/narrations/vector-field/divergence-curl-div-3.mp3",
+      "duration": 1.5,
+      "size": 24048,
+      "text": "旋度衡量向量场在某点的旋转程度。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "divergence-curl",
+      "line_id": "div-4",
+      "filename": "divergence-curl-div-4.mp3",
+      "path": "audio/narrations/vector-field/divergence-curl-div-4.mp3",
+      "duration": 1.43,
+      "size": 22896,
+      "text": "这两个量是分析向量场的核心工具。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/vector-field/application-app-1.mp3",
+      "duration": 1.22,
+      "size": 19440,
+      "text": "向量场在物理学中无处不在。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/vector-field/application-app-2.mp3",
+      "duration": 1.36,
+      "size": 21744,
+      "text": "流体力学用它来描述流体的运动。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/vector-field/application-app-3.mp3",
+      "duration": 1.49,
+      "size": 23760,
+      "text": "电磁学中的电场和磁场都是向量场。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/vector-field/application-app-4.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "计算机图形学用它来模拟烟雾和水流效果。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/vector-field/summary-sum-1.mp3",
+      "duration": 1.25,
+      "size": 20016,
+      "text": "今天我们探索了向量场的基本概念。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/vector-field/summary-sum-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "向量场是描述空间中方向性物理量的数学工具。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/vector-field/summary-sum-3.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "散度和旋度揭示了向量场的局部特性。"
+    },
+    {
+      "script_id": "vector-field",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/vector-field/summary-sum-4.mp3",
+      "duration": 1.71,
+      "size": 27360,
+      "text": "希望这次实验能帮助你建立对向量场的直观理解。"
+    }
+  ],
+  "total_duration": 36.629999999999995,
+  "total_size": 585936
 }

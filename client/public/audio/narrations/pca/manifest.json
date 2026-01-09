@@ -1,8 +1,249 @@
 {
   "script_id": "pca",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "voice_key": "xiaoxiao",
-  "files": [],
-  "total_duration": 0,
-  "total_size": 0
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "pca",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/pca/intro-intro-1.mp3",
+      "duration": 1.16,
+      "size": 18576,
+      "text": "欢迎来到主成分分析实验。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/pca/intro-intro-2.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "在数据科学中，我们经常面对高维数据：几十甚至几百个特征。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/pca/intro-intro-3.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "如何在保留重要信息的同时，简化数据的复杂性？"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/pca/intro-intro-4.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "PCA，主成分分析，正是解决这个问题的强大工具。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/pca/concept-concept-1.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "PCA的核心思想是找到数据变化最大的方向。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/pca/concept-concept-2.mp3",
+      "duration": 1.36,
+      "size": 21744,
+      "text": "第一主成分是数据方差最大的方向。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/pca/concept-concept-3.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "第二主成分是与第一主成分垂直的方向中方差最大的。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/pca/concept-concept-4.mp3",
+      "duration": 1.49,
+      "size": 23904,
+      "text": "以此类推，我们可以找到所有主成分。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "visualization",
+      "line_id": "vis-1",
+      "filename": "visualization-vis-1.mp3",
+      "path": "audio/narrations/pca/visualization-vis-1.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "让我们在二维数据上观察PCA的效果。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "visualization",
+      "line_id": "vis-2",
+      "filename": "visualization-vis-2.mp3",
+      "path": "audio/narrations/pca/visualization-vis-2.mp3",
+      "duration": 1.22,
+      "size": 19584,
+      "text": "数据点形成一个椭圆形的分布。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "visualization",
+      "line_id": "vis-3",
+      "filename": "visualization-vis-3.mp3",
+      "path": "audio/narrations/pca/visualization-vis-3.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "第一主成分指向椭圆的长轴方向。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "visualization",
+      "line_id": "vis-4",
+      "filename": "visualization-vis-4.mp3",
+      "path": "audio/narrations/pca/visualization-vis-4.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "第二主成分指向短轴方向，与第一主成分垂直。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "math",
+      "line_id": "math-1",
+      "filename": "math-math-1.mp3",
+      "path": "audio/narrations/pca/math-math-1.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "PCA的数学基础是协方差矩阵的特征分解。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "math",
+      "line_id": "math-2",
+      "filename": "math-math-2.mp3",
+      "path": "audio/narrations/pca/math-math-2.mp3",
+      "duration": 1.54,
+      "size": 24624,
+      "text": "主成分就是协方差矩阵的特征向量。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "math",
+      "line_id": "math-3",
+      "filename": "math-math-3.mp3",
+      "path": "audio/narrations/pca/math-math-3.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "特征值表示每个主成分解释的方差大小。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "math",
+      "line_id": "math-4",
+      "filename": "math-math-4.mp3",
+      "path": "audio/narrations/pca/math-math-4.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "选择前几个最大特征值对应的主成分，就实现了降维。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/pca/application-app-1.mp3",
+      "duration": 1.4,
+      "size": 22464,
+      "text": "PCA在数据科学中有广泛应用。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/pca/application-app-2.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "图像处理中，它用于人脸识别和图像压缩。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/pca/application-app-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "金融分析中，它用于识别市场的主要驱动因素。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/pca/application-app-4.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "生物信息学中，它用于分析基因表达数据。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/pca/summary-sum-1.mp3",
+      "duration": 1.31,
+      "size": 21024,
+      "text": "今天我们探索了主成分分析的原理。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/pca/summary-sum-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "PCA通过找到数据的主要变化方向来实现降维。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/pca/summary-sum-3.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "它是数据预处理和特征提取的重要工具。"
+    },
+    {
+      "script_id": "pca",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/pca/summary-sum-4.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "希望这次实验能帮助你理解降维的数学本质。"
+    }
+  ],
+  "total_duration": 39.92999999999999,
+  "total_size": 638784
 }

@@ -1,8 +1,249 @@
 {
   "script_id": "newton-method",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "voice_key": "xiaoxiao",
-  "files": [],
-  "total_duration": 0,
-  "total_size": 0
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "newton-method",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/newton-method/intro-intro-1.mp3",
+      "duration": 1.04,
+      "size": 16704,
+      "text": "欢迎来到牛顿法实验。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/newton-method/intro-intro-2.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "如何求解方程f(x)=0？对于简单的方程，我们可以用代数方法。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/newton-method/intro-intro-3.mp3",
+      "duration": 2.84,
+      "size": 45504,
+      "text": "但对于复杂的方程，比如x的五次方加x等于1，代数方法就无能为力了。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/newton-method/intro-intro-4.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "牛顿法提供了一种强大的数值求解方法。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/newton-method/concept-concept-1.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "牛顿法的核心思想是用切线来逼近曲线。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/newton-method/concept-concept-2.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "从一个初始猜测开始，画出该点的切线。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/newton-method/concept-concept-3.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "切线与x轴的交点就是下一个更好的近似。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/newton-method/concept-concept-4.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "重复这个过程，通常能快速收敛到真正的根。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "visualization",
+      "line_id": "vis-1",
+      "filename": "visualization-vis-1.mp3",
+      "path": "audio/narrations/newton-method/visualization-vis-1.mp3",
+      "duration": 1.46,
+      "size": 23328,
+      "text": "让我们在图上观察牛顿法的迭代过程。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "visualization",
+      "line_id": "vis-2",
+      "filename": "visualization-vis-2.mp3",
+      "path": "audio/narrations/newton-method/visualization-vis-2.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "红点是当前的近似值，蓝线是该点的切线。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "visualization",
+      "line_id": "vis-3",
+      "filename": "visualization-vis-3.mp3",
+      "path": "audio/narrations/newton-method/visualization-vis-3.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "切线与x轴的交点成为新的近似值。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "visualization",
+      "line_id": "vis-4",
+      "filename": "visualization-vis-4.mp3",
+      "path": "audio/narrations/newton-method/visualization-vis-4.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "注意每次迭代后，近似值如何快速接近真正的根。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "convergence",
+      "line_id": "conv-1",
+      "filename": "convergence-conv-1.mp3",
+      "path": "audio/narrations/newton-method/convergence-conv-1.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "牛顿法的收敛速度是二次的，非常快。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "convergence",
+      "line_id": "conv-2",
+      "filename": "convergence-conv-2.mp3",
+      "path": "audio/narrations/newton-method/convergence-conv-2.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "这意味着每次迭代，正确的位数大约翻倍。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "convergence",
+      "line_id": "conv-3",
+      "filename": "convergence-conv-3.mp3",
+      "path": "audio/narrations/newton-method/convergence-conv-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "但牛顿法也可能失败：如果初始点选得不好，可能不收敛。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "convergence",
+      "line_id": "conv-4",
+      "filename": "convergence-conv-4.mp3",
+      "path": "audio/narrations/newton-method/convergence-conv-4.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "在导数为零的点附近，牛顿法也会出问题。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/newton-method/application-app-1.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "牛顿法是数值计算中最重要的算法之一。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/newton-method/application-app-2.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "计算器和计算机用它来计算平方根和其他函数。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/newton-method/application-app-3.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "优化问题中，它用于寻找函数的极值点。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/newton-method/application-app-4.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "机器学习中的许多优化算法都是牛顿法的变体。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/newton-method/summary-sum-1.mp3",
+      "duration": 1.29,
+      "size": 20592,
+      "text": "今天我们探索了牛顿法的原理和应用。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/newton-method/summary-sum-2.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "它用切线逼近的思想，实现了快速的迭代求根。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/newton-method/summary-sum-3.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "虽然不是万能的，但在大多数情况下非常有效。"
+    },
+    {
+      "script_id": "newton-method",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/newton-method/summary-sum-4.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "希望这次实验能帮助你理解迭代算法的威力。"
+    }
+  ],
+  "total_duration": 41.43000000000001,
+  "total_size": 662832
 }

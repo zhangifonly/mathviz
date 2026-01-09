@@ -1,8 +1,249 @@
 {
   "script_id": "numerical-integration",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "voice_key": "xiaoxiao",
-  "files": [],
-  "total_duration": 0,
-  "total_size": 0
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "numerical-integration",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/numerical-integration/intro-intro-1.mp3",
+      "duration": 1.07,
+      "size": 17136,
+      "text": "欢迎来到数值积分实验。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/numerical-integration/intro-intro-2.mp3",
+      "duration": 1.51,
+      "size": 24192,
+      "text": "你学过定积分，知道它表示曲线下的面积。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/numerical-integration/intro-intro-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "但很多函数的积分没有解析解，或者解析解非常复杂。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/numerical-integration/intro-intro-4.mp3",
+      "duration": 1.43,
+      "size": 22896,
+      "text": "这时候，数值积分就派上用场了。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/numerical-integration/concept-concept-1.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "数值积分的基本思想是用简单图形的面积来近似曲线下的面积。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/numerical-integration/concept-concept-2.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "把积分区间分成很多小段，每段用矩形或梯形来近似。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/numerical-integration/concept-concept-3.mp3",
+      "duration": 1.25,
+      "size": 20016,
+      "text": "分得越细，近似就越精确。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/numerical-integration/concept-concept-4.mp3",
+      "duration": 1.29,
+      "size": 20592,
+      "text": "让我们来比较几种常用的方法。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "rectangle",
+      "line_id": "rect-1",
+      "filename": "rectangle-rect-1.mp3",
+      "path": "audio/narrations/numerical-integration/rectangle-rect-1.mp3",
+      "duration": 1.36,
+      "size": 21744,
+      "text": "矩形法是最简单的数值积分方法。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "rectangle",
+      "line_id": "rect-2",
+      "filename": "rectangle-rect-2.mp3",
+      "path": "audio/narrations/numerical-integration/rectangle-rect-2.mp3",
+      "duration": 1.3,
+      "size": 20736,
+      "text": "用矩形来近似每个小区间的面积。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "rectangle",
+      "line_id": "rect-3",
+      "filename": "rectangle-rect-3.mp3",
+      "path": "audio/narrations/numerical-integration/rectangle-rect-3.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "矩形的高度可以取左端点、右端点或中点的函数值。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "rectangle",
+      "line_id": "rect-4",
+      "filename": "rectangle-rect-4.mp3",
+      "path": "audio/narrations/numerical-integration/rectangle-rect-4.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "中点法通常比左端点和右端点法更精确。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "trapezoid",
+      "line_id": "trap-1",
+      "filename": "trapezoid-trap-1.mp3",
+      "path": "audio/narrations/numerical-integration/trapezoid-trap-1.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "梯形法用梯形代替矩形，更好地逼近曲线。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "trapezoid",
+      "line_id": "trap-2",
+      "filename": "trapezoid-trap-2.mp3",
+      "path": "audio/narrations/numerical-integration/trapezoid-trap-2.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "它相当于用直线连接相邻的函数值。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "trapezoid",
+      "line_id": "trap-3",
+      "filename": "trapezoid-trap-3.mp3",
+      "path": "audio/narrations/numerical-integration/trapezoid-trap-3.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "辛普森法更进一步，用抛物线来近似曲线。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "trapezoid",
+      "line_id": "trap-4",
+      "filename": "trapezoid-trap-4.mp3",
+      "path": "audio/narrations/numerical-integration/trapezoid-trap-4.mp3",
+      "duration": 1.48,
+      "size": 23616,
+      "text": "辛普森法的精度通常比梯形法高很多。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/numerical-integration/application-app-1.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "数值积分在科学计算中无处不在。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/numerical-integration/application-app-2.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "物理学中计算功、电荷、质量等物理量。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/numerical-integration/application-app-3.mp3",
+      "duration": 1.35,
+      "size": 21600,
+      "text": "统计学中计算概率分布的累积函数。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/numerical-integration/application-app-4.mp3",
+      "duration": 1.32,
+      "size": 21168,
+      "text": "工程中计算结构的应力和变形。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/numerical-integration/summary-sum-1.mp3",
+      "duration": 1.3,
+      "size": 20880,
+      "text": "今天我们探索了数值积分的基本方法。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/numerical-integration/summary-sum-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "从简单的矩形法到精确的辛普森法，各有优缺点。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/numerical-integration/summary-sum-3.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "选择合适的方法和分割数是数值积分的关键。"
+    },
+    {
+      "script_id": "numerical-integration",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/numerical-integration/summary-sum-4.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "希望这次实验能帮助你理解数值计算的基本思想。"
+    }
+  ],
+  "total_duration": 37.959999999999994,
+  "total_size": 607248
 }

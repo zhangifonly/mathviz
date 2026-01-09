@@ -1,8 +1,249 @@
 {
   "script_id": "random-walk",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "voice_key": "xiaoxiao",
-  "files": [],
-  "total_duration": 0,
-  "total_size": 0
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "random-walk",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/random-walk/intro-intro-1.mp3",
+      "duration": 1.03,
+      "size": 16416,
+      "text": "欢迎来到随机游走实验。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/random-walk/intro-intro-2.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "想象一个醉汉从酒吧出来，每一步随机向左或向右。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/random-walk/intro-intro-3.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "他最终会走到哪里？离起点有多远？"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/random-walk/intro-intro-4.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "这个看似简单的问题，蕴含着深刻的数学原理。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/random-walk/concept-concept-1.mp3",
+      "duration": 1.44,
+      "size": 23040,
+      "text": "随机游走是一系列随机步骤的累积。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/random-walk/concept-concept-2.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "在一维情况下，每一步等概率向左或向右移动一个单位。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/random-walk/concept-concept-3.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "虽然每一步是随机的，但整体行为却有规律可循。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/random-walk/concept-concept-4.mp3",
+      "duration": 1.25,
+      "size": 20016,
+      "text": "让我们通过模拟来观察这些规律。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "simulation",
+      "line_id": "sim-1",
+      "filename": "simulation-sim-1.mp3",
+      "path": "audio/narrations/random-walk/simulation-sim-1.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "屏幕上显示的是多条随机游走的轨迹。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "simulation",
+      "line_id": "sim-2",
+      "filename": "simulation-sim-2.mp3",
+      "path": "audio/narrations/random-walk/simulation-sim-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "每条轨迹都是独立的，但它们呈现出相似的统计特性。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "simulation",
+      "line_id": "sim-3",
+      "filename": "simulation-sim-3.mp3",
+      "path": "audio/narrations/random-walk/simulation-sim-3.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "注意轨迹如何在零点附近波动，但偶尔会远离。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "simulation",
+      "line_id": "sim-4",
+      "filename": "simulation-sim-4.mp3",
+      "path": "audio/narrations/random-walk/simulation-sim-4.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "随着步数增加，轨迹的扩散范围也在增大。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "statistics",
+      "line_id": "stat-1",
+      "filename": "statistics-stat-1.mp3",
+      "path": "audio/narrations/random-walk/statistics-stat-1.mp3",
+      "duration": 1.35,
+      "size": 21600,
+      "text": "随机游走的期望位置始终是起点。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "statistics",
+      "line_id": "stat-2",
+      "filename": "statistics-stat-2.mp3",
+      "path": "audio/narrations/random-walk/statistics-stat-2.mp3",
+      "duration": 1.3,
+      "size": 20880,
+      "text": "但位置的方差随步数线性增长。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "statistics",
+      "line_id": "stat-3",
+      "filename": "statistics-stat-3.mp3",
+      "path": "audio/narrations/random-walk/statistics-stat-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "这意味着典型的偏离距离与步数的平方根成正比。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "statistics",
+      "line_id": "stat-4",
+      "filename": "statistics-stat-4.mp3",
+      "path": "audio/narrations/random-walk/statistics-stat-4.mp3",
+      "duration": 1.5,
+      "size": 24048,
+      "text": "这个结果在物理学中被称为扩散定律。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/random-walk/application-app-1.mp3",
+      "duration": 1.35,
+      "size": 21600,
+      "text": "随机游走在许多领域都有重要应用。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/random-walk/application-app-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "金融学中，股票价格的短期波动可以用随机游走来建模。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/random-walk/application-app-3.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "物理学中，布朗运动就是连续时间的随机游走。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/random-walk/application-app-4.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "生态学中，它用来模拟动物的觅食行为。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/random-walk/summary-sum-1.mp3",
+      "duration": 1.37,
+      "size": 21888,
+      "text": "今天我们探索了随机游走的基本原理。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/random-walk/summary-sum-2.mp3",
+      "duration": 1.44,
+      "size": 23040,
+      "text": "随机游走展示了随机性中的规律性。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/random-walk/summary-sum-3.mp3",
+      "duration": 1.29,
+      "size": 20592,
+      "text": "它是理解更复杂随机过程的基础。"
+    },
+    {
+      "script_id": "random-walk",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/random-walk/summary-sum-4.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "希望这次实验能帮助你建立对随机现象的直觉。"
+    }
+  ],
+  "total_duration": 38.53,
+  "total_size": 616608
 }

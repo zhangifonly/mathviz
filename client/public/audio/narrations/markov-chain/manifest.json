@@ -1,8 +1,249 @@
 {
   "script_id": "markov-chain",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "voice_key": "xiaoxiao",
-  "files": [],
-  "total_duration": 0,
-  "total_size": 0
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "markov-chain",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/markov-chain/intro-intro-1.mp3",
+      "duration": 1.03,
+      "size": 16416,
+      "text": "欢迎来到马尔可夫链实验。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/markov-chain/intro-intro-2.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "你有没有想过，天气预报是如何预测明天的天气？"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/markov-chain/intro-intro-3.mp3",
+      "duration": 1.34,
+      "size": 21456,
+      "text": "或者搜索引擎是如何给网页排名的？"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/markov-chain/intro-intro-4.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "这些问题都可以用马尔可夫链来建模和解决。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/markov-chain/concept-concept-1.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "马尔可夫链是一种随机过程，下一个状态只依赖于当前状态。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/markov-chain/concept-concept-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "这个性质叫做无记忆性：过去的历史不影响未来。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/markov-chain/concept-concept-3.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "状态之间的转移概率可以用一个矩阵来表示。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/markov-chain/concept-concept-4.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "让我们通过一个简单的例子来理解这个概念。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "transition",
+      "line_id": "trans-1",
+      "filename": "transition-trans-1.mp3",
+      "path": "audio/narrations/markov-chain/transition-trans-1.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "假设天气只有晴天和雨天两种状态。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "transition",
+      "line_id": "trans-2",
+      "filename": "transition-trans-2.mp3",
+      "path": "audio/narrations/markov-chain/transition-trans-2.mp3",
+      "duration": 2.72,
+      "size": 43488,
+      "text": "如果今天是晴天，明天有70%的概率还是晴天，30%的概率变成雨天。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "transition",
+      "line_id": "trans-3",
+      "filename": "transition-trans-3.mp3",
+      "path": "audio/narrations/markov-chain/transition-trans-3.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "如果今天是雨天，明天有40%的概率变成晴天，60%的概率还是雨天。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "transition",
+      "line_id": "trans-4",
+      "filename": "transition-trans-4.mp3",
+      "path": "audio/narrations/markov-chain/transition-trans-4.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "这些概率构成了转移矩阵，决定了系统的长期行为。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "steady-state",
+      "line_id": "steady-1",
+      "filename": "steady-state-steady-1.mp3",
+      "path": "audio/narrations/markov-chain/steady-state-steady-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "经过足够长的时间，马尔可夫链会趋向一个稳态分布。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "steady-state",
+      "line_id": "steady-2",
+      "filename": "steady-state-steady-2.mp3",
+      "path": "audio/narrations/markov-chain/steady-state-steady-2.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "在稳态下，各状态的概率不再随时间变化。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "steady-state",
+      "line_id": "steady-3",
+      "filename": "steady-state-steady-3.mp3",
+      "path": "audio/narrations/markov-chain/steady-state-steady-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "稳态分布是转移矩阵的特征向量，对应特征值1。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "steady-state",
+      "line_id": "steady-4",
+      "filename": "steady-state-steady-4.mp3",
+      "path": "audio/narrations/markov-chain/steady-state-steady-4.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "这个性质使得马尔可夫链成为分析长期行为的有力工具。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/markov-chain/application-app-1.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "马尔可夫链在许多领域都有重要应用。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/markov-chain/application-app-2.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "Google的PageRank算法就是基于马尔可夫链。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/markov-chain/application-app-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "语音识别和自然语言处理大量使用隐马尔可夫模型。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/markov-chain/application-app-4.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "金融领域用它来模拟股票价格和信用评级变化。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/markov-chain/summary-sum-1.mp3",
+      "duration": 1.23,
+      "size": 19728,
+      "text": "今天我们探索了马尔可夫链的基本原理。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/markov-chain/summary-sum-2.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "马尔可夫性质简化了随机过程的分析。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/markov-chain/summary-sum-3.mp3",
+      "duration": 1.46,
+      "size": 23328,
+      "text": "稳态分布揭示了系统的长期行为。"
+    },
+    {
+      "script_id": "markov-chain",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/markov-chain/summary-sum-4.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "希望这次实验能帮助你理解随机过程的数学基础。"
+    }
+  ],
+  "total_duration": 42.4,
+  "total_size": 678384
 }

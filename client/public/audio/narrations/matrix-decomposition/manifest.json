@@ -1,8 +1,249 @@
 {
   "script_id": "matrix-decomposition",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "voice_key": "xiaoxiao",
-  "files": [],
-  "total_duration": 0,
-  "total_size": 0
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/matrix-decomposition/intro-intro-1.mp3",
+      "duration": 1.09,
+      "size": 17424,
+      "text": "欢迎来到矩阵分解实验。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/matrix-decomposition/intro-intro-2.mp3",
+      "duration": 2.38,
+      "size": 38160,
+      "text": "就像整数可以分解为质因数，矩阵也可以分解为更简单的矩阵的乘积。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/matrix-decomposition/intro-intro-3.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "这种分解揭示了矩阵的内在结构，也简化了许多计算。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/matrix-decomposition/intro-intro-4.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "今天我们将探索几种重要的矩阵分解方法。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "concept",
+      "line_id": "concept-1",
+      "filename": "concept-concept-1.mp3",
+      "path": "audio/narrations/matrix-decomposition/concept-concept-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "矩阵分解是将一个矩阵表示为几个特殊矩阵的乘积。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/matrix-decomposition/concept-concept-2.mp3",
+      "duration": 1.36,
+      "size": 21744,
+      "text": "不同的分解方法适用于不同的问题。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/matrix-decomposition/concept-concept-3.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "LU分解用于解线性方程组，QR分解用于最小二乘问题。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "concept",
+      "line_id": "concept-4",
+      "filename": "concept-concept-4.mp3",
+      "path": "audio/narrations/matrix-decomposition/concept-concept-4.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "SVD是最通用的分解，适用于任何矩阵。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "lu",
+      "line_id": "lu-1",
+      "filename": "lu-lu-1.mp3",
+      "path": "audio/narrations/matrix-decomposition/lu-lu-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "LU分解将矩阵分解为下三角矩阵L和上三角矩阵U的乘积。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "lu",
+      "line_id": "lu-2",
+      "filename": "lu-lu-2.mp3",
+      "path": "audio/narrations/matrix-decomposition/lu-lu-2.mp3",
+      "duration": 1.4,
+      "size": 22320,
+      "text": "它本质上是高斯消元法的矩阵形式。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "lu",
+      "line_id": "lu-3",
+      "filename": "lu-lu-3.mp3",
+      "path": "audio/narrations/matrix-decomposition/lu-lu-3.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "有了LU分解，解线性方程组变得非常高效。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "lu",
+      "line_id": "lu-4",
+      "filename": "lu-lu-4.mp3",
+      "path": "audio/narrations/matrix-decomposition/lu-lu-4.mp3",
+      "duration": 1.16,
+      "size": 18576,
+      "text": "只需要两次简单的回代过程。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "svd",
+      "line_id": "svd-1",
+      "filename": "svd-svd-1.mp3",
+      "path": "audio/narrations/matrix-decomposition/svd-svd-1.mp3",
+      "duration": 1.51,
+      "size": 24192,
+      "text": "SVD是最强大的矩阵分解方法。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "svd",
+      "line_id": "svd-2",
+      "filename": "svd-svd-2.mp3",
+      "path": "audio/narrations/matrix-decomposition/svd-svd-2.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "它将任意矩阵分解为三个矩阵的乘积：U、Σ和V的转置。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "svd",
+      "line_id": "svd-3",
+      "filename": "svd-svd-3.mp3",
+      "path": "audio/narrations/matrix-decomposition/svd-svd-3.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "Σ是对角矩阵，对角元素叫做奇异值。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "svd",
+      "line_id": "svd-4",
+      "filename": "svd-svd-4.mp3",
+      "path": "audio/narrations/matrix-decomposition/svd-svd-4.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "奇异值揭示了矩阵的秩和数值稳定性。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "application",
+      "line_id": "app-1",
+      "filename": "application-app-1.mp3",
+      "path": "audio/narrations/matrix-decomposition/application-app-1.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "矩阵分解在科学计算中至关重要。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "application",
+      "line_id": "app-2",
+      "filename": "application-app-2.mp3",
+      "path": "audio/narrations/matrix-decomposition/application-app-2.mp3",
+      "duration": 1.49,
+      "size": 23904,
+      "text": "推荐系统用SVD来分析用户偏好。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "application",
+      "line_id": "app-3",
+      "filename": "application-app-3.mp3",
+      "path": "audio/narrations/matrix-decomposition/application-app-3.mp3",
+      "duration": 1.41,
+      "size": 22608,
+      "text": "图像压缩用SVD来保留主要信息。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "application",
+      "line_id": "app-4",
+      "filename": "application-app-4.mp3",
+      "path": "audio/narrations/matrix-decomposition/application-app-4.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "自然语言处理用它来发现文本的潜在语义。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/matrix-decomposition/summary-sum-1.mp3",
+      "duration": 1.42,
+      "size": 22752,
+      "text": "今天我们探索了矩阵分解的基本方法。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/matrix-decomposition/summary-sum-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "从LU分解到SVD，每种方法都有其独特的应用场景。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/matrix-decomposition/summary-sum-3.mp3",
+      "duration": 1.71,
+      "size": 27360,
+      "text": "矩阵分解是理解和操作矩阵的强大工具。"
+    },
+    {
+      "script_id": "matrix-decomposition",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/matrix-decomposition/summary-sum-4.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "希望这次实验能帮助你深入理解线性代数的应用。"
+    }
+  ],
+  "total_duration": 41.46,
+  "total_size": 663696
 }
