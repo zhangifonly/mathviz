@@ -1,0 +1,322 @@
+/**
+ * 微分几何讲解稿件
+ * 适合研究生
+ */
+
+import type { NarrationScript } from '../types'
+
+export const differentialGeometryNarration: NarrationScript = {
+  id: 'differential-geometry',
+  title: '微分几何',
+  subtitle: '探索曲线与曲面的内在性质',
+  targetAge: '研究生',
+  difficulty: 'expert',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2025-01-09',
+    updatedAt: '2025-01-09',
+  },
+
+  objectives: [
+    '理解曲线的曲率和挠率概念',
+    '掌握曲面的第一基本形式和第二基本形式',
+    '理解高斯曲率和平均曲率',
+    '掌握测地线的概念和性质',
+  ],
+
+  prerequisites: [
+    '多元微积分',
+    '线性代数',
+    '向量分析',
+  ],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        {
+          id: 'intro-1',
+          text: '欢迎来到微分几何的世界！微分几何是现代数学中最优美的分支之一，它将微积分与几何学完美结合。',
+        },
+        {
+          id: 'intro-2',
+          text: '微分几何研究曲线和曲面的局部性质和整体性质，这些性质在物理学、工程学和计算机图形学中都有重要应用。',
+        },
+        {
+          id: 'intro-3',
+          text: '从爱因斯坦的广义相对论到现代计算机视觉，微分几何无处不在。让我们一起探索这个迷人的领域。',
+        },
+      ],
+    },
+    {
+      id: 'curvature',
+      type: 'concept',
+      title: '曲线的曲率',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'curvature-1',
+          text: '曲率是描述曲线弯曲程度的量。对于空间曲线，曲率 κ 定义为切向量关于弧长的变化率。',
+        },
+        {
+          id: 'curvature-2',
+          text: '直线的曲率为零，圆的曲率是其半径的倒数。曲率越大，曲线弯曲得越厉害。',
+        },
+        {
+          id: 'curvature-3',
+          text: '曲率的几何意义是：在曲线上某点处，存在一个密切圆，其半径等于曲率的倒数，称为曲率半径。',
+        },
+        {
+          id: 'curvature-4',
+          text: '对于参数曲线 r(t)，曲率可以用公式 κ = |r\' × r\'\'| / |r\'|³ 来计算。',
+        },
+      ],
+    },
+    {
+      id: 'torsion',
+      type: 'concept',
+      title: '曲线的挠率',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'torsion-1',
+          text: '挠率描述了空间曲线偏离其密切平面的程度。如果曲线是平面曲线，挠率为零。',
+        },
+        {
+          id: 'torsion-2',
+          text: '挠率 τ 定义为副法向量关于弧长的变化率在负主法向方向上的分量。',
+        },
+        {
+          id: 'torsion-3',
+          text: '曲率和挠率一起完全决定了空间曲线的形状，这就是著名的曲线基本定理。',
+        },
+      ],
+    },
+    {
+      id: 'frenet-frame',
+      type: 'formula',
+      title: 'Frenet标架',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'frenet-1',
+          text: 'Frenet标架由三个正交单位向量组成：切向量T、主法向量N和副法向量B。',
+        },
+        {
+          id: 'frenet-2',
+          text: 'Frenet-Serret公式描述了这三个向量沿曲线的变化规律，它们与曲率和挠率密切相关。',
+        },
+        {
+          id: 'frenet-3',
+          text: '这些公式是：T\' = κN，N\' = -κT + τB，B\' = -τN。这是微分几何中最基本的公式之一。',
+        },
+      ],
+    },
+    {
+      id: 'surface-basics',
+      type: 'concept',
+      title: '曲面的基本概念',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'surface-1',
+          text: '曲面可以用参数方程 r(u,v) 来表示，其中 u 和 v 是参数。',
+        },
+        {
+          id: 'surface-2',
+          text: '曲面上每一点都有一个切平面，由两个偏导数向量 r_u 和 r_v 张成。',
+        },
+        {
+          id: 'surface-3',
+          text: '单位法向量 n 垂直于切平面，定义为 n = (r_u × r_v) / |r_u × r_v|。',
+        },
+      ],
+    },
+    {
+      id: 'first-fundamental-form',
+      type: 'formula',
+      title: '第一基本形式',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'first-form-1',
+          text: '第一基本形式描述了曲面的内蕴几何性质，它定义了曲面上的度量。',
+        },
+        {
+          id: 'first-form-2',
+          text: '第一基本形式写作 I = E du² + 2F du dv + G dv²，其中 E、F、G 是第一基本量。',
+        },
+        {
+          id: 'first-form-3',
+          text: 'E = r_u · r_u，F = r_u · r_v，G = r_v · r_v。它们决定了曲面上的长度、角度和面积。',
+        },
+      ],
+    },
+    {
+      id: 'second-fundamental-form',
+      type: 'formula',
+      title: '第二基本形式',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'second-form-1',
+          text: '第二基本形式描述了曲面的外在几何性质，它度量曲面偏离切平面的程度。',
+        },
+        {
+          id: 'second-form-2',
+          text: '第二基本形式写作 II = L du² + 2M du dv + N dv²，其中 L、M、N 是第二基本量。',
+        },
+        {
+          id: 'second-form-3',
+          text: 'L = r_uu · n，M = r_uv · n，N = r_vv · n。它们与曲面的曲率密切相关。',
+        },
+      ],
+    },
+    {
+      id: 'gaussian-curvature',
+      type: 'concept',
+      title: '高斯曲率',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'gaussian-1',
+          text: '高斯曲率 K 是曲面上最重要的不变量之一，它等于两个主曲率的乘积。',
+        },
+        {
+          id: 'gaussian-2',
+          text: '高斯曲率可以用公式 K = (LN - M²) / (EG - F²) 计算。',
+        },
+        {
+          id: 'gaussian-3',
+          text: '高斯绝妙定理指出：高斯曲率是内蕴的，只依赖于第一基本形式，与曲面在空间中的嵌入方式无关。',
+        },
+        {
+          id: 'gaussian-4',
+          text: '球面的高斯曲率为正，马鞍面的高斯曲率为负，圆柱面的高斯曲率为零。',
+        },
+      ],
+    },
+    {
+      id: 'mean-curvature',
+      type: 'concept',
+      title: '平均曲率',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'mean-1',
+          text: '平均曲率 H 等于两个主曲率的平均值，它描述了曲面的平均弯曲程度。',
+        },
+        {
+          id: 'mean-2',
+          text: '平均曲率可以用公式 H = (EN - 2FM + GL) / (2(EG - F²)) 计算。',
+        },
+        {
+          id: 'mean-3',
+          text: '平均曲率为零的曲面称为极小曲面，肥皂膜就是极小曲面的物理实现。',
+        },
+      ],
+    },
+    {
+      id: 'geodesic',
+      type: 'concept',
+      title: '测地线',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'geodesic-1',
+          text: '测地线是曲面上两点之间的最短路径，它是直线在曲面上的推广。',
+        },
+        {
+          id: 'geodesic-2',
+          text: '在球面上，测地线是大圆；在圆柱面上，测地线是螺旋线或直线。',
+        },
+        {
+          id: 'geodesic-3',
+          text: '测地线满足测地线方程，其测地曲率为零。这意味着测地线在曲面上是"直"的。',
+        },
+        {
+          id: 'geodesic-4',
+          text: '测地线在导航、机器人路径规划和计算机图形学中都有重要应用。',
+        },
+      ],
+    },
+    {
+      id: 'gauss-bonnet',
+      type: 'formula',
+      title: 'Gauss-Bonnet定理',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'gauss-bonnet-1',
+          text: 'Gauss-Bonnet定理是微分几何中最深刻的定理之一，它将局部的曲率与全局的拓扑联系起来。',
+        },
+        {
+          id: 'gauss-bonnet-2',
+          text: '对于紧致曲面，定理表述为：曲面上高斯曲率的积分等于 2π 乘以欧拉示性数。',
+        },
+        {
+          id: 'gauss-bonnet-3',
+          text: '这个定理告诉我们：曲面的总曲率是一个拓扑不变量，不依赖于曲面的具体形状。',
+        },
+      ],
+    },
+    {
+      id: 'applications',
+      type: 'application',
+      title: '应用',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'applications-1',
+          text: '微分几何在广义相对论中扮演核心角色，时空被描述为一个四维黎曼流形。',
+        },
+        {
+          id: 'applications-2',
+          text: '在计算机图形学中，微分几何用于曲面建模、网格处理和形状分析。',
+        },
+        {
+          id: 'applications-3',
+          text: '在计算机视觉中，微分几何用于三维重建、形状识别和图像配准。',
+        },
+        {
+          id: 'applications-4',
+          text: '在机器人学中，微分几何用于运动规划和控制理论。',
+        },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'summary-1',
+          text: '微分几何为我们提供了研究曲线和曲面的强大工具。',
+        },
+        {
+          id: 'summary-2',
+          text: '曲率和挠率描述了曲线的局部性质，第一和第二基本形式描述了曲面的几何。',
+        },
+        {
+          id: 'summary-3',
+          text: '高斯曲率是内蕴的，而平均曲率是外在的。测地线是曲面上的最短路径。',
+        },
+        {
+          id: 'summary-4',
+          text: 'Gauss-Bonnet定理揭示了局部几何与全局拓扑之间的深刻联系。',
+        },
+        {
+          id: 'summary-5',
+          text: '希望这个可视化工具能帮助你更好地理解微分几何的美妙世界！',
+        },
+      ],
+    },
+  ],
+}

@@ -109,6 +109,14 @@ const MonteCarloSceneRenderer = lazy(() => import('./MonteCarlo/MonteCarloSceneR
 const PermutationCombinationSceneRenderer = lazy(() => import('./PermutationCombination/PermutationCombinationSceneRenderer'))
 // 拉普拉斯变换场景渲染器
 const LaplaceSceneRenderer = lazy(() => import('./Laplace/LaplaceSceneRenderer'))
+// 偏微分方程场景渲染器
+const PDESceneRenderer = lazy(() => import('./PDE/PDESceneRenderer'))
+// 微分几何场景渲染器
+const DifferentialGeometrySceneRenderer = lazy(() => import('./DifferentialGeometry/DifferentialGeometrySceneRenderer'))
+// 数值分析场景渲染器
+const NumericalAnalysisSceneRenderer = lazy(() => import('./NumericalAnalysis/NumericalAnalysisSceneRenderer'))
+// 密码学场景渲染器
+const CryptographySceneRenderer = lazy(() => import('./Cryptography/CryptographySceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -156,6 +164,10 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'monte-carlo': MonteCarloSceneRenderer,
   'permutation-combination': PermutationCombinationSceneRenderer,
   'laplace': LaplaceSceneRenderer,
+  'pde': PDESceneRenderer,
+  'differential-geometry': DifferentialGeometrySceneRenderer,
+  'numerical-analysis': NumericalAnalysisSceneRenderer,
+  'cryptography': CryptographySceneRenderer,
 }
 
 // 获取场景渲染器

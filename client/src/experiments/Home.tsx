@@ -566,6 +566,50 @@ const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/differential-geometry',
+    title: '微分几何',
+    description: '探索曲线与曲面的内在性质，学习 Frenet 标架、高斯曲率和测地线。',
+    icon: '🌀',
+    difficulty: 'expert',
+    ageRange: '研究生',
+    topics: ['geometry', 'calculus'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
+  {
+    path: '/pde',
+    title: '偏微分方程',
+    description: '探索多变量函数的微分方程，包括拉普拉斯方程、波动方程和热传导方程。',
+    icon: '∂',
+    difficulty: 'expert',
+    ageRange: '研究生',
+    topics: ['calculus', 'applied'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
+  {
+    path: '/numerical-analysis',
+    title: '数值分析',
+    description: '学习数值计算的核心方法，包括误差分析、数值稳定性和迭代算法。',
+    icon: '🔢',
+    difficulty: 'advanced',
+    ageRange: '大学',
+    topics: ['applied', 'calculus'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
+  {
+    path: '/cryptography',
+    title: '密码学基础',
+    description: '探索现代密码学的数学基础，包括 RSA、椭圆曲线和哈希函数。',
+    icon: '🔐',
+    difficulty: 'advanced',
+    ageRange: '大学',
+    topics: ['discrete', 'applied'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]
 
 // 按难度分组
@@ -753,40 +797,6 @@ export default function Home() {
           <p className="text-slate-500 text-sm md:text-base">尝试调整筛选条件或搜索关键词</p>
         </div>
       )}
-
-      {/* 即将推出 - 更精美的设计 */}
-      <section className="mt-12 md:mt-16 relative overflow-hidden rounded-2xl md:rounded-3xl bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 p-5 md:p-8">
-        {/* 装饰性背景 */}
-        <div className="absolute top-0 right-0 w-48 md:w-64 h-48 md:h-64 bg-gradient-to-br from-indigo-200/30 to-purple-200/30 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-32 md:w-48 h-32 md:h-48 bg-gradient-to-br from-pink-200/30 to-rose-200/30 rounded-full blur-3xl" />
-
-        <div className="relative">
-          <div className="flex items-center gap-3 mb-5 md:mb-6">
-            <div className="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center shadow-lg shadow-indigo-500/30">
-              <span className="text-lg md:text-xl">🚀</span>
-            </div>
-            <h2 className="text-xl md:text-2xl font-bold text-slate-800">即将推出</h2>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-            {[
-              { title: '微分几何', level: '专业级', icon: '🌀' },
-              { title: '偏微分方程', level: '专业级', icon: '∂' },
-              { title: '数值分析', level: '高级', icon: '🔢' },
-              { title: '密码学基础', level: '高级', icon: '🔐' },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="bg-white/70 backdrop-blur-sm rounded-xl p-3 md:p-4 border border-white/50 shadow-sm hover:shadow-md hover:bg-white/90 transition-all duration-300"
-              >
-                <span className="text-xl md:text-2xl">{item.icon}</span>
-                <h3 className="font-semibold text-slate-700 mt-2 text-sm md:text-base">{item.title}</h3>
-                <span className="text-xs text-slate-500">{item.level}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

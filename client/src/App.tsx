@@ -47,6 +47,10 @@ import PythagoreanExperiment from './experiments/pythagorean/PythagoreanExperime
 import ConicSectionsExperiment from './experiments/conic-sections/ConicSectionsExperiment'
 import PermutationCombinationExperiment from './experiments/permutation-combination/PermutationCombinationExperiment'
 import LaplaceExperiment from './experiments/laplace/LaplaceExperiment'
+import DifferentialGeometryExperiment from './experiments/differential-geometry/DifferentialGeometryExperiment'
+import PDEExperiment from './experiments/pde/PDEExperiment'
+import NumericalAnalysisExperiment from './experiments/numerical-analysis/NumericalAnalysisExperiment'
+import CryptographyExperiment from './experiments/cryptography/CryptographyExperiment'
 import BugAdminPage from './pages/BugAdminPage'
 
 export default function App() {
@@ -101,6 +105,10 @@ export default function App() {
           <Route path="conic-sections" element={<ConicSectionsExperiment />} />
           <Route path="permutation-combination" element={<PermutationCombinationExperiment />} />
           <Route path="laplace" element={<LaplaceExperiment />} />
+          <Route path="differential-geometry" element={<DifferentialGeometryExperiment />} />
+          <Route path="pde" element={<PDEExperiment />} />
+          <Route path="numerical-analysis" element={<NumericalAnalysisExperiment />} />
+          <Route path="cryptography" element={<CryptographyExperiment />} />
         </Route>
         <Route path="/admin" element={<BugAdminPage />} />
       </Routes>

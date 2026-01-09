@@ -1,0 +1,442 @@
+/**
+ * 密码学基础讲解稿件
+ * 适合大学
+ */
+
+import type { NarrationScript } from '../types'
+
+export const cryptographyNarration: NarrationScript = {
+  id: 'cryptography',
+  title: '密码学基础',
+  subtitle: '探索信息安全的数学原理',
+  targetAge: '大学',
+  difficulty: 'advanced',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2025-01-09',
+    updatedAt: '2025-01-09',
+  },
+
+  objectives: [
+    '理解密码学的基本概念和历史发展',
+    '掌握凯撒密码、替换密码等经典加密方法',
+    '理解模运算在密码学中的应用',
+    '了解RSA公钥密码系统的数学原理',
+    '认识哈希函数的特性和应用',
+  ],
+
+  prerequisites: [
+    '基础数论知识',
+    '模运算',
+    '质数和互质概念',
+  ],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        {
+          id: 'intro-1',
+          text: '欢迎来到密码学的世界！密码学是研究如何在不安全的环境中安全地传递信息的科学。',
+        },
+        {
+          id: 'intro-2',
+          text: '从古代的凯撒密码到现代的RSA加密，密码学一直在保护着我们的信息安全。',
+        },
+        {
+          id: 'intro-3',
+          text: '在数字时代，密码学更是无处不在：网上银行、电子邮件、即时通讯，都依赖于密码学技术。',
+        },
+        {
+          id: 'intro-4',
+          text: '今天，我们将通过可视化的方式，探索密码学背后的数学原理。',
+        },
+      ],
+    },
+    {
+      id: 'history',
+      type: 'concept',
+      title: '密码学简史',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'history-1',
+          text: '密码学有着悠久的历史。早在公元前，人们就开始使用密码来保护军事和政治信息。',
+        },
+        {
+          id: 'history-2',
+          text: '古典密码学主要使用替换和置换的方法。这些方法简单但容易被破解。',
+        },
+        {
+          id: 'history-3',
+          text: '现代密码学始于20世纪70年代，公钥密码系统的发明彻底改变了密码学的面貌。',
+        },
+        {
+          id: 'history-4',
+          text: '今天的密码学建立在坚实的数学基础之上，包括数论、代数和计算复杂性理论。',
+        },
+      ],
+    },
+    {
+      id: 'caesar-cipher',
+      type: 'formula',
+      title: '凯撒密码',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'caesar-1',
+          text: '凯撒密码是最简单的替换密码之一，据说由古罗马的凯撒大帝使用。',
+        },
+        {
+          id: 'caesar-2',
+          text: '加密方法很简单：将明文中的每个字母在字母表中向后移动固定的位数。',
+        },
+        {
+          id: 'caesar-3',
+          text: '数学上，如果我们把字母A到Z映射为数字0到25，加密公式就是：密文等于明文加上密钥，再对26取模。',
+          formula: 'C = (P + k) \\bmod 26',
+        },
+        {
+          id: 'caesar-4',
+          text: '解密则是反向操作：明文等于密文减去密钥，再对26取模。',
+          formula: 'P = (C - k) \\bmod 26',
+        },
+        {
+          id: 'caesar-5',
+          text: '凯撒密码虽然简单，但它引入了密码学的核心概念：密钥。只有知道密钥的人才能解密信息。',
+        },
+        {
+          id: 'caesar-6',
+          text: '然而，凯撒密码只有26种可能的密钥，很容易通过暴力破解。',
+        },
+      ],
+    },
+    {
+      id: 'frequency-analysis',
+      type: 'concept',
+      title: '频率分析',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'frequency-1',
+          text: '破解简单替换密码的经典方法是频率分析。',
+        },
+        {
+          id: 'frequency-2',
+          text: '在任何语言中，不同字母出现的频率是不同的。例如，在英语中，字母E出现的频率最高。',
+        },
+        {
+          id: 'frequency-3',
+          text: '通过统计密文中各字母的出现频率，并与语言的标准频率对比，可以推测出替换规则。',
+        },
+        {
+          id: 'frequency-4',
+          text: '这种攻击方法说明，简单的替换密码无法抵抗统计分析。',
+        },
+      ],
+    },
+    {
+      id: 'modular-arithmetic',
+      type: 'formula',
+      title: '模运算',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'modular-1',
+          text: '模运算是现代密码学的基础数学工具。',
+        },
+        {
+          id: 'modular-2',
+          text: '模运算就是求余数。a模n等于a除以n的余数。',
+          formula: 'a \\bmod n = r, \\text{ 其中 } 0 \\leq r < n',
+        },
+        {
+          id: 'modular-3',
+          text: '模运算有许多重要性质。例如，加法和乘法在模运算下是封闭的。',
+          formula: '(a + b) \\bmod n = ((a \\bmod n) + (b \\bmod n)) \\bmod n',
+        },
+        {
+          id: 'modular-4',
+          text: '模逆元是密码学中的关键概念。如果a乘以b模n等于1，我们说b是a在模n下的逆元。',
+          formula: 'a \\cdot b \\equiv 1 \\pmod{n}',
+        },
+        {
+          id: 'modular-5',
+          text: '只有当a和n互质时，a才有模逆元。这个性质在RSA加密中起着核心作用。',
+        },
+      ],
+    },
+    {
+      id: 'rsa-basics',
+      type: 'formula',
+      title: 'RSA加密原理',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'rsa-1',
+          text: 'RSA是最著名的公钥密码系统，由Rivest、Shamir和Adleman在1977年提出。',
+        },
+        {
+          id: 'rsa-2',
+          text: 'RSA的安全性基于大整数分解的困难性。将两个大质数相乘很容易，但将乘积分解回质数却非常困难。',
+        },
+        {
+          id: 'rsa-3',
+          text: 'RSA密钥生成的第一步是选择两个大质数p和q，计算它们的乘积n。',
+          formula: 'n = p \\cdot q',
+        },
+        {
+          id: 'rsa-4',
+          text: '然后计算欧拉函数φ(n)，它等于p减1乘以q减1。',
+          formula: '\\phi(n) = (p-1)(q-1)',
+        },
+        {
+          id: 'rsa-5',
+          text: '选择一个与φ(n)互质的整数e作为公钥指数，通常选择65537。',
+          formula: '\\gcd(e, \\phi(n)) = 1',
+        },
+        {
+          id: 'rsa-6',
+          text: '计算e在模φ(n)下的逆元d，这就是私钥指数。',
+          formula: 'd \\cdot e \\equiv 1 \\pmod{\\phi(n)}',
+        },
+        {
+          id: 'rsa-7',
+          text: '加密时，将明文M的e次方对n取模，得到密文C。',
+          formula: 'C = M^e \\bmod n',
+        },
+        {
+          id: 'rsa-8',
+          text: '解密时，将密文C的d次方对n取模，恢复明文M。',
+          formula: 'M = C^d \\bmod n',
+        },
+        {
+          id: 'rsa-9',
+          text: 'RSA的巧妙之处在于：公钥(n, e)可以公开，但只有知道私钥d的人才能解密。',
+        },
+      ],
+    },
+    {
+      id: 'rsa-example',
+      type: 'example',
+      title: 'RSA示例',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'rsa-example-1',
+          text: '让我们通过一个简单的例子来理解RSA。选择两个小质数：p等于61，q等于53。',
+        },
+        {
+          id: 'rsa-example-2',
+          text: '计算n等于61乘以53，等于3233。',
+        },
+        {
+          id: 'rsa-example-3',
+          text: '计算φ(n)等于60乘以52，等于3120。',
+        },
+        {
+          id: 'rsa-example-4',
+          text: '选择e等于17，它与3120互质。',
+        },
+        {
+          id: 'rsa-example-5',
+          text: '计算d，使得17乘以d模3120等于1，得到d等于2753。',
+        },
+        {
+          id: 'rsa-example-6',
+          text: '现在，公钥是(3233, 17)，私钥是(3233, 2753)。',
+        },
+        {
+          id: 'rsa-example-7',
+          text: '假设明文M等于123，加密：123的17次方模3233等于855。',
+        },
+        {
+          id: 'rsa-example-8',
+          text: '解密：855的2753次方模3233等于123，成功恢复明文！',
+        },
+      ],
+    },
+    {
+      id: 'hash-functions',
+      type: 'formula',
+      title: '哈希函数',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'hash-1',
+          text: '哈希函数是密码学的另一个重要工具。它将任意长度的输入映射为固定长度的输出。',
+        },
+        {
+          id: 'hash-2',
+          text: '密码学哈希函数必须满足三个关键性质：单向性、抗碰撞性和雪崩效应。',
+        },
+        {
+          id: 'hash-3',
+          text: '单向性意味着从哈希值反推原始输入在计算上是不可行的。',
+        },
+        {
+          id: 'hash-4',
+          text: '抗碰撞性意味着找到两个不同的输入产生相同的哈希值在计算上是不可行的。',
+        },
+        {
+          id: 'hash-5',
+          text: '雪崩效应意味着输入的微小变化会导致哈希值的巨大变化。',
+        },
+        {
+          id: 'hash-6',
+          text: '常见的哈希函数包括MD5、SHA-1和SHA-256。其中SHA-256是目前最安全的选择。',
+        },
+      ],
+    },
+    {
+      id: 'hash-applications',
+      type: 'application',
+      title: '哈希函数的应用',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'hash-app-1',
+          text: '哈希函数在密码学中有广泛的应用。',
+        },
+        {
+          id: 'hash-app-2',
+          text: '密码存储：系统不存储用户的明文密码，而是存储密码的哈希值。验证时比较哈希值即可。',
+        },
+        {
+          id: 'hash-app-3',
+          text: '数字签名：对消息的哈希值进行签名，而不是对整个消息签名，提高效率。',
+        },
+        {
+          id: 'hash-app-4',
+          text: '完整性校验：通过比较文件的哈希值，可以验证文件是否被篡改。',
+        },
+        {
+          id: 'hash-app-5',
+          text: '区块链：比特币等区块链技术大量使用哈希函数来保证数据的不可篡改性。',
+        },
+      ],
+    },
+    {
+      id: 'symmetric-vs-asymmetric',
+      type: 'concept',
+      title: '对称与非对称加密',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'symmetric-1',
+          text: '密码系统分为两大类：对称加密和非对称加密。',
+        },
+        {
+          id: 'symmetric-2',
+          text: '对称加密使用相同的密钥进行加密和解密。凯撒密码就是一种对称加密。',
+        },
+        {
+          id: 'symmetric-3',
+          text: '对称加密的优点是速度快，缺点是密钥分发困难。如何安全地将密钥传递给对方？',
+        },
+        {
+          id: 'symmetric-4',
+          text: '非对称加密使用一对密钥：公钥用于加密，私钥用于解密。RSA就是非对称加密。',
+        },
+        {
+          id: 'symmetric-5',
+          text: '非对称加密解决了密钥分发问题，但速度较慢。',
+        },
+        {
+          id: 'symmetric-6',
+          text: '实际应用中，通常结合两者：用非对称加密传递对称密钥，然后用对称加密传递数据。',
+        },
+      ],
+    },
+    {
+      id: 'applications',
+      type: 'application',
+      title: '密码学应用',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'applications-1',
+          text: '密码学在现代社会中无处不在。',
+        },
+        {
+          id: 'applications-2',
+          text: 'HTTPS协议使用SSL/TLS加密，保护网页浏览的安全。每次你看到地址栏的小锁图标，就是密码学在工作。',
+        },
+        {
+          id: 'applications-3',
+          text: '电子支付系统使用密码学保护交易信息，确保资金安全。',
+        },
+        {
+          id: 'applications-4',
+          text: '即时通讯软件使用端到端加密，保护聊天内容的隐私。',
+        },
+        {
+          id: 'applications-5',
+          text: '数字货币如比特币，其整个系统都建立在密码学基础之上。',
+        },
+        {
+          id: 'applications-6',
+          text: '电子投票、数字版权保护、身份认证，都依赖于密码学技术。',
+        },
+      ],
+    },
+    {
+      id: 'quantum-threat',
+      type: 'concept',
+      title: '量子计算的威胁',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'quantum-1',
+          text: '量子计算机的发展给现代密码学带来了新的挑战。',
+        },
+        {
+          id: 'quantum-2',
+          text: 'Shor算法可以在量子计算机上高效地分解大整数，这意味着RSA加密将不再安全。',
+        },
+        {
+          id: 'quantum-3',
+          text: '为了应对量子威胁，密码学家正在开发后量子密码学，寻找量子计算机也难以破解的加密方法。',
+        },
+        {
+          id: 'quantum-4',
+          text: '格密码、基于编码的密码、多变量密码等，都是后量子密码学的研究方向。',
+        },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto' },
+      lines: [
+        {
+          id: 'summary-1',
+          text: '密码学是信息安全的基石，它保护着我们的数字生活。',
+        },
+        {
+          id: 'summary-2',
+          text: '从简单的凯撒密码到复杂的RSA系统，密码学经历了漫长的发展历程。',
+        },
+        {
+          id: 'summary-3',
+          text: '现代密码学建立在坚实的数学基础之上，包括数论、代数和计算复杂性理论。',
+        },
+        {
+          id: 'summary-4',
+          text: '理解密码学的基本原理，不仅能帮助我们更好地保护信息安全，也能让我们欣赏数学之美。',
+        },
+        {
+          id: 'summary-5',
+          text: '希望这个可视化工具能帮助你更好地理解密码学的奥秘！',
+        },
+      ],
+    },
+  ],
+}
