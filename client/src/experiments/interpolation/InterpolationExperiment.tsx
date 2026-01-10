@@ -82,7 +82,7 @@ export default function InterpolationExperiment() {
   }, [points])
 
   // 线性插值
-  const linearInterpolation = (x: number): number => {
+  const linearInterpolation = useCallback((x: number): number => {
     if (sortedPoints.length < 2) return 0
 
     for (let i = 0; i < sortedPoints.length - 1; i++) {
@@ -100,10 +100,10 @@ export default function InterpolationExperiment() {
     const n = sortedPoints.length
     const t = (x - sortedPoints[n - 2].x) / (sortedPoints[n - 1].x - sortedPoints[n - 2].x)
     return sortedPoints[n - 2].y + t * (sortedPoints[n - 1].y - sortedPoints[n - 2].y)
-  }
+  }, [sortedPoints])
 
   // 拉格朗日插值
-  const lagrangeInterpolation = (x: number): number => {
+  const lagrangeInterpolation = useCallback((x: number): number => {
     let result = 0
     const n = sortedPoints.length
 
@@ -118,7 +118,7 @@ export default function InterpolationExperiment() {
     }
 
     return result
-  }
+  }, [sortedPoints])
 
   // 牛顿插值（差商）
   const newtonInterpolation = useMemo(() => {
@@ -157,7 +157,26 @@ export default function InterpolationExperiment() {
   // 三次样条插值（自然边界条件）
   const splineInterpolation = useMemo(() => {
     const n = sortedPoints.length
-    if (n < 3) return { evaluate: linearInterpolation }
+    if (n < 3) {
+      return {
+        evaluate: (x: number): number => {
+          if (sortedPoints.length < 2) return 0
+          for (let i = 0; i < sortedPoints.length - 1; i++) {
+            if (x >= sortedPoints[i].x && x <= sortedPoints[i + 1].x) {
+              const t = (x - sortedPoints[i].x) / (sortedPoints[i + 1].x - sortedPoints[i].x)
+              return sortedPoints[i].y + t * (sortedPoints[i + 1].y - sortedPoints[i].y)
+            }
+          }
+          if (x < sortedPoints[0].x) {
+            const t = (x - sortedPoints[0].x) / (sortedPoints[1].x - sortedPoints[0].x)
+            return sortedPoints[0].y + t * (sortedPoints[1].y - sortedPoints[0].y)
+          }
+          const lastIdx = sortedPoints.length
+          const t = (x - sortedPoints[lastIdx - 2].x) / (sortedPoints[lastIdx - 1].x - sortedPoints[lastIdx - 2].x)
+          return sortedPoints[lastIdx - 2].y + t * (sortedPoints[lastIdx - 1].y - sortedPoints[lastIdx - 2].y)
+        }
+      }
+    }
 
     const h: number[] = []
     const alpha: number[] = [0]
@@ -247,7 +266,7 @@ export default function InterpolationExperiment() {
     }
 
     return { x, y }
-  }, [sortedPoints, method, newtonInterpolation, splineInterpolation])
+  }, [sortedPoints, method, newtonInterpolation, splineInterpolation, linearInterpolation, lagrangeInterpolation])
 
   // 计算插值点的值
   const evalResult = useMemo(() => {
@@ -261,7 +280,7 @@ export default function InterpolationExperiment() {
       case 'spline':
         return splineInterpolation.evaluate(evalX)
     }
-  }, [method, evalX, newtonInterpolation, splineInterpolation])
+  }, [method, evalX, newtonInterpolation, splineInterpolation, linearInterpolation, lagrangeInterpolation])
 
   // 拉格朗日基函数
   const lagrangeBasis = useMemo(() => {

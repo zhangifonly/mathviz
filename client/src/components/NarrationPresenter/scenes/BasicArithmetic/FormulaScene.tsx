@@ -21,13 +21,14 @@ export default function FormulaScene({ operation, num1, num2 }: Props) {
         return `${num1} - ${num2} = ${Math.max(0, num1 - num2)}`
       case 'multiplication':
         return `${num1} \\times ${num2} = ${num1 * num2}`
-      case 'division':
+      case 'division': {
         if (num2 === 0) return '\\text{除数不能为 0}'
         const q = Math.floor(num1 / num2)
         const r = num1 % num2
         return r > 0
           ? `${num1} \\div ${num2} = ${q} \\cdots ${r}`
           : `${num1} \\div ${num2} = ${q}`
+      }
     }
   }
 

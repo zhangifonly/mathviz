@@ -9,6 +9,21 @@ interface Point {
   y: number
 }
 
+// 计算贝塞尔曲线上的点（递归函数）
+function bezierPoint(points: Point[], t: number): Point {
+  if (points.length === 1) return points[0]
+
+  const newPoints: Point[] = []
+  for (let i = 0; i < points.length - 1; i++) {
+    newPoints.push({
+      x: (1 - t) * points[i].x + t * points[i + 1].x,
+      y: (1 - t) * points[i].y + t * points[i + 1].y,
+    })
+  }
+
+  return bezierPoint(newPoints, t)
+}
+
 export default function BezierExperiment() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [controlPoints, setControlPoints] = useState<Point[]>([
@@ -50,21 +65,6 @@ export default function BezierExperiment() {
     }
     setShowPresenter(false)
   }, [narration])
-
-  // 计算贝塞尔曲线上的点
-  const bezierPoint = (points: Point[], t: number): Point => {
-    if (points.length === 1) return points[0]
-
-    const newPoints: Point[] = []
-    for (let i = 0; i < points.length - 1; i++) {
-      newPoints.push({
-        x: (1 - t) * points[i].x + t * points[i + 1].x,
-        y: (1 - t) * points[i].y + t * points[i + 1].y,
-      })
-    }
-
-    return bezierPoint(newPoints, t)
-  }
 
   // 计算所有中间层的点（用于可视化构造过程）
   const constructionLayers = useMemo(() => {

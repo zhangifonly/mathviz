@@ -120,6 +120,7 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
 
   // 用 ref 跟踪是否应该自动播放下一行
   const shouldAutoPlayRef = useRef(false)
+  const playLineRef = useRef<((sectionIdx: number, lineIdx: number) => Promise<void>) | null>(null)
 
   // 播放指定行
   const playLine = useCallback(async (sectionIdx: number, lineIdx: number) => {
@@ -196,7 +197,11 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
           progress: 0,
         }))
         // 延迟播放下一行
-        setTimeout(() => playLine(sectionIdx, nextLineIdx), 100)
+        setTimeout(() => {
+          if (playLineRef.current) {
+            playLineRef.current(sectionIdx, nextLineIdx)
+          }
+        }, 100)
       } else {
         // 当前段落结束，播放下一段落
         const nextSectionIdx = sectionIdx + 1
@@ -208,7 +213,11 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
             progress: 0,
             completedSections: new Set([...prev.completedSections, sectionIdx]),
           }))
-          setTimeout(() => playLine(nextSectionIdx, 0), 100)
+          setTimeout(() => {
+            if (playLineRef.current) {
+              playLineRef.current(nextSectionIdx, 0)
+            }
+          }, 100)
         } else {
           // 全部播放完成
           setPlaybackState(prev => ({
@@ -233,7 +242,11 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
           ...prev,
           currentLineIndex: nextLineIdx,
         }))
-        setTimeout(() => playLine(sectionIdx, nextLineIdx), 100)
+        setTimeout(() => {
+          if (playLineRef.current) {
+            playLineRef.current(sectionIdx, nextLineIdx)
+          }
+        }, 100)
       }
     })
 
@@ -244,6 +257,11 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
       console.error('播放失败:', err, audioPath)
     }
   }, [script, manifest, playbackRate, getAudioPath, triggerAnimation])
+
+  // 更新 ref
+  useEffect(() => {
+    playLineRef.current = playLine
+  }, [playLine])
 
   // 加载稿件
   const loadScript = useCallback(async (newScript: NarrationScript) => {
@@ -454,10 +472,15 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
       if (playbackState.isPlaying && audioRef.current) {
         audioRef.current.pause()
         audioRef.current = null
-        playLine(playbackState.currentSectionIndex, playbackState.currentLineIndex)
+        // 使用 setTimeout 避免在 effect 中同步调用 setState
+        setTimeout(() => {
+          if (playLineRef.current) {
+            playLineRef.current(playbackState.currentSectionIndex, playbackState.currentLineIndex)
+          }
+        }, 0)
       }
     }
-  }, [voice, playbackState.isPlaying, playbackState.currentSectionIndex, playbackState.currentLineIndex, playLine])
+  }, [voice, playbackState.isPlaying, playbackState.currentSectionIndex, playbackState.currentLineIndex])
 
   // 设置播放速度
   const setPlaybackRate = useCallback((rate: number) => {
@@ -506,6 +529,8 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
   )
 }
 
+// Hooks
+// eslint-disable-next-line react-refresh/only-export-components
 export function useNarration() {
   const context = useContext(NarrationContext)
   if (!context) {
@@ -514,6 +539,7 @@ export function useNarration() {
   return context
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useNarrationOptional() {
   return useContext(NarrationContext)
 }

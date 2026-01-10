@@ -3,7 +3,7 @@
  * 渲染控制点、de Casteljau 算法、不同阶数的贝塞尔曲线等可视化
  */
 
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import type { SceneRendererProps } from '../SceneRendererFactory'
 import MathFormula from '../../../../components/MathFormula/MathFormula'
 
@@ -44,11 +44,24 @@ function ControlPointsScene({
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [t, setT] = useState(0)
-  const [controlPoints, setControlPoints] = useState<Point[]>([])
   const [draggingIndex, setDraggingIndex] = useState<number | null>(null)
 
-  // 初始化控制点
-  useEffect(() => {
+  // 计算贝塞尔曲线上的点
+  const bezierPoint = useCallback(function calculateBezierPoint(points: Point[], t: number): Point {
+    if (points.length === 1) return points[0]
+
+    const newPoints: Point[] = []
+    for (let i = 0; i < points.length - 1; i++) {
+      newPoints.push({
+        x: (1 - t) * points[i].x + t * points[i + 1].x,
+        y: (1 - t) * points[i].y + t * points[i + 1].y,
+      })
+    }
+    return calculateBezierPoint(newPoints, t)
+  }, [])
+
+  // 初始化控制点 - 使用 useMemo 而不是 useEffect
+  const controlPoints = useMemo(() => {
     const width = 600
     const height = 400
     const padding = 80
@@ -59,8 +72,15 @@ function ControlPointsScene({
       const y = height / 2 + (Math.sin(i * Math.PI / degree) * 80) * (i % 2 === 0 ? 1 : -1)
       points.push({ x, y })
     }
-    setControlPoints(points)
+    return points
   }, [degree])
+
+  const [localControlPoints, setLocalControlPoints] = useState<Point[]>([])
+
+  // 同步 controlPoints 到 localControlPoints
+  useEffect(() => {
+    setLocalControlPoints(controlPoints)
+  }, [controlPoints])
 
   // 动画
   useEffect(() => {
@@ -75,20 +95,6 @@ function ControlPointsScene({
     return () => clearInterval(timer)
   }, [animate])
 
-  // 计算贝塞尔曲线上的点
-  const bezierPoint = useCallback((points: Point[], t: number): Point => {
-    if (points.length === 1) return points[0]
-
-    const newPoints: Point[] = []
-    for (let i = 0; i < points.length - 1; i++) {
-      newPoints.push({
-        x: (1 - t) * points[i].x + t * points[i + 1].x,
-        y: (1 - t) * points[i].y + t * points[i + 1].y,
-      })
-    }
-    return bezierPoint(newPoints, t)
-  }, [])
-
   // 鼠标事件处理
   const handleMouseDown = useCallback((e: React.MouseEvent<HTMLCanvasElement>) => {
     if (!interactive) return
@@ -101,15 +107,15 @@ function ControlPointsScene({
     const y = e.clientY - rect.top
 
     // 检查是否点击了控制点
-    for (let i = 0; i < controlPoints.length; i++) {
-      const dx = x - controlPoints[i].x
-      const dy = y - controlPoints[i].y
+    for (let i = 0; i < localControlPoints.length; i++) {
+      const dx = x - localControlPoints[i].x
+      const dy = y - localControlPoints[i].y
       if (Math.sqrt(dx * dx + dy * dy) < 10) {
         setDraggingIndex(i)
         break
       }
     }
-  }, [interactive, controlPoints])
+  }, [interactive, localControlPoints])
 
   const handleMouseMove = useCallback((e: React.MouseEvent<HTMLCanvasElement>) => {
     if (draggingIndex === null) return
@@ -121,7 +127,7 @@ function ControlPointsScene({
     const x = e.clientX - rect.left
     const y = e.clientY - rect.top
 
-    setControlPoints(prev => {
+    setLocalControlPoints(prev => {
       const newPoints = [...prev]
       newPoints[draggingIndex] = { x, y }
       return newPoints
@@ -135,7 +141,7 @@ function ControlPointsScene({
   // 绘制
   useEffect(() => {
     const canvas = canvasRef.current
-    if (!canvas || controlPoints.length === 0) return
+    if (!canvas || localControlPoints.length === 0) return
 
     const ctx = canvas.getContext('2d')
     if (!ctx) return
@@ -153,9 +159,9 @@ function ControlPointsScene({
       ctx.lineWidth = 1.5
       ctx.setLineDash([5, 5])
       ctx.beginPath()
-      ctx.moveTo(controlPoints[0].x, controlPoints[0].y)
-      for (let i = 1; i < controlPoints.length; i++) {
-        ctx.lineTo(controlPoints[i].x, controlPoints[i].y)
+      ctx.moveTo(localControlPoints[0].x, localControlPoints[0].y)
+      for (let i = 1; i < localControlPoints.length; i++) {
+        ctx.lineTo(localControlPoints[i].x, localControlPoints[i].y)
       }
       ctx.stroke()
       ctx.setLineDash([])
@@ -167,7 +173,7 @@ function ControlPointsScene({
     ctx.beginPath()
     for (let i = 0; i <= 100; i++) {
       const t = i / 100
-      const point = bezierPoint(controlPoints, t)
+      const point = bezierPoint(localControlPoints, t)
       if (i === 0) {
         ctx.moveTo(point.x, point.y)
       } else {
@@ -177,8 +183,8 @@ function ControlPointsScene({
     ctx.stroke()
 
     // 绘制控制点
-    controlPoints.forEach((point, i) => {
-      ctx.fillStyle = i === 0 || i === controlPoints.length - 1 ? '#ef4444' : '#3b82f6'
+    localControlPoints.forEach((point, i) => {
+      ctx.fillStyle = i === 0 || i === localControlPoints.length - 1 ? '#ef4444' : '#3b82f6'
       ctx.beginPath()
       ctx.arc(point.x, point.y, 6, 0, 2 * Math.PI)
       ctx.fill()
@@ -191,7 +197,7 @@ function ControlPointsScene({
 
     // 如果正在动画，绘制当前点
     if (animate && t > 0) {
-      const currentPoint = bezierPoint(controlPoints, t)
+      const currentPoint = bezierPoint(localControlPoints, t)
       ctx.fillStyle = '#fbbf24'
       ctx.beginPath()
       ctx.arc(currentPoint.x, currentPoint.y, 8, 0, 2 * Math.PI)
@@ -202,7 +208,7 @@ function ControlPointsScene({
       ctx.font = '14px sans-serif'
       ctx.fillText(`t = ${t.toFixed(2)}`, 20, 30)
     }
-  }, [controlPoints, showControlLines, animate, t, bezierPoint])
+  }, [localControlPoints, showControlLines, animate, t, bezierPoint])
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center gap-4">
@@ -217,7 +223,7 @@ function ControlPointsScene({
         onMouseLeave={handleMouseUp}
       />
       <p className="text-white/60 text-sm">
-        {degree} 阶贝塞尔曲线 ({controlPoints.length} 个控制点)
+        {degree} 阶贝塞尔曲线 ({localControlPoints.length} 个控制点)
         {interactive && ' - 拖动控制点调整曲线'}
       </p>
     </div>
@@ -234,35 +240,6 @@ function DeCasteljauScene({
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [t, setT] = useState(0.5)
-  const [controlPoints, setControlPoints] = useState<Point[]>([])
-
-  // 初始化控制点
-  useEffect(() => {
-    const width = 600
-    const height = 400
-    const padding = 80
-
-    const points: Point[] = []
-    for (let i = 0; i <= degree; i++) {
-      const x = padding + (width - 2 * padding) * (i / degree)
-      const y = height / 2 + (Math.sin(i * Math.PI / degree) * 80) * (i % 2 === 0 ? 1 : -1)
-      points.push({ x, y })
-    }
-    setControlPoints(points)
-  }, [degree])
-
-  // 动画
-  useEffect(() => {
-    if (!animate) return
-
-    const timer = setInterval(() => {
-      setT(prevT => {
-        const newT = prevT + 0.01
-        return newT > 1 ? 0 : newT
-      })
-    }, 50)
-    return () => clearInterval(timer)
-  }, [animate])
 
   // 计算 de Casteljau 算法的所有中间点
   const deCasteljauSteps = useCallback((points: Point[], t: number): Point[][] => {
@@ -283,6 +260,34 @@ function DeCasteljauScene({
 
     return steps
   }, [])
+
+  // 初始化控制点 - 使用 useMemo 而不是 useEffect
+  const controlPoints = useMemo(() => {
+    const width = 600
+    const height = 400
+    const padding = 80
+
+    const points: Point[] = []
+    for (let i = 0; i <= degree; i++) {
+      const x = padding + (width - 2 * padding) * (i / degree)
+      const y = height / 2 + (Math.sin(i * Math.PI / degree) * 80) * (i % 2 === 0 ? 1 : -1)
+      points.push({ x, y })
+    }
+    return points
+  }, [degree])
+
+  // 动画
+  useEffect(() => {
+    if (!animate) return
+
+    const timer = setInterval(() => {
+      setT(prevT => {
+        const newT = prevT + 0.01
+        return newT > 1 ? 0 : newT
+      })
+    }, 50)
+    return () => clearInterval(timer)
+  }, [animate])
 
   // 绘制
   useEffect(() => {
@@ -337,7 +342,7 @@ function DeCasteljauScene({
       }
 
       // 绘制点
-      points.forEach((point, _i) => {
+      points.forEach((point) => {
         ctx.fillStyle = color
         ctx.beginPath()
         const radius = level === steps.length - 1 ? 8 : 5
@@ -380,18 +385,8 @@ function DegreeScene({ animate = false }: { animate?: boolean }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [t, setT] = useState(0)
 
-  // 动画
-  useEffect(() => {
-    if (!animate) return
-
-    const timer = setInterval(() => {
-      setT(prevT => (prevT + 0.01) % 1)
-    }, 50)
-    return () => clearInterval(timer)
-  }, [animate])
-
   // 计算贝塞尔曲线上的点
-  const bezierPoint = useCallback((points: Point[], t: number): Point => {
+  const bezierPoint = useCallback(function calculateBezierPoint(points: Point[], t: number): Point {
     if (points.length === 1) return points[0]
 
     const newPoints: Point[] = []
@@ -401,8 +396,18 @@ function DegreeScene({ animate = false }: { animate?: boolean }) {
         y: (1 - t) * points[i].y + t * points[i + 1].y,
       })
     }
-    return bezierPoint(newPoints, t)
+    return calculateBezierPoint(newPoints, t)
   }, [])
+
+  // 动画
+  useEffect(() => {
+    if (!animate) return
+
+    const timer = setInterval(() => {
+      setT(prevT => (prevT + 0.01) % 1)
+    }, 50)
+    return () => clearInterval(timer)
+  }, [animate])
 
   // 绘制
   useEffect(() => {
@@ -688,35 +693,40 @@ export default function BezierSceneRenderer({ scene, isInteractive }: SceneRende
       }
       return <ControlPointsScene degree={2} />
 
-    case 'linear':
+    case 'linear': {
       const linearAnimate = lineState?.params?.animate as boolean || false
       return <ControlPointsScene degree={1} animate={linearAnimate} />
+    }
 
-    case 'quadratic':
+    case 'quadratic': {
       const quadAnimate = lineState?.params?.animate as boolean || false
       if (sceneConfig.id.includes('formula')) {
         return <FormulaScene formulaType="quadratic" />
       }
       return <ControlPointsScene degree={2} animate={quadAnimate} interactive={isInteractive} />
+    }
 
-    case 'cubic':
+    case 'cubic': {
       const cubicAnimate = lineState?.params?.animate as boolean || false
       if (sceneConfig.id.includes('formula')) {
         return <FormulaScene formulaType="cubic" />
       }
       return <ControlPointsScene degree={3} animate={cubicAnimate} interactive={isInteractive} />
+    }
 
-    case 'decasteljau':
+    case 'decasteljau': {
       const dcAnimate = lineState?.params?.animate as boolean || true
       const dcDegree = (lineState?.params?.degree as number) || 3
       if (sceneConfig.id.includes('formula')) {
         return <FormulaScene formulaType="decasteljau" />
       }
       return <DeCasteljauScene degree={dcDegree} animate={dcAnimate} />
+    }
 
-    case 'degree':
+    case 'degree': {
       const degreeAnimate = lineState?.params?.animate as boolean || false
       return <DegreeScene animate={degreeAnimate} />
+    }
 
     case 'application':
       return <ApplicationScene sceneId={sceneConfig.id} />

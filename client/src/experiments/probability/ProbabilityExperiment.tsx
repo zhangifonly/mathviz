@@ -100,17 +100,17 @@ export default function ProbabilityExperiment() {
     const animate = () => {
       setParams((prev) => {
         if (distType === 'normal') {
-          let newSigma = prev.sigma + 0.02 * animationDirection.current
+          const newSigma = prev.sigma + 0.02 * animationDirection.current
           if (newSigma > 3) animationDirection.current = -1
           if (newSigma < 0.3) animationDirection.current = 1
           return { ...prev, sigma: newSigma }
         } else if (distType === 'exponential' || distType === 'poisson') {
-          let newLambda = prev.lambda + 0.05 * animationDirection.current
+          const newLambda = prev.lambda + 0.05 * animationDirection.current
           if (newLambda > 5) animationDirection.current = -1
           if (newLambda < 0.3) animationDirection.current = 1
           return { ...prev, lambda: newLambda }
         } else if (distType === 'binomial') {
-          let newP = prev.p + 0.01 * animationDirection.current
+          const newP = prev.p + 0.01 * animationDirection.current
           if (newP > 0.9) animationDirection.current = -1
           if (newP < 0.1) animationDirection.current = 1
           return { ...prev, p: newP }
@@ -154,7 +154,7 @@ export default function ProbabilityExperiment() {
         }
         break
 
-      case 'uniform':
+      case 'uniform': {
         meanVal = (params.a + params.b) / 2
         varVal = Math.pow(params.b - params.a, 2) / 12
         const range = params.b - params.a
@@ -164,6 +164,7 @@ export default function ProbabilityExperiment() {
           yVals.push(x >= params.a && x <= params.b ? 1 / range : 0)
         }
         break
+      }
 
       case 'exponential':
         meanVal = 1 / params.lambda

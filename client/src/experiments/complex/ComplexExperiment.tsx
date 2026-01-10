@@ -141,7 +141,7 @@ export default function ComplexExperiment() {
                 { x: [0, zSum.re], y: [0, zSum.im], type: 'scatter' as const, mode: 'lines+markers' as const, name: 'z₁+z₂', line: { color: '#f59e0b', width: 3 }, marker: { size: 10 } },
                 // 乘法结果
                 { x: [0, zProduct.re], y: [0, zProduct.im], type: 'scatter' as const, mode: 'lines+markers' as const, name: 'z₁×z₂', line: { color: '#ef4444', width: 3 }, marker: { size: 10 } },
-              ] as any}
+              ] as Array<Plotly.Data>}
               layout={{
                 autosize: true,
                 height: 350,

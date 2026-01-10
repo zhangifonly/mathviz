@@ -159,12 +159,14 @@ function HarmonicScene({ waveType = 'square', maxTerms = 5 }: { waveType?: WaveT
     switch (type) {
       case 'square':
         return (4 / Math.PI) * Math.sin((2 * k - 1) * x) / (2 * k - 1)
-      case 'triangle':
+      case 'triangle': {
         const sign = Math.pow(-1, k - 1)
         return (8 / (Math.PI * Math.PI)) * sign * Math.sin((2 * k - 1) * x) / Math.pow(2 * k - 1, 2)
-      case 'sawtooth':
+      }
+      case 'sawtooth': {
         const sawSign = Math.pow(-1, k + 1)
         return (2 / Math.PI) * sawSign * Math.sin(k * x) / k
+      }
       default:
         return 0
     }
@@ -509,7 +511,7 @@ export default function FourierSeriesSceneRenderer({ scene }: SceneRendererProps
       }
       return <FormulaScene formulaType="general" />
 
-    case 'square':
+    case 'square': {
       const squareTerms = (lineState?.params?.terms as number) || 5
       if (sceneConfig.id.includes('spectrum')) {
         return <SpectrumScene waveType="square" terms={10} />
@@ -518,8 +520,9 @@ export default function FourierSeriesSceneRenderer({ scene }: SceneRendererProps
         return <HarmonicScene waveType="square" maxTerms={7} />
       }
       return <WaveformScene waveType="square" terms={squareTerms} />
+    }
 
-    case 'triangle':
+    case 'triangle': {
       const triangleTerms = (lineState?.params?.terms as number) || 5
       if (sceneConfig.id.includes('spectrum')) {
         return <SpectrumScene waveType="triangle" terms={10} />
@@ -528,8 +531,9 @@ export default function FourierSeriesSceneRenderer({ scene }: SceneRendererProps
         return <HarmonicScene waveType="triangle" maxTerms={7} />
       }
       return <WaveformScene waveType="triangle" terms={triangleTerms} />
+    }
 
-    case 'sawtooth':
+    case 'sawtooth': {
       const sawtoothTerms = (lineState?.params?.terms as number) || 5
       if (sceneConfig.id.includes('spectrum')) {
         return <SpectrumScene waveType="sawtooth" terms={10} />
@@ -538,6 +542,7 @@ export default function FourierSeriesSceneRenderer({ scene }: SceneRendererProps
         return <HarmonicScene waveType="sawtooth" maxTerms={7} />
       }
       return <WaveformScene waveType="sawtooth" terms={sawtoothTerms} />
+    }
 
     case 'spectrum':
       if (sceneConfig.id.includes('square')) {

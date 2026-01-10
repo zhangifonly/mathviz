@@ -43,6 +43,7 @@ export default function RandomWalkExperiment() {
 
   // 生成随机游走路径
   const walks = useMemo(() => {
+    /* eslint-disable react-hooks/purity */
     const allWalks: { x: number[]; y: number[] }[] = []
 
     for (let w = 0; w < numWalkers; w++) {
@@ -53,25 +54,28 @@ export default function RandomWalkExperiment() {
         let dx = 0, dy = 0
 
         switch (walkType) {
-          case '1d':
+          case '1d': {
             dx = Math.random() < 0.5 ? 1 : -1
             dy = 0
             break
+          }
 
-          case '2d':
+          case '2d': {
             const dir = Math.floor(Math.random() * 4)
             if (dir === 0) dx = 1
             else if (dir === 1) dx = -1
             else if (dir === 2) dy = 1
             else dy = -1
             break
+          }
 
-          case 'biased':
+          case 'biased': {
             dx = Math.random() < (0.5 + bias) ? 1 : -1
             dy = Math.random() < 0.5 ? 1 : -1
             break
+          }
 
-          case 'levy':
+          case 'levy': {
             // Levy flight: 偶尔有大跳跃
             const r = Math.random()
             const stepSize = r < 0.9 ? 1 : Math.floor(Math.random() * 10) + 5
@@ -79,6 +83,7 @@ export default function RandomWalkExperiment() {
             dx = stepSize * Math.cos(angle)
             dy = stepSize * Math.sin(angle)
             break
+          }
         }
 
         x.push(x[x.length - 1] + dx)
@@ -89,6 +94,7 @@ export default function RandomWalkExperiment() {
     }
 
     return allWalks
+    /* eslint-enable react-hooks/purity */
   }, [walkType, numWalkers, steps, bias])
 
   // 动画

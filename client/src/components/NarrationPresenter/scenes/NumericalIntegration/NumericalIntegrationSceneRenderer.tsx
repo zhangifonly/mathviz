@@ -41,12 +41,12 @@ function RectangleRuleScene({
   method?: 'left' | 'right' | 'midpoint'
   animate?: boolean
 }) {
-  const [currentN, setCurrentN] = useState(animate ? 2 : n)
   const a = 0, b = 2 * Math.PI
+  const initialN = animate ? 2 : n
+  const [currentN, setCurrentN] = useState(initialN)
 
   useEffect(() => {
     if (!animate) {
-      setCurrentN(n)
       return
     }
 
@@ -57,7 +57,7 @@ function RectangleRuleScene({
       })
     }, 2000)
     return () => clearInterval(timer)
-  }, [animate, n])
+  }, [animate])
 
   const data = useMemo(() => {
     const dx = (b - a) / currentN
@@ -191,12 +191,12 @@ function TrapezoidRuleScene({
   n?: number
   animate?: boolean
 }) {
-  const [currentN, setCurrentN] = useState(animate ? 2 : n)
   const a = 0, b = 2 * Math.PI
+  const initialN = animate ? 2 : n
+  const [currentN, setCurrentN] = useState(initialN)
 
   useEffect(() => {
     if (!animate) {
-      setCurrentN(n)
       return
     }
 
@@ -207,7 +207,7 @@ function TrapezoidRuleScene({
       })
     }, 2000)
     return () => clearInterval(timer)
-  }, [animate, n])
+  }, [animate])
 
   const data = useMemo(() => {
     const dx = (b - a) / currentN
@@ -323,12 +323,12 @@ function SimpsonRuleScene({
   n?: number
   animate?: boolean
 }) {
-  const [currentN, setCurrentN] = useState(animate ? 2 : n)
   const a = 0, b = 2 * Math.PI
+  const initialN = animate ? 2 : n
+  const [currentN, setCurrentN] = useState(initialN)
 
   useEffect(() => {
     if (!animate) {
-      setCurrentN(n)
       return
     }
 
@@ -339,7 +339,7 @@ function SimpsonRuleScene({
       })
     }, 2000)
     return () => clearInterval(timer)
-  }, [animate, n])
+  }, [animate])
 
   const data = useMemo(() => {
     // 辛普森法要求偶数个区间

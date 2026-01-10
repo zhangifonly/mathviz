@@ -73,12 +73,13 @@ export default function FourierSeriesExperiment() {
           }
           break
 
-        case 'pulse':
+        case 'pulse': {
           // 脉冲波 (占空比 25%)
           const d = 0.25
           a = 2 * Math.sin(n * Math.PI * d) / (n * Math.PI)
           b = 2 * (1 - Math.cos(n * Math.PI * d)) / (n * Math.PI)
           break
+        }
       }
 
       const amplitude = Math.sqrt(a * a + b * b)
@@ -359,7 +360,7 @@ export default function FourierSeriesExperiment() {
                     line: { color: '#8b5cf6', width: 2 },
                     name: `${terms}项近似`,
                   },
-                ] as any}
+                ] as Array<Plotly.Data>}
                 layout={{
                   autosize: true,
                   height: 250,
@@ -383,7 +384,7 @@ export default function FourierSeriesExperiment() {
                     type: 'bar' as const,
                     marker: { color: '#8b5cf6' },
                   },
-                ] as any}
+                ] as Array<Plotly.Data>}
                 layout={{
                   autosize: true,
                   height: 250,

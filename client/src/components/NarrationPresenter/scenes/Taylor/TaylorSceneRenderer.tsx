@@ -3,7 +3,7 @@
  * 根据场景配置渲染泰勒级数展开、函数逼近等可视化
  */
 
-import { useMemo, useState, useEffect } from 'react'
+import { useMemo, useState, useEffect, useRef } from 'react'
 import Plot from 'react-plotly.js'
 import type { Data } from 'plotly.js'
 import type { SceneRendererProps } from '../SceneRendererFactory'
@@ -40,16 +40,24 @@ function TaylorApproximationScene({
   showPolynomial?: boolean
   showError?: boolean
 }) {
-  const [currentTerms, setCurrentTerms] = useState(1)
+  const [currentTerms, setCurrentTerms] = useState(terms > 1 ? 1 : terms)
+  const prevTermsRef = useRef(terms)
 
   useEffect(() => {
-    if (terms > 1) {
-      const timer = setInterval(() => {
-        setCurrentTerms(t => (t < terms ? t + 1 : terms))
-      }, 500)
-      return () => clearInterval(timer)
-    } else {
-      setCurrentTerms(terms)
+    // 只在 terms 变化时才重置动画
+    if (terms !== prevTermsRef.current) {
+      prevTermsRef.current = terms
+
+      if (terms > 1) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setCurrentTerms(1)
+        const timer = setInterval(() => {
+          setCurrentTerms(t => (t < terms ? t + 1 : terms))
+        }, 500)
+        return () => clearInterval(timer)
+      } else {
+        setCurrentTerms(terms)
+      }
     }
   }, [terms])
 

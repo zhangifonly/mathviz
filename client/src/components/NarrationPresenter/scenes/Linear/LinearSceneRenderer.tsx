@@ -42,13 +42,12 @@ function LineScene({
   showSlopeTriangle?: boolean
   interactive?: boolean
 }) {
-  const [k, setK] = useState(slope)
-  const [b, setB] = useState(intercept)
+  // Use local state for interactive mode, otherwise use props
+  const [localK, setLocalK] = useState(slope)
+  const [localB, setLocalB] = useState(intercept)
 
-  useEffect(() => {
-    setK(slope)
-    setB(intercept)
-  }, [slope, intercept])
+  const k = interactive ? localK : slope
+  const b = interactive ? localB : intercept
 
   // 生成直线数据
   const lineData = useMemo(() => {
@@ -197,7 +196,7 @@ function LineScene({
               max="3"
               step="0.1"
               value={k}
-              onChange={(e) => setK(parseFloat(e.target.value))}
+              onChange={(e) => setLocalK(parseFloat(e.target.value))}
               className="w-full"
             />
           </div>
@@ -211,7 +210,7 @@ function LineScene({
               max="5"
               step="0.1"
               value={b}
-              onChange={(e) => setB(parseFloat(e.target.value))}
+              onChange={(e) => setLocalB(parseFloat(e.target.value))}
               className="w-full"
             />
           </div>

@@ -273,7 +273,7 @@ export default function NewtonMethodExperiment() {
                   marker: { color: '#f59e0b', size: 12, symbol: 'diamond' as const },
                   name: '下一点',
                 }] : []),
-              ] as any}
+              ] as Plotly.Data[]}
               layout={{
                 autosize: true,
                 height: 400,

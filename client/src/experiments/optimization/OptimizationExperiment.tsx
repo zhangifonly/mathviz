@@ -95,6 +95,7 @@ export default function OptimizationExperiment() {
   const [isRunning, setIsRunning] = useState(false)
   const [currentStep, setCurrentStep] = useState(0)
   const animationRef = useRef<number | null>(null)
+  const pathVersionRef = useRef(0)
 
   const func = FUNCTIONS[objective]
 
@@ -130,6 +131,16 @@ export default function OptimizationExperiment() {
     let vx = 0, vy = 0 // momentum
     let mx = 0, my = 0, vvx = 0, vvy = 0 // adam
     const beta1 = 0.9, beta2 = 0.999, eps = 1e-8
+    // Use a simple seeded random generator for deterministic results
+    const createSeededRandom = (initialSeed: number) => {
+      let seed = initialSeed
+      return () => {
+        seed = (seed * 9301 + 49297) % 233280
+        return seed / 233280
+      }
+    }
+    // eslint-disable-next-line react-hooks/refs
+    const seededRandom = createSeededRandom(pathVersionRef.current)
 
     path.push({ x, y, f: func.fn(x, y) })
 
@@ -142,14 +153,15 @@ export default function OptimizationExperiment() {
           y -= learningRate * gy
           break
 
-        case 'momentum':
+        case 'momentum': {
           vx = momentum * vx - learningRate * gx
           vy = momentum * vy - learningRate * gy
           x += vx
           y += vy
           break
+        }
 
-        case 'adam':
+        case 'adam': {
           mx = beta1 * mx + (1 - beta1) * gx
           my = beta1 * my + (1 - beta1) * gy
           vvx = beta2 * vvx + (1 - beta2) * gx * gx
@@ -161,24 +173,26 @@ export default function OptimizationExperiment() {
           x -= learningRate * mxHat / (Math.sqrt(vxHat) + eps)
           y -= learningRate * myHat / (Math.sqrt(vyHat) + eps)
           break
+        }
 
-        case 'simulated-annealing':
+        case 'simulated-annealing': {
           const T = 10 * Math.exp(-i / (iterations / 3))
-          const newX = x + (Math.random() - 0.5) * T
-          const newY = y + (Math.random() - 0.5) * T
+          const newX = x + (seededRandom() - 0.5) * T
+          const newY = y + (seededRandom() - 0.5) * T
           const delta = func.fn(newX, newY) - func.fn(x, y)
-          if (delta < 0 || Math.random() < Math.exp(-delta / T)) {
+          if (delta < 0 || seededRandom() < Math.exp(-delta / T)) {
             x = newX
             y = newY
           }
           break
+        }
 
-        case 'genetic':
+        case 'genetic': {
           // 简化的遗传算法：局部搜索
           let bestX = x, bestY = y, bestF = func.fn(x, y)
           for (let j = 0; j < 10; j++) {
-            const candX = x + (Math.random() - 0.5) * 0.5
-            const candY = y + (Math.random() - 0.5) * 0.5
+            const candX = x + (seededRandom() - 0.5) * 0.5
+            const candY = y + (seededRandom() - 0.5) * 0.5
             const candF = func.fn(candX, candY)
             if (candF < bestF) {
               bestX = candX
@@ -189,13 +203,14 @@ export default function OptimizationExperiment() {
           x = bestX
           y = bestY
           break
+        }
       }
 
       path.push({ x, y, f: func.fn(x, y) })
     }
 
     return path
-  }, [algorithm, objective, learningRate, momentum, iterations, startX, startY, func])
+  }, [algorithm, learningRate, momentum, iterations, startX, startY, func])
 
   // 动画
   useEffect(() => {

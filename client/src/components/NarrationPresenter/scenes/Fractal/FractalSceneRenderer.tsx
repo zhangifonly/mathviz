@@ -432,9 +432,10 @@ export default function FractalSceneRenderer({ scene }: SceneRendererProps) {
       }
       return <KochScene iteration={3} />
 
-    case 'koch':
+    case 'koch': {
       const iteration = lineState?.params?.iteration as number || 0
       return <KochScene iteration={iteration} />
+    }
 
     case 'mandelbrot':
       if (sceneConfig.id.includes('zoom')) {

@@ -74,18 +74,27 @@ function DiceScene() {
 
 // 大数定律场景
 function LawOfLargeNumbersScene() {
-  const [data, setData] = useState<{ n: number; avg: number }[]>([])
-
-  useEffect(() => {
+  // Generate data once on mount using useMemo with a stable dependency
+  const data = useMemo(() => {
+    // Use a seeded random approach or generate data once
+    const seed = 12345 // Fixed seed for consistent results
     let sum = 0
     const newData: { n: number; avg: number }[] = []
+
+    // Simple seeded random number generator
+    let randomSeed = seed
+    const seededRandom = () => {
+      randomSeed = (randomSeed * 9301 + 49297) % 233280
+      return randomSeed / 233280
+    }
+
     for (let i = 1; i <= 500; i++) {
-      sum += Math.random()
+      sum += seededRandom()
       if (i % 5 === 0) {
         newData.push({ n: i, avg: sum / i })
       }
     }
-    setData(newData)
+    return newData
   }, [])
 
   const canvasRef = useRef<HTMLCanvasElement>(null)

@@ -28,18 +28,42 @@ function TitleScene({ sceneId }: { sceneId: string }) {
 
 // 1D 随机游走场景
 function Walk1DScene({ numPaths = 10, steps = 100, animated = false }: { numPaths?: number; steps?: number; animated?: boolean }) {
-  const [currentStep, setCurrentStep] = useState(0)
+  const [currentStep, setCurrentStep] = useState(animated ? 0 : steps)
+  const prevAnimatedRef = useRef(animated)
+  const prevStepsRef = useRef(steps)
 
   useEffect(() => {
-    if (!animated) {
-      setCurrentStep(steps)
-      return
+    // 只在 animated 或 steps 变化时才更新
+    if (animated !== prevAnimatedRef.current || steps !== prevStepsRef.current) {
+      prevAnimatedRef.current = animated
+      prevStepsRef.current = steps
+
+      if (!animated) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setCurrentStep(steps)
+        return
+      }
+
+      setCurrentStep(0)
+      const timer = setInterval(() => {
+        setCurrentStep(s => (s < steps ? s + 1 : s))
+      }, 50)
+      return () => clearInterval(timer)
     }
-    const timer = setInterval(() => {
-      setCurrentStep(s => (s < steps ? s + 1 : s))
-    }, 50)
-    return () => clearInterval(timer)
   }, [animated, steps])
+
+  // 生成稳定的随机步骤种子（使用 useState 初始化函数）
+  const [walkSeeds] = useState(() => {
+    const seeds: number[][] = []
+    for (let p = 0; p < numPaths; p++) {
+      const pathSeed: number[] = []
+      for (let i = 0; i < steps; i++) {
+        pathSeed.push(Math.random())
+      }
+      seeds.push(pathSeed)
+    }
+    return seeds
+  })
 
   const walkData = useMemo(() => {
     const paths: Array<{ x: number[]; y: number[] }> = []
@@ -50,7 +74,7 @@ function Walk1DScene({ numPaths = 10, steps = 100, animated = false }: { numPath
       let position = 0
 
       for (let i = 1; i <= (animated ? currentStep : steps); i++) {
-        position += Math.random() < 0.5 ? -1 : 1
+        position += walkSeeds[p][i - 1] < 0.5 ? -1 : 1
         x.push(i)
         y.push(position)
       }
@@ -59,7 +83,7 @@ function Walk1DScene({ numPaths = 10, steps = 100, animated = false }: { numPath
     }
 
     return paths
-  }, [numPaths, steps, animated, currentStep])
+  }, [numPaths, steps, animated, currentStep, walkSeeds])
 
   const traces: Plotly.Data[] = walkData.map((path, i) => ({
     x: path.x,
@@ -114,6 +138,19 @@ function Walk1DScene({ numPaths = 10, steps = 100, animated = false }: { numPath
 
 // 2D 随机游走场景
 function Walk2DScene({ numPaths = 5, steps = 200 }: { numPaths?: number; steps?: number }) {
+  // 生成稳定的随机角度种子（使用 useState 初始化函数）
+  const [angleSeeds] = useState(() => {
+    const seeds: number[][] = []
+    for (let p = 0; p < numPaths; p++) {
+      const pathSeed: number[] = []
+      for (let i = 0; i < steps; i++) {
+        pathSeed.push(Math.random())
+      }
+      seeds.push(pathSeed)
+    }
+    return seeds
+  })
+
   const walkData = useMemo(() => {
     const paths: Array<{ x: number[]; y: number[] }> = []
 
@@ -124,7 +161,7 @@ function Walk2DScene({ numPaths = 5, steps = 200 }: { numPaths?: number; steps?:
       let posY = 0
 
       for (let i = 1; i <= steps; i++) {
-        const angle = Math.random() * 2 * Math.PI
+        const angle = angleSeeds[p][i - 1] * 2 * Math.PI
         posX += Math.cos(angle)
         posY += Math.sin(angle)
         x.push(posX)
@@ -135,7 +172,7 @@ function Walk2DScene({ numPaths = 5, steps = 200 }: { numPaths?: number; steps?:
     }
 
     return paths
-  }, [numPaths, steps])
+  }, [numPaths, steps, angleSeeds])
 
   const traces: Plotly.Data[] = walkData.map((path, i) => ({
     x: path.x,
@@ -213,19 +250,32 @@ function DistributionScene({ steps = 100, numWalks = 1000 }: { steps?: number; n
     return () => clearInterval(timer)
   }, [steps])
 
+  // 生成稳定的随机步骤种子（使用 useState 初始化函数）
+  const [walkSeeds] = useState(() => {
+    const seeds: number[][] = []
+    for (let w = 0; w < numWalks; w++) {
+      const walkSeed: number[] = []
+      for (let i = 0; i < steps; i++) {
+        walkSeed.push(Math.random())
+      }
+      seeds.push(walkSeed)
+    }
+    return seeds
+  })
+
   const distributionData = useMemo(() => {
     const positions: number[] = []
 
     for (let w = 0; w < numWalks; w++) {
       let position = 0
       for (let i = 0; i < currentStep; i++) {
-        position += Math.random() < 0.5 ? -1 : 1
+        position += walkSeeds[w][i] < 0.5 ? -1 : 1
       }
       positions.push(position)
     }
 
     return positions
-  }, [numWalks, currentStep])
+  }, [numWalks, currentStep, walkSeeds])
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center gap-4">
@@ -236,14 +286,14 @@ function DistributionScene({ steps = 100, numWalks = 1000 }: { steps?: number; n
         data={[
           {
             x: distributionData,
-            type: 'histogram' as const,
+            type: 'histogram',
             marker: {
               color: '#8b5cf6',
               line: { color: '#a78bfa', width: 1 },
             },
             opacity: 0.8,
             nbinsx: 30,
-          } as any,
+          } as unknown as Plotly.PlotData,
         ]}
         layout={{
           autosize: true,

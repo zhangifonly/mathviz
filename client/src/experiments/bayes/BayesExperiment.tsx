@@ -292,7 +292,7 @@ export default function BayesExperiment() {
                   line: { color: '#94a3b8', dash: 'dot' },
                   name: '确定性',
                 },
-              ] as any}
+              ] as Array<Plotly.Data>}
               layout={{
                 autosize: true,
                 height: 250,

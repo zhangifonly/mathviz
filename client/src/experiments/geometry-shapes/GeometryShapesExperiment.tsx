@@ -122,13 +122,14 @@ export default function GeometryShapesExperiment() {
   // 计算面积和周长
   const calculations = useMemo(() => {
     switch (shape) {
-      case 'triangle':
+      case 'triangle': {
         // 等腰三角形
         const triSide = Math.sqrt((param1 / 2) ** 2 + param2 ** 2)
         return {
           area: (param1 * param2) / 2,
           perimeter: param1 + 2 * triSide,
         }
+      }
       case 'rectangle':
         return {
           area: param1 * param2,

@@ -41,10 +41,11 @@ function generateSignal(
       case 'sawtooth':
         value = amplitude * (2 * ((frequency * time) % 1) - 1)
         break
-      case 'triangle':
+      case 'triangle': {
         const phase = (frequency * time) % 1
         value = amplitude * (phase < 0.5 ? 4 * phase - 1 : 3 - 4 * phase)
         break
+      }
       case 'noise':
         value = amplitude * (Math.random() * 2 - 1)
         break
@@ -689,32 +690,36 @@ export default function SignalProcessingSceneRenderer({ scene }: SceneRendererPr
       }
       return <TimeDomainScene signalType="sine" frequency={5} amplitude={1} />
 
-    case 'time-domain':
+    case 'time-domain': {
       const signalType = (lineState?.params?.signalType as SignalType) || 'sine'
       const frequency = (lineState?.params?.frequency as number) || 5
       const amplitude = (lineState?.params?.amplitude as number) || 1
       return <TimeDomainScene signalType={signalType} frequency={frequency} amplitude={amplitude} interactive={false} />
+    }
 
-    case 'frequency-domain':
+    case 'frequency-domain': {
       if (sceneConfig.id.includes('formula')) {
         return <FormulaScene formulaType="fourier-transform" />
       }
       const freqSignalType = (lineState?.params?.signalType as SignalType) || 'sine'
       const freqFrequency = (lineState?.params?.frequency as number) || 5
       return <FrequencyDomainScene signalType={freqSignalType} frequency={freqFrequency} amplitude={1} />
+    }
 
-    case 'comparison':
+    case 'comparison': {
       const compSignalType = (lineState?.params?.signalType as SignalType) || 'sine'
       const compFrequency = (lineState?.params?.frequency as number) || 5
       return <ComparisonScene signalType={compSignalType} frequency={compFrequency} />
+    }
 
-    case 'filter':
+    case 'filter': {
       if (sceneConfig.id.includes('formula')) {
         return <FormulaScene formulaType="convolution" />
       }
       const filterType = (lineState?.params?.filterType as FilterType) || 'lowpass'
       const cutoffFreq = (lineState?.params?.cutoffFreq as number) || 10
       return <FilterScene filterType={filterType} cutoffFreq={cutoffFreq} interactive={false} />
+    }
 
     case 'sampling':
       if (sceneConfig.id.includes('theorem')) {

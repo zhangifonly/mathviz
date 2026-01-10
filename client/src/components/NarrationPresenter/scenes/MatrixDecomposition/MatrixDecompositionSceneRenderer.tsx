@@ -42,7 +42,7 @@ function MatrixHeatmapScene({
     {
       z: matrix,
       type: 'heatmap',
-      colorscale: colorscale as any,
+      colorscale: colorscale as 'RdBu' | 'Viridis' | 'Blues' | 'Reds' | 'Greens' | 'Oranges',
       showscale: true,
       text: showValues ? matrix.map(row => row.map(val => val.toFixed(2))) : undefined,
       texttemplate: showValues ? '%{text}' : undefined,
@@ -639,8 +639,9 @@ export default function MatrixDecompositionSceneRenderer({ scene }: SceneRendere
       }
       return <ComparisonScene />
 
-    default:
+    default: {
       const defaultMatrix = [[4, 3, 2], [6, 3, 1], [2, 5, 8]]
       return <MatrixHeatmapScene matrix={defaultMatrix} title="矩阵可视化" />
+    }
   }
 }

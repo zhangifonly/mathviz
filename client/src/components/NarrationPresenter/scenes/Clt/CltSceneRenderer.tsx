@@ -298,11 +298,14 @@ function DiceScene({ numDice = 1 }: { numDice?: number }) {
   const data = useMemo(() => {
     const numSamples = 1000
     const sums: number[] = []
+    const seed = numDice // Use numDice as seed to ensure stable results
 
     for (let i = 0; i < numSamples; i++) {
       let sum = 0
       for (let j = 0; j < numDice; j++) {
-        sum += Math.floor(Math.random() * 6) + 1
+        // Use a seeded random approach for stable rendering
+        const pseudoRandom = Math.sin(seed * 1000 + i * numDice + j) * 10000
+        sum += Math.floor((pseudoRandom - Math.floor(pseudoRandom)) * 6) + 1
       }
       sums.push(sum)
     }
@@ -444,9 +447,8 @@ function ApplicationScene({ sceneId }: { sceneId: string }) {
 
 // 样本量对比场景
 function SampleSizeComparisonScene() {
-  const sampleSizes = [5, 10, 30, 50]
-
   const data = useMemo(() => {
+    const sampleSizes = [5, 10, 30, 50]
     return sampleSizes.map(n => {
       const means = calculateSampleMeans('uniform', n, 500)
       const mean = means.reduce((sum, val) => sum + val, 0) / means.length

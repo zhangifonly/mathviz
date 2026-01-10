@@ -392,10 +392,11 @@ export default function FourierDrawingSceneRenderer({ scene }: SceneRendererProp
       }
       return <EpicycleScene shape="circle" numCircles={5} showTrail={true} />
 
-    case 'drawing':
+    case 'drawing': {
       const numCircles = (lineState?.params?.numCircles as number) || 10
       const shape = (lineState?.params?.shape as keyof typeof SHAPES) || 'circle'
       return <EpicycleScene shape={shape} numCircles={numCircles} showTrail={true} />
+    }
 
     case 'shapes':
       if (sceneConfig.id.includes('heart')) {

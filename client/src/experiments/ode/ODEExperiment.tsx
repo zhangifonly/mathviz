@@ -218,7 +218,7 @@ export default function ODEExperiment() {
                   showlegend: false,
                   marker: { color: '#3b82f6', size: 10 },
                 },
-              ] as any}
+              ]}
               layout={{
                 autosize: true,
                 height: 280,
@@ -254,7 +254,7 @@ export default function ODEExperiment() {
                     name: '当前状态',
                     marker: { color: '#ef4444', size: 12 },
                   },
-                ] as any}
+                ]}
                 layout={{
                   autosize: true,
                   height: 300,

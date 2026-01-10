@@ -58,13 +58,14 @@ export default function DifferentialGeometryExperiment() {
           y.push(Math.sin(t))
           z.push(t / (2 * Math.PI))
           break
-        case 'torus-knot':
+        case 'torus-knot': {
           const p = 2, q = 3
           const r = Math.cos(q * t) + 2
           x.push(r * Math.cos(p * t))
           y.push(r * Math.sin(p * t))
           z.push(-Math.sin(q * t))
           break
+        }
         case 'viviani':
           x.push(Math.cos(t) * Math.cos(t))
           y.push(Math.cos(t) * Math.sin(t))
@@ -141,32 +142,36 @@ export default function DifferentialGeometryExperiment() {
         const v = (j / nv) * 2 * Math.PI
 
         switch (surfaceType) {
-          case 'sphere':
+          case 'sphere': {
             const phi = (j / nv) * Math.PI
             row_x.push(Math.sin(phi) * Math.cos(u))
             row_y.push(Math.sin(phi) * Math.sin(u))
             row_z.push(Math.cos(phi))
             break
-          case 'torus':
+          }
+          case 'torus': {
             const R = 2, r = 0.7
             row_x.push((R + r * Math.cos(v)) * Math.cos(u))
             row_y.push((R + r * Math.cos(v)) * Math.sin(u))
             row_z.push(r * Math.sin(v))
             break
-          case 'saddle':
+          }
+          case 'saddle': {
             const sx = (i / nu - 0.5) * 4
             const sy = (j / nv - 0.5) * 4
             row_x.push(sx)
             row_y.push(sy)
             row_z.push(sx * sx - sy * sy)
             break
-          case 'mobius':
+          }
+          case 'mobius': {
             const w = (j / nv - 0.5) * 2
             row_x.push((1 + w / 2 * Math.cos(u / 2)) * Math.cos(u))
             row_y.push((1 + w / 2 * Math.cos(u / 2)) * Math.sin(u))
             row_z.push(w / 2 * Math.sin(u / 2))
             break
-          case 'klein':
+          }
+          case 'klein': {
             const a = 3
             if (u < Math.PI) {
               row_x.push(a * Math.cos(u) * (1 + Math.sin(u)) + (2 * (1 - Math.cos(u) / 2)) * Math.cos(u) * Math.cos(v))
@@ -177,6 +182,7 @@ export default function DifferentialGeometryExperiment() {
             }
             row_z.push((2 * (1 - Math.cos(u) / 2)) * Math.sin(v))
             break
+          }
         }
       }
       x.push(row_x)

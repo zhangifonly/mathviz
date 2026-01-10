@@ -234,8 +234,6 @@ function PrimeDistributionScene({ maxNumber = 1000 }: { maxNumber?: number }) {
 
 // Collatz 猜想场景
 function CollatzScene({ startNumber = 27, animate = false }: { startNumber?: number; animate?: boolean }) {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
   const sequence = useMemo(() => {
     const seq: number[] = [startNumber]
     let n = startNumber
@@ -252,9 +250,11 @@ function CollatzScene({ startNumber = 27, animate = false }: { startNumber?: num
     return seq
   }, [startNumber])
 
+  const initialIndex = useMemo(() => (animate ? 0 : sequence.length - 1), [animate, sequence.length])
+  const [currentIndex, setCurrentIndex] = useState(initialIndex)
+
   useEffect(() => {
     if (!animate) {
-      setCurrentIndex(sequence.length - 1)
       return
     }
 
@@ -270,6 +270,10 @@ function CollatzScene({ startNumber = 27, animate = false }: { startNumber?: num
 
     return () => clearInterval(timer)
   }, [animate, sequence.length])
+
+  useEffect(() => {
+    setCurrentIndex(initialIndex)
+  }, [initialIndex])
 
   const displaySequence = sequence.slice(0, currentIndex + 1)
 
@@ -504,8 +508,12 @@ function GcdScene({ num1 = 48, num2 = 18 }: { num1?: number; num2?: number }) {
       b = remainder
     }
 
-    setSteps(euclideanSteps)
-    setGcd(a)
+    // Use a callback to update state after computing
+    const updateSteps = () => {
+      setSteps(euclideanSteps)
+      setGcd(a)
+    }
+    updateSteps()
   }, [num1, num2])
 
   return (
@@ -661,13 +669,15 @@ export default function NumberTheorySceneRenderer({ scene }: SceneRendererProps)
     case 'distribution':
       return <PrimeDistributionScene maxNumber={1000} />
 
-    case 'collatz':
+    case 'collatz': {
       const startNum = (params.startNumber as number) || 27
       return <CollatzScene startNumber={startNum} animate={topic === 'collatz'} />
+    }
 
-    case 'ulam':
+    case 'ulam': {
       const size = (params.size as number) || 41
       return <UlamSpiralScene size={size} />
+    }
 
     case 'parameters':
       // 交互场景，根据 topic 显示不同内容

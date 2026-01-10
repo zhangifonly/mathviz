@@ -3,7 +3,7 @@
  * 渲染抛物线、顶点、对称轴、零点等二次函数可视化
  */
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useMemo } from 'react'
 import type { SceneRendererProps } from '../SceneRendererFactory'
 import MathFormula from '../../../../components/MathFormula/MathFormula'
 
@@ -49,18 +49,21 @@ function ParabolaScene({
   const animationRef = useRef<number>(0)
 
   // 计算顶点坐标
-  const vertex = {
+  const vertex = useMemo(() => ({
     x: -params.b / (2 * params.a),
     y: params.c - (params.b * params.b) / (4 * params.a),
-  }
+  }), [params.a, params.b, params.c])
 
   // 计算判别式和零点
-  const discriminant = params.b * params.b - 4 * params.a * params.c
-  const roots: { x1?: number; x2?: number } = {}
-  if (discriminant >= 0) {
-    roots.x1 = (-params.b + Math.sqrt(discriminant)) / (2 * params.a)
-    roots.x2 = (-params.b - Math.sqrt(discriminant)) / (2 * params.a)
-  }
+  const { roots, discriminant } = useMemo(() => {
+    const disc = params.b * params.b - 4 * params.a * params.c
+    const result: { x1?: number; x2?: number } = {}
+    if (disc >= 0) {
+      result.x1 = (-params.b + Math.sqrt(disc)) / (2 * params.a)
+      result.x2 = (-params.b - Math.sqrt(disc)) / (2 * params.a)
+    }
+    return { roots: result, discriminant: disc }
+  }, [params.a, params.b, params.c])
 
   // 参数动画
   useEffect(() => {
@@ -220,7 +223,7 @@ function ParabolaScene({
     ctx.font = '16px sans-serif'
     const expr = `y = ${params.a.toFixed(2)}x² ${params.b >= 0 ? '+' : ''}${params.b.toFixed(2)}x ${params.c >= 0 ? '+' : ''}${params.c.toFixed(2)}`
     ctx.fillText(expr, 20, 30)
-  }, [params, showVertex, showAxis, showRoots, vertex, discriminant, roots])
+  }, [params, showVertex, showAxis, showRoots, vertex, roots])
 
   return (
     <div className="w-full h-full flex items-center justify-center">
@@ -540,11 +543,12 @@ export default function QuadraticSceneRenderer({ scene }: SceneRendererProps) {
       }
       return <ParabolaScene a={1} b={0} c={0} />
 
-    case 'parabola':
+    case 'parabola': {
       const a = (lineState?.params?.a as number) || 1
       const b = (lineState?.params?.b as number) || 0
       const c = (lineState?.params?.c as number) || 0
       return <ParabolaScene a={a} b={b} c={c} showVertex showAxis />
+    }
 
     case 'vertex':
       if (sceneConfig.id.includes('calculation')) {

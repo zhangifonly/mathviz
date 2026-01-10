@@ -170,23 +170,23 @@ function SolutionCurveScene({ equation = 'exponential', showMultiple = false }: 
       const h = (xEnd - x0) / steps
       const xs: number[] = [x0]
       const ys: number[] = [y0]
-      let _x = x0, y = y0
+      let x = x0, y = y0
 
       for (let i = 0; i < steps; i++) {
-        y = y + h * f(_x, y)
-        _x = _x + h
-        xs.push(_x)
+        y = y + h * f(x, y)
+        x = x + h
+        xs.push(x)
         ys.push(y)
       }
 
       return { x: xs, y: ys }
     }
 
-    const equations: Record<string, (_x: number, y: number) => number> = {
+    const equations: Record<string, (x: number, y: number) => number> = {
       exponential: (_x: number, y: number) => y,
       decay: (_x: number, y: number) => -y,
       logistic: (_x: number, y: number) => y * (1 - y),
-      oscillation: (x: number, _y: number) => -x, // 简化的简谐振动
+      oscillation: (x: number) => -x, // 简化的简谐振动
     }
 
     const f = equations[equation] || equations.exponential

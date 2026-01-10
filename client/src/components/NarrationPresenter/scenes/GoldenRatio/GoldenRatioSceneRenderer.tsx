@@ -193,9 +193,9 @@ function GoldenSpiralScene({ animate = false }: { animate?: boolean }) {
       } else if (i % 4 === 1) {
         y = y + h - newH
       } else if (i % 4 === 2) {
-        x = x
+        // x stays the same
       } else {
-        y = y
+        // y stays the same
       }
 
       w = newW

@@ -118,7 +118,7 @@ export default function VectorFieldExperiment() {
 
     // 初始化粒子
     if (particles.length === 0) {
-      const newParticles = []
+      const newParticles: Array<{ x: number; y: number; age: number }> = []
       for (let i = 0; i < 50; i++) {
         newParticles.push({
           x: (Math.random() - 0.5) * 5,
@@ -126,7 +126,9 @@ export default function VectorFieldExperiment() {
           age: Math.random() * 100,
         })
       }
-      setParticles(newParticles)
+      // 使用 setTimeout 来避免在 effect 中同步调用 setState
+      setTimeout(() => setParticles(newParticles), 0)
+      return
     }
 
     const animate = () => {

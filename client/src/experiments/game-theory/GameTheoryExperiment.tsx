@@ -111,9 +111,11 @@ export default function GameTheoryExperiment() {
     }
   }, [isAnimating])
 
-  const game = gameType === 'custom'
-    ? { ...GAMES.custom, p1: customP1, p2: customP2 }
-    : GAMES[gameType]
+  const game = useMemo(() => {
+    return gameType === 'custom'
+      ? { ...GAMES.custom, p1: customP1, p2: customP2 }
+      : GAMES[gameType]
+  }, [gameType, customP1, customP2])
 
   // 计算纳什均衡
   const nashEquilibria = useMemo(() => {

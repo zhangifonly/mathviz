@@ -45,6 +45,21 @@ export default function NumberTheoryExperiment() {
     setShowPresenter(false)
   }, [narration])
 
+  // Collatz 序列
+  const collatzSequence = useMemo(() => {
+    const seq: number[] = [collatzStart]
+    let n = collatzStart
+    while (n !== 1 && seq.length < 500) {
+      if (n % 2 === 0) {
+        n = n / 2
+      } else {
+        n = 3 * n + 1
+      }
+      seq.push(n)
+    }
+    return seq
+  }, [collatzStart])
+
   // 动画效果：逐步展示 Collatz 序列
   useEffect(() => {
     if (!isAnimating || topic !== 'collatz') return
@@ -70,7 +85,7 @@ export default function NumberTheoryExperiment() {
         clearTimeout(animationRef.current)
       }
     }
-  }, [isAnimating, topic])
+  }, [isAnimating, topic, collatzSequence.length])
 
   // 判断素数
   const isPrime = (n: number): boolean => {
@@ -117,21 +132,6 @@ export default function NumberTheoryExperiment() {
     }
     return gaps
   }, [primes])
-
-  // Collatz 序列
-  const collatzSequence = useMemo(() => {
-    const seq: number[] = [collatzStart]
-    let n = collatzStart
-    while (n !== 1 && seq.length < 500) {
-      if (n % 2 === 0) {
-        n = n / 2
-      } else {
-        n = 3 * n + 1
-      }
-      seq.push(n)
-    }
-    return seq
-  }, [collatzStart])
 
   // Ulam 螺旋
   useEffect(() => {
@@ -244,7 +244,7 @@ export default function NumberTheoryExperiment() {
                       line: { color: '#ef4444', width: 2, dash: 'dash' as const },
                       name: 'x/ln(x)',
                     },
-                  ] as any}
+                  ] as Plotly.Data[]}
                   layout={{
                     autosize: true,
                     height: 350,
@@ -269,7 +269,7 @@ export default function NumberTheoryExperiment() {
                       mode: 'markers' as const,
                       marker: { size: 3, color: '#8b5cf6' },
                     },
-                  ] as any}
+                  ] as Plotly.Data[]}
                   layout={{
                     autosize: true,
                     height: 250,
@@ -344,7 +344,7 @@ export default function NumberTheoryExperiment() {
                     line: { color: '#8b5cf6', width: 2 },
                     marker: { size: 4 },
                   },
-                ] as any}
+                ] as Plotly.Data[]}
                 layout={{
                   autosize: true,
                   height: 350,

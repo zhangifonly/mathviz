@@ -29,17 +29,16 @@ function TitleScene({ sceneId }: { sceneId: string }) {
 // 圆锥切割场景
 function ConeCuttingScene({ sceneId }: { sceneId: string }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const [angle, setAngle] = useState(0)
 
-  useEffect(() => {
-    // 根据场景ID设置不同的切割角度
+  // Calculate angle directly from sceneId instead of using state
+  const angle = useMemo(() => {
     const angles: Record<string, number> = {
       'cone-cutting-1': 0,
       'cone-cutting-2': 15,
       'cone-cutting-3': 30,
       'cone-cutting-4': 60,
     }
-    setAngle(angles[sceneId] || 0)
+    return angles[sceneId] || 0
   }, [sceneId])
 
   useEffect(() => {

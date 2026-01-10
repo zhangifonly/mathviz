@@ -18,7 +18,7 @@ export default function SetTheoryExperiment() {
   const [showPresenter, setShowPresenter] = useState(false)
   const animationRef = useRef<number | null>(null)
 
-  const operations: Operation[] = ['union', 'intersection', 'difference', 'symmetric']
+  const operations = useMemo<Operation[]>(() => ['union', 'intersection', 'difference', 'symmetric'], [])
 
   // 讲解系统
   const narration = useNarrationOptional()
@@ -67,7 +67,7 @@ export default function SetTheoryExperiment() {
         clearTimeout(animationRef.current)
       }
     }
-  }, [isAnimating, animationOpIndex])
+  }, [isAnimating, animationOpIndex, operations])
 
   // 集合运算
   const results = useMemo(() => {

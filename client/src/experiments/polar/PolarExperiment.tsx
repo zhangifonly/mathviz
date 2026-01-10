@@ -115,10 +115,11 @@ export default function PolarExperiment() {
         case 'spiral':
           r = params.a + params.b * theta
           break
-        case 'lemniscate':
+        case 'lemniscate': {
           const cos2t = Math.cos(2 * theta)
           r = cos2t >= 0 ? params.a * Math.sqrt(cos2t) : 0
           break
+        }
         case 'limacon':
           r = params.a + params.b * Math.cos(theta)
           break
@@ -141,10 +142,11 @@ export default function PolarExperiment() {
       case 'spiral':
         animR = params.a + params.b * animThetaRad
         break
-      case 'lemniscate':
+      case 'lemniscate': {
         const cos2t = Math.cos(2 * animThetaRad)
         animR = cos2t >= 0 ? params.a * Math.sqrt(cos2t) : 0
         break
+      }
       case 'limacon':
         animR = params.a + params.b * Math.cos(animThetaRad)
         break

@@ -201,7 +201,7 @@ export default function CalculusExperiment() {
                   { x: xValues, y: yValues, type: 'scatter' as const, mode: 'lines' as const, name: 'f(x)', line: { color: '#6366f1', width: 2 } },
                   { x: tangentLine.x, y: tangentLine.y, type: 'scatter' as const, mode: 'lines' as const, name: '切线', line: { color: '#f43f5e', width: 2 } },
                   { x: [tangentLine.point.x], y: [tangentLine.point.y], type: 'scatter' as const, mode: 'markers' as const, name: '切点', marker: { color: '#f43f5e', size: 10 } },
-                ] as any}
+                ] as Array<Plotly.Data>}
                 layout={{
                   autosize: true,
                   height: 250,
@@ -248,7 +248,7 @@ export default function CalculusExperiment() {
                     line: { color: 'rgba(139, 92, 246, 0.5)' },
                     name: '积分区域',
                   },
-                ] as any}
+                ] as Array<Plotly.Data>}
                 layout={{
                   autosize: true,
                   height: 250,
@@ -279,7 +279,7 @@ export default function CalculusExperiment() {
               <Plot
                 data={[
                   { x: xValues, y: derivativeValues, type: 'scatter' as const, mode: 'lines' as const, name: "f'(x)", line: { color: '#10b981', width: 2 } },
-                ] as any}
+                ] as Array<Plotly.Data>}
                 layout={{
                   autosize: true,
                   height: 180,

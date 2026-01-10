@@ -31,21 +31,19 @@ interface PayoffMatrixSceneProps {
 }
 
 function PayoffMatrixScene({ highlightCell, animating = false }: PayoffMatrixSceneProps) {
-  const [currentHighlight, setCurrentHighlight] = useState<string | null>(null)
+  const [animationIndex, setAnimationIndex] = useState(0)
 
   useEffect(() => {
-    if (animating) {
-      const cells = ['cooperate-cooperate', 'cooperate-defect', 'defect-cooperate', 'defect-defect']
-      let index = 0
-      const timer = setInterval(() => {
-        setCurrentHighlight(cells[index])
-        index = (index + 1) % cells.length
-      }, 1000)
-      return () => clearInterval(timer)
-    } else {
-      setCurrentHighlight(highlightCell || null)
-    }
-  }, [highlightCell, animating])
+    if (!animating) return
+
+    const timer = setInterval(() => {
+      setAnimationIndex(prev => (prev + 1) % 4)
+    }, 1000)
+    return () => clearInterval(timer)
+  }, [animating])
+
+  const cells = ['cooperate-cooperate', 'cooperate-defect', 'defect-cooperate', 'defect-defect']
+  const currentHighlight = animating ? cells[animationIndex] : (highlightCell || null)
 
   const getCellStyle = (cellId: string) => {
     const isHighlighted = currentHighlight === cellId

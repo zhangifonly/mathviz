@@ -89,15 +89,25 @@ export default function MarkovChainExperiment() {
     setShowPresenter(false)
   }, [narration])
 
-  // 加载预设
-  useEffect(() => {
+  // 加载预设 - 使用 useMemo 避免在 effect 中直接 setState
+  const presetData = useMemo(() => {
     const p = PRESETS[preset]
-    setMatrix(p.matrix)
-    setStates(p.states)
-    setInitialDist(Array(p.states.length).fill(0).map((_, i) => i === 0 ? 1 : 0))
-    setCurrentState(0)
-    setSimulationHistory([0])
+    return {
+      matrix: p.matrix,
+      states: p.states,
+      initialDist: Array(p.states.length).fill(0).map((_, i) => i === 0 ? 1 : 0),
+      currentState: 0,
+      simulationHistory: [0]
+    }
   }, [preset])
+
+  useEffect(() => {
+    setMatrix(presetData.matrix)
+    setStates(presetData.states)
+    setInitialDist(presetData.initialDist)
+    setCurrentState(presetData.currentState)
+    setSimulationHistory(presetData.simulationHistory)
+  }, [presetData])
 
   // 计算稳态分布
   const stationaryDist = useMemo(() => {
@@ -142,30 +152,36 @@ export default function MarkovChainExperiment() {
   useEffect(() => {
     if (isSimulating && simulationHistory.length <= steps) {
       animationRef.current = window.setTimeout(() => {
-        const current = simulationHistory[simulationHistory.length - 1]
-        const rand = Math.random()
-        let cumProb = 0
-        let nextState = 0
-
-        for (let i = 0; i < matrix[current].length; i++) {
-          cumProb += matrix[current][i]
-          if (rand < cumProb) {
-            nextState = i
-            break
+        setSimulationHistory((prevHistory) => {
+          // 检查是否已达到步数限制
+          if (prevHistory.length > steps) {
+            setIsSimulating(false)
+            return prevHistory
           }
-        }
 
-        setCurrentState(nextState)
-        setSimulationHistory([...simulationHistory, nextState])
+          const current = prevHistory[prevHistory.length - 1]
+          const rand = Math.random()
+          let cumProb = 0
+          let nextState = 0
+
+          for (let i = 0; i < matrix[current].length; i++) {
+            cumProb += matrix[current][i]
+            if (rand < cumProb) {
+              nextState = i
+              break
+            }
+          }
+
+          setCurrentState(nextState)
+          return [...prevHistory, nextState]
+        })
       }, 500)
-    } else if (simulationHistory.length > steps) {
-      setIsSimulating(false)
     }
 
     return () => {
       if (animationRef.current) clearTimeout(animationRef.current)
     }
-  }, [isSimulating, simulationHistory, matrix, steps])
+  }, [isSimulating, simulationHistory.length, matrix, steps])
 
   // 绘制状态转移图
   useEffect(() => {

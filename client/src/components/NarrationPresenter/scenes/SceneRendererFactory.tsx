@@ -3,7 +3,7 @@
  * 根据实验 ID 返回对应的场景渲染组件
  */
 
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useMemo } from 'react'
 import type { NarrationLineScene } from '../types'
 
 // 场景渲染器通用 Props
@@ -177,6 +177,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
 }
 
 // 获取场景渲染器
+// eslint-disable-next-line react-refresh/only-export-components
 export function getSceneRenderer(experimentId: string): ReturnType<typeof lazy> | null {
   return rendererMap[experimentId] || null
 }
@@ -191,7 +192,7 @@ export default function SceneRendererWrapper({
   scene,
   isInteractive,
 }: SceneRendererWrapperProps) {
-  const Renderer = getSceneRenderer(experimentId)
+  const Renderer = useMemo(() => getSceneRenderer(experimentId), [experimentId])
 
   if (!Renderer) {
     return (
@@ -203,6 +204,7 @@ export default function SceneRendererWrapper({
 
   return (
     <Suspense fallback={<LoadingScene />}>
+      {/* eslint-disable-next-line react-hooks/static-components */}
       <Renderer scene={scene} isInteractive={isInteractive} />
     </Suspense>
   )

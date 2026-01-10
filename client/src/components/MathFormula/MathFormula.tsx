@@ -18,7 +18,7 @@ export default function MathFormula({ formula, displayMode = true, className = '
           displayMode,
           throwOnError: false,
         })
-      } catch (e) {
+      } catch {
         containerRef.current.textContent = formula
       }
     }

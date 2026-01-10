@@ -116,13 +116,21 @@ export default function ChaosExperiment() {
 
   // 动画
   useEffect(() => {
-    if (isRunning && system === 'logistic' && currentIter < iterations - 1) {
-      animationRef.current = window.setTimeout(() => {
-        setCurrentIter((i) => i + 1)
-      }, 50)
-    } else if (currentIter >= iterations - 1) {
-      setIsRunning(false)
-    }
+    if (!isRunning || system !== 'logistic') return
+
+    // 如果已经达到最大迭代次数，不再继续
+    if (currentIter >= iterations - 1) return
+
+    animationRef.current = window.setTimeout(() => {
+      setCurrentIter((i) => {
+        const next = i + 1
+        // 如果下一次迭代会达到最大值，停止动画
+        if (next >= iterations - 1) {
+          setIsRunning(false)
+        }
+        return next
+      })
+    }, 50)
 
     return () => {
       if (animationRef.current) clearTimeout(animationRef.current)
@@ -276,7 +284,7 @@ export default function ChaosExperiment() {
                       line: { color: '#ef4444', width: 2 },
                       name: '当前 r',
                     },
-                  ] as any}
+                  ] as Array<Plotly.Data>}
                   layout={{
                     autosize: true,
                     height: 300,
@@ -303,9 +311,9 @@ export default function ChaosExperiment() {
                     z: lorenzData.z,
                     type: 'scatter3d' as const,
                     mode: 'lines' as const,
-                    line: { color: lorenzData.z, colorscale: 'Viridis', width: 1 },
+                    line: { color: lorenzData.z, width: 1 },
                   },
-                ] as any}
+                ] as Array<Plotly.Data>}
                 layout={{
                   autosize: true,
                   height: 500,
@@ -334,7 +342,7 @@ export default function ChaosExperiment() {
                     mode: 'markers' as const,
                     marker: { size: 1, color: '#8b5cf6' },
                   },
-                ] as any}
+                ] as Array<Plotly.Data>}
                 layout={{
                   autosize: true,
                   height: 400,

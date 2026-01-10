@@ -214,7 +214,7 @@ export default function CLTExperiment() {
                     line: { color: '#ef4444', width: 3 },
                     name: '理论正态曲线',
                   },
-                ] as any}
+                ] as Array<Plotly.Data>}
                 layout={{
                   autosize: true,
                   height: 350,

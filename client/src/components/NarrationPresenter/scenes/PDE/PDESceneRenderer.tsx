@@ -3,7 +3,7 @@
  * 渲染各类PDE的可视化动画
  */
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useCallback } from 'react'
 import type { SceneRendererProps } from '../SceneRendererFactory'
 import MathFormula from '../../../../components/MathFormula/MathFormula'
 
@@ -27,6 +27,19 @@ function TitleScene({ sceneId }: { sceneId: string }) {
 // 拉普拉斯方程场景
 function LaplaceScene({ animate = true }: { animate?: boolean }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+
+  const valueToColor = useCallback((value: number): string => {
+    const t = Math.max(-1, Math.min(1, value))
+    const normalized = (t + 1) / 2
+
+    if (normalized < 0.5) {
+      const s = normalized * 2
+      return `rgb(0, ${Math.floor(s * 255)}, ${255 - Math.floor(s * 255)})`
+    } else {
+      const s = (normalized - 0.5) * 2
+      return `rgb(${Math.floor(s * 255)}, 255, ${255 - Math.floor(s * 255)})`
+    }
+  }, [])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -97,20 +110,7 @@ function LaplaceScene({ animate = true }: { animate?: boolean }) {
       const interval = setInterval(draw, 100)
       return () => clearInterval(interval)
     }
-  }, [animate])
-
-  const valueToColor = (value: number): string => {
-    const t = Math.max(-1, Math.min(1, value))
-    const normalized = (t + 1) / 2
-
-    if (normalized < 0.5) {
-      const s = normalized * 2
-      return `rgb(0, ${Math.floor(s * 255)}, ${255 - Math.floor(s * 255)})`
-    } else {
-      const s = (normalized - 0.5) * 2
-      return `rgb(${Math.floor(s * 255)}, 255, ${255 - Math.floor(s * 255)})`
-    }
-  }
+  }, [animate, valueToColor])
 
   return (
     <div className="w-full h-full flex items-center justify-center">
@@ -127,6 +127,17 @@ function LaplaceScene({ animate = true }: { animate?: boolean }) {
 // 泊松方程场景
 function PoissonScene({ animate = true }: { animate?: boolean }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+
+  const valueToColor = useCallback((value: number): string => {
+    const t = Math.max(-1, Math.min(1, value))
+    const normalized = (t + 1) / 2
+
+    const r = Math.floor(normalized * 255)
+    const g = Math.floor((1 - Math.abs(normalized - 0.5) * 2) * 255)
+    const b = Math.floor((1 - normalized) * 255)
+
+    return `rgb(${r}, ${g}, ${b})`
+  }, [])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -188,18 +199,7 @@ function PoissonScene({ animate = true }: { animate?: boolean }) {
       const interval = setInterval(draw, 100)
       return () => clearInterval(interval)
     }
-  }, [animate])
-
-  const valueToColor = (value: number): string => {
-    const t = Math.max(-1, Math.min(1, value))
-    const normalized = (t + 1) / 2
-
-    const r = Math.floor(normalized * 255)
-    const g = Math.floor((1 - Math.abs(normalized - 0.5) * 2) * 255)
-    const b = Math.floor((1 - normalized) * 255)
-
-    return `rgb(${r}, ${g}, ${b})`
-  }
+  }, [animate, valueToColor])
 
   return (
     <div className="w-full h-full flex items-center justify-center">
@@ -216,6 +216,24 @@ function PoissonScene({ animate = true }: { animate?: boolean }) {
 // 热传导方程场景
 function HeatScene({ animate = true }: { animate?: boolean }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+
+  const heatColor = useCallback((value: number): string => {
+    const t = Math.max(0, Math.min(1, value))
+
+    if (t < 0.25) {
+      const s = t / 0.25
+      return `rgb(0, ${Math.floor(s * 255)}, 255)`
+    } else if (t < 0.5) {
+      const s = (t - 0.25) / 0.25
+      return `rgb(0, 255, ${Math.floor((1 - s) * 255)})`
+    } else if (t < 0.75) {
+      const s = (t - 0.5) / 0.25
+      return `rgb(${Math.floor(s * 255)}, 255, 0)`
+    } else {
+      const s = (t - 0.75) / 0.25
+      return `rgb(255, ${Math.floor((1 - s) * 255)}, 0)`
+    }
+  }, [])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -284,25 +302,7 @@ function HeatScene({ animate = true }: { animate?: boolean }) {
       const interval = setInterval(draw, 50)
       return () => clearInterval(interval)
     }
-  }, [animate])
-
-  const heatColor = (value: number): string => {
-    const t = Math.max(0, Math.min(1, value))
-
-    if (t < 0.25) {
-      const s = t / 0.25
-      return `rgb(0, ${Math.floor(s * 255)}, 255)`
-    } else if (t < 0.5) {
-      const s = (t - 0.25) / 0.25
-      return `rgb(0, 255, ${Math.floor((1 - s) * 255)})`
-    } else if (t < 0.75) {
-      const s = (t - 0.5) / 0.25
-      return `rgb(${Math.floor(s * 255)}, 255, 0)`
-    } else {
-      const s = (t - 0.75) / 0.25
-      return `rgb(255, ${Math.floor((1 - s) * 255)}, 0)`
-    }
-  }
+  }, [animate, heatColor])
 
   return (
     <div className="w-full h-full flex items-center justify-center">
@@ -320,6 +320,19 @@ function HeatScene({ animate = true }: { animate?: boolean }) {
 function WaveScene({ animate = true }: { animate?: boolean }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const uPrevRef = useRef<number[][]>([])
+
+  const waveColor = useCallback((value: number): string => {
+    const t = Math.max(-1, Math.min(1, value))
+    const normalized = (t + 1) / 2
+
+    if (normalized < 0.5) {
+      const s = normalized * 2
+      return `rgb(${Math.floor((1 - s) * 255)}, ${Math.floor((1 - s) * 255)}, 255)`
+    } else {
+      const s = (normalized - 0.5) * 2
+      return `rgb(255, ${Math.floor((1 - s) * 255)}, ${Math.floor((1 - s) * 255)})`
+    }
+  }, [])
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -393,20 +406,7 @@ function WaveScene({ animate = true }: { animate?: boolean }) {
       const interval = setInterval(draw, 50)
       return () => clearInterval(interval)
     }
-  }, [animate])
-
-  const waveColor = (value: number): string => {
-    const t = Math.max(-1, Math.min(1, value))
-    const normalized = (t + 1) / 2
-
-    if (normalized < 0.5) {
-      const s = normalized * 2
-      return `rgb(${Math.floor((1 - s) * 255)}, ${Math.floor((1 - s) * 255)}, 255)`
-    } else {
-      const s = (normalized - 0.5) * 2
-      return `rgb(255, ${Math.floor((1 - s) * 255)}, ${Math.floor((1 - s) * 255)})`
-    }
-  }
+  }, [animate, waveColor])
 
   return (
     <div className="w-full h-full flex items-center justify-center">

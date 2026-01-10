@@ -263,10 +263,13 @@ export default function GraphTheoryExperiment() {
   useEffect(() => {
     if (isRunning && currentStep < algorithmSteps.length - 1) {
       animationRef.current = window.setTimeout(() => {
-        setCurrentStep((s) => s + 1)
+        setCurrentStep((s) => {
+          if (s >= algorithmSteps.length - 2) {
+            setIsRunning(false)
+          }
+          return s + 1
+        })
       }, 800)
-    } else if (currentStep >= algorithmSteps.length - 1) {
-      setIsRunning(false)
     }
 
     return () => {
@@ -276,8 +279,13 @@ export default function GraphTheoryExperiment() {
 
   useEffect(() => {
     if (algorithmSteps.length > 0 && currentStep < algorithmSteps.length) {
-      setVisitedNodes(algorithmSteps[currentStep].visitedNodes)
-      setVisitedEdges(algorithmSteps[currentStep].visitedEdges)
+      const step = algorithmSteps[currentStep]
+      // Use a timeout to avoid calling setState synchronously in effect
+      const timeoutId = setTimeout(() => {
+        setVisitedNodes(step.visitedNodes)
+        setVisitedEdges(step.visitedEdges)
+      }, 0)
+      return () => clearTimeout(timeoutId)
     }
   }, [currentStep, algorithmSteps])
 

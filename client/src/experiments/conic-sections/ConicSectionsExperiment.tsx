@@ -371,11 +371,12 @@ export default function ConicSectionsExperiment() {
           px = a * Math.cosh(animationAngle - Math.PI)
           py = b * Math.sinh(animationAngle - Math.PI)
           break
-        case 'parabola':
+        case 'parabola': {
           const t = (animationAngle - Math.PI) * 3
           py = t
           px = (t * t) / (4 * p)
           break
+        }
         default:
           px = 0
           py = 0

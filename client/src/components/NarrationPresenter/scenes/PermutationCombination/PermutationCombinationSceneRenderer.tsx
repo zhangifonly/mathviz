@@ -48,7 +48,7 @@ function TitleScene({ sceneId }: { sceneId: string }) {
 function PermutationScene() {
   const [n] = useState(4)
   const [k, setK] = useState(2)
-  const items = ['🍎', '🍊', '🍋', '🍇', '🍓']
+  const items = useMemo(() => ['🍎', '🍊', '🍋', '🍇', '🍓'], [])
 
   const arrangements = useMemo(() => {
     const result: string[][] = []
@@ -68,7 +68,7 @@ function PermutationScene() {
 
     generate([], selected)
     return result
-  }, [n, k])
+  }, [n, k, items])
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -112,7 +112,7 @@ function PermutationScene() {
 function CombinationScene() {
   const [n] = useState(5)
   const [k, setK] = useState(3)
-  const items = ['A', 'B', 'C', 'D', 'E', 'F']
+  const items = useMemo(() => ['A', 'B', 'C', 'D', 'E', 'F'], [])
 
   const combinations = useMemo(() => {
     const result: string[][] = []
@@ -132,7 +132,7 @@ function CombinationScene() {
 
     generate(0, [])
     return result
-  }, [n, k])
+  }, [n, k, items])
 
   useEffect(() => {
     const interval = setInterval(() => {

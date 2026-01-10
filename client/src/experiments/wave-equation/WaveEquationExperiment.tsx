@@ -54,13 +54,15 @@ export default function WaveEquationExperiment() {
       case 'traveling':
         // 行波: y = A sin(kx - ωt)
         return amplitude * Math.sin(k * x - omega * t)
-      case 'superposition':
+      case 'superposition': {
         // 两波叠加（拍频）
         const omega2 = omega * 1.1
         return amplitude * (Math.sin(k * x - omega * t) + Math.sin(k * x - omega2 * t))
-      case 'damped':
+      }
+      case 'damped': {
         // 阻尼波
         return amplitude * Math.exp(-damping * t) * Math.sin(k * x - omega * t)
+      }
       default:
         return 0
     }

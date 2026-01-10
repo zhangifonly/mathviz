@@ -339,6 +339,15 @@ function FormulaScene({ formulaType }: { formulaType: string }) {
 function CorrelationScene() {
   const [rValue, setRValue] = useState(0.8)
 
+  // 生成稳定的随机噪声种子（使用 useState 初始化函数）
+  const [noiseSeed] = useState(() => {
+    const seed: number[] = []
+    for (let i = 0; i < 30; i++) {
+      seed.push(Math.random())
+    }
+    return seed
+  })
+
   useEffect(() => {
     const timer = setInterval(() => {
       setRValue(r => {
@@ -355,12 +364,12 @@ function CorrelationScene() {
     const n = 30
     for (let i = 0; i < n; i++) {
       const x = i / 3
-      const noise = (Math.random() - 0.5) * 5 * (1 - Math.abs(rValue))
+      const noise = (noiseSeed[i] - 0.5) * 5 * (1 - Math.abs(rValue))
       const y = rValue * x + noise + 5
       points.push({ x, y })
     }
     return points
-  }, [rValue])
+  }, [rValue, noiseSeed])
 
   const regression = useMemo(() => calculateRegression(data), [data])
   const xMin = Math.min(...data.map(p => p.x))

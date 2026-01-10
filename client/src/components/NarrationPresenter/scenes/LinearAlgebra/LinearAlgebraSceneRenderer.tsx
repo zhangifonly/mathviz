@@ -214,26 +214,30 @@ function TransformScene({
     // 定义变换矩阵
     let matrix: number[][]
     switch (transformType) {
-      case 'rotation':
+      case 'rotation': {
         matrix = [
           [Math.cos(t), -Math.sin(t)],
           [Math.sin(t), Math.cos(t)]
         ]
         break
-      case 'scaling':
+      }
+      case 'scaling': {
         const s = 1 + 0.5 * Math.sin(t)
         matrix = [[s, 0], [0, s]]
         break
-      case 'shear':
+      }
+      case 'shear': {
         const k = Math.sin(t)
         matrix = [[1, k], [0, 1]]
         break
-      case 'reflection':
+      }
+      case 'reflection': {
         const angle = t / 2
         const cos2a = Math.cos(2 * angle)
         const sin2a = Math.sin(2 * angle)
         matrix = [[cos2a, sin2a], [sin2a, -cos2a]]
         break
+      }
       default:
         matrix = [[1, 0], [0, 1]]
     }
@@ -626,9 +630,10 @@ export default function LinearAlgebraSceneRenderer({ scene }: SceneRendererProps
       }
       return <VectorScene />
 
-    case 'transform':
+    case 'transform': {
       const transformType = (scene.lineState?.params?.transformType as 'rotation' | 'scaling' | 'shear' | 'reflection') || 'rotation'
       return <TransformScene transformType={transformType} />
+    }
 
     case 'eigen':
       return <EigenScene />

@@ -293,25 +293,29 @@ function ParameterAnimationScene({
       t.push(tVal)
 
       switch (curveType) {
-        case 'circle':
+        case 'circle': {
           x.push(Math.cos(tVal))
           y.push(Math.sin(tVal))
           break
-        case 'ellipse':
+        }
+        case 'ellipse': {
           x.push(2 * Math.cos(tVal))
           y.push(Math.sin(tVal))
           break
-        case 'spiral':
+        }
+        case 'spiral': {
           const r = tVal / (2 * Math.PI)
           x.push(r * Math.cos(tVal))
           y.push(r * Math.sin(tVal))
           break
-        case 'rose':
+        }
+        case 'rose': {
           const k = 3 + Math.sin(param)
           const rRose = Math.cos(k * tVal)
           x.push(rRose * Math.cos(tVal))
           y.push(rRose * Math.sin(tVal))
           break
+        }
       }
     }
 
@@ -398,23 +402,26 @@ function Parametric3DScene({
       t.push(tVal)
 
       switch (curveType) {
-        case 'helix':
+        case 'helix': {
           x.push(Math.cos(tVal))
           y.push(Math.sin(tVal))
           z.push(tVal / (2 * Math.PI))
           break
-        case 'torus':
+        }
+        case 'torus': {
           const R = 2
           const r = 1
           x.push((R + r * Math.cos(3 * tVal)) * Math.cos(tVal))
           y.push((R + r * Math.cos(3 * tVal)) * Math.sin(tVal))
           z.push(r * Math.sin(3 * tVal))
           break
-        case 'trefoil':
+        }
+        case 'trefoil': {
           x.push(Math.sin(tVal) + 2 * Math.sin(2 * tVal))
           y.push(Math.cos(tVal) - 2 * Math.cos(2 * tVal))
           z.push(-Math.sin(3 * tVal))
           break
+        }
       }
     }
 
@@ -437,7 +444,7 @@ function Parametric3DScene({
             },
             marker: {
               color: curveData.z,
-              colorscale: 'Viridis' as any,
+              colorscale: 'Viridis' as const,
             },
           },
         ]}
@@ -615,7 +622,7 @@ export default function ParametricSceneRenderer({ scene }: SceneRendererProps) {
       }
       return <FormulaScene formulaType="circle" />
 
-    case 'lissajous':
+    case 'lissajous': {
       const a = (lineState?.params?.a as number) || 3
       const b = (lineState?.params?.b as number) || 4
       const delta = (lineState?.params?.delta as number) || Math.PI / 2
@@ -625,8 +632,9 @@ export default function ParametricSceneRenderer({ scene }: SceneRendererProps) {
         return <FormulaScene formulaType="lissajous" />
       }
       return <LissajousScene a={a} b={b} delta={delta} animate={animate} />
+    }
 
-    case 'cycloid':
+    case 'cycloid': {
       const cycloidType = (lineState?.params?.type as 'cycloid' | 'epicycloid' | 'hypocycloid') || 'cycloid'
       const cycloidAnimate = lineState?.params?.animate as boolean || false
 
@@ -640,6 +648,7 @@ export default function ParametricSceneRenderer({ scene }: SceneRendererProps) {
         return <CycloidScene type="hypocycloid" animate={cycloidAnimate} />
       }
       return <CycloidScene type={cycloidType} animate={cycloidAnimate} />
+    }
 
     case '3d':
       if (sceneConfig.id.includes('helix')) {
@@ -653,9 +662,10 @@ export default function ParametricSceneRenderer({ scene }: SceneRendererProps) {
       }
       return <Parametric3DScene curveType="helix" />
 
-    case 'animation':
+    case 'animation': {
       const animCurveType = (lineState?.params?.curveType as 'circle' | 'ellipse' | 'spiral' | 'rose') || 'circle'
       return <ParameterAnimationScene curveType={animCurveType} />
+    }
 
     case 'application':
       return <ApplicationScene sceneId={sceneConfig.id} />

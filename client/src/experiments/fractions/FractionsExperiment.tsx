@@ -69,12 +69,13 @@ export default function FractionsExperiment() {
   // 计算结果
   const result = useMemo(() => {
     switch (operation) {
-      case 'compare':
+      case 'compare': {
         const val1 = num1 / den1
         const val2 = num2 / den2
         if (val1 > val2) return '>'
         if (val1 < val2) return '<'
         return '='
+      }
       case 'add': {
         const newNum = num1 * den2 + num2 * den1
         const newDen = den1 * den2
@@ -114,7 +115,7 @@ export default function FractionsExperiment() {
           { description: `分母：${den1} × ${den2} = ${den1 * den2}` },
           { description: `结果：${(result as [number, number])[0]}/${(result as [number, number])[1]}` },
         ]
-      case 'equivalent':
+      case 'equivalent': {
         const [sNum, sDen] = result as [number, number]
         return [
           { description: `找出 ${num1} 和 ${den1} 的最大公约数` },
@@ -122,6 +123,7 @@ export default function FractionsExperiment() {
           { description: `分子分母同时除以最大公约数` },
           { description: `${num1}/${den1} = ${sNum}/${sDen}` },
         ]
+      }
     }
   }, [operation, num1, den1, num2, den2, result])
 

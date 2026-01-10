@@ -34,7 +34,7 @@ interface TriangleSceneProps {
 
 function TriangleScene({ a = 3, b = 4, showSquares = false, animate = false }: TriangleSceneProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const [animationProgress, setAnimationProgress] = useState(0)
+  const [animationProgress, setAnimationProgress] = useState(animate ? 0 : 1)
 
   useEffect(() => {
     if (animate) {
@@ -42,8 +42,6 @@ function TriangleScene({ a = 3, b = 4, showSquares = false, animate = false }: T
         setAnimationProgress(p => (p >= 1 ? 0 : p + 0.01))
       }, 30)
       return () => clearInterval(timer)
-    } else {
-      setAnimationProgress(1)
     }
   }, [animate])
 

@@ -557,7 +557,7 @@ export default function BayesSceneRenderer({ scene }: SceneRendererProps) {
       }
       return <PriorPosteriorComparisonScene />
 
-    case 'medical':
+    case 'medical': {
       const step = (lineState?.params?.step as number) || 0
       if (sceneConfig.id.includes('diagnosis')) {
         return <MedicalDiagnosisScene step={step} />
@@ -574,6 +574,7 @@ export default function BayesSceneRenderer({ scene }: SceneRendererProps) {
         return <ProbabilityBarScene priorProb={0.01} posteriorProb={0.083} showPosterior label="诊断结果" />
       }
       return <MedicalDiagnosisScene step={step} />
+    }
 
     case 'update':
       if (sceneConfig.id.includes('animation')) {

@@ -3,7 +3,7 @@
  * 渲染韦恩图、集合运算等可视化
  */
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useMemo } from 'react'
 import type { SceneRendererProps } from '../SceneRendererFactory'
 import MathFormula from '../../../../components/MathFormula/MathFormula'
 
@@ -40,12 +40,12 @@ function VennDiagramScene({
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [animationPhase, setAnimationPhase] = useState(0)
 
-  // 集合定义
-  const setA = [1, 2, 3, 4, 5]
-  const setB = [4, 5, 6, 7, 8]
-  const intersection = setA.filter(x => setB.includes(x))
-  const onlyA = setA.filter(x => !setB.includes(x))
-  const onlyB = setB.filter(x => !setA.includes(x))
+  // 集合定义 - 使用 useMemo 避免每次渲染重新创建
+  const setA = useMemo(() => [1, 2, 3, 4, 5], [])
+  const setB = useMemo(() => [4, 5, 6, 7, 8], [])
+  const intersection = useMemo(() => setA.filter((x: number) => setB.includes(x)), [setA, setB])
+  const onlyA = useMemo(() => setA.filter((x: number) => !setB.includes(x)), [setA, setB])
+  const onlyB = useMemo(() => setB.filter((x: number) => !setA.includes(x)), [setA, setB])
 
   useEffect(() => {
     if (animate) {
@@ -165,19 +165,19 @@ function VennDiagramScene({
 
       // 只在 A 中的元素
       const onlyAY = centerY - 20
-      onlyA.forEach((num, i) => {
+      onlyA.forEach((num: number, i: number) => {
         ctx.fillText(num.toString(), circleAX - 60, onlyAY + i * 25)
       })
 
       // 交集元素
       const intersectionY = centerY - 10
-      intersection.forEach((num, i) => {
+      intersection.forEach((num: number, i: number) => {
         ctx.fillText(num.toString(), centerX - 10, intersectionY + i * 25)
       })
 
       // 只在 B 中的元素
       const onlyBY = centerY - 20
-      onlyB.forEach((num, i) => {
+      onlyB.forEach((num: number, i: number) => {
         ctx.fillText(num.toString(), circleBX + 40, onlyBY + i * 25)
       })
     }
@@ -217,7 +217,7 @@ function VennDiagramScene({
       ctx.fillText(resultText, width - 250, height - 30)
     }
 
-  }, [operation, showElements, animationPhase])
+  }, [operation, showElements, animationPhase, setA, setB, intersection, onlyA, onlyB])
 
   return (
     <div className="w-full h-full flex items-center justify-center">
@@ -232,7 +232,7 @@ function VennDiagramScene({
 }
 
 // 集合概念场景
-function ConceptScene({ sceneId: _sceneId }: { sceneId: string }) {
+function ConceptScene() {
   return (
     <div className="w-full h-full flex items-center justify-center p-8">
       <div className="max-w-2xl">
@@ -392,7 +392,7 @@ export default function SetTheorySceneRenderer({ scene }: SceneRendererProps) {
 
     case 'concept':
       if (sceneConfig.id === 'concept-1' || sceneConfig.id === 'concept-2') {
-        return <ConceptScene sceneId={sceneConfig.id} />
+        return <ConceptScene />
       }
       return <VennDiagramScene operation="none" showElements={true} />
 

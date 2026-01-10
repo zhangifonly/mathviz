@@ -11,7 +11,6 @@ export default function CryptographyExperiment() {
   const [cipherType, setCipherType] = useState<CipherType>('caesar')
   const [plaintext, setPlaintext] = useState('HELLO')
   const [caesarShift, setCaesarShift] = useState(3)
-  const [ciphertext, setCiphertext] = useState('')
   const [showPresenter, setShowPresenter] = useState(false)
 
   // RSA 参数
@@ -97,7 +96,7 @@ export default function CryptographyExperiment() {
   const modInverse = useCallback((a: number, m: number): number => {
     if (gcd(a, m) !== 1) return -1
 
-    let m0 = m
+    const m0 = m
     let x0 = 0
     let x1 = 1
 
@@ -132,13 +131,12 @@ export default function CryptographyExperiment() {
     return result
   }, [])
 
-  // 更新密文
-  useEffect(() => {
+  // 更新密文 - 使用 useMemo 而不是 useEffect 来避免 setState 在 effect 中
+  const ciphertext = useMemo(() => {
     switch (cipherType) {
       case 'caesar':
-        setCiphertext(caesarEncrypt(plaintext, caesarShift))
-        break
-      case 'substitution':
+        return caesarEncrypt(plaintext, caesarShift)
+      case 'substitution': {
         // 简单替换密码（固定映射）
         const substitutionMap: Record<string, string> = {
           A: 'Q',
@@ -168,36 +166,37 @@ export default function CryptographyExperiment() {
           Y: 'N',
           Z: 'M',
         }
-        setCiphertext(
-          plaintext
-            .toUpperCase()
-            .split('')
-            .map((c) => substitutionMap[c] || c)
-            .join('')
-        )
-        break
+        return plaintext
+          .toUpperCase()
+          .split('')
+          .map((c) => substitutionMap[c] || c)
+          .join('')
+      }
       case 'hash':
-        setCiphertext(simpleHash(plaintext).toString(16).toUpperCase())
-        break
+        return simpleHash(plaintext).toString(16).toUpperCase()
       default:
-        setCiphertext('')
+        return ''
     }
   }, [cipherType, plaintext, caesarShift, caesarEncrypt, simpleHash])
 
   // 计算 RSA 参数
   useEffect(() => {
-    const n = rsaP * rsaQ
-    const phi = (rsaP - 1) * (rsaQ - 1)
-    const d = modInverse(rsaE, phi)
+    const calculateRSA = () => {
+      const n = rsaP * rsaQ
+      const phi = (rsaP - 1) * (rsaQ - 1)
+      const d = modInverse(rsaE, phi)
 
-    setRsaN(n)
-    setRsaPhi(phi)
-    setRsaD(d)
+      setRsaN(n)
+      setRsaPhi(phi)
+      setRsaD(d)
 
-    if (d > 0 && rsaMessage < n) {
-      const encrypted = modPow(rsaMessage, rsaE, n)
-      setRsaEncrypted(encrypted)
+      if (d > 0 && rsaMessage < n) {
+        const encrypted = modPow(rsaMessage, rsaE, n)
+        setRsaEncrypted(encrypted)
+      }
     }
+
+    calculateRSA()
   }, [rsaP, rsaQ, rsaE, rsaMessage, modInverse, modPow])
 
   // 字母频率分析

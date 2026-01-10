@@ -18,6 +18,9 @@ export default function HeatEquationExperiment() {
   const animationRef = useRef<number | null>(null)
   const [temperature, setTemperature] = useState<number[]>([])
   const [showPresenter, setShowPresenter] = useState(false)
+  const [heatmapHistory, setHeatmapHistory] = useState<number[][]>([])
+  const lastRecordedTemp = useRef<number[]>([])
+  const [randomSeed, setRandomSeed] = useState(0)
 
   // 讲解系统
   const narration = useNarrationOptional()
@@ -46,10 +49,16 @@ export default function HeatEquationExperiment() {
     setShowPresenter(false)
   }, [narration])
 
-  // 初始化温度分布
-  useEffect(() => {
+  // 初始化温度分布 - 使用 useMemo 避免在 effect 中 setState
+  const initialTemperature = useMemo(() => {
     const u: number[] = []
     const dx = 1 / gridSize
+
+    // 为随机情况创建一个简单的伪随机数生成器
+    const seededRandom = (seed: number, index: number) => {
+      const x = Math.sin(seed + index) * 10000
+      return x - Math.floor(x)
+    }
 
     for (let i = 0; i <= gridSize; i++) {
       const x = i * dx
@@ -65,7 +74,7 @@ export default function HeatEquationExperiment() {
           u.push(Math.sin(Math.PI * x))
           break
         case 'random':
-          u.push(Math.random())
+          u.push(seededRandom(randomSeed, i))
           break
       }
     }
@@ -76,9 +85,16 @@ export default function HeatEquationExperiment() {
       u[gridSize] = 0
     }
 
-    setTemperature(u)
+    return u
+  }, [initialCondition, boundaryCondition, gridSize, randomSeed])
+
+  // 当初始条件改变时重置状态
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setTemperature(initialTemperature)
     setTime(0)
-  }, [initialCondition, boundaryCondition, gridSize])
+    setHeatmapHistory([])
+  }, [initialTemperature])
 
   // 动画更新
   useEffect(() => {
@@ -175,19 +191,28 @@ export default function HeatEquationExperiment() {
   }, [gridSize])
 
   // 2D 热图数据（时间演化）
-  const [heatmapHistory, setHeatmapHistory] = useState<number[][]>([])
+  // 使用 callback 形式避免在 effect 中直接 setState
+  const updateHeatmapHistory = useCallback((newTemp: number[]) => {
+    setHeatmapHistory((prev) => {
+      const newHistory = [...prev, [...newTemp]]
+      if (newHistory.length > 100) {
+        return newHistory.slice(-100)
+      }
+      return newHistory
+    })
+  }, [])
 
   useEffect(() => {
-    if (temperature.length > 0) {
-      setHeatmapHistory((prev) => {
-        const newHistory = [...prev, [...temperature]]
-        if (newHistory.length > 100) {
-          return newHistory.slice(-100)
-        }
-        return newHistory
-      })
+    if (temperature.length > 0 && isAnimating) {
+      // 只在动画时记录，避免初始化时触发
+      const tempChanged = temperature.some((val, idx) => val !== lastRecordedTemp.current[idx])
+      if (tempChanged) {
+        lastRecordedTemp.current = [...temperature]
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        updateHeatmapHistory(temperature)
+      }
     }
-  }, [temperature])
+  }, [temperature, isAnimating, updateHeatmapHistory])
 
   const reset = () => {
     setIsAnimating(false)
@@ -345,6 +370,9 @@ export default function HeatEquationExperiment() {
                   onClick={() => {
                     setInitialCondition(item.type)
                     setHeatmapHistory([])
+                    if (item.type === 'random') {
+                      setRandomSeed(Math.random())
+                    }
                   }}
                   className={`w-full px-3 py-2 rounded-lg text-sm font-medium transition-colors text-left ${
                     initialCondition === item.type

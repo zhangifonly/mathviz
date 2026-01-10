@@ -130,7 +130,7 @@ export default function NumericalIntegrationExperiment() {
     }
 
     return { x, y }
-  }, [funcType, lowerBound, upperBound, func])
+  }, [lowerBound, upperBound, func])
 
   // 数值积分计算
   const integrationResult = useMemo(() => {
@@ -209,7 +209,7 @@ export default function NumericalIntegrationExperiment() {
     const relativeError = exact !== 0 ? error / Math.abs(exact) : error
 
     return { result, exact, error, relativeError, rectangles }
-  }, [method, funcType, lowerBound, upperBound, currentIntervals, func])
+  }, [method, lowerBound, upperBound, currentIntervals, func])
 
   // 收敛性分析
   const convergenceData = useMemo(() => {
@@ -256,7 +256,7 @@ export default function NumericalIntegrationExperiment() {
     }
 
     return { n: ns, errors }
-  }, [method, funcType, lowerBound, upperBound, func])
+  }, [method, lowerBound, upperBound, func])
 
   // 生成填充区域
   const fillData = useMemo(() => {
@@ -376,14 +376,14 @@ export default function NumericalIntegrationExperiment() {
                       name: '积分区域',
                     }]
                   : []),
-              ] as any}
+              ] as Plotly.Data[]}
               layout={{
                 autosize: true,
                 height: 400,
                 margin: { t: 30, r: 30, b: 40, l: 50 },
                 xaxis: { title: { text: 'x' } },
                 yaxis: { title: { text: 'f(x)' } },
-                shapes: (method !== 'simpson' ? (fillData as { shapes: unknown[] }).shapes : []) as any,
+                shapes: (method !== 'simpson' ? (fillData as { shapes: Plotly.Shape[] }).shapes : []) as Plotly.Shape[],
                 legend: { orientation: 'h' as const, y: -0.15 },
               }}
               config={{ responsive: true, displaylogo: false }}
@@ -404,7 +404,7 @@ export default function NumericalIntegrationExperiment() {
                     line: { color: '#ef4444', width: 2 },
                     marker: { size: 8 },
                   },
-                ] as any}
+                ] as Plotly.Data[]}
                 layout={{
                   autosize: true,
                   height: 250,

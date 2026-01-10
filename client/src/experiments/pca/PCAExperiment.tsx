@@ -19,6 +19,7 @@ export default function PCAExperiment() {
   const [isAnimating, setIsAnimating] = useState(false)
   const [animatedCorrelation, setAnimatedCorrelation] = useState(-1)
   const animationRef = useRef<number | null>(null)
+  const dataVersionRef = useRef(0)
 
   // 讲解系统
   useEffect(() => {
@@ -71,27 +72,37 @@ export default function PCAExperiment() {
   // 生成数据
   const data = useMemo(() => {
     const points: { x: number; y: number }[] = []
+    // Use a simple seeded random generator for deterministic results
+    const createSeededRandom = (initialSeed: number) => {
+      let seed = initialSeed
+      return () => {
+        seed = (seed * 9301 + 49297) % 233280
+        return seed / 233280
+      }
+    }
+    // eslint-disable-next-line react-hooks/refs
+    const seededRandom = createSeededRandom(dataVersionRef.current)
 
     switch (dataset) {
       case 'random':
         for (let i = 0; i < numPoints; i++) {
           points.push({
-            x: (Math.random() - 0.5) * 4,
-            y: (Math.random() - 0.5) * 4,
+            x: (seededRandom() - 0.5) * 4,
+            y: (seededRandom() - 0.5) * 4,
           })
         }
         break
 
       case 'correlated':
         for (let i = 0; i < numPoints; i++) {
-          const x = (Math.random() - 0.5) * 4
-          const noise = (Math.random() - 0.5) * 2 * (1 - Math.abs(currentCorrelation))
+          const x = (seededRandom() - 0.5) * 4
+          const noise = (seededRandom() - 0.5) * 2 * (1 - Math.abs(currentCorrelation))
           const y = currentCorrelation * x + noise
           points.push({ x, y })
         }
         break
 
-      case 'clusters':
+      case 'clusters': {
         const centers = [
           { x: -1.5, y: -1 },
           { x: 1.5, y: 1 },
@@ -100,20 +111,21 @@ export default function PCAExperiment() {
         for (let i = 0; i < numPoints; i++) {
           const center = centers[i % 3]
           points.push({
-            x: center.x + (Math.random() - 0.5) * 1.5,
-            y: center.y + (Math.random() - 0.5) * 1.5,
+            x: center.x + (seededRandom() - 0.5) * 1.5,
+            y: center.y + (seededRandom() - 0.5) * 1.5,
           })
         }
         break
+      }
 
       case 'custom':
         // 椭圆形数据
         for (let i = 0; i < numPoints; i++) {
-          const angle = Math.random() * 2 * Math.PI
+          const angle = seededRandom() * 2 * Math.PI
           const rx = 2, ry = 0.5
           const rotAngle = Math.PI / 4
-          const x0 = rx * Math.cos(angle) + (Math.random() - 0.5) * 0.3
-          const y0 = ry * Math.sin(angle) + (Math.random() - 0.5) * 0.3
+          const x0 = rx * Math.cos(angle) + (seededRandom() - 0.5) * 0.3
+          const y0 = ry * Math.sin(angle) + (seededRandom() - 0.5) * 0.3
           points.push({
             x: x0 * Math.cos(rotAngle) - y0 * Math.sin(rotAngle),
             y: x0 * Math.sin(rotAngle) + y0 * Math.cos(rotAngle),

@@ -226,7 +226,7 @@ export default function FourierExperiment() {
                     name: `傅里叶逼近 (${params.terms}项)`,
                     line: { color: '#f43f5e', width: 2, dash: 'dash' },
                   },
-                ] as any}
+                ] as Array<Plotly.Data>}
                 layout={{
                   autosize: true,
                   height: 250,
@@ -263,10 +263,10 @@ export default function FourierExperiment() {
                     marker: {
                       color: frequencyData.freqBins.map((_, i) =>
                         `rgba(139, 92, 246, ${0.5 + i * 0.05})`
-                      )
+                      ),
                     },
                   },
-                ] as any}
+                ] as Array<Plotly.Data>}
                 layout={{
                   autosize: true,
                   height: 200,

@@ -202,7 +202,7 @@ export default function PermutationCombinationExperiment() {
       percentProbability,
       odds: `1 : ${totalCombinations.toLocaleString()}`,
     }
-  }, [params.lotteryTotal, params.lotteryPick])
+  }, [params])
 
   return (
     <>

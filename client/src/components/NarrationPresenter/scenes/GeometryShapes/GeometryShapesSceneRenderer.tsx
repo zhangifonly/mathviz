@@ -444,25 +444,29 @@ function TransformScene({ transformType = 'rotate' }: { transformType?: string }
     ctx.translate(centerX, centerY)
 
     switch (transformType) {
-      case 'rotate':
+      case 'rotate': {
         ctx.rotate(frame * Math.PI / 180)
         break
-      case 'scale':
+      }
+      case 'scale': {
         const scale = 1 + Math.sin(frame * Math.PI / 180) * 0.5
         ctx.scale(scale, scale)
         break
-      case 'translate':
+      }
+      case 'translate': {
         const offsetX = Math.cos(frame * Math.PI / 180) * 50
         const offsetY = Math.sin(frame * Math.PI / 180) * 50
         ctx.translate(offsetX, offsetY)
         break
-      case 'reflect':
+      }
+      case 'reflect': {
         if (frame < 180) {
           ctx.scale(1, 1)
         } else {
           ctx.scale(-1, 1)
         }
         break
+      }
     }
 
     drawSquare(ctx)
@@ -613,24 +617,27 @@ export default function GeometryShapesSceneRenderer({ scene }: SceneRendererProp
       return <ShapeScene shapeType="square" />
 
     case 'concept':
-    case 'basic-shapes':
+    case 'basic-shapes': {
       const shapeType = (lineState?.params?.shapeType as string) || 'triangle'
       const animated = lineState?.params?.animated as boolean
       return <ShapeScene shapeType={shapeType} animated={animated} />
+    }
 
     case 'area':
-    case 'area-calculation':
+    case 'area-calculation': {
       const areaShape = (lineState?.params?.shapeType as string) || 'square'
       const showCalc = lineState?.params?.showCalculation as boolean
       return <AreaScene shapeType={areaShape} showCalculation={showCalc} />
+    }
 
     case 'perimeter':
       return <FormulaScene formulaType="circle-circumference" />
 
     case 'transform':
-    case 'transformation':
+    case 'transformation': {
       const transformType = (lineState?.params?.transformType as string) || 'rotate'
       return <TransformScene transformType={transformType} />
+    }
 
     case 'application':
       return <ApplicationScene sceneId={sceneConfig.id} />

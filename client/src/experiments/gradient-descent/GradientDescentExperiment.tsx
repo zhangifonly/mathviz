@@ -139,15 +139,18 @@ export default function GradientDescentExperiment() {
     }
 
     return result
-  }, [funcType, startX, startY, learningRate, maxIter, func])
+  }, [startX, startY, learningRate, maxIter, func])
 
   useEffect(() => {
     if (isRunning && currentStep < path.length - 1) {
       animationRef.current = window.setTimeout(() => {
-        setCurrentStep((s) => s + 1)
+        setCurrentStep((s) => {
+          if (s >= path.length - 2) {
+            setIsRunning(false)
+          }
+          return s + 1
+        })
       }, 100)
-    } else if (currentStep >= path.length - 1) {
-      setIsRunning(false)
     }
 
     return () => {

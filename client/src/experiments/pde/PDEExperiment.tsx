@@ -15,7 +15,6 @@ export default function PDEExperiment() {
   const [isAnimating, setIsAnimating] = useState(false)
   const [time, setTime] = useState(0)
   const animationRef = useRef<number | null>(null)
-  const [solution, setSolution] = useState<number[][]>([])
   const [showPresenter, setShowPresenter] = useState(false)
 
   // 讲解系统
@@ -46,6 +45,45 @@ export default function PDEExperiment() {
   }, [narration])
 
   // 初始化解
+  const [solution, setSolution] = useState<number[][]>(() => {
+    const n = gridSize
+    const u: number[][] = []
+
+    for (let i = 0; i < n; i++) {
+      u[i] = []
+      for (let j = 0; j < n; j++) {
+        const x = i / (n - 1)
+        const y = j / (n - 1)
+
+        switch (pdeType) {
+          case 'laplace':
+            // 拉普拉斯方程：边界条件决定解
+            if (i === 0 || i === n - 1 || j === 0 || j === n - 1) {
+              u[i][j] = boundaryCondition === 'dirichlet' ? Math.sin(Math.PI * x) : 0
+            } else {
+              u[i][j] = 0
+            }
+            break
+          case 'poisson':
+            // 泊松方程：有源项
+            u[i][j] = 0
+            break
+          case 'wave':
+            // 波动方程：初始位移
+            u[i][j] = Math.exp(-50 * ((x - 0.5) ** 2 + (y - 0.5) ** 2))
+            break
+          case 'heat':
+            // 热传导方程：初始温度分布
+            u[i][j] = Math.exp(-20 * ((x - 0.5) ** 2 + (y - 0.5) ** 2))
+            break
+        }
+      }
+    }
+
+    return u
+  })
+
+  // 重新初始化解当参数改变时
   useEffect(() => {
     const n = gridSize
     const u: number[][] = []
@@ -81,6 +119,7 @@ export default function PDEExperiment() {
       }
     }
 
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setSolution(u)
     setTime(0)
   }, [pdeType, boundaryCondition, gridSize])

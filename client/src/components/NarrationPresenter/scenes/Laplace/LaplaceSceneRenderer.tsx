@@ -130,7 +130,7 @@ function SDomainScene() {
       setCurrentIndex(prev => (prev + 1) % transforms.length)
     }, 2500)
     return () => clearInterval(interval)
-  }, [])
+  }, [transforms.length])
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center gap-6 p-4">

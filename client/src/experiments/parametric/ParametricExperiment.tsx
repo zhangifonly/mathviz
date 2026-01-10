@@ -135,11 +135,12 @@ export default function ParametricExperiment() {
           x = (params.R + params.r) * Math.cos(t) - params.r * Math.cos(((params.R + params.r) / params.r) * t)
           y = (params.R + params.r) * Math.sin(t) - params.r * Math.sin(((params.R + params.r) / params.r) * t)
           break
-        case 'bezier':
+        case 'bezier': {
           const p0 = bezierPoints[0], p1 = bezierPoints[1], p2 = bezierPoints[2], p3 = bezierPoints[3]
           x = Math.pow(1-t, 3) * p0.x + 3 * Math.pow(1-t, 2) * t * p1.x + 3 * (1-t) * t * t * p2.x + Math.pow(t, 3) * p3.x
           y = Math.pow(1-t, 3) * p0.y + 3 * Math.pow(1-t, 2) * t * p1.y + 3 * (1-t) * t * t * p2.y + Math.pow(t, 3) * p3.y
           break
+        }
         case 'hypotrochoid':
           x = (params.R - params.r) * Math.cos(t) + params.d * Math.cos(((params.R - params.r) / params.r) * t)
           y = (params.R - params.r) * Math.sin(t) - params.d * Math.sin(((params.R - params.r) / params.r) * t)
@@ -166,11 +167,12 @@ export default function ParametricExperiment() {
         ax = (params.R + params.r) * Math.cos(tAnim) - params.r * Math.cos(((params.R + params.r) / params.r) * tAnim)
         ay = (params.R + params.r) * Math.sin(tAnim) - params.r * Math.sin(((params.R + params.r) / params.r) * tAnim)
         break
-      case 'bezier':
+      case 'bezier': {
         const p0 = bezierPoints[0], p1 = bezierPoints[1], p2 = bezierPoints[2], p3 = bezierPoints[3]
         ax = Math.pow(1-tAnim, 3) * p0.x + 3 * Math.pow(1-tAnim, 2) * tAnim * p1.x + 3 * (1-tAnim) * tAnim * tAnim * p2.x + Math.pow(tAnim, 3) * p3.x
         ay = Math.pow(1-tAnim, 3) * p0.y + 3 * Math.pow(1-tAnim, 2) * tAnim * p1.y + 3 * (1-tAnim) * tAnim * tAnim * p2.y + Math.pow(tAnim, 3) * p3.y
         break
+      }
       case 'hypotrochoid':
         ax = (params.R - params.r) * Math.cos(tAnim) + params.d * Math.cos(((params.R - params.r) / params.r) * tAnim)
         ay = (params.R - params.r) * Math.sin(tAnim) - params.d * Math.sin(((params.R - params.r) / params.r) * tAnim)

@@ -83,7 +83,10 @@ export default function FractalExperiment() {
 
     setIsRendering(true)
     const ctx = canvas.getContext('2d')
-    if (!ctx) return
+    if (!ctx) {
+      setIsRendering(false)
+      return
+    }
 
     const width = canvas.width
     const height = canvas.height
@@ -118,7 +121,12 @@ export default function FractalExperiment() {
   }, [fractalType, maxIter, juliaC, view, mandelbrot, julia, colorPalette])
 
   useEffect(() => {
-    renderFractal()
+    // Use a timeout to avoid calling setState synchronously in effect
+    const timeoutId = setTimeout(() => {
+      renderFractal()
+    }, 0)
+
+    return () => clearTimeout(timeoutId)
   }, [renderFractal])
 
   // Julia集参数动画

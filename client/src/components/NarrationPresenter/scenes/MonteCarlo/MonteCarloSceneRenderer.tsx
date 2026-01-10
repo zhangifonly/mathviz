@@ -37,37 +37,52 @@ function PiEstimationScene({
   showStats = true
 }: PiEstimationSceneProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const [points, setPoints] = useState<{ x: number; y: number; inside: boolean }[]>([])
-  const [currentCount, setCurrentCount] = useState(0)
-  const [piEstimate, setPiEstimate] = useState(0)
   const animationRef = useRef<number | undefined>(undefined)
 
   // 生成随机点
-  const generatePoint = () => {
-    const x = Math.random() * 2 - 1 // [-1, 1]
-    const y = Math.random() * 2 - 1 // [-1, 1]
-    const inside = x * x + y * y <= 1
-    return { x, y, inside }
-  }
+  const generatePoint = useMemo(() => {
+    return () => {
+      const x = Math.random() * 2 - 1 // [-1, 1]
+      const y = Math.random() * 2 - 1 // [-1, 1]
+      const inside = x * x + y * y <= 1
+      return { x, y, inside }
+    }
+  }, [])
 
   // 初始化或重置点
-  useEffect(() => {
-    if (!animate) {
-      const newPoints = []
-      for (let i = 0; i < pointCount; i++) {
-        newPoints.push(generatePoint())
-      }
-      setPoints(newPoints)
-      setCurrentCount(pointCount)
-
-      const insideCount = newPoints.filter(p => p.inside).length
-      setPiEstimate((4 * insideCount) / pointCount)
-    } else {
-      setPoints([])
-      setCurrentCount(0)
-      setPiEstimate(0)
+  const initialPoints = useMemo(() => {
+    if (animate) {
+      return []
     }
-  }, [pointCount, animate])
+    const newPoints = []
+    for (let i = 0; i < pointCount; i++) {
+      newPoints.push(generatePoint())
+    }
+    return newPoints
+  }, [pointCount, animate, generatePoint])
+
+  const initialCount = useMemo(() => (animate ? 0 : pointCount), [animate, pointCount])
+  const initialEstimate = useMemo(() => {
+    if (animate) return 0
+    const insideCount = initialPoints.filter(p => p.inside).length
+    return (4 * insideCount) / pointCount
+  }, [animate, initialPoints, pointCount])
+
+  const [points, setPoints] = useState(initialPoints)
+  const [currentCount, setCurrentCount] = useState(initialCount)
+  const [piEstimate, setPiEstimate] = useState(initialEstimate)
+
+  useEffect(() => {
+    setPoints(initialPoints)
+  }, [initialPoints])
+
+  useEffect(() => {
+    setCurrentCount(initialCount)
+  }, [initialCount])
+
+  useEffect(() => {
+    setPiEstimate(initialEstimate)
+  }, [initialEstimate])
 
   // 动画效果
   useEffect(() => {
@@ -103,7 +118,7 @@ function PiEstimationScene({
         cancelAnimationFrame(animationRef.current)
       }
     }
-  }, [animate, pointCount])
+  }, [animate, pointCount, generatePoint])
 
   // 绘制 Canvas
   useEffect(() => {
@@ -208,12 +223,14 @@ export function IntegrationScene({
   }, [func, a, b])
 
   // 生成随机点
-  const generatePoint = () => {
-    const x = a + Math.random() * (b - a)
-    const y = Math.random() * maxY
-    const inside = y <= func(x)
-    return { x, y, inside }
-  }
+  const generatePoint = useMemo(() => {
+    return () => {
+      const x = a + Math.random() * (b - a)
+      const y = Math.random() * maxY
+      const inside = y <= func(x)
+      return { x, y, inside }
+    }
+  }, [a, b, maxY, func])
 
   // 初始化或重置点
   useEffect(() => {
@@ -232,7 +249,7 @@ export function IntegrationScene({
       setCurrentCount(0)
       setIntegralEstimate(0)
     }
-  }, [pointCount, animate, a, b, maxY])
+  }, [pointCount, animate, a, b, maxY, generatePoint])
 
   // 动画效果
   useEffect(() => {
@@ -268,7 +285,7 @@ export function IntegrationScene({
         cancelAnimationFrame(animationRef.current)
       }
     }
-  }, [animate, pointCount, a, b, maxY])
+  }, [animate, pointCount, a, b, maxY, generatePoint])
 
   // 绘制 Canvas
   useEffect(() => {
@@ -384,17 +401,20 @@ function ConvergenceScene({
   showAnimation = true
 }: ConvergenceSceneProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const [history, setHistory] = useState<{ count: number; estimate: number }[]>([])
-  const [currentIndex, setCurrentIndex] = useState(0)
 
   // 生成收敛历史数据
-  useEffect(() => {
+  const history = useMemo(() => {
     const newHistory: { count: number; estimate: number }[] = []
     let insideCount = 0
+    // Use a simple hash-based approach for deterministic results
+    const hashRandom = (seed: number) => {
+      const x = Math.sin(seed) * 10000
+      return x - Math.floor(x)
+    }
 
     for (let i = 1; i <= maxPoints; i++) {
-      const x = Math.random() * 2 - 1
-      const y = Math.random() * 2 - 1
+      const x = hashRandom(i * 2) * 2 - 1
+      const y = hashRandom(i * 2 + 1) * 2 - 1
       if (x * x + y * y <= 1) {
         insideCount++
       }
@@ -408,9 +428,15 @@ function ConvergenceScene({
       }
     }
 
-    setHistory(newHistory)
-    setCurrentIndex(showAnimation ? 0 : newHistory.length - 1)
-  }, [maxPoints, showAnimation])
+    return newHistory
+  }, [maxPoints])
+
+  const initialIndex = useMemo(() => (showAnimation ? 0 : history.length - 1), [showAnimation, history.length])
+  const [currentIndex, setCurrentIndex] = useState(initialIndex)
+
+  useEffect(() => {
+    setCurrentIndex(initialIndex)
+  }, [initialIndex])
 
   // 动画效果
   useEffect(() => {

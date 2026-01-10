@@ -87,7 +87,7 @@ export default function BasicArithmeticExperiment() {
           { description: `我们排列 ${num2} 行，每行 ${num1} 个方块`, highlight: Array.from({ length: num1 * num2 }, (_, i) => i) },
           { description: `数一数，一共有 ${num1 * num2} 个方块！`, highlight: Array.from({ length: num1 * num2 }, (_, i) => i), result: num1 * num2 },
         ]
-      case 'division':
+      case 'division': {
         if (num2 === 0) {
           return [{ description: '除数不能为0！', highlight: [] }]
         }
@@ -98,6 +98,7 @@ export default function BasicArithmeticExperiment() {
           { description: `每组可以分到 ${quotient} 个方块`, highlight: Array.from({ length: quotient * num2 }, (_, i) => i) },
           { description: remainder > 0 ? `还剩余 ${remainder} 个方块无法平均分配` : `正好分完，没有剩余！`, highlight: Array.from({ length: num1 }, (_, i) => i), result: quotient },
         ]
+      }
     }
   }, [operation, num1, num2])
 

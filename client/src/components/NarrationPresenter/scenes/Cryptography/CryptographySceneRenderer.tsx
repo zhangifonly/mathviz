@@ -3,7 +3,7 @@
  * 渲染凯撒密码、RSA、哈希函数等密码学算法的可视化动画
  */
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import type { SceneRendererProps } from '../SceneRendererFactory'
 import MathFormula from '../../../../components/MathFormula/MathFormula'
 
@@ -263,7 +263,7 @@ function HashFunctionScene({ animate = true }: { animate?: boolean }) {
     return Math.abs(hash).toString(16).padStart(8, '0').toUpperCase()
   }
 
-  const inputs = ['Hello', 'hello', 'Hello!', 'World', 'Hello World']
+  const inputs = useMemo(() => ['Hello', 'hello', 'Hello!', 'World', 'Hello World'], [])
 
   useEffect(() => {
     if (!animate) return
@@ -280,7 +280,7 @@ function HashFunctionScene({ animate = true }: { animate?: boolean }) {
     }, 2500)
 
     return () => clearInterval(timer)
-  }, [animate])
+  }, [animate, inputs])
 
   const hash = simpleHash(input)
 

@@ -28,24 +28,23 @@ export interface BasicArithmeticState {
 export default function BasicArithmeticSceneRenderer({
   scene,
   state,
-  onStateChange,
   isInteractive,
 }: Props) {
-  if (!scene) {
-    return (
-      <div className="flex items-center justify-center h-full">
-        <div className="text-white/50 text-lg">加载中...</div>
-      </div>
-    )
-  }
-
-  const { sectionId, scene: sceneConfig } = scene
+  const { sectionId, scene: sceneConfig } = scene || {}
 
   // 根据 sectionId 和 sceneConfig.type 决定渲染什么
   const content = useMemo(() => {
+    if (!scene || !sceneConfig) {
+      return (
+        <div className="flex items-center justify-center h-full">
+          <div className="text-white/50 text-lg">加载中...</div>
+        </div>
+      )
+    }
+
     // 标题场景
     if (sceneConfig.type === 'title') {
-      return <TitleScene sectionId={sectionId} sceneId={sceneConfig.id} />
+      return <TitleScene sectionId={sectionId || ''} sceneId={sceneConfig.id} />
     }
 
     // 应用场景
@@ -74,7 +73,7 @@ export default function BasicArithmeticSceneRenderer({
     return (
       <BlocksScene
         sceneId={sceneConfig.id}
-        sectionId={sectionId}
+        sectionId={sectionId || ''}
         operation={actualOperation}
         num1={actualNum1}
         num2={actualNum2}
@@ -82,7 +81,7 @@ export default function BasicArithmeticSceneRenderer({
         isInteractive={isInteractive}
       />
     )
-  }, [scene, state, isInteractive, onStateChange, sectionId, sceneConfig])
+  }, [scene, state, isInteractive, sectionId, sceneConfig])
 
   return (
     <div className="w-full h-full">
