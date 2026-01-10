@@ -5,6 +5,17 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      // Node.js polyfills for plotly.js
+      'buffer/': 'buffer/',
+      buffer: 'buffer',
+    },
+  },
+  define: {
+    // 为 plotly.js 提供 global 对象
+    global: 'globalThis',
+  },
   build: {
     rollupOptions: {
       output: {
@@ -20,5 +31,8 @@ export default defineConfig({
     },
     // plotly 本身就很大，提高警告阈值
     chunkSizeWarningLimit: 1500,
+  },
+  optimizeDeps: {
+    include: ['buffer'],
   },
 })

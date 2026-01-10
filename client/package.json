@@ -13,6 +13,7 @@
     "generate-audio": "python3 scripts/generate_audio.py"
   },
   "dependencies": {
+    "buffer": "^6.0.3",
     "katex": "^0.16.27",
     "mathjs": "^15.1.0",
     "plotly.js": "^3.3.1",
