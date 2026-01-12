@@ -53,6 +53,11 @@ import { randomWalkScenes, defaultRandomWalkState } from './randomWalkScenes'
 import { signalProcessingScenes, defaultSignalProcessingState } from './signalProcessingScenes'
 import { vectorFieldScenes, defaultVectorFieldState } from './vectorFieldScenes'
 import { waveEquationScenes, defaultWaveEquationState } from './waveEquationScenes'
+// 新增4个高级实验场景
+import { pdeScenes, defaultPdeState } from './pdeScenes'
+import { differentialGeometryScenes, defaultDifferentialGeometryState } from './differentialGeometryScenes'
+import { numericalAnalysisScenes, defaultNumericalAnalysisState } from './numericalAnalysisScenes'
+import { cryptographyScenes, defaultCryptographyState } from './cryptographyScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -118,6 +123,11 @@ const sceneConfigMap: Record<string, {
   'signal-processing': { scenes: signalProcessingScenes, defaultState: defaultSignalProcessingState },
   'vector-field': { scenes: vectorFieldScenes, defaultState: defaultVectorFieldState },
   'wave-equation': { scenes: waveEquationScenes, defaultState: defaultWaveEquationState },
+  // 新增4个高级实验
+  'pde': { scenes: pdeScenes, defaultState: defaultPdeState },
+  'differential-geometry': { scenes: differentialGeometryScenes, defaultState: defaultDifferentialGeometryState },
+  'numerical-analysis': { scenes: numericalAnalysisScenes, defaultState: defaultNumericalAnalysisState },
+  'cryptography': { scenes: cryptographyScenes, defaultState: defaultCryptographyState },
 }
 
 // 检测是否为移动设备
@@ -316,7 +326,9 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'random-walk', 'signal-processing', 'vector-field', 'wave-equation',
       'fractions', 'geometry-shapes', 'number-theory', 'golden-ratio', 'set-theory',
       'probability', 'trigonometry', 'pythagorean', 'quadratic-function',
-      'linear-function', 'polar', 'bezier', 'monte-carlo'
+      'linear-function', 'polar', 'bezier', 'monte-carlo',
+      // 新增4个高级实验
+      'pde', 'differential-geometry', 'numerical-analysis', 'cryptography'
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

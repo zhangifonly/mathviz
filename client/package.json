@@ -6,9 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "npx ts-node --esm scripts/check-course-integrity.ts",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "check-courses": "npx ts-node --esm scripts/check-course-integrity.ts",
     "export-narrations": "npx ts-node --esm scripts/export-narrations.ts",
     "generate-audio": "python3 scripts/generate_audio.py"
   },
