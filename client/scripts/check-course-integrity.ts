@@ -36,7 +36,7 @@ const COURSES_WITH_SPECIAL_HANDLING = ['basic-arithmetic']
 
 // 待完成的课程（已有讲解稿件但尚未完成场景配置，暂时跳过检查）
 // TODO: 完成这些课程的配置后从此列表移除
-const COURSES_PENDING_COMPLETION = ['laplace', 'permutation-combination']
+const COURSES_PENDING_COMPLETION: string[] = []
 
 function getAllCourseIds(): string[] {
   // 从讲解稿件目录获取所有课程 ID

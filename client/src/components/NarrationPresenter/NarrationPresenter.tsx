@@ -58,6 +58,9 @@ import { pdeScenes, defaultPdeState } from './pdeScenes'
 import { differentialGeometryScenes, defaultDifferentialGeometryState } from './differentialGeometryScenes'
 import { numericalAnalysisScenes, defaultNumericalAnalysisState } from './numericalAnalysisScenes'
 import { cryptographyScenes, defaultCryptographyState } from './cryptographyScenes'
+// 新增2个待完成课程场景
+import { laplaceScenes, defaultLaplaceState } from './laplaceScenes'
+import { permutationCombinationScenes, defaultPermutationCombinationState } from './permutationCombinationScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -128,6 +131,9 @@ const sceneConfigMap: Record<string, {
   'differential-geometry': { scenes: differentialGeometryScenes, defaultState: defaultDifferentialGeometryState },
   'numerical-analysis': { scenes: numericalAnalysisScenes, defaultState: defaultNumericalAnalysisState },
   'cryptography': { scenes: cryptographyScenes, defaultState: defaultCryptographyState },
+  // 新增2个待完成课程
+  'laplace': { scenes: laplaceScenes, defaultState: defaultLaplaceState },
+  'permutation-combination': { scenes: permutationCombinationScenes, defaultState: defaultPermutationCombinationState },
 }
 
 // 检测是否为移动设备
@@ -328,7 +334,9 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'probability', 'trigonometry', 'pythagorean', 'quadratic-function',
       'linear-function', 'polar', 'bezier', 'monte-carlo',
       // 新增4个高级实验
-      'pde', 'differential-geometry', 'numerical-analysis', 'cryptography'
+      'pde', 'differential-geometry', 'numerical-analysis', 'cryptography',
+      // 新增2个待完成课程
+      'laplace', 'permutation-combination'
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
