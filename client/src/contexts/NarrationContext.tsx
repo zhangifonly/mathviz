@@ -95,6 +95,7 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
 
   // Refs
   const audioRef = useRef<HTMLAudioElement | null>(null)
+  const preloadRef = useRef<HTMLAudioElement | null>(null)
   const animationCallbacksRef = useRef<Set<(action: AnimationAction) => void>>(new Set())
 
   // 获取音频路径 - 支持按声音切换
@@ -103,15 +104,13 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
     const file = manifest.files.find(f => f.section_id === sectionId && f.line_id === lineId)
     if (!file) return null
 
+    // 一律用 filename 拼场景根目录路径。
+    // 根目录恒有全部音频（实际生成位置），是最可靠的真相来源；
+    // 不信任 manifest.path（部分场景如 basic-arithmetic 指向不存在的 xiaoxiao/ 子目录），
+    // 也不再按 voice 拼 yunxi/ 子目录（历史上因默认 voice 写死 yunxi 导致大面积 404）。
     const filename = file.filename || file.path.split('/').pop()
-
-    // 根据当前选择的声音决定路径
-    // xiaoxiao 在根目录，yunxi 在子目录
-    if (voice === 'yunxi') {
-      return `/audio/narrations/${script.id}/yunxi/${filename}`
-    }
     return `/audio/narrations/${script.id}/${filename}`
-  }, [manifest, script, voice])
+  }, [manifest, script])
 
   // 触发动画回调
   const triggerAnimation = useCallback((action: AnimationAction) => {
@@ -121,6 +120,31 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
   // 用 ref 跟踪是否应该自动播放下一行
   const shouldAutoPlayRef = useRef(false)
   const playLineRef = useRef<((sectionIdx: number, lineIdx: number) => Promise<void>) | null>(null)
+
+  // 预加载下一个音频
+  const preloadNext = useCallback((sectionIdx: number, lineIdx: number) => {
+    if (!script || !manifest) return
+    const section = script.sections[sectionIdx]
+    if (!section) return
+
+    let nextSec = sectionIdx, nextLine = lineIdx + 1
+    if (nextLine >= section.lines.length) {
+      nextSec = sectionIdx + 1
+      nextLine = 0
+    }
+    const nextSection = script.sections[nextSec]
+    if (!nextSection || !nextSection.lines[nextLine]) return
+
+    const path = getAudioPath(nextSection.id, nextSection.lines[nextLine].id)
+    if (!path) return
+
+    // 预加载：创建 Audio 对象让浏览器开始下载
+    if (preloadRef.current) preloadRef.current.src = ''
+    const preload = new Audio()
+    preload.preload = 'auto'
+    preload.src = path
+    preloadRef.current = preload
+  }, [script, manifest, getAudioPath])
 
   // 播放指定行
   const playLine = useCallback(async (sectionIdx: number, lineIdx: number) => {
@@ -253,10 +277,12 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
     // 开始播放
     try {
       await audio.play()
+      // 播放成功后预加载下一个音频
+      preloadNext(sectionIdx, lineIdx)
     } catch (err) {
       console.error('播放失败:', err, audioPath)
     }
-  }, [script, manifest, playbackRate, getAudioPath, triggerAnimation])
+  }, [script, manifest, playbackRate, getAudioPath, triggerAnimation, preloadNext])
 
   // 更新 ref
   useEffect(() => {
