@@ -632,6 +632,17 @@ const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/reaction-diffusion',
+    title: '反应扩散与图灵斑图',
+    description: '用 Gray-Scott 模型模拟化学反应，亲眼看豹纹、珊瑚、斑马纹等图案从混沌中自发生长。',
+    icon: '🐆',
+    difficulty: 'advanced',
+    ageRange: '高中以上',
+    topics: ['applied', 'calculus'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]
 
 // 按难度分组

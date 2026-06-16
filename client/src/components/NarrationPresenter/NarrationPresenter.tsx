@@ -64,6 +64,7 @@ import { permutationCombinationScenes, defaultPermutationCombinationState } from
 import { gameOfLifeScenes, defaultGameOfLifeState } from './gameOfLifeScenes'
 import { eulerIdentityScenes, defaultEulerIdentityState } from './eulerIdentityScenes'
 import { threeBodyScenes, defaultThreeBodyState } from './threeBodyScenes'
+import { reactionDiffusionScenes, defaultReactionDiffusionState } from './reactionDiffusionScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -141,6 +142,7 @@ const sceneConfigMap: Record<string, {
   'game-of-life': { scenes: gameOfLifeScenes, defaultState: defaultGameOfLifeState },
   'euler-identity': { scenes: eulerIdentityScenes, defaultState: defaultEulerIdentityState },
   'three-body': { scenes: threeBodyScenes, defaultState: defaultThreeBodyState },
+  'reaction-diffusion': { scenes: reactionDiffusionScenes, defaultState: defaultReactionDiffusionState },
 }
 
 // 检测是否为移动设备
@@ -345,7 +347,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       // 新增2个待完成课程
       'laplace', 'permutation-combination',
       // 新增优美数学场景
-      'game-of-life', 'euler-identity', 'three-body'
+      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion'
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

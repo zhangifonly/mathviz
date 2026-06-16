@@ -59,6 +59,7 @@ export { waveEquationNarration } from './scripts/wave-equation'
 export { gameOfLifeNarration } from './scripts/game-of-life'
 export { eulerIdentityNarration } from './scripts/euler-identity'
 export { threeBodyNarration } from './scripts/three-body'
+export { reactionDiffusionNarration } from './scripts/reaction-diffusion'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -110,6 +111,7 @@ import { waveEquationNarration } from './scripts/wave-equation'
 import { gameOfLifeNarration } from './scripts/game-of-life'
 import { eulerIdentityNarration } from './scripts/euler-identity'
 import { threeBodyNarration } from './scripts/three-body'
+import { reactionDiffusionNarration } from './scripts/reaction-diffusion'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -165,6 +167,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'game-of-life': gameOfLifeNarration,
   'euler-identity': eulerIdentityNarration,
   'three-body': threeBodyNarration,
+  'reaction-diffusion': reactionDiffusionNarration,
 }
 
 // 获取稿件

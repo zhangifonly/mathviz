@@ -127,6 +127,8 @@ const GameOfLifeSceneRenderer = lazy(() => import('./GameOfLife/GameOfLifeSceneR
 const EulerIdentitySceneRenderer = lazy(() => import('./EulerIdentity/EulerIdentitySceneRenderer'))
 // 三体引力场景渲染器
 const ThreeBodySceneRenderer = lazy(() => import('./ThreeBody/ThreeBodySceneRenderer'))
+// 反应扩散场景渲染器
+const ReactionDiffusionSceneRenderer = lazy(() => import('./ReactionDiffusion/ReactionDiffusionSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -183,6 +185,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'game-of-life': GameOfLifeSceneRenderer,
   'euler-identity': EulerIdentitySceneRenderer,
   'three-body': ThreeBodySceneRenderer,
+  'reaction-diffusion': ReactionDiffusionSceneRenderer,
 }
 
 // 获取场景渲染器
