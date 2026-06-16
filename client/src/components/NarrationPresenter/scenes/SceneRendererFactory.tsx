@@ -121,6 +121,12 @@ const CryptographySceneRenderer = lazy(() => import('./Cryptography/Cryptography
 const FourierSceneRenderer = lazy(() => import('./Fourier/FourierSceneRenderer'))
 // 基础算术场景渲染器
 const BasicArithmeticSceneRenderer = lazy(() => import('./BasicArithmetic/BasicArithmeticSceneRenderer'))
+// 康威生命游戏场景渲染器
+const GameOfLifeSceneRenderer = lazy(() => import('./GameOfLife/GameOfLifeSceneRenderer'))
+// 欧拉恒等式场景渲染器
+const EulerIdentitySceneRenderer = lazy(() => import('./EulerIdentity/EulerIdentitySceneRenderer'))
+// 三体引力场景渲染器
+const ThreeBodySceneRenderer = lazy(() => import('./ThreeBody/ThreeBodySceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -174,6 +180,9 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'cryptography': CryptographySceneRenderer,
   'fourier': FourierSceneRenderer,
   'basic-arithmetic': BasicArithmeticSceneRenderer,
+  'game-of-life': GameOfLifeSceneRenderer,
+  'euler-identity': EulerIdentitySceneRenderer,
+  'three-body': ThreeBodySceneRenderer,
 }
 
 // 获取场景渲染器

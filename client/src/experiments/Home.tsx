@@ -545,17 +545,6 @@ const experiments: Experiment[] = [
 
   // ===== 新增实验 =====
   {
-    path: '/permutation-combination',
-    title: '排列组合',
-    description: '探索排列与组合的区别，可视化帕斯卡三角形和组合数的计算。',
-    icon: '🎰',
-    difficulty: 'intermediate',
-    ageRange: '高中',
-    topics: ['probability', 'discrete'],
-    hasAnimation: true,
-    hasSteps: true,
-  },
-  {
     path: '/laplace',
     title: '拉普拉斯变换',
     description: '探索时域与复频域之间的桥梁，理解系统响应和极点零点分析。',
@@ -610,6 +599,39 @@ const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/game-of-life',
+    title: '康威生命游戏',
+    description: '元胞自动机的经典之作，仅凭两条简单规则就涌现出滑翔机、脉冲星等复杂生命图案。',
+    icon: '🦠',
+    difficulty: 'intermediate',
+    ageRange: '初中以上',
+    topics: ['discrete', 'applied'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
+  {
+    path: '/euler-identity',
+    title: '欧拉恒等式',
+    description: '被誉为最美数学公式 e^(iπ)+1=0，动态展示复指数旋转如何将五个最重要的常数联系在一起。',
+    icon: '🌀',
+    difficulty: 'advanced',
+    ageRange: '高中以上',
+    topics: ['analysis', 'algebra'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
+  {
+    path: '/three-body',
+    title: '三体引力轨道',
+    description: '模拟牛顿万有引力下多颗天体的混沌之舞，探索著名的"8字"周期解与对初值的敏感依赖。',
+    icon: '🪐',
+    difficulty: 'expert',
+    ageRange: '大学以上',
+    topics: ['applied', 'calculus'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]
 
 // 按难度分组
@@ -631,6 +653,10 @@ export default function Home() {
   const [selectedDifficulty, setSelectedDifficulty] = useState<DifficultyLevel | 'all'>('all')
   const [selectedTopic, setSelectedTopic] = useState<string | 'all'>('all')
   const [searchQuery, setSearchQuery] = useState('')
+
+  // 判断是否情人节前后（2月12日-2月16日）
+  const now = new Date()
+  const isValentineSeason = now.getMonth() === 1 && now.getDate() >= 12 && now.getDate() <= 16
 
   // 过滤实验
   const filteredExperiments = experiments.filter((exp) => {
@@ -656,6 +682,35 @@ export default function Home() {
 
   return (
     <div className="max-w-7xl mx-auto">
+
+      {/* 情人节横幅 */}
+      {isValentineSeason && (
+        <Link
+          to="/valentine"
+          className="block w-full mb-6 md:mb-10 group relative overflow-hidden rounded-2xl border border-pink-200/50 bg-gradient-to-r from-pink-50 via-rose-50 to-red-50 p-4 md:p-6 text-left hover:shadow-xl hover:shadow-pink-200/30 transition-all duration-500"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-pink-400/5 via-rose-400/10 to-red-400/5 group-hover:from-pink-400/10 group-hover:via-rose-400/15 group-hover:to-red-400/10 transition-all duration-500" />
+          <div className="relative flex items-center gap-3 md:gap-5">
+            <div className="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center shadow-lg shadow-pink-400/30 group-hover:scale-110 transition-transform duration-500">
+              <span className="text-2xl md:text-3xl">💕</span>
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="text-base md:text-xl font-bold bg-gradient-to-r from-pink-600 via-rose-500 to-red-500 bg-clip-text text-transparent">
+                情人节快乐！四种数学表白函数
+              </div>
+              <div className="text-pink-500/70 text-xs md:text-sm mt-1">
+                心形参数方程 · 笛卡尔心形线 · 隐函数心形 · 简洁心形 — 点击查看沉浸式动画
+              </div>
+            </div>
+            <div className="text-pink-400 group-hover:translate-x-1 transition-transform">
+              <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </div>
+        </Link>
+      )}
+
       {/* 头部 - 更精美的设计 */}
       <header className="mb-6 md:mb-10">
         <div className="flex items-center gap-3 md:gap-4 mb-3">

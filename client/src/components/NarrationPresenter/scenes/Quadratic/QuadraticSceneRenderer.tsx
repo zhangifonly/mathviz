@@ -223,7 +223,7 @@ function ParabolaScene({
     ctx.font = '16px sans-serif'
     const expr = `y = ${params.a.toFixed(2)}x² ${params.b >= 0 ? '+' : ''}${params.b.toFixed(2)}x ${params.c >= 0 ? '+' : ''}${params.c.toFixed(2)}`
     ctx.fillText(expr, 20, 30)
-  }, [params, showVertex, showAxis, showRoots, vertex, roots])
+  }, [params, showVertex, showAxis, showRoots, vertex, roots, discriminant])
 
   return (
     <div className="w-full h-full flex items-center justify-center">

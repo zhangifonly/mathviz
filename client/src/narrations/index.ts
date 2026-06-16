@@ -55,6 +55,11 @@ export { signalProcessingNarration } from './scripts/signal-processing'
 export { vectorFieldNarration } from './scripts/vector-field'
 export { waveEquationNarration } from './scripts/wave-equation'
 
+// 新增优美数学场景
+export { gameOfLifeNarration } from './scripts/game-of-life'
+export { eulerIdentityNarration } from './scripts/euler-identity'
+export { threeBodyNarration } from './scripts/three-body'
+
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
 import { fractionsNarration } from './scripts/fractions'
@@ -101,6 +106,10 @@ import { randomWalkNarration } from './scripts/random-walk'
 import { signalProcessingNarration } from './scripts/signal-processing'
 import { vectorFieldNarration } from './scripts/vector-field'
 import { waveEquationNarration } from './scripts/wave-equation'
+// 新增优美数学场景
+import { gameOfLifeNarration } from './scripts/game-of-life'
+import { eulerIdentityNarration } from './scripts/euler-identity'
+import { threeBodyNarration } from './scripts/three-body'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -152,6 +161,10 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'signal-processing': signalProcessingNarration,
   'vector-field': vectorFieldNarration,
   'wave-equation': waveEquationNarration,
+  // 新增优美数学场景
+  'game-of-life': gameOfLifeNarration,
+  'euler-identity': eulerIdentityNarration,
+  'three-body': threeBodyNarration,
 }
 
 // 获取稿件

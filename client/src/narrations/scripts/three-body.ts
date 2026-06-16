@@ -1,0 +1,107 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 三体引力轨道 - 口播稿件
+ * 核心概念：万有引力、N体问题、混沌
+ * 目标受众：大学及以上
+ */
+export const threeBodyNarration: NarrationScript = {
+  id: 'three-body',
+  title: '三体引力轨道',
+  subtitle: '牛顿引力下天体的混沌之舞',
+  difficulty: 'expert',
+  targetAge: '大学以上',
+  voice: 'yunyang',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-06-05',
+    updatedAt: '2026-06-05',
+  },
+
+  objectives: [
+    '理解牛顿万有引力定律',
+    '认识三体问题的不可解析性',
+    '理解混沌与对初值的敏感依赖',
+    '欣赏 8 字周期解等特殊解',
+  ],
+
+  prerequisites: [
+    '了解牛顿运动定律',
+    '了解向量与加速度',
+    '了解微分方程的概念',
+  ],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '夜空中的群星看似永恒不变，但它们其实都在引力的牵引下不停运动。' },
+        { id: 'intro-2', text: '两个天体的运动，牛顿早已给出完美的椭圆轨道解答。' },
+        { id: 'intro-3', text: '可一旦加入第三个天体，问题就变得出人意料地困难，这就是著名的三体问题。' },
+        { id: 'intro-4', text: '它困扰了数学家三百年，最终揭示了一个深刻的概念——混沌。' },
+      ],
+    },
+    {
+      id: 'gravity',
+      type: 'formula',
+      title: '万有引力',
+      trigger: { type: 'auto' },
+      lines: [
+        { id: 'grav-1', text: '一切的根源是牛顿的万有引力定律。', formula: 'F = G\\frac{m_1 m_2}{r^2}' },
+        { id: 'grav-2', text: '任意两个有质量的物体之间都存在引力，大小与质量成正比，与距离平方成反比。' },
+        { id: 'grav-3', text: '每个天体都同时受到其他所有天体的引力，这些力叠加起来决定了它的加速度。' },
+        { id: 'grav-4', text: '我们用数值积分一小步一小步地推进，就能在计算机里重现这场引力之舞。' },
+      ],
+    },
+    {
+      id: 'chaos',
+      type: 'animation',
+      title: '混沌与敏感',
+      trigger: { type: 'auto' },
+      lines: [
+        { id: 'chaos-1', text: '看这三颗星，它们相互追逐、缠绕，轨迹错综复杂，永不重复。' },
+        { id: 'chaos-2', text: '三体问题没有一般的解析解，我们无法写出一个公式预测遥远未来的位置。' },
+        { id: 'chaos-3', text: '更惊人的是它对初值的敏感：起点哪怕只差千分之一，结局也会天差地别。' },
+        { id: 'chaos-4', text: '这就是蝴蝶效应，也是科幻小说《三体》里那个文明无法预测的根源。' },
+      ],
+    },
+    {
+      id: 'figure8',
+      type: 'animation',
+      title: '8字奇迹',
+      trigger: { type: 'auto' },
+      lines: [
+        { id: 'fig-1', text: '虽然大多数情况是混沌的，但人们也发现了极少数优雅的周期解。' },
+        { id: 'fig-2', text: '最美的就是这个 8 字解：三颗等质量的星，沿着同一条 8 字曲线永恒追逐。' },
+        { id: 'fig-3', text: '它在 1993 年才被发现，并在 2000 年被严格证明存在，是数学与天体力学的瑰宝。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '动手探索',
+      trigger: { type: 'auto' },
+      lines: [
+        { id: 'int-1', text: '现在你可以切换不同的初始构型，亲眼看看引力如何编排不同的舞蹈。' },
+        { id: 'int-2', text: '试试混沌三体，再对比稳定的 8 字解，感受秩序与混沌的反差。' },
+        { id: 'int-3', text: '留意系统总能量这个数字，它在理想模拟中应当保持守恒。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结回顾',
+      trigger: { type: 'auto' },
+      lines: [
+        { id: 'sum-1', text: '我们从万有引力出发，模拟了三体系统的运动。' },
+        { id: 'sum-2', text: '我们见识了混沌、对初值的敏感，以及罕见而优雅的 8 字周期解。' },
+        { id: 'sum-3', text: '简单的定律，无穷的复杂，宇宙的魅力正在于此。继续探索吧！' },
+      ],
+    },
+  ],
+}

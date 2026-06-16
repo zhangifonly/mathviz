@@ -61,6 +61,9 @@ import { cryptographyScenes, defaultCryptographyState } from './cryptographyScen
 // 新增2个待完成课程场景
 import { laplaceScenes, defaultLaplaceState } from './laplaceScenes'
 import { permutationCombinationScenes, defaultPermutationCombinationState } from './permutationCombinationScenes'
+import { gameOfLifeScenes, defaultGameOfLifeState } from './gameOfLifeScenes'
+import { eulerIdentityScenes, defaultEulerIdentityState } from './eulerIdentityScenes'
+import { threeBodyScenes, defaultThreeBodyState } from './threeBodyScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -134,6 +137,10 @@ const sceneConfigMap: Record<string, {
   // 新增2个待完成课程
   'laplace': { scenes: laplaceScenes, defaultState: defaultLaplaceState },
   'permutation-combination': { scenes: permutationCombinationScenes, defaultState: defaultPermutationCombinationState },
+  // 新增优美数学场景
+  'game-of-life': { scenes: gameOfLifeScenes, defaultState: defaultGameOfLifeState },
+  'euler-identity': { scenes: eulerIdentityScenes, defaultState: defaultEulerIdentityState },
+  'three-body': { scenes: threeBodyScenes, defaultState: defaultThreeBodyState },
 }
 
 // 检测是否为移动设备
@@ -336,7 +343,9 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       // 新增4个高级实验
       'pde', 'differential-geometry', 'numerical-analysis', 'cryptography',
       // 新增2个待完成课程
-      'laplace', 'permutation-combination'
+      'laplace', 'permutation-combination',
+      // 新增优美数学场景
+      'game-of-life', 'euler-identity', 'three-body'
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
@@ -429,11 +438,32 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
   const controlsTransition = 'transition-all duration-300 ease-in-out'
   const controlsHiddenClass = isMobile && !controlsVisible ? 'opacity-0 pointer-events-none' : 'opacity-100'
 
+  // 下滑关闭手势
+  const touchStartRef = useRef<{ y: number } | null>(null)
+
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    if (e.touches[0].clientY < window.innerHeight * 0.3) {
+      touchStartRef.current = { y: e.touches[0].clientY }
+    }
+  }, [])
+
+  const handleTouchEnd = useCallback((e: React.TouchEvent) => {
+    if (!touchStartRef.current) return
+    const deltaY = e.changedTouches[0].clientY - touchStartRef.current.y
+    touchStartRef.current = null
+    if (deltaY > 120) handleExit()
+  }, [handleExit])
+
   return (
     <div
       className="fixed inset-0 z-50 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"
       onClick={handleScreenTap}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
+      {/* 移动端下滑指示条 */}
+      <div className="md:hidden absolute top-2 left-1/2 -translate-x-1/2 z-20 w-10 h-1 bg-white/30 rounded-full" />
+
       {/* 顶部信息栏 - 移动端可隐藏 */}
       <div
         className={`controls-area absolute top-0 left-0 right-0 z-10 flex items-center justify-between px-4 md:px-6 py-3 md:py-4 bg-gradient-to-b from-slate-900/95 to-transparent ${controlsTransition} ${controlsHiddenClass}`}
@@ -503,10 +533,9 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
           {/* 退出按钮 */}
           <button
             onClick={handleExit}
-            className="px-2 md:px-4 py-1.5 md:py-2 rounded-lg bg-white/10 text-white hover:bg-white/20 transition-all text-xs md:text-sm"
+            className="px-3 md:px-4 py-1.5 md:py-2 rounded-lg bg-white/15 text-white hover:bg-white/25 transition-all text-sm font-medium"
           >
-            <span className="hidden md:inline">退出讲解</span>
-            <span className="md:hidden">✕</span>
+            退出
           </button>
         </div>
       </div>
