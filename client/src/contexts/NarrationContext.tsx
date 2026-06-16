@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useRef, useCallback, useEffect, type ReactNode } from 'react'
+import { createContext, useContext, useState, useRef, useCallback, useEffect, useMemo, type ReactNode } from 'react'
 import type { NarrationScript } from '../narrations/types'
 
 // 语音类型
@@ -97,6 +97,8 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null)
   const preloadRef = useRef<HTMLAudioElement | null>(null)
   const animationCallbacksRef = useRef<Set<(action: AnimationAction) => void>>(new Set())
+  // 记录已加载稿件 id，避免实验页 effect 重复调用 loadScript 触发无限 re-render
+  const loadedScriptIdRef = useRef<string | null>(null)
 
   // 获取音频路径 - 支持按声音切换
   const getAudioPath = useCallback((sectionId: string, lineId: string): string | null => {
@@ -291,6 +293,10 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
 
   // 加载稿件
   const loadScript = useCallback(async (newScript: NarrationScript) => {
+    // 幂等：同一稿件已加载则跳过，否则 setScript 会触发 Provider re-render →
+    // 实验页 [narration] effect 再次调用 loadScript → 无限循环（Maximum update depth）
+    if (loadedScriptIdRef.current === newScript.id) return
+    loadedScriptIdRef.current = newScript.id
     setScript(newScript)
 
     // 加载音频清单
@@ -524,7 +530,9 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
     }
   }, [])
 
-  const value: NarrationContextValue = {
+  // useMemo 包裹：避免每次 render 都生成新的 context value 对象，
+  // 否则所有消费方的 [narration] 依赖 effect 会被反复触发（含 loadScript）。
+  const value: NarrationContextValue = useMemo(() => ({
     script,
     playbackState,
     voice,
@@ -546,7 +554,11 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
     setVoice,
     setPlaybackRate,
     onAnimationAction,
-  }
+  }), [
+    script, playbackState, voice, playbackRate, currentText, totalDuration, currentTime,
+    loadScript, startNarration, exitNarration, setPresenterMode, play, pause, togglePlay,
+    nextLine, prevLine, jumpToSection, jumpToLine, setVoice, setPlaybackRate, onAnimationAction,
+  ])
 
   return (
     <NarrationContext.Provider value={value}>
