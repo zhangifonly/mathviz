@@ -129,6 +129,8 @@ const EulerIdentitySceneRenderer = lazy(() => import('./EulerIdentity/EulerIdent
 const ThreeBodySceneRenderer = lazy(() => import('./ThreeBody/ThreeBodySceneRenderer'))
 // 反应扩散场景渲染器
 const ReactionDiffusionSceneRenderer = lazy(() => import('./ReactionDiffusion/ReactionDiffusionSceneRenderer'))
+// 莫比乌斯环场景渲染器
+const MobiusSceneRenderer = lazy(() => import('./Mobius/MobiusSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -186,6 +188,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'euler-identity': EulerIdentitySceneRenderer,
   'three-body': ThreeBodySceneRenderer,
   'reaction-diffusion': ReactionDiffusionSceneRenderer,
+  'mobius': MobiusSceneRenderer,
 }
 
 // 获取场景渲染器

@@ -60,6 +60,7 @@ export { gameOfLifeNarration } from './scripts/game-of-life'
 export { eulerIdentityNarration } from './scripts/euler-identity'
 export { threeBodyNarration } from './scripts/three-body'
 export { reactionDiffusionNarration } from './scripts/reaction-diffusion'
+export { mobiusNarration } from './scripts/mobius'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -112,6 +113,7 @@ import { gameOfLifeNarration } from './scripts/game-of-life'
 import { eulerIdentityNarration } from './scripts/euler-identity'
 import { threeBodyNarration } from './scripts/three-body'
 import { reactionDiffusionNarration } from './scripts/reaction-diffusion'
+import { mobiusNarration } from './scripts/mobius'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -168,6 +170,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'euler-identity': eulerIdentityNarration,
   'three-body': threeBodyNarration,
   'reaction-diffusion': reactionDiffusionNarration,
+  'mobius': mobiusNarration,
 }
 
 // 获取稿件

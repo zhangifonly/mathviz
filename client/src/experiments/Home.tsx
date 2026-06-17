@@ -643,6 +643,17 @@ const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/mobius',
+    title: '莫比乌斯环与克莱因瓶',
+    description: '可旋转的 3D 单侧曲面，蚂蚁不用翻越边缘就能走遍"两面"，揭开拓扑学不可定向曲面的奥秘。',
+    icon: '♾️',
+    difficulty: 'advanced',
+    ageRange: '高中以上',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]
 
 // 按难度分组
