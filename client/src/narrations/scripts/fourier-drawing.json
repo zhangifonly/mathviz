@@ -5,14 +5,28 @@
   "difficulty": "intermediate",
   "targetAge": "高中及以上",
   "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2025-01-06",
+    "updatedAt": "2025-01-06"
+  },
+  "objectives": [
+    "理解傅里叶级数的几何意义",
+    "观察圆周运动如何叠加成复杂曲线",
+    "体验用数学绘制艺术图形",
+    "了解傅里叶变换的应用"
+  ],
+  "prerequisites": [
+    "三角函数基础",
+    "复数的基本概念",
+    "参数方程的理解"
+  ],
   "sections": [
     {
       "id": "intro",
       "type": "intro",
       "title": "开场引入",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "intro-1",
@@ -36,9 +50,6 @@
       "id": "concept",
       "type": "concept",
       "title": "核心概念",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "concept-1",
@@ -62,9 +73,6 @@
       "id": "visualization",
       "type": "animation",
       "title": "绘图演示",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "vis-1",
@@ -88,9 +96,6 @@
       "id": "complex",
       "type": "animation",
       "title": "复杂图形",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "comp-1",
@@ -114,9 +119,6 @@
       "id": "application",
       "type": "application",
       "title": "实际应用",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "app-1",
@@ -140,9 +142,6 @@
       "id": "summary",
       "type": "summary",
       "title": "总结",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "sum-1",

@@ -5,14 +5,28 @@
   "difficulty": "intermediate",
   "targetAge": "大学本科",
   "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2025-01-06",
+    "updatedAt": "2025-01-06"
+  },
+  "objectives": [
+    "理解数值积分的基本思想",
+    "掌握矩形法、梯形法和辛普森法",
+    "观察不同方法的精度差异",
+    "了解数值积分的应用场景"
+  ],
+  "prerequisites": [
+    "定积分的概念",
+    "黎曼和的理解",
+    "基础微积分知识"
+  ],
   "sections": [
     {
       "id": "intro",
       "type": "intro",
       "title": "开场引入",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "intro-1",
@@ -36,9 +50,6 @@
       "id": "concept",
       "type": "concept",
       "title": "核心概念",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "concept-1",
@@ -62,9 +73,6 @@
       "id": "rectangle",
       "type": "animation",
       "title": "矩形法",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "rect-1",
@@ -88,9 +96,6 @@
       "id": "trapezoid",
       "type": "animation",
       "title": "梯形法与辛普森法",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "trap-1",
@@ -114,9 +119,6 @@
       "id": "application",
       "type": "application",
       "title": "实际应用",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "app-1",
@@ -140,9 +142,6 @@
       "id": "summary",
       "type": "summary",
       "title": "总结",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "sum-1",

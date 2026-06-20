@@ -5,14 +5,28 @@
   "difficulty": "advanced",
   "targetAge": "大学本科",
   "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2025-01-06",
+    "updatedAt": "2025-01-06"
+  },
+  "objectives": [
+    "理解优化问题的基本框架",
+    "掌握无约束优化的方法",
+    "了解约束优化和拉格朗日乘数法",
+    "认识优化在实际中的应用"
+  ],
+  "prerequisites": [
+    "多元微积分",
+    "偏导数和梯度",
+    "基础线性代数"
+  ],
   "sections": [
     {
       "id": "intro",
       "type": "intro",
       "title": "开场引入",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "intro-1",
@@ -36,9 +50,6 @@
       "id": "concept",
       "type": "concept",
       "title": "核心概念",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "concept-1",
@@ -62,9 +73,6 @@
       "id": "unconstrained",
       "type": "animation",
       "title": "无约束优化",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "uncon-1",
@@ -88,9 +96,6 @@
       "id": "constrained",
       "type": "concept",
       "title": "约束优化",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "con-1",
@@ -114,9 +119,6 @@
       "id": "application",
       "type": "application",
       "title": "实际应用",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "app-1",
@@ -140,9 +142,6 @@
       "id": "summary",
       "type": "summary",
       "title": "总结",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "sum-1",

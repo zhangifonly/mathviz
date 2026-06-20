@@ -5,14 +5,28 @@
   "difficulty": "advanced",
   "targetAge": "大学本科",
   "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2025-01-06",
+    "updatedAt": "2025-01-06"
+  },
+  "objectives": [
+    "理解微分方程的基本概念",
+    "掌握常见微分方程的解法",
+    "观察相空间中的轨迹",
+    "了解微分方程在建模中的应用"
+  ],
+  "prerequisites": [
+    "微积分基础",
+    "导数的概念",
+    "基础代数知识"
+  ],
   "sections": [
     {
       "id": "intro",
       "type": "intro",
       "title": "开场引入",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "intro-1",
@@ -36,9 +50,6 @@
       "id": "concept",
       "type": "concept",
       "title": "核心概念",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "concept-1",
@@ -62,9 +73,6 @@
       "id": "exponential",
       "type": "animation",
       "title": "指数增长与衰减",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "exp-1",
@@ -88,9 +96,6 @@
       "id": "oscillation",
       "type": "animation",
       "title": "振动与周期运动",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "osc-1",
@@ -114,9 +119,6 @@
       "id": "application",
       "type": "application",
       "title": "实际应用",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "app-1",
@@ -140,9 +142,6 @@
       "id": "summary",
       "type": "summary",
       "title": "总结",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "sum-1",

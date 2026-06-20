@@ -5,14 +5,28 @@
   "difficulty": "advanced",
   "targetAge": "大学本科",
   "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2025-01-06",
+    "updatedAt": "2025-01-06"
+  },
+  "objectives": [
+    "理解傅里叶级数的数学形式",
+    "掌握傅里叶系数的计算",
+    "观察级数逼近的过程",
+    "了解吉布斯现象"
+  ],
+  "prerequisites": [
+    "三角函数知识",
+    "定积分的计算",
+    "级数的基本概念"
+  ],
   "sections": [
     {
       "id": "intro",
       "type": "intro",
       "title": "开场引入",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "intro-1",
@@ -36,9 +50,6 @@
       "id": "concept",
       "type": "concept",
       "title": "核心概念",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "concept-1",
@@ -62,9 +73,6 @@
       "id": "square-wave",
       "type": "animation",
       "title": "方波展开",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "sq-1",
@@ -88,9 +96,6 @@
       "id": "gibbs",
       "type": "concept",
       "title": "吉布斯现象",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "gibbs-1",
@@ -114,9 +119,6 @@
       "id": "application",
       "type": "application",
       "title": "实际应用",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "app-1",
@@ -140,9 +142,6 @@
       "id": "summary",
       "type": "summary",
       "title": "总结",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "sum-1",

@@ -5,14 +5,28 @@
   "difficulty": "advanced",
   "targetAge": "大学本科",
   "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2025-01-06",
+    "updatedAt": "2025-01-06"
+  },
+  "objectives": [
+    "理解降维的必要性",
+    "掌握PCA的数学原理",
+    "观察主成分的几何意义",
+    "了解PCA在数据分析中的应用"
+  ],
+  "prerequisites": [
+    "线性代数基础",
+    "特征值和特征向量",
+    "协方差的概念"
+  ],
   "sections": [
     {
       "id": "intro",
       "type": "intro",
       "title": "开场引入",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "intro-1",
@@ -36,9 +50,6 @@
       "id": "concept",
       "type": "concept",
       "title": "核心概念",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "concept-1",
@@ -62,9 +73,6 @@
       "id": "visualization",
       "type": "animation",
       "title": "几何演示",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "vis-1",
@@ -88,9 +96,6 @@
       "id": "math",
       "type": "concept",
       "title": "数学原理",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "math-1",
@@ -114,9 +119,6 @@
       "id": "application",
       "type": "application",
       "title": "实际应用",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "app-1",
@@ -140,9 +142,6 @@
       "id": "summary",
       "type": "summary",
       "title": "总结",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "sum-1",

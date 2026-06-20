@@ -209,7 +209,7 @@
       "line_id": "anim-4",
       "filename": "animation-anim-4.mp3",
       "path": "audio/narrations/fourier/yunxi/animation-anim-4.mp3",
-      "duration": 2.30,
+      "duration": 2.3,
       "size": 36864,
       "text": "观察！随着项数增加，红色虚线越来越接近蓝色实线。"
     },
@@ -425,5 +425,9 @@
     }
   ],
   "total_duration": 103.46000000000001,
-  "total_size": 1655424
+  "total_size": 1655424,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
 }

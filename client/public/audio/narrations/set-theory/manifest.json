@@ -505,5 +505,9 @@
     }
   ],
   "total_duration": 102.02000000000001,
-  "total_size": 1632384
+  "total_size": 1632384,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
 }

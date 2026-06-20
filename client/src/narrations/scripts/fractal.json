@@ -5,14 +5,28 @@
   "difficulty": "intermediate",
   "targetAge": "高中及以上",
   "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2025-01-06",
+    "updatedAt": "2025-01-06"
+  },
+  "objectives": [
+    "理解分形的自相似性特征",
+    "掌握分形维数的概念",
+    "观察曼德博集合的美丽结构",
+    "了解分形在自然界中的体现"
+  ],
+  "prerequisites": [
+    "基础几何知识",
+    "复数的基本概念",
+    "迭代的概念"
+  ],
   "sections": [
     {
       "id": "intro",
       "type": "intro",
       "title": "开场引入",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "intro-1",
@@ -36,9 +50,6 @@
       "id": "concept",
       "type": "concept",
       "title": "核心概念",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "concept-1",
@@ -62,9 +73,6 @@
       "id": "koch",
       "type": "animation",
       "title": "科赫雪花",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "koch-1",
@@ -88,9 +96,6 @@
       "id": "mandelbrot",
       "type": "animation",
       "title": "曼德博集合",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "mandel-1",
@@ -114,9 +119,6 @@
       "id": "nature",
       "type": "application",
       "title": "自然中的分形",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "nature-1",
@@ -140,9 +142,6 @@
       "id": "summary",
       "type": "summary",
       "title": "总结",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "sum-1",

@@ -59,6 +59,7 @@ interface AudioManifest {
   script_id: string
   voice: string
   voice_key?: string
+  availableVoices?: VoiceType[]   // 该场景已生成的声音(子目录), 如 ['yunxi','xiaoxiao']
   files: {
     section_id: string
     line_id: string
@@ -106,13 +107,16 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
     const file = manifest.files.find(f => f.section_id === sectionId && f.line_id === lineId)
     if (!file) return null
 
-    // 一律用 filename 拼场景根目录路径。
-    // 根目录恒有全部音频（实际生成位置），是最可靠的真相来源；
-    // 不信任 manifest.path（部分场景如 basic-arithmetic 指向不存在的 xiaoxiao/ 子目录），
-    // 也不再按 voice 拼 yunxi/ 子目录（历史上因默认 voice 写死 yunxi 导致大面积 404）。
+    // 按当前选择的声音走对应子目录: /audio/narrations/{id}/{voice}/{filename}
+    // 每个场景的 yunxi/(男声) 和 xiaoxiao/(女声) 子目录都已补齐, 故可直接拼路径。
+    // availableVoices 由 manifest 提供; 若当前 voice 不在其中, 回退到第一个可用声音, 避免 404。
     const filename = file.filename || file.path.split('/').pop()
-    return `/audio/narrations/${script.id}/${filename}`
-  }, [manifest, script])
+    const available = manifest.availableVoices && manifest.availableVoices.length > 0
+      ? manifest.availableVoices
+      : ['yunxi']
+    const useVoice = available.includes(voice) ? voice : available[0]
+    return `/audio/narrations/${script.id}/${useVoice}/${filename}`
+  }, [manifest, script, voice])
 
   // 触发动画回调
   const triggerAnimation = useCallback((action: AnimationAction) => {
@@ -298,6 +302,9 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
     if (loadedScriptIdRef.current === newScript.id) return
     loadedScriptIdRef.current = newScript.id
     setScript(newScript)
+
+    // 默认声音跟随稿件声明(yunyang 等男声归到 yunxi 槽; 仅 xiaoxiao 为女声)
+    setVoiceState(newScript.voice === 'xiaoxiao' ? 'xiaoxiao' : 'yunxi')
 
     // 加载音频清单
     try {

@@ -1,0 +1,199 @@
+{
+  "script_id": "euler-identity",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "euler-identity",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "有一个公式，被无数数学家誉为\"上帝写下的方程\"，它就是欧拉恒等式。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "它长这样：e 的 iπ 次方，加上 1，等于 0。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/intro-intro-3.mp3",
+      "duration": 3.14,
+      "size": 50256,
+      "text": "为什么它如此动人？因为它把数学中五个最重要的常数，用最简洁的方式联系在一起。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/intro-intro-4.mp3",
+      "duration": 2.65,
+      "size": 42336,
+      "text": "自然底数 e、虚数单位 i、圆周率 π、还有 1 和 0，全都出现在这一行里。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "euler-formula",
+      "line_id": "ef-1",
+      "filename": "euler-formula-ef-1.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/euler-formula-ef-1.mp3",
+      "duration": 1.42,
+      "size": 22752,
+      "text": "要理解它，先认识更一般的欧拉公式。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "euler-formula",
+      "line_id": "ef-2",
+      "filename": "euler-formula-ef-2.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/euler-formula-ef-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "e 的 i theta 次方，等于 cos theta 加上 i 乘 sin theta。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "euler-formula",
+      "line_id": "ef-3",
+      "filename": "euler-formula-ef-3.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/euler-formula-ef-3.mp3",
+      "duration": 3.03,
+      "size": 48528,
+      "text": "这个公式架起了指数世界和三角世界之间的桥梁，看似毫不相关的两者竟然相通。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "euler-formula",
+      "line_id": "ef-4",
+      "filename": "euler-formula-ef-4.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/euler-formula-ef-4.mp3",
+      "duration": 2.73,
+      "size": 43632,
+      "text": "它的几何意义更加美妙：e 的 i theta 次方，正好是复平面单位圆上的一个点。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "rotation",
+      "line_id": "rot-1",
+      "filename": "rotation-rot-1.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/rotation-rot-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "让 theta 从 0 开始增大，这个点就沿着单位圆逆时针旋转。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "rotation",
+      "line_id": "rot-2",
+      "filename": "rotation-rot-2.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/rotation-rot-2.mp3",
+      "duration": 2.81,
+      "size": 44928,
+      "text": "它的实部是 cos theta，投影在水平轴上；虚部是 sin theta，投影在竖直轴上。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "rotation",
+      "line_id": "rot-3",
+      "filename": "rotation-rot-3.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/rotation-rot-3.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "当 theta 等于 π，也就是转过半圈时，点恰好到达 −1 的位置。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "rotation",
+      "line_id": "rot-4",
+      "filename": "rotation-rot-4.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/rotation-rot-4.mp3",
+      "duration": 2.64,
+      "size": 42192,
+      "text": "所以 e 的 iπ 次方等于 −1，两边加上 1，就得到了那个等于 0 的恒等式。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "rotation",
+      "line_id": "rot-5",
+      "filename": "rotation-rot-5.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/rotation-rot-5.mp3",
+      "duration": 2.59,
+      "size": 41472,
+      "text": "一次半圆的旋转，就把指数、虚数、圆周率和零优雅地缝合在了一起。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "现在你可以拖动角度滑块，亲自让这个点在单位圆上旋转。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "点击 π 按钮，观察点是如何精确落在 −1 上的。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "interaction",
+      "line_id": "int-3",
+      "filename": "interaction-int-3.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/interaction-int-3.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "点击播放，看完整的一圈旋转，theta 转到 2π 时点又回到了起点 1。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "我们看到欧拉公式把复指数解读为单位圆上的旋转。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "当旋转半圈，e 的 iπ 次方抵达 −1，于是有了 e 的 iπ 次方加 1 等于 0。"
+    },
+    {
+      "script_id": "euler-identity",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/euler-identity/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "简洁中蕴含深刻，这正是数学之美的极致体现。继续探索吧！"
+    }
+  ],
+  "total_duration": 45.33,
+  "total_size": 725040
+}

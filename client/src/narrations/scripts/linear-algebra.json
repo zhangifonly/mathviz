@@ -5,14 +5,28 @@
   "difficulty": "intermediate",
   "targetAge": "大学本科",
   "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2025-01-06",
+    "updatedAt": "2025-01-06"
+  },
+  "objectives": [
+    "理解向量和向量空间的概念",
+    "掌握矩阵作为线性变换的几何意义",
+    "观察特征值和特征向量的作用",
+    "了解线性代数在实际中的应用"
+  ],
+  "prerequisites": [
+    "基础代数知识",
+    "平面几何基础",
+    "函数的概念"
+  ],
   "sections": [
     {
       "id": "intro",
       "type": "intro",
       "title": "开场引入",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "intro-1",
@@ -36,9 +50,6 @@
       "id": "concept",
       "type": "concept",
       "title": "核心概念",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "concept-1",
@@ -62,9 +73,6 @@
       "id": "transformation",
       "type": "animation",
       "title": "线性变换",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "trans-1",
@@ -88,9 +96,6 @@
       "id": "eigen",
       "type": "concept",
       "title": "特征值与特征向量",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "eigen-1",
@@ -114,9 +119,6 @@
       "id": "application",
       "type": "application",
       "title": "实际应用",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "app-1",
@@ -140,9 +142,6 @@
       "id": "summary",
       "type": "summary",
       "title": "总结",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "sum-1",

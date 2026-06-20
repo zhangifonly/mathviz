@@ -9,8 +9,8 @@
       "line_id": "intro-1",
       "filename": "intro-intro-1.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/intro-intro-1.mp3",
-      "duration": 1.04,
-      "size": 16704,
+      "duration": 1.07,
+      "size": 17136,
       "text": "欢迎来到线性代数实验。"
     },
     {
@@ -19,8 +19,8 @@
       "line_id": "intro-2",
       "filename": "intro-intro-2.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/intro-intro-2.mp3",
-      "duration": 1.97,
-      "size": 31536,
+      "duration": 1.98,
+      "size": 31680,
       "text": "你有没有想过，3D游戏中的物体是如何旋转和缩放的？"
     },
     {
@@ -39,8 +39,8 @@
       "line_id": "intro-4",
       "filename": "intro-intro-4.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/intro-intro-4.mp3",
-      "duration": 1.57,
-      "size": 25056,
+      "duration": 1.56,
+      "size": 24912,
       "text": "这些问题的答案都与线性代数密切相关。"
     },
     {
@@ -49,8 +49,8 @@
       "line_id": "concept-1",
       "filename": "concept-concept-1.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/concept-concept-1.mp3",
-      "duration": 2.32,
-      "size": 37152,
+      "duration": 2.33,
+      "size": 37296,
       "text": "向量是既有大小又有方向的量，可以表示位移、速度等物理量。"
     },
     {
@@ -59,8 +59,8 @@
       "line_id": "concept-2",
       "filename": "concept-concept-2.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/concept-concept-2.mp3",
-      "duration": 1.97,
-      "size": 31536,
+      "duration": 1.95,
+      "size": 31248,
       "text": "向量空间是向量的集合，满足加法和数乘的封闭性。"
     },
     {
@@ -89,8 +89,8 @@
       "line_id": "trans-1",
       "filename": "transformation-trans-1.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/transformation-trans-1.mp3",
-      "duration": 1.36,
-      "size": 21744,
+      "duration": 1.35,
+      "size": 21600,
       "text": "线性变换保持直线和原点不变。"
     },
     {
@@ -120,7 +120,7 @@
       "filename": "transformation-trans-4.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/transformation-trans-4.mp3",
       "duration": 1.4,
-      "size": 22320,
+      "size": 22464,
       "text": "观察网格如何在变换下发生形变。"
     },
     {
@@ -129,8 +129,8 @@
       "line_id": "eigen-1",
       "filename": "eigen-eigen-1.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/eigen-eigen-1.mp3",
-      "duration": 2.1,
-      "size": 33552,
+      "duration": 2.11,
+      "size": 33696,
       "text": "特征向量是在变换下只改变长度不改变方向的向量。"
     },
     {
@@ -139,8 +139,8 @@
       "line_id": "eigen-2",
       "filename": "eigen-eigen-2.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/eigen-eigen-2.mp3",
-      "duration": 1.75,
-      "size": 27936,
+      "duration": 1.77,
+      "size": 28368,
       "text": "特征值表示特征向量被拉伸或压缩的倍数。"
     },
     {
@@ -152,6 +152,16 @@
       "duration": 1.11,
       "size": 17712,
       "text": "它们揭示了变换的本质特性。"
+    },
+    {
+      "script_id": "linear-algebra",
+      "section_id": "eigen",
+      "line_id": "eigen-4",
+      "filename": "eigen-eigen-4.mp3",
+      "path": "audio/narrations/linear-algebra/xiaoxiao/eigen-eigen-4.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "在数据分析中，特征值分解是降维的关键工具。"
     },
     {
       "script_id": "linear-algebra",
@@ -169,8 +179,8 @@
       "line_id": "app-2",
       "filename": "application-app-2.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/application-app-2.mp3",
-      "duration": 1.79,
-      "size": 28656,
+      "duration": 1.82,
+      "size": 29088,
       "text": "计算机图形学用矩阵来实现3D渲染和动画。"
     },
     {
@@ -179,8 +189,8 @@
       "line_id": "app-3",
       "filename": "application-app-3.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/application-app-3.mp3",
-      "duration": 1.89,
-      "size": 30240,
+      "duration": 1.88,
+      "size": 30096,
       "text": "机器学习中的神经网络本质上是一系列线性变换。"
     },
     {
@@ -189,8 +199,8 @@
       "line_id": "app-4",
       "filename": "application-app-4.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/application-app-4.mp3",
-      "duration": 1.73,
-      "size": 27648,
+      "duration": 1.75,
+      "size": 27936,
       "text": "量子力学用线性代数来描述量子态的演化。"
     },
     {
@@ -209,8 +219,8 @@
       "line_id": "sum-2",
       "filename": "summary-sum-2.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/summary-sum-2.mp3",
-      "duration": 1.59,
-      "size": 25488,
+      "duration": 1.57,
+      "size": 25200,
       "text": "向量和矩阵是描述空间变换的强大工具。"
     },
     {
@@ -219,8 +229,8 @@
       "line_id": "sum-3",
       "filename": "summary-sum-3.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/summary-sum-3.mp3",
-      "duration": 1.68,
-      "size": 26928,
+      "duration": 1.69,
+      "size": 27072,
       "text": "特征值和特征向量揭示了变换的内在结构。"
     },
     {
@@ -229,11 +239,11 @@
       "line_id": "sum-4",
       "filename": "summary-sum-4.mp3",
       "path": "audio/narrations/linear-algebra/xiaoxiao/summary-sum-4.mp3",
-      "duration": 1.94,
-      "size": 30960,
+      "duration": 1.92,
+      "size": 30672,
       "text": "希望这次实验能帮助你建立对线性代数的几何直觉。"
     }
   ],
-  "total_duration": 37.93,
-  "total_size": 606816
+  "total_duration": 39.78999999999999,
+  "total_size": 636768
 }

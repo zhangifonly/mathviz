@@ -1,0 +1,199 @@
+{
+  "script_id": "mobius",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "mobius",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/mobius/yunxi/intro-intro-1.mp3",
+      "duration": 2.89,
+      "size": 46224,
+      "text": "拿一条纸带，把一端翻转180度，再和另一端粘起来。你就做出了一个莫比乌斯环。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/mobius/yunxi/intro-intro-2.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "它看起来普普通通，却藏着一个违反直觉的秘密：它只有一个面。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/mobius/yunxi/intro-intro-3.mp3",
+      "duration": 2.81,
+      "size": 44928,
+      "text": "普通的纸带有正反两面，但莫比乌斯环上的蚂蚁，不用翻越边缘就能走遍\"两面\"。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/mobius/yunxi/intro-intro-4.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "今天我们就在三维空间里，亲手旋转这些奇妙的拓扑曲面。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "mobius",
+      "line_id": "mob-1",
+      "filename": "mobius-mob-1.mp3",
+      "path": "audio/narrations/mobius/yunxi/mobius-mob-1.mp3",
+      "duration": 2.88,
+      "size": 46080,
+      "text": "这就是莫比乌斯环。注意它的扭转：中线绕一圈，带子本身却翻转了半圈。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "mobius",
+      "line_id": "mob-2",
+      "filename": "mobius-mob-2.mp3",
+      "path": "audio/narrations/mobius/yunxi/mobius-mob-2.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "让一只蚂蚁沿中线出发，走完一圈，它会发现自己来到了出发点的\"背面\"。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "mobius",
+      "line_id": "mob-3",
+      "filename": "mobius-mob-3.mp3",
+      "path": "audio/narrations/mobius/yunxi/mobius-mob-3.mp3",
+      "duration": 3.32,
+      "size": 53136,
+      "text": "只有再走第二圈，蚂蚁才真正回到起点。一圈到背面，两圈才归位，这正是单侧的证据。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "mobius",
+      "line_id": "mob-4",
+      "filename": "mobius-mob-4.mp3",
+      "path": "audio/narrations/mobius/yunxi/mobius-mob-4.mp3",
+      "duration": 2.81,
+      "size": 44928,
+      "text": "更妙的是：沿中线把它剪开，它不会一分为二，而是变成一个更长的双扭大环。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "klein",
+      "line_id": "klein-1",
+      "filename": "klein-klein-1.mp3",
+      "path": "audio/narrations/mobius/yunxi/klein-klein-1.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "如果把两条莫比乌斯环的边缝合起来，会得到什么？答案是克莱因瓶。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "klein",
+      "line_id": "klein-2",
+      "filename": "klein-klein-2.mp3",
+      "path": "audio/narrations/mobius/yunxi/klein-klein-2.mp3",
+      "duration": 3.07,
+      "size": 49104,
+      "text": "它是一个没有边界、也没有内外之分的封闭曲面。倒进去的水，分不清是在瓶内还是瓶外。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "klein",
+      "line_id": "klein-3",
+      "filename": "klein-klein-3.mp3",
+      "path": "audio/narrations/mobius/yunxi/klein-klein-3.mp3",
+      "duration": 2.92,
+      "size": 46800,
+      "text": "我们看到的\"瓶颈穿过瓶身\"只是三维的妥协，真正的克莱因瓶完美地存在于四维空间。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "compare",
+      "line_id": "cmp-1",
+      "filename": "compare-cmp-1.mp3",
+      "path": "audio/narrations/mobius/yunxi/compare-cmp-1.mp3",
+      "duration": 3.19,
+      "size": 51120,
+      "text": "作为对比，看看普通的环面。它和莫比乌斯环一样是一个圈，却清清楚楚有内外两面。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "compare",
+      "line_id": "cmp-2",
+      "filename": "compare-cmp-2.mp3",
+      "path": "audio/narrations/mobius/yunxi/compare-cmp-2.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "环面是可定向曲面，而莫比乌斯环和克莱因瓶是不可定向曲面。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "compare",
+      "line_id": "cmp-3",
+      "filename": "compare-cmp-3.mp3",
+      "path": "audio/narrations/mobius/yunxi/compare-cmp-3.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "是否可定向，是拓扑学区分曲面的一个根本特征，它不随拉伸弯曲而改变。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/mobius/yunxi/interaction-int-1.mp3",
+      "duration": 2.69,
+      "size": 43056,
+      "text": "现在你可以用鼠标拖动，从任意角度旋转这些曲面，仔细观察它们的扭转结构。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/mobius/yunxi/interaction-int-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "切换莫比乌斯环、克莱因瓶和环面，对比单侧与双侧的差异。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/mobius/yunxi/summary-sum-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "我们认识了只有一个面的莫比乌斯环，和没有内外的克莱因瓶。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/mobius/yunxi/summary-sum-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "它们颠覆了我们对\"面\"的直觉，开启了拓扑学这门研究形状本质的学科。"
+    },
+    {
+      "script_id": "mobius",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/mobius/yunxi/summary-sum-3.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "数学的想象力可以超越我们生活的维度。继续探索吧！"
+    }
+  ],
+  "total_duration": 49.33,
+  "total_size": 789408
+}

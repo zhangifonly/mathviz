@@ -5,14 +5,28 @@
   "difficulty": "intermediate",
   "targetAge": "大学本科",
   "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2025-01-06",
+    "updatedAt": "2025-01-06"
+  },
+  "objectives": [
+    "理解图的基本概念和术语",
+    "掌握图的遍历算法",
+    "了解最短路径问题",
+    "认识图论在现实中的应用"
+  ],
+  "prerequisites": [
+    "集合的基本概念",
+    "基础算法知识",
+    "逻辑推理能力"
+  ],
   "sections": [
     {
       "id": "intro",
       "type": "intro",
       "title": "开场引入",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "intro-1",
@@ -36,9 +50,6 @@
       "id": "concept",
       "type": "concept",
       "title": "核心概念",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "concept-1",
@@ -62,9 +73,6 @@
       "id": "traversal",
       "type": "animation",
       "title": "图的遍历",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "trav-1",
@@ -88,9 +96,6 @@
       "id": "shortest-path",
       "type": "animation",
       "title": "最短路径",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "sp-1",
@@ -114,9 +119,6 @@
       "id": "application",
       "type": "application",
       "title": "实际应用",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "app-1",
@@ -140,9 +142,6 @@
       "id": "summary",
       "type": "summary",
       "title": "总结",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "sum-1",

@@ -1,0 +1,189 @@
+{
+  "script_id": "reaction-diffusion",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.52,
+      "size": 40320,
+      "text": "豹子身上的斑点、斑马身上的条纹、热带鱼身上的花纹，它们从何而来？"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/intro-intro-2.mp3",
+      "duration": 3.24,
+      "size": 51840,
+      "text": "1952 年，计算机科学之父图灵提出了一个惊人的猜想：这些花纹源自简单的化学反应。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.8,
+      "size": 44784,
+      "text": "只要两种化学物质一边扩散、一边反应，就能自发地组织出复杂而稳定的图案。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/intro-intro-4.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "今天我们用 Gray-Scott 模型，亲眼见证花纹从一片混沌中生长出来。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "model",
+      "line_id": "model-1",
+      "filename": "model-model-1.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/model-model-1.mp3",
+      "duration": 3.16,
+      "size": 50544,
+      "text": "想象网格上有两种化学物：U 和 V。它们都会向四周扩散，就像墨水在水中散开。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "model",
+      "line_id": "model-2",
+      "filename": "model-model-2.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/model-model-2.mp3",
+      "duration": 3.38,
+      "size": 54000,
+      "text": "同时它们发生反应：一个 U 和两个 V 相遇，会变成三个 V。也就是说 V 能催化自己增殖。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "model",
+      "line_id": "model-3",
+      "filename": "model-model-3.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/model-model-3.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "系统还不断补给 U，并按一定速率移除 V，这两个速率叫做 feed 和 kill。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "model",
+      "line_id": "model-4",
+      "filename": "model-model-4.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/model-model-4.mp3",
+      "duration": 3.22,
+      "size": 51552,
+      "text": "把扩散、反应、补给、移除合起来，就是这两个偏微分方程，它们完全决定了图案的命运。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "patterns",
+      "line_id": "pat-1",
+      "filename": "patterns-pat-1.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/patterns-pat-1.mp3",
+      "duration": 2.63,
+      "size": 42048,
+      "text": "看，中心的一点点扰动，正在向外蔓延、分裂、繁殖，像活的一样。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "patterns",
+      "line_id": "pat-2",
+      "filename": "patterns-pat-2.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/patterns-pat-2.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "这组参数下，V 不断分裂出新的斑块，最终长成珊瑚般的枝状结构。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "patterns",
+      "line_id": "pat-3",
+      "filename": "patterns-pat-3.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/patterns-pat-3.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "只要把 feed 和 kill 微调一点点，同样的方程就会长出完全不同的花纹。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "patterns",
+      "line_id": "pat-4",
+      "filename": "patterns-pat-4.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/patterns-pat-4.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "有的变成豹纹般的斑点，有的变成斑马般的条纹，还有的变成蜿蜒的迷宫。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.96,
+      "size": 47376,
+      "text": "现在你可以切换不同的图案类型，看看珊瑚、斑点、条纹、迷宫各自如何生长。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "点击重新生长，每一次随机种子都会演化出独一无二、却又似曾相识的图案。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "interaction",
+      "line_id": "int-3",
+      "filename": "interaction-int-3.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/interaction-int-3.mp3",
+      "duration": 2.91,
+      "size": 46512,
+      "text": "试着体会：相同的规律，不同的初值，造就了大自然里没有两只完全相同的斑马。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.75,
+      "size": 43920,
+      "text": "我们看到，扩散加上反应这两件简单的事，就能凭空生出秩序井然的花纹。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/summary-sum-2.mp3",
+      "duration": 3.19,
+      "size": 50976,
+      "text": "图灵的洞见跨越了数学、化学与生物学，至今仍在解释贝壳、皮毛乃至胚胎的形成。"
+    },
+    {
+      "script_id": "reaction-diffusion",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/reaction-diffusion/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "简单规则，无穷之美。这正是数学最迷人的地方。继续探索吧！"
+    }
+  ],
+  "total_duration": 50.669999999999995,
+  "total_size": 810432
+}

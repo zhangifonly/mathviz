@@ -7,9 +7,9 @@
   "voice": "xiaoxiao",
   "meta": {
     "author": "MathViz Team",
-    "version": "1.0.0",
-    "createdAt": "2026-01-03",
-    "updatedAt": "2026-01-03"
+    "version": "2.0.0",
+    "createdAt": "2026-01-04",
+    "updatedAt": "2026-01-04"
   },
   "objectives": [
     "理解加法是\"合并\"的过程",
@@ -27,7 +27,6 @@
       "id": "intro",
       "type": "intro",
       "title": "开场引入",
-      "trigger": { "type": "auto", "delay": 1000 },
       "lines": [
         {
           "id": "intro-1",
@@ -51,7 +50,6 @@
       "id": "addition",
       "type": "concept",
       "title": "认识加法",
-      "trigger": { "type": "auto" },
       "lines": [
         {
           "id": "add-1",
@@ -79,7 +77,6 @@
       "id": "subtraction",
       "type": "concept",
       "title": "认识减法",
-      "trigger": { "type": "auto" },
       "lines": [
         {
           "id": "sub-1",
@@ -107,7 +104,6 @@
       "id": "multiplication",
       "type": "concept",
       "title": "认识乘法",
-      "trigger": { "type": "auto" },
       "lines": [
         {
           "id": "mul-1",
@@ -135,7 +131,6 @@
       "id": "division",
       "type": "concept",
       "title": "认识除法",
-      "trigger": { "type": "auto" },
       "lines": [
         {
           "id": "div-1",
@@ -163,7 +158,6 @@
       "id": "animation",
       "type": "animation",
       "title": "动画演示",
-      "trigger": { "type": "animation" },
       "lines": [
         {
           "id": "anim-1",
@@ -187,7 +181,6 @@
       "id": "parameters",
       "type": "interaction",
       "title": "自己试试",
-      "trigger": { "type": "parameter" },
       "lines": [
         {
           "id": "param-1",
@@ -215,7 +208,6 @@
       "id": "application",
       "type": "application",
       "title": "生活中的应用",
-      "trigger": { "type": "manual" },
       "lines": [
         {
           "id": "app-1",
@@ -243,7 +235,6 @@
       "id": "summary",
       "type": "summary",
       "title": "总结回顾",
-      "trigger": { "type": "manual" },
       "lines": [
         {
           "id": "summary-1",
@@ -270,18 +261,6 @@
           "text": "太棒了！你已经掌握了加减乘除的基本概念。继续探索其他实验，发现更多数学的乐趣吧！"
         }
       ]
-    }
-  ],
-  "furtherReading": [
-    {
-      "title": "分数可视化",
-      "description": "学习如何表示和计算分数",
-      "link": "/fractions"
-    },
-    {
-      "title": "数论探索",
-      "description": "探索素数和有趣的数字规律",
-      "link": "/number-theory"
     }
   ]
 }

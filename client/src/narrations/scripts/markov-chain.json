@@ -5,14 +5,28 @@
   "difficulty": "advanced",
   "targetAge": "大学本科",
   "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2025-01-06",
+    "updatedAt": "2025-01-06"
+  },
+  "objectives": [
+    "理解马尔可夫性质",
+    "掌握状态转移矩阵的含义",
+    "观察稳态分布的形成",
+    "了解马尔可夫链的应用"
+  ],
+  "prerequisites": [
+    "基础概率论",
+    "矩阵运算",
+    "极限的概念"
+  ],
   "sections": [
     {
       "id": "intro",
       "type": "intro",
       "title": "开场引入",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "intro-1",
@@ -36,9 +50,6 @@
       "id": "concept",
       "type": "concept",
       "title": "核心概念",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "concept-1",
@@ -62,9 +73,6 @@
       "id": "transition",
       "type": "animation",
       "title": "状态转移",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "trans-1",
@@ -88,9 +96,6 @@
       "id": "steady-state",
       "type": "concept",
       "title": "稳态分布",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "steady-1",
@@ -114,9 +119,6 @@
       "id": "application",
       "type": "application",
       "title": "实际应用",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "app-1",
@@ -140,9 +142,6 @@
       "id": "summary",
       "type": "summary",
       "title": "总结",
-      "trigger": {
-        "type": "auto"
-      },
       "lines": [
         {
           "id": "sum-1",
