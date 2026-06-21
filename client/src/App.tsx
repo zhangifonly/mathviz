@@ -77,7 +77,17 @@ const ThreeBodyExperiment = lazyRetry(() => import('./experiments/three-body/Thr
 const ReactionDiffusionExperiment = lazyRetry(() => import('./experiments/reaction-diffusion/ReactionDiffusionExperiment'))
 const MobiusExperiment = lazyRetry(() => import('./experiments/mobius/MobiusExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
-const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
+
+const ValentinePlaceholder = () => (
+  <div className="fixed inset-0 flex items-center justify-center bg-[#0a050f] px-6 text-white">
+    <div className="max-w-md rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-2xl backdrop-blur-sm">
+      <h1 className="text-3xl font-bold">情人节特别页</h1>
+      <p className="mt-4 text-sm leading-6 text-white/70">
+        这个页面的移动端组件当前不在仓库中，已临时降级为占位页，避免主站启动被阻塞。
+      </p>
+    </div>
+  </div>
+)
 
 const Loading = () => (
   <div className="flex flex-col items-center justify-center h-64 text-gray-400 gap-3">
@@ -151,7 +161,7 @@ export default function App() {
             <Route path="mobius" element={<MobiusExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
-          <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />
+          <Route path="/valentine" element={<ValentinePlaceholder />} />
         </Routes>
       </Suspense>
       </ErrorBoundary>
