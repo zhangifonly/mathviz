@@ -1,10 +1,11 @@
-import { useState, useEffect, useRef, useMemo, useCallback } from 'react'
+import { useState, useEffect, useRef, useMemo } from 'react'
 import 'katex/dist/katex.min.css'
 // @ts-expect-error react-katex types
 import { InlineMath, BlockMath } from 'react-katex'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { linearFunctionNarration } from '../../narrations/scripts/linear-function'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 interface Step {
   description: string
@@ -21,10 +22,10 @@ export default function LinearFunctionExperiment() {
   const [animatedSlope, setAnimatedSlope] = useState(-2)
   const animationRef = useRef<number | null>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const [showPresenter, setShowPresenter] = useState(false)
 
   // 讲解系统
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   // 加载讲解稿件
   useEffect(() => {
@@ -33,22 +34,7 @@ export default function LinearFunctionExperiment() {
     }
   }, [narration])
 
-  // 开始讲解 - 进入全屏 PPT 模式
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  // 退出讲解
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   // 计算特殊点
   const calculations = useMemo(() => {
@@ -290,7 +276,7 @@ export default function LinearFunctionExperiment() {
           </div>
           <div className="flex gap-2">
             <button
-              onClick={handleStartNarration}
+              onClick={openPresenter}
               className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:shadow-xl hover:shadow-indigo-500/30 transition-all duration-200 hover:scale-105 active:scale-95"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

@@ -1,9 +1,10 @@
-import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { markovChainNarration } from '../../narrations/scripts/markov-chain'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type PresetChain = 'weather' | 'random-walk' | 'gambler' | 'custom'
 
@@ -53,8 +54,8 @@ const PRESETS: Record<PresetChain, {
 }
 
 export default function MarkovChainExperiment() {
-  const [showPresenter, setShowPresenter] = useState(false)
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [preset, setPreset] = useState<PresetChain>('weather')
@@ -74,20 +75,7 @@ export default function MarkovChainExperiment() {
     }
   }, [narration])
 
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   // 加载预设 - 使用 useMemo 避免在 effect 中直接 setState
   const presetData = useMemo(() => {
@@ -350,7 +338,7 @@ export default function MarkovChainExperiment() {
           <p className="text-gray-600">探索状态转移、稳态分布和随机过程</p>
         </div>
         <button
-          onClick={handleStartNarration}
+          onClick={openPresenter}
           className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:shadow-xl hover:shadow-indigo-500/30 transition-all duration-200 hover:scale-105 active:scale-95"
         >
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

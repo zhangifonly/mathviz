@@ -1,9 +1,10 @@
-import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { numericalIntegrationNarration } from '../../narrations/scripts/numerical-integration'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type IntegrationMethod = 'rectangle-left' | 'rectangle-right' | 'midpoint' | 'trapezoidal' | 'simpson'
 type FunctionType = 'polynomial' | 'sine' | 'exponential' | 'gaussian'
@@ -51,8 +52,8 @@ const FUNCTIONS: Record<FunctionType, {
 }
 
 export default function NumericalIntegrationExperiment() {
-  const [showPresenter, setShowPresenter] = useState(false)
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   const [method, setMethod] = useState<IntegrationMethod>('trapezoidal')
   const [funcType, setFuncType] = useState<FunctionType>('polynomial')
@@ -67,20 +68,7 @@ export default function NumericalIntegrationExperiment() {
     }
   }, [narration])
 
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
   const [isAnimating, setIsAnimating] = useState(false)
   const [animatedIntervals, setAnimatedIntervals] = useState(2)
   const animationRef = useRef<number | null>(null)
@@ -326,7 +314,7 @@ export default function NumericalIntegrationExperiment() {
             <p className="text-gray-600">比较矩形法、梯形法和 Simpson 法</p>
           </div>
           <button
-            onClick={handleStartNarration}
+            onClick={openPresenter}
             className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
           >
             开始讲解

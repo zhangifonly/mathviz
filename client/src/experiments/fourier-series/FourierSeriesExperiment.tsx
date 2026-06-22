@@ -1,9 +1,10 @@
-import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { fourierSeriesNarration } from '../../narrations/scripts/fourier-series'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type WaveformType = 'square' | 'sawtooth' | 'triangle' | 'pulse'
 
@@ -17,10 +18,10 @@ export default function FourierSeriesExperiment() {
   const [speed, setSpeed] = useState(1)
   const animationRef = useRef<number | null>(null)
   const traceRef = useRef<{ x: number; y: number }[]>([])
-  const [showPresenter, setShowPresenter] = useState(false)
 
   // 讲解系统
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   // 加载讲解稿件
   useEffect(() => {
@@ -29,22 +30,7 @@ export default function FourierSeriesExperiment() {
     }
   }, [narration])
 
-  // 开始讲解
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  // 退出讲解
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   // 傅里叶系数
   const coefficients = useMemo(() => {
@@ -292,7 +278,7 @@ export default function FourierSeriesExperiment() {
           <p className="text-gray-600">用旋转圆可视化傅里叶级数的叠加</p>
         </div>
         <button
-          onClick={handleStartNarration}
+          onClick={openPresenter}
           className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
         >
           开始讲解

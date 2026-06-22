@@ -1,9 +1,10 @@
-import { useState, useMemo, useEffect, useCallback } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { numericalAnalysisNarration } from '../../narrations/scripts/numerical-analysis'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type MethodType = 'euler' | 'rk4' | 'newton' | 'bisection'
 
@@ -13,10 +14,10 @@ export default function NumericalAnalysisExperiment() {
   const [tolerance, setTolerance] = useState(1e-6)
   const [maxIterations, setMaxIterations] = useState(50)
   const [showError, setShowError] = useState(true)
-  const [showPresenter, setShowPresenter] = useState(false)
 
   // 讲解系统
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   // 加载讲解稿件
   useEffect(() => {
@@ -25,22 +26,7 @@ export default function NumericalAnalysisExperiment() {
     }
   }, [narration])
 
-  // 开始讲解
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  // 退出讲解
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   // 测试函数: dy/dx = -2xy, y(0) = 1, 精确解: y = e^(-x^2)
   const exactSolution = (x: number) => Math.exp(-x * x)
@@ -245,7 +231,7 @@ export default function NumericalAnalysisExperiment() {
             <p className="text-gray-600">探索数值方法的误差、稳定性和收敛性</p>
           </div>
           <button
-            onClick={handleStartNarration}
+            onClick={openPresenter}
             className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
           >
             开始讲解

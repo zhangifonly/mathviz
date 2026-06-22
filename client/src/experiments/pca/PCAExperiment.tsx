@@ -1,15 +1,16 @@
-import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { pcaNarration } from '../../narrations/scripts/pca'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type DatasetType = 'random' | 'correlated' | 'clusters' | 'custom'
 
 export default function PCAExperiment() {
-  const [showPresenter, setShowPresenter] = useState(false)
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   const [dataset, setDataset] = useState<DatasetType>('correlated')
   const [numPoints, setNumPoints] = useState(100)
@@ -28,20 +29,7 @@ export default function PCAExperiment() {
     }
   }, [narration])
 
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   // 动画效果：相关系数从-1到1变化
   useEffect(() => {
@@ -255,7 +243,7 @@ export default function PCAExperiment() {
               </button>
             )}
             <button
-              onClick={handleStartNarration}
+              onClick={openPresenter}
               className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
             >
               开始讲解

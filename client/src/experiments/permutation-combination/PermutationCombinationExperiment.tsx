@@ -1,10 +1,11 @@
-import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import ParameterPanel from '../../components/ParameterPanel/ParameterPanel'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { permutationCombinationNarration } from '../../narrations/scripts/permutation-combination'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type VisualizationType = 'permutation' | 'combination' | 'pascal' | 'application'
 
@@ -56,10 +57,10 @@ export default function PermutationCombinationExperiment() {
   const [isAnimating, setIsAnimating] = useState(false)
   const animationRef = useRef<number | null>(null)
   const animationStep = useRef(0)
-  const [showPresenter, setShowPresenter] = useState(false)
 
   // 讲解系统
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   // 加载讲解稿件
   useEffect(() => {
@@ -68,22 +69,7 @@ export default function PermutationCombinationExperiment() {
     }
   }, [narration])
 
-  // 开始讲解
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  // 退出讲解
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   // 动画效果
   useEffect(() => {
@@ -218,7 +204,7 @@ export default function PermutationCombinationExperiment() {
             <p className="text-gray-600">探索排列、组合与帕斯卡三角形的奥秘</p>
           </div>
           <button
-            onClick={handleStartNarration}
+            onClick={openPresenter}
             className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:shadow-xl hover:shadow-indigo-500/30 transition-all duration-200 hover:scale-105 active:scale-95"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

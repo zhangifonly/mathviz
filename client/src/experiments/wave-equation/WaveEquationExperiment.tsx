@@ -3,12 +3,13 @@ import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { waveEquationNarration } from '../../narrations/scripts/wave-equation'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type WaveType = 'standing' | 'traveling' | 'superposition' | 'damped'
 
 export default function WaveEquationExperiment() {
-  const [showPresenter, setShowPresenter] = useState(false)
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const [waveType, setWaveType] = useState<WaveType>('standing')
@@ -27,20 +28,7 @@ export default function WaveEquationExperiment() {
     }
   }, [narration])
 
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   // 波动方程参数
   const omega = 2 * Math.PI * frequency
@@ -221,7 +209,7 @@ export default function WaveEquationExperiment() {
             <p className="text-gray-600">可视化驻波、行波、叠加和阻尼波</p>
           </div>
           <button
-            onClick={handleStartNarration}
+            onClick={openPresenter}
             className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
           >
             开始讲解

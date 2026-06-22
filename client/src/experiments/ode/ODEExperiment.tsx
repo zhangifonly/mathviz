@@ -1,10 +1,11 @@
-import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import ParameterPanel from '../../components/ParameterPanel/ParameterPanel'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { odeNarration } from '../../narrations/scripts/ode'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type ODEType = 'harmonic' | 'damped' | 'logistic' | 'predator-prey' | 'pendulum'
 
@@ -46,8 +47,8 @@ function rk4(f: (t: number, y: number[]) => number[], t: number, y: number[], dt
 }
 
 export default function ODEExperiment() {
-  const [showPresenter, setShowPresenter] = useState(false)
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   const [params, setParams] = useState({
     omega: 2,
@@ -72,20 +73,7 @@ export default function ODEExperiment() {
     }
   }, [narration])
 
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
   const [isAnimating, setIsAnimating] = useState(false)
   const animationRef = useRef<number | null>(null)
   const [animIndex, setAnimIndex] = useState(0)
@@ -180,7 +168,7 @@ export default function ODEExperiment() {
             <p className="text-gray-600">可视化常微分方程的解和相图</p>
           </div>
           <button
-            onClick={handleStartNarration}
+            onClick={openPresenter}
             className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
           >
             开始讲解

@@ -1,9 +1,10 @@
-import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { gradientDescentNarration } from '../../narrations/scripts/gradient-descent'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type FunctionType = 'quadratic' | 'rosenbrock' | 'himmelblau' | 'beale'
 
@@ -82,10 +83,10 @@ export default function GradientDescentExperiment() {
   const [isRunning, setIsRunning] = useState(false)
   const [currentStep, setCurrentStep] = useState(0)
   const animationRef = useRef<number | null>(null)
-  const [showPresenter, setShowPresenter] = useState(false)
 
   // 讲解系统
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   // 加载讲解稿件
   useEffect(() => {
@@ -94,22 +95,7 @@ export default function GradientDescentExperiment() {
     }
   }, [narration])
 
-  // 开始讲解
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  // 退出讲解
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   const func = functions[funcType]
 
@@ -207,7 +193,7 @@ export default function GradientDescentExperiment() {
           <p className="text-gray-600">可视化优化算法如何找到函数最小值</p>
         </div>
         <button
-          onClick={handleStartNarration}
+          onClick={openPresenter}
           className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
         >
           开始讲解

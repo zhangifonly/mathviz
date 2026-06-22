@@ -1,9 +1,10 @@
-import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { optimizationNarration } from '../../narrations/scripts/optimization'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type Algorithm = 'gradient' | 'momentum' | 'adam' | 'simulated-annealing' | 'genetic'
 type ObjectiveFunction = 'quadratic' | 'rosenbrock' | 'rastrigin' | 'ackley'
@@ -60,8 +61,8 @@ const FUNCTIONS: Record<ObjectiveFunction, {
 }
 
 export default function OptimizationExperiment() {
-  const [showPresenter, setShowPresenter] = useState(false)
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   const [algorithm, setAlgorithm] = useState<Algorithm>('gradient')
   const [objective, setObjective] = useState<ObjectiveFunction>('quadratic')
@@ -76,20 +77,7 @@ export default function OptimizationExperiment() {
     }
   }, [narration])
 
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
   const [startX, setStartX] = useState(-2)
   const [startY, setStartY] = useState(2)
   const [isRunning, setIsRunning] = useState(false)
@@ -247,7 +235,7 @@ export default function OptimizationExperiment() {
             <p className="text-gray-600">比较梯度下降、动量、Adam、模拟退火等优化方法</p>
           </div>
           <button
-            onClick={handleStartNarration}
+            onClick={openPresenter}
             className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
           >
             开始讲解

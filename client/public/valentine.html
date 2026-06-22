@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>数学表白函数 - Happy Valentine's Day 2026</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a050f;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;touch-action:none;-webkit-tap-highlight-color:transparent}
+canvas{position:fixed;top:0;left:0}
+.back{position:fixed;top:16px;left:16px;z-index:10;color:rgba(255,255,255,.4);font-size:14px;text-decoration:none;display:flex;align-items:center;gap:4px;transition:color .3s}
+.back:hover{color:rgba(255,255,255,.8)}
+.formula{position:fixed;left:50%;bottom:18%;transform:translateX(-50%);text-align:center;transition:opacity 1s,transform 1s;z-index:10;pointer-events:none}
+.formula.hidden{opacity:0;transform:translateX(-50%) translateY(16px)}
+.formula .name{color:rgba(255,200,220,.6);font-size:12px;letter-spacing:3px;margin-bottom:8px}
+.formula .eq{color:rgba(255,180,200,.8);font-size:14px;font-family:'Courier New',monospace;letter-spacing:2px;white-space:pre-line}
+.dots{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:10}
+.dots button{width:8px;height:8px;border-radius:50%;border:none;background:rgba(255,255,255,.3);cursor:pointer;transition:all .3s;padding:0}
+.dots button.active{background:rgb(244,114,182);transform:scale(1.25)}
+.ending{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:25%;z-index:10;opacity:0;pointer-events:none;transition:opacity 1s}
+.ending.show{opacity:1;pointer-events:auto}
+.ending .title{color:rgba(255,200,220,.9);font-size:20px;font-weight:300;letter-spacing:.3em;margin-bottom:8px}
+.ending .sub{color:rgba(244,114,182,.5);font-size:12px;letter-spacing:2px;margin-bottom:32px}
+.ending .btns{display:flex;gap:16px}
+.ending button{padding:8px 16px;border-radius:9999px;border:1px solid rgba(244,114,182,.4);background:transparent;color:rgba(255,180,200,.8);font-size:14px;cursor:pointer;transition:background .3s}
+.ending button:hover{background:rgba(244,114,182,.1)}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<a class="back" href="/">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+返回
+</a>
+<div class="formula hidden" id="formula">
+<div class="name" id="sceneName"></div>
+<div class="eq" id="sceneEq"></div>
+</div>
+<div class="dots" id="dots"></div>
+<div class="ending" id="ending">
+<div class="title">数学之美，献给你</div>
+<div class="sub">Happy Valentine's Day 2026</div>
+<div class="btns">
+<button id="btnReplay">重新播放</button>
+<button id="btnShare" style="display:none">分享</button>
+</div>
+</div>
+<script>
+// ============ 数学函数 ============
+function heartX(t){return 16*Math.sin(t)**3}
+function heartY(t){return 13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t)}
+function cardioidR(th,a){return a*(1-Math.cos(th))}
+function simpleHeartX(t){return Math.sin(t)}
+function simpleHeartY(t){return Math.cos(t)+Math.cbrt(Math.sin(t)**2)}
+
+// ============ 粒子 ============
+var particles=[];
+function spawnP(x,y){var a=Math.random()*Math.PI*2,sp=.3+Math.random()*.8;particles.push({x:x,y:y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp-.5,life:0,maxLife:60+Math.random()*80,size:1.5+Math.random()*2.5,hue:340+Math.random()*30})}
+function drawParticles(c){for(var i=particles.length-1;i>=0;i--){var p=particles[i];p.x+=p.vx;p.y+=p.vy;p.vy-=.01;p.life++;if(p.life>=p.maxLife){particles.splice(i,1);continue}var r=p.life/p.maxLife,al=r<.1?r*10:1-(r-.1)/.9;c.beginPath();c.arc(p.x,p.y,p.size*(1-r*.5),0,Math.PI*2);c.fillStyle='hsla('+p.hue+',90%,70%,'+(al*.8)+')';c.fill()}}
+
+// ============ 场景 ============
+var SCENES=[
+{name:'心形参数方程',formula:'x = 16sin³t\ny = 13cost − 5cos2t − 2cos3t − cos4t',dur:6},
+{name:'笛卡尔心形线',formula:'r = a(1 − cosθ)',dur:6},
+{name:'隐函数心形',formula:'(x² + y² − 1)³ = x²y³',dur:6},
+{name:'简洁心形',formula:'x² + (y − ∛x²)² = 1',dur:6}
+];
+
+var canvas=document.getElementById('c'),ctx=canvas.getContext('2d');
+var curScene=0,sceneStart=0,autoPlay=true,imgCache=null;
+var touchX=0,touchY=0;
+
+function resize(){var d=devicePixelRatio||1;canvas.width=innerWidth*d;canvas.height=innerHeight*d;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';ctx.setTransform(d,0,0,d,0,0)}
+resize();addEventListener('resize',resize);
+
+// 指示器
+var dotsEl=document.getElementById('dots');
+for(var i=0;i<4;i++){var b=document.createElement('button');b.dataset.i=i;b.onclick=function(){autoPlay=false;goTo(+this.dataset.i)};dotsEl.appendChild(b)}
+function updateDots(){var bs=dotsEl.children;for(var i=0;i<4;i++)bs[i].className=curScene===i||(curScene===4&&i===3)?'active':''}
+updateDots();
+
+// 公式
+var formulaEl=document.getElementById('formula'),nameEl=document.getElementById('sceneName'),eqEl=document.getElementById('sceneEq');
+function showFormula(){if(curScene<4){nameEl.textContent=SCENES[curScene].name;eqEl.textContent=SCENES[curScene].formula;formulaEl.className='formula'}else{formulaEl.className='formula hidden'}}
+
+function goTo(idx){if(idx<0||idx>4)return;curScene=idx;sceneStart=performance.now();particles=[];imgCache=null;formulaEl.className='formula hidden';document.getElementById('ending').className=idx===4?'ending show':'ending';updateDots();if(idx<4)setTimeout(showFormula,800)}
+
+// 触摸
+document.addEventListener('touchstart',function(e){touchX=e.touches[0].clientX;touchY=e.touches[0].clientY},{passive:true});
+document.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-touchX;if(Math.abs(dx)>50){autoPlay=false;dx<0?goTo(Math.min(curScene+1,4)):goTo(Math.max(curScene-1,0))}},{passive:true});
+
+// 按钮
+document.getElementById('btnReplay').onclick=function(){autoPlay=true;goTo(0)};
+if(navigator.share){document.getElementById('btnShare').style.display='';document.getElementById('btnShare').onclick=function(){navigator.share({title:'数学表白函数',url:location.href})}}
+
+// ============ 场景绘制 ============
+function drawScene1(c,w,h,t){
+var s=Math.min(w,h)/50,cx=w/2,cy=h*.4;
+if(t<3){var pr=Math.min(t/2.5,1),mT=pr*Math.PI*2,st=Math.floor(mT/.02);c.beginPath();c.strokeStyle='rgba(255,80,120,.9)';c.lineWidth=2.5;c.shadowColor='rgba(255,50,100,.8)';c.shadowBlur=15;for(var i=0;i<=st;i++){var tt=i/st*mT,x=cx+heartX(tt)*s,y=cy-heartY(tt)*s;i===0?c.moveTo(x,y):c.lineTo(x,y)}c.stroke();c.shadowBlur=0;if(st>0){var hx=cx+heartX(mT)*s,hy=cy-heartY(mT)*s,g=c.createRadialGradient(hx,hy,0,hx,hy,12);g.addColorStop(0,'rgba(255,200,220,1)');g.addColorStop(1,'rgba(255,50,100,0)');c.fillStyle=g;c.beginPath();c.arc(hx,hy,12,0,Math.PI*2);c.fill()}}
+if(t>=2.5){var br=1+.03*Math.sin(t*2.5),bs=s*br;c.beginPath();for(var i=0;i<=200;i++){var tt=i/200*Math.PI*2,x=cx+heartX(tt)*bs,y=cy-heartY(tt)*bs;i===0?c.moveTo(x,y):c.lineTo(x,y)}c.closePath();var fa=Math.min((t-2.5)/1.5,.35),gr=c.createRadialGradient(cx,cy,0,cx,cy,16*bs);gr.addColorStop(0,'rgba(255,100,140,'+(fa*1.2)+')');gr.addColorStop(1,'rgba(180,20,60,'+(fa*.6)+')');c.fillStyle=gr;c.fill();c.strokeStyle='rgba(255,80,120,'+Math.min(t-2.5,.9)+')';c.lineWidth=2;c.shadowColor='rgba(255,50,100,.6)';c.shadowBlur=20;c.stroke();c.shadowBlur=0;if(Math.random()<.4){var rt=Math.random()*Math.PI*2;spawnP(cx+heartX(rt)*s,cy-heartY(rt)*s)}}}
+
+function drawScene2(c,w,h,t){
+var a=Math.min(w,h)/6,cx=w/2,cy=h*.42,pr=Math.min(t/3,1),mT=pr*Math.PI*2,st=Math.floor(mT/.01);
+c.beginPath();c.strokeStyle='rgba(255,120,180,.9)';c.lineWidth=3;c.shadowColor='rgba(255,80,160,.7)';c.shadowBlur=12;for(var i=0;i<=st;i++){var th=i/st*mT,r=cardioidR(th,a),x=cx+r*Math.cos(th),y=cy-r*Math.sin(th);i===0?c.moveTo(x,y):c.lineTo(x,y)}c.stroke();c.shadowBlur=0;
+if(t>=3){var br=1+.02*Math.sin(t*3),ba=a*br;c.beginPath();for(var i=0;i<=300;i++){var th=i/300*Math.PI*2,r=cardioidR(th,ba),x=cx+r*Math.cos(th),y=cy-r*Math.sin(th);i===0?c.moveTo(x,y):c.lineTo(x,y)}c.closePath();var fa=Math.min((t-3)/1.5,.3),gr=c.createRadialGradient(cx,cy,0,cx,cy,ba*2);gr.addColorStop(0,'rgba(255,140,200,'+fa+')');gr.addColorStop(1,'rgba(200,40,100,'+(fa*.5)+')');c.fillStyle=gr;c.fill();if(Math.random()<.3){var rt=Math.random()*Math.PI*2,rr=cardioidR(rt,a);spawnP(cx+rr*Math.cos(rt),cy-rr*Math.sin(rt))}}}
+
+function drawScene3(c,w,h,t){
+var s=Math.min(w,h)*.35,cx=w/2,cy=h*.4,res=2;
+if(!imgCache){var iw=Math.ceil(s*2.4/res),ih=Math.ceil(s*2.8/res),id=c.createImageData(iw,ih);for(var py=0;py<ih;py++)for(var px=0;px<iw;px++){var x=(px/iw-.5)*2.4,y=(.5-py/ih)*2.8+.3,l=(x*x+y*y-1)**3,r=x*x*y*y*y;if(l<=r){var d=Math.abs(l-r),e=d<.01?1:.7,idx=(py*iw+px)*4;id.data[idx]=Math.floor(255*e);id.data[idx+1]=Math.floor(60*e);id.data[idx+2]=Math.floor(100*e);id.data[idx+3]=255}}imgCache=id}
+var id=imgCache,iw=id.width,ih=id.height,rv=Math.min(Math.floor(t/3*ih),ih);
+var tc=document.createElement('canvas');tc.width=iw;tc.height=rv||1;var tx=tc.getContext('2d'),pd=tx.createImageData(iw,rv||1);pd.data.set(id.data.subarray(0,iw*(rv||1)*4));tx.putImageData(pd,0,0);
+var dW=s*2.4,dH=s*2.8,dX=cx-dW/2,dY=cy-dH/2,rH=rv/ih*dH;
+c.shadowColor='rgba(255,50,100,.5)';c.shadowBlur=20;c.drawImage(tc,dX,dY,dW,rH);c.shadowBlur=0;
+if(rv<ih&&t<3.5){var lY=dY+rH,g=c.createLinearGradient(dX,lY-3,dX,lY+3);g.addColorStop(0,'rgba(255,150,200,0)');g.addColorStop(.5,'rgba(255,150,200,.8)');g.addColorStop(1,'rgba(255,150,200,0)');c.fillStyle=g;c.fillRect(dX,lY-3,dW,6)}}
+
+function drawScene4(c,w,h,t){
+var s=Math.min(w,h)*.3,cx=w/2,cy=h*.38,pr=Math.min(t/3,1),mT=pr*Math.PI*2,st=Math.floor(mT/.015);
+c.beginPath();c.strokeStyle='rgba(255,100,150,.9)';c.shadowColor='rgba(255,60,120,.6)';c.shadowBlur=10;for(var i=0;i<=st;i++){var tt=i/st*mT-Math.PI,x=cx+simpleHeartX(tt)*s,y=cy-simpleHeartY(tt)*s;c.lineWidth=2+Math.sin(tt*3);i===0?c.moveTo(x,y):c.lineTo(x,y)}c.stroke();c.shadowBlur=0;
+if(t>=3){var br=1+.025*Math.sin(t*2.8),bs=s*br;c.beginPath();for(var i=0;i<=200;i++){var tt=i/200*Math.PI*2-Math.PI,x=cx+simpleHeartX(tt)*bs,y=cy-simpleHeartY(tt)*bs;i===0?c.moveTo(x,y):c.lineTo(x,y)}c.closePath();var fa=Math.min((t-3)/1.5,.3),gr=c.createRadialGradient(cx,cy,0,cx,cy,bs*1.5);gr.addColorStop(0,'rgba(255,130,170,'+fa+')');gr.addColorStop(1,'rgba(200,30,80,'+(fa*.5)+')');c.fillStyle=gr;c.fill();if(Math.random()<.35){var rt=Math.random()*Math.PI*2-Math.PI;spawnP(cx+simpleHeartX(rt)*s,cy-simpleHeartY(rt)*s)}}}
+
+function drawEnding(c,w,h,t){
+var s=Math.min(w,h)/120,pos=[{x:w*.3,y:h*.25},{x:w*.7,y:h*.25},{x:w*.3,y:h*.48},{x:w*.7,y:h*.48}],fi=Math.min(t/1.5,1);
+pos.forEach(function(p,idx){var br=1+.04*Math.sin(t*2+idx*1.5),bs=s*br*fi;c.globalAlpha=fi;c.beginPath();
+if(idx===0){for(var i=0;i<=200;i++){var tt=i/200*Math.PI*2,x=p.x+heartX(tt)*bs,y=p.y-heartY(tt)*bs;i===0?c.moveTo(x,y):c.lineTo(x,y)}}
+else if(idx===1){var a=bs*3;for(var i=0;i<=200;i++){var th=i/200*Math.PI*2,r=cardioidR(th,a),x=p.x+r*Math.cos(th),y=p.y-r*Math.sin(th);i===0?c.moveTo(x,y):c.lineTo(x,y)}}
+else if(idx===2){for(var i=0;i<=200;i++){var tt=i/200*Math.PI*2,x=p.x+heartX(tt)*bs*.8,y=p.y-heartY(tt)*bs*.8;i===0?c.moveTo(x,y):c.lineTo(x,y)}}
+else{var sz=bs*8;for(var i=0;i<=200;i++){var tt=i/200*Math.PI*2-Math.PI,x=p.x+simpleHeartX(tt)*sz,y=p.y-simpleHeartY(tt)*sz;i===0?c.moveTo(x,y):c.lineTo(x,y)}}
+c.closePath();var gr=c.createRadialGradient(p.x,p.y,0,p.x,p.y,bs*18);gr.addColorStop(0,'rgba(255,120,160,.5)');gr.addColorStop(1,'rgba(200,30,80,.15)');c.fillStyle=gr;c.fill();c.strokeStyle='rgba(255,80,120,.8)';c.lineWidth=1.5;c.stroke();c.globalAlpha=1})}
+
+// ============ 动画循环 ============
+var dpr=devicePixelRatio||1;
+sceneStart=performance.now();
+setTimeout(showFormula,800);
+ctx.fillStyle='rgb(10,5,15)';ctx.fillRect(0,0,innerWidth,innerHeight);
+
+function animate(now){
+var w=innerWidth,h=innerHeight,t=(now-sceneStart)/1000;
+ctx.save();ctx.setTransform(dpr,0,0,dpr,0,0);
+ctx.fillStyle='rgba(10,5,15,.15)';ctx.fillRect(0,0,w,h);
+if(Math.random()<.2){ctx.beginPath();ctx.arc(Math.random()*w,Math.random()*h,Math.random()*1.5,0,Math.PI*2);ctx.fillStyle='rgba(255,255,255,'+(0.1+Math.random()*.3)+')';ctx.fill()}
+if(curScene<4){switch(curScene){case 0:drawScene1(ctx,w,h,t);break;case 1:drawScene2(ctx,w,h,t);break;case 2:drawScene3(ctx,w,h,t);break;case 3:drawScene4(ctx,w,h,t);break}if(curScene!==2)drawParticles(ctx);if(autoPlay&&t>=SCENES[curScene].dur)goTo(curScene+1)}
+else drawEnding(ctx,w,h,t);
+ctx.restore();requestAnimationFrame(animate)}
+requestAnimationFrame(animate);
+</script>
+</body>
+</html>

@@ -1,15 +1,16 @@
-import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { matrixDecompositionNarration } from '../../narrations/scripts/matrix-decomposition'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type DecompositionType = 'svd' | 'eigen' | 'lu' | 'qr'
 
 export default function MatrixDecompositionExperiment() {
-  const [showPresenter, setShowPresenter] = useState(false)
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   const [decomposition, setDecomposition] = useState<DecompositionType>('svd')
   const [matrix, setMatrix] = useState([[3, 1], [1, 3]])
@@ -24,20 +25,7 @@ export default function MatrixDecompositionExperiment() {
     }
   }, [narration])
 
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   // 动画效果：旋转矩阵变换
   useEffect(() => {
@@ -217,7 +205,7 @@ export default function MatrixDecompositionExperiment() {
           <p className="text-gray-600">可视化 SVD、特征值分解、LU 和 QR 分解</p>
         </div>
         <button
-          onClick={handleStartNarration}
+          onClick={openPresenter}
           className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:shadow-xl hover:shadow-indigo-500/30 transition-all duration-200 hover:scale-105 active:scale-95"
         >
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

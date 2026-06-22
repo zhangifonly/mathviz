@@ -1,22 +1,23 @@
-import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { goldenRatioNarration } from '../../narrations/scripts/golden-ratio'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 export default function GoldenRatioExperiment() {
   const [fibCount, setFibCount] = useState(15)
   const [spiralTurns, setSpiralTurns] = useState(6)
   const [isAnimating, setIsAnimating] = useState(false)
   const [animatedFibIndex, setAnimatedFibIndex] = useState(2)
-  const [showPresenter, setShowPresenter] = useState(false)
   const animationRef = useRef<number | null>(null)
 
   const PHI = (1 + Math.sqrt(5)) / 2
 
   // 讲解系统
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   // 加载讲解稿件
   useEffect(() => {
@@ -25,22 +26,7 @@ export default function GoldenRatioExperiment() {
     }
   }, [narration])
 
-  // 开始讲解 - 进入全屏 PPT 模式
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  // 退出讲解
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   // 动画效果：逐步展示斐波那契数列收敛
   useEffect(() => {
@@ -130,7 +116,7 @@ export default function GoldenRatioExperiment() {
             <p className="text-gray-600">探索自然界中最美的数学比例</p>
           </div>
           <button
-            onClick={handleStartNarration}
+            onClick={openPresenter}
             className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-medium text-sm shadow-lg shadow-indigo-500/25 hover:shadow-xl hover:shadow-indigo-500/30 transition-all duration-200 hover:scale-105 active:scale-95"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

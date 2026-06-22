@@ -4,6 +4,7 @@ import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { cryptographyNarration } from '../../narrations/scripts/cryptography'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type CipherType = 'caesar' | 'substitution' | 'rsa' | 'hash'
 
@@ -11,7 +12,6 @@ export default function CryptographyExperiment() {
   const [cipherType, setCipherType] = useState<CipherType>('caesar')
   const [plaintext, setPlaintext] = useState('HELLO')
   const [caesarShift, setCaesarShift] = useState(3)
-  const [showPresenter, setShowPresenter] = useState(false)
 
   // RSA 参数
   const [rsaP, setRsaP] = useState(61)
@@ -25,6 +25,7 @@ export default function CryptographyExperiment() {
 
   // 讲解系统
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   // 加载讲解稿件
   useEffect(() => {
@@ -33,22 +34,7 @@ export default function CryptographyExperiment() {
     }
   }, [narration])
 
-  // 开始讲解
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  // 退出讲解
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   // 凯撒密码加密
   const caesarEncrypt = useCallback((text: string, shift: number): string => {
@@ -270,7 +256,7 @@ export default function CryptographyExperiment() {
             <p className="text-gray-600">探索信息安全的数学原理</p>
           </div>
           <button
-            onClick={handleStartNarration}
+            onClick={openPresenter}
             className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
           >
             开始讲解

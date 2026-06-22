@@ -1,9 +1,10 @@
-import { useState, useMemo, useEffect, useCallback } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { differentialGeometryNarration } from '../../narrations/scripts/differential-geometry'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type CurveType = 'helix' | 'torus-knot' | 'viviani' | 'lissajous'
 type SurfaceType = 'sphere' | 'torus' | 'saddle' | 'mobius' | 'klein'
@@ -13,10 +14,10 @@ export default function DifferentialGeometryExperiment() {
   const [surfaceType, setSurfaceType] = useState<SurfaceType>('torus')
   const [showFrenet, setShowFrenet] = useState(true)
   const [parameter, setParameter] = useState(0.5)
-  const [showPresenter, setShowPresenter] = useState(false)
 
   // 讲解系统
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   // 加载讲解稿件
   useEffect(() => {
@@ -25,22 +26,7 @@ export default function DifferentialGeometryExperiment() {
     }
   }, [narration])
 
-  // 开始讲解
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  // 退出讲解
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   // 生成曲线数据
   const curveData = useMemo(() => {
@@ -263,7 +249,7 @@ export default function DifferentialGeometryExperiment() {
             <p className="text-gray-600">探索曲线与曲面的内在性质</p>
           </div>
           <button
-            onClick={handleStartNarration}
+            onClick={openPresenter}
             className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
           >
             开始讲解

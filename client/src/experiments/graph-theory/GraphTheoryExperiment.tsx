@@ -3,6 +3,7 @@ import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { graphTheoryNarration } from '../../narrations/scripts/graph-theory'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type Node = { id: number; x: number; y: number }
 type Edge = { from: number; to: number; weight: number }
@@ -90,10 +91,10 @@ export default function GraphTheoryExperiment() {
   const [isRunning, setIsRunning] = useState(false)
   const [currentStep, setCurrentStep] = useState(0)
   const animationRef = useRef<number | null>(null)
-  const [showPresenter, setShowPresenter] = useState(false)
 
   // 讲解系统
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   // 加载讲解稿件
   useEffect(() => {
@@ -102,22 +103,7 @@ export default function GraphTheoryExperiment() {
     }
   }, [narration])
 
-  // 开始讲解
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  // 退出讲解
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   const selectPreset = (index: number) => {
     setSelectedPreset(index)
@@ -374,7 +360,7 @@ export default function GraphTheoryExperiment() {
           <p className="text-gray-600">可视化图的遍历算法：BFS、DFS、Dijkstra</p>
         </div>
         <button
-          onClick={handleStartNarration}
+          onClick={openPresenter}
           className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
         >
           开始讲解

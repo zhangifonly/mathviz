@@ -4,6 +4,7 @@ import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { heatEquationNarration } from '../../narrations/scripts/heat-equation'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type InitialCondition = 'step' | 'gaussian' | 'sine' | 'random'
 type BoundaryCondition = 'dirichlet' | 'neumann' | 'periodic'
@@ -17,13 +18,13 @@ export default function HeatEquationExperiment() {
   const [time, setTime] = useState(0)
   const animationRef = useRef<number | null>(null)
   const [temperature, setTemperature] = useState<number[]>([])
-  const [showPresenter, setShowPresenter] = useState(false)
   const [heatmapHistory, setHeatmapHistory] = useState<number[][]>([])
   const lastRecordedTemp = useRef<number[]>([])
   const [randomSeed, setRandomSeed] = useState(0)
 
   // 讲解系统
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   // 加载讲解稿件
   useEffect(() => {
@@ -32,22 +33,7 @@ export default function HeatEquationExperiment() {
     }
   }, [narration])
 
-  // 开始讲解
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  // 退出讲解
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   // 初始化温度分布 - 使用 useMemo 避免在 effect 中 setState
   const initialTemperature = useMemo(() => {
@@ -233,7 +219,7 @@ export default function HeatEquationExperiment() {
           <p className="text-gray-600">可视化一维热扩散过程</p>
         </div>
         <button
-          onClick={handleStartNarration}
+          onClick={openPresenter}
           className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
         >
           开始讲解

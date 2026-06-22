@@ -1,16 +1,17 @@
-import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { signalProcessingNarration } from '../../narrations/scripts/signal-processing'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type FilterType = 'lowpass' | 'highpass' | 'bandpass' | 'notch'
 type WindowType = 'rectangular' | 'hamming' | 'hanning' | 'blackman'
 
 export default function SignalProcessingExperiment() {
-  const [showPresenter, setShowPresenter] = useState(false)
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   const [signalFreq, setSignalFreq] = useState(5)
   const [noiseFreq, setNoiseFreq] = useState(50)
@@ -31,20 +32,7 @@ export default function SignalProcessingExperiment() {
     }
   }, [narration])
 
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   // 动画效果：截止频率扫描
   useEffect(() => {
@@ -265,7 +253,7 @@ export default function SignalProcessingExperiment() {
               {isAnimating ? '停止' : '播放动画'}
             </button>
             <button
-              onClick={handleStartNarration}
+              onClick={openPresenter}
               className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all shadow-md"
             >
               开始讲解

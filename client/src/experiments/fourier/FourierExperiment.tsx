@@ -1,10 +1,11 @@
-import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Plot from 'react-plotly.js'
 import MathFormula from '../../components/MathFormula/MathFormula'
 import ParameterPanel from '../../components/ParameterPanel/ParameterPanel'
 import { NarrationPresenter } from '../../components/NarrationPresenter'
 import { useNarrationOptional } from '../../contexts/NarrationContext'
 import { fourierNarration } from '../../narrations/scripts/fourier'
+import { usePresenterHistory } from '../../hooks/usePresenterHistory'
 
 type WaveType = 'sine' | 'square' | 'sawtooth' | 'triangle'
 
@@ -16,11 +17,11 @@ export default function FourierExperiment() {
     waveType: 'square' as WaveType,
   })
   const [isAnimating, setIsAnimating] = useState(false)
-  const [showPresenter, setShowPresenter] = useState(false)
   const animationRef = useRef<number | null>(null)
 
   // 讲解系统
   const narration = useNarrationOptional()
+  const { showPresenter, openPresenter, handleExit: handleExitPresenter } = usePresenterHistory(narration)
 
   // 加载讲解稿件
   useEffect(() => {
@@ -29,22 +30,7 @@ export default function FourierExperiment() {
     }
   }, [narration])
 
-  // 开始讲解 - 进入全屏 PPT 模式
-  const handleStartNarration = useCallback(() => {
-    if (narration) {
-      narration.startNarration()
-      narration.setPresenterMode(true)
-      setShowPresenter(true)
-    }
-  }, [narration])
 
-  // 退出讲解
-  const handleExitPresenter = useCallback(() => {
-    if (narration) {
-      narration.setPresenterMode(false)
-    }
-    setShowPresenter(false)
-  }, [narration])
 
   // 动画效果：逐步增加傅里叶项数
   useEffect(() => {
@@ -169,7 +155,7 @@ export default function FourierExperiment() {
             </div>
           </div>
           <button
-            onClick={handleStartNarration}
+            onClick={openPresenter}
             className="flex items-center gap-2 px-4 py-2 md:px-5 md:py-2.5 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold text-sm md:text-base shadow-lg shadow-indigo-500/25 hover:shadow-xl hover:shadow-indigo-500/30 transition-all duration-200 hover:scale-105 active:scale-95"
           >
             <svg className="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 20 20">
