@@ -35,3 +35,7 @@ coverage/
 # Cache
 .cache/
 .eslintcache
+
+# 报价单含手机号/底价等商业敏感信息, 不提交到公开仓库
+数学之美_软件授权报价单.docx
+~$*.docx
