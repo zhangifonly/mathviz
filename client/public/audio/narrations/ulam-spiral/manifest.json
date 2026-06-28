@@ -1,0 +1,183 @@
+{
+  "script_id": "ulam-spiral",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/ulam-spiral/intro-intro-1.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "1963 年，数学家乌拉姆在一场无聊的会议上随手涂鸦。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/ulam-spiral/intro-intro-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "他把自然数 1、2、3，按正方形螺旋一圈圈写下来。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/ulam-spiral/intro-intro-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "然后把所有素数圈出来，结果让他大吃一惊。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/ulam-spiral/intro-intro-4.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "素数竟然不是随机散布，而是排在一条条清晰的对角线上。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "build",
+      "line_id": "build-1",
+      "filename": "build-build-1.mp3",
+      "path": "audio/narrations/ulam-spiral/build-build-1.mp3",
+      "duration": 2.98,
+      "size": 47664,
+      "text": "从中心的 1 开始，向右走一格写 2，再向上、向左、向下，一圈圈展开。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "build",
+      "line_id": "build-2",
+      "filename": "build-build-2.mp3",
+      "path": "audio/narrations/ulam-spiral/build-build-2.mp3",
+      "duration": 1.5,
+      "size": 24048,
+      "text": "每个自然数都占据网格里唯一的位置。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "build",
+      "line_id": "build-3",
+      "filename": "build-build-3.mp3",
+      "path": "audio/narrations/ulam-spiral/build-build-3.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "我们把素数标成金色，合数留暗，让规律自己浮现出来。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "pattern",
+      "line_id": "pat-1",
+      "filename": "pattern-pat-1.mp3",
+      "path": "audio/narrations/ulam-spiral/pattern-pat-1.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "看，金色的点明显聚集在一些斜线上，而不是均匀铺满。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "pattern",
+      "line_id": "pat-2",
+      "filename": "pattern-pat-2.mp3",
+      "path": "audio/narrations/ulam-spiral/pattern-pat-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "这些对角线，对应着像 n 平方加 n 加 41 这样的二次多项式。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "pattern",
+      "line_id": "pat-3",
+      "filename": "pattern-pat-3.mp3",
+      "path": "audio/narrations/ulam-spiral/pattern-pat-3.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "某些二次多项式能连续产生大量素数，这正是对角线的来源。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "mystery",
+      "line_id": "mys-1",
+      "filename": "mystery-mys-1.mp3",
+      "path": "audio/narrations/ulam-spiral/mystery-mys-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "为什么会这样？素数的精确分布，至今没有完整答案。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "mystery",
+      "line_id": "mys-2",
+      "filename": "mystery-mys-2.mp3",
+      "path": "audio/narrations/ulam-spiral/mystery-mys-2.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "它牵连着数学皇冠上的明珠——黎曼猜想。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/ulam-spiral/interaction-int-1.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "切换不同的网格规模，看对角线在更大尺度上是否依然清晰。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/ulam-spiral/interaction-int-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "观察素数占比，随着数字增大，素数会越来越稀疏。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/ulam-spiral/summary-sum-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "乌拉姆螺旋让素数的对角线聚集现象一目了然。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/ulam-spiral/summary-sum-2.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "对角线背后是能产生素数的二次多项式。"
+    },
+    {
+      "script_id": "ulam-spiral",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/ulam-spiral/summary-sum-3.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "一个随手涂鸦，连接着最深刻的数学之谜，我们下次再见！"
+    }
+  ],
+  "total_duration": 35.23,
+  "total_size": 564192,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

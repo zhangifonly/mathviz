@@ -1,0 +1,164 @@
+{
+  "id": "lissajous",
+  "title": "利萨茹与玫瑰曲线",
+  "subtitle": "频率与角度编织出的对称花纹",
+  "difficulty": "intermediate",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-06-23",
+    "updatedAt": "2026-06-23"
+  },
+  "objectives": [
+    "理解利萨茹图形由两个垂直简谐振动合成",
+    "认识频率比对图形形状的决定作用",
+    "理解玫瑰曲线 r=cos(kθ) 与花瓣数的关系",
+    "感受参数与极坐标曲线的对称之美"
+  ],
+  "prerequisites": [
+    "了解正弦函数",
+    "了解极坐标"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "在老式示波器上，把两个正弦信号分别接到横轴和纵轴，屏幕上会出现优美的花纹。"
+        },
+        {
+          "id": "intro-2",
+          "text": "这些花纹叫做利萨茹图形，是两个垂直方向振动合成的轨迹。"
+        },
+        {
+          "id": "intro-3",
+          "text": "而在极坐标里，一个简单的余弦函数能开出一朵朵玫瑰。"
+        },
+        {
+          "id": "intro-4",
+          "text": "今天，我们就来欣赏这些由频率和角度编织出的对称之美。"
+        }
+      ]
+    },
+    {
+      "id": "lissajous",
+      "type": "concept",
+      "title": "利萨茹图形",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "lis-1",
+          "text": "利萨茹图形的方程是：x 等于 sin(a t 加相位 δ)，y 等于 sin(b t)。"
+        },
+        {
+          "id": "lis-2",
+          "text": "当频率比 a 比 b 是 1 比 1，相位差 90 度时，画出一个正圆。"
+        },
+        {
+          "id": "lis-3",
+          "text": "把频率比改成 3 比 2，曲线开始交错缠绕，形成更复杂的网格。"
+        },
+        {
+          "id": "lis-4",
+          "text": "只要频率比是简单整数比，图形就会闭合而稳定。"
+        }
+      ]
+    },
+    {
+      "id": "rose",
+      "type": "concept",
+      "title": "玫瑰曲线",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "rose-1",
+          "text": "换到极坐标，半径 r 等于 cos(k 乘以 θ)，就得到玫瑰曲线。"
+        },
+        {
+          "id": "rose-2",
+          "text": "当 k 是奇数，比如 3，玫瑰开出 3 片花瓣。"
+        },
+        {
+          "id": "rose-3",
+          "text": "当 k 是偶数，比如 4，花瓣数翻倍，开出 8 片。"
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "type": "concept",
+      "title": "为什么这么美",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "why-1",
+          "text": "这些图形的对称性，来自三角函数本身的周期性。"
+        },
+        {
+          "id": "why-2",
+          "text": "频率比和花瓣数，把抽象的数字关系，变成了肉眼可见的几何秩序。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "点击右边切换不同的频率比和花瓣数，看图形如何变化。"
+        },
+        {
+          "id": "int-2",
+          "text": "数一数玫瑰曲线的花瓣，验证它和 k 的奇偶关系。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "利萨茹图形由两个垂直振动合成，频率比决定形状。"
+        },
+        {
+          "id": "sum-2",
+          "text": "玫瑰曲线的花瓣数，由 k 的奇偶决定。"
+        },
+        {
+          "id": "sum-3",
+          "text": "简单的三角函数，藏着无穷的对称之美，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "l-system",
+  "title": "L-系统植物",
+  "subtitle": "几条规则长出整株分形植物",
+  "difficulty": "expert",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-06-23",
+    "updatedAt": "2026-06-23"
+  },
+  "objectives": [
+    "理解 L-系统的重写文法机制",
+    "认识海龟作图如何把字符串变成图形",
+    "理解括号实现的分叉与递归",
+    "感受简单规则生成复杂生命形态的力量"
+  ],
+  "prerequisites": [
+    "了解递归",
+    "了解角度与方向"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "一棵蕨、一株小草，看起来复杂，却可能只由几条简单规则生成。"
+        },
+        {
+          "id": "intro-2",
+          "text": "1968 年，生物学家林登迈尔提出了 L-系统，用来描述植物的生长。"
+        },
+        {
+          "id": "intro-3",
+          "text": "它的想法是：从一个字母出发，不断按规则替换，再把结果画出来。"
+        },
+        {
+          "id": "intro-4",
+          "text": "今天，我们就用几条规则，亲手种出一株分形植物。"
+        }
+      ]
+    },
+    {
+      "id": "rewrite",
+      "type": "concept",
+      "title": "重写文法",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "rw-1",
+          "text": "从一个起始字符串开始，叫做公理。"
+        },
+        {
+          "id": "rw-2",
+          "text": "每条规则告诉我们：遇到某个字母，就把它替换成一串新字母。"
+        },
+        {
+          "id": "rw-3",
+          "text": "反复替换几次，字符串迅速变长，蕴含着越来越多的细节。"
+        }
+      ]
+    },
+    {
+      "id": "turtle",
+      "type": "concept",
+      "title": "海龟作图",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "tt-1",
+          "text": "现在让一只小海龟来读这串字母。"
+        },
+        {
+          "id": "tt-2",
+          "text": "遇到 F 就向前画一段，遇到加号减号就左转右转。"
+        },
+        {
+          "id": "tt-3",
+          "text": "方括号是关键：左括号记下当前位置，右括号跳回去，这就实现了分叉。"
+        }
+      ]
+    },
+    {
+      "id": "recursion",
+      "type": "concept",
+      "title": "递归之美",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "rec-1",
+          "text": "因为规则不断套用自身，植物的每根枝条，都长得像整棵树。"
+        },
+        {
+          "id": "rec-2",
+          "text": "这种自相似，正是分形和真实植物共有的秘密。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换不同的预设，看科赫曲线、龙形曲线如何从同样的机制中长出。"
+        },
+        {
+          "id": "int-2",
+          "text": "观察左边的规则，体会这么短的规则怎么生成这么繁复的图形。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "L-系统用重写规则加海龟作图，把字符串变成图形。"
+        },
+        {
+          "id": "sum-2",
+          "text": "括号实现分叉，递归带来自相似的生命形态。"
+        },
+        {
+          "id": "sum-3",
+          "text": "简单规则孕育复杂之美，正是数学最迷人的地方，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

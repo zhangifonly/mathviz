@@ -1,0 +1,199 @@
+{
+  "script_id": "cycloid",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "cycloid",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/cycloid/yunxi/intro-intro-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "想象一个车轮在平地上滚动，轮子边缘有一个发光的点。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/cycloid/yunxi/intro-intro-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "这个点划过的轨迹，就是一条优美的曲线，叫做摆线。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/cycloid/yunxi/intro-intro-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "它一拱一拱地向前，每一拱的形状都完全相同。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/cycloid/yunxi/intro-intro-4.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "今天，我们就让圆滚起来，亲眼看看这些曲线是怎么诞生的。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "cycloid",
+      "line_id": "cyc-1",
+      "filename": "cycloid-cyc-1.mp3",
+      "path": "audio/narrations/cycloid/yunxi/cycloid-cyc-1.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "半径为 r 的圆沿直线滚动，转过的角度记作 t。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "cycloid",
+      "line_id": "cyc-2",
+      "filename": "cycloid-cyc-2.mp3",
+      "path": "audio/narrations/cycloid/yunxi/cycloid-cyc-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "圆心水平前进 r 乘以 t，而边缘那个点还在绕圆心旋转。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "cycloid",
+      "line_id": "cyc-3",
+      "filename": "cycloid-cyc-3.mp3",
+      "path": "audio/narrations/cycloid/yunxi/cycloid-cyc-3.mp3",
+      "duration": 3.38,
+      "size": 54000,
+      "text": "两个运动叠加，就得到参数方程：x 等于 r 乘以 t 减 sin t，y 等于 r 乘以 1 减 cos t。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "cycloid",
+      "line_id": "cyc-4",
+      "filename": "cycloid-cyc-4.mp3",
+      "path": "audio/narrations/cycloid/yunxi/cycloid-cyc-4.mp3",
+      "duration": 2.59,
+      "size": 41472,
+      "text": "当点落到地面时形成尖点，升到最高时正好是直径，也就是 2r。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "fastest",
+      "line_id": "fast-1",
+      "filename": "fastest-fast-1.mp3",
+      "path": "audio/narrations/cycloid/yunxi/fastest-fast-1.mp3",
+      "duration": 1.27,
+      "size": 20304,
+      "text": "摆线还藏着一个惊人的物理性质。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "fastest",
+      "line_id": "fast-2",
+      "filename": "fastest-fast-2.mp3",
+      "path": "audio/narrations/cycloid/yunxi/fastest-fast-2.mp3",
+      "duration": 2.8,
+      "size": 44784,
+      "text": "让小球从一点滑到另一点，走哪条路最快？答案不是直线，而是倒过来的摆线。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "fastest",
+      "line_id": "fast-3",
+      "filename": "fastest-fast-3.mp3",
+      "path": "audio/narrations/cycloid/yunxi/fastest-fast-3.mp3",
+      "duration": 2.94,
+      "size": 47088,
+      "text": "更神奇的是，无论从摆线上哪个位置释放，小球到达最低点的时间都一样，这叫等时性。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "family",
+      "line_id": "fam-1",
+      "filename": "family-fam-1.mp3",
+      "path": "audio/narrations/cycloid/yunxi/family-fam-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "如果圆不是沿直线，而是沿着另一个圆的内侧滚动，就得到内摆线。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "family",
+      "line_id": "fam-2",
+      "filename": "family-fam-2.mp3",
+      "path": "audio/narrations/cycloid/yunxi/family-fam-2.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "当大圆是动圆的 4 倍时，画出有 4 个尖角的星形线。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "family",
+      "line_id": "fam-3",
+      "filename": "family-fam-3.mp3",
+      "path": "audio/narrations/cycloid/yunxi/family-fam-3.mp3",
+      "duration": 2.63,
+      "size": 42048,
+      "text": "如果沿外侧滚动，就是外摆线；两个等大的圆相滚，画出心形的心脏线。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/cycloid/yunxi/interaction-int-1.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "点击右边的按钮，切换不同的曲线，看圆是怎么滚动的。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/cycloid/yunxi/interaction-int-2.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "注意观察尖点的数量，它和大圆、动圆半径的比值密切相关。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/cycloid/yunxi/summary-sum-1.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "摆线由圆的滚动生成，是最速降线，也是等时曲线。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/cycloid/yunxi/summary-sum-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "内摆线、外摆线衍生出星形线、心脏线等一整个家族。"
+    },
+    {
+      "script_id": "cycloid",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/cycloid/yunxi/summary-sum-3.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "简单的滚动，藏着这么多数学之美，我们下次再见！"
+    }
+  ],
+  "total_duration": 42.449999999999996,
+  "total_size": 679536
+}

@@ -66,6 +66,12 @@ import { eulerIdentityScenes, defaultEulerIdentityState } from './eulerIdentityS
 import { threeBodyScenes, defaultThreeBodyState } from './threeBodyScenes'
 import { reactionDiffusionScenes, defaultReactionDiffusionState } from './reactionDiffusionScenes'
 import { mobiusScenes, defaultMobiusState } from './mobiusScenes'
+import { cycloidScenes, defaultCycloidState } from './cycloidScenes'
+import { lissajousScenes, defaultLissajousState } from './lissajousScenes'
+import { ulamSpiralScenes, defaultUlamSpiralState } from './ulamSpiralScenes'
+import { pascalTriangleScenes, defaultPascalTriangleState } from './pascalTriangleScenes'
+import { voronoiScenes, defaultVoronoiState } from './voronoiScenes'
+import { lSystemScenes, defaultLSystemState } from './lSystemScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -145,6 +151,12 @@ const sceneConfigMap: Record<string, {
   'three-body': { scenes: threeBodyScenes, defaultState: defaultThreeBodyState },
   'reaction-diffusion': { scenes: reactionDiffusionScenes, defaultState: defaultReactionDiffusionState },
   'mobius': { scenes: mobiusScenes, defaultState: defaultMobiusState },
+  'cycloid': { scenes: cycloidScenes, defaultState: defaultCycloidState },
+  'lissajous': { scenes: lissajousScenes, defaultState: defaultLissajousState },
+  'ulam-spiral': { scenes: ulamSpiralScenes, defaultState: defaultUlamSpiralState },
+  'pascal-triangle': { scenes: pascalTriangleScenes, defaultState: defaultPascalTriangleState },
+  'voronoi': { scenes: voronoiScenes, defaultState: defaultVoronoiState },
+  'l-system': { scenes: lSystemScenes, defaultState: defaultLSystemState },
 }
 
 // 检测是否为移动设备
@@ -349,7 +361,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       // 新增2个待完成课程
       'laplace', 'permutation-combination',
       // 新增优美数学场景
-      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius'
+      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system'
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

@@ -76,6 +76,12 @@ const EulerIdentityExperiment = lazyRetry(() => import('./experiments/euler-iden
 const ThreeBodyExperiment = lazyRetry(() => import('./experiments/three-body/ThreeBodyExperiment'))
 const ReactionDiffusionExperiment = lazyRetry(() => import('./experiments/reaction-diffusion/ReactionDiffusionExperiment'))
 const MobiusExperiment = lazyRetry(() => import('./experiments/mobius/MobiusExperiment'))
+const CycloidExperiment = lazyRetry(() => import('./experiments/cycloid/CycloidExperiment'))
+const LissajousExperiment = lazyRetry(() => import('./experiments/lissajous/LissajousExperiment'))
+const UlamSpiralExperiment = lazyRetry(() => import('./experiments/ulam-spiral/UlamSpiralExperiment'))
+const PascalTriangleExperiment = lazyRetry(() => import('./experiments/pascal-triangle/PascalTriangleExperiment'))
+const VoronoiExperiment = lazyRetry(() => import('./experiments/voronoi/VoronoiExperiment'))
+const LSystemExperiment = lazyRetry(() => import('./experiments/l-system/LSystemExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -149,6 +155,12 @@ export default function App() {
             <Route path="three-body" element={<ThreeBodyExperiment />} />
             <Route path="reaction-diffusion" element={<ReactionDiffusionExperiment />} />
             <Route path="mobius" element={<MobiusExperiment />} />
+            <Route path="cycloid" element={<CycloidExperiment />} />
+            <Route path="lissajous" element={<LissajousExperiment />} />
+            <Route path="ulam-spiral" element={<UlamSpiralExperiment />} />
+            <Route path="pascal-triangle" element={<PascalTriangleExperiment />} />
+            <Route path="voronoi" element={<VoronoiExperiment />} />
+            <Route path="l-system" element={<LSystemExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

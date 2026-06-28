@@ -131,6 +131,12 @@ const ThreeBodySceneRenderer = lazy(() => import('./ThreeBody/ThreeBodySceneRend
 const ReactionDiffusionSceneRenderer = lazy(() => import('./ReactionDiffusion/ReactionDiffusionSceneRenderer'))
 // 莫比乌斯环场景渲染器
 const MobiusSceneRenderer = lazy(() => import('./Mobius/MobiusSceneRenderer'))
+const CycloidSceneRenderer = lazy(() => import('./Cycloid/CycloidSceneRenderer'))
+const LissajousSceneRenderer = lazy(() => import('./Lissajous/LissajousSceneRenderer'))
+const UlamSpiralSceneRenderer = lazy(() => import('./UlamSpiral/UlamSpiralSceneRenderer'))
+const PascalTriangleSceneRenderer = lazy(() => import('./PascalTriangle/PascalTriangleSceneRenderer'))
+const VoronoiSceneRenderer = lazy(() => import('./Voronoi/VoronoiSceneRenderer'))
+const LSystemSceneRenderer = lazy(() => import('./LSystem/LSystemSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -189,6 +195,12 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'three-body': ThreeBodySceneRenderer,
   'reaction-diffusion': ReactionDiffusionSceneRenderer,
   'mobius': MobiusSceneRenderer,
+  'cycloid': CycloidSceneRenderer,
+  'lissajous': LissajousSceneRenderer,
+  'ulam-spiral': UlamSpiralSceneRenderer,
+  'pascal-triangle': PascalTriangleSceneRenderer,
+  'voronoi': VoronoiSceneRenderer,
+  'l-system': LSystemSceneRenderer,
 }
 
 // 获取场景渲染器
