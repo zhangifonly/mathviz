@@ -1,0 +1,168 @@
+{
+  "id": "cycloid",
+  "title": "旋轮线家族",
+  "subtitle": "一个圆滚动画出的优美曲线",
+  "difficulty": "elementary",
+  "targetAge": "初中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-06-23",
+    "updatedAt": "2026-06-23"
+  },
+  "objectives": [
+    "理解摆线的生成方式与参数方程",
+    "认识内摆线、外摆线及星形线、心脏线",
+    "了解摆线的最速降线与等时性",
+    "建立对参数曲线之美的直观感受"
+  ],
+  "prerequisites": [
+    "了解圆与角度",
+    "了解坐标系"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "想象一个车轮在平地上滚动，轮子边缘有一个发光的点。"
+        },
+        {
+          "id": "intro-2",
+          "text": "这个点划过的轨迹，就是一条优美的曲线，叫做摆线。"
+        },
+        {
+          "id": "intro-3",
+          "text": "它一拱一拱地向前，每一拱的形状都完全相同。"
+        },
+        {
+          "id": "intro-4",
+          "text": "今天，我们就让圆滚起来，亲眼看看这些曲线是怎么诞生的。"
+        }
+      ]
+    },
+    {
+      "id": "cycloid",
+      "type": "concept",
+      "title": "摆线的生成",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "cyc-1",
+          "text": "半径为 r 的圆沿直线滚动，转过的角度记作 t。"
+        },
+        {
+          "id": "cyc-2",
+          "text": "圆心水平前进 r 乘以 t，而边缘那个点还在绕圆心旋转。"
+        },
+        {
+          "id": "cyc-3",
+          "text": "两个运动叠加，就得到参数方程：x 等于 r 乘以 t 减 sin t，y 等于 r 乘以 1 减 cos t。"
+        },
+        {
+          "id": "cyc-4",
+          "text": "当点落到地面时形成尖点，升到最高时正好是直径，也就是 2r。"
+        }
+      ]
+    },
+    {
+      "id": "fastest",
+      "type": "concept",
+      "title": "最速降线",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "fast-1",
+          "text": "摆线还藏着一个惊人的物理性质。"
+        },
+        {
+          "id": "fast-2",
+          "text": "让小球从一点滑到另一点，走哪条路最快？答案不是直线，而是倒过来的摆线。"
+        },
+        {
+          "id": "fast-3",
+          "text": "更神奇的是，无论从摆线上哪个位置释放，小球到达最低点的时间都一样，这叫等时性。"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "type": "concept",
+      "title": "内摆线与外摆线",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "fam-1",
+          "text": "如果圆不是沿直线，而是沿着另一个圆的内侧滚动，就得到内摆线。"
+        },
+        {
+          "id": "fam-2",
+          "text": "当大圆是动圆的 4 倍时，画出有 4 个尖角的星形线。"
+        },
+        {
+          "id": "fam-3",
+          "text": "如果沿外侧滚动，就是外摆线；两个等大的圆相滚，画出心形的心脏线。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "点击右边的按钮，切换不同的曲线，看圆是怎么滚动的。"
+        },
+        {
+          "id": "int-2",
+          "text": "注意观察尖点的数量，它和大圆、动圆半径的比值密切相关。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "摆线由圆的滚动生成，是最速降线，也是等时曲线。"
+        },
+        {
+          "id": "sum-2",
+          "text": "内摆线、外摆线衍生出星形线、心脏线等一整个家族。"
+        },
+        {
+          "id": "sum-3",
+          "text": "简单的滚动，藏着这么多数学之美，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

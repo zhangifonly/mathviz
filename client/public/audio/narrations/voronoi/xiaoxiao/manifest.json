@@ -1,0 +1,179 @@
+{
+  "script_id": "voronoi",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "voronoi",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.38,
+      "size": 22032,
+      "text": "想象一片平原上散布着几座城市。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "现在问：平原上每一点，离哪座城市最近？"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "把答案相同的点涂成一种颜色，平面就被划分成一块块区域。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/intro-intro-4.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "这就是沃罗诺伊图，一种既数学又自然的优美结构。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/define-def-1.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "每个站点拥有一块领地，里面所有点到它的距离，都比到其他站点更近。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/define-def-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "两块领地的边界，正好是两个站点连线的垂直平分线。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/define-def-3.mp3",
+      "duration": 1.54,
+      "size": 24624,
+      "text": "站点越多，划分出的多边形就越细密。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "nature",
+      "line_id": "nat-1",
+      "filename": "nature-nat-1.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/nature-nat-1.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "长颈鹿身上的花纹，蜻蜓翅膀的脉络，都接近沃罗诺伊结构。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "nature",
+      "line_id": "nat-2",
+      "filename": "nature-nat-2.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/nature-nat-2.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "蜂巢、肥皂泡、干裂的泥土，也都在用最经济的方式分割空间。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "nature",
+      "line_id": "nat-3",
+      "filename": "nature-nat-3.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/nature-nat-3.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "大自然反复选择这种结构，因为它高效而稳定。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "apply",
+      "line_id": "app-1",
+      "filename": "apply-app-1.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/apply-app-1.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "手机基站的覆盖范围、最近超市的划分，都用沃罗诺伊图建模。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "apply",
+      "line_id": "app-2",
+      "filename": "apply-app-2.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/apply-app-2.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "它的对偶图叫德劳内三角剖分，是网格生成和地形建模的基石。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "调整站点数量，看分区如何从粗糙变得细密。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "点击重新随机，每一次都生成一幅独一无二的细胞图案。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "沃罗诺伊图按最近站点把平面划分成多边形领地。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "它遍布自然与工程，对偶于德劳内三角剖分。"
+    },
+    {
+      "script_id": "voronoi",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/voronoi/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "一个简单的最近原则，画出大自然的几何，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.78,
+  "total_size": 540432
+}
