@@ -1,0 +1,159 @@
+{
+  "script_id": "kalman-filter",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "kalman-filter",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/intro-intro-1.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "想象你在用一个廉价传感器追踪一个移动的物体。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/intro-intro-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "每次读数都带着噪声，忽高忽低，画出来是一片抖动的散点。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "predict",
+      "line_id": "predict-2",
+      "filename": "predict-predict-2.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/predict-predict-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "但预测不是免费的，随着时间推移，我们的把握会下降。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "predict",
+      "line_id": "predict-3",
+      "filename": "predict-predict-3.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/predict-predict-3.mp3",
+      "duration": 2.38,
+      "size": 38160,
+      "text": "所以预测的不确定度，也就是方差，会加上一份过程噪声而变大。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "update",
+      "line_id": "update-1",
+      "filename": "update-update-1.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/update-update-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "这时新的测量到了，它虽然带噪声，却包含了真实信息。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "update",
+      "line_id": "update-2",
+      "filename": "update-update-2.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/update-update-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "滤波器计算预测和测量的差值，也就是新息，再决定该采信多少。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "update",
+      "line_id": "update-3",
+      "filename": "update-update-3.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/update-update-3.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "最终的估计，是预测和测量按各自可信度的加权平均。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "gain",
+      "line_id": "gain-1",
+      "filename": "gain-gain-1.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/gain-gain-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "这个权重就叫卡尔曼增益，它始终落在零到一之间。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "gain",
+      "line_id": "gain-2",
+      "filename": "gain-gain-2.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/gain-gain-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "测量越可靠，增益越接近一，估计就更贴近测量。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "gain",
+      "line_id": "gain-3",
+      "filename": "gain-gain-3.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/gain-gain-3.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "融合之后不确定度必然缩小，所以你会看到置信带一步步收窄。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/interaction-int-1.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "试着把过程噪声调小，估计会变得非常平滑，但对突变反应迟钝。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/interaction-int-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "再把它调大，估计会紧紧咬住测量，却也跟着一起抖动。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/summary-sum-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "卡尔曼滤波用一句话概括，就是按不确定度融合预测与测量。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/summary-sum-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "预测走一步，测量拉一把，方差不断收缩逼近真值。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/summary-sum-3.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "从导航到雷达再到金融，它无处不在，我们下次再见！"
+    }
+  ],
+  "total_duration": 31.740000000000006,
+  "total_size": 507744
+}

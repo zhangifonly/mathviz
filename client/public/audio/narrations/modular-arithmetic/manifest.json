@@ -1,0 +1,193 @@
+{
+  "script_id": "modular-arithmetic",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/modular-arithmetic/intro-intro-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "你有没有想过，为什么下午三点，也可以说成十五点？"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/modular-arithmetic/intro-intro-2.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "时钟走到头就绕回起点，这背后藏着一门优雅的数学，叫做模运算。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/modular-arithmetic/intro-intro-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "今天我们就从时钟出发，一路走到密码学的核心。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "clock",
+      "line_id": "clock-1",
+      "filename": "clock-clock-1.mp3",
+      "path": "audio/narrations/modular-arithmetic/clock-clock-1.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "模运算的意思是，把一个数除以某个模数，只保留余数。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "clock",
+      "line_id": "clock-2",
+      "filename": "clock-clock-2.mp3",
+      "path": "audio/narrations/modular-arithmetic/clock-clock-2.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "十五除以十二，商一余三，所以十五点对十二取模就是三。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "clock",
+      "line_id": "clock-3",
+      "filename": "clock-clock-3.mp3",
+      "path": "audio/narrations/modular-arithmetic/clock-clock-3.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "无论数字多大，结果都被牢牢圈在零到模数减一之间，像绕着圆环打转。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "congruence",
+      "line_id": "cong-1",
+      "filename": "congruence-cong-1.mp3",
+      "path": "audio/narrations/modular-arithmetic/congruence-cong-1.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "如果两个数除以同一个模数，余数相同，我们就说它们同余。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "congruence",
+      "line_id": "cong-2",
+      "filename": "congruence-cong-2.mp3",
+      "path": "audio/narrations/modular-arithmetic/congruence-cong-2.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "比如十七和五对十二同余，因为它们都指向时钟上的五点位置。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "congruence",
+      "line_id": "cong-3",
+      "filename": "congruence-cong-3.mp3",
+      "path": "audio/narrations/modular-arithmetic/congruence-cong-3.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "同余让无穷多的整数，被归并成有限的几类，这正是模运算的威力。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "circle",
+      "line_id": "circle-1",
+      "filename": "circle-circle-1.mp3",
+      "path": "audio/narrations/modular-arithmetic/circle-circle-1.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "现在把零到二百多个点，均匀排在一个圆环上。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "circle",
+      "line_id": "circle-2",
+      "filename": "circle-circle-2.mp3",
+      "path": "audio/narrations/modular-arithmetic/circle-circle-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "把每个点乘以二再取模，然后连一条线到结果的位置。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "circle",
+      "line_id": "circle-3",
+      "filename": "circle-circle-3.mp3",
+      "path": "audio/narrations/modular-arithmetic/circle-circle-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "看，无数条直线的边缘，竟然勾勒出一条心形线。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "circle",
+      "line_id": "circle-4",
+      "filename": "circle-circle-4.mp3",
+      "path": "audio/narrations/modular-arithmetic/circle-circle-4.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "换成乘以三，浮现的是肾脏线，乘数越大，花瓣越繁复。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/modular-arithmetic/interaction-int-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "试着切换不同的乘数，观察图案如何从心形变成层层花瓣。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/modular-arithmetic/interaction-int-2.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "每一根线都只是简单的乘法取模，美却从整体中悄然涌现。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/modular-arithmetic/summary-sum-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "模运算把整数绕成圆环，同余把它们归为一类。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/modular-arithmetic/summary-sum-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "这套简洁的规则，支撑着现代密码学与哈希算法。"
+    },
+    {
+      "script_id": "modular-arithmetic",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/modular-arithmetic/summary-sum-3.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "简单的取余，藏着深邃的秩序与美，我们下次再见！"
+    }
+  ],
+  "total_duration": 38.11999999999999,
+  "total_size": 610128,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "script_id": "exponential-log",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "exponential-log",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/exponential-log/intro-intro-1.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "有一种增长快得惊人，一张纸对折二十次，厚度就能超过一百米。"
+    },
+    {
+      "script_id": "exponential-log",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/exponential-log/intro-intro-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "这背后是指数函数，每一步都在成倍地放大。"
+    },
+    {
+      "script_id": "exponential-log",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/exponential-log/intro-intro-3.mp3",
+      "duration": 2.85,
+      "size": 45648,
+      "text": "而它还有一个形影不离的伙伴，叫做对数，专门用来把这种疯狂增长拉回人类的尺度。"
+    },
+    {
+      "script_id": "exponential-log",
+      "section_id": "exp-concept",
+      "line_id": "exp-1",
+      "filename": "exp-concept-exp-1.mp3",
+      "path": "audio/narrations/exponential-log/exp-concept-exp-1.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "指数函数写作 y 等于 a 的 x 次方，这里的 a 叫底数。"
+    },
+    {
+      "script_id": "exponential-log",
+      "section_id": "exp-concept",
+      "line_id": "exp-2",
+      "filename": "exp-concept-exp-2.mp3",
+      "path": "audio/narrations/exponential-log/exp-concept-exp-2.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "当底数大于一，x 每增加一，y 就乘上一个固定的倍数，曲线一路陡峭上扬。"
+    },
+    {
+      "script_id": "exponential-log",
+      "section_id": "exp-concept",
+      "line_id": "exp-3",
+      "filename": "exp-concept-exp-3.mp3",
+      "path": "audio/narrations/exponential-log/exp-concept-exp-3.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "如果底数小于一，比如二分之一，曲线就反过来一路衰减，这正是放射性衰变的样子。"
+    },
+    {
+      "script_id": "exponential-log",
+      "section_id": "log-concept",
+      "line_id": "log-1",
+      "filename": "log-concept-log-1.mp3",
+      "path": "audio/narrations/exponential-log/log-concept-log-1.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "对数问的是一个逆问题：底数的几次方才能得到某个数。"
+    },
+    {
+      "script_id": "exponential-log",
+      "section_id": "log-concept",
+      "line_id": "log-2",
+      "filename": "log-concept-log-2.mp3",
+      "path": "audio/narrations/exponential-log/log-concept-log-2.mp3",
+      "duration": 3.22,
+      "size": 51552,
+      "text": "所以对数正是指数的反函数，把它们画在一起，两条曲线关于直线 y 等于 x 完美对称。"
+    },
+    {
+      "script_id": "exponential-log",
+      "section_id": "log-concept",
+      "line_id": "log-3",
+      "filename": "log-concept-log-3.mp3",
+      "path": "audio/narrations/exponential-log/log-concept-log-3.mp3",
+      "duration": 2.75,
+      "size": 44064,
+      "text": "这条对称轴就像一面镜子，指数曲线上的每个点，都能在对数曲线上找到镜像。"
+    },
+    {
+      "script_id": "exponential-log",
+      "section_id": "log-concept",
+      "line_id": "log-4",
+      "filename": "log-concept-log-4.mp3",
+      "path": "audio/narrations/exponential-log/log-concept-log-4.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "换底公式告诉我们，任何底数的对数，都可以用自然对数相除来计算。"
+    },
+    {
+      "script_id": "exponential-log",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/exponential-log/interaction-int-1.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "切换不同的底数，看看曲线的陡峭程度如何随之改变。"
+    },
+    {
+      "script_id": "exponential-log",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/exponential-log/interaction-int-2.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "打开对称轴，盯住任意一点，感受指数与对数互为镜像的关系。"
+    },
+    {
+      "script_id": "exponential-log",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/exponential-log/summary-sum-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "指数函数刻画成倍的增长或衰减，对数则是它的逆运算。"
+    },
+    {
+      "script_id": "exponential-log",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/exponential-log/summary-sum-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "两者关于直线 y 等于 x 对称，是一对互为反函数的孪生曲线。"
+    },
+    {
+      "script_id": "exponential-log",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/exponential-log/summary-sum-3.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "从复利到分贝，从地震到 pH 值，它们无处不在，我们下次再见！"
+    }
+  ],
+  "total_duration": 36.58,
+  "total_size": 585504,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

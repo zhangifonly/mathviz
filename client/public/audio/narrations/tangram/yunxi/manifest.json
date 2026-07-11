@@ -1,0 +1,169 @@
+{
+  "script_id": "tangram",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "tangram",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/tangram/yunxi/intro-intro-1.mp3",
+      "duration": 2.83,
+      "size": 45216,
+      "text": "这是七巧板，中国古人发明的一种智力玩具，名字的意思就是七块巧妙的板子。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/tangram/yunxi/intro-intro-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "它看起来只是一个普通的正方形，可里面藏着大大的学问。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/tangram/yunxi/intro-intro-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "只要把它切开再拼一拼，就能变出成百上千种图案。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "pieces",
+      "line_id": "pieces-1",
+      "filename": "pieces-pieces-1.mp3",
+      "path": "audio/narrations/tangram/yunxi/pieces-pieces-1.mp3",
+      "duration": 3.02,
+      "size": 48384,
+      "text": "把正方形切开，我们得到七块：两个大三角形，一个中三角形，两个小三角形。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "pieces",
+      "line_id": "pieces-2",
+      "filename": "pieces-pieces-2.mp3",
+      "path": "audio/narrations/tangram/yunxi/pieces-pieces-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "再加上一个正方形，和一个歪歪的平行四边形，一共正好七块。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "pieces",
+      "line_id": "pieces-3",
+      "filename": "pieces-pieces-3.mp3",
+      "path": "audio/narrations/tangram/yunxi/pieces-pieces-3.mp3",
+      "duration": 2.94,
+      "size": 47088,
+      "text": "如果把最小的三角形当作一份，大三角形就是四份，正方形和平行四边形各是两份。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "dissection",
+      "line_id": "dissect-1",
+      "filename": "dissection-dissect-1.mp3",
+      "path": "audio/narrations/tangram/yunxi/dissection-dissect-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "这七块不是随便切的，它们能严丝合缝地拼回原来的大正方形。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "dissection",
+      "line_id": "dissect-2",
+      "filename": "dissection-dissect-2.mp3",
+      "path": "audio/narrations/tangram/yunxi/dissection-dissect-2.mp3",
+      "duration": 2.64,
+      "size": 42192,
+      "text": "不重叠，也不留缝，这说明七块的面积加起来，正好等于大正方形。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "conservation",
+      "line_id": "conserve-1",
+      "filename": "conservation-conserve-1.mp3",
+      "path": "audio/narrations/tangram/yunxi/conservation-conserve-1.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "这里藏着一条重要的规律：不管你把七块拼成什么样子，总面积永远不变。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "conservation",
+      "line_id": "conserve-2",
+      "filename": "conservation-conserve-2.mp3",
+      "path": "audio/narrations/tangram/yunxi/conservation-conserve-2.mp3",
+      "duration": 3.08,
+      "size": 49248,
+      "text": "拼成三角形、长方形还是一只小猫，用的都是同样这七块，面积始终一样多。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "conservation",
+      "line_id": "conserve-3",
+      "filename": "conservation-conserve-3.mp3",
+      "path": "audio/narrations/tangram/yunxi/conservation-conserve-3.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "因为拼图只是把图形搬来搬去、转个方向，既没有增加也没有减少。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/tangram/yunxi/interaction-int-1.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "选一个目标图形，看看这七块怎样通过旋转和平移拼进它的轮廓里。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/tangram/yunxi/interaction-int-2.mp3",
+      "duration": 2.69,
+      "size": 43056,
+      "text": "你会发现，虽然外形变了，但每一次用的都是这七块,一块也不多，一块也不少。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/tangram/yunxi/summary-sum-1.mp3",
+      "duration": 2.89,
+      "size": 46224,
+      "text": "七巧板就是把一个正方形，巧妙地切成五个三角形、一个正方形和一个平行四边形。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/tangram/yunxi/summary-sum-2.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "不管拼成什么，面积守恒的规律始终成立，这就是它千变万化背后的数学。"
+    },
+    {
+      "script_id": "tangram",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/tangram/yunxi/summary-sum-3.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "动手拼一拼，感受图形变换的乐趣，我们下次再见！"
+    }
+  ],
+  "total_duration": 40.03,
+  "total_size": 640512
+}

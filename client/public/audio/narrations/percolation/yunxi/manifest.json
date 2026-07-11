@@ -1,0 +1,179 @@
+{
+  "script_id": "percolation",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "percolation",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/percolation/yunxi/intro-intro-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "想象一大块多孔的岩石，水能不能从顶端一直渗到底端呢？"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/percolation/yunxi/intro-intro-2.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "把岩石抽象成一张方格网，每个格子以概率 p 独立地打开或者关闭。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/percolation/yunxi/intro-intro-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "这个看似简单的随机模型，藏着一个非常锋利的相变。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "cluster",
+      "line_id": "cluster-1",
+      "filename": "cluster-cluster-1.mp3",
+      "path": "audio/narrations/percolation/yunxi/cluster-cluster-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "把上下左右相邻的开放格子连在一起，就得到一个连通簇。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "cluster",
+      "line_id": "cluster-2",
+      "filename": "cluster-cluster-2.mp3",
+      "path": "audio/narrations/percolation/yunxi/cluster-cluster-2.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "注意，只算四个方向的相邻，斜对角并不相连。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "cluster",
+      "line_id": "cluster-3",
+      "filename": "cluster-cluster-3.mp3",
+      "path": "audio/narrations/percolation/yunxi/cluster-cluster-3.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "当 p 很小时，画面上只是一堆互不相连的零散小簇。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "critical",
+      "line_id": "critical-1",
+      "filename": "critical-critical-1.mp3",
+      "path": "audio/narrations/percolation/yunxi/critical-critical-1.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "不断调高 p，某个临界值附近，会突然冒出一个横跨全局的巨簇。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "critical",
+      "line_id": "critical-2",
+      "filename": "critical-critical-2.mp3",
+      "path": "audio/narrations/percolation/yunxi/critical-critical-2.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "对二维方格站点渗流，这个临界概率大约是 零点五九二七。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "critical",
+      "line_id": "critical-3",
+      "filename": "critical-critical-3.mp3",
+      "path": "audio/narrations/percolation/yunxi/critical-critical-3.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "一旦越过它，水就能从顶端贯穿到底端，我们说系统发生了渗流。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "phase",
+      "line_id": "phase-1",
+      "filename": "phase-phase-1.mp3",
+      "path": "audio/narrations/percolation/yunxi/phase-phase-1.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "用最大簇占开放格子的比例做序参量，它在临界点之下几乎为零。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "phase",
+      "line_id": "phase-2",
+      "filename": "phase-phase-2.mp3",
+      "path": "audio/narrations/percolation/yunxi/phase-phase-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "越过临界点后，这个比例陡然升起，这正是连续相变的标志。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "phase",
+      "line_id": "phase-3",
+      "filename": "phase-phase-3.mp3",
+      "path": "audio/narrations/percolation/yunxi/phase-phase-3.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "恰好在临界点上，巨簇呈现分形结构，在各种尺度上看起来都相似。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/percolation/yunxi/interaction-int-1.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "拖动概率 p，看零散小簇如何在临界点附近迅速合并成巨簇。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/percolation/yunxi/interaction-int-2.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "留意那条金色的贯穿簇，它出现的一刻，就是渗流发生的一刻。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/percolation/yunxi/summary-sum-1.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "渗流模型用最简单的随机规则，刻画了连通性的突然涌现。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/percolation/yunxi/summary-sum-2.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "临界概率、序参量突变与分形，都是统计物理相变的普适语言。"
+    },
+    {
+      "script_id": "percolation",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/percolation/yunxi/summary-sum-3.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "从材料导电到疫情传播，渗流无处不在，我们下次再见。"
+    }
+  ],
+  "total_duration": 38.31000000000001,
+  "total_size": 613152
+}

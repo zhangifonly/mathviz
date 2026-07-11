@@ -1,0 +1,179 @@
+{
+  "script_id": "similar-triangles",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "similar-triangles",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "你有没有发现，照片放大以后，里面的形状一点都没变样。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "变大变小，但看起来还是同一个东西，这就是相似。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "今天我们就用三角形，来看清相似背后的规律。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "definition",
+      "line_id": "def-1",
+      "filename": "definition-def-1.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/definition-def-1.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "两个三角形如果形状完全相同，只是大小不一样，我们就说它们相似。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "definition",
+      "line_id": "def-2",
+      "filename": "definition-def-2.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/definition-def-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "这里的蓝色三角形和粉色三角形，就是一对相似三角形。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "definition",
+      "line_id": "def-3",
+      "filename": "definition-def-3.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/definition-def-3.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "判断相似有一个关键，就是它们的对应角要完全相等。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "angles",
+      "line_id": "ang-1",
+      "filename": "angles-ang-1.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/angles-ang-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "不管三角形放大还是缩小，三个内角始终保持不变。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "angles",
+      "line_id": "ang-2",
+      "filename": "angles-ang-2.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/angles-ang-2.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "角决定了形状，所以只要三个角对应相等，两个三角形一定相似。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "ratio",
+      "line_id": "rat-1",
+      "filename": "ratio-rat-1.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/ratio-rat-1.mp3",
+      "duration": 1.3,
+      "size": 20736,
+      "text": "相似的另一半秘密，藏在边长里。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "ratio",
+      "line_id": "rat-2",
+      "filename": "ratio-rat-2.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/ratio-rat-2.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "把对应的边一一相除，你会得到同一个数，我们叫它相似比。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "ratio",
+      "line_id": "rat-3",
+      "filename": "ratio-rat-3.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/ratio-rat-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "更有意思的是，两个三角形的面积之比，等于相似比的平方。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "ratio",
+      "line_id": "rat-4",
+      "filename": "ratio-rat-4.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/ratio-rat-4.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "边长放大两倍，面积就变成了四倍，这一点常常被人忽略。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "试着切换不同的相似比，看粉色三角形怎样长大或缩小。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "注意观察上方的面积比，它总是相似比乘以它自己。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "相似三角形形状相同，对应角相等，对应边成比例。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "边按相似比变化，面积按相似比的平方变化。"
+    },
+    {
+      "script_id": "similar-triangles",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/similar-triangles/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "从地图到照片，相似无处不在，我们下次再见！"
+    }
+  ],
+  "total_duration": 34.19,
+  "total_size": 546768
+}

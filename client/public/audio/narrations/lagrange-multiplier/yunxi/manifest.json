@@ -1,0 +1,179 @@
+{
+  "script_id": "lagrange-multiplier",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/intro-intro-1.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "很多现实问题不是自由地求最大值，而是要在一个限制条件下求最优。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/intro-intro-2.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "比如预算固定时利润最大，或者只能沿着一条曲线走时高度最高。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/intro-intro-3.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "拉格朗日乘数法，就是解决这类带约束极值问题的一把钥匙。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "setup",
+      "line_id": "setup-1",
+      "filename": "setup-setup-1.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/setup-setup-1.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "我们要最大化目标函数 f，同时被限制在约束曲线 g 等于零上移动。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "setup",
+      "line_id": "setup-2",
+      "filename": "setup-setup-2.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/setup-setup-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "把目标 f 画成一族等高线，每条线上 f 的取值都相同。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "setup",
+      "line_id": "setup-3",
+      "filename": "setup-setup-3.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/setup-setup-3.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "现在的任务，就是沿着约束曲线走，找到能碰到的最高那条等高线。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "parallel",
+      "line_id": "parallel-1",
+      "filename": "parallel-parallel-1.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/parallel-parallel-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "沿约束移动时，只要还能穿过等高线，f 的值就还能继续变大。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "parallel",
+      "line_id": "parallel-2",
+      "filename": "parallel-parallel-2.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/parallel-parallel-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "直到约束曲线恰好和某条等高线相切，这时才到达极值。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "parallel",
+      "line_id": "parallel-3",
+      "filename": "parallel-parallel-3.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/parallel-parallel-3.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "相切意味着，目标的梯度和约束的梯度指向同一条直线，也就是互相平行。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "lambda",
+      "line_id": "lambda-1",
+      "filename": "lambda-lambda-1.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/lambda-lambda-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "两个梯度平行，就可以写成 f 的梯度等于 λ 乘以 g 的梯度。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "lambda",
+      "line_id": "lambda-2",
+      "filename": "lambda-lambda-2.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/lambda-lambda-2.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "这个 λ 就是拉格朗日乘数，它把方向相同的两个向量按比例连接起来。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "lambda",
+      "line_id": "lambda-3",
+      "filename": "lambda-lambda-3.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/lambda-lambda-3.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "把这个方程和约束条件联立，就能一次解出极值点和 λ 的值。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/interaction-int-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "换一个目标函数，看看切点如何随梯度方向移动到新的位置。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/interaction-int-2.mp3",
+      "duration": 2.58,
+      "size": 41328,
+      "text": "注意粉色和绿色两个梯度箭头，它们在切点处始终保持平行。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/summary-sum-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "带约束的极值，出现在约束曲线与等高线相切之处。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/summary-sum-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "相切的代数表达，就是 f 的梯度等于 λ 乘以 g 的梯度。"
+    },
+    {
+      "script_id": "lagrange-multiplier",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/lagrange-multiplier/yunxi/summary-sum-3.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "一个简单的乘数，串起了几何直觉与代数求解，我们下次再见！"
+    }
+  ],
+  "total_duration": 39.64,
+  "total_size": 634320
+}

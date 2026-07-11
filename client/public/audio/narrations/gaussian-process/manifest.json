@@ -1,0 +1,183 @@
+{
+  "script_id": "gaussian-process",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "gaussian-process",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/gaussian-process/intro-intro-1.mp3",
+      "duration": 2.97,
+      "size": 47520,
+      "text": "普通回归给你一条确定的曲线，可现实里我们常常想问：这条曲线到底有多可信。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/gaussian-process/intro-intro-2.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "高斯过程给出的不是一条线，而是无数条可能曲线组成的概率分布。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/gaussian-process/intro-intro-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "它既告诉你最可能的预测，也诚实地告诉你，哪里心里没底。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "prior",
+      "line_id": "prior-1",
+      "filename": "prior-prior-1.mp3",
+      "path": "audio/narrations/gaussian-process/prior-prior-1.mp3",
+      "duration": 3.02,
+      "size": 48240,
+      "text": "想象把函数在每个位置的取值都看成一个随机变量，任意有限个位置一起服从多元高斯分布。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "prior",
+      "line_id": "prior-2",
+      "filename": "prior-prior-2.mp3",
+      "path": "audio/narrations/gaussian-process/prior-prior-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "这就是高斯过程：一个作用在函数空间上的高斯分布。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "prior",
+      "line_id": "prior-3",
+      "filename": "prior-prior-3.mp3",
+      "path": "audio/narrations/gaussian-process/prior-prior-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "在还没看到任何数据时，它就是我们对未知函数的先验信念。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "kernel",
+      "line_id": "kernel-1",
+      "filename": "kernel-kernel-1.mp3",
+      "path": "audio/narrations/gaussian-process/kernel-kernel-1.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "核函数衡量两个位置有多相关。距离越近，函数值越应该接近。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "kernel",
+      "line_id": "kernel-2",
+      "filename": "kernel-kernel-2.mp3",
+      "path": "audio/narrations/gaussian-process/kernel-kernel-2.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "我们用平方指数核，相关性随距离平方指数衰减。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "kernel",
+      "line_id": "kernel-3",
+      "filename": "kernel-kernel-3.mp3",
+      "path": "audio/narrations/gaussian-process/kernel-kernel-3.mp3",
+      "duration": 2.85,
+      "size": 45648,
+      "text": "长度尺度是关键旋钮：它越大，曲线越平滑；越小，曲线波动越快。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "posterior",
+      "line_id": "post-1",
+      "filename": "posterior-post-1.mp3",
+      "path": "audio/narrations/gaussian-process/posterior-post-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "一旦观测到若干数据点，用高斯的条件公式就能算出后验分布。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "posterior",
+      "line_id": "post-2",
+      "filename": "posterior-post-2.mp3",
+      "path": "audio/narrations/gaussian-process/posterior-post-2.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "后验均值是那条最可能的预测曲线，它会穿过或贴近每个观测点。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "posterior",
+      "line_id": "post-3",
+      "filename": "posterior-post-3.mp3",
+      "path": "audio/narrations/gaussian-process/posterior-post-3.mp3",
+      "duration": 2.78,
+      "size": 44496,
+      "text": "后验方差刻画不确定性：靠近数据处收得很窄，远离数据处则重新张开。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/gaussian-process/interaction-int-1.mp3",
+      "duration": 3.15,
+      "size": 50400,
+      "text": "调大长度尺度，看曲线如何变得舒展平滑；调小它，曲线就紧紧扭动去追每个点。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/gaussian-process/interaction-int-2.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "注意那条浅色的置信带，在数据密集的地方收窄，在两端空旷处张大。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/gaussian-process/summary-sum-1.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "高斯过程是函数上的概率分布，核函数编码了我们对光滑度的假设。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/gaussian-process/summary-sum-2.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "后验均值给出预测，后验方差给出不确定性，二者缺一不可。"
+    },
+    {
+      "script_id": "gaussian-process",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/gaussian-process/summary-sum-3.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "这就是它在贝叶斯优化和科学建模里大放异彩的原因，我们下次再见！"
+    }
+  ],
+  "total_duration": 41.96000000000001,
+  "total_size": 671616,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

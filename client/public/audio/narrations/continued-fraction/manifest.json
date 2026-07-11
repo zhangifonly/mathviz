@@ -1,0 +1,153 @@
+{
+  "script_id": "continued-fraction",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "continued-fraction",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/continued-fraction/intro-intro-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "我们习惯用小数来写一个数，但小数并不是唯一的方式。"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/continued-fraction/intro-intro-2.mp3",
+      "duration": 1.49,
+      "size": 23904,
+      "text": "还有一种更深刻的写法，叫做连分数。"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/continued-fraction/intro-intro-3.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "它能揭示一个数最本质的算术结构，甚至告诉我们它有多难被逼近。"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/continued-fraction/define-def-1.mp3",
+      "duration": 3.0,
+      "size": 47952,
+      "text": "连分数把一个数写成：整数部分，加上一分之一，而这个一里又嵌套着下一层。"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/continued-fraction/define-def-3.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "有理数会在有限步内精确终止，无理数则会无穷无尽地展开下去。"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "convergent",
+      "line_id": "conv-1",
+      "filename": "convergent-conv-1.mp3",
+      "path": "audio/narrations/continued-fraction/convergent-conv-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "每展开到某一层就截断，就得到一个普通分数，叫做渐近分数。"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "convergent",
+      "line_id": "conv-2",
+      "filename": "convergent-conv-2.mp3",
+      "path": "audio/narrations/continued-fraction/convergent-conv-2.mp3",
+      "duration": 2.88,
+      "size": 46080,
+      "text": "它们的分子分母遵循一个简洁的递推：新的一项等于系数乘以前一项，再加上前前一项。"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "convergent",
+      "line_id": "conv-3",
+      "filename": "convergent-conv-3.mp3",
+      "path": "audio/narrations/continued-fraction/convergent-conv-3.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "渐近分数会交替地从大于和小于两侧，一步步逼近真实的值。"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "approx",
+      "line_id": "apx-2",
+      "filename": "approx-apx-2.mp3",
+      "path": "audio/narrations/continued-fraction/approx-apx-2.mp3",
+      "duration": 2.69,
+      "size": 43056,
+      "text": "圆周率的连分数就给出了二十二分之七，还有精度极高的三百五十五分之一百一十三。"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/continued-fraction/interaction-int-1.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "换不同的数试试，看它们的系数序列和逼近速度有多不一样。"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/continued-fraction/interaction-int-2.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "黄金比例的系数全是一，所以它收敛最慢，是最难被有理数逼近的数。"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/continued-fraction/summary-sum-1.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "连分数把任意实数写成层层嵌套的分数，展现它的算术骨架。"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/continued-fraction/summary-sum-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "渐近分数用最小的分母，给出最好的有理逼近。"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/continued-fraction/summary-sum-3.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "从圆周率到黄金比例，连分数让我们看清数的本性，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.91,
+  "total_size": 526464,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

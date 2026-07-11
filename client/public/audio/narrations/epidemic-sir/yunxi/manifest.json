@@ -1,0 +1,169 @@
+{
+  "script_id": "epidemic-sir",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/intro-intro-1.mp3",
+      "duration": 2.83,
+      "size": 45360,
+      "text": "一场传染病是怎么爆发、又怎么退去的？其实背后有一个非常优雅的数学模型。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/intro-intro-2.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "它叫做 SIR 模型，把整个人群只分成三类人。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/intro-intro-3.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "接下来，我们就用三条曲线，把疫情的兴衰完整地看一遍。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "compartments",
+      "line_id": "comp-1",
+      "filename": "compartments-comp-1.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/compartments-comp-1.mp3",
+      "duration": 3.01,
+      "size": 48096,
+      "text": "S 是易感者，还没得病但可能被感染；I 是感染者，正带着病毒并会传染别人。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "compartments",
+      "line_id": "comp-2",
+      "filename": "compartments-comp-2.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/compartments-comp-2.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "R 是康复者，病好之后获得免疫，不再被传染，也不再传染别人。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "compartments",
+      "line_id": "comp-3",
+      "filename": "compartments-comp-3.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/compartments-comp-3.mp3",
+      "duration": 3.25,
+      "size": 51984,
+      "text": "随着时间推移，人们从易感变成感染，再从感染变成康复，像水从一个池子流向下一个。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "equations",
+      "line_id": "eq-1",
+      "filename": "equations-eq-1.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/equations-eq-1.mp3",
+      "duration": 3.34,
+      "size": 53424,
+      "text": "新增感染的速度，正比于易感者和感染者相遇的机会，也就是两者比例的乘积再乘上传染率。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "equations",
+      "line_id": "eq-3",
+      "filename": "equations-eq-3.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/equations-eq-3.mp3",
+      "duration": 2.97,
+      "size": 47520,
+      "text": "易感只减不增，康复只增不减，中间的感染者先涨后落，形成一条钟形的曲线。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "r0",
+      "line_id": "r0-1",
+      "filename": "r0-r0-1.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/r0-r0-1.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "最关键的数字是基本再生数 R0，它等于传染率除以康复率。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "r0",
+      "line_id": "r0-2",
+      "filename": "r0-r0-2.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/r0-r0-2.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "它的含义是：一个病人在完全易感的人群里，平均会传染给多少人。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "r0",
+      "line_id": "r0-3",
+      "filename": "r0-r0-3.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/r0-r0-3.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "如果 R0 大于一，疫情就会爆发；如果小于一，它会自己慢慢消退。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/interaction-int-1.mp3",
+      "duration": 3.05,
+      "size": 48816,
+      "text": "试着调高传染率，你会看到感染峰值更高、来得更早，医疗系统更容易被挤垮。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/interaction-int-2.mp3",
+      "duration": 2.97,
+      "size": 47520,
+      "text": "当免疫人群的比例超过一减去 R0 分之一，疫情就传不下去了，这就是群体免疫阈值。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/summary-sum-1.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "SIR 模型用三类人群和两条速率，就刻画出了疫情的完整过程。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/summary-sum-2.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "R0 决定了会不会爆发，压低传染率就是在把 R0 拉到一以下。"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/summary-sum-3.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "简单的规则，深刻的洞见，这就是数学建模的力量，我们下次再见！"
+    }
+  ],
+  "total_duration": 41.510000000000005,
+  "total_size": 664128
+}

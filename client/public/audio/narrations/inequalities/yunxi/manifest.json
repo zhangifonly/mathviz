@@ -1,0 +1,179 @@
+{
+  "script_id": "inequalities",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "inequalities",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/inequalities/yunxi/intro-intro-1.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "方程用等号连接两边，而不等式用大于、小于这样的符号连接两边。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/inequalities/yunxi/intro-intro-2.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "方程的解通常只有几个数，不等式的解却往往是一整片区域。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/inequalities/yunxi/intro-intro-3.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "这一整片解，正好可以画在数轴上，一眼就能看明白。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "solve",
+      "line_id": "solve-1",
+      "filename": "solve-solve-1.mp3",
+      "path": "audio/narrations/inequalities/yunxi/solve-solve-1.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "解不等式和解方程很像，先把含未知数的项和常数项分到两边。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "solve",
+      "line_id": "solve-2",
+      "filename": "solve-solve-2.mp3",
+      "path": "audio/narrations/inequalities/yunxi/solve-solve-2.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "比如 x 加 2 大于 5，把 2 移到右边，就得到 x 大于 3。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "solve",
+      "line_id": "solve-3",
+      "filename": "solve-solve-3.mp3",
+      "path": "audio/narrations/inequalities/yunxi/solve-solve-3.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "再把未知数前面的系数化成 1，解就出来了。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "flip",
+      "line_id": "flip-1",
+      "filename": "flip-flip-1.mp3",
+      "path": "audio/narrations/inequalities/yunxi/flip-flip-1.mp3",
+      "duration": 1.48,
+      "size": 23616,
+      "text": "这里有一个最容易出错的地方，一定要记牢。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "flip",
+      "line_id": "flip-2",
+      "filename": "flip-flip-2.mp3",
+      "path": "audio/narrations/inequalities/yunxi/flip-flip-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "当两边同时乘以或除以一个负数时，不等号的方向必须翻过来。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "flip",
+      "line_id": "flip-3",
+      "filename": "flip-flip-3.mp3",
+      "path": "audio/narrations/inequalities/yunxi/flip-flip-3.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "比如负 3 乘 x 小于 6，两边除以负 3，小于就要变成大于。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "numberline",
+      "line_id": "nl-1",
+      "filename": "numberline-nl-1.mp3",
+      "path": "audio/narrations/inequalities/yunxi/numberline-nl-1.mp3",
+      "duration": 1.49,
+      "size": 23904,
+      "text": "有了解，我们就在数轴上把它标出来。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "numberline",
+      "line_id": "nl-2",
+      "filename": "numberline-nl-2.mp3",
+      "path": "audio/narrations/inequalities/yunxi/numberline-nl-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "边界点如果包含等号，就画实心圆；不包含就画空心圆。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "numberline",
+      "line_id": "nl-3",
+      "filename": "numberline-nl-3.mp3",
+      "path": "audio/narrations/inequalities/yunxi/numberline-nl-3.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "再朝解所在的方向拉出一条射线，那条射线上的每个数都是解。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/inequalities/yunxi/interaction-int-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "试着切换不同的不等式，注意系数是负数的那几个。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/inequalities/yunxi/interaction-int-2.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "观察数轴上的圆点是实心还是空心，射线又朝哪个方向延伸。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/inequalities/yunxi/summary-sum-1.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "不等式的求解就是移项加系数化一，和解方程几乎一样。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/inequalities/yunxi/summary-sum-2.mp3",
+      "duration": 1.71,
+      "size": 27360,
+      "text": "唯一要牢记的是乘除负数时不等号翻转。"
+    },
+    {
+      "script_id": "inequalities",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/inequalities/yunxi/summary-sum-3.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "数轴让抽象的解集变得直观，我们下次再见！"
+    }
+  ],
+  "total_duration": 34.87,
+  "total_size": 558144
+}

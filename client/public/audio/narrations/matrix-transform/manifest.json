@@ -1,0 +1,183 @@
+{
+  "script_id": "matrix-transform",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "matrix-transform",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/matrix-transform/intro-intro-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "一个矩阵看起来只是几个数字排成的方块，但它其实是一台变形机器。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/matrix-transform/intro-intro-2.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "给它一个平面，它就能把整个平面拉伸、旋转、错切，甚至压扁。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/matrix-transform/intro-intro-3.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "接下来，我们就用坐标网格，亲眼看看矩阵到底做了什么。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "columns",
+      "line_id": "col-1",
+      "filename": "columns-col-1.mp3",
+      "path": "audio/narrations/matrix-transform/columns-col-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "平面上有两个基向量，i 指向右方，j 指向上方。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "columns",
+      "line_id": "col-2",
+      "filename": "columns-col-2.mp3",
+      "path": "audio/narrations/matrix-transform/columns-col-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "矩阵的第一列，就是 i 变换之后落到的新位置。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "columns",
+      "line_id": "col-3",
+      "filename": "columns-col-3.mp3",
+      "path": "audio/narrations/matrix-transform/columns-col-3.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "第二列，则是 j 变换之后的落点。知道这两列，整个变换就确定了。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "linearity",
+      "line_id": "lin-1",
+      "filename": "linearity-lin-1.mp3",
+      "path": "audio/narrations/matrix-transform/linearity-lin-1.mp3",
+      "duration": 2.68,
+      "size": 42912,
+      "text": "注意看，变换之后网格线依然保持笔直，而且彼此平行、间距相等。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "linearity",
+      "line_id": "lin-2",
+      "filename": "linearity-lin-2.mp3",
+      "path": "audio/narrations/matrix-transform/linearity-lin-2.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "原点也始终停在原地不动。这三条，正是线性变换的标志。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "linearity",
+      "line_id": "lin-3",
+      "filename": "linearity-lin-3.mp3",
+      "path": "audio/narrations/matrix-transform/linearity-lin-3.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "任何一个点的新位置，都可以用它的坐标乘上这两列向量算出来。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "determinant",
+      "line_id": "det-1",
+      "filename": "determinant-det-1.mp3",
+      "path": "audio/narrations/matrix-transform/determinant-det-1.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "看这个由 i 和 j 张成的单位正方形，变换后它变成了一个平行四边形。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "determinant",
+      "line_id": "det-2",
+      "filename": "determinant-det-2.mp3",
+      "path": "audio/narrations/matrix-transform/determinant-det-2.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "它的面积相对原来放大或缩小了多少倍，这个倍数就叫行列式。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "determinant",
+      "line_id": "det-3",
+      "filename": "determinant-det-3.mp3",
+      "path": "audio/narrations/matrix-transform/determinant-det-3.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "如果行列式变成负数，说明平面被翻转了，就像照镜子一样左右颠倒。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/matrix-transform/interaction-int-1.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "试试放大两倍，你会看到面积变成四倍，行列式正好等于四。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/matrix-transform/interaction-int-2.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "再试试压扁这个变换，行列式变成零，整个平面被挤成了一条直线。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/matrix-transform/summary-sum-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "矩阵就是线性变换，它的两列记录着基向量变换后的落点。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/matrix-transform/summary-sum-2.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "行列式告诉我们面积缩放了多少倍，负号则代表方向被翻转。"
+    },
+    {
+      "script_id": "matrix-transform",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/matrix-transform/summary-sum-3.mp3",
+      "duration": 3.1,
+      "size": 49680,
+      "text": "从此再看矩阵乘法，你看到的不再是数字，而是流动的空间。我们下次再见！"
+    }
+  ],
+  "total_duration": 40.85,
+  "total_size": 653616,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

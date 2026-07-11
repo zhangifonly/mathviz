@@ -1,0 +1,169 @@
+{
+  "script_id": "knot-theory",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "knot-theory",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "把一根绳子随意打个结，再把两端粘起来，就得到一个数学上的纽结。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/intro-intro-2.mp3",
+      "duration": 3.06,
+      "size": 48960,
+      "text": "纽结理论研究的核心问题是：两个看似不同的绳圈，能否在不剪断的情况下互相变形。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "这看似简单，却是拓扑学中最深刻也最迷人的问题之一。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "crossing",
+      "line_id": "cross-1",
+      "filename": "crossing-cross-1.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/crossing-cross-1.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "要研究纽结，我们先把它压平投影到纸面上，记录每一处上下穿越。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "crossing",
+      "line_id": "cross-2",
+      "filename": "crossing-cross-2.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/crossing-cross-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "一个纽结所有画法中，交叉点最少的那个数目，叫做交叉数。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "crossing",
+      "line_id": "cross-3",
+      "filename": "crossing-cross-3.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/crossing-cross-3.mp3",
+      "duration": 2.73,
+      "size": 43632,
+      "text": "最简单的非平凡纽结是三叶结，它的交叉数是三，无论怎么摆弄都消不掉。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "invariant",
+      "line_id": "inv-1",
+      "filename": "invariant-inv-1.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/invariant-inv-1.mp3",
+      "duration": 2.59,
+      "size": 41472,
+      "text": "数学家寻找纽结不变量，也就是变形时保持不变的量，用来区分纽结。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "invariant",
+      "line_id": "inv-2",
+      "filename": "invariant-inv-2.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/invariant-inv-2.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "亏格衡量填补纽结所需曲面的复杂度，三叶结的亏格是一。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "invariant",
+      "line_id": "inv-3",
+      "filename": "invariant-inv-3.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/invariant-inv-3.mp3",
+      "duration": 3.19,
+      "size": 51120,
+      "text": "更强大的是琼斯多项式，它给每个纽结分配一个多项式，且在变量取一时总等于一。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "torus",
+      "line_id": "torus-1",
+      "filename": "torus-torus-1.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/torus-torus-1.mp3",
+      "duration": 2.57,
+      "size": 41184,
+      "text": "有一类漂亮的纽结缠绕在甜甜圈表面，叫做环面纽结，记作 T p q。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "torus",
+      "line_id": "torus-2",
+      "filename": "torus-torus-2.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/torus-torus-2.mp3",
+      "duration": 3.03,
+      "size": 48528,
+      "text": "当 p 和 q 互质时，它的亏格等于 p 减一乘以 q 减一再除以二，公式简洁而优美。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.59,
+      "size": 41472,
+      "text": "切换三叶结、八字结和五叶结，观察它们旋转时上下穿越如何变化。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "对照每个纽结的交叉数和亏格，感受不变量如何刻画它们的本质差异。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "纽结是三维空间中的闭合曲线，交叉数和亏格是最基本的不变量。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "琼斯多项式的发现连接了纽结理论与量子物理，带来了深远的影响。"
+    },
+    {
+      "script_id": "knot-theory",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/knot-theory/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "从一根打结的绳子出发，我们走进了现代拓扑的核心，下次再见。"
+    }
+  ],
+  "total_duration": 40.64,
+  "total_size": 650448
+}

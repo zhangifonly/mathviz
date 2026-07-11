@@ -1,0 +1,179 @@
+{
+  "script_id": "circle-geometry",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "circle-geometry",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.73,
+      "size": 43632,
+      "text": "圆，是几何里最对称、最优美的图形，只要一个圆心和一段半径就能确定。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.66,
+      "size": 42624,
+      "text": "别看它简单，圆里藏着一连串漂亮的公式和定理，今天我们一起来揭开它们。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "circumference",
+      "line_id": "circ-1",
+      "filename": "circumference-circ-1.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/circumference-circ-1.mp3",
+      "duration": 2.87,
+      "size": 45936,
+      "text": "先看周长。圆一圈的长度等于二乘以圆周率乘以半径，也就是二 π r。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "circumference",
+      "line_id": "circ-2",
+      "filename": "circumference-circ-2.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/circumference-circ-2.mp3",
+      "duration": 3.02,
+      "size": 48240,
+      "text": "再看面积。圆所围住的区域大小等于圆周率乘以半径的平方，也就是 π r 平方。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "circumference",
+      "line_id": "circ-3",
+      "filename": "circumference-circ-3.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/circumference-circ-3.mp3",
+      "duration": 3.2,
+      "size": 51264,
+      "text": "半径每增大一点，周长成正比增长，而面积却按平方增长，所以大圆会大得特别快。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "arc",
+      "line_id": "arc-1",
+      "filename": "arc-arc-1.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/arc-arc-1.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "如果只取圆的一部分，从圆心张开一个角，这个角叫圆心角。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "arc",
+      "line_id": "arc-2",
+      "filename": "arc-arc-2.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/arc-arc-2.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "这段弧的长度，等于半径乘以圆心角的弧度值，写作 r 乘 θ。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "arc",
+      "line_id": "arc-3",
+      "filename": "arc-arc-3.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/arc-arc-3.mp3",
+      "duration": 3.13,
+      "size": 50112,
+      "text": "这块像扇子一样的区域叫扇形，它的面积等于二分之一乘以半径的平方再乘以圆心角。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "chord",
+      "line_id": "chord-1",
+      "filename": "chord-chord-1.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/chord-chord-1.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "连接圆上两点的线段叫弦，它把圆分成两段弧。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "chord",
+      "line_id": "chord-2",
+      "filename": "chord-chord-2.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/chord-chord-2.mp3",
+      "duration": 3.01,
+      "size": 48096,
+      "text": "弦的长度等于二乘以半径再乘以圆心角一半的正弦值，圆心角越大，弦就越长。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "inscribed",
+      "line_id": "insc-1",
+      "filename": "inscribed-insc-1.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/inscribed-insc-1.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "同一段弧，站在圆心看到的是圆心角，站在圆上另一点看到的是圆周角。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "inscribed",
+      "line_id": "insc-2",
+      "filename": "inscribed-insc-2.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/inscribed-insc-2.mp3",
+      "duration": 2.91,
+      "size": 46512,
+      "text": "圆周角定理告诉我们，圆周角永远是圆心角的一半，无论顶点在弧上怎么移动都不变。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.85,
+      "size": 45648,
+      "text": "切换不同的主题，看看周长、弧长、弦长和圆周角是怎么随圆心角变化的。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/interaction-int-2.mp3",
+      "duration": 3.12,
+      "size": 49968,
+      "text": "试着拉大圆心角，观察弧长和弦长同时变长，再验证圆周角始终是圆心角的一半。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "我们认识了圆的周长二 π r 和面积 π r 平方这两个核心公式。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.72,
+      "size": 43488,
+      "text": "又学会了弧长、扇形面积、弦长的算法，以及圆周角是圆心角一半的定理。"
+    },
+    {
+      "script_id": "circle-geometry",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/circle-geometry/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "一个小小的圆，竟藏着这么多规律，我们下次继续探索数学之美！"
+    }
+  ],
+  "total_duration": 45.510000000000005,
+  "total_size": 728208
+}

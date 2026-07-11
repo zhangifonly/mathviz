@@ -1,0 +1,169 @@
+{
+  "script_id": "power-series",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "power-series",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/power-series/yunxi/intro-intro-1.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "把无穷多个幂函数项加在一起，就得到了一个幂级数。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/power-series/yunxi/intro-intro-2.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "它的形式是常数项，加一次项，加二次项，一直加下去。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/power-series/yunxi/intro-intro-3.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "神奇的是，这样一串无穷相加，往往能精确等于一个我们熟悉的函数。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "partial",
+      "line_id": "partial-1",
+      "filename": "partial-partial-1.mp3",
+      "path": "audio/narrations/power-series/yunxi/partial-partial-1.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "我们没法真的加无穷项，于是只取前面有限的几项，叫做部分和。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "partial",
+      "line_id": "partial-2",
+      "filename": "partial-partial-2.mp3",
+      "path": "audio/narrations/power-series/yunxi/partial-partial-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "看这条黄色曲线，它就是部分和画出来的图像。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "partial",
+      "line_id": "partial-3",
+      "filename": "partial-partial-3.mp3",
+      "path": "audio/narrations/power-series/yunxi/partial-partial-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "项数越多，黄色曲线就越贴近蓝色的精确函数。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "radius",
+      "line_id": "radius-1",
+      "filename": "radius-radius-1.mp3",
+      "path": "audio/narrations/power-series/yunxi/radius-radius-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "但逼近并不是处处都成立，这里有一条无形的边界。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "radius",
+      "line_id": "radius-2",
+      "filename": "radius-radius-2.mp3",
+      "path": "audio/narrations/power-series/yunxi/radius-radius-2.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "这条边界到原点的距离，就叫收敛半径，用红色虚线标出。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "radius",
+      "line_id": "radius-3",
+      "filename": "radius-radius-3.mp3",
+      "path": "audio/narrations/power-series/yunxi/radius-radius-3.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "在边界以内，级数收敛；越过边界，无论加多少项都会发散。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "why",
+      "line_id": "why-1",
+      "filename": "why-why-1.mp3",
+      "path": "audio/narrations/power-series/yunxi/why-why-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "几何级数是最简单的例子，收敛半径正好等于一。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "why",
+      "line_id": "why-2",
+      "filename": "why-why-2.mp3",
+      "path": "audio/narrations/power-series/yunxi/why-why-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "而指数级数的收敛半径是无穷大，它在整条数轴上都收敛。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/power-series/yunxi/interaction-int-1.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "试着增加项数，看黄色曲线在边界以内一点点压到蓝线上。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/power-series/yunxi/interaction-int-2.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "再切换不同的级数，比较它们收敛半径的差别。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/power-series/yunxi/summary-sum-1.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "幂级数用无穷项相加逼近函数，部分和项数越多越准。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/power-series/yunxi/summary-sum-2.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "收敛半径划定了逼近成立的范围，内收敛而外发散。"
+    },
+    {
+      "script_id": "power-series",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/power-series/yunxi/summary-sum-3.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "有限的项，无穷的逼近，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.57,
+  "total_size": 536976
+}

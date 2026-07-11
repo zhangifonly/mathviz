@@ -1,0 +1,179 @@
+{
+  "script_id": "svd",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "svd",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "一个矩阵到底对空间做了什么？奇异值分解给出了最漂亮的答案。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.84,
+      "size": 45504,
+      "text": "它说：任何一个矩阵，本质上都只是先旋转、再沿主轴拉伸、最后再旋转。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "换句话说，再复杂的线性变换，都能拆成这三个简单动作。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "geometry",
+      "line_id": "geo-1",
+      "filename": "geometry-geo-1.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/geometry-geo-1.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "想象一个单位圆，让矩阵作用在它上面，圆一定会变成一个椭圆。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "geometry",
+      "line_id": "geo-2",
+      "filename": "geometry-geo-2.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/geometry-geo-2.mp3",
+      "duration": 2.96,
+      "size": 47376,
+      "text": "这个椭圆的两条半轴长度，就是矩阵的两个奇异值，我们记作西格玛一和西格玛二。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "geometry",
+      "line_id": "geo-3",
+      "filename": "geometry-geo-3.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/geometry-geo-3.mp3",
+      "duration": 2.89,
+      "size": 46224,
+      "text": "西格玛一是最大拉伸的倍数，西格玛二是最小拉伸的倍数，它们都不会是负数。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "decompose",
+      "line_id": "dec-1",
+      "filename": "decompose-dec-1.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/decompose-dec-1.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "写成公式就是，矩阵 A 等于 U 乘以西格玛，再乘以 V 的转置。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "decompose",
+      "line_id": "dec-2",
+      "filename": "decompose-dec-2.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/decompose-dec-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "V 的转置先把空间旋转，让主轴对齐到坐标轴方向。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "decompose",
+      "line_id": "dec-3",
+      "filename": "decompose-dec-3.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/decompose-dec-3.mp3",
+      "duration": 2.56,
+      "size": 41040,
+      "text": "中间的西格玛只做沿轴拉伸，最后 U 再把结果旋转到它应有的朝向。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "rank",
+      "line_id": "rank-1",
+      "filename": "rank-rank-1.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/rank-rank-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "奇异值按从大到小排列，越大的奇异值携带的信息越多。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "rank",
+      "line_id": "rank-2",
+      "filename": "rank-rank-2.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/rank-rank-2.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "只保留最大的那个奇异值，就得到最好的秩一逼近，这是压缩的关键。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "rank",
+      "line_id": "rank-3",
+      "filename": "rank-rank-3.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/rank-rank-3.mp3",
+      "duration": 2.75,
+      "size": 44064,
+      "text": "如果某个奇异值变成零，说明矩阵是退化的，它把二维空间压扁成了一条线。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "试着切换不同的矩阵，看单位圆如何变成不同形状的椭圆。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "选择那个奇异矩阵，你会看到椭圆彻底塌缩成一根线段。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "奇异值分解把任意矩阵拆成旋转、拉伸、再旋转三步。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "奇异值就是椭圆的半轴，也是矩阵最本质的伸缩尺度。"
+    },
+    {
+      "script_id": "svd",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/svd/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.73,
+      "size": 43632,
+      "text": "正是靠着丢掉小奇异值，图像压缩和数据降维才成为可能，我们下次再见。"
+    }
+  ],
+  "total_duration": 40.78999999999999,
+  "total_size": 652608
+}

@@ -1,0 +1,183 @@
+{
+  "script_id": "clock-angles",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "clock-angles",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/clock-angles/intro-intro-1.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "每天我们都在看时钟，可你有没有想过，钟面其实就是一个圆。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/clock-angles/intro-intro-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "一整圈是三百六十度，指针在上面转动，就是在画角。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/clock-angles/intro-intro-3.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "今天我们就来看看，时钟里藏着多少有趣的角度。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "hands",
+      "line_id": "hands-1",
+      "filename": "hands-hands-1.mp3",
+      "path": "audio/narrations/clock-angles/hands-hands-1.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "钟面被平均分成六十小格，分针每走一格是一分钟。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "hands",
+      "line_id": "hands-2",
+      "filename": "hands-hands-2.mp3",
+      "path": "audio/narrations/clock-angles/hands-hands-2.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "三百六十度除以六十，所以分针每分钟转过六度。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "hands",
+      "line_id": "hands-3",
+      "filename": "hands-hands-3.mp3",
+      "path": "audio/narrations/clock-angles/hands-hands-3.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "时针慢得多，一个小时才走一大格，也就是三百六十除以十二，等于三十度。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "angle",
+      "line_id": "angle-1",
+      "filename": "angle-angle-1.mp3",
+      "path": "audio/narrations/clock-angles/angle-angle-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "想知道两根指针之间的角度，只要先算出它们各自转了多少度。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "angle",
+      "line_id": "angle-2",
+      "filename": "angle-angle-2.mp3",
+      "path": "audio/narrations/clock-angles/angle-angle-2.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "再把两个角度相减，取较小的那一个，就是它们的夹角。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "angle",
+      "line_id": "angle-3",
+      "filename": "angle-angle-3.mp3",
+      "path": "audio/narrations/clock-angles/angle-angle-3.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "要注意，时针在走的时候，每过一分钟还会悄悄多走半度。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "special",
+      "line_id": "special-1",
+      "filename": "special-special-1.mp3",
+      "path": "audio/narrations/clock-angles/special-special-1.mp3",
+      "duration": 2.78,
+      "size": 44496,
+      "text": "三点整的时候，分针指十二，时针指三，夹角正好是九十度，一个标准的直角。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "special",
+      "line_id": "special-2",
+      "filename": "special-special-2.mp3",
+      "path": "audio/narrations/clock-angles/special-special-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "六点整两针拉成一条直线，夹角是一百八十度。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "special",
+      "line_id": "special-3",
+      "filename": "special-special-3.mp3",
+      "path": "audio/narrations/clock-angles/special-special-3.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "十二点整两针完全重合，夹角是零度。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/clock-angles/interaction-int-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "切换不同的时刻，看看指针怎么转，夹角怎么变。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/clock-angles/interaction-int-2.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "试试三点一刻，分针到了三，可时针已经悄悄偏离，夹角只有七点五度。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/clock-angles/summary-sum-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "钟面是一个圆，分针每分钟六度，时针每小时三十度。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/clock-angles/summary-sum-2.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "两针角度相减取较小的，就得到夹角。"
+    },
+    {
+      "script_id": "clock-angles",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/clock-angles/summary-sum-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "原来生活里天天见的时钟，就是一堂角度课，我们下次再见！"
+    }
+  ],
+  "total_duration": 35.45,
+  "total_size": 567504,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

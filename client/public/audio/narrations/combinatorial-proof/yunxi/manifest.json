@@ -1,0 +1,179 @@
+{
+  "script_id": "combinatorial-proof",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/intro-intro-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "组合数 C n k，表示从 n 个东西里挑出 k 个的方法数。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/intro-intro-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "把它们排成三角形，就是我们熟悉的帕斯卡三角。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/intro-intro-3.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "今天我们不靠公式硬算，而是靠数格子，直接看懂几个漂亮的恒等式。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "sum",
+      "line_id": "sum-1",
+      "filename": "sum-sum-1.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/sum-sum-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "先看第一个：把第 n 行所有数加起来，结果恰好是 2 的 n 次方。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "sum",
+      "line_id": "sum-2",
+      "filename": "sum-sum-2.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/sum-sum-2.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "为什么？因为 n 个元素的所有子集，一共就是 2 的 n 次方个。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "sum",
+      "line_id": "sum-3",
+      "filename": "sum-sum-3.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/sum-sum-3.mp3",
+      "duration": 2.64,
+      "size": 42192,
+      "text": "而按大小分类，选 0 个、选 1 个、一直到选 n 个，加起来正是这一行。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "symmetry",
+      "line_id": "sym-1",
+      "filename": "symmetry-sym-1.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/symmetry-sym-1.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "第二个：C n k 等于 C n 后面 n 减 k。这一行左右完全对称。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "symmetry",
+      "line_id": "sym-2",
+      "filename": "symmetry-sym-2.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/symmetry-sym-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "道理很朴素：挑出 k 个要留下，等价于挑出另外 n 减 k 个扔掉。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "symmetry",
+      "line_id": "sym-3",
+      "filename": "symmetry-sym-3.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/symmetry-sym-3.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "选谁和不选谁，是同一件事的两种说法，方法数当然一样。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "pascal",
+      "line_id": "pas-1",
+      "filename": "pascal-pas-1.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/pascal-pas-1.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "第三个是三角形的灵魂：每个数等于它上方两个数之和。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "pascal",
+      "line_id": "pas-2",
+      "filename": "pascal-pas-2.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/pascal-pas-2.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "盯住某个特定元素，选法分两类：包含它，或者不包含它。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "pascal",
+      "line_id": "pas-3",
+      "filename": "pascal-pas-3.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/pascal-pas-3.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "包含它就再选 k 减 1 个，不包含就选满 k 个，两类相加正好是总数。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/interaction-int-1.mp3",
+      "duration": 2.65,
+      "size": 42336,
+      "text": "再看曲棍球棒恒等式：沿一条斜线累加，落点就是拐弯处下方那个数。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/interaction-int-2.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "切换不同恒等式，看看高亮的格子如何讲出各自的组合故事。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "summary",
+      "line_id": "sum-end-1",
+      "filename": "summary-sum-end-1.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/summary-sum-end-1.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "四个恒等式，全都不用展开公式，只靠数清楚方法数就证明了。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "summary",
+      "line_id": "sum-end-2",
+      "filename": "summary-sum-end-2.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/summary-sum-end-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "这就是组合证明的魅力：等式两边其实在数同一样东西。"
+    },
+    {
+      "script_id": "combinatorial-proof",
+      "section_id": "summary",
+      "line_id": "sum-end-3",
+      "filename": "summary-sum-end-3.mp3",
+      "path": "audio/narrations/combinatorial-proof/yunxi/summary-sum-end-3.mp3",
+      "duration": 1.43,
+      "size": 22896,
+      "text": "数与形在这里握手言和，我们下次再见！"
+    }
+  ],
+  "total_duration": 38.330000000000005,
+  "total_size": 613152
+}

@@ -1,0 +1,183 @@
+{
+  "script_id": "roman-numerals",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "roman-numerals",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/roman-numerals/intro-intro-1.mp3",
+      "duration": 2.88,
+      "size": 46080,
+      "text": "钟表上、书本的章节号里，常常能看到一种古老的数字，它来自两千多年前的古罗马。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/roman-numerals/intro-intro-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "它不用零到九这些数字，而是用几个大写字母来记数。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/roman-numerals/intro-intro-3.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "今天我们就来看看，怎么用短短几个字母，写出一千以内甚至更大的数。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "symbols",
+      "line_id": "symbols-1",
+      "filename": "symbols-symbols-1.mp3",
+      "path": "audio/narrations/roman-numerals/symbols-symbols-1.mp3",
+      "duration": 1.32,
+      "size": 21168,
+      "text": "罗马数字一共只有七个基本符号。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "symbols",
+      "line_id": "symbols-2",
+      "filename": "symbols-symbols-2.mp3",
+      "path": "audio/narrations/roman-numerals/symbols-symbols-2.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "I 表示一，V 表示五，X 表示十，L 表示五十。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "symbols",
+      "line_id": "symbols-3",
+      "filename": "symbols-symbols-3.mp3",
+      "path": "audio/narrations/roman-numerals/symbols-symbols-3.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "C 表示一百，D 表示五百，M 表示一千，记住它们就掌握了一半。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "add-rule",
+      "line_id": "add-1",
+      "filename": "add-rule-add-1.mp3",
+      "path": "audio/narrations/roman-numerals/add-rule-add-1.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "书写时把符号从大到小排好，再把它们的数值一个个加起来。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "add-rule",
+      "line_id": "add-2",
+      "filename": "add-rule-add-2.mp3",
+      "path": "audio/narrations/roman-numerals/add-rule-add-2.mp3",
+      "duration": 2.78,
+      "size": 44496,
+      "text": "比如二十八，写成 X X V I I I，也就是十加十加五加一加一加一。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "add-rule",
+      "line_id": "add-3",
+      "filename": "add-rule-add-3.mp3",
+      "path": "audio/narrations/roman-numerals/add-rule-add-3.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "不过同一个符号最多连写三次，四个一就得换个写法了。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "sub-rule",
+      "line_id": "sub-1",
+      "filename": "sub-rule-sub-1.mp3",
+      "path": "audio/narrations/roman-numerals/sub-rule-sub-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "当小符号写在大符号左边时，表示用大的减去小的。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "sub-rule",
+      "line_id": "sub-2",
+      "filename": "sub-rule-sub-2.mp3",
+      "path": "audio/narrations/roman-numerals/sub-rule-sub-2.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "四写成 I V，是五减一；九写成 I X，是十减一。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "sub-rule",
+      "line_id": "sub-3",
+      "filename": "sub-rule-sub-3.mp3",
+      "path": "audio/narrations/roman-numerals/sub-rule-sub-3.mp3",
+      "duration": 3.04,
+      "size": 48672,
+      "text": "所以四十是 X L，九十是 X C，四百是 C D，九百是 C M。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/roman-numerals/interaction-int-1.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "拖动滑块选一个数，看它怎样被拆成一个个罗马符号再拼起来。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/roman-numerals/interaction-int-2.mp3",
+      "duration": 3.11,
+      "size": 49824,
+      "text": "试试今年，二零二四，它写成 M M X X I V，一千加一千加十加十再加上四。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/roman-numerals/summary-sum-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "七个字母，加法从大到小相加，减法把小的放到大的左边。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/roman-numerals/summary-sum-2.mp3",
+      "duration": 2.64,
+      "size": 42192,
+      "text": "掌握这两条规则，你就能读写一到三千九百九十九之间的任何罗马数字。"
+    },
+    {
+      "script_id": "roman-numerals",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/roman-numerals/summary-sum-3.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "下次再看到钟表和碑文上的字母，你一定一眼就能读懂，我们下次再见！"
+    }
+  ],
+  "total_duration": 40.0,
+  "total_size": 640080,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

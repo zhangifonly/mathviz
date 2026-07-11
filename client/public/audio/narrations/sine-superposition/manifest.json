@@ -1,0 +1,183 @@
+{
+  "script_id": "sine-superposition",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "sine-superposition",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/sine-superposition/intro-intro-1.mp3",
+      "duration": 1.5,
+      "size": 24048,
+      "text": "当两列波在空间里相遇，会发生什么呢？"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/sine-superposition/intro-intro-2.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "它们不会互相碰撞，而是安静地穿过彼此。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/sine-superposition/intro-intro-3.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "相遇的那一刻，它们叠加成一条全新的波形。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "principle",
+      "line_id": "principle-1",
+      "filename": "principle-principle-1.mp3",
+      "path": "audio/narrations/sine-superposition/principle-principle-1.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "这就是叠加原理：某一点的总位移，等于每列波在该点位移的代数和。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "principle",
+      "line_id": "principle-2",
+      "filename": "principle-principle-2.mp3",
+      "path": "audio/narrations/sine-superposition/principle-principle-2.mp3",
+      "duration": 1.42,
+      "size": 22752,
+      "text": "上面画着两列各自独立的分量波。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "principle",
+      "line_id": "principle-3",
+      "filename": "principle-principle-3.mp3",
+      "path": "audio/narrations/sine-superposition/principle-principle-3.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "下面这条亮线，就是把它们逐点相加得到的合成波。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "interference",
+      "line_id": "interference-1",
+      "filename": "interference-interference-1.mp3",
+      "path": "audio/narrations/sine-superposition/interference-interference-1.mp3",
+      "duration": 2.9,
+      "size": 46368,
+      "text": "如果两列波频率相同、步调一致，波峰叠波峰，振幅就会翻倍，这叫相长干涉。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "interference",
+      "line_id": "interference-2",
+      "filename": "interference-interference-2.mp3",
+      "path": "audio/narrations/sine-superposition/interference-interference-2.mp3",
+      "duration": 2.66,
+      "size": 42624,
+      "text": "如果它们步调正好相反，波峰对波谷，就会处处抵消归零，这叫相消干涉。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "interference",
+      "line_id": "interference-3",
+      "filename": "interference-interference-3.mp3",
+      "path": "audio/narrations/sine-superposition/interference-interference-3.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "一加一，可以等于二，也可以等于零，全看它们的相位关系。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "beats",
+      "line_id": "beats-1",
+      "filename": "beats-beats-1.mp3",
+      "path": "audio/narrations/sine-superposition/beats-beats-1.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "当两列波的频率非常接近，会出现奇妙的拍频。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "beats",
+      "line_id": "beats-2",
+      "filename": "beats-beats-2.mp3",
+      "path": "audio/narrations/sine-superposition/beats-beats-2.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "合成波的振幅会缓慢地强弱起伏，起伏的快慢等于两个频率之差。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "beats",
+      "line_id": "beats-3",
+      "filename": "beats-beats-3.mp3",
+      "path": "audio/narrations/sine-superposition/beats-beats-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "给乐器调音时听到的那种忽强忽弱的嗡鸣，正是拍频。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "interaction",
+      "line_id": "interaction-1",
+      "filename": "interaction-interaction-1.mp3",
+      "path": "audio/narrations/sine-superposition/interaction-interaction-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "切换不同场景，看看相长、相消和拍频分别长什么样。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "interaction",
+      "line_id": "interaction-2",
+      "filename": "interaction-interaction-2.mp3",
+      "path": "audio/narrations/sine-superposition/interaction-interaction-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "再看谐波合成：基波加上一个倍频波，就能拼出更复杂的波形。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "summary",
+      "line_id": "summary-1",
+      "filename": "summary-summary-1.mp3",
+      "path": "audio/narrations/sine-superposition/summary-summary-1.mp3",
+      "duration": 1.51,
+      "size": 24192,
+      "text": "波的叠加，就是把各列波的位移逐点相加。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "summary",
+      "line_id": "summary-2",
+      "filename": "summary-summary-2.mp3",
+      "path": "audio/narrations/sine-superposition/summary-summary-2.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "相位一致则相长，相位相反则相消，频率相近则生拍频。"
+    },
+    {
+      "script_id": "sine-superposition",
+      "section_id": "summary",
+      "line_id": "summary-3",
+      "filename": "summary-summary-3.mp3",
+      "path": "audio/narrations/sine-superposition/summary-summary-3.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "从干涉到声音,再到傅里叶合成，叠加原理无处不在，我们下次再见！"
+    }
+  ],
+  "total_duration": 35.05,
+  "total_size": 560880,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

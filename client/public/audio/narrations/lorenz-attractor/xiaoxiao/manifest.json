@@ -1,0 +1,179 @@
+{
+  "script_id": "lorenz-attractor",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/intro-intro-1.mp3",
+      "duration": 3.09,
+      "size": 49392,
+      "text": "一九六三年，气象学家洛伦兹在简化对流模型时，写下了三个看似普通的微分方程。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "他没想到，这组确定的方程，竟画出了一只永不重复的数学蝴蝶。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "它彻底改变了我们对可预测性的理解，也点燃了混沌理论的火种。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "equations",
+      "line_id": "eq-1",
+      "filename": "equations-eq-1.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/equations-eq-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "系统有三个变量 x、y、z，随时间连续变化。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "equations",
+      "line_id": "eq-2",
+      "filename": "equations-eq-2.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/equations-eq-2.mp3",
+      "duration": 3.39,
+      "size": 54288,
+      "text": "x 的变化率等于西格玛乘以 y 减 x；y 的变化率等于 x 乘以 罗 减 z，再减去 y。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "equations",
+      "line_id": "eq-3",
+      "filename": "equations-eq-3.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/equations-eq-3.mp3",
+      "duration": 3.47,
+      "size": 55584,
+      "text": "z 的变化率等于 x 乘 y，再减去 贝塔 乘 z。方程里有乘积项，这正是非线性的来源。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "attractor",
+      "line_id": "attr-1",
+      "filename": "attractor-attr-1.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/attractor-attr-1.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "在经典参数下，轨迹被吸向一个固定的区域，但永远不与自己相交。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "attractor",
+      "line_id": "attr-2",
+      "filename": "attractor-attr-2.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/attractor-attr-2.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "它绕着两个中心不停盘旋，忽左忽右地跳跃，形成蝴蝶的两只翅膀。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "attractor",
+      "line_id": "attr-3",
+      "filename": "attractor-attr-3.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/attractor-attr-3.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "这个既有界又永不重复的集合，叫做奇怪吸引子，它拥有分形维数。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "butterfly",
+      "line_id": "bf-1",
+      "filename": "butterfly-bf-1.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/butterfly-bf-1.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "让两条轨迹从几乎相同的初始点出发，差异小到千万分之一。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "butterfly",
+      "line_id": "bf-2",
+      "filename": "butterfly-bf-2.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/butterfly-bf-2.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "起初它们几乎重合，可过不了多久，就分道扬镳，走向完全不同的方向。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "butterfly",
+      "line_id": "bf-3",
+      "filename": "butterfly-bf-3.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/butterfly-bf-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "这就是对初值的敏感依赖，也就是著名的蝴蝶效应。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "调节参数 罗，看系统如何从螺旋收敛的稳定态，跨入混沌。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.83,
+      "size": 45216,
+      "text": "罗 太小，轨迹会静静地落到一个点；调到二十八附近，蝴蝶才真正展翅。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "洛伦兹吸引子告诉我们，确定的规则也能孕育出不可预测的行为。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "有界、非周期、对初值敏感，这三点共同定义了混沌。"
+    },
+    {
+      "script_id": "lorenz-attractor",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/lorenz-attractor/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "一只蝴蝶扇动翅膀，或许真能改变远方的风暴，我们下次再见。"
+    }
+  ],
+  "total_duration": 42.220000000000006,
+  "total_size": 675504
+}

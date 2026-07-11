@@ -1,0 +1,179 @@
+{
+  "script_id": "sequences",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "sequences",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "一串数字排好队，它们之间往往藏着简单又优美的规律。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "今天我们认识两种最经典的数列：等差数列和等比数列。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "一种靠不断相加往前走，一种靠不断相乘往前走。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "arithmetic",
+      "line_id": "arith-1",
+      "filename": "arithmetic-arith-1.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/arithmetic-arith-1.mp3",
+      "duration": 2.68,
+      "size": 42912,
+      "text": "先看等差数列，比如 1、3、5、7、9，每一项都比前一项多 2。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "arithmetic",
+      "line_id": "arith-2",
+      "filename": "arithmetic-arith-2.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/arithmetic-arith-2.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "这个固定的差叫做公差，这里公差就是 2。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "arithmetic",
+      "line_id": "arith-3",
+      "filename": "arithmetic-arith-3.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/arithmetic-arith-3.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "于是第 n 项等于首项，加上 n 减 1 个公差，规律非常整齐。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "geometric",
+      "line_id": "geo-1",
+      "filename": "geometric-geo-1.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/geometric-geo-1.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "再看等比数列，比如 1、2、4、8、16，每一项都是前一项的 2 倍。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "geometric",
+      "line_id": "geo-2",
+      "filename": "geometric-geo-2.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/geometric-geo-2.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "这个固定的倍数叫做公比，这里公比就是 2。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "geometric",
+      "line_id": "geo-3",
+      "filename": "geometric-geo-3.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/geometric-geo-3.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "第 n 项等于首项乘以公比的 n 减 1 次方，增长得越来越快。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "sum",
+      "line_id": "sum-1",
+      "filename": "sum-sum-1.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/sum-sum-1.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "想把前 n 项都加起来，也有巧妙的办法。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "sum",
+      "line_id": "sum-2",
+      "filename": "sum-sum-2.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/sum-sum-2.mp3",
+      "duration": 2.85,
+      "size": 45648,
+      "text": "等差数列首尾配对，每一对的和都相等，总和就是项数乘以首末两项和的一半。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "sum",
+      "line_id": "sum-3",
+      "filename": "sum-sum-3.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/sum-sum-3.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "等比数列如果公比小于 1，无限加下去还会趋近一个有限的数。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "试着切换不同的数列，看柱子是均匀升高，还是成倍蹿升。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "把公比调成一半，观察柱子怎样一点点缩短，慢慢逼近零。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "summary",
+      "line_id": "end-1",
+      "filename": "summary-end-1.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/summary-end-1.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "等差靠相加，公差决定步伐；等比靠相乘，公比决定节奏。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "summary",
+      "line_id": "end-2",
+      "filename": "summary-end-2.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/summary-end-2.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "两条通项公式，就能算出任意一项和它们的总和。"
+    },
+    {
+      "script_id": "sequences",
+      "section_id": "summary",
+      "line_id": "end-3",
+      "filename": "summary-end-3.mp3",
+      "path": "audio/narrations/sequences/xiaoxiao/summary-end-3.mp3",
+      "duration": 1.35,
+      "size": 21600,
+      "text": "数列的世界还很大，我们下次再见！"
+    }
+  ],
+  "total_duration": 35.93,
+  "total_size": 574992
+}
