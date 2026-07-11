@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 等差等比数列 - 口播稿件
+ * 核心概念：公差、公比、通项公式、前 n 项求和
+ * 目标受众：初中及以上
+ */
+export const sequencesNarration: NarrationScript = {
+  id: 'sequences',
+  title: '等差等比数列',
+  subtitle: '藏在数字排队里的两种节奏',
+  difficulty: 'elementary',
+  targetAge: '初中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-12',
+    updatedAt: '2026-07-12',
+  },
+
+  objectives: [
+    '理解等差数列的公差与通项公式',
+    '理解等比数列的公比与通项公式',
+    '掌握两种数列前 n 项求和的思路',
+    '感受等比数列增长或衰减的节奏',
+  ],
+
+  prerequisites: ['了解整数运算', '了解乘方'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '一串数字排好队，它们之间往往藏着简单又优美的规律。' },
+        { id: 'intro-2', text: '今天我们认识两种最经典的数列：等差数列和等比数列。' },
+        { id: 'intro-3', text: '一种靠不断相加往前走，一种靠不断相乘往前走。' },
+      ],
+    },
+    {
+      id: 'arithmetic',
+      type: 'concept',
+      title: '等差数列',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'arith-1', text: '先看等差数列，比如 1、3、5、7、9，每一项都比前一项多 2。' },
+        { id: 'arith-2', text: '这个固定的差叫做公差，这里公差就是 2。' },
+        { id: 'arith-3', text: '于是第 n 项等于首项，加上 n 减 1 个公差，规律非常整齐。' },
+      ],
+    },
+    {
+      id: 'geometric',
+      type: 'concept',
+      title: '等比数列',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'geo-1', text: '再看等比数列，比如 1、2、4、8、16，每一项都是前一项的 2 倍。' },
+        { id: 'geo-2', text: '这个固定的倍数叫做公比，这里公比就是 2。' },
+        { id: 'geo-3', text: '第 n 项等于首项乘以公比的 n 减 1 次方，增长得越来越快。' },
+      ],
+    },
+    {
+      id: 'sum',
+      type: 'formula',
+      title: '求和的智慧',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '想把前 n 项都加起来，也有巧妙的办法。' },
+        { id: 'sum-2', text: '等差数列首尾配对，每一对的和都相等，总和就是项数乘以首末两项和的一半。' },
+        { id: 'sum-3', text: '等比数列如果公比小于 1，无限加下去还会趋近一个有限的数。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '试着切换不同的数列，看柱子是均匀升高，还是成倍蹿升。' },
+        { id: 'int-2', text: '把公比调成一半，观察柱子怎样一点点缩短，慢慢逼近零。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'end-1', text: '等差靠相加，公差决定步伐；等比靠相乘，公比决定节奏。' },
+        { id: 'end-2', text: '两条通项公式，就能算出任意一项和它们的总和。' },
+        { id: 'end-3', text: '数列的世界还很大，我们下次再见！' },
+      ],
+    },
+  ],
+}

@@ -1,0 +1,160 @@
+{
+  "id": "absolute-value",
+  "title": "绝对值函数",
+  "subtitle": "从距离到 V 形折线",
+  "difficulty": "elementary",
+  "targetAge": "初中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-12",
+    "updatedAt": "2026-07-12"
+  },
+  "objectives": [
+    "理解绝对值表示到零的距离",
+    "认识绝对值函数的 V 形图像与顶点",
+    "掌握参数对图像的平移与缩放作用",
+    "会求绝对值函数与横轴的交点"
+  ],
+  "prerequisites": [
+    "了解数轴与坐标系",
+    "了解正负数"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "这节课我们认识一个很特别的函数，绝对值函数。"
+        },
+        {
+          "id": "intro-2",
+          "text": "它的图像不是平滑的曲线，而是一条尖尖的 V 形折线。"
+        },
+        {
+          "id": "intro-3",
+          "text": "要理解它，我们先从绝对值的含义说起。"
+        }
+      ]
+    },
+    {
+      "id": "concept-abs",
+      "type": "concept",
+      "title": "什么是绝对值",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "abs-1",
+          "text": "一个数的绝对值，就是它在数轴上到零点的距离。"
+        },
+        {
+          "id": "abs-2",
+          "text": "距离永远不会是负的，所以正三的绝对值是三，负三的绝对值也是三。"
+        },
+        {
+          "id": "abs-3",
+          "text": "把每个横坐标都取绝对值当作高度，图像就在原点两侧对称地往上翘。"
+        }
+      ]
+    },
+    {
+      "id": "concept-shape",
+      "type": "concept",
+      "title": "V 形与顶点",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "shape-1",
+          "text": "最基本的 y 等于 x 的绝对值，图像是一个开口向上的 V 字。"
+        },
+        {
+          "id": "shape-2",
+          "text": "V 字最低的那个尖角叫做顶点，这里的顶点正好落在原点。"
+        },
+        {
+          "id": "shape-3",
+          "text": "左右两条边都是直线，关于经过顶点的竖直线完全对称。"
+        }
+      ]
+    },
+    {
+      "id": "concept-transform",
+      "type": "concept",
+      "title": "平移与缩放",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "trans-1",
+          "text": "在绝对值里减去一个数，图像就会整体向右平移。"
+        },
+        {
+          "id": "trans-2",
+          "text": "在外面加上一个数，整条 V 形就会向上抬升。"
+        },
+        {
+          "id": "trans-3",
+          "text": "前面乘上一个系数，正数让开口变窄变陡，负数则让 V 形倒过来开口向下。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "试着切换不同的参数，看看顶点跑到哪里，开口是宽是窄。"
+        },
+        {
+          "id": "int-2",
+          "text": "当 V 形跨过横轴时，两个交点就是方程的解，也就是函数的零点。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "绝对值表示到零的距离，所以图像是对称的 V 形折线。"
+        },
+        {
+          "id": "sum-2",
+          "text": "顶点的位置由平移决定，开口方向和陡缓由系数决定。"
+        },
+        {
+          "id": "sum-3",
+          "text": "数与形结合，绝对值函数就一目了然，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 统计初步 - 口播稿件
+ * 核心概念：平均数、中位数、众数（集中趋势）与极差、方差、标准差（离散程度）
+ * 目标受众：初中及以上
+ */
+export const statsBasicsNarration: NarrationScript = {
+  id: 'stats-basics',
+  title: '统计初步',
+  subtitle: '用几个数字读懂一组数据',
+  difficulty: 'elementary',
+  targetAge: '初中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-12',
+    updatedAt: '2026-07-12',
+  },
+
+  objectives: [
+    '理解平均数、中位数、众数三种集中趋势',
+    '理解极差、方差、标准差如何刻画离散程度',
+    '学会根据数据特点选择合适的统计量',
+    '感受统计如何把一堆数据浓缩成关键信息',
+  ],
+
+  prerequisites: ['了解加法与除法', '会比较数的大小'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '面对一大堆数据，我们常常想用一两个数字，就把它的特点说清楚。' },
+        { id: 'intro-2', text: '比如一次考试，全班几十个分数，老师最关心的往往是平均水平。' },
+        { id: 'intro-3', text: '统计学，就是教我们怎样从数据里提炼出这些关键信息。' },
+      ],
+    },
+    {
+      id: 'center',
+      type: 'concept',
+      title: '集中趋势',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'center-1', text: '第一类是集中趋势，描述数据大致聚在什么位置。' },
+        { id: 'center-2', text: '平均数，是把所有数加起来再除以个数，最常用也最直观。' },
+        { id: 'center-3', text: '中位数是排好序后正中间的那个数，众数则是出现次数最多的数。' },
+      ],
+    },
+    {
+      id: 'spread',
+      type: 'concept',
+      title: '离散程度',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'spread-1', text: '第二类是离散程度，描述数据是挤在一起，还是散得很开。' },
+        { id: 'spread-2', text: '最简单的是极差，也就是最大值减最小值。' },
+        { id: 'spread-3', text: '更精细的是方差和标准差，它们衡量每个数偏离平均数的平均程度。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '换一组数据看看，红线是平均数，青线是中位数，它们的位置会随数据变化。' },
+        { id: 'int-2', text: '当数据里出现一个特别大的值，平均数容易被拉高，中位数却更稳。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '集中趋势用平均数、中位数、众数，告诉我们数据的中心在哪里。' },
+        { id: 'sum-2', text: '离散程度用极差、方差、标准差，告诉我们数据有多分散。' },
+        { id: 'sum-3', text: '选对统计量，才能读懂数据背后的故事，我们下次再见！' },
+      ],
+    },
+  ],
+}

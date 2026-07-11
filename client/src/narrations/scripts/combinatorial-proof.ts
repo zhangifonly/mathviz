@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 组合恒等式 - 口播稿件
+ * 核心概念：用组合计数的思想，直观证明二项式系数的经典恒等式
+ * 目标受众：高中以上
+ */
+export const combinatorialProofNarration: NarrationScript = {
+  id: 'combinatorial-proof',
+  title: '组合恒等式',
+  subtitle: '用数格子的方式证明二项式恒等式',
+  difficulty: 'intermediate',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-12',
+    updatedAt: '2026-07-12',
+  },
+
+  objectives: [
+    '理解组合数 C n k 的计数含义',
+    '掌握求和、对称、帕斯卡、曲棍球棒四个恒等式',
+    '学会用组合意义而非代数展开来证明恒等式',
+    '感受数与形结合的证明之美',
+  ],
+
+  prerequisites: ['了解排列组合', '认识帕斯卡三角'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '组合数 C n k，表示从 n 个东西里挑出 k 个的方法数。' },
+        { id: 'intro-2', text: '把它们排成三角形，就是我们熟悉的帕斯卡三角。' },
+        { id: 'intro-3', text: '今天我们不靠公式硬算，而是靠数格子，直接看懂几个漂亮的恒等式。' },
+      ],
+    },
+    {
+      id: 'sum',
+      type: 'concept',
+      title: '求和恒等式',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '先看第一个：把第 n 行所有数加起来，结果恰好是 2 的 n 次方。' },
+        { id: 'sum-2', text: '为什么？因为 n 个元素的所有子集，一共就是 2 的 n 次方个。' },
+        { id: 'sum-3', text: '而按大小分类，选 0 个、选 1 个、一直到选 n 个，加起来正是这一行。' },
+      ],
+    },
+    {
+      id: 'symmetry',
+      type: 'concept',
+      title: '对称恒等式',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sym-1', text: '第二个：C n k 等于 C n 后面 n 减 k。这一行左右完全对称。' },
+        { id: 'sym-2', text: '道理很朴素：挑出 k 个要留下，等价于挑出另外 n 减 k 个扔掉。' },
+        { id: 'sym-3', text: '选谁和不选谁，是同一件事的两种说法，方法数当然一样。' },
+      ],
+    },
+    {
+      id: 'pascal',
+      type: 'concept',
+      title: '帕斯卡法则',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'pas-1', text: '第三个是三角形的灵魂：每个数等于它上方两个数之和。' },
+        { id: 'pas-2', text: '盯住某个特定元素，选法分两类：包含它，或者不包含它。' },
+        { id: 'pas-3', text: '包含它就再选 k 减 1 个，不包含就选满 k 个，两类相加正好是总数。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '再看曲棍球棒恒等式：沿一条斜线累加，落点就是拐弯处下方那个数。' },
+        { id: 'int-2', text: '切换不同恒等式，看看高亮的格子如何讲出各自的组合故事。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-end-1', text: '四个恒等式，全都不用展开公式，只靠数清楚方法数就证明了。' },
+        { id: 'sum-end-2', text: '这就是组合证明的魅力：等式两边其实在数同一样东西。' },
+        { id: 'sum-end-3', text: '数与形在这里握手言和，我们下次再见！' },
+      ],
+    },
+  ],
+}

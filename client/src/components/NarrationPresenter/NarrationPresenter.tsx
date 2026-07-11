@@ -72,6 +72,45 @@ import { ulamSpiralScenes, defaultUlamSpiralState } from './ulamSpiralScenes'
 import { pascalTriangleScenes, defaultPascalTriangleState } from './pascalTriangleScenes'
 import { voronoiScenes, defaultVoronoiState } from './voronoiScenes'
 import { lSystemScenes, defaultLSystemState } from './lSystemScenes'
+import { evenOddScenes, defaultEvenOddState } from './evenOddScenes'
+import { romanNumeralsScenes, defaultRomanNumeralsState } from './romanNumeralsScenes'
+import { symmetryScenes, defaultSymmetryState } from './symmetryScenes'
+import { tangramScenes, defaultTangramState } from './tangramScenes'
+import { clockAnglesScenes, defaultClockAnglesState } from './clockAnglesScenes'
+import { inequalitiesScenes, defaultInequalitiesState } from './inequalitiesScenes'
+import { linearSystemScenes, defaultLinearSystemState } from './linearSystemScenes'
+import { similarTrianglesScenes, defaultSimilarTrianglesState } from './similarTrianglesScenes'
+import { circleGeometryScenes, defaultCircleGeometryState } from './circleGeometryScenes'
+import { statsBasicsScenes, defaultStatsBasicsState } from './statsBasicsScenes'
+import { absoluteValueScenes, defaultAbsoluteValueState } from './absoluteValueScenes'
+import { sequencesScenes, defaultSequencesState } from './sequencesScenes'
+import { exponentialLogScenes, defaultExponentialLogState } from './exponentialLogScenes'
+import { matrixTransformScenes, defaultMatrixTransformState } from './matrixTransformScenes'
+import { dotCrossProductScenes, defaultDotCrossProductState } from './dotCrossProductScenes'
+import { parabolaOpticsScenes, defaultParabolaOpticsState } from './parabolaOpticsScenes'
+import { sineSuperpositionScenes, defaultSineSuperpositionState } from './sineSuperpositionScenes'
+import { combinatorialProofScenes, defaultCombinatorialProofState } from './combinatorialProofScenes'
+import { modularArithmeticScenes, defaultModularArithmeticState } from './modularArithmeticScenes'
+import { continuedFractionScenes, defaultContinuedFractionState } from './continuedFractionScenes'
+import { epidemicSirScenes, defaultEpidemicSirState } from './epidemicSirScenes'
+import { eigenVisualizationScenes, defaultEigenVisualizationState } from './eigenVisualizationScenes'
+import { svdScenes, defaultSvdState } from './svdScenes'
+import { gramSchmidtScenes, defaultGramSchmidtState } from './gramSchmidtScenes'
+import { lagrangeMultiplierScenes, defaultLagrangeMultiplierState } from './lagrangeMultiplierScenes'
+import { greenTheoremScenes, defaultGreenTheoremState } from './greenTheoremScenes'
+import { residueTheoremScenes, defaultResidueTheoremState } from './residueTheoremScenes'
+import { powerSeriesScenes, defaultPowerSeriesState } from './powerSeriesScenes'
+import { gaussianProcessScenes, defaultGaussianProcessState } from './gaussianProcessScenes'
+import { kalmanFilterScenes, defaultKalmanFilterState } from './kalmanFilterScenes'
+import { simulatedAnnealingScenes, defaultSimulatedAnnealingState } from './simulatedAnnealingScenes'
+import { mandelbrotJuliaScenes, defaultMandelbrotJuliaState } from './mandelbrotJuliaScenes'
+import { doublePendulumScenes, defaultDoublePendulumState } from './doublePendulumScenes'
+import { lorenzAttractorScenes, defaultLorenzAttractorState } from './lorenzAttractorScenes'
+import { nbodySimulationScenes, defaultNbodySimulationState } from './nbodySimulationScenes'
+import { percolationScenes, defaultPercolationState } from './percolationScenes'
+import { cellularAutomataScenes, defaultCellularAutomataState } from './cellularAutomataScenes'
+import { knotTheoryScenes, defaultKnotTheoryState } from './knotTheoryScenes'
+import { waveletScenes, defaultWaveletState } from './waveletScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -157,6 +196,45 @@ const sceneConfigMap: Record<string, {
   'pascal-triangle': { scenes: pascalTriangleScenes, defaultState: defaultPascalTriangleState },
   'voronoi': { scenes: voronoiScenes, defaultState: defaultVoronoiState },
   'l-system': { scenes: lSystemScenes, defaultState: defaultLSystemState },
+  'even-odd': { scenes: evenOddScenes, defaultState: defaultEvenOddState },
+  'roman-numerals': { scenes: romanNumeralsScenes, defaultState: defaultRomanNumeralsState },
+  'symmetry': { scenes: symmetryScenes, defaultState: defaultSymmetryState },
+  'tangram': { scenes: tangramScenes, defaultState: defaultTangramState },
+  'clock-angles': { scenes: clockAnglesScenes, defaultState: defaultClockAnglesState },
+  'inequalities': { scenes: inequalitiesScenes, defaultState: defaultInequalitiesState },
+  'linear-system': { scenes: linearSystemScenes, defaultState: defaultLinearSystemState },
+  'similar-triangles': { scenes: similarTrianglesScenes, defaultState: defaultSimilarTrianglesState },
+  'circle-geometry': { scenes: circleGeometryScenes, defaultState: defaultCircleGeometryState },
+  'stats-basics': { scenes: statsBasicsScenes, defaultState: defaultStatsBasicsState },
+  'absolute-value': { scenes: absoluteValueScenes, defaultState: defaultAbsoluteValueState },
+  'sequences': { scenes: sequencesScenes, defaultState: defaultSequencesState },
+  'exponential-log': { scenes: exponentialLogScenes, defaultState: defaultExponentialLogState },
+  'matrix-transform': { scenes: matrixTransformScenes, defaultState: defaultMatrixTransformState },
+  'dot-cross-product': { scenes: dotCrossProductScenes, defaultState: defaultDotCrossProductState },
+  'parabola-optics': { scenes: parabolaOpticsScenes, defaultState: defaultParabolaOpticsState },
+  'sine-superposition': { scenes: sineSuperpositionScenes, defaultState: defaultSineSuperpositionState },
+  'combinatorial-proof': { scenes: combinatorialProofScenes, defaultState: defaultCombinatorialProofState },
+  'modular-arithmetic': { scenes: modularArithmeticScenes, defaultState: defaultModularArithmeticState },
+  'continued-fraction': { scenes: continuedFractionScenes, defaultState: defaultContinuedFractionState },
+  'epidemic-sir': { scenes: epidemicSirScenes, defaultState: defaultEpidemicSirState },
+  'eigen-visualization': { scenes: eigenVisualizationScenes, defaultState: defaultEigenVisualizationState },
+  'svd': { scenes: svdScenes, defaultState: defaultSvdState },
+  'gram-schmidt': { scenes: gramSchmidtScenes, defaultState: defaultGramSchmidtState },
+  'lagrange-multiplier': { scenes: lagrangeMultiplierScenes, defaultState: defaultLagrangeMultiplierState },
+  'green-theorem': { scenes: greenTheoremScenes, defaultState: defaultGreenTheoremState },
+  'residue-theorem': { scenes: residueTheoremScenes, defaultState: defaultResidueTheoremState },
+  'power-series': { scenes: powerSeriesScenes, defaultState: defaultPowerSeriesState },
+  'gaussian-process': { scenes: gaussianProcessScenes, defaultState: defaultGaussianProcessState },
+  'kalman-filter': { scenes: kalmanFilterScenes, defaultState: defaultKalmanFilterState },
+  'simulated-annealing': { scenes: simulatedAnnealingScenes, defaultState: defaultSimulatedAnnealingState },
+  'mandelbrot-julia': { scenes: mandelbrotJuliaScenes, defaultState: defaultMandelbrotJuliaState },
+  'double-pendulum': { scenes: doublePendulumScenes, defaultState: defaultDoublePendulumState },
+  'lorenz-attractor': { scenes: lorenzAttractorScenes, defaultState: defaultLorenzAttractorState },
+  'nbody-simulation': { scenes: nbodySimulationScenes, defaultState: defaultNbodySimulationState },
+  'percolation': { scenes: percolationScenes, defaultState: defaultPercolationState },
+  'cellular-automata': { scenes: cellularAutomataScenes, defaultState: defaultCellularAutomataState },
+  'knot-theory': { scenes: knotTheoryScenes, defaultState: defaultKnotTheoryState },
+  'wavelet': { scenes: waveletScenes, defaultState: defaultWaveletState },
 }
 
 // 检测是否为移动设备
@@ -361,7 +439,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       // 新增2个待完成课程
       'laplace', 'permutation-combination',
       // 新增优美数学场景
-      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system'
+      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet'
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

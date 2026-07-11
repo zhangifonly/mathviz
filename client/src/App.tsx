@@ -82,6 +82,45 @@ const UlamSpiralExperiment = lazyRetry(() => import('./experiments/ulam-spiral/U
 const PascalTriangleExperiment = lazyRetry(() => import('./experiments/pascal-triangle/PascalTriangleExperiment'))
 const VoronoiExperiment = lazyRetry(() => import('./experiments/voronoi/VoronoiExperiment'))
 const LSystemExperiment = lazyRetry(() => import('./experiments/l-system/LSystemExperiment'))
+const EvenOddExperiment = lazyRetry(() => import('./experiments/even-odd/EvenOddExperiment'))
+const RomanNumeralsExperiment = lazyRetry(() => import('./experiments/roman-numerals/RomanNumeralsExperiment'))
+const SymmetryExperiment = lazyRetry(() => import('./experiments/symmetry/SymmetryExperiment'))
+const TangramExperiment = lazyRetry(() => import('./experiments/tangram/TangramExperiment'))
+const ClockAnglesExperiment = lazyRetry(() => import('./experiments/clock-angles/ClockAnglesExperiment'))
+const InequalitiesExperiment = lazyRetry(() => import('./experiments/inequalities/InequalitiesExperiment'))
+const LinearSystemExperiment = lazyRetry(() => import('./experiments/linear-system/LinearSystemExperiment'))
+const SimilarTrianglesExperiment = lazyRetry(() => import('./experiments/similar-triangles/SimilarTrianglesExperiment'))
+const CircleGeometryExperiment = lazyRetry(() => import('./experiments/circle-geometry/CircleGeometryExperiment'))
+const StatsBasicsExperiment = lazyRetry(() => import('./experiments/stats-basics/StatsBasicsExperiment'))
+const AbsoluteValueExperiment = lazyRetry(() => import('./experiments/absolute-value/AbsoluteValueExperiment'))
+const SequencesExperiment = lazyRetry(() => import('./experiments/sequences/SequencesExperiment'))
+const ExponentialLogExperiment = lazyRetry(() => import('./experiments/exponential-log/ExponentialLogExperiment'))
+const MatrixTransformExperiment = lazyRetry(() => import('./experiments/matrix-transform/MatrixTransformExperiment'))
+const DotCrossProductExperiment = lazyRetry(() => import('./experiments/dot-cross-product/DotCrossProductExperiment'))
+const ParabolaOpticsExperiment = lazyRetry(() => import('./experiments/parabola-optics/ParabolaOpticsExperiment'))
+const SineSuperpositionExperiment = lazyRetry(() => import('./experiments/sine-superposition/SineSuperpositionExperiment'))
+const CombinatorialProofExperiment = lazyRetry(() => import('./experiments/combinatorial-proof/CombinatorialProofExperiment'))
+const ModularArithmeticExperiment = lazyRetry(() => import('./experiments/modular-arithmetic/ModularArithmeticExperiment'))
+const ContinuedFractionExperiment = lazyRetry(() => import('./experiments/continued-fraction/ContinuedFractionExperiment'))
+const EpidemicSirExperiment = lazyRetry(() => import('./experiments/epidemic-sir/EpidemicSirExperiment'))
+const EigenVisualizationExperiment = lazyRetry(() => import('./experiments/eigen-visualization/EigenVisualizationExperiment'))
+const SvdExperiment = lazyRetry(() => import('./experiments/svd/SvdExperiment'))
+const GramSchmidtExperiment = lazyRetry(() => import('./experiments/gram-schmidt/GramSchmidtExperiment'))
+const LagrangeMultiplierExperiment = lazyRetry(() => import('./experiments/lagrange-multiplier/LagrangeMultiplierExperiment'))
+const GreenTheoremExperiment = lazyRetry(() => import('./experiments/green-theorem/GreenTheoremExperiment'))
+const ResidueTheoremExperiment = lazyRetry(() => import('./experiments/residue-theorem/ResidueTheoremExperiment'))
+const PowerSeriesExperiment = lazyRetry(() => import('./experiments/power-series/PowerSeriesExperiment'))
+const GaussianProcessExperiment = lazyRetry(() => import('./experiments/gaussian-process/GaussianProcessExperiment'))
+const KalmanFilterExperiment = lazyRetry(() => import('./experiments/kalman-filter/KalmanFilterExperiment'))
+const SimulatedAnnealingExperiment = lazyRetry(() => import('./experiments/simulated-annealing/SimulatedAnnealingExperiment'))
+const MandelbrotJuliaExperiment = lazyRetry(() => import('./experiments/mandelbrot-julia/MandelbrotJuliaExperiment'))
+const DoublePendulumExperiment = lazyRetry(() => import('./experiments/double-pendulum/DoublePendulumExperiment'))
+const LorenzAttractorExperiment = lazyRetry(() => import('./experiments/lorenz-attractor/LorenzAttractorExperiment'))
+const NbodySimulationExperiment = lazyRetry(() => import('./experiments/nbody-simulation/NbodySimulationExperiment'))
+const PercolationExperiment = lazyRetry(() => import('./experiments/percolation/PercolationExperiment'))
+const CellularAutomataExperiment = lazyRetry(() => import('./experiments/cellular-automata/CellularAutomataExperiment'))
+const KnotTheoryExperiment = lazyRetry(() => import('./experiments/knot-theory/KnotTheoryExperiment'))
+const WaveletExperiment = lazyRetry(() => import('./experiments/wavelet/WaveletExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -161,6 +200,45 @@ export default function App() {
             <Route path="pascal-triangle" element={<PascalTriangleExperiment />} />
             <Route path="voronoi" element={<VoronoiExperiment />} />
             <Route path="l-system" element={<LSystemExperiment />} />
+            <Route path="even-odd" element={<EvenOddExperiment />} />
+            <Route path="roman-numerals" element={<RomanNumeralsExperiment />} />
+            <Route path="symmetry" element={<SymmetryExperiment />} />
+            <Route path="tangram" element={<TangramExperiment />} />
+            <Route path="clock-angles" element={<ClockAnglesExperiment />} />
+            <Route path="inequalities" element={<InequalitiesExperiment />} />
+            <Route path="linear-system" element={<LinearSystemExperiment />} />
+            <Route path="similar-triangles" element={<SimilarTrianglesExperiment />} />
+            <Route path="circle-geometry" element={<CircleGeometryExperiment />} />
+            <Route path="stats-basics" element={<StatsBasicsExperiment />} />
+            <Route path="absolute-value" element={<AbsoluteValueExperiment />} />
+            <Route path="sequences" element={<SequencesExperiment />} />
+            <Route path="exponential-log" element={<ExponentialLogExperiment />} />
+            <Route path="matrix-transform" element={<MatrixTransformExperiment />} />
+            <Route path="dot-cross-product" element={<DotCrossProductExperiment />} />
+            <Route path="parabola-optics" element={<ParabolaOpticsExperiment />} />
+            <Route path="sine-superposition" element={<SineSuperpositionExperiment />} />
+            <Route path="combinatorial-proof" element={<CombinatorialProofExperiment />} />
+            <Route path="modular-arithmetic" element={<ModularArithmeticExperiment />} />
+            <Route path="continued-fraction" element={<ContinuedFractionExperiment />} />
+            <Route path="epidemic-sir" element={<EpidemicSirExperiment />} />
+            <Route path="eigen-visualization" element={<EigenVisualizationExperiment />} />
+            <Route path="svd" element={<SvdExperiment />} />
+            <Route path="gram-schmidt" element={<GramSchmidtExperiment />} />
+            <Route path="lagrange-multiplier" element={<LagrangeMultiplierExperiment />} />
+            <Route path="green-theorem" element={<GreenTheoremExperiment />} />
+            <Route path="residue-theorem" element={<ResidueTheoremExperiment />} />
+            <Route path="power-series" element={<PowerSeriesExperiment />} />
+            <Route path="gaussian-process" element={<GaussianProcessExperiment />} />
+            <Route path="kalman-filter" element={<KalmanFilterExperiment />} />
+            <Route path="simulated-annealing" element={<SimulatedAnnealingExperiment />} />
+            <Route path="mandelbrot-julia" element={<MandelbrotJuliaExperiment />} />
+            <Route path="double-pendulum" element={<DoublePendulumExperiment />} />
+            <Route path="lorenz-attractor" element={<LorenzAttractorExperiment />} />
+            <Route path="nbody-simulation" element={<NbodySimulationExperiment />} />
+            <Route path="percolation" element={<PercolationExperiment />} />
+            <Route path="cellular-automata" element={<CellularAutomataExperiment />} />
+            <Route path="knot-theory" element={<KnotTheoryExperiment />} />
+            <Route path="wavelet" element={<WaveletExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

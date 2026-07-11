@@ -1,0 +1,161 @@
+{
+  "id": "residue-theorem",
+  "title": "留数定理",
+  "subtitle": "复围道积分只由奇点的留数决定",
+  "difficulty": "advanced",
+  "targetAge": "大学以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-12",
+    "updatedAt": "2026-07-12"
+  },
+  "objectives": [
+    "理解复平面上的围道积分",
+    "认识孤立奇点与留数的概念",
+    "掌握留数定理的表述与几何直观",
+    "理解只有围道内部的奇点才贡献积分"
+  ],
+  "prerequisites": [
+    "复数运算",
+    "曲线积分",
+    "极限与解析函数"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "我们在复平面上，沿着一条闭合曲线做积分。"
+        },
+        {
+          "id": "intro-2",
+          "text": "你可能以为要老老实实沿着曲线一点点算，其实不用。"
+        },
+        {
+          "id": "intro-3",
+          "text": "留数定理告诉我们，整条曲线的积分只由几个特殊点决定。"
+        }
+      ]
+    },
+    {
+      "id": "singularity",
+      "type": "concept",
+      "title": "奇点与留数",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sing-1",
+          "text": "被积函数在某些点会发散，这些点叫做孤立奇点。"
+        },
+        {
+          "id": "sing-2",
+          "text": "在每个简单极点附近，函数近似等于一个系数除以到该点的距离。"
+        },
+        {
+          "id": "sing-3",
+          "text": "这个系数就是该点的留数，它抓住了函数在奇点处的核心信息。"
+        }
+      ]
+    },
+    {
+      "id": "theorem",
+      "type": "concept",
+      "title": "定理表述",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "thm-1",
+          "text": "留数定理说：闭曲线积分等于二派乘以虚数单位，再乘以内部所有留数之和。"
+        },
+        {
+          "id": "thm-2",
+          "text": "注意关键词，内部。只有落在曲线里面的奇点才参与求和。"
+        },
+        {
+          "id": "thm-3",
+          "text": "曲线外面的奇点，无论留数多大，都不贡献一分一毫。"
+        }
+      ]
+    },
+    {
+      "id": "geometry",
+      "type": "concept",
+      "title": "几何直观",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "geo-1",
+          "text": "看这个圆形围道，它把两个奇点包在了里面。"
+        },
+        {
+          "id": "geo-2",
+          "text": "积分值就等于二派虚数单位，乘以这两个留数相加。"
+        },
+        {
+          "id": "geo-3",
+          "text": "如果围道里一个奇点都没有，积分直接等于零，这就是柯西定理。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换不同的布局，看看哪些奇点被围道包住，哪些被排除。"
+        },
+        {
+          "id": "int-2",
+          "text": "对比理论值和数值积分，你会发现两者几乎完全吻合。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "复围道积分等于二派虚数单位乘以内部留数之和。"
+        },
+        {
+          "id": "sum-2",
+          "text": "一个看似复杂的积分，被浓缩成几个点上的简单数字。"
+        },
+        {
+          "id": "sum-3",
+          "text": "这就是留数定理的威力，我们下次再见。"
+        }
+      ]
+    }
+  ]
+}

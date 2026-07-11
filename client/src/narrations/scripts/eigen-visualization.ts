@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 特征值与特征向量 - 口播稿件
+ * 核心概念：矩阵变换、方向不变的向量、特征值缩放、判别式与复特征值
+ * 目标受众：大学以上
+ */
+export const eigenVisualizationNarration: NarrationScript = {
+  id: 'eigen-visualization',
+  title: '特征值与特征向量',
+  subtitle: '在矩阵变换下方向不变的特殊向量',
+  difficulty: 'advanced',
+  targetAge: '大学以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-12',
+    updatedAt: '2026-07-12',
+  },
+
+  objectives: [
+    '理解特征向量是变换下方向保持不变的向量',
+    '理解特征值是特征向量被缩放的倍数',
+    '掌握用迹和行列式求解特征值',
+    '认识对称矩阵、剪切与旋转的不同特征结构',
+  ],
+
+  prerequisites: ['矩阵与向量乘法', '行列式的概念'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '一个矩阵可以看作对整个平面的变换，它会把每个向量拉伸、旋转或错切到新的位置。' },
+        { id: 'intro-2', text: '大多数向量在变换后，方向都会发生改变。' },
+        { id: 'intro-3', text: '但有一些特殊的向量，变换之后方向纹丝不动，只是被拉长或压短，它们就是特征向量。' },
+      ],
+    },
+    {
+      id: 'transform',
+      type: 'concept',
+      title: '变换中的向量',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'transform-1', text: '看这一圈蓝色的向量，当矩阵作用上去，它们纷纷偏转到了不同的方向。' },
+        { id: 'transform-2', text: '而那几条彩色的向量始终躺在同一条直线上，方向完全没有改变。' },
+        { id: 'transform-3', text: '这条方向不变的直线，就是这个矩阵的特征方向。' },
+      ],
+    },
+    {
+      id: 'eigen',
+      type: 'concept',
+      title: '特征值的含义',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'eigen-1', text: '特征向量在变换后被缩放的倍数，就是对应的特征值，通常记作希腊字母兰姆达。' },
+        { id: 'eigen-2', text: '如果特征值大于一，向量被拉长；介于零和一之间，向量被压短；等于负数，方向还会翻转。' },
+        { id: 'eigen-3', text: '用一句公式概括就是，矩阵乘以特征向量，等于特征值乘以这个特征向量。' },
+      ],
+    },
+    {
+      id: 'solve',
+      type: 'concept',
+      title: '如何求解',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'solve-1', text: '对二阶矩阵，特征值满足一个二次方程，一次项是矩阵的迹取负，常数项是行列式。' },
+        { id: 'solve-2', text: '解出这个方程，判别式大于零就有两个不同的实特征值，等于零则是重根。' },
+        { id: 'solve-3', text: '如果判别式小于零，特征值成了复数，平面内就找不到方向不变的实向量了，旋转矩阵正是如此。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '切换到对称矩阵，你会发现它的两条特征向量恰好相互垂直。' },
+        { id: 'int-2', text: '再看剪切矩阵，它只有一条特征方向，因为出现了重根。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '特征向量是变换下方向不变的向量，特征值是它被缩放的倍数。' },
+        { id: 'sum-2', text: '它们揭示了矩阵最本质的骨架，广泛用于主成分分析、振动模态和量子力学。' },
+        { id: 'sum-3', text: '看清了特征结构，就看清了一个线性变换的灵魂，我们下次再见！' },
+      ],
+    },
+  ],
+}

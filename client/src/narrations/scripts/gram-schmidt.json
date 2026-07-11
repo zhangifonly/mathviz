@@ -1,0 +1,156 @@
+{
+  "id": "gram-schmidt",
+  "title": "施密特正交化",
+  "subtitle": "把任意一组基变成互相垂直的标准正交基",
+  "difficulty": "advanced",
+  "targetAge": "大学以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-12",
+    "updatedAt": "2026-07-12"
+  },
+  "objectives": [
+    "理解向量在另一向量上的正交投影",
+    "掌握施密特正交化的逐步构造过程",
+    "理解正交基与标准正交基的区别",
+    "体会正交化在数值计算中的价值"
+  ],
+  "prerequisites": [
+    "了解向量的点积",
+    "了解向量的模长与线性无关"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "我们常常拿到一组线性无关的向量，它们能张成空间，却彼此歪斜、不垂直。"
+        },
+        {
+          "id": "intro-2",
+          "text": "很多计算，比如求投影、做分解，都希望基是互相垂直的。"
+        },
+        {
+          "id": "intro-3",
+          "text": "施密特正交化就是一台机器，把任意一组基改造成互相垂直的标准正交基。"
+        }
+      ]
+    },
+    {
+      "id": "projection",
+      "type": "concept",
+      "title": "投影是关键",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "proj-1",
+          "text": "先看投影。一个向量在另一个向量方向上的影子，就是它的正交投影。"
+        },
+        {
+          "id": "proj-2",
+          "text": "投影等于两向量的点积，除以被投影向量的模长平方，再乘以那个向量。"
+        },
+        {
+          "id": "proj-3",
+          "text": "把原向量减去这个投影，剩下的部分就一定和投影方向垂直。"
+        }
+      ]
+    },
+    {
+      "id": "orthogonalize",
+      "type": "concept",
+      "title": "逐步正交化",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "orth-1",
+          "text": "第一个向量原样保留，作为第一个正交向量。"
+        },
+        {
+          "id": "orth-2",
+          "text": "第二个向量，减去它在第一个向量上的投影，得到与之垂直的新向量。"
+        },
+        {
+          "id": "orth-3",
+          "text": "后面每个向量，都减去它在前面所有正交向量上的投影，依次垂直。"
+        }
+      ]
+    },
+    {
+      "id": "normalize",
+      "type": "concept",
+      "title": "单位化",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "norm-1",
+          "text": "现在这组向量已经两两垂直，但长度还各不相同。"
+        },
+        {
+          "id": "norm-2",
+          "text": "把每个向量除以自己的模长，长度都变成一，就得到了标准正交基。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "换一组输入向量，看红色的投影和绿色的正交结果如何随之变化。"
+        },
+        {
+          "id": "int-2",
+          "text": "不管起点多么歪斜，最终两条基总是严丝合缝地垂直。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "施密特正交化靠减去投影，把歪斜的基一步步扶正。"
+        },
+        {
+          "id": "sum-2",
+          "text": "再单位化，就得到互相垂直、长度为一的标准正交基。"
+        },
+        {
+          "id": "sum-3",
+          "text": "它是最小二乘、QR 分解等许多方法的基石，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

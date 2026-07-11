@@ -1,0 +1,164 @@
+{
+  "id": "dot-cross-product",
+  "title": "点积与叉积",
+  "subtitle": "两种向量乘法背后的几何意义",
+  "difficulty": "intermediate",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-12",
+    "updatedAt": "2026-07-12"
+  },
+  "objectives": [
+    "理解点积的定义与几何含义",
+    "理解叉积的方向与模长意义",
+    "掌握点积与投影、叉积与面积的联系",
+    "体会两种乘法在物理与图形中的应用"
+  ],
+  "prerequisites": [
+    "了解向量的坐标表示",
+    "了解三角函数正弦余弦"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "两个向量之间，其实有两种完全不同的相乘方式。"
+        },
+        {
+          "id": "intro-2",
+          "text": "一种叫点积，结果是一个数；另一种叫叉积，结果又是一个向量。"
+        },
+        {
+          "id": "intro-3",
+          "text": "别急，我们一个一个来看，它们背后都藏着清晰的几何图像。"
+        }
+      ]
+    },
+    {
+      "id": "dot",
+      "type": "concept",
+      "title": "点积的含义",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "dot-1",
+          "text": "点积的算法很简单：把两个向量对应的坐标相乘，再全部加起来。"
+        },
+        {
+          "id": "dot-2",
+          "text": "它还等于两个向量的长度相乘，再乘以夹角的余弦。"
+        },
+        {
+          "id": "dot-3",
+          "text": "所以点积衡量的是：一个向量在另一个向量方向上投影了多少。"
+        },
+        {
+          "id": "dot-4",
+          "text": "当两个向量垂直时，投影为零，点积也就等于零。"
+        }
+      ]
+    },
+    {
+      "id": "cross",
+      "type": "concept",
+      "title": "叉积的含义",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "cross-1",
+          "text": "叉积则不一样，它得到的是一个全新的向量。"
+        },
+        {
+          "id": "cross-2",
+          "text": "这个新向量的方向，同时垂直于原来的两个向量，用右手定则来判断。"
+        },
+        {
+          "id": "cross-3",
+          "text": "它的长度，等于两个向量张成的平行四边形的面积。"
+        }
+      ]
+    },
+    {
+      "id": "geometry",
+      "type": "concept",
+      "title": "几何联系",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "geo-1",
+          "text": "点积用余弦，管的是投影和方向的接近程度。"
+        },
+        {
+          "id": "geo-2",
+          "text": "叉积用正弦，管的是面积和方向的张开程度。"
+        },
+        {
+          "id": "geo-3",
+          "text": "一个看平行，一个看垂直，它们恰好互补。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "拖动或切换向量，看看垂直时点积怎样归零。"
+        },
+        {
+          "id": "int-2",
+          "text": "再看平行时，平行四边形塌成一条线，叉积也随之归零。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "点积是标量，用余弦，联系着投影与做功。"
+        },
+        {
+          "id": "sum-2",
+          "text": "叉积是向量，用正弦，联系着面积与力矩。"
+        },
+        {
+          "id": "sum-3",
+          "text": "两种乘法，两种视角，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

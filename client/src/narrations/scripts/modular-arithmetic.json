@@ -1,0 +1,164 @@
+{
+  "id": "modular-arithmetic",
+  "title": "模运算与同余",
+  "subtitle": "时钟上的数学，圆环里涌现的心形线",
+  "difficulty": "intermediate",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-12",
+    "updatedAt": "2026-07-12"
+  },
+  "objectives": [
+    "理解模运算的时钟模型与取余本质",
+    "掌握同余关系的定义与判断",
+    "欣赏模乘法在圆环上涌现的包络曲线",
+    "了解模运算在密码学中的应用"
+  ],
+  "prerequisites": [
+    "整数除法与余数",
+    "基本乘法"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "你有没有想过，为什么下午三点，也可以说成十五点？"
+        },
+        {
+          "id": "intro-2",
+          "text": "时钟走到头就绕回起点，这背后藏着一门优雅的数学，叫做模运算。"
+        },
+        {
+          "id": "intro-3",
+          "text": "今天我们就从时钟出发，一路走到密码学的核心。"
+        }
+      ]
+    },
+    {
+      "id": "clock",
+      "type": "concept",
+      "title": "时钟模型",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "clock-1",
+          "text": "模运算的意思是，把一个数除以某个模数，只保留余数。"
+        },
+        {
+          "id": "clock-2",
+          "text": "十五除以十二，商一余三，所以十五点对十二取模就是三。"
+        },
+        {
+          "id": "clock-3",
+          "text": "无论数字多大，结果都被牢牢圈在零到模数减一之间，像绕着圆环打转。"
+        }
+      ]
+    },
+    {
+      "id": "congruence",
+      "type": "concept",
+      "title": "同余关系",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "cong-1",
+          "text": "如果两个数除以同一个模数，余数相同，我们就说它们同余。"
+        },
+        {
+          "id": "cong-2",
+          "text": "比如十七和五对十二同余，因为它们都指向时钟上的五点位置。"
+        },
+        {
+          "id": "cong-3",
+          "text": "同余让无穷多的整数，被归并成有限的几类，这正是模运算的威力。"
+        }
+      ]
+    },
+    {
+      "id": "circle",
+      "type": "concept",
+      "title": "圆环上的乘法",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "circle-1",
+          "text": "现在把零到二百多个点，均匀排在一个圆环上。"
+        },
+        {
+          "id": "circle-2",
+          "text": "把每个点乘以二再取模，然后连一条线到结果的位置。"
+        },
+        {
+          "id": "circle-3",
+          "text": "看，无数条直线的边缘，竟然勾勒出一条心形线。"
+        },
+        {
+          "id": "circle-4",
+          "text": "换成乘以三，浮现的是肾脏线，乘数越大，花瓣越繁复。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "试着切换不同的乘数，观察图案如何从心形变成层层花瓣。"
+        },
+        {
+          "id": "int-2",
+          "text": "每一根线都只是简单的乘法取模，美却从整体中悄然涌现。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "模运算把整数绕成圆环，同余把它们归为一类。"
+        },
+        {
+          "id": "sum-2",
+          "text": "这套简洁的规则，支撑着现代密码学与哈希算法。"
+        },
+        {
+          "id": "sum-3",
+          "text": "简单的取余，藏着深邃的秩序与美，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}
