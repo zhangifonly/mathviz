@@ -76,6 +76,8 @@ const navCategories: NavCategory[] = [
       { path: '/modular-arithmetic', label: '模运算与同余', icon: '🕰️' },
       { path: '/continued-fraction', label: '连分数', icon: '➗' },
       { path: '/epidemic-sir', label: 'SIR传染病模型', icon: '🦠' },
+      { path: '/game-of-life', label: '康威生命游戏', icon: '🦠' },
+      { path: '/permutation-combination', label: '排列组合', icon: '🎯' },
     ],
   },
   {
@@ -107,6 +109,12 @@ const navCategories: NavCategory[] = [
       { path: '/gaussian-process', label: '高斯过程', icon: '📶' },
       { path: '/kalman-filter', label: '卡尔曼滤波', icon: '🛰️' },
       { path: '/simulated-annealing', label: '模拟退火', icon: '🔥' },
+      { path: '/cryptography', label: '密码学基础', icon: '🔐' },
+      { path: '/euler-identity', label: '欧拉恒等式', icon: '🔷' },
+      { path: '/laplace', label: '拉普拉斯变换', icon: '🔄' },
+      { path: '/mobius', label: '莫比乌斯环', icon: '♾️' },
+      { path: '/numerical-analysis', label: '数值分析', icon: '🔢' },
+      { path: '/reaction-diffusion', label: '反应扩散', icon: '🐆' },
     ],
   },
   {
@@ -130,6 +138,9 @@ const navCategories: NavCategory[] = [
       { path: '/cellular-automata', label: '元胞自动机', icon: '⬛' },
       { path: '/knot-theory', label: '纽结理论', icon: '🪢' },
       { path: '/wavelet', label: '小波变换', icon: '🌊' },
+      { path: '/differential-geometry', label: '微分几何', icon: '🌐' },
+      { path: '/pde', label: '偏微分方程', icon: '∂' },
+      { path: '/three-body', label: '三体引力轨道', icon: '🪐' },
     ],
   },
 ]
