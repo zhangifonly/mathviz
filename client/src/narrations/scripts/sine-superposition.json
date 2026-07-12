@@ -1,0 +1,160 @@
+{
+  "id": "sine-superposition",
+  "title": "波的叠加",
+  "subtitle": "两列正弦波相加涌现的干涉与拍频",
+  "difficulty": "intermediate",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-12",
+    "updatedAt": "2026-07-12"
+  },
+  "objectives": [
+    "理解波的叠加原理",
+    "区分相长干涉与相消干涉",
+    "认识拍频现象的成因",
+    "感受谐波合成复杂波形的过程"
+  ],
+  "prerequisites": [
+    "了解正弦函数",
+    "了解振幅、频率与相位"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "当两列波在空间里相遇，会发生什么呢？"
+        },
+        {
+          "id": "intro-2",
+          "text": "它们不会互相碰撞，而是安静地穿过彼此。"
+        },
+        {
+          "id": "intro-3",
+          "text": "相遇的那一刻，它们叠加成一条全新的波形。"
+        }
+      ]
+    },
+    {
+      "id": "principle",
+      "type": "concept",
+      "title": "叠加原理",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "principle-1",
+          "text": "这就是叠加原理：某一点的总位移，等于每列波在该点位移的代数和。"
+        },
+        {
+          "id": "principle-2",
+          "text": "上面画着两列各自独立的分量波。"
+        },
+        {
+          "id": "principle-3",
+          "text": "下面这条亮线，就是把它们逐点相加得到的合成波。"
+        }
+      ]
+    },
+    {
+      "id": "interference",
+      "type": "concept",
+      "title": "相长与相消",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "interference-1",
+          "text": "如果两列波频率相同、步调一致，波峰叠波峰，振幅就会翻倍，这叫相长干涉。"
+        },
+        {
+          "id": "interference-2",
+          "text": "如果它们步调正好相反，波峰对波谷，就会处处抵消归零，这叫相消干涉。"
+        },
+        {
+          "id": "interference-3",
+          "text": "一加一，可以等于二，也可以等于零，全看它们的相位关系。"
+        }
+      ]
+    },
+    {
+      "id": "beats",
+      "type": "concept",
+      "title": "拍频现象",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "beats-1",
+          "text": "当两列波的频率非常接近，会出现奇妙的拍频。"
+        },
+        {
+          "id": "beats-2",
+          "text": "合成波的振幅会缓慢地强弱起伏，起伏的快慢等于两个频率之差。"
+        },
+        {
+          "id": "beats-3",
+          "text": "给乐器调音时听到的那种忽强忽弱的嗡鸣，正是拍频。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "interaction-1",
+          "text": "切换不同场景，看看相长、相消和拍频分别长什么样。"
+        },
+        {
+          "id": "interaction-2",
+          "text": "再看谐波合成：基波加上一个倍频波，就能拼出更复杂的波形。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "summary-1",
+          "text": "波的叠加，就是把各列波的位移逐点相加。"
+        },
+        {
+          "id": "summary-2",
+          "text": "相位一致则相长，相位相反则相消，频率相近则生拍频。"
+        },
+        {
+          "id": "summary-3",
+          "text": "从干涉到声音,再到傅里叶合成，叠加原理无处不在，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

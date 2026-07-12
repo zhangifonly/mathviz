@@ -1,0 +1,145 @@
+{
+  "id": "double-pendulum",
+  "title": "双摆混沌",
+  "subtitle": "两根摆杆里藏着的确定性混沌",
+  "difficulty": "expert",
+  "targetAge": "研究生以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-12",
+    "updatedAt": "2026-07-12"
+  },
+  "objectives": [
+    "理解双摆的拉格朗日运动方程",
+    "认识确定性系统中的混沌现象",
+    "体会对初值的敏感依赖与不可预测性",
+    "理解相空间轨迹与能量守恒的数值意义"
+  ],
+  "prerequisites": [
+    "掌握经典力学与拉格朗日方程",
+    "了解常微分方程的数值积分"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "这是一个双摆，只是在普通单摆下面又挂了一根摆杆。"
+        },
+        {
+          "id": "intro-2",
+          "text": "结构简单到不能再简单，运动却复杂到几乎无法预测。"
+        },
+        {
+          "id": "intro-3",
+          "text": "它是研究确定性混沌最经典的力学模型之一。"
+        }
+      ]
+    },
+    {
+      "id": "equations",
+      "type": "concept",
+      "title": "运动方程",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "eq-1",
+          "text": "双摆只有两个自由度，就是上下两根杆各自的摆角。"
+        },
+        {
+          "id": "eq-2",
+          "text": "用拉格朗日力学，可以推出两个摆角的角加速度方程。"
+        },
+        {
+          "id": "eq-3",
+          "text": "这两个方程彼此耦合，而且高度非线性，没有简洁的解析解。"
+        },
+        {
+          "id": "eq-4",
+          "text": "所以我们用四阶龙格库塔方法，一步一步在计算机里把它积分出来。"
+        }
+      ]
+    },
+    {
+      "id": "chaos",
+      "type": "concept",
+      "title": "混沌本质",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "chaos-1",
+          "text": "让两个几乎一模一样的双摆同时释放，初始角度只差万分之一。"
+        },
+        {
+          "id": "chaos-2",
+          "text": "起初它们的轨迹重合，可没过多久就彻底分道扬镳。"
+        },
+        {
+          "id": "chaos-3",
+          "text": "这就是对初值的敏感依赖，也是蝴蝶效应的力学写照。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换不同的初始状态，从温和摆动到大角度的翻转狂舞。"
+        },
+        {
+          "id": "int-2",
+          "text": "注意看第二个摆锤划出的轨迹，它几乎永不重复。"
+        },
+        {
+          "id": "int-3",
+          "text": "虽然运动看似随机，但每一步都由确定的方程严格决定。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "双摆用最简单的结构，演示了确定性系统里的混沌。"
+        },
+        {
+          "id": "sum-2",
+          "text": "方程完全确定，长期行为却因初值敏感而不可预测。"
+        },
+        {
+          "id": "sum-3",
+          "text": "这正是非线性世界的魅力所在，我们下次再见。"
+        }
+      ]
+    }
+  ]
+}

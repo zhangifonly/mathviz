@@ -1,0 +1,169 @@
+{
+  "id": "simulated-annealing",
+  "title": "模拟退火",
+  "subtitle": "向大自然学来的全局优化算法",
+  "difficulty": "advanced",
+  "targetAge": "大学以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-12",
+    "updatedAt": "2026-07-12"
+  },
+  "objectives": [
+    "理解优化问题中局部最优与全局最优的区别",
+    "掌握 Metropolis 接受准则的含义",
+    "理解温度和降温策略如何平衡探索与收敛",
+    "体会模拟退火跳出局部最优的能力"
+  ],
+  "prerequisites": [
+    "了解函数的极值",
+    "了解指数函数",
+    "了解基本概率"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "想象一片起伏的山谷地形，我们要找到最低的那个谷底。"
+        },
+        {
+          "id": "intro-2",
+          "text": "如果只会往低处走，很容易掉进旁边一个小坑，就再也出不来了。"
+        },
+        {
+          "id": "intro-3",
+          "text": "这个小坑叫局部最优，而我们真正想要的是全局最优。"
+        },
+        {
+          "id": "intro-4",
+          "text": "模拟退火，正是一个能爬出小坑、找到真正谷底的巧妙办法。"
+        }
+      ]
+    },
+    {
+      "id": "energy",
+      "type": "concept",
+      "title": "能量地形",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "energy-1",
+          "text": "我们把要最小化的目标函数,想象成一片高低起伏的能量地形。"
+        },
+        {
+          "id": "energy-2",
+          "text": "每个位置对应一个能量值,越低的地方越好。"
+        },
+        {
+          "id": "energy-3",
+          "text": "算法从一个随机位置出发,试着一点点挪动,寻找更低的地方。"
+        }
+      ]
+    },
+    {
+      "id": "metropolis",
+      "type": "concept",
+      "title": "接受准则",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "metro-1",
+          "text": "关键在于:如果新位置更低,我们当然接受。"
+        },
+        {
+          "id": "metro-2",
+          "text": "但如果新位置更高,我们也有一定概率接受它,故意走一步坏棋。"
+        },
+        {
+          "id": "metro-3",
+          "text": "这个概率等于,自然常数的负的能量差除以温度次方。"
+        },
+        {
+          "id": "metro-4",
+          "text": "正是这偶尔的向上一跳,让我们有机会翻过山脊,逃出小坑。"
+        }
+      ]
+    },
+    {
+      "id": "cooling",
+      "type": "concept",
+      "title": "温度与降温",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "cool-1",
+          "text": "温度越高,接受坏棋的概率越大,系统大胆地四处探索。"
+        },
+        {
+          "id": "cool-2",
+          "text": "随着温度缓缓下降,算法越来越挑剔,慢慢安定在低谷里。"
+        },
+        {
+          "id": "cool-3",
+          "text": "这正是金属退火的智慧:先加热让原子自由跳动,再缓慢冷却成稳定晶体。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "换一片能量地形,看算法如何绕过一个个浅坑奔向最深处。"
+        },
+        {
+          "id": "int-2",
+          "text": "试试不同的降温策略,降得太快会困在坏处,降得太慢又浪费时间。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "模拟退火用温度控制探索:高温大胆试错,低温精细收敛。"
+        },
+        {
+          "id": "sum-2",
+          "text": "偶尔接受变坏的一步,是它跳出局部最优的秘密武器。"
+        },
+        {
+          "id": "sum-3",
+          "text": "向大自然学来的一点随机,换来了全局最优的可能,我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

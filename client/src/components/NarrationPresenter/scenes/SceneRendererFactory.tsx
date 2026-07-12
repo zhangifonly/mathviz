@@ -137,6 +137,45 @@ const UlamSpiralSceneRenderer = lazy(() => import('./UlamSpiral/UlamSpiralSceneR
 const PascalTriangleSceneRenderer = lazy(() => import('./PascalTriangle/PascalTriangleSceneRenderer'))
 const VoronoiSceneRenderer = lazy(() => import('./Voronoi/VoronoiSceneRenderer'))
 const LSystemSceneRenderer = lazy(() => import('./LSystem/LSystemSceneRenderer'))
+const EvenOddSceneRenderer = lazy(() => import('./EvenOdd/EvenOddSceneRenderer'))
+const RomanNumeralsSceneRenderer = lazy(() => import('./RomanNumerals/RomanNumeralsSceneRenderer'))
+const SymmetrySceneRenderer = lazy(() => import('./Symmetry/SymmetrySceneRenderer'))
+const TangramSceneRenderer = lazy(() => import('./Tangram/TangramSceneRenderer'))
+const ClockAnglesSceneRenderer = lazy(() => import('./ClockAngles/ClockAnglesSceneRenderer'))
+const InequalitiesSceneRenderer = lazy(() => import('./Inequalities/InequalitiesSceneRenderer'))
+const LinearSystemSceneRenderer = lazy(() => import('./LinearSystem/LinearSystemSceneRenderer'))
+const SimilarTrianglesSceneRenderer = lazy(() => import('./SimilarTriangles/SimilarTrianglesSceneRenderer'))
+const CircleGeometrySceneRenderer = lazy(() => import('./CircleGeometry/CircleGeometrySceneRenderer'))
+const StatsBasicsSceneRenderer = lazy(() => import('./StatsBasics/StatsBasicsSceneRenderer'))
+const AbsoluteValueSceneRenderer = lazy(() => import('./AbsoluteValue/AbsoluteValueSceneRenderer'))
+const SequencesSceneRenderer = lazy(() => import('./Sequences/SequencesSceneRenderer'))
+const ExponentialLogSceneRenderer = lazy(() => import('./ExponentialLog/ExponentialLogSceneRenderer'))
+const MatrixTransformSceneRenderer = lazy(() => import('./MatrixTransform/MatrixTransformSceneRenderer'))
+const DotCrossProductSceneRenderer = lazy(() => import('./DotCrossProduct/DotCrossProductSceneRenderer'))
+const ParabolaOpticsSceneRenderer = lazy(() => import('./ParabolaOptics/ParabolaOpticsSceneRenderer'))
+const SineSuperpositionSceneRenderer = lazy(() => import('./SineSuperposition/SineSuperpositionSceneRenderer'))
+const CombinatorialProofSceneRenderer = lazy(() => import('./CombinatorialProof/CombinatorialProofSceneRenderer'))
+const ModularArithmeticSceneRenderer = lazy(() => import('./ModularArithmetic/ModularArithmeticSceneRenderer'))
+const ContinuedFractionSceneRenderer = lazy(() => import('./ContinuedFraction/ContinuedFractionSceneRenderer'))
+const EpidemicSirSceneRenderer = lazy(() => import('./EpidemicSir/EpidemicSirSceneRenderer'))
+const EigenVisualizationSceneRenderer = lazy(() => import('./EigenVisualization/EigenVisualizationSceneRenderer'))
+const SvdSceneRenderer = lazy(() => import('./Svd/SvdSceneRenderer'))
+const GramSchmidtSceneRenderer = lazy(() => import('./GramSchmidt/GramSchmidtSceneRenderer'))
+const LagrangeMultiplierSceneRenderer = lazy(() => import('./LagrangeMultiplier/LagrangeMultiplierSceneRenderer'))
+const GreenTheoremSceneRenderer = lazy(() => import('./GreenTheorem/GreenTheoremSceneRenderer'))
+const ResidueTheoremSceneRenderer = lazy(() => import('./ResidueTheorem/ResidueTheoremSceneRenderer'))
+const PowerSeriesSceneRenderer = lazy(() => import('./PowerSeries/PowerSeriesSceneRenderer'))
+const GaussianProcessSceneRenderer = lazy(() => import('./GaussianProcess/GaussianProcessSceneRenderer'))
+const KalmanFilterSceneRenderer = lazy(() => import('./KalmanFilter/KalmanFilterSceneRenderer'))
+const SimulatedAnnealingSceneRenderer = lazy(() => import('./SimulatedAnnealing/SimulatedAnnealingSceneRenderer'))
+const MandelbrotJuliaSceneRenderer = lazy(() => import('./MandelbrotJulia/MandelbrotJuliaSceneRenderer'))
+const DoublePendulumSceneRenderer = lazy(() => import('./DoublePendulum/DoublePendulumSceneRenderer'))
+const LorenzAttractorSceneRenderer = lazy(() => import('./LorenzAttractor/LorenzAttractorSceneRenderer'))
+const NbodySimulationSceneRenderer = lazy(() => import('./NbodySimulation/NbodySimulationSceneRenderer'))
+const PercolationSceneRenderer = lazy(() => import('./Percolation/PercolationSceneRenderer'))
+const CellularAutomataSceneRenderer = lazy(() => import('./CellularAutomata/CellularAutomataSceneRenderer'))
+const KnotTheorySceneRenderer = lazy(() => import('./KnotTheory/KnotTheorySceneRenderer'))
+const WaveletSceneRenderer = lazy(() => import('./Wavelet/WaveletSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -201,6 +240,45 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'pascal-triangle': PascalTriangleSceneRenderer,
   'voronoi': VoronoiSceneRenderer,
   'l-system': LSystemSceneRenderer,
+  'even-odd': EvenOddSceneRenderer,
+  'roman-numerals': RomanNumeralsSceneRenderer,
+  'symmetry': SymmetrySceneRenderer,
+  'tangram': TangramSceneRenderer,
+  'clock-angles': ClockAnglesSceneRenderer,
+  'inequalities': InequalitiesSceneRenderer,
+  'linear-system': LinearSystemSceneRenderer,
+  'similar-triangles': SimilarTrianglesSceneRenderer,
+  'circle-geometry': CircleGeometrySceneRenderer,
+  'stats-basics': StatsBasicsSceneRenderer,
+  'absolute-value': AbsoluteValueSceneRenderer,
+  'sequences': SequencesSceneRenderer,
+  'exponential-log': ExponentialLogSceneRenderer,
+  'matrix-transform': MatrixTransformSceneRenderer,
+  'dot-cross-product': DotCrossProductSceneRenderer,
+  'parabola-optics': ParabolaOpticsSceneRenderer,
+  'sine-superposition': SineSuperpositionSceneRenderer,
+  'combinatorial-proof': CombinatorialProofSceneRenderer,
+  'modular-arithmetic': ModularArithmeticSceneRenderer,
+  'continued-fraction': ContinuedFractionSceneRenderer,
+  'epidemic-sir': EpidemicSirSceneRenderer,
+  'eigen-visualization': EigenVisualizationSceneRenderer,
+  'svd': SvdSceneRenderer,
+  'gram-schmidt': GramSchmidtSceneRenderer,
+  'lagrange-multiplier': LagrangeMultiplierSceneRenderer,
+  'green-theorem': GreenTheoremSceneRenderer,
+  'residue-theorem': ResidueTheoremSceneRenderer,
+  'power-series': PowerSeriesSceneRenderer,
+  'gaussian-process': GaussianProcessSceneRenderer,
+  'kalman-filter': KalmanFilterSceneRenderer,
+  'simulated-annealing': SimulatedAnnealingSceneRenderer,
+  'mandelbrot-julia': MandelbrotJuliaSceneRenderer,
+  'double-pendulum': DoublePendulumSceneRenderer,
+  'lorenz-attractor': LorenzAttractorSceneRenderer,
+  'nbody-simulation': NbodySimulationSceneRenderer,
+  'percolation': PercolationSceneRenderer,
+  'cellular-automata': CellularAutomataSceneRenderer,
+  'knot-theory': KnotTheorySceneRenderer,
+  'wavelet': WaveletSceneRenderer,
 }
 
 // 获取场景渲染器

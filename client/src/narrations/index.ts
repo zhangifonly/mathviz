@@ -67,6 +67,45 @@ export { ulamSpiralNarration } from './scripts/ulam-spiral'
 export { pascalTriangleNarration } from './scripts/pascal-triangle'
 export { voronoiNarration } from './scripts/voronoi'
 export { lSystemNarration } from './scripts/l-system'
+export { evenOddNarration } from './scripts/even-odd'
+export { romanNumeralsNarration } from './scripts/roman-numerals'
+export { symmetryNarration } from './scripts/symmetry'
+export { tangramNarration } from './scripts/tangram'
+export { clockAnglesNarration } from './scripts/clock-angles'
+export { inequalitiesNarration } from './scripts/inequalities'
+export { linearSystemNarration } from './scripts/linear-system'
+export { similarTrianglesNarration } from './scripts/similar-triangles'
+export { circleGeometryNarration } from './scripts/circle-geometry'
+export { statsBasicsNarration } from './scripts/stats-basics'
+export { absoluteValueNarration } from './scripts/absolute-value'
+export { sequencesNarration } from './scripts/sequences'
+export { exponentialLogNarration } from './scripts/exponential-log'
+export { matrixTransformNarration } from './scripts/matrix-transform'
+export { dotCrossProductNarration } from './scripts/dot-cross-product'
+export { parabolaOpticsNarration } from './scripts/parabola-optics'
+export { sineSuperpositionNarration } from './scripts/sine-superposition'
+export { combinatorialProofNarration } from './scripts/combinatorial-proof'
+export { modularArithmeticNarration } from './scripts/modular-arithmetic'
+export { continuedFractionNarration } from './scripts/continued-fraction'
+export { epidemicSirNarration } from './scripts/epidemic-sir'
+export { eigenVisualizationNarration } from './scripts/eigen-visualization'
+export { svdNarration } from './scripts/svd'
+export { gramSchmidtNarration } from './scripts/gram-schmidt'
+export { lagrangeMultiplierNarration } from './scripts/lagrange-multiplier'
+export { greenTheoremNarration } from './scripts/green-theorem'
+export { residueTheoremNarration } from './scripts/residue-theorem'
+export { powerSeriesNarration } from './scripts/power-series'
+export { gaussianProcessNarration } from './scripts/gaussian-process'
+export { kalmanFilterNarration } from './scripts/kalman-filter'
+export { simulatedAnnealingNarration } from './scripts/simulated-annealing'
+export { mandelbrotJuliaNarration } from './scripts/mandelbrot-julia'
+export { doublePendulumNarration } from './scripts/double-pendulum'
+export { lorenzAttractorNarration } from './scripts/lorenz-attractor'
+export { nbodySimulationNarration } from './scripts/nbody-simulation'
+export { percolationNarration } from './scripts/percolation'
+export { cellularAutomataNarration } from './scripts/cellular-automata'
+export { knotTheoryNarration } from './scripts/knot-theory'
+export { waveletNarration } from './scripts/wavelet'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -126,6 +165,45 @@ import { ulamSpiralNarration } from './scripts/ulam-spiral'
 import { pascalTriangleNarration } from './scripts/pascal-triangle'
 import { voronoiNarration } from './scripts/voronoi'
 import { lSystemNarration } from './scripts/l-system'
+import { evenOddNarration } from './scripts/even-odd'
+import { romanNumeralsNarration } from './scripts/roman-numerals'
+import { symmetryNarration } from './scripts/symmetry'
+import { tangramNarration } from './scripts/tangram'
+import { clockAnglesNarration } from './scripts/clock-angles'
+import { inequalitiesNarration } from './scripts/inequalities'
+import { linearSystemNarration } from './scripts/linear-system'
+import { similarTrianglesNarration } from './scripts/similar-triangles'
+import { circleGeometryNarration } from './scripts/circle-geometry'
+import { statsBasicsNarration } from './scripts/stats-basics'
+import { absoluteValueNarration } from './scripts/absolute-value'
+import { sequencesNarration } from './scripts/sequences'
+import { exponentialLogNarration } from './scripts/exponential-log'
+import { matrixTransformNarration } from './scripts/matrix-transform'
+import { dotCrossProductNarration } from './scripts/dot-cross-product'
+import { parabolaOpticsNarration } from './scripts/parabola-optics'
+import { sineSuperpositionNarration } from './scripts/sine-superposition'
+import { combinatorialProofNarration } from './scripts/combinatorial-proof'
+import { modularArithmeticNarration } from './scripts/modular-arithmetic'
+import { continuedFractionNarration } from './scripts/continued-fraction'
+import { epidemicSirNarration } from './scripts/epidemic-sir'
+import { eigenVisualizationNarration } from './scripts/eigen-visualization'
+import { svdNarration } from './scripts/svd'
+import { gramSchmidtNarration } from './scripts/gram-schmidt'
+import { lagrangeMultiplierNarration } from './scripts/lagrange-multiplier'
+import { greenTheoremNarration } from './scripts/green-theorem'
+import { residueTheoremNarration } from './scripts/residue-theorem'
+import { powerSeriesNarration } from './scripts/power-series'
+import { gaussianProcessNarration } from './scripts/gaussian-process'
+import { kalmanFilterNarration } from './scripts/kalman-filter'
+import { simulatedAnnealingNarration } from './scripts/simulated-annealing'
+import { mandelbrotJuliaNarration } from './scripts/mandelbrot-julia'
+import { doublePendulumNarration } from './scripts/double-pendulum'
+import { lorenzAttractorNarration } from './scripts/lorenz-attractor'
+import { nbodySimulationNarration } from './scripts/nbody-simulation'
+import { percolationNarration } from './scripts/percolation'
+import { cellularAutomataNarration } from './scripts/cellular-automata'
+import { knotTheoryNarration } from './scripts/knot-theory'
+import { waveletNarration } from './scripts/wavelet'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -189,6 +267,45 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'pascal-triangle': pascalTriangleNarration,
   'voronoi': voronoiNarration,
   'l-system': lSystemNarration,
+  'even-odd': evenOddNarration,
+  'roman-numerals': romanNumeralsNarration,
+  'symmetry': symmetryNarration,
+  'tangram': tangramNarration,
+  'clock-angles': clockAnglesNarration,
+  'inequalities': inequalitiesNarration,
+  'linear-system': linearSystemNarration,
+  'similar-triangles': similarTrianglesNarration,
+  'circle-geometry': circleGeometryNarration,
+  'stats-basics': statsBasicsNarration,
+  'absolute-value': absoluteValueNarration,
+  'sequences': sequencesNarration,
+  'exponential-log': exponentialLogNarration,
+  'matrix-transform': matrixTransformNarration,
+  'dot-cross-product': dotCrossProductNarration,
+  'parabola-optics': parabolaOpticsNarration,
+  'sine-superposition': sineSuperpositionNarration,
+  'combinatorial-proof': combinatorialProofNarration,
+  'modular-arithmetic': modularArithmeticNarration,
+  'continued-fraction': continuedFractionNarration,
+  'epidemic-sir': epidemicSirNarration,
+  'eigen-visualization': eigenVisualizationNarration,
+  'svd': svdNarration,
+  'gram-schmidt': gramSchmidtNarration,
+  'lagrange-multiplier': lagrangeMultiplierNarration,
+  'green-theorem': greenTheoremNarration,
+  'residue-theorem': residueTheoremNarration,
+  'power-series': powerSeriesNarration,
+  'gaussian-process': gaussianProcessNarration,
+  'kalman-filter': kalmanFilterNarration,
+  'simulated-annealing': simulatedAnnealingNarration,
+  'mandelbrot-julia': mandelbrotJuliaNarration,
+  'double-pendulum': doublePendulumNarration,
+  'lorenz-attractor': lorenzAttractorNarration,
+  'nbody-simulation': nbodySimulationNarration,
+  'percolation': percolationNarration,
+  'cellular-automata': cellularAutomataNarration,
+  'knot-theory': knotTheoryNarration,
+  'wavelet': waveletNarration,
 }
 
 // 获取稿件

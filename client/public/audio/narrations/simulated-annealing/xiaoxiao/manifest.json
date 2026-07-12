@@ -1,0 +1,199 @@
+{
+  "script_id": "simulated-annealing",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "想象一片起伏的山谷地形，我们要找到最低的那个谷底。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "如果只会往低处走，很容易掉进旁边一个小坑，就再也出不来了。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "这个小坑叫局部最优，而我们真正想要的是全局最优。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/intro-intro-4.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "模拟退火，正是一个能爬出小坑、找到真正谷底的巧妙办法。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "energy",
+      "line_id": "energy-1",
+      "filename": "energy-energy-1.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/energy-energy-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "我们把要最小化的目标函数,想象成一片高低起伏的能量地形。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "energy",
+      "line_id": "energy-2",
+      "filename": "energy-energy-2.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/energy-energy-2.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "每个位置对应一个能量值,越低的地方越好。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "energy",
+      "line_id": "energy-3",
+      "filename": "energy-energy-3.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/energy-energy-3.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "算法从一个随机位置出发,试着一点点挪动,寻找更低的地方。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "metropolis",
+      "line_id": "metro-1",
+      "filename": "metropolis-metro-1.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/metropolis-metro-1.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "关键在于:如果新位置更低,我们当然接受。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "metropolis",
+      "line_id": "metro-2",
+      "filename": "metropolis-metro-2.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/metropolis-metro-2.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "但如果新位置更高,我们也有一定概率接受它,故意走一步坏棋。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "metropolis",
+      "line_id": "metro-3",
+      "filename": "metropolis-metro-3.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/metropolis-metro-3.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "这个概率等于,自然常数的负的能量差除以温度次方。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "metropolis",
+      "line_id": "metro-4",
+      "filename": "metropolis-metro-4.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/metropolis-metro-4.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "正是这偶尔的向上一跳,让我们有机会翻过山脊,逃出小坑。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "cooling",
+      "line_id": "cool-1",
+      "filename": "cooling-cool-1.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/cooling-cool-1.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "温度越高,接受坏棋的概率越大,系统大胆地四处探索。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "cooling",
+      "line_id": "cool-2",
+      "filename": "cooling-cool-2.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/cooling-cool-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "随着温度缓缓下降,算法越来越挑剔,慢慢安定在低谷里。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "cooling",
+      "line_id": "cool-3",
+      "filename": "cooling-cool-3.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/cooling-cool-3.mp3",
+      "duration": 2.82,
+      "size": 45072,
+      "text": "这正是金属退火的智慧:先加热让原子自由跳动,再缓慢冷却成稳定晶体。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "换一片能量地形,看算法如何绕过一个个浅坑奔向最深处。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.57,
+      "size": 41184,
+      "text": "试试不同的降温策略,降得太快会困在坏处,降得太慢又浪费时间。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "模拟退火用温度控制探索:高温大胆试错,低温精细收敛。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "偶尔接受变坏的一步,是它跳出局部最优的秘密武器。"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/simulated-annealing/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "向大自然学来的一点随机,换来了全局最优的可能,我们下次再见！"
+    }
+  ],
+  "total_duration": 40.529999999999994,
+  "total_size": 648576
+}

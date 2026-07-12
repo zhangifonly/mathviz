@@ -1,0 +1,169 @@
+{
+  "script_id": "double-pendulum",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "double-pendulum",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "这是一个双摆，只是在普通单摆下面又挂了一根摆杆。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "结构简单到不能再简单，运动却复杂到几乎无法预测。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "它是研究确定性混沌最经典的力学模型之一。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "equations",
+      "line_id": "eq-1",
+      "filename": "equations-eq-1.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/equations-eq-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "双摆只有两个自由度，就是上下两根杆各自的摆角。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "equations",
+      "line_id": "eq-2",
+      "filename": "equations-eq-2.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/equations-eq-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "用拉格朗日力学，可以推出两个摆角的角加速度方程。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "equations",
+      "line_id": "eq-3",
+      "filename": "equations-eq-3.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/equations-eq-3.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "这两个方程彼此耦合，而且高度非线性，没有简洁的解析解。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "equations",
+      "line_id": "eq-4",
+      "filename": "equations-eq-4.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/equations-eq-4.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "所以我们用四阶龙格库塔方法，一步一步在计算机里把它积分出来。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "chaos",
+      "line_id": "chaos-1",
+      "filename": "chaos-chaos-1.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/chaos-chaos-1.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "让两个几乎一模一样的双摆同时释放，初始角度只差万分之一。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "chaos",
+      "line_id": "chaos-2",
+      "filename": "chaos-chaos-2.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/chaos-chaos-2.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "起初它们的轨迹重合，可没过多久就彻底分道扬镳。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "chaos",
+      "line_id": "chaos-3",
+      "filename": "chaos-chaos-3.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/chaos-chaos-3.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "这就是对初值的敏感依赖，也是蝴蝶效应的力学写照。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "切换不同的初始状态，从温和摆动到大角度的翻转狂舞。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.71,
+      "size": 27360,
+      "text": "注意看第二个摆锤划出的轨迹，它几乎永不重复。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "interaction",
+      "line_id": "int-3",
+      "filename": "interaction-int-3.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/interaction-int-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "虽然运动看似随机，但每一步都由确定的方程严格决定。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "双摆用最简单的结构，演示了确定性系统里的混沌。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "方程完全确定，长期行为却因初值敏感而不可预测。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/double-pendulum/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "这正是非线性世界的魅力所在，我们下次再见。"
+    }
+  ],
+  "total_duration": 31.759999999999998,
+  "total_size": 508032
+}

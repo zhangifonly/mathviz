@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 不等式与数轴 - 口播稿件
+ * 核心概念：一元一次不等式的求解、乘除负数翻转不等号、数轴表示解集
+ * 目标受众：初中及以上
+ */
+export const inequalitiesNarration: NarrationScript = {
+  id: 'inequalities',
+  title: '不等式与数轴',
+  subtitle: '在数轴上看见不等式的解集',
+  difficulty: 'elementary',
+  targetAge: '初中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-12',
+    updatedAt: '2026-07-12',
+  },
+
+  objectives: [
+    '理解一元一次不等式的含义',
+    '掌握移项与系数化一的求解步骤',
+    '牢记两边乘除负数时不等号方向翻转',
+    '学会在数轴上表示解集',
+  ],
+
+  prerequisites: ['了解方程的移项', '认识数轴'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '方程用等号连接两边，而不等式用大于、小于这样的符号连接两边。' },
+        { id: 'intro-2', text: '方程的解通常只有几个数，不等式的解却往往是一整片区域。' },
+        { id: 'intro-3', text: '这一整片解，正好可以画在数轴上，一眼就能看明白。' },
+      ],
+    },
+    {
+      id: 'solve',
+      type: 'concept',
+      title: '求解步骤',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'solve-1', text: '解不等式和解方程很像，先把含未知数的项和常数项分到两边。' },
+        { id: 'solve-2', text: '比如 x 加 2 大于 5，把 2 移到右边，就得到 x 大于 3。' },
+        { id: 'solve-3', text: '再把未知数前面的系数化成 1，解就出来了。' },
+      ],
+    },
+    {
+      id: 'flip',
+      type: 'concept',
+      title: '翻转的秘密',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'flip-1', text: '这里有一个最容易出错的地方，一定要记牢。' },
+        { id: 'flip-2', text: '当两边同时乘以或除以一个负数时，不等号的方向必须翻过来。' },
+        { id: 'flip-3', text: '比如负 3 乘 x 小于 6，两边除以负 3，小于就要变成大于。' },
+      ],
+    },
+    {
+      id: 'numberline',
+      type: 'concept',
+      title: '画在数轴上',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'nl-1', text: '有了解，我们就在数轴上把它标出来。' },
+        { id: 'nl-2', text: '边界点如果包含等号，就画实心圆；不包含就画空心圆。' },
+        { id: 'nl-3', text: '再朝解所在的方向拉出一条射线，那条射线上的每个数都是解。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '试着切换不同的不等式，注意系数是负数的那几个。' },
+        { id: 'int-2', text: '观察数轴上的圆点是实心还是空心，射线又朝哪个方向延伸。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '不等式的求解就是移项加系数化一，和解方程几乎一样。' },
+        { id: 'sum-2', text: '唯一要牢记的是乘除负数时不等号翻转。' },
+        { id: 'sum-3', text: '数轴让抽象的解集变得直观，我们下次再见！' },
+      ],
+    },
+  ],
+}

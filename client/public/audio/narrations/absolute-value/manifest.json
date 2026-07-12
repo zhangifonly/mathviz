@@ -1,0 +1,183 @@
+{
+  "script_id": "absolute-value",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "absolute-value",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/absolute-value/intro-intro-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "这节课我们认识一个很特别的函数，绝对值函数。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/absolute-value/intro-intro-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "它的图像不是平滑的曲线，而是一条尖尖的 V 形折线。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/absolute-value/intro-intro-3.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "要理解它，我们先从绝对值的含义说起。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "concept-abs",
+      "line_id": "abs-1",
+      "filename": "concept-abs-abs-1.mp3",
+      "path": "audio/narrations/absolute-value/concept-abs-abs-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "一个数的绝对值，就是它在数轴上到零点的距离。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "concept-abs",
+      "line_id": "abs-2",
+      "filename": "concept-abs-abs-2.mp3",
+      "path": "audio/narrations/absolute-value/concept-abs-abs-2.mp3",
+      "duration": 2.92,
+      "size": 46656,
+      "text": "距离永远不会是负的，所以正三的绝对值是三，负三的绝对值也是三。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "concept-abs",
+      "line_id": "abs-3",
+      "filename": "concept-abs-abs-3.mp3",
+      "path": "audio/narrations/absolute-value/concept-abs-abs-3.mp3",
+      "duration": 2.63,
+      "size": 42048,
+      "text": "把每个横坐标都取绝对值当作高度，图像就在原点两侧对称地往上翘。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "concept-shape",
+      "line_id": "shape-1",
+      "filename": "concept-shape-shape-1.mp3",
+      "path": "audio/narrations/absolute-value/concept-shape-shape-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "最基本的 y 等于 x 的绝对值，图像是一个开口向上的 V 字。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "concept-shape",
+      "line_id": "shape-2",
+      "filename": "concept-shape-shape-2.mp3",
+      "path": "audio/narrations/absolute-value/concept-shape-shape-2.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "V 字最低的那个尖角叫做顶点，这里的顶点正好落在原点。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "concept-shape",
+      "line_id": "shape-3",
+      "filename": "concept-shape-shape-3.mp3",
+      "path": "audio/narrations/absolute-value/concept-shape-shape-3.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "左右两条边都是直线，关于经过顶点的竖直线完全对称。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "concept-transform",
+      "line_id": "trans-1",
+      "filename": "concept-transform-trans-1.mp3",
+      "path": "audio/narrations/absolute-value/concept-transform-trans-1.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "在绝对值里减去一个数，图像就会整体向右平移。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "concept-transform",
+      "line_id": "trans-2",
+      "filename": "concept-transform-trans-2.mp3",
+      "path": "audio/narrations/absolute-value/concept-transform-trans-2.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "在外面加上一个数，整条 V 形就会向上抬升。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "concept-transform",
+      "line_id": "trans-3",
+      "filename": "concept-transform-trans-3.mp3",
+      "path": "audio/narrations/absolute-value/concept-transform-trans-3.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "前面乘上一个系数，正数让开口变窄变陡，负数则让 V 形倒过来开口向下。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/absolute-value/interaction-int-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "试着切换不同的参数，看看顶点跑到哪里，开口是宽是窄。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/absolute-value/interaction-int-2.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "当 V 形跨过横轴时，两个交点就是方程的解，也就是函数的零点。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/absolute-value/summary-sum-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "绝对值表示到零的距离，所以图像是对称的 V 形折线。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/absolute-value/summary-sum-2.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "顶点的位置由平移决定，开口方向和陡缓由系数决定。"
+    },
+    {
+      "script_id": "absolute-value",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/absolute-value/summary-sum-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "数与形结合，绝对值函数就一目了然，我们下次再见！"
+    }
+  ],
+  "total_duration": 36.32999999999999,
+  "total_size": 581472,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

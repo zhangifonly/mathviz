@@ -1,0 +1,98 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 一维初等元胞自动机 - 口播稿件
+ * 核心概念：局部规则、规则号编码、混沌与分形、图灵完备
+ * 目标受众：研究生以上
+ */
+export const cellularAutomataNarration: NarrationScript = {
+  id: 'cellular-automata',
+  title: '元胞自动机',
+  subtitle: '最简单的规则，最复杂的世界',
+  difficulty: 'expert',
+  targetAge: '研究生以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-12',
+    updatedAt: '2026-07-12',
+  },
+
+  objectives: [
+    '理解一维初等元胞自动机的局部演化规则',
+    '掌握用零到二百五十五的整数编码规则的方法',
+    '认识规则三十的混沌与规则九十的分形',
+    '理解规则一百一十的图灵完备与复杂性涌现',
+  ],
+
+  prerequisites: ['了解二进制', '了解离散动力系统的基本概念'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '想象一排格子，每个格子只有黑白两种状态，非死即生。' },
+        { id: 'intro-2', text: '时间一步步向前，每个格子的新状态只看它自己和左右两个邻居。' },
+        { id: 'intro-3', text: '这就是一维初等元胞自动机，一个规则极简却能生出万千气象的世界。' },
+      ],
+    },
+    {
+      id: 'rule',
+      type: 'concept',
+      title: '规则的编码',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'rule-1', text: '一个格子和它的左右邻居，三个格子一共有二的三次方，也就是八种组合。' },
+        { id: 'rule-2', text: '我们只要为这八种情形各指定一个输出，就完整定义了一条演化规则。' },
+        { id: 'rule-3', text: '八个输出位拼成一个八位二进制数，正好对应零到二百五十五的一个整数，这就是规则号。' },
+      ],
+    },
+    {
+      id: 'chaos',
+      type: 'concept',
+      title: '规则三十的混沌',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'chaos-1', text: '看规则三十，从中间一个黑格出发，长出的图案毫无规律，像纯粹的随机噪声。' },
+        { id: 'chaos-2', text: '沃尔夫勒姆曾用它的中心列做随机数发生器，简单规则竟能制造出不可预测。' },
+      ],
+    },
+    {
+      id: 'fractal',
+      type: 'concept',
+      title: '规则九十的分形',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'fractal-1', text: '换成规则九十，新格子等于左右邻居的异或，也就是不同为一、相同为零。' },
+        { id: 'fractal-2', text: '于是屏幕上浮现出谢尔宾斯基三角，和帕斯卡三角除以二的染色如出一辙。' },
+        { id: 'fractal-3', text: '同样的自相似分形，从一条局部规则里自动涌现出来。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'inter-1', text: '切换到规则一百一十，它已被证明是图灵完备的，能模拟任何计算。' },
+        { id: 'inter-2', text: '亲手换不同的规则号，感受混沌、周期、分形与复杂在同一套系统里此消彼长。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '只靠一条局部规则，元胞自动机就走出了混沌、分形与通用计算三条路。' },
+        { id: 'sum-2', text: '这提示我们，宇宙的复杂或许并不需要复杂的底层法则。' },
+        { id: 'sum-3', text: '简单之中藏着无穷，我们下次再见。' },
+      ],
+    },
+  ],
+}

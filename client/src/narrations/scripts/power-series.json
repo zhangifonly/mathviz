@@ -1,0 +1,156 @@
+{
+  "id": "power-series",
+  "title": "幂级数收敛",
+  "subtitle": "无穷项相加如何逼近一个函数",
+  "difficulty": "advanced",
+  "targetAge": "大学以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-12",
+    "updatedAt": "2026-07-12"
+  },
+  "objectives": [
+    "理解幂级数与部分和的概念",
+    "观察部分和曲线如何逐项逼近精确函数",
+    "掌握收敛半径与收敛域的意义",
+    "体会收敛域内外截然不同的行为"
+  ],
+  "prerequisites": [
+    "了解数列与极限",
+    "了解幂函数"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "把无穷多个幂函数项加在一起，就得到了一个幂级数。"
+        },
+        {
+          "id": "intro-2",
+          "text": "它的形式是常数项，加一次项，加二次项，一直加下去。"
+        },
+        {
+          "id": "intro-3",
+          "text": "神奇的是，这样一串无穷相加，往往能精确等于一个我们熟悉的函数。"
+        }
+      ]
+    },
+    {
+      "id": "partial",
+      "type": "concept",
+      "title": "部分和的逼近",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "partial-1",
+          "text": "我们没法真的加无穷项，于是只取前面有限的几项，叫做部分和。"
+        },
+        {
+          "id": "partial-2",
+          "text": "看这条黄色曲线，它就是部分和画出来的图像。"
+        },
+        {
+          "id": "partial-3",
+          "text": "项数越多，黄色曲线就越贴近蓝色的精确函数。"
+        }
+      ]
+    },
+    {
+      "id": "radius",
+      "type": "concept",
+      "title": "收敛半径",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "radius-1",
+          "text": "但逼近并不是处处都成立，这里有一条无形的边界。"
+        },
+        {
+          "id": "radius-2",
+          "text": "这条边界到原点的距离，就叫收敛半径，用红色虚线标出。"
+        },
+        {
+          "id": "radius-3",
+          "text": "在边界以内，级数收敛；越过边界，无论加多少项都会发散。"
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "type": "concept",
+      "title": "为何有半径",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "why-1",
+          "text": "几何级数是最简单的例子，收敛半径正好等于一。"
+        },
+        {
+          "id": "why-2",
+          "text": "而指数级数的收敛半径是无穷大，它在整条数轴上都收敛。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "试着增加项数，看黄色曲线在边界以内一点点压到蓝线上。"
+        },
+        {
+          "id": "int-2",
+          "text": "再切换不同的级数，比较它们收敛半径的差别。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "幂级数用无穷项相加逼近函数，部分和项数越多越准。"
+        },
+        {
+          "id": "sum-2",
+          "text": "收敛半径划定了逼近成立的范围，内收敛而外发散。"
+        },
+        {
+          "id": "sum-3",
+          "text": "有限的项，无穷的逼近，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

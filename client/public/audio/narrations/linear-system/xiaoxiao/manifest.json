@@ -1,0 +1,179 @@
+{
+  "script_id": "linear-system",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "linear-system",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "一个方程里有两个未知数，只有它一个，我们没法确定唯一的答案。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "但如果同时有两个这样的方程，情况就完全不同了。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "这就是二元一次方程组，今天我们用几何的眼光把它看清楚。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "line-meaning",
+      "line_id": "line-1",
+      "filename": "line-meaning-line-1.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/line-meaning-line-1.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "像 a 乘 x 加 b 乘 y 等于 c 这样的方程，画在坐标系里就是一条直线。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "line-meaning",
+      "line_id": "line-2",
+      "filename": "line-meaning-line-2.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/line-meaning-line-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "直线上的每一个点，横坐标和纵坐标都满足这个方程。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "line-meaning",
+      "line_id": "line-3",
+      "filename": "line-meaning-line-3.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/line-meaning-line-3.mp3",
+      "duration": 1.46,
+      "size": 23328,
+      "text": "所以一个方程，其实代表着无穷多组解。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "intersection",
+      "line_id": "inter-1",
+      "filename": "intersection-inter-1.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/intersection-inter-1.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "现在把两个方程的两条直线画在同一张图上。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "intersection",
+      "line_id": "inter-2",
+      "filename": "intersection-inter-2.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/intersection-inter-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "它们的交点，同时落在两条直线上，所以同时满足两个方程。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "intersection",
+      "line_id": "inter-3",
+      "filename": "intersection-inter-3.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/intersection-inter-3.mp3",
+      "duration": 1.44,
+      "size": 23040,
+      "text": "这个交点的坐标，就是方程组唯一的解。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "three-cases",
+      "line_id": "case-1",
+      "filename": "three-cases-case-1.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/three-cases-case-1.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "两条直线相交于一点，方程组有唯一解。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "three-cases",
+      "line_id": "case-2",
+      "filename": "three-cases-case-2.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/three-cases-case-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "如果两条直线平行，永远碰不到一起，方程组就无解。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "three-cases",
+      "line_id": "case-3",
+      "filename": "three-cases-case-3.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/three-cases-case-3.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "要是两条直线完全重合，那它们有无穷多个公共点，解也就无穷多。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "切换不同的方程组，看看两条直线的位置怎样变化。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "注意观察，交点的坐标恰好就是我们算出来的那组解。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "二元一次方程组的每个方程是一条直线，交点就是解。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "相交有唯一解，平行没有解，重合有无穷多解。"
+    },
+    {
+      "script_id": "linear-system",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/linear-system/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "把代数问题变成几何图形，一切就清晰了，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.480000000000004,
+  "total_size": 535680
+}

@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 时钟与角度 - 口播稿件
+ * 核心概念：钟面是一个圆、分针每分钟 6 度、时针每小时 30 度、两针夹角
+ * 目标受众：小学以上
+ */
+export const clockAnglesNarration: NarrationScript = {
+  id: 'clock-angles',
+  title: '时钟与角度',
+  subtitle: '钟面上藏着的圆周角',
+  difficulty: 'beginner',
+  targetAge: '小学以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-12',
+    updatedAt: '2026-07-12',
+  },
+
+  objectives: [
+    '知道整个钟面是一个三百六十度的圆',
+    '会算分针和时针各自转过的角度',
+    '会求两根指针之间的夹角',
+    '认识三点、六点这些特殊时刻的角度',
+  ],
+
+  prerequisites: ['认识时钟', '知道角度是用度来量的'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '每天我们都在看时钟，可你有没有想过，钟面其实就是一个圆。' },
+        { id: 'intro-2', text: '一整圈是三百六十度，指针在上面转动，就是在画角。' },
+        { id: 'intro-3', text: '今天我们就来看看，时钟里藏着多少有趣的角度。' },
+      ],
+    },
+    {
+      id: 'hands',
+      type: 'concept',
+      title: '两根指针的速度',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'hands-1', text: '钟面被平均分成六十小格，分针每走一格是一分钟。' },
+        { id: 'hands-2', text: '三百六十度除以六十，所以分针每分钟转过六度。' },
+        { id: 'hands-3', text: '时针慢得多，一个小时才走一大格，也就是三百六十除以十二，等于三十度。' },
+      ],
+    },
+    {
+      id: 'angle',
+      type: 'concept',
+      title: '两针的夹角',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'angle-1', text: '想知道两根指针之间的角度，只要先算出它们各自转了多少度。' },
+        { id: 'angle-2', text: '再把两个角度相减，取较小的那一个，就是它们的夹角。' },
+        { id: 'angle-3', text: '要注意，时针在走的时候，每过一分钟还会悄悄多走半度。' },
+      ],
+    },
+    {
+      id: 'special',
+      type: 'concept',
+      title: '特殊的时刻',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'special-1', text: '三点整的时候，分针指十二，时针指三，夹角正好是九十度，一个标准的直角。' },
+        { id: 'special-2', text: '六点整两针拉成一条直线，夹角是一百八十度。' },
+        { id: 'special-3', text: '十二点整两针完全重合，夹角是零度。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手试一试',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '切换不同的时刻，看看指针怎么转，夹角怎么变。' },
+        { id: 'int-2', text: '试试三点一刻，分针到了三，可时针已经悄悄偏离，夹角只有七点五度。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '钟面是一个圆，分针每分钟六度，时针每小时三十度。' },
+        { id: 'sum-2', text: '两针角度相减取较小的，就得到夹角。' },
+        { id: 'sum-3', text: '原来生活里天天见的时钟，就是一堂角度课，我们下次再见！' },
+      ],
+    },
+  ],
+}

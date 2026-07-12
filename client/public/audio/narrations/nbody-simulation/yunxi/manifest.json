@@ -1,0 +1,189 @@
+{
+  "script_id": "nbody-simulation",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/intro-intro-1.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "夜空中的每一颗星，都在被其它所有天体拉扯着。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/intro-intro-2.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "这种彼此牵引的运动，就是 N 体引力问题。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/intro-intro-3.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "规则简单到只有一条万有引力定律，结果却可以复杂到无法预测。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "law",
+      "line_id": "law-1",
+      "filename": "law-law-1.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/law-law-1.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "任意两个质点之间的引力，正比于它们质量的乘积，反比于距离的平方。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "law",
+      "line_id": "law-2",
+      "filename": "law-law-2.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/law-law-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "每个天体受到的合力，是其它所有天体引力的向量叠加。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "law",
+      "line_id": "law-3",
+      "filename": "law-law-3.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/law-law-3.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "把合力除以质量得到加速度，就能一步步推进整个系统的运动。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "twobody",
+      "line_id": "two-1",
+      "filename": "twobody-two-1.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/twobody-two-1.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "当系统里只有两个天体时，问题可以被完全解出来。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "twobody",
+      "line_id": "two-2",
+      "filename": "twobody-two-2.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/twobody-two-2.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "它们绕着共同的质心运动，轨道是规整的椭圆或圆。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "twobody",
+      "line_id": "two-3",
+      "filename": "twobody-two-3.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/twobody-two-3.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "这就是行星绕恒星、月亮绕地球背后那份可预测的优雅。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "chaos",
+      "line_id": "chaos-1",
+      "filename": "chaos-chaos-1.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/chaos-chaos-1.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "可一旦加进第三个天体，情况就彻底改变了。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "chaos",
+      "line_id": "chaos-2",
+      "filename": "chaos-chaos-2.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/chaos-chaos-2.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "三体问题没有一般的解析解，绝大多数轨道都是混沌的。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "chaos",
+      "line_id": "chaos-3",
+      "filename": "chaos-chaos-3.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/chaos-chaos-3.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "初始位置哪怕只差万分之一，长期演化也会截然不同。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "chaos",
+      "line_id": "chaos-4",
+      "filename": "chaos-chaos-4.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/chaos-chaos-4.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "只有少数特殊的初值，才能走出像八字这样的周期性轨道。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/interaction-int-1.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "切换不同的预设，看双星、恒星行星和三体各自如何演化。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/interaction-int-2.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "留意屏幕上的总能量，好的数值积分会让它始终保持稳定。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/summary-sum-1.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "同一条引力定律，两体优雅可解，三体混沌难测。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/summary-sum-2.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "守恒律是检验仿真是否可信的标尺。"
+    },
+    {
+      "script_id": "nbody-simulation",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/nbody-simulation/yunxi/summary-sum-3.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "简单规则涌现复杂世界，这正是引力的魅力，我们下次再见。"
+    }
+  ],
+  "total_duration": 36.89,
+  "total_size": 590256
+}

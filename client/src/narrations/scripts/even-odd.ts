@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 奇偶数与整除 - 口播稿件
+ * 核心概念：奇偶判定、奇偶运算规律、整除与倍数
+ * 目标受众：小学以上
+ */
+export const evenOddNarration: NarrationScript = {
+  id: 'even-odd',
+  title: '奇偶数与整除',
+  subtitle: '藏在数字里的规律',
+  difficulty: 'beginner',
+  targetAge: '小学以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-12',
+    updatedAt: '2026-07-12',
+  },
+
+  objectives: [
+    '理解奇数和偶数的定义',
+    '掌握奇偶数在加法和乘法中的规律',
+    '理解整除与倍数的含义',
+    '学会用数格观察数的规律',
+  ],
+
+  prerequisites: ['会数数', '了解加法和乘法'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '我们每天都在和数字打交道，可你注意过吗，数字其实分成两大家族。' },
+        { id: 'intro-2', text: '一个叫偶数，一个叫奇数。它们藏着许多有趣的规律。' },
+        { id: 'intro-3', text: '今天，我们就把数字排成方格，一眼看清这些规律。' },
+      ],
+    },
+    {
+      id: 'parity',
+      type: 'concept',
+      title: '什么是奇偶',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'parity-1', text: '能被二整除的数，就是偶数，比如二、四、六、八。' },
+        { id: 'parity-2', text: '不能被二整除的数，就是奇数，比如一、三、五、七。' },
+        { id: 'parity-3', text: '看方格里，偶数被点亮，一个隔一个，整整齐齐。' },
+      ],
+    },
+    {
+      id: 'rules',
+      type: 'concept',
+      title: '奇偶运算规律',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'rules-1', text: '奇偶数相加也有规律：偶数加偶数还是偶数，奇数加奇数也是偶数。' },
+        { id: 'rules-2', text: '可是一个奇数加一个偶数，结果就变成了奇数。' },
+        { id: 'rules-3', text: '相乘时，只要有一个偶数，积就是偶数；两个都是奇数，积才是奇数。' },
+      ],
+    },
+    {
+      id: 'divide',
+      type: 'concept',
+      title: '整除与倍数',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'divide-1', text: '如果一个数除以另一个数，余数是零，我们就说它能被整除。' },
+        { id: 'divide-2', text: '换成除以三来点亮，你会看到三的倍数，每隔两个出现一次。' },
+        { id: 'divide-3', text: '除以五时，点亮的都是个位是零或五的数，规律一目了然。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '切换不同的除数，看看方格上点亮的花纹怎么变化。' },
+        { id: 'int-2', text: '数一数每种除数点亮了多少个，试着找出其中的规律。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '偶数能被二整除，奇数不能，它们的加法和乘法都有固定规律。' },
+        { id: 'sum-2', text: '整除就是余数为零，被整除的数正是那个除数的倍数。' },
+        { id: 'sum-3', text: '把数字排成格子，规律就藏在花纹里。我们下次再见！' },
+      ],
+    },
+  ],
+}

@@ -1,0 +1,189 @@
+{
+  "script_id": "wavelet",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "wavelet",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.75,
+      "size": 44064,
+      "text": "傅里叶变换能告诉我们信号里有哪些频率，却说不清这些频率出现在什么时刻。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "因为它用的是从负无穷延伸到正无穷的正弦波，天生没有时间的概念。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/intro-intro-3.mp3",
+      "duration": 3.34,
+      "size": 53424,
+      "text": "小波变换换了一种基函数，一个又短又会迅速衰减的小波，于是时间和频率可以被同时看见。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "concept-mother",
+      "line_id": "mother-1",
+      "filename": "concept-mother-mother-1.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/concept-mother-mother-1.mp3",
+      "duration": 2.9,
+      "size": 46368,
+      "text": "一切从一个母小波开始，它形状固定，均值为零，能量集中在很小的一段区间内。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "concept-mother",
+      "line_id": "mother-2",
+      "filename": "concept-mother-mother-2.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/concept-mother-mother-2.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "我们把它沿时间轴平移，去对齐信号的不同位置，这决定了在什么时刻分析。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "concept-mother",
+      "line_id": "mother-3",
+      "filename": "concept-mother-mother-3.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/concept-mother-mother-3.mp3",
+      "duration": 3.02,
+      "size": 48384,
+      "text": "再把它横向伸缩，尺度越小小波越窄对应高频，尺度越大小波越宽对应低频。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "concept-mother",
+      "line_id": "mother-4",
+      "filename": "concept-mother-mother-4.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/concept-mother-mother-4.mp3",
+      "duration": 2.87,
+      "size": 45936,
+      "text": "小波与信号的每一次内积，就是一个小波系数，衡量此时此频与信号的匹配程度。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "concept-scaleogram",
+      "line_id": "scale-1",
+      "filename": "concept-scaleogram-scale-1.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/concept-scaleogram-scale-1.mp3",
+      "duration": 3.13,
+      "size": 50112,
+      "text": "把所有位置和所有尺度的系数铺成一张图，横轴是时间，纵轴是尺度，这就是尺度图。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "concept-scaleogram",
+      "line_id": "scale-2",
+      "filename": "concept-scaleogram-scale-2.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/concept-scaleogram-scale-2.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "颜色越亮，代表该时刻该尺度上的能量越强，信号的结构一目了然。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "concept-scaleogram",
+      "line_id": "scale-3",
+      "filename": "concept-scaleogram-scale-3.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/concept-scaleogram-scale-3.mp3",
+      "duration": 2.96,
+      "size": 47376,
+      "text": "一个突然出现的尖峰，会在高频那一侧留下一条清晰的竖线，精确指出它发生的时刻。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "concept-haar",
+      "line_id": "haar-1",
+      "filename": "concept-haar-haar-1.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/concept-haar-haar-1.mp3",
+      "duration": 2.86,
+      "size": 45792,
+      "text": "最简单的小波是 Haar 小波，它把相邻两个样本取平均得到近似，取差得到细节。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "concept-haar",
+      "line_id": "haar-2",
+      "filename": "concept-haar-haar-2.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/concept-haar-haar-2.mp3",
+      "duration": 2.74,
+      "size": 43776,
+      "text": "对近似部分反复做同样的操作，信号就被拆成从粗到细的多个分辨率层次。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "concept-haar",
+      "line_id": "haar-3",
+      "filename": "concept-haar-haar-3.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/concept-haar-haar-3.mp3",
+      "duration": 2.67,
+      "size": 42768,
+      "text": "由于这是一组正交基，整个过程能量守恒，并且可以完美地重构出原始信号。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "换上啁啾信号，它的频率随时间不断升高，尺度图上会出现一条漂亮的斜带。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.78,
+      "size": 44496,
+      "text": "再试试双频突变信号，注意小波如何精准地标出前后两段频率的切换时刻。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.94,
+      "size": 47088,
+      "text": "小波用平移定位时间，用伸缩选择频率，突破了傅里叶只见频率不见时间的局限。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "从图像压缩到地震分析，小波已经成为处理非平稳信号的有力工具。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/wavelet/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "在时间与频率之间自由穿梭，这正是小波变换的魅力，我们下次再见。"
+    }
+  ],
+  "total_duration": 50.42,
+  "total_size": 806688
+}

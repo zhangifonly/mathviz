@@ -1,0 +1,165 @@
+{
+  "id": "nbody-simulation",
+  "title": "N 体引力仿真",
+  "subtitle": "从两体的优雅到三体的混沌",
+  "difficulty": "expert",
+  "targetAge": "研究生以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-12",
+    "updatedAt": "2026-07-12"
+  },
+  "objectives": [
+    "理解牛顿万有引力如何决定多体系统的运动",
+    "认识两体问题的可解性与三体问题的混沌本质",
+    "掌握数值积分中能量与动量守恒的意义",
+    "体会初始条件的微小差异如何被放大"
+  ],
+  "prerequisites": [
+    "牛顿力学",
+    "常微分方程",
+    "向量运算"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "夜空中的每一颗星，都在被其它所有天体拉扯着。"
+        },
+        {
+          "id": "intro-2",
+          "text": "这种彼此牵引的运动，就是 N 体引力问题。"
+        },
+        {
+          "id": "intro-3",
+          "text": "规则简单到只有一条万有引力定律，结果却可以复杂到无法预测。"
+        }
+      ]
+    },
+    {
+      "id": "law",
+      "type": "concept",
+      "title": "万有引力定律",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "law-1",
+          "text": "任意两个质点之间的引力，正比于它们质量的乘积，反比于距离的平方。"
+        },
+        {
+          "id": "law-2",
+          "text": "每个天体受到的合力，是其它所有天体引力的向量叠加。"
+        },
+        {
+          "id": "law-3",
+          "text": "把合力除以质量得到加速度，就能一步步推进整个系统的运动。"
+        }
+      ]
+    },
+    {
+      "id": "twobody",
+      "type": "concept",
+      "title": "优雅的两体",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "two-1",
+          "text": "当系统里只有两个天体时，问题可以被完全解出来。"
+        },
+        {
+          "id": "two-2",
+          "text": "它们绕着共同的质心运动，轨道是规整的椭圆或圆。"
+        },
+        {
+          "id": "two-3",
+          "text": "这就是行星绕恒星、月亮绕地球背后那份可预测的优雅。"
+        }
+      ]
+    },
+    {
+      "id": "chaos",
+      "type": "concept",
+      "title": "三体的混沌",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "chaos-1",
+          "text": "可一旦加进第三个天体，情况就彻底改变了。"
+        },
+        {
+          "id": "chaos-2",
+          "text": "三体问题没有一般的解析解，绝大多数轨道都是混沌的。"
+        },
+        {
+          "id": "chaos-3",
+          "text": "初始位置哪怕只差万分之一，长期演化也会截然不同。"
+        },
+        {
+          "id": "chaos-4",
+          "text": "只有少数特殊的初值，才能走出像八字这样的周期性轨道。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手仿真",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换不同的预设，看双星、恒星行星和三体各自如何演化。"
+        },
+        {
+          "id": "int-2",
+          "text": "留意屏幕上的总能量，好的数值积分会让它始终保持稳定。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "同一条引力定律，两体优雅可解，三体混沌难测。"
+        },
+        {
+          "id": "sum-2",
+          "text": "守恒律是检验仿真是否可信的标尺。"
+        },
+        {
+          "id": "sum-3",
+          "text": "简单规则涌现复杂世界，这正是引力的魅力，我们下次再见。"
+        }
+      ]
+    }
+  ]
+}

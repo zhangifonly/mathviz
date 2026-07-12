@@ -1,0 +1,169 @@
+{
+  "script_id": "gram-schmidt",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/intro-intro-1.mp3",
+      "duration": 2.63,
+      "size": 42048,
+      "text": "我们常常拿到一组线性无关的向量，它们能张成空间，却彼此歪斜、不垂直。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/intro-intro-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "很多计算，比如求投影、做分解，都希望基是互相垂直的。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/intro-intro-3.mp3",
+      "duration": 2.67,
+      "size": 42768,
+      "text": "施密特正交化就是一台机器，把任意一组基改造成互相垂直的标准正交基。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "projection",
+      "line_id": "proj-1",
+      "filename": "projection-proj-1.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/projection-proj-1.mp3",
+      "duration": 2.61,
+      "size": 41760,
+      "text": "先看投影。一个向量在另一个向量方向上的影子，就是它的正交投影。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "projection",
+      "line_id": "proj-2",
+      "filename": "projection-proj-2.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/projection-proj-2.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "投影等于两向量的点积，除以被投影向量的模长平方，再乘以那个向量。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "projection",
+      "line_id": "proj-3",
+      "filename": "projection-proj-3.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/projection-proj-3.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "把原向量减去这个投影，剩下的部分就一定和投影方向垂直。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "orthogonalize",
+      "line_id": "orth-1",
+      "filename": "orthogonalize-orth-1.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/orthogonalize-orth-1.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "第一个向量原样保留，作为第一个正交向量。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "orthogonalize",
+      "line_id": "orth-2",
+      "filename": "orthogonalize-orth-2.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/orthogonalize-orth-2.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "第二个向量，减去它在第一个向量上的投影，得到与之垂直的新向量。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "orthogonalize",
+      "line_id": "orth-3",
+      "filename": "orthogonalize-orth-3.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/orthogonalize-orth-3.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "后面每个向量，都减去它在前面所有正交向量上的投影，依次垂直。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "normalize",
+      "line_id": "norm-1",
+      "filename": "normalize-norm-1.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/normalize-norm-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "现在这组向量已经两两垂直，但长度还各不相同。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "normalize",
+      "line_id": "norm-2",
+      "filename": "normalize-norm-2.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/normalize-norm-2.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "把每个向量除以自己的模长，长度都变成一，就得到了标准正交基。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/interaction-int-1.mp3",
+      "duration": 2.52,
+      "size": 40320,
+      "text": "换一组输入向量，看红色的投影和绿色的正交结果如何随之变化。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/interaction-int-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "不管起点多么歪斜，最终两条基总是严丝合缝地垂直。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/summary-sum-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "施密特正交化靠减去投影，把歪斜的基一步步扶正。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/summary-sum-2.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "再单位化，就得到互相垂直、长度为一的标准正交基。"
+    },
+    {
+      "script_id": "gram-schmidt",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/gram-schmidt/yunxi/summary-sum-3.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "它是最小二乘、QR 分解等许多方法的基石，我们下次再见！"
+    }
+  ],
+  "total_duration": 36.19,
+  "total_size": 579312
+}
