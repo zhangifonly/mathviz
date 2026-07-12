@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 素数螺旋（乌拉姆螺旋） - 口播稿件
+ * 核心概念：素数分布、二次多项式、对角线聚集
+ * 目标受众：初中及以上
+ */
+export const ulamSpiralNarration: NarrationScript = {
+  id: 'ulam-spiral',
+  title: '素数螺旋',
+  subtitle: '随手涂鸦中藏着的素数秘密',
+  difficulty: 'intermediate',
+  targetAge: '初中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-06-23',
+    updatedAt: '2026-06-23',
+  },
+
+  objectives: [
+    '了解乌拉姆螺旋的构造方式',
+    '观察素数在螺旋上的对角线聚集现象',
+    '理解对角线与二次多项式的关系',
+    '感受素数分布的神秘与未解之谜',
+  ],
+
+  prerequisites: ['了解素数概念', '了解坐标网格'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '1963 年，数学家乌拉姆在一场无聊的会议上随手涂鸦。' },
+        { id: 'intro-2', text: '他把自然数 1、2、3，按正方形螺旋一圈圈写下来。' },
+        { id: 'intro-3', text: '然后把所有素数圈出来，结果让他大吃一惊。' },
+        { id: 'intro-4', text: '素数竟然不是随机散布，而是排在一条条清晰的对角线上。' },
+      ],
+    },
+    {
+      id: 'build',
+      type: 'concept',
+      title: '螺旋的构造',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'build-1', text: '从中心的 1 开始，向右走一格写 2，再向上、向左、向下，一圈圈展开。' },
+        { id: 'build-2', text: '每个自然数都占据网格里唯一的位置。' },
+        { id: 'build-3', text: '我们把素数标成金色，合数留暗，让规律自己浮现出来。' },
+      ],
+    },
+    {
+      id: 'pattern',
+      type: 'concept',
+      title: '对角线之谜',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'pat-1', text: '看，金色的点明显聚集在一些斜线上，而不是均匀铺满。' },
+        { id: 'pat-2', text: '这些对角线，对应着像 n 平方加 n 加 41 这样的二次多项式。' },
+        { id: 'pat-3', text: '某些二次多项式能连续产生大量素数，这正是对角线的来源。' },
+      ],
+    },
+    {
+      id: 'mystery',
+      type: 'concept',
+      title: '未解之谜',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'mys-1', text: '为什么会这样？素数的精确分布，至今没有完整答案。' },
+        { id: 'mys-2', text: '它牵连着数学皇冠上的明珠——黎曼猜想。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '切换不同的网格规模，看对角线在更大尺度上是否依然清晰。' },
+        { id: 'int-2', text: '观察素数占比，随着数字增大，素数会越来越稀疏。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '乌拉姆螺旋让素数的对角线聚集现象一目了然。' },
+        { id: 'sum-2', text: '对角线背后是能产生素数的二次多项式。' },
+        { id: 'sum-3', text: '一个随手涂鸦，连接着最深刻的数学之谜，我们下次再见！' },
+      ],
+    },
+  ],
+}

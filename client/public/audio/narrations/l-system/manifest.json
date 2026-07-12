@@ -1,0 +1,183 @@
+{
+  "script_id": "l-system",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "l-system",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/l-system/intro-intro-1.mp3",
+      "duration": 2.52,
+      "size": 40320,
+      "text": "一棵蕨、一株小草，看起来复杂，却可能只由几条简单规则生成。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/l-system/intro-intro-2.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "1968 年，生物学家林登迈尔提出了 L-系统，用来描述植物的生长。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/l-system/intro-intro-3.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "它的想法是：从一个字母出发，不断按规则替换，再把结果画出来。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/l-system/intro-intro-4.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "今天，我们就用几条规则，亲手种出一株分形植物。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "rewrite",
+      "line_id": "rw-1",
+      "filename": "rewrite-rw-1.mp3",
+      "path": "audio/narrations/l-system/rewrite-rw-1.mp3",
+      "duration": 1.46,
+      "size": 23328,
+      "text": "从一个起始字符串开始，叫做公理。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "rewrite",
+      "line_id": "rw-2",
+      "filename": "rewrite-rw-2.mp3",
+      "path": "audio/narrations/l-system/rewrite-rw-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "每条规则告诉我们：遇到某个字母，就把它替换成一串新字母。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "rewrite",
+      "line_id": "rw-3",
+      "filename": "rewrite-rw-3.mp3",
+      "path": "audio/narrations/l-system/rewrite-rw-3.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "反复替换几次，字符串迅速变长，蕴含着越来越多的细节。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "turtle",
+      "line_id": "tt-1",
+      "filename": "turtle-tt-1.mp3",
+      "path": "audio/narrations/l-system/turtle-tt-1.mp3",
+      "duration": 1.41,
+      "size": 22608,
+      "text": "现在让一只小海龟来读这串字母。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "turtle",
+      "line_id": "tt-2",
+      "filename": "turtle-tt-2.mp3",
+      "path": "audio/narrations/l-system/turtle-tt-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "遇到 F 就向前画一段，遇到加号减号就左转右转。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "turtle",
+      "line_id": "tt-3",
+      "filename": "turtle-tt-3.mp3",
+      "path": "audio/narrations/l-system/turtle-tt-3.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "方括号是关键：左括号记下当前位置，右括号跳回去，这就实现了分叉。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "recursion",
+      "line_id": "rec-1",
+      "filename": "recursion-rec-1.mp3",
+      "path": "audio/narrations/l-system/recursion-rec-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "因为规则不断套用自身，植物的每根枝条，都长得像整棵树。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "recursion",
+      "line_id": "rec-2",
+      "filename": "recursion-rec-2.mp3",
+      "path": "audio/narrations/l-system/recursion-rec-2.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "这种自相似，正是分形和真实植物共有的秘密。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/l-system/interaction-int-1.mp3",
+      "duration": 2.59,
+      "size": 41472,
+      "text": "切换不同的预设，看科赫曲线、龙形曲线如何从同样的机制中长出。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/l-system/interaction-int-2.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "观察左边的规则，体会这么短的规则怎么生成这么繁复的图形。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/l-system/summary-sum-1.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "L-系统用重写规则加海龟作图，把字符串变成图形。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/l-system/summary-sum-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "括号实现分叉，递归带来自相似的生命形态。"
+    },
+    {
+      "script_id": "l-system",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/l-system/summary-sum-3.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "简单规则孕育复杂之美，正是数学最迷人的地方，我们下次再见！"
+    }
+  ],
+  "total_duration": 37.19,
+  "total_size": 595440,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

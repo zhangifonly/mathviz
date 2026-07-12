@@ -23,6 +23,7 @@ const navCategories: NavCategory[] = [
       { path: '/set-theory', label: '集合论', icon: '⭕' },
       { path: '/golden-ratio', label: '黄金分割', icon: '🐚' },
       { path: '/number-theory', label: '数论探索', icon: '🔢' },
+      { path: '/pascal-triangle', label: '帕斯卡三角', icon: '🔺' },
     ],
   },
   {
@@ -36,6 +37,7 @@ const navCategories: NavCategory[] = [
       { path: '/polar', label: '极坐标图形', icon: '🌸' },
       { path: '/probability', label: '概率分布', icon: '🎲' },
       { path: '/bezier', label: '贝塞尔曲线', icon: '✏️' },
+      { path: '/cycloid', label: '旋轮线家族', icon: '🎡' },
       { path: '/monte-carlo', label: '蒙特卡洛', icon: '🎯' },
     ],
   },
@@ -48,6 +50,8 @@ const navCategories: NavCategory[] = [
       { path: '/taylor', label: '泰勒级数', icon: 'Σ' },
       { path: '/complex', label: '复数与复平面', icon: 'ℂ' },
       { path: '/parametric', label: '参数方程', icon: '〰️' },
+      { path: '/lissajous', label: '利萨茹与玫瑰', icon: '🌹' },
+      { path: '/ulam-spiral', label: '素数螺旋', icon: '🌀' },
       { path: '/vector-field', label: '向量场', icon: '➡️' },
       { path: '/numerical-integration', label: '数值积分', icon: '∫' },
       { path: '/interpolation', label: '插值方法', icon: '📈' },
@@ -80,11 +84,13 @@ const navCategories: NavCategory[] = [
     items: [
       { path: '/chaos', label: '混沌理论', icon: '🦋' },
       { path: '/fractal', label: '分形几何', icon: '🌀' },
+      { path: '/l-system', label: 'L-系统植物', icon: '🌿' },
       { path: '/game-theory', label: '博弈论', icon: '🎮' },
       { path: '/wave-equation', label: '波动方程', icon: '🌊' },
       { path: '/heat-equation', label: '热传导方程', icon: '🔥' },
       { path: '/random-walk', label: '随机游走', icon: '🚶' },
       { path: '/graph-theory', label: '图论基础', icon: '🕸️' },
+      { path: '/voronoi', label: '沃罗诺伊图', icon: '🔷' },
     ],
   },
 ]

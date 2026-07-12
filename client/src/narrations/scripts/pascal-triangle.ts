@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 帕斯卡三角染色 - 口播稿件
+ * 核心概念：二项式系数、奇偶染色、谢尔宾斯基分形
+ * 目标受众：初中及以上
+ */
+export const pascalTriangleNarration: NarrationScript = {
+  id: 'pascal-triangle',
+  title: '帕斯卡三角染色',
+  subtitle: '二项式系数里涌现的分形',
+  difficulty: 'elementary',
+  targetAge: '初中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-06-23',
+    updatedAt: '2026-06-23',
+  },
+
+  objectives: [
+    '理解帕斯卡三角与二项式系数',
+    '观察奇偶染色涌现的谢尔宾斯基三角',
+    '理解分形与自相似的递归本质',
+    '感受数与形之间的深刻联系',
+  ],
+
+  prerequisites: ['了解加法', '了解奇偶数'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '这是帕斯卡三角，也叫杨辉三角，一个看起来再简单不过的数字表。' },
+        { id: 'intro-2', text: '顶上是 1，每个数都等于它上方两个数之和。' },
+        { id: 'intro-3', text: '可就是这么简单的规则，藏着一个惊人的秘密。' },
+        { id: 'intro-4', text: '只要给它涂上颜色，一个著名的分形就会自己浮现出来。' },
+      ],
+    },
+    {
+      id: 'build',
+      type: 'concept',
+      title: '三角的构造',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'build-1', text: '第 n 行的数，正是二项式 a 加 b 的 n 次方展开的系数。' },
+        { id: 'build-2', text: '1，1 1，1 2 1，1 3 3 1，规律清晰而优美。' },
+        { id: 'build-3', text: '现在，我们对每个数做一件事：判断它是奇数还是偶数。' },
+      ],
+    },
+    {
+      id: 'sierpinski',
+      type: 'concept',
+      title: '谢尔宾斯基涌现',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sier-1', text: '把奇数涂成亮色，偶数留黑，奇迹发生了。' },
+        { id: 'sier-2', text: '一个由无数小三角组成的大三角浮现出来，这就是谢尔宾斯基三角。' },
+        { id: 'sier-3', text: '它在任意尺度上都和整体相似，这正是分形的标志。' },
+      ],
+    },
+    {
+      id: 'why',
+      type: 'concept',
+      title: '为什么是分形',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'why-1', text: '奇偶性的传递遵循一种递归规则，让图案不断自我复制。' },
+        { id: 'why-2', text: '换成除以 3、除以 5 的余数染色，会涌现出更精细的自相似结构。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '切换不同的模数，看图案如何从二进分形变成三进、五进分形。' },
+        { id: 'int-2', text: '盯住任意一个小三角，它和整个大三角的形状完全一样。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '帕斯卡三角的数是二项式系数，奇偶染色得到谢尔宾斯基三角。' },
+        { id: 'sum-2', text: '简单的加法规则，递归出无穷的自相似分形。' },
+        { id: 'sum-3', text: '数与形在这里完美交融，我们下次再见！' },
+      ],
+    },
+  ],
+}

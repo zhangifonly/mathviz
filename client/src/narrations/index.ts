@@ -61,6 +61,12 @@ export { eulerIdentityNarration } from './scripts/euler-identity'
 export { threeBodyNarration } from './scripts/three-body'
 export { reactionDiffusionNarration } from './scripts/reaction-diffusion'
 export { mobiusNarration } from './scripts/mobius'
+export { cycloidNarration } from './scripts/cycloid'
+export { lissajousNarration } from './scripts/lissajous'
+export { ulamSpiralNarration } from './scripts/ulam-spiral'
+export { pascalTriangleNarration } from './scripts/pascal-triangle'
+export { voronoiNarration } from './scripts/voronoi'
+export { lSystemNarration } from './scripts/l-system'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -114,6 +120,12 @@ import { eulerIdentityNarration } from './scripts/euler-identity'
 import { threeBodyNarration } from './scripts/three-body'
 import { reactionDiffusionNarration } from './scripts/reaction-diffusion'
 import { mobiusNarration } from './scripts/mobius'
+import { cycloidNarration } from './scripts/cycloid'
+import { lissajousNarration } from './scripts/lissajous'
+import { ulamSpiralNarration } from './scripts/ulam-spiral'
+import { pascalTriangleNarration } from './scripts/pascal-triangle'
+import { voronoiNarration } from './scripts/voronoi'
+import { lSystemNarration } from './scripts/l-system'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -171,6 +183,12 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'three-body': threeBodyNarration,
   'reaction-diffusion': reactionDiffusionNarration,
   'mobius': mobiusNarration,
+  'cycloid': cycloidNarration,
+  'lissajous': lissajousNarration,
+  'ulam-spiral': ulamSpiralNarration,
+  'pascal-triangle': pascalTriangleNarration,
+  'voronoi': voronoiNarration,
+  'l-system': lSystemNarration,
 }
 
 // 获取稿件
