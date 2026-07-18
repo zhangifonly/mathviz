@@ -1,0 +1,149 @@
+{
+  "script_id": "gaussian-mixture",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "gaussian-mixture",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/gaussian-mixture/yunxi/intro-intro-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "可我们只看到混在一起的点，并不知道谁属于哪一群。"
+    },
+    {
+      "script_id": "gaussian-mixture",
+      "section_id": "model",
+      "line_id": "def-1",
+      "filename": "model-def-1.mp3",
+      "path": "audio/narrations/gaussian-mixture/yunxi/model-def-1.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "高斯混合模型假设，数据由几个高斯分布按权重混合生成。"
+    },
+    {
+      "script_id": "gaussian-mixture",
+      "section_id": "model",
+      "line_id": "def-2",
+      "filename": "model-def-2.mp3",
+      "path": "audio/narrations/gaussian-mixture/yunxi/model-def-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "每个分量有自己的均值、标准差和一份权重。"
+    },
+    {
+      "script_id": "gaussian-mixture",
+      "section_id": "model",
+      "line_id": "def-3",
+      "filename": "model-def-3.mp3",
+      "path": "audio/narrations/gaussian-mixture/yunxi/model-def-3.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "把它们加权叠加，就得到那条拟合整体数据的混合曲线。"
+    },
+    {
+      "script_id": "gaussian-mixture",
+      "section_id": "em",
+      "line_id": "em-1",
+      "filename": "em-em-1.mp3",
+      "path": "audio/narrations/gaussian-mixture/yunxi/em-em-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "难点在于：既不知道分量参数，也不知道每点的归属。"
+    },
+    {
+      "script_id": "gaussian-mixture",
+      "section_id": "em",
+      "line_id": "em-2",
+      "filename": "em-em-2.mp3",
+      "path": "audio/narrations/gaussian-mixture/yunxi/em-em-2.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "E 步先假定参数，算出每个点属于各分量的概率，叫做责任度。"
+    },
+    {
+      "script_id": "gaussian-mixture",
+      "section_id": "em",
+      "line_id": "em-3",
+      "filename": "em-em-3.mp3",
+      "path": "audio/narrations/gaussian-mixture/yunxi/em-em-3.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "M 步再用责任度加权，重新估计每个分量的均值方差和权重。"
+    },
+    {
+      "script_id": "gaussian-mixture",
+      "section_id": "converge",
+      "line_id": "conv-1",
+      "filename": "converge-conv-1.mp3",
+      "path": "audio/narrations/gaussian-mixture/yunxi/converge-conv-1.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "两步交替进行，对数似然每一轮都不会下降。"
+    },
+    {
+      "script_id": "gaussian-mixture",
+      "section_id": "converge",
+      "line_id": "conv-2",
+      "filename": "converge-conv-2.mp3",
+      "path": "audio/narrations/gaussian-mixture/yunxi/converge-conv-2.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "分量像磁铁一样，慢慢滑向数据中各自的簇。"
+    },
+    {
+      "script_id": "gaussian-mixture",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/gaussian-mixture/yunxi/interaction-int-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "点击单步 EM，看每一次迭代分量如何移动、如何收窄。"
+    },
+    {
+      "script_id": "gaussian-mixture",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/gaussian-mixture/yunxi/interaction-int-2.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "换一个数据种子，再看算法从零把簇重新分离出来。"
+    },
+    {
+      "script_id": "gaussian-mixture",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/gaussian-mixture/yunxi/summary-sum-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "高斯混合模型用若干高斯的加权和刻画复杂数据。"
+    },
+    {
+      "script_id": "gaussian-mixture",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/gaussian-mixture/yunxi/summary-sum-2.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "EM 算法在 E 步算责任、M 步更新参数间交替逼近。"
+    },
+    {
+      "script_id": "gaussian-mixture",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/gaussian-mixture/yunxi/summary-sum-3.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "简单两步，就让隐藏的簇浮现出来，我们下次再见！"
+    }
+  ],
+  "total_duration": 29.01,
+  "total_size": 464112
+}

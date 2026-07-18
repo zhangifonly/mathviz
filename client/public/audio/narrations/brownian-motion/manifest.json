@@ -1,0 +1,183 @@
+{
+  "script_id": "brownian-motion",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "brownian-motion",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/brownian-motion/intro-intro-1.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "1827年，植物学家布朗透过显微镜，看见水中的花粉不停颤动。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/brownian-motion/intro-intro-2.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "它们没有生命，却像着了魔一样，永不停歇地随机舞动。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/brownian-motion/intro-intro-3.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "这背后是无数看不见的水分子，在四面八方撞击它。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "increment",
+      "line_id": "inc-1",
+      "filename": "increment-inc-1.mp3",
+      "path": "audio/narrations/brownian-motion/increment-inc-1.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "我们把这种运动理解成一步步的随机漫步。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "increment",
+      "line_id": "inc-2",
+      "filename": "increment-inc-2.mp3",
+      "path": "audio/narrations/brownian-motion/increment-inc-2.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "每一步的位移，是一个均值为零的高斯随机数。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "increment",
+      "line_id": "inc-3",
+      "filename": "increment-inc-3.mp3",
+      "path": "audio/narrations/brownian-motion/increment-inc-3.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "把这些独立的增量不断累加，就画出了曲折的布朗轨迹。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "variance",
+      "line_id": "var-1",
+      "filename": "variance-var-1.mp3",
+      "path": "audio/narrations/brownian-motion/variance-var-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "因为每步相互独立，位置的方差等于各步方差之和。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "variance",
+      "line_id": "var-2",
+      "filename": "variance-var-2.mp3",
+      "path": "audio/narrations/brownian-motion/variance-var-2.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "于是方差随时间线性增长，走得越久，散得越开。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "variance",
+      "line_id": "var-3",
+      "filename": "variance-var-3.mp3",
+      "path": "audio/narrations/brownian-motion/variance-var-3.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "典型的偏离距离，正比于时间的平方根。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "nondiff",
+      "line_id": "nd-1",
+      "filename": "nondiff-nd-1.mp3",
+      "path": "audio/narrations/brownian-motion/nondiff-nd-1.mp3",
+      "duration": 1.49,
+      "size": 23904,
+      "text": "布朗轨迹是连续的，笔尖从不离开纸面。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "nondiff",
+      "line_id": "nd-2",
+      "filename": "nondiff-nd-2.mp3",
+      "path": "audio/narrations/brownian-motion/nondiff-nd-2.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "可无论放大多少倍，它依然锯齿密布，处处求不出切线的斜率。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "nondiff",
+      "line_id": "nd-3",
+      "filename": "nondiff-nd-3.mp3",
+      "path": "audio/narrations/brownian-motion/nondiff-nd-3.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "这就是数学中著名的：处处连续，却处处不可导。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/brownian-motion/interaction-int-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "点击重新随机，每一次都生成一条独一无二的路径。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/brownian-motion/interaction-int-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "在一维和二维之间切换，感受随机漫步如何铺满平面。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/brownian-motion/summary-sum-1.mp3",
+      "duration": 1.48,
+      "size": 23616,
+      "text": "布朗运动由独立的高斯增量累加而成。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/brownian-motion/summary-sum-2.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "它的方差随时间线性增长，轨迹连续却处处不可导。"
+    },
+    {
+      "script_id": "brownian-motion",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/brownian-motion/summary-sum-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "从花粉到股价，随机之中自有规律，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.349999999999994,
+  "total_size": 517824,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

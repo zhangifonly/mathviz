@@ -1,0 +1,173 @@
+{
+  "script_id": "law-large-numbers",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/law-large-numbers/intro-intro-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "赌场里单局输赢难料，可为什么庄家几乎从不亏本？"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/law-large-numbers/intro-intro-2.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "秘密不在某一局，而藏在成千上万局的平均之中。"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/law-large-numbers/intro-intro-3.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "这背后，就是概率论里最著名的大数定律。"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "mean",
+      "line_id": "def-1",
+      "filename": "mean-def-1.mp3",
+      "path": "audio/narrations/law-large-numbers/mean-def-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "我们反复做同一个随机实验，比如掷骰子，把结果一个个记下来。"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "mean",
+      "line_id": "def-2",
+      "filename": "mean-def-2.mp3",
+      "path": "audio/narrations/law-large-numbers/mean-def-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "样本均值，就是把前 n 次的结果加起来，再除以 n。"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "mean",
+      "line_id": "def-3",
+      "filename": "mean-def-3.mp3",
+      "path": "audio/narrations/law-large-numbers/mean-def-3.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "掷一两次可能全是六点，均值偏得离谱，一点也不稳。"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "law",
+      "line_id": "law-1",
+      "filename": "law-law-1.mp3",
+      "path": "audio/narrations/law-large-numbers/law-law-1.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "但当次数越来越多，样本均值会稳稳地靠向一个数。"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "law",
+      "line_id": "law-2",
+      "filename": "law-law-2.mp3",
+      "path": "audio/narrations/law-large-numbers/law-law-2.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "这个数就是理论期望，掷骰子正好是三点五。"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "law",
+      "line_id": "law-3",
+      "filename": "law-law-3.mp3",
+      "path": "audio/narrations/law-large-numbers/law-law-3.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "样本量趋于无穷时，样本均值必然收敛到期望，这就是大数定律。"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "fluctuation",
+      "line_id": "flu-1",
+      "filename": "fluctuation-flu-1.mp3",
+      "path": "audio/narrations/law-large-numbers/fluctuation-flu-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "看曲线，开头几段上蹿下跳，随后摆动越来越小。"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "fluctuation",
+      "line_id": "flu-2",
+      "filename": "fluctuation-flu-2.mp3",
+      "path": "audio/narrations/law-large-numbers/fluctuation-flu-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "样本越多，偶然的偏差就被越多的数据摊薄、抵消掉。"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/law-large-numbers/interaction-int-1.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "换一种分布，抛硬币或均匀分布，红线会落到新的期望值。"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/law-large-numbers/interaction-int-2.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "把样本量调大，再重新采样，看多条曲线一起收拢向红线。"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/law-large-numbers/summary-sum-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "大数定律说：样本越多，样本均值越贴近理论期望。"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/law-large-numbers/summary-sum-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "单次充满偶然，海量数据却透出必然的规律。"
+    },
+    {
+      "script_id": "law-large-numbers",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/law-large-numbers/summary-sum-3.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "这正是统计与风险管理的基石，我们下次再见！"
+    }
+  ],
+  "total_duration": 31.919999999999998,
+  "total_size": 511056,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

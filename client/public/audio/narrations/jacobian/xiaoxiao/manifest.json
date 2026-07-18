@@ -1,0 +1,179 @@
+{
+  "script_id": "jacobian",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "jacobian",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "一个平面映射，能把整齐的方格网弯成螺旋、扇形或波浪。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "整体看它是弯曲的，可如果只盯着一个小方块呢？"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "放大再放大，那一小块几乎变回了平行四边形。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "local",
+      "line_id": "def-1",
+      "filename": "local-def-1.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/local-def-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "这就是微积分的核心思想：弯曲的东西，局部看都是线性的。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "local",
+      "line_id": "def-2",
+      "filename": "local-def-2.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/local-def-2.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "在某一点附近，映射近似成一次的拉伸加旋转。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "local",
+      "line_id": "def-3",
+      "filename": "local-def-3.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/local-def-3.mp3",
+      "duration": 1.54,
+      "size": 24624,
+      "text": "描述这份局部线性的，正是雅可比矩阵。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "matrix",
+      "line_id": "mat-1",
+      "filename": "matrix-mat-1.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/matrix-mat-1.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "把 x、y 分别对 u、v 求偏导，排成一个二乘二的矩阵。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "matrix",
+      "line_id": "mat-2",
+      "filename": "matrix-mat-2.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/matrix-mat-2.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "每一列告诉你，沿 u 或沿 v 走一步，像点朝哪个方向移动多远。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "matrix",
+      "line_id": "mat-3",
+      "filename": "matrix-mat-3.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/matrix-mat-3.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "这里我们用数值差分算偏导，对任何映射都通用。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "det",
+      "line_id": "det-1",
+      "filename": "det-det-1.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/det-det-1.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "雅可比矩阵的行列式，就是局部面积的缩放因子。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "det",
+      "line_id": "det-2",
+      "filename": "det-det-2.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/det-det-2.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "行列式大于一，小方块被放大；小于一，则被压缩。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "det",
+      "line_id": "det-3",
+      "filename": "det-det-3.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/det-det-3.mp3",
+      "duration": 2.38,
+      "size": 38160,
+      "text": "换元积分里的 dxdy 等于 |det J| 乘 dudv，来源就在这里。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "移动高亮的方块，看它在不同位置被拉伸的程度。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "换一个映射，观察面积比如何随位置改变。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "雅可比矩阵把弯曲映射的局部行为，压缩成一个线性变换。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "它的行列式衡量面积的缩放，是换元积分的钥匙。"
+    },
+    {
+      "script_id": "jacobian",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/jacobian/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "弯曲之中藏着线性，这就是微积分的魔法，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.64,
+  "total_size": 538272
+}

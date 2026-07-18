@@ -1,0 +1,173 @@
+{
+  "script_id": "quadratic-form",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "quadratic-form",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/quadratic-form/intro-intro-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "一元二次函数画出一条抛物线，那两个变量的二次式呢？"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/quadratic-form/intro-intro-2.mp3",
+      "duration": 3.1,
+      "size": 49680,
+      "text": "看这个式子：a 乘 x 平方，加 c 乘 y 平方，中间还夹着一项交叉的 x 乘 y。"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/quadratic-form/intro-intro-3.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "它叫二次型，描绘的是一整张曲面，而不再是一条曲线。"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "matrix",
+      "line_id": "def-1",
+      "filename": "matrix-def-1.mp3",
+      "path": "audio/narrations/quadratic-form/matrix-def-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "交叉项让人头疼，但一个对称矩阵能把它收拾得干干净净。"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "matrix",
+      "line_id": "def-2",
+      "filename": "matrix-def-2.mp3",
+      "path": "audio/narrations/quadratic-form/matrix-def-2.mp3",
+      "duration": 2.5,
+      "size": 40032,
+      "text": "把系数排成矩阵：对角线是 a 和 c，两个角上各放半个交叉系数 b。"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "matrix",
+      "line_id": "def-3",
+      "filename": "matrix-def-3.mp3",
+      "path": "audio/narrations/quadratic-form/matrix-def-3.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "于是二次型就写成向量乘矩阵再乘向量，简洁又统一。"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "eigen",
+      "line_id": "eig-1",
+      "filename": "eigen-eig-1.mp3",
+      "path": "audio/narrations/quadratic-form/eigen-eig-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "这个对称矩阵的两个特征值，藏着曲面的全部秘密。"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "eigen",
+      "line_id": "eig-2",
+      "filename": "eigen-eig-2.mp3",
+      "path": "audio/narrations/quadratic-form/eigen-eig-2.mp3",
+      "duration": 2.57,
+      "size": 41184,
+      "text": "两个都为正，是正定；都为负，是负定；一正一负，就是不定。"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "eigen",
+      "line_id": "eig-3",
+      "filename": "eigen-eig-3.mp3",
+      "path": "audio/narrations/quadratic-form/eigen-eig-3.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "沿着特征向量的方向看，特征值正好是那个方向上的弯曲快慢。"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "posdef",
+      "line_id": "pos-1",
+      "filename": "posdef-pos-1.mp3",
+      "path": "audio/narrations/quadratic-form/posdef-pos-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "正定时，曲面像一只朝上的碗，处处高于中心。"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "posdef",
+      "line_id": "pos-2",
+      "filename": "posdef-pos-2.mp3",
+      "path": "audio/narrations/quadratic-form/posdef-pos-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "此时等高线是一圈套一圈的椭圆，越往外数值越大。"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "posdef",
+      "line_id": "pos-3",
+      "filename": "posdef-pos-3.mp3",
+      "path": "audio/narrations/quadratic-form/posdef-pos-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "而不定型呢，曲面变成马鞍，等高线成了双曲线。"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/quadratic-form/interaction-int-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "留意右侧的特征值，它的符号一变，类型立刻就变。"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/quadratic-form/summary-sum-1.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "二次型用一个对称矩阵，把带交叉项的二次式收进方寸之间。"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/quadratic-form/summary-sum-2.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "两个特征值的符号，一锤定音地决定它是碗、是鞍还是倒碗。"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/quadratic-form/summary-sum-3.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "从系数到矩阵再到曲面，这正是线性代数的优雅，我们下次再见！"
+    }
+  ],
+  "total_duration": 35.85999999999999,
+  "total_size": 573840,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

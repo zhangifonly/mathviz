@@ -1,0 +1,183 @@
+{
+  "script_id": "vector-calculus-field",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/vector-calculus-field/intro-intro-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "从山脚爬到山顶，你消耗的体力只和高度差有关。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/vector-calculus-field/intro-intro-2.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "无论走陡峭直路还是盘山缓坡，克服重力做的功都一样。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/vector-calculus-field/intro-intro-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "这种做功只看起点和终点的场，就叫保守场。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/vector-calculus-field/define-def-1.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "平面向量场记作 F 等于 P 和 Q 两个分量。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/vector-calculus-field/define-def-2.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "计算旋度：Q 对 x 的偏导减去 P 对 y 的偏导。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/vector-calculus-field/define-def-3.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "如果旋度处处为零，这个场就是保守场。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "potential",
+      "line_id": "pot-1",
+      "filename": "potential-pot-1.mp3",
+      "path": "audio/narrations/vector-calculus-field/potential-pot-1.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "保守场背后藏着一个势函数 phi，它的梯度正好等于 F。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "potential",
+      "line_id": "pot-2",
+      "filename": "potential-pot-2.mp3",
+      "path": "audio/narrations/vector-calculus-field/potential-pot-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "把势函数相等的点连起来，就得到一圈圈等势线。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "potential",
+      "line_id": "pot-3",
+      "filename": "potential-pot-3.mp3",
+      "path": "audio/narrations/vector-calculus-field/potential-pot-3.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "向量场箭头处处垂直于等势线，指向势能升高的方向。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "pathindep",
+      "line_id": "path-1",
+      "filename": "pathindep-path-1.mp3",
+      "path": "audio/narrations/vector-calculus-field/pathindep-path-1.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "保守场沿任意路径做功，都等于终点势值减起点势值。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "pathindep",
+      "line_id": "path-2",
+      "filename": "pathindep-path-2.mp3",
+      "path": "audio/narrations/vector-calculus-field/pathindep-path-2.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "所以红色直线和绿色折线，两条路径做的功完全相同。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "pathindep",
+      "line_id": "path-3",
+      "filename": "pathindep-path-3.mp3",
+      "path": "audio/narrations/vector-calculus-field/pathindep-path-3.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "而旋转场旋度不为零，换条路径做功就会变，这就是非保守。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/vector-calculus-field/interaction-int-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "切换到保守的梯度场，看两条路径做功数值完全相等。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/vector-calculus-field/interaction-int-2.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "再切到非保守的旋转场，差值立刻不为零，路径变得重要。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/vector-calculus-field/summary-sum-1.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "旋度为零的场是保守场，拥有势函数。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/vector-calculus-field/summary-sum-2.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "保守场做功只看起终点，与路径无关。"
+    },
+    {
+      "script_id": "vector-calculus-field",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/vector-calculus-field/summary-sum-3.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "从爬山到静电场，保守场无处不在，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.61,
+  "total_size": 537696,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "script_id": "directional-derivative",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "directional-derivative",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/directional-derivative/intro-intro-1.mp3",
+      "duration": 1.19,
+      "size": 19008,
+      "text": "想象你站在一座山坡上的某一点。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/directional-derivative/intro-intro-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "朝正东走有多陡？朝东北呢？朝正北呢？"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/directional-derivative/intro-intro-3.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "同一个点，朝不同方向前进，脚下的坡度并不一样。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/directional-derivative/intro-intro-4.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "这个沿指定方向的变化率，就叫方向导数。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/directional-derivative/define-def-1.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "偏导数只看沿坐标轴的变化，而方向导数看任意方向。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/directional-derivative/define-def-2.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "给定一个单位方向 u，方向导数就是函数沿这个方向的瞬时变化率。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/directional-derivative/define-def-3.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "我们用玫瑰图表示：每个方向的半径，就是那个方向的方向导数。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "formula",
+      "line_id": "form-1",
+      "filename": "formula-form-1.mp3",
+      "path": "audio/narrations/directional-derivative/formula-form-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "有个漂亮的公式：方向导数等于梯度点乘单位方向。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "formula",
+      "line_id": "form-2",
+      "filename": "formula-form-2.mp3",
+      "path": "audio/narrations/directional-derivative/formula-form-2.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "也就是 D_u f 等于梯度的模，乘上它与方向夹角的余弦。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "formula",
+      "line_id": "form-3",
+      "filename": "formula-form-3.mp3",
+      "path": "audio/narrations/directional-derivative/formula-form-3.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "所以真正决定一切的，是这个点处的梯度向量。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "maxdir",
+      "line_id": "max-1",
+      "filename": "maxdir-max-1.mp3",
+      "path": "audio/narrations/directional-derivative/maxdir-max-1.mp3",
+      "duration": 2.75,
+      "size": 44064,
+      "text": "当方向与梯度重合时，余弦等于一，方向导数取到最大值，也就是梯度的模。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "maxdir",
+      "line_id": "max-2",
+      "filename": "maxdir-max-2.mp3",
+      "path": "audio/narrations/directional-derivative/maxdir-max-2.mp3",
+      "duration": 2.71,
+      "size": 43344,
+      "text": "当方向与梯度垂直时，余弦为零，方向导数也为零，那正是沿等高线行走。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "maxdir",
+      "line_id": "max-3",
+      "filename": "maxdir-max-3.mp3",
+      "path": "audio/narrations/directional-derivative/maxdir-max-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "反方向则下降最快，这就是梯度下降法的核心思想。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/directional-derivative/interaction-int-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "拖动方向角滑块，观察方向导数的数值如何随方向起伏。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/directional-derivative/interaction-int-2.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "转到橙色虚线的梯度方向，你会看到数值恰好冲到最大。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/directional-derivative/summary-sum-1.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "方向导数刻画了函数沿任意方向的变化率。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/directional-derivative/summary-sum-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "它等于梯度点乘方向，梯度方向最陡，垂直方向为零。"
+    },
+    {
+      "script_id": "directional-derivative",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/directional-derivative/summary-sum-3.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "看懂了梯度，就看懂了整片山坡的走势，我们下次再见！"
+    }
+  ],
+  "total_duration": 37.830000000000005,
+  "total_size": 605232,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

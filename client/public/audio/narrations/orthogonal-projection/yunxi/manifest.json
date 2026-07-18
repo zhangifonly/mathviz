@@ -1,0 +1,179 @@
+{
+  "script_id": "orthogonal-projection",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/intro-intro-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "正午的阳光垂直照下，一根斜插的木棍会在地面留下影子。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/intro-intro-2.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "这道影子，就是木棍在地面这条直线上的投影。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/intro-intro-3.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "投影问的是：这个向量在某个方向上，究竟占了多少分量。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "formula",
+      "line_id": "def-1",
+      "filename": "formula-def-1.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/formula-def-1.mp3",
+      "duration": 2.63,
+      "size": 42048,
+      "text": "给定向量 v 和方向 u，投影等于 v 点乘 u，再除以 u 点乘 u，乘上 u。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "formula",
+      "line_id": "def-2",
+      "filename": "formula-def-2.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/formula-def-2.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "前面那个分数是投影系数，它告诉我们该沿 u 走多远。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "formula",
+      "line_id": "def-3",
+      "filename": "formula-def-3.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/formula-def-3.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "若 u 是单位向量，公式就简化成 v 点乘 u 再乘 u。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "nearest",
+      "line_id": "near-1",
+      "filename": "nearest-near-1.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/nearest-near-1.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "从 v 的顶端向直线作垂线，落下的那个点就叫垂足。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "nearest",
+      "line_id": "near-2",
+      "filename": "nearest-near-2.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/nearest-near-2.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "在整条直线上，垂足是离 v 最近的点，没有之一。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "nearest",
+      "line_id": "near-3",
+      "filename": "nearest-near-3.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/nearest-near-3.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "这正是用投影做逼近的原因：它给出误差最小的近似。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "residual",
+      "line_id": "res-1",
+      "filename": "residual-res-1.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/residual-res-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "用 v 减去投影，剩下的部分叫残差，图中那条虚线。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "residual",
+      "line_id": "res-2",
+      "filename": "residual-res-2.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/residual-res-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "残差和投影方向恰好垂直，它们的点积等于零。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "residual",
+      "line_id": "res-3",
+      "filename": "residual-res-3.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/residual-res-3.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "于是 v 被干净地拆成两块：一块沿方向，一块垂直于方向。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/interaction-int-1.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "换一个向量 v，看垂足和影子随之滑动。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/interaction-int-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "转动直线的角度，注意那条虚线始终与直线保持垂直。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/summary-sum-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "投影公式把向量分解为方向分量与垂直残差。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/summary-sum-2.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "垂足是最近点，残差与方向正交，这是最小二乘的几何根基。"
+    },
+    {
+      "script_id": "orthogonal-projection",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/orthogonal-projection/yunxi/summary-sum-3.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "看懂了影子，就看懂了逼近，我们下次再见！"
+    }
+  ],
+  "total_duration": 35.05,
+  "total_size": 560736
+}
