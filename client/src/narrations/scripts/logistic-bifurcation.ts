@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * Logistic 分岔图 - 口播稿件
+ * 核心概念：logistic 映射、不动点稳定性、倍周期分岔、费根鲍姆常数、混沌
+ * 目标受众：高中及以上
+ */
+export const logisticBifurcationNarration: NarrationScript = {
+  id: 'logistic-bifurcation',
+  title: 'Logistic分岔图',
+  subtitle: '通往混沌的倍周期',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解 logistic 映射的迭代规则',
+    '认识不动点及其稳定性',
+    '理解倍周期分岔通往混沌的路径',
+    '感受费根鲍姆常数与自相似之美',
+  ],
+
+  prerequisites: ['了解函数迭代', '了解简单极限概念'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '一个再简单不过的公式，也能孕育出无穷的复杂。' },
+        { id: 'intro-2', text: '生态学家用它描述一片池塘里，虫子数量年复一年的变化。' },
+        { id: 'intro-3', text: '今天我们就顺着这个公式，一路走进混沌的深处。' },
+      ],
+    },
+    {
+      id: 'map',
+      type: 'concept',
+      title: 'logistic 映射',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'map-1', text: '规则是：下一年的数量，等于 r 乘以今年，再乘以一减今年。' },
+        { id: 'map-2', text: '写成公式就是 x 等于 r x 乘以一减 x，反复代入自己。' },
+        { id: 'map-3', text: '参数 r 代表繁殖率，它的大小，决定了系统的命运。' },
+      ],
+    },
+    {
+      id: 'fixed',
+      type: 'concept',
+      title: '不动点与稳定性',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'fix-1', text: '当 r 较小时，数量最终稳定在一个固定值，这叫不动点。' },
+        { id: 'fix-2', text: '无论从哪里出发，迭代都会被吸引到这个值上来。' },
+        { id: 'fix-3', text: '可一旦 r 越过 3，这个稳定的平衡就悄悄失效了。' },
+      ],
+    },
+    {
+      id: 'chaos',
+      type: 'concept',
+      title: '倍周期到混沌',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'chaos-1', text: '数量不再停在一点，而是在两个值之间来回跳动，周期变成了二。' },
+        { id: 'chaos-2', text: '再往后，二变四、四变八，分岔一次比一次来得快。' },
+        { id: 'chaos-3', text: '费根鲍姆发现，每次分岔的间隔都以固定比例缩短，最终堆积成混沌。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '把窗口放大到分岔的枝杈里，你会看到熟悉的形状再次出现。' },
+        { id: 'int-2', text: '这种无穷嵌套的自相似，正是混沌世界最迷人的指纹。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: 'logistic 映射用一个乘法，串起了秩序与混沌。' },
+        { id: 'sum-2', text: '倍周期分岔像一架梯子，把我们从稳定送往混沌。' },
+        { id: 'sum-3', text: '简单之中藏着无尽的深邃，我们下次再见！' },
+      ],
+    },
+  ],
+}

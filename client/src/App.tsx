@@ -196,6 +196,31 @@ const DirectionalDerivativeExperiment = lazyRetry(() => import('./experiments/di
 const JacobianExperiment = lazyRetry(() => import('./experiments/jacobian/JacobianExperiment'))
 const VectorCalculusFieldExperiment = lazyRetry(() => import('./experiments/vector-calculus-field/VectorCalculusFieldExperiment'))
 const LaplacianExperiment = lazyRetry(() => import('./experiments/laplacian/LaplacianExperiment'))
+const DijkstraExperiment = lazyRetry(() => import('./experiments/dijkstra/DijkstraExperiment'))
+const NetworkFlowExperiment = lazyRetry(() => import('./experiments/network-flow/NetworkFlowExperiment'))
+const GraphColoringExperiment = lazyRetry(() => import('./experiments/graph-coloring/GraphColoringExperiment'))
+const EulerHamiltonPathExperiment = lazyRetry(() => import('./experiments/euler-hamilton-path/EulerHamiltonPathExperiment'))
+const SortingAlgorithmsExperiment = lazyRetry(() => import('./experiments/sorting-algorithms/SortingAlgorithmsExperiment'))
+const BfsDfsExperiment = lazyRetry(() => import('./experiments/bfs-dfs/BfsDfsExperiment'))
+const DynamicProgrammingExperiment = lazyRetry(() => import('./experiments/dynamic-programming/DynamicProgrammingExperiment'))
+const DivideConquerExperiment = lazyRetry(() => import('./experiments/divide-conquer/DivideConquerExperiment'))
+const HuffmanCodingExperiment = lazyRetry(() => import('./experiments/huffman-coding/HuffmanCodingExperiment'))
+const CatalanNumbersExperiment = lazyRetry(() => import('./experiments/catalan-numbers/CatalanNumbersExperiment'))
+const GeneratingFunctionsExperiment = lazyRetry(() => import('./experiments/generating-functions/GeneratingFunctionsExperiment'))
+const MinimumSpanningTreeExperiment = lazyRetry(() => import('./experiments/minimum-spanning-tree/MinimumSpanningTreeExperiment'))
+const LogisticBifurcationExperiment = lazyRetry(() => import('./experiments/logistic-bifurcation/LogisticBifurcationExperiment'))
+const PhasePortraitExperiment = lazyRetry(() => import('./experiments/phase-portrait/PhasePortraitExperiment'))
+const LimitCycleExperiment = lazyRetry(() => import('./experiments/limit-cycle/LimitCycleExperiment'))
+const LotkaVolterraExperiment = lazyRetry(() => import('./experiments/lotka-volterra/LotkaVolterraExperiment'))
+const PendulumPhaseExperiment = lazyRetry(() => import('./experiments/pendulum-phase/PendulumPhaseExperiment'))
+const KeplerOrbitExperiment = lazyRetry(() => import('./experiments/kepler-orbit/KeplerOrbitExperiment'))
+const VibratingStringExperiment = lazyRetry(() => import('./experiments/vibrating-string/VibratingStringExperiment'))
+const PoincareSectionExperiment = lazyRetry(() => import('./experiments/poincare-section/PoincareSectionExperiment'))
+const EulerCharacteristicExperiment = lazyRetry(() => import('./experiments/euler-characteristic/EulerCharacteristicExperiment'))
+const TorusKleinExperiment = lazyRetry(() => import('./experiments/torus-klein/TorusKleinExperiment'))
+const PerceptronExperiment = lazyRetry(() => import('./experiments/perceptron/PerceptronExperiment'))
+const KmeansExperiment = lazyRetry(() => import('./experiments/kmeans/KmeansExperiment'))
+const NeuralNetworkForwardExperiment = lazyRetry(() => import('./experiments/neural-network-forward/NeuralNetworkForwardExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -389,6 +414,31 @@ export default function App() {
             <Route path="jacobian" element={<JacobianExperiment />} />
             <Route path="vector-calculus-field" element={<VectorCalculusFieldExperiment />} />
             <Route path="laplacian" element={<LaplacianExperiment />} />
+            <Route path="dijkstra" element={<DijkstraExperiment />} />
+            <Route path="network-flow" element={<NetworkFlowExperiment />} />
+            <Route path="graph-coloring" element={<GraphColoringExperiment />} />
+            <Route path="euler-hamilton-path" element={<EulerHamiltonPathExperiment />} />
+            <Route path="sorting-algorithms" element={<SortingAlgorithmsExperiment />} />
+            <Route path="bfs-dfs" element={<BfsDfsExperiment />} />
+            <Route path="dynamic-programming" element={<DynamicProgrammingExperiment />} />
+            <Route path="divide-conquer" element={<DivideConquerExperiment />} />
+            <Route path="huffman-coding" element={<HuffmanCodingExperiment />} />
+            <Route path="catalan-numbers" element={<CatalanNumbersExperiment />} />
+            <Route path="generating-functions" element={<GeneratingFunctionsExperiment />} />
+            <Route path="minimum-spanning-tree" element={<MinimumSpanningTreeExperiment />} />
+            <Route path="logistic-bifurcation" element={<LogisticBifurcationExperiment />} />
+            <Route path="phase-portrait" element={<PhasePortraitExperiment />} />
+            <Route path="limit-cycle" element={<LimitCycleExperiment />} />
+            <Route path="lotka-volterra" element={<LotkaVolterraExperiment />} />
+            <Route path="pendulum-phase" element={<PendulumPhaseExperiment />} />
+            <Route path="kepler-orbit" element={<KeplerOrbitExperiment />} />
+            <Route path="vibrating-string" element={<VibratingStringExperiment />} />
+            <Route path="poincare-section" element={<PoincareSectionExperiment />} />
+            <Route path="euler-characteristic" element={<EulerCharacteristicExperiment />} />
+            <Route path="torus-klein" element={<TorusKleinExperiment />} />
+            <Route path="perceptron" element={<PerceptronExperiment />} />
+            <Route path="kmeans" element={<KmeansExperiment />} />
+            <Route path="neural-network-forward" element={<NeuralNetworkForwardExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

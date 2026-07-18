@@ -181,6 +181,31 @@ export { directionalDerivativeNarration } from './scripts/directional-derivative
 export { jacobianNarration } from './scripts/jacobian'
 export { vectorCalculusFieldNarration } from './scripts/vector-calculus-field'
 export { laplacianNarration } from './scripts/laplacian'
+export { dijkstraNarration } from './scripts/dijkstra'
+export { networkFlowNarration } from './scripts/network-flow'
+export { graphColoringNarration } from './scripts/graph-coloring'
+export { eulerHamiltonPathNarration } from './scripts/euler-hamilton-path'
+export { sortingAlgorithmsNarration } from './scripts/sorting-algorithms'
+export { bfsDfsNarration } from './scripts/bfs-dfs'
+export { dynamicProgrammingNarration } from './scripts/dynamic-programming'
+export { divideConquerNarration } from './scripts/divide-conquer'
+export { huffmanCodingNarration } from './scripts/huffman-coding'
+export { catalanNumbersNarration } from './scripts/catalan-numbers'
+export { generatingFunctionsNarration } from './scripts/generating-functions'
+export { minimumSpanningTreeNarration } from './scripts/minimum-spanning-tree'
+export { logisticBifurcationNarration } from './scripts/logistic-bifurcation'
+export { phasePortraitNarration } from './scripts/phase-portrait'
+export { limitCycleNarration } from './scripts/limit-cycle'
+export { lotkaVolterraNarration } from './scripts/lotka-volterra'
+export { pendulumPhaseNarration } from './scripts/pendulum-phase'
+export { keplerOrbitNarration } from './scripts/kepler-orbit'
+export { vibratingStringNarration } from './scripts/vibrating-string'
+export { poincareSectionNarration } from './scripts/poincare-section'
+export { eulerCharacteristicNarration } from './scripts/euler-characteristic'
+export { torusKleinNarration } from './scripts/torus-klein'
+export { perceptronNarration } from './scripts/perceptron'
+export { kmeansNarration } from './scripts/kmeans'
+export { neuralNetworkForwardNarration } from './scripts/neural-network-forward'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -354,6 +379,31 @@ import { directionalDerivativeNarration } from './scripts/directional-derivative
 import { jacobianNarration } from './scripts/jacobian'
 import { vectorCalculusFieldNarration } from './scripts/vector-calculus-field'
 import { laplacianNarration } from './scripts/laplacian'
+import { dijkstraNarration } from './scripts/dijkstra'
+import { networkFlowNarration } from './scripts/network-flow'
+import { graphColoringNarration } from './scripts/graph-coloring'
+import { eulerHamiltonPathNarration } from './scripts/euler-hamilton-path'
+import { sortingAlgorithmsNarration } from './scripts/sorting-algorithms'
+import { bfsDfsNarration } from './scripts/bfs-dfs'
+import { dynamicProgrammingNarration } from './scripts/dynamic-programming'
+import { divideConquerNarration } from './scripts/divide-conquer'
+import { huffmanCodingNarration } from './scripts/huffman-coding'
+import { catalanNumbersNarration } from './scripts/catalan-numbers'
+import { generatingFunctionsNarration } from './scripts/generating-functions'
+import { minimumSpanningTreeNarration } from './scripts/minimum-spanning-tree'
+import { logisticBifurcationNarration } from './scripts/logistic-bifurcation'
+import { phasePortraitNarration } from './scripts/phase-portrait'
+import { limitCycleNarration } from './scripts/limit-cycle'
+import { lotkaVolterraNarration } from './scripts/lotka-volterra'
+import { pendulumPhaseNarration } from './scripts/pendulum-phase'
+import { keplerOrbitNarration } from './scripts/kepler-orbit'
+import { vibratingStringNarration } from './scripts/vibrating-string'
+import { poincareSectionNarration } from './scripts/poincare-section'
+import { eulerCharacteristicNarration } from './scripts/euler-characteristic'
+import { torusKleinNarration } from './scripts/torus-klein'
+import { perceptronNarration } from './scripts/perceptron'
+import { kmeansNarration } from './scripts/kmeans'
+import { neuralNetworkForwardNarration } from './scripts/neural-network-forward'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -531,6 +581,31 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'jacobian': jacobianNarration,
   'vector-calculus-field': vectorCalculusFieldNarration,
   'laplacian': laplacianNarration,
+  'dijkstra': dijkstraNarration,
+  'network-flow': networkFlowNarration,
+  'graph-coloring': graphColoringNarration,
+  'euler-hamilton-path': eulerHamiltonPathNarration,
+  'sorting-algorithms': sortingAlgorithmsNarration,
+  'bfs-dfs': bfsDfsNarration,
+  'dynamic-programming': dynamicProgrammingNarration,
+  'divide-conquer': divideConquerNarration,
+  'huffman-coding': huffmanCodingNarration,
+  'catalan-numbers': catalanNumbersNarration,
+  'generating-functions': generatingFunctionsNarration,
+  'minimum-spanning-tree': minimumSpanningTreeNarration,
+  'logistic-bifurcation': logisticBifurcationNarration,
+  'phase-portrait': phasePortraitNarration,
+  'limit-cycle': limitCycleNarration,
+  'lotka-volterra': lotkaVolterraNarration,
+  'pendulum-phase': pendulumPhaseNarration,
+  'kepler-orbit': keplerOrbitNarration,
+  'vibrating-string': vibratingStringNarration,
+  'poincare-section': poincareSectionNarration,
+  'euler-characteristic': eulerCharacteristicNarration,
+  'torus-klein': torusKleinNarration,
+  'perceptron': perceptronNarration,
+  'kmeans': kmeansNarration,
+  'neural-network-forward': neuralNetworkForwardNarration,
 }
 
 // 获取稿件

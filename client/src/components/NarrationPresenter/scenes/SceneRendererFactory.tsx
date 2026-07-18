@@ -251,6 +251,31 @@ const DirectionalDerivativeSceneRenderer = lazy(() => import('./DirectionalDeriv
 const JacobianSceneRenderer = lazy(() => import('./Jacobian/JacobianSceneRenderer'))
 const VectorCalculusFieldSceneRenderer = lazy(() => import('./VectorCalculusField/VectorCalculusFieldSceneRenderer'))
 const LaplacianSceneRenderer = lazy(() => import('./Laplacian/LaplacianSceneRenderer'))
+const DijkstraSceneRenderer = lazy(() => import('./Dijkstra/DijkstraSceneRenderer'))
+const NetworkFlowSceneRenderer = lazy(() => import('./NetworkFlow/NetworkFlowSceneRenderer'))
+const GraphColoringSceneRenderer = lazy(() => import('./GraphColoring/GraphColoringSceneRenderer'))
+const EulerHamiltonPathSceneRenderer = lazy(() => import('./EulerHamiltonPath/EulerHamiltonPathSceneRenderer'))
+const SortingAlgorithmsSceneRenderer = lazy(() => import('./SortingAlgorithms/SortingAlgorithmsSceneRenderer'))
+const BfsDfsSceneRenderer = lazy(() => import('./BfsDfs/BfsDfsSceneRenderer'))
+const DynamicProgrammingSceneRenderer = lazy(() => import('./DynamicProgramming/DynamicProgrammingSceneRenderer'))
+const DivideConquerSceneRenderer = lazy(() => import('./DivideConquer/DivideConquerSceneRenderer'))
+const HuffmanCodingSceneRenderer = lazy(() => import('./HuffmanCoding/HuffmanCodingSceneRenderer'))
+const CatalanNumbersSceneRenderer = lazy(() => import('./CatalanNumbers/CatalanNumbersSceneRenderer'))
+const GeneratingFunctionsSceneRenderer = lazy(() => import('./GeneratingFunctions/GeneratingFunctionsSceneRenderer'))
+const MinimumSpanningTreeSceneRenderer = lazy(() => import('./MinimumSpanningTree/MinimumSpanningTreeSceneRenderer'))
+const LogisticBifurcationSceneRenderer = lazy(() => import('./LogisticBifurcation/LogisticBifurcationSceneRenderer'))
+const PhasePortraitSceneRenderer = lazy(() => import('./PhasePortrait/PhasePortraitSceneRenderer'))
+const LimitCycleSceneRenderer = lazy(() => import('./LimitCycle/LimitCycleSceneRenderer'))
+const LotkaVolterraSceneRenderer = lazy(() => import('./LotkaVolterra/LotkaVolterraSceneRenderer'))
+const PendulumPhaseSceneRenderer = lazy(() => import('./PendulumPhase/PendulumPhaseSceneRenderer'))
+const KeplerOrbitSceneRenderer = lazy(() => import('./KeplerOrbit/KeplerOrbitSceneRenderer'))
+const VibratingStringSceneRenderer = lazy(() => import('./VibratingString/VibratingStringSceneRenderer'))
+const PoincareSectionSceneRenderer = lazy(() => import('./PoincareSection/PoincareSectionSceneRenderer'))
+const EulerCharacteristicSceneRenderer = lazy(() => import('./EulerCharacteristic/EulerCharacteristicSceneRenderer'))
+const TorusKleinSceneRenderer = lazy(() => import('./TorusKlein/TorusKleinSceneRenderer'))
+const PerceptronSceneRenderer = lazy(() => import('./Perceptron/PerceptronSceneRenderer'))
+const KmeansSceneRenderer = lazy(() => import('./Kmeans/KmeansSceneRenderer'))
+const NeuralNetworkForwardSceneRenderer = lazy(() => import('./NeuralNetworkForward/NeuralNetworkForwardSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -429,6 +454,31 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'jacobian': JacobianSceneRenderer,
   'vector-calculus-field': VectorCalculusFieldSceneRenderer,
   'laplacian': LaplacianSceneRenderer,
+  'dijkstra': DijkstraSceneRenderer,
+  'network-flow': NetworkFlowSceneRenderer,
+  'graph-coloring': GraphColoringSceneRenderer,
+  'euler-hamilton-path': EulerHamiltonPathSceneRenderer,
+  'sorting-algorithms': SortingAlgorithmsSceneRenderer,
+  'bfs-dfs': BfsDfsSceneRenderer,
+  'dynamic-programming': DynamicProgrammingSceneRenderer,
+  'divide-conquer': DivideConquerSceneRenderer,
+  'huffman-coding': HuffmanCodingSceneRenderer,
+  'catalan-numbers': CatalanNumbersSceneRenderer,
+  'generating-functions': GeneratingFunctionsSceneRenderer,
+  'minimum-spanning-tree': MinimumSpanningTreeSceneRenderer,
+  'logistic-bifurcation': LogisticBifurcationSceneRenderer,
+  'phase-portrait': PhasePortraitSceneRenderer,
+  'limit-cycle': LimitCycleSceneRenderer,
+  'lotka-volterra': LotkaVolterraSceneRenderer,
+  'pendulum-phase': PendulumPhaseSceneRenderer,
+  'kepler-orbit': KeplerOrbitSceneRenderer,
+  'vibrating-string': VibratingStringSceneRenderer,
+  'poincare-section': PoincareSectionSceneRenderer,
+  'euler-characteristic': EulerCharacteristicSceneRenderer,
+  'torus-klein': TorusKleinSceneRenderer,
+  'perceptron': PerceptronSceneRenderer,
+  'kmeans': KmeansSceneRenderer,
+  'neural-network-forward': NeuralNetworkForwardSceneRenderer,
 }
 
 // 获取场景渲染器

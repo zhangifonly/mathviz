@@ -1,0 +1,98 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 分治算法 - 口播稿件
+ * 核心概念：分解、递归求解、合并；以归并排序递归树为例
+ * 目标受众：高中及以上
+ */
+export const divideConquerNarration: NarrationScript = {
+  id: 'divide-conquer',
+  title: '分治算法',
+  subtitle: '分而治之再合并',
+  difficulty: 'intermediate',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解分治的分解、求解、合并三个步骤',
+    '通过归并排序看清递归树的展开与回收',
+    '认识分治如何把大问题化整为零',
+    '感受合并步骤如何拼出整体答案',
+  ],
+
+  prerequisites: ['了解数组与排序', '了解递归的基本概念'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '面对一个庞大又棘手的问题，我们常常无从下手。' },
+        { id: 'intro-2', text: '分治的思路是：把大问题一分为二，再各个击破。' },
+        { id: 'intro-3', text: '就像整理一副乱牌，先分成两小堆，分别理好，再合到一起。' },
+      ],
+    },
+    {
+      id: 'divide',
+      type: 'concept',
+      title: '分解',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'div-1', text: '第一步是分解，把数组从中间切开，得到左右两半。' },
+        { id: 'div-2', text: '每一半继续二分，一层层向下，直到只剩单个元素。' },
+        { id: 'div-3', text: '单个元素天然有序，这就是递归的终点。' },
+      ],
+    },
+    {
+      id: 'conquer',
+      type: 'concept',
+      title: '递归求解',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'con-1', text: '每个子问题都用同样的方法处理，这就是递归求解。' },
+        { id: 'con-2', text: '递归树的每个分叉，都是一个规模更小的相同问题。' },
+      ],
+    },
+    {
+      id: 'merge',
+      type: 'concept',
+      title: '合并',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'mer-1', text: '子问题解好后，关键一步是合并：把两个有序小段拼成一个有序大段。' },
+        { id: 'mer-2', text: '两个指针各指一段头部，每次取较小的放入结果，逐步归并。' },
+        { id: 'mer-3', text: '从叶子一路合并回根，整个数组就排好了序。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '看着递归树逐层展开，感受问题如何被拆到最小。' },
+        { id: 'int-2', text: '再顺着合并的方向回收，观察有序结果一层层拼起来。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '分治就是分解、递归求解、再合并这三步。' },
+        { id: 'sum-2', text: '归并排序、快速排序、最大子数组，都是它的经典应用。' },
+        { id: 'sum-3', text: '化整为零，再聚零为整，我们下次再见！' },
+      ],
+    },
+  ],
+}

@@ -186,6 +186,31 @@ import { directionalDerivativeScenes, defaultDirectionalDerivativeState } from '
 import { jacobianScenes, defaultJacobianState } from './jacobianScenes'
 import { vectorCalculusFieldScenes, defaultVectorCalculusFieldState } from './vectorCalculusFieldScenes'
 import { laplacianScenes, defaultLaplacianState } from './laplacianScenes'
+import { dijkstraScenes, defaultDijkstraState } from './dijkstraScenes'
+import { networkFlowScenes, defaultNetworkFlowState } from './networkFlowScenes'
+import { graphColoringScenes, defaultGraphColoringState } from './graphColoringScenes'
+import { eulerHamiltonPathScenes, defaultEulerHamiltonPathState } from './eulerHamiltonPathScenes'
+import { sortingAlgorithmsScenes, defaultSortingAlgorithmsState } from './sortingAlgorithmsScenes'
+import { bfsDfsScenes, defaultBfsDfsState } from './bfsDfsScenes'
+import { dynamicProgrammingScenes, defaultDynamicProgrammingState } from './dynamicProgrammingScenes'
+import { divideConquerScenes, defaultDivideConquerState } from './divideConquerScenes'
+import { huffmanCodingScenes, defaultHuffmanCodingState } from './huffmanCodingScenes'
+import { catalanNumbersScenes, defaultCatalanNumbersState } from './catalanNumbersScenes'
+import { generatingFunctionsScenes, defaultGeneratingFunctionsState } from './generatingFunctionsScenes'
+import { minimumSpanningTreeScenes, defaultMinimumSpanningTreeState } from './minimumSpanningTreeScenes'
+import { logisticBifurcationScenes, defaultLogisticBifurcationState } from './logisticBifurcationScenes'
+import { phasePortraitScenes, defaultPhasePortraitState } from './phasePortraitScenes'
+import { limitCycleScenes, defaultLimitCycleState } from './limitCycleScenes'
+import { lotkaVolterraScenes, defaultLotkaVolterraState } from './lotkaVolterraScenes'
+import { pendulumPhaseScenes, defaultPendulumPhaseState } from './pendulumPhaseScenes'
+import { keplerOrbitScenes, defaultKeplerOrbitState } from './keplerOrbitScenes'
+import { vibratingStringScenes, defaultVibratingStringState } from './vibratingStringScenes'
+import { poincareSectionScenes, defaultPoincareSectionState } from './poincareSectionScenes'
+import { eulerCharacteristicScenes, defaultEulerCharacteristicState } from './eulerCharacteristicScenes'
+import { torusKleinScenes, defaultTorusKleinState } from './torusKleinScenes'
+import { perceptronScenes, defaultPerceptronState } from './perceptronScenes'
+import { kmeansScenes, defaultKmeansState } from './kmeansScenes'
+import { neuralNetworkForwardScenes, defaultNeuralNetworkForwardState } from './neuralNetworkForwardScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -385,6 +410,31 @@ const sceneConfigMap: Record<string, {
   'jacobian': { scenes: jacobianScenes, defaultState: defaultJacobianState },
   'vector-calculus-field': { scenes: vectorCalculusFieldScenes, defaultState: defaultVectorCalculusFieldState },
   'laplacian': { scenes: laplacianScenes, defaultState: defaultLaplacianState },
+  'dijkstra': { scenes: dijkstraScenes, defaultState: defaultDijkstraState },
+  'network-flow': { scenes: networkFlowScenes, defaultState: defaultNetworkFlowState },
+  'graph-coloring': { scenes: graphColoringScenes, defaultState: defaultGraphColoringState },
+  'euler-hamilton-path': { scenes: eulerHamiltonPathScenes, defaultState: defaultEulerHamiltonPathState },
+  'sorting-algorithms': { scenes: sortingAlgorithmsScenes, defaultState: defaultSortingAlgorithmsState },
+  'bfs-dfs': { scenes: bfsDfsScenes, defaultState: defaultBfsDfsState },
+  'dynamic-programming': { scenes: dynamicProgrammingScenes, defaultState: defaultDynamicProgrammingState },
+  'divide-conquer': { scenes: divideConquerScenes, defaultState: defaultDivideConquerState },
+  'huffman-coding': { scenes: huffmanCodingScenes, defaultState: defaultHuffmanCodingState },
+  'catalan-numbers': { scenes: catalanNumbersScenes, defaultState: defaultCatalanNumbersState },
+  'generating-functions': { scenes: generatingFunctionsScenes, defaultState: defaultGeneratingFunctionsState },
+  'minimum-spanning-tree': { scenes: minimumSpanningTreeScenes, defaultState: defaultMinimumSpanningTreeState },
+  'logistic-bifurcation': { scenes: logisticBifurcationScenes, defaultState: defaultLogisticBifurcationState },
+  'phase-portrait': { scenes: phasePortraitScenes, defaultState: defaultPhasePortraitState },
+  'limit-cycle': { scenes: limitCycleScenes, defaultState: defaultLimitCycleState },
+  'lotka-volterra': { scenes: lotkaVolterraScenes, defaultState: defaultLotkaVolterraState },
+  'pendulum-phase': { scenes: pendulumPhaseScenes, defaultState: defaultPendulumPhaseState },
+  'kepler-orbit': { scenes: keplerOrbitScenes, defaultState: defaultKeplerOrbitState },
+  'vibrating-string': { scenes: vibratingStringScenes, defaultState: defaultVibratingStringState },
+  'poincare-section': { scenes: poincareSectionScenes, defaultState: defaultPoincareSectionState },
+  'euler-characteristic': { scenes: eulerCharacteristicScenes, defaultState: defaultEulerCharacteristicState },
+  'torus-klein': { scenes: torusKleinScenes, defaultState: defaultTorusKleinState },
+  'perceptron': { scenes: perceptronScenes, defaultState: defaultPerceptronState },
+  'kmeans': { scenes: kmeansScenes, defaultState: defaultKmeansState },
+  'neural-network-forward': { scenes: neuralNetworkForwardScenes, defaultState: defaultNeuralNetworkForwardState },
 }
 
 // 检测是否为移动设备
@@ -589,7 +639,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       // 新增2个待完成课程
       'laplace', 'permutation-combination',
       // 新增优美数学场景
-      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet', 'sieve-eratosthenes', 'magic-square', 'tower-of-hanoi', 'pigeonhole', 'triangle-centers', 'number-bases', 'pythagoras-tree', 'tessellation', 'perfect-numbers', 'collatz', 'prime-factorization', 'fibonacci-nature', 'dice-probability', 'nine-point-circle', 'euler-line', 'inversive-geometry', 'poincare-disk', 'spherical-geometry', 'convex-hull', 'delaunay-triangulation', 'apollonian-gasket', 'pick-theorem', 'reuleaux', 'circle-packing', 'steiner-chain', 'polynomial-roots', 'vieta-formulas', 'binomial-theorem', 'inverse-function', 'composite-function', 'partial-fractions', 'rational-asymptotes', 'piecewise-function', 'logarithm-spiral', 'function-transform', 'euclidean-algorithm', 'chinese-remainder', 'quadratic-residue', 'gaussian-integers', 'integer-partition', 'pell-equation', 'prime-counting', 'digital-root', 'epsilon-delta', 'mean-value-theorem', 'riemann-sum', 'solid-of-revolution', 'arc-length-curvature', 'series-convergence', 'improper-integral', 'determinant-geometry', 'kernel-image', 'orthogonal-projection', 'least-squares', 'quadratic-form', 'spectral-theorem', 'law-large-numbers', 'poisson-process', 'brownian-motion', 'monty-hall', 'birthday-paradox', 'hypothesis-testing', 'confidence-interval', 'max-likelihood', 'gaussian-mixture', 'hidden-markov', 'multiple-integral', 'line-integral', 'divergence-curl', 'stokes-theorem', 'partial-derivative', 'directional-derivative', 'jacobian', 'vector-calculus-field', 'laplacian'
+      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet', 'sieve-eratosthenes', 'magic-square', 'tower-of-hanoi', 'pigeonhole', 'triangle-centers', 'number-bases', 'pythagoras-tree', 'tessellation', 'perfect-numbers', 'collatz', 'prime-factorization', 'fibonacci-nature', 'dice-probability', 'nine-point-circle', 'euler-line', 'inversive-geometry', 'poincare-disk', 'spherical-geometry', 'convex-hull', 'delaunay-triangulation', 'apollonian-gasket', 'pick-theorem', 'reuleaux', 'circle-packing', 'steiner-chain', 'polynomial-roots', 'vieta-formulas', 'binomial-theorem', 'inverse-function', 'composite-function', 'partial-fractions', 'rational-asymptotes', 'piecewise-function', 'logarithm-spiral', 'function-transform', 'euclidean-algorithm', 'chinese-remainder', 'quadratic-residue', 'gaussian-integers', 'integer-partition', 'pell-equation', 'prime-counting', 'digital-root', 'epsilon-delta', 'mean-value-theorem', 'riemann-sum', 'solid-of-revolution', 'arc-length-curvature', 'series-convergence', 'improper-integral', 'determinant-geometry', 'kernel-image', 'orthogonal-projection', 'least-squares', 'quadratic-form', 'spectral-theorem', 'law-large-numbers', 'poisson-process', 'brownian-motion', 'monty-hall', 'birthday-paradox', 'hypothesis-testing', 'confidence-interval', 'max-likelihood', 'gaussian-mixture', 'hidden-markov', 'multiple-integral', 'line-integral', 'divergence-curl', 'stokes-theorem', 'partial-derivative', 'directional-derivative', 'jacobian', 'vector-calculus-field', 'laplacian', 'dijkstra', 'network-flow', 'graph-coloring', 'euler-hamilton-path', 'sorting-algorithms', 'bfs-dfs', 'dynamic-programming', 'divide-conquer', 'huffman-coding', 'catalan-numbers', 'generating-functions', 'minimum-spanning-tree', 'logistic-bifurcation', 'phase-portrait', 'limit-cycle', 'lotka-volterra', 'pendulum-phase', 'kepler-orbit', 'vibrating-string', 'poincare-section', 'euler-characteristic', 'torus-klein', 'perceptron', 'kmeans', 'neural-network-forward'
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

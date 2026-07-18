@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 卡特兰数 - 口播稿件
+ * 核心概念：一个数列同时数着括号、二叉树、多边形三角剖分
+ * 目标受众：高中及以上
+ */
+export const catalanNumbersNarration: NarrationScript = {
+  id: 'catalan-numbers',
+  title: '卡特兰数',
+  subtitle: '括号树与三角剖分',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '认识卡特兰数列 1,1,2,5,14,42',
+    '理解合法括号序列的计数',
+    '理解二叉树形态与多边形三角剖分的计数',
+    '感受同一个数列贯穿多种组合结构',
+  ],
+
+  prerequisites: ['了解排列组合', '了解递推的概念'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '有一个数列：一、一、二、五、十四、四十二。' },
+        { id: 'intro-2', text: '它叫卡特兰数，看似普通，却藏在许多问题的答案里。' },
+        { id: 'intro-3', text: '括号、二叉树、多边形，答案居然都是同一串数。' },
+      ],
+    },
+    {
+      id: 'paren',
+      type: 'concept',
+      title: '括号匹配',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '先看括号：n 对括号能排出多少种合法写法？' },
+        { id: 'def-2', text: '合法意味着任何前缀里，右括号都不多于左括号。' },
+        { id: 'def-3', text: '三对括号有五种，这正好是卡特兰数 C 三。' },
+      ],
+    },
+    {
+      id: 'tree',
+      type: 'concept',
+      title: '二叉树计数',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'tree-1', text: '再看二叉树：n 个内部节点能长出多少种不同形态？' },
+        { id: 'tree-2', text: '每一种合法括号，都对应唯一一棵二叉树的形状。' },
+        { id: 'tree-3', text: '于是它们的数目完全相同，都是卡特兰数。' },
+      ],
+    },
+    {
+      id: 'poly',
+      type: 'concept',
+      title: '多边形三角剖分',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'poly-1', text: '第三个面孔：把凸多边形用不相交的对角线切成三角形。' },
+        { id: 'poly-2', text: '一个 n 加二 边形的剖分方案数，恰好是 C n。' },
+        { id: 'poly-3', text: '同一个递推 C n 加一 等于各项两两相乘再求和，在背后统一了这一切。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '选择不同的 n，看这个数如何随规模迅速增长。' },
+        { id: 'int-2', text: '切换视角，同一个 C n 会以括号、树或多边形出现。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '卡特兰数由简单递推生成，也有闭式 C 二n 取 n 再除以 n 加一。' },
+        { id: 'sum-2', text: '它把括号、二叉树、三角剖分等问题串成一家。' },
+        { id: 'sum-3', text: '一串数，多种面孔，这就是组合数学的奇妙，我们下次再见！' },
+      ],
+    },
+  ],
+}

@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 极限环 - 口播稿件
+ * 核心概念：自持振荡、范德波尔方程、孤立闭轨、全局吸引
+ * 目标受众：高中及以上
+ */
+export const limitCycleNarration: NarrationScript = {
+  id: 'limit-cycle',
+  title: '极限环',
+  subtitle: '范德波尔的自持振荡',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解自持振荡的能量平衡机制',
+    '认识范德波尔方程及其一阶系统形式',
+    '理解极限环作为孤立闭轨的含义',
+    '感受不同初值被同一吸引子俘获的美感',
+  ],
+
+  prerequisites: ['了解导数', '了解相平面'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '有些系统不需要外力驱动，也能自己稳定地来回振荡。' },
+        { id: 'intro-2', text: '心脏的搏动、萤火虫的同步闪烁，都是这样的自持振荡。' },
+        { id: 'intro-3', text: '它们背后藏着同一个几何图案，叫做极限环。' },
+      ],
+    },
+    {
+      id: 'equation',
+      type: 'concept',
+      title: '范德波尔方程',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'eq-1', text: '范德波尔方程写作 x 的二阶导，减去 mu 乘一减 x 平方再乘一阶导，加 x，等于零。' },
+        { id: 'eq-2', text: '令 y 等于 x 的导数，就把它化成两个一阶方程组成的系统。' },
+        { id: 'eq-3', text: '我们用四阶龙格库塔法一步步积分，在相平面上追踪它的轨迹。' },
+      ],
+    },
+    {
+      id: 'cycle',
+      type: 'concept',
+      title: '孤立的闭轨',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'cyc-1', text: '当振幅很小时，那个负阻尼项给系统注入能量，让它越振越大。' },
+        { id: 'cyc-2', text: '当振幅很大时，阻尼又变成正的，把多余的能量耗散掉。' },
+        { id: 'cyc-3', text: '两种作用恰好平衡，画出一条孤立的闭合曲线，这就是极限环。' },
+      ],
+    },
+    {
+      id: 'attract',
+      type: 'concept',
+      title: '内外都被吸引',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'att-1', text: '从环内部出发的轨线，会向外螺旋着靠近这条闭轨。' },
+        { id: 'att-2', text: '从环外部出发的轨线，则向内螺旋着收拢过来。' },
+        { id: 'att-3', text: '无论起点在哪，最终都被同一个极限环牢牢俘获。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '调整参数 mu，看看环的形状如何从圆润变得棱角分明。' },
+        { id: 'int-2', text: '重新演示收敛过程，观察每条轨线怎样奔向同一条闭轨。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '范德波尔方程用负阻尼供能、正阻尼耗能，达成自持振荡。' },
+        { id: 'sum-2', text: '平衡的结果是一条孤立闭轨，吸引着内外所有轨线。' },
+        { id: 'sum-3', text: '简单的非线性，孕育出稳定的节律之美，我们下次再见！' },
+      ],
+    },
+  ],
+}
