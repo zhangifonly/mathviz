@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 行进方块 - 口播稿件
+ * 核心概念：标量场、16 种情形查表、线性插值、等高线提取
+ * 目标受众：高中及以上
+ */
+export const marchingSquaresNarration: NarrationScript = {
+  id: 'marching-squares',
+  title: '行进方块',
+  subtitle: '从标量场里提取等高线',
+  difficulty: 'intermediate',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解标量场与等高线的关系',
+    '掌握每个单元 16 种内外情形的查表法',
+    '理解用线性插值确定交点位置',
+    '认识行进方块在地形与医学成像中的应用',
+  ],
+
+  prerequisites: ['了解坐标网格', '了解线性插值'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '地图上那一圈圈的等高线，是怎么从高度数据里画出来的？' },
+        { id: 'intro-2', text: '我们手里只有一张离散的数值网格，每个格点记录一个高度。' },
+        { id: 'intro-3', text: '行进方块算法，就能把这些散点连成平滑的等高线。' },
+      ],
+    },
+    {
+      id: 'sample',
+      type: 'concept',
+      title: '网格采样',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '先把整个区域切成一个个小方格，这就是标量场网格。' },
+        { id: 'def-2', text: '每个格点的值，可以想成那一点的海拔高度。' },
+        { id: 'def-3', text: '我们设定一个阈值，比如海拔一千米，要画出这条高度线。' },
+      ],
+    },
+    {
+      id: 'lookup',
+      type: 'concept',
+      title: '十六种情形',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'case-1', text: '看每个方格的四个角，比阈值高记作一，低记作零。' },
+        { id: 'case-2', text: '四个角各是零或一，一共有二的四次方，也就是十六种组合。' },
+        { id: 'case-3', text: '每种组合都对应一张查找表，直接告诉我们该连哪几条边。' },
+      ],
+    },
+    {
+      id: 'interp',
+      type: 'concept',
+      title: '线性插值',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'lerp-1', text: '等高线穿过某条边时，交点在哪里呢？' },
+        { id: 'lerp-2', text: '用两个端点的值做线性插值，阈值越靠近哪端，交点就越靠哪端。' },
+        { id: 'lerp-3', text: '正是这一步插值，让锯齿状的格子变成了顺滑的曲线。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '拖动阈值滑块，看等高线随高度层层收缩。' },
+        { id: 'int-2', text: '阈值越高，曲线越贴近山峰，把两座高斯峰勾勒得清清楚楚。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '行进方块：逐格判断四角，查表连边，插值定点。' },
+        { id: 'sum-2', text: '地形等高线、气象等压线、医学等值面，背后都是它。' },
+        { id: 'sum-3', text: '离散网格里藏着连续的曲线，我们下次再见！' },
+      ],
+    },
+  ],
+}

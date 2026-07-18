@@ -276,6 +276,31 @@ const TorusKleinSceneRenderer = lazy(() => import('./TorusKlein/TorusKleinSceneR
 const PerceptronSceneRenderer = lazy(() => import('./Perceptron/PerceptronSceneRenderer'))
 const KmeansSceneRenderer = lazy(() => import('./Kmeans/KmeansSceneRenderer'))
 const NeuralNetworkForwardSceneRenderer = lazy(() => import('./NeuralNetworkForward/NeuralNetworkForwardSceneRenderer'))
+const KochSnowflakeSceneRenderer = lazy(() => import('./KochSnowflake/KochSnowflakeSceneRenderer'))
+const SierpinskiTriangleSceneRenderer = lazy(() => import('./SierpinskiTriangle/SierpinskiTriangleSceneRenderer'))
+const SierpinskiCarpetSceneRenderer = lazy(() => import('./SierpinskiCarpet/SierpinskiCarpetSceneRenderer'))
+const DragonCurveSceneRenderer = lazy(() => import('./DragonCurve/DragonCurveSceneRenderer'))
+const BarnsleyFernSceneRenderer = lazy(() => import('./BarnsleyFern/BarnsleyFernSceneRenderer'))
+const HilbertCurveSceneRenderer = lazy(() => import('./HilbertCurve/HilbertCurveSceneRenderer'))
+const PeanoCurveSceneRenderer = lazy(() => import('./PeanoCurve/PeanoCurveSceneRenderer'))
+const GosperCurveSceneRenderer = lazy(() => import('./GosperCurve/GosperCurveSceneRenderer'))
+const LevyCCurveSceneRenderer = lazy(() => import('./LevyCCurve/LevyCCurveSceneRenderer'))
+const NewtonFractalSceneRenderer = lazy(() => import('./NewtonFractal/NewtonFractalSceneRenderer'))
+const BurningShipSceneRenderer = lazy(() => import('./BurningShip/BurningShipSceneRenderer'))
+const BoxCountingDimensionSceneRenderer = lazy(() => import('./BoxCountingDimension/BoxCountingDimensionSceneRenderer'))
+const CantorSetSceneRenderer = lazy(() => import('./CantorSet/CantorSetSceneRenderer'))
+const QuadtreeSceneRenderer = lazy(() => import('./Quadtree/QuadtreeSceneRenderer'))
+const KdTreeSceneRenderer = lazy(() => import('./KdTree/KdTreeSceneRenderer'))
+const MarchingSquaresSceneRenderer = lazy(() => import('./MarchingSquares/MarchingSquaresSceneRenderer'))
+const PointInPolygonSceneRenderer = lazy(() => import('./PointInPolygon/PointInPolygonSceneRenderer'))
+const LineClippingSceneRenderer = lazy(() => import('./LineClipping/LineClippingSceneRenderer'))
+const RotatingCalipersSceneRenderer = lazy(() => import('./RotatingCalipers/RotatingCalipersSceneRenderer'))
+const EarClippingSceneRenderer = lazy(() => import('./EarClipping/EarClippingSceneRenderer'))
+const AStarSceneRenderer = lazy(() => import('./AStar/AStarSceneRenderer'))
+const StereographicProjectionSceneRenderer = lazy(() => import('./StereographicProjection/StereographicProjectionSceneRenderer'))
+const HopfFibrationSceneRenderer = lazy(() => import('./HopfFibration/HopfFibrationSceneRenderer'))
+const HyperbolicTilingSceneRenderer = lazy(() => import('./HyperbolicTiling/HyperbolicTilingSceneRenderer'))
+const SpirographSceneRenderer = lazy(() => import('./Spirograph/SpirographSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -479,6 +504,31 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'perceptron': PerceptronSceneRenderer,
   'kmeans': KmeansSceneRenderer,
   'neural-network-forward': NeuralNetworkForwardSceneRenderer,
+  'koch-snowflake': KochSnowflakeSceneRenderer,
+  'sierpinski-triangle': SierpinskiTriangleSceneRenderer,
+  'sierpinski-carpet': SierpinskiCarpetSceneRenderer,
+  'dragon-curve': DragonCurveSceneRenderer,
+  'barnsley-fern': BarnsleyFernSceneRenderer,
+  'hilbert-curve': HilbertCurveSceneRenderer,
+  'peano-curve': PeanoCurveSceneRenderer,
+  'gosper-curve': GosperCurveSceneRenderer,
+  'levy-c-curve': LevyCCurveSceneRenderer,
+  'newton-fractal': NewtonFractalSceneRenderer,
+  'burning-ship': BurningShipSceneRenderer,
+  'box-counting-dimension': BoxCountingDimensionSceneRenderer,
+  'cantor-set': CantorSetSceneRenderer,
+  'quadtree': QuadtreeSceneRenderer,
+  'kd-tree': KdTreeSceneRenderer,
+  'marching-squares': MarchingSquaresSceneRenderer,
+  'point-in-polygon': PointInPolygonSceneRenderer,
+  'line-clipping': LineClippingSceneRenderer,
+  'rotating-calipers': RotatingCalipersSceneRenderer,
+  'ear-clipping': EarClippingSceneRenderer,
+  'a-star': AStarSceneRenderer,
+  'stereographic-projection': StereographicProjectionSceneRenderer,
+  'hopf-fibration': HopfFibrationSceneRenderer,
+  'hyperbolic-tiling': HyperbolicTilingSceneRenderer,
+  'spirograph': SpirographSceneRenderer,
 }
 
 // 获取场景渲染器

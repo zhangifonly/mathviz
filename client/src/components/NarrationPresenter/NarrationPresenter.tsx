@@ -211,6 +211,31 @@ import { torusKleinScenes, defaultTorusKleinState } from './torusKleinScenes'
 import { perceptronScenes, defaultPerceptronState } from './perceptronScenes'
 import { kmeansScenes, defaultKmeansState } from './kmeansScenes'
 import { neuralNetworkForwardScenes, defaultNeuralNetworkForwardState } from './neuralNetworkForwardScenes'
+import { kochSnowflakeScenes, defaultKochSnowflakeState } from './kochSnowflakeScenes'
+import { sierpinskiTriangleScenes, defaultSierpinskiTriangleState } from './sierpinskiTriangleScenes'
+import { sierpinskiCarpetScenes, defaultSierpinskiCarpetState } from './sierpinskiCarpetScenes'
+import { dragonCurveScenes, defaultDragonCurveState } from './dragonCurveScenes'
+import { barnsleyFernScenes, defaultBarnsleyFernState } from './barnsleyFernScenes'
+import { hilbertCurveScenes, defaultHilbertCurveState } from './hilbertCurveScenes'
+import { peanoCurveScenes, defaultPeanoCurveState } from './peanoCurveScenes'
+import { gosperCurveScenes, defaultGosperCurveState } from './gosperCurveScenes'
+import { levyCCurveScenes, defaultLevyCCurveState } from './levyCCurveScenes'
+import { newtonFractalScenes, defaultNewtonFractalState } from './newtonFractalScenes'
+import { burningShipScenes, defaultBurningShipState } from './burningShipScenes'
+import { boxCountingDimensionScenes, defaultBoxCountingDimensionState } from './boxCountingDimensionScenes'
+import { cantorSetScenes, defaultCantorSetState } from './cantorSetScenes'
+import { quadtreeScenes, defaultQuadtreeState } from './quadtreeScenes'
+import { kdTreeScenes, defaultKdTreeState } from './kdTreeScenes'
+import { marchingSquaresScenes, defaultMarchingSquaresState } from './marchingSquaresScenes'
+import { pointInPolygonScenes, defaultPointInPolygonState } from './pointInPolygonScenes'
+import { lineClippingScenes, defaultLineClippingState } from './lineClippingScenes'
+import { rotatingCalipersScenes, defaultRotatingCalipersState } from './rotatingCalipersScenes'
+import { earClippingScenes, defaultEarClippingState } from './earClippingScenes'
+import { aStarScenes, defaultAStarState } from './aStarScenes'
+import { stereographicProjectionScenes, defaultStereographicProjectionState } from './stereographicProjectionScenes'
+import { hopfFibrationScenes, defaultHopfFibrationState } from './hopfFibrationScenes'
+import { hyperbolicTilingScenes, defaultHyperbolicTilingState } from './hyperbolicTilingScenes'
+import { spirographScenes, defaultSpirographState } from './spirographScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -435,6 +460,31 @@ const sceneConfigMap: Record<string, {
   'perceptron': { scenes: perceptronScenes, defaultState: defaultPerceptronState },
   'kmeans': { scenes: kmeansScenes, defaultState: defaultKmeansState },
   'neural-network-forward': { scenes: neuralNetworkForwardScenes, defaultState: defaultNeuralNetworkForwardState },
+  'koch-snowflake': { scenes: kochSnowflakeScenes, defaultState: defaultKochSnowflakeState },
+  'sierpinski-triangle': { scenes: sierpinskiTriangleScenes, defaultState: defaultSierpinskiTriangleState },
+  'sierpinski-carpet': { scenes: sierpinskiCarpetScenes, defaultState: defaultSierpinskiCarpetState },
+  'dragon-curve': { scenes: dragonCurveScenes, defaultState: defaultDragonCurveState },
+  'barnsley-fern': { scenes: barnsleyFernScenes, defaultState: defaultBarnsleyFernState },
+  'hilbert-curve': { scenes: hilbertCurveScenes, defaultState: defaultHilbertCurveState },
+  'peano-curve': { scenes: peanoCurveScenes, defaultState: defaultPeanoCurveState },
+  'gosper-curve': { scenes: gosperCurveScenes, defaultState: defaultGosperCurveState },
+  'levy-c-curve': { scenes: levyCCurveScenes, defaultState: defaultLevyCCurveState },
+  'newton-fractal': { scenes: newtonFractalScenes, defaultState: defaultNewtonFractalState },
+  'burning-ship': { scenes: burningShipScenes, defaultState: defaultBurningShipState },
+  'box-counting-dimension': { scenes: boxCountingDimensionScenes, defaultState: defaultBoxCountingDimensionState },
+  'cantor-set': { scenes: cantorSetScenes, defaultState: defaultCantorSetState },
+  'quadtree': { scenes: quadtreeScenes, defaultState: defaultQuadtreeState },
+  'kd-tree': { scenes: kdTreeScenes, defaultState: defaultKdTreeState },
+  'marching-squares': { scenes: marchingSquaresScenes, defaultState: defaultMarchingSquaresState },
+  'point-in-polygon': { scenes: pointInPolygonScenes, defaultState: defaultPointInPolygonState },
+  'line-clipping': { scenes: lineClippingScenes, defaultState: defaultLineClippingState },
+  'rotating-calipers': { scenes: rotatingCalipersScenes, defaultState: defaultRotatingCalipersState },
+  'ear-clipping': { scenes: earClippingScenes, defaultState: defaultEarClippingState },
+  'a-star': { scenes: aStarScenes, defaultState: defaultAStarState },
+  'stereographic-projection': { scenes: stereographicProjectionScenes, defaultState: defaultStereographicProjectionState },
+  'hopf-fibration': { scenes: hopfFibrationScenes, defaultState: defaultHopfFibrationState },
+  'hyperbolic-tiling': { scenes: hyperbolicTilingScenes, defaultState: defaultHyperbolicTilingState },
+  'spirograph': { scenes: spirographScenes, defaultState: defaultSpirographState },
 }
 
 // 检测是否为移动设备
@@ -639,7 +689,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       // 新增2个待完成课程
       'laplace', 'permutation-combination',
       // 新增优美数学场景
-      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet', 'sieve-eratosthenes', 'magic-square', 'tower-of-hanoi', 'pigeonhole', 'triangle-centers', 'number-bases', 'pythagoras-tree', 'tessellation', 'perfect-numbers', 'collatz', 'prime-factorization', 'fibonacci-nature', 'dice-probability', 'nine-point-circle', 'euler-line', 'inversive-geometry', 'poincare-disk', 'spherical-geometry', 'convex-hull', 'delaunay-triangulation', 'apollonian-gasket', 'pick-theorem', 'reuleaux', 'circle-packing', 'steiner-chain', 'polynomial-roots', 'vieta-formulas', 'binomial-theorem', 'inverse-function', 'composite-function', 'partial-fractions', 'rational-asymptotes', 'piecewise-function', 'logarithm-spiral', 'function-transform', 'euclidean-algorithm', 'chinese-remainder', 'quadratic-residue', 'gaussian-integers', 'integer-partition', 'pell-equation', 'prime-counting', 'digital-root', 'epsilon-delta', 'mean-value-theorem', 'riemann-sum', 'solid-of-revolution', 'arc-length-curvature', 'series-convergence', 'improper-integral', 'determinant-geometry', 'kernel-image', 'orthogonal-projection', 'least-squares', 'quadratic-form', 'spectral-theorem', 'law-large-numbers', 'poisson-process', 'brownian-motion', 'monty-hall', 'birthday-paradox', 'hypothesis-testing', 'confidence-interval', 'max-likelihood', 'gaussian-mixture', 'hidden-markov', 'multiple-integral', 'line-integral', 'divergence-curl', 'stokes-theorem', 'partial-derivative', 'directional-derivative', 'jacobian', 'vector-calculus-field', 'laplacian', 'dijkstra', 'network-flow', 'graph-coloring', 'euler-hamilton-path', 'sorting-algorithms', 'bfs-dfs', 'dynamic-programming', 'divide-conquer', 'huffman-coding', 'catalan-numbers', 'generating-functions', 'minimum-spanning-tree', 'logistic-bifurcation', 'phase-portrait', 'limit-cycle', 'lotka-volterra', 'pendulum-phase', 'kepler-orbit', 'vibrating-string', 'poincare-section', 'euler-characteristic', 'torus-klein', 'perceptron', 'kmeans', 'neural-network-forward'
+      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet', 'sieve-eratosthenes', 'magic-square', 'tower-of-hanoi', 'pigeonhole', 'triangle-centers', 'number-bases', 'pythagoras-tree', 'tessellation', 'perfect-numbers', 'collatz', 'prime-factorization', 'fibonacci-nature', 'dice-probability', 'nine-point-circle', 'euler-line', 'inversive-geometry', 'poincare-disk', 'spherical-geometry', 'convex-hull', 'delaunay-triangulation', 'apollonian-gasket', 'pick-theorem', 'reuleaux', 'circle-packing', 'steiner-chain', 'polynomial-roots', 'vieta-formulas', 'binomial-theorem', 'inverse-function', 'composite-function', 'partial-fractions', 'rational-asymptotes', 'piecewise-function', 'logarithm-spiral', 'function-transform', 'euclidean-algorithm', 'chinese-remainder', 'quadratic-residue', 'gaussian-integers', 'integer-partition', 'pell-equation', 'prime-counting', 'digital-root', 'epsilon-delta', 'mean-value-theorem', 'riemann-sum', 'solid-of-revolution', 'arc-length-curvature', 'series-convergence', 'improper-integral', 'determinant-geometry', 'kernel-image', 'orthogonal-projection', 'least-squares', 'quadratic-form', 'spectral-theorem', 'law-large-numbers', 'poisson-process', 'brownian-motion', 'monty-hall', 'birthday-paradox', 'hypothesis-testing', 'confidence-interval', 'max-likelihood', 'gaussian-mixture', 'hidden-markov', 'multiple-integral', 'line-integral', 'divergence-curl', 'stokes-theorem', 'partial-derivative', 'directional-derivative', 'jacobian', 'vector-calculus-field', 'laplacian', 'dijkstra', 'network-flow', 'graph-coloring', 'euler-hamilton-path', 'sorting-algorithms', 'bfs-dfs', 'dynamic-programming', 'divide-conquer', 'huffman-coding', 'catalan-numbers', 'generating-functions', 'minimum-spanning-tree', 'logistic-bifurcation', 'phase-portrait', 'limit-cycle', 'lotka-volterra', 'pendulum-phase', 'kepler-orbit', 'vibrating-string', 'poincare-section', 'euler-characteristic', 'torus-klein', 'perceptron', 'kmeans', 'neural-network-forward', 'koch-snowflake', 'sierpinski-triangle', 'sierpinski-carpet', 'dragon-curve', 'barnsley-fern', 'hilbert-curve', 'peano-curve', 'gosper-curve', 'levy-c-curve', 'newton-fractal', 'burning-ship', 'box-counting-dimension', 'cantor-set', 'quadtree', 'kd-tree', 'marching-squares', 'point-in-polygon', 'line-clipping', 'rotating-calipers', 'ear-clipping', 'a-star', 'stereographic-projection', 'hopf-fibration', 'hyperbolic-tiling', 'spirograph'
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

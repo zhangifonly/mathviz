@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 巴恩斯利蕨 - 口播稿件
+ * 核心概念：仿射变换、迭代函数系统、概率选择、分形自相似
+ * 目标受众：高中及以上
+ */
+export const barnsleyFernNarration: NarrationScript = {
+  id: 'barnsley-fern',
+  title: '巴恩斯利蕨',
+  subtitle: '迭代函数系统',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解仿射变换如何搬移、缩放、旋转平面上的点',
+    '认识迭代函数系统 (IFS) 生成分形的原理',
+    '体会概率如何决定图案各部分的疏密',
+    '感受简单规则涌现出自然形态的分形之美',
+  ],
+
+  prerequisites: ['了解平面坐标', '了解基本的概率概念'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '眼前这片翠绿的蕨叶，不是画笔画的，也不是照片。' },
+        { id: 'intro-2', text: '它完全由数学生成，只用了四条简单的规则。' },
+        { id: 'intro-3', text: '这就是著名的巴恩斯利蕨，分形几何最优雅的例子之一。' },
+      ],
+    },
+    {
+      id: 'affine',
+      type: 'concept',
+      title: '仿射变换',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'aff-1', text: '一切从仿射变换说起，它对一个点做缩放、旋转再平移。' },
+        { id: 'aff-2', text: '每个变换都是六个系数，把当前点搬到一个新位置。' },
+        { id: 'aff-3', text: '巴恩斯利精心挑选了四组系数，各自负责蕨的一个部分。' },
+      ],
+    },
+    {
+      id: 'ifs',
+      type: 'concept',
+      title: '迭代函数系统',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'ifs-1', text: '我们从原点出发，反复把变换作用在最新的点上。' },
+        { id: 'ifs-2', text: '每一步都产生一个新点，几万步后点云勾勒出整片蕨叶。' },
+        { id: 'ifs-3', text: '这种反复自我作用的规则集合，叫做迭代函数系统。' },
+      ],
+    },
+    {
+      id: 'probability',
+      type: 'concept',
+      title: '概率选择',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'prob-1', text: '关键在于:每一步该用哪个变换，由概率随机决定。' },
+        { id: 'prob-2', text: '主叶变换有百分之八十五的概率，撑起了叶片的主体。' },
+        { id: 'prob-3', text: '而茎变换只有百分之一，恰好细细地画出中央的主干。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '增加迭代点数，看蕨叶从稀疏的散点逐渐变得饱满清晰。' },
+        { id: 'int-2', text: '单独高亮某个变换，就能看清它究竟负责哪一部分。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '四个仿射变换，加上概率选择，反复迭代。' },
+        { id: 'sum-2', text: '简单的规则，竟涌现出栩栩如生的自然形态。' },
+        { id: 'sum-3', text: '这就是迭代函数系统的魔力，我们下次再见!' },
+      ],
+    },
+  ],
+}

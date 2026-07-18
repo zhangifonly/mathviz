@@ -1,0 +1,98 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 列维C形曲线 - 口播稿件
+ * 核心概念：线段替换、递归自相似、分形维数
+ * 目标受众：高中及以上
+ */
+export const levyCCurveNarration: NarrationScript = {
+  id: 'levy-c-curve',
+  title: '列维C形曲线',
+  subtitle: '直角自相似分形',
+  difficulty: 'intermediate',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解列维C曲线的线段替换生成规则',
+    '认识递归带来的自相似结构',
+    '了解分形维数的直观含义',
+    '感受简单规则生成的复杂之美',
+  ],
+
+  prerequisites: ['了解等腰直角三角形', '了解递归的基本思想'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '眼前这条曲线，是由无数个字母 C 层层叠叠拼成的。' },
+        { id: 'intro-2', text: '它叫列维C形曲线，由数学家保罗·列维在上世纪提出。' },
+        { id: 'intro-3', text: '别看它形状复杂，生成规则却简单得出人意料。' },
+      ],
+    },
+    {
+      id: 'rule',
+      type: 'concept',
+      title: '线段变两直角边',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '从一条水平线段开始，把它当作一个等腰直角三角形的斜边。' },
+        { id: 'def-2', text: '用两条直角边替换这条斜边，一条线段就变成了折起的两段。' },
+        { id: 'def-3', text: '这一步替换，正是整条曲线的基本笔画。' },
+      ],
+    },
+    {
+      id: 'recurse',
+      type: 'concept',
+      title: '递归自相似',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'rec-1', text: '接着，对新生成的每一条线段，重复同样的替换。' },
+        { id: 'rec-2', text: '每提升一阶，线段数量就翻倍，图形迅速变得繁复。' },
+        { id: 'rec-3', text: '放大任何一个角落，都能看到和整体一模一样的 C 形，这就是自相似。' },
+      ],
+    },
+    {
+      id: 'dimension',
+      type: 'concept',
+      title: '分形维数',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'dim-1', text: '这条曲线的分形维数接近 2，几乎要填满一整片平面。' },
+        { id: 'dim-2', text: '它是一条一维的线，却拥有近乎二维的复杂度。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '调整递归阶数，看它从简单折线一步步长成饱满的 C 形团。' },
+        { id: 'int-2', text: '阶数越高，边缘的褶皱越细密，细节仿佛无穷无尽。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '列维C曲线把每条线段替换成等腰直角三角形的两条直角边。' },
+        { id: 'sum-2', text: '一遍遍递归后，简单规则生成了无穷自相似的分形。' },
+        { id: 'sum-3', text: '简单孕育复杂，正是分形的迷人之处，我们下次再见！' },
+      ],
+    },
+  ],
+}

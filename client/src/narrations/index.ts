@@ -206,6 +206,31 @@ export { torusKleinNarration } from './scripts/torus-klein'
 export { perceptronNarration } from './scripts/perceptron'
 export { kmeansNarration } from './scripts/kmeans'
 export { neuralNetworkForwardNarration } from './scripts/neural-network-forward'
+export { kochSnowflakeNarration } from './scripts/koch-snowflake'
+export { sierpinskiTriangleNarration } from './scripts/sierpinski-triangle'
+export { sierpinskiCarpetNarration } from './scripts/sierpinski-carpet'
+export { dragonCurveNarration } from './scripts/dragon-curve'
+export { barnsleyFernNarration } from './scripts/barnsley-fern'
+export { hilbertCurveNarration } from './scripts/hilbert-curve'
+export { peanoCurveNarration } from './scripts/peano-curve'
+export { gosperCurveNarration } from './scripts/gosper-curve'
+export { levyCCurveNarration } from './scripts/levy-c-curve'
+export { newtonFractalNarration } from './scripts/newton-fractal'
+export { burningShipNarration } from './scripts/burning-ship'
+export { boxCountingDimensionNarration } from './scripts/box-counting-dimension'
+export { cantorSetNarration } from './scripts/cantor-set'
+export { quadtreeNarration } from './scripts/quadtree'
+export { kdTreeNarration } from './scripts/kd-tree'
+export { marchingSquaresNarration } from './scripts/marching-squares'
+export { pointInPolygonNarration } from './scripts/point-in-polygon'
+export { lineClippingNarration } from './scripts/line-clipping'
+export { rotatingCalipersNarration } from './scripts/rotating-calipers'
+export { earClippingNarration } from './scripts/ear-clipping'
+export { aStarNarration } from './scripts/a-star'
+export { stereographicProjectionNarration } from './scripts/stereographic-projection'
+export { hopfFibrationNarration } from './scripts/hopf-fibration'
+export { hyperbolicTilingNarration } from './scripts/hyperbolic-tiling'
+export { spirographNarration } from './scripts/spirograph'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -404,6 +429,31 @@ import { torusKleinNarration } from './scripts/torus-klein'
 import { perceptronNarration } from './scripts/perceptron'
 import { kmeansNarration } from './scripts/kmeans'
 import { neuralNetworkForwardNarration } from './scripts/neural-network-forward'
+import { kochSnowflakeNarration } from './scripts/koch-snowflake'
+import { sierpinskiTriangleNarration } from './scripts/sierpinski-triangle'
+import { sierpinskiCarpetNarration } from './scripts/sierpinski-carpet'
+import { dragonCurveNarration } from './scripts/dragon-curve'
+import { barnsleyFernNarration } from './scripts/barnsley-fern'
+import { hilbertCurveNarration } from './scripts/hilbert-curve'
+import { peanoCurveNarration } from './scripts/peano-curve'
+import { gosperCurveNarration } from './scripts/gosper-curve'
+import { levyCCurveNarration } from './scripts/levy-c-curve'
+import { newtonFractalNarration } from './scripts/newton-fractal'
+import { burningShipNarration } from './scripts/burning-ship'
+import { boxCountingDimensionNarration } from './scripts/box-counting-dimension'
+import { cantorSetNarration } from './scripts/cantor-set'
+import { quadtreeNarration } from './scripts/quadtree'
+import { kdTreeNarration } from './scripts/kd-tree'
+import { marchingSquaresNarration } from './scripts/marching-squares'
+import { pointInPolygonNarration } from './scripts/point-in-polygon'
+import { lineClippingNarration } from './scripts/line-clipping'
+import { rotatingCalipersNarration } from './scripts/rotating-calipers'
+import { earClippingNarration } from './scripts/ear-clipping'
+import { aStarNarration } from './scripts/a-star'
+import { stereographicProjectionNarration } from './scripts/stereographic-projection'
+import { hopfFibrationNarration } from './scripts/hopf-fibration'
+import { hyperbolicTilingNarration } from './scripts/hyperbolic-tiling'
+import { spirographNarration } from './scripts/spirograph'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -606,6 +656,31 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'perceptron': perceptronNarration,
   'kmeans': kmeansNarration,
   'neural-network-forward': neuralNetworkForwardNarration,
+  'koch-snowflake': kochSnowflakeNarration,
+  'sierpinski-triangle': sierpinskiTriangleNarration,
+  'sierpinski-carpet': sierpinskiCarpetNarration,
+  'dragon-curve': dragonCurveNarration,
+  'barnsley-fern': barnsleyFernNarration,
+  'hilbert-curve': hilbertCurveNarration,
+  'peano-curve': peanoCurveNarration,
+  'gosper-curve': gosperCurveNarration,
+  'levy-c-curve': levyCCurveNarration,
+  'newton-fractal': newtonFractalNarration,
+  'burning-ship': burningShipNarration,
+  'box-counting-dimension': boxCountingDimensionNarration,
+  'cantor-set': cantorSetNarration,
+  'quadtree': quadtreeNarration,
+  'kd-tree': kdTreeNarration,
+  'marching-squares': marchingSquaresNarration,
+  'point-in-polygon': pointInPolygonNarration,
+  'line-clipping': lineClippingNarration,
+  'rotating-calipers': rotatingCalipersNarration,
+  'ear-clipping': earClippingNarration,
+  'a-star': aStarNarration,
+  'stereographic-projection': stereographicProjectionNarration,
+  'hopf-fibration': hopfFibrationNarration,
+  'hyperbolic-tiling': hyperbolicTilingNarration,
+  'spirograph': spirographNarration,
 }
 
 // 获取稿件

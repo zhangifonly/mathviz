@@ -1,0 +1,98 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 科赫雪花 - 口播稿件
+ * 核心概念：分形迭代、无穷周长、有限面积
+ * 目标受众：初中及以上
+ */
+export const kochSnowflakeNarration: NarrationScript = {
+  id: 'koch-snowflake',
+  title: '科赫雪花',
+  subtitle: '无穷周长有限面积',
+  difficulty: 'elementary',
+  targetAge: '初中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解科赫曲线的迭代替换规则',
+    '认识分形自相似的结构特征',
+    '体会周长发散而面积收敛的反直觉现象',
+  ],
+
+  prerequisites: ['了解等边三角形', '了解等比数列'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '这是一片数学画出来的雪花，边缘越看越细，怎么放大都有花边。' },
+        { id: 'intro-2', text: '它有个古怪的名字，叫科赫雪花，藏着一个让人吃惊的秘密。' },
+        { id: 'intro-3', text: '别急，我们从一个普通的等边三角形开始，一步步把它变成雪花。' },
+      ],
+    },
+    {
+      id: 'rule',
+      type: 'concept',
+      title: '迭代规则',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'rule-1', text: '规则很简单：把每条边平均分成三段。' },
+        { id: 'rule-2', text: '去掉中间那一段，换上一个向外凸的等边三角形的另外两条边。' },
+        { id: 'rule-3', text: '于是原来的一条线段，就变成了折出尖角的四条线段。' },
+      ],
+    },
+    {
+      id: 'perimeter',
+      type: 'concept',
+      title: '周长趋于无穷',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'peri-1', text: '每迭代一次，边数变成四倍，而每条边长只剩三分之一。' },
+        { id: 'peri-2', text: '算下来总周长每次都乘以四分之三的倒数，也就是变成四分之三倍的倒数。' },
+        { id: 'peri-3', text: '一直迭代下去，周长按四比三的比例越涨越大，最终冲向无穷。' },
+      ],
+    },
+    {
+      id: 'area',
+      type: 'concept',
+      title: '面积却有限',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'area-1', text: '奇怪的是，雪花始终被一个外接圆牢牢框住，跑不出去。' },
+        { id: 'area-2', text: '每次新增的小三角越来越小，把它们加起来是一个收敛的等比级数。' },
+        { id: 'area-3', text: '最后面积稳稳停在初始三角形的八分之五那么大，一点不多。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '调整迭代层数，看雪花的边缘怎样一层层长出更细的花边。' },
+        { id: 'int-2', text: '留意右侧数值：周长不停变大，面积却几乎纹丝不动。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '科赫雪花用一条简单规则，折出无限精细的自相似边缘。' },
+        { id: 'sum-2', text: '无穷的周长包住有限的面积，这正是分形最迷人的地方。' },
+        { id: 'sum-3', text: '有限里藏着无限，愿你继续探索数学之美，我们下次再见！' },
+      ],
+    },
+  ],
+}

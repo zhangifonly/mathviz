@@ -221,6 +221,31 @@ const TorusKleinExperiment = lazyRetry(() => import('./experiments/torus-klein/T
 const PerceptronExperiment = lazyRetry(() => import('./experiments/perceptron/PerceptronExperiment'))
 const KmeansExperiment = lazyRetry(() => import('./experiments/kmeans/KmeansExperiment'))
 const NeuralNetworkForwardExperiment = lazyRetry(() => import('./experiments/neural-network-forward/NeuralNetworkForwardExperiment'))
+const KochSnowflakeExperiment = lazyRetry(() => import('./experiments/koch-snowflake/KochSnowflakeExperiment'))
+const SierpinskiTriangleExperiment = lazyRetry(() => import('./experiments/sierpinski-triangle/SierpinskiTriangleExperiment'))
+const SierpinskiCarpetExperiment = lazyRetry(() => import('./experiments/sierpinski-carpet/SierpinskiCarpetExperiment'))
+const DragonCurveExperiment = lazyRetry(() => import('./experiments/dragon-curve/DragonCurveExperiment'))
+const BarnsleyFernExperiment = lazyRetry(() => import('./experiments/barnsley-fern/BarnsleyFernExperiment'))
+const HilbertCurveExperiment = lazyRetry(() => import('./experiments/hilbert-curve/HilbertCurveExperiment'))
+const PeanoCurveExperiment = lazyRetry(() => import('./experiments/peano-curve/PeanoCurveExperiment'))
+const GosperCurveExperiment = lazyRetry(() => import('./experiments/gosper-curve/GosperCurveExperiment'))
+const LevyCCurveExperiment = lazyRetry(() => import('./experiments/levy-c-curve/LevyCCurveExperiment'))
+const NewtonFractalExperiment = lazyRetry(() => import('./experiments/newton-fractal/NewtonFractalExperiment'))
+const BurningShipExperiment = lazyRetry(() => import('./experiments/burning-ship/BurningShipExperiment'))
+const BoxCountingDimensionExperiment = lazyRetry(() => import('./experiments/box-counting-dimension/BoxCountingDimensionExperiment'))
+const CantorSetExperiment = lazyRetry(() => import('./experiments/cantor-set/CantorSetExperiment'))
+const QuadtreeExperiment = lazyRetry(() => import('./experiments/quadtree/QuadtreeExperiment'))
+const KdTreeExperiment = lazyRetry(() => import('./experiments/kd-tree/KdTreeExperiment'))
+const MarchingSquaresExperiment = lazyRetry(() => import('./experiments/marching-squares/MarchingSquaresExperiment'))
+const PointInPolygonExperiment = lazyRetry(() => import('./experiments/point-in-polygon/PointInPolygonExperiment'))
+const LineClippingExperiment = lazyRetry(() => import('./experiments/line-clipping/LineClippingExperiment'))
+const RotatingCalipersExperiment = lazyRetry(() => import('./experiments/rotating-calipers/RotatingCalipersExperiment'))
+const EarClippingExperiment = lazyRetry(() => import('./experiments/ear-clipping/EarClippingExperiment'))
+const AStarExperiment = lazyRetry(() => import('./experiments/a-star/AStarExperiment'))
+const StereographicProjectionExperiment = lazyRetry(() => import('./experiments/stereographic-projection/StereographicProjectionExperiment'))
+const HopfFibrationExperiment = lazyRetry(() => import('./experiments/hopf-fibration/HopfFibrationExperiment'))
+const HyperbolicTilingExperiment = lazyRetry(() => import('./experiments/hyperbolic-tiling/HyperbolicTilingExperiment'))
+const SpirographExperiment = lazyRetry(() => import('./experiments/spirograph/SpirographExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -439,6 +464,31 @@ export default function App() {
             <Route path="perceptron" element={<PerceptronExperiment />} />
             <Route path="kmeans" element={<KmeansExperiment />} />
             <Route path="neural-network-forward" element={<NeuralNetworkForwardExperiment />} />
+            <Route path="koch-snowflake" element={<KochSnowflakeExperiment />} />
+            <Route path="sierpinski-triangle" element={<SierpinskiTriangleExperiment />} />
+            <Route path="sierpinski-carpet" element={<SierpinskiCarpetExperiment />} />
+            <Route path="dragon-curve" element={<DragonCurveExperiment />} />
+            <Route path="barnsley-fern" element={<BarnsleyFernExperiment />} />
+            <Route path="hilbert-curve" element={<HilbertCurveExperiment />} />
+            <Route path="peano-curve" element={<PeanoCurveExperiment />} />
+            <Route path="gosper-curve" element={<GosperCurveExperiment />} />
+            <Route path="levy-c-curve" element={<LevyCCurveExperiment />} />
+            <Route path="newton-fractal" element={<NewtonFractalExperiment />} />
+            <Route path="burning-ship" element={<BurningShipExperiment />} />
+            <Route path="box-counting-dimension" element={<BoxCountingDimensionExperiment />} />
+            <Route path="cantor-set" element={<CantorSetExperiment />} />
+            <Route path="quadtree" element={<QuadtreeExperiment />} />
+            <Route path="kd-tree" element={<KdTreeExperiment />} />
+            <Route path="marching-squares" element={<MarchingSquaresExperiment />} />
+            <Route path="point-in-polygon" element={<PointInPolygonExperiment />} />
+            <Route path="line-clipping" element={<LineClippingExperiment />} />
+            <Route path="rotating-calipers" element={<RotatingCalipersExperiment />} />
+            <Route path="ear-clipping" element={<EarClippingExperiment />} />
+            <Route path="a-star" element={<AStarExperiment />} />
+            <Route path="stereographic-projection" element={<StereographicProjectionExperiment />} />
+            <Route path="hopf-fibration" element={<HopfFibrationExperiment />} />
+            <Route path="hyperbolic-tiling" element={<HyperbolicTilingExperiment />} />
+            <Route path="spirograph" element={<SpirographExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

@@ -1,0 +1,98 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 燃烧船分形 - 口播稿件
+ * 核心概念：曼德博的绝对值变体、逃逸时间染色、船形结构
+ * 目标受众：高中及以上
+ */
+export const burningShipNarration: NarrationScript = {
+  id: 'burning-ship',
+  title: '燃烧船分形',
+  subtitle: '曼德博的绝对值变体',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解燃烧船与曼德博集合的迭代差异',
+    '掌握取绝对值如何打破对称、生成船形',
+    '理解逃逸时间染色的原理',
+    '学会通过切换区域缩放观察细节',
+  ],
+
+  prerequisites: ['了解复数运算', '了解曼德博集合概念'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '你一定见过曼德博集合，那朵著名的数学“甲虫”。' },
+        { id: 'intro-2', text: '今天我们认识它的一位亲戚，燃烧船分形。' },
+        { id: 'intro-3', text: '它的公式几乎一样，只加了一个小小的动作：取绝对值。' },
+      ],
+    },
+    {
+      id: 'formula',
+      type: 'concept',
+      title: '取绝对值的迭代',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '曼德博反复计算 z 平方加 c，从零开始迭代。' },
+        { id: 'def-2', text: '燃烧船在每次平方前，把 z 的实部和虚部都换成绝对值。' },
+        { id: 'def-3', text: '也就是 z 变成绝对值实部加上虚部乘 i，再平方加 c。' },
+      ],
+    },
+    {
+      id: 'color',
+      type: 'concept',
+      title: '逃逸时间染色',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'col-1', text: '对每个点，我们数它迭代多少次后跑向无穷。' },
+        { id: 'col-2', text: '始终留在有限范围的点属于集合，涂成近乎黑色。' },
+        { id: 'col-3', text: '逃得越快越暖亮，于是画面燃起一片火焰般的色彩。' },
+      ],
+    },
+    {
+      id: 'shape',
+      type: 'concept',
+      title: '燃烧船的形状',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'shape-1', text: '取绝对值打破了上下对称，画面里浮现一排排船只。' },
+        { id: 'shape-2', text: '实轴负方向的那一大块，正是最像船身的主结构。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '切换到船体特写，放大实轴附近，细节会不断涌现。' },
+        { id: 'int-2', text: '提高迭代次数，边界的火焰纹理就更加清晰锐利。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '燃烧船只比曼德博多了一步绝对值，却换来全新的船形。' },
+        { id: 'sum-2', text: '逃逸时间染色把抽象迭代变成燃烧的图像。' },
+        { id: 'sum-3', text: '一个微小改动，点燃了一片分形之海，我们下次再见！' },
+      ],
+    },
+  ],
+}
