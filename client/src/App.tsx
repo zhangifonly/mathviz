@@ -171,6 +171,31 @@ const SolidOfRevolutionExperiment = lazyRetry(() => import('./experiments/solid-
 const ArcLengthCurvatureExperiment = lazyRetry(() => import('./experiments/arc-length-curvature/ArcLengthCurvatureExperiment'))
 const SeriesConvergenceExperiment = lazyRetry(() => import('./experiments/series-convergence/SeriesConvergenceExperiment'))
 const ImproperIntegralExperiment = lazyRetry(() => import('./experiments/improper-integral/ImproperIntegralExperiment'))
+const DeterminantGeometryExperiment = lazyRetry(() => import('./experiments/determinant-geometry/DeterminantGeometryExperiment'))
+const KernelImageExperiment = lazyRetry(() => import('./experiments/kernel-image/KernelImageExperiment'))
+const OrthogonalProjectionExperiment = lazyRetry(() => import('./experiments/orthogonal-projection/OrthogonalProjectionExperiment'))
+const LeastSquaresExperiment = lazyRetry(() => import('./experiments/least-squares/LeastSquaresExperiment'))
+const QuadraticFormExperiment = lazyRetry(() => import('./experiments/quadratic-form/QuadraticFormExperiment'))
+const SpectralTheoremExperiment = lazyRetry(() => import('./experiments/spectral-theorem/SpectralTheoremExperiment'))
+const LawLargeNumbersExperiment = lazyRetry(() => import('./experiments/law-large-numbers/LawLargeNumbersExperiment'))
+const PoissonProcessExperiment = lazyRetry(() => import('./experiments/poisson-process/PoissonProcessExperiment'))
+const BrownianMotionExperiment = lazyRetry(() => import('./experiments/brownian-motion/BrownianMotionExperiment'))
+const MontyHallExperiment = lazyRetry(() => import('./experiments/monty-hall/MontyHallExperiment'))
+const BirthdayParadoxExperiment = lazyRetry(() => import('./experiments/birthday-paradox/BirthdayParadoxExperiment'))
+const HypothesisTestingExperiment = lazyRetry(() => import('./experiments/hypothesis-testing/HypothesisTestingExperiment'))
+const ConfidenceIntervalExperiment = lazyRetry(() => import('./experiments/confidence-interval/ConfidenceIntervalExperiment'))
+const MaxLikelihoodExperiment = lazyRetry(() => import('./experiments/max-likelihood/MaxLikelihoodExperiment'))
+const GaussianMixtureExperiment = lazyRetry(() => import('./experiments/gaussian-mixture/GaussianMixtureExperiment'))
+const HiddenMarkovExperiment = lazyRetry(() => import('./experiments/hidden-markov/HiddenMarkovExperiment'))
+const MultipleIntegralExperiment = lazyRetry(() => import('./experiments/multiple-integral/MultipleIntegralExperiment'))
+const LineIntegralExperiment = lazyRetry(() => import('./experiments/line-integral/LineIntegralExperiment'))
+const DivergenceCurlExperiment = lazyRetry(() => import('./experiments/divergence-curl/DivergenceCurlExperiment'))
+const StokesTheoremExperiment = lazyRetry(() => import('./experiments/stokes-theorem/StokesTheoremExperiment'))
+const PartialDerivativeExperiment = lazyRetry(() => import('./experiments/partial-derivative/PartialDerivativeExperiment'))
+const DirectionalDerivativeExperiment = lazyRetry(() => import('./experiments/directional-derivative/DirectionalDerivativeExperiment'))
+const JacobianExperiment = lazyRetry(() => import('./experiments/jacobian/JacobianExperiment'))
+const VectorCalculusFieldExperiment = lazyRetry(() => import('./experiments/vector-calculus-field/VectorCalculusFieldExperiment'))
+const LaplacianExperiment = lazyRetry(() => import('./experiments/laplacian/LaplacianExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -339,6 +364,31 @@ export default function App() {
             <Route path="arc-length-curvature" element={<ArcLengthCurvatureExperiment />} />
             <Route path="series-convergence" element={<SeriesConvergenceExperiment />} />
             <Route path="improper-integral" element={<ImproperIntegralExperiment />} />
+            <Route path="determinant-geometry" element={<DeterminantGeometryExperiment />} />
+            <Route path="kernel-image" element={<KernelImageExperiment />} />
+            <Route path="orthogonal-projection" element={<OrthogonalProjectionExperiment />} />
+            <Route path="least-squares" element={<LeastSquaresExperiment />} />
+            <Route path="quadratic-form" element={<QuadraticFormExperiment />} />
+            <Route path="spectral-theorem" element={<SpectralTheoremExperiment />} />
+            <Route path="law-large-numbers" element={<LawLargeNumbersExperiment />} />
+            <Route path="poisson-process" element={<PoissonProcessExperiment />} />
+            <Route path="brownian-motion" element={<BrownianMotionExperiment />} />
+            <Route path="monty-hall" element={<MontyHallExperiment />} />
+            <Route path="birthday-paradox" element={<BirthdayParadoxExperiment />} />
+            <Route path="hypothesis-testing" element={<HypothesisTestingExperiment />} />
+            <Route path="confidence-interval" element={<ConfidenceIntervalExperiment />} />
+            <Route path="max-likelihood" element={<MaxLikelihoodExperiment />} />
+            <Route path="gaussian-mixture" element={<GaussianMixtureExperiment />} />
+            <Route path="hidden-markov" element={<HiddenMarkovExperiment />} />
+            <Route path="multiple-integral" element={<MultipleIntegralExperiment />} />
+            <Route path="line-integral" element={<LineIntegralExperiment />} />
+            <Route path="divergence-curl" element={<DivergenceCurlExperiment />} />
+            <Route path="stokes-theorem" element={<StokesTheoremExperiment />} />
+            <Route path="partial-derivative" element={<PartialDerivativeExperiment />} />
+            <Route path="directional-derivative" element={<DirectionalDerivativeExperiment />} />
+            <Route path="jacobian" element={<JacobianExperiment />} />
+            <Route path="vector-calculus-field" element={<VectorCalculusFieldExperiment />} />
+            <Route path="laplacian" element={<LaplacianExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

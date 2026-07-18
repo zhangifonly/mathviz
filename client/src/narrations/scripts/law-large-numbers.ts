@@ -1,0 +1,98 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 大数定律 - 口播稿件
+ * 核心概念：独立同分布、样本均值、收敛到期望、波动随 n 减小
+ * 目标受众：高中及以上
+ */
+export const lawLargeNumbersNarration: NarrationScript = {
+  id: 'law-large-numbers',
+  title: '大数定律',
+  subtitle: '样本均值收敛到期望',
+  difficulty: 'intermediate',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解样本均值随样本量增大而稳定',
+    '掌握大数定律：样本均值收敛到理论期望',
+    '认识波动幅度如何随 n 减小',
+    '体会它在赌场、保险中的现实意义',
+  ],
+
+  prerequisites: ['了解平均值', '了解随机与概率'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '赌场里单局输赢难料，可为什么庄家几乎从不亏本？' },
+        { id: 'intro-2', text: '秘密不在某一局，而藏在成千上万局的平均之中。' },
+        { id: 'intro-3', text: '这背后，就是概率论里最著名的大数定律。' },
+      ],
+    },
+    {
+      id: 'mean',
+      type: 'concept',
+      title: '样本均值',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '我们反复做同一个随机实验，比如掷骰子，把结果一个个记下来。' },
+        { id: 'def-2', text: '样本均值，就是把前 n 次的结果加起来，再除以 n。' },
+        { id: 'def-3', text: '掷一两次可能全是六点，均值偏得离谱，一点也不稳。' },
+      ],
+    },
+    {
+      id: 'law',
+      type: 'concept',
+      title: '收敛到期望',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'law-1', text: '但当次数越来越多，样本均值会稳稳地靠向一个数。' },
+        { id: 'law-2', text: '这个数就是理论期望，掷骰子正好是三点五。' },
+        { id: 'law-3', text: '样本量趋于无穷时，样本均值必然收敛到期望，这就是大数定律。' },
+      ],
+    },
+    {
+      id: 'fluctuation',
+      type: 'concept',
+      title: '波动随 n 减小',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'flu-1', text: '看曲线，开头几段上蹿下跳，随后摆动越来越小。' },
+        { id: 'flu-2', text: '样本越多，偶然的偏差就被越多的数据摊薄、抵消掉。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '换一种分布，抛硬币或均匀分布，红线会落到新的期望值。' },
+        { id: 'int-2', text: '把样本量调大，再重新采样，看多条曲线一起收拢向红线。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '大数定律说：样本越多，样本均值越贴近理论期望。' },
+        { id: 'sum-2', text: '单次充满偶然，海量数据却透出必然的规律。' },
+        { id: 'sum-3', text: '这正是统计与风险管理的基石，我们下次再见！' },
+      ],
+    },
+  ],
+}

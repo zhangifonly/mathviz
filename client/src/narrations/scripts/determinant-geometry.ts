@@ -1,0 +1,98 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 行列式的几何意义 - 口播稿件
+ * 核心概念：行列式=面积/体积的有向缩放因子，符号=定向，为零=降维
+ * 目标受众：高中及以上
+ */
+export const determinantGeometryNarration: NarrationScript = {
+  id: 'determinant-geometry',
+  title: '行列式的几何意义',
+  subtitle: '面积与体积的缩放',
+  difficulty: 'intermediate',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解二阶行列式等于平行四边形的有向面积',
+    '认识行列式的绝对值是面积缩放因子',
+    '理解行列式符号代表定向是否翻转',
+    '理解行列式为零意味着空间被压扁降维',
+  ],
+
+  prerequisites: ['了解矩阵与向量', '了解平面坐标'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '一个二阶矩阵，其实是一台改造平面的机器。' },
+        { id: 'intro-2', text: '把它作用在一个单位正方形上，正方形会被拉伸、剪切，变成一个平行四边形。' },
+        { id: 'intro-3', text: '而这个平行四边形有多大，就藏在一个熟悉的数里，它叫行列式。' },
+      ],
+    },
+    {
+      id: 'area',
+      type: 'concept',
+      title: '行列式即面积缩放',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '矩阵的两列，正是变换后两条边向量。' },
+        { id: 'def-2', text: '它们张成的平行四边形面积，恰好等于行列式的绝对值。' },
+        { id: 'def-3', text: '所以行列式告诉我们：面积被放大或缩小了多少倍。' },
+      ],
+    },
+    {
+      id: 'sign',
+      type: 'concept',
+      title: '符号代表定向',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sign-1', text: '行列式还带着正负号，这个符号很有意思。' },
+        { id: 'sign-2', text: '当它为负，说明平面被翻了个面，就像照镜子一样定向反转。' },
+        { id: 'sign-3', text: '正号保持原来的方向，负号则把左右手互换。' },
+      ],
+    },
+    {
+      id: 'zero',
+      type: 'concept',
+      title: '行列式为零',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'zero-1', text: '如果两列向量共线，平行四边形就被压成一条线段。' },
+        { id: 'zero-2', text: '面积归零，行列式也就等于零，二维被压扁成一维，空间降维了。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '拖动矩阵的四个元素，观察平行四边形如何随之伸缩变形。' },
+        { id: 'int-2', text: '试着让它翻转，或者压成一条线，看看行列式的数值怎么变。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '行列式的绝对值是面积或体积的缩放因子。' },
+        { id: 'sum-2', text: '它的符号记录着定向，为零则意味着降维。' },
+        { id: 'sum-3', text: '一个数,读懂了整个变换的几何,我们下次再见！' },
+      ],
+    },
+  ],
+}

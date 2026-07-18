@@ -156,6 +156,31 @@ export { solidOfRevolutionNarration } from './scripts/solid-of-revolution'
 export { arcLengthCurvatureNarration } from './scripts/arc-length-curvature'
 export { seriesConvergenceNarration } from './scripts/series-convergence'
 export { improperIntegralNarration } from './scripts/improper-integral'
+export { determinantGeometryNarration } from './scripts/determinant-geometry'
+export { kernelImageNarration } from './scripts/kernel-image'
+export { orthogonalProjectionNarration } from './scripts/orthogonal-projection'
+export { leastSquaresNarration } from './scripts/least-squares'
+export { quadraticFormNarration } from './scripts/quadratic-form'
+export { spectralTheoremNarration } from './scripts/spectral-theorem'
+export { lawLargeNumbersNarration } from './scripts/law-large-numbers'
+export { poissonProcessNarration } from './scripts/poisson-process'
+export { brownianMotionNarration } from './scripts/brownian-motion'
+export { montyHallNarration } from './scripts/monty-hall'
+export { birthdayParadoxNarration } from './scripts/birthday-paradox'
+export { hypothesisTestingNarration } from './scripts/hypothesis-testing'
+export { confidenceIntervalNarration } from './scripts/confidence-interval'
+export { maxLikelihoodNarration } from './scripts/max-likelihood'
+export { gaussianMixtureNarration } from './scripts/gaussian-mixture'
+export { hiddenMarkovNarration } from './scripts/hidden-markov'
+export { multipleIntegralNarration } from './scripts/multiple-integral'
+export { lineIntegralNarration } from './scripts/line-integral'
+export { divergenceCurlNarration } from './scripts/divergence-curl'
+export { stokesTheoremNarration } from './scripts/stokes-theorem'
+export { partialDerivativeNarration } from './scripts/partial-derivative'
+export { directionalDerivativeNarration } from './scripts/directional-derivative'
+export { jacobianNarration } from './scripts/jacobian'
+export { vectorCalculusFieldNarration } from './scripts/vector-calculus-field'
+export { laplacianNarration } from './scripts/laplacian'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -304,6 +329,31 @@ import { solidOfRevolutionNarration } from './scripts/solid-of-revolution'
 import { arcLengthCurvatureNarration } from './scripts/arc-length-curvature'
 import { seriesConvergenceNarration } from './scripts/series-convergence'
 import { improperIntegralNarration } from './scripts/improper-integral'
+import { determinantGeometryNarration } from './scripts/determinant-geometry'
+import { kernelImageNarration } from './scripts/kernel-image'
+import { orthogonalProjectionNarration } from './scripts/orthogonal-projection'
+import { leastSquaresNarration } from './scripts/least-squares'
+import { quadraticFormNarration } from './scripts/quadratic-form'
+import { spectralTheoremNarration } from './scripts/spectral-theorem'
+import { lawLargeNumbersNarration } from './scripts/law-large-numbers'
+import { poissonProcessNarration } from './scripts/poisson-process'
+import { brownianMotionNarration } from './scripts/brownian-motion'
+import { montyHallNarration } from './scripts/monty-hall'
+import { birthdayParadoxNarration } from './scripts/birthday-paradox'
+import { hypothesisTestingNarration } from './scripts/hypothesis-testing'
+import { confidenceIntervalNarration } from './scripts/confidence-interval'
+import { maxLikelihoodNarration } from './scripts/max-likelihood'
+import { gaussianMixtureNarration } from './scripts/gaussian-mixture'
+import { hiddenMarkovNarration } from './scripts/hidden-markov'
+import { multipleIntegralNarration } from './scripts/multiple-integral'
+import { lineIntegralNarration } from './scripts/line-integral'
+import { divergenceCurlNarration } from './scripts/divergence-curl'
+import { stokesTheoremNarration } from './scripts/stokes-theorem'
+import { partialDerivativeNarration } from './scripts/partial-derivative'
+import { directionalDerivativeNarration } from './scripts/directional-derivative'
+import { jacobianNarration } from './scripts/jacobian'
+import { vectorCalculusFieldNarration } from './scripts/vector-calculus-field'
+import { laplacianNarration } from './scripts/laplacian'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -456,6 +506,31 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'arc-length-curvature': arcLengthCurvatureNarration,
   'series-convergence': seriesConvergenceNarration,
   'improper-integral': improperIntegralNarration,
+  'determinant-geometry': determinantGeometryNarration,
+  'kernel-image': kernelImageNarration,
+  'orthogonal-projection': orthogonalProjectionNarration,
+  'least-squares': leastSquaresNarration,
+  'quadratic-form': quadraticFormNarration,
+  'spectral-theorem': spectralTheoremNarration,
+  'law-large-numbers': lawLargeNumbersNarration,
+  'poisson-process': poissonProcessNarration,
+  'brownian-motion': brownianMotionNarration,
+  'monty-hall': montyHallNarration,
+  'birthday-paradox': birthdayParadoxNarration,
+  'hypothesis-testing': hypothesisTestingNarration,
+  'confidence-interval': confidenceIntervalNarration,
+  'max-likelihood': maxLikelihoodNarration,
+  'gaussian-mixture': gaussianMixtureNarration,
+  'hidden-markov': hiddenMarkovNarration,
+  'multiple-integral': multipleIntegralNarration,
+  'line-integral': lineIntegralNarration,
+  'divergence-curl': divergenceCurlNarration,
+  'stokes-theorem': stokesTheoremNarration,
+  'partial-derivative': partialDerivativeNarration,
+  'directional-derivative': directionalDerivativeNarration,
+  'jacobian': jacobianNarration,
+  'vector-calculus-field': vectorCalculusFieldNarration,
+  'laplacian': laplacianNarration,
 }
 
 // 获取稿件

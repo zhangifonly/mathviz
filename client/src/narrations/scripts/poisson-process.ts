@@ -1,0 +1,98 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 泊松过程 - 口播稿件
+ * 核心概念：指数间隔、计数过程 N(t)、泊松分布
+ * 目标受众：高中及以上
+ */
+export const poissonProcessNarration: NarrationScript = {
+  id: 'poisson-process',
+  title: '泊松过程',
+  subtitle: '随机到达的计数',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解泊松过程描述随机独立到达',
+    '掌握相邻到达间隔服从指数分布',
+    '认识计数过程 N(t) 的阶梯特征',
+    '了解时间窗内到达数服从泊松分布',
+  ],
+
+  prerequisites: ['了解概率与随机', '了解指数函数'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '想象一家小店，顾客三三两两随机推门而入。' },
+        { id: 'intro-2', text: '你没法预测下一位何时到来，但整体上却有规律可循。' },
+        { id: 'intro-3', text: '这种随机而独立的到达，就是泊松过程描述的世界。' },
+      ],
+    },
+    {
+      id: 'gap',
+      type: 'concept',
+      title: '指数间隔',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'gap-1', text: '关键在于相邻两次到达之间的等待时间。' },
+        { id: 'gap-2', text: '它服从指数分布，用一个随机数 u，取负对数除以速率就能采样。' },
+        { id: 'gap-3', text: '把这些间隔一段段累加，就得到一串随机的到达时刻。' },
+      ],
+    },
+    {
+      id: 'count',
+      type: 'concept',
+      title: '计数过程',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'cnt-1', text: '沿时间轴数一数，到某一刻为止已经来了多少位顾客。' },
+        { id: 'cnt-2', text: '这个数就是计数过程 N(t)，每来一位就往上跳一级。' },
+        { id: 'cnt-3', text: '于是它画出一条只升不降的阶梯曲线。' },
+      ],
+    },
+    {
+      id: 'dist',
+      type: 'concept',
+      title: '泊松分布',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'dist-1', text: '固定一段时间窗，里面到达的次数并不固定，而是随机的。' },
+        { id: 'dist-2', text: '它服从泊松分布，平均到达数正好等于速率乘以时长。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '调大速率，你会看到竖线变密，阶梯爬得更陡。' },
+        { id: 'int-2', text: '点击重新随机，每一次都是一段独一无二的到达历史。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '泊松过程用指数间隔生成随机到达。' },
+        { id: 'sum-2', text: '计数 N(t) 是阶梯函数，时间窗内的次数服从泊松分布。' },
+        { id: 'sum-3', text: '随机之中自有秩序，这就是概率的魅力，我们下次再见！' },
+      ],
+    },
+  ],
+}

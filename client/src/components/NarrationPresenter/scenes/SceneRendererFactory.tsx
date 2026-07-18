@@ -226,6 +226,31 @@ const SolidOfRevolutionSceneRenderer = lazy(() => import('./SolidOfRevolution/So
 const ArcLengthCurvatureSceneRenderer = lazy(() => import('./ArcLengthCurvature/ArcLengthCurvatureSceneRenderer'))
 const SeriesConvergenceSceneRenderer = lazy(() => import('./SeriesConvergence/SeriesConvergenceSceneRenderer'))
 const ImproperIntegralSceneRenderer = lazy(() => import('./ImproperIntegral/ImproperIntegralSceneRenderer'))
+const DeterminantGeometrySceneRenderer = lazy(() => import('./DeterminantGeometry/DeterminantGeometrySceneRenderer'))
+const KernelImageSceneRenderer = lazy(() => import('./KernelImage/KernelImageSceneRenderer'))
+const OrthogonalProjectionSceneRenderer = lazy(() => import('./OrthogonalProjection/OrthogonalProjectionSceneRenderer'))
+const LeastSquaresSceneRenderer = lazy(() => import('./LeastSquares/LeastSquaresSceneRenderer'))
+const QuadraticFormSceneRenderer = lazy(() => import('./QuadraticForm/QuadraticFormSceneRenderer'))
+const SpectralTheoremSceneRenderer = lazy(() => import('./SpectralTheorem/SpectralTheoremSceneRenderer'))
+const LawLargeNumbersSceneRenderer = lazy(() => import('./LawLargeNumbers/LawLargeNumbersSceneRenderer'))
+const PoissonProcessSceneRenderer = lazy(() => import('./PoissonProcess/PoissonProcessSceneRenderer'))
+const BrownianMotionSceneRenderer = lazy(() => import('./BrownianMotion/BrownianMotionSceneRenderer'))
+const MontyHallSceneRenderer = lazy(() => import('./MontyHall/MontyHallSceneRenderer'))
+const BirthdayParadoxSceneRenderer = lazy(() => import('./BirthdayParadox/BirthdayParadoxSceneRenderer'))
+const HypothesisTestingSceneRenderer = lazy(() => import('./HypothesisTesting/HypothesisTestingSceneRenderer'))
+const ConfidenceIntervalSceneRenderer = lazy(() => import('./ConfidenceInterval/ConfidenceIntervalSceneRenderer'))
+const MaxLikelihoodSceneRenderer = lazy(() => import('./MaxLikelihood/MaxLikelihoodSceneRenderer'))
+const GaussianMixtureSceneRenderer = lazy(() => import('./GaussianMixture/GaussianMixtureSceneRenderer'))
+const HiddenMarkovSceneRenderer = lazy(() => import('./HiddenMarkov/HiddenMarkovSceneRenderer'))
+const MultipleIntegralSceneRenderer = lazy(() => import('./MultipleIntegral/MultipleIntegralSceneRenderer'))
+const LineIntegralSceneRenderer = lazy(() => import('./LineIntegral/LineIntegralSceneRenderer'))
+const DivergenceCurlSceneRenderer = lazy(() => import('./DivergenceCurl/DivergenceCurlSceneRenderer'))
+const StokesTheoremSceneRenderer = lazy(() => import('./StokesTheorem/StokesTheoremSceneRenderer'))
+const PartialDerivativeSceneRenderer = lazy(() => import('./PartialDerivative/PartialDerivativeSceneRenderer'))
+const DirectionalDerivativeSceneRenderer = lazy(() => import('./DirectionalDerivative/DirectionalDerivativeSceneRenderer'))
+const JacobianSceneRenderer = lazy(() => import('./Jacobian/JacobianSceneRenderer'))
+const VectorCalculusFieldSceneRenderer = lazy(() => import('./VectorCalculusField/VectorCalculusFieldSceneRenderer'))
+const LaplacianSceneRenderer = lazy(() => import('./Laplacian/LaplacianSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -379,6 +404,31 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'arc-length-curvature': ArcLengthCurvatureSceneRenderer,
   'series-convergence': SeriesConvergenceSceneRenderer,
   'improper-integral': ImproperIntegralSceneRenderer,
+  'determinant-geometry': DeterminantGeometrySceneRenderer,
+  'kernel-image': KernelImageSceneRenderer,
+  'orthogonal-projection': OrthogonalProjectionSceneRenderer,
+  'least-squares': LeastSquaresSceneRenderer,
+  'quadratic-form': QuadraticFormSceneRenderer,
+  'spectral-theorem': SpectralTheoremSceneRenderer,
+  'law-large-numbers': LawLargeNumbersSceneRenderer,
+  'poisson-process': PoissonProcessSceneRenderer,
+  'brownian-motion': BrownianMotionSceneRenderer,
+  'monty-hall': MontyHallSceneRenderer,
+  'birthday-paradox': BirthdayParadoxSceneRenderer,
+  'hypothesis-testing': HypothesisTestingSceneRenderer,
+  'confidence-interval': ConfidenceIntervalSceneRenderer,
+  'max-likelihood': MaxLikelihoodSceneRenderer,
+  'gaussian-mixture': GaussianMixtureSceneRenderer,
+  'hidden-markov': HiddenMarkovSceneRenderer,
+  'multiple-integral': MultipleIntegralSceneRenderer,
+  'line-integral': LineIntegralSceneRenderer,
+  'divergence-curl': DivergenceCurlSceneRenderer,
+  'stokes-theorem': StokesTheoremSceneRenderer,
+  'partial-derivative': PartialDerivativeSceneRenderer,
+  'directional-derivative': DirectionalDerivativeSceneRenderer,
+  'jacobian': JacobianSceneRenderer,
+  'vector-calculus-field': VectorCalculusFieldSceneRenderer,
+  'laplacian': LaplacianSceneRenderer,
 }
 
 // 获取场景渲染器

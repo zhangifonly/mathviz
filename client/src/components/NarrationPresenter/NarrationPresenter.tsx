@@ -161,6 +161,31 @@ import { solidOfRevolutionScenes, defaultSolidOfRevolutionState } from './solidO
 import { arcLengthCurvatureScenes, defaultArcLengthCurvatureState } from './arcLengthCurvatureScenes'
 import { seriesConvergenceScenes, defaultSeriesConvergenceState } from './seriesConvergenceScenes'
 import { improperIntegralScenes, defaultImproperIntegralState } from './improperIntegralScenes'
+import { determinantGeometryScenes, defaultDeterminantGeometryState } from './determinantGeometryScenes'
+import { kernelImageScenes, defaultKernelImageState } from './kernelImageScenes'
+import { orthogonalProjectionScenes, defaultOrthogonalProjectionState } from './orthogonalProjectionScenes'
+import { leastSquaresScenes, defaultLeastSquaresState } from './leastSquaresScenes'
+import { quadraticFormScenes, defaultQuadraticFormState } from './quadraticFormScenes'
+import { spectralTheoremScenes, defaultSpectralTheoremState } from './spectralTheoremScenes'
+import { lawLargeNumbersScenes, defaultLawLargeNumbersState } from './lawLargeNumbersScenes'
+import { poissonProcessScenes, defaultPoissonProcessState } from './poissonProcessScenes'
+import { brownianMotionScenes, defaultBrownianMotionState } from './brownianMotionScenes'
+import { montyHallScenes, defaultMontyHallState } from './montyHallScenes'
+import { birthdayParadoxScenes, defaultBirthdayParadoxState } from './birthdayParadoxScenes'
+import { hypothesisTestingScenes, defaultHypothesisTestingState } from './hypothesisTestingScenes'
+import { confidenceIntervalScenes, defaultConfidenceIntervalState } from './confidenceIntervalScenes'
+import { maxLikelihoodScenes, defaultMaxLikelihoodState } from './maxLikelihoodScenes'
+import { gaussianMixtureScenes, defaultGaussianMixtureState } from './gaussianMixtureScenes'
+import { hiddenMarkovScenes, defaultHiddenMarkovState } from './hiddenMarkovScenes'
+import { multipleIntegralScenes, defaultMultipleIntegralState } from './multipleIntegralScenes'
+import { lineIntegralScenes, defaultLineIntegralState } from './lineIntegralScenes'
+import { divergenceCurlScenes, defaultDivergenceCurlState } from './divergenceCurlScenes'
+import { stokesTheoremScenes, defaultStokesTheoremState } from './stokesTheoremScenes'
+import { partialDerivativeScenes, defaultPartialDerivativeState } from './partialDerivativeScenes'
+import { directionalDerivativeScenes, defaultDirectionalDerivativeState } from './directionalDerivativeScenes'
+import { jacobianScenes, defaultJacobianState } from './jacobianScenes'
+import { vectorCalculusFieldScenes, defaultVectorCalculusFieldState } from './vectorCalculusFieldScenes'
+import { laplacianScenes, defaultLaplacianState } from './laplacianScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -335,6 +360,31 @@ const sceneConfigMap: Record<string, {
   'arc-length-curvature': { scenes: arcLengthCurvatureScenes, defaultState: defaultArcLengthCurvatureState },
   'series-convergence': { scenes: seriesConvergenceScenes, defaultState: defaultSeriesConvergenceState },
   'improper-integral': { scenes: improperIntegralScenes, defaultState: defaultImproperIntegralState },
+  'determinant-geometry': { scenes: determinantGeometryScenes, defaultState: defaultDeterminantGeometryState },
+  'kernel-image': { scenes: kernelImageScenes, defaultState: defaultKernelImageState },
+  'orthogonal-projection': { scenes: orthogonalProjectionScenes, defaultState: defaultOrthogonalProjectionState },
+  'least-squares': { scenes: leastSquaresScenes, defaultState: defaultLeastSquaresState },
+  'quadratic-form': { scenes: quadraticFormScenes, defaultState: defaultQuadraticFormState },
+  'spectral-theorem': { scenes: spectralTheoremScenes, defaultState: defaultSpectralTheoremState },
+  'law-large-numbers': { scenes: lawLargeNumbersScenes, defaultState: defaultLawLargeNumbersState },
+  'poisson-process': { scenes: poissonProcessScenes, defaultState: defaultPoissonProcessState },
+  'brownian-motion': { scenes: brownianMotionScenes, defaultState: defaultBrownianMotionState },
+  'monty-hall': { scenes: montyHallScenes, defaultState: defaultMontyHallState },
+  'birthday-paradox': { scenes: birthdayParadoxScenes, defaultState: defaultBirthdayParadoxState },
+  'hypothesis-testing': { scenes: hypothesisTestingScenes, defaultState: defaultHypothesisTestingState },
+  'confidence-interval': { scenes: confidenceIntervalScenes, defaultState: defaultConfidenceIntervalState },
+  'max-likelihood': { scenes: maxLikelihoodScenes, defaultState: defaultMaxLikelihoodState },
+  'gaussian-mixture': { scenes: gaussianMixtureScenes, defaultState: defaultGaussianMixtureState },
+  'hidden-markov': { scenes: hiddenMarkovScenes, defaultState: defaultHiddenMarkovState },
+  'multiple-integral': { scenes: multipleIntegralScenes, defaultState: defaultMultipleIntegralState },
+  'line-integral': { scenes: lineIntegralScenes, defaultState: defaultLineIntegralState },
+  'divergence-curl': { scenes: divergenceCurlScenes, defaultState: defaultDivergenceCurlState },
+  'stokes-theorem': { scenes: stokesTheoremScenes, defaultState: defaultStokesTheoremState },
+  'partial-derivative': { scenes: partialDerivativeScenes, defaultState: defaultPartialDerivativeState },
+  'directional-derivative': { scenes: directionalDerivativeScenes, defaultState: defaultDirectionalDerivativeState },
+  'jacobian': { scenes: jacobianScenes, defaultState: defaultJacobianState },
+  'vector-calculus-field': { scenes: vectorCalculusFieldScenes, defaultState: defaultVectorCalculusFieldState },
+  'laplacian': { scenes: laplacianScenes, defaultState: defaultLaplacianState },
 }
 
 // 检测是否为移动设备
@@ -539,7 +589,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       // 新增2个待完成课程
       'laplace', 'permutation-combination',
       // 新增优美数学场景
-      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet', 'sieve-eratosthenes', 'magic-square', 'tower-of-hanoi', 'pigeonhole', 'triangle-centers', 'number-bases', 'pythagoras-tree', 'tessellation', 'perfect-numbers', 'collatz', 'prime-factorization', 'fibonacci-nature', 'dice-probability', 'nine-point-circle', 'euler-line', 'inversive-geometry', 'poincare-disk', 'spherical-geometry', 'convex-hull', 'delaunay-triangulation', 'apollonian-gasket', 'pick-theorem', 'reuleaux', 'circle-packing', 'steiner-chain', 'polynomial-roots', 'vieta-formulas', 'binomial-theorem', 'inverse-function', 'composite-function', 'partial-fractions', 'rational-asymptotes', 'piecewise-function', 'logarithm-spiral', 'function-transform', 'euclidean-algorithm', 'chinese-remainder', 'quadratic-residue', 'gaussian-integers', 'integer-partition', 'pell-equation', 'prime-counting', 'digital-root', 'epsilon-delta', 'mean-value-theorem', 'riemann-sum', 'solid-of-revolution', 'arc-length-curvature', 'series-convergence', 'improper-integral'
+      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet', 'sieve-eratosthenes', 'magic-square', 'tower-of-hanoi', 'pigeonhole', 'triangle-centers', 'number-bases', 'pythagoras-tree', 'tessellation', 'perfect-numbers', 'collatz', 'prime-factorization', 'fibonacci-nature', 'dice-probability', 'nine-point-circle', 'euler-line', 'inversive-geometry', 'poincare-disk', 'spherical-geometry', 'convex-hull', 'delaunay-triangulation', 'apollonian-gasket', 'pick-theorem', 'reuleaux', 'circle-packing', 'steiner-chain', 'polynomial-roots', 'vieta-formulas', 'binomial-theorem', 'inverse-function', 'composite-function', 'partial-fractions', 'rational-asymptotes', 'piecewise-function', 'logarithm-spiral', 'function-transform', 'euclidean-algorithm', 'chinese-remainder', 'quadratic-residue', 'gaussian-integers', 'integer-partition', 'pell-equation', 'prime-counting', 'digital-root', 'epsilon-delta', 'mean-value-theorem', 'riemann-sum', 'solid-of-revolution', 'arc-length-curvature', 'series-convergence', 'improper-integral', 'determinant-geometry', 'kernel-image', 'orthogonal-projection', 'least-squares', 'quadratic-form', 'spectral-theorem', 'law-large-numbers', 'poisson-process', 'brownian-motion', 'monty-hall', 'birthday-paradox', 'hypothesis-testing', 'confidence-interval', 'max-likelihood', 'gaussian-mixture', 'hidden-markov', 'multiple-integral', 'line-integral', 'divergence-curl', 'stokes-theorem', 'partial-derivative', 'directional-derivative', 'jacobian', 'vector-calculus-field', 'laplacian'
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
