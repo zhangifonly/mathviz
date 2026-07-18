@@ -1,0 +1,169 @@
+{
+  "script_id": "buffon-needle",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "buffon-needle",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/intro-intro-1.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "十八世纪，蒲丰提出一个奇妙的问题：随手扔针，也能算出圆周率。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/intro-intro-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "在地板上画满等距的平行线，把一根针随意抛下去。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/intro-intro-3.mp3",
+      "duration": 1.71,
+      "size": 27360,
+      "text": "只要数一数针压线的次数，就能逼近那个神秘的 π。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "setup",
+      "line_id": "def-1",
+      "filename": "setup-def-1.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/setup-def-1.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "设平行线之间的距离等于针的长度，这是最经典的设定。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "setup",
+      "line_id": "def-2",
+      "filename": "setup-def-2.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/setup-def-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "每根针的落点，由中心的位置和倾斜的角度共同决定。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "setup",
+      "line_id": "def-3",
+      "filename": "setup-def-3.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/setup-def-3.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "如果针的两端跨过了同一条线，我们就说它相交，标成红色。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "prob",
+      "line_id": "prob-1",
+      "filename": "prob-prob-1.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/prob-prob-1.mp3",
+      "duration": 2.52,
+      "size": 40320,
+      "text": "对中心位置和角度做积分，可以算出相交的概率恰好是 2 除以 π。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "prob",
+      "line_id": "prob-2",
+      "filename": "prob-prob-2.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/prob-prob-2.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "这个式子里藏着圆周率，正是因为角度在半圆里均匀分布。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "prob",
+      "line_id": "prob-3",
+      "filename": "prob-prob-3.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/prob-prob-3.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "概率里出现 π，为反过来估计 π 埋下了伏笔。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "estimate",
+      "line_id": "est-1",
+      "filename": "estimate-est-1.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/estimate-est-1.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "投针足够多时，相交的频率会稳稳靠近真实概率 2 比 π。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "estimate",
+      "line_id": "est-2",
+      "filename": "estimate-est-2.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/estimate-est-2.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "于是把公式倒过来：π 约等于 2 倍投针数除以相交数。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/interaction-int-1.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "增加投针的数量，看估计值如何一步步向 3.14159 收敛。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/interaction-int-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "点击重新投一次，每一轮随机都会给出略微不同的答案。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/summary-sum-1.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "蒲丰投针用几何概率把随机的针，连到了确定的 π。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/summary-sum-2.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "针长等于线距时，相交概率是 2 除以 π。"
+    },
+    {
+      "script_id": "buffon-needle",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/buffon-needle/yunxi/summary-sum-3.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "随机之中藏着秩序，投针也能量出圆周率，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.33,
+  "total_size": 533376
+}

@@ -1,0 +1,169 @@
+{
+  "script_id": "rossler-attractor",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "提到混沌，很多人先想到洛伦兹那对蝴蝶翅膀。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "但混沌不一定要那么复杂，可以更简洁。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "1976 年，Rössler 写下一组更朴素的方程，同样孕育出混沌。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "equation",
+      "line_id": "def-1",
+      "filename": "equation-def-1.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/equation-def-1.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "它只有三行：x 的变化等于负 y 减 z。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "equation",
+      "line_id": "def-2",
+      "filename": "equation-def-2.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/equation-def-2.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "y 的变化等于 x 加上 a 倍的 y，缓缓把轨迹推着旋转。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "equation",
+      "line_id": "def-3",
+      "filename": "equation-def-3.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/equation-def-3.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "z 的变化里藏着唯一的非线性项，z 乘以 x 减 c，是折叠的开关。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "fold",
+      "line_id": "fold-1",
+      "filename": "fold-fold-1.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/fold-fold-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "大部分时间，轨迹在平面上一圈圈螺旋外扩，看起来很温顺。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "fold",
+      "line_id": "fold-2",
+      "filename": "fold-fold-2.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/fold-fold-2.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "一旦 x 越过阈值 c，z 猛然窜高，把轨迹从平面折叠拉起。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "fold",
+      "line_id": "fold-3",
+      "filename": "fold-fold-3.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/fold-fold-3.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "拉伸再折叠，反复揉捏，正是混沌诞生的几何机制。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "attractor",
+      "line_id": "att-1",
+      "filename": "attractor-att-1.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/attractor-att-1.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "所有轨迹都被吸向同一个单卷的奇怪吸引子。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "attractor",
+      "line_id": "att-2",
+      "filename": "attractor-att-2.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/attractor-att-2.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "它有界却永不闭合，初值相差一丝，长期走向就截然不同。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "调小参数 c，你会看到轨迹收成规整的周期环。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "再调大 c，环一次次倍化，最终散成混沌的螺旋盘。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "Rössler 用最少的非线性，演示了混沌的核心配方。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "螺旋负责拉伸，折叠负责搅乱，二者相乘便是混沌。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/rossler-attractor/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "极简中藏着无穷，这正是数学的迷人之处，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.42000000000001,
+  "total_size": 518688
+}

@@ -1,0 +1,123 @@
+{
+  "script_id": "softmax",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "softmax",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/softmax/intro-intro-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "神经网络最后往往吐出一串分数，有正有负，大小不一。"
+    },
+    {
+      "script_id": "softmax",
+      "section_id": "exponent",
+      "line_id": "exp-1",
+      "filename": "exponent-exp-1.mp3",
+      "path": "audio/narrations/softmax/exponent-exp-1.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "第一步，对每个分数取自然指数 e 的次方。"
+    },
+    {
+      "script_id": "softmax",
+      "section_id": "exponent",
+      "line_id": "exp-2",
+      "filename": "exponent-exp-2.mp3",
+      "path": "audio/narrations/softmax/exponent-exp-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "指数增长很陡，分数领先一点，指数值就会拉开一大截。"
+    },
+    {
+      "script_id": "softmax",
+      "section_id": "exponent",
+      "line_id": "exp-3",
+      "filename": "exponent-exp-3.mp3",
+      "path": "audio/narrations/softmax/exponent-exp-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "于是原本微弱的优势，被放大成明显的领先。"
+    },
+    {
+      "script_id": "softmax",
+      "section_id": "normalize",
+      "line_id": "norm-1",
+      "filename": "normalize-norm-1.mp3",
+      "path": "audio/narrations/softmax/normalize-norm-1.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "第二步，把每个指数值除以所有指数值的总和。"
+    },
+    {
+      "script_id": "softmax",
+      "section_id": "temperature",
+      "line_id": "temp-1",
+      "filename": "temperature-temp-1.mp3",
+      "path": "audio/narrations/softmax/temperature-temp-1.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "在取指数前，我们还可以先把分数除以一个温度 T。"
+    },
+    {
+      "script_id": "softmax",
+      "section_id": "temperature",
+      "line_id": "temp-2",
+      "filename": "temperature-temp-2.mp3",
+      "path": "audio/narrations/softmax/temperature-temp-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "温度越低，分布越尖锐，几乎把概率都押给最高的那一项。"
+    },
+    {
+      "script_id": "softmax",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/softmax/interaction-int-1.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "随机换一组 logits，看下方概率柱如何随之重新分配。"
+    },
+    {
+      "script_id": "softmax",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/softmax/summary-sum-1.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "softmax 先用指数放大差距，再归一化成和为一的概率。"
+    },
+    {
+      "script_id": "softmax",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/softmax/summary-sum-2.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "温度这个旋钮，让我们自由调节结果的果断或犹豫。"
+    },
+    {
+      "script_id": "softmax",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/softmax/summary-sum-3.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "它藏在每一个分类器和注意力层里，我们下次再见！"
+    }
+  ],
+  "total_duration": 21.54,
+  "total_size": 344448,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

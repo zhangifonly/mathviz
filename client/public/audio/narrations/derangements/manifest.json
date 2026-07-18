@@ -1,0 +1,173 @@
+{
+  "script_id": "derangements",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "derangements",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/derangements/intro-intro-1.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "写好几封信，装进对应的信封，却手忙脚乱全装错了。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/derangements/intro-intro-2.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "每封信都没进它该进的信封，这样的装法有多少种？"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/derangements/intro-intro-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "这就是著名的错排问题，也叫装错信封问题。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/derangements/define-def-1.mp3",
+      "duration": 2.56,
+      "size": 41040,
+      "text": "把 n 个元素重新排列，如果没有任何一个停在它原来的位置，就叫一个错排。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/derangements/define-def-2.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "我们用 D(n) 表示 n 个元素错排的总数。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/derangements/define-def-3.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "比如三个元素，全部错位的排法只有两种。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "recur",
+      "line_id": "rec-1",
+      "filename": "recur-rec-1.mp3",
+      "path": "audio/narrations/derangements/recur-rec-1.mp3",
+      "duration": 4.8,
+      "size": 76752,
+      "text": "错排数满足漂亮的递推：D(n) 等于 (n-1) 乘以 D(n-1) 加 D(n-2)。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "recur",
+      "line_id": "rec-2",
+      "filename": "recur-rec-2.mp3",
+      "path": "audio/narrations/derangements/recur-rec-2.mp3",
+      "duration": 4.12,
+      "size": 65952,
+      "text": "从 D(0)=1、D(1)=0 出发，就能一步步算出 1、2、9、44、265。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "recur",
+      "line_id": "rec-3",
+      "filename": "recur-rec-3.mp3",
+      "path": "audio/narrations/derangements/recur-rec-3.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "递推的直觉是：第一个错位元素的落点有 n-1 种选择，再看它带来的两种子情形。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "ratio",
+      "line_id": "rat-1",
+      "filename": "ratio-rat-1.mp3",
+      "path": "audio/narrations/derangements/ratio-rat-1.mp3",
+      "duration": 2.5,
+      "size": 40032,
+      "text": "把错排数除以全部排列数，也就是 D(n) 除以 n 的阶乘。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "ratio",
+      "line_id": "rat-2",
+      "filename": "ratio-rat-2.mp3",
+      "path": "audio/narrations/derangements/ratio-rat-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "这个比值会迅速稳定，趋向常数 1/e，约等于 0.368。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "ratio",
+      "line_id": "rat-3",
+      "filename": "ratio-rat-3.mp3",
+      "path": "audio/narrations/derangements/ratio-rat-3.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "也就是说随机洗一副牌，大约有三分之一强的概率没有一张回到原位。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/derangements/interaction-int-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "调整元素个数 n，观察所有错排被一行行列举出来。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/derangements/interaction-int-2.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "再切换到曲线视图，看比值如何贴近那条 1/e 的红线。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/derangements/summary-sum-1.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "错排是无一在原位的排列，数量记作 D(n)。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/derangements/summary-sum-3.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "一个装错信封的小故事，藏着自然常数 e，我们下次再见！"
+    }
+  ],
+  "total_duration": 38.63,
+  "total_size": 618192,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

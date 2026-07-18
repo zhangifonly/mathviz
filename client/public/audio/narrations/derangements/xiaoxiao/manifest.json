@@ -1,0 +1,179 @@
+{
+  "script_id": "derangements",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "derangements",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "写好几封信，装进对应的信封，却手忙脚乱全装错了。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "每封信都没进它该进的信封，这样的装法有多少种？"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "这就是著名的错排问题，也叫装错信封问题。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/define-def-1.mp3",
+      "duration": 2.68,
+      "size": 42912,
+      "text": "把 n 个元素重新排列，如果没有任何一个停在它原来的位置，就叫一个错排。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/define-def-2.mp3",
+      "duration": 1.51,
+      "size": 24192,
+      "text": "我们用 D(n) 表示 n 个元素错排的总数。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/define-def-3.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "比如三个元素，全部错位的排法只有两种。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "recur",
+      "line_id": "rec-1",
+      "filename": "recur-rec-1.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/recur-rec-1.mp3",
+      "duration": 5.06,
+      "size": 80928,
+      "text": "错排数满足漂亮的递推：D(n) 等于 (n-1) 乘以 D(n-1) 加 D(n-2)。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "recur",
+      "line_id": "rec-2",
+      "filename": "recur-rec-2.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/recur-rec-2.mp3",
+      "duration": 3.37,
+      "size": 53856,
+      "text": "从 D(0)=1、D(1)=0 出发，就能一步步算出 1、2、9、44、265。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "recur",
+      "line_id": "rec-3",
+      "filename": "recur-rec-3.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/recur-rec-3.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "递推的直觉是：第一个错位元素的落点有 n-1 种选择，再看它带来的两种子情形。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "ratio",
+      "line_id": "rat-1",
+      "filename": "ratio-rat-1.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/ratio-rat-1.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "把错排数除以全部排列数，也就是 D(n) 除以 n 的阶乘。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "ratio",
+      "line_id": "rat-2",
+      "filename": "ratio-rat-2.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/ratio-rat-2.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "这个比值会迅速稳定，趋向常数 1/e，约等于 0.368。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "ratio",
+      "line_id": "rat-3",
+      "filename": "ratio-rat-3.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/ratio-rat-3.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "也就是说随机洗一副牌，大约有三分之一强的概率没有一张回到原位。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "调整元素个数 n，观察所有错排被一行行列举出来。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "再切换到曲线视图，看比值如何贴近那条 1/e 的红线。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "错排是无一在原位的排列，数量记作 D(n)。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/summary-sum-2.mp3",
+      "duration": 4.17,
+      "size": 66672,
+      "text": "它由递推 D(n)=(n-1)(D(n-1)+D(n-2)) 生成，比值趋于 1/e。"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/derangements/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "一个装错信封的小故事，藏着自然常数 e，我们下次再见！"
+    }
+  ],
+  "total_duration": 41.6,
+  "total_size": 665424
+}

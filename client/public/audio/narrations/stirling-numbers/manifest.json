@@ -1,0 +1,183 @@
+{
+  "script_id": "stirling-numbers",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/stirling-numbers/intro-intro-1.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "四个小朋友要分到几张桌子上，有多少种不同的分法？"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/stirling-numbers/intro-intro-2.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "这类分组计数问题，答案往往不那么直观。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/stirling-numbers/intro-intro-3.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "有一族数专门回答它们，叫做斯特林数。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "second",
+      "line_id": "def-1",
+      "filename": "second-def-1.mp3",
+      "path": "audio/narrations/stirling-numbers/second-def-1.mp3",
+      "duration": 2.94,
+      "size": 47088,
+      "text": "第二类斯特林数记作 S(n,k)，表示把 n 个不同元素分成 k 个非空子集的方案数。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "second",
+      "line_id": "def-2",
+      "filename": "second-def-2.mp3",
+      "path": "audio/narrations/stirling-numbers/second-def-2.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "这里只看分组，不看顺序，比如甲乙一组和乙甲一组算同一种。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "second",
+      "line_id": "def-3",
+      "filename": "second-def-3.mp3",
+      "path": "audio/narrations/stirling-numbers/second-def-3.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "把每一行的 S 值排成三角，就得到斯特林三角。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "recur",
+      "line_id": "rec-1",
+      "filename": "recur-rec-1.mp3",
+      "path": "audio/narrations/stirling-numbers/recur-rec-1.mp3",
+      "duration": 2.83,
+      "size": 45216,
+      "text": "看第 n 个元素：它要么单独跳进新的一组，对应 S(n-1,k-1)。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "recur",
+      "line_id": "rec-2",
+      "filename": "recur-rec-2.mp3",
+      "path": "audio/narrations/stirling-numbers/recur-rec-2.mp3",
+      "duration": 2.75,
+      "size": 44064,
+      "text": "要么加入已有的 k 组之一，有 k 种选择，对应 k 乘以 S(n-1,k)。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "recur",
+      "line_id": "rec-3",
+      "filename": "recur-rec-3.mp3",
+      "path": "audio/narrations/stirling-numbers/recur-rec-3.mp3",
+      "duration": 4.11,
+      "size": 65808,
+      "text": "两种情况相加，就得到递推 S(n,k) 等于 k 乘 S(n-1,k) 再加 S(n-1,k-1)。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "first",
+      "line_id": "fir-1",
+      "filename": "first-fir-1.mp3",
+      "path": "audio/narrations/stirling-numbers/first-fir-1.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "第一类斯特林数换个问法：把 n 个人排成 k 个圆圈，有多少种坐法。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "first",
+      "line_id": "fir-2",
+      "filename": "first-fir-2.mp3",
+      "path": "audio/narrations/stirling-numbers/first-fir-2.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "圆圈里只看相对顺序，所以它的递推系数变成 n 减一。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "first",
+      "line_id": "fir-3",
+      "filename": "first-fir-3.mp3",
+      "path": "audio/narrations/stirling-numbers/first-fir-3.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "每一行的循环数加起来，恰好等于 n 的阶乘。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/stirling-numbers/interaction-int-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "在三角里选一个格子，看它如何由上一行两个数拼出来。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/stirling-numbers/interaction-int-2.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "切换第一类和第二类，比较两座三角的增长快慢。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/stirling-numbers/summary-sum-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "第二类斯特林数数划分，第一类数循环，都由简洁递推生成。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/stirling-numbers/summary-sum-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "它们连接起集合、排列与贝尔数，是组合计数的核心工具。"
+    },
+    {
+      "script_id": "stirling-numbers",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/stirling-numbers/summary-sum-3.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "一族小小的数，藏着分组的全部秘密，我们下次再见！"
+    }
+  ],
+  "total_duration": 38.25,
+  "total_size": 612144,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

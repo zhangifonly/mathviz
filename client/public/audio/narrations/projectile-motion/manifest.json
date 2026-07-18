@@ -1,0 +1,183 @@
+{
+  "script_id": "projectile-motion",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "projectile-motion",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/projectile-motion/intro-intro-1.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "一门大炮向远处开火，炮弹划出一道优美的弧线。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/projectile-motion/intro-intro-2.mp3",
+      "duration": 2.71,
+      "size": 43344,
+      "text": "投篮、喷泉、扔石头，这些抛出去的物体走的都是同一种曲线。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/projectile-motion/intro-intro-3.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "这种运动叫抛体运动，今天我们就来揭开它的秘密。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "decompose",
+      "line_id": "def-1",
+      "filename": "decompose-def-1.mp3",
+      "path": "audio/narrations/projectile-motion/decompose-def-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "关键一招：把运动拆成水平和竖直两个方向来看。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "decompose",
+      "line_id": "def-2",
+      "filename": "decompose-def-2.mp3",
+      "path": "audio/narrations/projectile-motion/decompose-def-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "水平方向没有外力，速度不变，做匀速直线运动。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "decompose",
+      "line_id": "def-3",
+      "filename": "decompose-def-3.mp3",
+      "path": "audio/narrations/projectile-motion/decompose-def-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "竖直方向只受重力，先减速上升再加速下落。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "parabola",
+      "line_id": "par-1",
+      "filename": "parabola-par-1.mp3",
+      "path": "audio/narrations/projectile-motion/parabola-par-1.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "水平匀速配上竖直匀变速，合起来正好画出一条抛物线。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "parabola",
+      "line_id": "par-2",
+      "filename": "parabola-par-2.mp3",
+      "path": "audio/narrations/projectile-motion/parabola-par-2.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "飞得越高，落地用的时间就越久，这就是飞行时间。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "parabola",
+      "line_id": "par-3",
+      "filename": "parabola-par-3.mp3",
+      "path": "audio/narrations/projectile-motion/parabola-par-3.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "轨迹左右对称，上升和下落用时完全相同。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "range",
+      "line_id": "rng-1",
+      "filename": "range-rng-1.mp3",
+      "path": "audio/narrations/projectile-motion/range-rng-1.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "射程等于 v0 的平方乘以 sin 二倍角，再除以重力加速度。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "range",
+      "line_id": "rng-2",
+      "filename": "range-rng-2.mp3",
+      "path": "audio/narrations/projectile-motion/range-rng-2.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "当发射角是 45 度时，sin 二倍角取到最大值，射程最远。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "range",
+      "line_id": "rng-3",
+      "filename": "range-rng-3.mp3",
+      "path": "audio/narrations/projectile-motion/range-rng-3.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "有趣的是，30 度和 60 度这对互补角，射程完全一样。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/projectile-motion/interaction-int-1.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "调整初速度，看所有轨迹一起变高变远。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/projectile-motion/interaction-int-2.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "对比三个角度，橙色的 45 度总是落得最远。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/projectile-motion/summary-sum-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "抛体运动能拆成水平匀速与竖直匀变速两部分。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/projectile-motion/summary-sum-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "合成的轨迹是抛物线，45 度发射时射程最远。"
+    },
+    {
+      "script_id": "projectile-motion",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/projectile-motion/summary-sum-3.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "一道弧线里藏着简单的规律，我们下次再见！"
+    }
+  ],
+  "total_duration": 34.44,
+  "total_size": 551232,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}
