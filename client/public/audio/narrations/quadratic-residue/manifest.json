@@ -1,0 +1,173 @@
+{
+  "script_id": "quadratic-residue",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/quadratic-residue/intro-intro-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "普通的平方我们很熟悉，一四九十六，都是完全平方数。"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/quadratic-residue/intro-intro-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "可是在时钟一样的模运算里，哪些数才算得上是平方数呢？"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/quadratic-residue/intro-intro-3.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "比如模七的世界里，把一到六各自平方再取余，结果只落在几个数上。"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/quadratic-residue/define-def-1.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "如果方程 x 的平方同余 a 模 p 有解，就称 a 是模 p 的二次剩余。"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/quadratic-residue/define-def-2.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "换句话说，a 是模 p 世界里的一个完全平方。"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/quadratic-residue/define-def-3.mp3",
+      "duration": 3.07,
+      "size": 49104,
+      "text": "对奇素数 p，非零的二次剩余恰好有 (p 减一) 除以二 个，正好一半。"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "legendre",
+      "line_id": "leg-1",
+      "filename": "legendre-leg-1.mp3",
+      "path": "audio/narrations/quadratic-residue/legendre-leg-1.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "数学家用勒让德符号 a 比 p 来记录这件事。"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "legendre",
+      "line_id": "leg-2",
+      "filename": "legendre-leg-2.mp3",
+      "path": "audio/narrations/quadratic-residue/legendre-leg-2.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "它等于一表示 a 是剩余，等于负一表示不是，等于零表示 p 整除 a。"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "euler",
+      "line_id": "eul-1",
+      "filename": "euler-eul-1.mp3",
+      "path": "audio/narrations/quadratic-residue/euler-eul-1.mp3",
+      "duration": 2.74,
+      "size": 43776,
+      "text": "欧拉给出一个漂亮的判据：算 a 的 (p 减一) 除以二 次方，再模 p。"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "euler",
+      "line_id": "eul-2",
+      "filename": "euler-eul-2.mp3",
+      "path": "audio/narrations/quadratic-residue/euler-eul-2.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "结果是一，a 就是二次剩余；结果是 p 减一，也就是负一，它就不是。"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "euler",
+      "line_id": "eul-3",
+      "filename": "euler-eul-3.mp3",
+      "path": "audio/narrations/quadratic-residue/euler-eul-3.mp3",
+      "duration": 1.49,
+      "size": 23904,
+      "text": "一次快速幂取模，就能判断任意一个数。"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/quadratic-residue/interaction-int-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "切换不同的素数 p，看绿色的剩余点在圆环上如何分布。"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/quadratic-residue/interaction-int-2.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "注意 x 和 p 减 x 的连线，它们总是落到同一个剩余上，对称又优雅。"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/quadratic-residue/summary-sum-1.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "二次剩余就是模 p 世界里的完全平方数。"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/quadratic-residue/summary-sum-2.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "勒让德符号记录归属，欧拉判别法用快速幂高效判定。"
+    },
+    {
+      "script_id": "quadratic-residue",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/quadratic-residue/summary-sum-3.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "简单的取平方，藏着数论的深邃对称，我们下次再见！"
+    }
+  ],
+  "total_duration": 34.94,
+  "total_size": 558864,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

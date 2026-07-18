@@ -1,0 +1,169 @@
+{
+  "script_id": "vieta-formulas",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.29,
+      "size": 20592,
+      "text": "解一个方程，我们总在寻找它的根。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "可你有没有想过，根其实早就藏在系数里面。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "不用真的解出来，只看系数，就能知道所有根的和与积。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "quadratic",
+      "line_id": "quad-1",
+      "filename": "quadratic-quad-1.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/quadratic-quad-1.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "先看二次方程 a x 平方加 b x 加 c 等于零。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "quadratic",
+      "line_id": "quad-2",
+      "filename": "quadratic-quad-2.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/quadratic-quad-2.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "把它写成 a 乘 x 减去两个根的乘积，展开再对比系数。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "quadratic",
+      "line_id": "quad-3",
+      "filename": "quadratic-quad-3.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/quadratic-quad-3.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "你会发现：两根之和等于负 b 除以 a，两根之积等于 c 除以 a。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "higher",
+      "line_id": "high-1",
+      "filename": "higher-high-1.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/higher-high-1.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "这个规律不止对二次成立，对任意次多项式都成立。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "higher",
+      "line_id": "high-2",
+      "filename": "higher-high-2.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/higher-high-2.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "所有根之和，等于负的次高项系数除以首项系数。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "higher",
+      "line_id": "high-3",
+      "filename": "higher-high-3.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/higher-high-3.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "所有根之积，等于常数项除以首项，再乘上一个正负号。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "symmetric",
+      "line_id": "sym-1",
+      "filename": "symmetric-sym-1.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/symmetric-sym-1.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "把根两两相乘再求和，三三相乘再求和，就得到初等对称多项式。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "symmetric",
+      "line_id": "sym-2",
+      "filename": "symmetric-sym-2.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/symmetric-sym-2.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "每一个系数，恰好等于对应的初等对称多项式，只差一个正负号。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "切换不同的根，看曲线怎样穿过这几个零点。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "同时留意侧栏，根之和与根之积始终和系数严丝合缝。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "韦达定理告诉我们，系数就是根的对称函数。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "和等于负的次高项比首项，积等于常数项比首项配上符号。"
+    },
+    {
+      "script_id": "vieta-formulas",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/vieta-formulas/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "看穿系数背后的根，你就掌握了这份对称之美，我们下次再见！"
+    }
+  ],
+  "total_duration": 31.919999999999995,
+  "total_size": 510624
+}

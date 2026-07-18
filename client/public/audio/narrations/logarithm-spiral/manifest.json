@@ -1,0 +1,123 @@
+{
+  "script_id": "logarithm-spiral",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/logarithm-spiral/intro-intro-1.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "鹦鹉螺的壳，向日葵的种子，还有旋涡星系的巨臂。"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/logarithm-spiral/intro-intro-2.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "它们身上都藏着同一条曲线，越转越大，却始终保持相同的形状。"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/logarithm-spiral/intro-intro-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "这就是对数螺线，一条被大自然反复采用的优美螺线。"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "equation",
+      "line_id": "eq-1",
+      "filename": "equation-eq-1.mp3",
+      "path": "audio/narrations/logarithm-spiral/equation-eq-1.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "在极坐标里，它的方程写作 r 等于 a 乘以 e 的 b 乘 theta 次方。"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "equation",
+      "line_id": "eq-2",
+      "filename": "equation-eq-2.mp3",
+      "path": "audio/narrations/logarithm-spiral/equation-eq-2.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "theta 是转过的角度，半径 r 随角度呈指数增长。"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "equiangular",
+      "line_id": "ang-1",
+      "filename": "equiangular-ang-1.mp3",
+      "path": "audio/narrations/logarithm-spiral/equiangular-ang-1.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "在螺线的任意一点，切线和从中心引出的径向之间，都夹着同一个角。"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "equiangular",
+      "line_id": "ang-2",
+      "filename": "equiangular-ang-2.mp3",
+      "path": "audio/narrations/logarithm-spiral/equiangular-ang-2.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "这个定角等于 arctan 一比 b，与你走到哪里无关，所以它又叫等角螺线。"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "selfsimilar",
+      "line_id": "self-1",
+      "filename": "selfsimilar-self-1.mp3",
+      "path": "audio/narrations/logarithm-spiral/selfsimilar-self-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "每多转一整圈，半径就放大固定的倍数，等于 e 的 2 pi b 次方。"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/logarithm-spiral/interaction-int-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "调整参数 b，看螺线在松散和紧致之间变化。"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/logarithm-spiral/interaction-int-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "再叠加阿基米德螺线做对比，感受指数与线性的不同。"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/logarithm-spiral/summary-sum-3.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "从贝壳到星系，它把生长的秘密写进螺线，我们下次再见！"
+    }
+  ],
+  "total_duration": 23.34,
+  "total_size": 373680,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

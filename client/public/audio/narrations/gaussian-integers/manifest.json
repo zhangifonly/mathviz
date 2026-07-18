@@ -1,0 +1,163 @@
+{
+  "script_id": "gaussian-integers",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/gaussian-integers/intro-intro-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "我们熟悉的整数排在一条数轴上，但如果把它们搬进复平面呢？"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/gaussian-integers/intro-intro-2.mp3",
+      "duration": 2.84,
+      "size": 45504,
+      "text": "高斯把整数推广成 a 加 b 乘 i 的形式，其中 a、b 都是普通整数。"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/gaussian-integers/intro-intro-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "于是无数个点整齐地铺满复平面，排成一张方格点阵。"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "norm",
+      "line_id": "def-1",
+      "filename": "norm-def-1.mp3",
+      "path": "audio/narrations/gaussian-integers/norm-def-1.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "每个高斯整数都有一个范数，等于 a 的平方加 b 的平方。"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "norm",
+      "line_id": "def-2",
+      "filename": "norm-def-2.mp3",
+      "path": "audio/narrations/gaussian-integers/norm-def-2.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "它正好是这个点到原点距离的平方，把复数的大小变回了整数。"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "norm",
+      "line_id": "def-3",
+      "filename": "norm-def-3.mp3",
+      "path": "audio/narrations/gaussian-integers/norm-def-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "范数是乘法的好帮手：两数相乘，范数也相乘。"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "prime",
+      "line_id": "gp-1",
+      "filename": "prime-gp-1.mp3",
+      "path": "audio/narrations/gaussian-integers/prime-gp-1.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "有些高斯整数无法再拆成更小的因子，它们就是高斯素数。"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "prime",
+      "line_id": "gp-2",
+      "filename": "prime-gp-2.mp3",
+      "path": "audio/narrations/gaussian-integers/prime-gp-2.mp3",
+      "duration": 2.58,
+      "size": 41328,
+      "text": "若点落在坐标轴上，只有绝对值是 4k+3 型素数的才算高斯素数。"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "prime",
+      "line_id": "gp-3",
+      "filename": "prime-gp-3.mp3",
+      "path": "audio/narrations/gaussian-integers/prime-gp-3.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "若点不在轴上，则当它的范数是普通素数时，它就是高斯素数。"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "split",
+      "line_id": "sp-1",
+      "filename": "split-sp-1.mp3",
+      "path": "audio/narrations/gaussian-integers/split-sp-1.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "把普通素数放进高斯整数，会发生奇妙的变化。"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "split",
+      "line_id": "sp-2",
+      "filename": "split-sp-2.mp3",
+      "path": "audio/narrations/gaussian-integers/split-sp-2.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "像 5、13 这样 4k+1 型的素数会分裂成一对共轭高斯素数。"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "split",
+      "line_id": "sp-3",
+      "filename": "split-sp-3.mp3",
+      "path": "audio/narrations/gaussian-integers/split-sp-3.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "而 3、7 这样 4k+3 型的素数依然坚守素性，2 则发生分歧。"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/gaussian-integers/interaction-int-1.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "缩放显示范围，看高斯素数在复平面上铺开的花瓣图案。"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/gaussian-integers/summary-sum-1.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "高斯整数把整数搬上复平面，范数衡量它们的大小。"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/gaussian-integers/summary-sum-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "一次到二维的推广，让素数世界焕然一新，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.410000000000004,
+  "total_size": 534528,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

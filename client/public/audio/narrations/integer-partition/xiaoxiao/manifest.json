@@ -1,0 +1,179 @@
+{
+  "script_id": "integer-partition",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "integer-partition",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "给你一个正整数，比如 4，你能把它拆成几个正整数的和？"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "4、3加1、2加2、2加1加1、还有1加1加1加1，一共五种。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "只要不计较加数的顺序，每一种写法就叫做一个分拆。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "count",
+      "line_id": "def-1",
+      "filename": "count-def-1.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/count-def-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "把 n 的分拆总数记作 p(n)，于是 p(4) 等于 5。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "count",
+      "line_id": "def-2",
+      "filename": "count-def-2.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/count-def-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "p(n) 随 n 增长得飞快，p(10) 就已经是 42。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "count",
+      "line_id": "def-3",
+      "filename": "count-def-3.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/count-def-3.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "我们用动态规划逐个凑出部件，就能高效算出 p(n)。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "young",
+      "line_id": "yg-1",
+      "filename": "young-yg-1.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/young-yg-1.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "每个分拆都能画成一张杨氏图：一个部件就是一行方块。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "young",
+      "line_id": "yg-2",
+      "filename": "young-yg-2.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/young-yg-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "部件从大到小自上而下排列，方块左对齐，像一级级台阶。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "young",
+      "line_id": "yg-3",
+      "filename": "young-yg-3.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/young-yg-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "这张图让抽象的和，变成看得见摸得着的形状。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "conjugate",
+      "line_id": "conj-1",
+      "filename": "conjugate-conj-1.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/conjugate-conj-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "把杨氏图沿主对角线翻转，行变成列、列变成行。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "conjugate",
+      "line_id": "conj-2",
+      "filename": "conjugate-conj-2.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/conjugate-conj-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "翻转后读到的新分拆，就是原分拆的共轭分拆。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "conjugate",
+      "line_id": "conj-3",
+      "filename": "conjugate-conj-3.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/conjugate-conj-3.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "再翻一次就回到原样，可见共轭是一种优雅的对称。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "选一个 n，用上一个下一个逐张翻看它的所有分拆。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "再点显示共轭，看虚线框如何把图形转置过来。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "分拆是把整数写成无序正整数之和，总数记作 p(n)。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "杨氏图让分拆可视化，转置就得到共轭分拆。"
+    },
+    {
+      "script_id": "integer-partition",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/integer-partition/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "小小的加法里藏着深邃的组合世界，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.68,
+  "total_size": 538848
+}

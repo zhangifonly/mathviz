@@ -1,0 +1,179 @@
+{
+  "script_id": "arc-length-curvature",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "一条弯弯曲曲的曲线，我们想问它两件事。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "第一，它到底有多长；第二，它在每一点弯得有多厉害。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "长度叫弧长，弯曲程度叫曲率，今天就把它们讲清楚。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "length",
+      "line_id": "len-1",
+      "filename": "length-len-1.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/length-len-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "把曲线切成许多极小的段，每一小段几乎就是一条直线。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "length",
+      "line_id": "len-2",
+      "filename": "length-len-2.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/length-len-2.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "每段长度约等于速度乘以时间，速度就是根号下 x 撇平方加 y 撇平方。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "length",
+      "line_id": "len-3",
+      "filename": "length-len-3.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/length-len-3.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "把所有小段加起来取极限，就是弧长积分：对速度从 a 到 b 积分。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "curvature",
+      "line_id": "cur-1",
+      "filename": "curvature-cur-1.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/curvature-cur-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "曲率衡量方向转变的快慢，转得越急，曲率越大。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "curvature",
+      "line_id": "cur-2",
+      "filename": "curvature-cur-2.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/curvature-cur-2.mp3",
+      "duration": 3.34,
+      "size": 53424,
+      "text": "对参数曲线，曲率 κ 等于 x 撇乘 y 两撇减 y 撇乘 x 两撇，再除以速度的三次方。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "curvature",
+      "line_id": "cur-3",
+      "filename": "curvature-cur-3.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/curvature-cur-3.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "直线永不转向，曲率为零；圆处处一样弯，曲率恒为半径的倒数。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "osculate",
+      "line_id": "osc-1",
+      "filename": "osculate-osc-1.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/osculate-osc-1.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "在曲线的某一点，画一个与它贴合得最紧的圆，这就是密切圆。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "osculate",
+      "line_id": "osc-2",
+      "filename": "osculate-osc-2.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/osculate-osc-2.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "密切圆的半径正好是曲率半径，也就是曲率的倒数，一比 κ。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "osculate",
+      "line_id": "osc-3",
+      "filename": "osculate-osc-3.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/osculate-osc-3.mp3",
+      "duration": 2.57,
+      "size": 41184,
+      "text": "曲线越弯，密切圆越小；曲线越直，密切圆越大直到变成直线。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "拖动滑块移动那个点，看密切圆如何随弯曲程度胀大或缩小。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "再换成抛物线或螺线，观察切向量和法向量怎样一路转动。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "弧长是把速度沿参数积分得到的曲线总长。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "曲率描述弯曲快慢，它的倒数是密切圆的半径。"
+    },
+    {
+      "script_id": "arc-length-curvature",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/arc-length-curvature/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "长度与弯曲，两把尺子丈量曲线的一切，我们下次再见！"
+    }
+  ],
+  "total_duration": 37.830000000000005,
+  "total_size": 605232
+}

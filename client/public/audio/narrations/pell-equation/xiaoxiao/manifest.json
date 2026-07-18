@@ -1,0 +1,179 @@
+{
+  "script_id": "pell-equation",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "pell-equation",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "有一类方程，只允许整数登场，它们被称为丢番图方程。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "在这片整数的天地里，藏着一颗古老而闪亮的明珠。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "它就是佩尔方程，形如 x 的平方减去 N 乘 y 的平方等于一。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/define-def-1.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "这里的 N 是一个不是完全平方的正整数，比如二、三、五。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/define-def-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "我们要找的，是同时让等式成立的整数对 x 和 y。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/define-def-3.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "看似简单，却曾让无数数学家着迷了上千年。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "cf",
+      "line_id": "cf-1",
+      "filename": "cf-cf-1.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/cf-cf-1.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "解开它的钥匙，是根号 N 的连分数展开。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "cf",
+      "line_id": "cf-2",
+      "filename": "cf-cf-2.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/cf-cf-2.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "根号 N 的连分数是周期循环的，它的渐近分数越来越逼近真值。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "cf",
+      "line_id": "cf-3",
+      "filename": "cf-cf-3.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/cf-cf-3.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "沿着这些渐近分数寻找，第一个满足方程的，就是最小的基本解。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "recur",
+      "line_id": "rec-1",
+      "filename": "recur-rec-1.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/recur-rec-1.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "一旦握住基本解，就等于握住了打开无穷的门。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "recur",
+      "line_id": "rec-2",
+      "filename": "recur-rec-2.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/recur-rec-2.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "把基本解看成 x 加 y 根号 N，不断自乘方，就滚出下一个又一个解。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "recur",
+      "line_id": "rec-3",
+      "filename": "recur-rec-3.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/recur-rec-3.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "于是从一个解出发，佩尔方程拥有无穷多组整数解。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "选择不同的 N，看基本解如何随之跳变，有时小巧，有时惊人地大。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "画面上的双曲线，正是方程的几何身影，解点端坐其上。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "佩尔方程求 x 平方减 N 倍 y 平方等于一的整数解。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "连分数找出基本解，递推展开无穷多解，几何上落在双曲线上。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/pell-equation/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "一个古老方程，连起数论与几何，我们下次再见！"
+    }
+  ],
+  "total_duration": 35.410000000000004,
+  "total_size": 566064
+}
