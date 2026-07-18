@@ -351,6 +351,31 @@ const WindowingSceneRenderer = lazy(() => import('./Windowing/WindowingSceneRend
 const BSplineSceneRenderer = lazy(() => import('./BSpline/BSplineSceneRenderer'))
 const CatmullRomSceneRenderer = lazy(() => import('./CatmullRom/CatmullRomSceneRenderer'))
 const DiscreteCosineTransformSceneRenderer = lazy(() => import('./DiscreteCosineTransform/DiscreteCosineTransformSceneRenderer'))
+const StirlingNumbersSceneRenderer = lazy(() => import('./StirlingNumbers/StirlingNumbersSceneRenderer'))
+const BellNumbersSceneRenderer = lazy(() => import('./BellNumbers/BellNumbersSceneRenderer'))
+const DerangementsSceneRenderer = lazy(() => import('./Derangements/DerangementsSceneRenderer'))
+const InclusionExclusionSceneRenderer = lazy(() => import('./InclusionExclusion/InclusionExclusionSceneRenderer'))
+const LatinSquareSceneRenderer = lazy(() => import('./LatinSquare/LatinSquareSceneRenderer'))
+const BenfordsLawSceneRenderer = lazy(() => import('./BenfordsLaw/BenfordsLawSceneRenderer'))
+const BuffonNeedleSceneRenderer = lazy(() => import('./BuffonNeedle/BuffonNeedleSceneRenderer'))
+const GaltonBoardSceneRenderer = lazy(() => import('./GaltonBoard/GaltonBoardSceneRenderer'))
+const GamblersRuinSceneRenderer = lazy(() => import('./GamblersRuin/GamblersRuinSceneRenderer'))
+const CouponCollectorSceneRenderer = lazy(() => import('./CouponCollector/CouponCollectorSceneRenderer'))
+const DecisionTreeSceneRenderer = lazy(() => import('./DecisionTree/DecisionTreeSceneRenderer'))
+const KnnSceneRenderer = lazy(() => import('./Knn/KnnSceneRenderer'))
+const NaiveBayesSceneRenderer = lazy(() => import('./NaiveBayes/NaiveBayesSceneRenderer'))
+const LogisticRegressionSceneRenderer = lazy(() => import('./LogisticRegression/LogisticRegressionSceneRenderer'))
+const BackpropagationSceneRenderer = lazy(() => import('./Backpropagation/BackpropagationSceneRenderer'))
+const SoftmaxSceneRenderer = lazy(() => import('./Softmax/SoftmaxSceneRenderer'))
+const GeneticAlgorithmSceneRenderer = lazy(() => import('./GeneticAlgorithm/GeneticAlgorithmSceneRenderer'))
+const ParticleSwarmSceneRenderer = lazy(() => import('./ParticleSwarm/ParticleSwarmSceneRenderer'))
+const HenonMapSceneRenderer = lazy(() => import('./HenonMap/HenonMapSceneRenderer'))
+const RosslerAttractorSceneRenderer = lazy(() => import('./RosslerAttractor/RosslerAttractorSceneRenderer'))
+const TentMapSceneRenderer = lazy(() => import('./TentMap/TentMapSceneRenderer'))
+const ProjectileMotionSceneRenderer = lazy(() => import('./ProjectileMotion/ProjectileMotionSceneRenderer'))
+const DampedOscillationSceneRenderer = lazy(() => import('./DampedOscillation/DampedOscillationSceneRenderer'))
+const CatenarySceneRenderer = lazy(() => import('./Catenary/CatenarySceneRenderer'))
+const BrachistochroneSceneRenderer = lazy(() => import('./Brachistochrone/BrachistochroneSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -629,6 +654,31 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'b-spline': BSplineSceneRenderer,
   'catmull-rom': CatmullRomSceneRenderer,
   'discrete-cosine-transform': DiscreteCosineTransformSceneRenderer,
+  'stirling-numbers': StirlingNumbersSceneRenderer,
+  'bell-numbers': BellNumbersSceneRenderer,
+  'derangements': DerangementsSceneRenderer,
+  'inclusion-exclusion': InclusionExclusionSceneRenderer,
+  'latin-square': LatinSquareSceneRenderer,
+  'benfords-law': BenfordsLawSceneRenderer,
+  'buffon-needle': BuffonNeedleSceneRenderer,
+  'galton-board': GaltonBoardSceneRenderer,
+  'gamblers-ruin': GamblersRuinSceneRenderer,
+  'coupon-collector': CouponCollectorSceneRenderer,
+  'decision-tree': DecisionTreeSceneRenderer,
+  'knn': KnnSceneRenderer,
+  'naive-bayes': NaiveBayesSceneRenderer,
+  'logistic-regression': LogisticRegressionSceneRenderer,
+  'backpropagation': BackpropagationSceneRenderer,
+  'softmax': SoftmaxSceneRenderer,
+  'genetic-algorithm': GeneticAlgorithmSceneRenderer,
+  'particle-swarm': ParticleSwarmSceneRenderer,
+  'henon-map': HenonMapSceneRenderer,
+  'rossler-attractor': RosslerAttractorSceneRenderer,
+  'tent-map': TentMapSceneRenderer,
+  'projectile-motion': ProjectileMotionSceneRenderer,
+  'damped-oscillation': DampedOscillationSceneRenderer,
+  'catenary': CatenarySceneRenderer,
+  'brachistochrone': BrachistochroneSceneRenderer,
 }
 
 // 获取场景渲染器

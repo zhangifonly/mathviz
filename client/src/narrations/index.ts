@@ -281,6 +281,31 @@ export { windowingNarration } from './scripts/windowing'
 export { bSplineNarration } from './scripts/b-spline'
 export { catmullRomNarration } from './scripts/catmull-rom'
 export { discreteCosineTransformNarration } from './scripts/discrete-cosine-transform'
+export { stirlingNumbersNarration } from './scripts/stirling-numbers'
+export { bellNumbersNarration } from './scripts/bell-numbers'
+export { derangementsNarration } from './scripts/derangements'
+export { inclusionExclusionNarration } from './scripts/inclusion-exclusion'
+export { latinSquareNarration } from './scripts/latin-square'
+export { benfordsLawNarration } from './scripts/benfords-law'
+export { buffonNeedleNarration } from './scripts/buffon-needle'
+export { galtonBoardNarration } from './scripts/galton-board'
+export { gamblersRuinNarration } from './scripts/gamblers-ruin'
+export { couponCollectorNarration } from './scripts/coupon-collector'
+export { decisionTreeNarration } from './scripts/decision-tree'
+export { knnNarration } from './scripts/knn'
+export { naiveBayesNarration } from './scripts/naive-bayes'
+export { logisticRegressionNarration } from './scripts/logistic-regression'
+export { backpropagationNarration } from './scripts/backpropagation'
+export { softmaxNarration } from './scripts/softmax'
+export { geneticAlgorithmNarration } from './scripts/genetic-algorithm'
+export { particleSwarmNarration } from './scripts/particle-swarm'
+export { henonMapNarration } from './scripts/henon-map'
+export { rosslerAttractorNarration } from './scripts/rossler-attractor'
+export { tentMapNarration } from './scripts/tent-map'
+export { projectileMotionNarration } from './scripts/projectile-motion'
+export { dampedOscillationNarration } from './scripts/damped-oscillation'
+export { catenaryNarration } from './scripts/catenary'
+export { brachistochroneNarration } from './scripts/brachistochrone'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -554,6 +579,31 @@ import { windowingNarration } from './scripts/windowing'
 import { bSplineNarration } from './scripts/b-spline'
 import { catmullRomNarration } from './scripts/catmull-rom'
 import { discreteCosineTransformNarration } from './scripts/discrete-cosine-transform'
+import { stirlingNumbersNarration } from './scripts/stirling-numbers'
+import { bellNumbersNarration } from './scripts/bell-numbers'
+import { derangementsNarration } from './scripts/derangements'
+import { inclusionExclusionNarration } from './scripts/inclusion-exclusion'
+import { latinSquareNarration } from './scripts/latin-square'
+import { benfordsLawNarration } from './scripts/benfords-law'
+import { buffonNeedleNarration } from './scripts/buffon-needle'
+import { galtonBoardNarration } from './scripts/galton-board'
+import { gamblersRuinNarration } from './scripts/gamblers-ruin'
+import { couponCollectorNarration } from './scripts/coupon-collector'
+import { decisionTreeNarration } from './scripts/decision-tree'
+import { knnNarration } from './scripts/knn'
+import { naiveBayesNarration } from './scripts/naive-bayes'
+import { logisticRegressionNarration } from './scripts/logistic-regression'
+import { backpropagationNarration } from './scripts/backpropagation'
+import { softmaxNarration } from './scripts/softmax'
+import { geneticAlgorithmNarration } from './scripts/genetic-algorithm'
+import { particleSwarmNarration } from './scripts/particle-swarm'
+import { henonMapNarration } from './scripts/henon-map'
+import { rosslerAttractorNarration } from './scripts/rossler-attractor'
+import { tentMapNarration } from './scripts/tent-map'
+import { projectileMotionNarration } from './scripts/projectile-motion'
+import { dampedOscillationNarration } from './scripts/damped-oscillation'
+import { catenaryNarration } from './scripts/catenary'
+import { brachistochroneNarration } from './scripts/brachistochrone'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -831,6 +881,31 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'b-spline': bSplineNarration,
   'catmull-rom': catmullRomNarration,
   'discrete-cosine-transform': discreteCosineTransformNarration,
+  'stirling-numbers': stirlingNumbersNarration,
+  'bell-numbers': bellNumbersNarration,
+  'derangements': derangementsNarration,
+  'inclusion-exclusion': inclusionExclusionNarration,
+  'latin-square': latinSquareNarration,
+  'benfords-law': benfordsLawNarration,
+  'buffon-needle': buffonNeedleNarration,
+  'galton-board': galtonBoardNarration,
+  'gamblers-ruin': gamblersRuinNarration,
+  'coupon-collector': couponCollectorNarration,
+  'decision-tree': decisionTreeNarration,
+  'knn': knnNarration,
+  'naive-bayes': naiveBayesNarration,
+  'logistic-regression': logisticRegressionNarration,
+  'backpropagation': backpropagationNarration,
+  'softmax': softmaxNarration,
+  'genetic-algorithm': geneticAlgorithmNarration,
+  'particle-swarm': particleSwarmNarration,
+  'henon-map': henonMapNarration,
+  'rossler-attractor': rosslerAttractorNarration,
+  'tent-map': tentMapNarration,
+  'projectile-motion': projectileMotionNarration,
+  'damped-oscillation': dampedOscillationNarration,
+  'catenary': catenaryNarration,
+  'brachistochrone': brachistochroneNarration,
 }
 
 // 获取稿件

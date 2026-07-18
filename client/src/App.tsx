@@ -296,6 +296,31 @@ const WindowingExperiment = lazyRetry(() => import('./experiments/windowing/Wind
 const BSplineExperiment = lazyRetry(() => import('./experiments/b-spline/BSplineExperiment'))
 const CatmullRomExperiment = lazyRetry(() => import('./experiments/catmull-rom/CatmullRomExperiment'))
 const DiscreteCosineTransformExperiment = lazyRetry(() => import('./experiments/discrete-cosine-transform/DiscreteCosineTransformExperiment'))
+const StirlingNumbersExperiment = lazyRetry(() => import('./experiments/stirling-numbers/StirlingNumbersExperiment'))
+const BellNumbersExperiment = lazyRetry(() => import('./experiments/bell-numbers/BellNumbersExperiment'))
+const DerangementsExperiment = lazyRetry(() => import('./experiments/derangements/DerangementsExperiment'))
+const InclusionExclusionExperiment = lazyRetry(() => import('./experiments/inclusion-exclusion/InclusionExclusionExperiment'))
+const LatinSquareExperiment = lazyRetry(() => import('./experiments/latin-square/LatinSquareExperiment'))
+const BenfordsLawExperiment = lazyRetry(() => import('./experiments/benfords-law/BenfordsLawExperiment'))
+const BuffonNeedleExperiment = lazyRetry(() => import('./experiments/buffon-needle/BuffonNeedleExperiment'))
+const GaltonBoardExperiment = lazyRetry(() => import('./experiments/galton-board/GaltonBoardExperiment'))
+const GamblersRuinExperiment = lazyRetry(() => import('./experiments/gamblers-ruin/GamblersRuinExperiment'))
+const CouponCollectorExperiment = lazyRetry(() => import('./experiments/coupon-collector/CouponCollectorExperiment'))
+const DecisionTreeExperiment = lazyRetry(() => import('./experiments/decision-tree/DecisionTreeExperiment'))
+const KnnExperiment = lazyRetry(() => import('./experiments/knn/KnnExperiment'))
+const NaiveBayesExperiment = lazyRetry(() => import('./experiments/naive-bayes/NaiveBayesExperiment'))
+const LogisticRegressionExperiment = lazyRetry(() => import('./experiments/logistic-regression/LogisticRegressionExperiment'))
+const BackpropagationExperiment = lazyRetry(() => import('./experiments/backpropagation/BackpropagationExperiment'))
+const SoftmaxExperiment = lazyRetry(() => import('./experiments/softmax/SoftmaxExperiment'))
+const GeneticAlgorithmExperiment = lazyRetry(() => import('./experiments/genetic-algorithm/GeneticAlgorithmExperiment'))
+const ParticleSwarmExperiment = lazyRetry(() => import('./experiments/particle-swarm/ParticleSwarmExperiment'))
+const HenonMapExperiment = lazyRetry(() => import('./experiments/henon-map/HenonMapExperiment'))
+const RosslerAttractorExperiment = lazyRetry(() => import('./experiments/rossler-attractor/RosslerAttractorExperiment'))
+const TentMapExperiment = lazyRetry(() => import('./experiments/tent-map/TentMapExperiment'))
+const ProjectileMotionExperiment = lazyRetry(() => import('./experiments/projectile-motion/ProjectileMotionExperiment'))
+const DampedOscillationExperiment = lazyRetry(() => import('./experiments/damped-oscillation/DampedOscillationExperiment'))
+const CatenaryExperiment = lazyRetry(() => import('./experiments/catenary/CatenaryExperiment'))
+const BrachistochroneExperiment = lazyRetry(() => import('./experiments/brachistochrone/BrachistochroneExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -589,6 +614,31 @@ export default function App() {
             <Route path="b-spline" element={<BSplineExperiment />} />
             <Route path="catmull-rom" element={<CatmullRomExperiment />} />
             <Route path="discrete-cosine-transform" element={<DiscreteCosineTransformExperiment />} />
+            <Route path="stirling-numbers" element={<StirlingNumbersExperiment />} />
+            <Route path="bell-numbers" element={<BellNumbersExperiment />} />
+            <Route path="derangements" element={<DerangementsExperiment />} />
+            <Route path="inclusion-exclusion" element={<InclusionExclusionExperiment />} />
+            <Route path="latin-square" element={<LatinSquareExperiment />} />
+            <Route path="benfords-law" element={<BenfordsLawExperiment />} />
+            <Route path="buffon-needle" element={<BuffonNeedleExperiment />} />
+            <Route path="galton-board" element={<GaltonBoardExperiment />} />
+            <Route path="gamblers-ruin" element={<GamblersRuinExperiment />} />
+            <Route path="coupon-collector" element={<CouponCollectorExperiment />} />
+            <Route path="decision-tree" element={<DecisionTreeExperiment />} />
+            <Route path="knn" element={<KnnExperiment />} />
+            <Route path="naive-bayes" element={<NaiveBayesExperiment />} />
+            <Route path="logistic-regression" element={<LogisticRegressionExperiment />} />
+            <Route path="backpropagation" element={<BackpropagationExperiment />} />
+            <Route path="softmax" element={<SoftmaxExperiment />} />
+            <Route path="genetic-algorithm" element={<GeneticAlgorithmExperiment />} />
+            <Route path="particle-swarm" element={<ParticleSwarmExperiment />} />
+            <Route path="henon-map" element={<HenonMapExperiment />} />
+            <Route path="rossler-attractor" element={<RosslerAttractorExperiment />} />
+            <Route path="tent-map" element={<TentMapExperiment />} />
+            <Route path="projectile-motion" element={<ProjectileMotionExperiment />} />
+            <Route path="damped-oscillation" element={<DampedOscillationExperiment />} />
+            <Route path="catenary" element={<CatenaryExperiment />} />
+            <Route path="brachistochrone" element={<BrachistochroneExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />
