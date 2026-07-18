@@ -1,0 +1,179 @@
+{
+  "script_id": "phase-portrait",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "phase-portrait",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "有些微分方程很难解出公式，但我们其实不必解它。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "只要看解在平面上如何流动，就能读懂系统的命运。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "这就是相图分析，一种用几何眼光看动力系统的方法。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "field",
+      "line_id": "field-1",
+      "filename": "field-field-1.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/field-field-1.mp3",
+      "duration": 2.94,
+      "size": 47088,
+      "text": "把状态画成平面上的点，方程 x撇 等于 A x 就给每个点指定一个速度箭头。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "field",
+      "line_id": "field-2",
+      "filename": "field-field-2.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/field-field-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "所有箭头汇成一片向量场，像水面的暗流指引着运动方向。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "field",
+      "line_id": "field-3",
+      "filename": "field-field-3.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/field-field-3.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "顺着箭头走，就描出一条轨线，也就是系统真实的演化路径。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "equil",
+      "line_id": "eq-1",
+      "filename": "equil-eq-1.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/equil-eq-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "有一个特殊的点，速度恰好为零，那里的状态永不改变。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "equil",
+      "line_id": "eq-2",
+      "filename": "equil-eq-2.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/equil-eq-2.mp3",
+      "duration": 1.71,
+      "size": 27360,
+      "text": "它就是平衡点，对线性系统来说正是原点。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "equil",
+      "line_id": "eq-3",
+      "filename": "equil-eq-3.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/equil-eq-3.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "附近的轨线是被它吸引还是被它推开，决定了系统稳定与否。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "classify",
+      "line_id": "cls-1",
+      "filename": "classify-cls-1.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/classify-cls-1.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "矩阵 A 的特征值揭示一切：由迹与行列式就能判断。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "classify",
+      "line_id": "cls-2",
+      "filename": "classify-cls-2.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/classify-cls-2.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "两个同号实特征值是结点，一正一负是鞍点。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "classify",
+      "line_id": "cls-3",
+      "filename": "classify-cls-3.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/classify-cls-3.mp3",
+      "duration": 2.58,
+      "size": 41328,
+      "text": "共轭复特征值让轨线打转，实部不为零是焦点，纯虚数则是中心。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "切换不同的系统，看向量场与轨线如何随之改变。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "对照迹和行列式，验证平衡点的类型是否与你的判断一致。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "相图让我们不解方程也能看清系统的行为。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "结点鞍点焦点中心，四种类型都写在特征值里。"
+    },
+    {
+      "script_id": "phase-portrait",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/phase-portrait/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.41,
+      "size": 22608,
+      "text": "用几何读懂动力系统，我们下次再见！"
+    }
+  ],
+  "total_duration": 34.309999999999995,
+  "total_size": 548928
+}

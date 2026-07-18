@@ -1,0 +1,143 @@
+{
+  "script_id": "logistic-bifurcation",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "logistic-bifurcation",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/logistic-bifurcation/intro-intro-1.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "一个再简单不过的公式，也能孕育出无穷的复杂。"
+    },
+    {
+      "script_id": "logistic-bifurcation",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/logistic-bifurcation/intro-intro-2.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "生态学家用它描述一片池塘里，虫子数量年复一年的变化。"
+    },
+    {
+      "script_id": "logistic-bifurcation",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/logistic-bifurcation/intro-intro-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "今天我们就顺着这个公式，一路走进混沌的深处。"
+    },
+    {
+      "script_id": "logistic-bifurcation",
+      "section_id": "map",
+      "line_id": "map-1",
+      "filename": "map-map-1.mp3",
+      "path": "audio/narrations/logistic-bifurcation/map-map-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "规则是：下一年的数量，等于 r 乘以今年，再乘以一减今年。"
+    },
+    {
+      "script_id": "logistic-bifurcation",
+      "section_id": "map",
+      "line_id": "map-2",
+      "filename": "map-map-2.mp3",
+      "path": "audio/narrations/logistic-bifurcation/map-map-2.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "写成公式就是 x 等于 r x 乘以一减 x，反复代入自己。"
+    },
+    {
+      "script_id": "logistic-bifurcation",
+      "section_id": "map",
+      "line_id": "map-3",
+      "filename": "map-map-3.mp3",
+      "path": "audio/narrations/logistic-bifurcation/map-map-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "参数 r 代表繁殖率，它的大小，决定了系统的命运。"
+    },
+    {
+      "script_id": "logistic-bifurcation",
+      "section_id": "fixed",
+      "line_id": "fix-1",
+      "filename": "fixed-fix-1.mp3",
+      "path": "audio/narrations/logistic-bifurcation/fixed-fix-1.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "当 r 较小时，数量最终稳定在一个固定值，这叫不动点。"
+    },
+    {
+      "script_id": "logistic-bifurcation",
+      "section_id": "fixed",
+      "line_id": "fix-2",
+      "filename": "fixed-fix-2.mp3",
+      "path": "audio/narrations/logistic-bifurcation/fixed-fix-2.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "无论从哪里出发，迭代都会被吸引到这个值上来。"
+    },
+    {
+      "script_id": "logistic-bifurcation",
+      "section_id": "fixed",
+      "line_id": "fix-3",
+      "filename": "fixed-fix-3.mp3",
+      "path": "audio/narrations/logistic-bifurcation/fixed-fix-3.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "可一旦 r 越过 3，这个稳定的平衡就悄悄失效了。"
+    },
+    {
+      "script_id": "logistic-bifurcation",
+      "section_id": "chaos",
+      "line_id": "chaos-2",
+      "filename": "chaos-chaos-2.mp3",
+      "path": "audio/narrations/logistic-bifurcation/chaos-chaos-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "再往后，二变四、四变八，分岔一次比一次来得快。"
+    },
+    {
+      "script_id": "logistic-bifurcation",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/logistic-bifurcation/interaction-int-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "这种无穷嵌套的自相似，正是混沌世界最迷人的指纹。"
+    },
+    {
+      "script_id": "logistic-bifurcation",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/logistic-bifurcation/summary-sum-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "logistic 映射用一个乘法，串起了秩序与混沌。"
+    },
+    {
+      "script_id": "logistic-bifurcation",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/logistic-bifurcation/summary-sum-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "倍周期分岔像一架梯子，把我们从稳定送往混沌。"
+    }
+  ],
+  "total_duration": 25.750000000000007,
+  "total_size": 411984,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

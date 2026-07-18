@@ -1,0 +1,183 @@
+{
+  "script_id": "limit-cycle",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "limit-cycle",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/limit-cycle/intro-intro-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "有些系统不需要外力驱动，也能自己稳定地来回振荡。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/limit-cycle/intro-intro-2.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "心脏的搏动、萤火虫的同步闪烁，都是这样的自持振荡。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/limit-cycle/intro-intro-3.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "它们背后藏着同一个几何图案，叫做极限环。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "equation",
+      "line_id": "eq-1",
+      "filename": "equation-eq-1.mp3",
+      "path": "audio/narrations/limit-cycle/equation-eq-1.mp3",
+      "duration": 3.25,
+      "size": 51984,
+      "text": "范德波尔方程写作 x 的二阶导，减去 mu 乘一减 x 平方再乘一阶导，加 x，等于零。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "equation",
+      "line_id": "eq-2",
+      "filename": "equation-eq-2.mp3",
+      "path": "audio/narrations/limit-cycle/equation-eq-2.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "令 y 等于 x 的导数，就把它化成两个一阶方程组成的系统。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "equation",
+      "line_id": "eq-3",
+      "filename": "equation-eq-3.mp3",
+      "path": "audio/narrations/limit-cycle/equation-eq-3.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "我们用四阶龙格库塔法一步步积分，在相平面上追踪它的轨迹。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "cycle",
+      "line_id": "cyc-1",
+      "filename": "cycle-cyc-1.mp3",
+      "path": "audio/narrations/limit-cycle/cycle-cyc-1.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "当振幅很小时，那个负阻尼项给系统注入能量，让它越振越大。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "cycle",
+      "line_id": "cyc-2",
+      "filename": "cycle-cyc-2.mp3",
+      "path": "audio/narrations/limit-cycle/cycle-cyc-2.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "当振幅很大时，阻尼又变成正的，把多余的能量耗散掉。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "cycle",
+      "line_id": "cyc-3",
+      "filename": "cycle-cyc-3.mp3",
+      "path": "audio/narrations/limit-cycle/cycle-cyc-3.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "两种作用恰好平衡，画出一条孤立的闭合曲线，这就是极限环。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "attract",
+      "line_id": "att-1",
+      "filename": "attract-att-1.mp3",
+      "path": "audio/narrations/limit-cycle/attract-att-1.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "从环内部出发的轨线，会向外螺旋着靠近这条闭轨。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "attract",
+      "line_id": "att-2",
+      "filename": "attract-att-2.mp3",
+      "path": "audio/narrations/limit-cycle/attract-att-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "从环外部出发的轨线，则向内螺旋着收拢过来。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "attract",
+      "line_id": "att-3",
+      "filename": "attract-att-3.mp3",
+      "path": "audio/narrations/limit-cycle/attract-att-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "无论起点在哪，最终都被同一个极限环牢牢俘获。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/limit-cycle/interaction-int-1.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "调整参数 mu，看看环的形状如何从圆润变得棱角分明。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/limit-cycle/interaction-int-2.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "重新演示收敛过程，观察每条轨线怎样奔向同一条闭轨。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/limit-cycle/summary-sum-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "范德波尔方程用负阻尼供能、正阻尼耗能，达成自持振荡。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/limit-cycle/summary-sum-2.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "平衡的结果是一条孤立闭轨，吸引着内外所有轨线。"
+    },
+    {
+      "script_id": "limit-cycle",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/limit-cycle/summary-sum-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "简单的非线性，孕育出稳定的节律之美，我们下次再见！"
+    }
+  ],
+  "total_duration": 37.23999999999999,
+  "total_size": 595440,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

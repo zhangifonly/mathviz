@@ -1,0 +1,179 @@
+{
+  "script_id": "vibrating-string",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "vibrating-string",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "拨动一根吉他弦，它来回抖动，空气随之发声。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "奇妙的是，弦的两端被牢牢固定，中间却能自由摆动。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "这看似简单的振动里，藏着一整套优美的数学。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "wave-eq",
+      "line_id": "wave-1",
+      "filename": "wave-eq-wave-1.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/wave-eq-wave-1.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "弦上每一小段的加速度，正比于它两侧的弯曲程度。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "wave-eq",
+      "line_id": "wave-2",
+      "filename": "wave-eq-wave-2.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/wave-eq-wave-2.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "把这条规律写成公式，就是描述弦运动的波动方程。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "wave-eq",
+      "line_id": "wave-3",
+      "filename": "wave-eq-wave-3.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/wave-eq-wave-3.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "它的解，恰好是一族形状固定、只随时间伸缩的驻波。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "standing",
+      "line_id": "stand-1",
+      "filename": "standing-stand-1.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/standing-stand-1.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "驻波不向前跑，它在原地上下起伏。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "standing",
+      "line_id": "stand-2",
+      "filename": "standing-stand-2.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/standing-stand-2.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "始终不动的点叫节点，摆幅最大的点叫腹。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "standing",
+      "line_id": "stand-3",
+      "filename": "standing-stand-3.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/standing-stand-3.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "第 n 阶驻波，弦上正好有 n 减一个内部节点。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "harmonics",
+      "line_id": "harm-1",
+      "filename": "harmonics-harm-1.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/harmonics-harm-1.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "最简单的一阶驻波频率最低，叫基频，决定我们听到的音高。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "harmonics",
+      "line_id": "harm-2",
+      "filename": "harmonics-harm-2.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/harmonics-harm-2.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "二阶、三阶等更高频的驻波叫泛音，频率是基频的整数倍。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "harmonics",
+      "line_id": "harm-3",
+      "filename": "harmonics-harm-3.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/harmonics-harm-3.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "各泛音的强弱比例不同，同一个音高就有了不同的音色。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "勾选不同的模态，看单个驻波如何在原地起伏。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "再把几个模态叠加起来，弦形立刻变得复杂而生动。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "两端固定的弦，只能以一族驻波模态振动。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "基频定音高，泛音配比定音色，任意弦形都是它们的叠加。"
+    },
+    {
+      "script_id": "vibrating-string",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/vibrating-string/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "一根小小的弦，竟弹出如此深的数学，我们下次再见！"
+    }
+  ],
+  "total_duration": 31.810000000000002,
+  "total_size": 508752
+}

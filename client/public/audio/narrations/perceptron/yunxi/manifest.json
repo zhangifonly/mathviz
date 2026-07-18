@@ -1,0 +1,139 @@
+{
+  "script_id": "perceptron",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "perceptron",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/perceptron/yunxi/intro-intro-1.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "平面上散落着两种颜色的点，我们想用一条直线把它们分开。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/perceptron/yunxi/intro-intro-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "完成这件事的，是最简单的人工神经元，叫做感知机。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/perceptron/yunxi/intro-intro-3.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "它是1958年提出的，也是今天深度学习的起点。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/perceptron/yunxi/define-def-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "感知机给每个输入配一个权重，再把它们加权求和。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/perceptron/yunxi/define-def-2.mp3",
+      "duration": 1.35,
+      "size": 21600,
+      "text": "求和加上偏置，就得到一个分数。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/perceptron/yunxi/define-def-3.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "分数大于零判为一类，小于零判为另一类，这就是符号激活。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "update",
+      "line_id": "upd-1",
+      "filename": "update-upd-1.mp3",
+      "path": "audio/narrations/perceptron/yunxi/update-upd-1.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "一开始权重全为零，直线还没找到方向。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "update",
+      "line_id": "upd-2",
+      "filename": "update-upd-2.mp3",
+      "path": "audio/narrations/perceptron/yunxi/update-upd-2.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "每遇到一个分错的点，就把权重朝它的方向推一把。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "update",
+      "line_id": "upd-3",
+      "filename": "update-upd-3.mp3",
+      "path": "audio/narrations/perceptron/yunxi/update-upd-3.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "推动的公式很简洁：权重加上学习率乘以标签再乘以坐标。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "converge",
+      "line_id": "conv-1",
+      "filename": "converge-conv-1.mp3",
+      "path": "audio/narrations/perceptron/yunxi/converge-conv-1.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "只要两类点本来就能被一条直线分开，我们称它线性可分。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "converge",
+      "line_id": "conv-2",
+      "filename": "converge-conv-2.mp3",
+      "path": "audio/narrations/perceptron/yunxi/converge-conv-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "感知机收敛定理保证，在有限步之内直线一定能把两类完全分开。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/perceptron/yunxi/interaction-int-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "点击单步训练，看直线随着每次更新慢慢转动。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/perceptron/yunxi/interaction-int-2.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "直到所有点都落在正确的一侧，正确率升到百分之百。"
+    }
+  ],
+  "total_duration": 25.360000000000003,
+  "total_size": 406080
+}

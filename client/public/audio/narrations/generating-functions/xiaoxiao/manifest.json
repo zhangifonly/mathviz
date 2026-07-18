@@ -1,0 +1,179 @@
+{
+  "script_id": "generating-functions",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "generating-functions",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "我们常用一串数字来记录信息，比如每种点数出现多少次。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "有没有办法，把整串数列打包成一个整体来运算呢？"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.36,
+      "size": 21744,
+      "text": "生成函数就是这样一个巧妙的工具。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "coeff",
+      "line_id": "def-1",
+      "filename": "coeff-def-1.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/coeff-def-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "把数列的第 k 项，放到幂级数里 x 的 k 次方前面当系数。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "coeff",
+      "line_id": "def-2",
+      "filename": "coeff-def-2.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/coeff-def-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "于是一整串数列，就浓缩成了一个多项式或幂级数。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "coeff",
+      "line_id": "def-3",
+      "filename": "coeff-def-3.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/coeff-def-3.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "系数柱状图里，每根柱子的高度就是对应那一项的值。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "conv",
+      "line_id": "conv-1",
+      "filename": "conv-conv-1.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/conv-conv-1.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "两个生成函数相乘时，x 的 k 次项系数怎么来？"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "conv",
+      "line_id": "conv-2",
+      "filename": "conv-conv-2.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/conv-conv-2.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "它把所有下标相加等于 k 的系数两两相乘再求和，这叫卷积。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "conv",
+      "line_id": "conv-3",
+      "filename": "conv-conv-3.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/conv-conv-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "而这恰好就是组合计数里，凑出总和为 k 的方案数。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "apply",
+      "line_id": "app-1",
+      "filename": "apply-app-1.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/apply-app-1.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "一颗骰子的生成函数是 x 加到 x 的六次方。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "apply",
+      "line_id": "app-2",
+      "filename": "apply-app-2.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/apply-app-2.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "掷两颗骰子的和分布，就是它的平方，和为七的方案最多，共六种。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "apply",
+      "line_id": "app-3",
+      "filename": "apply-app-3.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/apply-app-3.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "斐波那契数列则藏在 x 除以一减 x 减 x 平方的系数里。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "切换不同示例，看柱状图形状怎样随生成函数改变。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "数一数系数总和，正好等于全部方案数。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "生成函数把数列编码成幂级数的系数。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.42,
+      "size": 22752,
+      "text": "相乘等于卷积，天然对应组合计数。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/generating-functions/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "一个幂级数装下整串数列，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.21,
+  "total_size": 515232
+}

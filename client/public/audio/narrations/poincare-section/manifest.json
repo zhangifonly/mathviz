@@ -1,0 +1,143 @@
+{
+  "script_id": "poincare-section",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "poincare-section",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/poincare-section/intro-intro-2.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "看久了只觉得混乱，很难判断它到底是规律还是混沌。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/poincare-section/intro-intro-3.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "庞加莱想了一个巧妙的办法，把这团乱麻压成一张清爽的点图。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "point",
+      "line_id": "pt-1",
+      "filename": "point-pt-1.mp3",
+      "path": "audio/narrations/poincare-section/point-pt-1.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "这些点落在相空间的一张截面上，就是庞加莱截面。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "point",
+      "line_id": "pt-2",
+      "filename": "point-pt-2.mp3",
+      "path": "audio/narrations/poincare-section/point-pt-2.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "高维的连续运动，被降成了二维平面上一堆好读的点。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "point",
+      "line_id": "pt-3",
+      "filename": "point-pt-3.mp3",
+      "path": "audio/narrations/poincare-section/point-pt-3.mp3",
+      "duration": 1.49,
+      "size": 23904,
+      "text": "轨迹的隐藏骨架，一下子就显露出来了。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "compare",
+      "line_id": "cmp-1",
+      "filename": "compare-cmp-1.mp3",
+      "path": "audio/narrations/poincare-section/compare-cmp-1.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "如果运动是周期的，每次频闪都落回老地方，只剩几个点。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "compare",
+      "line_id": "cmp-2",
+      "filename": "compare-cmp-2.mp3",
+      "path": "audio/narrations/poincare-section/compare-cmp-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "如果是混沌的，点永不重复，铺成一片精细的分形云。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "compare",
+      "line_id": "cmp-3",
+      "filename": "compare-cmp-3.mp3",
+      "path": "audio/narrations/poincare-section/compare-cmp-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "数一数点的多少与聚散，就能一眼看穿系统的命运。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/poincare-section/interaction-int-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "切换周期与混沌两组参数，看点云从几点跳成一团分形。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/poincare-section/interaction-int-2.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "增加采样周期数，混沌的截面会越描越细，结构愈发清晰。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/poincare-section/summary-sum-1.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "庞加莱截面用频闪采样，把纠缠的轨迹压成离散点。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/poincare-section/summary-sum-2.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "几个点是周期，一片分形云是混沌。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/poincare-section/summary-sum-3.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "一次巧妙的降维，让混沌现出原形，我们下次再见！"
+    }
+  ],
+  "total_duration": 25.61,
+  "total_size": 409968,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

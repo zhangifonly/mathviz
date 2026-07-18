@@ -1,0 +1,169 @@
+{
+  "script_id": "dijkstra",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "dijkstra",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/intro-intro-1.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "打开导航软件，输入终点，它几秒内就算出最快路线。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/intro-intro-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "地图其实是一张图：路口是节点，道路是带权重的边。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/intro-intro-3.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "求两点间最短路的经典算法，就是 Dijkstra。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "greedy",
+      "line_id": "def-1",
+      "filename": "greedy-def-1.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/greedy-def-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "算法从源点出发，维护每个节点当前已知的最短距离。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "greedy",
+      "line_id": "def-2",
+      "filename": "greedy-def-2.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/greedy-def-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "每一步，都从还没确定的节点里，挑出距离最小的那个。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "greedy",
+      "line_id": "def-3",
+      "filename": "greedy-def-3.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/greedy-def-3.mp3",
+      "duration": 2.85,
+      "size": 45648,
+      "text": "因为边权非负，这个最小距离不可能再被绕远路缩短，于是它被永久确定。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "relax",
+      "line_id": "rel-1",
+      "filename": "relax-rel-1.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/relax-rel-1.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "确定一个节点后，用它去更新每一条邻边通向的邻居。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "relax",
+      "line_id": "rel-2",
+      "filename": "relax-rel-2.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/relax-rel-2.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "如果经过它到邻居更近，就刷新邻居的距离，并记下前驱。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "relax",
+      "line_id": "rel-3",
+      "filename": "relax-rel-3.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/relax-rel-3.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "这个不断尝试缩短距离的动作，就叫松弛。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "tree",
+      "line_id": "tree-1",
+      "filename": "tree-tree-1.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/tree-tree-1.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "每个节点都记着自己的前驱，把这些前驱连起来。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "tree",
+      "line_id": "tree-2",
+      "filename": "tree-tree-2.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/tree-tree-2.mp3",
+      "duration": 2.57,
+      "size": 41184,
+      "text": "就得到一棵以源点为根的最短路径树，从源到任意点的最短路都在树上。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/interaction-int-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "换一个源点，看最短路径树如何从不同起点重新生长。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/interaction-int-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "再选一个目标点，粉色高亮就是那条最短路径。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/summary-sum-1.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "Dijkstra 每次贪心地确定最近节点，再松弛它的邻边。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/summary-sum-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "前驱指针连成最短路径树，覆盖到所有可达点。"
+    },
+    {
+      "script_id": "dijkstra",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/dijkstra/yunxi/summary-sum-3.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "从导航到网络路由，它无处不在，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.26,
+  "total_size": 516384
+}

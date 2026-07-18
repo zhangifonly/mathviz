@@ -1,0 +1,179 @@
+{
+  "script_id": "pendulum-phase",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "还记得小时候荡秋千吗？越荡越高，却总在某处停下来往回落。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "可如果推得足够猛，秋千就会越过最高点，整整翻一圈。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "摆动和翻转，看似两回事，其实是同一个方程的两副面孔。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "equation",
+      "line_id": "eq-1",
+      "filename": "equation-eq-1.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/equation-eq-1.mp3",
+      "duration": 2.63,
+      "size": 42048,
+      "text": "设摆角为 theta，单摆遵循 theta 的二阶导等于负 g 除以 L，再乘 sin theta。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "equation",
+      "line_id": "eq-2",
+      "filename": "equation-eq-2.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/equation-eq-2.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "这个 sin 让方程变得非线性，无法用简单公式一次写出解。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "equation",
+      "line_id": "eq-3",
+      "filename": "equation-eq-3.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/equation-eq-3.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "于是我们用四阶龙格库塔法，一小步一小步地把轨迹算出来。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "phase",
+      "line_id": "ph-1",
+      "filename": "phase-ph-1.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/phase-ph-1.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "换个视角：横轴放角度 theta，纵轴放角速度 omega。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "phase",
+      "line_id": "ph-2",
+      "filename": "phase-ph-2.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/phase-ph-2.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "每一时刻的状态就是平面上一个点，运动便是这点画出的一条轨迹。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "phase",
+      "line_id": "ph-3",
+      "filename": "phase-ph-3.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/phase-ph-3.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "这张图叫相空间，它把时间藏进曲线，一眼看清整段运动的命运。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "orbits",
+      "line_id": "orb-1",
+      "filename": "orbits-orb-1.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/orbits-orb-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "能量低时，轨迹是一圈闭合的曲线，对应来回摆动。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "orbits",
+      "line_id": "orb-2",
+      "filename": "orbits-orb-2.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/orbits-orb-2.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "能量足够大时，轨迹变成上下起伏的波浪线，摆锤不停翻转越顶。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "orbits",
+      "line_id": "orb-3",
+      "filename": "orbits-orb-3.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/orbits-orb-3.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "恰好分隔这两类的临界轨线，叫做分界线，图中用红色虚线画出。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "增减能量轨线的条数，看闭合曲线如何一层层向外扩张。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "高亮某一条轨线，跟着它感受摆锤逼近分界线时的临界状态。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "单摆方程虽非线性，RK4 却能忠实地画出它的每条轨迹。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "相空间里，闭合曲线是振荡，波浪线是翻转，分界线泾渭分明。"
+    },
+    {
+      "script_id": "pendulum-phase",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/pendulum-phase/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "一个秋千，藏着一整幅动力学的地图，我们下次再见！"
+    }
+  ],
+  "total_duration": 38.89000000000001,
+  "total_size": 622224
+}

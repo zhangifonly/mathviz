@@ -1,0 +1,189 @@
+{
+  "script_id": "dynamic-programming",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/intro-intro-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "有些问题，直接用递归去算，会慢得让人绝望。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/intro-intro-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "比如求两串字符的最长公共子序列，暴力枚举是指数级的。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/intro-intro-3.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "同一个子问题，被反复计算了成千上万次。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/intro-intro-4.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "动态规划，正是为了消灭这种重复而生。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "overlap",
+      "line_id": "ov-1",
+      "filename": "overlap-ov-1.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/overlap-ov-1.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "把大问题拆开，你会发现小问题一次次重复出现。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "overlap",
+      "line_id": "ov-2",
+      "filename": "overlap-ov-2.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/overlap-ov-2.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "这就是重叠子问题：递归树上无数相同的节点。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "overlap",
+      "line_id": "ov-3",
+      "filename": "overlap-ov-3.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/overlap-ov-3.mp3",
+      "duration": 1.48,
+      "size": 23616,
+      "text": "既然答案一样，何不算一次就记下来。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "memo",
+      "line_id": "memo-1",
+      "filename": "memo-memo-1.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/memo-memo-1.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "我们开一张二维表，每格存一个子问题的答案。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "memo",
+      "line_id": "memo-2",
+      "filename": "memo-memo-2.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/memo-memo-2.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "从最小的子问题开始，自底向上一格格填满。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "memo",
+      "line_id": "memo-3",
+      "filename": "memo-memo-3.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/memo-memo-3.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "每格只依赖它上方和左侧已经算好的邻居。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "optimal",
+      "line_id": "opt-1",
+      "filename": "optimal-opt-1.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/optimal-opt-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "整体最优解，由子问题的最优解拼接而成。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "optimal",
+      "line_id": "opt-2",
+      "filename": "optimal-opt-2.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/optimal-opt-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "背包问题也一样：装或不装，取价值更大的那种。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "optimal",
+      "line_id": "opt-3",
+      "filename": "optimal-opt-3.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/optimal-opt-3.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "填完表后，沿着决策来路回溯，就得到具体方案。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/interaction-int-1.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "拖动进度条，看 DP 表如何一格格被填满。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/interaction-int-2.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "切换两个经典问题，橙框标出的就是最优回溯路径。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/summary-sum-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "动态规划用一张表，把重叠的子问题只算一次。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/summary-sum-2.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "重叠子问题加最优子结构，是它适用的两把钥匙。"
+    },
+    {
+      "script_id": "dynamic-programming",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/dynamic-programming/yunxi/summary-sum-3.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "把指数级的暴力,变成优雅的填表,我们下次再见！"
+    }
+  ],
+  "total_duration": 32.419999999999995,
+  "total_size": 518832
+}
