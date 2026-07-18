@@ -1,0 +1,139 @@
+{
+  "script_id": "newton-fractal",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "newton-fractal",
+      "section_id": "iterate",
+      "line_id": "def-1",
+      "filename": "iterate-def-1.mp3",
+      "path": "audio/narrations/newton-fractal/yunxi/iterate-def-1.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "对多项式 f，从一个复数 z 出发，反复做 z 减去 f 比 f 的导数。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "iterate",
+      "line_id": "def-2",
+      "filename": "iterate-def-2.mp3",
+      "path": "audio/narrations/newton-fractal/yunxi/iterate-def-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "这就是牛顿迭代，每一步都把 z 推向离它更近的一个根。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "iterate",
+      "line_id": "def-3",
+      "filename": "iterate-def-3.mp3",
+      "path": "audio/narrations/newton-fractal/yunxi/iterate-def-3.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "以 z 三次方减一为例，它在复平面上有三个立方根。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "basin",
+      "line_id": "basin-2",
+      "filename": "basin-basin-2.mp3",
+      "path": "audio/narrations/newton-fractal/yunxi/basin-basin-2.mp3",
+      "duration": 2.52,
+      "size": 40320,
+      "text": "收敛到同一个根的所有起点，涂成同一种颜色，这片区域就叫收敛盆地。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "basin",
+      "line_id": "basin-3",
+      "filename": "basin-basin-3.mp3",
+      "path": "audio/narrations/newton-fractal/yunxi/basin-basin-3.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "颜色越亮表示收敛越快，越暗则说明迭代得越久。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "boundary",
+      "line_id": "edge-1",
+      "filename": "boundary-edge-1.mp3",
+      "path": "audio/narrations/newton-fractal/yunxi/boundary-edge-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "奇妙的是，不同盆地的边界并不是光滑曲线。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "boundary",
+      "line_id": "edge-2",
+      "filename": "boundary-edge-2.mp3",
+      "path": "audio/narrations/newton-fractal/yunxi/boundary-edge-2.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "无论放大到哪一层，边界上总有三种颜色犬牙交错地纠缠。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "boundary",
+      "line_id": "edge-3",
+      "filename": "boundary-edge-3.mp3",
+      "path": "audio/narrations/newton-fractal/yunxi/boundary-edge-3.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "边界处起点差之毫厘，归宿便谬以千里，这正是混沌。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/newton-fractal/yunxi/interaction-int-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "切换到 z 四次方减一，四个根会织出四色的对称花纹。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/newton-fractal/yunxi/interaction-int-2.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "不断放大边界，自相似的细节会一层层浮现，永无止境。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/newton-fractal/yunxi/summary-sum-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "复数牛顿迭代按起点把平面分成一块块收敛盆地。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/newton-fractal/yunxi/summary-sum-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "盆地边界是无穷精细的分形，藏着混沌的敏感依赖。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/newton-fractal/yunxi/summary-sum-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "一个古老的求根算法，画出了数学的绚丽，我们下次再见！"
+    }
+  ],
+  "total_duration": 27.79,
+  "total_size": 444528
+}

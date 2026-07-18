@@ -1,0 +1,169 @@
+{
+  "script_id": "hilbert-curve",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "一条一维的线，能不能填满整个二维的正方形？"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "直觉上不可能，可数学家希尔伯特给出了肯定的答案。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "他画出一条连续的曲线，走遍网格里每一个格子而不重复。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "construct",
+      "line_id": "con-1",
+      "filename": "construct-con-1.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/construct-con-1.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "最基础的一阶曲线，就是一个简单的 U 字形，连起四个格子。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "construct",
+      "line_id": "con-2",
+      "filename": "construct-con-2.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/construct-con-2.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "升一阶时，把正方形切成四块，每块放一条小 U 形。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "construct",
+      "line_id": "con-3",
+      "filename": "construct-con-3.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/construct-con-3.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "再把四条小曲线适当旋转翻转，首尾相接成一条大曲线。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "locality",
+      "line_id": "loc-1",
+      "filename": "locality-loc-1.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/locality-loc-1.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "这条曲线最迷人的性质，是它的邻近保持。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "locality",
+      "line_id": "loc-2",
+      "filename": "locality-loc-2.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/locality-loc-2.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "沿曲线走，位置相近的两点，在平面上几乎总是紧挨着。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "locality",
+      "line_id": "loc-3",
+      "filename": "locality-loc-3.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/locality-loc-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "于是二维的邻近关系，被巧妙地压进了一维的顺序里。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "apply",
+      "line_id": "app-1",
+      "filename": "apply-app-1.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/apply-app-1.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "图像处理里，用它扫描像素能让相邻像素在数据流中也相邻。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "apply",
+      "line_id": "app-2",
+      "filename": "apply-app-2.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/apply-app-2.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "数据库和地理索引用它把二维坐标编码成一维键，加速范围查询。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "调整阶数，看曲线如何一层层加密，把正方形填得越来越满。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "打开折点，观察渐变色如何标出从起点到终点的遍历顺序。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "希尔伯特曲线用递归拼接，连续填满整个平面。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "它的邻近保持让一维顺序忠实地记住二维的远近。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/hilbert-curve/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "简单规则藏着深刻的空间智慧，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.79,
+  "total_size": 524736
+}

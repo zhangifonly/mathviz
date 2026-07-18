@@ -1,0 +1,179 @@
+{
+  "script_id": "cantor-set",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "cantor-set",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.49,
+      "size": 23904,
+      "text": "取一条长度为一的线段，摆在我们面前。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "现在把它平分成三份，挖掉正中间那一份。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "剩下左右两段，我们对每一段都重复同样的操作。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "iterate",
+      "line_id": "iter-1",
+      "filename": "iterate-iter-1.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/iterate-iter-1.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "第一层剩两段，第二层剩四段，第 n 层就剩下 2 的 n 次方段。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "iterate",
+      "line_id": "iter-2",
+      "filename": "iterate-iter-2.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/iterate-iter-2.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "每一段的长度也在缩小，第 n 层每段只有三分之一的 n 次方那么长。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "iterate",
+      "line_id": "iter-3",
+      "filename": "iterate-iter-3.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/iterate-iter-3.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "把每一层叠起来看，线段像梳子一样越来越稀疏。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "measure",
+      "line_id": "mea-1",
+      "filename": "measure-mea-1.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/measure-mea-1.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "第 n 层剩余的总长度，是三分之二的 n 次方。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "measure",
+      "line_id": "mea-2",
+      "filename": "measure-mea-2.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/measure-mea-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "随着层数不断增加，这个总长度越来越接近零。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "measure",
+      "line_id": "mea-3",
+      "filename": "measure-mea-3.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/measure-mea-3.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "也就是说，无穷次挖除之后，康托集的测度恰好是零。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "uncountable",
+      "line_id": "unc-1",
+      "filename": "uncountable-unc-1.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/uncountable-unc-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "奇妙的是，被留下的点非但没有消失，反而多得数不清。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "uncountable",
+      "line_id": "unc-2",
+      "filename": "uncountable-unc-2.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/uncountable-unc-2.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "用三进制小数来写，康托集恰好是所有只含 0 和 2 的小数。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "uncountable",
+      "line_id": "unc-3",
+      "filename": "uncountable-unc-3.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/uncountable-unc-3.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "这样的小数和整条实数线一样多，是不可数的无穷。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "调整迭代层数，看线段如何一层层被掏空。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "留意右侧的剩余长度，它正一步步滑向零。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "康托集靠反复挖去中间三分之一而生成。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "它的长度为零，却拥有不可数的无穷多个点。"
+    },
+    {
+      "script_id": "cantor-set",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/cantor-set/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "一条线段藏着无穷的奥秘，我们下次再见！"
+    }
+  ],
+  "total_duration": 31.23,
+  "total_size": 499824
+}

@@ -1,0 +1,179 @@
+{
+  "script_id": "hyperbolic-tiling",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "画家埃舍尔有一幅《极限圆》，无数天使与魔鬼向圆的边缘越缩越小。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "这幅画背后，藏着一个奇妙的世界，叫做双曲平面。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "今天我们就在圆盘里，亲手铺满这种停不下来的镶嵌。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "plane",
+      "line_id": "def-1",
+      "filename": "plane-def-1.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/plane-def-1.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "我们把整个双曲平面，装进一个单位圆盘里，这就是庞加莱圆盘模型。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "plane",
+      "line_id": "def-2",
+      "filename": "plane-def-2.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/plane-def-2.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "圆盘的边界代表无穷远，任何图形靠近它，看起来都会无限缩小。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "plane",
+      "line_id": "def-3",
+      "filename": "plane-def-3.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/plane-def-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "这里的直线不再笔直，而是垂直于边界圆的一段段圆弧。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "tiling",
+      "line_id": "pq-1",
+      "filename": "tiling-pq-1.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/tiling-pq-1.mp3",
+      "duration": 2.84,
+      "size": 45504,
+      "text": "记号 {p,q} 表示：用正 p 边形铺砌，每个顶点处恰好聚拢 q 个多边形。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "tiling",
+      "line_id": "pq-2",
+      "filename": "tiling-pq-2.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/tiling-pq-2.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "在平坦的纸面上，只有正三角、正方、正六边形能无缝铺满。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "tiling",
+      "line_id": "pq-3",
+      "filename": "tiling-pq-3.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/tiling-pq-3.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "而在双曲平面里，只要 p 减二乘以 q 减二大于四，就能镶嵌，方案有无穷多种。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "equal",
+      "line_id": "eq-1",
+      "filename": "equal-eq-1.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/equal-eq-1.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "看上去中心的瓦片很大，靠边的瓦片越来越小，仿佛大小不一。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "equal",
+      "line_id": "eq-2",
+      "filename": "equal-eq-2.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/equal-eq-2.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "但在双曲的尺度下，每一块瓦片的形状和面积其实完全相同。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "equal",
+      "line_id": "eq-3",
+      "filename": "equal-eq-3.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/equal-eq-3.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "缩小只是圆盘投影的错觉，相邻瓦片都由圆反演精确翻折而来。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "切换 {5,4} 与 {7,3}，看不同的正多边形如何各自铺满圆盘。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "增加翻折层数，瓦片就一圈圈涌向边界，永远也填不到尽头。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "庞加莱圆盘把无限的双曲平面，收进一个有限的圆里。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "{p,q} 镶嵌用等大的正多边形，靠圆反演铺满整个圆盘。"
+    },
+    {
+      "script_id": "hyperbolic-tiling",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/hyperbolic-tiling/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "有限中藏着无限，这正是双曲几何的浪漫，我们下次再见！"
+    }
+  ],
+  "total_duration": 39.529999999999994,
+  "total_size": 632592
+}

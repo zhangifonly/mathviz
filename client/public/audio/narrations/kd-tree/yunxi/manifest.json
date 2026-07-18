@@ -1,0 +1,179 @@
+{
+  "script_id": "kd-tree",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "kd-tree",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/intro-intro-1.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "平面上散布着成千上万个点，给你一个新位置。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/intro-intro-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "要找出离它最近的那个点，逐个比较当然可以，但太慢了。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/intro-intro-3.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "KD 树用一种巧妙的切分，让这件事快得多。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "axis",
+      "line_id": "axis-1",
+      "filename": "axis-axis-1.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/axis-axis-1.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "第一层，我们竖着切一刀，把点分成左右两半。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "axis",
+      "line_id": "axis-2",
+      "filename": "axis-axis-2.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/axis-axis-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "第二层，改成横着切一刀，把点分成上下两半。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "axis",
+      "line_id": "axis-3",
+      "filename": "axis-axis-3.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/axis-axis-3.mp3",
+      "duration": 2.65,
+      "size": 42336,
+      "text": "就这样竖、横、竖、横地交替下去，平面被层层划分。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "build",
+      "line_id": "build-1",
+      "filename": "build-build-1.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/build-build-1.mp3",
+      "duration": 1.46,
+      "size": 23328,
+      "text": "每一刀都切在当前坐标的中位数点上。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "build",
+      "line_id": "build-2",
+      "filename": "build-build-2.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/build-build-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "中位数保证两边点数几乎相等，树就变得平衡。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "build",
+      "line_id": "build-3",
+      "filename": "build-build-3.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/build-build-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "平衡的树只有大约 log n 层，查询自然更快。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "prune",
+      "line_id": "prune-1",
+      "filename": "prune-prune-1.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/prune-prune-1.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "查询时先扎进查询点所在的那一侧，快速找到一个候选最近点。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "prune",
+      "line_id": "prune-2",
+      "filename": "prune-prune-2.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/prune-prune-2.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "再看另一侧：如果切分线比当前最近距离还远，就整块跳过。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "prune",
+      "line_id": "prune-3",
+      "filename": "prune-prune-3.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/prune-prune-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "这一步剪枝砍掉了大量无用比较，这正是效率的关键。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/interaction-int-1.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "移动鼠标改变查询点，看它总是连向最近的那个点。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/interaction-int-2.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "留意访问节点数，往往远小于点的总数。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/summary-sum-1.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "KD 树交替按坐标轴切分，用中位数建成一棵平衡树。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/summary-sum-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "靠切分平面剪枝，最近邻查询平均只需对数时间。"
+    },
+    {
+      "script_id": "kd-tree",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/kd-tree/yunxi/summary-sum-3.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "一把交替的切刀，就让海量点井然有序，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.2,
+  "total_size": 531072
+}

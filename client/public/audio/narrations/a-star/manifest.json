@@ -1,0 +1,133 @@
+{
+  "script_id": "a-star",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "a-star",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/a-star/intro-intro-1.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "游戏里的 NPC，是怎么绕开墙壁走到你面前的？"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/a-star/intro-intro-2.mp3",
+      "duration": 1.5,
+      "size": 24048,
+      "text": "它面对的是一张布满障碍的网格地图。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "gcost",
+      "line_id": "def-2",
+      "filename": "gcost-def-2.mp3",
+      "path": "audio/narrations/a-star/gcost-def-2.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "每向相邻格子迈一步，g 就加一，走过的路一清二楚。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "hcost",
+      "line_id": "con-2",
+      "filename": "hcost-con-2.mp3",
+      "path": "audio/narrations/a-star/hcost-con-2.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "网格里常用曼哈顿距离，横竖格子差之和，从不高估真实距离。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "fcost",
+      "line_id": "fn-1",
+      "filename": "fcost-fn-1.mp3",
+      "path": "audio/narrations/a-star/fcost-fn-1.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "把两者相加，f 等于 g 加 h，就是这条路的总代价预估。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "fcost",
+      "line_id": "fn-2",
+      "filename": "fcost-fn-2.mp3",
+      "path": "audio/narrations/a-star/fcost-fn-2.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "算法每一步都挑 f 最小的格子优先扩展，朝着终点稳步逼近。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "fcost",
+      "line_id": "fn-3",
+      "filename": "fcost-fn-3.mp3",
+      "path": "audio/narrations/a-star/fcost-fn-3.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "如果把 h 设为零，A 星就退化成盲目四散的 Dijkstra。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/a-star/interaction-int-1.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "看蓝色格子怎样朝终点定向铺开，这就是 A 星的搜索过程。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/a-star/interaction-int-2.mp3",
+      "duration": 2.38,
+      "size": 38160,
+      "text": "切到 Dijkstra，黄色区域向四面漫开，扩展的格子明显更多。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/a-star/summary-sum-1.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "A 星用 f = g + h 权衡已走的路与预估的远方。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/a-star/summary-sum-2.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "一个不高估的启发函数，就让搜索又快又准。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/a-star/summary-sum-3.mp3",
+      "duration": 1.49,
+      "size": 23760,
+      "text": "这就是启发式搜索的智慧，我们下次再见！"
+    }
+  ],
+  "total_duration": 24.139999999999997,
+  "total_size": 386208,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "script_id": "stereographic-projection",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/stereographic-projection/intro-intro-1.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "我们想把一整个球面，摊平成一张平面地图。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/stereographic-projection/intro-intro-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "球面是弯的，平面是直的，怎样才能建立起一一对应？"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/stereographic-projection/intro-intro-3.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "数学家给出一个优雅的办法，叫做球极投影。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "project",
+      "line_id": "proj-1",
+      "filename": "project-proj-1.mp3",
+      "path": "audio/narrations/stereographic-projection/project-proj-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "在球的最上方取一个北极点，让它当作投影的光源。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "project",
+      "line_id": "proj-2",
+      "filename": "project-proj-2.mp3",
+      "path": "audio/narrations/stereographic-projection/project-proj-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "从北极向球面上任意一点连一条射线，一直延伸到赤道平面。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "project",
+      "line_id": "proj-3",
+      "filename": "project-proj-3.mp3",
+      "path": "audio/narrations/stereographic-projection/project-proj-3.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "射线与平面的交点，就是这个球面点的像。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "project",
+      "line_id": "proj-4",
+      "filename": "project-proj-4.mp3",
+      "path": "audio/narrations/stereographic-projection/project-proj-4.mp3",
+      "duration": 2.77,
+      "size": 44352,
+      "text": "写成公式，就是 X 等于 x 除以一减 z，Y 等于 y 除以一减 z。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "conformal",
+      "line_id": "conf-1",
+      "filename": "conformal-conf-1.mp3",
+      "path": "audio/narrations/stereographic-projection/conformal-conf-1.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "球极投影最迷人的性质，是它保持角度不变。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "conformal",
+      "line_id": "conf-2",
+      "filename": "conformal-conf-2.mp3",
+      "path": "audio/narrations/stereographic-projection/conformal-conf-2.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "球面上两条曲线相交成多少度，投到平面上仍然是多少度。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "conformal",
+      "line_id": "conf-3",
+      "filename": "conformal-conf-3.mp3",
+      "path": "audio/narrations/stereographic-projection/conformal-conf-3.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "这种保角的映射，在数学里被称为共形映射。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "circle",
+      "line_id": "circ-2",
+      "filename": "circle-circ-2.mp3",
+      "path": "audio/narrations/stereographic-projection/circle-circ-2.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "唯一的例外是经过北极的圆，它会被拉直成一条直线。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/stereographic-projection/summary-sum-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "它保角、又把圆变成圆，是地图学与复分析的基石。"
+    }
+  ],
+  "total_duration": 23.799999999999997,
+  "total_size": 380880,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

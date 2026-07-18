@@ -1,0 +1,179 @@
+{
+  "script_id": "quadtree",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "quadtree",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.18,
+      "size": 18864,
+      "text": "屏幕上散布着成百上千个点。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "想快速找出某个点附近的邻居，逐个比对要算很多次。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "有没有办法，只看它周围那一小块区域就够了？"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/intro-intro-4.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "四叉树给出的答案是：把空间递归地切成四份。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "divide",
+      "line_id": "div-1",
+      "filename": "divide-div-1.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/divide-div-1.mp3",
+      "duration": 1.17,
+      "size": 18720,
+      "text": "先用一个大矩形框住所有的点。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "divide",
+      "line_id": "div-2",
+      "filename": "divide-div-2.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/divide-div-2.mp3",
+      "duration": 2.77,
+      "size": 44352,
+      "text": "当框里的点数超过设定的容量，就把它切成左上、右上、左下、右下四块。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "divide",
+      "line_id": "div-3",
+      "filename": "divide-div-3.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/divide-div-3.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "每一块再按同样规则判断，够多就继续切，如此递归下去。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "adaptive",
+      "line_id": "ada-1",
+      "filename": "adaptive-ada-1.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/adaptive-ada-1.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "于是点稠密的地方，网格被切得又小又密。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "adaptive",
+      "line_id": "ada-2",
+      "filename": "adaptive-ada-2.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/adaptive-ada-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "点稀疏的空旷区域，就保留成一个大格子，不必细分。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "adaptive",
+      "line_id": "ada-3",
+      "filename": "adaptive-ada-3.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/adaptive-ada-3.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "这种自适应让树的深度随疏密自动调整，恰到好处。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "query",
+      "line_id": "qry-1",
+      "filename": "query-qry-1.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/query-qry-1.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "要查某个矩形范围里的点，只需下探与它相交的格子。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "query",
+      "line_id": "qry-2",
+      "filename": "query-qry-2.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/query-qry-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "完全不相交的整棵子树被一次性剪掉，省去海量比较。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "调整点的数量，看网格如何在密集处越切越细。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "改变容量阈值，容量越小，划分就越激进。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "四叉树用超容量就四分的简单规则，递归索引整个平面。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "点密处细、点疏处粗，让邻居与范围查询大大提速。"
+    },
+    {
+      "script_id": "quadtree",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/quadtree/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "分治的智慧藏在这四个格子里，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.09,
+  "total_size": 513792
+}

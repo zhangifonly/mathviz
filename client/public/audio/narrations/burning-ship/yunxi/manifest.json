@@ -1,0 +1,169 @@
+{
+  "script_id": "burning-ship",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "burning-ship",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/intro-intro-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "你一定见过曼德博集合，那朵著名的数学“甲虫”。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/intro-intro-2.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "今天我们认识它的一位亲戚，燃烧船分形。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/intro-intro-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "它的公式几乎一样，只加了一个小小的动作：取绝对值。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "formula",
+      "line_id": "def-1",
+      "filename": "formula-def-1.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/formula-def-1.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "曼德博反复计算 z 平方加 c，从零开始迭代。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "formula",
+      "line_id": "def-2",
+      "filename": "formula-def-2.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/formula-def-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "燃烧船在每次平方前，把 z 的实部和虚部都换成绝对值。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "formula",
+      "line_id": "def-3",
+      "filename": "formula-def-3.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/formula-def-3.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "也就是 z 变成绝对值实部加上虚部乘 i，再平方加 c。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "color",
+      "line_id": "col-1",
+      "filename": "color-col-1.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/color-col-1.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "对每个点，我们数它迭代多少次后跑向无穷。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "color",
+      "line_id": "col-2",
+      "filename": "color-col-2.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/color-col-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "始终留在有限范围的点属于集合，涂成近乎黑色。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "color",
+      "line_id": "col-3",
+      "filename": "color-col-3.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/color-col-3.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "逃得越快越暖亮，于是画面燃起一片火焰般的色彩。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "shape",
+      "line_id": "shape-1",
+      "filename": "shape-shape-1.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/shape-shape-1.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "取绝对值打破了上下对称，画面里浮现一排排船只。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "shape",
+      "line_id": "shape-2",
+      "filename": "shape-shape-2.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/shape-shape-2.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "实轴负方向的那一大块，正是最像船身的主结构。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/interaction-int-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "切换到船体特写，放大实轴附近，细节会不断涌现。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/interaction-int-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "提高迭代次数，边界的火焰纹理就更加清晰锐利。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/summary-sum-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "燃烧船只比曼德博多了一步绝对值，却换来全新的船形。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/summary-sum-2.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "逃逸时间染色把抽象迭代变成燃烧的图像。"
+    },
+    {
+      "script_id": "burning-ship",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/burning-ship/yunxi/summary-sum-3.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "一个微小改动，点燃了一片分形之海，我们下次再见！"
+    }
+  ],
+  "total_duration": 31.759999999999994,
+  "total_size": 508176
+}

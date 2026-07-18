@@ -1,0 +1,179 @@
+{
+  "script_id": "peano-curve",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "peano-curve",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.48,
+      "size": 23616,
+      "text": "一条线是一维的，一个正方形是二维的。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "可你相信吗，有一条连续的曲线，能不留缝隙地填满整个正方形。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "1890 年，意大利数学家皮亚诺第一个造出了它，震动了整个数学界。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "recursion",
+      "line_id": "rec-1",
+      "filename": "recursion-rec-1.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/recursion-rec-1.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "把正方形切成三行三列，一共九个小格。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "recursion",
+      "line_id": "rec-2",
+      "filename": "recursion-rec-2.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/recursion-rec-2.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "曲线按特定顺序依次穿过这九格，并在每一格里重复同样的九宫格花样。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "recursion",
+      "line_id": "rec-3",
+      "filename": "recursion-rec-3.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/recursion-rec-3.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "每提升一阶，格点数就变成九倍，曲线越来越密。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "continuous",
+      "line_id": "con-1",
+      "filename": "continuous-con-1.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/continuous-con-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "曲线从头到尾一笔画成，中间从不间断，所以它是连续的。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "continuous",
+      "line_id": "con-2",
+      "filename": "continuous-con-2.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/continuous-con-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "但它在每一点都急转弯，找不到任何一处的切线方向。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "continuous",
+      "line_id": "con-3",
+      "filename": "continuous-con-3.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/continuous-con-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "连续却处处不可导，这正是它当年最惊人的地方。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "hilbert",
+      "line_id": "hil-1",
+      "filename": "hilbert-hil-1.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/hilbert-hil-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "几年后希尔伯特给出了更简洁的版本，基于二乘二的四宫格。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "hilbert",
+      "line_id": "hil-2",
+      "filename": "hilbert-hil-2.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/hilbert-hil-2.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "皮亚诺用九宫格、希尔伯特用四宫格，本质都是自相似的空间填充。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "hilbert",
+      "line_id": "hil-3",
+      "filename": "hilbert-hil-3.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/hilbert-hil-3.mp3",
+      "duration": 2.72,
+      "size": 43488,
+      "text": "希尔伯特曲线相邻点在原空间也相邻，因此更常用于图像和数据索引。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "调高阶数，看曲线如何一步步逼近填满整个正方形。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "顺着蓝到红的颜色，就能看清它遍历每个格点的先后顺序。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "皮亚诺曲线用 3x3 自相似递归，让一维曲线填满二维正方形。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "它连续却处处不可导，改写了人们对维度和曲线的直觉。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/peano-curve/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "一条永不停歇的折线，铺满了整个平面，我们下次再见！"
+    }
+  ],
+  "total_duration": 36.580000000000005,
+  "total_size": 585216
+}
