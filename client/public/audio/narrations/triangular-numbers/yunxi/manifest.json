@@ -1,0 +1,59 @@
+{
+  "script_id": "triangular-numbers",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "formula",
+      "line_id": "sum-3",
+      "filename": "formula-sum-3.mp3",
+      "path": "audio/narrations/triangular-numbers/yunxi/formula-sum-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "所以三角形数等于 n 乘 n 加 1 再除以 2。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "others",
+      "line_id": "oth-3",
+      "filename": "others-oth-3.mp3",
+      "path": "audio/narrations/triangular-numbers/yunxi/others-oth-3.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "再摆成五边形，就得到五边形数 n 乘 3n 减 1 再除以 2。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/triangular-numbers/yunxi/interaction-int-1.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "切换三角、正方、五边形，看看点子如何排成不同的形状。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/triangular-numbers/yunxi/interaction-int-2.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "再拖动滑块调大 n，数着点数增长的节奏。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "summary",
+      "line_id": "end-2",
+      "filename": "summary-end-2.mp3",
+      "path": "audio/narrations/triangular-numbers/yunxi/summary-end-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "一句 n 乘 n 加 1 除以 2，藏着数与形的默契。"
+    }
+  ],
+  "total_duration": 9.760000000000002,
+  "total_size": 156096
+}

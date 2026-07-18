@@ -1,0 +1,99 @@
+{
+  "script_id": "gray-code",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "gray-code",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/gray-code/yunxi/intro-intro-1.mp3",
+      "duration": 1.71,
+      "size": 27360,
+      "text": "想象一个旋转编码器，正在读取转轴的角度。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/gray-code/yunxi/intro-intro-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "如果用普通二进制，从 3 转到 4 时，三位要同时翻转。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/gray-code/yunxi/intro-intro-3.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "各位的翻转很难完全同步，一瞬间可能读出错误的乱码。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/gray-code/yunxi/intro-intro-4.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "格雷码正是为解决这个难题而生的一种巧妙编码。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "adjacent",
+      "line_id": "adj-2",
+      "filename": "adjacent-adj-2.mp3",
+      "path": "audio/narrations/gray-code/yunxi/adjacent-adj-2.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "这样从一个数跳到下一个数，永远只翻转一个比特。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "convert",
+      "line_id": "conv-2",
+      "filename": "convert-conv-2.mp3",
+      "path": "audio/narrations/gray-code/yunxi/convert-conv-2.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "写成公式就是，格雷码等于 n 异或 n 右移一位。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "karnaugh",
+      "line_id": "kar-2",
+      "filename": "karnaugh-kar-2.mp3",
+      "path": "audio/narrations/gray-code/yunxi/karnaugh-kar-2.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "因为相邻格只差一位，相邻的一才能合并化简逻辑表达式。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/gray-code/yunxi/interaction-int-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "切换位数，看看三位和四位的格雷码序列有什么不同。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/gray-code/yunxi/interaction-int-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "逐行观察，确认任意相邻两行始终只有一个格子在变化。"
+    }
+  ],
+  "total_duration": 17.58,
+  "total_size": 281376
+}

@@ -1,0 +1,179 @@
+{
+  "script_id": "caesar-cipher",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "两千年前，凯撒大帝要给前线将领传递密信。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "他把信里的每个字母，都悄悄向后挪动固定的几位。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "于是 A 变成了 D，B 变成了 E，敌人截获也看不懂。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "shift",
+      "line_id": "def-1",
+      "filename": "shift-def-1.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/shift-def-1.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "这个挪动的位数，就是密钥，我们叫它 shift。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "shift",
+      "line_id": "def-2",
+      "filename": "shift-def-2.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/shift-def-2.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "加密时每个字母沿字母表向后走 shift 步。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "shift",
+      "line_id": "def-3",
+      "filename": "shift-def-3.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/shift-def-3.mp3",
+      "duration": 1.36,
+      "size": 21744,
+      "text": "解密只要反着走回来，秘密就还原了。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "mod",
+      "line_id": "mod-1",
+      "filename": "mod-mod-1.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/mod-mod-1.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "可字母表只有 26 个，走到 Z 之后该怎么办？"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "mod",
+      "line_id": "mod-2",
+      "filename": "mod-mod-2.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/mod-mod-2.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "答案是绕回开头，X、Y、Z 移三位就变成 A、B、C。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "mod",
+      "line_id": "mod-3",
+      "filename": "mod-mod-3.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/mod-mod-3.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "这种首尾相接的循环，数学上正是模 26 运算。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "crack",
+      "line_id": "crk-1",
+      "filename": "crack-crk-1.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/crack-crk-1.mp3",
+      "duration": 1.49,
+      "size": 23760,
+      "text": "可惜移位并不改变每个字母出现的频率。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "crack",
+      "line_id": "crk-2",
+      "filename": "crack-crk-2.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/crack-crk-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "英文里字母 E 最常见，密文里最高的柱子多半就是它。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "crack",
+      "line_id": "crk-3",
+      "filename": "crack-crk-3.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/crack-crk-3.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "用卡方统计把密文频率和标准频率一比，真正的密钥立刻现形。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "调整移位量，看字母环怎样错开，密文如何变化。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "再点一下破解，让频率分析替你找回隐藏的 shift。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "凯撒密码靠固定移位加密，用模 26 让字母循环。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "但它不掩盖频率，频率分析轻松将它攻破。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/caesar-cipher/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "简单的移位，藏着密码攻防的第一课，我们下次再见！"
+    }
+  ],
+  "total_duration": 31.31,
+  "total_size": 501120
+}

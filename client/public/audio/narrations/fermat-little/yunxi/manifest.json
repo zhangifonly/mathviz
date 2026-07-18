@@ -1,0 +1,139 @@
+{
+  "script_id": "fermat-little",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "fermat-little",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/fermat-little/yunxi/intro-intro-3.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "当指数走到 p 减一时，余数总会回到 1，像素数留下的指纹。"
+    },
+    {
+      "script_id": "fermat-little",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/fermat-little/yunxi/define-def-1.mp3",
+      "duration": 3.07,
+      "size": 49104,
+      "text": "费马小定理说：若 p 是素数，且 a 不被 p 整除，则 a 的 p 减一次方模 p 恒等于 1。"
+    },
+    {
+      "script_id": "fermat-little",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/fermat-little/yunxi/define-def-2.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "换个写法，对任意整数 a，都有 a 的 p 次方模 p 等于 a 本身。"
+    },
+    {
+      "script_id": "fermat-little",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/fermat-little/yunxi/define-def-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "这是三百多年前费马发现的，简洁却极其深刻。"
+    },
+    {
+      "script_id": "fermat-little",
+      "section_id": "cycle",
+      "line_id": "cyc-1",
+      "filename": "cycle-cyc-1.mp3",
+      "path": "audio/narrations/fermat-little/yunxi/cycle-cyc-1.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "看这张幂表：每一行是一个底数 a 的连续幂，对 p 取余。"
+    },
+    {
+      "script_id": "fermat-little",
+      "section_id": "cycle",
+      "line_id": "cyc-3",
+      "filename": "cycle-cyc-3.mp3",
+      "path": "audio/narrations/fermat-little/yunxi/cycle-cyc-3.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "循环的长度整除 p 减一，所以最后一列必然齐刷刷落回 1。"
+    },
+    {
+      "script_id": "fermat-little",
+      "section_id": "test",
+      "line_id": "test-1",
+      "filename": "test-test-1.mp3",
+      "path": "audio/narrations/fermat-little/yunxi/test-test-1.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "反过来想：如果 a 的 n 减一次方模 n 不等于 1，那 n 一定不是素数。"
+    },
+    {
+      "script_id": "fermat-little",
+      "section_id": "test",
+      "line_id": "test-2",
+      "filename": "test-test-2.mp3",
+      "path": "audio/narrations/fermat-little/yunxi/test-test-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "这就是费马素性测试，快到能在瞬间筛掉海量合数。"
+    },
+    {
+      "script_id": "fermat-little",
+      "section_id": "test",
+      "line_id": "test-3",
+      "filename": "test-test-3.mp3",
+      "path": "audio/narrations/fermat-little/yunxi/test-test-3.mp3",
+      "duration": 3.02,
+      "size": 48240,
+      "text": "但它会被骗：卡迈克尔数如 561，明明是合数，却对所有互素底数都通过测试。"
+    },
+    {
+      "script_id": "fermat-little",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/fermat-little/yunxi/interaction-int-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "拖动底数 a，观察它的这一行如何总在最后一列停在 1。"
+    },
+    {
+      "script_id": "fermat-little",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/fermat-little/yunxi/summary-sum-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "费马小定理揭示了素数模下幂运算的循环之美。"
+    },
+    {
+      "script_id": "fermat-little",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/fermat-little/yunxi/summary-sum-2.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "它是素性测试和现代密码学的基石，也提醒我们伪素数的存在。"
+    },
+    {
+      "script_id": "fermat-little",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/fermat-little/yunxi/summary-sum-3.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "一条简洁的同余式，串起数论与加密的世界，我们下次再见！"
+    }
+  ],
+  "total_duration": 29.89,
+  "total_size": 477936
+}

@@ -1,0 +1,139 @@
+{
+  "script_id": "frobenius-coin",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/intro-intro-1.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "假如口袋里只有面值 3 元和 5 元的硬币。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/intro-intro-3.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "可是 1 元、2 元、4 元、7 元，无论怎么组合都凑不出。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "representable",
+      "line_id": "rep-1",
+      "filename": "representable-rep-1.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/representable-rep-1.mp3",
+      "duration": 1.41,
+      "size": 22608,
+      "text": "把每种硬币想成可以无限使用的积木。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "representable",
+      "line_id": "rep-2",
+      "filename": "representable-rep-2.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/representable-rep-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "一个金额可表示，就是它能写成这些面额的非负整数组合。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "representable",
+      "line_id": "rep-3",
+      "filename": "representable-rep-3.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/representable-rep-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "当面额互质时，足够大的金额一定都能凑出来。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "formula",
+      "line_id": "form-1",
+      "filename": "formula-form-1.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/formula-form-1.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "只有两枚互质硬币 a 和 b 时，答案有优雅的闭式。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "formula",
+      "line_id": "form-3",
+      "filename": "formula-form-3.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/formula-form-3.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "比如 3 和 5，代入得到 15 减 3 减 5，等于 7。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "mcnugget",
+      "line_id": "mcn-2",
+      "filename": "mcnugget-mcn-2.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/mcnugget-mcn-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "三枚硬币没有闭式公式，只能用动态规划逐个标记。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "mcnugget",
+      "line_id": "mcn-3",
+      "filename": "mcnugget-mcn-3.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/mcnugget-mcn-3.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "算下来，43 块是最大买不到的数目，这就是著名的麦乐鸡数。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/interaction-int-1.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "切换不同面额组合，看绿色可凑与红色不可凑如何分布。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/interaction-int-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "注意那个被高亮的红格，它就是这组面额的 Frobenius 数。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/summary-sum-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "Frobenius 数是互质面额下无法凑出的最大金额。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/summary-sum-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "两枚硬币用 ab 减 a 减 b，多枚硬币交给动态规划。"
+    }
+  ],
+  "total_duration": 25.56,
+  "total_size": 409104
+}

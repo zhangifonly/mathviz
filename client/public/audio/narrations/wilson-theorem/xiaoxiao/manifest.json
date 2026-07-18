@@ -1,0 +1,179 @@
+{
+  "script_id": "wilson-theorem",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "素数，是只能被一和自己整除的数，它们像质点一样构成整数的骨架。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "判断一个数是不是素数，通常靠试除。但有没有一个漂亮的公式，一眼道破？"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "十八世纪的数学家发现，阶乘竟然藏着素数的秘密。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "theorem",
+      "line_id": "thm-1",
+      "filename": "theorem-thm-1.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/theorem-thm-1.mp3",
+      "duration": 3.14,
+      "size": 50256,
+      "text": "威尔逊定理说：整数 n 大于一时，n 是素数，当且仅当 n 减一的阶乘除以 n 余 n 减一。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "theorem",
+      "line_id": "thm-2",
+      "filename": "theorem-thm-2.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/theorem-thm-2.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "写成同余就是 n 减一的阶乘 ≡ 负一，模 n。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "theorem",
+      "line_id": "thm-3",
+      "filename": "theorem-thm-3.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/theorem-thm-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "注意这是充要条件，素数满足它，也只有素数满足它。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "modfact",
+      "line_id": "mod-1",
+      "filename": "modfact-mod-1.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/modfact-mod-1.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "阶乘增长极快，二十的阶乘就有十九位数，直接算必然溢出。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "modfact",
+      "line_id": "mod-2",
+      "filename": "modfact-mod-2.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/modfact-mod-2.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "诀窍是边乘边取模：每乘一个数就对 n 取一次余数，结果始终待在零到 n 之间。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "modfact",
+      "line_id": "mod-3",
+      "filename": "modfact-mod-3.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/modfact-mod-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "这样即便 n 很大，计算也稳稳当当，不会越界。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "contrast",
+      "line_id": "con-1",
+      "filename": "contrast-con-1.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/contrast-con-1.mp3",
+      "duration": 2.65,
+      "size": 42336,
+      "text": "看图中的条形：素数处，余数恰好等于 n 减一，绿色条几乎顶到最高。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "contrast",
+      "line_id": "con-2",
+      "filename": "contrast-con-2.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/contrast-con-2.mp3",
+      "duration": 2.5,
+      "size": 40032,
+      "text": "合数处却大多塌成零，因为它的因子早已配对相乘，把余数抹平。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "contrast",
+      "line_id": "con-3",
+      "filename": "contrast-con-3.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/contrast-con-3.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "唯一的例外是四，它的余数是二，其余合数都乖乖归零。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "拖动滑块选一个 n，看它的余数是不是等于 n 减一。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "等式成立就是素数，塌陷为零就是合数，判据一试便知。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "威尔逊定理用一句同余式，精准圈出了所有素数。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "取模阶乘让庞大的运算收进小小的余数里，优雅又可算。"
+    },
+    {
+      "script_id": "wilson-theorem",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/wilson-theorem/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "一个阶乘，认出了素数的面孔，数学之美又添一笔，我们下次再见！"
+    }
+  ],
+  "total_duration": 38.73,
+  "total_size": 619776
+}

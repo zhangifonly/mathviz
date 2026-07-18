@@ -1,0 +1,153 @@
+{
+  "script_id": "one-time-pad",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "one-time-pad",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/one-time-pad/intro-intro-1.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "有没有一种密码，无论敌人多聪明，都绝对无法破译？"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/one-time-pad/intro-intro-2.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "答案是有的，它叫一次一密，理论上完美保密。"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/one-time-pad/intro-intro-3.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "它的秘密，藏在一个最简单的运算里，异或。"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "xor",
+      "line_id": "xor-1",
+      "filename": "xor-xor-1.mp3",
+      "path": "audio/narrations/one-time-pad/xor-xor-1.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "把明文和密钥的每一位逐个做异或，就得到密文。"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "xor",
+      "line_id": "xor-3",
+      "filename": "xor-xor-3.mp3",
+      "path": "audio/narrations/one-time-pad/xor-xor-3.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "所以拿密文再异或同一把密钥，明文就原封不动地回来了。"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "key",
+      "line_id": "key-1",
+      "filename": "key-key-1.mp3",
+      "path": "audio/narrations/one-time-pad/key-key-1.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "密钥必须是真随机的，而且和明文一样长。"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "key",
+      "line_id": "key-2",
+      "filename": "key-key-2.mp3",
+      "path": "audio/narrations/one-time-pad/key-key-2.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "每一位密钥都是抛硬币般的零或一，毫无规律可循。"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "perfect",
+      "line_id": "per-2",
+      "filename": "perfect-per-2.mp3",
+      "path": "audio/narrations/one-time-pad/perfect-per-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "既然每种明文都可能，密文就没有泄露任何信息，这就是完美保密。"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "perfect",
+      "line_id": "per-3",
+      "filename": "perfect-per-3.mp3",
+      "path": "audio/narrations/one-time-pad/perfect-per-3.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "但密钥绝不能重用，两条密文一异或，密钥抵消，明文关系就暴露了。"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/one-time-pad/interaction-int-1.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "输入一段文字，看它和密钥逐位异或成密文。"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/one-time-pad/interaction-int-2.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "再切到重用模式，亲眼看看密钥被抵消的危险。"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/one-time-pad/summary-sum-1.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "一次一密用真随机等长密钥异或明文，达到完美保密。"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/one-time-pad/summary-sum-2.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "它的软肋不是数学，而是密钥必须一次一换、绝不重用。"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/one-time-pad/summary-sum-3.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "最简单的异或，撑起最坚固的保密，我们下次再见！"
+    }
+  ],
+  "total_duration": 27.999999999999996,
+  "total_size": 448128,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

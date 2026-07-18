@@ -1,0 +1,79 @@
+{
+  "script_id": "caesar-cipher",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/caesar-cipher/yunxi/intro-intro-1.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "两千年前，凯撒大帝要给前线将领传递密信。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/caesar-cipher/yunxi/intro-intro-3.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "于是 A 变成了 D，B 变成了 E，敌人截获也看不懂。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "shift",
+      "line_id": "def-1",
+      "filename": "shift-def-1.mp3",
+      "path": "audio/narrations/caesar-cipher/yunxi/shift-def-1.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "这个挪动的位数，就是密钥，我们叫它 shift。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "crack",
+      "line_id": "crk-1",
+      "filename": "crack-crk-1.mp3",
+      "path": "audio/narrations/caesar-cipher/yunxi/crack-crk-1.mp3",
+      "duration": 1.54,
+      "size": 24624,
+      "text": "可惜移位并不改变每个字母出现的频率。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "crack",
+      "line_id": "crk-2",
+      "filename": "crack-crk-2.mp3",
+      "path": "audio/narrations/caesar-cipher/yunxi/crack-crk-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "英文里字母 E 最常见，密文里最高的柱子多半就是它。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "crack",
+      "line_id": "crk-3",
+      "filename": "crack-crk-3.mp3",
+      "path": "audio/narrations/caesar-cipher/yunxi/crack-crk-3.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "用卡方统计把密文频率和标准频率一比，真正的密钥立刻现形。"
+    },
+    {
+      "script_id": "caesar-cipher",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/caesar-cipher/yunxi/summary-sum-2.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "但它不掩盖频率，频率分析轻松将它攻破。"
+    }
+  ],
+  "total_duration": 13.4,
+  "total_size": 214416
+}

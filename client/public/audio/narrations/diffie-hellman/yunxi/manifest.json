@@ -1,0 +1,129 @@
+{
+  "script_id": "diffie-hellman",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/intro-intro-1.mp3",
+      "duration": 2.73,
+      "size": 43632,
+      "text": "两个人从没见过面，聊天全程被人偷听，他们能约定一把只有彼此知道的钥匙吗？"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/intro-intro-2.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "听起来不可能，但一九七六年的迪菲和赫尔曼做到了。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/intro-intro-3.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "秘密不在于藏住对话，而在于藏住一个难以逆转的计算。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "params",
+      "line_id": "def-1",
+      "filename": "params-def-1.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/params-def-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "首先，双方公开约定一个素数 p，和它的一个原根 g。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "params",
+      "line_id": "def-2",
+      "filename": "params-def-2.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/params-def-2.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "这两个数写在明面上，全世界包括窃听者都能看到。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "params",
+      "line_id": "def-3",
+      "filename": "params-def-3.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/params-def-3.mp3",
+      "duration": 1.46,
+      "size": 23328,
+      "text": "真正的秘密，藏在各自心里的私钥里。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "compute",
+      "line_id": "cmp-1",
+      "filename": "compute-cmp-1.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/compute-cmp-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "Alice 选私钥 a，算出公开值 A 等于 g 的 a 次方对 p 取模。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "compute",
+      "line_id": "cmp-2",
+      "filename": "compute-cmp-2.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/compute-cmp-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "Bob 选私钥 b，同样算出 B 等于 g 的 b 次方对 p 取模。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "compute",
+      "line_id": "cmp-3",
+      "filename": "compute-cmp-3.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/compute-cmp-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "他们把 A 和 B 大大方方地在公开信道上交换。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "shared",
+      "line_id": "shr-1",
+      "filename": "shared-shr-1.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/shared-shr-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "Alice 拿 B 再乘方 a 次，Bob 拿 A 再乘方 b 次。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "shared",
+      "line_id": "shr-2",
+      "filename": "shared-shr-2.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/shared-shr-2.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "奇妙的是，两边都等于 g 的 a 乘 b 次方对 p 取模，密钥完全相同。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "shared",
+      "line_id": "shr-3",
+      "filename": "shared-shr-3.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/shared-shr-3.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "窃听者只有 A 和 B，想反推私钥要解离散对数，几乎不可能。"
+    }
+  ],
+  "total_duration": 24.700000000000003,
+  "total_size": 395280
+}

@@ -1,0 +1,179 @@
+{
+  "script_id": "triangular-numbers",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "拿一把棋子，你会怎么把它们摆整齐呢？"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "古希腊人喜欢把点子摆成规则的形状。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "摆成三角形、正方形，需要的点数就叫做图形数。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "triangular",
+      "line_id": "tri-1",
+      "filename": "triangular-tri-1.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/triangular-tri-1.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "先从三角形开始，一行一个点，再一行两个点。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "triangular",
+      "line_id": "tri-2",
+      "filename": "triangular-tri-2.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/triangular-tri-2.mp3",
+      "duration": 1.44,
+      "size": 23040,
+      "text": "一层层往下堆，第 n 层就有 n 个点。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "triangular",
+      "line_id": "tri-3",
+      "filename": "triangular-tri-3.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/triangular-tri-3.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "于是点数就是 1 加 2 加 3，一直加到 n。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "formula",
+      "line_id": "sum-1",
+      "filename": "formula-sum-1.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/formula-sum-1.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "把两个同样的三角形拼在一起，就凑成一个整齐的矩形。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "formula",
+      "line_id": "sum-2",
+      "filename": "formula-sum-2.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/formula-sum-2.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "矩形有 n 行、n 加 1 列，点数正好是它的一半。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "formula",
+      "line_id": "sum-3",
+      "filename": "formula-sum-3.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/formula-sum-3.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "所以三角形数等于 n 乘 n 加 1 再除以 2。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "others",
+      "line_id": "oth-1",
+      "filename": "others-oth-1.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/others-oth-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "把点子摆成正方形，第 n 个正方形数就是 n 乘 n。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "others",
+      "line_id": "oth-2",
+      "filename": "others-oth-2.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/others-oth-2.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "有趣的是，相邻两个三角形数相加，正好得到一个完全平方数。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "others",
+      "line_id": "oth-3",
+      "filename": "others-oth-3.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/others-oth-3.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "再摆成五边形，就得到五边形数 n 乘 3n 减 1 再除以 2。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "切换三角、正方、五边形，看看点子如何排成不同的形状。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "再拖动滑块调大 n，数着点数增长的节奏。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "summary",
+      "line_id": "end-1",
+      "filename": "summary-end-1.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/summary-end-1.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "图形数把抽象的加法，变成看得见的点阵。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "summary",
+      "line_id": "end-2",
+      "filename": "summary-end-2.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/summary-end-2.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "一句 n 乘 n 加 1 除以 2，藏着数与形的默契。"
+    },
+    {
+      "script_id": "triangular-numbers",
+      "section_id": "summary",
+      "line_id": "end-3",
+      "filename": "summary-end-3.mp3",
+      "path": "audio/narrations/triangular-numbers/xiaoxiao/summary-end-3.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "下次摆棋子时，不妨想想它是第几个图形数，我们下次再见！"
+    }
+  ],
+  "total_duration": 30.98,
+  "total_size": 495504
+}

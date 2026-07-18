@@ -1,0 +1,179 @@
+{
+  "script_id": "euler-totient",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "euler-totient",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.72,
+      "size": 43488,
+      "text": "给你一个数 n，比如 12，我们来数一数：1 到 12 里，有多少个数和它互质？"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "互质，就是两个数的最大公约数为 1，除了 1 之外没有公共因子。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "这个个数，就是数论里赫赫有名的欧拉函数。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/define-def-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "欧拉函数记作 phi(n)，表示 1 到 n 中与 n 互质的数的个数。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/define-def-2.mp3",
+      "duration": 2.66,
+      "size": 42624,
+      "text": "比如 phi(12) 等于 4，因为 1、5、7、11 这四个数与 12 互质。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/define-def-3.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "对任意质数 p，phi(p) 就等于 p 减 1，因为除它自己外都互质。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "formula",
+      "line_id": "form-1",
+      "filename": "formula-form-1.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/formula-form-1.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "要快速算出 phi(n)，我们不用逐个去试，而是看它的质因子。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "formula",
+      "line_id": "form-2",
+      "filename": "formula-form-2.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/formula-form-2.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "公式是：phi(n) 等于 n 乘以每个不同质因子 p 的一减 p 分之一。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "formula",
+      "line_id": "form-3",
+      "filename": "formula-form-3.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/formula-form-3.mp3",
+      "duration": 3.41,
+      "size": 54576,
+      "text": "拿 12 来说，它的质因子是 2 和 3，phi(12) 等于 12 乘二分之一再乘三分之二，正好是 4。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "multiplicative",
+      "line_id": "mul-1",
+      "filename": "multiplicative-mul-1.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/multiplicative-mul-1.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "欧拉函数还有个漂亮的性质：它是积性的。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "multiplicative",
+      "line_id": "mul-2",
+      "filename": "multiplicative-mul-2.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/multiplicative-mul-2.mp3",
+      "duration": 2.97,
+      "size": 47520,
+      "text": "只要 m 和 n 互质，就有 phi(m 乘 n) 等于 phi(m) 乘 phi(n)。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "multiplicative",
+      "line_id": "mul-3",
+      "filename": "multiplicative-mul-3.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/multiplicative-mul-3.mp3",
+      "duration": 3.56,
+      "size": 56880,
+      "text": "比如 phi(4) 是 2，phi(9) 是 6，而 4 与 9 互质，phi(36) 恰好等于 2 乘 6，也就是 12。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "在数环上选择不同的 n，蓝色的点就是与它互质的数。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "数一数蓝点的个数，看看是不是正好等于中央显示的 phi(n)。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "欧拉函数 phi(n) 数出与 n 互质的数有多少个。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "用质因子公式一步就能算出，还满足积性性质。"
+    },
+    {
+      "script_id": "euler-totient",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/euler-totient/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.75,
+      "size": 44064,
+      "text": "它是密码学 RSA 算法的基石，一个小函数撑起了信息安全，我们下次再见！"
+    }
+  ],
+  "total_duration": 40.160000000000004,
+  "total_size": 642816
+}

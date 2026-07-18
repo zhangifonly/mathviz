@@ -1,0 +1,179 @@
+{
+  "script_id": "josephus-problem",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "josephus-problem",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "相传古代有一群人围成一圈，约定用报数来决定命运。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "他们从第一个人开始报数，数到某个数字的人就要出局。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "一圈又一圈，人越来越少，谁能坚持到最后呢？"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "rule",
+      "line_id": "rule-1",
+      "filename": "rule-rule-1.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/rule-rule-1.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "n 个人围成圈，从第一人开始，每数到第 k 个人就让他出局。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "rule",
+      "line_id": "rule-2",
+      "filename": "rule-rule-2.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/rule-rule-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "出局后不再参与，从下一个人继续报数，圈子越缩越小。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "rule",
+      "line_id": "rule-3",
+      "filename": "rule-rule-3.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/rule-rule-3.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "如此循环，直到圈里只剩下唯一的一个幸存者。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "formula",
+      "line_id": "formula-1",
+      "filename": "formula-formula-1.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/formula-formula-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "直接模拟当然可以，但数学家找到了更漂亮的递推关系。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "formula",
+      "line_id": "formula-2",
+      "filename": "formula-formula-2.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/formula-formula-2.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "用零基编号，只剩一人时答案是零，即 J(1,k)=0。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "formula",
+      "line_id": "formula-3",
+      "filename": "formula-formula-3.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/formula-formula-3.mp3",
+      "duration": 3.58,
+      "size": 57312,
+      "text": "每多一个人，答案就整体平移 k 位再取余：J(n,k)=(J(n-1,k)+k)%n。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "survivor",
+      "line_id": "survivor-1",
+      "filename": "survivor-survivor-1.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/survivor-survivor-1.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "从一个人层层递推到 n 个人，最后加一就换回我们熟悉的编号。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "survivor",
+      "line_id": "survivor-2",
+      "filename": "survivor-survivor-2.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/survivor-survivor-2.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "比如七人每数到三出局，幸存者恰好是第四号。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "survivor",
+      "line_id": "survivor-3",
+      "filename": "survivor-survivor-3.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/survivor-survivor-3.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "递推把一次次繁琐的报数，浓缩成短短几步计算。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "拖动滑块改变人数 n 和报数 k，看幸存者如何变化。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "点击播放，跟着灰色圆点一个个熄灭，见证幸存者诞生。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "约瑟夫问题用报数出局的规则，考验谁能笑到最后。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "一条简洁的递推公式，就能预言那个幸运的位置。"
+    },
+    {
+      "script_id": "josephus-problem",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/josephus-problem/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "递推的力量，让复杂问题变得清晰，我们下次再见！"
+    }
+  ],
+  "total_duration": 35.809999999999995,
+  "total_size": 572976
+}
