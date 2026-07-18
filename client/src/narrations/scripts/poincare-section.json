@@ -1,0 +1,160 @@
+{
+  "id": "poincare-section",
+  "title": "庞加莱截面",
+  "subtitle": "高维轨迹压成点图",
+  "difficulty": "expert",
+  "targetAge": "大学以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解庞加莱截面把连续轨迹降维成离散点的思想",
+    "掌握按驱动周期频闪采样的方法",
+    "区分周期解与混沌解在截面上的点数差异",
+    "感受简单规则下混沌的分形之美"
+  ],
+  "prerequisites": [
+    "了解相空间概念",
+    "了解微分方程数值解"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "一个受迫摆动的振子，轨迹在相空间里绕来绕去，缠成一团乱麻。"
+        },
+        {
+          "id": "intro-2",
+          "text": "看久了只觉得混乱，很难判断它到底是规律还是混沌。"
+        },
+        {
+          "id": "intro-3",
+          "text": "庞加莱想了一个巧妙的办法，把这团乱麻压成一张清爽的点图。"
+        }
+      ]
+    },
+    {
+      "id": "strobe",
+      "type": "concept",
+      "title": "频闪采样",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "驱动力有固定周期，就像一盏按节拍闪烁的频闪灯。"
+        },
+        {
+          "id": "def-2",
+          "text": "每过一个驱动周期，我们只记录此刻的位置和速度，其余时间都不看。"
+        },
+        {
+          "id": "def-3",
+          "text": "连续的轨迹于是被抽稀成一串离散的采样点。"
+        }
+      ]
+    },
+    {
+      "id": "point",
+      "type": "concept",
+      "title": "截面上的点",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "pt-1",
+          "text": "这些点落在相空间的一张截面上，就是庞加莱截面。"
+        },
+        {
+          "id": "pt-2",
+          "text": "高维的连续运动，被降成了二维平面上一堆好读的点。"
+        },
+        {
+          "id": "pt-3",
+          "text": "轨迹的隐藏骨架，一下子就显露出来了。"
+        }
+      ]
+    },
+    {
+      "id": "compare",
+      "type": "concept",
+      "title": "周期还是混沌",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "cmp-1",
+          "text": "如果运动是周期的，每次频闪都落回老地方，只剩几个点。"
+        },
+        {
+          "id": "cmp-2",
+          "text": "如果是混沌的，点永不重复，铺成一片精细的分形云。"
+        },
+        {
+          "id": "cmp-3",
+          "text": "数一数点的多少与聚散，就能一眼看穿系统的命运。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换周期与混沌两组参数，看点云从几点跳成一团分形。"
+        },
+        {
+          "id": "int-2",
+          "text": "增加采样周期数，混沌的截面会越描越细，结构愈发清晰。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "庞加莱截面用频闪采样，把纠缠的轨迹压成离散点。"
+        },
+        {
+          "id": "sum-2",
+          "text": "几个点是周期，一片分形云是混沌。"
+        },
+        {
+          "id": "sum-3",
+          "text": "一次巧妙的降维，让混沌现出原形，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

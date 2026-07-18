@@ -1,0 +1,160 @@
+{
+  "id": "generating-functions",
+  "title": "生成函数",
+  "subtitle": "把数列装进幂级数",
+  "difficulty": "advanced",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解把数列编码为幂级数系数的思想",
+    "掌握生成函数相乘等于系数卷积",
+    "会用生成函数求解组合计数问题",
+    "认识骰子分布与斐波那契的生成函数"
+  ],
+  "prerequisites": [
+    "了解多项式",
+    "了解数列"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "我们常用一串数字来记录信息，比如每种点数出现多少次。"
+        },
+        {
+          "id": "intro-2",
+          "text": "有没有办法，把整串数列打包成一个整体来运算呢？"
+        },
+        {
+          "id": "intro-3",
+          "text": "生成函数就是这样一个巧妙的工具。"
+        }
+      ]
+    },
+    {
+      "id": "coeff",
+      "type": "concept",
+      "title": "数列变系数",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "把数列的第 k 项，放到幂级数里 x 的 k 次方前面当系数。"
+        },
+        {
+          "id": "def-2",
+          "text": "于是一整串数列，就浓缩成了一个多项式或幂级数。"
+        },
+        {
+          "id": "def-3",
+          "text": "系数柱状图里，每根柱子的高度就是对应那一项的值。"
+        }
+      ]
+    },
+    {
+      "id": "conv",
+      "type": "concept",
+      "title": "乘法即卷积",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "conv-1",
+          "text": "两个生成函数相乘时，x 的 k 次项系数怎么来？"
+        },
+        {
+          "id": "conv-2",
+          "text": "它把所有下标相加等于 k 的系数两两相乘再求和，这叫卷积。"
+        },
+        {
+          "id": "conv-3",
+          "text": "而这恰好就是组合计数里，凑出总和为 k 的方案数。"
+        }
+      ]
+    },
+    {
+      "id": "apply",
+      "type": "concept",
+      "title": "经典应用",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "app-1",
+          "text": "一颗骰子的生成函数是 x 加到 x 的六次方。"
+        },
+        {
+          "id": "app-2",
+          "text": "掷两颗骰子的和分布，就是它的平方，和为七的方案最多，共六种。"
+        },
+        {
+          "id": "app-3",
+          "text": "斐波那契数列则藏在 x 除以一减 x 减 x 平方的系数里。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换不同示例，看柱状图形状怎样随生成函数改变。"
+        },
+        {
+          "id": "int-2",
+          "text": "数一数系数总和，正好等于全部方案数。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "生成函数把数列编码成幂级数的系数。"
+        },
+        {
+          "id": "sum-2",
+          "text": "相乘等于卷积，天然对应组合计数。"
+        },
+        {
+          "id": "sum-3",
+          "text": "一个幂级数装下整串数列，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

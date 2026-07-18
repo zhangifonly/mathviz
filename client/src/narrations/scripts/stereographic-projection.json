@@ -1,0 +1,164 @@
+{
+  "id": "stereographic-projection",
+  "title": "球极投影",
+  "subtitle": "保角的球面到平面映射",
+  "difficulty": "advanced",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解球极投影从北极投射的几何构造",
+    "掌握投影公式与其逆映射",
+    "认识它是保角映射，圆映射成圆或直线",
+    "看清经纬网如何变成同心圆与放射线"
+  ],
+  "prerequisites": [
+    "了解球面坐标",
+    "了解平面直角坐标"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "我们想把一整个球面，摊平成一张平面地图。"
+        },
+        {
+          "id": "intro-2",
+          "text": "球面是弯的，平面是直的，怎样才能建立起一一对应？"
+        },
+        {
+          "id": "intro-3",
+          "text": "数学家给出一个优雅的办法，叫做球极投影。"
+        }
+      ]
+    },
+    {
+      "id": "project",
+      "type": "concept",
+      "title": "从北极投射",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "proj-1",
+          "text": "在球的最上方取一个北极点，让它当作投影的光源。"
+        },
+        {
+          "id": "proj-2",
+          "text": "从北极向球面上任意一点连一条射线，一直延伸到赤道平面。"
+        },
+        {
+          "id": "proj-3",
+          "text": "射线与平面的交点，就是这个球面点的像。"
+        },
+        {
+          "id": "proj-4",
+          "text": "写成公式，就是 X 等于 x 除以一减 z，Y 等于 y 除以一减 z。"
+        }
+      ]
+    },
+    {
+      "id": "conformal",
+      "type": "concept",
+      "title": "保角映射",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "conf-1",
+          "text": "球极投影最迷人的性质，是它保持角度不变。"
+        },
+        {
+          "id": "conf-2",
+          "text": "球面上两条曲线相交成多少度，投到平面上仍然是多少度。"
+        },
+        {
+          "id": "conf-3",
+          "text": "这种保角的映射，在数学里被称为共形映射。"
+        }
+      ]
+    },
+    {
+      "id": "circle",
+      "type": "concept",
+      "title": "圆变圆",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "circ-1",
+          "text": "还有一条奇妙的规律：球面上的圆，投影后依然是圆。"
+        },
+        {
+          "id": "circ-2",
+          "text": "唯一的例外是经过北极的圆，它会被拉直成一条直线。"
+        },
+        {
+          "id": "circ-3",
+          "text": "于是纬线变成一圈圈同心圆，经线变成从原点放射的直线。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "拖动滑块旋转球面，看左边的网格如何转动。"
+        },
+        {
+          "id": "int-2",
+          "text": "再看右边平面上的像，同心圆与放射线随之优雅地舒展。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "球极投影从北极出发，把球面一一映到平面。"
+        },
+        {
+          "id": "sum-2",
+          "text": "它保角、又把圆变成圆，是地图学与复分析的基石。"
+        },
+        {
+          "id": "sum-3",
+          "text": "一次投射,让弯曲的世界摊成平面,我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

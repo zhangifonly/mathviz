@@ -1,0 +1,164 @@
+{
+  "id": "directional-derivative",
+  "title": "方向导数",
+  "subtitle": "任意方向的变化率",
+  "difficulty": "intermediate",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解方向导数是沿某一方向的变化率",
+    "掌握 D_u f = 梯度点乘单位方向",
+    "认识梯度方向变化最快、垂直方向为零",
+    "通过玫瑰图直观感受方向与陡峭程度的关系"
+  ],
+  "prerequisites": [
+    "了解偏导数",
+    "了解向量点乘"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "想象你站在一座山坡上的某一点。"
+        },
+        {
+          "id": "intro-2",
+          "text": "朝正东走有多陡？朝东北呢？朝正北呢？"
+        },
+        {
+          "id": "intro-3",
+          "text": "同一个点，朝不同方向前进，脚下的坡度并不一样。"
+        },
+        {
+          "id": "intro-4",
+          "text": "这个沿指定方向的变化率，就叫方向导数。"
+        }
+      ]
+    },
+    {
+      "id": "define",
+      "type": "concept",
+      "title": "方向导数的定义",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "偏导数只看沿坐标轴的变化，而方向导数看任意方向。"
+        },
+        {
+          "id": "def-2",
+          "text": "给定一个单位方向 u，方向导数就是函数沿这个方向的瞬时变化率。"
+        },
+        {
+          "id": "def-3",
+          "text": "我们用玫瑰图表示：每个方向的半径，就是那个方向的方向导数。"
+        }
+      ]
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "title": "等于梯度点乘方向",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "form-1",
+          "text": "有个漂亮的公式：方向导数等于梯度点乘单位方向。"
+        },
+        {
+          "id": "form-2",
+          "text": "也就是 D_u f 等于梯度的模，乘上它与方向夹角的余弦。"
+        },
+        {
+          "id": "form-3",
+          "text": "所以真正决定一切的，是这个点处的梯度向量。"
+        }
+      ]
+    },
+    {
+      "id": "maxdir",
+      "type": "concept",
+      "title": "梯度方向最陡",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "max-1",
+          "text": "当方向与梯度重合时，余弦等于一，方向导数取到最大值，也就是梯度的模。"
+        },
+        {
+          "id": "max-2",
+          "text": "当方向与梯度垂直时，余弦为零，方向导数也为零，那正是沿等高线行走。"
+        },
+        {
+          "id": "max-3",
+          "text": "反方向则下降最快，这就是梯度下降法的核心思想。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "拖动方向角滑块，观察方向导数的数值如何随方向起伏。"
+        },
+        {
+          "id": "int-2",
+          "text": "转到橙色虚线的梯度方向，你会看到数值恰好冲到最大。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "方向导数刻画了函数沿任意方向的变化率。"
+        },
+        {
+          "id": "sum-2",
+          "text": "它等于梯度点乘方向，梯度方向最陡，垂直方向为零。"
+        },
+        {
+          "id": "sum-3",
+          "text": "看懂了梯度，就看懂了整片山坡的走势，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

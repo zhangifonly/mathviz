@@ -256,6 +256,31 @@ export { josephusProblemNarration } from './scripts/josephus-problem'
 export { grayCodeNarration } from './scripts/gray-code'
 export { lookAndSayNarration } from './scripts/look-and-say'
 export { hillCipherNarration } from './scripts/hill-cipher'
+export { luDecompositionNarration } from './scripts/lu-decomposition'
+export { qrDecompositionNarration } from './scripts/qr-decomposition'
+export { choleskyNarration } from './scripts/cholesky'
+export { powerIterationNarration } from './scripts/power-iteration'
+export { pagerankNarration } from './scripts/pagerank'
+export { markovStationaryNarration } from './scripts/markov-stationary'
+export { cramersRuleNarration } from './scripts/cramers-rule'
+export { rotation3dNarration } from './scripts/rotation3d'
+export { gibbsPhenomenonNarration } from './scripts/gibbs-phenomenon'
+export { chebyshevPolynomialsNarration } from './scripts/chebyshev-polynomials'
+export { legendrePolynomialsNarration } from './scripts/legendre-polynomials'
+export { besselFunctionsNarration } from './scripts/bessel-functions'
+export { gammaFunctionNarration } from './scripts/gamma-function'
+export { fixedPointIterationNarration } from './scripts/fixed-point-iteration'
+export { secantMethodNarration } from './scripts/secant-method'
+export { bisectionMethodNarration } from './scripts/bisection-method'
+export { fftNarration } from './scripts/fft'
+export { aliasingNarration } from './scripts/aliasing'
+export { autocorrelationNarration } from './scripts/autocorrelation'
+export { convolutionNarration } from './scripts/convolution'
+export { nyquistSamplingNarration } from './scripts/nyquist-sampling'
+export { windowingNarration } from './scripts/windowing'
+export { bSplineNarration } from './scripts/b-spline'
+export { catmullRomNarration } from './scripts/catmull-rom'
+export { discreteCosineTransformNarration } from './scripts/discrete-cosine-transform'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -504,6 +529,31 @@ import { josephusProblemNarration } from './scripts/josephus-problem'
 import { grayCodeNarration } from './scripts/gray-code'
 import { lookAndSayNarration } from './scripts/look-and-say'
 import { hillCipherNarration } from './scripts/hill-cipher'
+import { luDecompositionNarration } from './scripts/lu-decomposition'
+import { qrDecompositionNarration } from './scripts/qr-decomposition'
+import { choleskyNarration } from './scripts/cholesky'
+import { powerIterationNarration } from './scripts/power-iteration'
+import { pagerankNarration } from './scripts/pagerank'
+import { markovStationaryNarration } from './scripts/markov-stationary'
+import { cramersRuleNarration } from './scripts/cramers-rule'
+import { rotation3dNarration } from './scripts/rotation3d'
+import { gibbsPhenomenonNarration } from './scripts/gibbs-phenomenon'
+import { chebyshevPolynomialsNarration } from './scripts/chebyshev-polynomials'
+import { legendrePolynomialsNarration } from './scripts/legendre-polynomials'
+import { besselFunctionsNarration } from './scripts/bessel-functions'
+import { gammaFunctionNarration } from './scripts/gamma-function'
+import { fixedPointIterationNarration } from './scripts/fixed-point-iteration'
+import { secantMethodNarration } from './scripts/secant-method'
+import { bisectionMethodNarration } from './scripts/bisection-method'
+import { fftNarration } from './scripts/fft'
+import { aliasingNarration } from './scripts/aliasing'
+import { autocorrelationNarration } from './scripts/autocorrelation'
+import { convolutionNarration } from './scripts/convolution'
+import { nyquistSamplingNarration } from './scripts/nyquist-sampling'
+import { windowingNarration } from './scripts/windowing'
+import { bSplineNarration } from './scripts/b-spline'
+import { catmullRomNarration } from './scripts/catmull-rom'
+import { discreteCosineTransformNarration } from './scripts/discrete-cosine-transform'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -756,6 +806,31 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'gray-code': grayCodeNarration,
   'look-and-say': lookAndSayNarration,
   'hill-cipher': hillCipherNarration,
+  'lu-decomposition': luDecompositionNarration,
+  'qr-decomposition': qrDecompositionNarration,
+  'cholesky': choleskyNarration,
+  'power-iteration': powerIterationNarration,
+  'pagerank': pagerankNarration,
+  'markov-stationary': markovStationaryNarration,
+  'cramers-rule': cramersRuleNarration,
+  'rotation3d': rotation3dNarration,
+  'gibbs-phenomenon': gibbsPhenomenonNarration,
+  'chebyshev-polynomials': chebyshevPolynomialsNarration,
+  'legendre-polynomials': legendrePolynomialsNarration,
+  'bessel-functions': besselFunctionsNarration,
+  'gamma-function': gammaFunctionNarration,
+  'fixed-point-iteration': fixedPointIterationNarration,
+  'secant-method': secantMethodNarration,
+  'bisection-method': bisectionMethodNarration,
+  'fft': fftNarration,
+  'aliasing': aliasingNarration,
+  'autocorrelation': autocorrelationNarration,
+  'convolution': convolutionNarration,
+  'nyquist-sampling': nyquistSamplingNarration,
+  'windowing': windowingNarration,
+  'b-spline': bSplineNarration,
+  'catmull-rom': catmullRomNarration,
+  'discrete-cosine-transform': discreteCosineTransformNarration,
 }
 
 // 获取稿件

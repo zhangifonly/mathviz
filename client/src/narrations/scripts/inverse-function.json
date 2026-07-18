@@ -1,0 +1,160 @@
+{
+  "id": "inverse-function",
+  "title": "反函数",
+  "subtitle": "关于 y=x 对称",
+  "difficulty": "elementary",
+  "targetAge": "初中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解反函数是对输入与输出的交换",
+    "掌握原函数与反函数图象关于 y=x 对称",
+    "知道只有单调函数才存在反函数",
+    "认识常见的互反函数对"
+  ],
+  "prerequisites": [
+    "了解函数概念",
+    "了解平面直角坐标系"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "一个函数把输入变成输出，比如输入 3，输出 7。"
+        },
+        {
+          "id": "intro-2",
+          "text": "现在反过来问：已经知道输出是 7，能不能找回输入 3？"
+        },
+        {
+          "id": "intro-3",
+          "text": "这个把输出送回输入的过程，就是反函数在做的事。"
+        }
+      ]
+    },
+    {
+      "id": "define",
+      "type": "concept",
+      "title": "定义",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "如果先用 f 把 x 变成 y，再用 g 把 y 变回 x，我们就说 g 是 f 的反函数。"
+        },
+        {
+          "id": "def-2",
+          "text": "一去一回，恰好回到原点，也就是 g 作用在 f(x) 上又得到 x。"
+        },
+        {
+          "id": "def-3",
+          "text": "比如 f 是乘二加一，反函数就是减一再除以二。"
+        }
+      ]
+    },
+    {
+      "id": "symmetry",
+      "type": "concept",
+      "title": "关于 y=x 对称",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sym-1",
+          "text": "交换输入输出，在图象上就是交换横纵坐标。"
+        },
+        {
+          "id": "sym-2",
+          "text": "点 (a, b) 在原函数上，那么 (b, a) 一定在反函数上。"
+        },
+        {
+          "id": "sym-3",
+          "text": "而 (a, b) 和 (b, a) 恰好关于直线 y=x 互为镜像。"
+        }
+      ]
+    },
+    {
+      "id": "monotone",
+      "type": "concept",
+      "title": "单调才可逆",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "mono-1",
+          "text": "要能从输出唯一找回输入，每个输出只能对应一个输入。"
+        },
+        {
+          "id": "mono-2",
+          "text": "用水平线检验：一条横线只与图象相交一次，函数才可逆。"
+        },
+        {
+          "id": "mono-3",
+          "text": "所以单调递增或递减的函数，才拥有反函数。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换不同的函数，观察它和反函数如何隔着 y=x 彼此镜像。"
+        },
+        {
+          "id": "int-2",
+          "text": "看那对被连线标出的对称点，它们的坐标正好互相交换。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "反函数就是交换输入与输出，把结果送回起点。"
+        },
+        {
+          "id": "sum-2",
+          "text": "它的图象与原函数关于 y=x 对称，且只有单调函数才可逆。"
+        },
+        {
+          "id": "sum-3",
+          "text": "记住这条对称的镜子，反函数就不再神秘，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

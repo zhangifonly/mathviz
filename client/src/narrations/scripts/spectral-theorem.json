@@ -1,0 +1,160 @@
+{
+  "id": "spectral-theorem",
+  "title": "谱分解",
+  "subtitle": "对称矩阵的正交对角化",
+  "difficulty": "expert",
+  "targetAge": "大学以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解实对称矩阵特征值必为实数",
+    "认识不同特征值对应的特征向量相互正交",
+    "掌握谱分解公式 M = Σ λ v vᵀ",
+    "从几何上看单位圆变椭圆的主轴含义"
+  ],
+  "prerequisites": [
+    "了解矩阵与向量乘法",
+    "了解特征值与特征向量"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "在所有方阵里，对称矩阵是格外优雅的一类。"
+        },
+        {
+          "id": "intro-2",
+          "text": "它沿主对角线镜像对称，转置后与自己完全相同。"
+        },
+        {
+          "id": "intro-3",
+          "text": "正是这份对称，赋予了它一个近乎完美的分解定理。"
+        }
+      ]
+    },
+    {
+      "id": "concept-eigen",
+      "type": "concept",
+      "title": "实特征值与正交向量",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "谱定理说：实对称矩阵的特征值一定都是实数，绝不会跑到复数域。"
+        },
+        {
+          "id": "def-2",
+          "text": "而且不同特征值对应的特征向量，彼此严格正交，互成直角。"
+        },
+        {
+          "id": "def-3",
+          "text": "于是我们能选出一组标准正交的特征向量，作为最自然的坐标轴。"
+        }
+      ]
+    },
+    {
+      "id": "concept-formula",
+      "type": "concept",
+      "title": "谱分解公式",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "form-1",
+          "text": "把矩阵写成 M 等于 λ₁ v₁ v₁ᵀ 加上 λ₂ v₂ v₂ᵀ。"
+        },
+        {
+          "id": "form-2",
+          "text": "每一项都是特征值乘以特征向量的外积，是一个秩一的投影。"
+        },
+        {
+          "id": "form-3",
+          "text": "对称矩阵就这样被拆成沿各正交方向的独立伸缩之和。"
+        }
+      ]
+    },
+    {
+      "id": "concept-geo",
+      "type": "concept",
+      "title": "几何直观",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "geo-1",
+          "text": "让矩阵作用在单位圆上，圆会被拉成一个椭圆。"
+        },
+        {
+          "id": "geo-2",
+          "text": "椭圆的两条主轴方向，正好是两个特征向量的方向。"
+        },
+        {
+          "id": "geo-3",
+          "text": "而主轴的半长，恰恰等于对应特征值的大小。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换不同的对称矩阵，观察椭圆如何随之旋转与拉伸。"
+        },
+        {
+          "id": "int-2",
+          "text": "注意粉色和绿色的主轴，无论怎么变，它们始终保持垂直。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "实对称矩阵拥有实特征值和正交特征向量。"
+        },
+        {
+          "id": "sum-2",
+          "text": "谱分解把它写成沿正交主轴的伸缩叠加，几何上就是圆变椭圆。"
+        },
+        {
+          "id": "sum-3",
+          "text": "对称之美，成就了最干净的对角化，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "id": "vieta-formulas",
+  "title": "韦达定理",
+  "subtitle": "根与系数的对称关系",
+  "difficulty": "intermediate",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解多项式的根与系数之间的对称关系",
+    "掌握二次方程根之和与根之积的公式",
+    "把关系推广到任意次多项式",
+    "认识初等对称多项式这一统一语言"
+  ],
+  "prerequisites": [
+    "了解一元多项式",
+    "会解一元二次方程"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "解一个方程，我们总在寻找它的根。"
+        },
+        {
+          "id": "intro-2",
+          "text": "可你有没有想过，根其实早就藏在系数里面。"
+        },
+        {
+          "id": "intro-3",
+          "text": "不用真的解出来，只看系数，就能知道所有根的和与积。"
+        }
+      ]
+    },
+    {
+      "id": "quadratic",
+      "type": "concept",
+      "title": "二次情形",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "quad-1",
+          "text": "先看二次方程 a x 平方加 b x 加 c 等于零。"
+        },
+        {
+          "id": "quad-2",
+          "text": "把它写成 a 乘 x 减去两个根的乘积，展开再对比系数。"
+        },
+        {
+          "id": "quad-3",
+          "text": "你会发现：两根之和等于负 b 除以 a，两根之积等于 c 除以 a。"
+        }
+      ]
+    },
+    {
+      "id": "higher",
+      "type": "concept",
+      "title": "推广高次",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "high-1",
+          "text": "这个规律不止对二次成立，对任意次多项式都成立。"
+        },
+        {
+          "id": "high-2",
+          "text": "所有根之和，等于负的次高项系数除以首项系数。"
+        },
+        {
+          "id": "high-3",
+          "text": "所有根之积，等于常数项除以首项，再乘上一个正负号。"
+        }
+      ]
+    },
+    {
+      "id": "symmetric",
+      "type": "concept",
+      "title": "初等对称多项式",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sym-1",
+          "text": "把根两两相乘再求和，三三相乘再求和，就得到初等对称多项式。"
+        },
+        {
+          "id": "sym-2",
+          "text": "每一个系数，恰好等于对应的初等对称多项式，只差一个正负号。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换不同的根，看曲线怎样穿过这几个零点。"
+        },
+        {
+          "id": "int-2",
+          "text": "同时留意侧栏，根之和与根之积始终和系数严丝合缝。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "韦达定理告诉我们，系数就是根的对称函数。"
+        },
+        {
+          "id": "sum-2",
+          "text": "和等于负的次高项比首项，积等于常数项比首项配上符号。"
+        },
+        {
+          "id": "sum-3",
+          "text": "看穿系数背后的根，你就掌握了这份对称之美，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "id": "delaunay-triangulation",
+  "title": "Delaunay三角剖分",
+  "subtitle": "最优三角网格",
+  "difficulty": "advanced",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解 Delaunay 三角剖分的空圆性质",
+    "认识\"最大化最小角\"的最优性",
+    "了解与沃罗诺伊图的对偶关系",
+    "感受增量算法生成网格的过程"
+  ],
+  "prerequisites": [
+    "了解三角形与外接圆",
+    "了解平面坐标"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "平面上散布着一堆点，我们想把它们连成一张三角网。"
+        },
+        {
+          "id": "intro-2",
+          "text": "连法千千万，可网格有好有坏，瘦长的三角形最让人头疼。"
+        },
+        {
+          "id": "intro-3",
+          "text": "有没有一种连法，天生就是最优的？答案就是 Delaunay 三角剖分。"
+        }
+      ]
+    },
+    {
+      "id": "circle",
+      "type": "concept",
+      "title": "空圆性质",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "它的标志是一条黄金法则：每个三角形的外接圆内，不含任何其他点。"
+        },
+        {
+          "id": "def-2",
+          "text": "这就是空圆性质，画面里那个粉色的圆，圈住三个顶点却空无一物。"
+        },
+        {
+          "id": "def-3",
+          "text": "增量算法正是靠它:插入新点时,凡外接圆包住它的三角形都要重连。"
+        }
+      ]
+    },
+    {
+      "id": "angle",
+      "type": "concept",
+      "title": "最大化最小角",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "ang-1",
+          "text": "空圆性质带来一个漂亮的后果:它让所有三角形里的最小角尽可能大。"
+        },
+        {
+          "id": "ang-2",
+          "text": "换句话说,它极力避免又瘦又尖的三角形,让网格更接近正三角。"
+        },
+        {
+          "id": "ang-3",
+          "text": "这种匀称,正是数值计算和渲染最喜欢的形状。"
+        }
+      ]
+    },
+    {
+      "id": "dual",
+      "type": "concept",
+      "title": "与沃罗诺伊对偶",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "dual-1",
+          "text": "把每个三角形的外接圆心连起来,就得到了沃罗诺伊图。"
+        },
+        {
+          "id": "dual-2",
+          "text": "两者互为对偶:一个管三角连边,一个管领地划分,是同一枚硬币的两面。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "调整点的数量,看三角网如何从稀疏变得密实。"
+        },
+        {
+          "id": "int-2",
+          "text": "点开外接圆,亲眼验证每个圆内部都干干净净。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "Delaunay 三角剖分用空圆性质,连出一张最优的三角网。"
+        },
+        {
+          "id": "sum-2",
+          "text": "它最大化最小角,又与沃罗诺伊图完美对偶。"
+        },
+        {
+          "id": "sum-3",
+          "text": "一条简单的空圆法则,撑起了整个计算几何,我们下次再见!"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "tessellation",
+  "title": "密铺镶嵌",
+  "subtitle": "用多边形铺满平面",
+  "difficulty": "elementary",
+  "targetAge": "小学高年级以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解密铺的含义：不留缝、不重叠地铺满平面",
+    "掌握密铺的角度条件：顶点处角度和为360度",
+    "知道只有正三角形、正方形、正六边形能单一密铺",
+    "感受规则图案的秩序之美"
+  ],
+  "prerequisites": [
+    "了解多边形",
+    "了解角度"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "看看浴室墙上的瓷砖，一块挨着一块，铺得严丝合缝。"
+        },
+        {
+          "id": "intro-2",
+          "text": "为什么它们之间不留一点缝隙，也不会互相重叠？"
+        },
+        {
+          "id": "intro-3",
+          "text": "这种把平面铺满的方式，数学上叫做密铺，或者镶嵌。"
+        }
+      ]
+    },
+    {
+      "id": "angle",
+      "type": "concept",
+      "title": "角度的秘密",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "ang-1",
+          "text": "密铺的关键，藏在多边形聚拢的那个顶点上。"
+        },
+        {
+          "id": "ang-2",
+          "text": "若干个角挤在一个点周围，它们的和必须正好是360度。"
+        },
+        {
+          "id": "ang-3",
+          "text": "多一点就重叠，少一点就留缝，只有刚好360度才能铺平。"
+        }
+      ]
+    },
+    {
+      "id": "three",
+      "type": "concept",
+      "title": "仅有的三种",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "thr-1",
+          "text": "正三角形内角60度，六个拼成360度，铺得满满当当。"
+        },
+        {
+          "id": "thr-2",
+          "text": "正方形内角90度，四个一拼刚好360度。"
+        },
+        {
+          "id": "thr-3",
+          "text": "正六边形内角120度，三个就够360度，这就是蜂巢的形状。"
+        },
+        {
+          "id": "thr-4",
+          "text": "正五边形内角108度，无论几个都凑不出360度，所以铺不满。"
+        }
+      ]
+    },
+    {
+      "id": "semi",
+      "type": "concept",
+      "title": "更多可能",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "semi-1",
+          "text": "如果允许几种正多边形混搭，还能拼出更多花样。"
+        },
+        {
+          "id": "semi-2",
+          "text": "这类混合的规则密铺，被称为半正则镶嵌。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手切换",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换三角形、正方形、正六边形，看它们如何铺满整个画面。"
+        },
+        {
+          "id": "int-2",
+          "text": "留意每个顶点，你会发现角度总是刚好合成一整圈。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "密铺就是用多边形不留缝地铺满平面。"
+        },
+        {
+          "id": "sum-2",
+          "text": "条件是顶点处角度和为360度，单一正多边形只有三、四、六边形做得到。"
+        },
+        {
+          "id": "sum-3",
+          "text": "简单的角度规则，铺出无尽的秩序之美，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

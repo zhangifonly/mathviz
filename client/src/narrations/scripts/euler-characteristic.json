@@ -1,0 +1,160 @@
+{
+  "id": "euler-characteristic",
+  "title": "欧拉示性数",
+  "subtitle": "V-E+F=2",
+  "difficulty": "advanced",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解顶点、棱、面之间的欧拉关系",
+    "掌握凸多面体的 V-E+F=2",
+    "认识欧拉示性数是拓扑不变量",
+    "了解环面等曲面的示性数"
+  ],
+  "prerequisites": [
+    "认识多面体",
+    "了解基本计数"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "拿起一个立方体，数一数它的顶点、棱和面。"
+        },
+        {
+          "id": "intro-2",
+          "text": "八个顶点，十二条棱，六个面，看似毫无关联。"
+        },
+        {
+          "id": "intro-3",
+          "text": "但欧拉发现，它们之间藏着一个惊人的恒等关系。"
+        }
+      ]
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "title": "V-E+F",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "把顶点数减去棱数，再加上面数，记作 V 减 E 加 F。"
+        },
+        {
+          "id": "def-2",
+          "text": "立方体是 8 减 12 加 6，结果正好等于 2。"
+        },
+        {
+          "id": "def-3",
+          "text": "这个组合叫做欧拉示性数，用希腊字母 χ 表示。"
+        }
+      ]
+    },
+    {
+      "id": "convex",
+      "type": "concept",
+      "title": "凸多面体恒为2",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "con-1",
+          "text": "换成四面体、八面体、十二面体，逐一去数。"
+        },
+        {
+          "id": "con-2",
+          "text": "无论顶点棱面如何变化，V 减 E 加 F 始终等于 2。"
+        },
+        {
+          "id": "con-3",
+          "text": "所有凸多面体都服从这条铁律，与具体形状无关。"
+        }
+      ]
+    },
+    {
+      "id": "topology",
+      "type": "concept",
+      "title": "拓扑不变量",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "top-1",
+          "text": "这个 2 其实是球面的标志，一个拓扑不变量。"
+        },
+        {
+          "id": "top-2",
+          "text": "把多面体吹成气球，它们都等价于一个球面。"
+        },
+        {
+          "id": "top-3",
+          "text": "而甜甜圈形的环面中间有个洞，它的 χ 等于 0。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换不同的多面体，看顶点棱面的计数如何变化。"
+        },
+        {
+          "id": "int-2",
+          "text": "再看环面这一栏，验证它的示性数确实是 0。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "欧拉示性数 V 减 E 加 F，凸多面体恒等于 2。"
+        },
+        {
+          "id": "sum-2",
+          "text": "它不依赖形状，只由曲面的洞数决定，χ 等于 2 减 2g。"
+        },
+        {
+          "id": "sum-3",
+          "text": "一个简单的加减法，串起几何与拓扑，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

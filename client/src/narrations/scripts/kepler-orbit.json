@@ -1,0 +1,160 @@
+{
+  "id": "kepler-orbit",
+  "title": "开普勒轨道",
+  "subtitle": "行星椭圆与面积定律",
+  "difficulty": "advanced",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解行星沿椭圆轨道绕太阳运行",
+    "认识太阳位于椭圆的一个焦点",
+    "掌握开普勒第二定律：等时等面积",
+    "了解开普勒方程与牛顿迭代求解"
+  ],
+  "prerequisites": [
+    "了解椭圆",
+    "了解速度与面积概念"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "夜空中的行星，年复一年地绕着太阳旋转。"
+        },
+        {
+          "id": "intro-2",
+          "text": "四百年前，开普勒盯着火星的观测数据，想找出它运行的规律。"
+        },
+        {
+          "id": "intro-3",
+          "text": "他发现，行星的轨道不是正圆，而是一个椭圆。"
+        }
+      ]
+    },
+    {
+      "id": "orbit",
+      "type": "concept",
+      "title": "椭圆轨道",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "orbit-1",
+          "text": "椭圆有两个焦点，而太阳并不在中心，它恰好待在其中一个焦点上。"
+        },
+        {
+          "id": "orbit-2",
+          "text": "于是行星离太阳时近时远：最近处叫近日点，最远处叫远日点。"
+        },
+        {
+          "id": "orbit-3",
+          "text": "椭圆越扁，也就是离心率越大，这种远近的差别就越明显。"
+        }
+      ]
+    },
+    {
+      "id": "area",
+      "type": "concept",
+      "title": "面积定律",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "area-1",
+          "text": "开普勒第二定律说：行星与太阳的连线，在相等时间里扫过相等的面积。"
+        },
+        {
+          "id": "area-2",
+          "text": "所以在近日点，行星必须跑得快，才能在短弧上扫出同样大的扇形。"
+        },
+        {
+          "id": "area-3",
+          "text": "而在远日点，它便慢悠悠地掠过长长的弧。"
+        }
+      ]
+    },
+    {
+      "id": "equation",
+      "type": "concept",
+      "title": "开普勒方程",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "eq-1",
+          "text": "要算出某一时刻行星在哪，得解开普勒方程：M 等于 E 减去 e 乘以 sinE。"
+        },
+        {
+          "id": "eq-2",
+          "text": "这里 M 随时间均匀增长，而 E 是偏近点角，藏在方程里解不开。"
+        },
+        {
+          "id": "eq-3",
+          "text": "我们用牛顿迭代法，一步步逼近 E，几次就能收敛到很高精度。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "调整离心率，看轨道从近乎正圆，慢慢被拉成瘦长的椭圆。"
+        },
+        {
+          "id": "int-2",
+          "text": "注意那些彩色扇形，面积始终相等，而行星的快慢却在悄悄变化。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "行星沿椭圆绕日，太阳稳坐在一个焦点上。"
+        },
+        {
+          "id": "sum-2",
+          "text": "等时扫过等面积，让近日点飞快、远日点从容。"
+        },
+        {
+          "id": "sum-3",
+          "text": "一条开普勒方程，把天体运行算得明明白白，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

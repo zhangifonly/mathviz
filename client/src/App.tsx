@@ -271,6 +271,31 @@ const JosephusProblemExperiment = lazyRetry(() => import('./experiments/josephus
 const GrayCodeExperiment = lazyRetry(() => import('./experiments/gray-code/GrayCodeExperiment'))
 const LookAndSayExperiment = lazyRetry(() => import('./experiments/look-and-say/LookAndSayExperiment'))
 const HillCipherExperiment = lazyRetry(() => import('./experiments/hill-cipher/HillCipherExperiment'))
+const LuDecompositionExperiment = lazyRetry(() => import('./experiments/lu-decomposition/LuDecompositionExperiment'))
+const QrDecompositionExperiment = lazyRetry(() => import('./experiments/qr-decomposition/QrDecompositionExperiment'))
+const CholeskyExperiment = lazyRetry(() => import('./experiments/cholesky/CholeskyExperiment'))
+const PowerIterationExperiment = lazyRetry(() => import('./experiments/power-iteration/PowerIterationExperiment'))
+const PagerankExperiment = lazyRetry(() => import('./experiments/pagerank/PagerankExperiment'))
+const MarkovStationaryExperiment = lazyRetry(() => import('./experiments/markov-stationary/MarkovStationaryExperiment'))
+const CramersRuleExperiment = lazyRetry(() => import('./experiments/cramers-rule/CramersRuleExperiment'))
+const Rotation3dExperiment = lazyRetry(() => import('./experiments/rotation3d/Rotation3dExperiment'))
+const GibbsPhenomenonExperiment = lazyRetry(() => import('./experiments/gibbs-phenomenon/GibbsPhenomenonExperiment'))
+const ChebyshevPolynomialsExperiment = lazyRetry(() => import('./experiments/chebyshev-polynomials/ChebyshevPolynomialsExperiment'))
+const LegendrePolynomialsExperiment = lazyRetry(() => import('./experiments/legendre-polynomials/LegendrePolynomialsExperiment'))
+const BesselFunctionsExperiment = lazyRetry(() => import('./experiments/bessel-functions/BesselFunctionsExperiment'))
+const GammaFunctionExperiment = lazyRetry(() => import('./experiments/gamma-function/GammaFunctionExperiment'))
+const FixedPointIterationExperiment = lazyRetry(() => import('./experiments/fixed-point-iteration/FixedPointIterationExperiment'))
+const SecantMethodExperiment = lazyRetry(() => import('./experiments/secant-method/SecantMethodExperiment'))
+const BisectionMethodExperiment = lazyRetry(() => import('./experiments/bisection-method/BisectionMethodExperiment'))
+const FftExperiment = lazyRetry(() => import('./experiments/fft/FftExperiment'))
+const AliasingExperiment = lazyRetry(() => import('./experiments/aliasing/AliasingExperiment'))
+const AutocorrelationExperiment = lazyRetry(() => import('./experiments/autocorrelation/AutocorrelationExperiment'))
+const ConvolutionExperiment = lazyRetry(() => import('./experiments/convolution/ConvolutionExperiment'))
+const NyquistSamplingExperiment = lazyRetry(() => import('./experiments/nyquist-sampling/NyquistSamplingExperiment'))
+const WindowingExperiment = lazyRetry(() => import('./experiments/windowing/WindowingExperiment'))
+const BSplineExperiment = lazyRetry(() => import('./experiments/b-spline/BSplineExperiment'))
+const CatmullRomExperiment = lazyRetry(() => import('./experiments/catmull-rom/CatmullRomExperiment'))
+const DiscreteCosineTransformExperiment = lazyRetry(() => import('./experiments/discrete-cosine-transform/DiscreteCosineTransformExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -539,6 +564,31 @@ export default function App() {
             <Route path="gray-code" element={<GrayCodeExperiment />} />
             <Route path="look-and-say" element={<LookAndSayExperiment />} />
             <Route path="hill-cipher" element={<HillCipherExperiment />} />
+            <Route path="lu-decomposition" element={<LuDecompositionExperiment />} />
+            <Route path="qr-decomposition" element={<QrDecompositionExperiment />} />
+            <Route path="cholesky" element={<CholeskyExperiment />} />
+            <Route path="power-iteration" element={<PowerIterationExperiment />} />
+            <Route path="pagerank" element={<PagerankExperiment />} />
+            <Route path="markov-stationary" element={<MarkovStationaryExperiment />} />
+            <Route path="cramers-rule" element={<CramersRuleExperiment />} />
+            <Route path="rotation3d" element={<Rotation3dExperiment />} />
+            <Route path="gibbs-phenomenon" element={<GibbsPhenomenonExperiment />} />
+            <Route path="chebyshev-polynomials" element={<ChebyshevPolynomialsExperiment />} />
+            <Route path="legendre-polynomials" element={<LegendrePolynomialsExperiment />} />
+            <Route path="bessel-functions" element={<BesselFunctionsExperiment />} />
+            <Route path="gamma-function" element={<GammaFunctionExperiment />} />
+            <Route path="fixed-point-iteration" element={<FixedPointIterationExperiment />} />
+            <Route path="secant-method" element={<SecantMethodExperiment />} />
+            <Route path="bisection-method" element={<BisectionMethodExperiment />} />
+            <Route path="fft" element={<FftExperiment />} />
+            <Route path="aliasing" element={<AliasingExperiment />} />
+            <Route path="autocorrelation" element={<AutocorrelationExperiment />} />
+            <Route path="convolution" element={<ConvolutionExperiment />} />
+            <Route path="nyquist-sampling" element={<NyquistSamplingExperiment />} />
+            <Route path="windowing" element={<WindowingExperiment />} />
+            <Route path="b-spline" element={<BSplineExperiment />} />
+            <Route path="catmull-rom" element={<CatmullRomExperiment />} />
+            <Route path="discrete-cosine-transform" element={<DiscreteCosineTransformExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

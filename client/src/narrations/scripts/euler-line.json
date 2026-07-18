@@ -1,0 +1,160 @@
+{
+  "id": "euler-line",
+  "title": "欧拉线",
+  "subtitle": "三心共线的奇迹",
+  "difficulty": "advanced",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "认识三角形的重心、外心、垂心三个特殊点",
+    "理解这三心竟然总在同一条直线上",
+    "掌握重心把外心到垂心分成 1:2 的比例关系",
+    "通过拖动与切换感受欧拉线的普遍性"
+  ],
+  "prerequisites": [
+    "了解三角形基本性质",
+    "了解中线、垂线与垂直平分线"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "一个普通的三角形里，藏着好几个特别的中心。"
+        },
+        {
+          "id": "intro-2",
+          "text": "重心、外心、垂心，它们各自由完全不同的方式确定。"
+        },
+        {
+          "id": "intro-3",
+          "text": "可就在两百多年前，欧拉发现了一个惊人的秘密。"
+        }
+      ]
+    },
+    {
+      "id": "centers",
+      "type": "concept",
+      "title": "三个中心",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "重心是三条中线的交点，也是三顶点坐标的平均。"
+        },
+        {
+          "id": "def-2",
+          "text": "外心是三边垂直平分线的交点，到三个顶点距离相等。"
+        },
+        {
+          "id": "def-3",
+          "text": "垂心是三条高线的交点，来自顶点向对边作垂线。"
+        }
+      ]
+    },
+    {
+      "id": "collinear",
+      "type": "concept",
+      "title": "共线的发现",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "col-1",
+          "text": "把外心、重心、垂心同时画出来，你会发现它们排成一条直线。"
+        },
+        {
+          "id": "col-2",
+          "text": "这条直线就叫欧拉线，对几乎所有三角形都成立。"
+        },
+        {
+          "id": "col-3",
+          "text": "用叉积一算就知道，三点的有向面积恰好为零，确实共线。"
+        }
+      ]
+    },
+    {
+      "id": "ratio",
+      "type": "concept",
+      "title": "一比二的比例",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "rat-1",
+          "text": "更妙的是，重心不是随便落在这条线上的。"
+        },
+        {
+          "id": "rat-2",
+          "text": "它把外心到垂心的线段，精确地分成一比二。"
+        },
+        {
+          "id": "rat-3",
+          "text": "外心到重心是一份，重心到垂心正好是两份。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换不同的三角形，欧拉线始终穿过这三颗心。"
+        },
+        {
+          "id": "int-2",
+          "text": "试着靠近等边三角形，三心会重合，欧拉线随之退化消失。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "重心、外心、垂心，三个各自独立的中心竟然共线。"
+        },
+        {
+          "id": "sum-2",
+          "text": "这条欧拉线上，重心把外心到垂心分成整齐的一比二。"
+        },
+        {
+          "id": "sum-3",
+          "text": "简单三角形里的深刻秩序，正是数学之美，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

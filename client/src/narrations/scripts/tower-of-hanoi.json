@@ -1,0 +1,159 @@
+{
+  "id": "tower-of-hanoi",
+  "title": "汉诺塔",
+  "subtitle": "递归之美与指数增长",
+  "difficulty": "elementary",
+  "targetAge": "小学高年级以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解汉诺塔的移动规则",
+    "体会递归\"先移上面 n-1 个\"的分解思想",
+    "掌握最少步数 2ⁿ-1 的由来",
+    "感受指数增长的惊人速度"
+  ],
+  "prerequisites": [
+    "了解乘方的含义"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "梵天塔传说",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "传说远古的梵天神殿里，立着三根金刚石柱子。"
+        },
+        {
+          "id": "intro-2",
+          "text": "一根柱子上，从下到上套着六十四个由大到小的金盘。"
+        },
+        {
+          "id": "intro-3",
+          "text": "僧侣们要把整摞金盘搬到另一根柱子，规则很简单：一次只搬一个，大盘永远不能压在小盘上。"
+        }
+      ]
+    },
+    {
+      "id": "recursion",
+      "type": "concept",
+      "title": "递归的思想",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "rec-1",
+          "text": "面对很多盘子，聪明的办法是先假装最大的盘不存在。"
+        },
+        {
+          "id": "rec-2",
+          "text": "想办法把上面的 n 减 1 个盘子，借助中间柱先挪到旁边。"
+        },
+        {
+          "id": "rec-3",
+          "text": "再把最大的盘直接放到目标柱，最后把那 n 减 1 个盘搬过来盖上，这就是递归。"
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "type": "concept",
+      "title": "总共几步",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "step-1",
+          "text": "设搬 n 个盘要 T 步，那么搬 n 加 1 个，就得先搬走 T 步、放大盘一步、再搬回 T 步。"
+        },
+        {
+          "id": "step-2",
+          "text": "于是步数每次翻一倍还多一步，算下来正好是 2 的 n 次方减 1。"
+        },
+        {
+          "id": "step-3",
+          "text": "三个盘要七步，四个盘十五步，五个盘三十一步，一步都省不掉。"
+        }
+      ]
+    },
+    {
+      "id": "doom",
+      "type": "concept",
+      "title": "世界末日",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "doom-1",
+          "text": "传说僧侣搬完六十四个金盘之时，就是世界末日。"
+        },
+        {
+          "id": "doom-2",
+          "text": "可六十四个盘要 2 的 64 次方减 1 步，那是一千八百多亿亿次移动。"
+        },
+        {
+          "id": "doom-3",
+          "text": "哪怕每秒搬一个盘，也要五千八百多亿年，宇宙都还没这么老，尽可放心。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手试试",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "选择不同的盘子数量，看看最少步数如何成倍暴涨。"
+        },
+        {
+          "id": "int-2",
+          "text": "点下一步，一步步看盘子如何在三根柱子间腾挪归位。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "汉诺塔用\"先移 n 减 1 个\"的递归，把大问题拆成小问题。"
+        },
+        {
+          "id": "sum-2",
+          "text": "它的最少步数 2ⁿ-1，是理解指数增长最生动的例子。"
+        },
+        {
+          "id": "sum-3",
+          "text": "一个古老的传说，藏着深刻的数学，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

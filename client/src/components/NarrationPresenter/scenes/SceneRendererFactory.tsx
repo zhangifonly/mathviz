@@ -326,6 +326,31 @@ const JosephusProblemSceneRenderer = lazy(() => import('./JosephusProblem/Joseph
 const GrayCodeSceneRenderer = lazy(() => import('./GrayCode/GrayCodeSceneRenderer'))
 const LookAndSaySceneRenderer = lazy(() => import('./LookAndSay/LookAndSaySceneRenderer'))
 const HillCipherSceneRenderer = lazy(() => import('./HillCipher/HillCipherSceneRenderer'))
+const LuDecompositionSceneRenderer = lazy(() => import('./LuDecomposition/LuDecompositionSceneRenderer'))
+const QrDecompositionSceneRenderer = lazy(() => import('./QrDecomposition/QrDecompositionSceneRenderer'))
+const CholeskySceneRenderer = lazy(() => import('./Cholesky/CholeskySceneRenderer'))
+const PowerIterationSceneRenderer = lazy(() => import('./PowerIteration/PowerIterationSceneRenderer'))
+const PagerankSceneRenderer = lazy(() => import('./Pagerank/PagerankSceneRenderer'))
+const MarkovStationarySceneRenderer = lazy(() => import('./MarkovStationary/MarkovStationarySceneRenderer'))
+const CramersRuleSceneRenderer = lazy(() => import('./CramersRule/CramersRuleSceneRenderer'))
+const Rotation3dSceneRenderer = lazy(() => import('./Rotation3d/Rotation3dSceneRenderer'))
+const GibbsPhenomenonSceneRenderer = lazy(() => import('./GibbsPhenomenon/GibbsPhenomenonSceneRenderer'))
+const ChebyshevPolynomialsSceneRenderer = lazy(() => import('./ChebyshevPolynomials/ChebyshevPolynomialsSceneRenderer'))
+const LegendrePolynomialsSceneRenderer = lazy(() => import('./LegendrePolynomials/LegendrePolynomialsSceneRenderer'))
+const BesselFunctionsSceneRenderer = lazy(() => import('./BesselFunctions/BesselFunctionsSceneRenderer'))
+const GammaFunctionSceneRenderer = lazy(() => import('./GammaFunction/GammaFunctionSceneRenderer'))
+const FixedPointIterationSceneRenderer = lazy(() => import('./FixedPointIteration/FixedPointIterationSceneRenderer'))
+const SecantMethodSceneRenderer = lazy(() => import('./SecantMethod/SecantMethodSceneRenderer'))
+const BisectionMethodSceneRenderer = lazy(() => import('./BisectionMethod/BisectionMethodSceneRenderer'))
+const FftSceneRenderer = lazy(() => import('./Fft/FftSceneRenderer'))
+const AliasingSceneRenderer = lazy(() => import('./Aliasing/AliasingSceneRenderer'))
+const AutocorrelationSceneRenderer = lazy(() => import('./Autocorrelation/AutocorrelationSceneRenderer'))
+const ConvolutionSceneRenderer = lazy(() => import('./Convolution/ConvolutionSceneRenderer'))
+const NyquistSamplingSceneRenderer = lazy(() => import('./NyquistSampling/NyquistSamplingSceneRenderer'))
+const WindowingSceneRenderer = lazy(() => import('./Windowing/WindowingSceneRenderer'))
+const BSplineSceneRenderer = lazy(() => import('./BSpline/BSplineSceneRenderer'))
+const CatmullRomSceneRenderer = lazy(() => import('./CatmullRom/CatmullRomSceneRenderer'))
+const DiscreteCosineTransformSceneRenderer = lazy(() => import('./DiscreteCosineTransform/DiscreteCosineTransformSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -579,6 +604,31 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'gray-code': GrayCodeSceneRenderer,
   'look-and-say': LookAndSaySceneRenderer,
   'hill-cipher': HillCipherSceneRenderer,
+  'lu-decomposition': LuDecompositionSceneRenderer,
+  'qr-decomposition': QrDecompositionSceneRenderer,
+  'cholesky': CholeskySceneRenderer,
+  'power-iteration': PowerIterationSceneRenderer,
+  'pagerank': PagerankSceneRenderer,
+  'markov-stationary': MarkovStationarySceneRenderer,
+  'cramers-rule': CramersRuleSceneRenderer,
+  'rotation3d': Rotation3dSceneRenderer,
+  'gibbs-phenomenon': GibbsPhenomenonSceneRenderer,
+  'chebyshev-polynomials': ChebyshevPolynomialsSceneRenderer,
+  'legendre-polynomials': LegendrePolynomialsSceneRenderer,
+  'bessel-functions': BesselFunctionsSceneRenderer,
+  'gamma-function': GammaFunctionSceneRenderer,
+  'fixed-point-iteration': FixedPointIterationSceneRenderer,
+  'secant-method': SecantMethodSceneRenderer,
+  'bisection-method': BisectionMethodSceneRenderer,
+  'fft': FftSceneRenderer,
+  'aliasing': AliasingSceneRenderer,
+  'autocorrelation': AutocorrelationSceneRenderer,
+  'convolution': ConvolutionSceneRenderer,
+  'nyquist-sampling': NyquistSamplingSceneRenderer,
+  'windowing': WindowingSceneRenderer,
+  'b-spline': BSplineSceneRenderer,
+  'catmull-rom': CatmullRomSceneRenderer,
+  'discrete-cosine-transform': DiscreteCosineTransformSceneRenderer,
 }
 
 // 获取场景渲染器

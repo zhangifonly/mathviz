@@ -261,6 +261,31 @@ import { josephusProblemScenes, defaultJosephusProblemState } from './josephusPr
 import { grayCodeScenes, defaultGrayCodeState } from './grayCodeScenes'
 import { lookAndSayScenes, defaultLookAndSayState } from './lookAndSayScenes'
 import { hillCipherScenes, defaultHillCipherState } from './hillCipherScenes'
+import { luDecompositionScenes, defaultLuDecompositionState } from './luDecompositionScenes'
+import { qrDecompositionScenes, defaultQrDecompositionState } from './qrDecompositionScenes'
+import { choleskyScenes, defaultCholeskyState } from './choleskyScenes'
+import { powerIterationScenes, defaultPowerIterationState } from './powerIterationScenes'
+import { pagerankScenes, defaultPagerankState } from './pagerankScenes'
+import { markovStationaryScenes, defaultMarkovStationaryState } from './markovStationaryScenes'
+import { cramersRuleScenes, defaultCramersRuleState } from './cramersRuleScenes'
+import { rotation3dScenes, defaultRotation3dState } from './rotation3dScenes'
+import { gibbsPhenomenonScenes, defaultGibbsPhenomenonState } from './gibbsPhenomenonScenes'
+import { chebyshevPolynomialsScenes, defaultChebyshevPolynomialsState } from './chebyshevPolynomialsScenes'
+import { legendrePolynomialsScenes, defaultLegendrePolynomialsState } from './legendrePolynomialsScenes'
+import { besselFunctionsScenes, defaultBesselFunctionsState } from './besselFunctionsScenes'
+import { gammaFunctionScenes, defaultGammaFunctionState } from './gammaFunctionScenes'
+import { fixedPointIterationScenes, defaultFixedPointIterationState } from './fixedPointIterationScenes'
+import { secantMethodScenes, defaultSecantMethodState } from './secantMethodScenes'
+import { bisectionMethodScenes, defaultBisectionMethodState } from './bisectionMethodScenes'
+import { fftScenes, defaultFftState } from './fftScenes'
+import { aliasingScenes, defaultAliasingState } from './aliasingScenes'
+import { autocorrelationScenes, defaultAutocorrelationState } from './autocorrelationScenes'
+import { convolutionScenes, defaultConvolutionState } from './convolutionScenes'
+import { nyquistSamplingScenes, defaultNyquistSamplingState } from './nyquistSamplingScenes'
+import { windowingScenes, defaultWindowingState } from './windowingScenes'
+import { bSplineScenes, defaultBSplineState } from './bSplineScenes'
+import { catmullRomScenes, defaultCatmullRomState } from './catmullRomScenes'
+import { discreteCosineTransformScenes, defaultDiscreteCosineTransformState } from './discreteCosineTransformScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -535,6 +560,31 @@ const sceneConfigMap: Record<string, {
   'gray-code': { scenes: grayCodeScenes, defaultState: defaultGrayCodeState },
   'look-and-say': { scenes: lookAndSayScenes, defaultState: defaultLookAndSayState },
   'hill-cipher': { scenes: hillCipherScenes, defaultState: defaultHillCipherState },
+  'lu-decomposition': { scenes: luDecompositionScenes, defaultState: defaultLuDecompositionState },
+  'qr-decomposition': { scenes: qrDecompositionScenes, defaultState: defaultQrDecompositionState },
+  'cholesky': { scenes: choleskyScenes, defaultState: defaultCholeskyState },
+  'power-iteration': { scenes: powerIterationScenes, defaultState: defaultPowerIterationState },
+  'pagerank': { scenes: pagerankScenes, defaultState: defaultPagerankState },
+  'markov-stationary': { scenes: markovStationaryScenes, defaultState: defaultMarkovStationaryState },
+  'cramers-rule': { scenes: cramersRuleScenes, defaultState: defaultCramersRuleState },
+  'rotation3d': { scenes: rotation3dScenes, defaultState: defaultRotation3dState },
+  'gibbs-phenomenon': { scenes: gibbsPhenomenonScenes, defaultState: defaultGibbsPhenomenonState },
+  'chebyshev-polynomials': { scenes: chebyshevPolynomialsScenes, defaultState: defaultChebyshevPolynomialsState },
+  'legendre-polynomials': { scenes: legendrePolynomialsScenes, defaultState: defaultLegendrePolynomialsState },
+  'bessel-functions': { scenes: besselFunctionsScenes, defaultState: defaultBesselFunctionsState },
+  'gamma-function': { scenes: gammaFunctionScenes, defaultState: defaultGammaFunctionState },
+  'fixed-point-iteration': { scenes: fixedPointIterationScenes, defaultState: defaultFixedPointIterationState },
+  'secant-method': { scenes: secantMethodScenes, defaultState: defaultSecantMethodState },
+  'bisection-method': { scenes: bisectionMethodScenes, defaultState: defaultBisectionMethodState },
+  'fft': { scenes: fftScenes, defaultState: defaultFftState },
+  'aliasing': { scenes: aliasingScenes, defaultState: defaultAliasingState },
+  'autocorrelation': { scenes: autocorrelationScenes, defaultState: defaultAutocorrelationState },
+  'convolution': { scenes: convolutionScenes, defaultState: defaultConvolutionState },
+  'nyquist-sampling': { scenes: nyquistSamplingScenes, defaultState: defaultNyquistSamplingState },
+  'windowing': { scenes: windowingScenes, defaultState: defaultWindowingState },
+  'b-spline': { scenes: bSplineScenes, defaultState: defaultBSplineState },
+  'catmull-rom': { scenes: catmullRomScenes, defaultState: defaultCatmullRomState },
+  'discrete-cosine-transform': { scenes: discreteCosineTransformScenes, defaultState: defaultDiscreteCosineTransformState },
 }
 
 // 检测是否为移动设备
@@ -739,7 +789,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       // 新增2个待完成课程
       'laplace', 'permutation-combination',
       // 新增优美数学场景
-      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet', 'sieve-eratosthenes', 'magic-square', 'tower-of-hanoi', 'pigeonhole', 'triangle-centers', 'number-bases', 'pythagoras-tree', 'tessellation', 'perfect-numbers', 'collatz', 'prime-factorization', 'fibonacci-nature', 'dice-probability', 'nine-point-circle', 'euler-line', 'inversive-geometry', 'poincare-disk', 'spherical-geometry', 'convex-hull', 'delaunay-triangulation', 'apollonian-gasket', 'pick-theorem', 'reuleaux', 'circle-packing', 'steiner-chain', 'polynomial-roots', 'vieta-formulas', 'binomial-theorem', 'inverse-function', 'composite-function', 'partial-fractions', 'rational-asymptotes', 'piecewise-function', 'logarithm-spiral', 'function-transform', 'euclidean-algorithm', 'chinese-remainder', 'quadratic-residue', 'gaussian-integers', 'integer-partition', 'pell-equation', 'prime-counting', 'digital-root', 'epsilon-delta', 'mean-value-theorem', 'riemann-sum', 'solid-of-revolution', 'arc-length-curvature', 'series-convergence', 'improper-integral', 'determinant-geometry', 'kernel-image', 'orthogonal-projection', 'least-squares', 'quadratic-form', 'spectral-theorem', 'law-large-numbers', 'poisson-process', 'brownian-motion', 'monty-hall', 'birthday-paradox', 'hypothesis-testing', 'confidence-interval', 'max-likelihood', 'gaussian-mixture', 'hidden-markov', 'multiple-integral', 'line-integral', 'divergence-curl', 'stokes-theorem', 'partial-derivative', 'directional-derivative', 'jacobian', 'vector-calculus-field', 'laplacian', 'dijkstra', 'network-flow', 'graph-coloring', 'euler-hamilton-path', 'sorting-algorithms', 'bfs-dfs', 'dynamic-programming', 'divide-conquer', 'huffman-coding', 'catalan-numbers', 'generating-functions', 'minimum-spanning-tree', 'logistic-bifurcation', 'phase-portrait', 'limit-cycle', 'lotka-volterra', 'pendulum-phase', 'kepler-orbit', 'vibrating-string', 'poincare-section', 'euler-characteristic', 'torus-klein', 'perceptron', 'kmeans', 'neural-network-forward', 'koch-snowflake', 'sierpinski-triangle', 'sierpinski-carpet', 'dragon-curve', 'barnsley-fern', 'hilbert-curve', 'peano-curve', 'gosper-curve', 'levy-c-curve', 'newton-fractal', 'burning-ship', 'box-counting-dimension', 'cantor-set', 'quadtree', 'kd-tree', 'marching-squares', 'point-in-polygon', 'line-clipping', 'rotating-calipers', 'ear-clipping', 'a-star', 'stereographic-projection', 'hopf-fibration', 'hyperbolic-tiling', 'spirograph', 'euler-totient', 'mobius-function', 'farey-sequence', 'stern-brocot', 'primitive-root', 'fermat-little', 'wilson-theorem', 'fast-exponentiation', 'pythagorean-triples', 'sum-of-squares', 'happy-numbers', 'kaprekar', 'lucas-numbers', 'triangular-numbers', 'frobenius-coin', 'caesar-cipher', 'vigenere-cipher', 'rsa-cipher', 'diffie-hellman', 'one-time-pad', 'elliptic-curve', 'josephus-problem', 'gray-code', 'look-and-say', 'hill-cipher'
+      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet', 'sieve-eratosthenes', 'magic-square', 'tower-of-hanoi', 'pigeonhole', 'triangle-centers', 'number-bases', 'pythagoras-tree', 'tessellation', 'perfect-numbers', 'collatz', 'prime-factorization', 'fibonacci-nature', 'dice-probability', 'nine-point-circle', 'euler-line', 'inversive-geometry', 'poincare-disk', 'spherical-geometry', 'convex-hull', 'delaunay-triangulation', 'apollonian-gasket', 'pick-theorem', 'reuleaux', 'circle-packing', 'steiner-chain', 'polynomial-roots', 'vieta-formulas', 'binomial-theorem', 'inverse-function', 'composite-function', 'partial-fractions', 'rational-asymptotes', 'piecewise-function', 'logarithm-spiral', 'function-transform', 'euclidean-algorithm', 'chinese-remainder', 'quadratic-residue', 'gaussian-integers', 'integer-partition', 'pell-equation', 'prime-counting', 'digital-root', 'epsilon-delta', 'mean-value-theorem', 'riemann-sum', 'solid-of-revolution', 'arc-length-curvature', 'series-convergence', 'improper-integral', 'determinant-geometry', 'kernel-image', 'orthogonal-projection', 'least-squares', 'quadratic-form', 'spectral-theorem', 'law-large-numbers', 'poisson-process', 'brownian-motion', 'monty-hall', 'birthday-paradox', 'hypothesis-testing', 'confidence-interval', 'max-likelihood', 'gaussian-mixture', 'hidden-markov', 'multiple-integral', 'line-integral', 'divergence-curl', 'stokes-theorem', 'partial-derivative', 'directional-derivative', 'jacobian', 'vector-calculus-field', 'laplacian', 'dijkstra', 'network-flow', 'graph-coloring', 'euler-hamilton-path', 'sorting-algorithms', 'bfs-dfs', 'dynamic-programming', 'divide-conquer', 'huffman-coding', 'catalan-numbers', 'generating-functions', 'minimum-spanning-tree', 'logistic-bifurcation', 'phase-portrait', 'limit-cycle', 'lotka-volterra', 'pendulum-phase', 'kepler-orbit', 'vibrating-string', 'poincare-section', 'euler-characteristic', 'torus-klein', 'perceptron', 'kmeans', 'neural-network-forward', 'koch-snowflake', 'sierpinski-triangle', 'sierpinski-carpet', 'dragon-curve', 'barnsley-fern', 'hilbert-curve', 'peano-curve', 'gosper-curve', 'levy-c-curve', 'newton-fractal', 'burning-ship', 'box-counting-dimension', 'cantor-set', 'quadtree', 'kd-tree', 'marching-squares', 'point-in-polygon', 'line-clipping', 'rotating-calipers', 'ear-clipping', 'a-star', 'stereographic-projection', 'hopf-fibration', 'hyperbolic-tiling', 'spirograph', 'euler-totient', 'mobius-function', 'farey-sequence', 'stern-brocot', 'primitive-root', 'fermat-little', 'wilson-theorem', 'fast-exponentiation', 'pythagorean-triples', 'sum-of-squares', 'happy-numbers', 'kaprekar', 'lucas-numbers', 'triangular-numbers', 'frobenius-coin', 'caesar-cipher', 'vigenere-cipher', 'rsa-cipher', 'diffie-hellman', 'one-time-pad', 'elliptic-curve', 'josephus-problem', 'gray-code', 'look-and-say', 'hill-cipher', 'lu-decomposition', 'qr-decomposition', 'cholesky', 'power-iteration', 'pagerank', 'markov-stationary', 'cramers-rule', 'rotation3d', 'gibbs-phenomenon', 'chebyshev-polynomials', 'legendre-polynomials', 'bessel-functions', 'gamma-function', 'fixed-point-iteration', 'secant-method', 'bisection-method', 'fft', 'aliasing', 'autocorrelation', 'convolution', 'nyquist-sampling', 'windowing', 'b-spline', 'catmull-rom', 'discrete-cosine-transform'
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

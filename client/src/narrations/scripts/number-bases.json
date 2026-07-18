@@ -1,0 +1,156 @@
+{
+  "id": "number-bases",
+  "title": "进制转换",
+  "subtitle": "位值制的本质",
+  "difficulty": "beginner",
+  "targetAge": "初中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解位值制中每一位的权重是进制的幂",
+    "掌握十进制与二、八、十六进制的互相转换",
+    "认识二进制为何是计算机的语言",
+    "体会十六进制作为紧凑记法的用途"
+  ],
+  "prerequisites": [
+    "了解整数",
+    "了解乘方"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "我们从小数数，都是十个一数，满十就进一位。"
+        },
+        {
+          "id": "intro-2",
+          "text": "为什么是十？也许只因为我们有十根手指。"
+        },
+        {
+          "id": "intro-3",
+          "text": "数字 365，其实是三个一百、六个十、加五个一。"
+        }
+      ]
+    },
+    {
+      "id": "placevalue",
+      "type": "concept",
+      "title": "位值制",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "这就是位值制：每一位的权重，是进制的一个幂。"
+        },
+        {
+          "id": "def-2",
+          "text": "十进制里，从右往左依次是一、十、百、千，也就是十的零次、一次、二次方。"
+        },
+        {
+          "id": "def-3",
+          "text": "换一个进制，规则不变，只是把底数从十换成别的数。"
+        }
+      ]
+    },
+    {
+      "id": "binary",
+      "type": "concept",
+      "title": "二进制",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "bin-1",
+          "text": "计算机只认两种状态，开与关，于是用二进制，逢二进一。"
+        },
+        {
+          "id": "bin-2",
+          "text": "每一位只有零和一，权重是二的幂：一、二、四、八、十六。"
+        },
+        {
+          "id": "bin-3",
+          "text": "比如 1101，就是八加四加一，正好等于十进制的十三。"
+        }
+      ]
+    },
+    {
+      "id": "hex",
+      "type": "concept",
+      "title": "十六进制",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "hex-1",
+          "text": "二进制太长，于是人们用十六进制来压缩它。"
+        },
+        {
+          "id": "hex-2",
+          "text": "每四个二进制位，正好对应一个十六进制符号，从零到 F。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "输入一个数字，看它在二、八、十、十六进制下如何展开。"
+        },
+        {
+          "id": "int-2",
+          "text": "注意同一个数，进制越小，位数就越多。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "进制只是选择一个底数，位值制的规则始终如一。"
+        },
+        {
+          "id": "sum-2",
+          "text": "每一位的权重都是底数的幂，各位相加就还原出原数。"
+        },
+        {
+          "id": "sum-3",
+          "text": "理解了位值，你就读懂了机器的语言，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}
