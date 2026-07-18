@@ -1,0 +1,123 @@
+{
+  "script_id": "steiner-chain",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "steiner-chain",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/steiner-chain/intro-intro-1.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "给你一个大圆，里面再套一个小圆。"
+    },
+    {
+      "script_id": "steiner-chain",
+      "section_id": "tangent",
+      "line_id": "def-1",
+      "filename": "tangent-def-1.mp3",
+      "path": "audio/narrations/steiner-chain/tangent-def-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "每个链圆同时内切外圆、外切内圆，被牢牢卡在环形区域里。"
+    },
+    {
+      "script_id": "steiner-chain",
+      "section_id": "tangent",
+      "line_id": "def-2",
+      "filename": "tangent-def-2.mp3",
+      "path": "audio/narrations/steiner-chain/tangent-def-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "相邻两个链圆还要彼此外切，一环扣一环地排下去。"
+    },
+    {
+      "script_id": "steiner-chain",
+      "section_id": "tangent",
+      "line_id": "def-3",
+      "filename": "tangent-def-3.mp3",
+      "path": "audio/narrations/steiner-chain/tangent-def-3.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "要正好绕一圈回到起点，圆的个数和两圆大小必须精确配合。"
+    },
+    {
+      "script_id": "steiner-chain",
+      "section_id": "porism",
+      "line_id": "por-3",
+      "filename": "porism-por-3.mp3",
+      "path": "audio/narrations/steiner-chain/porism-por-3.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "于是整条链可以自由地转动，起点放在哪里都照样严丝合缝。"
+    },
+    {
+      "script_id": "steiner-chain",
+      "section_id": "inversion",
+      "line_id": "inv-1",
+      "filename": "inversion-inv-1.mp3",
+      "path": "audio/narrations/steiner-chain/inversion-inv-1.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "一般的两个圆并不同心，怎么造出它们之间的链呢？"
+    },
+    {
+      "script_id": "steiner-chain",
+      "section_id": "inversion",
+      "line_id": "inv-3",
+      "filename": "inversion-inv-3.mp3",
+      "path": "audio/narrations/steiner-chain/inversion-inv-3.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "先在同心环里排好链，再一次反演，就得到任意两圆间的斯坦纳链。"
+    },
+    {
+      "script_id": "steiner-chain",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/steiner-chain/interaction-int-2.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "让链条转起来，体会它无论怎么旋转都始终闭合。"
+    },
+    {
+      "script_id": "steiner-chain",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/steiner-chain/summary-sum-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "斯坦纳链是夹在两圆之间、首尾相切的一圈圆。"
+    },
+    {
+      "script_id": "steiner-chain",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/steiner-chain/summary-sum-2.mp3",
+      "duration": 2.59,
+      "size": 41472,
+      "text": "闭合条件由半径决定，一旦闭合便能自由旋转，这就是斯坦纳定理。"
+    },
+    {
+      "script_id": "steiner-chain",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/steiner-chain/summary-sum-3.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "圆反演把简单的同心链变成千姿百态的一般链，我们下次再见！"
+    }
+  ],
+  "total_duration": 23.24,
+  "total_size": 371808,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "script_id": "poincare-disk",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "poincare-disk",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.97,
+      "size": 47520,
+      "text": "两千年来，人们都相信欧几里得的第五公设：过直线外一点，只能作一条平行线。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "它太啰嗦，数学家们想用其他公设证明它，却屡屡失败。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "直到有人大胆假设它不成立，竟然生出了一片自洽的新几何，双曲几何。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "model",
+      "line_id": "def-1",
+      "filename": "model-def-1.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/model-def-1.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "庞加莱把整个双曲平面，装进了一个小小的单位圆盘里。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "model",
+      "line_id": "def-2",
+      "filename": "model-def-2.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/model-def-2.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "圆盘的边界，代表无穷远，你永远走不到那条边。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "model",
+      "line_id": "def-3",
+      "filename": "model-def-3.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/model-def-3.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "越靠近边界，同样大小的图形看起来越小，其实它们完全全等。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "geodesic",
+      "line_id": "geo-1",
+      "filename": "geodesic-geo-1.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/geodesic-geo-1.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "在这个世界里，最短路径不再是直线，而是垂直于边界的圆弧。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "geodesic",
+      "line_id": "geo-2",
+      "filename": "geodesic-geo-2.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/geodesic-geo-2.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "只有恰好穿过圆心的那条，才退化成一条笔直的直径。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "geodesic",
+      "line_id": "geo-3",
+      "filename": "geodesic-geo-3.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/geodesic-geo-3.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "这些弧线，就是双曲世界里真正的直线。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "parallel",
+      "line_id": "par-1",
+      "filename": "parallel-par-1.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/parallel-par-1.mp3",
+      "duration": 2.65,
+      "size": 42336,
+      "text": "给定一条测地线和线外一点，过这点能画出无穷多条都不相交的测地线。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "parallel",
+      "line_id": "par-2",
+      "filename": "parallel-par-2.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/parallel-par-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "平行线不再唯一，第五公设在这里彻底失效。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "拖动两个红点，观察连接它们的测地线如何弯曲。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "切换不同的镶嵌，看正多边形如何铺满整个双曲平面。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "庞加莱圆盘把无限的双曲平面，收进一个有限的圆里。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "测地线是垂直边界的弧，平行线有无穷多条。"
+    },
+    {
+      "script_id": "poincare-disk",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/poincare-disk/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "推翻一条公设，竟打开一个全新的宇宙，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.519999999999996,
+  "total_size": 536256
+}

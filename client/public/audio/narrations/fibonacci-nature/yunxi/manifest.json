@@ -1,0 +1,79 @@
+{
+  "script_id": "fibonacci-nature",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/fibonacci-nature/yunxi/intro-intro-3.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "藏在背后的，是一个古老的数列和一个神奇的角度。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/fibonacci-nature/yunxi/define-def-2.mp3",
+      "duration": 2.67,
+      "size": 42768,
+      "text": "于是得到一、一、二、三、五、八、十三，越滚越大。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "golden",
+      "line_id": "gold-1",
+      "filename": "golden-gold-1.mp3",
+      "path": "audio/narrations/fibonacci-nature/yunxi/golden-gold-1.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "把相邻两项相除，比值会越来越接近一点六一八。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "flower",
+      "line_id": "flo-1",
+      "filename": "flower-flo-1.mp3",
+      "path": "audio/narrations/fibonacci-nature/yunxi/flower-flo-1.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "每颗种子比前一颗多转一个黄金角，再往外挪一点。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/fibonacci-nature/yunxi/interaction-int-1.mp3",
+      "duration": 1.5,
+      "size": 24048,
+      "text": "试着把发散角从黄金角一点点调开。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/fibonacci-nature/yunxi/interaction-int-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "哪怕只差零点几度，整齐的螺旋就散成了杂乱的条纹。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/fibonacci-nature/yunxi/summary-sum-3.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "一个简单的数列，写出了大自然的美，我们下次再见！"
+    }
+  ],
+  "total_duration": 13.59,
+  "total_size": 217584
+}

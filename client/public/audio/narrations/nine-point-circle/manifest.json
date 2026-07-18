@@ -1,0 +1,83 @@
+{
+  "script_id": "nine-point-circle",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "foot",
+      "line_id": "def-3",
+      "filename": "foot-def-3.mp3",
+      "path": "audio/narrations/nine-point-circle/foot-def-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "再从每个顶点向对边作高，高与对边相交的点叫垂足。"
+    },
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "foot",
+      "line_id": "def-4",
+      "filename": "foot-def-4.mp3",
+      "path": "audio/narrations/nine-point-circle/foot-def-4.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "三条高交于一点,称为垂心,而三个垂足又是三个新点。"
+    },
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "ortho",
+      "line_id": "def-5",
+      "filename": "ortho-def-5.mp3",
+      "path": "audio/narrations/nine-point-circle/ortho-def-5.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "最后连接垂心与三个顶点，取这三条线段的中点。"
+    },
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "ortho",
+      "line_id": "def-6",
+      "filename": "ortho-def-6.mp3",
+      "path": "audio/narrations/nine-point-circle/ortho-def-6.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "三个中点、三个垂足、三个边中点，一共正好九个点。"
+    },
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "interaction",
+      "line_id": "int-3",
+      "filename": "interaction-int-3.mp3",
+      "path": "audio/narrations/nine-point-circle/interaction-int-3.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "切换不同的三角形，你会看到九点圆始终稳稳地穿过它们。"
+    },
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/nine-point-circle/summary-sum-2.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "无论三角形如何变化，这份优雅的秩序都不会改变。"
+    },
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/nine-point-circle/summary-sum-3.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "这就是几何深处的和谐之美，我们下次再见！"
+    }
+  ],
+  "total_duration": 14.150000000000002,
+  "total_size": 226224,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

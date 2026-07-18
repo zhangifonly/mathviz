@@ -1,0 +1,179 @@
+{
+  "script_id": "tower-of-hanoi",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "传说远古的梵天神殿里，立着三根金刚石柱子。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "一根柱子上，从下到上套着六十四个由大到小的金盘。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/intro-intro-3.mp3",
+      "duration": 3.45,
+      "size": 55152,
+      "text": "僧侣们要把整摞金盘搬到另一根柱子，规则很简单：一次只搬一个，大盘永远不能压在小盘上。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "recursion",
+      "line_id": "rec-1",
+      "filename": "recursion-rec-1.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/recursion-rec-1.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "面对很多盘子，聪明的办法是先假装最大的盘不存在。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "recursion",
+      "line_id": "rec-2",
+      "filename": "recursion-rec-2.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/recursion-rec-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "想办法把上面的 n 减 1 个盘子，借助中间柱先挪到旁边。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "recursion",
+      "line_id": "rec-3",
+      "filename": "recursion-rec-3.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/recursion-rec-3.mp3",
+      "duration": 2.74,
+      "size": 43776,
+      "text": "再把最大的盘直接放到目标柱，最后把那 n 减 1 个盘搬过来盖上，这就是递归。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "steps",
+      "line_id": "step-1",
+      "filename": "steps-step-1.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/steps-step-1.mp3",
+      "duration": 3.01,
+      "size": 48096,
+      "text": "设搬 n 个盘要 T 步，那么搬 n 加 1 个，就得先搬走 T 步、放大盘一步、再搬回 T 步。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "steps",
+      "line_id": "step-2",
+      "filename": "steps-step-2.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/steps-step-2.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "于是步数每次翻一倍还多一步，算下来正好是 2 的 n 次方减 1。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "steps",
+      "line_id": "step-3",
+      "filename": "steps-step-3.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/steps-step-3.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "三个盘要七步，四个盘十五步，五个盘三十一步，一步都省不掉。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "doom",
+      "line_id": "doom-1",
+      "filename": "doom-doom-1.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/doom-doom-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "传说僧侣搬完六十四个金盘之时，就是世界末日。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "doom",
+      "line_id": "doom-2",
+      "filename": "doom-doom-2.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/doom-doom-2.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "可六十四个盘要 2 的 64 次方减 1 步，那是一千八百多亿亿次移动。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "doom",
+      "line_id": "doom-3",
+      "filename": "doom-doom-3.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/doom-doom-3.mp3",
+      "duration": 2.52,
+      "size": 40320,
+      "text": "哪怕每秒搬一个盘，也要五千八百多亿年，宇宙都还没这么老，尽可放心。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "选择不同的盘子数量，看看最少步数如何成倍暴涨。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "点下一步，一步步看盘子如何在三根柱子间腾挪归位。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "汉诺塔用\"先移 n 减 1 个\"的递归，把大问题拆成小问题。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "它的最少步数 2ⁿ-1，是理解指数增长最生动的例子。"
+    },
+    {
+      "script_id": "tower-of-hanoi",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/tower-of-hanoi/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "一个古老的传说，藏着深刻的数学，我们下次再见！"
+    }
+  ],
+  "total_duration": 38.489999999999995,
+  "total_size": 615888
+}

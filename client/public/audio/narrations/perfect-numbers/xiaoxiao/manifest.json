@@ -1,0 +1,169 @@
+{
+  "script_id": "perfect-numbers",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "数字 6 有个神奇的秘密：它的真因数是 1、2、3。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "把它们加起来，1 加 2 加 3，正好又等于 6。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "一个数刚好等于自己各部分之和，古人称它为完美。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/define-def-1.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "真因数，就是一个数除自身以外的所有因数。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/define-def-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "如果真因数之和恰好等于这个数，它就是完全数。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/define-def-3.mp3",
+      "duration": 2.77,
+      "size": 44352,
+      "text": "6 之后的完全数是 28，接着是 496 和 8128，越来越稀少。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "balance",
+      "line_id": "bal-1",
+      "filename": "balance-bal-1.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/balance-bal-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "如果真因数之和大于自身，我们叫它盈数，比如 12。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "balance",
+      "line_id": "bal-2",
+      "filename": "balance-bal-2.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/balance-bal-2.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "如果真因数之和小于自身，就叫亏数，比如 8。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "balance",
+      "line_id": "bal-3",
+      "filename": "balance-bal-3.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/balance-bal-3.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "完全数恰好卡在盈与亏之间，稀有而平衡。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "amicable",
+      "line_id": "ami-1",
+      "filename": "amicable-ami-1.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/amicable-ami-1.mp3",
+      "duration": 3.03,
+      "size": 48528,
+      "text": "220 的真因数加起来等于 284，而 284 的真因数又加回 220。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "amicable",
+      "line_id": "ami-2",
+      "filename": "amicable-ami-2.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/amicable-ami-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "这对彼此成就的数字，被称为亲和数，象征友谊。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "输入任意一个数字，看看它的真因数怎么分解。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "再看看它到底是完全数、盈数还是亏数。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "完全数等于自己真因数之和，盈数偏多，亏数偏少。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "亲和数则互为对方真因数之和，成双成对。"
+    },
+    {
+      "script_id": "perfect-numbers",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/perfect-numbers/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "数字里藏着如此和谐的秩序，我们下次再见！"
+    }
+  ],
+  "total_duration": 31.359999999999996,
+  "total_size": 501696
+}

@@ -1,0 +1,179 @@
+{
+  "script_id": "apollonian-gasket",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "在一个大圆里，塞进两个相切的圆，它们之间还留着弯弯的缝隙。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "每一条缝隙，恰好又能塞进一个同时相切三边的小圆。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.5,
+      "size": 40032,
+      "text": "如此不断填下去，就得到阿波罗尼垫片，一件由圆织成的分形艺术品。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "tangent",
+      "line_id": "tan-1",
+      "filename": "tangent-tan-1.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/tangent-tan-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "两个圆相切，是指它们恰好碰在一点，不重叠也不分离。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "tangent",
+      "line_id": "tan-2",
+      "filename": "tangent-tan-2.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/tangent-tan-2.mp3",
+      "duration": 2.65,
+      "size": 42336,
+      "text": "我们用曲率来描述圆的弯曲程度，曲率等于半径的倒数，圆越小曲率越大。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "tangent",
+      "line_id": "tan-3",
+      "filename": "tangent-tan-3.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/tangent-tan-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "包住其它圆的大外圆，它的弯曲方向相反，曲率取负号。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "theorem",
+      "line_id": "thm-1",
+      "filename": "theorem-thm-1.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/theorem-thm-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "当四个圆两两相切时，它们的曲率满足一条优雅的等式。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "theorem",
+      "line_id": "thm-2",
+      "filename": "theorem-thm-2.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/theorem-thm-2.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "四个曲率之和的平方，等于各曲率平方和的两倍。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "theorem",
+      "line_id": "thm-3",
+      "filename": "theorem-thm-3.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/theorem-thm-3.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "知道三个圆，就能解出第四个圆的曲率，进而定出圆心，填满缝隙。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "fractal",
+      "line_id": "fra-1",
+      "filename": "fractal-fra-1.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/fractal-fra-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "每填入一个新圆，就又制造出三个更小的曲边缝隙。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "fractal",
+      "line_id": "fra-2",
+      "filename": "fractal-fra-2.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/fractal-fra-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "对每个缝隙重复同样的规则，圆越来越小，越来越密。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "fractal",
+      "line_id": "fra-3",
+      "filename": "fractal-fra-3.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/fractal-fra-3.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "这种自我重复的结构就是分形，垫片的维数约为一点三零五。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "调整递归深度，看缝隙如何被越来越小的圆逐层填满。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "切换填充与描边，感受相切圆嵌套出的层次与秩序。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "阿波罗尼垫片用相切圆一层层填满缝隙，生成无穷分形。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "笛卡尔圆定理是它的引擎，一条平方等式就定住了每个圆。"
+    },
+    {
+      "script_id": "apollonian-gasket",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/apollonian-gasket/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "简单的规则，无穷的圆，画出数学的秩序之美，我们下次再见！"
+    }
+  ],
+  "total_duration": 36.839999999999996,
+  "total_size": 589392
+}

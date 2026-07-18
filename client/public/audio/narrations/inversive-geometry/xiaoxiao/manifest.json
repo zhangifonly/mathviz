@@ -1,0 +1,189 @@
+{
+  "script_id": "inversive-geometry",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "我们都照过镜子，镜子把远近前后对调，却保留了形状。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "数学里也有一面奇妙的镜子，它以一个圆为界。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "这面圆镜能把直线弯成圆，把圆展成直线。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/intro-intro-4.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "这就是反演变换，镜像思想在几何中的深刻推广。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/define-def-1.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "取定一个反演圆，圆心为 O，半径为 R。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/define-def-2.mp3",
+      "duration": 2.87,
+      "size": 45936,
+      "text": "任意一点 P，沿射线 O P 找它的像 P 撇，要求 O P 撇 乘 O P 等于 R 方。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/define-def-3.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "离圆心越近的点反演后被推得越远，圆心本身被送到无穷远。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "line-to-circle",
+      "line_id": "l2c-1",
+      "filename": "line-to-circle-l2c-1.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/line-to-circle-l2c-1.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "看一条不经过圆心 O 的直线，把它上面每个点都做反演。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "line-to-circle",
+      "line_id": "l2c-2",
+      "filename": "line-to-circle-l2c-2.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/line-to-circle-l2c-2.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "这些像点连起来，竟然弯成了一个恰好经过 O 的圆。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "line-to-circle",
+      "line_id": "l2c-3",
+      "filename": "line-to-circle-l2c-3.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/line-to-circle-l2c-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "反过来，经过 O 的圆反演回去，又变回原来那条直线。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "circle-to-circle",
+      "line_id": "c2c-1",
+      "filename": "circle-to-circle-c2c-1.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/circle-to-circle-c2c-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "再看一个不经过 O 的圆，它反演之后仍然是一个圆。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "circle-to-circle",
+      "line_id": "c2c-2",
+      "filename": "circle-to-circle-c2c-2.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/circle-to-circle-c2c-2.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "于是我们把直线看成半径无穷大的圆，圆与直线合称广义圆。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "circle-to-circle",
+      "line_id": "c2c-3",
+      "filename": "circle-to-circle-c2c-3.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/circle-to-circle-c2c-3.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "反演永远把广义圆映成广义圆，而且保持相交的角度不变。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "拖动改变反演半径 R，观察每个图形的像如何随之伸缩。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "打开或关闭反演像，对照原形与镜像，体会直线与圆的互换。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "反演以 O P 撇 乘 O P 等于 R 方，把平面翻里作外。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "过中心的圆变直线，不过中心的圆还是圆，圆与直线从此统一。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/inversive-geometry/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "一面圆形的镜子，照出几何的深层秩序，我们下次再见！"
+    }
+  ],
+  "total_duration": 37.080000000000005,
+  "total_size": 593568
+}
