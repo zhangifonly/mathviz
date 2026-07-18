@@ -131,6 +131,31 @@ export { pickTheoremNarration } from './scripts/pick-theorem'
 export { reuleauxNarration } from './scripts/reuleaux'
 export { circlePackingNarration } from './scripts/circle-packing'
 export { steinerChainNarration } from './scripts/steiner-chain'
+export { polynomialRootsNarration } from './scripts/polynomial-roots'
+export { vietaFormulasNarration } from './scripts/vieta-formulas'
+export { binomialTheoremNarration } from './scripts/binomial-theorem'
+export { inverseFunctionNarration } from './scripts/inverse-function'
+export { compositeFunctionNarration } from './scripts/composite-function'
+export { partialFractionsNarration } from './scripts/partial-fractions'
+export { rationalAsymptotesNarration } from './scripts/rational-asymptotes'
+export { piecewiseFunctionNarration } from './scripts/piecewise-function'
+export { logarithmSpiralNarration } from './scripts/logarithm-spiral'
+export { functionTransformNarration } from './scripts/function-transform'
+export { euclideanAlgorithmNarration } from './scripts/euclidean-algorithm'
+export { chineseRemainderNarration } from './scripts/chinese-remainder'
+export { quadraticResidueNarration } from './scripts/quadratic-residue'
+export { gaussianIntegersNarration } from './scripts/gaussian-integers'
+export { integerPartitionNarration } from './scripts/integer-partition'
+export { pellEquationNarration } from './scripts/pell-equation'
+export { primeCountingNarration } from './scripts/prime-counting'
+export { digitalRootNarration } from './scripts/digital-root'
+export { epsilonDeltaNarration } from './scripts/epsilon-delta'
+export { meanValueTheoremNarration } from './scripts/mean-value-theorem'
+export { riemannSumNarration } from './scripts/riemann-sum'
+export { solidOfRevolutionNarration } from './scripts/solid-of-revolution'
+export { arcLengthCurvatureNarration } from './scripts/arc-length-curvature'
+export { seriesConvergenceNarration } from './scripts/series-convergence'
+export { improperIntegralNarration } from './scripts/improper-integral'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -254,6 +279,31 @@ import { pickTheoremNarration } from './scripts/pick-theorem'
 import { reuleauxNarration } from './scripts/reuleaux'
 import { circlePackingNarration } from './scripts/circle-packing'
 import { steinerChainNarration } from './scripts/steiner-chain'
+import { polynomialRootsNarration } from './scripts/polynomial-roots'
+import { vietaFormulasNarration } from './scripts/vieta-formulas'
+import { binomialTheoremNarration } from './scripts/binomial-theorem'
+import { inverseFunctionNarration } from './scripts/inverse-function'
+import { compositeFunctionNarration } from './scripts/composite-function'
+import { partialFractionsNarration } from './scripts/partial-fractions'
+import { rationalAsymptotesNarration } from './scripts/rational-asymptotes'
+import { piecewiseFunctionNarration } from './scripts/piecewise-function'
+import { logarithmSpiralNarration } from './scripts/logarithm-spiral'
+import { functionTransformNarration } from './scripts/function-transform'
+import { euclideanAlgorithmNarration } from './scripts/euclidean-algorithm'
+import { chineseRemainderNarration } from './scripts/chinese-remainder'
+import { quadraticResidueNarration } from './scripts/quadratic-residue'
+import { gaussianIntegersNarration } from './scripts/gaussian-integers'
+import { integerPartitionNarration } from './scripts/integer-partition'
+import { pellEquationNarration } from './scripts/pell-equation'
+import { primeCountingNarration } from './scripts/prime-counting'
+import { digitalRootNarration } from './scripts/digital-root'
+import { epsilonDeltaNarration } from './scripts/epsilon-delta'
+import { meanValueTheoremNarration } from './scripts/mean-value-theorem'
+import { riemannSumNarration } from './scripts/riemann-sum'
+import { solidOfRevolutionNarration } from './scripts/solid-of-revolution'
+import { arcLengthCurvatureNarration } from './scripts/arc-length-curvature'
+import { seriesConvergenceNarration } from './scripts/series-convergence'
+import { improperIntegralNarration } from './scripts/improper-integral'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -381,6 +431,31 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'reuleaux': reuleauxNarration,
   'circle-packing': circlePackingNarration,
   'steiner-chain': steinerChainNarration,
+  'polynomial-roots': polynomialRootsNarration,
+  'vieta-formulas': vietaFormulasNarration,
+  'binomial-theorem': binomialTheoremNarration,
+  'inverse-function': inverseFunctionNarration,
+  'composite-function': compositeFunctionNarration,
+  'partial-fractions': partialFractionsNarration,
+  'rational-asymptotes': rationalAsymptotesNarration,
+  'piecewise-function': piecewiseFunctionNarration,
+  'logarithm-spiral': logarithmSpiralNarration,
+  'function-transform': functionTransformNarration,
+  'euclidean-algorithm': euclideanAlgorithmNarration,
+  'chinese-remainder': chineseRemainderNarration,
+  'quadratic-residue': quadraticResidueNarration,
+  'gaussian-integers': gaussianIntegersNarration,
+  'integer-partition': integerPartitionNarration,
+  'pell-equation': pellEquationNarration,
+  'prime-counting': primeCountingNarration,
+  'digital-root': digitalRootNarration,
+  'epsilon-delta': epsilonDeltaNarration,
+  'mean-value-theorem': meanValueTheoremNarration,
+  'riemann-sum': riemannSumNarration,
+  'solid-of-revolution': solidOfRevolutionNarration,
+  'arc-length-curvature': arcLengthCurvatureNarration,
+  'series-convergence': seriesConvergenceNarration,
+  'improper-integral': improperIntegralNarration,
 }
 
 // 获取稿件

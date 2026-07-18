@@ -136,6 +136,31 @@ import { pickTheoremScenes, defaultPickTheoremState } from './pickTheoremScenes'
 import { reuleauxScenes, defaultReuleauxState } from './reuleauxScenes'
 import { circlePackingScenes, defaultCirclePackingState } from './circlePackingScenes'
 import { steinerChainScenes, defaultSteinerChainState } from './steinerChainScenes'
+import { polynomialRootsScenes, defaultPolynomialRootsState } from './polynomialRootsScenes'
+import { vietaFormulasScenes, defaultVietaFormulasState } from './vietaFormulasScenes'
+import { binomialTheoremScenes, defaultBinomialTheoremState } from './binomialTheoremScenes'
+import { inverseFunctionScenes, defaultInverseFunctionState } from './inverseFunctionScenes'
+import { compositeFunctionScenes, defaultCompositeFunctionState } from './compositeFunctionScenes'
+import { partialFractionsScenes, defaultPartialFractionsState } from './partialFractionsScenes'
+import { rationalAsymptotesScenes, defaultRationalAsymptotesState } from './rationalAsymptotesScenes'
+import { piecewiseFunctionScenes, defaultPiecewiseFunctionState } from './piecewiseFunctionScenes'
+import { logarithmSpiralScenes, defaultLogarithmSpiralState } from './logarithmSpiralScenes'
+import { functionTransformScenes, defaultFunctionTransformState } from './functionTransformScenes'
+import { euclideanAlgorithmScenes, defaultEuclideanAlgorithmState } from './euclideanAlgorithmScenes'
+import { chineseRemainderScenes, defaultChineseRemainderState } from './chineseRemainderScenes'
+import { quadraticResidueScenes, defaultQuadraticResidueState } from './quadraticResidueScenes'
+import { gaussianIntegersScenes, defaultGaussianIntegersState } from './gaussianIntegersScenes'
+import { integerPartitionScenes, defaultIntegerPartitionState } from './integerPartitionScenes'
+import { pellEquationScenes, defaultPellEquationState } from './pellEquationScenes'
+import { primeCountingScenes, defaultPrimeCountingState } from './primeCountingScenes'
+import { digitalRootScenes, defaultDigitalRootState } from './digitalRootScenes'
+import { epsilonDeltaScenes, defaultEpsilonDeltaState } from './epsilonDeltaScenes'
+import { meanValueTheoremScenes, defaultMeanValueTheoremState } from './meanValueTheoremScenes'
+import { riemannSumScenes, defaultRiemannSumState } from './riemannSumScenes'
+import { solidOfRevolutionScenes, defaultSolidOfRevolutionState } from './solidOfRevolutionScenes'
+import { arcLengthCurvatureScenes, defaultArcLengthCurvatureState } from './arcLengthCurvatureScenes'
+import { seriesConvergenceScenes, defaultSeriesConvergenceState } from './seriesConvergenceScenes'
+import { improperIntegralScenes, defaultImproperIntegralState } from './improperIntegralScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -285,6 +310,31 @@ const sceneConfigMap: Record<string, {
   'reuleaux': { scenes: reuleauxScenes, defaultState: defaultReuleauxState },
   'circle-packing': { scenes: circlePackingScenes, defaultState: defaultCirclePackingState },
   'steiner-chain': { scenes: steinerChainScenes, defaultState: defaultSteinerChainState },
+  'polynomial-roots': { scenes: polynomialRootsScenes, defaultState: defaultPolynomialRootsState },
+  'vieta-formulas': { scenes: vietaFormulasScenes, defaultState: defaultVietaFormulasState },
+  'binomial-theorem': { scenes: binomialTheoremScenes, defaultState: defaultBinomialTheoremState },
+  'inverse-function': { scenes: inverseFunctionScenes, defaultState: defaultInverseFunctionState },
+  'composite-function': { scenes: compositeFunctionScenes, defaultState: defaultCompositeFunctionState },
+  'partial-fractions': { scenes: partialFractionsScenes, defaultState: defaultPartialFractionsState },
+  'rational-asymptotes': { scenes: rationalAsymptotesScenes, defaultState: defaultRationalAsymptotesState },
+  'piecewise-function': { scenes: piecewiseFunctionScenes, defaultState: defaultPiecewiseFunctionState },
+  'logarithm-spiral': { scenes: logarithmSpiralScenes, defaultState: defaultLogarithmSpiralState },
+  'function-transform': { scenes: functionTransformScenes, defaultState: defaultFunctionTransformState },
+  'euclidean-algorithm': { scenes: euclideanAlgorithmScenes, defaultState: defaultEuclideanAlgorithmState },
+  'chinese-remainder': { scenes: chineseRemainderScenes, defaultState: defaultChineseRemainderState },
+  'quadratic-residue': { scenes: quadraticResidueScenes, defaultState: defaultQuadraticResidueState },
+  'gaussian-integers': { scenes: gaussianIntegersScenes, defaultState: defaultGaussianIntegersState },
+  'integer-partition': { scenes: integerPartitionScenes, defaultState: defaultIntegerPartitionState },
+  'pell-equation': { scenes: pellEquationScenes, defaultState: defaultPellEquationState },
+  'prime-counting': { scenes: primeCountingScenes, defaultState: defaultPrimeCountingState },
+  'digital-root': { scenes: digitalRootScenes, defaultState: defaultDigitalRootState },
+  'epsilon-delta': { scenes: epsilonDeltaScenes, defaultState: defaultEpsilonDeltaState },
+  'mean-value-theorem': { scenes: meanValueTheoremScenes, defaultState: defaultMeanValueTheoremState },
+  'riemann-sum': { scenes: riemannSumScenes, defaultState: defaultRiemannSumState },
+  'solid-of-revolution': { scenes: solidOfRevolutionScenes, defaultState: defaultSolidOfRevolutionState },
+  'arc-length-curvature': { scenes: arcLengthCurvatureScenes, defaultState: defaultArcLengthCurvatureState },
+  'series-convergence': { scenes: seriesConvergenceScenes, defaultState: defaultSeriesConvergenceState },
+  'improper-integral': { scenes: improperIntegralScenes, defaultState: defaultImproperIntegralState },
 }
 
 // 检测是否为移动设备
@@ -489,7 +539,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       // 新增2个待完成课程
       'laplace', 'permutation-combination',
       // 新增优美数学场景
-      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet', 'sieve-eratosthenes', 'magic-square', 'tower-of-hanoi', 'pigeonhole', 'triangle-centers', 'number-bases', 'pythagoras-tree', 'tessellation', 'perfect-numbers', 'collatz', 'prime-factorization', 'fibonacci-nature', 'dice-probability', 'nine-point-circle', 'euler-line', 'inversive-geometry', 'poincare-disk', 'spherical-geometry', 'convex-hull', 'delaunay-triangulation', 'apollonian-gasket', 'pick-theorem', 'reuleaux', 'circle-packing', 'steiner-chain'
+      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet', 'sieve-eratosthenes', 'magic-square', 'tower-of-hanoi', 'pigeonhole', 'triangle-centers', 'number-bases', 'pythagoras-tree', 'tessellation', 'perfect-numbers', 'collatz', 'prime-factorization', 'fibonacci-nature', 'dice-probability', 'nine-point-circle', 'euler-line', 'inversive-geometry', 'poincare-disk', 'spherical-geometry', 'convex-hull', 'delaunay-triangulation', 'apollonian-gasket', 'pick-theorem', 'reuleaux', 'circle-packing', 'steiner-chain', 'polynomial-roots', 'vieta-formulas', 'binomial-theorem', 'inverse-function', 'composite-function', 'partial-fractions', 'rational-asymptotes', 'piecewise-function', 'logarithm-spiral', 'function-transform', 'euclidean-algorithm', 'chinese-remainder', 'quadratic-residue', 'gaussian-integers', 'integer-partition', 'pell-equation', 'prime-counting', 'digital-root', 'epsilon-delta', 'mean-value-theorem', 'riemann-sum', 'solid-of-revolution', 'arc-length-curvature', 'series-convergence', 'improper-integral'
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

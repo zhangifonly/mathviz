@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 反常积分 - 口播稿件
+ * 核心概念：无穷区间积分、无界函数积分、收敛与发散
+ * 目标受众：高中及以上
+ */
+export const improperIntegralNarration: NarrationScript = {
+  id: 'improper-integral',
+  title: '反常积分',
+  subtitle: '无穷区间与无界函数',
+  difficulty: 'intermediate',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解反常积分的两种类型',
+    '区分收敛与发散',
+    '掌握用极限刻画积到无穷远的面积',
+    '感受无限区域却有限面积的奇妙',
+  ],
+
+  prerequisites: ['了解定积分与面积', '了解极限概念'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '普通的定积分，算的是一段有限区间下曲线围出的面积。' },
+        { id: 'intro-2', text: '可如果区间一直延伸到无穷远，这块面积还有意义吗？' },
+        { id: 'intro-3', text: '这就是反常积分要回答的问题。' },
+      ],
+    },
+    {
+      id: 'infinite',
+      type: 'concept',
+      title: '无穷区间',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'inf-1', text: '第一类反常积分，积分区间是无穷的，比如从一到正无穷。' },
+        { id: 'inf-2', text: '我们先积到一个很大的上限 T，再让 T 趋于无穷，看面积的极限。' },
+        { id: 'inf-3', text: '如果极限是一个有限数，就说积分收敛；否则发散。' },
+      ],
+    },
+    {
+      id: 'converge',
+      type: 'concept',
+      title: '收敛与发散',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'con-1', text: '看一比 x 平方，随着上限增大，面积越来越接近一，这是收敛。' },
+        { id: 'con-2', text: '再看一比 x，面积却随对数无限增长，永不封顶，这是发散。' },
+        { id: 'con-3', text: '同样铺向无穷远，两条曲线下的面积命运截然不同。' },
+      ],
+    },
+    {
+      id: 'unbounded',
+      type: 'concept',
+      title: '无界函数',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'unb-1', text: '第二类反常积分，区间有限，但函数在端点冲向无穷。' },
+        { id: 'unb-2', text: '同样用极限处理：让积分逼近那个奇点，再看结果是否有限。' },
+        { id: 'unb-3', text: '衰减得够快，无限高的尖峰下也能围出有限面积。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '拖动滑块增大上限 T，观察阴影面积如何变化。' },
+        { id: 'int-2', text: '收敛的曲线面积渐渐停住，发散的却一路攀升。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '反常积分用极限，把面积的概念延伸到无穷区间和无界函数。' },
+        { id: 'sum-2', text: '极限存在就收敛，不存在就发散。' },
+        { id: 'sum-3', text: '无限的区域也可能藏着有限的面积，我们下次再见！' },
+      ],
+    },
+  ],
+}

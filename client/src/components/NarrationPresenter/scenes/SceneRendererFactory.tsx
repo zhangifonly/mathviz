@@ -201,6 +201,31 @@ const PickTheoremSceneRenderer = lazy(() => import('./PickTheorem/PickTheoremSce
 const ReuleauxSceneRenderer = lazy(() => import('./Reuleaux/ReuleauxSceneRenderer'))
 const CirclePackingSceneRenderer = lazy(() => import('./CirclePacking/CirclePackingSceneRenderer'))
 const SteinerChainSceneRenderer = lazy(() => import('./SteinerChain/SteinerChainSceneRenderer'))
+const PolynomialRootsSceneRenderer = lazy(() => import('./PolynomialRoots/PolynomialRootsSceneRenderer'))
+const VietaFormulasSceneRenderer = lazy(() => import('./VietaFormulas/VietaFormulasSceneRenderer'))
+const BinomialTheoremSceneRenderer = lazy(() => import('./BinomialTheorem/BinomialTheoremSceneRenderer'))
+const InverseFunctionSceneRenderer = lazy(() => import('./InverseFunction/InverseFunctionSceneRenderer'))
+const CompositeFunctionSceneRenderer = lazy(() => import('./CompositeFunction/CompositeFunctionSceneRenderer'))
+const PartialFractionsSceneRenderer = lazy(() => import('./PartialFractions/PartialFractionsSceneRenderer'))
+const RationalAsymptotesSceneRenderer = lazy(() => import('./RationalAsymptotes/RationalAsymptotesSceneRenderer'))
+const PiecewiseFunctionSceneRenderer = lazy(() => import('./PiecewiseFunction/PiecewiseFunctionSceneRenderer'))
+const LogarithmSpiralSceneRenderer = lazy(() => import('./LogarithmSpiral/LogarithmSpiralSceneRenderer'))
+const FunctionTransformSceneRenderer = lazy(() => import('./FunctionTransform/FunctionTransformSceneRenderer'))
+const EuclideanAlgorithmSceneRenderer = lazy(() => import('./EuclideanAlgorithm/EuclideanAlgorithmSceneRenderer'))
+const ChineseRemainderSceneRenderer = lazy(() => import('./ChineseRemainder/ChineseRemainderSceneRenderer'))
+const QuadraticResidueSceneRenderer = lazy(() => import('./QuadraticResidue/QuadraticResidueSceneRenderer'))
+const GaussianIntegersSceneRenderer = lazy(() => import('./GaussianIntegers/GaussianIntegersSceneRenderer'))
+const IntegerPartitionSceneRenderer = lazy(() => import('./IntegerPartition/IntegerPartitionSceneRenderer'))
+const PellEquationSceneRenderer = lazy(() => import('./PellEquation/PellEquationSceneRenderer'))
+const PrimeCountingSceneRenderer = lazy(() => import('./PrimeCounting/PrimeCountingSceneRenderer'))
+const DigitalRootSceneRenderer = lazy(() => import('./DigitalRoot/DigitalRootSceneRenderer'))
+const EpsilonDeltaSceneRenderer = lazy(() => import('./EpsilonDelta/EpsilonDeltaSceneRenderer'))
+const MeanValueTheoremSceneRenderer = lazy(() => import('./MeanValueTheorem/MeanValueTheoremSceneRenderer'))
+const RiemannSumSceneRenderer = lazy(() => import('./RiemannSum/RiemannSumSceneRenderer'))
+const SolidOfRevolutionSceneRenderer = lazy(() => import('./SolidOfRevolution/SolidOfRevolutionSceneRenderer'))
+const ArcLengthCurvatureSceneRenderer = lazy(() => import('./ArcLengthCurvature/ArcLengthCurvatureSceneRenderer'))
+const SeriesConvergenceSceneRenderer = lazy(() => import('./SeriesConvergence/SeriesConvergenceSceneRenderer'))
+const ImproperIntegralSceneRenderer = lazy(() => import('./ImproperIntegral/ImproperIntegralSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -329,6 +354,31 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'reuleaux': ReuleauxSceneRenderer,
   'circle-packing': CirclePackingSceneRenderer,
   'steiner-chain': SteinerChainSceneRenderer,
+  'polynomial-roots': PolynomialRootsSceneRenderer,
+  'vieta-formulas': VietaFormulasSceneRenderer,
+  'binomial-theorem': BinomialTheoremSceneRenderer,
+  'inverse-function': InverseFunctionSceneRenderer,
+  'composite-function': CompositeFunctionSceneRenderer,
+  'partial-fractions': PartialFractionsSceneRenderer,
+  'rational-asymptotes': RationalAsymptotesSceneRenderer,
+  'piecewise-function': PiecewiseFunctionSceneRenderer,
+  'logarithm-spiral': LogarithmSpiralSceneRenderer,
+  'function-transform': FunctionTransformSceneRenderer,
+  'euclidean-algorithm': EuclideanAlgorithmSceneRenderer,
+  'chinese-remainder': ChineseRemainderSceneRenderer,
+  'quadratic-residue': QuadraticResidueSceneRenderer,
+  'gaussian-integers': GaussianIntegersSceneRenderer,
+  'integer-partition': IntegerPartitionSceneRenderer,
+  'pell-equation': PellEquationSceneRenderer,
+  'prime-counting': PrimeCountingSceneRenderer,
+  'digital-root': DigitalRootSceneRenderer,
+  'epsilon-delta': EpsilonDeltaSceneRenderer,
+  'mean-value-theorem': MeanValueTheoremSceneRenderer,
+  'riemann-sum': RiemannSumSceneRenderer,
+  'solid-of-revolution': SolidOfRevolutionSceneRenderer,
+  'arc-length-curvature': ArcLengthCurvatureSceneRenderer,
+  'series-convergence': SeriesConvergenceSceneRenderer,
+  'improper-integral': ImproperIntegralSceneRenderer,
 }
 
 // 获取场景渲染器

@@ -146,6 +146,31 @@ const PickTheoremExperiment = lazyRetry(() => import('./experiments/pick-theorem
 const ReuleauxExperiment = lazyRetry(() => import('./experiments/reuleaux/ReuleauxExperiment'))
 const CirclePackingExperiment = lazyRetry(() => import('./experiments/circle-packing/CirclePackingExperiment'))
 const SteinerChainExperiment = lazyRetry(() => import('./experiments/steiner-chain/SteinerChainExperiment'))
+const PolynomialRootsExperiment = lazyRetry(() => import('./experiments/polynomial-roots/PolynomialRootsExperiment'))
+const VietaFormulasExperiment = lazyRetry(() => import('./experiments/vieta-formulas/VietaFormulasExperiment'))
+const BinomialTheoremExperiment = lazyRetry(() => import('./experiments/binomial-theorem/BinomialTheoremExperiment'))
+const InverseFunctionExperiment = lazyRetry(() => import('./experiments/inverse-function/InverseFunctionExperiment'))
+const CompositeFunctionExperiment = lazyRetry(() => import('./experiments/composite-function/CompositeFunctionExperiment'))
+const PartialFractionsExperiment = lazyRetry(() => import('./experiments/partial-fractions/PartialFractionsExperiment'))
+const RationalAsymptotesExperiment = lazyRetry(() => import('./experiments/rational-asymptotes/RationalAsymptotesExperiment'))
+const PiecewiseFunctionExperiment = lazyRetry(() => import('./experiments/piecewise-function/PiecewiseFunctionExperiment'))
+const LogarithmSpiralExperiment = lazyRetry(() => import('./experiments/logarithm-spiral/LogarithmSpiralExperiment'))
+const FunctionTransformExperiment = lazyRetry(() => import('./experiments/function-transform/FunctionTransformExperiment'))
+const EuclideanAlgorithmExperiment = lazyRetry(() => import('./experiments/euclidean-algorithm/EuclideanAlgorithmExperiment'))
+const ChineseRemainderExperiment = lazyRetry(() => import('./experiments/chinese-remainder/ChineseRemainderExperiment'))
+const QuadraticResidueExperiment = lazyRetry(() => import('./experiments/quadratic-residue/QuadraticResidueExperiment'))
+const GaussianIntegersExperiment = lazyRetry(() => import('./experiments/gaussian-integers/GaussianIntegersExperiment'))
+const IntegerPartitionExperiment = lazyRetry(() => import('./experiments/integer-partition/IntegerPartitionExperiment'))
+const PellEquationExperiment = lazyRetry(() => import('./experiments/pell-equation/PellEquationExperiment'))
+const PrimeCountingExperiment = lazyRetry(() => import('./experiments/prime-counting/PrimeCountingExperiment'))
+const DigitalRootExperiment = lazyRetry(() => import('./experiments/digital-root/DigitalRootExperiment'))
+const EpsilonDeltaExperiment = lazyRetry(() => import('./experiments/epsilon-delta/EpsilonDeltaExperiment'))
+const MeanValueTheoremExperiment = lazyRetry(() => import('./experiments/mean-value-theorem/MeanValueTheoremExperiment'))
+const RiemannSumExperiment = lazyRetry(() => import('./experiments/riemann-sum/RiemannSumExperiment'))
+const SolidOfRevolutionExperiment = lazyRetry(() => import('./experiments/solid-of-revolution/SolidOfRevolutionExperiment'))
+const ArcLengthCurvatureExperiment = lazyRetry(() => import('./experiments/arc-length-curvature/ArcLengthCurvatureExperiment'))
+const SeriesConvergenceExperiment = lazyRetry(() => import('./experiments/series-convergence/SeriesConvergenceExperiment'))
+const ImproperIntegralExperiment = lazyRetry(() => import('./experiments/improper-integral/ImproperIntegralExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -289,6 +314,31 @@ export default function App() {
             <Route path="reuleaux" element={<ReuleauxExperiment />} />
             <Route path="circle-packing" element={<CirclePackingExperiment />} />
             <Route path="steiner-chain" element={<SteinerChainExperiment />} />
+            <Route path="polynomial-roots" element={<PolynomialRootsExperiment />} />
+            <Route path="vieta-formulas" element={<VietaFormulasExperiment />} />
+            <Route path="binomial-theorem" element={<BinomialTheoremExperiment />} />
+            <Route path="inverse-function" element={<InverseFunctionExperiment />} />
+            <Route path="composite-function" element={<CompositeFunctionExperiment />} />
+            <Route path="partial-fractions" element={<PartialFractionsExperiment />} />
+            <Route path="rational-asymptotes" element={<RationalAsymptotesExperiment />} />
+            <Route path="piecewise-function" element={<PiecewiseFunctionExperiment />} />
+            <Route path="logarithm-spiral" element={<LogarithmSpiralExperiment />} />
+            <Route path="function-transform" element={<FunctionTransformExperiment />} />
+            <Route path="euclidean-algorithm" element={<EuclideanAlgorithmExperiment />} />
+            <Route path="chinese-remainder" element={<ChineseRemainderExperiment />} />
+            <Route path="quadratic-residue" element={<QuadraticResidueExperiment />} />
+            <Route path="gaussian-integers" element={<GaussianIntegersExperiment />} />
+            <Route path="integer-partition" element={<IntegerPartitionExperiment />} />
+            <Route path="pell-equation" element={<PellEquationExperiment />} />
+            <Route path="prime-counting" element={<PrimeCountingExperiment />} />
+            <Route path="digital-root" element={<DigitalRootExperiment />} />
+            <Route path="epsilon-delta" element={<EpsilonDeltaExperiment />} />
+            <Route path="mean-value-theorem" element={<MeanValueTheoremExperiment />} />
+            <Route path="riemann-sum" element={<RiemannSumExperiment />} />
+            <Route path="solid-of-revolution" element={<SolidOfRevolutionExperiment />} />
+            <Route path="arc-length-curvature" element={<ArcLengthCurvatureExperiment />} />
+            <Route path="series-convergence" element={<SeriesConvergenceExperiment />} />
+            <Route path="improper-integral" element={<ImproperIntegralExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

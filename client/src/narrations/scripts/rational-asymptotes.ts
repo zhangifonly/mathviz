@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 有理函数与渐近线 - 口播稿件
+ * 核心概念：竖直渐近线、水平渐近线、斜渐近线、多项式长除
+ * 目标受众：高中及以上
+ */
+export const rationalAsymptotesNarration: NarrationScript = {
+  id: 'rational-asymptotes',
+  title: '有理函数与渐近线',
+  subtitle: '曲线的无限逼近',
+  difficulty: 'intermediate',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解有理函数在分母为零处的行为',
+    '掌握竖直渐近线的来源',
+    '会用次数比较判断水平渐近线',
+    '会用多项式长除求斜渐近线',
+  ],
+
+  prerequisites: ['了解多项式', '了解函数图像'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '有理函数就是两个多项式相除，写作 P(x) 除以 Q(x)。' },
+        { id: 'intro-2', text: '当分母为零时，函数没有定义，图像会在那里发生剧烈的变化。' },
+        { id: 'intro-3', text: '正是这些特殊的位置，塑造出曲线无限逼近却永不相交的渐近线。' },
+      ],
+    },
+    {
+      id: 'vertical',
+      type: 'concept',
+      title: '竖直渐近线',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '让分母等于零的那些 x 值，就是竖直渐近线的位置。' },
+        { id: 'def-2', text: '越靠近它，函数值就冲向正无穷或负无穷，曲线几乎贴着这条竖线。' },
+        { id: 'def-3', text: '图中红色的虚线，标出的正是这些分母的根。' },
+      ],
+    },
+    {
+      id: 'horizontal',
+      type: 'concept',
+      title: '水平渐近线',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'hor-1', text: '要看远方的走向，我们比较分子和分母的次数。' },
+        { id: 'hor-2', text: '分子次数更低时，函数趋于零，水平渐近线就是 x 轴。' },
+        { id: 'hor-3', text: '次数相等时，渐近线是两个最高次系数的比值。' },
+      ],
+    },
+    {
+      id: 'oblique',
+      type: 'concept',
+      title: '斜渐近线',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'obl-1', text: '如果分子次数恰好比分母高一次，末端就是一条斜线。' },
+        { id: 'obl-2', text: '用多项式长除，把有理函数拆成一次商加上一个余项。' },
+        { id: 'obl-3', text: '那个一次的商，就是斜渐近线；余项在远处趋于零，所以曲线越走越贴近它。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '切换不同的例子，观察竖直渐近线随分母的根一起移动。' },
+        { id: 'int-2', text: '再对照末端的蓝色虚线，感受水平与斜渐近线的区别。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '竖直渐近线来自分母的根，末端渐近线由次数比较决定。' },
+        { id: 'sum-2', text: '低了趋于零，相等取系数比，高一次就长除求斜线。' },
+        { id: 'sum-3', text: '掌握了这三招，任何有理函数的骨架都一目了然，我们下次再见！' },
+      ],
+    },
+  ],
+}
