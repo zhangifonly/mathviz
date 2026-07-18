@@ -301,6 +301,31 @@ const StereographicProjectionSceneRenderer = lazy(() => import('./StereographicP
 const HopfFibrationSceneRenderer = lazy(() => import('./HopfFibration/HopfFibrationSceneRenderer'))
 const HyperbolicTilingSceneRenderer = lazy(() => import('./HyperbolicTiling/HyperbolicTilingSceneRenderer'))
 const SpirographSceneRenderer = lazy(() => import('./Spirograph/SpirographSceneRenderer'))
+const EulerTotientSceneRenderer = lazy(() => import('./EulerTotient/EulerTotientSceneRenderer'))
+const MobiusFunctionSceneRenderer = lazy(() => import('./MobiusFunction/MobiusFunctionSceneRenderer'))
+const FareySequenceSceneRenderer = lazy(() => import('./FareySequence/FareySequenceSceneRenderer'))
+const SternBrocotSceneRenderer = lazy(() => import('./SternBrocot/SternBrocotSceneRenderer'))
+const PrimitiveRootSceneRenderer = lazy(() => import('./PrimitiveRoot/PrimitiveRootSceneRenderer'))
+const FermatLittleSceneRenderer = lazy(() => import('./FermatLittle/FermatLittleSceneRenderer'))
+const WilsonTheoremSceneRenderer = lazy(() => import('./WilsonTheorem/WilsonTheoremSceneRenderer'))
+const FastExponentiationSceneRenderer = lazy(() => import('./FastExponentiation/FastExponentiationSceneRenderer'))
+const PythagoreanTriplesSceneRenderer = lazy(() => import('./PythagoreanTriples/PythagoreanTriplesSceneRenderer'))
+const SumOfSquaresSceneRenderer = lazy(() => import('./SumOfSquares/SumOfSquaresSceneRenderer'))
+const HappyNumbersSceneRenderer = lazy(() => import('./HappyNumbers/HappyNumbersSceneRenderer'))
+const KaprekarSceneRenderer = lazy(() => import('./Kaprekar/KaprekarSceneRenderer'))
+const LucasNumbersSceneRenderer = lazy(() => import('./LucasNumbers/LucasNumbersSceneRenderer'))
+const TriangularNumbersSceneRenderer = lazy(() => import('./TriangularNumbers/TriangularNumbersSceneRenderer'))
+const FrobeniusCoinSceneRenderer = lazy(() => import('./FrobeniusCoin/FrobeniusCoinSceneRenderer'))
+const CaesarCipherSceneRenderer = lazy(() => import('./CaesarCipher/CaesarCipherSceneRenderer'))
+const VigenereCipherSceneRenderer = lazy(() => import('./VigenereCipher/VigenereCipherSceneRenderer'))
+const RsaCipherSceneRenderer = lazy(() => import('./RsaCipher/RsaCipherSceneRenderer'))
+const DiffieHellmanSceneRenderer = lazy(() => import('./DiffieHellman/DiffieHellmanSceneRenderer'))
+const OneTimePadSceneRenderer = lazy(() => import('./OneTimePad/OneTimePadSceneRenderer'))
+const EllipticCurveSceneRenderer = lazy(() => import('./EllipticCurve/EllipticCurveSceneRenderer'))
+const JosephusProblemSceneRenderer = lazy(() => import('./JosephusProblem/JosephusProblemSceneRenderer'))
+const GrayCodeSceneRenderer = lazy(() => import('./GrayCode/GrayCodeSceneRenderer'))
+const LookAndSaySceneRenderer = lazy(() => import('./LookAndSay/LookAndSaySceneRenderer'))
+const HillCipherSceneRenderer = lazy(() => import('./HillCipher/HillCipherSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -529,6 +554,31 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'hopf-fibration': HopfFibrationSceneRenderer,
   'hyperbolic-tiling': HyperbolicTilingSceneRenderer,
   'spirograph': SpirographSceneRenderer,
+  'euler-totient': EulerTotientSceneRenderer,
+  'mobius-function': MobiusFunctionSceneRenderer,
+  'farey-sequence': FareySequenceSceneRenderer,
+  'stern-brocot': SternBrocotSceneRenderer,
+  'primitive-root': PrimitiveRootSceneRenderer,
+  'fermat-little': FermatLittleSceneRenderer,
+  'wilson-theorem': WilsonTheoremSceneRenderer,
+  'fast-exponentiation': FastExponentiationSceneRenderer,
+  'pythagorean-triples': PythagoreanTriplesSceneRenderer,
+  'sum-of-squares': SumOfSquaresSceneRenderer,
+  'happy-numbers': HappyNumbersSceneRenderer,
+  'kaprekar': KaprekarSceneRenderer,
+  'lucas-numbers': LucasNumbersSceneRenderer,
+  'triangular-numbers': TriangularNumbersSceneRenderer,
+  'frobenius-coin': FrobeniusCoinSceneRenderer,
+  'caesar-cipher': CaesarCipherSceneRenderer,
+  'vigenere-cipher': VigenereCipherSceneRenderer,
+  'rsa-cipher': RsaCipherSceneRenderer,
+  'diffie-hellman': DiffieHellmanSceneRenderer,
+  'one-time-pad': OneTimePadSceneRenderer,
+  'elliptic-curve': EllipticCurveSceneRenderer,
+  'josephus-problem': JosephusProblemSceneRenderer,
+  'gray-code': GrayCodeSceneRenderer,
+  'look-and-say': LookAndSaySceneRenderer,
+  'hill-cipher': HillCipherSceneRenderer,
 }
 
 // 获取场景渲染器

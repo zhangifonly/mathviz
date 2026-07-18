@@ -236,6 +236,31 @@ import { stereographicProjectionScenes, defaultStereographicProjectionState } fr
 import { hopfFibrationScenes, defaultHopfFibrationState } from './hopfFibrationScenes'
 import { hyperbolicTilingScenes, defaultHyperbolicTilingState } from './hyperbolicTilingScenes'
 import { spirographScenes, defaultSpirographState } from './spirographScenes'
+import { eulerTotientScenes, defaultEulerTotientState } from './eulerTotientScenes'
+import { mobiusFunctionScenes, defaultMobiusFunctionState } from './mobiusFunctionScenes'
+import { fareySequenceScenes, defaultFareySequenceState } from './fareySequenceScenes'
+import { sternBrocotScenes, defaultSternBrocotState } from './sternBrocotScenes'
+import { primitiveRootScenes, defaultPrimitiveRootState } from './primitiveRootScenes'
+import { fermatLittleScenes, defaultFermatLittleState } from './fermatLittleScenes'
+import { wilsonTheoremScenes, defaultWilsonTheoremState } from './wilsonTheoremScenes'
+import { fastExponentiationScenes, defaultFastExponentiationState } from './fastExponentiationScenes'
+import { pythagoreanTriplesScenes, defaultPythagoreanTriplesState } from './pythagoreanTriplesScenes'
+import { sumOfSquaresScenes, defaultSumOfSquaresState } from './sumOfSquaresScenes'
+import { happyNumbersScenes, defaultHappyNumbersState } from './happyNumbersScenes'
+import { kaprekarScenes, defaultKaprekarState } from './kaprekarScenes'
+import { lucasNumbersScenes, defaultLucasNumbersState } from './lucasNumbersScenes'
+import { triangularNumbersScenes, defaultTriangularNumbersState } from './triangularNumbersScenes'
+import { frobeniusCoinScenes, defaultFrobeniusCoinState } from './frobeniusCoinScenes'
+import { caesarCipherScenes, defaultCaesarCipherState } from './caesarCipherScenes'
+import { vigenereCipherScenes, defaultVigenereCipherState } from './vigenereCipherScenes'
+import { rsaCipherScenes, defaultRsaCipherState } from './rsaCipherScenes'
+import { diffieHellmanScenes, defaultDiffieHellmanState } from './diffieHellmanScenes'
+import { oneTimePadScenes, defaultOneTimePadState } from './oneTimePadScenes'
+import { ellipticCurveScenes, defaultEllipticCurveState } from './ellipticCurveScenes'
+import { josephusProblemScenes, defaultJosephusProblemState } from './josephusProblemScenes'
+import { grayCodeScenes, defaultGrayCodeState } from './grayCodeScenes'
+import { lookAndSayScenes, defaultLookAndSayState } from './lookAndSayScenes'
+import { hillCipherScenes, defaultHillCipherState } from './hillCipherScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -485,6 +510,31 @@ const sceneConfigMap: Record<string, {
   'hopf-fibration': { scenes: hopfFibrationScenes, defaultState: defaultHopfFibrationState },
   'hyperbolic-tiling': { scenes: hyperbolicTilingScenes, defaultState: defaultHyperbolicTilingState },
   'spirograph': { scenes: spirographScenes, defaultState: defaultSpirographState },
+  'euler-totient': { scenes: eulerTotientScenes, defaultState: defaultEulerTotientState },
+  'mobius-function': { scenes: mobiusFunctionScenes, defaultState: defaultMobiusFunctionState },
+  'farey-sequence': { scenes: fareySequenceScenes, defaultState: defaultFareySequenceState },
+  'stern-brocot': { scenes: sternBrocotScenes, defaultState: defaultSternBrocotState },
+  'primitive-root': { scenes: primitiveRootScenes, defaultState: defaultPrimitiveRootState },
+  'fermat-little': { scenes: fermatLittleScenes, defaultState: defaultFermatLittleState },
+  'wilson-theorem': { scenes: wilsonTheoremScenes, defaultState: defaultWilsonTheoremState },
+  'fast-exponentiation': { scenes: fastExponentiationScenes, defaultState: defaultFastExponentiationState },
+  'pythagorean-triples': { scenes: pythagoreanTriplesScenes, defaultState: defaultPythagoreanTriplesState },
+  'sum-of-squares': { scenes: sumOfSquaresScenes, defaultState: defaultSumOfSquaresState },
+  'happy-numbers': { scenes: happyNumbersScenes, defaultState: defaultHappyNumbersState },
+  'kaprekar': { scenes: kaprekarScenes, defaultState: defaultKaprekarState },
+  'lucas-numbers': { scenes: lucasNumbersScenes, defaultState: defaultLucasNumbersState },
+  'triangular-numbers': { scenes: triangularNumbersScenes, defaultState: defaultTriangularNumbersState },
+  'frobenius-coin': { scenes: frobeniusCoinScenes, defaultState: defaultFrobeniusCoinState },
+  'caesar-cipher': { scenes: caesarCipherScenes, defaultState: defaultCaesarCipherState },
+  'vigenere-cipher': { scenes: vigenereCipherScenes, defaultState: defaultVigenereCipherState },
+  'rsa-cipher': { scenes: rsaCipherScenes, defaultState: defaultRsaCipherState },
+  'diffie-hellman': { scenes: diffieHellmanScenes, defaultState: defaultDiffieHellmanState },
+  'one-time-pad': { scenes: oneTimePadScenes, defaultState: defaultOneTimePadState },
+  'elliptic-curve': { scenes: ellipticCurveScenes, defaultState: defaultEllipticCurveState },
+  'josephus-problem': { scenes: josephusProblemScenes, defaultState: defaultJosephusProblemState },
+  'gray-code': { scenes: grayCodeScenes, defaultState: defaultGrayCodeState },
+  'look-and-say': { scenes: lookAndSayScenes, defaultState: defaultLookAndSayState },
+  'hill-cipher': { scenes: hillCipherScenes, defaultState: defaultHillCipherState },
 }
 
 // 检测是否为移动设备
@@ -689,7 +739,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       // 新增2个待完成课程
       'laplace', 'permutation-combination',
       // 新增优美数学场景
-      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet', 'sieve-eratosthenes', 'magic-square', 'tower-of-hanoi', 'pigeonhole', 'triangle-centers', 'number-bases', 'pythagoras-tree', 'tessellation', 'perfect-numbers', 'collatz', 'prime-factorization', 'fibonacci-nature', 'dice-probability', 'nine-point-circle', 'euler-line', 'inversive-geometry', 'poincare-disk', 'spherical-geometry', 'convex-hull', 'delaunay-triangulation', 'apollonian-gasket', 'pick-theorem', 'reuleaux', 'circle-packing', 'steiner-chain', 'polynomial-roots', 'vieta-formulas', 'binomial-theorem', 'inverse-function', 'composite-function', 'partial-fractions', 'rational-asymptotes', 'piecewise-function', 'logarithm-spiral', 'function-transform', 'euclidean-algorithm', 'chinese-remainder', 'quadratic-residue', 'gaussian-integers', 'integer-partition', 'pell-equation', 'prime-counting', 'digital-root', 'epsilon-delta', 'mean-value-theorem', 'riemann-sum', 'solid-of-revolution', 'arc-length-curvature', 'series-convergence', 'improper-integral', 'determinant-geometry', 'kernel-image', 'orthogonal-projection', 'least-squares', 'quadratic-form', 'spectral-theorem', 'law-large-numbers', 'poisson-process', 'brownian-motion', 'monty-hall', 'birthday-paradox', 'hypothesis-testing', 'confidence-interval', 'max-likelihood', 'gaussian-mixture', 'hidden-markov', 'multiple-integral', 'line-integral', 'divergence-curl', 'stokes-theorem', 'partial-derivative', 'directional-derivative', 'jacobian', 'vector-calculus-field', 'laplacian', 'dijkstra', 'network-flow', 'graph-coloring', 'euler-hamilton-path', 'sorting-algorithms', 'bfs-dfs', 'dynamic-programming', 'divide-conquer', 'huffman-coding', 'catalan-numbers', 'generating-functions', 'minimum-spanning-tree', 'logistic-bifurcation', 'phase-portrait', 'limit-cycle', 'lotka-volterra', 'pendulum-phase', 'kepler-orbit', 'vibrating-string', 'poincare-section', 'euler-characteristic', 'torus-klein', 'perceptron', 'kmeans', 'neural-network-forward', 'koch-snowflake', 'sierpinski-triangle', 'sierpinski-carpet', 'dragon-curve', 'barnsley-fern', 'hilbert-curve', 'peano-curve', 'gosper-curve', 'levy-c-curve', 'newton-fractal', 'burning-ship', 'box-counting-dimension', 'cantor-set', 'quadtree', 'kd-tree', 'marching-squares', 'point-in-polygon', 'line-clipping', 'rotating-calipers', 'ear-clipping', 'a-star', 'stereographic-projection', 'hopf-fibration', 'hyperbolic-tiling', 'spirograph'
+      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet', 'sieve-eratosthenes', 'magic-square', 'tower-of-hanoi', 'pigeonhole', 'triangle-centers', 'number-bases', 'pythagoras-tree', 'tessellation', 'perfect-numbers', 'collatz', 'prime-factorization', 'fibonacci-nature', 'dice-probability', 'nine-point-circle', 'euler-line', 'inversive-geometry', 'poincare-disk', 'spherical-geometry', 'convex-hull', 'delaunay-triangulation', 'apollonian-gasket', 'pick-theorem', 'reuleaux', 'circle-packing', 'steiner-chain', 'polynomial-roots', 'vieta-formulas', 'binomial-theorem', 'inverse-function', 'composite-function', 'partial-fractions', 'rational-asymptotes', 'piecewise-function', 'logarithm-spiral', 'function-transform', 'euclidean-algorithm', 'chinese-remainder', 'quadratic-residue', 'gaussian-integers', 'integer-partition', 'pell-equation', 'prime-counting', 'digital-root', 'epsilon-delta', 'mean-value-theorem', 'riemann-sum', 'solid-of-revolution', 'arc-length-curvature', 'series-convergence', 'improper-integral', 'determinant-geometry', 'kernel-image', 'orthogonal-projection', 'least-squares', 'quadratic-form', 'spectral-theorem', 'law-large-numbers', 'poisson-process', 'brownian-motion', 'monty-hall', 'birthday-paradox', 'hypothesis-testing', 'confidence-interval', 'max-likelihood', 'gaussian-mixture', 'hidden-markov', 'multiple-integral', 'line-integral', 'divergence-curl', 'stokes-theorem', 'partial-derivative', 'directional-derivative', 'jacobian', 'vector-calculus-field', 'laplacian', 'dijkstra', 'network-flow', 'graph-coloring', 'euler-hamilton-path', 'sorting-algorithms', 'bfs-dfs', 'dynamic-programming', 'divide-conquer', 'huffman-coding', 'catalan-numbers', 'generating-functions', 'minimum-spanning-tree', 'logistic-bifurcation', 'phase-portrait', 'limit-cycle', 'lotka-volterra', 'pendulum-phase', 'kepler-orbit', 'vibrating-string', 'poincare-section', 'euler-characteristic', 'torus-klein', 'perceptron', 'kmeans', 'neural-network-forward', 'koch-snowflake', 'sierpinski-triangle', 'sierpinski-carpet', 'dragon-curve', 'barnsley-fern', 'hilbert-curve', 'peano-curve', 'gosper-curve', 'levy-c-curve', 'newton-fractal', 'burning-ship', 'box-counting-dimension', 'cantor-set', 'quadtree', 'kd-tree', 'marching-squares', 'point-in-polygon', 'line-clipping', 'rotating-calipers', 'ear-clipping', 'a-star', 'stereographic-projection', 'hopf-fibration', 'hyperbolic-tiling', 'spirograph', 'euler-totient', 'mobius-function', 'farey-sequence', 'stern-brocot', 'primitive-root', 'fermat-little', 'wilson-theorem', 'fast-exponentiation', 'pythagorean-triples', 'sum-of-squares', 'happy-numbers', 'kaprekar', 'lucas-numbers', 'triangular-numbers', 'frobenius-coin', 'caesar-cipher', 'vigenere-cipher', 'rsa-cipher', 'diffie-hellman', 'one-time-pad', 'elliptic-curve', 'josephus-problem', 'gray-code', 'look-and-say', 'hill-cipher'
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

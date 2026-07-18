@@ -246,6 +246,31 @@ const StereographicProjectionExperiment = lazyRetry(() => import('./experiments/
 const HopfFibrationExperiment = lazyRetry(() => import('./experiments/hopf-fibration/HopfFibrationExperiment'))
 const HyperbolicTilingExperiment = lazyRetry(() => import('./experiments/hyperbolic-tiling/HyperbolicTilingExperiment'))
 const SpirographExperiment = lazyRetry(() => import('./experiments/spirograph/SpirographExperiment'))
+const EulerTotientExperiment = lazyRetry(() => import('./experiments/euler-totient/EulerTotientExperiment'))
+const MobiusFunctionExperiment = lazyRetry(() => import('./experiments/mobius-function/MobiusFunctionExperiment'))
+const FareySequenceExperiment = lazyRetry(() => import('./experiments/farey-sequence/FareySequenceExperiment'))
+const SternBrocotExperiment = lazyRetry(() => import('./experiments/stern-brocot/SternBrocotExperiment'))
+const PrimitiveRootExperiment = lazyRetry(() => import('./experiments/primitive-root/PrimitiveRootExperiment'))
+const FermatLittleExperiment = lazyRetry(() => import('./experiments/fermat-little/FermatLittleExperiment'))
+const WilsonTheoremExperiment = lazyRetry(() => import('./experiments/wilson-theorem/WilsonTheoremExperiment'))
+const FastExponentiationExperiment = lazyRetry(() => import('./experiments/fast-exponentiation/FastExponentiationExperiment'))
+const PythagoreanTriplesExperiment = lazyRetry(() => import('./experiments/pythagorean-triples/PythagoreanTriplesExperiment'))
+const SumOfSquaresExperiment = lazyRetry(() => import('./experiments/sum-of-squares/SumOfSquaresExperiment'))
+const HappyNumbersExperiment = lazyRetry(() => import('./experiments/happy-numbers/HappyNumbersExperiment'))
+const KaprekarExperiment = lazyRetry(() => import('./experiments/kaprekar/KaprekarExperiment'))
+const LucasNumbersExperiment = lazyRetry(() => import('./experiments/lucas-numbers/LucasNumbersExperiment'))
+const TriangularNumbersExperiment = lazyRetry(() => import('./experiments/triangular-numbers/TriangularNumbersExperiment'))
+const FrobeniusCoinExperiment = lazyRetry(() => import('./experiments/frobenius-coin/FrobeniusCoinExperiment'))
+const CaesarCipherExperiment = lazyRetry(() => import('./experiments/caesar-cipher/CaesarCipherExperiment'))
+const VigenereCipherExperiment = lazyRetry(() => import('./experiments/vigenere-cipher/VigenereCipherExperiment'))
+const RsaCipherExperiment = lazyRetry(() => import('./experiments/rsa-cipher/RsaCipherExperiment'))
+const DiffieHellmanExperiment = lazyRetry(() => import('./experiments/diffie-hellman/DiffieHellmanExperiment'))
+const OneTimePadExperiment = lazyRetry(() => import('./experiments/one-time-pad/OneTimePadExperiment'))
+const EllipticCurveExperiment = lazyRetry(() => import('./experiments/elliptic-curve/EllipticCurveExperiment'))
+const JosephusProblemExperiment = lazyRetry(() => import('./experiments/josephus-problem/JosephusProblemExperiment'))
+const GrayCodeExperiment = lazyRetry(() => import('./experiments/gray-code/GrayCodeExperiment'))
+const LookAndSayExperiment = lazyRetry(() => import('./experiments/look-and-say/LookAndSayExperiment'))
+const HillCipherExperiment = lazyRetry(() => import('./experiments/hill-cipher/HillCipherExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -489,6 +514,31 @@ export default function App() {
             <Route path="hopf-fibration" element={<HopfFibrationExperiment />} />
             <Route path="hyperbolic-tiling" element={<HyperbolicTilingExperiment />} />
             <Route path="spirograph" element={<SpirographExperiment />} />
+            <Route path="euler-totient" element={<EulerTotientExperiment />} />
+            <Route path="mobius-function" element={<MobiusFunctionExperiment />} />
+            <Route path="farey-sequence" element={<FareySequenceExperiment />} />
+            <Route path="stern-brocot" element={<SternBrocotExperiment />} />
+            <Route path="primitive-root" element={<PrimitiveRootExperiment />} />
+            <Route path="fermat-little" element={<FermatLittleExperiment />} />
+            <Route path="wilson-theorem" element={<WilsonTheoremExperiment />} />
+            <Route path="fast-exponentiation" element={<FastExponentiationExperiment />} />
+            <Route path="pythagorean-triples" element={<PythagoreanTriplesExperiment />} />
+            <Route path="sum-of-squares" element={<SumOfSquaresExperiment />} />
+            <Route path="happy-numbers" element={<HappyNumbersExperiment />} />
+            <Route path="kaprekar" element={<KaprekarExperiment />} />
+            <Route path="lucas-numbers" element={<LucasNumbersExperiment />} />
+            <Route path="triangular-numbers" element={<TriangularNumbersExperiment />} />
+            <Route path="frobenius-coin" element={<FrobeniusCoinExperiment />} />
+            <Route path="caesar-cipher" element={<CaesarCipherExperiment />} />
+            <Route path="vigenere-cipher" element={<VigenereCipherExperiment />} />
+            <Route path="rsa-cipher" element={<RsaCipherExperiment />} />
+            <Route path="diffie-hellman" element={<DiffieHellmanExperiment />} />
+            <Route path="one-time-pad" element={<OneTimePadExperiment />} />
+            <Route path="elliptic-curve" element={<EllipticCurveExperiment />} />
+            <Route path="josephus-problem" element={<JosephusProblemExperiment />} />
+            <Route path="gray-code" element={<GrayCodeExperiment />} />
+            <Route path="look-and-say" element={<LookAndSayExperiment />} />
+            <Route path="hill-cipher" element={<HillCipherExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

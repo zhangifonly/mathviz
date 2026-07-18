@@ -231,6 +231,31 @@ export { stereographicProjectionNarration } from './scripts/stereographic-projec
 export { hopfFibrationNarration } from './scripts/hopf-fibration'
 export { hyperbolicTilingNarration } from './scripts/hyperbolic-tiling'
 export { spirographNarration } from './scripts/spirograph'
+export { eulerTotientNarration } from './scripts/euler-totient'
+export { mobiusFunctionNarration } from './scripts/mobius-function'
+export { fareySequenceNarration } from './scripts/farey-sequence'
+export { sternBrocotNarration } from './scripts/stern-brocot'
+export { primitiveRootNarration } from './scripts/primitive-root'
+export { fermatLittleNarration } from './scripts/fermat-little'
+export { wilsonTheoremNarration } from './scripts/wilson-theorem'
+export { fastExponentiationNarration } from './scripts/fast-exponentiation'
+export { pythagoreanTriplesNarration } from './scripts/pythagorean-triples'
+export { sumOfSquaresNarration } from './scripts/sum-of-squares'
+export { happyNumbersNarration } from './scripts/happy-numbers'
+export { kaprekarNarration } from './scripts/kaprekar'
+export { lucasNumbersNarration } from './scripts/lucas-numbers'
+export { triangularNumbersNarration } from './scripts/triangular-numbers'
+export { frobeniusCoinNarration } from './scripts/frobenius-coin'
+export { caesarCipherNarration } from './scripts/caesar-cipher'
+export { vigenereCipherNarration } from './scripts/vigenere-cipher'
+export { rsaCipherNarration } from './scripts/rsa-cipher'
+export { diffieHellmanNarration } from './scripts/diffie-hellman'
+export { oneTimePadNarration } from './scripts/one-time-pad'
+export { ellipticCurveNarration } from './scripts/elliptic-curve'
+export { josephusProblemNarration } from './scripts/josephus-problem'
+export { grayCodeNarration } from './scripts/gray-code'
+export { lookAndSayNarration } from './scripts/look-and-say'
+export { hillCipherNarration } from './scripts/hill-cipher'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -454,6 +479,31 @@ import { stereographicProjectionNarration } from './scripts/stereographic-projec
 import { hopfFibrationNarration } from './scripts/hopf-fibration'
 import { hyperbolicTilingNarration } from './scripts/hyperbolic-tiling'
 import { spirographNarration } from './scripts/spirograph'
+import { eulerTotientNarration } from './scripts/euler-totient'
+import { mobiusFunctionNarration } from './scripts/mobius-function'
+import { fareySequenceNarration } from './scripts/farey-sequence'
+import { sternBrocotNarration } from './scripts/stern-brocot'
+import { primitiveRootNarration } from './scripts/primitive-root'
+import { fermatLittleNarration } from './scripts/fermat-little'
+import { wilsonTheoremNarration } from './scripts/wilson-theorem'
+import { fastExponentiationNarration } from './scripts/fast-exponentiation'
+import { pythagoreanTriplesNarration } from './scripts/pythagorean-triples'
+import { sumOfSquaresNarration } from './scripts/sum-of-squares'
+import { happyNumbersNarration } from './scripts/happy-numbers'
+import { kaprekarNarration } from './scripts/kaprekar'
+import { lucasNumbersNarration } from './scripts/lucas-numbers'
+import { triangularNumbersNarration } from './scripts/triangular-numbers'
+import { frobeniusCoinNarration } from './scripts/frobenius-coin'
+import { caesarCipherNarration } from './scripts/caesar-cipher'
+import { vigenereCipherNarration } from './scripts/vigenere-cipher'
+import { rsaCipherNarration } from './scripts/rsa-cipher'
+import { diffieHellmanNarration } from './scripts/diffie-hellman'
+import { oneTimePadNarration } from './scripts/one-time-pad'
+import { ellipticCurveNarration } from './scripts/elliptic-curve'
+import { josephusProblemNarration } from './scripts/josephus-problem'
+import { grayCodeNarration } from './scripts/gray-code'
+import { lookAndSayNarration } from './scripts/look-and-say'
+import { hillCipherNarration } from './scripts/hill-cipher'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -681,6 +731,31 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'hopf-fibration': hopfFibrationNarration,
   'hyperbolic-tiling': hyperbolicTilingNarration,
   'spirograph': spirographNarration,
+  'euler-totient': eulerTotientNarration,
+  'mobius-function': mobiusFunctionNarration,
+  'farey-sequence': fareySequenceNarration,
+  'stern-brocot': sternBrocotNarration,
+  'primitive-root': primitiveRootNarration,
+  'fermat-little': fermatLittleNarration,
+  'wilson-theorem': wilsonTheoremNarration,
+  'fast-exponentiation': fastExponentiationNarration,
+  'pythagorean-triples': pythagoreanTriplesNarration,
+  'sum-of-squares': sumOfSquaresNarration,
+  'happy-numbers': happyNumbersNarration,
+  'kaprekar': kaprekarNarration,
+  'lucas-numbers': lucasNumbersNarration,
+  'triangular-numbers': triangularNumbersNarration,
+  'frobenius-coin': frobeniusCoinNarration,
+  'caesar-cipher': caesarCipherNarration,
+  'vigenere-cipher': vigenereCipherNarration,
+  'rsa-cipher': rsaCipherNarration,
+  'diffie-hellman': diffieHellmanNarration,
+  'one-time-pad': oneTimePadNarration,
+  'elliptic-curve': ellipticCurveNarration,
+  'josephus-problem': josephusProblemNarration,
+  'gray-code': grayCodeNarration,
+  'look-and-say': lookAndSayNarration,
+  'hill-cipher': hillCipherNarration,
 }
 
 // 获取稿件
