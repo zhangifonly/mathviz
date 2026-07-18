@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 鸽巢原理 - 口播稿件
+ * 核心概念：抽屉原理、必然碰撞、ceil(n/m) 下界
+ * 目标受众：初中及以上
+ */
+export const pigeonholeNarration: NarrationScript = {
+  id: 'pigeonhole',
+  title: '鸽巢原理',
+  subtitle: '抽屉里藏着的必然',
+  difficulty: 'beginner',
+  targetAge: '初中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解鸽巢原理的基本表述',
+    '掌握 ceil(n/m) 这一必然下界',
+    '认识它在生活问题中的应用',
+    '体会数学中的必然性思想',
+  ],
+
+  prerequisites: ['了解整数与除法', '了解向上取整'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '有13只鸽子，要飞回12个巢里。' },
+        { id: 'intro-2', text: '不管它们怎么飞，总会有一个巢里挤进了至少两只鸽子。' },
+        { id: 'intro-3', text: '不信你可以试，怎么摆都躲不开这个结果。' },
+        { id: 'intro-4', text: '这个听起来理所当然的事实，正是著名的鸽巢原理。' },
+      ],
+    },
+    {
+      id: 'principle',
+      type: 'concept',
+      title: '基本原理',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'prin-1', text: '如果物品比抽屉多，那么必有某个抽屉里不止一个物品。' },
+        { id: 'prin-2', text: '更精确地说，必有某个抽屉至少装了 n 除以 m 向上取整那么多。' },
+        { id: 'prin-3', text: '13除以12向上取整是2，所以必有一巢至少两只，躲也躲不掉。' },
+      ],
+    },
+    {
+      id: 'general',
+      type: 'concept',
+      title: '一般推广',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'gen-1', text: '把它推广开来：n 加 1 个物品放进 n 个抽屉，必有一个抽屉装了两个以上。' },
+        { id: 'gen-2', text: '物品越多、抽屉越少，被迫挤在一起的数量就越大。' },
+        { id: 'gen-3', text: '这条简单的原理，是组合数学里最锋利的证明工具之一。' },
+      ],
+    },
+    {
+      id: 'apply',
+      type: 'concept',
+      title: '生活应用',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'app-1', text: '任意13个人里，必有两人生日在同一个月，因为月份只有12个。' },
+        { id: 'app-2', text: '一场聚会上，总有两个人握手的次数恰好相同，这也是鸽巢原理在起作用。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '试着调大鸽子数、调小巢数，看那些被高亮的拥挤巢穴。' },
+        { id: 'int-2', text: '只要鸽子多于巢，无论怎样随机分配，碰撞都必然出现。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '鸽巢原理说：物品多于抽屉，必有抽屉不止一个物品。' },
+        { id: 'sum-2', text: '简单的计数背后，是数学最迷人的必然性。' },
+        { id: 'sum-3', text: '愿你从此看见生活里藏着的抽屉，我们下次再见！' },
+      ],
+    },
+  ],
+}

@@ -1,0 +1,100 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 反演几何 - 口播稿件
+ * 核心概念：反演变换、距离乘积=R^2、圆与直线的互换、共形性
+ * 目标受众：高中及以上
+ */
+export const inversiveGeometryNarration: NarrationScript = {
+  id: 'inversive-geometry',
+  title: '反演几何',
+  subtitle: '圆与直线的互换',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解反演变换的定义：距离乘积等于半径平方',
+    '掌握过反演中心的圆反演成直线',
+    '掌握不过中心的圆反演后仍是圆',
+    '感受圆与直线在反演下的统一之美',
+  ],
+
+  prerequisites: ['了解圆与直线方程', '了解距离概念'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '我们都照过镜子，镜子把远近前后对调，却保留了形状。' },
+        { id: 'intro-2', text: '数学里也有一面奇妙的镜子，它以一个圆为界。' },
+        { id: 'intro-3', text: '这面圆镜能把直线弯成圆，把圆展成直线。' },
+        { id: 'intro-4', text: '这就是反演变换，镜像思想在几何中的深刻推广。' },
+      ],
+    },
+    {
+      id: 'define',
+      type: 'concept',
+      title: '反演的定义',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '取定一个反演圆，圆心为 O，半径为 R。' },
+        { id: 'def-2', text: '任意一点 P，沿射线 O P 找它的像 P 撇，要求 O P 撇 乘 O P 等于 R 方。' },
+        { id: 'def-3', text: '离圆心越近的点反演后被推得越远，圆心本身被送到无穷远。' },
+      ],
+    },
+    {
+      id: 'line-to-circle',
+      type: 'concept',
+      title: '直线变圆',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'l2c-1', text: '看一条不经过圆心 O 的直线，把它上面每个点都做反演。' },
+        { id: 'l2c-2', text: '这些像点连起来，竟然弯成了一个恰好经过 O 的圆。' },
+        { id: 'l2c-3', text: '反过来，经过 O 的圆反演回去，又变回原来那条直线。' },
+      ],
+    },
+    {
+      id: 'circle-to-circle',
+      type: 'concept',
+      title: '圆变圆',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'c2c-1', text: '再看一个不经过 O 的圆，它反演之后仍然是一个圆。' },
+        { id: 'c2c-2', text: '于是我们把直线看成半径无穷大的圆，圆与直线合称广义圆。' },
+        { id: 'c2c-3', text: '反演永远把广义圆映成广义圆，而且保持相交的角度不变。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '拖动改变反演半径 R，观察每个图形的像如何随之伸缩。' },
+        { id: 'int-2', text: '打开或关闭反演像，对照原形与镜像，体会直线与圆的互换。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '反演以 O P 撇 乘 O P 等于 R 方，把平面翻里作外。' },
+        { id: 'sum-2', text: '过中心的圆变直线，不过中心的圆还是圆，圆与直线从此统一。' },
+        { id: 'sum-3', text: '一面圆形的镜子，照出几何的深层秩序，我们下次再见！' },
+      ],
+    },
+  ],
+}

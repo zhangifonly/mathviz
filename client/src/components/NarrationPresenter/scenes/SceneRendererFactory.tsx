@@ -176,6 +176,31 @@ const PercolationSceneRenderer = lazy(() => import('./Percolation/PercolationSce
 const CellularAutomataSceneRenderer = lazy(() => import('./CellularAutomata/CellularAutomataSceneRenderer'))
 const KnotTheorySceneRenderer = lazy(() => import('./KnotTheory/KnotTheorySceneRenderer'))
 const WaveletSceneRenderer = lazy(() => import('./Wavelet/WaveletSceneRenderer'))
+const SieveEratosthenesSceneRenderer = lazy(() => import('./SieveEratosthenes/SieveEratosthenesSceneRenderer'))
+const MagicSquareSceneRenderer = lazy(() => import('./MagicSquare/MagicSquareSceneRenderer'))
+const TowerOfHanoiSceneRenderer = lazy(() => import('./TowerOfHanoi/TowerOfHanoiSceneRenderer'))
+const PigeonholeSceneRenderer = lazy(() => import('./Pigeonhole/PigeonholeSceneRenderer'))
+const TriangleCentersSceneRenderer = lazy(() => import('./TriangleCenters/TriangleCentersSceneRenderer'))
+const NumberBasesSceneRenderer = lazy(() => import('./NumberBases/NumberBasesSceneRenderer'))
+const PythagorasTreeSceneRenderer = lazy(() => import('./PythagorasTree/PythagorasTreeSceneRenderer'))
+const TessellationSceneRenderer = lazy(() => import('./Tessellation/TessellationSceneRenderer'))
+const PerfectNumbersSceneRenderer = lazy(() => import('./PerfectNumbers/PerfectNumbersSceneRenderer'))
+const CollatzSceneRenderer = lazy(() => import('./Collatz/CollatzSceneRenderer'))
+const PrimeFactorizationSceneRenderer = lazy(() => import('./PrimeFactorization/PrimeFactorizationSceneRenderer'))
+const FibonacciNatureSceneRenderer = lazy(() => import('./FibonacciNature/FibonacciNatureSceneRenderer'))
+const DiceProbabilitySceneRenderer = lazy(() => import('./DiceProbability/DiceProbabilitySceneRenderer'))
+const NinePointCircleSceneRenderer = lazy(() => import('./NinePointCircle/NinePointCircleSceneRenderer'))
+const EulerLineSceneRenderer = lazy(() => import('./EulerLine/EulerLineSceneRenderer'))
+const InversiveGeometrySceneRenderer = lazy(() => import('./InversiveGeometry/InversiveGeometrySceneRenderer'))
+const PoincareDiskSceneRenderer = lazy(() => import('./PoincareDisk/PoincareDiskSceneRenderer'))
+const SphericalGeometrySceneRenderer = lazy(() => import('./SphericalGeometry/SphericalGeometrySceneRenderer'))
+const ConvexHullSceneRenderer = lazy(() => import('./ConvexHull/ConvexHullSceneRenderer'))
+const DelaunayTriangulationSceneRenderer = lazy(() => import('./DelaunayTriangulation/DelaunayTriangulationSceneRenderer'))
+const ApollonianGasketSceneRenderer = lazy(() => import('./ApollonianGasket/ApollonianGasketSceneRenderer'))
+const PickTheoremSceneRenderer = lazy(() => import('./PickTheorem/PickTheoremSceneRenderer'))
+const ReuleauxSceneRenderer = lazy(() => import('./Reuleaux/ReuleauxSceneRenderer'))
+const CirclePackingSceneRenderer = lazy(() => import('./CirclePacking/CirclePackingSceneRenderer'))
+const SteinerChainSceneRenderer = lazy(() => import('./SteinerChain/SteinerChainSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -279,6 +304,31 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'cellular-automata': CellularAutomataSceneRenderer,
   'knot-theory': KnotTheorySceneRenderer,
   'wavelet': WaveletSceneRenderer,
+  'sieve-eratosthenes': SieveEratosthenesSceneRenderer,
+  'magic-square': MagicSquareSceneRenderer,
+  'tower-of-hanoi': TowerOfHanoiSceneRenderer,
+  'pigeonhole': PigeonholeSceneRenderer,
+  'triangle-centers': TriangleCentersSceneRenderer,
+  'number-bases': NumberBasesSceneRenderer,
+  'pythagoras-tree': PythagorasTreeSceneRenderer,
+  'tessellation': TessellationSceneRenderer,
+  'perfect-numbers': PerfectNumbersSceneRenderer,
+  'collatz': CollatzSceneRenderer,
+  'prime-factorization': PrimeFactorizationSceneRenderer,
+  'fibonacci-nature': FibonacciNatureSceneRenderer,
+  'dice-probability': DiceProbabilitySceneRenderer,
+  'nine-point-circle': NinePointCircleSceneRenderer,
+  'euler-line': EulerLineSceneRenderer,
+  'inversive-geometry': InversiveGeometrySceneRenderer,
+  'poincare-disk': PoincareDiskSceneRenderer,
+  'spherical-geometry': SphericalGeometrySceneRenderer,
+  'convex-hull': ConvexHullSceneRenderer,
+  'delaunay-triangulation': DelaunayTriangulationSceneRenderer,
+  'apollonian-gasket': ApollonianGasketSceneRenderer,
+  'pick-theorem': PickTheoremSceneRenderer,
+  'reuleaux': ReuleauxSceneRenderer,
+  'circle-packing': CirclePackingSceneRenderer,
+  'steiner-chain': SteinerChainSceneRenderer,
 }
 
 // 获取场景渲染器

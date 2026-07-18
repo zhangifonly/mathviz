@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 阿波罗尼垫片 - 口播稿件
+ * 核心概念：相切圆、笛卡尔圆定理、递归分形
+ * 目标受众：高中及以上
+ */
+export const apollonianGasketNarration: NarrationScript = {
+  id: 'apollonian-gasket',
+  title: '阿波罗尼垫片',
+  subtitle: '相切圆的分形',
+  difficulty: 'expert',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解相切圆与曲率的关系',
+    '掌握笛卡尔圆定理的形式与含义',
+    '认识递归填圆生成的分形结构',
+    '感受简单公式生成的无穷之美',
+  ],
+
+  prerequisites: ['了解圆与半径', '了解平方与开方'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '在一个大圆里，塞进两个相切的圆，它们之间还留着弯弯的缝隙。' },
+        { id: 'intro-2', text: '每一条缝隙，恰好又能塞进一个同时相切三边的小圆。' },
+        { id: 'intro-3', text: '如此不断填下去，就得到阿波罗尼垫片，一件由圆织成的分形艺术品。' },
+      ],
+    },
+    {
+      id: 'tangent',
+      type: 'concept',
+      title: '相切与曲率',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'tan-1', text: '两个圆相切，是指它们恰好碰在一点，不重叠也不分离。' },
+        { id: 'tan-2', text: '我们用曲率来描述圆的弯曲程度，曲率等于半径的倒数，圆越小曲率越大。' },
+        { id: 'tan-3', text: '包住其它圆的大外圆，它的弯曲方向相反，曲率取负号。' },
+      ],
+    },
+    {
+      id: 'theorem',
+      type: 'formula',
+      title: '笛卡尔圆定理',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'thm-1', text: '当四个圆两两相切时，它们的曲率满足一条优雅的等式。' },
+        { id: 'thm-2', text: '四个曲率之和的平方，等于各曲率平方和的两倍。' },
+        { id: 'thm-3', text: '知道三个圆，就能解出第四个圆的曲率，进而定出圆心，填满缝隙。' },
+      ],
+    },
+    {
+      id: 'fractal',
+      type: 'concept',
+      title: '递归分形',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'fra-1', text: '每填入一个新圆，就又制造出三个更小的曲边缝隙。' },
+        { id: 'fra-2', text: '对每个缝隙重复同样的规则，圆越来越小，越来越密。' },
+        { id: 'fra-3', text: '这种自我重复的结构就是分形，垫片的维数约为一点三零五。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '调整递归深度，看缝隙如何被越来越小的圆逐层填满。' },
+        { id: 'int-2', text: '切换填充与描边，感受相切圆嵌套出的层次与秩序。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '阿波罗尼垫片用相切圆一层层填满缝隙，生成无穷分形。' },
+        { id: 'sum-2', text: '笛卡尔圆定理是它的引擎，一条平方等式就定住了每个圆。' },
+        { id: 'sum-3', text: '简单的规则，无穷的圆，画出数学的秩序之美，我们下次再见！' },
+      ],
+    },
+  ],
+}

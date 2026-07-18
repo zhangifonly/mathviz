@@ -121,6 +121,31 @@ const PercolationExperiment = lazyRetry(() => import('./experiments/percolation/
 const CellularAutomataExperiment = lazyRetry(() => import('./experiments/cellular-automata/CellularAutomataExperiment'))
 const KnotTheoryExperiment = lazyRetry(() => import('./experiments/knot-theory/KnotTheoryExperiment'))
 const WaveletExperiment = lazyRetry(() => import('./experiments/wavelet/WaveletExperiment'))
+const SieveEratosthenesExperiment = lazyRetry(() => import('./experiments/sieve-eratosthenes/SieveEratosthenesExperiment'))
+const MagicSquareExperiment = lazyRetry(() => import('./experiments/magic-square/MagicSquareExperiment'))
+const TowerOfHanoiExperiment = lazyRetry(() => import('./experiments/tower-of-hanoi/TowerOfHanoiExperiment'))
+const PigeonholeExperiment = lazyRetry(() => import('./experiments/pigeonhole/PigeonholeExperiment'))
+const TriangleCentersExperiment = lazyRetry(() => import('./experiments/triangle-centers/TriangleCentersExperiment'))
+const NumberBasesExperiment = lazyRetry(() => import('./experiments/number-bases/NumberBasesExperiment'))
+const PythagorasTreeExperiment = lazyRetry(() => import('./experiments/pythagoras-tree/PythagorasTreeExperiment'))
+const TessellationExperiment = lazyRetry(() => import('./experiments/tessellation/TessellationExperiment'))
+const PerfectNumbersExperiment = lazyRetry(() => import('./experiments/perfect-numbers/PerfectNumbersExperiment'))
+const CollatzExperiment = lazyRetry(() => import('./experiments/collatz/CollatzExperiment'))
+const PrimeFactorizationExperiment = lazyRetry(() => import('./experiments/prime-factorization/PrimeFactorizationExperiment'))
+const FibonacciNatureExperiment = lazyRetry(() => import('./experiments/fibonacci-nature/FibonacciNatureExperiment'))
+const DiceProbabilityExperiment = lazyRetry(() => import('./experiments/dice-probability/DiceProbabilityExperiment'))
+const NinePointCircleExperiment = lazyRetry(() => import('./experiments/nine-point-circle/NinePointCircleExperiment'))
+const EulerLineExperiment = lazyRetry(() => import('./experiments/euler-line/EulerLineExperiment'))
+const InversiveGeometryExperiment = lazyRetry(() => import('./experiments/inversive-geometry/InversiveGeometryExperiment'))
+const PoincareDiskExperiment = lazyRetry(() => import('./experiments/poincare-disk/PoincareDiskExperiment'))
+const SphericalGeometryExperiment = lazyRetry(() => import('./experiments/spherical-geometry/SphericalGeometryExperiment'))
+const ConvexHullExperiment = lazyRetry(() => import('./experiments/convex-hull/ConvexHullExperiment'))
+const DelaunayTriangulationExperiment = lazyRetry(() => import('./experiments/delaunay-triangulation/DelaunayTriangulationExperiment'))
+const ApollonianGasketExperiment = lazyRetry(() => import('./experiments/apollonian-gasket/ApollonianGasketExperiment'))
+const PickTheoremExperiment = lazyRetry(() => import('./experiments/pick-theorem/PickTheoremExperiment'))
+const ReuleauxExperiment = lazyRetry(() => import('./experiments/reuleaux/ReuleauxExperiment'))
+const CirclePackingExperiment = lazyRetry(() => import('./experiments/circle-packing/CirclePackingExperiment'))
+const SteinerChainExperiment = lazyRetry(() => import('./experiments/steiner-chain/SteinerChainExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -239,6 +264,31 @@ export default function App() {
             <Route path="cellular-automata" element={<CellularAutomataExperiment />} />
             <Route path="knot-theory" element={<KnotTheoryExperiment />} />
             <Route path="wavelet" element={<WaveletExperiment />} />
+            <Route path="sieve-eratosthenes" element={<SieveEratosthenesExperiment />} />
+            <Route path="magic-square" element={<MagicSquareExperiment />} />
+            <Route path="tower-of-hanoi" element={<TowerOfHanoiExperiment />} />
+            <Route path="pigeonhole" element={<PigeonholeExperiment />} />
+            <Route path="triangle-centers" element={<TriangleCentersExperiment />} />
+            <Route path="number-bases" element={<NumberBasesExperiment />} />
+            <Route path="pythagoras-tree" element={<PythagorasTreeExperiment />} />
+            <Route path="tessellation" element={<TessellationExperiment />} />
+            <Route path="perfect-numbers" element={<PerfectNumbersExperiment />} />
+            <Route path="collatz" element={<CollatzExperiment />} />
+            <Route path="prime-factorization" element={<PrimeFactorizationExperiment />} />
+            <Route path="fibonacci-nature" element={<FibonacciNatureExperiment />} />
+            <Route path="dice-probability" element={<DiceProbabilityExperiment />} />
+            <Route path="nine-point-circle" element={<NinePointCircleExperiment />} />
+            <Route path="euler-line" element={<EulerLineExperiment />} />
+            <Route path="inversive-geometry" element={<InversiveGeometryExperiment />} />
+            <Route path="poincare-disk" element={<PoincareDiskExperiment />} />
+            <Route path="spherical-geometry" element={<SphericalGeometryExperiment />} />
+            <Route path="convex-hull" element={<ConvexHullExperiment />} />
+            <Route path="delaunay-triangulation" element={<DelaunayTriangulationExperiment />} />
+            <Route path="apollonian-gasket" element={<ApollonianGasketExperiment />} />
+            <Route path="pick-theorem" element={<PickTheoremExperiment />} />
+            <Route path="reuleaux" element={<ReuleauxExperiment />} />
+            <Route path="circle-packing" element={<CirclePackingExperiment />} />
+            <Route path="steiner-chain" element={<SteinerChainExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

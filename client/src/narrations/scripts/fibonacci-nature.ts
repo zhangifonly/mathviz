@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 斐波那契与自然 - 口播稿件
+ * 核心概念：斐波那契数列、黄金比与黄金角、向日葵螺旋排布
+ * 目标受众：初中及以上
+ */
+export const fibonacciNatureNarration: NarrationScript = {
+  id: 'fibonacci-nature',
+  title: '斐波那契与自然',
+  subtitle: '黄金角与向日葵',
+  difficulty: 'beginner',
+  targetAge: '初中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '认识斐波那契数列及其递推规律',
+    '理解相邻项之比趋近黄金比',
+    '了解黄金角与向日葵种子排布的关系',
+    '感受简单规则生成的自然之美',
+  ],
+
+  prerequisites: ['了解数列', '了解角度与极坐标'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '你有没有数过向日葵盘上的种子？' },
+        { id: 'intro-2', text: '它们绕着中心旋出一圈圈优美的螺旋。' },
+        { id: 'intro-3', text: '藏在背后的，是一个古老的数列和一个神奇的角度。' },
+      ],
+    },
+    {
+      id: 'define',
+      type: 'concept',
+      title: '斐波那契数列',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '从零和一开始，每一项都是前两项之和。' },
+        { id: 'def-2', text: '于是得到一、一、二、三、五、八、十三，越滚越大。' },
+        { id: 'def-3', text: '这就是斐波那契数列，自然界里反复出现的节奏。' },
+      ],
+    },
+    {
+      id: 'golden',
+      type: 'concept',
+      title: '黄金比与黄金角',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'gold-1', text: '把相邻两项相除，比值会越来越接近一点六一八。' },
+        { id: 'gold-2', text: '这个数就是黄金比，最和谐的比例。' },
+        { id: 'gold-3', text: '把圆周按黄金比分割，得到约一百三十七点五度的黄金角。' },
+      ],
+    },
+    {
+      id: 'flower',
+      type: 'concept',
+      title: '向日葵螺旋',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'flo-1', text: '每颗种子比前一颗多转一个黄金角，再往外挪一点。' },
+        { id: 'flo-2', text: '因为黄金角无法被整除，种子永远不会排成直线。' },
+        { id: 'flo-3', text: '于是每颗种子都填进空隙，铺出最密实的螺旋图案。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '试着把发散角从黄金角一点点调开。' },
+        { id: 'int-2', text: '哪怕只差零点几度，整齐的螺旋就散成了杂乱的条纹。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '斐波那契数列的比值指向黄金比，黄金比又给出黄金角。' },
+        { id: 'sum-2', text: '向日葵正是用这个角度，把种子排得最均匀。' },
+        { id: 'sum-3', text: '一个简单的数列，写出了大自然的美，我们下次再见！' },
+      ],
+    },
+  ],
+}

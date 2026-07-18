@@ -106,6 +106,31 @@ export { percolationNarration } from './scripts/percolation'
 export { cellularAutomataNarration } from './scripts/cellular-automata'
 export { knotTheoryNarration } from './scripts/knot-theory'
 export { waveletNarration } from './scripts/wavelet'
+export { sieveEratosthenesNarration } from './scripts/sieve-eratosthenes'
+export { magicSquareNarration } from './scripts/magic-square'
+export { towerOfHanoiNarration } from './scripts/tower-of-hanoi'
+export { pigeonholeNarration } from './scripts/pigeonhole'
+export { triangleCentersNarration } from './scripts/triangle-centers'
+export { numberBasesNarration } from './scripts/number-bases'
+export { pythagorasTreeNarration } from './scripts/pythagoras-tree'
+export { tessellationNarration } from './scripts/tessellation'
+export { perfectNumbersNarration } from './scripts/perfect-numbers'
+export { collatzNarration } from './scripts/collatz'
+export { primeFactorizationNarration } from './scripts/prime-factorization'
+export { fibonacciNatureNarration } from './scripts/fibonacci-nature'
+export { diceProbabilityNarration } from './scripts/dice-probability'
+export { ninePointCircleNarration } from './scripts/nine-point-circle'
+export { eulerLineNarration } from './scripts/euler-line'
+export { inversiveGeometryNarration } from './scripts/inversive-geometry'
+export { poincareDiskNarration } from './scripts/poincare-disk'
+export { sphericalGeometryNarration } from './scripts/spherical-geometry'
+export { convexHullNarration } from './scripts/convex-hull'
+export { delaunayTriangulationNarration } from './scripts/delaunay-triangulation'
+export { apollonianGasketNarration } from './scripts/apollonian-gasket'
+export { pickTheoremNarration } from './scripts/pick-theorem'
+export { reuleauxNarration } from './scripts/reuleaux'
+export { circlePackingNarration } from './scripts/circle-packing'
+export { steinerChainNarration } from './scripts/steiner-chain'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -204,6 +229,31 @@ import { percolationNarration } from './scripts/percolation'
 import { cellularAutomataNarration } from './scripts/cellular-automata'
 import { knotTheoryNarration } from './scripts/knot-theory'
 import { waveletNarration } from './scripts/wavelet'
+import { sieveEratosthenesNarration } from './scripts/sieve-eratosthenes'
+import { magicSquareNarration } from './scripts/magic-square'
+import { towerOfHanoiNarration } from './scripts/tower-of-hanoi'
+import { pigeonholeNarration } from './scripts/pigeonhole'
+import { triangleCentersNarration } from './scripts/triangle-centers'
+import { numberBasesNarration } from './scripts/number-bases'
+import { pythagorasTreeNarration } from './scripts/pythagoras-tree'
+import { tessellationNarration } from './scripts/tessellation'
+import { perfectNumbersNarration } from './scripts/perfect-numbers'
+import { collatzNarration } from './scripts/collatz'
+import { primeFactorizationNarration } from './scripts/prime-factorization'
+import { fibonacciNatureNarration } from './scripts/fibonacci-nature'
+import { diceProbabilityNarration } from './scripts/dice-probability'
+import { ninePointCircleNarration } from './scripts/nine-point-circle'
+import { eulerLineNarration } from './scripts/euler-line'
+import { inversiveGeometryNarration } from './scripts/inversive-geometry'
+import { poincareDiskNarration } from './scripts/poincare-disk'
+import { sphericalGeometryNarration } from './scripts/spherical-geometry'
+import { convexHullNarration } from './scripts/convex-hull'
+import { delaunayTriangulationNarration } from './scripts/delaunay-triangulation'
+import { apollonianGasketNarration } from './scripts/apollonian-gasket'
+import { pickTheoremNarration } from './scripts/pick-theorem'
+import { reuleauxNarration } from './scripts/reuleaux'
+import { circlePackingNarration } from './scripts/circle-packing'
+import { steinerChainNarration } from './scripts/steiner-chain'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -306,6 +356,31 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'cellular-automata': cellularAutomataNarration,
   'knot-theory': knotTheoryNarration,
   'wavelet': waveletNarration,
+  'sieve-eratosthenes': sieveEratosthenesNarration,
+  'magic-square': magicSquareNarration,
+  'tower-of-hanoi': towerOfHanoiNarration,
+  'pigeonhole': pigeonholeNarration,
+  'triangle-centers': triangleCentersNarration,
+  'number-bases': numberBasesNarration,
+  'pythagoras-tree': pythagorasTreeNarration,
+  'tessellation': tessellationNarration,
+  'perfect-numbers': perfectNumbersNarration,
+  'collatz': collatzNarration,
+  'prime-factorization': primeFactorizationNarration,
+  'fibonacci-nature': fibonacciNatureNarration,
+  'dice-probability': diceProbabilityNarration,
+  'nine-point-circle': ninePointCircleNarration,
+  'euler-line': eulerLineNarration,
+  'inversive-geometry': inversiveGeometryNarration,
+  'poincare-disk': poincareDiskNarration,
+  'spherical-geometry': sphericalGeometryNarration,
+  'convex-hull': convexHullNarration,
+  'delaunay-triangulation': delaunayTriangulationNarration,
+  'apollonian-gasket': apollonianGasketNarration,
+  'pick-theorem': pickTheoremNarration,
+  'reuleaux': reuleauxNarration,
+  'circle-packing': circlePackingNarration,
+  'steiner-chain': steinerChainNarration,
 }
 
 // 获取稿件

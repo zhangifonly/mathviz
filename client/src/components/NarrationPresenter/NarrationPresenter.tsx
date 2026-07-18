@@ -111,6 +111,31 @@ import { percolationScenes, defaultPercolationState } from './percolationScenes'
 import { cellularAutomataScenes, defaultCellularAutomataState } from './cellularAutomataScenes'
 import { knotTheoryScenes, defaultKnotTheoryState } from './knotTheoryScenes'
 import { waveletScenes, defaultWaveletState } from './waveletScenes'
+import { sieveEratosthenesScenes, defaultSieveEratosthenesState } from './sieveEratosthenesScenes'
+import { magicSquareScenes, defaultMagicSquareState } from './magicSquareScenes'
+import { towerOfHanoiScenes, defaultTowerOfHanoiState } from './towerOfHanoiScenes'
+import { pigeonholeScenes, defaultPigeonholeState } from './pigeonholeScenes'
+import { triangleCentersScenes, defaultTriangleCentersState } from './triangleCentersScenes'
+import { numberBasesScenes, defaultNumberBasesState } from './numberBasesScenes'
+import { pythagorasTreeScenes, defaultPythagorasTreeState } from './pythagorasTreeScenes'
+import { tessellationScenes, defaultTessellationState } from './tessellationScenes'
+import { perfectNumbersScenes, defaultPerfectNumbersState } from './perfectNumbersScenes'
+import { collatzScenes, defaultCollatzState } from './collatzScenes'
+import { primeFactorizationScenes, defaultPrimeFactorizationState } from './primeFactorizationScenes'
+import { fibonacciNatureScenes, defaultFibonacciNatureState } from './fibonacciNatureScenes'
+import { diceProbabilityScenes, defaultDiceProbabilityState } from './diceProbabilityScenes'
+import { ninePointCircleScenes, defaultNinePointCircleState } from './ninePointCircleScenes'
+import { eulerLineScenes, defaultEulerLineState } from './eulerLineScenes'
+import { inversiveGeometryScenes, defaultInversiveGeometryState } from './inversiveGeometryScenes'
+import { poincareDiskScenes, defaultPoincareDiskState } from './poincareDiskScenes'
+import { sphericalGeometryScenes, defaultSphericalGeometryState } from './sphericalGeometryScenes'
+import { convexHullScenes, defaultConvexHullState } from './convexHullScenes'
+import { delaunayTriangulationScenes, defaultDelaunayTriangulationState } from './delaunayTriangulationScenes'
+import { apollonianGasketScenes, defaultApollonianGasketState } from './apollonianGasketScenes'
+import { pickTheoremScenes, defaultPickTheoremState } from './pickTheoremScenes'
+import { reuleauxScenes, defaultReuleauxState } from './reuleauxScenes'
+import { circlePackingScenes, defaultCirclePackingState } from './circlePackingScenes'
+import { steinerChainScenes, defaultSteinerChainState } from './steinerChainScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -235,6 +260,31 @@ const sceneConfigMap: Record<string, {
   'cellular-automata': { scenes: cellularAutomataScenes, defaultState: defaultCellularAutomataState },
   'knot-theory': { scenes: knotTheoryScenes, defaultState: defaultKnotTheoryState },
   'wavelet': { scenes: waveletScenes, defaultState: defaultWaveletState },
+  'sieve-eratosthenes': { scenes: sieveEratosthenesScenes, defaultState: defaultSieveEratosthenesState },
+  'magic-square': { scenes: magicSquareScenes, defaultState: defaultMagicSquareState },
+  'tower-of-hanoi': { scenes: towerOfHanoiScenes, defaultState: defaultTowerOfHanoiState },
+  'pigeonhole': { scenes: pigeonholeScenes, defaultState: defaultPigeonholeState },
+  'triangle-centers': { scenes: triangleCentersScenes, defaultState: defaultTriangleCentersState },
+  'number-bases': { scenes: numberBasesScenes, defaultState: defaultNumberBasesState },
+  'pythagoras-tree': { scenes: pythagorasTreeScenes, defaultState: defaultPythagorasTreeState },
+  'tessellation': { scenes: tessellationScenes, defaultState: defaultTessellationState },
+  'perfect-numbers': { scenes: perfectNumbersScenes, defaultState: defaultPerfectNumbersState },
+  'collatz': { scenes: collatzScenes, defaultState: defaultCollatzState },
+  'prime-factorization': { scenes: primeFactorizationScenes, defaultState: defaultPrimeFactorizationState },
+  'fibonacci-nature': { scenes: fibonacciNatureScenes, defaultState: defaultFibonacciNatureState },
+  'dice-probability': { scenes: diceProbabilityScenes, defaultState: defaultDiceProbabilityState },
+  'nine-point-circle': { scenes: ninePointCircleScenes, defaultState: defaultNinePointCircleState },
+  'euler-line': { scenes: eulerLineScenes, defaultState: defaultEulerLineState },
+  'inversive-geometry': { scenes: inversiveGeometryScenes, defaultState: defaultInversiveGeometryState },
+  'poincare-disk': { scenes: poincareDiskScenes, defaultState: defaultPoincareDiskState },
+  'spherical-geometry': { scenes: sphericalGeometryScenes, defaultState: defaultSphericalGeometryState },
+  'convex-hull': { scenes: convexHullScenes, defaultState: defaultConvexHullState },
+  'delaunay-triangulation': { scenes: delaunayTriangulationScenes, defaultState: defaultDelaunayTriangulationState },
+  'apollonian-gasket': { scenes: apollonianGasketScenes, defaultState: defaultApollonianGasketState },
+  'pick-theorem': { scenes: pickTheoremScenes, defaultState: defaultPickTheoremState },
+  'reuleaux': { scenes: reuleauxScenes, defaultState: defaultReuleauxState },
+  'circle-packing': { scenes: circlePackingScenes, defaultState: defaultCirclePackingState },
+  'steiner-chain': { scenes: steinerChainScenes, defaultState: defaultSteinerChainState },
 }
 
 // 检测是否为移动设备
@@ -439,7 +489,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       // 新增2个待完成课程
       'laplace', 'permutation-combination',
       // 新增优美数学场景
-      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet'
+      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet', 'sieve-eratosthenes', 'magic-square', 'tower-of-hanoi', 'pigeonhole', 'triangle-centers', 'number-bases', 'pythagoras-tree', 'tessellation', 'perfect-numbers', 'collatz', 'prime-factorization', 'fibonacci-nature', 'dice-probability', 'nine-point-circle', 'euler-line', 'inversive-geometry', 'poincare-disk', 'spherical-geometry', 'convex-hull', 'delaunay-triangulation', 'apollonian-gasket', 'pick-theorem', 'reuleaux', 'circle-packing', 'steiner-chain'
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

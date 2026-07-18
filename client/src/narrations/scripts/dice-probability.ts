@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 骰子与古典概率 - 口播稿件
+ * 核心概念：古典概率、和的分布、大数定律、频率逼近概率
+ * 目标受众：初中及以上
+ */
+export const diceProbabilityNarration: NarrationScript = {
+  id: 'dice-probability',
+  title: '骰子与古典概率',
+  subtitle: '频率逼近概率',
+  difficulty: 'beginner',
+  targetAge: '初中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解古典概率的等可能定义',
+    '弄清两骰子之和为何以 7 最常见',
+    '认识频率与概率的关系',
+    '直观感受大数定律',
+  ],
+
+  prerequisites: ['了解分数', '了解简单计数'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '拿起一颗骰子，抛出去，会得到 1 到 6 中的某一个点数。' },
+        { id: 'intro-2', text: '每一面朝上的机会都一样，这背后藏着概率最古老的思想。' },
+        { id: 'intro-3', text: '今天我们就从掷骰子出发，看看概率是怎么被算出来的。' },
+      ],
+    },
+    {
+      id: 'classical',
+      type: 'concept',
+      title: '古典概率',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'cls-1', text: '骰子的六个面完全对称，出现每个点数的可能性都相等。' },
+        { id: 'cls-2', text: '古典概率说：某事件的概率，等于有利结果数除以等可能结果的总数。' },
+        { id: 'cls-3', text: '所以掷出 3 点的概率，就是六分之一。' },
+      ],
+    },
+    {
+      id: 'distribution',
+      type: 'concept',
+      title: '和的分布',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'dist-1', text: '换成两颗骰子，我们关心的是两个点数之和。' },
+        { id: 'dist-2', text: '和为 2 只有一种组合，和为 12 也只有一种，都很稀少。' },
+        { id: 'dist-3', text: '而和为 7 有六种组合，机会最多，图形正中央高高隆起。' },
+      ],
+    },
+    {
+      id: 'law',
+      type: 'concept',
+      title: '大数定律',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'law-1', text: '真去投掷时，起初的频率会上下波动，并不精确。' },
+        { id: 'law-2', text: '但投掷次数越多，实际频率就越稳稳地贴近理论概率。' },
+        { id: 'law-3', text: '这个规律叫大数定律，是频率能估计概率的根本原因。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '不断加大投掷次数，看橙色频率如何一步步压向蓝色理论柱。' },
+        { id: 'int-2', text: '再试试增减骰子，观察分布怎样从平坦变成钟形。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '古典概率用等可能结果精确算出理论值。' },
+        { id: 'sum-2', text: '大量试验的频率会逼近这个理论概率。' },
+        { id: 'sum-3', text: '小小骰子，讲清了概率的核心思想，我们下次再见！' },
+      ],
+    },
+  ],
+}
