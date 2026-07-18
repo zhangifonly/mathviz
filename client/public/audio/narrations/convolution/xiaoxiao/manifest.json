@@ -1,0 +1,179 @@
+{
+  "script_id": "convolution",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "convolution",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "给你一段有噪声的信号，怎样把它变得平滑，或者找出它的边缘？"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "答案是滤波，而滤波的本质，就是一次次卷积运算。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "卷积用一个小小的核，去扫过整段信号，重新塑造它的形状。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "flip",
+      "line_id": "flip-1",
+      "filename": "flip-flip-1.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/flip-flip-1.mp3",
+      "duration": 1.54,
+      "size": 24624,
+      "text": "卷积的第一步，是把卷积核左右翻转过来。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "flip",
+      "line_id": "flip-2",
+      "filename": "flip-flip-2.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/flip-flip-2.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "翻转让运算满足交换律，也是卷积区别于相关的关键一笔。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "flip",
+      "line_id": "flip-3",
+      "filename": "flip-flip-3.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/flip-flip-3.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "对称的核翻转后不变，但不对称的核，翻转的效果一目了然。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "slide",
+      "line_id": "slide-1",
+      "filename": "slide-slide-1.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/slide-slide-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "把翻转后的核对齐到信号的某一点，让它们逐位相乘。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "slide",
+      "line_id": "slide-2",
+      "filename": "slide-slide-2.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/slide-slide-2.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "把这些乘积全部加起来，就得到输出在这一点的值。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "slide",
+      "line_id": "slide-3",
+      "filename": "slide-slide-3.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/slide-slide-3.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "核向右滑动一格，重复相乘求和，输出就一点一点生成了。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "kernels",
+      "line_id": "ker-1",
+      "filename": "kernels-ker-1.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/kernels-ker-1.mp3",
+      "duration": 2.61,
+      "size": 41760,
+      "text": "移动平均和高斯核，把邻居加权平均，信号变得平滑，噪声被压下去。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "kernels",
+      "line_id": "ker-2",
+      "filename": "kernels-ker-2.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/kernels-ker-2.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "而边缘检测核是一组差分，在信号突变的台阶处输出高峰。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "kernels",
+      "line_id": "ker-3",
+      "filename": "kernels-ker-3.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/kernels-ker-3.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "同一段信号，换一个核，就能得到截然不同的结果。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "选择不同的卷积核，观察输出如何被平滑或被凸显。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "拖动滑块，跟着翻转核一格一格地走完整个卷积过程。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "卷积就是翻转核、滑动、逐点相乘、再求和。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "换一个核，就换一种滤波，平滑与边缘尽在掌握。"
+    },
+    {
+      "script_id": "convolution",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/convolution/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "从数字信号到卷积神经网络，它无处不在，我们下次再见！"
+    }
+  ],
+  "total_duration": 34.709999999999994,
+  "total_size": 555264
+}

@@ -1,0 +1,179 @@
+{
+  "script_id": "fft",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "fft",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "任何信号，都能拆成一堆不同频率正弦波的叠加。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.56,
+      "size": 41040,
+      "text": "把信号还原成频率成分的运算，叫做离散傅里叶变换，简称 DFT。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "可是朴素 DFT 要做 n 平方次运算，采样点一多就慢得让人绝望。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "divide",
+      "line_id": "div-1",
+      "filename": "divide-div-1.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/divide-div-1.mp3",
+      "duration": 2.59,
+      "size": 41472,
+      "text": "一九六五年，库利和图基想到一招：把序列按下标的奇偶拆成两半。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "divide",
+      "line_id": "div-2",
+      "filename": "divide-div-2.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/divide-div-2.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "偶数位一组，奇数位一组，各自再做一次规模减半的傅里叶变换。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "divide",
+      "line_id": "div-3",
+      "filename": "divide-div-3.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/divide-div-3.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "这正是分治：大问题不断对半劈开，直到只剩一个点。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "butterfly",
+      "line_id": "bf-1",
+      "filename": "butterfly-bf-1.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/butterfly-bf-1.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "两个子问题的结果要合并，靠的是所谓的蝶形运算。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "butterfly",
+      "line_id": "bf-2",
+      "filename": "butterfly-bf-2.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/butterfly-bf-2.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "给奇数组乘上一个旋转因子，再和偶数组做一次加法、一次减法。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "butterfly",
+      "line_id": "bf-3",
+      "filename": "butterfly-bf-3.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/butterfly-bf-3.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "一上一下两条连线,画出来像蝴蝶的翅膀,名字由此而来。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "speed",
+      "line_id": "spd-1",
+      "filename": "speed-spd-1.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/speed-spd-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "每层合并只花线性时间，而对半劈开一共只有 log n 层。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "speed",
+      "line_id": "spd-2",
+      "filename": "speed-spd-2.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/speed-spd-2.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "于是总代价从 n 平方降到 n 乘 log n。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "speed",
+      "line_id": "spd-3",
+      "filename": "speed-spd-3.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/speed-spd-3.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "当 n 是一百万时,这意味着快了整整五万倍。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "切换不同的合成信号，看幅度谱上的粉色峰跳到哪个频率。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "加大采样点数，留意朴素 DFT 与 FFT 的运算次数越拉越开。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "FFT 用奇偶分治加蝶形运算，把 DFT 从 n 平方压到 n log n。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "它是音频、图像、通信背后无处不在的引擎。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/fft/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "一次巧妙的分治，让频谱瞬间浮现，我们下次再见！"
+    }
+  ],
+  "total_duration": 36.78,
+  "total_size": 588672
+}

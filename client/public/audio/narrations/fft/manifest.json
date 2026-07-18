@@ -1,0 +1,73 @@
+{
+  "script_id": "fft",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "fft",
+      "section_id": "divide",
+      "line_id": "div-1",
+      "filename": "divide-div-1.mp3",
+      "path": "audio/narrations/fft/divide-div-1.mp3",
+      "duration": 2.59,
+      "size": 41472,
+      "text": "一九六五年，库利和图基想到一招：把序列按下标的奇偶拆成两半。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "divide",
+      "line_id": "div-2",
+      "filename": "divide-div-2.mp3",
+      "path": "audio/narrations/fft/divide-div-2.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "偶数位一组，奇数位一组，各自再做一次规模减半的傅里叶变换。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "butterfly",
+      "line_id": "bf-1",
+      "filename": "butterfly-bf-1.mp3",
+      "path": "audio/narrations/fft/butterfly-bf-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "两个子问题的结果要合并，靠的是所谓的蝶形运算。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "butterfly",
+      "line_id": "bf-2",
+      "filename": "butterfly-bf-2.mp3",
+      "path": "audio/narrations/fft/butterfly-bf-2.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "给奇数组乘上一个旋转因子，再和偶数组做一次加法、一次减法。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "speed",
+      "line_id": "spd-1",
+      "filename": "speed-spd-1.mp3",
+      "path": "audio/narrations/fft/speed-spd-1.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "每层合并只花线性时间，而对半劈开一共只有 log n 层。"
+    },
+    {
+      "script_id": "fft",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/fft/summary-sum-1.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "FFT 用奇偶分治加蝶形运算，把 DFT 从 n 平方压到 n log n。"
+    }
+  ],
+  "total_duration": 13.62,
+  "total_size": 217872,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

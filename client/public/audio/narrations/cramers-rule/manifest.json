@@ -1,0 +1,183 @@
+{
+  "script_id": "cramers-rule",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "cramers-rule",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/cramers-rule/intro-intro-1.mp3",
+      "duration": 1.5,
+      "size": 24048,
+      "text": "解方程组，我们习惯消元或者代入。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/cramers-rule/intro-intro-2.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "但还有一种优雅的方法，直接用行列式写出答案。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/cramers-rule/intro-intro-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "它就是克拉默法则，把解表示成两个行列式的比值。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "rule",
+      "line_id": "rule-1",
+      "filename": "rule-rule-1.mp3",
+      "path": "audio/narrations/cramers-rule/rule-rule-1.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "对方程组 A 乘 x 等于 b，先算系数行列式 det A。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "rule",
+      "line_id": "rule-2",
+      "filename": "rule-rule-2.mp3",
+      "path": "audio/narrations/cramers-rule/rule-rule-2.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "只要 det A 不为零，方程组就有唯一解。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "rule",
+      "line_id": "rule-3",
+      "filename": "rule-rule-3.mp3",
+      "path": "audio/narrations/cramers-rule/rule-rule-3.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "每个未知数 x_i，等于一个新行列式除以 det A。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "replace",
+      "line_id": "rep-1",
+      "filename": "replace-rep-1.mp3",
+      "path": "audio/narrations/cramers-rule/replace-rep-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "这个新行列式怎么来？把 A 的第 i 列换成常数向量 b。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "replace",
+      "line_id": "rep-2",
+      "filename": "replace-rep-2.mp3",
+      "path": "audio/narrations/cramers-rule/replace-rep-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "换列后的矩阵记作 A_i，它的行列式就是分子。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "replace",
+      "line_id": "rep-3",
+      "filename": "replace-rep-3.mp3",
+      "path": "audio/narrations/cramers-rule/replace-rep-3.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "于是 x_i 等于 det A_i 除以 det A，简洁又对称。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "geometry",
+      "line_id": "geo-1",
+      "filename": "geometry-geo-1.mp3",
+      "path": "audio/narrations/cramers-rule/geometry-geo-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "行列式的绝对值，正是列向量张成的平行四边形面积。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "geometry",
+      "line_id": "geo-2",
+      "filename": "geometry-geo-2.mp3",
+      "path": "audio/narrations/cramers-rule/geometry-geo-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "替换一列，相当于把一条边换个方向，面积随之改变。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "geometry",
+      "line_id": "geo-3",
+      "filename": "geometry-geo-3.mp3",
+      "path": "audio/narrations/cramers-rule/geometry-geo-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "所以解的每个分量，本质上是两块面积的比值。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/cramers-rule/interaction-int-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "拖动首个系数，交点也就是解会随之滑动。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "interaction",
+      "line_id": "int-3",
+      "filename": "interaction-int-3.mp3",
+      "path": "audio/narrations/cramers-rule/interaction-int-3.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "当两线趋于平行，det A 趋近零，解也随之失控。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/cramers-rule/summary-sum-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "克拉默法则用行列式之比，直接写出方程组的解。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/cramers-rule/summary-sum-2.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "替换列构造分子，系数行列式作分母，几何上是面积比。"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/cramers-rule/summary-sum-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "一个行列式的比值，藏着方程的答案，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.22,
+  "total_size": 531792,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "script_id": "windowing",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "windowing",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "要分析一段信号的频率，我们只能截取有限的一段来计算。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "可这一刀切下去，信号的两端被硬生生截断了。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "这个突兀的边缘，会给频谱带来意想不到的麻烦。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "leakage",
+      "line_id": "leak-1",
+      "filename": "leakage-leak-1.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/leakage-leak-1.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "本该是一根干净的谱线，却向两侧渗出许多小的杂散能量。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "leakage",
+      "line_id": "leak-2",
+      "filename": "leakage-leak-2.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/leakage-leak-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "这就是频谱泄漏，真实频率被涂抹到了周围一大片。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "leakage",
+      "line_id": "leak-3",
+      "filename": "leakage-leak-3.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/leakage-leak-3.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "罪魁祸首，正是矩形窗那两个陡峭的直角边缘。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "window",
+      "line_id": "win-1",
+      "filename": "window-win-1.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/window-win-1.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "解决办法是给信号乘上一个两端渐渐归零的窗函数。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "window",
+      "line_id": "win-2",
+      "filename": "window-win-2.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/window-win-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "汉宁、汉明、布莱克曼窗，都是让边缘平滑过渡的曲线。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "window",
+      "line_id": "win-3",
+      "filename": "window-win-3.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/window-win-3.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "边缘不再突兀，泄漏出去的杂散能量就大大减少了。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "tradeoff",
+      "line_id": "trade-1",
+      "filename": "tradeoff-trade-1.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/tradeoff-trade-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "频谱里高高的中间部分叫主瓣，两侧的小峰叫旁瓣。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "tradeoff",
+      "line_id": "trade-2",
+      "filename": "tradeoff-trade-2.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/tradeoff-trade-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "矩形窗主瓣最窄、分辨率高，但旁瓣高、泄漏重。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "tradeoff",
+      "line_id": "trade-3",
+      "filename": "tradeoff-trade-3.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/tradeoff-trade-3.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "布莱克曼窗旁瓣压得最低，代价是主瓣变宽、分辨率下降。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "切换不同的窗，观察下方频谱旁瓣的高低变化。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "从矩形到布莱克曼，看杂散能量一点点被压下去。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "截断造成泄漏，加窗让边缘平滑，泄漏随之减小。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "窄主瓣与低旁瓣不可兼得，要按需求取舍。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/windowing/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "一扇合适的窗，让频谱更清晰，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.92999999999999,
+  "total_size": 526752
+}

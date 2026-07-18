@@ -1,0 +1,139 @@
+{
+  "script_id": "aliasing",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "aliasing",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/aliasing/yunxi/intro-intro-1.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "看老电影时，你有没有发现飞驰的车轮竟然在倒转？"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/aliasing/yunxi/intro-intro-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "车轮明明在往前，画面里却像在往后转，甚至静止不动。"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/aliasing/yunxi/intro-intro-3.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "这不是错觉，而是相机每秒只拍有限张画面造成的错位。"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/aliasing/yunxi/intro-intro-4.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "这种高频信号伪装成低频的现象，就叫做混叠。"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "sample",
+      "line_id": "def-1",
+      "filename": "sample-def-1.mp3",
+      "path": "audio/narrations/aliasing/yunxi/sample-def-1.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "真实世界的信号是连续的，比如一条不停摆动的正弦曲线。"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "sample",
+      "line_id": "def-2",
+      "filename": "sample-def-2.mp3",
+      "path": "audio/narrations/aliasing/yunxi/sample-def-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "要用数字记录它，只能每隔一小段时间取一个值，这就是采样。"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "undersample",
+      "line_id": "under-2",
+      "filename": "undersample-under-2.mp3",
+      "path": "audio/narrations/aliasing/yunxi/undersample-under-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "把这些稀疏的点连起来，会得到一条完全不同的低频曲线。"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "apparent",
+      "line_id": "app-2",
+      "filename": "apparent-app-2.mp3",
+      "path": "audio/narrations/aliasing/yunxi/apparent-app-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "它等于真实频率减去采样率的整数倍，再取绝对值。"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/aliasing/yunxi/interaction-int-1.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "调高真实频率，或调低采样率，看红色假波如何出现。"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/aliasing/yunxi/interaction-int-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "当采样率越过奈奎斯特这条线，红波就会和灰波重合。"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/aliasing/yunxi/summary-sum-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "采样不足时，高频信号会伪装成低频，这就是混叠。"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/aliasing/yunxi/summary-sum-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "只要采样率高过频率的两倍，就能忠实还原原信号。"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/aliasing/yunxi/summary-sum-3.mp3",
+      "duration": 1.41,
+      "size": 22608,
+      "text": "看懂了车轮倒转的秘密，我们下次再见！"
+    }
+  ],
+  "total_duration": 26.130000000000003,
+  "total_size": 417744
+}

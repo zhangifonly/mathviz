@@ -1,0 +1,179 @@
+{
+  "script_id": "chebyshev-polynomials",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "我们常想用简单的多项式去逼近复杂的曲线。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "可问题是，怎样让逼近的最大误差尽可能地小？"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "答案藏在一族特别的多项式里，它叫切比雪夫多项式。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "recurrence",
+      "line_id": "def-1",
+      "filename": "recurrence-def-1.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/recurrence-def-1.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "它从最简单的两项出发：T0 恒等于一，T1 就是 x 本身。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "recurrence",
+      "line_id": "def-2",
+      "filename": "recurrence-def-2.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/recurrence-def-2.mp3",
+      "duration": 3.47,
+      "size": 55584,
+      "text": "之后每一项都由前两项生成：T(n+1) 等于 2x 乘 Tn，再减去 T(n-1)。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "recurrence",
+      "line_id": "def-3",
+      "filename": "recurrence-def-3.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/recurrence-def-3.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "只用一个乘法和一个减法，就能层层递推出任意高阶。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "oscillation",
+      "line_id": "osc-1",
+      "filename": "oscillation-osc-1.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/oscillation-osc-1.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "在负一到一之间，每条曲线都在正一和负一之间反复摆动。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "oscillation",
+      "line_id": "osc-2",
+      "filename": "oscillation-osc-2.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/oscillation-osc-2.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "波峰和波谷始终顶到正负一，幅度分毫不差，这就是等波动性质。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "oscillation",
+      "line_id": "osc-3",
+      "filename": "oscillation-osc-3.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/oscillation-osc-3.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "正是这种均匀的振荡，让它的最大偏离被压到理论上的最小。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "nodes",
+      "line_id": "node-1",
+      "filename": "nodes-node-1.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/nodes-node-1.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "曲线穿过横轴的那些点，就是切比雪夫节点。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "nodes",
+      "line_id": "node-2",
+      "filename": "nodes-node-2.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/nodes-node-2.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "它们的坐标是 cos((2k+1)π 除以 2n)，两端密、中间疏。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "nodes",
+      "line_id": "node-3",
+      "filename": "nodes-node-3.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/nodes-node-3.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "拿它们做插值节点，能有效抑制高阶插值边缘剧烈抖动的龙格现象。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "调节阶数，看曲线的振荡越来越密、根节点越来越多。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "留意黑点始终落在横轴上，且总是往两端聚拢。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "切比雪夫多项式由简洁的递推生成，在区间内等幅振荡。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "它的节点两端加密，是抑制龙格现象、实现最优逼近的利器。"
+    },
+    {
+      "script_id": "chebyshev-polynomials",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/chebyshev-polynomials/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "一个递推公式，托起了极小化最大误差的智慧，我们下次再见！"
+    }
+  ],
+  "total_duration": 36.849999999999994,
+  "total_size": 589392
+}

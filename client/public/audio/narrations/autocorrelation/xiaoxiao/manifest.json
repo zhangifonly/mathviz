@@ -1,0 +1,189 @@
+{
+  "script_id": "autocorrelation",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "autocorrelation",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "这是一段忽上忽下、看起来杂乱无章的信号。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "可它并不是纯噪声，里面藏着一个稳定的周期。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "肉眼很难看出来，但有一种方法能把它揪出来。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/intro-intro-4.mp3",
+      "duration": 0.98,
+      "size": 15696,
+      "text": "这个方法就是自相关。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/define-def-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "自相关，就是拿信号和它自己延迟一段后的副本作比较。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/define-def-2.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "延迟的样本数叫做 lag，也就是错开的距离。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/define-def-3.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "错开之后仍然很像自己，自相关就高。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "compute",
+      "line_id": "com-1",
+      "filename": "compute-com-1.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/compute-com-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "具体做法是：把每个点和它延迟 lag 后的点相乘。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "compute",
+      "line_id": "com-2",
+      "filename": "compute-com-2.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/compute-com-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "再把所有乘积加起来，就得到这个 lag 的自相关值。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "compute",
+      "line_id": "com-3",
+      "filename": "compute-com-3.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/compute-com-3.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "对每个 lag 都算一遍，就画出下方那条自相关曲线。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "peak",
+      "line_id": "peak-1",
+      "filename": "peak-peak-1.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/peak-peak-1.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "当延迟恰好等于信号周期时，波峰对波峰、波谷对波谷。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "peak",
+      "line_id": "peak-2",
+      "filename": "peak-peak-2.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/peak-peak-2.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "乘积几乎全为正，累加出一个高高的峰值。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "peak",
+      "line_id": "peak-3",
+      "filename": "peak-peak-3.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/peak-peak-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "于是第一个显著峰的位置，就是我们要找的周期。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "切换不同信号，看噪声再大，周期峰依然稳稳出现。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "点击重新生成噪声，红线始终锁定在同一个周期上。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "自相关用延迟相乘求和，衡量信号隔多久还像自己。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "周期倍数处的峰值，让我们从噪声里提取出基频。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/autocorrelation/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "一个错位相乘的巧思，就听懂了信号的节拍，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.29,
+  "total_size": 516528
+}
