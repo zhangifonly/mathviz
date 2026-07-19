@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { experiments } from './catalog'
 import type { DifficultyLevel, Experiment } from './catalog'
+import { buildIndex, makeFuse, searchExperiments } from './searchExperiments'
 
 // 难度等级配置 - 使用更精美的渐变色
 const difficultyConfig: Record<DifficultyLevel, { label: string; color: string; bgColor: string; gradient: string; ageRange: string }> = {
@@ -48,15 +49,18 @@ export default function Home() {
   const now = new Date()
   const isValentineSeason = now.getMonth() === 1 && now.getDate() >= 12 && now.getDate() <= 16
 
-  // 过滤实验
-  const filteredExperiments = experiments.filter((exp) => {
+  // 预建拼音索引 + Fuse 实例(仅一次)，供拼音首字母/全拼/模糊/多关键词搜索
+  const fuse = useMemo(() => makeFuse(buildIndex(experiments)), [])
+
+  // 先按搜索命中(支持拼音/模糊/多关键词 AND)，再叠加难度/主题筛选
+  const searchMatched = useMemo(
+    () => searchExperiments(experiments, searchQuery, fuse),
+    [searchQuery, fuse],
+  )
+  const filteredExperiments = searchMatched.filter((exp) => {
     const matchesDifficulty = selectedDifficulty === 'all' || exp.difficulty === selectedDifficulty
     const matchesTopic = selectedTopic === 'all' || exp.topics.includes(selectedTopic)
-    const matchesSearch =
-      searchQuery === '' ||
-      exp.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      exp.description.toLowerCase().includes(searchQuery.toLowerCase())
-    return matchesDifficulty && matchesTopic && matchesSearch
+    return matchesDifficulty && matchesTopic
   })
 
   const groupedExperiments = groupByDifficulty(filteredExperiments)
