@@ -1,0 +1,98 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 部分分式分解 - 口播稿件
+ * 核心概念：真分式拆分、留数法(cover-up)、恒等验证
+ * 目标受众：高中及以上
+ */
+export const partialFractionsNarration: NarrationScript = {
+  id: 'partial-fractions',
+  title: '部分分式分解',
+  subtitle: '拆分有理分式',
+  difficulty: 'intermediate',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解为什么要把复杂分式拆成简单分式',
+    '掌握留数法(cover-up)快速求系数',
+    '验证分解前后两式处处相等',
+    '学会用分解简化积分与级数',
+  ],
+
+  prerequisites: ['了解多项式与因式分解', '了解函数求值'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '遇到一个分母能因式分解的有理分式，直接积分往往无从下手。' },
+        { id: 'intro-2', text: '比如三x加一，除以x减一再乘x加二，这个式子看着就让人头疼。' },
+        { id: 'intro-3', text: '有没有办法把它变简单？答案是把它拆开。' },
+      ],
+    },
+    {
+      id: 'split',
+      type: 'concept',
+      title: '拆成简单分式',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '如果分母是几个不同的一次因式相乘，就能拆成几个简单分式相加。' },
+        { id: 'def-2', text: '每个简单分式的分母，正是原来的一个一次因式。' },
+        { id: 'def-3', text: '剩下的问题，就是求出每个分式头上的那个常数系数。' },
+      ],
+    },
+    {
+      id: 'residue',
+      type: 'concept',
+      title: '留数法求系数',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'res-1', text: '留数法非常巧妙：想求某个因式对应的系数，就把它从分母里盖住。' },
+        { id: 'res-2', text: '再把这个因式的根代进剩下的式子，算出来的值就是系数。' },
+        { id: 'res-3', text: '写成公式就是，A等于分子在根处的值，除以分母求导在根处的值。' },
+      ],
+    },
+    {
+      id: 'verify',
+      type: 'concept',
+      title: '验证相等',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'ver-1', text: '把拆出来的几个简单分式加回去，曲线和原式完全重合。' },
+        { id: 'ver-2', text: '除了在渐近线处，处处相等，这说明我们的分解是恒等式。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '切换不同的例子，看分子分母变了以后系数怎么变。' },
+        { id: 'int-2', text: '打开或关闭彩色分式曲线，感受它们如何叠加成黑色原曲线。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '部分分式分解，把复杂的有理式拆成一堆简单分式之和。' },
+        { id: 'sum-2', text: '用留数法盖住因式代根，系数一步到位。' },
+        { id: 'sum-3', text: '化繁为简是数学的常用魔法，我们下次再见！' },
+      ],
+    },
+  ],
+}

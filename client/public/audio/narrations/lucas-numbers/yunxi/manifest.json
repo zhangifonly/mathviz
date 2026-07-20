@@ -1,0 +1,159 @@
+{
+  "script_id": "lucas-numbers",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/intro-intro-1.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "大家都熟悉斐波那契数列，它有一个鲜为人知的兄弟。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/intro-intro-2.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "这位兄弟叫卢卡斯数，用完全相同的加法规则,却从不同的起点出发。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/intro-intro-3.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "斐波那契从 0 和 1 起步，而卢卡斯数从 2 和 1 起步。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/define-def-1.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "规则很简单：每一项都是前两项之和。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/define-def-2.mp3",
+      "duration": 2.87,
+      "size": 45936,
+      "text": "从 2 和 1 开始，我们得到 3、4、7、11、18、29。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/define-def-3.mp3",
+      "duration": 3.92,
+      "size": 62640,
+      "text": "这就是卢卡斯数列：2, 1, 3, 4, 7, 11, 18, 29, 47，一路生长。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "golden",
+      "line_id": "gold-1",
+      "filename": "golden-gold-1.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/golden-gold-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "把相邻两项相除，比值会一步步靠近黄金比 1.618。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "golden",
+      "line_id": "gold-2",
+      "filename": "golden-gold-2.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/golden-gold-2.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "这并不巧合，只要是这种加法递推,比值都会奔向黄金比。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "golden",
+      "line_id": "gold-3",
+      "filename": "golden-gold-3.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/golden-gold-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "起点不同，命运却相同,这正是数学的迷人之处。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "link",
+      "line_id": "link-1",
+      "filename": "link-link-1.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/link-link-1.mp3",
+      "duration": 1.51,
+      "size": 24192,
+      "text": "两个数列的关系可以写成一行漂亮的公式。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "link",
+      "line_id": "link-2",
+      "filename": "link-link-2.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/link-link-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "第 n 个卢卡斯数，等于第 n 减一个加上第 n 加一个斐波那契数。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "link",
+      "line_id": "link-3",
+      "filename": "link-link-3.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/link-link-3.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "一个的信息里,藏着另一个的全部秘密。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/interaction-int-2.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "打开斐波那契对比，你会发现两条比值曲线最终汇聚到同一条金线上。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/summary-sum-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "卢卡斯数与斐波那契同宗同源，只是起点不同。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/summary-sum-2.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "它们的相邻比都趋向黄金比,并由简洁的公式紧紧相连。"
+    }
+  ],
+  "total_duration": 33.099999999999994,
+  "total_size": 529488
+}

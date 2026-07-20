@@ -1,0 +1,129 @@
+{
+  "script_id": "mean-value-theorem",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/intro-intro-1.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "开车从 A 地到 B 地，平均时速是总路程除以总时间。"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/intro-intro-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "这个平均变化率，在图像上就是连接起点终点的那条割线的斜率。"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/intro-intro-3.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "一个自然的问题是：路上有没有某个瞬间，恰好跑出这个平均速度？"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "secant",
+      "line_id": "sec-1",
+      "filename": "secant-sec-1.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/secant-sec-1.mp3",
+      "duration": 2.38,
+      "size": 38160,
+      "text": "割线斜率等于 f(b) 减 f(a)，再除以 b 减 a。"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "secant",
+      "line_id": "sec-2",
+      "filename": "secant-sec-2.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/secant-sec-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "它衡量的是整个区间上，函数值的总体升降快慢。"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "secant",
+      "line_id": "sec-3",
+      "filename": "secant-sec-3.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/secant-sec-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "而曲线上每一点的切线斜率，就是那一瞬间的导数。"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "rolle",
+      "line_id": "rolle-1",
+      "filename": "rolle-rolle-1.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/rolle-rolle-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "如果两端点函数值相等，割线就变成水平线，斜率为零。"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "rolle",
+      "line_id": "rolle-2",
+      "filename": "rolle-rolle-2.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/rolle-rolle-2.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "这时必有一点导数为零，那正是曲线的峰或谷，这就是罗尔定理。"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/interaction-int-1.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "换一个函数或调整区间，红色割线会随之移动。"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/summary-sum-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "中值定理保证平均变化率一定会被某个瞬时变化率取到。"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/summary-sum-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "几何上，就是曲线上总有一点的切线平行于两端的割线。"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/summary-sum-3.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "罗尔定理是它水平时的特例，我们下次再见！"
+    }
+  ],
+  "total_duration": 24.86,
+  "total_size": 397728
+}

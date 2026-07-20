@@ -1,0 +1,93 @@
+{
+  "script_id": "ear-clipping",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "ear-clipping",
+      "section_id": "clip",
+      "line_id": "clip-2",
+      "filename": "clip-clip-2.mp3",
+      "path": "audio/narrations/ear-clipping/clip-clip-2.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "在剩下的图形上继续找耳朵、继续切，像削苹果皮一样一步步进行。"
+    },
+    {
+      "script_id": "ear-clipping",
+      "section_id": "clip",
+      "line_id": "clip-3",
+      "filename": "clip-clip-3.mp3",
+      "path": "audio/narrations/ear-clipping/clip-clip-3.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "直到最后只剩一个三角形，整个多边形就被完全剖分了。"
+    },
+    {
+      "script_id": "ear-clipping",
+      "section_id": "count",
+      "line_id": "cnt-1",
+      "filename": "count-cnt-1.mp3",
+      "path": "audio/narrations/ear-clipping/count-cnt-1.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "数学上可以证明，任何简单多边形都至少有两只耳朵。"
+    },
+    {
+      "script_id": "ear-clipping",
+      "section_id": "count",
+      "line_id": "cnt-2",
+      "filename": "count-cnt-2.mp3",
+      "path": "audio/narrations/ear-clipping/count-cnt-2.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "一个 n 条边的多边形，最终恰好被切成 n 减 2 个三角形。"
+    },
+    {
+      "script_id": "ear-clipping",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/ear-clipping/interaction-int-1.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "点击单步按钮，每按一次就切下一只耳朵，看三角形逐个出现。"
+    },
+    {
+      "script_id": "ear-clipping",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/ear-clipping/interaction-int-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "换成五角星试试，凹角会让某些顶点暂时当不了耳朵。"
+    },
+    {
+      "script_id": "ear-clipping",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/ear-clipping/summary-sum-1.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "耳切法用一个简单的贪心规则，把复杂多边形化整为零。"
+    },
+    {
+      "script_id": "ear-clipping",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/ear-clipping/summary-sum-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "它是计算机图形学里三角化的经典算法，简单又可靠。"
+    }
+  ],
+  "total_duration": 17.51,
+  "total_size": 280224,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

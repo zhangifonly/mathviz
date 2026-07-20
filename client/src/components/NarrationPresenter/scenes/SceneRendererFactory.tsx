@@ -176,6 +176,206 @@ const PercolationSceneRenderer = lazy(() => import('./Percolation/PercolationSce
 const CellularAutomataSceneRenderer = lazy(() => import('./CellularAutomata/CellularAutomataSceneRenderer'))
 const KnotTheorySceneRenderer = lazy(() => import('./KnotTheory/KnotTheorySceneRenderer'))
 const WaveletSceneRenderer = lazy(() => import('./Wavelet/WaveletSceneRenderer'))
+const SieveEratosthenesSceneRenderer = lazy(() => import('./SieveEratosthenes/SieveEratosthenesSceneRenderer'))
+const MagicSquareSceneRenderer = lazy(() => import('./MagicSquare/MagicSquareSceneRenderer'))
+const TowerOfHanoiSceneRenderer = lazy(() => import('./TowerOfHanoi/TowerOfHanoiSceneRenderer'))
+const PigeonholeSceneRenderer = lazy(() => import('./Pigeonhole/PigeonholeSceneRenderer'))
+const TriangleCentersSceneRenderer = lazy(() => import('./TriangleCenters/TriangleCentersSceneRenderer'))
+const NumberBasesSceneRenderer = lazy(() => import('./NumberBases/NumberBasesSceneRenderer'))
+const PythagorasTreeSceneRenderer = lazy(() => import('./PythagorasTree/PythagorasTreeSceneRenderer'))
+const TessellationSceneRenderer = lazy(() => import('./Tessellation/TessellationSceneRenderer'))
+const PerfectNumbersSceneRenderer = lazy(() => import('./PerfectNumbers/PerfectNumbersSceneRenderer'))
+const CollatzSceneRenderer = lazy(() => import('./Collatz/CollatzSceneRenderer'))
+const PrimeFactorizationSceneRenderer = lazy(() => import('./PrimeFactorization/PrimeFactorizationSceneRenderer'))
+const FibonacciNatureSceneRenderer = lazy(() => import('./FibonacciNature/FibonacciNatureSceneRenderer'))
+const DiceProbabilitySceneRenderer = lazy(() => import('./DiceProbability/DiceProbabilitySceneRenderer'))
+const NinePointCircleSceneRenderer = lazy(() => import('./NinePointCircle/NinePointCircleSceneRenderer'))
+const EulerLineSceneRenderer = lazy(() => import('./EulerLine/EulerLineSceneRenderer'))
+const InversiveGeometrySceneRenderer = lazy(() => import('./InversiveGeometry/InversiveGeometrySceneRenderer'))
+const PoincareDiskSceneRenderer = lazy(() => import('./PoincareDisk/PoincareDiskSceneRenderer'))
+const SphericalGeometrySceneRenderer = lazy(() => import('./SphericalGeometry/SphericalGeometrySceneRenderer'))
+const ConvexHullSceneRenderer = lazy(() => import('./ConvexHull/ConvexHullSceneRenderer'))
+const DelaunayTriangulationSceneRenderer = lazy(() => import('./DelaunayTriangulation/DelaunayTriangulationSceneRenderer'))
+const ApollonianGasketSceneRenderer = lazy(() => import('./ApollonianGasket/ApollonianGasketSceneRenderer'))
+const PickTheoremSceneRenderer = lazy(() => import('./PickTheorem/PickTheoremSceneRenderer'))
+const ReuleauxSceneRenderer = lazy(() => import('./Reuleaux/ReuleauxSceneRenderer'))
+const CirclePackingSceneRenderer = lazy(() => import('./CirclePacking/CirclePackingSceneRenderer'))
+const SteinerChainSceneRenderer = lazy(() => import('./SteinerChain/SteinerChainSceneRenderer'))
+const PolynomialRootsSceneRenderer = lazy(() => import('./PolynomialRoots/PolynomialRootsSceneRenderer'))
+const VietaFormulasSceneRenderer = lazy(() => import('./VietaFormulas/VietaFormulasSceneRenderer'))
+const BinomialTheoremSceneRenderer = lazy(() => import('./BinomialTheorem/BinomialTheoremSceneRenderer'))
+const InverseFunctionSceneRenderer = lazy(() => import('./InverseFunction/InverseFunctionSceneRenderer'))
+const CompositeFunctionSceneRenderer = lazy(() => import('./CompositeFunction/CompositeFunctionSceneRenderer'))
+const PartialFractionsSceneRenderer = lazy(() => import('./PartialFractions/PartialFractionsSceneRenderer'))
+const RationalAsymptotesSceneRenderer = lazy(() => import('./RationalAsymptotes/RationalAsymptotesSceneRenderer'))
+const PiecewiseFunctionSceneRenderer = lazy(() => import('./PiecewiseFunction/PiecewiseFunctionSceneRenderer'))
+const LogarithmSpiralSceneRenderer = lazy(() => import('./LogarithmSpiral/LogarithmSpiralSceneRenderer'))
+const FunctionTransformSceneRenderer = lazy(() => import('./FunctionTransform/FunctionTransformSceneRenderer'))
+const EuclideanAlgorithmSceneRenderer = lazy(() => import('./EuclideanAlgorithm/EuclideanAlgorithmSceneRenderer'))
+const ChineseRemainderSceneRenderer = lazy(() => import('./ChineseRemainder/ChineseRemainderSceneRenderer'))
+const QuadraticResidueSceneRenderer = lazy(() => import('./QuadraticResidue/QuadraticResidueSceneRenderer'))
+const GaussianIntegersSceneRenderer = lazy(() => import('./GaussianIntegers/GaussianIntegersSceneRenderer'))
+const IntegerPartitionSceneRenderer = lazy(() => import('./IntegerPartition/IntegerPartitionSceneRenderer'))
+const PellEquationSceneRenderer = lazy(() => import('./PellEquation/PellEquationSceneRenderer'))
+const PrimeCountingSceneRenderer = lazy(() => import('./PrimeCounting/PrimeCountingSceneRenderer'))
+const DigitalRootSceneRenderer = lazy(() => import('./DigitalRoot/DigitalRootSceneRenderer'))
+const EpsilonDeltaSceneRenderer = lazy(() => import('./EpsilonDelta/EpsilonDeltaSceneRenderer'))
+const MeanValueTheoremSceneRenderer = lazy(() => import('./MeanValueTheorem/MeanValueTheoremSceneRenderer'))
+const RiemannSumSceneRenderer = lazy(() => import('./RiemannSum/RiemannSumSceneRenderer'))
+const SolidOfRevolutionSceneRenderer = lazy(() => import('./SolidOfRevolution/SolidOfRevolutionSceneRenderer'))
+const ArcLengthCurvatureSceneRenderer = lazy(() => import('./ArcLengthCurvature/ArcLengthCurvatureSceneRenderer'))
+const SeriesConvergenceSceneRenderer = lazy(() => import('./SeriesConvergence/SeriesConvergenceSceneRenderer'))
+const ImproperIntegralSceneRenderer = lazy(() => import('./ImproperIntegral/ImproperIntegralSceneRenderer'))
+const DeterminantGeometrySceneRenderer = lazy(() => import('./DeterminantGeometry/DeterminantGeometrySceneRenderer'))
+const KernelImageSceneRenderer = lazy(() => import('./KernelImage/KernelImageSceneRenderer'))
+const OrthogonalProjectionSceneRenderer = lazy(() => import('./OrthogonalProjection/OrthogonalProjectionSceneRenderer'))
+const LeastSquaresSceneRenderer = lazy(() => import('./LeastSquares/LeastSquaresSceneRenderer'))
+const QuadraticFormSceneRenderer = lazy(() => import('./QuadraticForm/QuadraticFormSceneRenderer'))
+const SpectralTheoremSceneRenderer = lazy(() => import('./SpectralTheorem/SpectralTheoremSceneRenderer'))
+const LawLargeNumbersSceneRenderer = lazy(() => import('./LawLargeNumbers/LawLargeNumbersSceneRenderer'))
+const PoissonProcessSceneRenderer = lazy(() => import('./PoissonProcess/PoissonProcessSceneRenderer'))
+const BrownianMotionSceneRenderer = lazy(() => import('./BrownianMotion/BrownianMotionSceneRenderer'))
+const MontyHallSceneRenderer = lazy(() => import('./MontyHall/MontyHallSceneRenderer'))
+const BirthdayParadoxSceneRenderer = lazy(() => import('./BirthdayParadox/BirthdayParadoxSceneRenderer'))
+const HypothesisTestingSceneRenderer = lazy(() => import('./HypothesisTesting/HypothesisTestingSceneRenderer'))
+const ConfidenceIntervalSceneRenderer = lazy(() => import('./ConfidenceInterval/ConfidenceIntervalSceneRenderer'))
+const MaxLikelihoodSceneRenderer = lazy(() => import('./MaxLikelihood/MaxLikelihoodSceneRenderer'))
+const GaussianMixtureSceneRenderer = lazy(() => import('./GaussianMixture/GaussianMixtureSceneRenderer'))
+const HiddenMarkovSceneRenderer = lazy(() => import('./HiddenMarkov/HiddenMarkovSceneRenderer'))
+const MultipleIntegralSceneRenderer = lazy(() => import('./MultipleIntegral/MultipleIntegralSceneRenderer'))
+const LineIntegralSceneRenderer = lazy(() => import('./LineIntegral/LineIntegralSceneRenderer'))
+const DivergenceCurlSceneRenderer = lazy(() => import('./DivergenceCurl/DivergenceCurlSceneRenderer'))
+const StokesTheoremSceneRenderer = lazy(() => import('./StokesTheorem/StokesTheoremSceneRenderer'))
+const PartialDerivativeSceneRenderer = lazy(() => import('./PartialDerivative/PartialDerivativeSceneRenderer'))
+const DirectionalDerivativeSceneRenderer = lazy(() => import('./DirectionalDerivative/DirectionalDerivativeSceneRenderer'))
+const JacobianSceneRenderer = lazy(() => import('./Jacobian/JacobianSceneRenderer'))
+const VectorCalculusFieldSceneRenderer = lazy(() => import('./VectorCalculusField/VectorCalculusFieldSceneRenderer'))
+const LaplacianSceneRenderer = lazy(() => import('./Laplacian/LaplacianSceneRenderer'))
+const DijkstraSceneRenderer = lazy(() => import('./Dijkstra/DijkstraSceneRenderer'))
+const NetworkFlowSceneRenderer = lazy(() => import('./NetworkFlow/NetworkFlowSceneRenderer'))
+const GraphColoringSceneRenderer = lazy(() => import('./GraphColoring/GraphColoringSceneRenderer'))
+const EulerHamiltonPathSceneRenderer = lazy(() => import('./EulerHamiltonPath/EulerHamiltonPathSceneRenderer'))
+const SortingAlgorithmsSceneRenderer = lazy(() => import('./SortingAlgorithms/SortingAlgorithmsSceneRenderer'))
+const BfsDfsSceneRenderer = lazy(() => import('./BfsDfs/BfsDfsSceneRenderer'))
+const DynamicProgrammingSceneRenderer = lazy(() => import('./DynamicProgramming/DynamicProgrammingSceneRenderer'))
+const DivideConquerSceneRenderer = lazy(() => import('./DivideConquer/DivideConquerSceneRenderer'))
+const HuffmanCodingSceneRenderer = lazy(() => import('./HuffmanCoding/HuffmanCodingSceneRenderer'))
+const CatalanNumbersSceneRenderer = lazy(() => import('./CatalanNumbers/CatalanNumbersSceneRenderer'))
+const GeneratingFunctionsSceneRenderer = lazy(() => import('./GeneratingFunctions/GeneratingFunctionsSceneRenderer'))
+const MinimumSpanningTreeSceneRenderer = lazy(() => import('./MinimumSpanningTree/MinimumSpanningTreeSceneRenderer'))
+const LogisticBifurcationSceneRenderer = lazy(() => import('./LogisticBifurcation/LogisticBifurcationSceneRenderer'))
+const PhasePortraitSceneRenderer = lazy(() => import('./PhasePortrait/PhasePortraitSceneRenderer'))
+const LimitCycleSceneRenderer = lazy(() => import('./LimitCycle/LimitCycleSceneRenderer'))
+const LotkaVolterraSceneRenderer = lazy(() => import('./LotkaVolterra/LotkaVolterraSceneRenderer'))
+const PendulumPhaseSceneRenderer = lazy(() => import('./PendulumPhase/PendulumPhaseSceneRenderer'))
+const KeplerOrbitSceneRenderer = lazy(() => import('./KeplerOrbit/KeplerOrbitSceneRenderer'))
+const VibratingStringSceneRenderer = lazy(() => import('./VibratingString/VibratingStringSceneRenderer'))
+const PoincareSectionSceneRenderer = lazy(() => import('./PoincareSection/PoincareSectionSceneRenderer'))
+const EulerCharacteristicSceneRenderer = lazy(() => import('./EulerCharacteristic/EulerCharacteristicSceneRenderer'))
+const TorusKleinSceneRenderer = lazy(() => import('./TorusKlein/TorusKleinSceneRenderer'))
+const PerceptronSceneRenderer = lazy(() => import('./Perceptron/PerceptronSceneRenderer'))
+const KmeansSceneRenderer = lazy(() => import('./Kmeans/KmeansSceneRenderer'))
+const NeuralNetworkForwardSceneRenderer = lazy(() => import('./NeuralNetworkForward/NeuralNetworkForwardSceneRenderer'))
+const KochSnowflakeSceneRenderer = lazy(() => import('./KochSnowflake/KochSnowflakeSceneRenderer'))
+const SierpinskiTriangleSceneRenderer = lazy(() => import('./SierpinskiTriangle/SierpinskiTriangleSceneRenderer'))
+const SierpinskiCarpetSceneRenderer = lazy(() => import('./SierpinskiCarpet/SierpinskiCarpetSceneRenderer'))
+const DragonCurveSceneRenderer = lazy(() => import('./DragonCurve/DragonCurveSceneRenderer'))
+const BarnsleyFernSceneRenderer = lazy(() => import('./BarnsleyFern/BarnsleyFernSceneRenderer'))
+const HilbertCurveSceneRenderer = lazy(() => import('./HilbertCurve/HilbertCurveSceneRenderer'))
+const PeanoCurveSceneRenderer = lazy(() => import('./PeanoCurve/PeanoCurveSceneRenderer'))
+const GosperCurveSceneRenderer = lazy(() => import('./GosperCurve/GosperCurveSceneRenderer'))
+const LevyCCurveSceneRenderer = lazy(() => import('./LevyCCurve/LevyCCurveSceneRenderer'))
+const NewtonFractalSceneRenderer = lazy(() => import('./NewtonFractal/NewtonFractalSceneRenderer'))
+const BurningShipSceneRenderer = lazy(() => import('./BurningShip/BurningShipSceneRenderer'))
+const BoxCountingDimensionSceneRenderer = lazy(() => import('./BoxCountingDimension/BoxCountingDimensionSceneRenderer'))
+const CantorSetSceneRenderer = lazy(() => import('./CantorSet/CantorSetSceneRenderer'))
+const QuadtreeSceneRenderer = lazy(() => import('./Quadtree/QuadtreeSceneRenderer'))
+const KdTreeSceneRenderer = lazy(() => import('./KdTree/KdTreeSceneRenderer'))
+const MarchingSquaresSceneRenderer = lazy(() => import('./MarchingSquares/MarchingSquaresSceneRenderer'))
+const PointInPolygonSceneRenderer = lazy(() => import('./PointInPolygon/PointInPolygonSceneRenderer'))
+const LineClippingSceneRenderer = lazy(() => import('./LineClipping/LineClippingSceneRenderer'))
+const RotatingCalipersSceneRenderer = lazy(() => import('./RotatingCalipers/RotatingCalipersSceneRenderer'))
+const EarClippingSceneRenderer = lazy(() => import('./EarClipping/EarClippingSceneRenderer'))
+const AStarSceneRenderer = lazy(() => import('./AStar/AStarSceneRenderer'))
+const StereographicProjectionSceneRenderer = lazy(() => import('./StereographicProjection/StereographicProjectionSceneRenderer'))
+const HopfFibrationSceneRenderer = lazy(() => import('./HopfFibration/HopfFibrationSceneRenderer'))
+const HyperbolicTilingSceneRenderer = lazy(() => import('./HyperbolicTiling/HyperbolicTilingSceneRenderer'))
+const SpirographSceneRenderer = lazy(() => import('./Spirograph/SpirographSceneRenderer'))
+const EulerTotientSceneRenderer = lazy(() => import('./EulerTotient/EulerTotientSceneRenderer'))
+const MobiusFunctionSceneRenderer = lazy(() => import('./MobiusFunction/MobiusFunctionSceneRenderer'))
+const FareySequenceSceneRenderer = lazy(() => import('./FareySequence/FareySequenceSceneRenderer'))
+const SternBrocotSceneRenderer = lazy(() => import('./SternBrocot/SternBrocotSceneRenderer'))
+const PrimitiveRootSceneRenderer = lazy(() => import('./PrimitiveRoot/PrimitiveRootSceneRenderer'))
+const FermatLittleSceneRenderer = lazy(() => import('./FermatLittle/FermatLittleSceneRenderer'))
+const WilsonTheoremSceneRenderer = lazy(() => import('./WilsonTheorem/WilsonTheoremSceneRenderer'))
+const FastExponentiationSceneRenderer = lazy(() => import('./FastExponentiation/FastExponentiationSceneRenderer'))
+const PythagoreanTriplesSceneRenderer = lazy(() => import('./PythagoreanTriples/PythagoreanTriplesSceneRenderer'))
+const SumOfSquaresSceneRenderer = lazy(() => import('./SumOfSquares/SumOfSquaresSceneRenderer'))
+const HappyNumbersSceneRenderer = lazy(() => import('./HappyNumbers/HappyNumbersSceneRenderer'))
+const KaprekarSceneRenderer = lazy(() => import('./Kaprekar/KaprekarSceneRenderer'))
+const LucasNumbersSceneRenderer = lazy(() => import('./LucasNumbers/LucasNumbersSceneRenderer'))
+const TriangularNumbersSceneRenderer = lazy(() => import('./TriangularNumbers/TriangularNumbersSceneRenderer'))
+const FrobeniusCoinSceneRenderer = lazy(() => import('./FrobeniusCoin/FrobeniusCoinSceneRenderer'))
+const CaesarCipherSceneRenderer = lazy(() => import('./CaesarCipher/CaesarCipherSceneRenderer'))
+const VigenereCipherSceneRenderer = lazy(() => import('./VigenereCipher/VigenereCipherSceneRenderer'))
+const RsaCipherSceneRenderer = lazy(() => import('./RsaCipher/RsaCipherSceneRenderer'))
+const DiffieHellmanSceneRenderer = lazy(() => import('./DiffieHellman/DiffieHellmanSceneRenderer'))
+const OneTimePadSceneRenderer = lazy(() => import('./OneTimePad/OneTimePadSceneRenderer'))
+const EllipticCurveSceneRenderer = lazy(() => import('./EllipticCurve/EllipticCurveSceneRenderer'))
+const JosephusProblemSceneRenderer = lazy(() => import('./JosephusProblem/JosephusProblemSceneRenderer'))
+const GrayCodeSceneRenderer = lazy(() => import('./GrayCode/GrayCodeSceneRenderer'))
+const LookAndSaySceneRenderer = lazy(() => import('./LookAndSay/LookAndSaySceneRenderer'))
+const HillCipherSceneRenderer = lazy(() => import('./HillCipher/HillCipherSceneRenderer'))
+const LuDecompositionSceneRenderer = lazy(() => import('./LuDecomposition/LuDecompositionSceneRenderer'))
+const QrDecompositionSceneRenderer = lazy(() => import('./QrDecomposition/QrDecompositionSceneRenderer'))
+const CholeskySceneRenderer = lazy(() => import('./Cholesky/CholeskySceneRenderer'))
+const PowerIterationSceneRenderer = lazy(() => import('./PowerIteration/PowerIterationSceneRenderer'))
+const PagerankSceneRenderer = lazy(() => import('./Pagerank/PagerankSceneRenderer'))
+const MarkovStationarySceneRenderer = lazy(() => import('./MarkovStationary/MarkovStationarySceneRenderer'))
+const CramersRuleSceneRenderer = lazy(() => import('./CramersRule/CramersRuleSceneRenderer'))
+const Rotation3dSceneRenderer = lazy(() => import('./Rotation3d/Rotation3dSceneRenderer'))
+const GibbsPhenomenonSceneRenderer = lazy(() => import('./GibbsPhenomenon/GibbsPhenomenonSceneRenderer'))
+const ChebyshevPolynomialsSceneRenderer = lazy(() => import('./ChebyshevPolynomials/ChebyshevPolynomialsSceneRenderer'))
+const LegendrePolynomialsSceneRenderer = lazy(() => import('./LegendrePolynomials/LegendrePolynomialsSceneRenderer'))
+const BesselFunctionsSceneRenderer = lazy(() => import('./BesselFunctions/BesselFunctionsSceneRenderer'))
+const GammaFunctionSceneRenderer = lazy(() => import('./GammaFunction/GammaFunctionSceneRenderer'))
+const FixedPointIterationSceneRenderer = lazy(() => import('./FixedPointIteration/FixedPointIterationSceneRenderer'))
+const SecantMethodSceneRenderer = lazy(() => import('./SecantMethod/SecantMethodSceneRenderer'))
+const BisectionMethodSceneRenderer = lazy(() => import('./BisectionMethod/BisectionMethodSceneRenderer'))
+const FftSceneRenderer = lazy(() => import('./Fft/FftSceneRenderer'))
+const AliasingSceneRenderer = lazy(() => import('./Aliasing/AliasingSceneRenderer'))
+const AutocorrelationSceneRenderer = lazy(() => import('./Autocorrelation/AutocorrelationSceneRenderer'))
+const ConvolutionSceneRenderer = lazy(() => import('./Convolution/ConvolutionSceneRenderer'))
+const NyquistSamplingSceneRenderer = lazy(() => import('./NyquistSampling/NyquistSamplingSceneRenderer'))
+const WindowingSceneRenderer = lazy(() => import('./Windowing/WindowingSceneRenderer'))
+const BSplineSceneRenderer = lazy(() => import('./BSpline/BSplineSceneRenderer'))
+const CatmullRomSceneRenderer = lazy(() => import('./CatmullRom/CatmullRomSceneRenderer'))
+const DiscreteCosineTransformSceneRenderer = lazy(() => import('./DiscreteCosineTransform/DiscreteCosineTransformSceneRenderer'))
+const StirlingNumbersSceneRenderer = lazy(() => import('./StirlingNumbers/StirlingNumbersSceneRenderer'))
+const BellNumbersSceneRenderer = lazy(() => import('./BellNumbers/BellNumbersSceneRenderer'))
+const DerangementsSceneRenderer = lazy(() => import('./Derangements/DerangementsSceneRenderer'))
+const InclusionExclusionSceneRenderer = lazy(() => import('./InclusionExclusion/InclusionExclusionSceneRenderer'))
+const LatinSquareSceneRenderer = lazy(() => import('./LatinSquare/LatinSquareSceneRenderer'))
+const BenfordsLawSceneRenderer = lazy(() => import('./BenfordsLaw/BenfordsLawSceneRenderer'))
+const BuffonNeedleSceneRenderer = lazy(() => import('./BuffonNeedle/BuffonNeedleSceneRenderer'))
+const GaltonBoardSceneRenderer = lazy(() => import('./GaltonBoard/GaltonBoardSceneRenderer'))
+const GamblersRuinSceneRenderer = lazy(() => import('./GamblersRuin/GamblersRuinSceneRenderer'))
+const CouponCollectorSceneRenderer = lazy(() => import('./CouponCollector/CouponCollectorSceneRenderer'))
+const DecisionTreeSceneRenderer = lazy(() => import('./DecisionTree/DecisionTreeSceneRenderer'))
+const KnnSceneRenderer = lazy(() => import('./Knn/KnnSceneRenderer'))
+const NaiveBayesSceneRenderer = lazy(() => import('./NaiveBayes/NaiveBayesSceneRenderer'))
+const LogisticRegressionSceneRenderer = lazy(() => import('./LogisticRegression/LogisticRegressionSceneRenderer'))
+const BackpropagationSceneRenderer = lazy(() => import('./Backpropagation/BackpropagationSceneRenderer'))
+const SoftmaxSceneRenderer = lazy(() => import('./Softmax/SoftmaxSceneRenderer'))
+const GeneticAlgorithmSceneRenderer = lazy(() => import('./GeneticAlgorithm/GeneticAlgorithmSceneRenderer'))
+const ParticleSwarmSceneRenderer = lazy(() => import('./ParticleSwarm/ParticleSwarmSceneRenderer'))
+const HenonMapSceneRenderer = lazy(() => import('./HenonMap/HenonMapSceneRenderer'))
+const RosslerAttractorSceneRenderer = lazy(() => import('./RosslerAttractor/RosslerAttractorSceneRenderer'))
+const TentMapSceneRenderer = lazy(() => import('./TentMap/TentMapSceneRenderer'))
+const ProjectileMotionSceneRenderer = lazy(() => import('./ProjectileMotion/ProjectileMotionSceneRenderer'))
+const DampedOscillationSceneRenderer = lazy(() => import('./DampedOscillation/DampedOscillationSceneRenderer'))
+const CatenarySceneRenderer = lazy(() => import('./Catenary/CatenarySceneRenderer'))
+const BrachistochroneSceneRenderer = lazy(() => import('./Brachistochrone/BrachistochroneSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -279,6 +479,206 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'cellular-automata': CellularAutomataSceneRenderer,
   'knot-theory': KnotTheorySceneRenderer,
   'wavelet': WaveletSceneRenderer,
+  'sieve-eratosthenes': SieveEratosthenesSceneRenderer,
+  'magic-square': MagicSquareSceneRenderer,
+  'tower-of-hanoi': TowerOfHanoiSceneRenderer,
+  'pigeonhole': PigeonholeSceneRenderer,
+  'triangle-centers': TriangleCentersSceneRenderer,
+  'number-bases': NumberBasesSceneRenderer,
+  'pythagoras-tree': PythagorasTreeSceneRenderer,
+  'tessellation': TessellationSceneRenderer,
+  'perfect-numbers': PerfectNumbersSceneRenderer,
+  'collatz': CollatzSceneRenderer,
+  'prime-factorization': PrimeFactorizationSceneRenderer,
+  'fibonacci-nature': FibonacciNatureSceneRenderer,
+  'dice-probability': DiceProbabilitySceneRenderer,
+  'nine-point-circle': NinePointCircleSceneRenderer,
+  'euler-line': EulerLineSceneRenderer,
+  'inversive-geometry': InversiveGeometrySceneRenderer,
+  'poincare-disk': PoincareDiskSceneRenderer,
+  'spherical-geometry': SphericalGeometrySceneRenderer,
+  'convex-hull': ConvexHullSceneRenderer,
+  'delaunay-triangulation': DelaunayTriangulationSceneRenderer,
+  'apollonian-gasket': ApollonianGasketSceneRenderer,
+  'pick-theorem': PickTheoremSceneRenderer,
+  'reuleaux': ReuleauxSceneRenderer,
+  'circle-packing': CirclePackingSceneRenderer,
+  'steiner-chain': SteinerChainSceneRenderer,
+  'polynomial-roots': PolynomialRootsSceneRenderer,
+  'vieta-formulas': VietaFormulasSceneRenderer,
+  'binomial-theorem': BinomialTheoremSceneRenderer,
+  'inverse-function': InverseFunctionSceneRenderer,
+  'composite-function': CompositeFunctionSceneRenderer,
+  'partial-fractions': PartialFractionsSceneRenderer,
+  'rational-asymptotes': RationalAsymptotesSceneRenderer,
+  'piecewise-function': PiecewiseFunctionSceneRenderer,
+  'logarithm-spiral': LogarithmSpiralSceneRenderer,
+  'function-transform': FunctionTransformSceneRenderer,
+  'euclidean-algorithm': EuclideanAlgorithmSceneRenderer,
+  'chinese-remainder': ChineseRemainderSceneRenderer,
+  'quadratic-residue': QuadraticResidueSceneRenderer,
+  'gaussian-integers': GaussianIntegersSceneRenderer,
+  'integer-partition': IntegerPartitionSceneRenderer,
+  'pell-equation': PellEquationSceneRenderer,
+  'prime-counting': PrimeCountingSceneRenderer,
+  'digital-root': DigitalRootSceneRenderer,
+  'epsilon-delta': EpsilonDeltaSceneRenderer,
+  'mean-value-theorem': MeanValueTheoremSceneRenderer,
+  'riemann-sum': RiemannSumSceneRenderer,
+  'solid-of-revolution': SolidOfRevolutionSceneRenderer,
+  'arc-length-curvature': ArcLengthCurvatureSceneRenderer,
+  'series-convergence': SeriesConvergenceSceneRenderer,
+  'improper-integral': ImproperIntegralSceneRenderer,
+  'determinant-geometry': DeterminantGeometrySceneRenderer,
+  'kernel-image': KernelImageSceneRenderer,
+  'orthogonal-projection': OrthogonalProjectionSceneRenderer,
+  'least-squares': LeastSquaresSceneRenderer,
+  'quadratic-form': QuadraticFormSceneRenderer,
+  'spectral-theorem': SpectralTheoremSceneRenderer,
+  'law-large-numbers': LawLargeNumbersSceneRenderer,
+  'poisson-process': PoissonProcessSceneRenderer,
+  'brownian-motion': BrownianMotionSceneRenderer,
+  'monty-hall': MontyHallSceneRenderer,
+  'birthday-paradox': BirthdayParadoxSceneRenderer,
+  'hypothesis-testing': HypothesisTestingSceneRenderer,
+  'confidence-interval': ConfidenceIntervalSceneRenderer,
+  'max-likelihood': MaxLikelihoodSceneRenderer,
+  'gaussian-mixture': GaussianMixtureSceneRenderer,
+  'hidden-markov': HiddenMarkovSceneRenderer,
+  'multiple-integral': MultipleIntegralSceneRenderer,
+  'line-integral': LineIntegralSceneRenderer,
+  'divergence-curl': DivergenceCurlSceneRenderer,
+  'stokes-theorem': StokesTheoremSceneRenderer,
+  'partial-derivative': PartialDerivativeSceneRenderer,
+  'directional-derivative': DirectionalDerivativeSceneRenderer,
+  'jacobian': JacobianSceneRenderer,
+  'vector-calculus-field': VectorCalculusFieldSceneRenderer,
+  'laplacian': LaplacianSceneRenderer,
+  'dijkstra': DijkstraSceneRenderer,
+  'network-flow': NetworkFlowSceneRenderer,
+  'graph-coloring': GraphColoringSceneRenderer,
+  'euler-hamilton-path': EulerHamiltonPathSceneRenderer,
+  'sorting-algorithms': SortingAlgorithmsSceneRenderer,
+  'bfs-dfs': BfsDfsSceneRenderer,
+  'dynamic-programming': DynamicProgrammingSceneRenderer,
+  'divide-conquer': DivideConquerSceneRenderer,
+  'huffman-coding': HuffmanCodingSceneRenderer,
+  'catalan-numbers': CatalanNumbersSceneRenderer,
+  'generating-functions': GeneratingFunctionsSceneRenderer,
+  'minimum-spanning-tree': MinimumSpanningTreeSceneRenderer,
+  'logistic-bifurcation': LogisticBifurcationSceneRenderer,
+  'phase-portrait': PhasePortraitSceneRenderer,
+  'limit-cycle': LimitCycleSceneRenderer,
+  'lotka-volterra': LotkaVolterraSceneRenderer,
+  'pendulum-phase': PendulumPhaseSceneRenderer,
+  'kepler-orbit': KeplerOrbitSceneRenderer,
+  'vibrating-string': VibratingStringSceneRenderer,
+  'poincare-section': PoincareSectionSceneRenderer,
+  'euler-characteristic': EulerCharacteristicSceneRenderer,
+  'torus-klein': TorusKleinSceneRenderer,
+  'perceptron': PerceptronSceneRenderer,
+  'kmeans': KmeansSceneRenderer,
+  'neural-network-forward': NeuralNetworkForwardSceneRenderer,
+  'koch-snowflake': KochSnowflakeSceneRenderer,
+  'sierpinski-triangle': SierpinskiTriangleSceneRenderer,
+  'sierpinski-carpet': SierpinskiCarpetSceneRenderer,
+  'dragon-curve': DragonCurveSceneRenderer,
+  'barnsley-fern': BarnsleyFernSceneRenderer,
+  'hilbert-curve': HilbertCurveSceneRenderer,
+  'peano-curve': PeanoCurveSceneRenderer,
+  'gosper-curve': GosperCurveSceneRenderer,
+  'levy-c-curve': LevyCCurveSceneRenderer,
+  'newton-fractal': NewtonFractalSceneRenderer,
+  'burning-ship': BurningShipSceneRenderer,
+  'box-counting-dimension': BoxCountingDimensionSceneRenderer,
+  'cantor-set': CantorSetSceneRenderer,
+  'quadtree': QuadtreeSceneRenderer,
+  'kd-tree': KdTreeSceneRenderer,
+  'marching-squares': MarchingSquaresSceneRenderer,
+  'point-in-polygon': PointInPolygonSceneRenderer,
+  'line-clipping': LineClippingSceneRenderer,
+  'rotating-calipers': RotatingCalipersSceneRenderer,
+  'ear-clipping': EarClippingSceneRenderer,
+  'a-star': AStarSceneRenderer,
+  'stereographic-projection': StereographicProjectionSceneRenderer,
+  'hopf-fibration': HopfFibrationSceneRenderer,
+  'hyperbolic-tiling': HyperbolicTilingSceneRenderer,
+  'spirograph': SpirographSceneRenderer,
+  'euler-totient': EulerTotientSceneRenderer,
+  'mobius-function': MobiusFunctionSceneRenderer,
+  'farey-sequence': FareySequenceSceneRenderer,
+  'stern-brocot': SternBrocotSceneRenderer,
+  'primitive-root': PrimitiveRootSceneRenderer,
+  'fermat-little': FermatLittleSceneRenderer,
+  'wilson-theorem': WilsonTheoremSceneRenderer,
+  'fast-exponentiation': FastExponentiationSceneRenderer,
+  'pythagorean-triples': PythagoreanTriplesSceneRenderer,
+  'sum-of-squares': SumOfSquaresSceneRenderer,
+  'happy-numbers': HappyNumbersSceneRenderer,
+  'kaprekar': KaprekarSceneRenderer,
+  'lucas-numbers': LucasNumbersSceneRenderer,
+  'triangular-numbers': TriangularNumbersSceneRenderer,
+  'frobenius-coin': FrobeniusCoinSceneRenderer,
+  'caesar-cipher': CaesarCipherSceneRenderer,
+  'vigenere-cipher': VigenereCipherSceneRenderer,
+  'rsa-cipher': RsaCipherSceneRenderer,
+  'diffie-hellman': DiffieHellmanSceneRenderer,
+  'one-time-pad': OneTimePadSceneRenderer,
+  'elliptic-curve': EllipticCurveSceneRenderer,
+  'josephus-problem': JosephusProblemSceneRenderer,
+  'gray-code': GrayCodeSceneRenderer,
+  'look-and-say': LookAndSaySceneRenderer,
+  'hill-cipher': HillCipherSceneRenderer,
+  'lu-decomposition': LuDecompositionSceneRenderer,
+  'qr-decomposition': QrDecompositionSceneRenderer,
+  'cholesky': CholeskySceneRenderer,
+  'power-iteration': PowerIterationSceneRenderer,
+  'pagerank': PagerankSceneRenderer,
+  'markov-stationary': MarkovStationarySceneRenderer,
+  'cramers-rule': CramersRuleSceneRenderer,
+  'rotation3d': Rotation3dSceneRenderer,
+  'gibbs-phenomenon': GibbsPhenomenonSceneRenderer,
+  'chebyshev-polynomials': ChebyshevPolynomialsSceneRenderer,
+  'legendre-polynomials': LegendrePolynomialsSceneRenderer,
+  'bessel-functions': BesselFunctionsSceneRenderer,
+  'gamma-function': GammaFunctionSceneRenderer,
+  'fixed-point-iteration': FixedPointIterationSceneRenderer,
+  'secant-method': SecantMethodSceneRenderer,
+  'bisection-method': BisectionMethodSceneRenderer,
+  'fft': FftSceneRenderer,
+  'aliasing': AliasingSceneRenderer,
+  'autocorrelation': AutocorrelationSceneRenderer,
+  'convolution': ConvolutionSceneRenderer,
+  'nyquist-sampling': NyquistSamplingSceneRenderer,
+  'windowing': WindowingSceneRenderer,
+  'b-spline': BSplineSceneRenderer,
+  'catmull-rom': CatmullRomSceneRenderer,
+  'discrete-cosine-transform': DiscreteCosineTransformSceneRenderer,
+  'stirling-numbers': StirlingNumbersSceneRenderer,
+  'bell-numbers': BellNumbersSceneRenderer,
+  'derangements': DerangementsSceneRenderer,
+  'inclusion-exclusion': InclusionExclusionSceneRenderer,
+  'latin-square': LatinSquareSceneRenderer,
+  'benfords-law': BenfordsLawSceneRenderer,
+  'buffon-needle': BuffonNeedleSceneRenderer,
+  'galton-board': GaltonBoardSceneRenderer,
+  'gamblers-ruin': GamblersRuinSceneRenderer,
+  'coupon-collector': CouponCollectorSceneRenderer,
+  'decision-tree': DecisionTreeSceneRenderer,
+  'knn': KnnSceneRenderer,
+  'naive-bayes': NaiveBayesSceneRenderer,
+  'logistic-regression': LogisticRegressionSceneRenderer,
+  'backpropagation': BackpropagationSceneRenderer,
+  'softmax': SoftmaxSceneRenderer,
+  'genetic-algorithm': GeneticAlgorithmSceneRenderer,
+  'particle-swarm': ParticleSwarmSceneRenderer,
+  'henon-map': HenonMapSceneRenderer,
+  'rossler-attractor': RosslerAttractorSceneRenderer,
+  'tent-map': TentMapSceneRenderer,
+  'projectile-motion': ProjectileMotionSceneRenderer,
+  'damped-oscillation': DampedOscillationSceneRenderer,
+  'catenary': CatenarySceneRenderer,
+  'brachistochrone': BrachistochroneSceneRenderer,
 }
 
 // 获取场景渲染器

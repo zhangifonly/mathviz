@@ -1,0 +1,159 @@
+{
+  "script_id": "hopf-fibration",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/intro-intro-1.mp3",
+      "duration": 1.44,
+      "size": 23040,
+      "text": "有些美，藏在我们看不见的高维空间里。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/intro-intro-3.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "它把一个三维球面，精巧地缠绕成一个二维球面。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "spheres",
+      "line_id": "def-1",
+      "filename": "spheres-def-1.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/spheres-def-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "S3 是四维空间里的球面，S2 是我们熟悉的普通球面。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "spheres",
+      "line_id": "def-2",
+      "filename": "spheres-def-2.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/spheres-def-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "霍普夫映射把 S3 上每个点，送到 S2 上的一个点。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "spheres",
+      "line_id": "def-3",
+      "filename": "spheres-def-3.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/spheres-def-3.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "把复数对当作坐标，这个映射就有了简洁的代数形式。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "fiber",
+      "line_id": "fib-1",
+      "filename": "fiber-fib-1.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/fiber-fib-1.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "关键在于：S2 上任意一个点，它的原像不是一个点。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "fiber",
+      "line_id": "fib-2",
+      "filename": "fiber-fib-2.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/fiber-fib-2.mp3",
+      "duration": 1.71,
+      "size": 27360,
+      "text": "而是 S3 中一整个圆，我们把它叫做纤维。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "fiber",
+      "line_id": "fib-3",
+      "filename": "fiber-fib-3.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/fiber-fib-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "经过球极投影，这个圆就落进我们眼前的三维空间。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "link",
+      "line_id": "link-1",
+      "filename": "link-link-1.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/link-link-1.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "最奇妙的是，任意两条纤维都互相环扣，却从不相交。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "link",
+      "line_id": "link-2",
+      "filename": "link-link-2.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/link-link-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "它们像链条一样彼此穿过，这些圆叫维拉索圆。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "link",
+      "line_id": "link-3",
+      "filename": "link-link-3.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/link-link-3.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "整个 S3，就由这些环环相扣的圆严丝合缝地铺满。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/interaction-int-1.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "增加纤维数量，看更多圆如何彼此环绕。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/interaction-int-2.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "让画面旋转起来，从各个角度感受它们的环扣。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/summary-sum-1.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "霍普夫纤维化把 S3 映到 S2，每点对应一个圆纤维。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/summary-sum-3.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "高维之美，在投影中向我们显现，我们下次再见！"
+    }
+  ],
+  "total_duration": 28.240000000000006,
+  "total_size": 451728
+}

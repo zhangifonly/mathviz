@@ -1,0 +1,169 @@
+{
+  "script_id": "primitive-root",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "primitive-root",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "取一个素数 p，把 1 到 p 减 1 这些余数排成一圈。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "选一个底数 g，不断乘以 g 再取模，会在圈上不停跳跃。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "有的 g 能跳遍每一个余数，有的却只在几个点里打转。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "cycle",
+      "line_id": "cyc-1",
+      "filename": "cycle-cyc-1.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/cycle-cyc-1.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "g 的幂 g 的 0 次、1 次、2 次方模 p，一定会周期性重复。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "cycle",
+      "line_id": "cyc-2",
+      "filename": "cycle-cyc-2.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/cycle-cyc-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "由费马小定理，g 的 p 减 1 次方模 p 总是等于 1，回到起点。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "cycle",
+      "line_id": "cyc-3",
+      "filename": "cycle-cyc-3.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/cycle-cyc-3.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "这条轨迹的长度，就是 g 在乘法群里的阶。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/define-def-1.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "如果 g 的幂恰好遍历全部 p 减 1 个非零余数，就称 g 是模 p 的原根。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/define-def-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "原根是这个乘法循环群的生成元，一个 g 就能生成整个群。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/define-def-3.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "非原根只能覆盖一个更小的子群，在圈上留下大片空白。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "dlog",
+      "line_id": "dlog-1",
+      "filename": "dlog-dlog-1.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/dlog-dlog-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "既然原根能生成一切，任何余数都能写成 g 的某个幂。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "dlog",
+      "line_id": "dlog-2",
+      "filename": "dlog-dlog-2.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/dlog-dlog-2.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "这个幂指数就叫离散对数，它难以反算，正是许多密码学的基石。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "换一个素数 p，再挑不同的底数 g，观察轨迹是布满还是缩进子群。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "蓝色轨迹遍历全圈就是原根，红色只圈住一小群就不是。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "原根是模 p 乘法循环群的生成元，幂能遍历所有非零余数。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "它连接着费马小定理、离散对数与现代密码学。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/primitive-root/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "小小的一圈余数，藏着深邃的数论之美，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.88,
+  "total_size": 542160
+}

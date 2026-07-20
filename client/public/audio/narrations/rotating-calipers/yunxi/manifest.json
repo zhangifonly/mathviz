@@ -1,0 +1,89 @@
+{
+  "script_id": "rotating-calipers",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/rotating-calipers/yunxi/intro-intro-1.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "桌面上撒了一把图钉，我们想知道：这堆点到底有多宽？"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/rotating-calipers/yunxi/intro-intro-2.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "也就是相距最远的那两个点，隔着多远的距离。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/rotating-calipers/yunxi/intro-intro-3.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "朴素做法是两两比较，点一多就慢得让人着急。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/rotating-calipers/yunxi/intro-intro-4.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "旋转卡壳给出了一个又快又优雅的答案。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "hull",
+      "line_id": "hull-1",
+      "filename": "hull-hull-1.mp3",
+      "path": "audio/narrations/rotating-calipers/yunxi/hull-hull-1.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "第一步，用一根橡皮筋把所有点箍起来，得到的外轮廓就是凸包。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "hull",
+      "line_id": "hull-2",
+      "filename": "hull-hull-2.mp3",
+      "path": "audio/narrations/rotating-calipers/yunxi/hull-hull-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "最远的两个点一定都在凸包上，内部的点不可能更远。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "antipodal",
+      "line_id": "anti-2",
+      "filename": "antipodal-anti-2.mp3",
+      "path": "audio/narrations/rotating-calipers/yunxi/antipodal-anti-2.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "两条线各自贴着的那对顶点，就叫一组对踵点对。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/rotating-calipers/yunxi/summary-sum-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "直径和最小外接矩形，都在这一圈旋转里被线性求出。"
+    }
+  ],
+  "total_duration": 15.64,
+  "total_size": 250128
+}

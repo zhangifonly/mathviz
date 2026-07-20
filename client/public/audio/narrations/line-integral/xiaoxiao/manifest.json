@@ -1,0 +1,179 @@
+{
+  "script_id": "line-integral",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "line-integral",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "顶着大风走路，你会明显觉得比平时更费力气。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "风就是一个向量场，它在你走过的每一步上都在做功。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "顺风时风帮你省力，逆风时风与你作对。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/intro-intro-4.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "把这一路的功累加起来，就是我们要讲的曲线积分。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/define-def-1.mp3",
+      "duration": 2.58,
+      "size": 41328,
+      "text": "给定一个向量场 F 和一条路径 r(t)，我们要算 F 沿这条路径做的功。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/define-def-2.mp3",
+      "duration": 2.63,
+      "size": 42048,
+      "text": "第二类曲线积分写作 ∫F·dr，也就是 ∫F(r(t))·r prime(t) dt。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/define-def-3.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "dr 是路径上一小段位移，F·dr 就是这一小段上做的功。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "dot",
+      "line_id": "dot-1",
+      "filename": "dot-dot-1.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/dot-dot-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "关键在于 F 与路径切向的点乘：只有沿路径方向的分量才做功。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "dot",
+      "line_id": "dot-2",
+      "filename": "dot-dot-2.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/dot-dot-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "F 与前进方向同向，做正功，我们把这一段涂成红色。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "dot",
+      "line_id": "dot-3",
+      "filename": "dot-dot-3.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/dot-dot-3.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "F 与前进方向相反，做负功，涂成蓝色；垂直时则完全不做功。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "accum",
+      "line_id": "acc-1",
+      "filename": "accum-acc-1.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/accum-acc-1.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "把路径切成许多小段，算出每段的 F·dr，再全部加起来。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "accum",
+      "line_id": "acc-2",
+      "filename": "accum-acc-2.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/accum-acc-2.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "这正是数值积分的思路，段分得越细，结果就越精确。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "换一个向量场，或换一条路径，看积分值如何跟着改变。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.71,
+      "size": 43344,
+      "text": "试试径向场配圆弧，你会发现做功恰好为零，因为场处处垂直于切向。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "曲线积分把向量场沿路径的做功一段段累加起来。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "做功的正负，取决于 F 与路径切向的点乘。"
+    },
+    {
+      "script_id": "line-integral",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/line-integral/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "沿路径累加的思想贯穿物理与工程，我们下次再见！"
+    }
+  ],
+  "total_duration": 35.949999999999996,
+  "total_size": 575136
+}

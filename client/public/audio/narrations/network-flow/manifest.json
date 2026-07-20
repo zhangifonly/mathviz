@@ -1,0 +1,183 @@
+{
+  "script_id": "network-flow",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "network-flow",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/network-flow/intro-intro-1.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "想象一张由水管连成的网络，从源头 S 通向终点 T。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/network-flow/intro-intro-2.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "每根管道粗细不同，能通过的水量有上限。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/network-flow/intro-intro-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "问题是：单位时间内，最多能从 S 送多少水到 T ?"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/network-flow/define-def-1.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "每条边有一个容量，表示它能承载的最大流量。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/network-flow/define-def-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "实际流量不能超过容量，我们把它记作 流量斜杠容量。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/network-flow/define-def-3.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "除了源和汇，每个节点流入的总量必须等于流出的总量。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "augment",
+      "line_id": "aug-1",
+      "filename": "augment-aug-1.mp3",
+      "path": "audio/narrations/network-flow/augment-aug-1.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "增广路径是一条从 S 到 T 、每条边都还有剩余容量的通路。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "augment",
+      "line_id": "aug-2",
+      "filename": "augment-aug-2.mp3",
+      "path": "audio/narrations/network-flow/augment-aug-2.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "Edmonds-Karp 用广度优先搜索，每次找出最短的一条增广路径。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "augment",
+      "line_id": "aug-3",
+      "filename": "augment-aug-3.mp3",
+      "path": "audio/narrations/network-flow/augment-aug-3.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "沿路推送瓶颈流量，反复进行，直到再也找不到通路。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "theorem",
+      "line_id": "thm-1",
+      "filename": "theorem-thm-1.mp3",
+      "path": "audio/narrations/network-flow/theorem-thm-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "把节点分成含 S 和含 T 的两组，跨组的边构成一个割。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "theorem",
+      "line_id": "thm-2",
+      "filename": "theorem-thm-2.mp3",
+      "path": "audio/narrations/network-flow/theorem-thm-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "割的容量，就是所有从 S 侧指向 T 侧的边的容量之和。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "theorem",
+      "line_id": "thm-3",
+      "filename": "theorem-thm-3.mp3",
+      "path": "audio/narrations/network-flow/theorem-thm-3.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "最大流恰好等于最小割，这就是著名的最大流最小割定理。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/network-flow/interaction-int-1.mp3",
+      "duration": 2.68,
+      "size": 42912,
+      "text": "点击求解，看算法把每条边填上最终流量，红色是瓶颈所在。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/network-flow/interaction-int-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "再高亮最小割，你会发现它的容量正好等于最大流值。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/network-flow/summary-sum-1.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "最大流问题，就是在容量限制下把最多的流量从 S 送到 T 。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/network-flow/summary-sum-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "Edmonds-Karp 靠 BFS 找增广路径，最大流总等于最小割。"
+    },
+    {
+      "script_id": "network-flow",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/network-flow/summary-sum-3.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "这套思想撑起了物流、匹配与图像分割，我们下次再见！"
+    }
+  ],
+  "total_duration": 36.15,
+  "total_size": 578304,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

@@ -18,8 +18,10 @@
   },
   "dependencies": {
     "buffer": "^6.0.3",
+    "fuse.js": "^7.5.0",
     "katex": "^0.16.27",
     "mathjs": "^15.1.0",
+    "pinyin-pro": "^3.28.1",
     "plotly.js": "^3.3.1",
     "plotly.js-dist-min": "^3.6.0",
     "react": "^19.2.0",

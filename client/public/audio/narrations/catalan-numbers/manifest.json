@@ -1,0 +1,93 @@
+{
+  "script_id": "catalan-numbers",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/catalan-numbers/intro-intro-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "它叫卡特兰数，看似普通，却藏在许多问题的答案里。"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/catalan-numbers/intro-intro-3.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "括号、二叉树、多边形，答案居然都是同一串数。"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "paren",
+      "line_id": "def-3",
+      "filename": "paren-def-3.mp3",
+      "path": "audio/narrations/catalan-numbers/paren-def-3.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "三对括号有五种，这正好是卡特兰数 C 三。"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "tree",
+      "line_id": "tree-2",
+      "filename": "tree-tree-2.mp3",
+      "path": "audio/narrations/catalan-numbers/tree-tree-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "每一种合法括号，都对应唯一一棵二叉树的形状。"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "poly",
+      "line_id": "poly-3",
+      "filename": "poly-poly-3.mp3",
+      "path": "audio/narrations/catalan-numbers/poly-poly-3.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "同一个递推 C n 加一 等于各项两两相乘再求和，在背后统一了这一切。"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/catalan-numbers/interaction-int-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "选择不同的 n，看这个数如何随规模迅速增长。"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/catalan-numbers/interaction-int-2.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "切换视角，同一个 C n 会以括号、树或多边形出现。"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/catalan-numbers/summary-sum-2.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "它把括号、二叉树、三角剖分等问题串成一家。"
+    }
+  ],
+  "total_duration": 16.35,
+  "total_size": 261648,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "script_id": "gibbs-phenomenon",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "一个方波，棱角分明，上下笔直地跳变。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "我们能否用光滑的正弦波，一层层把它拼出来？"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "傅里叶说可以，只要把足够多的正弦叠加起来。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "partial",
+      "line_id": "def-1",
+      "filename": "partial-def-1.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/partial-def-1.mp3",
+      "duration": 2.57,
+      "size": 41184,
+      "text": "方波的傅里叶级数只含奇次谐波：sin x、sin 3x、sin 5x……"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "partial",
+      "line_id": "def-2",
+      "filename": "partial-def-2.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/partial-def-2.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "取前 n 项相加，就得到部分和，它像波浪一样贴近方波。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "partial",
+      "line_id": "def-3",
+      "filename": "partial-def-3.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/partial-def-3.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "项数越多，平坦段越平，逼近看起来越来越好。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "overshoot",
+      "line_id": "ovs-1",
+      "filename": "overshoot-ovs-1.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/overshoot-ovs-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "可是盯住跳变点，你会发现曲线总是冲过了头。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "overshoot",
+      "line_id": "ovs-2",
+      "filename": "overshoot-ovs-2.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/overshoot-ovs-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "紧挨跳变的地方，鼓起一个小尖角，然后来回振铃。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "overshoot",
+      "line_id": "ovs-3",
+      "filename": "overshoot-ovs-3.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/overshoot-ovs-3.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "这个顶峰，永远比方波的真实电平高出一截。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "gibbs",
+      "line_id": "gib-1",
+      "filename": "gibbs-gib-1.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/gibbs-gib-1.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "奇妙的是，这个过冲约等于跳变量的百分之九。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "gibbs",
+      "line_id": "gib-2",
+      "filename": "gibbs-gib-2.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/gibbs-gib-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "无论加到五十项还是五千项，它都顽固地停在九个百分点。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "gibbs",
+      "line_id": "gib-3",
+      "filename": "gibbs-gib-3.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/gibbs-gib-3.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "增加项数只让振铃越挤越窄，峰却压不下去，这就是吉布斯现象。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "调大项数，看平坦段迅速变平，逼近越来越好。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "再盯着跳变点的红色尖峰，它却始终高高地立在那儿。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "部分和整体收敛，跳变点却留下固定的过冲。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "这提醒我们：逐点逼近和一致逼近，并不是一回事。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "一道跳变，藏着九个百分点的秘密，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.34,
+  "total_size": 517536
+}

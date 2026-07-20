@@ -1,0 +1,98 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 偏导数与梯度 - 口播稿件
+ * 核心概念：偏导数、梯度向量、梯度垂直等高线指向最陡
+ * 目标受众：高中及以上
+ */
+export const partialDerivativeNarration: NarrationScript = {
+  id: 'partial-derivative',
+  title: '偏导数与梯度',
+  subtitle: '多元函数的变化率',
+  difficulty: 'intermediate',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解偏导数是沿单一方向的变化率',
+    '掌握梯度向量由两个偏导数组成',
+    '认识梯度垂直于等高线且指向最陡上升',
+    '会用梯度判断地形的坡度与朝向',
+  ],
+
+  prerequisites: ['了解一元导数', '了解平面坐标'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '想象你站在一片起伏的山坡上，脚下的高度随位置而变。' },
+        { id: 'intro-2', text: '往东走会上坡还是下坡？往北走呢？坡有多陡？' },
+        { id: 'intro-3', text: '要回答这些问题，我们需要多元函数的变化率工具。' },
+      ],
+    },
+    {
+      id: 'partial',
+      type: 'concept',
+      title: '偏导数',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '把高度看成函数 f(x, y)，只让 x 变、y 不动，得到沿东西方向的坡度，这是对 x 的偏导数。' },
+        { id: 'def-2', text: '只让 y 变、x 不动，得到沿南北方向的坡度，这是对 y 的偏导数。' },
+        { id: 'def-3', text: '每个偏导数，都是把另一个变量当常数后的普通导数。' },
+      ],
+    },
+    {
+      id: 'gradient',
+      type: 'concept',
+      title: '梯度向量',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'grad-1', text: '把两个偏导数拼成一个向量，就是梯度，记作 [fx, fy]。' },
+        { id: 'grad-2', text: '梯度既有方向又有大小，它的模长就是当地最陡的坡度。' },
+        { id: 'grad-3', text: '图上白色箭头，正是每一点的梯度向量。' },
+      ],
+    },
+    {
+      id: 'steepest',
+      type: 'concept',
+      title: '最陡方向',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'steep-1', text: '奇妙的是，梯度永远垂直于等高线，也就是等高的那圈曲线。' },
+        { id: 'steep-2', text: '沿梯度方向上升最快，反方向下降最快，横切等高线则不升不降。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '在图上点击不同位置，观察箭头方向与长短如何随地形改变。' },
+        { id: 'int-2', text: '试试碗、鞍面和波纹，感受梯度在山谷、山脊处的不同表现。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '偏导数量出沿单一方向的坡度，两者合成梯度向量。' },
+        { id: 'sum-2', text: '梯度垂直等高线，指向上升最陡的方向，模长就是坡度。' },
+        { id: 'sum-3', text: '掌握了梯度，你就有了导航高维地形的指南针，我们下次再见！' },
+      ],
+    },
+  ],
+}

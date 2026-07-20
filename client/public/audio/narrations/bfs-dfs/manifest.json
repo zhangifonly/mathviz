@@ -1,0 +1,183 @@
+{
+  "script_id": "bfs-dfs",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/bfs-dfs/intro-intro-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "给你一座迷宫，从入口走到出口，你会怎么找路？"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/bfs-dfs/intro-intro-2.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "一种办法是四面八方同时铺开，像水波一样层层漫过去。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/bfs-dfs/intro-intro-3.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "另一种是认准一个方向一直走，走不通再退回来换条路。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/bfs-dfs/intro-intro-4.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "这两种策略就是广度优先搜索和深度优先搜索。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "bfs",
+      "line_id": "bfs-1",
+      "filename": "bfs-bfs-1.mp3",
+      "path": "audio/narrations/bfs-dfs/bfs-bfs-1.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "广度优先用一个队列，先进先出，从起点开始。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "bfs",
+      "line_id": "bfs-2",
+      "filename": "bfs-bfs-2.mp3",
+      "path": "audio/narrations/bfs-dfs/bfs-bfs-2.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "每次取出一个格子，把它没走过的邻居都排到队尾。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "bfs",
+      "line_id": "bfs-3",
+      "filename": "bfs-bfs-3.mp3",
+      "path": "audio/narrations/bfs-dfs/bfs-bfs-3.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "于是访问顺序像同心圆，一圈一圈地向外扩散。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "dfs",
+      "line_id": "dfs-1",
+      "filename": "dfs-dfs-1.mp3",
+      "path": "audio/narrations/bfs-dfs/dfs-dfs-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "深度优先改用栈，后进先出，总是先探最新发现的格子。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "dfs",
+      "line_id": "dfs-2",
+      "filename": "dfs-dfs-2.mp3",
+      "path": "audio/narrations/bfs-dfs/dfs-dfs-2.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "它沿着一条路蜿蜒深入，直到撞墙或走进死胡同。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "dfs",
+      "line_id": "dfs-3",
+      "filename": "dfs-dfs-3.mp3",
+      "path": "audio/narrations/bfs-dfs/dfs-dfs-3.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "这时就回溯到上一个岔口，换一个方向继续往下钻。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "shortest",
+      "line_id": "short-1",
+      "filename": "shortest-short-1.mp3",
+      "path": "audio/narrations/bfs-dfs/shortest-short-1.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "因为 BFS 是一层层推进的，先到达的一定步数更少。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "shortest",
+      "line_id": "short-2",
+      "filename": "shortest-short-2.mp3",
+      "path": "audio/narrations/bfs-dfs/shortest-short-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "所以它第一次碰到出口时，走的正是最短的那条路。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "shortest",
+      "line_id": "short-3",
+      "filename": "shortest-short-3.mp3",
+      "path": "audio/narrations/bfs-dfs/shortest-short-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "深度优先可不保证，它找到的路往往绕了远。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/bfs-dfs/interaction-int-1.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "切换到 BFS，看颜色如何从起点同心扩散开来。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/bfs-dfs/interaction-int-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "再切到 DFS，看它怎样一头扎进去、碰壁又折返。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/bfs-dfs/summary-sum-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "BFS 用队列层层扩散，DFS 用栈一路到底。"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/bfs-dfs/summary-sum-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "同一座迷宫，两种走法各有妙用，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.620000000000005,
+  "total_size": 538128,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

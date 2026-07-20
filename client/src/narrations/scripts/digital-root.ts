@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 数字根与弃九验算 - 口播稿件
+ * 核心概念：反复各位求和、数字根、模9、弃九验算
+ * 目标受众：小学高年级及以上
+ */
+export const digitalRootNarration: NarrationScript = {
+  id: 'digital-root',
+  title: '数字根与弃九验算',
+  subtitle: '模九的巧妙应用',
+  difficulty: 'beginner',
+  targetAge: '小学高年级以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解数字根的定义与求法',
+    '认识数字根与模9的等价关系',
+    '掌握弃九验算检查算术的方法',
+    '体会简单规律背后的整除原理',
+  ],
+
+  prerequisites: ['会做多位数加减乘', '了解余数概念'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '随便写一个大数，比如一万两千三百四十五。' },
+        { id: 'intro-2', text: '把它的各位数字加起来，得到一个更小的数。' },
+        { id: 'intro-3', text: '如果还不止一位，就再加一次，直到只剩一位数为止。' },
+      ],
+    },
+    {
+      id: 'define',
+      type: 'concept',
+      title: '什么是数字根',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '这个最终剩下的一位数，就叫做原数的数字根。' },
+        { id: 'def-2', text: '无论数字多大，反复相加总会坍缩到一到九之间。' },
+        { id: 'def-3', text: '这个坍缩的过程，就像把一个数不断折叠到最简。' },
+      ],
+    },
+    {
+      id: 'mod9',
+      type: 'concept',
+      title: '与模九的关系',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'mod-1', text: '因为十除以九余一，每一位的权重对九取余都是一。' },
+        { id: 'mod-2', text: '所以各位之和与原数对九同余，数字根其实就是模九的结果。' },
+        { id: 'mod-3', text: '只是当余数为零时，我们把数字根记成九。' },
+      ],
+    },
+    {
+      id: 'casting',
+      type: 'application',
+      title: '弃九验算',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'cast-1', text: '古人用这个性质来检查算术，叫做弃九验算。' },
+        { id: 'cast-2', text: '把两个加数或因数各求数字根，再按同样运算合起来。' },
+        { id: 'cast-3', text: '如果和答案的数字根不一致，那这道题一定算错了。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手验算',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '输入一个数，看它一步步坍缩到自己的数字根。' },
+        { id: 'int-2', text: '再输入一道加法或乘法，让弃九法替你把把关。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '数字根是反复各位求和后剩下的一位数。' },
+        { id: 'sum-2', text: '它等于原数模九，弃九验算正是这一性质的妙用。' },
+        { id: 'sum-3', text: '小小的九，藏着大大的巧思，我们下次再见！' },
+      ],
+    },
+  ],
+}

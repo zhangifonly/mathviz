@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 蒙提霍尔问题 - 口播稿件
+ * 核心概念：条件概率、信息更新、蒙特卡洛模拟
+ * 目标受众：初中及以上
+ */
+export const montyHallNarration: NarrationScript = {
+  id: 'monty-hall',
+  title: '蒙提霍尔问题',
+  subtitle: '三门之谜换不换',
+  difficulty: 'beginner',
+  targetAge: '初中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解蒙提霍尔问题的规则设定',
+    '看清"以为一半一半"的直觉误区',
+    '明白主持人开门泄露了额外信息',
+    '用蒙特卡洛模拟验证换门胜率 2/3',
+  ],
+
+  prerequisites: ['了解基本概率', '知道分数含义'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '舞台上有三扇门，其中一扇后面藏着大奖，另外两扇是山羊。' },
+        { id: 'intro-2', text: '你先挑一扇门，比如一号门，但先别打开。' },
+        { id: 'intro-3', text: '主持人知道奖在哪，他打开一扇有羊的门，再问你：换不换？' },
+      ],
+    },
+    {
+      id: 'myth',
+      type: 'concept',
+      title: '直觉误区',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'myth-1', text: '大多数人第一反应是：还剩两扇门，换不换都是一半一半吧。' },
+        { id: 'myth-2', text: '于是干脆不换，觉得反正机会均等，没必要折腾。' },
+        { id: 'myth-3', text: '但这个直觉恰恰错了，答案会让很多人大吃一惊。' },
+      ],
+    },
+    {
+      id: 'info',
+      type: 'concept',
+      title: '主持人给了信息',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'info-1', text: '关键在于：主持人不是随便开门，他一定避开奖品，只开有羊的门。' },
+        { id: 'info-2', text: '你最初选中的那扇门，中奖概率始终只有三分之一。' },
+        { id: 'info-3', text: '剩下那两扇门合起来占三分之二，主持人替你排除了其中一扇羊。' },
+      ],
+    },
+    {
+      id: 'switch',
+      type: 'concept',
+      title: '换门赢面更大',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'switch-1', text: '于是那三分之二的概率，全部集中到了没被打开的另一扇门上。' },
+        { id: 'switch-2', text: '换门，等于押注"我一开始就选错了"，而这件事有三分之二会发生。' },
+        { id: 'switch-3', text: '所以换门胜率是三分之二，不换只有三分之一，整整差一倍。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '模拟看收敛',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '不信？我们让计算机反复玩这个游戏，画出累计胜率曲线。' },
+        { id: 'int-2', text: '局数越多，换门那条线越贴近三分之二，不换那条贴近三分之一。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '主持人开门泄露了信息，让概率重新分配。' },
+        { id: 'sum-2', text: '换门胜率三分之二，不换三分之一，蒙特卡洛模拟一验便知。' },
+        { id: 'sum-3', text: '相信数学，别只信直觉，我们下次再见！' },
+      ],
+    },
+  ],
+}

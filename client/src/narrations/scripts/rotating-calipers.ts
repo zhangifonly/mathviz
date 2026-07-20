@@ -1,0 +1,100 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 旋转卡壳 - 口播稿件
+ * 核心概念：凸包、对踵点对、旋转支撑线、凸包直径、最小外接矩形
+ * 目标受众：高中及以上
+ */
+export const rotatingCalipersNarration: NarrationScript = {
+  id: 'rotating-calipers',
+  title: '旋转卡壳',
+  subtitle: '凸包直径与最小外接矩形',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解凸包如何刻画点集的外轮廓',
+    '掌握对踵点对与凸包直径的概念',
+    '认识旋转支撑线把复杂度降到线性的思想',
+    '了解最小面积外接矩形的求法与应用',
+  ],
+
+  prerequisites: ['了解平面坐标', '了解向量叉积'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '桌面上撒了一把图钉，我们想知道：这堆点到底有多宽？' },
+        { id: 'intro-2', text: '也就是相距最远的那两个点，隔着多远的距离。' },
+        { id: 'intro-3', text: '朴素做法是两两比较，点一多就慢得让人着急。' },
+        { id: 'intro-4', text: '旋转卡壳给出了一个又快又优雅的答案。' },
+      ],
+    },
+    {
+      id: 'hull',
+      type: 'concept',
+      title: '先求凸包',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'hull-1', text: '第一步，用一根橡皮筋把所有点箍起来，得到的外轮廓就是凸包。' },
+        { id: 'hull-2', text: '最远的两个点一定都在凸包上，内部的点不可能更远。' },
+        { id: 'hull-3', text: '于是问题从整堆点，缩小到了凸包的少数几个顶点上。' },
+      ],
+    },
+    {
+      id: 'antipodal',
+      type: 'concept',
+      title: '对踵点对',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'anti-1', text: '想象用两条平行的直线，从两侧把凸包夹住。' },
+        { id: 'anti-2', text: '两条线各自贴着的那对顶点，就叫一组对踵点对。' },
+        { id: 'anti-3', text: '凸包的直径，一定出现在某一组对踵点对之间。' },
+      ],
+    },
+    {
+      id: 'rotate',
+      type: 'concept',
+      title: '旋转支撑线',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'rot-1', text: '让这对平行卡钳贴着凸包慢慢旋转一圈。' },
+        { id: 'rot-2', text: '每转到一条边，对面的顶点就随之推进，所有对踵点对被一次扫完。' },
+        { id: 'rot-3', text: '同样的旋转还能顺手量出最小面积的外接矩形。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '换换点的数量，看凸包和那条粉色直径怎样变化。' },
+        { id: 'int-2', text: '点击重新随机，每一次都能立刻卡出新的最远点对。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '先求凸包，再旋转卡钳扫过所有对踵点对。' },
+        { id: 'sum-2', text: '直径和最小外接矩形，都在这一圈旋转里被线性求出。' },
+        { id: 'sum-3', text: '一圈优雅的旋转，量出了点集的胖瘦，我们下次再见！' },
+      ],
+    },
+  ],
+}

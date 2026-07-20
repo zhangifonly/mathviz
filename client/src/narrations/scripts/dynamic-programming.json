@@ -1,0 +1,164 @@
+{
+  "id": "dynamic-programming",
+  "title": "动态规划",
+  "subtitle": "重叠子问题与记忆化",
+  "difficulty": "advanced",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解重叠子问题为何让暴力递归变慢",
+    "掌握记忆化与自底向上填表的思路",
+    "认识最优子结构与回溯求解",
+    "在 DP 表上直观看到解的生成过程"
+  ],
+  "prerequisites": [
+    "了解递归",
+    "了解数组与表格"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "有些问题，直接用递归去算，会慢得让人绝望。"
+        },
+        {
+          "id": "intro-2",
+          "text": "比如求两串字符的最长公共子序列，暴力枚举是指数级的。"
+        },
+        {
+          "id": "intro-3",
+          "text": "同一个子问题，被反复计算了成千上万次。"
+        },
+        {
+          "id": "intro-4",
+          "text": "动态规划，正是为了消灭这种重复而生。"
+        }
+      ]
+    },
+    {
+      "id": "overlap",
+      "type": "concept",
+      "title": "重叠子问题",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "ov-1",
+          "text": "把大问题拆开，你会发现小问题一次次重复出现。"
+        },
+        {
+          "id": "ov-2",
+          "text": "这就是重叠子问题：递归树上无数相同的节点。"
+        },
+        {
+          "id": "ov-3",
+          "text": "既然答案一样，何不算一次就记下来。"
+        }
+      ]
+    },
+    {
+      "id": "memo",
+      "type": "concept",
+      "title": "记忆化填表",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "memo-1",
+          "text": "我们开一张二维表，每格存一个子问题的答案。"
+        },
+        {
+          "id": "memo-2",
+          "text": "从最小的子问题开始，自底向上一格格填满。"
+        },
+        {
+          "id": "memo-3",
+          "text": "每格只依赖它上方和左侧已经算好的邻居。"
+        }
+      ]
+    },
+    {
+      "id": "optimal",
+      "type": "concept",
+      "title": "最优子结构",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "opt-1",
+          "text": "整体最优解，由子问题的最优解拼接而成。"
+        },
+        {
+          "id": "opt-2",
+          "text": "背包问题也一样：装或不装，取价值更大的那种。"
+        },
+        {
+          "id": "opt-3",
+          "text": "填完表后，沿着决策来路回溯，就得到具体方案。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "拖动进度条，看 DP 表如何一格格被填满。"
+        },
+        {
+          "id": "int-2",
+          "text": "切换两个经典问题，橙框标出的就是最优回溯路径。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "动态规划用一张表，把重叠的子问题只算一次。"
+        },
+        {
+          "id": "sum-2",
+          "text": "重叠子问题加最优子结构，是它适用的两把钥匙。"
+        },
+        {
+          "id": "sum-3",
+          "text": "把指数级的暴力,变成优雅的填表,我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

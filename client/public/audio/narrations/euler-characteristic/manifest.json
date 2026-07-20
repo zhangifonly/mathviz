@@ -1,0 +1,113 @@
+{
+  "script_id": "euler-characteristic",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/euler-characteristic/intro-intro-1.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "拿起一个立方体，数一数它的顶点、棱和面。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/euler-characteristic/intro-intro-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "八个顶点，十二条棱，六个面，看似毫无关联。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/euler-characteristic/intro-intro-3.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "但欧拉发现，它们之间藏着一个惊人的恒等关系。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "formula",
+      "line_id": "def-1",
+      "filename": "formula-def-1.mp3",
+      "path": "audio/narrations/euler-characteristic/formula-def-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "把顶点数减去棱数，再加上面数，记作 V 减 E 加 F。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "formula",
+      "line_id": "def-2",
+      "filename": "formula-def-2.mp3",
+      "path": "audio/narrations/euler-characteristic/formula-def-2.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "立方体是 8 减 12 加 6，结果正好等于 2。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/euler-characteristic/interaction-int-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "切换不同的多面体，看顶点棱面的计数如何变化。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/euler-characteristic/interaction-int-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "再看环面这一栏，验证它的示性数确实是 0。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/euler-characteristic/summary-sum-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "欧拉示性数 V 减 E 加 F，凸多面体恒等于 2。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/euler-characteristic/summary-sum-2.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "它不依赖形状，只由曲面的洞数决定，χ 等于 2 减 2g。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/euler-characteristic/summary-sum-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "一个简单的加减法，串起几何与拓扑，我们下次再见！"
+    }
+  ],
+  "total_duration": 19.39,
+  "total_size": 310320,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

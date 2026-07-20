@@ -1,0 +1,183 @@
+{
+  "script_id": "mobius-function",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "mobius-function",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/mobius-function/intro-intro-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "有一个函数，它对每个正整数只回答三种答案。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/mobius-function/intro-intro-2.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "要么是正一，要么是负一，要么干脆是零。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/mobius-function/intro-intro-3.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "它就是数论中优雅而神秘的莫比乌斯函数。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/mobius-function/define-def-1.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "先把 n 做质因数分解，看它由哪些素数相乘而成。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/mobius-function/define-def-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "如果每个素因子都只出现一次，就数一数素因子的个数。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/mobius-function/define-def-3.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "个数是偶数时取正一，奇数时取负一。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "zero",
+      "line_id": "zero-1",
+      "filename": "zero-zero-1.mp3",
+      "path": "audio/narrations/mobius-function/zero-zero-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "可只要某个素数出现了两次以上，情况就不同了。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "zero",
+      "line_id": "zero-2",
+      "filename": "zero-zero-2.mp3",
+      "path": "audio/narrations/mobius-function/zero-zero-2.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "比如四等于二的平方，十二含有二的平方，它们的 mu 值都是零。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "zero",
+      "line_id": "zero-3",
+      "filename": "zero-zero-3.mp3",
+      "path": "audio/narrations/mobius-function/zero-zero-3.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "含平方因子就归零，这一刀切得干净利落。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "mertens",
+      "line_id": "mer-1",
+      "filename": "mertens-mer-1.mp3",
+      "path": "audio/narrations/mobius-function/mertens-mer-1.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "把 mu 从一路加到 n，就得到梅滕斯函数 M(n)。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "mertens",
+      "line_id": "mer-2",
+      "filename": "mertens-mer-2.mp3",
+      "path": "audio/narrations/mobius-function/mertens-mer-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "正负相互抵消，这条折线在零轴附近缓慢地上下游走。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "mertens",
+      "line_id": "mer-3",
+      "filename": "mertens-mer-3.mp3",
+      "path": "audio/narrations/mobius-function/mertens-mer-3.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "它的增长快慢，竟与黎曼猜想这道世纪难题紧紧相连。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/mobius-function/interaction-int-1.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "调整观察范围，看正负条形交错分布的节奏。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/mobius-function/interaction-int-2.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "再留意下方的梅滕斯折线，如何随范围延伸而蜿蜒。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/mobius-function/summary-sum-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "莫比乌斯函数用正负零编码了整数的素因子结构。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/mobius-function/summary-sum-2.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "平方因子归零，其余按素因子奇偶定正负。"
+    },
+    {
+      "script_id": "mobius-function",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/mobius-function/summary-sum-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "小小三个值牵动着深邃的数论，我们下次再见！"
+    }
+  ],
+  "total_duration": 31.770000000000003,
+  "total_size": 508608,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

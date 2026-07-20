@@ -1,0 +1,179 @@
+{
+  "script_id": "hill-cipher",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "hill-cipher",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "古老的密码遇上矩阵，会碰撞出怎样的火花？"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "1929 年，数学家希尔用线性代数改造了加密。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "他让一整块字母同时变换，而不是一个个替换。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "vector",
+      "line_id": "def-1",
+      "filename": "vector-def-1.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/vector-def-1.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "先把每个字母换成数字，A 是 0，B 是 1，直到 Z 是 25。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "vector",
+      "line_id": "def-2",
+      "filename": "vector-def-2.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/vector-def-2.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "再把明文每两个字母打包成一个二维向量。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "vector",
+      "line_id": "def-3",
+      "filename": "vector-def-3.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/vector-def-3.mp3",
+      "duration": 1.4,
+      "size": 22464,
+      "text": "于是 HE 就变成了列向量 7 和 4。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "multiply",
+      "line_id": "mul-1",
+      "filename": "multiply-mul-1.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/multiply-mul-1.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "取一个二乘二的密钥矩阵，去乘这个明文向量。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "multiply",
+      "line_id": "mul-2",
+      "filename": "multiply-mul-2.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/multiply-mul-2.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "得到的结果再对 26 取模，落回字母表范围。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "multiply",
+      "line_id": "mul-3",
+      "filename": "multiply-mul-3.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/multiply-mul-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "两个新数字翻译回字母，就是加密后的密文块。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "inverse",
+      "line_id": "inv-1",
+      "filename": "inverse-inv-1.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/inverse-inv-1.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "解密要用密钥矩阵在模 26 下的逆矩阵。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "inverse",
+      "line_id": "inv-2",
+      "filename": "inverse-inv-2.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/inverse-inv-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "前提是行列式与 26 互质，逆矩阵才存在。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "inverse",
+      "line_id": "inv-3",
+      "filename": "inverse-inv-3.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/inverse-inv-3.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "逆矩阵乘上密文向量，就精确地还原出明文。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "输入你自己的明文，看它如何被逐块加密。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "翻动字母块，观察每一步的向量乘法运算。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "希尔密码把字母块当向量，用矩阵乘法加密。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "解密依赖模 26 的逆矩阵，行列式必须与 26 互质。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/hill-cipher/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "线性代数就这样守护了秘密，我们下次再见！"
+    }
+  ],
+  "total_duration": 29.66,
+  "total_size": 474480
+}

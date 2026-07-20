@@ -1,0 +1,149 @@
+{
+  "script_id": "gamma-function",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "gamma-function",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/intro-intro-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "我们都会算 3 的阶乘等于 6，4 的阶乘等于 24。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/intro-intro-2.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "可如果我问你，0.5 的阶乘等于多少呢？"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/intro-intro-3.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "阶乘只对整数有定义，这个问题看起来毫无意义。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/intro-intro-4.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "但数学家找到了一条光滑曲线，把阶乘延伸到了每一个实数。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/define-def-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "这条曲线就是伽马函数，记作大写希腊字母 Γ。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/define-def-2.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "它由一个积分定义，但你只需记住它是阶乘的连续版本。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/define-def-3.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "图中蓝色曲线就是 Γ(x)，在整个正半轴上光滑延展。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "factorial",
+      "line_id": "fac-2",
+      "filename": "factorial-fac-2.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/factorial-fac-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "看那些粉色的点，它们正好落在曲线上，就是阶乘值。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "recur",
+      "line_id": "rec-2",
+      "filename": "recur-rec-2.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/recur-rec-2.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "这正是阶乘那句每次乘一个数的规则，被推广到了实数。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "recur",
+      "line_id": "rec-3",
+      "filename": "recur-rec-3.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/recur-rec-3.mp3",
+      "duration": 2.52,
+      "size": 40320,
+      "text": "最惊艳的是 Γ(1/2) 恰好等于根号 π，圆周率就这样冒了出来。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/interaction-int-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "选一个 x 值，看看曲线在那里给出的 Γ(x) 是多少。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/interaction-int-2.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "试试 2.5 或 0.5，感受阶乘在整数之间的连续过渡。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/summary-sum-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "伽马函数把阶乘从整数光滑地推广到了所有实数。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/summary-sum-2.mp3",
+      "duration": 4.89,
+      "size": 78192,
+      "text": "它满足 Γ(n)=(n-1)!、递推 Γ(x+1)=xΓ(x)，还有 Γ(1/2)=√π。"
+    }
+  ],
+  "total_duration": 31.450000000000003,
+  "total_size": 502992
+}

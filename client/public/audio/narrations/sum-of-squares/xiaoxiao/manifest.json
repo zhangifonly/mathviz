@@ -1,0 +1,189 @@
+{
+  "script_id": "sum-of-squares",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "有些数能拆成两个平方数的和，比如 5 等于 1 加 4。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "可 3 无论怎么试，都凑不出两个平方相加。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "究竟哪些数是两平方和？这背后藏着一条优雅的定律。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/define-def-1.mp3",
+      "duration": 2.56,
+      "size": 41040,
+      "text": "我们说 n 是两平方和，如果存在整数 a 和 b，使 a 方加 b 方等于 n。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/define-def-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "25 就有两种拆法：0 方加 5 方，还有 3 方加 4 方。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/define-def-3.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "把 1 到 100 逐个检验，能表示的数会在网格里点亮。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "fermat",
+      "line_id": "fer-1",
+      "filename": "fermat-fer-1.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/fermat-fer-1.mp3",
+      "duration": 1.71,
+      "size": 27360,
+      "text": "费马发现了判定的钥匙，就藏在质因数分解里。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "fermat",
+      "line_id": "fer-2",
+      "filename": "fermat-fer-2.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/fermat-fer-2.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "把 n 分解，只看形如 4k 加 3 的质因子，比如 3、7、11。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "fermat",
+      "line_id": "fer-3",
+      "filename": "fermat-fer-3.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/fermat-fer-3.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "当且仅当这些因子都出现偶数次时，n 才是两平方和。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "fermat",
+      "line_id": "fer-4",
+      "filename": "fermat-fer-4.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/fermat-fer-4.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "这就是为什么 3 不行，而 9 等于 3 的平方却可以。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "circle",
+      "line_id": "cir-1",
+      "filename": "circle-cir-1.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/circle-cir-1.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "换个视角，a 方加 b 方等于 n 正是半径为根号 n 的圆。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "circle",
+      "line_id": "cir-2",
+      "filename": "circle-cir-2.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/circle-cir-2.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "圆上每一个整数坐标点，都对应一种平方和的表示。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "circle",
+      "line_id": "cir-3",
+      "filename": "circle-cir-3.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/circle-cir-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "于是数论问题，变成了数一数圆上有几个格点。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "拖动滑块选一个 n，看它能否拆分，又有几种拆法。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "切换到格点圆，直观看到那些落在圆上的整点。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "两平方和由 4k 加 3 型质因子的奇偶决定，这是费马的定理。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "格点圆把它翻译成几何，让数与形彼此照亮。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/sum-of-squares/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "一条简洁的定律，串起数论与几何，我们下次再见！"
+    }
+  ],
+  "total_duration": 35.31,
+  "total_size": 564912
+}

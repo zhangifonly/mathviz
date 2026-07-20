@@ -1,0 +1,179 @@
+{
+  "script_id": "fixed-point-iteration",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "拿出计算器，随便输一个数，反复按余弦键，你会发现结果慢慢稳定下来。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "这种把上一步结果再代回同一个函数的做法，就叫不动点迭代。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "今天我们就来看看，这个反复代入的过程藏着怎样的规律。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/define-def-1.mp3",
+      "duration": 2.75,
+      "size": 44064,
+      "text": "如果一个数代入函数后原地不动，也就是 g(x) 等于 x，我们就叫它不动点。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/define-def-2.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "不动点正是曲线 y 等于 g(x) 与对角线 y 等于 x 的交点。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/define-def-3.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "迭代如果收敛，它的极限一定是一个不动点。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "cobweb",
+      "line_id": "cob-1",
+      "filename": "cobweb-cob-1.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/cobweb-cob-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "把每一步画出来：竖直走到曲线上，得到 g(x)。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "cobweb",
+      "line_id": "cob-2",
+      "filename": "cobweb-cob-2.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/cobweb-cob-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "再水平走到对角线，把这个值当作下一次的输入。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "cobweb",
+      "line_id": "cob-3",
+      "filename": "cobweb-cob-3.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/cobweb-cob-3.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "这样一竖一横反复画，就织出一张像蛛网的轨迹。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "converge",
+      "line_id": "conv-1",
+      "filename": "converge-conv-1.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/converge-conv-1.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "蛛网是螺旋收进交点，还是越甩越远，取决于曲线的斜率。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "converge",
+      "line_id": "conv-2",
+      "filename": "converge-conv-2.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/converge-conv-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "当不动点处斜率的绝对值小于一，迭代收敛，蛛网向内盘旋。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "converge",
+      "line_id": "conv-3",
+      "filename": "converge-conv-3.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/converge-conv-3.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "一旦斜率太陡，比如 g(x) 等于 x 平方，蛛网就向外发散跑掉。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "换一个函数，或拖动步数，看蛛网怎样一步步逼近交点。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "对比收敛与发散的例子，感受斜率对命运的决定作用。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "不动点迭代靠反复代入逼近满足 g(x) 等于 x 的不动点。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.65,
+      "size": 42336,
+      "text": "蛛网图把这个过程画成一竖一横的轨迹，收敛条件是斜率绝对值小于一。"
+    },
+    {
+      "script_id": "fixed-point-iteration",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/fixed-point-iteration/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "简单一个代入，却串起了求解方程的大智慧，我们下次再见！"
+    }
+  ],
+  "total_duration": 37.3,
+  "total_size": 597024
+}

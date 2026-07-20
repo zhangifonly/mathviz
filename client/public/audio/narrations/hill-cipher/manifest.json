@@ -1,0 +1,43 @@
+{
+  "script_id": "hill-cipher",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "hill-cipher",
+      "section_id": "multiply",
+      "line_id": "mul-1",
+      "filename": "multiply-mul-1.mp3",
+      "path": "audio/narrations/hill-cipher/multiply-mul-1.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "取一个二乘二的密钥矩阵，去乘这个明文向量。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "multiply",
+      "line_id": "mul-3",
+      "filename": "multiply-mul-3.mp3",
+      "path": "audio/narrations/hill-cipher/multiply-mul-3.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "两个新数字翻译回字母，就是加密后的密文块。"
+    },
+    {
+      "script_id": "hill-cipher",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/hill-cipher/interaction-int-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "输入你自己的明文，看它如何被逐块加密。"
+    }
+  ],
+  "total_duration": 5.43,
+  "total_size": 86832,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

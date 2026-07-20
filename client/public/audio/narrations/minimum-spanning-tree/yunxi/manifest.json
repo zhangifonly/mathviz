@@ -1,0 +1,59 @@
+{
+  "script_id": "minimum-spanning-tree",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "minimum-spanning-tree",
+      "section_id": "tree",
+      "line_id": "tree-1",
+      "filename": "tree-tree-1.mp3",
+      "path": "audio/narrations/minimum-spanning-tree/yunxi/tree-tree-1.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "生成树是一组边，连通全部节点却不含任何环。"
+    },
+    {
+      "script_id": "minimum-spanning-tree",
+      "section_id": "kruskal",
+      "line_id": "krus-1",
+      "filename": "kruskal-krus-1.mp3",
+      "path": "audio/narrations/minimum-spanning-tree/yunxi/kruskal-krus-1.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "Kruskal 先把所有边按权重从小到大排好队。"
+    },
+    {
+      "script_id": "minimum-spanning-tree",
+      "section_id": "prim",
+      "line_id": "prim-1",
+      "filename": "prim-prim-1.mp3",
+      "path": "audio/narrations/minimum-spanning-tree/yunxi/prim-prim-1.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "Prim 换个思路，从任意一个节点开始生长。"
+    },
+    {
+      "script_id": "minimum-spanning-tree",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/minimum-spanning-tree/yunxi/interaction-int-1.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "切换两种算法，观察加边的先后顺序有何不同。"
+    },
+    {
+      "script_id": "minimum-spanning-tree",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/minimum-spanning-tree/yunxi/summary-sum-3.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "两条不同的路，通向同一个最优解，我们下次再见！"
+    }
+  ],
+  "total_duration": 9.13,
+  "total_size": 146016
+}

@@ -1,0 +1,189 @@
+{
+  "script_id": "hidden-markov",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "hidden-markov",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/intro-intro-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "有些事物我们无法直接看见，只能通过它留下的痕迹去猜。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/intro-intro-2.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "比如朋友每天的活动，能不能反推出那天的天气是晴还是雨？"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/intro-intro-3.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "天气看不见，是隐藏的状态；活动看得见，是观测。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/intro-intro-4.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "这类问题，正是隐马尔可夫模型要解决的。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "chain",
+      "line_id": "chain-1",
+      "filename": "chain-chain-1.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/chain-chain-1.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "隐藏的天气并非随意变化，它遵循马尔可夫链。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "chain",
+      "line_id": "chain-2",
+      "filename": "chain-chain-2.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/chain-chain-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "明天晴还是雨，只取决于今天，与更早的日子无关。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "chain",
+      "line_id": "chain-3",
+      "filename": "chain-chain-3.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/chain-chain-3.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "这种转移由一张转移矩阵刻画，晴更容易接着晴。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "emit",
+      "line_id": "emit-1",
+      "filename": "emit-emit-1.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/emit-emit-1.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "每一天的天气，都会以一定概率引发某个活动。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "emit",
+      "line_id": "emit-2",
+      "filename": "emit-emit-2.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/emit-emit-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "晴天更爱散步，雨天更常打扫，这叫发射概率。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "emit",
+      "line_id": "emit-3",
+      "filename": "emit-emit-3.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/emit-emit-3.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "于是隐藏的天气链，投射出一串我们能看见的活动。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "viterbi",
+      "line_id": "vit-1",
+      "filename": "viterbi-vit-1.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/viterbi-vit-1.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "反过来，给定活动序列，哪条天气路径最有可能？"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "viterbi",
+      "line_id": "vit-2",
+      "filename": "viterbi-vit-2.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/viterbi-vit-2.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "维特比算法用动态规划，逐列记录到每个状态的最优路径。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "viterbi",
+      "line_id": "vit-3",
+      "filename": "viterbi-vit-3.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/viterbi-vit-3.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "最后从终点回溯，就得到全局最可能的隐状态序列。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/interaction-int-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "生成一段序列，对比真实天气与维特比的解码结果。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/interaction-int-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "换个长度或重新随机，看看解码准确率如何变化。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/summary-sum-1.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "隐马尔可夫模型用隐状态链加发射概率，解释可观测的序列。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/summary-sum-2.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "维特比算法则用动态规划，从观测反推最可能的隐藏路径。"
+    },
+    {
+      "script_id": "hidden-markov",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/hidden-markov/yunxi/summary-sum-3.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "看不见的，也能被数学照亮，我们下次再见！"
+    }
+  ],
+  "total_duration": 35.73,
+  "total_size": 571968
+}

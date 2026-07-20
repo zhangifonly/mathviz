@@ -1,0 +1,153 @@
+{
+  "script_id": "particle-swarm",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "particle-swarm",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/particle-swarm/intro-intro-1.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "一群鸟在天空盘旋,寻找食物最多的地方。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/particle-swarm/intro-intro-2.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "没有谁指挥,可它们总能齐刷刷聚向最好的一片区域。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/particle-swarm/intro-intro-3.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "科学家把这种群体智慧抽象成算法,叫粒子群优化。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "position",
+      "line_id": "pos-1",
+      "filename": "position-pos-1.mp3",
+      "path": "audio/narrations/particle-swarm/position-pos-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "每只鸟看成一个粒子,它有一个位置,也有一个速度。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "position",
+      "line_id": "pos-3",
+      "filename": "position-pos-3.mp3",
+      "path": "audio/narrations/particle-swarm/position-pos-3.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "速度决定它下一步往哪飞、飞多远。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "best",
+      "line_id": "best-2",
+      "filename": "best-best-2.mp3",
+      "path": "audio/narrations/particle-swarm/best-best-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "整群还共享一个大家去过的最好位置,这是全局最优。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "best",
+      "line_id": "best-3",
+      "filename": "best-best-3.mp3",
+      "path": "audio/narrations/particle-swarm/best-best-3.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "就是这两个记忆,牵引着群体不断靠近答案。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "update",
+      "line_id": "upd-1",
+      "filename": "update-upd-1.mp3",
+      "path": "audio/narrations/particle-swarm/update-upd-1.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "新速度由三股力量合成:惯性,让它保持原来的方向。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "update",
+      "line_id": "upd-2",
+      "filename": "update-upd-2.mp3",
+      "path": "audio/narrations/particle-swarm/update-upd-2.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "认知项,把它拉向自己的个体最优;社会项,把它拉向全局最优。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/particle-swarm/interaction-int-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "点击单步迭代,看散乱的粒子一步步向红环聚集。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/particle-swarm/interaction-int-2.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "换个随机分布再试,每次的收敛路径都不一样。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/particle-swarm/summary-sum-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "粒子群优化让一群简单的粒子协作,逼近函数的最小值。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/particle-swarm/summary-sum-2.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "惯性、个体最优、全局最优三力合成,驱动整群寻优。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/particle-swarm/summary-sum-3.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "简单的规则,涌现出聪明的群体,我们下次再见!"
+    }
+  ],
+  "total_duration": 27.59,
+  "total_size": 441936,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

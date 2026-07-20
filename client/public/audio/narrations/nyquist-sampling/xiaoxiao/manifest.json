@@ -1,0 +1,179 @@
+{
+  "script_id": "nyquist-sampling",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "我们每天听的数字音乐，其实只是一串离散的采样数字。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "奇怪的是，这些孤立的点，竟能还原成连续流畅的声波。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "几个采样点，真的能完整还原原来的信号吗？"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "theorem",
+      "line_id": "thm-1",
+      "filename": "theorem-thm-1.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/theorem-thm-1.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "奈奎斯特给出了答案：只要采样率超过信号最高频率的两倍。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "theorem",
+      "line_id": "thm-2",
+      "filename": "theorem-thm-2.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/theorem-thm-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "换句话说，一个周期里至少要取到两个以上的采样点。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "theorem",
+      "line_id": "thm-3",
+      "filename": "theorem-thm-3.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/theorem-thm-3.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "满足这个条件，采样就没有丢失任何信息。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "reconstruct",
+      "line_id": "rec-1",
+      "filename": "reconstruct-rec-1.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/reconstruct-rec-1.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "重建的办法是给每个采样点放上一个 sinc 波。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "reconstruct",
+      "line_id": "rec-2",
+      "filename": "reconstruct-rec-2.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/reconstruct-rec-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "sinc 波在自己的采样点处为一，在其他采样点处恰好为零。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "reconstruct",
+      "line_id": "rec-3",
+      "filename": "reconstruct-rec-3.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/reconstruct-rec-3.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "把所有 sinc 波按采样值缩放叠加，就精确还原出原始曲线。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "critical",
+      "line_id": "crit-1",
+      "filename": "critical-crit-1.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/critical-crit-1.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "如果采样率刚好等于两倍最高频率，就处在临界的边缘。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "critical",
+      "line_id": "crit-2",
+      "filename": "critical-crit-2.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/critical-crit-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "一旦采样率低于这个门槛，重建的蓝线就明显偏离原信号。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "critical",
+      "line_id": "crit-3",
+      "filename": "critical-crit-3.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/critical-crit-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "信息一旦在采样时丢失，再高明的插值也补不回来。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "拖动采样率滑块，看蓝色重建波形怎样贴合或偏离灰色原信号。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "试试欠采样预设，观察采样点太稀时重建如何彻底失真。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "采样定理告诉我们，采样率超过两倍最高频率就能无损采样。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "sinc 插值把离散采样点重新连成连续的信号。"
+    },
+    {
+      "script_id": "nyquist-sampling",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/nyquist-sampling/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "这正是数字世界还原真实声音的秘密，我们下次再见！"
+    }
+  ],
+  "total_duration": 34.22,
+  "total_size": 547488
+}

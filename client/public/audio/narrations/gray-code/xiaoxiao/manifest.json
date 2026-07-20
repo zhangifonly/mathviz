@@ -1,0 +1,179 @@
+{
+  "script_id": "gray-code",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "gray-code",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "想象一个旋转编码器，正在读取转轴的角度。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "如果用普通二进制，从 3 转到 4 时，三位要同时翻转。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "各位的翻转很难完全同步，一瞬间可能读出错误的乱码。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/intro-intro-4.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "格雷码正是为解决这个难题而生的一种巧妙编码。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "adjacent",
+      "line_id": "adj-1",
+      "filename": "adjacent-adj-1.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/adjacent-adj-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "格雷码的规矩很简单：相邻的两个码，只允许一位发生变化。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "adjacent",
+      "line_id": "adj-2",
+      "filename": "adjacent-adj-2.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/adjacent-adj-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "这样从一个数跳到下一个数，永远只翻转一个比特。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "adjacent",
+      "line_id": "adj-3",
+      "filename": "adjacent-adj-3.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/adjacent-adj-3.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "看画面里高亮的橙色格子，那就是唯一改变的那一位。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "convert",
+      "line_id": "conv-1",
+      "filename": "convert-conv-1.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/convert-conv-1.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "从二进制得到格雷码，只需一步：让它和右移一位的自己做异或。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "convert",
+      "line_id": "conv-2",
+      "filename": "convert-conv-2.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/convert-conv-2.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "写成公式就是，格雷码等于 n 异或 n 右移一位。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "convert",
+      "line_id": "conv-3",
+      "filename": "convert-conv-3.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/convert-conv-3.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "反过来还原时，把格雷码逐位向右做前缀异或即可。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "karnaugh",
+      "line_id": "kar-1",
+      "filename": "karnaugh-kar-1.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/karnaugh-kar-1.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "数字电路里的卡诺图，行列标号正是用格雷码排列的。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "karnaugh",
+      "line_id": "kar-2",
+      "filename": "karnaugh-kar-2.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/karnaugh-kar-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "因为相邻格只差一位，相邻的一才能合并化简逻辑表达式。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "切换位数，看看三位和四位的格雷码序列有什么不同。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "逐行观察，确认任意相邻两行始终只有一个格子在变化。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "格雷码让相邻数字只差一位，避免了多位同变的读数错误。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "一个异或运算，就能在二进制和格雷码之间自由转换。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/gray-code/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "从编码器到卡诺图，它无处不在，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.9,
+  "total_size": 542592
+}

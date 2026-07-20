@@ -1,0 +1,129 @@
+{
+  "script_id": "rossler-attractor",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "equation",
+      "line_id": "def-1",
+      "filename": "equation-def-1.mp3",
+      "path": "audio/narrations/rossler-attractor/yunxi/equation-def-1.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "它只有三行：x 的变化等于负 y 减 z。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "equation",
+      "line_id": "def-3",
+      "filename": "equation-def-3.mp3",
+      "path": "audio/narrations/rossler-attractor/yunxi/equation-def-3.mp3",
+      "duration": 2.56,
+      "size": 41040,
+      "text": "z 的变化里藏着唯一的非线性项，z 乘以 x 减 c，是折叠的开关。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "fold",
+      "line_id": "fold-1",
+      "filename": "fold-fold-1.mp3",
+      "path": "audio/narrations/rossler-attractor/yunxi/fold-fold-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "大部分时间，轨迹在平面上一圈圈螺旋外扩，看起来很温顺。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "fold",
+      "line_id": "fold-2",
+      "filename": "fold-fold-2.mp3",
+      "path": "audio/narrations/rossler-attractor/yunxi/fold-fold-2.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "一旦 x 越过阈值 c，z 猛然窜高，把轨迹从平面折叠拉起。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "fold",
+      "line_id": "fold-3",
+      "filename": "fold-fold-3.mp3",
+      "path": "audio/narrations/rossler-attractor/yunxi/fold-fold-3.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "拉伸再折叠，反复揉捏，正是混沌诞生的几何机制。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "attractor",
+      "line_id": "att-1",
+      "filename": "attractor-att-1.mp3",
+      "path": "audio/narrations/rossler-attractor/yunxi/attractor-att-1.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "所有轨迹都被吸向同一个单卷的奇怪吸引子。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "attractor",
+      "line_id": "att-2",
+      "filename": "attractor-att-2.mp3",
+      "path": "audio/narrations/rossler-attractor/yunxi/attractor-att-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "它有界却永不闭合，初值相差一丝，长期走向就截然不同。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/rossler-attractor/yunxi/interaction-int-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "调小参数 c，你会看到轨迹收成规整的周期环。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/rossler-attractor/yunxi/interaction-int-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "再调大 c，环一次次倍化，最终散成混沌的螺旋盘。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/rossler-attractor/yunxi/summary-sum-1.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "Rössler 用最少的非线性，演示了混沌的核心配方。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/rossler-attractor/yunxi/summary-sum-2.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "螺旋负责拉伸，折叠负责搅乱，二者相乘便是混沌。"
+    },
+    {
+      "script_id": "rossler-attractor",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/rossler-attractor/yunxi/summary-sum-3.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "极简中藏着无穷，这正是数学的迷人之处，我们下次再见！"
+    }
+  ],
+  "total_duration": 25.09,
+  "total_size": 401616
+}

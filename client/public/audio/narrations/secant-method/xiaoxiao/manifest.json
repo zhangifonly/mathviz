@@ -1,0 +1,169 @@
+{
+  "script_id": "secant-method",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "secant-method",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "牛顿法求根很快，但它有个前提：你得会算函数的导数。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "可现实中，很多函数的导数又复杂又难求，甚至根本写不出来。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "割线法就是牛顿法的免导数版本，只用函数值就能逼近根。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "secant",
+      "line_id": "sec-1",
+      "filename": "secant-sec-1.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/secant-sec-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "牛顿法在一点画切线，而切线的斜率正是导数。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "secant",
+      "line_id": "sec-2",
+      "filename": "secant-sec-2.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/secant-sec-2.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "割线法换个思路：取最近的两个点，用它们的连线来近似切线。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "secant",
+      "line_id": "sec-3",
+      "filename": "secant-sec-3.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/secant-sec-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "两点越靠近，这条割线就越接近真正的切线。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "cross",
+      "line_id": "cross-1",
+      "filename": "cross-cross-1.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/cross-cross-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "让这条割线延长，与横轴相交，交点就是新的根估计。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "cross",
+      "line_id": "cross-2",
+      "filename": "cross-cross-2.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/cross-cross-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "再拿最新的两个点重复：连线、延长、取交点。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "cross",
+      "line_id": "cross-3",
+      "filename": "cross-cross-3.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/cross-cross-3.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "估计值就这样一步步地滑向曲线与横轴的交点，也就是方程的根。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "converge",
+      "line_id": "conv-1",
+      "filename": "converge-conv-1.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/converge-conv-1.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "割线法的收敛阶约为一点六一八，正是黄金比例。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "converge",
+      "line_id": "conv-2",
+      "filename": "converge-conv-2.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/converge-conv-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "它比二分法快得多，虽略逊于牛顿法，却省下了求导的代价。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "点击单步，看每一步的割线如何与横轴相交。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "留意下方的误差，短短几步它就迅速缩小到极小。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "割线法用两点割线代替切线，无需导数即可求根。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "割线交横轴得新估计，反复迭代，超线性地逼近真根。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/secant-method/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "简单一条割线，也能高效逼近方程的答案，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.75000000000001,
+  "total_size": 524160
+}

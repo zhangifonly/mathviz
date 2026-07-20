@@ -1,0 +1,139 @@
+{
+  "script_id": "bell-numbers",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "bell-numbers",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/intro-intro-1.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "假设你有三位朋友，要把他们分成几个小组一起吃饭。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/intro-intro-2.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "可以三人一桌，可以两人加一人，也可以各坐各的。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/intro-intro-3.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "数一数，三个人一共有五种分法。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/intro-intro-4.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "这个「总共有多少种分法」的数字，就叫贝尔数。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/define-def-1.mp3",
+      "duration": 2.72,
+      "size": 43488,
+      "text": "贝尔数 B(n)，就是把 n 个元素的集合划分成若干非空子集的所有方式总数。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/define-def-2.mp3",
+      "duration": 4.37,
+      "size": 69984,
+      "text": "B(0) 和 B(1) 都是 1，B(2) 是 2，B(3) 是 5，B(4) 一下跳到 15。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/define-def-3.mp3",
+      "duration": 1.5,
+      "size": 24048,
+      "text": "元素每多一个，分法都会爆炸式增长。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "triangle",
+      "line_id": "tri-1",
+      "filename": "triangle-tri-1.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/triangle-tri-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "有个漂亮的办法能一口气算出它们，叫贝尔三角。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "triangle",
+      "line_id": "tri-2",
+      "filename": "triangle-tri-2.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/triangle-tri-2.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "每一行的开头，抄下上一行的末尾那个数。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "triangle",
+      "line_id": "tri-3",
+      "filename": "triangle-tri-3.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/triangle-tri-3.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "其余每个数，等于它左边的数加上左上方的数。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "triangle",
+      "line_id": "tri-4",
+      "filename": "triangle-tri-4.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/triangle-tri-4.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "于是每一行的末尾，正好就是下一个贝尔数。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "stirling",
+      "line_id": "stir-1",
+      "filename": "stirling-stir-1.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/stirling-stir-1.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "如果规定恰好分成 k 个子集，方式数就是第二类斯特林数。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/summary-sum-3.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "简单的规则藏着惊人的增长，我们下次再见！"
+    }
+  ],
+  "total_duration": 26.17,
+  "total_size": 418896
+}

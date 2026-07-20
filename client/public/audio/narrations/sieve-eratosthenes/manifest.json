@@ -1,0 +1,173 @@
+{
+  "script_id": "sieve-eratosthenes",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/intro-intro-1.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "素数，是只能被 1 和它自己整除的数，比如 2、3、5、7。"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/intro-intro-3.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "可素数没有简单公式，我们该怎么把它们一网打尽呢？"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "principle",
+      "line_id": "prin-1",
+      "filename": "principle-prin-1.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/principle-prin-1.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "两千多年前，古希腊学者埃拉托斯特尼想出一个妙招。"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "principle",
+      "line_id": "prin-2",
+      "filename": "principle-prin-2.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/principle-prin-2.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "从 2 开始，把它的倍数 4、6、8 全部划掉，它们都是合数。"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "principle",
+      "line_id": "prin-4",
+      "filename": "principle-prin-4.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/principle-prin-4.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "像用筛子筛沙，漏下来没被划掉的，就全是素数。"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "observe",
+      "line_id": "obs-1",
+      "filename": "observe-obs-1.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/observe-obs-1.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "看这张表，金色的素数在开头很密集。"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "observe",
+      "line_id": "obs-2",
+      "filename": "observe-obs-2.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/observe-obs-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "可越往后走，素数就越稀少，间隔越拉越大。"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "observe",
+      "line_id": "obs-3",
+      "filename": "observe-obs-3.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/observe-obs-3.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "素数无穷无尽，但会渐渐变得稀疏，这就是素数定理描述的规律。"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "efficiency",
+      "line_id": "eff-1",
+      "filename": "efficiency-eff-1.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/efficiency-eff-1.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "如果逐个去试除判断，每个数都要费不少功夫。"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "efficiency",
+      "line_id": "eff-2",
+      "filename": "efficiency-eff-2.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/efficiency-eff-2.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "而筛法只做加法标记倍数，而且只需筛到根号 n 就够了。"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "efficiency",
+      "line_id": "eff-3",
+      "filename": "efficiency-eff-3.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/efficiency-eff-3.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "因为更大的合数，早已被它较小的质因子划掉了。"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/interaction-int-1.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "调整上界，看看筛到 50、100 还是 200，素数各有多少。"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/interaction-int-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "点击单步，亲眼看着一个个素数的倍数被逐层筛除。"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/summary-sum-1.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "埃氏筛法用最朴素的划倍数，高效找出所有素数。"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/summary-sum-2.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "一个古老的智慧，至今仍闪耀在计算机算法之中。"
+    },
+    {
+      "script_id": "sieve-eratosthenes",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/sieve-eratosthenes/summary-sum-3.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "愿你也爱上素数的神秘与秩序，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.199999999999996,
+  "total_size": 515232,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

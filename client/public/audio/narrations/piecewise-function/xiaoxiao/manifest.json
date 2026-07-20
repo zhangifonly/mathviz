@@ -1,0 +1,179 @@
+{
+  "script_id": "piecewise-function",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "piecewise-function",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "有些函数并不用一个统一的公式，而是把定义域切成几段。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "每一段各管一段自变量，用各自的规则计算取值。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "这就是分段函数，像阶梯电费、快递分段计价，生活里随处可见。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "concept-a",
+      "line_id": "def-1",
+      "filename": "concept-a-def-1.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/concept-a-def-1.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "绝对值函数：x 小于零时取相反数，大于等于零时取自己。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "concept-a",
+      "line_id": "def-2",
+      "filename": "concept-a-def-2.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/concept-a-def-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "两段直线在原点恰好接上，图像是一个漂亮的 V 字。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "concept-a",
+      "line_id": "def-3",
+      "filename": "concept-a-def-3.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/concept-a-def-3.mp3",
+      "duration": 2.81,
+      "size": 44928,
+      "text": "符号函数就不同了，负数给负一，正数给正一，在零处直接从负一跳到正一。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "concept-b",
+      "line_id": "con-1",
+      "filename": "concept-b-con-1.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/concept-b-con-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "判断分段点连不连续，关键看曲线在那里断没断开。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "concept-b",
+      "line_id": "con-2",
+      "filename": "concept-b-con-2.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/concept-b-con-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "绝对值在原点左右都趋向零，接得上，所以连续。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "concept-b",
+      "line_id": "con-3",
+      "filename": "concept-b-con-3.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/concept-b-con-3.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "符号函数在原点两侧一个负一一个正一，接不上，就是跳跃间断。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "concept-c",
+      "line_id": "lim-1",
+      "filename": "concept-c-lim-1.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/concept-c-lim-1.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "从左边慢慢靠近分段点，得到左极限；从右边靠近，得到右极限。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "concept-c",
+      "line_id": "lim-2",
+      "filename": "concept-c-lim-2.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/concept-c-lim-2.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "左右极限相等且等于函数值，就连续；不相等，就出现跳跃。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "concept-c",
+      "line_id": "lim-3",
+      "filename": "concept-c-lim-3.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/concept-c-lim-3.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "实心点表示真正取到的值，空心圈表示极限逼近但取不到。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "切换不同例子，观察取整函数一级一级往上跳的阶梯。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "再看自定义的抛物线接直线，找一找哪个分段点断开了。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "分段函数把定义域切段，每段用各自的规则。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "比较分段点的左右极限，就能判断它连续还是跳跃间断。"
+    },
+    {
+      "script_id": "piecewise-function",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/piecewise-function/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "看懂了连续与断开，函数的性格就一目了然，我们下次再见！"
+    }
+  ],
+  "total_duration": 36.89000000000001,
+  "total_size": 590112
+}

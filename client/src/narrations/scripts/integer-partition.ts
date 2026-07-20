@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 整数分拆 - 口播稿件
+ * 核心概念：分拆、分拆数 p(n)、杨氏图、共轭分拆
+ * 目标受众：初中及以上
+ */
+export const integerPartitionNarration: NarrationScript = {
+  id: 'integer-partition',
+  title: '整数分拆',
+  subtitle: '杨氏图与分拆数',
+  difficulty: 'intermediate',
+  targetAge: '初中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解整数分拆的定义',
+    '认识分拆数 p(n) 及其快速增长',
+    '掌握用杨氏图表示分拆',
+    '理解共轭分拆与转置的关系',
+  ],
+
+  prerequisites: ['了解正整数加法', '了解顺序无关的和'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '给你一个正整数，比如 4，你能把它拆成几个正整数的和？' },
+        { id: 'intro-2', text: '4、3加1、2加2、2加1加1、还有1加1加1加1，一共五种。' },
+        { id: 'intro-3', text: '只要不计较加数的顺序，每一种写法就叫做一个分拆。' },
+      ],
+    },
+    {
+      id: 'count',
+      type: 'concept',
+      title: '分拆数 p(n)',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '把 n 的分拆总数记作 p(n)，于是 p(4) 等于 5。' },
+        { id: 'def-2', text: 'p(n) 随 n 增长得飞快，p(10) 就已经是 42。' },
+        { id: 'def-3', text: '我们用动态规划逐个凑出部件，就能高效算出 p(n)。' },
+      ],
+    },
+    {
+      id: 'young',
+      type: 'concept',
+      title: '杨氏图表示',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'yg-1', text: '每个分拆都能画成一张杨氏图：一个部件就是一行方块。' },
+        { id: 'yg-2', text: '部件从大到小自上而下排列，方块左对齐，像一级级台阶。' },
+        { id: 'yg-3', text: '这张图让抽象的和，变成看得见摸得着的形状。' },
+      ],
+    },
+    {
+      id: 'conjugate',
+      type: 'concept',
+      title: '共轭分拆',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'conj-1', text: '把杨氏图沿主对角线翻转，行变成列、列变成行。' },
+        { id: 'conj-2', text: '翻转后读到的新分拆，就是原分拆的共轭分拆。' },
+        { id: 'conj-3', text: '再翻一次就回到原样，可见共轭是一种优雅的对称。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '选一个 n，用上一个下一个逐张翻看它的所有分拆。' },
+        { id: 'int-2', text: '再点显示共轭，看虚线框如何把图形转置过来。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '分拆是把整数写成无序正整数之和，总数记作 p(n)。' },
+        { id: 'sum-2', text: '杨氏图让分拆可视化，转置就得到共轭分拆。' },
+        { id: 'sum-3', text: '小小的加法里藏着深邃的组合世界，我们下次再见！' },
+      ],
+    },
+  ],
+}

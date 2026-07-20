@@ -1,0 +1,160 @@
+{
+  "id": "series-convergence",
+  "title": "级数收敛判别",
+  "subtitle": "无穷和何时有限",
+  "difficulty": "advanced",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解无穷级数与部分和序列的关系",
+    "掌握几何级数收敛的判据",
+    "认识调和级数虽发散却极其缓慢",
+    "了解 p 级数与比值判别法"
+  ],
+  "prerequisites": [
+    "了解数列与极限",
+    "了解求和记号"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "把无穷多个数一个接一个加起来，结果会是什么？"
+        },
+        {
+          "id": "intro-2",
+          "text": "有时它稳稳地停在一个有限的数上，我们说级数收敛。"
+        },
+        {
+          "id": "intro-3",
+          "text": "有时它没有尽头地越加越大，我们说级数发散。"
+        }
+      ]
+    },
+    {
+      "id": "geometric",
+      "type": "concept",
+      "title": "几何级数",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "geo-1",
+          "text": "先看一加二分之一加四分之一，每项都是上一项的一半。"
+        },
+        {
+          "id": "geo-2",
+          "text": "部分和越来越靠近二，却永远不会超过它。"
+        },
+        {
+          "id": "geo-3",
+          "text": "只要公比的绝对值小于一，几何级数就一定收敛。"
+        }
+      ]
+    },
+    {
+      "id": "harmonic",
+      "type": "concept",
+      "title": "调和级数",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "har-1",
+          "text": "再看一加二分之一加三分之一，每项虽然趋于零。"
+        },
+        {
+          "id": "har-2",
+          "text": "可它的部分和会缓慢地、毫无止境地涨向无穷。"
+        },
+        {
+          "id": "har-3",
+          "text": "项趋于零，并不保证级数收敛，这是最经典的陷阱。"
+        }
+      ]
+    },
+    {
+      "id": "ptest",
+      "type": "concept",
+      "title": "p 级数与判别法",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "pt-1",
+          "text": "把分母换成 n 的平方，级数就收敛，极限恰是 pi 平方除以六。"
+        },
+        {
+          "id": "pt-2",
+          "text": "p 级数在 p 大于一时收敛，小于等于一时发散。"
+        },
+        {
+          "id": "pt-3",
+          "text": "比值判别法看相邻两项之比的极限，小于一收敛，大于一发散。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换不同级数，看部分和的曲线是趋于渐近线还是一路上扬。"
+        },
+        {
+          "id": "int-2",
+          "text": "增大项数 N，感受收敛的稳与发散的缓。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "级数是否收敛，取决于部分和序列有没有极限。"
+        },
+        {
+          "id": "sum-2",
+          "text": "几何级数与 p 大于一的级数收敛，调和级数发散。"
+        },
+        {
+          "id": "sum-3",
+          "text": "用比值与 p 级数判据看穿无穷和的命运，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

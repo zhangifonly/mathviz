@@ -1,0 +1,113 @@
+{
+  "script_id": "partial-fractions",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "partial-fractions",
+      "section_id": "split",
+      "line_id": "def-1",
+      "filename": "split-def-1.mp3",
+      "path": "audio/narrations/partial-fractions/split-def-1.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "如果分母是几个不同的一次因式相乘，就能拆成几个简单分式相加。"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "split",
+      "line_id": "def-3",
+      "filename": "split-def-3.mp3",
+      "path": "audio/narrations/partial-fractions/split-def-3.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "剩下的问题，就是求出每个分式头上的那个常数系数。"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "residue",
+      "line_id": "res-2",
+      "filename": "residue-res-2.mp3",
+      "path": "audio/narrations/partial-fractions/residue-res-2.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "再把这个因式的根代进剩下的式子，算出来的值就是系数。"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "residue",
+      "line_id": "res-3",
+      "filename": "residue-res-3.mp3",
+      "path": "audio/narrations/partial-fractions/residue-res-3.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "写成公式就是，A等于分子在根处的值，除以分母求导在根处的值。"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "verify",
+      "line_id": "ver-1",
+      "filename": "verify-ver-1.mp3",
+      "path": "audio/narrations/partial-fractions/verify-ver-1.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "把拆出来的几个简单分式加回去，曲线和原式完全重合。"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "verify",
+      "line_id": "ver-2",
+      "filename": "verify-ver-2.mp3",
+      "path": "audio/narrations/partial-fractions/verify-ver-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "除了在渐近线处，处处相等，这说明我们的分解是恒等式。"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/partial-fractions/interaction-int-1.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "切换不同的例子，看分子分母变了以后系数怎么变。"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/partial-fractions/interaction-int-2.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "打开或关闭彩色分式曲线，感受它们如何叠加成黑色原曲线。"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/partial-fractions/summary-sum-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "部分分式分解，把复杂的有理式拆成一堆简单分式之和。"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/partial-fractions/summary-sum-3.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "化繁为简是数学的常用魔法，我们下次再见！"
+    }
+  ],
+  "total_duration": 21.29,
+  "total_size": 340560,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

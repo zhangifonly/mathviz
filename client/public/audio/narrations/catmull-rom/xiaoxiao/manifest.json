@@ -1,0 +1,179 @@
+{
+  "script_id": "catmull-rom",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "catmull-rom",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "给你一串散落的点，想画一条光滑曲线把它们连起来。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "而且这条曲线必须刚好穿过每一个点，一个都不能漏。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "这正是 Catmull-Rom 样条要解决的问题：过点又平滑。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "tangent",
+      "line_id": "tan-1",
+      "filename": "tangent-tan-1.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/tangent-tan-1.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "要在两点之间平滑过渡，关键是知道曲线经过每个点时的方向。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "tangent",
+      "line_id": "tan-2",
+      "filename": "tangent-tan-2.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/tangent-tan-2.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "Catmull-Rom 用一个巧妙的办法：某点的切线，等于它前后两点连线的方向。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "tangent",
+      "line_id": "tan-3",
+      "filename": "tangent-tan-3.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/tangent-tan-3.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "写成公式就是切线等于 P(i+1) 减 P(i-1) 再除以二。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "formula",
+      "line_id": "form-1",
+      "filename": "formula-form-1.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/formula-form-1.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "有了两端的位置和切线，就能用三次多项式在中间插值。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "formula",
+      "line_id": "form-2",
+      "filename": "formula-form-2.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/formula-form-2.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "这四个条件对应一个固定的基矩阵，把四个相邻控制点加权混合。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "formula",
+      "line_id": "form-3",
+      "filename": "formula-form-3.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/formula-form-3.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "参数 t 从零走到一，曲线就从当前点平滑滑到下一个点。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "compare",
+      "line_id": "cmp-1",
+      "filename": "compare-cmp-1.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/compare-cmp-1.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "同样一串控制点，B 样条只是被它们拉扯，并不真的穿过。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "compare",
+      "line_id": "cmp-2",
+      "filename": "compare-cmp-2.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/compare-cmp-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "这叫逼近；而 Catmull-Rom 老老实实过每个点，叫插值。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "compare",
+      "line_id": "cmp-3",
+      "filename": "compare-cmp-3.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/compare-cmp-3.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "要精确经过路标就用插值，要更柔顺的整体形状就用逼近。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "试着拖动任意一个黑点，曲线会立刻跟过去并保持穿过它。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "打开橙色的 B 样条对比，看两条曲线在同样点上有多不同。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "Catmull-Rom 用相邻点估计切线，让曲线光滑地穿过每个控制点。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "它是插值样条的代表，简单实用，动画路径里随处可见。"
+    },
+    {
+      "script_id": "catmull-rom",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/catmull-rom/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "记住插值过点、逼近不过点这条分界线，我们下次再见！"
+    }
+  ],
+  "total_duration": 36.44,
+  "total_size": 583056
+}

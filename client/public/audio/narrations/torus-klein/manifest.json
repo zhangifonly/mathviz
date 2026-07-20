@@ -1,0 +1,153 @@
+{
+  "script_id": "torus-klein",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "torus-klein",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/torus-klein/intro-intro-3.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "今天的主角，就是这样诞生的环面与克莱因瓶。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "torus",
+      "line_id": "def-2",
+      "filename": "torus-def-2.mp3",
+      "path": "audio/narrations/torus-klein/torus-def-2.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "再把上下两条边也同向粘合，管子两头接起来，就成了甜甜圈形状的环面。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "torus",
+      "line_id": "def-3",
+      "filename": "torus-def-3.mp3",
+      "path": "audio/narrations/torus-klein/torus-def-3.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "两对边、都是同向，这就是环面的全部秘密。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "klein",
+      "line_id": "kle-1",
+      "filename": "klein-kle-1.mp3",
+      "path": "audio/narrations/torus-klein/klein-kle-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "现在只改一步：粘上下边时先翻个面，让方向相反。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "klein",
+      "line_id": "kle-2",
+      "filename": "klein-kle-2.mp3",
+      "path": "audio/narrations/torus-klein/klein-kle-2.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "一对同向、一对反向，得到的就是克莱因瓶。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "klein",
+      "line_id": "kle-3",
+      "filename": "klein-kle-3.mp3",
+      "path": "audio/narrations/torus-klein/klein-kle-3.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "在三维里它必须自我穿过，真正的它其实住在四维空间。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "orient",
+      "line_id": "ori-1",
+      "filename": "orient-ori-1.mp3",
+      "path": "audio/narrations/torus-klein/orient-ori-1.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "环面有清清楚楚的里和外，我们说它可定向。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "orient",
+      "line_id": "ori-2",
+      "filename": "orient-ori-2.mp3",
+      "path": "audio/narrations/torus-klein/orient-ori-2.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "克莱因瓶却没有内外之分，沿着它走一圈，左右会被悄悄调换。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "orient",
+      "line_id": "ori-3",
+      "filename": "orient-ori-3.mp3",
+      "path": "audio/narrations/torus-klein/orient-ori-3.mp3",
+      "duration": 1.51,
+      "size": 24192,
+      "text": "这种没有正反面的曲面，叫做不可定向。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/torus-klein/interaction-int-1.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "切换两种曲面，对照它们的线框有什么不同。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/torus-klein/interaction-int-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "拖动旋转，观察克莱因瓶那条自我穿过的脖子。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/torus-klein/summary-sum-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "同一张正方形，粘法不同，就分出了环面与克莱因瓶。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/torus-klein/summary-sum-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "一个可定向、一个不可定向，这正是拓扑学的迷人之处。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/torus-klein/summary-sum-3.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "边的粘合藏着一整个曲面的世界，我们下次再见！"
+    }
+  ],
+  "total_duration": 27.110000000000003,
+  "total_size": 433728,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "script_id": "spirograph",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "spirograph",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/spirograph/yunxi/intro-intro-3.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "这些花纹背后，其实藏着一条优美的曲线，叫内摆线。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "petal",
+      "line_id": "pet-1",
+      "filename": "petal-pet-1.mp3",
+      "path": "audio/narrations/spirograph/yunxi/petal-pet-1.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "真正决定花朵形状的，是大圆和小圆半径的比，也就是齿数比。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "closure",
+      "line_id": "clo-1",
+      "filename": "closure-clo-1.mp3",
+      "path": "audio/narrations/spirograph/yunxi/closure-clo-1.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "花瓣的数量，正好等于 R 除以 R 和 r 的最大公约数。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/spirograph/yunxi/interaction-int-1.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "试着调整 R、r 和 d，看花瓣如何增减、疏密如何变化。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/spirograph/yunxi/interaction-int-2.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "每换一组数字，都会开出一朵独一无二的数学之花。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/spirograph/yunxi/summary-sum-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "愿你也能用数学画出美丽的花纹，我们下次再见！"
+    }
+  ],
+  "total_duration": 12.24,
+  "total_size": 195984
+}

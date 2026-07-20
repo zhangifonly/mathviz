@@ -1,0 +1,89 @@
+{
+  "script_id": "gamblers-ruin",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/intro-intro-2.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "他要么先输光离场，要么先达到目标金额。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/intro-intro-3.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "问题是：这两种结局，各自会以多大的概率降临？"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/intro-intro-4.mp3",
+      "duration": 1.46,
+      "size": 23328,
+      "text": "这就是概率论里著名的赌徒破产问题。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "walk",
+      "line_id": "walk-2",
+      "filename": "walk-walk-2.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/walk-walk-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "资金触到零就破产，触到目标就达标，这是两道吸收壁。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "formula",
+      "line_id": "form-1",
+      "filename": "formula-form-1.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/formula-form-1.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "若每局输赢机会均等，破产概率就是目标减本金再除以目标。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "formula",
+      "line_id": "form-2",
+      "filename": "formula-form-2.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/formula-form-2.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "换句话说，本金占目标的比例越小，破产的可能就越大。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "fairness",
+      "line_id": "fair-3",
+      "filename": "fairness-fair-3.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/fairness-fair-3.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "赌场正是靠这点微小而稳定的优势，让长期玩家几乎必输。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/interaction-int-1.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "切换不同赌局设置，调整本金与胜率，看多局轨迹奔向哪道壁。"
+    }
+  ],
+  "total_duration": 16.330000000000002,
+  "total_size": 261216
+}

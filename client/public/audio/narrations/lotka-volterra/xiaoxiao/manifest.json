@@ -1,0 +1,179 @@
+{
+  "script_id": "lotka-volterra",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "一片森林里，住着一群兔子和一群狐狸。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "兔子吃草繁衍，狐狸靠捕兔为生，谁也离不开谁。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "它们的数量会怎样此起彼伏？一个方程组给出了答案。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/define-def-1.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "猎物方程：兔子按自然率增长，又按被捕食率减少。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/define-def-2.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "捕食者方程：狐狸靠吃到的兔子增多，又因自然死亡减少。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/define-def-3.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "两个变化率相互牵制，这就是洛特卡-沃尔泰拉方程组。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "oscillate",
+      "line_id": "osc-1",
+      "filename": "oscillate-osc-1.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/oscillate-osc-1.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "兔子一多，狐狸吃得饱，数量随之攀升。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "oscillate",
+      "line_id": "osc-2",
+      "filename": "oscillate-osc-2.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/oscillate-osc-2.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "狐狸一多，兔子被吃光，狐狸又开始挨饿减少。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "oscillate",
+      "line_id": "osc-3",
+      "filename": "oscillate-osc-3.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/oscillate-osc-3.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "两条曲线此消彼长，捕食者的高峰总是滞后于猎物。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "phase",
+      "line_id": "phase-1",
+      "filename": "phase-phase-1.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/phase-phase-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "把兔子数当横轴、狐狸数当纵轴，画出状态的轨迹。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "phase",
+      "line_id": "phase-2",
+      "filename": "phase-phase-2.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/phase-phase-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "轨迹是一条闭合的环，说明系统会周而复始地循环。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "phase",
+      "line_id": "phase-3",
+      "filename": "phase-phase-3.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/phase-phase-3.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "沿环运动时，一个守恒量始终保持不变，这是数学的秩序。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "调整初始兔子数量，看振荡的幅度如何改变。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "拖动被捕食率，感受狐狸的胃口如何左右整个周期。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "两个相互牵制的变化率，织出了生生不息的周期振荡。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "相平面上的闭合环，正是这场循环最优雅的证明。"
+    },
+    {
+      "script_id": "lotka-volterra",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/lotka-volterra/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "简单方程写尽森林的兴衰，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.21,
+  "total_size": 515232
+}

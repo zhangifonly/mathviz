@@ -1,0 +1,183 @@
+{
+  "script_id": "stokes-theorem",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/stokes-theorem/intro-intro-1.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "想象一片流动的水面，上面漂着一圈封闭的绳环。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/stokes-theorem/intro-intro-2.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "水推着绳环转动的总效果，只跟绳环这条边界有关吗？"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/stokes-theorem/intro-intro-3.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "斯托克斯定理告诉我们：边界上的转动，恰好等于内部每一点旋转的总和。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "circulation",
+      "line_id": "circ-1",
+      "filename": "circulation-circ-1.mp3",
+      "path": "audio/narrations/stokes-theorem/circulation-circ-1.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "先看边界。沿着闭合曲线走一圈，把向量场在切线方向的分量累加起来。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "circulation",
+      "line_id": "circ-2",
+      "filename": "circulation-circ-2.mp3",
+      "path": "audio/narrations/stokes-theorem/circulation-circ-2.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "这个线积分 ∮F·dr 就叫环量，衡量场推着你绕圈的总趋势。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "circulation",
+      "line_id": "circ-3",
+      "filename": "circulation-circ-3.mp3",
+      "path": "audio/narrations/stokes-theorem/circulation-circ-3.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "画面里紫色曲线上的箭头，就是我们绕行的正方向，逆时针为正。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "curl",
+      "line_id": "curl-1",
+      "filename": "curl-curl-1.mp3",
+      "path": "audio/narrations/stokes-theorem/curl-curl-1.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "再看内部。每一点都有一个旋度，等于 ∂Q/∂x 减去 ∂P/∂y。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "curl",
+      "line_id": "curl-2",
+      "filename": "curl-curl-2.mp3",
+      "path": "audio/narrations/stokes-theorem/curl-curl-2.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "旋度度量该点附近流体打转的强弱，红色为正、蓝色为负。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "curl",
+      "line_id": "curl-3",
+      "filename": "curl-curl-3.mp3",
+      "path": "audio/narrations/stokes-theorem/curl-curl-3.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "把区域里所有点的旋度用二重积分累加，就得到旋度的总通量。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "theorem",
+      "line_id": "thm-1",
+      "filename": "theorem-thm-1.mp3",
+      "path": "audio/narrations/stokes-theorem/theorem-thm-1.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "关键结论来了：边界的环量，正好等于内部旋度的二重积分。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "theorem",
+      "line_id": "thm-2",
+      "filename": "theorem-thm-2.mp3",
+      "path": "audio/narrations/stokes-theorem/theorem-thm-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "这就是平面上的格林定理，也是斯托克斯定理最直观的特例。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "theorem",
+      "line_id": "thm-3",
+      "filename": "theorem-thm-3.mp3",
+      "path": "audio/narrations/stokes-theorem/theorem-thm-3.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "直觉上，相邻小块的内部边界两两抵消，只剩下最外圈的边界贡献。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/stokes-theorem/interaction-int-1.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "切换不同的向量场，观察左上角两个数值。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/stokes-theorem/interaction-int-2.mp3",
+      "duration": 2.95,
+      "size": 47232,
+      "text": "无论是旋转场还是非均匀场，矩形还是圆形，环量和旋度积分始终相等。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/stokes-theorem/summary-sum-1.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "斯托克斯定理把边界上的环量，和内部旋度的积分连成一体。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/stokes-theorem/summary-sum-2.mp3",
+      "duration": 3.04,
+      "size": 48672,
+      "text": "一条曲线的信息，竟能透露它所围区域的全部旋转，这就是微积分基本定理的高维回响。"
+    },
+    {
+      "script_id": "stokes-theorem",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/stokes-theorem/summary-sum-3.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "边界与内部，本是一体，愿你带走这份联系之美，我们下次再见！"
+    }
+  ],
+  "total_duration": 39.9,
+  "total_size": 638352,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

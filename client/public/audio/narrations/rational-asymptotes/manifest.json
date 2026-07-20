@@ -1,0 +1,183 @@
+{
+  "script_id": "rational-asymptotes",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/rational-asymptotes/intro-intro-1.mp3",
+      "duration": 2.73,
+      "size": 43632,
+      "text": "有理函数就是两个多项式相除，写作 P(x) 除以 Q(x)。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/rational-asymptotes/intro-intro-2.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "当分母为零时，函数没有定义，图像会在那里发生剧烈的变化。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/rational-asymptotes/intro-intro-3.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "正是这些特殊的位置，塑造出曲线无限逼近却永不相交的渐近线。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "vertical",
+      "line_id": "def-1",
+      "filename": "vertical-def-1.mp3",
+      "path": "audio/narrations/rational-asymptotes/vertical-def-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "让分母等于零的那些 x 值，就是竖直渐近线的位置。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "vertical",
+      "line_id": "def-2",
+      "filename": "vertical-def-2.mp3",
+      "path": "audio/narrations/rational-asymptotes/vertical-def-2.mp3",
+      "duration": 2.68,
+      "size": 42912,
+      "text": "越靠近它，函数值就冲向正无穷或负无穷，曲线几乎贴着这条竖线。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "vertical",
+      "line_id": "def-3",
+      "filename": "vertical-def-3.mp3",
+      "path": "audio/narrations/rational-asymptotes/vertical-def-3.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "图中红色的虚线，标出的正是这些分母的根。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "horizontal",
+      "line_id": "hor-1",
+      "filename": "horizontal-hor-1.mp3",
+      "path": "audio/narrations/rational-asymptotes/horizontal-hor-1.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "要看远方的走向，我们比较分子和分母的次数。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "horizontal",
+      "line_id": "hor-2",
+      "filename": "horizontal-hor-2.mp3",
+      "path": "audio/narrations/rational-asymptotes/horizontal-hor-2.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "分子次数更低时，函数趋于零，水平渐近线就是 x 轴。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "horizontal",
+      "line_id": "hor-3",
+      "filename": "horizontal-hor-3.mp3",
+      "path": "audio/narrations/rational-asymptotes/horizontal-hor-3.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "次数相等时，渐近线是两个最高次系数的比值。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "oblique",
+      "line_id": "obl-1",
+      "filename": "oblique-obl-1.mp3",
+      "path": "audio/narrations/rational-asymptotes/oblique-obl-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "如果分子次数恰好比分母高一次，末端就是一条斜线。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "oblique",
+      "line_id": "obl-2",
+      "filename": "oblique-obl-2.mp3",
+      "path": "audio/narrations/rational-asymptotes/oblique-obl-2.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "用多项式长除，把有理函数拆成一次商加上一个余项。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "oblique",
+      "line_id": "obl-3",
+      "filename": "oblique-obl-3.mp3",
+      "path": "audio/narrations/rational-asymptotes/oblique-obl-3.mp3",
+      "duration": 2.89,
+      "size": 46224,
+      "text": "那个一次的商，就是斜渐近线；余项在远处趋于零，所以曲线越走越贴近它。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/rational-asymptotes/interaction-int-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "切换不同的例子，观察竖直渐近线随分母的根一起移动。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/rational-asymptotes/interaction-int-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "再对照末端的蓝色虚线，感受水平与斜渐近线的区别。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/rational-asymptotes/summary-sum-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "竖直渐近线来自分母的根，末端渐近线由次数比较决定。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/rational-asymptotes/summary-sum-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "低了趋于零，相等取系数比，高一次就长除求斜线。"
+    },
+    {
+      "script_id": "rational-asymptotes",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/rational-asymptotes/summary-sum-3.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "掌握了这三招，任何有理函数的骨架都一目了然，我们下次再见！"
+    }
+  ],
+  "total_duration": 37.68000000000001,
+  "total_size": 602784,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "script_id": "spirograph",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "spirograph",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "还记得童年那把塑料万花尺吗？把笔尖插进小圆的孔里。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "让小圆贴着大圆内侧慢慢滚动，笔尖就画出一朵朵对称的花。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "这些花纹背后，其实藏着一条优美的曲线，叫内摆线。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "equation",
+      "line_id": "def-1",
+      "filename": "equation-def-1.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/equation-def-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "设大圆半径 R，小圆半径 r，笔尖到小圆圆心的距离是 d。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "equation",
+      "line_id": "def-2",
+      "filename": "equation-def-2.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/equation-def-2.mp3",
+      "duration": 2.71,
+      "size": 43344,
+      "text": "横坐标 x 等于 R 减 r 乘以 cos t，再加上 d 乘以 cos 这个比例乘 t。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "equation",
+      "line_id": "def-3",
+      "filename": "equation-def-3.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/equation-def-3.mp3",
+      "duration": 2.8,
+      "size": 44784,
+      "text": "纵坐标 y 把两个余弦换成正弦，中间的加号换成减号，笔尖轨迹就定下来了。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "petal",
+      "line_id": "pet-1",
+      "filename": "petal-pet-1.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/petal-pet-1.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "真正决定花朵形状的，是大圆和小圆半径的比，也就是齿数比。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "petal",
+      "line_id": "pet-2",
+      "filename": "petal-pet-2.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/petal-pet-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "比值不同，花瓣的数量和缠绕方式就完全不同。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "closure",
+      "line_id": "clo-1",
+      "filename": "closure-clo-1.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/closure-clo-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "花瓣的数量，正好等于 R 除以 R 和 r 的最大公约数。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "closure",
+      "line_id": "clo-2",
+      "filename": "closure-clo-2.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/closure-clo-2.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "小圆要滚满若干整圈，笔尖才回到起点，曲线才真正闭合。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "试着调整 R、r 和 d，看花瓣如何增减、疏密如何变化。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "每换一组数字，都会开出一朵独一无二的数学之花。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "内摆线，就是小圆在大圆内滚动时笔尖画出的轨迹。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "一个简单的比值和最大公约数，就决定了整朵花的模样。"
+    },
+    {
+      "script_id": "spirograph",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/spirograph/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "愿你也能用数学画出美丽的花纹，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.14,
+  "total_size": 514512
+}

@@ -111,6 +111,206 @@ import { percolationScenes, defaultPercolationState } from './percolationScenes'
 import { cellularAutomataScenes, defaultCellularAutomataState } from './cellularAutomataScenes'
 import { knotTheoryScenes, defaultKnotTheoryState } from './knotTheoryScenes'
 import { waveletScenes, defaultWaveletState } from './waveletScenes'
+import { sieveEratosthenesScenes, defaultSieveEratosthenesState } from './sieveEratosthenesScenes'
+import { magicSquareScenes, defaultMagicSquareState } from './magicSquareScenes'
+import { towerOfHanoiScenes, defaultTowerOfHanoiState } from './towerOfHanoiScenes'
+import { pigeonholeScenes, defaultPigeonholeState } from './pigeonholeScenes'
+import { triangleCentersScenes, defaultTriangleCentersState } from './triangleCentersScenes'
+import { numberBasesScenes, defaultNumberBasesState } from './numberBasesScenes'
+import { pythagorasTreeScenes, defaultPythagorasTreeState } from './pythagorasTreeScenes'
+import { tessellationScenes, defaultTessellationState } from './tessellationScenes'
+import { perfectNumbersScenes, defaultPerfectNumbersState } from './perfectNumbersScenes'
+import { collatzScenes, defaultCollatzState } from './collatzScenes'
+import { primeFactorizationScenes, defaultPrimeFactorizationState } from './primeFactorizationScenes'
+import { fibonacciNatureScenes, defaultFibonacciNatureState } from './fibonacciNatureScenes'
+import { diceProbabilityScenes, defaultDiceProbabilityState } from './diceProbabilityScenes'
+import { ninePointCircleScenes, defaultNinePointCircleState } from './ninePointCircleScenes'
+import { eulerLineScenes, defaultEulerLineState } from './eulerLineScenes'
+import { inversiveGeometryScenes, defaultInversiveGeometryState } from './inversiveGeometryScenes'
+import { poincareDiskScenes, defaultPoincareDiskState } from './poincareDiskScenes'
+import { sphericalGeometryScenes, defaultSphericalGeometryState } from './sphericalGeometryScenes'
+import { convexHullScenes, defaultConvexHullState } from './convexHullScenes'
+import { delaunayTriangulationScenes, defaultDelaunayTriangulationState } from './delaunayTriangulationScenes'
+import { apollonianGasketScenes, defaultApollonianGasketState } from './apollonianGasketScenes'
+import { pickTheoremScenes, defaultPickTheoremState } from './pickTheoremScenes'
+import { reuleauxScenes, defaultReuleauxState } from './reuleauxScenes'
+import { circlePackingScenes, defaultCirclePackingState } from './circlePackingScenes'
+import { steinerChainScenes, defaultSteinerChainState } from './steinerChainScenes'
+import { polynomialRootsScenes, defaultPolynomialRootsState } from './polynomialRootsScenes'
+import { vietaFormulasScenes, defaultVietaFormulasState } from './vietaFormulasScenes'
+import { binomialTheoremScenes, defaultBinomialTheoremState } from './binomialTheoremScenes'
+import { inverseFunctionScenes, defaultInverseFunctionState } from './inverseFunctionScenes'
+import { compositeFunctionScenes, defaultCompositeFunctionState } from './compositeFunctionScenes'
+import { partialFractionsScenes, defaultPartialFractionsState } from './partialFractionsScenes'
+import { rationalAsymptotesScenes, defaultRationalAsymptotesState } from './rationalAsymptotesScenes'
+import { piecewiseFunctionScenes, defaultPiecewiseFunctionState } from './piecewiseFunctionScenes'
+import { logarithmSpiralScenes, defaultLogarithmSpiralState } from './logarithmSpiralScenes'
+import { functionTransformScenes, defaultFunctionTransformState } from './functionTransformScenes'
+import { euclideanAlgorithmScenes, defaultEuclideanAlgorithmState } from './euclideanAlgorithmScenes'
+import { chineseRemainderScenes, defaultChineseRemainderState } from './chineseRemainderScenes'
+import { quadraticResidueScenes, defaultQuadraticResidueState } from './quadraticResidueScenes'
+import { gaussianIntegersScenes, defaultGaussianIntegersState } from './gaussianIntegersScenes'
+import { integerPartitionScenes, defaultIntegerPartitionState } from './integerPartitionScenes'
+import { pellEquationScenes, defaultPellEquationState } from './pellEquationScenes'
+import { primeCountingScenes, defaultPrimeCountingState } from './primeCountingScenes'
+import { digitalRootScenes, defaultDigitalRootState } from './digitalRootScenes'
+import { epsilonDeltaScenes, defaultEpsilonDeltaState } from './epsilonDeltaScenes'
+import { meanValueTheoremScenes, defaultMeanValueTheoremState } from './meanValueTheoremScenes'
+import { riemannSumScenes, defaultRiemannSumState } from './riemannSumScenes'
+import { solidOfRevolutionScenes, defaultSolidOfRevolutionState } from './solidOfRevolutionScenes'
+import { arcLengthCurvatureScenes, defaultArcLengthCurvatureState } from './arcLengthCurvatureScenes'
+import { seriesConvergenceScenes, defaultSeriesConvergenceState } from './seriesConvergenceScenes'
+import { improperIntegralScenes, defaultImproperIntegralState } from './improperIntegralScenes'
+import { determinantGeometryScenes, defaultDeterminantGeometryState } from './determinantGeometryScenes'
+import { kernelImageScenes, defaultKernelImageState } from './kernelImageScenes'
+import { orthogonalProjectionScenes, defaultOrthogonalProjectionState } from './orthogonalProjectionScenes'
+import { leastSquaresScenes, defaultLeastSquaresState } from './leastSquaresScenes'
+import { quadraticFormScenes, defaultQuadraticFormState } from './quadraticFormScenes'
+import { spectralTheoremScenes, defaultSpectralTheoremState } from './spectralTheoremScenes'
+import { lawLargeNumbersScenes, defaultLawLargeNumbersState } from './lawLargeNumbersScenes'
+import { poissonProcessScenes, defaultPoissonProcessState } from './poissonProcessScenes'
+import { brownianMotionScenes, defaultBrownianMotionState } from './brownianMotionScenes'
+import { montyHallScenes, defaultMontyHallState } from './montyHallScenes'
+import { birthdayParadoxScenes, defaultBirthdayParadoxState } from './birthdayParadoxScenes'
+import { hypothesisTestingScenes, defaultHypothesisTestingState } from './hypothesisTestingScenes'
+import { confidenceIntervalScenes, defaultConfidenceIntervalState } from './confidenceIntervalScenes'
+import { maxLikelihoodScenes, defaultMaxLikelihoodState } from './maxLikelihoodScenes'
+import { gaussianMixtureScenes, defaultGaussianMixtureState } from './gaussianMixtureScenes'
+import { hiddenMarkovScenes, defaultHiddenMarkovState } from './hiddenMarkovScenes'
+import { multipleIntegralScenes, defaultMultipleIntegralState } from './multipleIntegralScenes'
+import { lineIntegralScenes, defaultLineIntegralState } from './lineIntegralScenes'
+import { divergenceCurlScenes, defaultDivergenceCurlState } from './divergenceCurlScenes'
+import { stokesTheoremScenes, defaultStokesTheoremState } from './stokesTheoremScenes'
+import { partialDerivativeScenes, defaultPartialDerivativeState } from './partialDerivativeScenes'
+import { directionalDerivativeScenes, defaultDirectionalDerivativeState } from './directionalDerivativeScenes'
+import { jacobianScenes, defaultJacobianState } from './jacobianScenes'
+import { vectorCalculusFieldScenes, defaultVectorCalculusFieldState } from './vectorCalculusFieldScenes'
+import { laplacianScenes, defaultLaplacianState } from './laplacianScenes'
+import { dijkstraScenes, defaultDijkstraState } from './dijkstraScenes'
+import { networkFlowScenes, defaultNetworkFlowState } from './networkFlowScenes'
+import { graphColoringScenes, defaultGraphColoringState } from './graphColoringScenes'
+import { eulerHamiltonPathScenes, defaultEulerHamiltonPathState } from './eulerHamiltonPathScenes'
+import { sortingAlgorithmsScenes, defaultSortingAlgorithmsState } from './sortingAlgorithmsScenes'
+import { bfsDfsScenes, defaultBfsDfsState } from './bfsDfsScenes'
+import { dynamicProgrammingScenes, defaultDynamicProgrammingState } from './dynamicProgrammingScenes'
+import { divideConquerScenes, defaultDivideConquerState } from './divideConquerScenes'
+import { huffmanCodingScenes, defaultHuffmanCodingState } from './huffmanCodingScenes'
+import { catalanNumbersScenes, defaultCatalanNumbersState } from './catalanNumbersScenes'
+import { generatingFunctionsScenes, defaultGeneratingFunctionsState } from './generatingFunctionsScenes'
+import { minimumSpanningTreeScenes, defaultMinimumSpanningTreeState } from './minimumSpanningTreeScenes'
+import { logisticBifurcationScenes, defaultLogisticBifurcationState } from './logisticBifurcationScenes'
+import { phasePortraitScenes, defaultPhasePortraitState } from './phasePortraitScenes'
+import { limitCycleScenes, defaultLimitCycleState } from './limitCycleScenes'
+import { lotkaVolterraScenes, defaultLotkaVolterraState } from './lotkaVolterraScenes'
+import { pendulumPhaseScenes, defaultPendulumPhaseState } from './pendulumPhaseScenes'
+import { keplerOrbitScenes, defaultKeplerOrbitState } from './keplerOrbitScenes'
+import { vibratingStringScenes, defaultVibratingStringState } from './vibratingStringScenes'
+import { poincareSectionScenes, defaultPoincareSectionState } from './poincareSectionScenes'
+import { eulerCharacteristicScenes, defaultEulerCharacteristicState } from './eulerCharacteristicScenes'
+import { torusKleinScenes, defaultTorusKleinState } from './torusKleinScenes'
+import { perceptronScenes, defaultPerceptronState } from './perceptronScenes'
+import { kmeansScenes, defaultKmeansState } from './kmeansScenes'
+import { neuralNetworkForwardScenes, defaultNeuralNetworkForwardState } from './neuralNetworkForwardScenes'
+import { kochSnowflakeScenes, defaultKochSnowflakeState } from './kochSnowflakeScenes'
+import { sierpinskiTriangleScenes, defaultSierpinskiTriangleState } from './sierpinskiTriangleScenes'
+import { sierpinskiCarpetScenes, defaultSierpinskiCarpetState } from './sierpinskiCarpetScenes'
+import { dragonCurveScenes, defaultDragonCurveState } from './dragonCurveScenes'
+import { barnsleyFernScenes, defaultBarnsleyFernState } from './barnsleyFernScenes'
+import { hilbertCurveScenes, defaultHilbertCurveState } from './hilbertCurveScenes'
+import { peanoCurveScenes, defaultPeanoCurveState } from './peanoCurveScenes'
+import { gosperCurveScenes, defaultGosperCurveState } from './gosperCurveScenes'
+import { levyCCurveScenes, defaultLevyCCurveState } from './levyCCurveScenes'
+import { newtonFractalScenes, defaultNewtonFractalState } from './newtonFractalScenes'
+import { burningShipScenes, defaultBurningShipState } from './burningShipScenes'
+import { boxCountingDimensionScenes, defaultBoxCountingDimensionState } from './boxCountingDimensionScenes'
+import { cantorSetScenes, defaultCantorSetState } from './cantorSetScenes'
+import { quadtreeScenes, defaultQuadtreeState } from './quadtreeScenes'
+import { kdTreeScenes, defaultKdTreeState } from './kdTreeScenes'
+import { marchingSquaresScenes, defaultMarchingSquaresState } from './marchingSquaresScenes'
+import { pointInPolygonScenes, defaultPointInPolygonState } from './pointInPolygonScenes'
+import { lineClippingScenes, defaultLineClippingState } from './lineClippingScenes'
+import { rotatingCalipersScenes, defaultRotatingCalipersState } from './rotatingCalipersScenes'
+import { earClippingScenes, defaultEarClippingState } from './earClippingScenes'
+import { aStarScenes, defaultAStarState } from './aStarScenes'
+import { stereographicProjectionScenes, defaultStereographicProjectionState } from './stereographicProjectionScenes'
+import { hopfFibrationScenes, defaultHopfFibrationState } from './hopfFibrationScenes'
+import { hyperbolicTilingScenes, defaultHyperbolicTilingState } from './hyperbolicTilingScenes'
+import { spirographScenes, defaultSpirographState } from './spirographScenes'
+import { eulerTotientScenes, defaultEulerTotientState } from './eulerTotientScenes'
+import { mobiusFunctionScenes, defaultMobiusFunctionState } from './mobiusFunctionScenes'
+import { fareySequenceScenes, defaultFareySequenceState } from './fareySequenceScenes'
+import { sternBrocotScenes, defaultSternBrocotState } from './sternBrocotScenes'
+import { primitiveRootScenes, defaultPrimitiveRootState } from './primitiveRootScenes'
+import { fermatLittleScenes, defaultFermatLittleState } from './fermatLittleScenes'
+import { wilsonTheoremScenes, defaultWilsonTheoremState } from './wilsonTheoremScenes'
+import { fastExponentiationScenes, defaultFastExponentiationState } from './fastExponentiationScenes'
+import { pythagoreanTriplesScenes, defaultPythagoreanTriplesState } from './pythagoreanTriplesScenes'
+import { sumOfSquaresScenes, defaultSumOfSquaresState } from './sumOfSquaresScenes'
+import { happyNumbersScenes, defaultHappyNumbersState } from './happyNumbersScenes'
+import { kaprekarScenes, defaultKaprekarState } from './kaprekarScenes'
+import { lucasNumbersScenes, defaultLucasNumbersState } from './lucasNumbersScenes'
+import { triangularNumbersScenes, defaultTriangularNumbersState } from './triangularNumbersScenes'
+import { frobeniusCoinScenes, defaultFrobeniusCoinState } from './frobeniusCoinScenes'
+import { caesarCipherScenes, defaultCaesarCipherState } from './caesarCipherScenes'
+import { vigenereCipherScenes, defaultVigenereCipherState } from './vigenereCipherScenes'
+import { rsaCipherScenes, defaultRsaCipherState } from './rsaCipherScenes'
+import { diffieHellmanScenes, defaultDiffieHellmanState } from './diffieHellmanScenes'
+import { oneTimePadScenes, defaultOneTimePadState } from './oneTimePadScenes'
+import { ellipticCurveScenes, defaultEllipticCurveState } from './ellipticCurveScenes'
+import { josephusProblemScenes, defaultJosephusProblemState } from './josephusProblemScenes'
+import { grayCodeScenes, defaultGrayCodeState } from './grayCodeScenes'
+import { lookAndSayScenes, defaultLookAndSayState } from './lookAndSayScenes'
+import { hillCipherScenes, defaultHillCipherState } from './hillCipherScenes'
+import { luDecompositionScenes, defaultLuDecompositionState } from './luDecompositionScenes'
+import { qrDecompositionScenes, defaultQrDecompositionState } from './qrDecompositionScenes'
+import { choleskyScenes, defaultCholeskyState } from './choleskyScenes'
+import { powerIterationScenes, defaultPowerIterationState } from './powerIterationScenes'
+import { pagerankScenes, defaultPagerankState } from './pagerankScenes'
+import { markovStationaryScenes, defaultMarkovStationaryState } from './markovStationaryScenes'
+import { cramersRuleScenes, defaultCramersRuleState } from './cramersRuleScenes'
+import { rotation3dScenes, defaultRotation3dState } from './rotation3dScenes'
+import { gibbsPhenomenonScenes, defaultGibbsPhenomenonState } from './gibbsPhenomenonScenes'
+import { chebyshevPolynomialsScenes, defaultChebyshevPolynomialsState } from './chebyshevPolynomialsScenes'
+import { legendrePolynomialsScenes, defaultLegendrePolynomialsState } from './legendrePolynomialsScenes'
+import { besselFunctionsScenes, defaultBesselFunctionsState } from './besselFunctionsScenes'
+import { gammaFunctionScenes, defaultGammaFunctionState } from './gammaFunctionScenes'
+import { fixedPointIterationScenes, defaultFixedPointIterationState } from './fixedPointIterationScenes'
+import { secantMethodScenes, defaultSecantMethodState } from './secantMethodScenes'
+import { bisectionMethodScenes, defaultBisectionMethodState } from './bisectionMethodScenes'
+import { fftScenes, defaultFftState } from './fftScenes'
+import { aliasingScenes, defaultAliasingState } from './aliasingScenes'
+import { autocorrelationScenes, defaultAutocorrelationState } from './autocorrelationScenes'
+import { convolutionScenes, defaultConvolutionState } from './convolutionScenes'
+import { nyquistSamplingScenes, defaultNyquistSamplingState } from './nyquistSamplingScenes'
+import { windowingScenes, defaultWindowingState } from './windowingScenes'
+import { bSplineScenes, defaultBSplineState } from './bSplineScenes'
+import { catmullRomScenes, defaultCatmullRomState } from './catmullRomScenes'
+import { discreteCosineTransformScenes, defaultDiscreteCosineTransformState } from './discreteCosineTransformScenes'
+import { stirlingNumbersScenes, defaultStirlingNumbersState } from './stirlingNumbersScenes'
+import { bellNumbersScenes, defaultBellNumbersState } from './bellNumbersScenes'
+import { derangementsScenes, defaultDerangementsState } from './derangementsScenes'
+import { inclusionExclusionScenes, defaultInclusionExclusionState } from './inclusionExclusionScenes'
+import { latinSquareScenes, defaultLatinSquareState } from './latinSquareScenes'
+import { benfordsLawScenes, defaultBenfordsLawState } from './benfordsLawScenes'
+import { buffonNeedleScenes, defaultBuffonNeedleState } from './buffonNeedleScenes'
+import { galtonBoardScenes, defaultGaltonBoardState } from './galtonBoardScenes'
+import { gamblersRuinScenes, defaultGamblersRuinState } from './gamblersRuinScenes'
+import { couponCollectorScenes, defaultCouponCollectorState } from './couponCollectorScenes'
+import { decisionTreeScenes, defaultDecisionTreeState } from './decisionTreeScenes'
+import { knnScenes, defaultKnnState } from './knnScenes'
+import { naiveBayesScenes, defaultNaiveBayesState } from './naiveBayesScenes'
+import { logisticRegressionScenes, defaultLogisticRegressionState } from './logisticRegressionScenes'
+import { backpropagationScenes, defaultBackpropagationState } from './backpropagationScenes'
+import { softmaxScenes, defaultSoftmaxState } from './softmaxScenes'
+import { geneticAlgorithmScenes, defaultGeneticAlgorithmState } from './geneticAlgorithmScenes'
+import { particleSwarmScenes, defaultParticleSwarmState } from './particleSwarmScenes'
+import { henonMapScenes, defaultHenonMapState } from './henonMapScenes'
+import { rosslerAttractorScenes, defaultRosslerAttractorState } from './rosslerAttractorScenes'
+import { tentMapScenes, defaultTentMapState } from './tentMapScenes'
+import { projectileMotionScenes, defaultProjectileMotionState } from './projectileMotionScenes'
+import { dampedOscillationScenes, defaultDampedOscillationState } from './dampedOscillationScenes'
+import { catenaryScenes, defaultCatenaryState } from './catenaryScenes'
+import { brachistochroneScenes, defaultBrachistochroneState } from './brachistochroneScenes'
 import { WaveformScene } from './scenes/WaveformScene'
 import { SpectrumScene } from './scenes/SpectrumScene'
 import { FormulaScene } from './scenes/FormulaScene'
@@ -235,6 +435,206 @@ const sceneConfigMap: Record<string, {
   'cellular-automata': { scenes: cellularAutomataScenes, defaultState: defaultCellularAutomataState },
   'knot-theory': { scenes: knotTheoryScenes, defaultState: defaultKnotTheoryState },
   'wavelet': { scenes: waveletScenes, defaultState: defaultWaveletState },
+  'sieve-eratosthenes': { scenes: sieveEratosthenesScenes, defaultState: defaultSieveEratosthenesState },
+  'magic-square': { scenes: magicSquareScenes, defaultState: defaultMagicSquareState },
+  'tower-of-hanoi': { scenes: towerOfHanoiScenes, defaultState: defaultTowerOfHanoiState },
+  'pigeonhole': { scenes: pigeonholeScenes, defaultState: defaultPigeonholeState },
+  'triangle-centers': { scenes: triangleCentersScenes, defaultState: defaultTriangleCentersState },
+  'number-bases': { scenes: numberBasesScenes, defaultState: defaultNumberBasesState },
+  'pythagoras-tree': { scenes: pythagorasTreeScenes, defaultState: defaultPythagorasTreeState },
+  'tessellation': { scenes: tessellationScenes, defaultState: defaultTessellationState },
+  'perfect-numbers': { scenes: perfectNumbersScenes, defaultState: defaultPerfectNumbersState },
+  'collatz': { scenes: collatzScenes, defaultState: defaultCollatzState },
+  'prime-factorization': { scenes: primeFactorizationScenes, defaultState: defaultPrimeFactorizationState },
+  'fibonacci-nature': { scenes: fibonacciNatureScenes, defaultState: defaultFibonacciNatureState },
+  'dice-probability': { scenes: diceProbabilityScenes, defaultState: defaultDiceProbabilityState },
+  'nine-point-circle': { scenes: ninePointCircleScenes, defaultState: defaultNinePointCircleState },
+  'euler-line': { scenes: eulerLineScenes, defaultState: defaultEulerLineState },
+  'inversive-geometry': { scenes: inversiveGeometryScenes, defaultState: defaultInversiveGeometryState },
+  'poincare-disk': { scenes: poincareDiskScenes, defaultState: defaultPoincareDiskState },
+  'spherical-geometry': { scenes: sphericalGeometryScenes, defaultState: defaultSphericalGeometryState },
+  'convex-hull': { scenes: convexHullScenes, defaultState: defaultConvexHullState },
+  'delaunay-triangulation': { scenes: delaunayTriangulationScenes, defaultState: defaultDelaunayTriangulationState },
+  'apollonian-gasket': { scenes: apollonianGasketScenes, defaultState: defaultApollonianGasketState },
+  'pick-theorem': { scenes: pickTheoremScenes, defaultState: defaultPickTheoremState },
+  'reuleaux': { scenes: reuleauxScenes, defaultState: defaultReuleauxState },
+  'circle-packing': { scenes: circlePackingScenes, defaultState: defaultCirclePackingState },
+  'steiner-chain': { scenes: steinerChainScenes, defaultState: defaultSteinerChainState },
+  'polynomial-roots': { scenes: polynomialRootsScenes, defaultState: defaultPolynomialRootsState },
+  'vieta-formulas': { scenes: vietaFormulasScenes, defaultState: defaultVietaFormulasState },
+  'binomial-theorem': { scenes: binomialTheoremScenes, defaultState: defaultBinomialTheoremState },
+  'inverse-function': { scenes: inverseFunctionScenes, defaultState: defaultInverseFunctionState },
+  'composite-function': { scenes: compositeFunctionScenes, defaultState: defaultCompositeFunctionState },
+  'partial-fractions': { scenes: partialFractionsScenes, defaultState: defaultPartialFractionsState },
+  'rational-asymptotes': { scenes: rationalAsymptotesScenes, defaultState: defaultRationalAsymptotesState },
+  'piecewise-function': { scenes: piecewiseFunctionScenes, defaultState: defaultPiecewiseFunctionState },
+  'logarithm-spiral': { scenes: logarithmSpiralScenes, defaultState: defaultLogarithmSpiralState },
+  'function-transform': { scenes: functionTransformScenes, defaultState: defaultFunctionTransformState },
+  'euclidean-algorithm': { scenes: euclideanAlgorithmScenes, defaultState: defaultEuclideanAlgorithmState },
+  'chinese-remainder': { scenes: chineseRemainderScenes, defaultState: defaultChineseRemainderState },
+  'quadratic-residue': { scenes: quadraticResidueScenes, defaultState: defaultQuadraticResidueState },
+  'gaussian-integers': { scenes: gaussianIntegersScenes, defaultState: defaultGaussianIntegersState },
+  'integer-partition': { scenes: integerPartitionScenes, defaultState: defaultIntegerPartitionState },
+  'pell-equation': { scenes: pellEquationScenes, defaultState: defaultPellEquationState },
+  'prime-counting': { scenes: primeCountingScenes, defaultState: defaultPrimeCountingState },
+  'digital-root': { scenes: digitalRootScenes, defaultState: defaultDigitalRootState },
+  'epsilon-delta': { scenes: epsilonDeltaScenes, defaultState: defaultEpsilonDeltaState },
+  'mean-value-theorem': { scenes: meanValueTheoremScenes, defaultState: defaultMeanValueTheoremState },
+  'riemann-sum': { scenes: riemannSumScenes, defaultState: defaultRiemannSumState },
+  'solid-of-revolution': { scenes: solidOfRevolutionScenes, defaultState: defaultSolidOfRevolutionState },
+  'arc-length-curvature': { scenes: arcLengthCurvatureScenes, defaultState: defaultArcLengthCurvatureState },
+  'series-convergence': { scenes: seriesConvergenceScenes, defaultState: defaultSeriesConvergenceState },
+  'improper-integral': { scenes: improperIntegralScenes, defaultState: defaultImproperIntegralState },
+  'determinant-geometry': { scenes: determinantGeometryScenes, defaultState: defaultDeterminantGeometryState },
+  'kernel-image': { scenes: kernelImageScenes, defaultState: defaultKernelImageState },
+  'orthogonal-projection': { scenes: orthogonalProjectionScenes, defaultState: defaultOrthogonalProjectionState },
+  'least-squares': { scenes: leastSquaresScenes, defaultState: defaultLeastSquaresState },
+  'quadratic-form': { scenes: quadraticFormScenes, defaultState: defaultQuadraticFormState },
+  'spectral-theorem': { scenes: spectralTheoremScenes, defaultState: defaultSpectralTheoremState },
+  'law-large-numbers': { scenes: lawLargeNumbersScenes, defaultState: defaultLawLargeNumbersState },
+  'poisson-process': { scenes: poissonProcessScenes, defaultState: defaultPoissonProcessState },
+  'brownian-motion': { scenes: brownianMotionScenes, defaultState: defaultBrownianMotionState },
+  'monty-hall': { scenes: montyHallScenes, defaultState: defaultMontyHallState },
+  'birthday-paradox': { scenes: birthdayParadoxScenes, defaultState: defaultBirthdayParadoxState },
+  'hypothesis-testing': { scenes: hypothesisTestingScenes, defaultState: defaultHypothesisTestingState },
+  'confidence-interval': { scenes: confidenceIntervalScenes, defaultState: defaultConfidenceIntervalState },
+  'max-likelihood': { scenes: maxLikelihoodScenes, defaultState: defaultMaxLikelihoodState },
+  'gaussian-mixture': { scenes: gaussianMixtureScenes, defaultState: defaultGaussianMixtureState },
+  'hidden-markov': { scenes: hiddenMarkovScenes, defaultState: defaultHiddenMarkovState },
+  'multiple-integral': { scenes: multipleIntegralScenes, defaultState: defaultMultipleIntegralState },
+  'line-integral': { scenes: lineIntegralScenes, defaultState: defaultLineIntegralState },
+  'divergence-curl': { scenes: divergenceCurlScenes, defaultState: defaultDivergenceCurlState },
+  'stokes-theorem': { scenes: stokesTheoremScenes, defaultState: defaultStokesTheoremState },
+  'partial-derivative': { scenes: partialDerivativeScenes, defaultState: defaultPartialDerivativeState },
+  'directional-derivative': { scenes: directionalDerivativeScenes, defaultState: defaultDirectionalDerivativeState },
+  'jacobian': { scenes: jacobianScenes, defaultState: defaultJacobianState },
+  'vector-calculus-field': { scenes: vectorCalculusFieldScenes, defaultState: defaultVectorCalculusFieldState },
+  'laplacian': { scenes: laplacianScenes, defaultState: defaultLaplacianState },
+  'dijkstra': { scenes: dijkstraScenes, defaultState: defaultDijkstraState },
+  'network-flow': { scenes: networkFlowScenes, defaultState: defaultNetworkFlowState },
+  'graph-coloring': { scenes: graphColoringScenes, defaultState: defaultGraphColoringState },
+  'euler-hamilton-path': { scenes: eulerHamiltonPathScenes, defaultState: defaultEulerHamiltonPathState },
+  'sorting-algorithms': { scenes: sortingAlgorithmsScenes, defaultState: defaultSortingAlgorithmsState },
+  'bfs-dfs': { scenes: bfsDfsScenes, defaultState: defaultBfsDfsState },
+  'dynamic-programming': { scenes: dynamicProgrammingScenes, defaultState: defaultDynamicProgrammingState },
+  'divide-conquer': { scenes: divideConquerScenes, defaultState: defaultDivideConquerState },
+  'huffman-coding': { scenes: huffmanCodingScenes, defaultState: defaultHuffmanCodingState },
+  'catalan-numbers': { scenes: catalanNumbersScenes, defaultState: defaultCatalanNumbersState },
+  'generating-functions': { scenes: generatingFunctionsScenes, defaultState: defaultGeneratingFunctionsState },
+  'minimum-spanning-tree': { scenes: minimumSpanningTreeScenes, defaultState: defaultMinimumSpanningTreeState },
+  'logistic-bifurcation': { scenes: logisticBifurcationScenes, defaultState: defaultLogisticBifurcationState },
+  'phase-portrait': { scenes: phasePortraitScenes, defaultState: defaultPhasePortraitState },
+  'limit-cycle': { scenes: limitCycleScenes, defaultState: defaultLimitCycleState },
+  'lotka-volterra': { scenes: lotkaVolterraScenes, defaultState: defaultLotkaVolterraState },
+  'pendulum-phase': { scenes: pendulumPhaseScenes, defaultState: defaultPendulumPhaseState },
+  'kepler-orbit': { scenes: keplerOrbitScenes, defaultState: defaultKeplerOrbitState },
+  'vibrating-string': { scenes: vibratingStringScenes, defaultState: defaultVibratingStringState },
+  'poincare-section': { scenes: poincareSectionScenes, defaultState: defaultPoincareSectionState },
+  'euler-characteristic': { scenes: eulerCharacteristicScenes, defaultState: defaultEulerCharacteristicState },
+  'torus-klein': { scenes: torusKleinScenes, defaultState: defaultTorusKleinState },
+  'perceptron': { scenes: perceptronScenes, defaultState: defaultPerceptronState },
+  'kmeans': { scenes: kmeansScenes, defaultState: defaultKmeansState },
+  'neural-network-forward': { scenes: neuralNetworkForwardScenes, defaultState: defaultNeuralNetworkForwardState },
+  'koch-snowflake': { scenes: kochSnowflakeScenes, defaultState: defaultKochSnowflakeState },
+  'sierpinski-triangle': { scenes: sierpinskiTriangleScenes, defaultState: defaultSierpinskiTriangleState },
+  'sierpinski-carpet': { scenes: sierpinskiCarpetScenes, defaultState: defaultSierpinskiCarpetState },
+  'dragon-curve': { scenes: dragonCurveScenes, defaultState: defaultDragonCurveState },
+  'barnsley-fern': { scenes: barnsleyFernScenes, defaultState: defaultBarnsleyFernState },
+  'hilbert-curve': { scenes: hilbertCurveScenes, defaultState: defaultHilbertCurveState },
+  'peano-curve': { scenes: peanoCurveScenes, defaultState: defaultPeanoCurveState },
+  'gosper-curve': { scenes: gosperCurveScenes, defaultState: defaultGosperCurveState },
+  'levy-c-curve': { scenes: levyCCurveScenes, defaultState: defaultLevyCCurveState },
+  'newton-fractal': { scenes: newtonFractalScenes, defaultState: defaultNewtonFractalState },
+  'burning-ship': { scenes: burningShipScenes, defaultState: defaultBurningShipState },
+  'box-counting-dimension': { scenes: boxCountingDimensionScenes, defaultState: defaultBoxCountingDimensionState },
+  'cantor-set': { scenes: cantorSetScenes, defaultState: defaultCantorSetState },
+  'quadtree': { scenes: quadtreeScenes, defaultState: defaultQuadtreeState },
+  'kd-tree': { scenes: kdTreeScenes, defaultState: defaultKdTreeState },
+  'marching-squares': { scenes: marchingSquaresScenes, defaultState: defaultMarchingSquaresState },
+  'point-in-polygon': { scenes: pointInPolygonScenes, defaultState: defaultPointInPolygonState },
+  'line-clipping': { scenes: lineClippingScenes, defaultState: defaultLineClippingState },
+  'rotating-calipers': { scenes: rotatingCalipersScenes, defaultState: defaultRotatingCalipersState },
+  'ear-clipping': { scenes: earClippingScenes, defaultState: defaultEarClippingState },
+  'a-star': { scenes: aStarScenes, defaultState: defaultAStarState },
+  'stereographic-projection': { scenes: stereographicProjectionScenes, defaultState: defaultStereographicProjectionState },
+  'hopf-fibration': { scenes: hopfFibrationScenes, defaultState: defaultHopfFibrationState },
+  'hyperbolic-tiling': { scenes: hyperbolicTilingScenes, defaultState: defaultHyperbolicTilingState },
+  'spirograph': { scenes: spirographScenes, defaultState: defaultSpirographState },
+  'euler-totient': { scenes: eulerTotientScenes, defaultState: defaultEulerTotientState },
+  'mobius-function': { scenes: mobiusFunctionScenes, defaultState: defaultMobiusFunctionState },
+  'farey-sequence': { scenes: fareySequenceScenes, defaultState: defaultFareySequenceState },
+  'stern-brocot': { scenes: sternBrocotScenes, defaultState: defaultSternBrocotState },
+  'primitive-root': { scenes: primitiveRootScenes, defaultState: defaultPrimitiveRootState },
+  'fermat-little': { scenes: fermatLittleScenes, defaultState: defaultFermatLittleState },
+  'wilson-theorem': { scenes: wilsonTheoremScenes, defaultState: defaultWilsonTheoremState },
+  'fast-exponentiation': { scenes: fastExponentiationScenes, defaultState: defaultFastExponentiationState },
+  'pythagorean-triples': { scenes: pythagoreanTriplesScenes, defaultState: defaultPythagoreanTriplesState },
+  'sum-of-squares': { scenes: sumOfSquaresScenes, defaultState: defaultSumOfSquaresState },
+  'happy-numbers': { scenes: happyNumbersScenes, defaultState: defaultHappyNumbersState },
+  'kaprekar': { scenes: kaprekarScenes, defaultState: defaultKaprekarState },
+  'lucas-numbers': { scenes: lucasNumbersScenes, defaultState: defaultLucasNumbersState },
+  'triangular-numbers': { scenes: triangularNumbersScenes, defaultState: defaultTriangularNumbersState },
+  'frobenius-coin': { scenes: frobeniusCoinScenes, defaultState: defaultFrobeniusCoinState },
+  'caesar-cipher': { scenes: caesarCipherScenes, defaultState: defaultCaesarCipherState },
+  'vigenere-cipher': { scenes: vigenereCipherScenes, defaultState: defaultVigenereCipherState },
+  'rsa-cipher': { scenes: rsaCipherScenes, defaultState: defaultRsaCipherState },
+  'diffie-hellman': { scenes: diffieHellmanScenes, defaultState: defaultDiffieHellmanState },
+  'one-time-pad': { scenes: oneTimePadScenes, defaultState: defaultOneTimePadState },
+  'elliptic-curve': { scenes: ellipticCurveScenes, defaultState: defaultEllipticCurveState },
+  'josephus-problem': { scenes: josephusProblemScenes, defaultState: defaultJosephusProblemState },
+  'gray-code': { scenes: grayCodeScenes, defaultState: defaultGrayCodeState },
+  'look-and-say': { scenes: lookAndSayScenes, defaultState: defaultLookAndSayState },
+  'hill-cipher': { scenes: hillCipherScenes, defaultState: defaultHillCipherState },
+  'lu-decomposition': { scenes: luDecompositionScenes, defaultState: defaultLuDecompositionState },
+  'qr-decomposition': { scenes: qrDecompositionScenes, defaultState: defaultQrDecompositionState },
+  'cholesky': { scenes: choleskyScenes, defaultState: defaultCholeskyState },
+  'power-iteration': { scenes: powerIterationScenes, defaultState: defaultPowerIterationState },
+  'pagerank': { scenes: pagerankScenes, defaultState: defaultPagerankState },
+  'markov-stationary': { scenes: markovStationaryScenes, defaultState: defaultMarkovStationaryState },
+  'cramers-rule': { scenes: cramersRuleScenes, defaultState: defaultCramersRuleState },
+  'rotation3d': { scenes: rotation3dScenes, defaultState: defaultRotation3dState },
+  'gibbs-phenomenon': { scenes: gibbsPhenomenonScenes, defaultState: defaultGibbsPhenomenonState },
+  'chebyshev-polynomials': { scenes: chebyshevPolynomialsScenes, defaultState: defaultChebyshevPolynomialsState },
+  'legendre-polynomials': { scenes: legendrePolynomialsScenes, defaultState: defaultLegendrePolynomialsState },
+  'bessel-functions': { scenes: besselFunctionsScenes, defaultState: defaultBesselFunctionsState },
+  'gamma-function': { scenes: gammaFunctionScenes, defaultState: defaultGammaFunctionState },
+  'fixed-point-iteration': { scenes: fixedPointIterationScenes, defaultState: defaultFixedPointIterationState },
+  'secant-method': { scenes: secantMethodScenes, defaultState: defaultSecantMethodState },
+  'bisection-method': { scenes: bisectionMethodScenes, defaultState: defaultBisectionMethodState },
+  'fft': { scenes: fftScenes, defaultState: defaultFftState },
+  'aliasing': { scenes: aliasingScenes, defaultState: defaultAliasingState },
+  'autocorrelation': { scenes: autocorrelationScenes, defaultState: defaultAutocorrelationState },
+  'convolution': { scenes: convolutionScenes, defaultState: defaultConvolutionState },
+  'nyquist-sampling': { scenes: nyquistSamplingScenes, defaultState: defaultNyquistSamplingState },
+  'windowing': { scenes: windowingScenes, defaultState: defaultWindowingState },
+  'b-spline': { scenes: bSplineScenes, defaultState: defaultBSplineState },
+  'catmull-rom': { scenes: catmullRomScenes, defaultState: defaultCatmullRomState },
+  'discrete-cosine-transform': { scenes: discreteCosineTransformScenes, defaultState: defaultDiscreteCosineTransformState },
+  'stirling-numbers': { scenes: stirlingNumbersScenes, defaultState: defaultStirlingNumbersState },
+  'bell-numbers': { scenes: bellNumbersScenes, defaultState: defaultBellNumbersState },
+  'derangements': { scenes: derangementsScenes, defaultState: defaultDerangementsState },
+  'inclusion-exclusion': { scenes: inclusionExclusionScenes, defaultState: defaultInclusionExclusionState },
+  'latin-square': { scenes: latinSquareScenes, defaultState: defaultLatinSquareState },
+  'benfords-law': { scenes: benfordsLawScenes, defaultState: defaultBenfordsLawState },
+  'buffon-needle': { scenes: buffonNeedleScenes, defaultState: defaultBuffonNeedleState },
+  'galton-board': { scenes: galtonBoardScenes, defaultState: defaultGaltonBoardState },
+  'gamblers-ruin': { scenes: gamblersRuinScenes, defaultState: defaultGamblersRuinState },
+  'coupon-collector': { scenes: couponCollectorScenes, defaultState: defaultCouponCollectorState },
+  'decision-tree': { scenes: decisionTreeScenes, defaultState: defaultDecisionTreeState },
+  'knn': { scenes: knnScenes, defaultState: defaultKnnState },
+  'naive-bayes': { scenes: naiveBayesScenes, defaultState: defaultNaiveBayesState },
+  'logistic-regression': { scenes: logisticRegressionScenes, defaultState: defaultLogisticRegressionState },
+  'backpropagation': { scenes: backpropagationScenes, defaultState: defaultBackpropagationState },
+  'softmax': { scenes: softmaxScenes, defaultState: defaultSoftmaxState },
+  'genetic-algorithm': { scenes: geneticAlgorithmScenes, defaultState: defaultGeneticAlgorithmState },
+  'particle-swarm': { scenes: particleSwarmScenes, defaultState: defaultParticleSwarmState },
+  'henon-map': { scenes: henonMapScenes, defaultState: defaultHenonMapState },
+  'rossler-attractor': { scenes: rosslerAttractorScenes, defaultState: defaultRosslerAttractorState },
+  'tent-map': { scenes: tentMapScenes, defaultState: defaultTentMapState },
+  'projectile-motion': { scenes: projectileMotionScenes, defaultState: defaultProjectileMotionState },
+  'damped-oscillation': { scenes: dampedOscillationScenes, defaultState: defaultDampedOscillationState },
+  'catenary': { scenes: catenaryScenes, defaultState: defaultCatenaryState },
+  'brachistochrone': { scenes: brachistochroneScenes, defaultState: defaultBrachistochroneState },
 }
 
 // 检测是否为移动设备
@@ -439,7 +839,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       // 新增2个待完成课程
       'laplace', 'permutation-combination',
       // 新增优美数学场景
-      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet'
+      'game-of-life', 'euler-identity', 'three-body', 'reaction-diffusion', 'mobius', 'cycloid', 'lissajous', 'ulam-spiral', 'pascal-triangle', 'voronoi', 'l-system', 'even-odd', 'roman-numerals', 'symmetry', 'tangram', 'clock-angles', 'inequalities', 'linear-system', 'similar-triangles', 'circle-geometry', 'stats-basics', 'absolute-value', 'sequences', 'exponential-log', 'matrix-transform', 'dot-cross-product', 'parabola-optics', 'sine-superposition', 'combinatorial-proof', 'modular-arithmetic', 'continued-fraction', 'epidemic-sir', 'eigen-visualization', 'svd', 'gram-schmidt', 'lagrange-multiplier', 'green-theorem', 'residue-theorem', 'power-series', 'gaussian-process', 'kalman-filter', 'simulated-annealing', 'mandelbrot-julia', 'double-pendulum', 'lorenz-attractor', 'nbody-simulation', 'percolation', 'cellular-automata', 'knot-theory', 'wavelet', 'sieve-eratosthenes', 'magic-square', 'tower-of-hanoi', 'pigeonhole', 'triangle-centers', 'number-bases', 'pythagoras-tree', 'tessellation', 'perfect-numbers', 'collatz', 'prime-factorization', 'fibonacci-nature', 'dice-probability', 'nine-point-circle', 'euler-line', 'inversive-geometry', 'poincare-disk', 'spherical-geometry', 'convex-hull', 'delaunay-triangulation', 'apollonian-gasket', 'pick-theorem', 'reuleaux', 'circle-packing', 'steiner-chain', 'polynomial-roots', 'vieta-formulas', 'binomial-theorem', 'inverse-function', 'composite-function', 'partial-fractions', 'rational-asymptotes', 'piecewise-function', 'logarithm-spiral', 'function-transform', 'euclidean-algorithm', 'chinese-remainder', 'quadratic-residue', 'gaussian-integers', 'integer-partition', 'pell-equation', 'prime-counting', 'digital-root', 'epsilon-delta', 'mean-value-theorem', 'riemann-sum', 'solid-of-revolution', 'arc-length-curvature', 'series-convergence', 'improper-integral', 'determinant-geometry', 'kernel-image', 'orthogonal-projection', 'least-squares', 'quadratic-form', 'spectral-theorem', 'law-large-numbers', 'poisson-process', 'brownian-motion', 'monty-hall', 'birthday-paradox', 'hypothesis-testing', 'confidence-interval', 'max-likelihood', 'gaussian-mixture', 'hidden-markov', 'multiple-integral', 'line-integral', 'divergence-curl', 'stokes-theorem', 'partial-derivative', 'directional-derivative', 'jacobian', 'vector-calculus-field', 'laplacian', 'dijkstra', 'network-flow', 'graph-coloring', 'euler-hamilton-path', 'sorting-algorithms', 'bfs-dfs', 'dynamic-programming', 'divide-conquer', 'huffman-coding', 'catalan-numbers', 'generating-functions', 'minimum-spanning-tree', 'logistic-bifurcation', 'phase-portrait', 'limit-cycle', 'lotka-volterra', 'pendulum-phase', 'kepler-orbit', 'vibrating-string', 'poincare-section', 'euler-characteristic', 'torus-klein', 'perceptron', 'kmeans', 'neural-network-forward', 'koch-snowflake', 'sierpinski-triangle', 'sierpinski-carpet', 'dragon-curve', 'barnsley-fern', 'hilbert-curve', 'peano-curve', 'gosper-curve', 'levy-c-curve', 'newton-fractal', 'burning-ship', 'box-counting-dimension', 'cantor-set', 'quadtree', 'kd-tree', 'marching-squares', 'point-in-polygon', 'line-clipping', 'rotating-calipers', 'ear-clipping', 'a-star', 'stereographic-projection', 'hopf-fibration', 'hyperbolic-tiling', 'spirograph', 'euler-totient', 'mobius-function', 'farey-sequence', 'stern-brocot', 'primitive-root', 'fermat-little', 'wilson-theorem', 'fast-exponentiation', 'pythagorean-triples', 'sum-of-squares', 'happy-numbers', 'kaprekar', 'lucas-numbers', 'triangular-numbers', 'frobenius-coin', 'caesar-cipher', 'vigenere-cipher', 'rsa-cipher', 'diffie-hellman', 'one-time-pad', 'elliptic-curve', 'josephus-problem', 'gray-code', 'look-and-say', 'hill-cipher', 'lu-decomposition', 'qr-decomposition', 'cholesky', 'power-iteration', 'pagerank', 'markov-stationary', 'cramers-rule', 'rotation3d', 'gibbs-phenomenon', 'chebyshev-polynomials', 'legendre-polynomials', 'bessel-functions', 'gamma-function', 'fixed-point-iteration', 'secant-method', 'bisection-method', 'fft', 'aliasing', 'autocorrelation', 'convolution', 'nyquist-sampling', 'windowing', 'b-spline', 'catmull-rom', 'discrete-cosine-transform', 'stirling-numbers', 'bell-numbers', 'derangements', 'inclusion-exclusion', 'latin-square', 'benfords-law', 'buffon-needle', 'galton-board', 'gamblers-ruin', 'coupon-collector', 'decision-tree', 'knn', 'naive-bayes', 'logistic-regression', 'backpropagation', 'softmax', 'genetic-algorithm', 'particle-swarm', 'henon-map', 'rossler-attractor', 'tent-map', 'projectile-motion', 'damped-oscillation', 'catenary', 'brachistochrone'
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

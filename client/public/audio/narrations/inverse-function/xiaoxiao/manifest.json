@@ -1,0 +1,179 @@
+{
+  "script_id": "inverse-function",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "inverse-function",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "一个函数把输入变成输出，比如输入 3，输出 7。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "现在反过来问：已经知道输出是 7，能不能找回输入 3？"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "这个把输出送回输入的过程，就是反函数在做的事。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/define-def-1.mp3",
+      "duration": 2.92,
+      "size": 46656,
+      "text": "如果先用 f 把 x 变成 y，再用 g 把 y 变回 x，我们就说 g 是 f 的反函数。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/define-def-2.mp3",
+      "duration": 2.58,
+      "size": 41328,
+      "text": "一去一回，恰好回到原点，也就是 g 作用在 f(x) 上又得到 x。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/define-def-3.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "比如 f 是乘二加一，反函数就是减一再除以二。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "symmetry",
+      "line_id": "sym-1",
+      "filename": "symmetry-sym-1.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/symmetry-sym-1.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "交换输入输出，在图象上就是交换横纵坐标。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "symmetry",
+      "line_id": "sym-2",
+      "filename": "symmetry-sym-2.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/symmetry-sym-2.mp3",
+      "duration": 2.57,
+      "size": 41184,
+      "text": "点 (a, b) 在原函数上，那么 (b, a) 一定在反函数上。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "symmetry",
+      "line_id": "sym-3",
+      "filename": "symmetry-sym-3.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/symmetry-sym-3.mp3",
+      "duration": 2.71,
+      "size": 43344,
+      "text": "而 (a, b) 和 (b, a) 恰好关于直线 y=x 互为镜像。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "monotone",
+      "line_id": "mono-1",
+      "filename": "monotone-mono-1.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/monotone-mono-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "要能从输出唯一找回输入，每个输出只能对应一个输入。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "monotone",
+      "line_id": "mono-2",
+      "filename": "monotone-mono-2.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/monotone-mono-2.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "用水平线检验：一条横线只与图象相交一次，函数才可逆。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "monotone",
+      "line_id": "mono-3",
+      "filename": "monotone-mono-3.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/monotone-mono-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "所以单调递增或递减的函数，才拥有反函数。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "切换不同的函数，观察它和反函数如何隔着 y=x 彼此镜像。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "看那对被连线标出的对称点，它们的坐标正好互相交换。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "反函数就是交换输入与输出，把结果送回起点。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "它的图象与原函数关于 y=x 对称，且只有单调函数才可逆。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/inverse-function/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "记住这条对称的镜子，反函数就不再神秘，我们下次再见！"
+    }
+  ],
+  "total_duration": 37.04,
+  "total_size": 592992
+}

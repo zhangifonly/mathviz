@@ -1,0 +1,189 @@
+{
+  "script_id": "rotating-calipers",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "桌面上撒了一把图钉，我们想知道：这堆点到底有多宽？"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "也就是相距最远的那两个点，隔着多远的距离。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "朴素做法是两两比较，点一多就慢得让人着急。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/intro-intro-4.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "旋转卡壳给出了一个又快又优雅的答案。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "hull",
+      "line_id": "hull-1",
+      "filename": "hull-hull-1.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/hull-hull-1.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "第一步，用一根橡皮筋把所有点箍起来，得到的外轮廓就是凸包。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "hull",
+      "line_id": "hull-2",
+      "filename": "hull-hull-2.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/hull-hull-2.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "最远的两个点一定都在凸包上，内部的点不可能更远。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "hull",
+      "line_id": "hull-3",
+      "filename": "hull-hull-3.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/hull-hull-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "于是问题从整堆点，缩小到了凸包的少数几个顶点上。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "antipodal",
+      "line_id": "anti-1",
+      "filename": "antipodal-anti-1.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/antipodal-anti-1.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "想象用两条平行的直线，从两侧把凸包夹住。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "antipodal",
+      "line_id": "anti-2",
+      "filename": "antipodal-anti-2.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/antipodal-anti-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "两条线各自贴着的那对顶点，就叫一组对踵点对。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "antipodal",
+      "line_id": "anti-3",
+      "filename": "antipodal-anti-3.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/antipodal-anti-3.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "凸包的直径，一定出现在某一组对踵点对之间。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "rotate",
+      "line_id": "rot-1",
+      "filename": "rotate-rot-1.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/rotate-rot-1.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "让这对平行卡钳贴着凸包慢慢旋转一圈。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "rotate",
+      "line_id": "rot-2",
+      "filename": "rotate-rot-2.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/rotate-rot-2.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "每转到一条边，对面的顶点就随之推进，所有对踵点对被一次扫完。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "rotate",
+      "line_id": "rot-3",
+      "filename": "rotate-rot-3.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/rotate-rot-3.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "同样的旋转还能顺手量出最小面积的外接矩形。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "换换点的数量，看凸包和那条粉色直径怎样变化。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "点击重新随机，每一次都能立刻卡出新的最远点对。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "先求凸包，再旋转卡钳扫过所有对踵点对。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "直径和最小外接矩形，都在这一圈旋转里被线性求出。"
+    },
+    {
+      "script_id": "rotating-calipers",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/rotating-calipers/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "一圈优雅的旋转，量出了点集的胖瘦，我们下次再见！"
+    }
+  ],
+  "total_duration": 34.010000000000005,
+  "total_size": 544176
+}

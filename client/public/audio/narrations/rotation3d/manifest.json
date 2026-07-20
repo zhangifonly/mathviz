@@ -1,0 +1,153 @@
+{
+  "script_id": "rotation3d",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "rotation3d",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/rotation3d/intro-intro-1.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "在平面上转动一个图形，我们只需要一个角度。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/rotation3d/intro-intro-2.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "可到了三维空间，物体能上下俯仰、左右偏转、还能翻滚。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "axis",
+      "line_id": "def-3",
+      "filename": "axis-def-3.mp3",
+      "path": "audio/narrations/rotation3d/axis-def-3.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "用它去乘一个点的坐标，就得到旋转后的新位置。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "euler",
+      "line_id": "eul-1",
+      "filename": "euler-eul-1.mp3",
+      "path": "audio/narrations/rotation3d/euler-eul-1.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "把三个基本旋转依次相乘，就能拼出任意方向的旋转。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "euler",
+      "line_id": "eul-2",
+      "filename": "euler-eul-2.mp3",
+      "path": "audio/narrations/rotation3d/euler-eul-2.mp3",
+      "duration": 1.23,
+      "size": 19728,
+      "text": "这三个角，就叫做欧拉角。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "euler",
+      "line_id": "eul-3",
+      "filename": "euler-eul-3.mp3",
+      "path": "audio/narrations/rotation3d/euler-eul-3.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "要注意，乘的顺序不能随便换，先转 X 再转 Y，和反过来结果不同。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "gimbal",
+      "line_id": "gim-1",
+      "filename": "gimbal-gim-1.mp3",
+      "path": "audio/narrations/rotation3d/gimbal-gim-1.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "当中间那个角恰好转到九十度，两根旋转轴会重叠在一起。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "gimbal",
+      "line_id": "gim-2",
+      "filename": "gimbal-gim-2.mp3",
+      "path": "audio/narrations/rotation3d/gimbal-gim-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "此时系统丢失了一个自由度，这就是著名的万向锁。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "gimbal",
+      "line_id": "gim-3",
+      "filename": "gimbal-gim-3.mp3",
+      "path": "audio/narrations/rotation3d/gimbal-gim-3.mp3",
+      "duration": 1.51,
+      "size": 24192,
+      "text": "工程上常改用四元数来绕开这个麻烦。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/rotation3d/interaction-int-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "拖动三个滑块，分别调整绕 X、Y、Z 轴的角度。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/rotation3d/interaction-int-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "看这个立方体如何在空间里自由翻转起来。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/rotation3d/summary-sum-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "三个绕轴矩阵，是描述空间旋转的基本砖块。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/rotation3d/summary-sum-2.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "把它们按欧拉角相乘，就能表达任意朝向。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/rotation3d/summary-sum-3.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "旋转的世界既严谨又有趣，我们下次再见！"
+    }
+  ],
+  "total_duration": 26.1,
+  "total_size": 417456,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

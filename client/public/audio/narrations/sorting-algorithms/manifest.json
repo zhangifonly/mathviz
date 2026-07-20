@@ -1,0 +1,133 @@
+{
+  "script_id": "sorting-algorithms",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "sorting-algorithms",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/sorting-algorithms/intro-intro-3.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "同样是排序，方法不同，快慢却相差巨大。"
+    },
+    {
+      "script_id": "sorting-algorithms",
+      "section_id": "basic",
+      "line_id": "def-1",
+      "filename": "basic-def-1.mp3",
+      "path": "audio/narrations/sorting-algorithms/basic-def-1.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "冒泡排序相邻两两比较，大的往后挪，每一轮把最大值送到末尾。"
+    },
+    {
+      "script_id": "sorting-algorithms",
+      "section_id": "basic",
+      "line_id": "def-2",
+      "filename": "basic-def-2.mp3",
+      "path": "audio/narrations/sorting-algorithms/basic-def-2.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "插入排序像整理扑克牌，把每张牌插进前面已排好的部分。"
+    },
+    {
+      "script_id": "sorting-algorithms",
+      "section_id": "quick",
+      "line_id": "quick-1",
+      "filename": "quick-quick-1.mp3",
+      "path": "audio/narrations/sorting-algorithms/quick-quick-1.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "快排选一个基准，把比它小的放左边，比它大的放右边。"
+    },
+    {
+      "script_id": "sorting-algorithms",
+      "section_id": "quick",
+      "line_id": "quick-2",
+      "filename": "quick-quick-2.mp3",
+      "path": "audio/narrations/sorting-algorithms/quick-quick-2.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "再对左右两半递归地做同样的事，这就是分而治之。"
+    },
+    {
+      "script_id": "sorting-algorithms",
+      "section_id": "quick",
+      "line_id": "quick-3",
+      "filename": "quick-quick-3.mp3",
+      "path": "audio/narrations/sorting-algorithms/quick-quick-3.mp3",
+      "duration": 1.71,
+      "size": 27360,
+      "text": "平均下来只需 O(n 乘以 log n)，比冒泡快得多。"
+    },
+    {
+      "script_id": "sorting-algorithms",
+      "section_id": "merge",
+      "line_id": "merge-1",
+      "filename": "merge-merge-1.mp3",
+      "path": "audio/narrations/sorting-algorithms/merge-merge-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "归并排序先把数组一分为二，直到每段只剩一个元素。"
+    },
+    {
+      "script_id": "sorting-algorithms",
+      "section_id": "merge",
+      "line_id": "merge-2",
+      "filename": "merge-merge-2.mp3",
+      "path": "audio/narrations/sorting-algorithms/merge-merge-2.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "再两两合并有序的小段，相等元素保持原序，因此它很稳定。"
+    },
+    {
+      "script_id": "sorting-algorithms",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/sorting-algorithms/interaction-int-1.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "选择一种算法，单步观察每一次比较和交换。"
+    },
+    {
+      "script_id": "sorting-algorithms",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/sorting-algorithms/interaction-int-2.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "也可以点击播放，让柱子在动画里自己排好队。"
+    },
+    {
+      "script_id": "sorting-algorithms",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/sorting-algorithms/summary-sum-2.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "选对算法，就是在为程序省下宝贵的时间。"
+    },
+    {
+      "script_id": "sorting-algorithms",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/sorting-algorithms/summary-sum-3.mp3",
+      "duration": 1.49,
+      "size": 23760,
+      "text": "排序是算法世界的第一课，我们下次再见！"
+    }
+  ],
+  "total_duration": 23.68,
+  "total_size": 378720,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

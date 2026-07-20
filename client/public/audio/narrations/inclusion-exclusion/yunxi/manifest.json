@@ -1,0 +1,169 @@
+{
+  "script_id": "inclusion-exclusion",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/intro-intro-1.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "一到三十里，能被二整除的有十五个，能被三整除的有十个。"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/intro-intro-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "要问能被二或被三整除的一共几个，能直接十五加十吗？"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/intro-intro-3.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "不行，像六、十二这些数被数了两遍，答案会偏大。"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "venn",
+      "line_id": "venn-1",
+      "filename": "venn-venn-1.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/venn-venn-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "我们用三个圆表示三个集合，重叠处就是它们的公共元素。"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "venn",
+      "line_id": "venn-2",
+      "filename": "venn-venn-2.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/venn-venn-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "两圆相交的区域被算了两次，三圆相交的中心被算了三次。"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "venn",
+      "line_id": "venn-3",
+      "filename": "venn-venn-3.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/venn-venn-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "看清每块区域被重复的次数，就找到了修正的钥匙。"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "formula",
+      "line_id": "form-1",
+      "filename": "formula-form-1.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/formula-form-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "先把各集合大小加起来，再减去所有两两交集，多减的补回来。"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "formula",
+      "line_id": "form-2",
+      "filename": "formula-form-2.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/formula-form-2.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "于是加上三个集合的公共部分，正好把中心区域数对。"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "formula",
+      "line_id": "form-3",
+      "filename": "formula-form-3.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/formula-form-3.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "加单个、减两两、加三三，这就是交替加减的容斥公式。"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "general",
+      "line_id": "gen-1",
+      "filename": "general-gen-1.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/general-gen-1.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "集合再多也是同样的节奏：奇数个交集取正号，偶数个取负号。"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "general",
+      "line_id": "gen-2",
+      "filename": "general-gen-2.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/general-gen-2.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "这个正负交替的规律，来自减法一层层修正的过程。"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/interaction-int-1.mp3",
+      "duration": 1.54,
+      "size": 24624,
+      "text": "切换范围 N，看每一项如何随之变化。"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/interaction-int-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "对照逐项列表，验证加减之后并集刚好数对。"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/summary-sum-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "容斥原理用加减交替，消除并集里的重复计数。"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/summary-sum-2.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "奇加偶减的符号规律，让它推广到任意多个集合。"
+    },
+    {
+      "script_id": "inclusion-exclusion",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/inclusion-exclusion/yunxi/summary-sum-3.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "数清重叠，加减有序，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.44,
+  "total_size": 518832
+}

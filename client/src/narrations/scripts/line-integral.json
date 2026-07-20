@@ -1,0 +1,160 @@
+{
+  "id": "line-integral",
+  "title": "曲线积分",
+  "subtitle": "沿路径累加做功",
+  "difficulty": "advanced",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解第二类曲线积分是向量场沿路径做的功",
+    "掌握 F 点乘切向决定做功正负",
+    "认识做功沿路径逐段累加的思想",
+    "会通过选择场与路径观察积分值变化"
+  ],
+  "prerequisites": [
+    "了解向量点乘",
+    "了解参数曲线"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "顶着大风走路，你会明显觉得比平时更费力气。"
+        },
+        {
+          "id": "intro-2",
+          "text": "风就是一个向量场，它在你走过的每一步上都在做功。"
+        },
+        {
+          "id": "intro-3",
+          "text": "顺风时风帮你省力，逆风时风与你作对。"
+        },
+        {
+          "id": "intro-4",
+          "text": "把这一路的功累加起来，就是我们要讲的曲线积分。"
+        }
+      ]
+    },
+    {
+      "id": "define",
+      "type": "concept",
+      "title": "曲线积分的定义",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "给定一个向量场 F 和一条路径 r(t)，我们要算 F 沿这条路径做的功。"
+        },
+        {
+          "id": "def-2",
+          "text": "第二类曲线积分写作 ∫F·dr，也就是 ∫F(r(t))·r prime(t) dt。"
+        },
+        {
+          "id": "def-3",
+          "text": "dr 是路径上一小段位移，F·dr 就是这一小段上做的功。"
+        }
+      ]
+    },
+    {
+      "id": "dot",
+      "type": "concept",
+      "title": "F 点乘切向",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "dot-1",
+          "text": "关键在于 F 与路径切向的点乘：只有沿路径方向的分量才做功。"
+        },
+        {
+          "id": "dot-2",
+          "text": "F 与前进方向同向，做正功，我们把这一段涂成红色。"
+        },
+        {
+          "id": "dot-3",
+          "text": "F 与前进方向相反，做负功，涂成蓝色；垂直时则完全不做功。"
+        }
+      ]
+    },
+    {
+      "id": "accum",
+      "type": "concept",
+      "title": "做功的累加",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "acc-1",
+          "text": "把路径切成许多小段，算出每段的 F·dr，再全部加起来。"
+        },
+        {
+          "id": "acc-2",
+          "text": "这正是数值积分的思路，段分得越细，结果就越精确。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "换一个向量场，或换一条路径，看积分值如何跟着改变。"
+        },
+        {
+          "id": "int-2",
+          "text": "试试径向场配圆弧，你会发现做功恰好为零，因为场处处垂直于切向。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "曲线积分把向量场沿路径的做功一段段累加起来。"
+        },
+        {
+          "id": "sum-2",
+          "text": "做功的正负，取决于 F 与路径切向的点乘。"
+        },
+        {
+          "id": "sum-3",
+          "text": "沿路径累加的思想贯穿物理与工程，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

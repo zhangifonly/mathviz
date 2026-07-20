@@ -1,0 +1,179 @@
+{
+  "script_id": "power-iteration",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "power-iteration",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/intro-intro-1.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "一个矩阵作用在向量上，会把它拉伸并转向某个方向。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/intro-intro-2.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "其中有一个最强的方向，对应绝对值最大的特征值。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/intro-intro-4.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "幂迭代给出一个惊人简单的办法：只管反复乘就好。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "multiply",
+      "line_id": "mul-1",
+      "filename": "multiply-mul-1.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/multiply-mul-1.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "取任意一个起始向量，用矩阵去乘它，得到一个新向量。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "multiply",
+      "line_id": "mul-2",
+      "filename": "multiply-mul-2.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/multiply-mul-2.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "再乘一次，再乘一次，主方向的分量每次都被放大得最多。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "multiply",
+      "line_id": "mul-3",
+      "filename": "multiply-mul-3.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/multiply-mul-3.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "于是向量会越来越偏向那个最强的主特征向量。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "normalize",
+      "line_id": "norm-1",
+      "filename": "normalize-norm-1.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/normalize-norm-1.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "光是相乘，向量长度会爆炸增长或缩到极小。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "normalize",
+      "line_id": "norm-2",
+      "filename": "normalize-norm-2.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/normalize-norm-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "所以每一步都把它除以自身长度，重新缩回单位圆上。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "normalize",
+      "line_id": "norm-3",
+      "filename": "normalize-norm-3.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/normalize-norm-3.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "这样我们只关心方向，方向才是真正收敛的东西。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "converge",
+      "line_id": "conv-1",
+      "filename": "converge-conv-1.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/converge-conv-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "几步之后，箭头几乎不再转动，就锁定在了主特征向量方向。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "converge",
+      "line_id": "conv-2",
+      "filename": "converge-conv-2.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/converge-conv-2.mp3",
+      "duration": 2.68,
+      "size": 42912,
+      "text": "此时用瑞利商，向量点乘矩阵乘向量再除以自身点积，得到主特征值。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "converge",
+      "line_id": "conv-3",
+      "filename": "converge-conv-3.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/converge-conv-3.mp3",
+      "duration": 1.34,
+      "size": 21456,
+      "text": "主特征值越突出，收敛就越快。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/interaction-int-1.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "点击单步迭代，看箭头一步步转向主方向。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/interaction-int-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "换一个矩阵，观察收敛速度和最终方向如何变化。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/summary-sum-1.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "幂迭代反复乘矩阵再归一化，让向量收敛到主特征向量。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/summary-sum-2.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "瑞利商顺带给出主特征值，谷歌的网页排名正是它的大规模应用。"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/summary-sum-3.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "简单的一乘再乘，问出了矩阵最强的方向，我们下次再见！"
+    }
+  ],
+  "total_duration": 34.74,
+  "total_size": 555840
+}

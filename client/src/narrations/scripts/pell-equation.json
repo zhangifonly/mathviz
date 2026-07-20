@@ -1,0 +1,160 @@
+{
+  "id": "pell-equation",
+  "title": "佩尔方程",
+  "subtitle": "x²-Ny²=1的整数解",
+  "difficulty": "advanced",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解佩尔方程作为丢番图方程的地位",
+    "掌握用连分数逼近根号N求基本解",
+    "认识由基本解递推生成无穷多解",
+    "感受数论与几何双曲线的联系"
+  ],
+  "prerequisites": [
+    "了解整数与平方根",
+    "了解方程的解"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "有一类方程，只允许整数登场，它们被称为丢番图方程。"
+        },
+        {
+          "id": "intro-2",
+          "text": "在这片整数的天地里，藏着一颗古老而闪亮的明珠。"
+        },
+        {
+          "id": "intro-3",
+          "text": "它就是佩尔方程，形如 x 的平方减去 N 乘 y 的平方等于一。"
+        }
+      ]
+    },
+    {
+      "id": "define",
+      "type": "concept",
+      "title": "认识佩尔方程",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "这里的 N 是一个不是完全平方的正整数，比如二、三、五。"
+        },
+        {
+          "id": "def-2",
+          "text": "我们要找的，是同时让等式成立的整数对 x 和 y。"
+        },
+        {
+          "id": "def-3",
+          "text": "看似简单，却曾让无数数学家着迷了上千年。"
+        }
+      ]
+    },
+    {
+      "id": "cf",
+      "type": "concept",
+      "title": "连分数逼近",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "cf-1",
+          "text": "解开它的钥匙，是根号 N 的连分数展开。"
+        },
+        {
+          "id": "cf-2",
+          "text": "根号 N 的连分数是周期循环的，它的渐近分数越来越逼近真值。"
+        },
+        {
+          "id": "cf-3",
+          "text": "沿着这些渐近分数寻找，第一个满足方程的，就是最小的基本解。"
+        }
+      ]
+    },
+    {
+      "id": "recur",
+      "type": "concept",
+      "title": "递推生成无穷解",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "rec-1",
+          "text": "一旦握住基本解，就等于握住了打开无穷的门。"
+        },
+        {
+          "id": "rec-2",
+          "text": "把基本解看成 x 加 y 根号 N，不断自乘方，就滚出下一个又一个解。"
+        },
+        {
+          "id": "rec-3",
+          "text": "于是从一个解出发，佩尔方程拥有无穷多组整数解。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "选择不同的 N，看基本解如何随之跳变，有时小巧，有时惊人地大。"
+        },
+        {
+          "id": "int-2",
+          "text": "画面上的双曲线，正是方程的几何身影，解点端坐其上。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "佩尔方程求 x 平方减 N 倍 y 平方等于一的整数解。"
+        },
+        {
+          "id": "sum-2",
+          "text": "连分数找出基本解，递推展开无穷多解，几何上落在双曲线上。"
+        },
+        {
+          "id": "sum-3",
+          "text": "一个古老方程，连起数论与几何，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

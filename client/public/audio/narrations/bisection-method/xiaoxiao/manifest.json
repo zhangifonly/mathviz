@@ -1,0 +1,179 @@
+{
+  "script_id": "bisection-method",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "bisection-method",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "很多方程没有公式解，比如求根号二，我们只能一步步逼近。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "二分法的想法很朴素：先圈住根，再不断把圈子缩小一半。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "就像猜数字游戏，每次都往中间猜，范围越缩越窄。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "ivt",
+      "line_id": "ivt-1",
+      "filename": "ivt-ivt-1.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/ivt-ivt-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "看这条连续曲线，左端在横轴下方，右端在上方。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "ivt",
+      "line_id": "ivt-2",
+      "filename": "ivt-ivt-2.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/ivt-ivt-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "一条连续的线从下爬到上，中途必然穿过横轴。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "ivt",
+      "line_id": "ivt-3",
+      "filename": "ivt-ivt-3.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/ivt-ivt-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "这就是介值定理：只要两端函数值异号，区间里一定有根。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "midpoint",
+      "line_id": "mid-1",
+      "filename": "midpoint-mid-1.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/midpoint-mid-1.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "取区间中点，算出它的函数值，看它是正还是负。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "midpoint",
+      "line_id": "mid-2",
+      "filename": "midpoint-mid-2.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/midpoint-mid-2.mp3",
+      "duration": 1.39,
+      "size": 22176,
+      "text": "中点与哪一端异号，根就藏在那半边。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "midpoint",
+      "line_id": "mid-3",
+      "filename": "midpoint-mid-3.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/midpoint-mid-3.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "于是我们扔掉没有根的一半，只留下含根的那一半。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "halve",
+      "line_id": "halve-1",
+      "filename": "halve-halve-1.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/halve-halve-1.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "每做一次，含根区间的宽度就精确地缩小一半。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "halve",
+      "line_id": "halve-2",
+      "filename": "halve-halve-2.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/halve-halve-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "这叫线性收敛，大约每一步多锁定一个二进制位。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "halve",
+      "line_id": "halve-3",
+      "filename": "halve-halve-3.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/halve-halve-3.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "它不算快，却极其稳当，只要开局异号就必定收敛。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "点下一步，亲眼看两条竖线一次次向真正的根夹拢。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "换个函数再试，二分法照样一步步把根圈出来。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "介值定理先保证根的存在，再用中点符号缩小区间。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "每步对半减半，稳稳逼近，这就是二分法的全部秘密。"
+    },
+    {
+      "script_id": "bisection-method",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/bisection-method/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "简单的夹逼，蕴含深刻的收敛之美，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.489999999999995,
+  "total_size": 519552
+}

@@ -1,0 +1,149 @@
+{
+  "script_id": "rsa-cipher",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "rsa-cipher",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/rsa-cipher/yunxi/intro-intro-3.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "任何人都能用这把公开的锁把消息锁上，却只有你能打开。"
+    },
+    {
+      "script_id": "rsa-cipher",
+      "section_id": "keygen",
+      "line_id": "key-1",
+      "filename": "keygen-key-1.mp3",
+      "path": "audio/narrations/rsa-cipher/yunxi/keygen-key-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "先挑两个素数 p 和 q，把它们相乘得到模数 n。"
+    },
+    {
+      "script_id": "rsa-cipher",
+      "section_id": "keygen",
+      "line_id": "key-2",
+      "filename": "keygen-key-2.mp3",
+      "path": "audio/narrations/rsa-cipher/yunxi/keygen-key-2.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "再算出欧拉函数 φ，等于 p 减一乘以 q 减一。"
+    },
+    {
+      "script_id": "rsa-cipher",
+      "section_id": "keygen",
+      "line_id": "key-3",
+      "filename": "keygen-key-3.mp3",
+      "path": "audio/narrations/rsa-cipher/yunxi/keygen-key-3.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "选一个与 φ 互质的数 e 做公钥，它的模逆 d 就是私钥。"
+    },
+    {
+      "script_id": "rsa-cipher",
+      "section_id": "encrypt",
+      "line_id": "enc-1",
+      "filename": "encrypt-enc-1.mp3",
+      "path": "audio/narrations/rsa-cipher/yunxi/encrypt-enc-1.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "把消息写成一个数字 m，用公钥做加密。"
+    },
+    {
+      "script_id": "rsa-cipher",
+      "section_id": "encrypt",
+      "line_id": "enc-2",
+      "filename": "encrypt-enc-2.mp3",
+      "path": "audio/narrations/rsa-cipher/yunxi/encrypt-enc-2.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "计算 m 的 e 次方再对 n 取余，得到密文 c。"
+    },
+    {
+      "script_id": "rsa-cipher",
+      "section_id": "encrypt",
+      "line_id": "enc-3",
+      "filename": "encrypt-enc-3.mp3",
+      "path": "audio/narrations/rsa-cipher/yunxi/encrypt-enc-3.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "这一步谁都能算，因为公钥 e 和模数 n 是公开的。"
+    },
+    {
+      "script_id": "rsa-cipher",
+      "section_id": "decrypt",
+      "line_id": "dec-1",
+      "filename": "decrypt-dec-1.mp3",
+      "path": "audio/narrations/rsa-cipher/yunxi/decrypt-dec-1.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "收到密文后，用私钥 d 把它还原。"
+    },
+    {
+      "script_id": "rsa-cipher",
+      "section_id": "decrypt",
+      "line_id": "dec-3",
+      "filename": "decrypt-dec-3.mp3",
+      "path": "audio/narrations/rsa-cipher/yunxi/decrypt-dec-3.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "想从公钥反推私钥，就得分解出 n 的两个素因子，这极其困难。"
+    },
+    {
+      "script_id": "rsa-cipher",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/rsa-cipher/yunxi/interaction-int-1.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "换一对素数，看密钥和模数如何随之改变。"
+    },
+    {
+      "script_id": "rsa-cipher",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/rsa-cipher/yunxi/interaction-int-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "拖动滑块输入不同的数字消息，观察密文和还原结果。"
+    },
+    {
+      "script_id": "rsa-cipher",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/rsa-cipher/yunxi/summary-sum-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "RSA 用一对素数造出公钥和私钥，公开加密，私密解密。"
+    },
+    {
+      "script_id": "rsa-cipher",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/rsa-cipher/yunxi/summary-sum-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "它的安全来自大数分解的困难，守护着今天的互联网。"
+    },
+    {
+      "script_id": "rsa-cipher",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/rsa-cipher/yunxi/summary-sum-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "一个简单的数论定理撑起了整个数字世界，我们下次再见！"
+    }
+  ],
+  "total_duration": 26.57,
+  "total_size": 425376
+}

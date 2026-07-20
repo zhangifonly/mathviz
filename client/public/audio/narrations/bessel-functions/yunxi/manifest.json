@@ -1,0 +1,179 @@
+{
+  "script_id": "bessel-functions",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "bessel-functions",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/intro-intro-1.mp3",
+      "duration": 1.3,
+      "size": 20736,
+      "text": "敲一面鼓，鼓皮会怎样振动呢？"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/intro-intro-2.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "不像琴弦只在一条线上抖动，圆形鼓面是在整个平面上起伏。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/intro-intro-3.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "要描述这种振动，正弦余弦不够用了，我们需要贝塞尔函数。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "equation",
+      "line_id": "eq-1",
+      "filename": "equation-eq-1.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/equation-eq-1.mp3",
+      "duration": 2.69,
+      "size": 43056,
+      "text": "把波动方程放到极坐标里分离变量，径向部分就得到贝塞尔方程。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "equation",
+      "line_id": "eq-2",
+      "filename": "equation-eq-2.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/equation-eq-2.mp3",
+      "duration": 3.06,
+      "size": 48960,
+      "text": "它写作 x 平方 y 双撇，加 x y 撇，再加 x 平方减 n 平方乘 y，等于零。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "equation",
+      "line_id": "eq-3",
+      "filename": "equation-eq-3.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/equation-eq-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "这里的 n 叫阶数，它的解就是第 n 阶贝塞尔函数。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "series",
+      "line_id": "ser-1",
+      "filename": "series-ser-1.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/series-ser-1.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "J_n 没有初等表达式，但可以写成一条优美的幂级数。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "series",
+      "line_id": "ser-2",
+      "filename": "series-ser-2.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/series-ser-2.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "它是对 k 求和，系数是负一的 k 次方，除以 k 阶乘乘 n 加 k 阶乘。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "series",
+      "line_id": "ser-3",
+      "filename": "series-ser-3.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/series-ser-3.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "再乘上 x 的一半的 2k 加 n 次方，逐项相加就收敛出整条曲线。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "zeros",
+      "line_id": "zero-1",
+      "filename": "zeros-zero-1.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/zeros-zero-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "贝塞尔函数像一条不断衰减的正弦波，反复穿过横轴。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "zeros",
+      "line_id": "zero-2",
+      "filename": "zeros-zero-2.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/zeros-zero-2.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "每一个零点，对应鼓面上一圈始终不动的节圆。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "zeros",
+      "line_id": "zero-3",
+      "filename": "zeros-zero-3.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/zeros-zero-3.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "零点的位置决定了鼓的振动模态，也决定了它的音高。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/interaction-int-1.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "切换阶数，看 J0、J1、J2 的曲线如何错落起伏。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/interaction-int-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "留意每条曲线穿过横轴的位置，那正是一圈圈节圆的半径。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/summary-sum-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "贝塞尔方程来自圆膜振动，它的解就是贝塞尔函数。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/summary-sum-2.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "幂级数给出衰减振荡的曲线，零点标出鼓面的节圆。"
+    },
+    {
+      "script_id": "bessel-functions",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/bessel-functions/yunxi/summary-sum-3.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "从一面鼓看见特殊函数之美，我们下次再见！"
+    }
+  ],
+  "total_duration": 36.96,
+  "total_size": 591264
+}

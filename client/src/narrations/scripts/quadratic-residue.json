@@ -1,0 +1,156 @@
+{
+  "id": "quadratic-residue",
+  "title": "二次剩余",
+  "subtitle": "模 p 的完全平方",
+  "difficulty": "advanced",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解模 p 二次剩余的定义",
+    "掌握勒让德符号的含义",
+    "学会用欧拉判别法判定二次剩余",
+    "观察圆环上剩余的对称分布"
+  ],
+  "prerequisites": [
+    "了解同余与取模",
+    "了解素数"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "普通的平方我们很熟悉，一四九十六，都是完全平方数。"
+        },
+        {
+          "id": "intro-2",
+          "text": "可是在时钟一样的模运算里，哪些数才算得上是平方数呢？"
+        },
+        {
+          "id": "intro-3",
+          "text": "比如模七的世界里，把一到六各自平方再取余，结果只落在几个数上。"
+        }
+      ]
+    },
+    {
+      "id": "define",
+      "type": "concept",
+      "title": "二次剩余的定义",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "如果方程 x 的平方同余 a 模 p 有解，就称 a 是模 p 的二次剩余。"
+        },
+        {
+          "id": "def-2",
+          "text": "换句话说，a 是模 p 世界里的一个完全平方。"
+        },
+        {
+          "id": "def-3",
+          "text": "对奇素数 p，非零的二次剩余恰好有 (p 减一) 除以二 个，正好一半。"
+        }
+      ]
+    },
+    {
+      "id": "legendre",
+      "type": "concept",
+      "title": "勒让德符号",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "leg-1",
+          "text": "数学家用勒让德符号 a 比 p 来记录这件事。"
+        },
+        {
+          "id": "leg-2",
+          "text": "它等于一表示 a 是剩余，等于负一表示不是，等于零表示 p 整除 a。"
+        }
+      ]
+    },
+    {
+      "id": "euler",
+      "type": "concept",
+      "title": "欧拉判别法",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "eul-1",
+          "text": "欧拉给出一个漂亮的判据：算 a 的 (p 减一) 除以二 次方，再模 p。"
+        },
+        {
+          "id": "eul-2",
+          "text": "结果是一，a 就是二次剩余；结果是 p 减一，也就是负一，它就不是。"
+        },
+        {
+          "id": "eul-3",
+          "text": "一次快速幂取模，就能判断任意一个数。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换不同的素数 p，看绿色的剩余点在圆环上如何分布。"
+        },
+        {
+          "id": "int-2",
+          "text": "注意 x 和 p 减 x 的连线，它们总是落到同一个剩余上，对称又优雅。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "二次剩余就是模 p 世界里的完全平方数。"
+        },
+        {
+          "id": "sum-2",
+          "text": "勒让德符号记录归属，欧拉判别法用快速幂高效判定。"
+        },
+        {
+          "id": "sum-3",
+          "text": "简单的取平方，藏着数论的深邃对称，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

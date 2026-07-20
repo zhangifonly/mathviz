@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 分段函数 - 口播稿件
+ * 核心概念：分段表示、连续与跳跃间断、左右极限
+ * 目标受众：高中及以上
+ */
+export const piecewiseFunctionNarration: NarrationScript = {
+  id: 'piecewise-function',
+  title: '分段函数',
+  subtitle: '连续与间断',
+  difficulty: 'elementary',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解分段函数在不同区间用不同规则',
+    '认识绝对值与符号函数这两个经典例子',
+    '掌握用左右极限判断分段点的连续性',
+    '区分连续与跳跃间断',
+  ],
+
+  prerequisites: ['了解函数与坐标图像', '了解区间概念'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '有些函数并不用一个统一的公式，而是把定义域切成几段。' },
+        { id: 'intro-2', text: '每一段各管一段自变量，用各自的规则计算取值。' },
+        { id: 'intro-3', text: '这就是分段函数，像阶梯电费、快递分段计价，生活里随处可见。' },
+      ],
+    },
+    {
+      id: 'concept-a',
+      type: 'concept',
+      title: '绝对值与符号函数',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '绝对值函数：x 小于零时取相反数，大于等于零时取自己。' },
+        { id: 'def-2', text: '两段直线在原点恰好接上，图像是一个漂亮的 V 字。' },
+        { id: 'def-3', text: '符号函数就不同了，负数给负一，正数给正一，在零处直接从负一跳到正一。' },
+      ],
+    },
+    {
+      id: 'concept-b',
+      type: 'concept',
+      title: '分段点的连续性',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'con-1', text: '判断分段点连不连续，关键看曲线在那里断没断开。' },
+        { id: 'con-2', text: '绝对值在原点左右都趋向零，接得上，所以连续。' },
+        { id: 'con-3', text: '符号函数在原点两侧一个负一一个正一，接不上，就是跳跃间断。' },
+      ],
+    },
+    {
+      id: 'concept-c',
+      type: 'concept',
+      title: '左右极限',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'lim-1', text: '从左边慢慢靠近分段点，得到左极限；从右边靠近，得到右极限。' },
+        { id: 'lim-2', text: '左右极限相等且等于函数值，就连续；不相等，就出现跳跃。' },
+        { id: 'lim-3', text: '实心点表示真正取到的值，空心圈表示极限逼近但取不到。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '切换不同例子，观察取整函数一级一级往上跳的阶梯。' },
+        { id: 'int-2', text: '再看自定义的抛物线接直线，找一找哪个分段点断开了。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '分段函数把定义域切段，每段用各自的规则。' },
+        { id: 'sum-2', text: '比较分段点的左右极限，就能判断它连续还是跳跃间断。' },
+        { id: 'sum-3', text: '看懂了连续与断开，函数的性格就一目了然，我们下次再见！' },
+      ],
+    },
+  ],
+}

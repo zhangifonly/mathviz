@@ -1,0 +1,169 @@
+{
+  "script_id": "a-star",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "a-star",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "游戏里的 NPC，是怎么绕开墙壁走到你面前的？"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "它面对的是一张布满障碍的网格地图。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "要在其中找到最短的一条路，靠的正是 A 星算法。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "gcost",
+      "line_id": "def-1",
+      "filename": "gcost-def-1.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/gcost-def-1.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "先看 g 值，它是从起点走到当前格子，已经花掉的真实步数。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "gcost",
+      "line_id": "def-2",
+      "filename": "gcost-def-2.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/gcost-def-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "每向相邻格子迈一步，g 就加一，走过的路一清二楚。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "hcost",
+      "line_id": "con-1",
+      "filename": "hcost-con-1.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/hcost-con-1.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "再看 h 值，它是对「还差多远到终点」的乐观估计。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "hcost",
+      "line_id": "con-2",
+      "filename": "hcost-con-2.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/hcost-con-2.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "网格里常用曼哈顿距离，横竖格子差之和，从不高估真实距离。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "hcost",
+      "line_id": "con-3",
+      "filename": "hcost-con-3.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/hcost-con-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "正因为不高估，A 星才能保证找到真正的最短路。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "fcost",
+      "line_id": "fn-1",
+      "filename": "fcost-fn-1.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/fcost-fn-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "把两者相加，f 等于 g 加 h，就是这条路的总代价预估。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "fcost",
+      "line_id": "fn-2",
+      "filename": "fcost-fn-2.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/fcost-fn-2.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "算法每一步都挑 f 最小的格子优先扩展，朝着终点稳步逼近。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "fcost",
+      "line_id": "fn-3",
+      "filename": "fcost-fn-3.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/fcost-fn-3.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "如果把 h 设为零，A 星就退化成盲目四散的 Dijkstra。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "看蓝色格子怎样朝终点定向铺开，这就是 A 星的搜索过程。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "切到 Dijkstra，黄色区域向四面漫开，扩展的格子明显更多。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "A 星用 f = g + h 权衡已走的路与预估的远方。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "一个不高估的启发函数，就让搜索又快又准。"
+    },
+    {
+      "script_id": "a-star",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/a-star/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "这就是启发式搜索的智慧，我们下次再见！"
+    }
+  ],
+  "total_duration": 31.42,
+  "total_size": 502848
+}

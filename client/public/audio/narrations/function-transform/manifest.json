@@ -1,0 +1,173 @@
+{
+  "script_id": "function-transform",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "function-transform",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/function-transform/intro-intro-1.mp3",
+      "duration": 1.4,
+      "size": 22320,
+      "text": "一条抛物线，其实有一大家子亲戚。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/function-transform/intro-intro-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "它们形状相似，只是被挪动、拉伸或者翻转了。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/function-transform/intro-intro-3.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "只要一个公式，就能把整个家族写清楚。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "translate",
+      "line_id": "def-1",
+      "filename": "translate-def-1.mp3",
+      "path": "audio/narrations/function-transform/translate-def-1.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "把 x 换成 x 减 h，图象就整体向右平移 h 个单位。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "translate",
+      "line_id": "def-2",
+      "filename": "translate-def-2.mp3",
+      "path": "audio/narrations/function-transform/translate-def-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "在末尾加上 k，图象就整体向上平移 k 个单位。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "translate",
+      "line_id": "def-3",
+      "filename": "translate-def-3.mp3",
+      "path": "audio/narrations/function-transform/translate-def-3.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "h 管左右，k 管上下，平移不改变曲线的形状。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "scale",
+      "line_id": "scl-1",
+      "filename": "scale-scl-1.mp3",
+      "path": "audio/narrations/function-transform/scale-scl-1.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "乘上系数 a，图象在竖直方向被拉伸或压扁。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "scale",
+      "line_id": "scl-2",
+      "filename": "scale-scl-2.mp3",
+      "path": "audio/narrations/function-transform/scale-scl-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "在 x 前面乘 b，图象在水平方向被压缩或拉宽。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "scale",
+      "line_id": "scl-3",
+      "filename": "scale-scl-3.mp3",
+      "path": "audio/narrations/function-transform/scale-scl-3.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "a 越大越瘦高，b 越大左右越紧凑。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "flip",
+      "line_id": "flp-1",
+      "filename": "flip-flp-1.mp3",
+      "path": "audio/narrations/function-transform/flip-flp-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "当 a 取负，整条曲线沿 x 轴翻个身，上下颠倒。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "flip",
+      "line_id": "flp-2",
+      "filename": "flip-flp-2.mp3",
+      "path": "audio/narrations/function-transform/flip-flp-2.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "当 b 取负，曲线沿 y 轴镜像，左右对调。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/function-transform/interaction-int-1.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "拖动四个滑块，看灰色基线如何变成彩色的新曲线。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/function-transform/interaction-int-2.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "每调一个参数，屏幕都会告诉你它带来的效果。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/function-transform/summary-sum-1.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "h 和 k 负责平移，a 和 b 负责伸缩。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/function-transform/summary-sum-2.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "负号带来翻折，四个参数合起来掌控整个家族。"
+    },
+    {
+      "script_id": "function-transform",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/function-transform/summary-sum-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "记住这个公式，你就握住了函数变形的钥匙，我们下次再见！"
+    }
+  ],
+  "total_duration": 29.719999999999995,
+  "total_size": 475200,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

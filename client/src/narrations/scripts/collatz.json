@@ -1,0 +1,156 @@
+{
+  "id": "collatz",
+  "title": "考拉兹猜想",
+  "subtitle": "3n+1 的未解之谜",
+  "difficulty": "elementary",
+  "targetAge": "小学以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解 3n+1 迭代的奇偶两条规则",
+    "认识“冰雹数”时高时低的跌宕轨迹",
+    "了解这是一个至今无人证明的数学猜想",
+    "亲手输入起点，观察轨迹与停止时间"
+  ],
+  "prerequisites": [
+    "认识奇数和偶数",
+    "会做简单的乘法与除法"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "有一个游戏，规则简单到小学生都会玩。"
+        },
+        {
+          "id": "intro-2",
+          "text": "随便选一个正整数，按两条规则不停地变换它。"
+        },
+        {
+          "id": "intro-3",
+          "text": "奇怪的是，无论从哪里出发，最后似乎都会掉进同一个终点。"
+        }
+      ]
+    },
+    {
+      "id": "rule",
+      "type": "concept",
+      "title": "奇偶两条路",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "rule-1",
+          "text": "如果这个数是偶数，就把它除以 2。"
+        },
+        {
+          "id": "rule-2",
+          "text": "如果是奇数，就把它乘以 3 再加 1。"
+        },
+        {
+          "id": "rule-3",
+          "text": "得到新数后，重复判断奇偶，再走对应的那条路。"
+        }
+      ]
+    },
+    {
+      "id": "hail",
+      "type": "concept",
+      "title": "冰雹数",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "hail-1",
+          "text": "数值会像冰雹一样，忽而冲上高空，忽而急速下坠。"
+        },
+        {
+          "id": "hail-2",
+          "text": "从 27 出发，它一路飙升到九千多，再慢慢跌回来。"
+        },
+        {
+          "id": "hail-3",
+          "text": "正因如此，这些数被亲切地称为“冰雹数”。"
+        }
+      ]
+    },
+    {
+      "id": "mystery",
+      "type": "concept",
+      "title": "未解之谜",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "mys-1",
+          "text": "人们已经验证了极其庞大的数字，全都乖乖回到了 1。"
+        },
+        {
+          "id": "mys-2",
+          "text": "可是没有人能证明：所有正整数都一定归 1。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "输入一个起点，看它的轨迹如何起伏。"
+        },
+        {
+          "id": "int-2",
+          "text": "数一数需要多少步才落到 1，那就是它的停止时间。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "偶数减半，奇数三倍加一，规则简单到极点。"
+        },
+        {
+          "id": "sum-2",
+          "text": "轨迹却像冰雹般难以预测，是否总归 1 仍是悬案。"
+        },
+        {
+          "id": "sum-3",
+          "text": "简单的规则藏着最深的谜题，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "peano-curve",
+  "title": "皮亚诺曲线",
+  "subtitle": "最早的空间填充曲线",
+  "difficulty": "advanced",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解空间填充曲线为何能填满整个正方形",
+    "认识皮亚诺曲线 3x3 自相似的递归构造",
+    "体会连续却处处不可导的反直觉性质",
+    "了解它与希尔伯特曲线的异同"
+  ],
+  "prerequisites": [
+    "了解连续与极限",
+    "了解平面坐标"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "一条线是一维的，一个正方形是二维的。"
+        },
+        {
+          "id": "intro-2",
+          "text": "可你相信吗，有一条连续的曲线，能不留缝隙地填满整个正方形。"
+        },
+        {
+          "id": "intro-3",
+          "text": "1890 年，意大利数学家皮亚诺第一个造出了它，震动了整个数学界。"
+        }
+      ]
+    },
+    {
+      "id": "recursion",
+      "type": "concept",
+      "title": "3x3 自相似",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "rec-1",
+          "text": "把正方形切成三行三列，一共九个小格。"
+        },
+        {
+          "id": "rec-2",
+          "text": "曲线按特定顺序依次穿过这九格，并在每一格里重复同样的九宫格花样。"
+        },
+        {
+          "id": "rec-3",
+          "text": "每提升一阶，格点数就变成九倍，曲线越来越密。"
+        }
+      ]
+    },
+    {
+      "id": "continuous",
+      "type": "concept",
+      "title": "连续却不可导",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "con-1",
+          "text": "曲线从头到尾一笔画成，中间从不间断，所以它是连续的。"
+        },
+        {
+          "id": "con-2",
+          "text": "但它在每一点都急转弯，找不到任何一处的切线方向。"
+        },
+        {
+          "id": "con-3",
+          "text": "连续却处处不可导，这正是它当年最惊人的地方。"
+        }
+      ]
+    },
+    {
+      "id": "hilbert",
+      "type": "concept",
+      "title": "与希尔伯特曲线",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "hil-1",
+          "text": "几年后希尔伯特给出了更简洁的版本，基于二乘二的四宫格。"
+        },
+        {
+          "id": "hil-2",
+          "text": "皮亚诺用九宫格、希尔伯特用四宫格，本质都是自相似的空间填充。"
+        },
+        {
+          "id": "hil-3",
+          "text": "希尔伯特曲线相邻点在原空间也相邻，因此更常用于图像和数据索引。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "调高阶数，看曲线如何一步步逼近填满整个正方形。"
+        },
+        {
+          "id": "int-2",
+          "text": "顺着蓝到红的颜色，就能看清它遍历每个格点的先后顺序。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "皮亚诺曲线用 3x3 自相似递归，让一维曲线填满二维正方形。"
+        },
+        {
+          "id": "sum-2",
+          "text": "它连续却处处不可导，改写了人们对维度和曲线的直觉。"
+        },
+        {
+          "id": "sum-3",
+          "text": "一条永不停歇的折线，铺满了整个平面，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

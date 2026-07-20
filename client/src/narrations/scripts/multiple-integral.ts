@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 重积分 - 口播稿件
+ * 核心概念：二重积分求体积、累次积分、网格中点法逼近
+ * 目标受众：高中及以上
+ */
+export const multipleIntegralNarration: NarrationScript = {
+  id: 'multiple-integral',
+  title: '重积分',
+  subtitle: '二重积分求体积',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解二重积分表示曲面下方的体积',
+    '掌握累次积分先对 x 后对 y 的计算思路',
+    '认识网格中点法如何用黎曼和逼近体积',
+    '体会网格越密近似越精确',
+  ],
+
+  prerequisites: ['了解定积分与面积', '了解二元函数'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '定积分能求出曲线下方的面积。' },
+        { id: 'intro-2', text: '那么一张起伏的曲面下方，又该怎样求出它包住的体积呢？' },
+        { id: 'intro-3', text: '这正是二重积分要回答的问题。' },
+      ],
+    },
+    {
+      id: 'define',
+      type: 'concept',
+      title: '二重积分',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '在矩形区域上，我们把曲面下方的立体切成许许多多细长的小柱子。' },
+        { id: 'def-2', text: '每根柱子的体积，等于底面小块的面积乘以那里的函数高度。' },
+        { id: 'def-3', text: '把所有柱子的体积加起来，就得到二重积分，写作对 f 关于面积元 dA 的积分。' },
+      ],
+    },
+    {
+      id: 'iterate',
+      type: 'concept',
+      title: '累次积分',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'itr-1', text: '实际计算时，我们把它拆成两次一维积分。' },
+        { id: 'itr-2', text: '先固定 y，沿 x 方向积一刀，得到一个截面的面积。' },
+        { id: 'itr-3', text: '再让这个面积沿 y 方向累加起来，体积就求出来了。' },
+      ],
+    },
+    {
+      id: 'approx',
+      type: 'concept',
+      title: '网格逼近',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'apx-1', text: '在屏幕上，我们把区域划成 n 乘 n 的网格。' },
+        { id: 'apx-2', text: '取每个小格的中心点算出高度，颜色越暖表示柱子越高。' },
+        { id: 'apx-3', text: '把每根柱子的体积相加，就是逼近真实体积的黎曼和。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '试着调大网格密度，看近似的体积如何一步步逼近真值。' },
+        { id: 'int-2', text: '再换不同的函数和区域，观察热力图和体积怎样随之改变。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '二重积分把曲面下方的体积，化成无数小柱子的累加。' },
+        { id: 'sum-2', text: '累次积分让我们先横后纵地一步步算出它。' },
+        { id: 'sum-3', text: '网格越密，逼近越准，这就是重积分的思想，我们下次再见！' },
+      ],
+    },
+  ],
+}

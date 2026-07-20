@@ -1,0 +1,98 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 置信区间 - 口播稿件
+ * 核心概念：区间估计、置信水平的真实含义、覆盖率
+ * 目标受众：高中及以上
+ */
+export const confidenceIntervalNarration: NarrationScript = {
+  id: 'confidence-interval',
+  title: '置信区间',
+  subtitle: '95%置信到底啥意思',
+  difficulty: 'intermediate',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解用样本均值估计未知总体均值',
+    '掌握置信区间的构造：均值加减 z 倍标准误',
+    '厘清置信水平的真正含义',
+    '通过多次抽样观察覆盖率',
+  ],
+
+  prerequisites: ['了解正态分布', '了解样本均值'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '我们想知道一个总体的平均值，可它往往是个未知数。' },
+        { id: 'intro-2', text: '于是我们抽一批样本，用样本的平均值去估计它。' },
+        { id: 'intro-3', text: '但一个孤零零的数字，没告诉我们它到底靠不靠谱。' },
+      ],
+    },
+    {
+      id: 'estimate',
+      type: 'concept',
+      title: '区间估计',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '与其报一个点，不如给出一段范围，这就是置信区间。' },
+        { id: 'def-2', text: '它等于样本均值，加减 z 倍的标准误。' },
+        { id: 'def-3', text: '标准误是标准差除以根号 n，样本越多，区间就越窄。' },
+      ],
+    },
+    {
+      id: 'meaning',
+      type: 'concept',
+      title: '置信水平的含义',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'mean-1', text: '注意，真值是固定的，随机的其实是我们每次算出的区间。' },
+        { id: 'mean-2', text: '所谓95%置信，不是说真值有95%概率落在这一个区间里。' },
+        { id: 'mean-3', text: '而是说这套方法反复用下去，约95%的区间会罩住真值。' },
+      ],
+    },
+    {
+      id: 'coverage',
+      type: 'concept',
+      title: '覆盖率',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'cov-1', text: '看这些横条，绿色的成功盖住了真值竖线，红色的错过了。' },
+        { id: 'cov-2', text: '数一数绿条的比例，它会稳稳地贴近置信水平。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '多抽样几轮，看那条覆盖比例如何在95%附近上下摆动。' },
+        { id: 'int-2', text: '把置信水平调到99%，区间会变宽，红条也变得更少。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '置信区间用一段范围来表达估计的不确定性。' },
+        { id: 'sum-2', text: '置信水平描述的是方法的长期覆盖率，而非单次的概率。' },
+        { id: 'sum-3', text: '读懂这份分寸感，数据才真正会说话，我们下次再见！' },
+      ],
+    },
+  ],
+}

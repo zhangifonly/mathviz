@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 皮克定理 - 口播稿件
+ * 核心概念：格点多边形面积、内部点与边界点、鞋带公式对照
+ * 目标受众：初中及以上
+ */
+export const pickTheoremNarration: NarrationScript = {
+  id: 'pick-theorem',
+  title: '皮克定理',
+  subtitle: '格点多边形面积',
+  difficulty: 'intermediate',
+  targetAge: '初中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解格点多边形的内部点与边界点',
+    '掌握皮克定理 A = I + B/2 - 1',
+    '会用鞋带公式核对面积',
+    '体会数格点即可求面积的巧妙',
+  ],
+
+  prerequisites: ['了解多边形面积', '了解平面坐标'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '在方格纸上画一个顶点都落在格点上的多边形。' },
+        { id: 'intro-2', text: '不用刻度尺，只要数一数格点，就能算出它的面积。' },
+        { id: 'intro-3', text: '这个神奇的结论，就是皮克定理。' },
+      ],
+    },
+    {
+      id: 'points',
+      type: 'concept',
+      title: '内部点与边界点',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '先把格点分成两类：落在多边形内部的，叫内部点。' },
+        { id: 'def-2', text: '落在多边形边线上的，叫边界点，我们画成空心圆。' },
+        { id: 'def-3', text: '内部点记作 I，边界点记作 B，只要老实数出来就好。' },
+      ],
+    },
+    {
+      id: 'formula',
+      type: 'concept',
+      title: '皮克公式',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'form-1', text: '皮克定理说，面积 A 等于 I 加上 B 除以二，再减一。' },
+        { id: 'form-2', text: '每个内部点贡献一份，每个边界点只贡献半份。' },
+        { id: 'form-3', text: '最后减去的那个一，来自多边形闭合时的修正。' },
+      ],
+    },
+    {
+      id: 'shoelace',
+      type: 'concept',
+      title: '鞋带公式对照',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sl-1', text: '要验证它，我们用坐标直接算面积的鞋带公式。' },
+        { id: 'sl-2', text: '把顶点坐标交叉相乘再相减，取一半的绝对值。' },
+        { id: 'sl-3', text: '你会发现，鞋带算出的面积和皮克公式分毫不差。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '切换不同的多边形，看内部点和边界点如何变化。' },
+        { id: 'int-2', text: '无论形状多奇怪，两种算法给出的面积始终相等。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '皮克定理把面积和格点巧妙地连在一起。' },
+        { id: 'sum-2', text: '数出内部点与边界点，代入 I 加 B 除二减一即可。' },
+        { id: 'sum-3', text: '简单一数就见几何之美，我们下次再见！' },
+      ],
+    },
+  ],
+}

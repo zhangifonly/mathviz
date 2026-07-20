@@ -1,0 +1,179 @@
+{
+  "script_id": "convex-hull",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "convex-hull",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/intro-intro-1.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "桌面上散落着一把图钉，我们拿一根橡皮筋把它们全部圈起来。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/intro-intro-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "松开手，橡皮筋会紧紧收缩，箍在最外圈的那几颗钉子上。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/intro-intro-3.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "橡皮筋最终勾勒出的这个多边形，就是这堆点的凸包。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/define-def-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "凸包是能把所有点都包住的、面积最小的凸多边形。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/define-def-2.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "它的每个顶点都来自原来的散点，内部的点则被安稳地裹在里面。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/define-def-3.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "凸的意思是：多边形不会向内凹陷，连线永远走在边界之内。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "cross",
+      "line_id": "cross-1",
+      "filename": "cross-cross-1.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/cross-cross-1.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "要构造边界，关键是判断走过三个点时，是向左拐还是向右拐。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "cross",
+      "line_id": "cross-2",
+      "filename": "cross-cross-2.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/cross-cross-2.mp3",
+      "duration": 3.22,
+      "size": 51552,
+      "text": "这靠向量叉积：结果为正是逆时针左转，为负是顺时针右转，为零则三点共线。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "cross",
+      "line_id": "cross-3",
+      "filename": "cross-cross-3.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/cross-cross-3.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "只要出现了右转，就说明刚才那个点让边界凹了进去，应该被舍弃。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "chain",
+      "line_id": "chain-1",
+      "filename": "chain-chain-1.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/chain-chain-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "Andrew 算法先把所有点按横坐标从左到右排好队。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "chain",
+      "line_id": "chain-2",
+      "filename": "chain-chain-2.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/chain-chain-2.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "然后从左扫到右构造下半条链，再从右扫回来构造上半条链。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "chain",
+      "line_id": "chain-3",
+      "filename": "chain-chain-3.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/chain-chain-3.mp3",
+      "duration": 2.85,
+      "size": 45648,
+      "text": "扫描时不断用叉积检查转向，把凹进去的点弹出，上下拼起来就是完整凸包。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/interaction-int-1.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "调整散点数量，观察橡皮筋轮廓怎样随着点变多而伸展。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/interaction-int-2.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "点击重新随机，每一次都换一堆点，凸包也随之重新收紧。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/summary-sum-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "凸包是套住散点的最小凸多边形，就像收紧的橡皮筋。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/summary-sum-2.mp3",
+      "duration": 2.64,
+      "size": 42192,
+      "text": "叉积判左右转，单调链排序加扫描，只需 O(n log n) 就能求出。"
+    },
+    {
+      "script_id": "convex-hull",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/convex-hull/yunxi/summary-sum-3.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "一根橡皮筋背后藏着漂亮的几何算法，我们下次再见！"
+    }
+  ],
+  "total_duration": 38.43000000000001,
+  "total_size": 615024
+}

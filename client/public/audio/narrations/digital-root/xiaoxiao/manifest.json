@@ -1,0 +1,179 @@
+{
+  "script_id": "digital-root",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "digital-root",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "随便写一个大数，比如一万两千三百四十五。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "把它的各位数字加起来，得到一个更小的数。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "如果还不止一位，就再加一次，直到只剩一位数为止。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/define-def-1.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "这个最终剩下的一位数，就叫做原数的数字根。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/define-def-2.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "无论数字多大，反复相加总会坍缩到一到九之间。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/define-def-3.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "这个坍缩的过程，就像把一个数不断折叠到最简。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "mod9",
+      "line_id": "mod-1",
+      "filename": "mod9-mod-1.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/mod9-mod-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "因为十除以九余一，每一位的权重对九取余都是一。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "mod9",
+      "line_id": "mod-2",
+      "filename": "mod9-mod-2.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/mod9-mod-2.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "所以各位之和与原数对九同余，数字根其实就是模九的结果。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "mod9",
+      "line_id": "mod-3",
+      "filename": "mod9-mod-3.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/mod9-mod-3.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "只是当余数为零时，我们把数字根记成九。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "casting",
+      "line_id": "cast-1",
+      "filename": "casting-cast-1.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/casting-cast-1.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "古人用这个性质来检查算术，叫做弃九验算。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "casting",
+      "line_id": "cast-2",
+      "filename": "casting-cast-2.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/casting-cast-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "把两个加数或因数各求数字根，再按同样运算合起来。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "casting",
+      "line_id": "cast-3",
+      "filename": "casting-cast-3.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/casting-cast-3.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "如果和答案的数字根不一致，那这道题一定算错了。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "输入一个数，看它一步步坍缩到自己的数字根。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "再输入一道加法或乘法，让弃九法替你把把关。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "数字根是反复各位求和后剩下的一位数。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "它等于原数模九，弃九验算正是这一性质的妙用。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/digital-root/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "小小的九，藏着大大的巧思，我们下次再见！"
+    }
+  ],
+  "total_duration": 30.589999999999996,
+  "total_size": 489312
+}

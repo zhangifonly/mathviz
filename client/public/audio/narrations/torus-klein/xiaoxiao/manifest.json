@@ -1,0 +1,179 @@
+{
+  "script_id": "torus-klein",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "torus-klein",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "拿一张正方形的纸，我们只做一件事：把它的边粘起来。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.43,
+      "size": 22896,
+      "text": "不同的粘法，会卷出完全不同的曲面。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "今天的主角，就是这样诞生的环面与克莱因瓶。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "torus",
+      "line_id": "def-1",
+      "filename": "torus-def-1.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/torus-def-1.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "先把左右两条边同向粘合，正方形卷成一根管子。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "torus",
+      "line_id": "def-2",
+      "filename": "torus-def-2.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/torus-def-2.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "再把上下两条边也同向粘合，管子两头接起来，就成了甜甜圈形状的环面。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "torus",
+      "line_id": "def-3",
+      "filename": "torus-def-3.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/torus-def-3.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "两对边、都是同向，这就是环面的全部秘密。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "klein",
+      "line_id": "kle-1",
+      "filename": "klein-kle-1.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/klein-kle-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "现在只改一步：粘上下边时先翻个面，让方向相反。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "klein",
+      "line_id": "kle-2",
+      "filename": "klein-kle-2.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/klein-kle-2.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "一对同向、一对反向，得到的就是克莱因瓶。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "klein",
+      "line_id": "kle-3",
+      "filename": "klein-kle-3.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/klein-kle-3.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "在三维里它必须自我穿过，真正的它其实住在四维空间。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "orient",
+      "line_id": "ori-1",
+      "filename": "orient-ori-1.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/orient-ori-1.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "环面有清清楚楚的里和外，我们说它可定向。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "orient",
+      "line_id": "ori-2",
+      "filename": "orient-ori-2.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/orient-ori-2.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "克莱因瓶却没有内外之分，沿着它走一圈，左右会被悄悄调换。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "orient",
+      "line_id": "ori-3",
+      "filename": "orient-ori-3.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/orient-ori-3.mp3",
+      "duration": 1.46,
+      "size": 23328,
+      "text": "这种没有正反面的曲面，叫做不可定向。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "切换两种曲面，对照它们的线框有什么不同。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "拖动旋转，观察克莱因瓶那条自我穿过的脖子。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "同一张正方形，粘法不同，就分出了环面与克莱因瓶。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "一个可定向、一个不可定向，这正是拓扑学的迷人之处。"
+    },
+    {
+      "script_id": "torus-klein",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/torus-klein/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "边的粘合藏着一整个曲面的世界，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.06,
+  "total_size": 512928
+}

@@ -1,0 +1,160 @@
+{
+  "id": "box-counting-dimension",
+  "title": "盒维数",
+  "subtitle": "测量分形维数",
+  "difficulty": "advanced",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解盒计数覆盖分形的基本方法",
+    "认识 N(ε) 随尺度变化的幂律关系",
+    "掌握用 log-log 直线斜率估计维数",
+    "体会分形维数可以是分数"
+  ],
+  "prerequisites": [
+    "了解对数",
+    "了解直线斜率"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "一条线是一维，一个正方形是二维，那这个坑坑洼洼的分形呢？"
+        },
+        {
+          "id": "intro-2",
+          "text": "它比线更满，又填不满一块面积，维数似乎卡在中间。"
+        },
+        {
+          "id": "intro-3",
+          "text": "为了给它一个确切的数，我们需要一把新的尺子，叫盒维数。"
+        }
+      ]
+    },
+    {
+      "id": "boxcount",
+      "type": "concept",
+      "title": "盒计数",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "box-1",
+          "text": "方法很朴素：拿边长为 ε 的方格网盖住整个图形。"
+        },
+        {
+          "id": "box-2",
+          "text": "数一数有多少个格子里落着分形的点，记作 N(ε)。"
+        },
+        {
+          "id": "box-3",
+          "text": "空格子不算，只有沾到图形的格子才计入。"
+        }
+      ]
+    },
+    {
+      "id": "scale",
+      "type": "concept",
+      "title": "不同尺度",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "scale-1",
+          "text": "把格子变小，ε 减半，非空格子数就会成倍增加。"
+        },
+        {
+          "id": "scale-2",
+          "text": "对直线，格子减半数目翻一倍；对面片，减半会翻四倍。"
+        },
+        {
+          "id": "scale-3",
+          "text": "分形介于两者之间，N(ε) 大致按 (1/ε) 的某个幂次增长。"
+        }
+      ]
+    },
+    {
+      "id": "loglog",
+      "type": "concept",
+      "title": "log-log 斜率",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "log-1",
+          "text": "把每个尺度的 log(1/ε) 和 log N(ε) 画成散点。"
+        },
+        {
+          "id": "log-2",
+          "text": "这些点几乎排成一条直线，它的斜率就是盒维数 D。"
+        },
+        {
+          "id": "log-3",
+          "text": "谢尔宾斯基三角形的斜率约等于 1.585，也就是 log3 除以 log2。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换不同的 ε，看左边网格变密、非空格子变多。"
+        },
+        {
+          "id": "int-2",
+          "text": "再看右边的散点如何贴合那条拟合直线，斜率始终稳定。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "盒维数用不同尺度的方格覆盖分形，数出 N(ε)。"
+        },
+        {
+          "id": "sum-2",
+          "text": "log N 对 log(1/ε) 的直线斜率，就是这个分数维数。"
+        },
+        {
+          "id": "sum-3",
+          "text": "原来维数也能不是整数，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

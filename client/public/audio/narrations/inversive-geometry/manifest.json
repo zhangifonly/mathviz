@@ -1,0 +1,43 @@
+{
+  "script_id": "inversive-geometry",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/inversive-geometry/define-def-2.mp3",
+      "duration": 2.92,
+      "size": 46800,
+      "text": "任意一点 P，沿射线 O P 找它的像 P 撇，要求 O P 撇 乘 O P 等于 R 方。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "circle-to-circle",
+      "line_id": "c2c-1",
+      "filename": "circle-to-circle-c2c-1.mp3",
+      "path": "audio/narrations/inversive-geometry/circle-to-circle-c2c-1.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "再看一个不经过 O 的圆，它反演之后仍然是一个圆。"
+    },
+    {
+      "script_id": "inversive-geometry",
+      "section_id": "circle-to-circle",
+      "line_id": "c2c-2",
+      "filename": "circle-to-circle-c2c-2.mp3",
+      "path": "audio/narrations/inversive-geometry/circle-to-circle-c2c-2.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "于是我们把直线看成半径无穷大的圆，圆与直线合称广义圆。"
+    }
+  ],
+  "total_duration": 7.26,
+  "total_size": 116208,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

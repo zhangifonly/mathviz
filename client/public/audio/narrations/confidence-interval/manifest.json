@@ -1,0 +1,133 @@
+{
+  "script_id": "confidence-interval",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "confidence-interval",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/confidence-interval/intro-intro-1.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "我们想知道一个总体的平均值，可它往往是个未知数。"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/confidence-interval/intro-intro-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "于是我们抽一批样本，用样本的平均值去估计它。"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/confidence-interval/intro-intro-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "但一个孤零零的数字，没告诉我们它到底靠不靠谱。"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "estimate",
+      "line_id": "def-1",
+      "filename": "estimate-def-1.mp3",
+      "path": "audio/narrations/confidence-interval/estimate-def-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "与其报一个点，不如给出一段范围，这就是置信区间。"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "estimate",
+      "line_id": "def-2",
+      "filename": "estimate-def-2.mp3",
+      "path": "audio/narrations/confidence-interval/estimate-def-2.mp3",
+      "duration": 1.51,
+      "size": 24192,
+      "text": "它等于样本均值，加减 z 倍的标准误。"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "estimate",
+      "line_id": "def-3",
+      "filename": "estimate-def-3.mp3",
+      "path": "audio/narrations/confidence-interval/estimate-def-3.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "标准误是标准差除以根号 n，样本越多，区间就越窄。"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "coverage",
+      "line_id": "cov-2",
+      "filename": "coverage-cov-2.mp3",
+      "path": "audio/narrations/confidence-interval/coverage-cov-2.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "数一数绿条的比例，它会稳稳地贴近置信水平。"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/confidence-interval/interaction-int-1.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "多抽样几轮，看那条覆盖比例如何在95%附近上下摆动。"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/confidence-interval/interaction-int-2.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "把置信水平调到99%，区间会变宽，红条也变得更少。"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/confidence-interval/summary-sum-1.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "置信区间用一段范围来表达估计的不确定性。"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/confidence-interval/summary-sum-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "置信水平描述的是方法的长期覆盖率，而非单次的概率。"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/confidence-interval/summary-sum-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "读懂这份分寸感，数据才真正会说话，我们下次再见！"
+    }
+  ],
+  "total_duration": 23.06,
+  "total_size": 368928,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

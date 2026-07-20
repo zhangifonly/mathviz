@@ -1,0 +1,179 @@
+{
+  "script_id": "spherical-geometry",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "在一张纸上，两点之间最短的路是一条直线。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "可地球是圆的，飞机从北京飞纽约，走的却是一条弯弯的弧线。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "在球面上，笔直的直线并不存在，我们需要一种新的几何。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "geodesic",
+      "line_id": "def-1",
+      "filename": "geodesic-def-1.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/geodesic-def-1.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "过球心切开球面，得到的最大圆圈就叫大圆，比如赤道和所有经线。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "geodesic",
+      "line_id": "def-2",
+      "filename": "geodesic-def-2.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/geodesic-def-2.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "球面上两点间的最短路径，正是连接它们的那段大圆弧。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "geodesic",
+      "line_id": "def-3",
+      "filename": "geodesic-def-3.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/geodesic-def-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "所以大圆就是球面世界里的直线，我们叫它测地线。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "anglesum",
+      "line_id": "sum-1",
+      "filename": "anglesum-sum-1.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/anglesum-sum-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "用三段大圆弧围出一个球面三角形，量一量它的三个内角。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "anglesum",
+      "line_id": "sum-2",
+      "filename": "anglesum-sum-2.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/anglesum-sum-2.mp3",
+      "duration": 2.68,
+      "size": 42912,
+      "text": "你会发现三角和总是大于180度，而不是平面上那个固定的180度。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "anglesum",
+      "line_id": "sum-3",
+      "filename": "anglesum-sum-3.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/anglesum-sum-3.mp3",
+      "duration": 2.38,
+      "size": 38160,
+      "text": "取地球八分之一那块，三个角都是直角，加起来足足270度。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "excess",
+      "line_id": "exc-1",
+      "filename": "excess-exc-1.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/excess-exc-1.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "内角和超出180度的那部分，我们称为球面盈余。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "excess",
+      "line_id": "exc-2",
+      "filename": "excess-exc-2.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/excess-exc-2.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "盈余乘以半径的平方，恰好等于这个三角形的面积。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "excess",
+      "line_id": "exc-3",
+      "filename": "excess-exc-3.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/excess-exc-3.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "三角形越大，盈余越大，几何与面积竟如此紧密相连。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "切换不同的三角形，看内角和与盈余如何随之变化。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "旋转地球，观察大圆弧始终是两点间那条最短的路径。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "summary",
+      "line_id": "end-1",
+      "filename": "summary-end-1.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/summary-end-1.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "球面上大圆就是直线，是两点间的最短路径。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "summary",
+      "line_id": "end-2",
+      "filename": "summary-end-2.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/summary-end-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "球面三角形内角和大于180度，盈余正比于面积。"
+    },
+    {
+      "script_id": "spherical-geometry",
+      "section_id": "summary",
+      "line_id": "end-3",
+      "filename": "summary-end-3.mp3",
+      "path": "audio/narrations/spherical-geometry/xiaoxiao/summary-end-3.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "弯曲的空间里藏着另一套几何法则，我们下次再见！"
+    }
+  ],
+  "total_duration": 35.550000000000004,
+  "total_size": 568800
+}

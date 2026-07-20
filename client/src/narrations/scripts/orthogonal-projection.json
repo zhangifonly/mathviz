@@ -1,0 +1,160 @@
+{
+  "id": "orthogonal-projection",
+  "title": "正交投影",
+  "subtitle": "向子空间的最近点",
+  "difficulty": "intermediate",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "掌握向量投影公式 proj = (v·u/u·u) u",
+    "理解垂足是直线上离原向量最近的点",
+    "认识残差与投影方向正交这一核心性质",
+    "感受投影在分解与逼近中的作用"
+  ],
+  "prerequisites": [
+    "了解向量与点积",
+    "了解平面坐标"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "正午的阳光垂直照下，一根斜插的木棍会在地面留下影子。"
+        },
+        {
+          "id": "intro-2",
+          "text": "这道影子，就是木棍在地面这条直线上的投影。"
+        },
+        {
+          "id": "intro-3",
+          "text": "投影问的是：这个向量在某个方向上，究竟占了多少分量。"
+        }
+      ]
+    },
+    {
+      "id": "formula",
+      "type": "concept",
+      "title": "投影公式",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "给定向量 v 和方向 u，投影等于 v 点乘 u，再除以 u 点乘 u，乘上 u。"
+        },
+        {
+          "id": "def-2",
+          "text": "前面那个分数是投影系数，它告诉我们该沿 u 走多远。"
+        },
+        {
+          "id": "def-3",
+          "text": "若 u 是单位向量，公式就简化成 v 点乘 u 再乘 u。"
+        }
+      ]
+    },
+    {
+      "id": "nearest",
+      "type": "concept",
+      "title": "垂足是最近点",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "near-1",
+          "text": "从 v 的顶端向直线作垂线，落下的那个点就叫垂足。"
+        },
+        {
+          "id": "near-2",
+          "text": "在整条直线上，垂足是离 v 最近的点，没有之一。"
+        },
+        {
+          "id": "near-3",
+          "text": "这正是用投影做逼近的原因：它给出误差最小的近似。"
+        }
+      ]
+    },
+    {
+      "id": "residual",
+      "type": "concept",
+      "title": "残差正交",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "res-1",
+          "text": "用 v 减去投影，剩下的部分叫残差，图中那条虚线。"
+        },
+        {
+          "id": "res-2",
+          "text": "残差和投影方向恰好垂直，它们的点积等于零。"
+        },
+        {
+          "id": "res-3",
+          "text": "于是 v 被干净地拆成两块：一块沿方向，一块垂直于方向。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "换一个向量 v，看垂足和影子随之滑动。"
+        },
+        {
+          "id": "int-2",
+          "text": "转动直线的角度，注意那条虚线始终与直线保持垂直。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "投影公式把向量分解为方向分量与垂直残差。"
+        },
+        {
+          "id": "sum-2",
+          "text": "垂足是最近点，残差与方向正交，这是最小二乘的几何根基。"
+        },
+        {
+          "id": "sum-3",
+          "text": "看懂了影子，就看懂了逼近，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

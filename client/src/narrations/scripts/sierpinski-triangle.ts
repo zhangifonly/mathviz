@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 谢尔宾斯基三角 - 口播稿件
+ * 核心概念：递归自相似、分形、混沌游戏
+ * 目标受众：初中及以上
+ */
+export const sierpinskiTriangleNarration: NarrationScript = {
+  id: 'sierpinski-triangle',
+  title: '谢尔宾斯基三角',
+  subtitle: '挖洞与混沌游戏',
+  difficulty: 'elementary',
+  targetAge: '初中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解递归挖洞如何生成分形',
+    '认识自相似结构的特征',
+    '体会混沌游戏中随机也能生成秩序',
+    '感受分形之美与数学的统一',
+  ],
+
+  prerequisites: ['了解三角形', '了解中点概念'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '这是一个挖不完洞的三角形。' },
+        { id: 'intro-2', text: '取一个大三角，在正中间挖掉一个倒立的小三角。' },
+        { id: 'intro-3', text: '剩下的三个角，各自又是一个三角形，继续挖下去。' },
+      ],
+    },
+    {
+      id: 'recurse',
+      type: 'concept',
+      title: '递归挖中心',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '每一层都把每个三角分成四份，挖掉中间那份。' },
+        { id: 'def-2', text: '第 n 层就留下三的 n 次方个小三角形。' },
+        { id: 'def-3', text: '无限挖下去，图形的面积趋于零，边界却无限长。' },
+      ],
+    },
+    {
+      id: 'selfsimilar',
+      type: 'concept',
+      title: '自相似',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sim-1', text: '把任意一个小角放大，你会看到和整体一模一样的结构。' },
+        { id: 'sim-2', text: '这种局部与整体相似的性质，叫做自相似，是分形的灵魂。' },
+        { id: 'sim-3', text: '它的分形维数约为一点五八五，介于线与面之间。' },
+      ],
+    },
+    {
+      id: 'chaos',
+      type: 'concept',
+      title: '混沌游戏',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'cha-1', text: '换个玩法：随手点一个起点，随机选三角的一个顶点。' },
+        { id: 'cha-2', text: '每次把当前点向选中的顶点移动一半，再重复几万次。' },
+        { id: 'cha-3', text: '神奇的是，这堆随机点竟然拼出了同一个三角形。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '切换递归和混沌两种模式，看它们殊途同归。' },
+        { id: 'int-2', text: '调整层数，层数越高，分形的细节就越丰富。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '不停挖掉中心，就诞生了自相似的谢尔宾斯基三角。' },
+        { id: 'sum-2', text: '递归的秩序与随机的混沌，居然指向同一个图形。' },
+        { id: 'sum-3', text: '简单规则藏着无穷的美，我们下次再见！' },
+      ],
+    },
+  ],
+}

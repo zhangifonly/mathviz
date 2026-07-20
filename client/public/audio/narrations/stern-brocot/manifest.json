@@ -1,0 +1,183 @@
+{
+  "script_id": "stern-brocot",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "stern-brocot",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/stern-brocot/intro-intro-1.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "所有的正分数，能不能一个不漏地排成一棵树？"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/stern-brocot/intro-intro-2.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "答案是可以，这棵树叫做 Stern-Brocot 树。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/stern-brocot/intro-intro-3.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "它从两个最简单的边界出发：零分之一，和一分之零。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/stern-brocot/intro-intro-4.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "在它们之间，一条规则就长出了全部分数。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "mediant",
+      "line_id": "def-1",
+      "filename": "mediant-def-1.mp3",
+      "path": "audio/narrations/stern-brocot/mediant-def-1.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "两个分数的中位数，就是把分子相加、分母相加。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "mediant",
+      "line_id": "def-2",
+      "filename": "mediant-def-2.mp3",
+      "path": "audio/narrations/stern-brocot/mediant-def-2.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "零一和一零的中位数，是一分之一，正好落在它们中间，成为树根。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "mediant",
+      "line_id": "def-3",
+      "filename": "mediant-def-3.mp3",
+      "path": "audio/narrations/stern-brocot/mediant-def-3.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "再对左右两段各取中位数，就分出下一层，如此递归生长。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "reduced",
+      "line_id": "red-1",
+      "filename": "reduced-red-1.mp3",
+      "path": "audio/narrations/stern-brocot/reduced-red-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "神奇的是，这样生成的每个分数，天生就是既约的。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "reduced",
+      "line_id": "red-2",
+      "filename": "reduced-red-2.mp3",
+      "path": "audio/narrations/stern-brocot/reduced-red-2.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "分子分母永远互质，用不着再约分。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "reduced",
+      "line_id": "red-3",
+      "filename": "reduced-red-3.mp3",
+      "path": "audio/narrations/stern-brocot/reduced-red-3.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "而且每个正既约分数都恰好出现一次，不重复也不遗漏。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "cf",
+      "line_id": "cf-1",
+      "filename": "cf-cf-1.mp3",
+      "path": "audio/narrations/stern-brocot/cf-cf-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "从树根往下走，每一步只有向左或向右两种选择。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "cf",
+      "line_id": "cf-2",
+      "filename": "cf-cf-2.mp3",
+      "path": "audio/narrations/stern-brocot/cf-cf-2.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "这串左右指令，恰好就是这个分数的连分数展开。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/stern-brocot/interaction-int-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "展开更多层，看分数如何一层层细密地铺满数轴。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/stern-brocot/interaction-int-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "注意每一层的分数，都被上一层的中位数整齐地隔开。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/stern-brocot/summary-sum-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "中位数规则，把全部既约分数排成一棵有序的树。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/stern-brocot/summary-sum-2.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "每个分数唯一现身，路径又暗合连分数。"
+    },
+    {
+      "script_id": "stern-brocot",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/stern-brocot/summary-sum-3.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "简单的相加，装下了无穷的分数世界，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.53,
+  "total_size": 520560,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

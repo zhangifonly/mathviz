@@ -1,0 +1,173 @@
+{
+  "script_id": "kmeans",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "kmeans",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/kmeans/intro-intro-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "桌上撒了一把豆子，你一眼就能看出它们大致聚成了几堆。"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/kmeans/intro-intro-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "可计算机没有眼睛，它要怎么把这些散点自动分成几组呢？"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/kmeans/intro-intro-3.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "K-means 就是最经典的自动分组算法，简单却出奇地好用。"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "centers",
+      "line_id": "def-1",
+      "filename": "centers-def-1.mp3",
+      "path": "audio/narrations/kmeans/centers-def-1.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "我们先决定要分成几组，这个数量就叫 K。"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "centers",
+      "line_id": "def-2",
+      "filename": "centers-def-2.mp3",
+      "path": "audio/narrations/kmeans/centers-def-2.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "然后随便放下 K 个中心点，作为每一组的临时代表。"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "centers",
+      "line_id": "def-3",
+      "filename": "centers-def-3.mp3",
+      "path": "audio/narrations/kmeans/centers-def-3.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "接下来的任务，就是不断调整这些中心，让它们落到数据真正的中心。"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "assign",
+      "line_id": "asg-1",
+      "filename": "assign-asg-1.mp3",
+      "path": "audio/narrations/kmeans/assign-asg-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "第一步叫分配：让每个数据点，认离它最近的那个中心当组长。"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "assign",
+      "line_id": "asg-2",
+      "filename": "assign-asg-2.mp3",
+      "path": "audio/narrations/kmeans/assign-asg-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "于是所有点都被染上了它所属那一组的颜色。"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "update",
+      "line_id": "upd-1",
+      "filename": "update-upd-1.mp3",
+      "path": "audio/narrations/kmeans/update-upd-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "第二步叫更新：把每个中心，搬到它这一组所有点的平均位置。"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "update",
+      "line_id": "upd-2",
+      "filename": "update-upd-2.mp3",
+      "path": "audio/narrations/kmeans/update-upd-2.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "中心动了，各点最近的组长可能就变了，于是再回到分配步。"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "update",
+      "line_id": "upd-3",
+      "filename": "update-upd-3.mp3",
+      "path": "audio/narrations/kmeans/update-upd-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "分配、更新、分配、更新，两步不停交替。"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/kmeans/interaction-int-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "点击单步迭代，看中心一步步滑向各堆的正中央。"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/kmeans/interaction-int-2.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "当中心不再移动，就说明算法收敛，分组稳定了。"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/kmeans/summary-sum-1.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "K-means 靠分配与更新两步交替，把散点收拢成 K 个簇。"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/kmeans/summary-sum-2.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "它被广泛用于图像压缩、客户分群和数据探索。"
+    },
+    {
+      "script_id": "kmeans",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/kmeans/summary-sum-3.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "简单的取最近、算均值，就让机器学会了分组，我们下次再见！"
+    }
+  ],
+  "total_duration": 32.67,
+  "total_size": 522576,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

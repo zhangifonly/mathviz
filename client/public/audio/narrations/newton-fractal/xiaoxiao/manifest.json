@@ -1,0 +1,179 @@
+{
+  "script_id": "newton-fractal",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "newton-fractal",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.39,
+      "size": 22176,
+      "text": "牛顿法是解方程求根的经典利器。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "可你也许想不到，把它搬到复平面上，竟能长出绚烂的分形。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "今天我们就看，求根这件事怎样画出一幅无穷精细的图案。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "iterate",
+      "line_id": "def-1",
+      "filename": "iterate-def-1.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/iterate-def-1.mp3",
+      "duration": 2.5,
+      "size": 40032,
+      "text": "对多项式 f，从一个复数 z 出发，反复做 z 减去 f 比 f 的导数。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "iterate",
+      "line_id": "def-2",
+      "filename": "iterate-def-2.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/iterate-def-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "这就是牛顿迭代，每一步都把 z 推向离它更近的一个根。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "iterate",
+      "line_id": "def-3",
+      "filename": "iterate-def-3.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/iterate-def-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "以 z 三次方减一为例，它在复平面上有三个立方根。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "basin",
+      "line_id": "basin-1",
+      "filename": "basin-basin-1.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/basin-basin-1.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "把复平面上每一点当作起点，看它最终收敛到哪个根。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "basin",
+      "line_id": "basin-2",
+      "filename": "basin-basin-2.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/basin-basin-2.mp3",
+      "duration": 2.68,
+      "size": 42912,
+      "text": "收敛到同一个根的所有起点，涂成同一种颜色，这片区域就叫收敛盆地。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "basin",
+      "line_id": "basin-3",
+      "filename": "basin-basin-3.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/basin-basin-3.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "颜色越亮表示收敛越快，越暗则说明迭代得越久。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "boundary",
+      "line_id": "edge-1",
+      "filename": "boundary-edge-1.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/boundary-edge-1.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "奇妙的是，不同盆地的边界并不是光滑曲线。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "boundary",
+      "line_id": "edge-2",
+      "filename": "boundary-edge-2.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/boundary-edge-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "无论放大到哪一层，边界上总有三种颜色犬牙交错地纠缠。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "boundary",
+      "line_id": "edge-3",
+      "filename": "boundary-edge-3.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/boundary-edge-3.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "边界处起点差之毫厘，归宿便谬以千里，这正是混沌。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "切换到 z 四次方减一，四个根会织出四色的对称花纹。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "不断放大边界，自相似的细节会一层层浮现，永无止境。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "复数牛顿迭代按起点把平面分成一块块收敛盆地。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "盆地边界是无穷精细的分形，藏着混沌的敏感依赖。"
+    },
+    {
+      "script_id": "newton-fractal",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/newton-fractal/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "一个古老的求根算法，画出了数学的绚丽，我们下次再见！"
+    }
+  ],
+  "total_duration": 34.89,
+  "total_size": 558144
+}

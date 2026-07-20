@@ -1,0 +1,179 @@
+{
+  "script_id": "fast-exponentiation",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.4,
+      "size": 22320,
+      "text": "假如要算 2 的 100 次方，你会怎么做？"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.4,
+      "size": 22464,
+      "text": "一个一个乘，需要整整九十九次乘法。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "而快速幂只要不到十次，就能得到同样的答案。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "naive",
+      "line_id": "naive-1",
+      "filename": "naive-naive-1.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/naive-naive-1.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "朴素做法是把底数连乘指数次，乘法次数随指数线性增长。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "naive",
+      "line_id": "naive-2",
+      "filename": "naive-naive-2.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/naive-naive-2.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "指数一旦上百万，这种做法就慢得无法接受。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "naive",
+      "line_id": "naive-3",
+      "filename": "naive-naive-3.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/naive-naive-3.mp3",
+      "duration": 1.22,
+      "size": 19584,
+      "text": "我们需要一个增长慢得多的办法。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "binary",
+      "line_id": "bin-1",
+      "filename": "binary-bin-1.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/binary-bin-1.mp3",
+      "duration": 1.26,
+      "size": 20160,
+      "text": "关键在于把指数写成二进制。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "binary",
+      "line_id": "bin-2",
+      "filename": "binary-bin-2.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/binary-bin-2.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "比如 13 等于 1101，也就是 8 加 4 加 1。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "binary",
+      "line_id": "bin-3",
+      "filename": "binary-bin-3.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/binary-bin-3.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "于是幂就拆成了若干个底数平方项的乘积。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "squaremul",
+      "line_id": "sq-1",
+      "filename": "squaremul-sq-1.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/squaremul-sq-1.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "从低位到高位扫描，底数每一步都平方一次。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "squaremul",
+      "line_id": "sq-2",
+      "filename": "squaremul-sq-2.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/squaremul-sq-2.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "遇到为 1 的位，就把当前底数乘进结果里。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "squaremul",
+      "line_id": "sq-3",
+      "filename": "squaremul-sq-3.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/squaremul-sq-3.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "这样乘法次数只和二进制位数有关，是对数级别。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "试着输入不同的底数和指数，看每一步的平方与累乘。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "对比一下快速幂和朴素法的乘法次数差距。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "快速幂靠二进制分解，把连乘变成平方与乘。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "乘法次数从线性降到对数，大指数也能瞬间算出。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/fast-exponentiation/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "一个二进制的小技巧，换来巨大的加速，我们下次再见！"
+    }
+  ],
+  "total_duration": 29.06,
+  "total_size": 465120
+}

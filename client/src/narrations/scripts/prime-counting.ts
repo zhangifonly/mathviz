@@ -1,0 +1,98 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 素数计数与素数定理 - 口播稿件
+ * 核心概念：素数计数函数 π(x)、素数定理、对数积分 Li(x)
+ * 目标受众：高中及以上
+ */
+export const primeCountingNarration: NarrationScript = {
+  id: 'prime-counting',
+  title: '素数计数与素数定理',
+  subtitle: '素数分布的宏观规律',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解素数计数函数 π(x) 的定义',
+    '认识素数定理 π(x) ~ x/ln(x)',
+    '了解对数积分 Li(x) 是更精确的近似',
+    '感受素数分布从杂乱到规律的宏观美',
+  ],
+
+  prerequisites: ['了解素数概念', '了解对数函数'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '素数是只能被 1 和自身整除的数，它们像质数世界的原子。' },
+        { id: 'intro-2', text: '可越往大处走，素数就越来越稀疏。' },
+        { id: 'intro-3', text: '一百以内有二十五个素数，可到了一千,平均每七个数才有一个素数。' },
+      ],
+    },
+    {
+      id: 'pi',
+      type: 'concept',
+      title: '素数计数函数',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'pi-1', text: '我们用 π(x) 表示不超过 x 的素数个数。' },
+        { id: 'pi-2', text: '每遇到一个新素数，π(x) 就往上跳一格，画出来是一条阶梯曲线。' },
+        { id: 'pi-3', text: '阶梯看似杂乱，但放到大尺度上，它竟隐藏着惊人的规律。' },
+      ],
+    },
+    {
+      id: 'pnt',
+      type: 'concept',
+      title: '素数定理',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'pnt-1', text: '素数定理说：当 x 很大时，π(x) 约等于 x 除以 x 的自然对数。' },
+        { id: 'pnt-2', text: '也就是 π(x) 与 x/ln(x) 的比值,会随 x 增大而越来越接近 1。' },
+        { id: 'pnt-3', text: '杂乱的素数，宏观上服从一条平滑而确定的曲线。' },
+      ],
+    },
+    {
+      id: 'li',
+      type: 'concept',
+      title: '对数积分',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'li-1', text: '想更精确，可以用对数积分 Li(x)，也就是把 1 除以 ln t 从 2 积到 x。' },
+        { id: 'li-2', text: 'Li(x) 几乎贴着阶梯曲线走，比 x/ln(x) 精确得多。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '调整上界 x，看阶梯曲线与两条近似曲线如何越靠越紧。' },
+        { id: 'int-2', text: 'x 越大，三条线几乎重合，逼近的力量一目了然。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: 'π(x) 数出素数个数，是一条向上的阶梯。' },
+        { id: 'sum-2', text: '素数定理让它趋近 x/ln(x)，对数积分 Li(x) 则更精确。' },
+        { id: 'sum-3', text: '看似随机的素数，藏着深刻的秩序，我们下次再见！' },
+      ],
+    },
+  ],
+}

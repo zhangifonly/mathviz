@@ -1,0 +1,179 @@
+{
+  "script_id": "solid-of-revolution",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "取一条曲线 y 等于 f(x)，让它绕着 x 轴转一整圈。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "曲线扫过的空间，就围出了一个立体，我们叫它旋转体。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.48,
+      "size": 23616,
+      "text": "问题来了：这个立体的体积，该怎么算？"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "disk",
+      "line_id": "def-1",
+      "filename": "disk-def-1.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/disk-def-1.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "把立体沿 x 方向切成许多薄薄的圆盘。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "disk",
+      "line_id": "def-2",
+      "filename": "disk-def-2.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/disk-def-2.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "每个圆盘的半径正好是 f(x)，面积就是 π 乘 f(x) 的平方。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "disk",
+      "line_id": "def-3",
+      "filename": "disk-def-3.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/disk-def-3.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "再乘上薄薄的厚度，就是一片圆盘的体积。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "integral",
+      "line_id": "int-1",
+      "filename": "integral-int-1.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/integral-int-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "把所有圆盘的体积加起来，让厚度趋于零，求和就变成了积分。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "integral",
+      "line_id": "int-2",
+      "filename": "integral-int-2.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/integral-int-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "于是体积等于从 a 到 b，对 π f(x) 平方求定积分。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "integral",
+      "line_id": "int-3",
+      "filename": "integral-int-3.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/integral-int-3.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "计算机用辛普森法做数值积分，能精确地逼近这个值。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "shell",
+      "line_id": "shl-1",
+      "filename": "shell-shl-1.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/shell-shl-1.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "换个视角，我们也能沿 y 方向，把立体套成一层层薄圆筒。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "shell",
+      "line_id": "shl-2",
+      "filename": "shell-shl-2.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/shell-shl-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "每层圆筒的体积是 2π 乘半径 y，再乘它的高与厚度。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "shell",
+      "line_id": "shl-3",
+      "filename": "shell-shl-3.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/shell-shl-3.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "这就是壳层法，它和圆盘法算的是同一个立体，结果必然相等。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "interaction",
+      "line_id": "ita-1",
+      "filename": "interaction-ita-1.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/interaction-ita-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "换一条曲线，或者拖动积分区间，看看体积如何随之改变。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "interaction",
+      "line_id": "ita-2",
+      "filename": "interaction-ita-2.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/interaction-ita-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "注意屏幕上圆盘法与壳层法给出的数字，始终紧紧咬合。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "旋转体的体积，可以切成圆盘,也可以套成壳层。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "两条思路都用积分把无数薄片累加成整体，答案完全一致。"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/solid-of-revolution/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "一样的立体，两种视角，这就是微积分的美妙，我们下次再见！"
+    }
+  ],
+  "total_duration": 34.25,
+  "total_size": 547920
+}

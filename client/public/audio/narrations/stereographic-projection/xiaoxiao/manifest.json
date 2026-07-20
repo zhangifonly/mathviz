@@ -1,0 +1,189 @@
+{
+  "script_id": "stereographic-projection",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "我们想把一整个球面，摊平成一张平面地图。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "球面是弯的，平面是直的，怎样才能建立起一一对应？"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "数学家给出一个优雅的办法，叫做球极投影。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "project",
+      "line_id": "proj-1",
+      "filename": "project-proj-1.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/project-proj-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "在球的最上方取一个北极点，让它当作投影的光源。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "project",
+      "line_id": "proj-2",
+      "filename": "project-proj-2.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/project-proj-2.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "从北极向球面上任意一点连一条射线，一直延伸到赤道平面。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "project",
+      "line_id": "proj-3",
+      "filename": "project-proj-3.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/project-proj-3.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "射线与平面的交点，就是这个球面点的像。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "project",
+      "line_id": "proj-4",
+      "filename": "project-proj-4.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/project-proj-4.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "写成公式，就是 X 等于 x 除以一减 z，Y 等于 y 除以一减 z。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "conformal",
+      "line_id": "conf-1",
+      "filename": "conformal-conf-1.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/conformal-conf-1.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "球极投影最迷人的性质，是它保持角度不变。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "conformal",
+      "line_id": "conf-2",
+      "filename": "conformal-conf-2.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/conformal-conf-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "球面上两条曲线相交成多少度，投到平面上仍然是多少度。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "conformal",
+      "line_id": "conf-3",
+      "filename": "conformal-conf-3.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/conformal-conf-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "这种保角的映射，在数学里被称为共形映射。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "circle",
+      "line_id": "circ-1",
+      "filename": "circle-circ-1.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/circle-circ-1.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "还有一条奇妙的规律：球面上的圆，投影后依然是圆。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "circle",
+      "line_id": "circ-2",
+      "filename": "circle-circ-2.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/circle-circ-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "唯一的例外是经过北极的圆，它会被拉直成一条直线。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "circle",
+      "line_id": "circ-3",
+      "filename": "circle-circ-3.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/circle-circ-3.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "于是纬线变成一圈圈同心圆，经线变成从原点放射的直线。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "拖动滑块旋转球面，看左边的网格如何转动。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "再看右边平面上的像，同心圆与放射线随之优雅地舒展。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "球极投影从北极出发，把球面一一映到平面。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "它保角、又把圆变成圆，是地图学与复分析的基石。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/stereographic-projection/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "一次投射,让弯曲的世界摊成平面,我们下次再见！"
+    }
+  ],
+  "total_duration": 35.080000000000005,
+  "total_size": 561312
+}

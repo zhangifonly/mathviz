@@ -1,0 +1,193 @@
+{
+  "script_id": "huffman-coding",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "huffman-coding",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/huffman-coding/intro-intro-2.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "如果每个字符都用同样长的编码，常见字和罕见字就一样占地方。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/huffman-coding/intro-intro-3.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "可文字里字母出现的频率天差地别，能不能让常见字更省位数？"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/huffman-coding/intro-intro-4.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "哈夫曼编码给出了最优答案，我们这就来看看。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "variable",
+      "line_id": "var-1",
+      "filename": "variable-var-1.mp3",
+      "path": "audio/narrations/huffman-coding/variable-var-1.mp3",
+      "duration": 2.87,
+      "size": 45936,
+      "text": "核心思路是：出现次数多的字符，用短编码；出现次数少的，用长编码。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "variable",
+      "line_id": "var-2",
+      "filename": "variable-var-2.mp3",
+      "path": "audio/narrations/huffman-coding/variable-var-2.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "这样总位数由高频字符主导，整体自然被压缩下来。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "variable",
+      "line_id": "var-3",
+      "filename": "variable-var-3.mp3",
+      "path": "audio/narrations/huffman-coding/variable-var-3.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "就像摩尔斯电码里，最常用的字母 E 只用一个点。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "prefix",
+      "line_id": "pre-1",
+      "filename": "prefix-pre-1.mp3",
+      "path": "audio/narrations/huffman-coding/prefix-pre-1.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "但长度不一带来新问题：一串 0 和 1 该从哪里断开？"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "prefix",
+      "line_id": "pre-2",
+      "filename": "prefix-pre-2.mp3",
+      "path": "audio/narrations/huffman-coding/prefix-pre-2.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "哈夫曼用前缀码解决：任何字符的编码，都不是另一个字符编码的开头。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "prefix",
+      "line_id": "pre-3",
+      "filename": "prefix-pre-3.mp3",
+      "path": "audio/narrations/huffman-coding/prefix-pre-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "于是解码时一路读到匹配就断开，绝不会产生歧义。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "greedy",
+      "line_id": "gre-1",
+      "filename": "greedy-gre-1.mp3",
+      "path": "audio/narrations/huffman-coding/greedy-gre-1.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "把每个字符看成一个节点，频率写在上面。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "greedy",
+      "line_id": "gre-2",
+      "filename": "greedy-gre-2.mp3",
+      "path": "audio/narrations/huffman-coding/greedy-gre-2.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "每次取出频率最小的两个节点，合并成一个新节点，频率相加。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "greedy",
+      "line_id": "gre-3",
+      "filename": "greedy-gre-3.mp3",
+      "path": "audio/narrations/huffman-coding/greedy-gre-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "不断重复，直到只剩一个根，一棵哈夫曼树就长成了。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "greedy",
+      "line_id": "gre-4",
+      "filename": "greedy-gre-4.mp3",
+      "path": "audio/narrations/huffman-coding/greedy-gre-4.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "从根往下走，左边记 0、右边记 1，每片叶子的路径就是它的编码。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/huffman-coding/interaction-int-1.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "换一段文本，看树的形状和编码表怎样随频率改变。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/huffman-coding/interaction-int-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "对比定长和哈夫曼的位数，感受压缩率一路降下来。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/huffman-coding/summary-sum-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "哈夫曼编码用变长前缀码，让高频字符更省位数。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/huffman-coding/summary-sum-2.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "每次合并两个最小频率节点的贪心，给出了最优编码。"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/huffman-coding/summary-sum-3.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "它是 ZIP、JPEG 背后的老功臣，一个贪心创造的压缩魔法，我们下次再见！"
+    }
+  ],
+  "total_duration": 38.529999999999994,
+  "total_size": 616320,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

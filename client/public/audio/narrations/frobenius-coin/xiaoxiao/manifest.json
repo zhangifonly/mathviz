@@ -1,0 +1,189 @@
+{
+  "script_id": "frobenius-coin",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "假如口袋里只有面值 3 元和 5 元的硬币。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "3 元、5 元、6 元、8 元都能不多不少地凑出来。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "可是 1 元、2 元、4 元、7 元，无论怎么组合都凑不出。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/intro-intro-4.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "一个自然的问题浮现：凑不出的最大金额到底是多少？"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "representable",
+      "line_id": "rep-1",
+      "filename": "representable-rep-1.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/representable-rep-1.mp3",
+      "duration": 1.43,
+      "size": 22896,
+      "text": "把每种硬币想成可以无限使用的积木。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "representable",
+      "line_id": "rep-2",
+      "filename": "representable-rep-2.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/representable-rep-2.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "一个金额可表示，就是它能写成这些面额的非负整数组合。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "representable",
+      "line_id": "rep-3",
+      "filename": "representable-rep-3.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/representable-rep-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "当面额互质时，足够大的金额一定都能凑出来。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "formula",
+      "line_id": "form-1",
+      "filename": "formula-form-1.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/formula-form-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "只有两枚互质硬币 a 和 b 时，答案有优雅的闭式。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "formula",
+      "line_id": "form-2",
+      "filename": "formula-form-2.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/formula-form-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "最大凑不出的金额正好是 a 乘 b 再减去 a 减去 b。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "formula",
+      "line_id": "form-3",
+      "filename": "formula-form-3.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/formula-form-3.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "比如 3 和 5，代入得到 15 减 3 减 5，等于 7。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "mcnugget",
+      "line_id": "mcn-1",
+      "filename": "mcnugget-mcn-1.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/mcnugget-mcn-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "曾经麦乐鸡只有 6 块、9 块和 20 块三种包装。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "mcnugget",
+      "line_id": "mcn-2",
+      "filename": "mcnugget-mcn-2.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/mcnugget-mcn-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "三枚硬币没有闭式公式，只能用动态规划逐个标记。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "mcnugget",
+      "line_id": "mcn-3",
+      "filename": "mcnugget-mcn-3.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/mcnugget-mcn-3.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "算下来，43 块是最大买不到的数目，这就是著名的麦乐鸡数。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "切换不同面额组合，看绿色可凑与红色不可凑如何分布。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "注意那个被高亮的红格，它就是这组面额的 Frobenius 数。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "Frobenius 数是互质面额下无法凑出的最大金额。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "两枚硬币用 ab 减 a 减 b，多枚硬币交给动态规划。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/frobenius-coin/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "一枚硬币里藏着深刻的数论，我们下次再见！"
+    }
+  ],
+  "total_duration": 34.57,
+  "total_size": 553248
+}

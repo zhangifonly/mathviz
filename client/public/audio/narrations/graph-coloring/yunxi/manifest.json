@@ -1,0 +1,89 @@
+{
+  "script_id": "graph-coloring",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "graph-coloring",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/intro-intro-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "给一张地图上色，你想让相邻的两个国家颜色不同。"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "greedy",
+      "line_id": "greedy-2",
+      "filename": "greedy-greedy-2.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/greedy-greedy-2.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "给当前节点挑一个还没被它邻居用过的、编号最小的颜色。"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "greedy",
+      "line_id": "greedy-3",
+      "filename": "greedy-greedy-3.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/greedy-greedy-3.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "贪心很快，但用到的颜色不一定最少，答案还和节点顺序有关。"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "chromatic",
+      "line_id": "chrom-1",
+      "filename": "chromatic-chrom-1.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/chromatic-chrom-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "一张图能被合法着色所需的最少颜色数，叫做它的色数。"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "chromatic",
+      "line_id": "chrom-2",
+      "filename": "chromatic-chrom-2.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/chromatic-chrom-2.mp3",
+      "duration": 2.73,
+      "size": 43632,
+      "text": "要求出色数，可以用回溯法：从一种颜色开始逐步增加，直到能涂满为止。"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "chromatic",
+      "line_id": "chrom-3",
+      "filename": "chromatic-chrom-3.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/chromatic-chrom-3.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "著名的四色定理说：任何平面地图，四种颜色一定够用。"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/interaction-int-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "再对比回溯法求出的真正色数，感受两者的差距。"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/summary-sum-3.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "从地图到调度，图着色无处不在，我们下次再见！"
+    }
+  ],
+  "total_duration": 16.98,
+  "total_size": 271584
+}

@@ -1,0 +1,179 @@
+{
+  "script_id": "catenary",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "catenary",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "抓住一条项链或电线的两端，让它自然下垂。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "它会摆出一条优雅的下弯曲线，两端翘起，中间最低。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "这条曲线有个专门的名字，叫做悬链线。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "cosh",
+      "line_id": "def-1",
+      "filename": "cosh-def-1.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/cosh-def-1.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "悬链线的方程是 y 等于 a 乘以双曲余弦 x 除以 a。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "cosh",
+      "line_id": "def-2",
+      "filename": "cosh-def-2.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/cosh-def-2.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "双曲余弦，就是 e 的 x 次方与 e 的负 x 次方之和的一半。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "cosh",
+      "line_id": "def-3",
+      "filename": "cosh-def-3.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/cosh-def-3.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "参数 a 决定曲线的胖瘦，a 越小垂得越深，a 越大越平坦。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "parabola",
+      "line_id": "par-1",
+      "filename": "parabola-par-1.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/parabola-par-1.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "很多人以为下垂的链条是抛物线，其实不是。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "parabola",
+      "line_id": "par-2",
+      "filename": "parabola-par-2.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/parabola-par-2.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "在顶点附近两者几乎重合，但离开中心后，悬链线上升得更快。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "parabola",
+      "line_id": "par-3",
+      "filename": "parabola-par-3.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/parabola-par-3.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "伽利略当年也猜成了抛物线，直到后人用微积分才算清真相。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "arch",
+      "line_id": "arc-1",
+      "filename": "arch-arc-1.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/arch-arc-1.mp3",
+      "duration": 1.38,
+      "size": 22032,
+      "text": "把悬链线上下翻转，就得到一道拱。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "arch",
+      "line_id": "arc-2",
+      "filename": "arch-arc-2.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/arch-arc-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "这样的拱只承受压力，没有弯矩，是最省力的形状。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "arch",
+      "line_id": "arc-3",
+      "filename": "arch-arc-3.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/arch-arc-3.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "高迪设计圣家堂时，就用倒挂的链条模型来寻找这种拱。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "调整参数 a，看曲线在深与平之间连续变化。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "打开对比抛物线，再点倒置，亲眼看看它变成拱的样子。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "悬链线是柔软链条自然下垂的形状，方程用双曲余弦描述。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "它像抛物线却不是，倒过来又成为最优的受压拱。"
+    },
+    {
+      "script_id": "catenary",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/catenary/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "一条链条里藏着这么多数学，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.12,
+  "total_size": 529776
+}

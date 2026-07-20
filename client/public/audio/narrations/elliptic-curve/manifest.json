@@ -1,0 +1,153 @@
+{
+  "script_id": "elliptic-curve",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/elliptic-curve/intro-intro-1.mp3",
+      "duration": 1.12,
+      "size": 18000,
+      "text": "今天我们来看一种奇特的加法。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/elliptic-curve/intro-intro-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "它不是数字相加，而是把曲线上的两个点加在一起。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/elliptic-curve/intro-intro-3.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "两个点相加，竟然又落回同一条曲线上。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/elliptic-curve/intro-intro-4.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "这就是椭圆曲线，现代密码学的基石之一。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "equation",
+      "line_id": "def-1",
+      "filename": "equation-def-1.mp3",
+      "path": "audio/narrations/elliptic-curve/equation-def-1.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "椭圆曲线的方程是 y 的平方等于 x 的立方加 a x 加 b。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "equation",
+      "line_id": "def-2",
+      "filename": "equation-def-2.mp3",
+      "path": "audio/narrations/elliptic-curve/equation-def-2.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "它关于 x 轴对称，常常呈现一条主干和一个孤立的环。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "equation",
+      "line_id": "def-3",
+      "filename": "equation-def-3.mp3",
+      "path": "audio/narrations/elliptic-curve/equation-def-3.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "只要判别式不为零，曲线就光滑无尖点，我们才能在上面做加法。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "geometry",
+      "line_id": "geo-1",
+      "filename": "geometry-geo-1.mp3",
+      "path": "audio/narrations/elliptic-curve/geometry-geo-1.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "要计算 P 加 Q，先过这两点画一条直线。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "geometry",
+      "line_id": "geo-2",
+      "filename": "geometry-geo-2.mp3",
+      "path": "audio/narrations/elliptic-curve/geometry-geo-2.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "这条直线一定会与曲线相交于第三个点。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "geometry",
+      "line_id": "geo-3",
+      "filename": "geometry-geo-3.mp3",
+      "path": "audio/narrations/elliptic-curve/geometry-geo-3.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "把第三点关于 x 轴翻折，得到的点就定义为 P 加 Q。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "infinity",
+      "line_id": "inf-1",
+      "filename": "infinity-inf-1.mp3",
+      "path": "audio/narrations/elliptic-curve/infinity-inf-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "如果两点上下对称，连线竖直，直线似乎交不到第三点。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "infinity",
+      "line_id": "inf-2",
+      "filename": "infinity-inf-2.mp3",
+      "path": "audio/narrations/elliptic-curve/infinity-inf-2.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "数学家约定，此时它们相交于一个无穷远点 O。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/elliptic-curve/summary-sum-2.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "无穷远点是单位元，翻折给出每个点的负元。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/elliptic-curve/summary-sum-3.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "这套优雅的几何规则守护着今天的信息安全，我们下次再见！"
+    }
+  ],
+  "total_duration": 26.019999999999996,
+  "total_size": 416448,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

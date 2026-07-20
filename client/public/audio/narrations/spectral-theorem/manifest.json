@@ -1,0 +1,173 @@
+{
+  "script_id": "spectral-theorem",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/spectral-theorem/intro-intro-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "在所有方阵里，对称矩阵是格外优雅的一类。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/spectral-theorem/intro-intro-2.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "它沿主对角线镜像对称，转置后与自己完全相同。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/spectral-theorem/intro-intro-3.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "正是这份对称，赋予了它一个近乎完美的分解定理。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "concept-eigen",
+      "line_id": "def-1",
+      "filename": "concept-eigen-def-1.mp3",
+      "path": "audio/narrations/spectral-theorem/concept-eigen-def-1.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "谱定理说：实对称矩阵的特征值一定都是实数，绝不会跑到复数域。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "concept-eigen",
+      "line_id": "def-2",
+      "filename": "concept-eigen-def-2.mp3",
+      "path": "audio/narrations/spectral-theorem/concept-eigen-def-2.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "而且不同特征值对应的特征向量，彼此严格正交，互成直角。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "concept-eigen",
+      "line_id": "def-3",
+      "filename": "concept-eigen-def-3.mp3",
+      "path": "audio/narrations/spectral-theorem/concept-eigen-def-3.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "于是我们能选出一组标准正交的特征向量，作为最自然的坐标轴。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "concept-formula",
+      "line_id": "form-2",
+      "filename": "concept-formula-form-2.mp3",
+      "path": "audio/narrations/spectral-theorem/concept-formula-form-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "每一项都是特征值乘以特征向量的外积，是一个秩一的投影。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "concept-formula",
+      "line_id": "form-3",
+      "filename": "concept-formula-form-3.mp3",
+      "path": "audio/narrations/spectral-theorem/concept-formula-form-3.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "对称矩阵就这样被拆成沿各正交方向的独立伸缩之和。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "concept-geo",
+      "line_id": "geo-1",
+      "filename": "concept-geo-geo-1.mp3",
+      "path": "audio/narrations/spectral-theorem/concept-geo-geo-1.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "让矩阵作用在单位圆上，圆会被拉成一个椭圆。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "concept-geo",
+      "line_id": "geo-2",
+      "filename": "concept-geo-geo-2.mp3",
+      "path": "audio/narrations/spectral-theorem/concept-geo-geo-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "椭圆的两条主轴方向，正好是两个特征向量的方向。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "concept-geo",
+      "line_id": "geo-3",
+      "filename": "concept-geo-geo-3.mp3",
+      "path": "audio/narrations/spectral-theorem/concept-geo-geo-3.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "而主轴的半长，恰恰等于对应特征值的大小。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/spectral-theorem/interaction-int-1.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "切换不同的对称矩阵，观察椭圆如何随之旋转与拉伸。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/spectral-theorem/interaction-int-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "注意粉色和绿色的主轴，无论怎么变，它们始终保持垂直。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/spectral-theorem/summary-sum-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "实对称矩阵拥有实特征值和正交特征向量。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/spectral-theorem/summary-sum-2.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "谱分解把它写成沿正交主轴的伸缩叠加，几何上就是圆变椭圆。"
+    },
+    {
+      "script_id": "spectral-theorem",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/spectral-theorem/summary-sum-3.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "对称之美，成就了最干净的对角化，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.190000000000005,
+  "total_size": 530784,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

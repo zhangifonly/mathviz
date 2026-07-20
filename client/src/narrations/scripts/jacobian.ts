@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 雅可比矩阵 - 口播稿件
+ * 核心概念：非线性映射、局部线性近似、雅可比矩阵、行列式=面积缩放
+ * 目标受众：高中及以上
+ */
+export const jacobianNarration: NarrationScript = {
+  id: 'jacobian',
+  title: '雅可比矩阵',
+  subtitle: '非线性映射的局部线性',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解非线性映射如何弯曲坐标网格',
+    '掌握用雅可比矩阵做局部线性近似',
+    '理解行列式作为局部面积缩放因子',
+    '联系换元积分中的面积元变换',
+  ],
+
+  prerequisites: ['了解偏导数', '了解 2x2 行列式'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '一个平面映射，能把整齐的方格网弯成螺旋、扇形或波浪。' },
+        { id: 'intro-2', text: '整体看它是弯曲的，可如果只盯着一个小方块呢？' },
+        { id: 'intro-3', text: '放大再放大，那一小块几乎变回了平行四边形。' },
+      ],
+    },
+    {
+      id: 'local',
+      type: 'concept',
+      title: '局部线性近似',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '这就是微积分的核心思想：弯曲的东西，局部看都是线性的。' },
+        { id: 'def-2', text: '在某一点附近，映射近似成一次的拉伸加旋转。' },
+        { id: 'def-3', text: '描述这份局部线性的，正是雅可比矩阵。' },
+      ],
+    },
+    {
+      id: 'matrix',
+      type: 'concept',
+      title: '雅可比矩阵',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'mat-1', text: '把 x、y 分别对 u、v 求偏导，排成一个二乘二的矩阵。' },
+        { id: 'mat-2', text: '每一列告诉你，沿 u 或沿 v 走一步，像点朝哪个方向移动多远。' },
+        { id: 'mat-3', text: '这里我们用数值差分算偏导，对任何映射都通用。' },
+      ],
+    },
+    {
+      id: 'det',
+      type: 'concept',
+      title: '行列式与面积',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'det-1', text: '雅可比矩阵的行列式，就是局部面积的缩放因子。' },
+        { id: 'det-2', text: '行列式大于一，小方块被放大；小于一，则被压缩。' },
+        { id: 'det-3', text: '换元积分里的 dxdy 等于 |det J| 乘 dudv，来源就在这里。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '移动高亮的方块，看它在不同位置被拉伸的程度。' },
+        { id: 'int-2', text: '换一个映射，观察面积比如何随位置改变。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '雅可比矩阵把弯曲映射的局部行为，压缩成一个线性变换。' },
+        { id: 'sum-2', text: '它的行列式衡量面积的缩放，是换元积分的钥匙。' },
+        { id: 'sum-3', text: '弯曲之中藏着线性，这就是微积分的魔法，我们下次再见！' },
+      ],
+    },
+  ],
+}

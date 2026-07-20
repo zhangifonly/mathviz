@@ -1,0 +1,160 @@
+{
+  "id": "lotka-volterra",
+  "title": "捕食者猎物模型",
+  "subtitle": "狐狸与兔子的周期",
+  "difficulty": "advanced",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解洛特卡-沃尔泰拉方程组的生态含义",
+    "认识捕食者与猎物此消彼长的周期振荡",
+    "理解相平面上的闭合轨道意味着系统循环往复",
+    "感受简单微分方程刻画复杂生命现象的力量"
+  ],
+  "prerequisites": [
+    "了解导数与变化率",
+    "了解坐标平面"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "一片森林里，住着一群兔子和一群狐狸。"
+        },
+        {
+          "id": "intro-2",
+          "text": "兔子吃草繁衍，狐狸靠捕兔为生，谁也离不开谁。"
+        },
+        {
+          "id": "intro-3",
+          "text": "它们的数量会怎样此起彼伏？一个方程组给出了答案。"
+        }
+      ]
+    },
+    {
+      "id": "define",
+      "type": "concept",
+      "title": "方程组的含义",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "猎物方程：兔子按自然率增长，又按被捕食率减少。"
+        },
+        {
+          "id": "def-2",
+          "text": "捕食者方程：狐狸靠吃到的兔子增多，又因自然死亡减少。"
+        },
+        {
+          "id": "def-3",
+          "text": "两个变化率相互牵制，这就是洛特卡-沃尔泰拉方程组。"
+        }
+      ]
+    },
+    {
+      "id": "oscillate",
+      "type": "concept",
+      "title": "此消彼长的振荡",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "osc-1",
+          "text": "兔子一多，狐狸吃得饱，数量随之攀升。"
+        },
+        {
+          "id": "osc-2",
+          "text": "狐狸一多，兔子被吃光，狐狸又开始挨饿减少。"
+        },
+        {
+          "id": "osc-3",
+          "text": "两条曲线此消彼长，捕食者的高峰总是滞后于猎物。"
+        }
+      ]
+    },
+    {
+      "id": "phase",
+      "type": "concept",
+      "title": "相平面闭合轨道",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "phase-1",
+          "text": "把兔子数当横轴、狐狸数当纵轴，画出状态的轨迹。"
+        },
+        {
+          "id": "phase-2",
+          "text": "轨迹是一条闭合的环，说明系统会周而复始地循环。"
+        },
+        {
+          "id": "phase-3",
+          "text": "沿环运动时，一个守恒量始终保持不变，这是数学的秩序。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "调整初始兔子数量，看振荡的幅度如何改变。"
+        },
+        {
+          "id": "int-2",
+          "text": "拖动被捕食率，感受狐狸的胃口如何左右整个周期。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "两个相互牵制的变化率，织出了生生不息的周期振荡。"
+        },
+        {
+          "id": "sum-2",
+          "text": "相平面上的闭合环，正是这场循环最优雅的证明。"
+        },
+        {
+          "id": "sum-3",
+          "text": "简单方程写尽森林的兴衰，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

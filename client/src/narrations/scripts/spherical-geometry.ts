@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 球面几何 - 口播稿件
+ * 核心概念：大圆是测地线、球面三角形内角和大于180、球面盈余等于面积
+ * 目标受众：高中及以上
+ */
+export const sphericalGeometryNarration: NarrationScript = {
+  id: 'spherical-geometry',
+  title: '球面几何',
+  subtitle: '大圆与球面三角形',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解球面上的"直线"是大圆，也是两点最短路径',
+    '认识球面三角形内角和大于180度',
+    '掌握球面盈余等于三角形面积除以半径平方',
+    '感受非欧几何与平面几何的根本差异',
+  ],
+
+  prerequisites: ['了解平面三角形内角和', '了解经纬度'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '在一张纸上，两点之间最短的路是一条直线。' },
+        { id: 'intro-2', text: '可地球是圆的，飞机从北京飞纽约，走的却是一条弯弯的弧线。' },
+        { id: 'intro-3', text: '在球面上，笔直的直线并不存在，我们需要一种新的几何。' },
+      ],
+    },
+    {
+      id: 'geodesic',
+      type: 'concept',
+      title: '大圆是测地线',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '过球心切开球面，得到的最大圆圈就叫大圆，比如赤道和所有经线。' },
+        { id: 'def-2', text: '球面上两点间的最短路径，正是连接它们的那段大圆弧。' },
+        { id: 'def-3', text: '所以大圆就是球面世界里的直线，我们叫它测地线。' },
+      ],
+    },
+    {
+      id: 'anglesum',
+      type: 'concept',
+      title: '内角和大于180',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '用三段大圆弧围出一个球面三角形，量一量它的三个内角。' },
+        { id: 'sum-2', text: '你会发现三角和总是大于180度，而不是平面上那个固定的180度。' },
+        { id: 'sum-3', text: '取地球八分之一那块，三个角都是直角，加起来足足270度。' },
+      ],
+    },
+    {
+      id: 'excess',
+      type: 'concept',
+      title: '盈余等于面积',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'exc-1', text: '内角和超出180度的那部分，我们称为球面盈余。' },
+        { id: 'exc-2', text: '盈余乘以半径的平方，恰好等于这个三角形的面积。' },
+        { id: 'exc-3', text: '三角形越大，盈余越大，几何与面积竟如此紧密相连。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '切换不同的三角形，看内角和与盈余如何随之变化。' },
+        { id: 'int-2', text: '旋转地球，观察大圆弧始终是两点间那条最短的路径。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'end-1', text: '球面上大圆就是直线，是两点间的最短路径。' },
+        { id: 'end-2', text: '球面三角形内角和大于180度，盈余正比于面积。' },
+        { id: 'end-3', text: '弯曲的空间里藏着另一套几何法则，我们下次再见！' },
+      ],
+    },
+  ],
+}

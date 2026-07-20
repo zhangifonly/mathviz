@@ -1,0 +1,123 @@
+{
+  "script_id": "collatz",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "collatz",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/collatz/intro-intro-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "随便选一个正整数，按两条规则不停地变换它。"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "rule",
+      "line_id": "rule-2",
+      "filename": "rule-rule-2.mp3",
+      "path": "audio/narrations/collatz/rule-rule-2.mp3",
+      "duration": 1.33,
+      "size": 21312,
+      "text": "如果是奇数，就把它乘以 3 再加 1。"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "hail",
+      "line_id": "hail-1",
+      "filename": "hail-hail-1.mp3",
+      "path": "audio/narrations/collatz/hail-hail-1.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "数值会像冰雹一样，忽而冲上高空，忽而急速下坠。"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "hail",
+      "line_id": "hail-2",
+      "filename": "hail-hail-2.mp3",
+      "path": "audio/narrations/collatz/hail-hail-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "从 27 出发，它一路飙升到九千多，再慢慢跌回来。"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "hail",
+      "line_id": "hail-3",
+      "filename": "hail-hail-3.mp3",
+      "path": "audio/narrations/collatz/hail-hail-3.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "正因如此，这些数被亲切地称为“冰雹数”。"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "mystery",
+      "line_id": "mys-1",
+      "filename": "mystery-mys-1.mp3",
+      "path": "audio/narrations/collatz/mystery-mys-1.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "人们已经验证了极其庞大的数字，全都乖乖回到了 1。"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "mystery",
+      "line_id": "mys-2",
+      "filename": "mystery-mys-2.mp3",
+      "path": "audio/narrations/collatz/mystery-mys-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "可是没有人能证明：所有正整数都一定归 1。"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/collatz/interaction-int-1.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "输入一个起点，看它的轨迹如何起伏。"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/collatz/interaction-int-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "数一数需要多少步才落到 1，那就是它的停止时间。"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/collatz/summary-sum-1.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "偶数减半，奇数三倍加一，规则简单到极点。"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/collatz/summary-sum-3.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "简单的规则藏着最深的谜题，我们下次再见！"
+    }
+  ],
+  "total_duration": 19.54,
+  "total_size": 312912,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

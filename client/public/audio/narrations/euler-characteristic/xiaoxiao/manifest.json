@@ -1,0 +1,179 @@
+{
+  "script_id": "euler-characteristic",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "拿起一个立方体，数一数它的顶点、棱和面。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "八个顶点，十二条棱，六个面，看似毫无关联。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "但欧拉发现，它们之间藏着一个惊人的恒等关系。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "formula",
+      "line_id": "def-1",
+      "filename": "formula-def-1.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/formula-def-1.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "把顶点数减去棱数，再加上面数，记作 V 减 E 加 F。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "formula",
+      "line_id": "def-2",
+      "filename": "formula-def-2.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/formula-def-2.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "立方体是 8 减 12 加 6，结果正好等于 2。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "formula",
+      "line_id": "def-3",
+      "filename": "formula-def-3.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/formula-def-3.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "这个组合叫做欧拉示性数，用希腊字母 χ 表示。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "convex",
+      "line_id": "con-1",
+      "filename": "convex-con-1.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/convex-con-1.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "换成四面体、八面体、十二面体，逐一去数。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "convex",
+      "line_id": "con-2",
+      "filename": "convex-con-2.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/convex-con-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "无论顶点棱面如何变化，V 减 E 加 F 始终等于 2。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "convex",
+      "line_id": "con-3",
+      "filename": "convex-con-3.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/convex-con-3.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "所有凸多面体都服从这条铁律，与具体形状无关。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "topology",
+      "line_id": "top-1",
+      "filename": "topology-top-1.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/topology-top-1.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "这个 2 其实是球面的标志，一个拓扑不变量。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "topology",
+      "line_id": "top-2",
+      "filename": "topology-top-2.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/topology-top-2.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "把多面体吹成气球，它们都等价于一个球面。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "topology",
+      "line_id": "top-3",
+      "filename": "topology-top-3.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/topology-top-3.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "而甜甜圈形的环面中间有个洞，它的 χ 等于 0。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "切换不同的多面体，看顶点棱面的计数如何变化。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "再看环面这一栏，验证它的示性数确实是 0。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "欧拉示性数 V 减 E 加 F，凸多面体恒等于 2。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "它不依赖形状，只由曲面的洞数决定，χ 等于 2 减 2g。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/euler-characteristic/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "一个简单的加减法，串起几何与拓扑，我们下次再见！"
+    }
+  ],
+  "total_duration": 30.799999999999994,
+  "total_size": 492480
+}

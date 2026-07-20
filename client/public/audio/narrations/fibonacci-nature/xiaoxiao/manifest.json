@@ -1,0 +1,179 @@
+{
+  "script_id": "fibonacci-nature",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.25,
+      "size": 20016,
+      "text": "你有没有数过向日葵盘上的种子？"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.44,
+      "size": 23040,
+      "text": "它们绕着中心旋出一圈圈优美的螺旋。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "藏在背后的，是一个古老的数列和一个神奇的角度。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/define-def-1.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "从零和一开始，每一项都是前两项之和。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/define-def-2.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "于是得到一、一、二、三、五、八、十三，越滚越大。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/define-def-3.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "这就是斐波那契数列，自然界里反复出现的节奏。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "golden",
+      "line_id": "gold-1",
+      "filename": "golden-gold-1.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/golden-gold-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "把相邻两项相除，比值会越来越接近一点六一八。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "golden",
+      "line_id": "gold-2",
+      "filename": "golden-gold-2.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/golden-gold-2.mp3",
+      "duration": 1.35,
+      "size": 21600,
+      "text": "这个数就是黄金比，最和谐的比例。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "golden",
+      "line_id": "gold-3",
+      "filename": "golden-gold-3.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/golden-gold-3.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "把圆周按黄金比分割，得到约一百三十七点五度的黄金角。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "flower",
+      "line_id": "flo-1",
+      "filename": "flower-flo-1.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/flower-flo-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "每颗种子比前一颗多转一个黄金角，再往外挪一点。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "flower",
+      "line_id": "flo-2",
+      "filename": "flower-flo-2.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/flower-flo-2.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "因为黄金角无法被整除，种子永远不会排成直线。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "flower",
+      "line_id": "flo-3",
+      "filename": "flower-flo-3.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/flower-flo-3.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "于是每颗种子都填进空隙，铺出最密实的螺旋图案。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "试着把发散角从黄金角一点点调开。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "哪怕只差零点几度，整齐的螺旋就散成了杂乱的条纹。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "斐波那契数列的比值指向黄金比，黄金比又给出黄金角。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "向日葵正是用这个角度，把种子排得最均匀。"
+    },
+    {
+      "script_id": "fibonacci-nature",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/fibonacci-nature/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "一个简单的数列，写出了大自然的美，我们下次再见！"
+    }
+  ],
+  "total_duration": 30.419999999999995,
+  "total_size": 486576
+}

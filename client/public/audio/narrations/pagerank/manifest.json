@@ -1,0 +1,153 @@
+{
+  "script_id": "pagerank",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "pagerank",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/pagerank/intro-intro-1.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "互联网上有亿万个网页，谷歌凭什么把最好的排在最前面？"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/pagerank/intro-intro-2.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "早期谷歌的秘密武器，就是一个叫 PageRank 的算法。"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "surfer",
+      "line_id": "def-1",
+      "filename": "surfer-def-1.mp3",
+      "path": "audio/narrations/pagerank/surfer-def-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "设想一个随机浏览者，在网页间不停地点击链接漫游。"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "surfer",
+      "line_id": "def-3",
+      "filename": "surfer-def-3.mp3",
+      "path": "audio/narrations/pagerank/surfer-def-3.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "链接多、来源好的网页，浏览者更容易反复经过。"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "matrix",
+      "line_id": "mat-1",
+      "filename": "matrix-mat-1.mp3",
+      "path": "audio/narrations/pagerank/matrix-mat-1.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "把每个网页把自己的权重平分给它指向的链接，就得到转移矩阵。"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "matrix",
+      "line_id": "mat-2",
+      "filename": "matrix-mat-2.mp3",
+      "path": "audio/narrations/pagerank/matrix-mat-2.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "但浏览者不会永远点下去，有时会厌倦，随机跳到任意网页。"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "matrix",
+      "line_id": "mat-3",
+      "filename": "matrix-mat-3.mp3",
+      "path": "audio/narrations/pagerank/matrix-mat-3.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "阻尼因子 d 就是继续点链接的概率，通常取零点八五。"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "iterate",
+      "line_id": "iter-1",
+      "filename": "iterate-iter-1.mp3",
+      "path": "audio/narrations/pagerank/iterate-iter-1.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "让转移矩阵一次次作用到 rank 向量上，这就是幂迭代。"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "iterate",
+      "line_id": "iter-3",
+      "filename": "iterate-iter-3.mp3",
+      "path": "audio/narrations/pagerank/iterate-iter-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "很快向量趋于稳定，收敛到转移矩阵的稳态分布。"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/pagerank/interaction-int-1.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "拖动迭代滑块，看每个节点如何从均匀出发逐渐分出高低。"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/pagerank/interaction-int-2.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "换一个阻尼因子，感受它如何改变最终的排名格局。"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/pagerank/summary-sum-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "PageRank 把重要性建模成随机浏览者的稳态停留概率。"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/pagerank/summary-sum-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "带阻尼的转移矩阵反复幂迭代，就收敛出这个分布。"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/pagerank/summary-sum-3.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "一个简单的链接投票，撑起了整个搜索时代，我们下次再见！"
+    }
+  ],
+  "total_duration": 28.11,
+  "total_size": 449856,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "script_id": "delaunay-triangulation",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/intro-intro-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "平面上散布着一堆点，我们想把它们连成一张三角网。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/intro-intro-2.mp3",
+      "duration": 2.37,
+      "size": 37872,
+      "text": "连法千千万，可网格有好有坏，瘦长的三角形最让人头疼。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/intro-intro-3.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "有没有一种连法，天生就是最优的？答案就是 Delaunay 三角剖分。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "circle",
+      "line_id": "def-1",
+      "filename": "circle-def-1.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/circle-def-1.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "它的标志是一条黄金法则：每个三角形的外接圆内，不含任何其他点。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "circle",
+      "line_id": "def-2",
+      "filename": "circle-def-2.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/circle-def-2.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "这就是空圆性质，画面里那个粉色的圆，圈住三个顶点却空无一物。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "angle",
+      "line_id": "ang-1",
+      "filename": "angle-ang-1.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/angle-ang-1.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "空圆性质带来一个漂亮的后果:它让所有三角形里的最小角尽可能大。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "angle",
+      "line_id": "ang-3",
+      "filename": "angle-ang-3.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/angle-ang-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "这种匀称,正是数值计算和渲染最喜欢的形状。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "dual",
+      "line_id": "dual-1",
+      "filename": "dual-dual-1.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/dual-dual-1.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "把每个三角形的外接圆心连起来,就得到了沃罗诺伊图。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/interaction-int-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "调整点的数量,看三角网如何从稀疏变得密实。"
+    }
+  ],
+  "total_duration": 19.709999999999997,
+  "total_size": 315360
+}

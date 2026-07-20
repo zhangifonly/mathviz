@@ -1,0 +1,156 @@
+{
+  "id": "circle-packing",
+  "title": "圆填充",
+  "subtitle": "最密堆积的艺术",
+  "difficulty": "intermediate",
+  "targetAge": "初中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解填充密度的定义",
+    "认识方形堆积与六边形最密堆积的区别",
+    "了解六边形排布为何最优",
+    "感受随机堆积与规则堆积的差距"
+  ],
+  "prerequisites": [
+    "了解圆的面积",
+    "了解百分比"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "给你一个盒子，要塞进尽可能多的同样大小的圆，你会怎么摆？"
+        },
+        {
+          "id": "intro-2",
+          "text": "圆之间总会留下缝隙，塞得再挤也填不满整个盒子。"
+        },
+        {
+          "id": "intro-3",
+          "text": "我们用填充密度来衡量：圆的总面积，占盒子面积的比例。"
+        }
+      ]
+    },
+    {
+      "id": "square",
+      "type": "concept",
+      "title": "方形堆积",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sq-1",
+          "text": "最直觉的摆法是排成整齐的方格，一行行、一列列对齐。"
+        },
+        {
+          "id": "sq-2",
+          "text": "每四个圆的中间，都空出一块弯曲的四角缝隙。"
+        },
+        {
+          "id": "sq-3",
+          "text": "算下来密度约为百分之七十八点五,还有不少空间被浪费。"
+        }
+      ]
+    },
+    {
+      "id": "hex",
+      "type": "concept",
+      "title": "六边形最密",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "hex-1",
+          "text": "把每一行错开半个圆,让上排的圆恰好卡进下排的凹槽。"
+        },
+        {
+          "id": "hex-2",
+          "text": "这时每个圆被六个圆紧紧包围,像蜂巢一样严丝合缝。"
+        },
+        {
+          "id": "hex-3",
+          "text": "密度提升到约百分之九十点七,这是平面等圆填充的极限。"
+        }
+      ]
+    },
+    {
+      "id": "random",
+      "type": "concept",
+      "title": "随机堆积",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "rand-1",
+          "text": "如果不讲规则,随手把大小不一的圆丢进盒子会怎样?"
+        },
+        {
+          "id": "rand-2",
+          "text": "圆挤成一团,缝隙杂乱无章,密度往往明显低于规则排布。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换方形、六边形、随机三种模式,盯住左上角的密度数字。"
+        },
+        {
+          "id": "int-2",
+          "text": "你会清楚看到六边形最密,方形次之,随机垫底。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "填充密度衡量圆填满空间的效率。"
+        },
+        {
+          "id": "sum-2",
+          "text": "六边形最密堆积约九成密度,远胜方形与随机。"
+        },
+        {
+          "id": "sum-3",
+          "text": "蜜蜂和大自然早就懂得这个道理,我们下次再见!"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "script_id": "markov-stationary",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "markov-stationary",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/intro-intro-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "天气会在晴、阴、雨之间来回切换。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/intro-intro-2.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "如果观察足够多天，晴天大约占多少比例？"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/intro-intro-3.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "这个长期占比，正是马氏链的稳态分布。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "matrix",
+      "line_id": "mat-1",
+      "filename": "matrix-mat-1.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/matrix-mat-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "把每天转到下一天的概率排成一张表，就是转移矩阵。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "matrix",
+      "line_id": "mat-2",
+      "filename": "matrix-mat-2.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/matrix-mat-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "它的每一行之和都是一，因为明天总要落到某个状态。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "matrix",
+      "line_id": "mat-3",
+      "filename": "matrix-mat-3.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/matrix-mat-3.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "比如今天晴，明天有七成继续晴，两成转阴，一成下雨。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "iterate",
+      "line_id": "iter-1",
+      "filename": "iterate-iter-1.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/iterate-iter-1.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "把今天的分布左乘转移矩阵，就得到明天的分布。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "iterate",
+      "line_id": "iter-2",
+      "filename": "iterate-iter-2.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/iterate-iter-2.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "反复相乘，分布就一天天向前演化。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "iterate",
+      "line_id": "iter-3",
+      "filename": "iterate-iter-3.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/iterate-iter-3.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "看柱状图，各状态的比例在逐步调整。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "converge",
+      "line_id": "conv-1",
+      "filename": "converge-conv-1.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/converge-conv-1.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "迭代几步后，柱状高度几乎不再变化。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "converge",
+      "line_id": "conv-2",
+      "filename": "converge-conv-2.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/converge-conv-2.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "此时分布满足自己乘矩阵还等于自己，这就是稳态。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "converge",
+      "line_id": "conv-3",
+      "filename": "converge-conv-3.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/converge-conv-3.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "它是转移矩阵特征值为一的那个特殊分布，红色虚线标出了它。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/interaction-int-1.mp3",
+      "duration": 1.39,
+      "size": 22176,
+      "text": "换一个初始分布，比如从纯雨天出发。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/interaction-int-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "你会发现，无论起点如何，最终都汇聚到同一条虚线。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/summary-sum-1.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "行随机矩阵反复作用，分布收敛到唯一的稳态。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/summary-sum-2.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "稳态由矩阵本身决定，与出发点无关。"
+    },
+    {
+      "script_id": "markov-stationary",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/markov-stationary/yunxi/summary-sum-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "一张概率表就锁定了长期命运，我们下次再见！"
+    }
+  ],
+  "total_duration": 30.259999999999998,
+  "total_size": 484128
+}

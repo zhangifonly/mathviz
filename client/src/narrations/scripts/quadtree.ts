@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 四叉树 - 口播稿件
+ * 核心概念: 空间递归四分、自适应细分、范围查询加速
+ * 目标受众: 高中及以上
+ */
+export const quadtreeNarration: NarrationScript = {
+  id: 'quadtree',
+  title: '四叉树',
+  subtitle: '空间递归四分索引',
+  difficulty: 'intermediate',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解四叉树按容量递归四分的构建规则',
+    '认识点密则细分的空间自适应特性',
+    '了解四叉树如何加速邻居与范围查询',
+    '感受分治思想在空间索引中的威力',
+  ],
+
+  prerequisites: ['了解平面坐标', '了解递归的基本概念'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '屏幕上散布着成百上千个点。' },
+        { id: 'intro-2', text: '想快速找出某个点附近的邻居，逐个比对要算很多次。' },
+        { id: 'intro-3', text: '有没有办法，只看它周围那一小块区域就够了？' },
+        { id: 'intro-4', text: '四叉树给出的答案是：把空间递归地切成四份。' },
+      ],
+    },
+    {
+      id: 'divide',
+      type: 'concept',
+      title: '递归四分',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'div-1', text: '先用一个大矩形框住所有的点。' },
+        { id: 'div-2', text: '当框里的点数超过设定的容量，就把它切成左上、右上、左下、右下四块。' },
+        { id: 'div-3', text: '每一块再按同样规则判断，够多就继续切，如此递归下去。' },
+      ],
+    },
+    {
+      id: 'adaptive',
+      type: 'concept',
+      title: '点密则细分',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'ada-1', text: '于是点稠密的地方，网格被切得又小又密。' },
+        { id: 'ada-2', text: '点稀疏的空旷区域，就保留成一个大格子，不必细分。' },
+        { id: 'ada-3', text: '这种自适应让树的深度随疏密自动调整，恰到好处。' },
+      ],
+    },
+    {
+      id: 'query',
+      type: 'concept',
+      title: '加速范围查询',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'qry-1', text: '要查某个矩形范围里的点，只需下探与它相交的格子。' },
+        { id: 'qry-2', text: '完全不相交的整棵子树被一次性剪掉，省去海量比较。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '调整点的数量，看网格如何在密集处越切越细。' },
+        { id: 'int-2', text: '改变容量阈值，容量越小，划分就越激进。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '四叉树用超容量就四分的简单规则，递归索引整个平面。' },
+        { id: 'sum-2', text: '点密处细、点疏处粗，让邻居与范围查询大大提速。' },
+        { id: 'sum-3', text: '分治的智慧藏在这四个格子里，我们下次再见！' },
+      ],
+    },
+  ],
+}

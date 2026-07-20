@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 保守场与势函数 - 口播稿件
+ * 核心概念：旋度判定、势函数、等势线、路径无关性
+ * 目标受众：高中及以上
+ */
+export const vectorCalculusFieldNarration: NarrationScript = {
+  id: 'vector-calculus-field',
+  title: '保守场与势函数',
+  subtitle: '做功只依赖起终点',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解保守场的旋度判定条件',
+    '认识势函数与梯度场的关系',
+    '掌握保守场做功的路径无关性',
+    '学会用等势线直观理解势函数',
+  ],
+
+  prerequisites: ['了解向量与偏导数', '了解线积分做功'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '从山脚爬到山顶，你消耗的体力只和高度差有关。' },
+        { id: 'intro-2', text: '无论走陡峭直路还是盘山缓坡，克服重力做的功都一样。' },
+        { id: 'intro-3', text: '这种做功只看起点和终点的场，就叫保守场。' },
+      ],
+    },
+    {
+      id: 'define',
+      type: 'concept',
+      title: '保守场的判定',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '平面向量场记作 F 等于 P 和 Q 两个分量。' },
+        { id: 'def-2', text: '计算旋度：Q 对 x 的偏导减去 P 对 y 的偏导。' },
+        { id: 'def-3', text: '如果旋度处处为零，这个场就是保守场。' },
+      ],
+    },
+    {
+      id: 'potential',
+      type: 'concept',
+      title: '势函数与等势线',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'pot-1', text: '保守场背后藏着一个势函数 phi，它的梯度正好等于 F。' },
+        { id: 'pot-2', text: '把势函数相等的点连起来，就得到一圈圈等势线。' },
+        { id: 'pot-3', text: '向量场箭头处处垂直于等势线，指向势能升高的方向。' },
+      ],
+    },
+    {
+      id: 'pathindep',
+      type: 'concept',
+      title: '路径无关性',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'path-1', text: '保守场沿任意路径做功，都等于终点势值减起点势值。' },
+        { id: 'path-2', text: '所以红色直线和绿色折线，两条路径做的功完全相同。' },
+        { id: 'path-3', text: '而旋转场旋度不为零，换条路径做功就会变，这就是非保守。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '切换到保守的梯度场，看两条路径做功数值完全相等。' },
+        { id: 'int-2', text: '再切到非保守的旋转场，差值立刻不为零，路径变得重要。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '旋度为零的场是保守场，拥有势函数。' },
+        { id: 'sum-2', text: '保守场做功只看起终点，与路径无关。' },
+        { id: 'sum-3', text: '从爬山到静电场，保守场无处不在，我们下次再见！' },
+      ],
+    },
+  ],
+}

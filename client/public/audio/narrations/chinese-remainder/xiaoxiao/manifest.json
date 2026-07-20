@@ -1,0 +1,179 @@
+{
+  "script_id": "chinese-remainder",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "韩信点兵，士兵三人一排余二，五人一排余三，七人一排余二。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "不用逐个去数，就能算出队伍最少有多少人。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "这道古老的物不知数问题，藏着一条优美的定理。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "concept",
+      "line_id": "def-1",
+      "filename": "concept-def-1.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/concept-def-1.mp3",
+      "duration": 2.59,
+      "size": 41472,
+      "text": "每个条件都是一个同余式：x 除以三余二，写作 x 同余于二，模三。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "concept",
+      "line_id": "def-2",
+      "filename": "concept-def-2.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/concept-def-2.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "三个条件放在一起，就构成一个同余方程组。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "concept",
+      "line_id": "def-3",
+      "filename": "concept-def-3.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/concept-def-3.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "我们要找的，是同时满足所有条件的那个数。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "coprime",
+      "line_id": "pre-1",
+      "filename": "coprime-pre-1.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/coprime-pre-1.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "定理成立有个关键前提：所有的模必须两两互质。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "coprime",
+      "line_id": "pre-2",
+      "filename": "coprime-pre-2.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/coprime-pre-2.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "三、五、七彼此互质，它们的乘积一百零五，就是解的周期。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "coprime",
+      "line_id": "pre-3",
+      "filename": "coprime-pre-3.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/coprime-pre-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "在零到一百零五之间，满足全部条件的解恰好只有一个。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "construct",
+      "line_id": "con-1",
+      "filename": "construct-con-1.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/construct-con-1.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "对每个模，先算出其余模的乘积，再用扩展欧几里得求它的逆元。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "construct",
+      "line_id": "con-2",
+      "filename": "construct-con-2.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/construct-con-2.mp3",
+      "duration": 2.52,
+      "size": 40320,
+      "text": "把余数、乘积、逆元三者相乘再求和，对总积取模，就得到答案。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "construct",
+      "line_id": "con-3",
+      "filename": "construct-con-3.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/construct-con-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "这个数正是二十三，韩信的队伍最少二十三人。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "拖动滑块改变每个条件的余数，看数轴上的公共解如何移动。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "切换不同的经典问题，红点始终精准落在唯一的解上。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "中国剩余定理把一组同余条件，合并成一个唯一的解。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "从古代点兵到现代密码，它跨越千年依然闪光。"
+    },
+    {
+      "script_id": "chinese-remainder",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/chinese-remainder/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "一道物不知数，藏着数学的深邃与优雅，我们下次再见！"
+    }
+  ],
+  "total_duration": 34.5,
+  "total_size": 551952
+}

@@ -1,0 +1,179 @@
+{
+  "script_id": "euler-line",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "euler-line",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "一个普通的三角形里，藏着好几个特别的中心。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "重心、外心、垂心，它们各自由完全不同的方式确定。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.71,
+      "size": 27360,
+      "text": "可就在两百多年前，欧拉发现了一个惊人的秘密。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "centers",
+      "line_id": "def-1",
+      "filename": "centers-def-1.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/centers-def-1.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "重心是三条中线的交点，也是三顶点坐标的平均。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "centers",
+      "line_id": "def-2",
+      "filename": "centers-def-2.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/centers-def-2.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "外心是三边垂直平分线的交点，到三个顶点距离相等。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "centers",
+      "line_id": "def-3",
+      "filename": "centers-def-3.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/centers-def-3.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "垂心是三条高线的交点，来自顶点向对边作垂线。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "collinear",
+      "line_id": "col-1",
+      "filename": "collinear-col-1.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/collinear-col-1.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "把外心、重心、垂心同时画出来，你会发现它们排成一条直线。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "collinear",
+      "line_id": "col-2",
+      "filename": "collinear-col-2.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/collinear-col-2.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "这条直线就叫欧拉线，对几乎所有三角形都成立。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "collinear",
+      "line_id": "col-3",
+      "filename": "collinear-col-3.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/collinear-col-3.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "用叉积一算就知道，三点的有向面积恰好为零，确实共线。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "ratio",
+      "line_id": "rat-1",
+      "filename": "ratio-rat-1.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/ratio-rat-1.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "更妙的是，重心不是随便落在这条线上的。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "ratio",
+      "line_id": "rat-2",
+      "filename": "ratio-rat-2.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/ratio-rat-2.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "它把外心到垂心的线段，精确地分成一比二。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "ratio",
+      "line_id": "rat-3",
+      "filename": "ratio-rat-3.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/ratio-rat-3.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "外心到重心是一份，重心到垂心正好是两份。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "切换不同的三角形，欧拉线始终穿过这三颗心。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.38,
+      "size": 38160,
+      "text": "试着靠近等边三角形，三心会重合，欧拉线随之退化消失。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "重心、外心、垂心，三个各自独立的中心竟然共线。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "这条欧拉线上，重心把外心到垂心分成整齐的一比二。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/euler-line/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "简单三角形里的深刻秩序，正是数学之美，我们下次再见！"
+    }
+  ],
+  "total_duration": 33.339999999999996,
+  "total_size": 533520
+}

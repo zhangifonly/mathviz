@@ -1,0 +1,160 @@
+{
+  "id": "torus-klein",
+  "title": "环面与克莱因瓶",
+  "subtitle": "边的粘合",
+  "difficulty": "expert",
+  "targetAge": "高中以上",
+  "voice": "yunxi",
+  "meta": {
+    "author": "MathViz Team",
+    "version": "1.0.0",
+    "createdAt": "2026-07-18",
+    "updatedAt": "2026-07-18"
+  },
+  "objectives": [
+    "理解正方形边的粘合如何生成曲面",
+    "区分环面与克莱因瓶的粘合方式",
+    "认识可定向与不可定向的差别",
+    "体会拓扑学中曲面的构造思想"
+  ],
+  "prerequisites": [
+    "了解平面坐标",
+    "有一点空间想象力"
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "type": "intro",
+      "title": "开场引入",
+      "trigger": {
+        "type": "auto",
+        "delay": 1000
+      },
+      "lines": [
+        {
+          "id": "intro-1",
+          "text": "拿一张正方形的纸，我们只做一件事：把它的边粘起来。"
+        },
+        {
+          "id": "intro-2",
+          "text": "不同的粘法，会卷出完全不同的曲面。"
+        },
+        {
+          "id": "intro-3",
+          "text": "今天的主角，就是这样诞生的环面与克莱因瓶。"
+        }
+      ]
+    },
+    {
+      "id": "torus",
+      "type": "concept",
+      "title": "环面的诞生",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "def-1",
+          "text": "先把左右两条边同向粘合，正方形卷成一根管子。"
+        },
+        {
+          "id": "def-2",
+          "text": "再把上下两条边也同向粘合，管子两头接起来，就成了甜甜圈形状的环面。"
+        },
+        {
+          "id": "def-3",
+          "text": "两对边、都是同向，这就是环面的全部秘密。"
+        }
+      ]
+    },
+    {
+      "id": "klein",
+      "type": "concept",
+      "title": "克莱因瓶",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "kle-1",
+          "text": "现在只改一步：粘上下边时先翻个面，让方向相反。"
+        },
+        {
+          "id": "kle-2",
+          "text": "一对同向、一对反向，得到的就是克莱因瓶。"
+        },
+        {
+          "id": "kle-3",
+          "text": "在三维里它必须自我穿过，真正的它其实住在四维空间。"
+        }
+      ]
+    },
+    {
+      "id": "orient",
+      "type": "concept",
+      "title": "不可定向",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "ori-1",
+          "text": "环面有清清楚楚的里和外，我们说它可定向。"
+        },
+        {
+          "id": "ori-2",
+          "text": "克莱因瓶却没有内外之分，沿着它走一圈，左右会被悄悄调换。"
+        },
+        {
+          "id": "ori-3",
+          "text": "这种没有正反面的曲面，叫做不可定向。"
+        }
+      ]
+    },
+    {
+      "id": "interaction",
+      "type": "interaction",
+      "title": "亲手探索",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "int-1",
+          "text": "切换两种曲面，对照它们的线框有什么不同。"
+        },
+        {
+          "id": "int-2",
+          "text": "拖动旋转，观察克莱因瓶那条自我穿过的脖子。"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "总结",
+      "trigger": {
+        "type": "auto",
+        "delay": 800
+      },
+      "lines": [
+        {
+          "id": "sum-1",
+          "text": "同一张正方形，粘法不同，就分出了环面与克莱因瓶。"
+        },
+        {
+          "id": "sum-2",
+          "text": "一个可定向、一个不可定向，这正是拓扑学的迷人之处。"
+        },
+        {
+          "id": "sum-3",
+          "text": "边的粘合藏着一整个曲面的世界，我们下次再见！"
+        }
+      ]
+    }
+  ]
+}

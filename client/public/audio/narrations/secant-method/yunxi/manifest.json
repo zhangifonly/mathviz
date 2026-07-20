@@ -1,0 +1,59 @@
+{
+  "script_id": "secant-method",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "secant-method",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/secant-method/yunxi/intro-intro-1.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "牛顿法求根很快，但它有个前提：你得会算函数的导数。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "secant",
+      "line_id": "sec-1",
+      "filename": "secant-sec-1.mp3",
+      "path": "audio/narrations/secant-method/yunxi/secant-sec-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "牛顿法在一点画切线，而切线的斜率正是导数。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "secant",
+      "line_id": "sec-2",
+      "filename": "secant-sec-2.mp3",
+      "path": "audio/narrations/secant-method/yunxi/secant-sec-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "割线法换个思路：取最近的两个点，用它们的连线来近似切线。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/secant-method/yunxi/interaction-int-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "留意下方的误差，短短几步它就迅速缩小到极小。"
+    },
+    {
+      "script_id": "secant-method",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/secant-method/yunxi/summary-sum-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "割线法用两点割线代替切线，无需导数即可求根。"
+    }
+  ],
+  "total_duration": 10.45,
+  "total_size": 167184
+}

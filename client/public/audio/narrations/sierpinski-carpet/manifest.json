@@ -1,0 +1,183 @@
+{
+  "script_id": "sierpinski-carpet",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/sierpinski-carpet/intro-intro-1.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "想象一块方方正正的地毯，我们要在上面不断挖洞。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/sierpinski-carpet/intro-intro-2.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "每挖一次，图案就多一层花纹，越挖越精细。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/sierpinski-carpet/intro-intro-3.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "这就是谢尔宾斯基地毯，一种优美的二维分形。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "rule",
+      "line_id": "rule-1",
+      "filename": "rule-rule-1.mp3",
+      "path": "audio/narrations/sierpinski-carpet/rule-rule-1.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "先把正方形切成三行三列，一共九个小方格。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "rule",
+      "line_id": "rule-2",
+      "filename": "rule-rule-2.mp3",
+      "path": "audio/narrations/sierpinski-carpet/rule-rule-2.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "把正中间那一格挖空，只留下周围的八格。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "rule",
+      "line_id": "rule-3",
+      "filename": "rule-rule-3.mp3",
+      "path": "audio/narrations/sierpinski-carpet/rule-rule-3.mp3",
+      "duration": 1.37,
+      "size": 21888,
+      "text": "这就是一次迭代，最基本的一步。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "recurse",
+      "line_id": "rec-1",
+      "filename": "recurse-rec-1.mp3",
+      "path": "audio/narrations/sierpinski-carpet/recurse-rec-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "接着，对留下的每一个小方格,重复同样的挖洞规则。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "recurse",
+      "line_id": "rec-2",
+      "filename": "recurse-rec-2.mp3",
+      "path": "audio/narrations/sierpinski-carpet/recurse-rec-2.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "每格又分出八个更小的格,一层套一层。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "recurse",
+      "line_id": "rec-3",
+      "filename": "recurse-rec-3.mp3",
+      "path": "audio/narrations/sierpinski-carpet/recurse-rec-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "放大任意一角,都和整体长得一模一样,这叫自相似。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "dimension",
+      "line_id": "dim-1",
+      "filename": "dimension-dim-1.mp3",
+      "path": "audio/narrations/sierpinski-carpet/dimension-dim-1.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "每次边长缩小到三分之一,却留下八个副本。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "dimension",
+      "line_id": "dim-2",
+      "filename": "dimension-dim-2.mp3",
+      "path": "audio/narrations/sierpinski-carpet/dimension-dim-2.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "维数等于 log8 除以 log3,约等于一点八九。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "dimension",
+      "line_id": "dim-3",
+      "filename": "dimension-dim-3.mp3",
+      "path": "audio/narrations/sierpinski-carpet/dimension-dim-3.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "它比线更满,又比面更空,是介于一维和二维之间的存在。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/sierpinski-carpet/interaction-int-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "调整迭代层数,看地毯上的洞如何层层绽开。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/sierpinski-carpet/interaction-int-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "层数越高,细节越丰富,面积却越来越接近零。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/sierpinski-carpet/summary-sum-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "九宫格挖中心,再递归重复,就得到谢尔宾斯基地毯。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/sierpinski-carpet/summary-sum-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "它自相似,维数是 log8 比 log3,面积趋于零。"
+    },
+    {
+      "script_id": "sierpinski-carpet",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/sierpinski-carpet/summary-sum-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "简单的规则藏着无穷的细节,我们下次再见!"
+    }
+  ],
+  "total_duration": 30.999999999999996,
+  "total_size": 495648,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

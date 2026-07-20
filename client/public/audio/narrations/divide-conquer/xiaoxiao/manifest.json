@@ -1,0 +1,169 @@
+{
+  "script_id": "divide-conquer",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "divide-conquer",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "面对一个庞大又棘手的问题，我们常常无从下手。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "分治的思路是：把大问题一分为二，再各个击破。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "就像整理一副乱牌，先分成两小堆，分别理好，再合到一起。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "divide",
+      "line_id": "div-1",
+      "filename": "divide-div-1.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/divide-div-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "第一步是分解，把数组从中间切开，得到左右两半。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "divide",
+      "line_id": "div-2",
+      "filename": "divide-div-2.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/divide-div-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "每一半继续二分，一层层向下，直到只剩单个元素。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "divide",
+      "line_id": "div-3",
+      "filename": "divide-div-3.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/divide-div-3.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "单个元素天然有序，这就是递归的终点。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "conquer",
+      "line_id": "con-1",
+      "filename": "conquer-con-1.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/conquer-con-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "每个子问题都用同样的方法处理，这就是递归求解。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "conquer",
+      "line_id": "con-2",
+      "filename": "conquer-con-2.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/conquer-con-2.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "递归树的每个分叉，都是一个规模更小的相同问题。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "merge",
+      "line_id": "mer-1",
+      "filename": "merge-mer-1.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/merge-mer-1.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "子问题解好后，关键一步是合并：把两个有序小段拼成一个有序大段。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "merge",
+      "line_id": "mer-2",
+      "filename": "merge-mer-2.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/merge-mer-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "两个指针各指一段头部，每次取较小的放入结果，逐步归并。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "merge",
+      "line_id": "mer-3",
+      "filename": "merge-mer-3.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/merge-mer-3.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "从叶子一路合并回根，整个数组就排好了序。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "看着递归树逐层展开，感受问题如何被拆到最小。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "再顺着合并的方向回收，观察有序结果一层层拼起来。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/summary-sum-1.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "分治就是分解、递归求解、再合并这三步。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "归并排序、快速排序、最大子数组，都是它的经典应用。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/divide-conquer/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.57,
+      "size": 25056,
+      "text": "化整为零，再聚零为整，我们下次再见！"
+    }
+  ],
+  "total_duration": 30.810000000000002,
+  "total_size": 493056
+}

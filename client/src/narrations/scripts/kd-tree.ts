@@ -1,0 +1,99 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * KD 树 - 口播稿件
+ * 核心概念：交替轴切分、平衡二叉树、带剪枝的最近邻搜索
+ * 目标受众：高中及以上
+ */
+export const kdTreeNarration: NarrationScript = {
+  id: 'kd-tree',
+  title: 'KD树',
+  subtitle: '交替轴切分与最近邻',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解 KD 树交替按坐标轴切分平面的思想',
+    '掌握用中位数构建平衡树的方法',
+    '理解最近邻搜索中的剪枝原理',
+    '感受空间数据结构带来的效率提升',
+  ],
+
+  prerequisites: ['了解二叉树', '了解平面坐标与距离'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '平面上散布着成千上万个点，给你一个新位置。' },
+        { id: 'intro-2', text: '要找出离它最近的那个点，逐个比较当然可以，但太慢了。' },
+        { id: 'intro-3', text: 'KD 树用一种巧妙的切分，让这件事快得多。' },
+      ],
+    },
+    {
+      id: 'axis',
+      type: 'concept',
+      title: '交替轴切分',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'axis-1', text: '第一层，我们竖着切一刀，把点分成左右两半。' },
+        { id: 'axis-2', text: '第二层，改成横着切一刀，把点分成上下两半。' },
+        { id: 'axis-3', text: '就这样竖、横、竖、横地交替下去，平面被层层划分。' },
+      ],
+    },
+    {
+      id: 'build',
+      type: 'concept',
+      title: '构建平衡树',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'build-1', text: '每一刀都切在当前坐标的中位数点上。' },
+        { id: 'build-2', text: '中位数保证两边点数几乎相等，树就变得平衡。' },
+        { id: 'build-3', text: '平衡的树只有大约 log n 层，查询自然更快。' },
+      ],
+    },
+    {
+      id: 'prune',
+      type: 'concept',
+      title: '最近邻剪枝',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'prune-1', text: '查询时先扎进查询点所在的那一侧，快速找到一个候选最近点。' },
+        { id: 'prune-2', text: '再看另一侧：如果切分线比当前最近距离还远，就整块跳过。' },
+        { id: 'prune-3', text: '这一步剪枝砍掉了大量无用比较，这正是效率的关键。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '移动鼠标改变查询点，看它总是连向最近的那个点。' },
+        { id: 'int-2', text: '留意访问节点数，往往远小于点的总数。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: 'KD 树交替按坐标轴切分，用中位数建成一棵平衡树。' },
+        { id: 'sum-2', text: '靠切分平面剪枝，最近邻查询平均只需对数时间。' },
+        { id: 'sum-3', text: '一把交替的切刀，就让海量点井然有序，我们下次再见！' },
+      ],
+    },
+  ],
+}

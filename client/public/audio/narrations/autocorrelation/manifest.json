@@ -1,0 +1,113 @@
+{
+  "script_id": "autocorrelation",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "autocorrelation",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/autocorrelation/intro-intro-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "肉眼很难看出来，但有一种方法能把它揪出来。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "compute",
+      "line_id": "com-1",
+      "filename": "compute-com-1.mp3",
+      "path": "audio/narrations/autocorrelation/compute-com-1.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "具体做法是：把每个点和它延迟 lag 后的点相乘。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "compute",
+      "line_id": "com-2",
+      "filename": "compute-com-2.mp3",
+      "path": "audio/narrations/autocorrelation/compute-com-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "再把所有乘积加起来，就得到这个 lag 的自相关值。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "compute",
+      "line_id": "com-3",
+      "filename": "compute-com-3.mp3",
+      "path": "audio/narrations/autocorrelation/compute-com-3.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "对每个 lag 都算一遍，就画出下方那条自相关曲线。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "peak",
+      "line_id": "peak-1",
+      "filename": "peak-peak-1.mp3",
+      "path": "audio/narrations/autocorrelation/peak-peak-1.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "当延迟恰好等于信号周期时，波峰对波峰、波谷对波谷。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "peak",
+      "line_id": "peak-2",
+      "filename": "peak-peak-2.mp3",
+      "path": "audio/narrations/autocorrelation/peak-peak-2.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "乘积几乎全为正，累加出一个高高的峰值。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/autocorrelation/interaction-int-2.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "点击重新生成噪声，红线始终锁定在同一个周期上。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/autocorrelation/summary-sum-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "自相关用延迟相乘求和，衡量信号隔多久还像自己。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/autocorrelation/summary-sum-2.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "周期倍数处的峰值，让我们从噪声里提取出基频。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/autocorrelation/summary-sum-3.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "一个错位相乘的巧思，就听懂了信号的节拍，我们下次再见！"
+    }
+  ],
+  "total_duration": 19.04,
+  "total_size": 304560,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

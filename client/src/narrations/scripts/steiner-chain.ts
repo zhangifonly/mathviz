@@ -1,0 +1,100 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 斯坦纳链 - 口播稿件
+ * 核心概念：两圆之间的相切圆链、闭合条件、斯坦纳定理、圆反演构造
+ * 目标受众：高中及以上
+ */
+export const steinerChainNarration: NarrationScript = {
+  id: 'steiner-chain',
+  title: '斯坦纳链',
+  subtitle: '首尾相切的圆环链',
+  difficulty: 'advanced',
+  targetAge: '高中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解斯坦纳链是两圆之间首尾相切的一圈圆',
+    '掌握链条闭合的解析条件',
+    '认识斯坦纳定理：闭合则可自由旋转',
+    '了解用圆反演构造一般斯坦纳链',
+  ],
+
+  prerequisites: ['了解圆与相切', '了解角度与三角函数'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '给你一个大圆，里面再套一个小圆。' },
+        { id: 'intro-2', text: '能不能在这两个圆之间，塞进一圈小圆？' },
+        { id: 'intro-3', text: '每个小圆都贴着内外两圆，还挨着左右邻居。' },
+        { id: 'intro-4', text: '这一串首尾相接的圆，就叫斯坦纳链。' },
+      ],
+    },
+    {
+      id: 'tangent',
+      type: 'concept',
+      title: '相切的链条',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '每个链圆同时内切外圆、外切内圆，被牢牢卡在环形区域里。' },
+        { id: 'def-2', text: '相邻两个链圆还要彼此外切，一环扣一环地排下去。' },
+        { id: 'def-3', text: '要正好绕一圈回到起点，圆的个数和两圆大小必须精确配合。' },
+      ],
+    },
+    {
+      id: 'porism',
+      type: 'concept',
+      title: '斯坦纳定理',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'por-1', text: '同心情形下，闭合条件很漂亮：sin(π比n)等于半径差除以半径和。' },
+        { id: 'por-2', text: '斯坦纳发现了惊人的一点：只要链条能闭合一次，就能闭合无数次。' },
+        { id: 'por-3', text: '于是整条链可以自由地转动，起点放在哪里都照样严丝合缝。' },
+      ],
+    },
+    {
+      id: 'inversion',
+      type: 'concept',
+      title: '反演构造',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'inv-1', text: '一般的两个圆并不同心，怎么造出它们之间的链呢？' },
+        { id: 'inv-2', text: '答案是圆反演：它把圆变成圆，还完好保留相切关系。' },
+        { id: 'inv-3', text: '先在同心环里排好链，再一次反演，就得到任意两圆间的斯坦纳链。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '换一换链圆的个数，看内外圆的比例如何随之变化。' },
+        { id: 'int-2', text: '让链条转起来，体会它无论怎么旋转都始终闭合。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '斯坦纳链是夹在两圆之间、首尾相切的一圈圆。' },
+        { id: 'sum-2', text: '闭合条件由半径决定，一旦闭合便能自由旋转，这就是斯坦纳定理。' },
+        { id: 'sum-3', text: '圆反演把简单的同心链变成千姿百态的一般链，我们下次再见！' },
+      ],
+    },
+  ],
+}

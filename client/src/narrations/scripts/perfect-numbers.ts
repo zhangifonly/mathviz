@@ -1,0 +1,98 @@
+import type { NarrationScript } from '../types'
+
+/**
+ * 完全数与亲和数 - 口播稿件
+ * 核心概念：真因数、完全数、盈数与亏数、亲和数
+ * 目标受众：初中及以上
+ */
+export const perfectNumbersNarration: NarrationScript = {
+  id: 'perfect-numbers',
+  title: '完全数与亲和数',
+  subtitle: '数字的和谐',
+  difficulty: 'elementary',
+  targetAge: '初中以上',
+  voice: 'yunxi',
+
+  meta: {
+    author: 'MathViz Team',
+    version: '1.0.0',
+    createdAt: '2026-07-18',
+    updatedAt: '2026-07-18',
+  },
+
+  objectives: [
+    '理解真因数与真因数之和',
+    '掌握完全数的定义',
+    '区分盈数与亏数',
+    '认识亲和数这对特殊的朋友',
+  ],
+
+  prerequisites: ['了解因数与倍数', '会做简单加法'],
+
+  sections: [
+    {
+      id: 'intro',
+      type: 'intro',
+      title: '开场引入',
+      trigger: { type: 'auto', delay: 1000 },
+      lines: [
+        { id: 'intro-1', text: '数字 6 有个神奇的秘密：它的真因数是 1、2、3。' },
+        { id: 'intro-2', text: '把它们加起来，1 加 2 加 3，正好又等于 6。' },
+        { id: 'intro-3', text: '一个数刚好等于自己各部分之和，古人称它为完美。' },
+      ],
+    },
+    {
+      id: 'define',
+      type: 'concept',
+      title: '完全数的定义',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'def-1', text: '真因数，就是一个数除自身以外的所有因数。' },
+        { id: 'def-2', text: '如果真因数之和恰好等于这个数，它就是完全数。' },
+        { id: 'def-3', text: '6 之后的完全数是 28，接着是 496 和 8128，越来越稀少。' },
+      ],
+    },
+    {
+      id: 'balance',
+      type: 'concept',
+      title: '盈数与亏数',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'bal-1', text: '如果真因数之和大于自身，我们叫它盈数，比如 12。' },
+        { id: 'bal-2', text: '如果真因数之和小于自身，就叫亏数，比如 8。' },
+        { id: 'bal-3', text: '完全数恰好卡在盈与亏之间，稀有而平衡。' },
+      ],
+    },
+    {
+      id: 'amicable',
+      type: 'concept',
+      title: '亲和数',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'ami-1', text: '220 的真因数加起来等于 284，而 284 的真因数又加回 220。' },
+        { id: 'ami-2', text: '这对彼此成就的数字，被称为亲和数，象征友谊。' },
+      ],
+    },
+    {
+      id: 'interaction',
+      type: 'interaction',
+      title: '亲手探索',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'int-1', text: '输入任意一个数字，看看它的真因数怎么分解。' },
+        { id: 'int-2', text: '再看看它到底是完全数、盈数还是亏数。' },
+      ],
+    },
+    {
+      id: 'summary',
+      type: 'summary',
+      title: '总结',
+      trigger: { type: 'auto', delay: 800 },
+      lines: [
+        { id: 'sum-1', text: '完全数等于自己真因数之和，盈数偏多，亏数偏少。' },
+        { id: 'sum-2', text: '亲和数则互为对方真因数之和，成双成对。' },
+        { id: 'sum-3', text: '数字里藏着如此和谐的秩序，我们下次再见！' },
+      ],
+    },
+  ],
+}

@@ -1,0 +1,179 @@
+{
+  "script_id": "decision-tree",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "decision-tree",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/intro-intro-1.mp3",
+      "duration": 1.43,
+      "size": 22896,
+      "text": "猜一个东西，我们常常靠一连串的提问。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/intro-intro-2.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "它在左边还是右边？在上边还是下边？"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.36,
+      "size": 21744,
+      "text": "每问一个问题，可能的答案就少一批。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/intro-intro-4.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "决策树，正是把这种层层提问自动化的分类方法。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "entropy",
+      "line_id": "ent-1",
+      "filename": "entropy-ent-1.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/entropy-ent-1.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "先要量一量：一堆数据到底有多混乱？"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "entropy",
+      "line_id": "ent-2",
+      "filename": "entropy-ent-2.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/entropy-ent-2.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "两类各占一半时最混乱，信息熵等于一。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "entropy",
+      "line_id": "ent-3",
+      "filename": "entropy-ent-3.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/entropy-ent-3.mp3",
+      "duration": 1.54,
+      "size": 24624,
+      "text": "全是同一类时最干净，信息熵等于零。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "gain",
+      "line_id": "gain-1",
+      "filename": "gain-gain-1.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/gain-gain-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "一次分裂，就是画一条横线或竖线，把点分成两边。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "gain",
+      "line_id": "gain-2",
+      "filename": "gain-gain-2.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/gain-gain-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "分裂前的熵，减去分裂后两边的加权熵，就是信息增益。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "gain",
+      "line_id": "gain-3",
+      "filename": "gain-gain-3.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/gain-gain-3.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "我们贪心地挑增益最大的那一刀，让两边尽量变纯。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "region",
+      "line_id": "reg-1",
+      "filename": "region-reg-1.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/region-reg-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "每一刀都平行于坐标轴，于是平面被切成一块块矩形。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "region",
+      "line_id": "reg-2",
+      "filename": "region-reg-2.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/region-reg-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "每块矩形对应一个叶子，落进去就按里面的多数类预测。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/interaction-int-1.mp3",
+      "duration": 1.5,
+      "size": 24048,
+      "text": "调大树的深度，看区域怎样越切越细。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/interaction-int-2.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "太深会紧贴每个点，那就是过拟合的样子。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "决策树用信息熵度量混乱，用信息增益挑最佳分裂。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/summary-sum-2.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "一刀刀轴对齐的切分，拼出可解释的分类区域。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/decision-tree/xiaoxiao/summary-sum-3.mp3",
+      "duration": 1.7,
+      "size": 27216,
+      "text": "简单的提问，串成聪明的判断，我们下次再见！"
+    }
+  ],
+  "total_duration": 29.65,
+  "total_size": 474768
+}

@@ -1,0 +1,173 @@
+{
+  "script_id": "poisson-process",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "poisson-process",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/poisson-process/intro-intro-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "想象一家小店，顾客三三两两随机推门而入。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/poisson-process/intro-intro-2.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "你没法预测下一位何时到来，但整体上却有规律可循。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/poisson-process/intro-intro-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "这种随机而独立的到达，就是泊松过程描述的世界。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "gap",
+      "line_id": "gap-1",
+      "filename": "gap-gap-1.mp3",
+      "path": "audio/narrations/poisson-process/gap-gap-1.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "关键在于相邻两次到达之间的等待时间。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "gap",
+      "line_id": "gap-2",
+      "filename": "gap-gap-2.mp3",
+      "path": "audio/narrations/poisson-process/gap-gap-2.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "它服从指数分布，用一个随机数 u，取负对数除以速率就能采样。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "gap",
+      "line_id": "gap-3",
+      "filename": "gap-gap-3.mp3",
+      "path": "audio/narrations/poisson-process/gap-gap-3.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "把这些间隔一段段累加，就得到一串随机的到达时刻。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "count",
+      "line_id": "cnt-1",
+      "filename": "count-cnt-1.mp3",
+      "path": "audio/narrations/poisson-process/count-cnt-1.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "沿时间轴数一数，到某一刻为止已经来了多少位顾客。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "count",
+      "line_id": "cnt-2",
+      "filename": "count-cnt-2.mp3",
+      "path": "audio/narrations/poisson-process/count-cnt-2.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "这个数就是计数过程 N(t)，每来一位就往上跳一级。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "count",
+      "line_id": "cnt-3",
+      "filename": "count-cnt-3.mp3",
+      "path": "audio/narrations/poisson-process/count-cnt-3.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "于是它画出一条只升不降的阶梯曲线。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "dist",
+      "line_id": "dist-1",
+      "filename": "dist-dist-1.mp3",
+      "path": "audio/narrations/poisson-process/dist-dist-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "固定一段时间窗，里面到达的次数并不固定，而是随机的。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "dist",
+      "line_id": "dist-2",
+      "filename": "dist-dist-2.mp3",
+      "path": "audio/narrations/poisson-process/dist-dist-2.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "它服从泊松分布，平均到达数正好等于速率乘以时长。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/poisson-process/interaction-int-1.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "调大速率，你会看到竖线变密，阶梯爬得更陡。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/poisson-process/interaction-int-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "点击重新随机，每一次都是一段独一无二的到达历史。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/poisson-process/summary-sum-1.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "泊松过程用指数间隔生成随机到达。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/poisson-process/summary-sum-2.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "计数 N(t) 是阶梯函数，时间窗内的次数服从泊松分布。"
+    },
+    {
+      "script_id": "poisson-process",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/poisson-process/summary-sum-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "随机之中自有秩序，这就是概率的魅力，我们下次再见！"
+    }
+  ],
+  "total_duration": 31.509999999999998,
+  "total_size": 504288,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

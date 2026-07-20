@@ -1,0 +1,169 @@
+{
+  "script_id": "partial-derivative",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "partial-derivative",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "想象你站在一片起伏的山坡上，脚下的高度随位置而变。"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "往东走会上坡还是下坡？往北走呢？坡有多陡？"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/intro-intro-3.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "要回答这些问题，我们需要多元函数的变化率工具。"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "partial",
+      "line_id": "def-1",
+      "filename": "partial-def-1.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/partial-def-1.mp3",
+      "duration": 3.8,
+      "size": 60768,
+      "text": "把高度看成函数 f(x, y)，只让 x 变、y 不动，得到沿东西方向的坡度，这是对 x 的偏导数。"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "partial",
+      "line_id": "def-2",
+      "filename": "partial-def-2.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/partial-def-2.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "只让 y 变、x 不动，得到沿南北方向的坡度，这是对 y 的偏导数。"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "partial",
+      "line_id": "def-3",
+      "filename": "partial-def-3.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/partial-def-3.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "每个偏导数，都是把另一个变量当常数后的普通导数。"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "gradient",
+      "line_id": "grad-1",
+      "filename": "gradient-grad-1.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/gradient-grad-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "把两个偏导数拼成一个向量，就是梯度，记作 [fx, fy]。"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "gradient",
+      "line_id": "grad-2",
+      "filename": "gradient-grad-2.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/gradient-grad-2.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "梯度既有方向又有大小，它的模长就是当地最陡的坡度。"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "gradient",
+      "line_id": "grad-3",
+      "filename": "gradient-grad-3.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/gradient-grad-3.mp3",
+      "duration": 1.49,
+      "size": 23760,
+      "text": "图上白色箭头，正是每一点的梯度向量。"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "steepest",
+      "line_id": "steep-1",
+      "filename": "steepest-steep-1.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/steepest-steep-1.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "奇妙的是，梯度永远垂直于等高线，也就是等高的那圈曲线。"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "steepest",
+      "line_id": "steep-2",
+      "filename": "steepest-steep-2.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/steepest-steep-2.mp3",
+      "duration": 2.59,
+      "size": 41472,
+      "text": "沿梯度方向上升最快，反方向下降最快，横切等高线则不升不降。"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/interaction-int-1.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "在图上点击不同位置，观察箭头方向与长短如何随地形改变。"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/interaction-int-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "试试碗、鞍面和波纹，感受梯度在山谷、山脊处的不同表现。"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "偏导数量出沿单一方向的坡度，两者合成梯度向量。"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "梯度垂直等高线，指向上升最陡的方向，模长就是坡度。"
+    },
+    {
+      "script_id": "partial-derivative",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/partial-derivative/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "掌握了梯度，你就有了导航高维地形的指南针，我们下次再见！"
+    }
+  ],
+  "total_duration": 35.88,
+  "total_size": 574128
+}

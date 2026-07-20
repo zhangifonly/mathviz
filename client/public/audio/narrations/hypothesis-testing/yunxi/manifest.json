@@ -1,0 +1,179 @@
+{
+  "script_id": "hypothesis-testing",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/intro-intro-1.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "一款新药宣称能提高疗效指标，可这真的有效，还是只是运气？"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/intro-intro-2.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "光看几个样本均值升高，并不能立刻下结论。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/intro-intro-3.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "统计学给了我们一套严谨的裁决方法，叫做假设检验。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "hypothesis",
+      "line_id": "hyp-1",
+      "filename": "hypothesis-hyp-1.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/hypothesis-hyp-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "我们先立一个原假设，说新药没用，指标均值仍等于旧值。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "hypothesis",
+      "line_id": "hyp-2",
+      "filename": "hypothesis-hyp-2.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/hypothesis-hyp-2.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "再立一个备择假设，说均值确实发生了改变。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "hypothesis",
+      "line_id": "hyp-3",
+      "filename": "hypothesis-hyp-3.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/hypothesis-hyp-3.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "检验的思路是：先假定原假设成立，看数据是否足够反常。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "statistic",
+      "line_id": "stat-1",
+      "filename": "statistic-stat-1.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/statistic-stat-1.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "把样本均值减去原假设的均值，再除以标准误，得到 z 统计量。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "statistic",
+      "line_id": "stat-2",
+      "filename": "statistic-stat-2.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/statistic-stat-2.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "如果原假设为真，这个 z 值应当服从标准正态分布。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "statistic",
+      "line_id": "stat-3",
+      "filename": "statistic-stat-3.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/statistic-stat-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "z 离零越远，就说明观测结果与原假设越不相容。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "pvalue",
+      "line_id": "pval-1",
+      "filename": "pvalue-pval-1.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/pvalue-pval-1.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "p 值是：若原假设为真，出现比当前更极端结果的概率。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "pvalue",
+      "line_id": "pval-2",
+      "filename": "pvalue-pval-2.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/pvalue-pval-2.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "我们事先设定显著性水平，比如 0.05，作为怀疑的门槛。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "pvalue",
+      "line_id": "pval-3",
+      "filename": "pvalue-pval-3.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/pvalue-pval-3.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "p 值小于这个门槛，就把它落进拒绝域，拒绝原假设。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/interaction-int-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "调整样本均值，看那条 z 竖线如何滑向尾部的拒绝域。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/interaction-int-2.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "再切换显著性水平，感受门槛收紧后判断如何变得更谨慎。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/summary-sum-1.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "假设检验先立原假设，再用统计量衡量数据的反常程度。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/summary-sum-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "p 值小于显著性水平就拒绝，否则暂且保留原假设。"
+    },
+    {
+      "script_id": "hypothesis-testing",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/hypothesis-testing/yunxi/summary-sum-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "让数据替我们说话，理性地做出判断，我们下次再见！"
+    }
+  ],
+  "total_duration": 36.13,
+  "total_size": 578160
+}

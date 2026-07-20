@@ -1,0 +1,153 @@
+{
+  "script_id": "tessellation",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "tessellation",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/tessellation/intro-intro-1.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "看看浴室墙上的瓷砖，一块挨着一块，铺得严丝合缝。"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/tessellation/intro-intro-2.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "为什么它们之间不留一点缝隙，也不会互相重叠？"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/tessellation/intro-intro-3.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "这种把平面铺满的方式，数学上叫做密铺，或者镶嵌。"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "angle",
+      "line_id": "ang-1",
+      "filename": "angle-ang-1.mp3",
+      "path": "audio/narrations/tessellation/angle-ang-1.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "密铺的关键，藏在多边形聚拢的那个顶点上。"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "angle",
+      "line_id": "ang-2",
+      "filename": "angle-ang-2.mp3",
+      "path": "audio/narrations/tessellation/angle-ang-2.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "若干个角挤在一个点周围，它们的和必须正好是360度。"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "angle",
+      "line_id": "ang-3",
+      "filename": "angle-ang-3.mp3",
+      "path": "audio/narrations/tessellation/angle-ang-3.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "多一点就重叠，少一点就留缝，只有刚好360度才能铺平。"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "three",
+      "line_id": "thr-1",
+      "filename": "three-thr-1.mp3",
+      "path": "audio/narrations/tessellation/three-thr-1.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "正三角形内角60度，六个拼成360度，铺得满满当当。"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "three",
+      "line_id": "thr-2",
+      "filename": "three-thr-2.mp3",
+      "path": "audio/narrations/tessellation/three-thr-2.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "正方形内角90度，四个一拼刚好360度。"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "three",
+      "line_id": "thr-3",
+      "filename": "three-thr-3.mp3",
+      "path": "audio/narrations/tessellation/three-thr-3.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "正六边形内角120度，三个就够360度，这就是蜂巢的形状。"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "semi",
+      "line_id": "semi-1",
+      "filename": "semi-semi-1.mp3",
+      "path": "audio/narrations/tessellation/semi-semi-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "如果允许几种正多边形混搭，还能拼出更多花样。"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/tessellation/interaction-int-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "留意每个顶点，你会发现角度总是刚好合成一整圈。"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/tessellation/summary-sum-1.mp3",
+      "duration": 1.51,
+      "size": 24192,
+      "text": "密铺就是用多边形不留缝地铺满平面。"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/tessellation/summary-sum-2.mp3",
+      "duration": 3.11,
+      "size": 49824,
+      "text": "条件是顶点处角度和为360度，单一正多边形只有三、四、六边形做得到。"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/tessellation/summary-sum-3.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "简单的角度规则，铺出无尽的秩序之美，我们下次再见！"
+    }
+  ],
+  "total_duration": 29.199999999999996,
+  "total_size": 467136,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

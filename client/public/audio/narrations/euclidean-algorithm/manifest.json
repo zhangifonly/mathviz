@@ -1,0 +1,173 @@
+{
+  "script_id": "euclidean-algorithm",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/euclidean-algorithm/intro-intro-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "两个整数的最大公约数，是能同时整除它们的最大正整数。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/euclidean-algorithm/intro-intro-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "比如四十八和三十六，它们的最大公约数是十二。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/euclidean-algorithm/intro-intro-3.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "两千多年前，欧几里得给出了一个惊人简洁的求法。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "divide",
+      "line_id": "def-1",
+      "filename": "divide-def-1.mp3",
+      "path": "audio/narrations/euclidean-algorithm/divide-def-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "用大数除以小数，取余数，再用小数除以这个余数。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "divide",
+      "line_id": "def-2",
+      "filename": "divide-def-2.mp3",
+      "path": "audio/narrations/euclidean-algorithm/divide-def-2.mp3",
+      "duration": 1.55,
+      "size": 24768,
+      "text": "如此辗转反复，直到余数变成零。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "divide",
+      "line_id": "def-3",
+      "filename": "divide-def-3.mp3",
+      "path": "audio/narrations/euclidean-algorithm/divide-def-3.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "最后那个非零的除数，就是最大公约数。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "geometry",
+      "line_id": "geo-1",
+      "filename": "geometry-geo-1.mp3",
+      "path": "audio/narrations/euclidean-algorithm/geometry-geo-1.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "把两数看成矩形的长和宽，不断从中切下最大的正方形。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "geometry",
+      "line_id": "geo-2",
+      "filename": "geometry-geo-2.mp3",
+      "path": "audio/narrations/euclidean-algorithm/geometry-geo-2.mp3",
+      "duration": 1.69,
+      "size": 27072,
+      "text": "剩下的小矩形继续切，正方形越切越小。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "geometry",
+      "line_id": "geo-3",
+      "filename": "geometry-geo-3.mp3",
+      "path": "audio/narrations/euclidean-algorithm/geometry-geo-3.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "最后一块正方形的边长，正是最大公约数。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "extend",
+      "line_id": "ext-1",
+      "filename": "extend-ext-1.mp3",
+      "path": "audio/narrations/euclidean-algorithm/extend-ext-1.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "扩展算法不仅求出公约数，还能找到两个系数。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "extend",
+      "line_id": "ext-2",
+      "filename": "extend-ext-2.mp3",
+      "path": "audio/narrations/euclidean-algorithm/extend-ext-2.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "a 乘以 x 加上 b 乘以 y，恰好等于它们的公约数，这就是裴蜀等式。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/euclidean-algorithm/interaction-int-1.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "选择不同的两个数，看看辗转相除每一步的算式。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/euclidean-algorithm/interaction-int-2.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "观察矩形是怎样被一层层正方形填满的。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/euclidean-algorithm/summary-sum-1.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "辗转相除用余数一步步逼近，是最古老的高效算法之一。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/euclidean-algorithm/summary-sum-2.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "它的几何形态是矩形切正方形，代数延伸是裴蜀等式。"
+    },
+    {
+      "script_id": "euclidean-algorithm",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/euclidean-algorithm/summary-sum-3.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "简单的取余，藏着深刻的数学，我们下次再见！"
+    }
+  ],
+  "total_duration": 30.519999999999996,
+  "total_size": 488016,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

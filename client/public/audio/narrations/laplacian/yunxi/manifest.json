@@ -1,0 +1,179 @@
+{
+  "script_id": "laplacian",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "laplacian",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/laplacian/yunxi/intro-intro-1.mp3",
+      "duration": 2.66,
+      "size": 42624,
+      "text": "站在一片起伏的地形上，问一个简单问题：脚下这一点，比它四周高还是低？"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/laplacian/yunxi/intro-intro-2.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "如果比四周低，你正处在一个小凹坑里；比四周高，就站在一个小鼓包上。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/laplacian/yunxi/intro-intro-3.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "把这种偏离邻域的程度量化出来，就是拉普拉斯算子。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "derive",
+      "line_id": "def-1",
+      "filename": "derive-def-1.mp3",
+      "path": "audio/narrations/laplacian/yunxi/derive-def-1.mp3",
+      "duration": 2.87,
+      "size": 45936,
+      "text": "拉普拉斯算子写作 ∇²f，等于 f 对 x 的二阶偏导加上对 y 的二阶偏导。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "derive",
+      "line_id": "def-2",
+      "filename": "derive-def-2.mp3",
+      "path": "audio/narrations/laplacian/yunxi/derive-def-2.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "二阶导衡量弯曲方向：向上凹为正，向下凸为负。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "derive",
+      "line_id": "def-3",
+      "filename": "derive-def-3.mp3",
+      "path": "audio/narrations/laplacian/yunxi/derive-def-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "把两个方向的弯曲加起来，就得到这一点整体的凹凸倾向。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "stencil",
+      "line_id": "sten-1",
+      "filename": "stencil-sten-1.mp3",
+      "path": "audio/narrations/laplacian/yunxi/stencil-sten-1.mp3",
+      "duration": 2.99,
+      "size": 47808,
+      "text": "在网格上用中心差分离散，∇²f 就变成四个邻居之和，减去中心值的四倍。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "stencil",
+      "line_id": "sten-2",
+      "filename": "stencil-sten-2.mp3",
+      "path": "audio/narrations/laplacian/yunxi/stencil-sten-2.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "这个上下左右加中心的图案，叫做五点模板。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "stencil",
+      "line_id": "sten-3",
+      "filename": "stencil-sten-3.mp3",
+      "path": "audio/narrations/laplacian/yunxi/stencil-sten-3.mp3",
+      "duration": 3.11,
+      "size": 49824,
+      "text": "它还等于四倍的邻域平均减中心值，所以拉普拉斯本质是在问：你偏离周围平均多少。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "harmonic",
+      "line_id": "harm-1",
+      "filename": "harmonic-harm-1.mp3",
+      "path": "audio/narrations/laplacian/yunxi/harmonic-harm-1.mp3",
+      "duration": 2.96,
+      "size": 47376,
+      "text": "如果处处 ∇²f 等于零，每一点都恰好等于邻域平均，这样的函数叫调和函数。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "harmonic",
+      "line_id": "harm-2",
+      "filename": "harmonic-harm-2.mp3",
+      "path": "audio/narrations/laplacian/yunxi/harmonic-harm-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "调和函数没有局部高峰和低谷，像绷紧的肥皂膜一样光滑。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "harmonic",
+      "line_id": "harm-3",
+      "filename": "harmonic-harm-3.mp3",
+      "path": "audio/narrations/laplacian/yunxi/harmonic-harm-3.mp3",
+      "duration": 3.3,
+      "size": 52848,
+      "text": "热扩散方程 u 加上 α 乘 ∇²u，就是让每点不断向邻域平均靠拢，把差异慢慢抹平。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/laplacian/yunxi/interaction-int-1.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "切换不同的函数，看左边的形状如何决定右边的拉普拉斯热力图。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/laplacian/yunxi/interaction-int-2.mp3",
+      "duration": 3.36,
+      "size": 53712,
+      "text": "试试调和函数 x²减y²，你会看到右图几乎一片纯白，因为它处处等于邻域平均。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/laplacian/yunxi/summary-sum-1.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "拉普拉斯算子是二阶偏导之和，度量一点偏离邻域平均的程度。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/laplacian/yunxi/summary-sum-2.mp3",
+      "duration": 2.52,
+      "size": 40320,
+      "text": "五点模板让它可以在网格上计算，调和函数则是它恒为零的特例。"
+    },
+    {
+      "script_id": "laplacian",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/laplacian/yunxi/summary-sum-3.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "从热扩散到图像处理，它无处不在。感谢观看，我们下次再见！"
+    }
+  ],
+  "total_duration": 43.290000000000006,
+  "total_size": 692928
+}
