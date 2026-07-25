@@ -68,26 +68,46 @@ async def generate_audio_for_line(
     voice: str = 'zh-CN-YunxiNeural',
     rate: str = '+0%',
     volume: str = '+0%',
-    pitch: str = '+0Hz'
+    pitch: str = '+0Hz',
+    max_retries: int = 4,
 ) -> dict:
     """
     为单条文本生成音频文件
 
+    edge-tts 走公网接口, 偶发超时/断流会产出 0 字节文件。这里带指数退避重试,
+    并校验产物非空; 全部重试失败则删掉残留空文件并抛异常, 由调用方计入失败清单。
+
     返回音频文件信息（包括时长）
     """
-    communicate = edge_tts.Communicate(
-        text=text,
-        voice=voice,
-        rate=rate,
-        volume=volume,
-        pitch=pitch
-    )
-
     # 确保输出目录存在
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # 生成音频
-    await communicate.save(str(output_path))
+    last_err: Optional[Exception] = None
+    for attempt in range(1, max_retries + 1):
+        try:
+            communicate = edge_tts.Communicate(
+                text=text,
+                voice=voice,
+                rate=rate,
+                volume=volume,
+                pitch=pitch
+            )
+            await communicate.save(str(output_path))
+
+            if output_path.exists() and output_path.stat().st_size > 0:
+                break
+            raise RuntimeError('edge-tts 返回 0 字节音频')
+        except Exception as e:  # noqa: BLE001 - 网络类异常种类多, 统一重试
+            last_err = e
+            if attempt < max_retries:
+                wait = 2 ** (attempt - 1)
+                print(f"         ⚠️  第 {attempt} 次失败 ({e}), {wait}s 后重试")
+                await asyncio.sleep(wait)
+    else:
+        # 重试耗尽: 清掉空文件, 避免污染目录被误当成已生成
+        if output_path.exists() and output_path.stat().st_size == 0:
+            output_path.unlink()
+        raise RuntimeError(f'重试 {max_retries} 次仍失败: {last_err}')
 
     # 获取文件信息
     file_size = output_path.stat().st_size
@@ -123,6 +143,7 @@ async def generate_audio_for_script(script: dict, output_dir: Path, override_voi
         'voice': voice,
         'voice_key': voice_key,
         'files': [],
+        'failed': [],
         'total_duration': 0,
         'total_size': 0,
     }
@@ -179,9 +200,12 @@ async def generate_audio_for_script(script: dict, output_dir: Path, override_voi
 
             except Exception as e:
                 print(f"         ❌ 失败: {e}")
+                results['failed'].append(f'{section_id}-{line_id}')
 
     print(f"\n   📊 统计:")
     print(f"      总文件数: {len(results['files'])}")
+    if results['failed']:
+        print(f"      ❌ 失败 {len(results['failed'])} 条: {', '.join(results['failed'])}")
     print(f"      总时长: {results['total_duration']:.1f}秒 ({results['total_duration']/60:.1f}分钟)")
     print(f"      总大小: {results['total_size']/1024/1024:.2f}MB")
 

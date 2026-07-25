@@ -126,6 +126,24 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
   // 用 ref 跟踪是否应该自动播放下一行
   const shouldAutoPlayRef = useRef(false)
   const playLineRef = useRef<((sectionIdx: number, lineIdx: number) => Promise<void>) | null>(null)
+  // 无音频行的兜底计时器: 按字数估算朗读时长后自动推进, 避免讲解卡死
+  const fallbackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  // 清除兜底计时器 (暂停/停止/跳转/切换稿件时调用)
+  const clearFallbackTimer = useCallback(() => {
+    if (fallbackTimerRef.current !== null) {
+      clearTimeout(fallbackTimerRef.current)
+      fallbackTimerRef.current = null
+    }
+  }, [])
+
+  // 按中文语速估算一行字幕的停留时长 (毫秒), 用于无音频时的兜底节奏
+  const estimateReadMs = useCallback((text: string) => {
+    const chars = text.replace(/\s+/g, '').length
+    // 约 5.5 字/秒, 下限 1.6s 上限 12s, 再按当前倍速缩放
+    const raw = Math.min(12000, Math.max(1600, (chars / 5.5) * 1000))
+    return raw / (playbackRate || 1)
+  }, [playbackRate])
 
   // 预加载下一个音频
   const preloadNext = useCallback((sectionIdx: number, lineIdx: number) => {
@@ -173,15 +191,61 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
       }, delay)
     }
 
+    // 推进到下一行/下一段落; 音频播完、加载失败、无音频兜底三种情况共用
+    const advanceNext = () => {
+      if (!shouldAutoPlayRef.current) return
+
+      const nextLineIdx = lineIdx + 1
+      if (nextLineIdx < section.lines.length) {
+        setPlaybackState(prev => ({
+          ...prev,
+          currentLineIndex: nextLineIdx,
+          progress: 0,
+        }))
+        setTimeout(() => {
+          playLineRef.current?.(sectionIdx, nextLineIdx)
+        }, 100)
+        return
+      }
+
+      const nextSectionIdx = sectionIdx + 1
+      if (nextSectionIdx < script.sections.length) {
+        setPlaybackState(prev => ({
+          ...prev,
+          currentSectionIndex: nextSectionIdx,
+          currentLineIndex: 0,
+          progress: 0,
+          completedSections: new Set([...prev.completedSections, sectionIdx]),
+        }))
+        setTimeout(() => {
+          playLineRef.current?.(nextSectionIdx, 0)
+        }, 100)
+        return
+      }
+
+      // 全部播放完成
+      setPlaybackState(prev => ({
+        ...prev,
+        isPlaying: false,
+        completedSections: new Set([...prev.completedSections, sectionIdx]),
+      }))
+      shouldAutoPlayRef.current = false
+    }
+
     // 获取音频路径
     const audioPath = getAudioPath(section.id, line.id)
-    console.log('尝试播放音频:', audioPath)
     if (!audioPath) {
-      console.warn('音频文件未找到:', section.id, line.id)
+      // 该行没有配音文件: 保留字幕与动画, 按字数估时后自动推进, 不能停在这里
+      clearFallbackTimer()
+      fallbackTimerRef.current = setTimeout(() => {
+        fallbackTimerRef.current = null
+        advanceNext()
+      }, estimateReadMs(line.text))
       return
     }
 
     // 停止当前播放
+    clearFallbackTimer()
     if (audioRef.current) {
       audioRef.current.pause()
       audioRef.current = null
@@ -216,68 +280,17 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
     })
 
     // 监听结束 - 自动播放下一行
-    audio.addEventListener('ended', () => {
-      if (!shouldAutoPlayRef.current) return
+    audio.addEventListener('ended', advanceNext)
 
-      const nextLineIdx = lineIdx + 1
-      if (nextLineIdx < section.lines.length) {
-        setPlaybackState(prev => ({
-          ...prev,
-          currentLineIndex: nextLineIdx,
-          progress: 0,
-        }))
-        // 延迟播放下一行
-        setTimeout(() => {
-          if (playLineRef.current) {
-            playLineRef.current(sectionIdx, nextLineIdx)
-          }
-        }, 100)
-      } else {
-        // 当前段落结束，播放下一段落
-        const nextSectionIdx = sectionIdx + 1
-        if (nextSectionIdx < script.sections.length) {
-          setPlaybackState(prev => ({
-            ...prev,
-            currentSectionIndex: nextSectionIdx,
-            currentLineIndex: 0,
-            progress: 0,
-            completedSections: new Set([...prev.completedSections, sectionIdx]),
-          }))
-          setTimeout(() => {
-            if (playLineRef.current) {
-              playLineRef.current(nextSectionIdx, 0)
-            }
-          }, 100)
-        } else {
-          // 全部播放完成
-          setPlaybackState(prev => ({
-            ...prev,
-            isPlaying: false,
-            completedSections: new Set([...prev.completedSections, sectionIdx]),
-          }))
-          shouldAutoPlayRef.current = false
-        }
-      }
-    })
-
-    // 监听加载错误 - 跳过并继续下一行
+    // 监听加载错误 - 按字数估时后继续下一行 (0 字节文件也走这里)
     audio.addEventListener('error', () => {
       console.error('音频加载失败:', audioPath)
       if (!shouldAutoPlayRef.current) return
-
-      // 自动跳到下一行
-      const nextLineIdx = lineIdx + 1
-      if (nextLineIdx < section.lines.length) {
-        setPlaybackState(prev => ({
-          ...prev,
-          currentLineIndex: nextLineIdx,
-        }))
-        setTimeout(() => {
-          if (playLineRef.current) {
-            playLineRef.current(sectionIdx, nextLineIdx)
-          }
-        }, 100)
-      }
+      clearFallbackTimer()
+      fallbackTimerRef.current = setTimeout(() => {
+        fallbackTimerRef.current = null
+        advanceNext()
+      }, estimateReadMs(line.text))
     })
 
     // 开始播放
@@ -287,8 +300,16 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
       preloadNext(sectionIdx, lineIdx)
     } catch (err) {
       console.error('播放失败:', err, audioPath)
+      // play() 被拒 (自动播放策略/解码失败) 时同样兜底推进, 不要卡住
+      if (shouldAutoPlayRef.current) {
+        clearFallbackTimer()
+        fallbackTimerRef.current = setTimeout(() => {
+          fallbackTimerRef.current = null
+          advanceNext()
+        }, estimateReadMs(line.text))
+      }
     }
-  }, [script, manifest, playbackRate, getAudioPath, triggerAnimation, preloadNext])
+  }, [script, manifest, playbackRate, getAudioPath, triggerAnimation, preloadNext, clearFallbackTimer, estimateReadMs])
 
   // 更新 ref
   useEffect(() => {
@@ -339,6 +360,7 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
   // 退出讲解
   const exitNarration = useCallback(() => {
     shouldAutoPlayRef.current = false
+    clearFallbackTimer()
     if (audioRef.current) {
       audioRef.current.pause()
       audioRef.current = null
@@ -350,7 +372,7 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
       isPlaying: false,
     }))
     setCurrentText('')
-  }, [])
+  }, [clearFallbackTimer])
 
   // 设置演示模式
   const setPresenterMode = useCallback((enabled: boolean) => {
@@ -371,11 +393,12 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
   // 暂停
   const pause = useCallback(() => {
     shouldAutoPlayRef.current = false
+    clearFallbackTimer()
     if (audioRef.current) {
       audioRef.current.pause()
     }
     setPlaybackState(prev => ({ ...prev, isPlaying: false }))
-  }, [])
+  }, [clearFallbackTimer])
 
   // 切换播放/暂停
   const togglePlay = useCallback(() => {
@@ -394,6 +417,7 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
     if (!section) return
 
     // 停止当前播放
+    clearFallbackTimer()
     if (audioRef.current) {
       audioRef.current.pause()
       audioRef.current = null
@@ -420,13 +444,14 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
         }
       }
     }
-  }, [script, playbackState.currentSectionIndex, playbackState.currentLineIndex, playbackState.isPlaying, playLine])
+  }, [script, playbackState.currentSectionIndex, playbackState.currentLineIndex, playbackState.isPlaying, playLine, clearFallbackTimer])
 
   // 上一行
   const prevLine = useCallback(() => {
     if (!script) return
 
     // 停止当前播放
+    clearFallbackTimer()
     if (audioRef.current) {
       audioRef.current.pause()
       audioRef.current = null
@@ -452,7 +477,7 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
         setTimeout(() => playLine(prevSectionIndex, newLineIndex), 50)
       }
     }
-  }, [script, playbackState.currentSectionIndex, playbackState.currentLineIndex, playbackState.isPlaying, playLine])
+  }, [script, playbackState.currentSectionIndex, playbackState.currentLineIndex, playbackState.isPlaying, playLine, clearFallbackTimer])
 
   // 跳转到段落
   const jumpToSection = useCallback((sectionIndex: number) => {
@@ -472,6 +497,7 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
     if (!section || lineIndex < 0 || lineIndex >= section.lines.length) return
 
     // 停止当前音频
+    clearFallbackTimer()
     if (audioRef.current) {
       audioRef.current.pause()
       audioRef.current = null
@@ -495,7 +521,7 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
     if (playbackState.isPlaying) {
       setTimeout(() => playLine(sectionIndex, lineIndex), 50)
     }
-  }, [script, playbackState.isPlaying, playLine])
+  }, [script, playbackState.isPlaying, playLine, clearFallbackTimer])
 
   // 设置语音
   const setVoice = useCallback((newVoice: VoiceType) => {
@@ -528,6 +554,9 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
       audioRef.current.playbackRate = rate
     }
   }, [])
+
+  // 卸载时清掉无音频兜底计时器, 避免离开页面后仍在推进讲解
+  useEffect(() => clearFallbackTimer, [clearFallbackTimer])
 
   // 注册动画回调
   const onAnimationAction = useCallback((callback: (action: AnimationAction) => void) => {

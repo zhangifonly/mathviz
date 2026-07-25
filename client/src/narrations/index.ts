@@ -1,6 +1,10 @@
 /**
  * 口播稿件索引
  * 导出所有实验的口播稿件
+ *
+ * ⚠️ 仅供构建期脚本 scripts/export-narrations.ts 使用(导出 JSON 给配音脚本);
+ * 前端运行时不要 import 本文件 —— 实验页各自直接 import ./scripts/xxx,
+ * 否则这里的全量静态 map 会把 300 份稿件打进前端包。
  */
 
 // 入门级实验

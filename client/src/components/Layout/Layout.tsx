@@ -4,11 +4,13 @@ import Sidebar from './Sidebar'
 import { NarrationProvider, useNarrationOptional } from '../../contexts/NarrationContext'
 import { NarrationController } from '../NarrationController'
 import { BugReportButton } from '../BugReport'
+import { useDocumentTitle } from '../../hooks/useDocumentTitle'
 
 function LayoutContent() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const narration = useNarrationOptional()
   const location = useLocation()
+  useDocumentTitle()
   const navigate = useNavigate()
   const isNarrationMode = narration?.playbackState.isNarrationMode || false
   const isPresenterMode = narration?.playbackState.isPresenterMode || false
