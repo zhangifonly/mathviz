@@ -73,12 +73,17 @@ async def generate_audio_for_line(
     volume: str = '+0%',
     pitch: str = '+0Hz',
     max_retries: int = 4,
+    timeout: float = 60.0,
 ) -> dict:
     """
     为单条文本生成音频文件
 
     edge-tts 走公网接口, 偶发超时/断流会产出 0 字节文件。这里带指数退避重试,
     并校验产物非空; 全部重试失败则删掉残留空文件并抛异常, 由调用方计入失败清单。
+
+    ⚠️ communicate.save() 必须套 wait_for: 微软接口偶发把 WebSocket 静默挂起
+    (既不推流也不断开), 此时 await 会永久阻塞, 重试逻辑一次都进不去 ——
+    实测曾因此卡死 3.5 小时且 CPU 时间冻在 6 秒。超时后当作普通失败重试。
 
     返回音频文件信息（包括时长）
     """
@@ -100,11 +105,21 @@ async def generate_audio_for_line(
                 volume=volume,
                 pitch=pitch
             )
-            await communicate.save(str(output_path))
+            await asyncio.wait_for(communicate.save(str(output_path)), timeout=timeout)
 
             if output_path.exists() and output_path.stat().st_size > 0:
                 break
             raise RuntimeError('edge-tts 返回 0 字节音频')
+        except asyncio.TimeoutError as e:
+            last_err = RuntimeError(f'edge-tts {timeout:.0f}s 无响应(连接被挂起)')
+            _ = e
+            # 挂起的连接可能已写入部分数据, 清掉避免下轮被当成已生成
+            if output_path.exists() and output_path.stat().st_size == 0:
+                output_path.unlink()
+            if attempt < max_retries:
+                wait = 2 ** (attempt - 1)
+                print(f"         ⚠️  第 {attempt} 次超时, {wait}s 后重试")
+                await asyncio.sleep(wait)
         except Exception as e:  # noqa: BLE001 - 网络类异常种类多, 统一重试
             last_err = e
             if attempt < max_retries:

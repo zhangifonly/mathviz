@@ -708,9 +708,15 @@ export default function SceneRendererWrapper({
   }
 
   return (
-    <Suspense fallback={<LoadingScene />}>
-      {/* eslint-disable-next-line react-hooks/static-components */}
-      <Renderer scene={scene} isInteractive={isInteractive} />
-    </Suspense>
+    <section
+      aria-label={`${experimentId} 可视化场景`}
+      aria-live="polite"
+      className="h-full w-full"
+    >
+      <Suspense fallback={<LoadingScene />}>
+        {/* eslint-disable-next-line react-hooks/static-components */}
+        <Renderer scene={scene} isInteractive={isInteractive} />
+      </Suspense>
+    </section>
   )
 }
