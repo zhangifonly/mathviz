@@ -409,6 +409,8 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             <div key={category.name} className="mb-1">
               <button
                 onClick={() => toggleCategory(category.name)}
+                // 展开与否只用旋转的 ▶ 表示, 屏幕阅读器读不到状态, 靠 aria-expanded 补
+                aria-expanded={expandedCategories.includes(category.name)}
                 className="w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-slate-300 hover:bg-white/10 hover:text-white transition-all duration-200 group"
               >
                 <span className="flex items-center gap-3">
@@ -419,6 +421,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
                   </span>
                 </span>
                 <span
+                  aria-hidden="true"
                   className={`text-xs text-slate-500 transition-transform duration-200 ${
                     expandedCategories.includes(category.name) ? 'rotate-90' : ''
                   }`}
