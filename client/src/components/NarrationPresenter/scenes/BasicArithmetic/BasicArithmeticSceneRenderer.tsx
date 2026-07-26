@@ -12,8 +12,11 @@ import ApplicationScene from './ApplicationScene'
 
 interface Props {
   scene: NarrationLineScene | null
-  state: BasicArithmeticState
-  onStateChange: (updates: Partial<BasicArithmeticState>) => void
+  /** 可选: NarrationPresenter 的特殊分支会显式传入。
+   * 走 SceneRendererFactory 的 wrapper 时只有 scene/isInteractive,
+   * 此时回退到从 scene.lineState.params 派生(否则读 state.num1 会崩)。 */
+  state?: BasicArithmeticState
+  onStateChange?: (updates: Partial<BasicArithmeticState>) => void
   isInteractive: boolean
 }
 
@@ -25,11 +28,26 @@ export interface BasicArithmeticState {
   showResult: boolean
 }
 
+const OPERATIONS = ['addition', 'subtraction', 'multiplication', 'division'] as const
+
+function deriveState(scene: NarrationLineScene | null): BasicArithmeticState {
+  const p = (scene?.lineState?.params ?? {}) as Record<string, unknown>
+  const op = OPERATIONS.find((o) => o === p.operation) ?? 'addition'
+  return {
+    operation: op,
+    num1: typeof p.num1 === 'number' ? p.num1 : 7,
+    num2: typeof p.num2 === 'number' ? p.num2 : 5,
+    step: 0,
+    showResult: false,
+  }
+}
+
 export default function BasicArithmeticSceneRenderer({
   scene,
-  state,
+  state: stateProp,
   isInteractive,
 }: Props) {
+  const state = stateProp ?? deriveState(scene)
   const { sectionId, scene: sceneConfig } = scene || {}
 
   // 根据 sectionId 和 sceneConfig.type 决定渲染什么
