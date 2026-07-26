@@ -20,29 +20,39 @@ from typing import List, Dict, Tuple, Optional
 
 
 def parse_typescript_script(file_path: Path) -> List[Dict]:
-    """解析 TypeScript 口播稿件，提取所有行"""
+    """提取口播稿的所有行。
+
+    优先读 src/narrations/scripts/{id}.json —— 那是 export-narrations 从 TS 导出的
+    同源产物, 也是配音脚本的输入, 结构化解析不会出错。
+    只有 JSON 缺失时才退回正则扫 TS(正则遇到文案里的 ] 会截断, 例如
+    partial-derivative 的「记作 [fx, fy]」曾使 gradient 段少数出 2 行)。
+    """
+    json_path = file_path.with_suffix('.json')  # 与 TS 稿件同目录同名
+    if json_path.exists():
+        data = json.loads(json_path.read_text(encoding='utf-8'))
+        return [
+            {
+                'section_id': section['id'],
+                'line_id': line['id'],
+                'text': line['text'],
+                'numbers': extract_numbers(line['text']),
+            }
+            for section in data.get('sections', [])
+            for line in section.get('lines', [])
+        ]
+
     content = file_path.read_text(encoding='utf-8')
     lines = []
-
-    # 匹配 sections 数组中的每个 line
-    # 格式: { id: 'xxx', text: 'xxx', ... }
-    section_pattern = r"id:\s*['\"]([^'\"]+)['\"].*?type:\s*['\"]([^'\"]+)['\"]"
-    line_pattern = r"\{\s*id:\s*['\"]([^'\"]+)['\"],\s*text:\s*['\"]([^'\"]+)['\"]"
-
-    # 找到当前 section
-    current_section = None
-    for match in re.finditer(r"{\s*id:\s*['\"]([^'\"]+)['\"],\s*type:\s*['\"]([^'\"]+)['\"].*?lines:\s*\[([^\]]+)\]", content, re.DOTALL):
+    # 退路: [\s\S]*? 跨行匹配到 lines 数组结束的 `],`, 避免被文案内的 ] 截断
+    section_re = r"{\s*id:\s*['\"]([^'\"]+)['\"],\s*type:\s*['\"]([^'\"]+)['\"][\s\S]*?lines:\s*\[([\s\S]*?)\n\s*\],"
+    for match in re.finditer(section_re, content):
         section_id = match.group(1)
-        section_type = match.group(2)
         lines_content = match.group(3)
-
-        # 解析该 section 中的所有 lines
         for line_match in re.finditer(r"{\s*id:\s*['\"]([^'\"]+)['\"],\s*text:\s*['\"]([^'\"]+)['\"]", lines_content):
-            line_id = line_match.group(1)
             text = line_match.group(2)
             lines.append({
                 'section_id': section_id,
-                'line_id': line_id,
+                'line_id': line_match.group(1),
                 'text': text,
                 'numbers': extract_numbers(text),
             })
@@ -55,14 +65,19 @@ def parse_typescript_scenes(file_path: Path) -> List[Dict]:
     content = file_path.read_text(encoding='utf-8')
     scenes = []
 
-    # 匹配每个场景配置
-    # 格式: { lineId: 'xxx', sectionId: 'xxx', scene: {...}, lineState: {...} }
-    pattern = r"{\s*lineId:\s*['\"]([^'\"]+)['\"],\s*sectionId:\s*['\"]([^'\"]+)['\"].*?(?:lineState:\s*{([^}]*(?:{[^}]*}[^}]*)*)})?"
+    # 匹配每个场景配置。两种字段顺序都要认:
+    #   { lineId: 'x', sectionId: 'y', ... }  (298 份)
+    #   { sectionId: 'y', lineId: 'x', ... }  (2 份, 如 laplaceScenes/permutationCombinationScenes)
+    pattern = (
+        r"{\s*(?:lineId:\s*['\"](?P<l1>[^'\"]+)['\"],\s*sectionId:\s*['\"](?P<s1>[^'\"]+)['\"]"
+        r"|sectionId:\s*['\"](?P<s2>[^'\"]+)['\"],\s*lineId:\s*['\"](?P<l2>[^'\"]+)['\"])"
+        r".*?(?:lineState:\s*{([^}]*(?:{[^}]*}[^}]*)*)})?"
+    )
 
     for match in re.finditer(pattern, content, re.DOTALL):
-        line_id = match.group(1)
-        section_id = match.group(2)
-        line_state_content = match.group(3) or ''
+        line_id = match.group('l1') or match.group('l2')
+        section_id = match.group('s1') or match.group('s2')
+        line_state_content = match.group(5) or ''
 
         # 提取 params
         params = {}
