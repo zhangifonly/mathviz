@@ -331,6 +331,22 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
     .slice(0, playbackState.currentSectionIndex)
     .reduce((acc, s) => acc + s.lines.length, 0) || 0) + playbackState.currentLineIndex + 1
 
+  // 按全局序号(从 0 开始)跳转到对应的 section/line。
+  // 进度条的点击和键盘操作共用这一份换算, 避免两套逻辑走偏。
+  const jumpToGlobalLine = useCallback((target: number) => {
+    if (!script) return
+    const clamped = Math.max(0, Math.min(target, totalLines - 1))
+    let count = 0
+    for (let si = 0; si < script.sections.length; si++) {
+      const section = script.sections[si]
+      if (clamped < count + section.lines.length) {
+        jumpToLine(si, clamped - count)
+        return
+      }
+      count += section.lines.length
+    }
+  }, [script, totalLines, jumpToLine])
+
   // 控制栏显示/隐藏的样式类
   const controlsTransition = 'transition-all duration-300 ease-in-out'
   const controlsHiddenClass = isMobile && !controlsVisible ? 'opacity-0 pointer-events-none' : 'opacity-100'
@@ -408,6 +424,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
           {/* 移动端语音切换按钮 */}
           <button
             onClick={() => setVoice(voice === 'xiaoxiao' ? 'yunxi' : 'xiaoxiao')}
+            aria-label={`当前配音 ${voice === 'xiaoxiao' ? '晓晓（女声）' : '云希（男声）'}，点击切换`}
             className={`md:hidden px-2 py-1.5 rounded-lg text-xs font-medium ${
               voice === 'xiaoxiao' ? 'bg-pink-500 text-white' : 'bg-blue-500 text-white'
             }`}
@@ -419,6 +436,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
           <select
             value={playbackRate}
             onChange={(e) => setPlaybackRate(Number(e.target.value))}
+            aria-label="播放速度"
             className="hidden md:block bg-white/10 text-white text-sm rounded-lg px-3 py-2 border-0 focus:ring-2 focus:ring-indigo-500"
           >
             <option value={0.75}>0.75x</option>
@@ -456,24 +474,34 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
               <span>{formatTime(totalDuration)}</span>
             </div>
             <div
-              className="h-1.5 bg-white/20 rounded-full cursor-pointer"
+              role="slider"
+              tabIndex={0}
+              aria-label="讲解进度"
+              aria-valuemin={1}
+              aria-valuemax={totalLines}
+              aria-valuenow={currentLineNumber}
+              aria-valuetext={`第 ${currentLineNumber} 句，共 ${totalLines} 句`}
+              className="h-1.5 bg-white/20 rounded-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-indigo-400"
               onClick={(e) => {
                 const rect = e.currentTarget.getBoundingClientRect()
-                const x = e.clientX - rect.left
-                const percent = x / rect.width
-                const targetLine = Math.floor(percent * totalLines)
-                // 计算目标 section 和 line
-                let count = 0
-                for (let si = 0; si < (script?.sections.length || 0); si++) {
-                  const section = script?.sections[si]
-                  if (!section) continue
-                  for (let li = 0; li < section.lines.length; li++) {
-                    if (count === targetLine) {
-                      jumpToLine(si, li)
-                      return
-                    }
-                    count++
-                  }
+                const percent = (e.clientX - rect.left) / rect.width
+                jumpToGlobalLine(Math.floor(percent * totalLines))
+              }}
+              onKeyDown={(e) => {
+                // 键盘用户没法点进度条, 用方向键/Home/End 逐句或跳到首尾
+                const current = currentLineNumber - 1
+                if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
+                  e.preventDefault()
+                  jumpToGlobalLine(current - 1)
+                } else if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
+                  e.preventDefault()
+                  jumpToGlobalLine(current + 1)
+                } else if (e.key === 'Home') {
+                  e.preventDefault()
+                  jumpToGlobalLine(0)
+                } else if (e.key === 'End') {
+                  e.preventDefault()
+                  jumpToGlobalLine(totalLines - 1)
                 }
               }}
             >
@@ -496,9 +524,10 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
         {/* 上一句 */}
         <button
           onClick={prevLine}
+          aria-label="上一句"
           className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all flex items-center justify-center"
         >
-          <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 20 20">
+          <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
             <path d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z" />
           </svg>
         </button>
@@ -506,14 +535,15 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
         {/* 播放/暂停 */}
         <button
           onClick={togglePlay}
+          aria-label={playbackState.isPlaying ? '暂停' : '播放'}
           className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-lg shadow-indigo-500/30 hover:shadow-xl hover:shadow-indigo-500/40 transition-all flex items-center justify-center"
         >
           {playbackState.isPlaying ? (
-            <svg className="w-7 h-7 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-7 h-7 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clipRule="evenodd" />
             </svg>
           ) : (
-            <svg className="w-7 h-7 md:w-8 md:h-8 ml-1" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-7 h-7 md:w-8 md:h-8 ml-1" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
             </svg>
           )}
@@ -522,9 +552,10 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
         {/* 下一句 */}
         <button
           onClick={nextLine}
+          aria-label="下一句"
           className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all flex items-center justify-center"
         >
-          <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 20 20">
+          <svg className="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
             <path d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798L4.555 5.168z" />
           </svg>
         </button>
@@ -537,6 +568,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
             const nextIndex = (currentIndex + 1) % rates.length
             setPlaybackRate(rates[nextIndex])
           }}
+          aria-label={`播放速度 ${playbackRate} 倍，点击切换`}
           className="md:hidden w-10 h-10 rounded-full bg-white/10 text-white hover:bg-white/20 transition-all flex items-center justify-center text-xs font-medium"
         >
           {playbackRate}x

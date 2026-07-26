@@ -284,6 +284,8 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
 
     // 监听加载错误 - 按字数估时后继续下一行 (0 字节文件也走这里)
     audio.addEventListener('error', () => {
+      // 已被更新的 playLine 换掉的旧音频, 它的报错不该再影响当前播放
+      if (audioRef.current !== audio) return
       console.error('音频加载失败:', audioPath)
       if (!shouldAutoPlayRef.current) return
       clearFallbackTimer()
@@ -299,6 +301,10 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
       // 播放成功后预加载下一个音频
       preloadNext(sectionIdx, lineIdx)
     } catch (err) {
+      // 连点「下一句」时, 上一次的 play() 会因为我们主动 pause() 而抛 AbortError。
+      // 这属于正常的被取代, 不能再兜底推进 —— 否则会在新音频正常播放的同时
+      // 多跳一行。只有仍是当前音频的失败才需要兜底。
+      if (audioRef.current !== audio) return
       console.error('播放失败:', err, audioPath)
       // play() 被拒 (自动播放策略/解码失败) 时同样兜底推进, 不要卡住
       if (shouldAutoPlayRef.current) {
