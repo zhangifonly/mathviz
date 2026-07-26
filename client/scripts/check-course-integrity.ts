@@ -157,6 +157,37 @@ function checkCourse(courseId: string): CheckResult {
   }
 }
 
+/** 校验所有场景渲染器的 props 契约。
+ *
+ * SceneRendererWrapper 只传 scene/isInteractive。渲染器若自行声明一套 Props
+ * 并把别的字段(如 state)设为必需, TypeScript 查不出来 —— wrapper 用的是通用
+ * SceneRendererProps, 两边类型互不相干 —— 运行时才崩。
+ * (2026-07 实测 fractions 一进 concept 段落就抛 reading 'numerator1' of undefined)
+ *
+ * 例外: BasicArithmetic 由 NarrationPresenter 特殊分支显式传 state,
+ * 已把 state 改为可选 + 缺失时从 params 派生, 两条路径都安全。
+ */
+const RENDERER_PROPS_EXCEPTIONS = ['BasicArithmeticSceneRenderer.tsx']
+
+function checkRendererPropsContract(): string[] {
+  const problems: string[] = []
+  for (const dir of fs.readdirSync(RENDERERS_DIR, { withFileTypes: true })) {
+    if (!dir.isDirectory()) continue
+    for (const file of fs.readdirSync(path.join(RENDERERS_DIR, dir.name))) {
+      if (!/SceneRenderer\.tsx$/.test(file)) continue
+      if (RENDERER_PROPS_EXCEPTIONS.includes(file)) continue
+      const full = path.join(RENDERERS_DIR, dir.name, file)
+      const content = fs.readFileSync(full, 'utf-8')
+      if (content.includes('SceneRendererProps')) continue
+      problems.push(
+        `❌ [${dir.name}/${file}] 未使用 SceneRendererProps 声明 props。` +
+        `wrapper 只传 scene/isInteractive, 自定义必需 prop 会在运行时是 undefined`
+      )
+    }
+  }
+  return problems
+}
+
 function main() {
   console.log('🔍 检查课程完整性...\n')
 
@@ -222,6 +253,13 @@ function main() {
         hasErrors = true
       }
     }
+  }
+
+  // 渲染器 props 契约(全局检查, 与具体课程无关)
+  const propsProblems = checkRendererPropsContract()
+  if (propsProblems.length > 0) {
+    errors.push(...propsProblems)
+    hasErrors = true
   }
 
   if (hasErrors) {
