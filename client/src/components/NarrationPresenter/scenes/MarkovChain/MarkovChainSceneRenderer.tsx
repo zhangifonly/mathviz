@@ -330,12 +330,17 @@ function EvolutionScene({
     const xScale = (width - 2 * padding) / steps
     const yScale = height - 2 * padding
 
+    // currentStep 由定时器推进, 讲解切句时 steps 可能从 30 变成 20,
+    // evolution 立刻重算变短而 currentStep 还停在旧值上, 直接索引会读到
+    // undefined 崩掉整个讲解层。统一夹到当前数组的最后一个下标。
+    const upTo = Math.min(currentStep, evolution.length - 1)
+
     // 晴天概率曲线
     ctx.strokeStyle = '#fbbf24'
     ctx.fillStyle = '#fbbf24'
     ctx.lineWidth = 2
     ctx.beginPath()
-    for (let i = 0; i <= currentStep; i++) {
+    for (let i = 0; i <= upTo; i++) {
       const x = padding + i * xScale
       const y = height - padding - evolution[i][0] * yScale
       if (i === 0) ctx.moveTo(x, y)
@@ -344,7 +349,7 @@ function EvolutionScene({
     ctx.stroke()
 
     // 晴天数据点
-    for (let i = 0; i <= currentStep; i++) {
+    for (let i = 0; i <= upTo; i++) {
       const x = padding + i * xScale
       const y = height - padding - evolution[i][0] * yScale
       ctx.beginPath()
@@ -356,7 +361,7 @@ function EvolutionScene({
     ctx.strokeStyle = '#60a5fa'
     ctx.fillStyle = '#60a5fa'
     ctx.beginPath()
-    for (let i = 0; i <= currentStep; i++) {
+    for (let i = 0; i <= upTo; i++) {
       const x = padding + i * xScale
       const y = height - padding - evolution[i][1] * yScale
       if (i === 0) ctx.moveTo(x, y)
@@ -365,7 +370,7 @@ function EvolutionScene({
     ctx.stroke()
 
     // 雨天数据点
-    for (let i = 0; i <= currentStep; i++) {
+    for (let i = 0; i <= upTo; i++) {
       const x = padding + i * xScale
       const y = height - padding - evolution[i][1] * yScale
       ctx.beginPath()
@@ -414,17 +419,17 @@ function EvolutionScene({
     ctx.fillStyle = 'white'
     ctx.font = '16px sans-serif'
     ctx.textAlign = 'left'
-    ctx.fillText(`步数: ${currentStep}`, padding, padding - 10)
+    ctx.fillText(`步数: ${upTo}`, padding, padding - 10)
 
-    // 当前概率值
-    if (currentStep < evolution.length) {
+    // 当前概率值。用夹过的 upTo, 与上面画的曲线保持同一步
+    if (upTo >= 0) {
       ctx.fillText(
-        `晴天: ${(evolution[currentStep][0] * 100).toFixed(1)}%`,
+        `晴天: ${(evolution[upTo][0] * 100).toFixed(1)}%`,
         padding + 100,
         padding - 10
       )
       ctx.fillText(
-        `雨天: ${(evolution[currentStep][1] * 100).toFixed(1)}%`,
+        `雨天: ${(evolution[upTo][1] * 100).toFixed(1)}%`,
         padding + 250,
         padding - 10
       )
