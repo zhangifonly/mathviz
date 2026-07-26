@@ -3,10 +3,12 @@
 跑法: python3 scripts/test_qa_narration.py
 只用标准库 unittest, 不引入新依赖。
 
-覆盖三类历史缺陷:
+覆盖历史缺陷与新增检查:
 1. extract_numbers 把「第一个数」「合在一起」的「一」当成运算数字(假警告)
 2. 场景配置正则只认 lineId 在 sectionId 之前的写法(漏解析整份文件)
 3. 口播行解析被文案里的 ] 截断(如「记作 [fx, fy]」)
+4. params 捕获跨不了多层嵌套(误报缺少 params)
+5. check_text_quality: 占位符/空行/过短过长/重复文案
 """
 import importlib.util
 import unittest
@@ -81,6 +83,39 @@ class TestParseScenes(unittest.TestCase):
         scene = self._find('complexScenes.ts', 'multiplication-1')
         self.assertTrue(scene['has_params'])
         self.assertNotIn('num1', scene['params'])
+
+
+class TestTextQuality(unittest.TestCase):
+    """文案硬伤要报出来, 正常文案不能误报。"""
+
+    @staticmethod
+    def _run(*texts):
+        lines = [{'line_id': f'l{i}', 'text': t} for i, t in enumerate(texts)]
+        return qa.check_text_quality(lines)
+
+    def test_clean_text_passes(self):
+        errors, warnings = self._run(
+            '傅里叶变换把一个信号分解成不同频率的正弦波叠加。',
+            '现在把频率调高，看波形怎么变化。',
+        )
+        self.assertEqual((errors, warnings), ([], []))
+
+    def test_placeholder_is_error(self):
+        errors, _ = self._run('这里的推导 TODO 后面补充完整。')
+        self.assertEqual(len(errors), 1)
+
+    def test_empty_is_error(self):
+        errors, _ = self._run('   ')
+        self.assertEqual(len(errors), 1)
+
+    def test_too_short_and_too_long_warn(self):
+        _, warnings = self._run('看这里', '很长的一句' * 50)
+        self.assertEqual(len(warnings), 2)
+
+    def test_duplicate_warns(self):
+        same = '让我们回顾一下刚才推导出来的结论。'
+        _, warnings = self._run(same, same)
+        self.assertTrue(any('重复' in w for w in warnings))
 
 
 class TestParseScript(unittest.TestCase):

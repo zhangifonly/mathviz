@@ -208,6 +208,37 @@ OPERATION_ALIASES = {
 }
 
 
+PLACEHOLDER_RE = re.compile(r'TODO|FIXME|待补|待定|占位|[Xx]{3}|\?{3}|、、|。。')
+
+
+def check_text_quality(script_lines: List[Dict]) -> Tuple[List[str], List[str]]:
+    """检查口播文案本身的硬伤(与场景配置无关)。
+
+    阈值取自 300 门现状: 字数中位数 432, 单行普遍 20~120 字。
+    < 8 字的行配出来不足 2 秒, 播放体验是「一闪而过」;
+    > 220 字的行单条音频超过 40 秒, 动画对不上。
+    """
+    errors, warnings = [], []
+    seen = {}
+    for line in script_lines:
+        lid, text = line['line_id'], line['text']
+        if PLACEHOLDER_RE.search(text):
+            errors.append(f"{lid}: 文案含占位符/未完成标记: {text[:30]}")
+        stripped = text.strip()
+        if not stripped:
+            errors.append(f"{lid}: 文案为空")
+            continue
+        if len(stripped) < 8:
+            warnings.append(f"{lid}: 文案过短({len(stripped)}字), 配音不足两秒: {stripped}")
+        elif len(stripped) > 220:
+            warnings.append(f"{lid}: 文案过长({len(stripped)}字), 单条音频超 40 秒")
+        if stripped in seen:
+            warnings.append(f"{lid}: 文案与 {seen[stripped]} 完全重复: {stripped[:30]}")
+        else:
+            seen[stripped] = lid
+    return errors, warnings
+
+
 def check_content_match(script_lines: List[Dict], scene_configs: List[Dict]) -> Tuple[List[str], List[str]]:
     """检查口播内容与场景配置是否匹配"""
     errors = []
@@ -386,6 +417,13 @@ def check_narration(course_id: str) -> bool:
     # ========================================
     print(f"\n🔍 内容匹配检查")
     print("-" * 40)
+
+    if script_lines:
+        text_errors, text_warnings = check_text_quality(script_lines)
+        errors.extend(text_errors)
+        warnings.extend(text_warnings)
+        if not text_errors and not text_warnings:
+            print(f"  ✅ 文案质量无硬伤 (无占位符/空行/过短过长/重复)")
 
     if script_lines and scene_configs:
         content_errors, content_warnings = check_content_match(script_lines, scene_configs)
