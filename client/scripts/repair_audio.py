@@ -183,11 +183,19 @@ def rebuild_root_manifest(script_id: str) -> dict:
     for voice in reversed(available):  # 后写的覆盖前面 -> yunxi 优先
         merged.update(per_voice[voice])
 
+    # path 指向该行实际所在的声音子目录(根目录副本已废弃);
+    # 前端只用 filename 再拼 {voice}/ 路径, path 仅作记录用途。
+    owner = {}
+    for voice in available:
+        for key in per_voice[voice]:
+            owner.setdefault(key, voice)
+
     files = []
     for (section_id, line_id), src in merged.items():
+        voice = owner.get((section_id, line_id), available[0] if available else 'yunxi')
         files.append({
             **src,
-            'path': f'audio/narrations/{script_id}/{src["filename"]}',
+            'path': f'audio/narrations/{script_id}/{voice}/{src["filename"]}',
         })
 
     manifest = {
@@ -210,6 +218,8 @@ async def main():
     parser = argparse.ArgumentParser(description='讲解音频补齐工具')
     parser.add_argument('ids', nargs='*', help='只处理指定实验 id, 留空处理全部')
     parser.add_argument('--scan', action='store_true', help='只体检并输出缺失清单, 不生成音频')
+    parser.add_argument('--rebuild-manifests', action='store_true',
+                        help='不生成音频, 只按磁盘实况重建全部根 manifest')
     args = parser.parse_args()
 
     json_files = sorted(NARRATIONS_DIR.glob('*.json'))
@@ -220,6 +230,14 @@ async def main():
         sys.exit(1)
 
     print(f'📁 待检查稿件: {len(json_files)} 份\n')
+
+    if args.rebuild_manifests:
+        total = 0
+        for p in json_files:
+            m = rebuild_root_manifest(p.stem)
+            total += len(m['files'])
+        print(f'✅ 已重建 {len(json_files)} 份根 manifest, 共 {total} 条记录')
+        return
 
     audits = []
     for p in json_files:
