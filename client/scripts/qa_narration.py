@@ -60,6 +60,37 @@ def parse_typescript_script(file_path: Path) -> List[Dict]:
     return lines
 
 
+def _slice_object(content: str, start: int) -> str:
+    """从 content[start] 处的 '{' 开始, 按括号计数返回该对象的完整正文(不含最外层括号)。
+
+    字符串字面量内的括号不计数, 避免文案里的 { } 打乱配对。
+    """
+    depth = 0
+    quote = None
+    i = start
+    n = len(content)
+    while i < n:
+        ch = content[i]
+        if quote:
+            if ch == '\\':
+                i += 2  # 跳过转义字符本身
+                continue
+            if ch == quote:
+                quote = None
+            i += 1
+            continue
+        if ch in '\'"`':
+            quote = ch
+        elif ch == '{':
+            depth += 1
+        elif ch == '}':
+            depth -= 1
+            if depth == 0:
+                return content[start + 1:i]
+        i += 1
+    return content[start:]
+
+
 def parse_typescript_scenes(file_path: Path) -> List[Dict]:
     """解析 TypeScript 场景配置，提取所有场景"""
     content = file_path.read_text(encoding='utf-8')
@@ -71,20 +102,27 @@ def parse_typescript_scenes(file_path: Path) -> List[Dict]:
     pattern = (
         r"{\s*(?:lineId:\s*['\"](?P<l1>[^'\"]+)['\"],\s*sectionId:\s*['\"](?P<s1>[^'\"]+)['\"]"
         r"|sectionId:\s*['\"](?P<s2>[^'\"]+)['\"],\s*lineId:\s*['\"](?P<l2>[^'\"]+)['\"])"
-        r".*?(?:lineState:\s*{([^}]*(?:{[^}]*}[^}]*)*)})?"
     )
 
     for match in re.finditer(pattern, content, re.DOTALL):
         line_id = match.group('l1') or match.group('l2')
         section_id = match.group('s1') or match.group('s2')
-        line_state_content = match.group(5) or ''
+        # 用括号计数切出这个场景对象的完整正文。
+        # 正则做不到括号平衡: lineState 里有 show/highlight/annotation 多个兄弟对象时,
+        # 旧的 ([^}]*(?:{[^}]*}[^}]*)*) 只能跨一层嵌套, 会漏掉 params
+        # (basic-arithmetic 的 sub-2 明明有 num1:7/num2:5 却被判为缺 params)。
+        body = _slice_object(content, match.start())
+        # 再从场景正文里切出 lineState 自身, 避免把 scene/其他字段里的 params 算进来
+        ls_match = re.search(r"lineState:\s*{", body)
+        # ls_match 以 '{' 结尾, end()-1 正是该括号的位置
+        line_state_content = _slice_object(body, ls_match.end() - 1) if ls_match else ''
 
-        # 提取 params
+        # 提取 params。同样用括号计数, 因为 params 里也可能有嵌套对象
+        # (complex 的 params: { z1: { a: 2, b: 1 }, z2: {...} }, [^}]* 会在 z1 处截断)
         params = {}
-        params_match = re.search(r"params:\s*{([^}]*)}", line_state_content)
-        if params_match:
-            params_content = params_match.group(1)
-            # 提取 num1, num2, operation
+        pm = re.search(r"params:\s*{", line_state_content)
+        if pm:
+            params_content = _slice_object(line_state_content, pm.end() - 1)
             num1_match = re.search(r"num1:\s*(\d+)", params_content)
             num2_match = re.search(r"num2:\s*(\d+)", params_content)
             op_match = re.search(r"operation:\s*['\"]([^'\"]+)['\"]", params_content)
@@ -100,31 +138,74 @@ def parse_typescript_scenes(file_path: Path) -> List[Dict]:
             'line_id': line_id,
             'section_id': section_id,
             'params': params,
+            # params 存在但不是 num1/num2 形式(如 complex 的 z1/z2 复数对象)时,
+            # params 字典为空却并非「缺少 params」, 用这个标记区分
+            'has_params': bool(pm),
             'has_line_state': bool(line_state_content.strip()),
         })
 
     return scenes
 
 
+CN_DIGITS = '零一二两三四五六七八九十'
+CN_VALUE = {c: i for i, c in enumerate('零一二三四五六七八九')}
+CN_VALUE['两'] = 2  # 「两组」「两个」口语常用
+
+# 「一」「二」等出现在这些词里是量词或副词, 不是参与运算的数字
+CN_FALSE_POSITIVE = re.compile(
+    r'第[一二三四五六七八九十]+个?|[在合并放数看想]一(?:起|下|样|边)|一(?:起|下|样|共|边|个个|一)|'
+    r'统一|唯一|一定|一直|一般|一点|一些|一样|一旦|不一|万一|十分|十足|'
+    # 「乘以一个复数」「加上一个常数」: 这里的「一个」是不定量词, 不是运算参数
+    r'(?:乘以|除以|加上|减去|变成|得到|对应|相当于|看作|想象|取|用)一个'
+)
+
+
+def _cn_to_int(token: str) -> Optional[int]:
+    """把「十二」「三」这类中文数词转成整数, 认不出的返回 None。"""
+    if not token or any(c not in CN_DIGITS for c in token):
+        return None
+    if '十' not in token:
+        return CN_VALUE.get(token) if len(token) == 1 else None
+    head, _, tail = token.partition('十')
+    tens = CN_VALUE.get(head, 1) if head else 1
+    ones = CN_VALUE.get(tail, 0) if tail else 0
+    return tens * 10 + ones
+
+
 def extract_numbers(text: str) -> List[int]:
-    """从文本中提取数字"""
-    # 中文数字映射
-    cn_nums = {'一': 1, '二': 2, '三': 3, '四': 4, '五': 5,
-               '六': 6, '七': 7, '八': 8, '九': 9, '十': 10,
-               '十一': 11, '十二': 12}
+    """提取口播文本里真正参与运算的数字。
 
-    numbers = []
+    只认: 阿拉伯数字, 以及紧跟量词/运算词的中文数词(如「7个」「12除以3」「三乘以四」)。
+    不认孤立的「一」——「第一个数」「合在一起」里的「一」不是运算参数, 否则会把
+    几乎每句话都误判成含数字(修复前 basic-arithmetic 因此报出 17 条假警告)。
+    分数表述「四分之一」整体视为一个分数, 不拆成分子分母。
+    """
+    # 分数表述先摘掉, 避免「四分之一」拆出 4 和 1
+    cleaned = re.sub(rf'[{CN_DIGITS}\d]+分之[{CN_DIGITS}\d]+', '', text)
+    cleaned = CN_FALSE_POSITIVE.sub('', cleaned)
 
-    # 提取阿拉伯数字
-    for match in re.finditer(r'\d+', text):
-        numbers.append(int(match.group()))
+    numbers = [int(m.group()) for m in re.finditer(r'\d+', cleaned)]
 
-    # 提取中文数字
-    for cn, num in cn_nums.items():
-        if cn in text:
-            numbers.append(num)
+    # 中文数词: 后面跟量词/运算词, 或紧跟在运算词之后(如「等于三」)才算
+    pattern = (
+        rf'(?<=等于|得到|剩下|共有|一共)([{CN_DIGITS}]+)'
+        rf'|([{CN_DIGITS}]+)(?=个|块|组|份|倍|次|乘|加|减|除|等于|以)'
+    )
+    for m in re.finditer(pattern, cleaned):
+        val = _cn_to_int(m.group(1) or m.group(2))
+        if val is not None and val > 0:
+            numbers.append(val)
 
-    return list(set(numbers))  # 去重
+    return sorted(set(numbers))
+
+
+# 运算段落 → 该段落里 operation 的合法取值(同义词都算对)
+OPERATION_ALIASES = {
+    'addition': {'addition', 'add'},
+    'subtraction': {'subtraction', 'subtract', 'sub', 'difference'},
+    'multiplication': {'multiplication', 'multiply', 'mul'},
+    'division': {'division', 'divide', 'div'},
+}
 
 
 def check_content_match(script_lines: List[Dict], scene_configs: List[Dict]) -> Tuple[List[str], List[str]]:
@@ -136,7 +217,7 @@ def check_content_match(script_lines: List[Dict], scene_configs: List[Dict]) -> 
     scene_map = {s['line_id']: s for s in scene_configs}
 
     # 需要检查 params 的 section 类型
-    math_sections = ['addition', 'subtraction', 'multiplication', 'division']
+    math_sections = list(OPERATION_ALIASES)
 
     for line in script_lines:
         line_id = line['line_id']
@@ -154,7 +235,7 @@ def check_content_match(script_lines: List[Dict], scene_configs: List[Dict]) -> 
 
         # 对于数学运算段落，检查 params 是否存在
         if section_id in math_sections:
-            if not params:
+            if not scene.get('has_params'):
                 # 检查文本中是否包含具体数字
                 if text_numbers:
                     warnings.append(f"{line_id}: 口播含数字 {text_numbers}，但缺少 params")
@@ -174,10 +255,11 @@ def check_content_match(script_lines: List[Dict], scene_configs: List[Dict]) -> 
                             # 可能是中文数字，跳过严格检查
                             pass
 
-                # 检查 operation 是否与 section 匹配
+                # 检查 operation 是否与 section 匹配。
+                # 各实验用词不统一: multiplication 段落里 operation 可能写 'multiply',
+                # addition 段落里可能写 'add', 这些是同义词而非配错段落
                 if 'operation' in params:
-                    expected_op = section_id.replace('tion', 'tion')  # addition, subtraction, etc.
-                    if params['operation'] != expected_op and params['operation'] != section_id:
+                    if params['operation'] not in OPERATION_ALIASES.get(section_id, {section_id}):
                         errors.append(f"{line_id}: operation={params['operation']}，但在 {section_id} 段落")
 
     # 检查是否有多余的场景配置
