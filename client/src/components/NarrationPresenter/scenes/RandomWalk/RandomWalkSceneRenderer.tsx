@@ -9,6 +9,30 @@ import type { Data } from 'plotly.js'
 import type { SceneRendererProps } from '../SceneRendererFactory'
 import MathFormula from '../../../../components/MathFormula/MathFormula'
 
+/**
+ * 生成 numPaths × steps 的随机种子矩阵。
+ *
+ * 原先用 useState(初始化函数) 缓存种子, 但初始化只跑一次、尺寸锁定在首次
+ * 挂载时的 props 上。讲解切句时 React 复用同一个组件实例(元素类型和位置都没变,
+ * 只是 props 变了), 于是 concept-2 用 numPaths=1 挂载后, concept-3 要 10 条路径
+ * 就会读到 seeds[1] === undefined 而崩溃。改用 useMemo + 确定性伪随机:
+ * 依赖 numPaths/steps, 尺寸永远与当前 props 一致, 同时保证同一组参数下
+ * 每次渲染出来的轨迹不变(不会因为重绘就乱跳)。
+ */
+function useWalkSeeds(numPaths: number, steps: number): number[][] {
+  return useMemo(() => {
+    // xorshift 风格的确定性伪随机, 种子只由 (p, i) 决定
+    const rand = (p: number, i: number) => {
+      let x = (p + 1) * 374761393 + (i + 1) * 668265263
+      x = (x ^ (x >>> 13)) * 1274126177
+      return ((x ^ (x >>> 16)) >>> 0) / 4294967296
+    }
+    return Array.from({ length: Math.max(0, numPaths) }, (_, p) =>
+      Array.from({ length: Math.max(0, steps) }, (_, i) => rand(p, i))
+    )
+  }, [numPaths, steps])
+}
+
 // 标题场景
 function TitleScene({ sceneId }: { sceneId: string }) {
   const titles: Record<string, { title: string; subtitle: string }> = {
@@ -52,18 +76,8 @@ function Walk1DScene({ numPaths = 10, steps = 100, animated = false }: { numPath
     }
   }, [animated, steps])
 
-  // 生成稳定的随机步骤种子（使用 useState 初始化函数）
-  const [walkSeeds] = useState(() => {
-    const seeds: number[][] = []
-    for (let p = 0; p < numPaths; p++) {
-      const pathSeed: number[] = []
-      for (let i = 0; i < steps; i++) {
-        pathSeed.push(Math.random())
-      }
-      seeds.push(pathSeed)
-    }
-    return seeds
-  })
+  // 种子矩阵随 props 重算, 尺寸永远匹配当前 numPaths/steps
+  const walkSeeds = useWalkSeeds(numPaths, steps)
 
   const walkData = useMemo(() => {
     const paths: Array<{ x: number[]; y: number[] }> = []
@@ -73,7 +87,9 @@ function Walk1DScene({ numPaths = 10, steps = 100, animated = false }: { numPath
       const y: number[] = [0]
       let position = 0
 
-      for (let i = 1; i <= (animated ? currentStep : steps); i++) {
+      // currentStep 由定时器推进, steps 变小的那一帧可能还停在旧值上, 夹一下
+      const upTo = Math.min(animated ? currentStep : steps, steps)
+      for (let i = 1; i <= upTo; i++) {
         position += walkSeeds[p][i - 1] < 0.5 ? -1 : 1
         x.push(i)
         y.push(position)
@@ -138,18 +154,7 @@ function Walk1DScene({ numPaths = 10, steps = 100, animated = false }: { numPath
 
 // 2D 随机游走场景
 function Walk2DScene({ numPaths = 5, steps = 200 }: { numPaths?: number; steps?: number }) {
-  // 生成稳定的随机角度种子（使用 useState 初始化函数）
-  const [angleSeeds] = useState(() => {
-    const seeds: number[][] = []
-    for (let p = 0; p < numPaths; p++) {
-      const pathSeed: number[] = []
-      for (let i = 0; i < steps; i++) {
-        pathSeed.push(Math.random())
-      }
-      seeds.push(pathSeed)
-    }
-    return seeds
-  })
+  const angleSeeds = useWalkSeeds(numPaths, steps)
 
   const walkData = useMemo(() => {
     const paths: Array<{ x: number[]; y: number[] }> = []
@@ -250,32 +255,23 @@ function DistributionScene({ steps = 100, numWalks = 1000 }: { steps?: number; n
     return () => clearInterval(timer)
   }, [steps])
 
-  // 生成稳定的随机步骤种子（使用 useState 初始化函数）
-  const [walkSeeds] = useState(() => {
-    const seeds: number[][] = []
-    for (let w = 0; w < numWalks; w++) {
-      const walkSeed: number[] = []
-      for (let i = 0; i < steps; i++) {
-        walkSeed.push(Math.random())
-      }
-      seeds.push(walkSeed)
-    }
-    return seeds
-  })
+  const walkSeeds = useWalkSeeds(numWalks, steps)
 
   const distributionData = useMemo(() => {
     const positions: number[] = []
 
     for (let w = 0; w < numWalks; w++) {
       let position = 0
-      for (let i = 0; i < currentStep; i++) {
+      // 同上: currentStep 可能短暂超出当前 steps
+      const upTo = Math.min(currentStep, steps)
+      for (let i = 0; i < upTo; i++) {
         position += walkSeeds[w][i] < 0.5 ? -1 : 1
       }
       positions.push(position)
     }
 
     return positions
-  }, [numWalks, currentStep, walkSeeds])
+  }, [numWalks, steps, currentStep, walkSeeds])
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center gap-4">
