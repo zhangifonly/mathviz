@@ -237,14 +237,23 @@ def check_narration(course_id: str) -> bool:
         print(f"     解析到 {len(scene_configs)} 个场景")
 
     # 检查音频目录
+    # 双声道均在各自子目录: {course}/xiaoxiao/ 与 {course}/yunxi/
+    # (历史上女声放在 {course}/ 根层, 该冗余副本已删除, 根层只保留 manifest.json)
     audio_dir = base_dir / f"public/audio/narrations/{course_id}"
+    xiaoxiao_dir = audio_dir / "xiaoxiao"
     yunxi_dir = audio_dir / "yunxi"
 
     if not audio_dir.exists():
         errors.append(f"音频目录不存在: {audio_dir}")
+        print(f"  ❌ 音频目录: 不存在")
+    else:
+        print(f"  ✅ 音频目录: {audio_dir.name}/")
+
+    if not xiaoxiao_dir.exists():
+        errors.append(f"女声音频目录不存在: {xiaoxiao_dir}")
         print(f"  ❌ 女声音频目录: 不存在")
     else:
-        print(f"  ✅ 女声音频目录: {audio_dir.name}/")
+        print(f"  ✅ 女声音频目录: {xiaoxiao_dir.name}/")
 
     if not yunxi_dir.exists():
         errors.append(f"男声音频目录不存在: {yunxi_dir}")
@@ -258,7 +267,7 @@ def check_narration(course_id: str) -> bool:
     print(f"\n📊 数量一致性检查")
     print("-" * 40)
 
-    xiaoxiao_files = list(audio_dir.glob("*.mp3")) if audio_dir.exists() else []
+    xiaoxiao_files = list(xiaoxiao_dir.glob("*.mp3")) if xiaoxiao_dir.exists() else []
     yunxi_files = list(yunxi_dir.glob("*.mp3")) if yunxi_dir.exists() else []
 
     print(f"  口播行数:     {len(script_lines)}")
@@ -319,7 +328,8 @@ def check_narration(course_id: str) -> bool:
     print(f"\n📋 Manifest 检查")
     print("-" * 40)
 
-    xiaoxiao_manifest = audio_dir / "manifest.json"
+    # 各声道 manifest 在自己的子目录; 根层 manifest.json 是前端加载的合并版(voice_key=yunxi)
+    xiaoxiao_manifest = xiaoxiao_dir / "manifest.json"
     yunxi_manifest = yunxi_dir / "manifest.json"
 
     # 女声 manifest
@@ -356,6 +366,32 @@ def check_narration(course_id: str) -> bool:
                 errors.append(f"男声 manifest voice_key 错误: {voice_key}")
     else:
         errors.append("男声 manifest.json 不存在")
+
+    # 根 manifest: 前端 NarrationContext 实际 fetch 的就是这份, 必须校验
+    root_manifest = audio_dir / "manifest.json"
+    if root_manifest.exists():
+        with open(root_manifest, encoding='utf-8') as f:
+            data = json.load(f)
+        entries = data.get('files', [])
+        voices = data.get('availableVoices') or []
+        print(f"  根(前端加载): 条目={len(entries)}, 可选声音={voices}")
+
+        if not voices:
+            errors.append("根 manifest 缺少 availableVoices 字段")
+        if len(entries) != len(script_lines):
+            errors.append(f"根 manifest 条目({len(entries)}) ≠ 口播行数({len(script_lines)})")
+
+        # 前端按 {course}/{voice}/{filename} 取音频, 逐条确认每个声道都有真实文件
+        for item in entries:
+            filename = item.get('filename', '')
+            for voice in voices:
+                mp3 = audio_dir / voice / filename
+                if not mp3.exists():
+                    errors.append(f"根 manifest 指向的音频缺失: {voice}/{filename}")
+                elif mp3.stat().st_size == 0:
+                    errors.append(f"根 manifest 指向的音频为空: {voice}/{filename}")
+    else:
+        errors.append("根 manifest.json 不存在")
 
     # ========================================
     # 6. 输出结果
