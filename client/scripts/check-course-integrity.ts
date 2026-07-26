@@ -87,13 +87,16 @@ function checkRegisteredInFactory(courseId: string): boolean {
 }
 
 function checkRegisteredInPresenter(courseId: string): boolean {
-  // 检查是否在 NarrationPresenter 的 sceneConfigMap 中注册
-  const presenterPath = path.join(SCENES_DIR, 'NarrationPresenter.tsx')
-  const content = fs.readFileSync(presenterPath, 'utf-8')
-  // 检查 sceneConfigMap 中是否有该课程
-  const sceneConfigMapMatch = content.match(/const sceneConfigMap[\s\S]*?= \{([\s\S]*?)\n\}/m)
-  if (!sceneConfigMapMatch) return false
-  return sceneConfigMapMatch[1].includes(`'${courseId}'`)
+  // 场景配置已改为按需加载: 注册表在 sceneFiles.ts 的 SCENE_FILES 中,
+  // 由 sceneRegistry.loadSceneConfig 动态 import(原 NarrationPresenter.sceneConfigMap 已移除)
+  const registryPath = path.join(SCENES_DIR, 'sceneFiles.ts')
+  const content = fs.readFileSync(registryPath, 'utf-8')
+  const mapMatch = content.match(/SCENE_FILES: Record<string, string> = \{([\s\S]*?)\n\}/m)
+  if (!mapMatch) return false
+  // 注册项形如 'course-id': 'xxxScenes', 顺带校验指向的文件真实存在
+  const entry = mapMatch[1].match(new RegExp(`'${courseId}':\\s*'([^']+)'`))
+  if (!entry) return false
+  return fs.existsSync(path.join(SCENES_DIR, `${entry[1]}.ts`))
 }
 
 function checkRegisteredInCustomList(courseId: string): boolean {
@@ -153,9 +156,9 @@ function main() {
       hasErrors = true
     }
 
-    // 检查 sceneConfigMap 注册
+    // 检查场景配置注册表(按需加载)
     if (!result.registeredInPresenter) {
-      errors.push(`❌ [${result.courseId}] 未在 NarrationPresenter.tsx 的 sceneConfigMap 中注册`)
+      errors.push(`❌ [${result.courseId}] 未在 sceneFiles.ts 的 SCENE_FILES 中注册, 或注册项指向的 xxxScenes.ts 不存在`)
       hasErrors = true
     }
 
@@ -187,7 +190,8 @@ function main() {
     console.log('   2. src/components/NarrationPresenter/xxxScenes.ts - 场景配置')
     console.log('   3. src/components/NarrationPresenter/scenes/XxxSceneRenderer.tsx - 场景渲染器')
     console.log('   4. src/components/NarrationPresenter/scenes/SceneRendererFactory.tsx - 注册渲染器')
-    console.log('   5. src/components/NarrationPresenter/NarrationPresenter.tsx - 注册场景配置和自定义渲染器列表')
+    console.log('   5. src/components/NarrationPresenter/sceneFiles.ts - 注册场景配置文件名(按需加载)')
+    console.log('   6. src/components/NarrationPresenter/NarrationPresenter.tsx - 注册自定义渲染器列表')
     console.log('')
     process.exit(1)
   }
