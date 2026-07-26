@@ -128,6 +128,9 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
   const playLineRef = useRef<((sectionIdx: number, lineIdx: number) => Promise<void>) | null>(null)
   // 无音频行的兜底计时器: 按字数估算朗读时长后自动推进, 避免讲解卡死
   const fallbackTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  // playLine 的调用代次: 每次进入自增。动画 delay 普遍 800ms, 用户在这之前
+  // 点了「下一句」的话, 旧行的动画会打到新场景上, 靠代次比对丢弃这类过期回调。
+  const playGenerationRef = useRef(0)
 
   // 清除兜底计时器 (暂停/停止/跳转/切换稿件时调用)
   const clearFallbackTimer = useCallback(() => {
@@ -180,6 +183,8 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
     const line = section.lines[lineIdx]
     if (!line) return
 
+    const generation = ++playGenerationRef.current
+
     // 更新字幕
     setCurrentText(line.text)
 
@@ -187,6 +192,8 @@ export function NarrationProvider({ children }: NarrationProviderProps) {
     if (line.animation) {
       const delay = line.animation.delay || 0
       setTimeout(() => {
+        // 这一行已经被后续的 playLine 取代, 动画不能再打到新场景上
+        if (playGenerationRef.current !== generation) return
         triggerAnimation(line.animation as AnimationAction)
       }, delay)
     }
