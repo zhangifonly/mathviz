@@ -223,6 +223,49 @@ function checkAccessibility(): string[] {
   return problems
 }
 
+/**
+ * 讲解稿的每一行都必须有对应的场景配置, 反之场景配置里也不该有稿件里
+ * 不存在的 lineId。缺配置的行会退化成上一句的画面(用户看着像卡住),
+ * 多余的配置则是改稿后留下的死代码, 两种都不会报错, 只能静态查。
+ */
+function findScenesFile(courseId: string): string | null {
+  const camelCase = toCamelCase(courseId)
+  const shortCamelCase = camelCase.replace(/Sections$/, '').replace(/Function$/, '')
+  const names = [`${courseId}Scenes.ts`, `${camelCase}Scenes.ts`, `${shortCamelCase}Scenes.ts`]
+  const hit = names.find(n => fs.existsSync(path.join(SCENES_DIR, n)))
+  return hit ? path.join(SCENES_DIR, hit) : null
+}
+
+function checkLineSceneCoverage(courseId: string): string[] {
+  const scriptPath = path.join(NARRATIONS_DIR, `${courseId}.json`)
+  const scenesPath = findScenesFile(courseId)
+  if (!fs.existsSync(scriptPath) || !scenesPath) return []
+
+  const script = JSON.parse(fs.readFileSync(scriptPath, 'utf-8'))
+  const lineIds: string[] = (script.sections ?? []).flatMap(
+    (s: { lines?: Array<{ id: string }> }) => (s.lines ?? []).map(l => l.id)
+  )
+  const content = fs.readFileSync(scenesPath, 'utf-8')
+  const sceneIds = new Set(
+    [...content.matchAll(/lineId:\s*'([^']+)'/g)].map(m => m[1])
+  )
+
+  const problems: string[] = []
+  const missing = lineIds.filter(id => !sceneIds.has(id))
+  const orphan = [...sceneIds].filter(id => !lineIds.includes(id))
+  if (missing.length > 0) {
+    problems.push(
+      `❌ [${courseId}] ${missing.length} 行讲解没有场景配置（画面会停在上一句）: ${missing.slice(0, 5).join(', ')}`
+    )
+  }
+  if (orphan.length > 0) {
+    problems.push(
+      `❌ [${courseId}] ${orphan.length} 个场景配置对应的讲解行已不存在（改稿残留）: ${orphan.slice(0, 5).join(', ')}`
+    )
+  }
+  return problems
+}
+
 function main() {
   console.log('🔍 检查课程完整性...\n')
 
@@ -294,6 +337,13 @@ function main() {
   const propsProblems = checkRendererPropsContract()
   if (propsProblems.length > 0) {
     errors.push(...propsProblems)
+    hasErrors = true
+  }
+
+  // 逐课校验「讲解行 ↔ 场景配置」一一对应
+  const coverageProblems = courseIds.flatMap(checkLineSceneCoverage)
+  if (coverageProblems.length > 0) {
+    errors.push(...coverageProblems)
     hasErrors = true
   }
 
