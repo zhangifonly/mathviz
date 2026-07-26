@@ -188,6 +188,41 @@ function checkRendererPropsContract(): string[] {
   return problems
 }
 
+/**
+ * 讲解控制条与侧边栏的无障碍契约。
+ *
+ * 这些按钮只有 SVG 图标没有文字, 屏幕阅读器读出来是空的; 之前 8 颗按钮
+ * 0 个 aria-label, 靠浏览器探测才发现。这里做静态兜底, 保证不再退化。
+ */
+const A11Y_REQUIRED: Array<{ file: string; needles: string[] }> = [
+  {
+    file: 'src/components/NarrationPresenter/NarrationPresenter.tsx',
+    needles: ["aria-label=\"上一句\"", "aria-label=\"下一句\"", "aria-label=\"播放速度\"", 'role="slider"', 'aria-valuenow'],
+  },
+  {
+    file: 'src/components/Layout/Sidebar.tsx',
+    needles: ['aria-expanded'],
+  },
+]
+
+function checkAccessibility(): string[] {
+  const problems: string[] = []
+  for (const { file, needles } of A11Y_REQUIRED) {
+    const full = path.join(ROOT, file)
+    if (!fs.existsSync(full)) {
+      problems.push(`❌ [${file}] 文件不存在, 无障碍检查无法进行`)
+      continue
+    }
+    const content = fs.readFileSync(full, 'utf-8')
+    for (const needle of needles) {
+      if (!content.includes(needle)) {
+        problems.push(`❌ [${file}] 缺少无障碍标记 ${needle}（图标按钮/进度条屏幕阅读器不可用）`)
+      }
+    }
+  }
+  return problems
+}
+
 function main() {
   console.log('🔍 检查课程完整性...\n')
 
@@ -259,6 +294,13 @@ function main() {
   const propsProblems = checkRendererPropsContract()
   if (propsProblems.length > 0) {
     errors.push(...propsProblems)
+    hasErrors = true
+  }
+
+  // 讲解控制条/侧边栏的无障碍契约(全局检查)
+  const a11yProblems = checkAccessibility()
+  if (a11yProblems.length > 0) {
+    errors.push(...a11yProblems)
     hasErrors = true
   }
 
