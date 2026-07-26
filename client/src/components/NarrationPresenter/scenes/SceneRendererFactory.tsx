@@ -3,13 +3,38 @@
  * 根据实验 ID 返回对应的场景渲染组件
  */
 
-import { lazy, Suspense, useMemo } from 'react'
+import { lazy, Suspense, useMemo, Component, type ReactNode } from 'react'
 import type { NarrationLineScene } from '../types'
 
 // 场景渲染器通用 Props
 export interface SceneRendererProps {
   scene: NarrationLineScene | null
   isInteractive: boolean
+}
+
+// 场景级错误边界：渲染器崩溃时只显示占位，不把整个讲解页白屏
+class SceneErrorBoundary extends Component<
+  { children: ReactNode; experimentId: string },
+  { hasError: boolean }
+> {
+  state = { hasError: false }
+  static getDerivedStateFromError() { return { hasError: true } }
+  componentDidUpdate(prev: { experimentId: string }) {
+    // 切换实验时自动恢复，让用户能继续使用
+    if (prev.experimentId !== this.props.experimentId) {
+      this.setState({ hasError: false })
+    }
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="flex items-center justify-center h-full">
+          <div className="text-white/40 text-sm">场景渲染异常，讲解继续播放</div>
+        </div>
+      )
+    }
+    return this.props.children
+  }
 }
 
 // 加载中占位组件
@@ -713,10 +738,12 @@ export default function SceneRendererWrapper({
       aria-live="polite"
       className="h-full w-full"
     >
-      <Suspense fallback={<LoadingScene />}>
-        {/* eslint-disable-next-line react-hooks/static-components */}
-        <Renderer scene={scene} isInteractive={isInteractive} />
-      </Suspense>
+      <SceneErrorBoundary experimentId={experimentId}>
+        <Suspense fallback={<LoadingScene />}>
+          {/* eslint-disable-next-line react-hooks/static-components */}
+          <Renderer scene={scene} isInteractive={isInteractive} />
+        </Suspense>
+      </SceneErrorBoundary>
     </section>
   )
 }
