@@ -29,9 +29,9 @@
       "line_id": "intro-3",
       "filename": "intro-intro-3.mp3",
       "path": "audio/narrations/set-theory/yunxi/intro-intro-3.mp3",
-      "duration": 1.96,
-      "size": 30672,
-      "text": "这种把东西分成不同组的方法，在数学里叫做集合。"
+      "duration": 1.99,
+      "size": 31824,
+      "text": "这种把东西分成不同组的方法，在数学里叫做\"集合\"。"
     },
     {
       "script_id": "set-theory",
@@ -59,9 +59,9 @@
       "line_id": "concept-2",
       "filename": "concept-concept-2.mp3",
       "path": "audio/narrations/set-theory/yunxi/concept-concept-2.mp3",
-      "duration": 2.83,
-      "size": 49968,
-      "text": "比如，集合A可以是1到5的数字，写成 A = {1, 2, 3, 4, 5}。"
+      "duration": 3.26,
+      "size": 52128,
+      "text": "比如，集合A可以是\"1到5的数字\"，写成 A = {1, 2, 3, 4, 5}。"
     },
     {
       "script_id": "set-theory",
@@ -69,9 +69,9 @@
       "line_id": "concept-3",
       "filename": "concept-concept-3.mp3",
       "path": "audio/narrations/set-theory/yunxi/concept-concept-3.mp3",
-      "duration": 2.66,
-      "size": 46224,
-      "text": "集合B可以是4到8的数字，写成 B = {4, 5, 6, 7, 8}。"
+      "duration": 3.12,
+      "size": 49968,
+      "text": "集合B可以是\"4到8的数字\"，写成 B = {4, 5, 6, 7, 8}。"
     },
     {
       "script_id": "set-theory",
@@ -79,9 +79,9 @@
       "line_id": "concept-4",
       "filename": "concept-concept-4.mp3",
       "path": "audio/narrations/set-theory/yunxi/concept-concept-4.mp3",
-      "duration": 1.31,
-      "size": 21600,
-      "text": "大括号里的数字叫做集合的元素。"
+      "duration": 1.36,
+      "size": 21744,
+      "text": "大括号里的数字叫做集合的\"元素\"。"
     },
     {
       "script_id": "set-theory",
@@ -89,9 +89,9 @@
       "line_id": "concept-5",
       "filename": "concept-concept-5.mp3",
       "path": "audio/narrations/set-theory/yunxi/concept-concept-5.mp3",
-      "duration": 1.75,
+      "duration": 1.67,
       "size": 26784,
-      "text": "如果一个数字在集合里，我们说它属于这个集合。"
+      "text": "如果一个数字在集合里，我们说它\"属于\"这个集合。"
     },
     {
       "script_id": "set-theory",
@@ -159,9 +159,9 @@
       "line_id": "union-2",
       "filename": "union-union-2.mp3",
       "path": "audio/narrations/set-theory/yunxi/union-union-2.mp3",
-      "duration": 1.67,
-      "size": 30096,
-      "text": "符号是∪，读作并。A ∪ B 就是A并B。"
+      "duration": 2.18,
+      "size": 34848,
+      "text": "符号是\"∪\"，读作\"并\"。A ∪ B 就是A并B。"
     },
     {
       "script_id": "set-theory",
@@ -209,9 +209,9 @@
       "line_id": "inter-2",
       "filename": "intersection-inter-2.mp3",
       "path": "audio/narrations/set-theory/yunxi/intersection-inter-2.mp3",
-      "duration": 1.67,
-      "size": 31392,
-      "text": "符号是∩，读作交。A ∩ B 就是A交B。"
+      "duration": 2.26,
+      "size": 36144,
+      "text": "符号是\"∩\"，读作\"交\"。A ∩ B 就是A交B。"
     },
     {
       "script_id": "set-theory",
@@ -259,9 +259,9 @@
       "line_id": "diff-2",
       "filename": "difference-diff-2.mp3",
       "path": "audio/narrations/set-theory/yunxi/difference-diff-2.mp3",
-      "duration": 1.46,
-      "size": 25632,
-      "text": "符号是反斜杠，A减B读作A减B。"
+      "duration": 1.84,
+      "size": 29376,
+      "text": "符号是\"\\\"，A \\ B 读作\"A减B\"。"
     },
     {
       "script_id": "set-theory",
@@ -309,9 +309,9 @@
       "line_id": "sym-2",
       "filename": "symmetric-sym-2.mp3",
       "path": "audio/narrations/set-theory/yunxi/symmetric-sym-2.mp3",
-      "duration": 1.37,
-      "size": 24624,
-      "text": "符号是△，A △ B 读作A对称差B。"
+      "duration": 1.56,
+      "size": 24912,
+      "text": "符号是\"△\"，A △ B 读作\"A对称差B\"。"
     },
     {
       "script_id": "set-theory",
@@ -429,9 +429,9 @@
       "line_id": "app-4",
       "filename": "application-app-4.mp3",
       "path": "audio/narrations/set-theory/yunxi/application-app-4.mp3",
-      "duration": 3.05,
-      "size": 48672,
-      "text": "搜索引擎也用集合运算：搜苹果 AND 手机就是交集，苹果 OR 水果就是并集。"
+      "duration": 3.07,
+      "size": 49104,
+      "text": "搜索引擎也用集合运算：搜\"苹果 AND 手机\"就是交集，\"苹果 OR 水果\"就是并集。"
     },
     {
       "script_id": "set-theory",
@@ -504,6 +504,7 @@
       "text": "太棒了！你已经掌握了集合运算的基本知识。继续探索其他实验，发现更多数学的乐趣吧！"
     }
   ],
-  "total_duration": 102.02,
-  "total_size": 1701792
+  "total_duration": 104.6,
+  "total_size": 1722960,
+  "failed": []
 }

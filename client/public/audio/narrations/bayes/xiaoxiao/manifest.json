@@ -49,9 +49,9 @@
       "line_id": "conditional-prob-2",
       "filename": "conditional-prob-conditional-prob-2.mp3",
       "path": "audio/narrations/bayes/xiaoxiao/conditional-prob-conditional-prob-2.mp3",
-      "duration": 2.02,
-      "size": 32400,
-      "text": "P(A|B)表示在B发生的条件下，A发生的概率。"
+      "duration": 2.1,
+      "size": 33552,
+      "text": "P(A|B) 表示在 B 发生的条件下，A 发生的概率。"
     },
     {
       "script_id": "bayes",
@@ -59,9 +59,9 @@
       "line_id": "conditional-prob-3",
       "filename": "conditional-prob-conditional-prob-3.mp3",
       "path": "audio/narrations/bayes/xiaoxiao/conditional-prob-conditional-prob-3.mp3",
-      "duration": 2.4,
-      "size": 38448,
-      "text": "例如，P(患病|阳性)表示检测阳性的人中，真正患病的比例。"
+      "duration": 2.77,
+      "size": 44352,
+      "text": "例如，P(患病|阳性) 表示检测阳性的人中，真正患病的比例。"
     },
     {
       "script_id": "bayes",
@@ -69,9 +69,9 @@
       "line_id": "conditional-prob-4",
       "filename": "conditional-prob-conditional-prob-4.mp3",
       "path": "audio/narrations/bayes/xiaoxiao/conditional-prob-conditional-prob-4.mp3",
-      "duration": 2.03,
-      "size": 32544,
-      "text": "注意，P(A|B)和P(B|A)通常是不同的！"
+      "duration": 2.2,
+      "size": 35136,
+      "text": "注意，P(A|B) 和 P(B|A) 通常是不同的！"
     },
     {
       "script_id": "bayes",
@@ -89,9 +89,9 @@
       "line_id": "bayes-formula-2",
       "filename": "bayes-formula-bayes-formula-2.mp3",
       "path": "audio/narrations/bayes/xiaoxiao/bayes-formula-bayes-formula-2.mp3",
-      "duration": 2.17,
-      "size": 34704,
-      "text": "P(A|B)等于P(B|A)乘以P(A)除以P(B)。"
+      "duration": 2.33,
+      "size": 37296,
+      "text": "P(A|B) 等于 P(B|A) 乘以 P(A) 除以 P(B)。"
     },
     {
       "script_id": "bayes",
@@ -99,9 +99,9 @@
       "line_id": "bayes-formula-3",
       "filename": "bayes-formula-bayes-formula-3.mp3",
       "path": "audio/narrations/bayes/xiaoxiao/bayes-formula-bayes-formula-3.mp3",
-      "duration": 2.2,
-      "size": 35136,
-      "text": "P(A)叫做先验概率，是我们在看到证据之前对A的信念。"
+      "duration": 2.19,
+      "size": 34992,
+      "text": "P(A) 叫做先验概率，是我们在看到证据之前对 A 的信念。"
     },
     {
       "script_id": "bayes",
@@ -109,9 +109,9 @@
       "line_id": "bayes-formula-4",
       "filename": "bayes-formula-bayes-formula-4.mp3",
       "path": "audio/narrations/bayes/xiaoxiao/bayes-formula-bayes-formula-4.mp3",
-      "duration": 2.25,
-      "size": 36000,
-      "text": "P(A|B)叫做后验概率，是看到证据B之后更新的信念。"
+      "duration": 2.33,
+      "size": 37296,
+      "text": "P(A|B) 叫做后验概率，是看到证据 B 之后更新的信念。"
     },
     {
       "script_id": "bayes",
@@ -129,9 +129,9 @@
       "line_id": "medical-test-2",
       "filename": "medical-test-medical-test-2.mp3",
       "path": "audio/narrations/bayes/xiaoxiao/medical-test-medical-test-2.mp3",
-      "duration": 2.51,
-      "size": 40176,
-      "text": "假设某种疾病的患病率是1%，检测的准确率是99%。"
+      "duration": 2.48,
+      "size": 39600,
+      "text": "假设某种疾病的患病率是 1%，检测的准确率是 99%。"
     },
     {
       "script_id": "bayes",
@@ -149,9 +149,9 @@
       "line_id": "medical-test-4",
       "filename": "medical-test-medical-test-4.mp3",
       "path": "audio/narrations/bayes/xiaoxiao/medical-test-medical-test-4.mp3",
-      "duration": 2.22,
-      "size": 35568,
-      "text": "很多人会说99%，但正确答案大约只有50%！"
+      "duration": 2.24,
+      "size": 35856,
+      "text": "很多人会说 99%，但正确答案大约只有 50%！"
     },
     {
       "script_id": "bayes",
@@ -169,9 +169,9 @@
       "line_id": "calculation-2",
       "filename": "calculation-calculation-2.mp3",
       "path": "audio/narrations/bayes/xiaoxiao/calculation-calculation-2.mp3",
-      "duration": 1.77,
-      "size": 28368,
-      "text": "在1000人中，大约10人患病，990人健康。"
+      "duration": 1.78,
+      "size": 28512,
+      "text": "在 1000 人中，大约 10 人患病，990 人健康。"
     },
     {
       "script_id": "bayes",
@@ -179,9 +179,9 @@
       "line_id": "calculation-3",
       "filename": "calculation-calculation-3.mp3",
       "path": "audio/narrations/bayes/xiaoxiao/calculation-calculation-3.mp3",
-      "duration": 2.79,
-      "size": 44640,
-      "text": "10个患病者中，约10人检测阳性。990个健康者中，约10人假阳性。"
+      "duration": 2.8,
+      "size": 44784,
+      "text": "10 个患病者中，约 10 人检测阳性。990 个健康者中，约 10 人假阳性。"
     },
     {
       "script_id": "bayes",
@@ -191,7 +191,7 @@
       "path": "audio/narrations/bayes/xiaoxiao/calculation-calculation-4.mp3",
       "duration": 2.19,
       "size": 34992,
-      "text": "所以20个阳性中只有10个真正患病，概率是50%。"
+      "text": "所以 20 个阳性中只有 10 个真正患病，概率是 50%。"
     },
     {
       "script_id": "bayes",
@@ -311,7 +311,7 @@
       "path": "audio/narrations/bayes/xiaoxiao/applications-applications-4.mp3",
       "duration": 1.75,
       "size": 28080,
-      "text": "法庭上，DNA证据的解读也需要贝叶斯推理。"
+      "text": "法庭上，DNA 证据的解读也需要贝叶斯推理。"
     },
     {
       "script_id": "bayes",
@@ -364,6 +364,7 @@
       "text": "希望通过这个实验，你对贝叶斯定理有了更直观的理解！"
     }
   ],
-  "total_duration": 66.85000000000001,
-  "total_size": 1069776
+  "total_duration": 67.71,
+  "total_size": 1083168,
+  "failed": []
 }

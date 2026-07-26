@@ -35,7 +35,7 @@
       "path": "audio/narrations/regression/yunxi/intro-intro-3.mp3",
       "duration": 2.65,
       "size": 42480,
-      "text": "如何找到一条最佳的直线来描述这种关系？这就是回归分析要解决的问题。"
+      "text": "如何找到一条\"最佳\"的直线来描述这种关系？这就是回归分析要解决的问题。"
     },
     {
       "script_id": "regression",
@@ -95,7 +95,7 @@
       "path": "audio/narrations/regression/yunxi/best-fit-best-fit-2.mp3",
       "duration": 1.65,
       "size": 26352,
-      "text": "但什么叫最好？我们需要一个标准来衡量。"
+      "text": "但什么叫\"最好\"？我们需要一个标准来衡量。"
     },
     {
       "script_id": "regression",

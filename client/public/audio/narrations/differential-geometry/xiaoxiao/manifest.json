@@ -69,9 +69,9 @@
       "line_id": "curvature-4",
       "filename": "curvature-curvature-4.mp3",
       "path": "audio/narrations/differential-geometry/xiaoxiao/curvature-curvature-4.mp3",
-      "duration": 2.33,
-      "size": 37296,
-      "text": "对于参数曲线 r(t)，曲率可以用公式 κ = |r\\"
+      "duration": 3.36,
+      "size": 53712,
+      "text": "对于参数曲线 r(t)，曲率等于一阶导数与二阶导数叉积的模长，再除以一阶导数模长的立方。"
     },
     {
       "script_id": "differential-geometry",
@@ -454,6 +454,7 @@
       "text": "希望这个可视化工具能帮助你更好地理解微分几何的美妙世界！"
     }
   ],
-  "total_duration": 132.3,
-  "total_size": 2116944
+  "total_duration": 133.33,
+  "total_size": 2133360,
+  "failed": []
 }

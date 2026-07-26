@@ -89,9 +89,9 @@
       "line_id": "ellipse-2",
       "filename": "ellipse-ellipse-2.mp3",
       "path": "audio/narrations/conic-sections/yunxi/ellipse-ellipse-2.mp3",
-      "duration": 1.8,
-      "size": 28800,
-      "text": "这两个定点叫做焦点，用F1和F2表示。"
+      "duration": 1.82,
+      "size": 29088,
+      "text": "这两个定点叫做焦点，用 F1 和 F2 表示。"
     },
     {
       "script_id": "conic-sections",
@@ -99,9 +99,9 @@
       "line_id": "ellipse-3",
       "filename": "ellipse-ellipse-3.mp3",
       "path": "audio/narrations/conic-sections/yunxi/ellipse-ellipse-3.mp3",
-      "duration": 2.67,
-      "size": 42768,
-      "text": "椭圆的标准方程是x平方除以a平方加y平方除以b平方等于1。"
+      "duration": 2.53,
+      "size": 40464,
+      "text": "椭圆的标准方程是 x 平方除以 a 平方加 y 平方除以 b 平方等于 1。"
     },
     {
       "script_id": "conic-sections",
@@ -109,9 +109,9 @@
       "line_id": "ellipse-4",
       "filename": "ellipse-ellipse-4.mp3",
       "path": "audio/narrations/conic-sections/yunxi/ellipse-ellipse-4.mp3",
-      "duration": 3.09,
-      "size": 49392,
-      "text": "其中a是长半轴，b是短半轴，焦距c满足c平方等于a平方减b平方。"
+      "duration": 3.08,
+      "size": 49248,
+      "text": "其中 a 是长半轴，b 是短半轴，焦距 c 满足 c 平方等于 a 平方减 b 平方。"
     },
     {
       "script_id": "conic-sections",
@@ -145,16 +145,6 @@
     },
     {
       "script_id": "conic-sections",
-      "section_id": "ellipse-demo",
-      "line_id": "ellipse-demo-4",
-      "filename": "ellipse-demo-ellipse-demo-4.mp3",
-      "path": "audio/narrations/conic-sections/yunxi/ellipse-demo-ellipse-demo-4.mp3",
-      "duration": 1.66,
-      "size": 26496,
-      "text": "调整参数a和b，观察椭圆形状的变化。"
-    },
-    {
-      "script_id": "conic-sections",
       "section_id": "hyperbola",
       "line_id": "hyperbola-1",
       "filename": "hyperbola-hyperbola-1.mp3",
@@ -169,9 +159,9 @@
       "line_id": "hyperbola-2",
       "filename": "hyperbola-hyperbola-2.mp3",
       "path": "audio/narrations/conic-sections/yunxi/hyperbola-hyperbola-2.mp3",
-      "duration": 1.63,
-      "size": 26064,
-      "text": "注意是距离之差，而椭圆是距离之和。"
+      "duration": 1.64,
+      "size": 26208,
+      "text": "注意是距离之\"差\"，而椭圆是距离之\"和\"。"
     },
     {
       "script_id": "conic-sections",
@@ -216,16 +206,6 @@
     {
       "script_id": "conic-sections",
       "section_id": "parabola",
-      "line_id": "parabola-3",
-      "filename": "parabola-parabola-3.mp3",
-      "path": "audio/narrations/conic-sections/yunxi/parabola-parabola-3.mp3",
-      "duration": 2.74,
-      "size": 43776,
-      "text": "抛物线的标准方程是y平方等于2px，其中p是焦点到准线的距离。"
-    },
-    {
-      "script_id": "conic-sections",
-      "section_id": "parabola",
       "line_id": "parabola-4",
       "filename": "parabola-parabola-4.mp3",
       "path": "audio/narrations/conic-sections/yunxi/parabola-parabola-4.mp3",
@@ -241,7 +221,7 @@
       "path": "audio/narrations/conic-sections/yunxi/eccentricity-eccentricity-1.mp3",
       "duration": 2.11,
       "size": 33696,
-      "text": "离心率是描述圆锥曲线形状的重要参数，用e表示。"
+      "text": "离心率是描述圆锥曲线形状的重要参数，用 e 表示。"
     },
     {
       "script_id": "conic-sections",
@@ -251,7 +231,7 @@
       "path": "audio/narrations/conic-sections/yunxi/eccentricity-eccentricity-2.mp3",
       "duration": 1.92,
       "size": 30672,
-      "text": "对于椭圆，e等于c除以a，取值在0到1之间。"
+      "text": "对于椭圆，e 等于 c 除以 a，取值在 0 到 1 之间。"
     },
     {
       "script_id": "conic-sections",
@@ -259,9 +239,9 @@
       "line_id": "eccentricity-3",
       "filename": "eccentricity-eccentricity-3.mp3",
       "path": "audio/narrations/conic-sections/yunxi/eccentricity-eccentricity-3.mp3",
-      "duration": 2.3,
-      "size": 36864,
-      "text": "e越接近0，椭圆越接近圆；e越接近1，椭圆越扁。"
+      "duration": 2.32,
+      "size": 37152,
+      "text": "e 越接近 0，椭圆越接近圆；e 越接近 1，椭圆越扁。"
     },
     {
       "script_id": "conic-sections",
@@ -269,9 +249,9 @@
       "line_id": "eccentricity-4",
       "filename": "eccentricity-eccentricity-4.mp3",
       "path": "audio/narrations/conic-sections/yunxi/eccentricity-eccentricity-4.mp3",
-      "duration": 2.08,
-      "size": 33264,
-      "text": "抛物线的离心率恰好等于1，双曲线的离心率大于1。"
+      "duration": 2.11,
+      "size": 33696,
+      "text": "抛物线的离心率恰好等于 1，双曲线的离心率大于 1。"
     },
     {
       "script_id": "conic-sections",
@@ -362,8 +342,29 @@
       "duration": 2.02,
       "size": 32256,
       "text": "希望通过这个实验，你对圆锥曲线有了更直观的理解！"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "ellipse-demo",
+      "line_id": "ellipse-demo-4",
+      "filename": "ellipse-demo-ellipse-demo-4.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/ellipse-demo-ellipse-demo-4.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "调整参数 a 和 b，观察椭圆形状的变化。"
+    },
+    {
+      "script_id": "conic-sections",
+      "section_id": "parabola",
+      "line_id": "parabola-3",
+      "filename": "parabola-parabola-3.mp3",
+      "path": "audio/narrations/conic-sections/yunxi/parabola-parabola-3.mp3",
+      "duration": 2.77,
+      "size": 44352,
+      "text": "抛物线的标准方程是 y 平方等于 2px，其中 p 是焦点到准线的距离。"
     }
   ],
-  "total_duration": 70.95,
-  "total_size": 1135008
+  "total_duration": 70.93,
+  "total_size": 1134720,
+  "failed": []
 }

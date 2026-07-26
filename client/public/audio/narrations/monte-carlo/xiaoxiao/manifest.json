@@ -41,7 +41,7 @@
       "path": "audio/narrations/monte-carlo/xiaoxiao/principle-principle-1.mp3",
       "duration": 1.92,
       "size": 30672,
-      "text": "想象一个边长为2的正方形，里面画一个半径为1的圆。"
+      "text": "想象一个边长为 2 的正方形，里面画一个半径为 1 的圆。"
     },
     {
       "script_id": "monte-carlo",
@@ -49,9 +49,9 @@
       "line_id": "principle-2",
       "filename": "principle-principle-2.mp3",
       "path": "audio/narrations/monte-carlo/xiaoxiao/principle-principle-2.mp3",
-      "duration": 1.39,
-      "size": 22176,
-      "text": "正方形的面积是4，圆的面积是π。"
+      "duration": 1.48,
+      "size": 23616,
+      "text": "正方形的面积是 4，圆的面积是 π。"
     },
     {
       "script_id": "monte-carlo",
@@ -59,9 +59,9 @@
       "line_id": "principle-3",
       "filename": "principle-principle-3.mp3",
       "path": "audio/narrations/monte-carlo/xiaoxiao/principle-principle-3.mp3",
-      "duration": 3.36,
-      "size": 53712,
-      "text": "如果我们在正方形内随机撒点，落入圆内的概率就是圆面积除以正方形面积，等于π除以4。"
+      "duration": 3.43,
+      "size": 54864,
+      "text": "如果我们在正方形内随机撒点，落入圆内的概率就是圆面积除以正方形面积，等于 π/4。"
     },
     {
       "script_id": "monte-carlo",
@@ -69,9 +69,9 @@
       "line_id": "principle-4",
       "filename": "principle-principle-4.mp3",
       "path": "audio/narrations/monte-carlo/xiaoxiao/principle-principle-4.mp3",
-      "duration": 2.29,
-      "size": 36720,
-      "text": "所以，圆内点数除以总点数，再乘以4，就能估算出π的值。"
+      "duration": 2.55,
+      "size": 40752,
+      "text": "所以，圆内点数除以总点数，再乘以 4，就能估算出 π 的值。"
     },
     {
       "script_id": "monte-carlo",
@@ -79,9 +79,9 @@
       "line_id": "visualization-1",
       "filename": "visualization-visualization-1.mp3",
       "path": "audio/narrations/monte-carlo/xiaoxiao/visualization-visualization-1.mp3",
-      "duration": 2.27,
-      "size": 36288,
-      "text": "图中蓝色的圆是单位圆，外面的方框是边长为2的正方形。"
+      "duration": 2.29,
+      "size": 36576,
+      "text": "图中蓝色的圆是单位圆，外面的方框是边长为 2 的正方形。"
     },
     {
       "script_id": "monte-carlo",
@@ -109,9 +109,9 @@
       "line_id": "experiment-1",
       "filename": "experiment-experiment-1.mp3",
       "path": "audio/narrations/monte-carlo/xiaoxiao/experiment-experiment-1.mp3",
-      "duration": 1.65,
-      "size": 26352,
-      "text": "点击开始按钮，程序会不断生成随机点。"
+      "duration": 1.64,
+      "size": 26208,
+      "text": "点击\"开始\"按钮，程序会不断生成随机点。"
     },
     {
       "script_id": "monte-carlo",
@@ -129,9 +129,9 @@
       "line_id": "experiment-3",
       "filename": "experiment-experiment-3.mp3",
       "path": "audio/narrations/monte-carlo/xiaoxiao/experiment-experiment-3.mp3",
-      "duration": 2.55,
-      "size": 40752,
-      "text": "判断方法很简单：如果x平方加y平方小于等于1，点就在圆内。"
+      "duration": 2.77,
+      "size": 44352,
+      "text": "判断方法很简单：如果 x² + y² 小于等于 1，点就在圆内。"
     },
     {
       "script_id": "monte-carlo",
@@ -149,9 +149,9 @@
       "line_id": "convergence-1",
       "filename": "convergence-convergence-1.mp3",
       "path": "audio/narrations/monte-carlo/xiaoxiao/convergence-convergence-1.mp3",
-      "duration": 1.95,
-      "size": 31248,
-      "text": "下方的图显示了π估计值随点数增加的变化过程。"
+      "duration": 2.13,
+      "size": 34128,
+      "text": "下方的图显示了 π 估计值随点数增加的变化过程。"
     },
     {
       "script_id": "monte-carlo",
@@ -159,9 +159,9 @@
       "line_id": "convergence-2",
       "filename": "convergence-convergence-2.mp3",
       "path": "audio/narrations/monte-carlo/xiaoxiao/convergence-convergence-2.mp3",
-      "duration": 1.67,
-      "size": 26640,
-      "text": "红色虚线是π的真实值3.14159。"
+      "duration": 1.86,
+      "size": 29808,
+      "text": "红色虚线是 π 的真实值 3.14159...。"
     },
     {
       "script_id": "monte-carlo",
@@ -201,7 +201,7 @@
       "path": "audio/narrations/monte-carlo/xiaoxiao/accuracy-accuracy-2.mp3",
       "duration": 1.52,
       "size": 24336,
-      "text": "要让误差减半，需要把点数增加到4倍。"
+      "text": "要让误差减半，需要把点数增加到 4 倍。"
     },
     {
       "script_id": "monte-carlo",
@@ -229,9 +229,9 @@
       "line_id": "application-1",
       "filename": "application-application-1.mp3",
       "path": "audio/narrations/monte-carlo/xiaoxiao/application-application-1.mp3",
-      "duration": 1.81,
-      "size": 28944,
-      "text": "蒙特卡洛方法不仅能估算π，还有很多实际应用。"
+      "duration": 1.94,
+      "size": 31104,
+      "text": "蒙特卡洛方法不仅能估算 π，还有很多实际应用。"
     },
     {
       "script_id": "monte-carlo",
@@ -261,7 +261,7 @@
       "path": "audio/narrations/monte-carlo/xiaoxiao/application-application-4.mp3",
       "duration": 1.69,
       "size": 27072,
-      "text": "在人工智能中，用于游戏AI和决策优化。"
+      "text": "在人工智能中，用于游戏 AI 和决策优化。"
     },
     {
       "script_id": "monte-carlo",
@@ -279,9 +279,9 @@
       "line_id": "summary-2",
       "filename": "summary-summary-2.mp3",
       "path": "audio/narrations/monte-carlo/xiaoxiao/summary-summary-2.mp3",
-      "duration": 2.22,
-      "size": 35568,
-      "text": "蒙特卡洛方法利用随机采样来估算数学量，比如圆周率π。"
+      "duration": 2.33,
+      "size": 37296,
+      "text": "蒙特卡洛方法利用随机采样来估算数学量，比如圆周率 π。"
     },
     {
       "script_id": "monte-carlo",
@@ -289,9 +289,9 @@
       "line_id": "summary-3",
       "filename": "summary-summary-3.mp3",
       "path": "audio/narrations/monte-carlo/xiaoxiao/summary-summary-3.mp3",
-      "duration": 3.02,
-      "size": 48384,
-      "text": "原理是：圆内点数除以总点数约等于π除以4，所以π约等于4乘以这个比值。"
+      "duration": 3.35,
+      "size": 53568,
+      "text": "原理是：圆内点数除以总点数约等于 π/4，所以 π 约等于 4 乘以这个比值。"
     },
     {
       "script_id": "monte-carlo",
@@ -314,6 +314,7 @@
       "text": "希望通过这个实验，你对蒙特卡洛方法有了更直观的理解！"
     }
   ],
-  "total_duration": 62.59,
-  "total_size": 1001376
+  "total_duration": 64.18,
+  "total_size": 1026864,
+  "failed": []
 }

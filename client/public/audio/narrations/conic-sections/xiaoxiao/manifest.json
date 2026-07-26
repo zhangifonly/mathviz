@@ -91,7 +91,7 @@
       "path": "audio/narrations/conic-sections/xiaoxiao/ellipse-ellipse-2.mp3",
       "duration": 1.73,
       "size": 27648,
-      "text": "这两个定点叫做焦点，用F1和F2表示。"
+      "text": "这两个定点叫做焦点，用 F1 和 F2 表示。"
     },
     {
       "script_id": "conic-sections",
@@ -99,9 +99,9 @@
       "line_id": "ellipse-3",
       "filename": "ellipse-ellipse-3.mp3",
       "path": "audio/narrations/conic-sections/xiaoxiao/ellipse-ellipse-3.mp3",
-      "duration": 2.57,
-      "size": 41184,
-      "text": "椭圆的标准方程是x平方除以a平方加y平方除以b平方等于1。"
+      "duration": 2.49,
+      "size": 39888,
+      "text": "椭圆的标准方程是 x 平方除以 a 平方加 y 平方除以 b 平方等于 1。"
     },
     {
       "script_id": "conic-sections",
@@ -109,9 +109,9 @@
       "line_id": "ellipse-4",
       "filename": "ellipse-ellipse-4.mp3",
       "path": "audio/narrations/conic-sections/xiaoxiao/ellipse-ellipse-4.mp3",
-      "duration": 2.92,
-      "size": 46800,
-      "text": "其中a是长半轴，b是短半轴，焦距c满足c平方等于a平方减b平方。"
+      "duration": 2.91,
+      "size": 46512,
+      "text": "其中 a 是长半轴，b 是短半轴，焦距 c 满足 c 平方等于 a 平方减 b 平方。"
     },
     {
       "script_id": "conic-sections",
@@ -149,9 +149,9 @@
       "line_id": "ellipse-demo-4",
       "filename": "ellipse-demo-ellipse-demo-4.mp3",
       "path": "audio/narrations/conic-sections/xiaoxiao/ellipse-demo-ellipse-demo-4.mp3",
-      "duration": 1.64,
-      "size": 26208,
-      "text": "调整参数a和b，观察椭圆形状的变化。"
+      "duration": 1.63,
+      "size": 26064,
+      "text": "调整参数 a 和 b，观察椭圆形状的变化。"
     },
     {
       "script_id": "conic-sections",
@@ -169,9 +169,9 @@
       "line_id": "hyperbola-2",
       "filename": "hyperbola-hyperbola-2.mp3",
       "path": "audio/narrations/conic-sections/xiaoxiao/hyperbola-hyperbola-2.mp3",
-      "duration": 1.5,
-      "size": 24048,
-      "text": "注意是距离之差，而椭圆是距离之和。"
+      "duration": 1.49,
+      "size": 23904,
+      "text": "注意是距离之\"差\"，而椭圆是距离之\"和\"。"
     },
     {
       "script_id": "conic-sections",
@@ -219,9 +219,9 @@
       "line_id": "parabola-3",
       "filename": "parabola-parabola-3.mp3",
       "path": "audio/narrations/conic-sections/xiaoxiao/parabola-parabola-3.mp3",
-      "duration": 2.71,
-      "size": 43344,
-      "text": "抛物线的标准方程是y平方等于2px，其中p是焦点到准线的距离。"
+      "duration": 2.7,
+      "size": 43200,
+      "text": "抛物线的标准方程是 y 平方等于 2px，其中 p 是焦点到准线的距离。"
     },
     {
       "script_id": "conic-sections",
@@ -241,7 +241,7 @@
       "path": "audio/narrations/conic-sections/xiaoxiao/eccentricity-eccentricity-1.mp3",
       "duration": 2.01,
       "size": 32112,
-      "text": "离心率是描述圆锥曲线形状的重要参数，用e表示。"
+      "text": "离心率是描述圆锥曲线形状的重要参数，用 e 表示。"
     },
     {
       "script_id": "conic-sections",
@@ -251,7 +251,7 @@
       "path": "audio/narrations/conic-sections/xiaoxiao/eccentricity-eccentricity-2.mp3",
       "duration": 1.78,
       "size": 28512,
-      "text": "对于椭圆，e等于c除以a，取值在0到1之间。"
+      "text": "对于椭圆，e 等于 c 除以 a，取值在 0 到 1 之间。"
     },
     {
       "script_id": "conic-sections",
@@ -259,9 +259,9 @@
       "line_id": "eccentricity-3",
       "filename": "eccentricity-eccentricity-3.mp3",
       "path": "audio/narrations/conic-sections/xiaoxiao/eccentricity-eccentricity-3.mp3",
-      "duration": 2.14,
-      "size": 34272,
-      "text": "e越接近0，椭圆越接近圆；e越接近1，椭圆越扁。"
+      "duration": 2.12,
+      "size": 33984,
+      "text": "e 越接近 0，椭圆越接近圆；e 越接近 1，椭圆越扁。"
     },
     {
       "script_id": "conic-sections",
@@ -269,9 +269,9 @@
       "line_id": "eccentricity-4",
       "filename": "eccentricity-eccentricity-4.mp3",
       "path": "audio/narrations/conic-sections/xiaoxiao/eccentricity-eccentricity-4.mp3",
-      "duration": 1.99,
-      "size": 31824,
-      "text": "抛物线的离心率恰好等于1，双曲线的离心率大于1。"
+      "duration": 2.02,
+      "size": 32256,
+      "text": "抛物线的离心率恰好等于 1，双曲线的离心率大于 1。"
     },
     {
       "script_id": "conic-sections",
@@ -364,6 +364,7 @@
       "text": "希望通过这个实验，你对圆锥曲线有了更直观的理解！"
     }
   ],
-  "total_duration": 70.08999999999999,
-  "total_size": 1121904
+  "total_duration": 69.98,
+  "total_size": 1120032,
+  "failed": []
 }

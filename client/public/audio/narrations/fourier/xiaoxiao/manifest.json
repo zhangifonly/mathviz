@@ -56,26 +56,6 @@
     {
       "script_id": "fourier",
       "section_id": "concept",
-      "line_id": "concept-2",
-      "filename": "concept-concept-2.mp3",
-      "path": "audio/narrations/fourier/xiaoxiao/concept-concept-2.mp3",
-      "duration": 3.21,
-      "size": 51408,
-      "text": "就像白光可以被棱镜分解成七色光谱一样，声音和其他信号也可以被分解成不同频率的成分。"
-    },
-    {
-      "script_id": "fourier",
-      "section_id": "concept",
-      "line_id": "concept-3",
-      "filename": "concept-concept-3.mp3",
-      "path": "audio/narrations/fourier/xiaoxiao/concept-concept-3.mp3",
-      "duration": 2.88,
-      "size": 46080,
-      "text": "我们把信号随时间变化的表示叫做时域，把信号按频率分解后的表示叫做频域。"
-    },
-    {
-      "script_id": "fourier",
-      "section_id": "concept",
       "line_id": "concept-4",
       "filename": "concept-concept-4.mp3",
       "path": "audio/narrations/fourier/xiaoxiao/concept-concept-4.mp3",
@@ -99,9 +79,9 @@
       "line_id": "formula-2",
       "filename": "formula-formula-2.mp3",
       "path": "audio/narrations/fourier/xiaoxiao/formula-formula-2.mp3",
-      "duration": 3.22,
-      "size": 51552,
-      "text": "以方波为例，它的傅里叶级数展开式是：f(t) 等于 4A 除以 派，乘以一个无穷级数。"
+      "duration": 3.21,
+      "size": 51408,
+      "text": "以方波为例，它的傅里叶级数展开式是：f(t) 等于 4A 除以 π，乘以一个无穷级数。"
     },
     {
       "script_id": "fourier",
@@ -121,7 +101,7 @@
       "path": "audio/narrations/fourier/xiaoxiao/formula-formula-4.mp3",
       "duration": 2.23,
       "size": 35712,
-      "text": "每一项的振幅是 n 分之一，这意味着高频成分的贡献越来越小。"
+      "text": "每一项的振幅是 1/n，这意味着高频成分的贡献越来越小。"
     },
     {
       "script_id": "fourier",
@@ -151,7 +131,7 @@
       "path": "audio/narrations/fourier/xiaoxiao/wave-selection-wave-square.mp3",
       "duration": 3.36,
       "size": 53712,
-      "text": "方波看起来很简单，但它包含了无穷多个奇次谐波。这就是为什么方波听起来比正弦波更尖锐。"
+      "text": "方波看起来很简单，但它包含了无穷多个奇次谐波。这就是为什么方波听起来比正弦波更\"尖锐\"。"
     },
     {
       "script_id": "fourier",
@@ -161,7 +141,7 @@
       "path": "audio/narrations/fourier/xiaoxiao/wave-selection-wave-sawtooth.mp3",
       "duration": 2.54,
       "size": 40608,
-      "text": "锯齿波包含所有整数次谐波，所以它的频谱最丰富，声音也最明亮。"
+      "text": "锯齿波包含所有整数次谐波，所以它的频谱最丰富，声音也最\"明亮\"。"
     },
     {
       "script_id": "fourier",
@@ -169,9 +149,9 @@
       "line_id": "wave-triangle",
       "filename": "wave-selection-wave-triangle.mp3",
       "path": "audio/narrations/fourier/xiaoxiao/wave-selection-wave-triangle.mp3",
-      "duration": 3.11,
-      "size": 49824,
-      "text": "三角波也只包含奇次谐波，但振幅衰减得更快，是 n 平方分之一，所以听起来更柔和。"
+      "duration": 3.83,
+      "size": 61200,
+      "text": "三角波也只包含奇次谐波，但振幅衰减得更快，是 1/n² 而不是 1/n，所以听起来更\"柔和\"。"
     },
     {
       "script_id": "fourier",
@@ -221,7 +201,7 @@
       "path": "audio/narrations/fourier/xiaoxiao/animation-anim-5.mp3",
       "duration": 3.26,
       "size": 52128,
-      "text": "但是注意看方波的拐角处，即使项数很多，那里仍然有一些过冲。这就是著名的吉布斯现象。"
+      "text": "但是注意看方波的拐角处，即使项数很多，那里仍然有一些\"过冲\"。这就是著名的吉布斯现象。"
     },
     {
       "script_id": "fourier",
@@ -229,9 +209,9 @@
       "line_id": "anim-6",
       "filename": "animation-anim-6.mp3",
       "path": "audio/narrations/fourier/xiaoxiao/animation-anim-6.mp3",
-      "duration": 3.71,
-      "size": 59328,
-      "text": "吉布斯现象告诉我们，用有限项傅里叶级数逼近不连续函数时，在跳变点附近总会有大约百分之九的过冲。"
+      "duration": 3.74,
+      "size": 59904,
+      "text": "吉布斯现象告诉我们，用有限项傅里叶级数逼近不连续函数时，在跳变点附近总会有大约9%的过冲。"
     },
     {
       "script_id": "fourier",
@@ -271,7 +251,7 @@
       "path": "audio/narrations/fourier/xiaoxiao/spectrum-spectrum-4.mp3",
       "duration": 2.35,
       "size": 37584,
-      "text": "这就是傅里叶变换的威力：它让我们能够看到信号内部的频率结构。"
+      "text": "这就是傅里叶变换的威力：它让我们能够\"看到\"信号内部的频率结构。"
     },
     {
       "script_id": "fourier",
@@ -291,7 +271,7 @@
       "path": "audio/narrations/fourier/xiaoxiao/parameters-param-freq.mp3",
       "duration": 2.99,
       "size": 47808,
-      "text": "调整基频参数，观察波形如何被压缩或拉伸。频率越高，波形振荡越快。"
+      "text": "调整基频参数，观察波形如何被\"压缩\"或\"拉伸\"。频率越高，波形振荡越快。"
     },
     {
       "script_id": "fourier",
@@ -339,9 +319,9 @@
       "line_id": "app-3",
       "filename": "application-app-3.mp3",
       "path": "audio/narrations/fourier/xiaoxiao/application-app-3.mp3",
-      "duration": 2.36,
-      "size": 37728,
-      "text": "在图像处理中，JPEG压缩算法使用离散余弦变换来压缩图片。"
+      "duration": 3.02,
+      "size": 48384,
+      "text": "在图像处理中，JPEG压缩算法使用离散余弦变换（傅里叶变换的近亲）来压缩图片。"
     },
     {
       "script_id": "fourier",
@@ -359,9 +339,9 @@
       "line_id": "app-5",
       "filename": "application-app-5.mp3",
       "path": "audio/narrations/fourier/xiaoxiao/application-app-5.mp3",
-      "duration": 2.51,
-      "size": 40176,
-      "text": "甚至在医学成像中，CT和核磁共振的图像重建也依赖傅里叶变换。"
+      "duration": 2.52,
+      "size": 40320,
+      "text": "甚至在医学成像中，CT和MRI的图像重建也依赖傅里叶变换。"
     },
     {
       "script_id": "fourier",
@@ -422,8 +402,29 @@
       "duration": 3.48,
       "size": 55728,
       "text": "希望通过这个实验，你对傅里叶变换有了更直观的理解。继续探索其他实验，发现更多数学之美！"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "concept",
+      "line_id": "concept-2",
+      "filename": "concept-concept-2.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/concept-concept-2.mp3",
+      "duration": 3.19,
+      "size": 50976,
+      "text": "就像白光可以被棱镜分解成七色光谱一样，声音和其他信号也可以被\"分解\"成不同频率的成分。"
+    },
+    {
+      "script_id": "fourier",
+      "section_id": "concept",
+      "line_id": "concept-3",
+      "filename": "concept-concept-3.mp3",
+      "path": "audio/narrations/fourier/xiaoxiao/concept-concept-3.mp3",
+      "duration": 2.88,
+      "size": 46080,
+      "text": "我们把信号随时间变化的表示叫做\"时域\"，把信号按频率分解后的表示叫做\"频域\"。"
     }
   ],
-  "total_duration": 108.13,
-  "total_size": 1730160
+  "total_duration": 109.52,
+  "total_size": 1752336,
+  "failed": []
 }

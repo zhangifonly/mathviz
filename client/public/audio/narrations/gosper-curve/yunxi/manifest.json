@@ -49,9 +49,9 @@
       "line_id": "def-2",
       "filename": "rule-def-2.mp3",
       "path": "audio/narrations/gosper-curve/yunxi/rule-def-2.mp3",
-      "duration": 2.66,
-      "size": 42624,
-      "text": "每次把 A 换成 A-B--B+A++AA+B，把 B 换成一串对应的指令。"
+      "duration": 3.07,
+      "size": 49104,
+      "text": "每次把 A 换成一串由 A、B 和左右转向符号组成的新指令，B 也按对应规则展开。"
     },
     {
       "script_id": "gosper-curve",
@@ -164,6 +164,7 @@
       "text": "简单规则孕育无穷复杂，这就是数学之美，我们下次再见！"
     }
   ],
-  "total_duration": 32.43,
-  "total_size": 518544
+  "total_duration": 32.84,
+  "total_size": 525024,
+  "failed": []
 }

@@ -31,7 +31,7 @@
       "path": "audio/narrations/complex/xiaoxiao/intro-intro-3.mp3",
       "duration": 2.0,
       "size": 31968,
-      "text": "于是他们发明了虚数单位i，定义i的平方等于负1。"
+      "text": "于是他们发明了虚数单位 i，定义 i 的平方等于负1。"
     },
     {
       "script_id": "complex",
@@ -41,7 +41,7 @@
       "path": "audio/narrations/complex/xiaoxiao/imaginary-unit-imaginary-unit-1.mp3",
       "duration": 1.99,
       "size": 31824,
-      "text": "虚数单位i满足i的平方等于负1，这是它的定义。"
+      "text": "虚数单位 i 满足 i 的平方等于负1，这是它的定义。"
     },
     {
       "script_id": "complex",
@@ -49,9 +49,9 @@
       "line_id": "imaginary-unit-2",
       "filename": "imaginary-unit-imaginary-unit-2.mp3",
       "path": "audio/narrations/complex/xiaoxiao/imaginary-unit-imaginary-unit-2.mp3",
-      "duration": 1.41,
-      "size": 22608,
-      "text": "有了i，我们就可以表示负数的平方根了。"
+      "duration": 1.42,
+      "size": 22752,
+      "text": "有了 i，我们就可以表示负数的平方根了。"
     },
     {
       "script_id": "complex",
@@ -59,9 +59,9 @@
       "line_id": "imaginary-unit-3",
       "filename": "imaginary-unit-imaginary-unit-3.mp3",
       "path": "audio/narrations/complex/xiaoxiao/imaginary-unit-imaginary-unit-3.mp3",
-      "duration": 2.99,
-      "size": 47808,
-      "text": "例如，负4的平方根就是2i，因为2i的平方等于4乘以i的平方，等于负4。"
+      "duration": 2.98,
+      "size": 47664,
+      "text": "例如，负4的平方根就是 2i，因为 2i 的平方等于 4 乘以 i 的平方，等于负4。"
     },
     {
       "script_id": "complex",
@@ -69,9 +69,9 @@
       "line_id": "imaginary-unit-4",
       "filename": "imaginary-unit-imaginary-unit-4.mp3",
       "path": "audio/narrations/complex/xiaoxiao/imaginary-unit-imaginary-unit-4.mp3",
-      "duration": 2.08,
-      "size": 33264,
-      "text": "虚数虽然叫虚，但它在物理和工程中有非常实际的应用。"
+      "duration": 2.1,
+      "size": 33552,
+      "text": "虚数虽然叫\"虚\"，但它在物理和工程中有非常实际的应用。"
     },
     {
       "script_id": "complex",
@@ -81,7 +81,7 @@
       "path": "audio/narrations/complex/xiaoxiao/complex-number-complex-number-1.mp3",
       "duration": 1.9,
       "size": 30384,
-      "text": "复数是实数和虚数的组合，写成a加bi的形式。"
+      "text": "复数是实数和虚数的组合，写成 a 加 bi 的形式。"
     },
     {
       "script_id": "complex",
@@ -91,7 +91,7 @@
       "path": "audio/narrations/complex/xiaoxiao/complex-number-complex-number-2.mp3",
       "duration": 1.89,
       "size": 30240,
-      "text": "其中a叫做实部，b叫做虚部，它们都是实数。"
+      "text": "其中 a 叫做实部，b 叫做虚部，它们都是实数。"
     },
     {
       "script_id": "complex",
@@ -101,7 +101,7 @@
       "path": "audio/narrations/complex/xiaoxiao/complex-number-complex-number-3.mp3",
       "duration": 1.46,
       "size": 23328,
-      "text": "当b等于0时，复数就退化为实数。"
+      "text": "当 b 等于 0 时，复数就退化为实数。"
     },
     {
       "script_id": "complex",
@@ -111,7 +111,7 @@
       "path": "audio/narrations/complex/xiaoxiao/complex-number-complex-number-4.mp3",
       "duration": 1.41,
       "size": 22608,
-      "text": "当a等于0时，复数就是纯虚数。"
+      "text": "当 a 等于 0 时，复数就是纯虚数。"
     },
     {
       "script_id": "complex",
@@ -169,19 +169,9 @@
       "line_id": "modulus-argument-2",
       "filename": "modulus-argument-modulus-argument-2.mp3",
       "path": "audio/narrations/complex/xiaoxiao/modulus-argument-modulus-argument-2.mp3",
-      "duration": 2.56,
-      "size": 41040,
-      "text": "模是复数到原点的距离，用r表示，等于a平方加b平方的平方根。"
-    },
-    {
-      "script_id": "complex",
-      "section_id": "modulus-argument",
-      "line_id": "modulus-argument-3",
-      "filename": "modulus-argument-modulus-argument-3.mp3",
-      "path": "audio/narrations/complex/xiaoxiao/modulus-argument-modulus-argument-3.mp3",
-      "duration": 2.08,
-      "size": 33264,
-      "text": "辐角是复数与正实轴的夹角，用希腊字母θ表示。"
+      "duration": 2.54,
+      "size": 40608,
+      "text": "模是复数到原点的距离，用 r 表示，等于 a 平方加 b 平方的平方根。"
     },
     {
       "script_id": "complex",
@@ -189,9 +179,9 @@
       "line_id": "modulus-argument-4",
       "filename": "modulus-argument-modulus-argument-4.mp3",
       "path": "audio/narrations/complex/xiaoxiao/modulus-argument-modulus-argument-4.mp3",
-      "duration": 2.38,
-      "size": 38016,
-      "text": "这样，复数可以写成r乘以括号cos θ加i sin θ的形式。"
+      "duration": 2.57,
+      "size": 41184,
+      "text": "这样，复数可以写成 r 乘以括号 cos θ 加 i sin θ 的形式。"
     },
     {
       "script_id": "complex",
@@ -199,9 +189,9 @@
       "line_id": "euler-formula-1",
       "filename": "euler-formula-euler-formula-1.mp3",
       "path": "audio/narrations/complex/xiaoxiao/euler-formula-euler-formula-1.mp3",
-      "duration": 2.98,
-      "size": 47664,
-      "text": "数学中最美的公式之一是欧拉公式：e的iθ次方等于cos θ加i sin θ。"
+      "duration": 3.08,
+      "size": 49248,
+      "text": "数学中最美的公式之一是欧拉公式：e 的 i θ 次方等于 cos θ 加 i sin θ。"
     },
     {
       "script_id": "complex",
@@ -219,9 +209,9 @@
       "line_id": "euler-formula-3",
       "filename": "euler-formula-euler-formula-3.mp3",
       "path": "audio/narrations/complex/xiaoxiao/euler-formula-euler-formula-3.mp3",
-      "duration": 2.54,
-      "size": 40608,
-      "text": "当θ等于π时，我们得到欧拉恒等式：e的iπ次方加1等于0。"
+      "duration": 3.03,
+      "size": 48528,
+      "text": "当 θ 等于 π 时，我们得到欧拉恒等式：e 的 i π 次方加 1 等于 0。"
     },
     {
       "script_id": "complex",
@@ -229,9 +219,9 @@
       "line_id": "euler-formula-4",
       "filename": "euler-formula-euler-formula-4.mp3",
       "path": "audio/narrations/complex/xiaoxiao/euler-formula-euler-formula-4.mp3",
-      "duration": 2.48,
-      "size": 39600,
-      "text": "这个等式包含了数学中最重要的五个常数：0、1、e、i和π。"
+      "duration": 2.58,
+      "size": 41328,
+      "text": "这个等式包含了数学中最重要的五个常数：0、1、e、i 和 π。"
     },
     {
       "script_id": "complex",
@@ -269,9 +259,9 @@
       "line_id": "multiplication-4",
       "filename": "multiplication-multiplication-4.mp3",
       "path": "audio/narrations/complex/xiaoxiao/multiplication-multiplication-4.mp3",
-      "duration": 1.73,
-      "size": 27648,
-      "text": "特别地，乘以i相当于逆时针旋转90度。"
+      "duration": 1.74,
+      "size": 27792,
+      "text": "特别地，乘以 i 相当于逆时针旋转 90 度。"
     },
     {
       "script_id": "complex",
@@ -281,7 +271,7 @@
       "path": "audio/narrations/complex/xiaoxiao/multiplication-multiplication-5.mp3",
       "duration": 3.2,
       "size": 51264,
-      "text": "这就解释了为什么i的平方等于负1：旋转两次90度就是180度，正好变成相反数。"
+      "text": "这就解释了为什么 i 的平方等于负1：旋转两次 90 度就是 180 度，正好变成相反数。"
     },
     {
       "script_id": "complex",
@@ -372,8 +362,19 @@
       "duration": 1.76,
       "size": 28224,
       "text": "希望通过这个实验，你对复数有了更直观的理解！"
+    },
+    {
+      "script_id": "complex",
+      "section_id": "modulus-argument",
+      "line_id": "modulus-argument-3",
+      "filename": "modulus-argument-modulus-argument-3.mp3",
+      "path": "audio/narrations/complex/xiaoxiao/modulus-argument-modulus-argument-3.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "辐角是复数与正实轴的夹角，用希腊字母 θ 表示。"
     }
   ],
-  "total_duration": 70.79,
-  "total_size": 1132416
+  "total_duration": 71.81,
+  "total_size": 1148832,
+  "failed": []
 }

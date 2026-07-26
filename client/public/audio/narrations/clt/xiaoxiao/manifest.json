@@ -91,7 +91,7 @@
       "path": "audio/narrations/clt/xiaoxiao/dice-example-dice-example-2.mp3",
       "duration": 2.02,
       "size": 32400,
-      "text": "掷一个骰子，点数是1到6的均匀分布，不是正态分布。"
+      "text": "掷一个骰子，点数是 1 到 6 的均匀分布，不是正态分布。"
     },
     {
       "script_id": "clt",
@@ -129,9 +129,9 @@
       "line_id": "simulation-2",
       "filename": "simulation-simulation-2.mp3",
       "path": "audio/narrations/clt/xiaoxiao/simulation-simulation-2.mp3",
-      "duration": 1.48,
-      "size": 23616,
-      "text": "调整样本量n，观察分布形状的变化。"
+      "duration": 1.47,
+      "size": 23472,
+      "text": "调整样本量 n，观察分布形状的变化。"
     },
     {
       "script_id": "clt",
@@ -141,7 +141,7 @@
       "path": "audio/narrations/clt/xiaoxiao/simulation-simulation-3.mp3",
       "duration": 1.29,
       "size": 20592,
-      "text": "当n很小时，分布可能很不规则。"
+      "text": "当 n 很小时，分布可能很不规则。"
     },
     {
       "script_id": "clt",
@@ -149,9 +149,9 @@
       "line_id": "simulation-4",
       "filename": "simulation-simulation-4.mp3",
       "path": "audio/narrations/clt/xiaoxiao/simulation-simulation-4.mp3",
-      "duration": 1.98,
-      "size": 31680,
-      "text": "随着n增大，分布越来越接近正态分布的钟形曲线。"
+      "duration": 1.97,
+      "size": 31536,
+      "text": "随着 n 增大，分布越来越接近正态分布的钟形曲线。"
     },
     {
       "script_id": "clt",
@@ -209,9 +209,9 @@
       "line_id": "parameters-2",
       "filename": "parameters-parameters-2.mp3",
       "path": "audio/narrations/clt/xiaoxiao/parameters-parameters-2.mp3",
-      "duration": 1.33,
-      "size": 21312,
-      "text": "样本均值的期望等于总体均值μ。"
+      "duration": 1.46,
+      "size": 23328,
+      "text": "样本均值的期望等于总体均值 μ。"
     },
     {
       "script_id": "clt",
@@ -219,9 +219,9 @@
       "line_id": "parameters-3",
       "filename": "parameters-parameters-3.mp3",
       "path": "audio/narrations/clt/xiaoxiao/parameters-parameters-3.mp3",
-      "duration": 1.98,
-      "size": 31680,
-      "text": "样本均值的标准差等于总体标准差σ除以根号n。"
+      "duration": 2.19,
+      "size": 34992,
+      "text": "样本均值的标准差等于总体标准差 σ 除以根号 n。"
     },
     {
       "script_id": "clt",
@@ -239,9 +239,9 @@
       "line_id": "sample-size-1",
       "filename": "sample-size-sample-size-1.mp3",
       "path": "audio/narrations/clt/xiaoxiao/sample-size-sample-size-1.mp3",
-      "duration": 1.36,
-      "size": 21744,
-      "text": "样本量n对近似效果有重要影响。"
+      "duration": 1.37,
+      "size": 21888,
+      "text": "样本量 n 对近似效果有重要影响。"
     },
     {
       "script_id": "clt",
@@ -251,7 +251,7 @@
       "path": "audio/narrations/clt/xiaoxiao/sample-size-sample-size-2.mp3",
       "duration": 1.96,
       "size": 31392,
-      "text": "一般来说，n大于30时，正态近似就相当好了。"
+      "text": "一般来说，n 大于 30 时，正态近似就相当好了。"
     },
     {
       "script_id": "clt",
@@ -259,9 +259,9 @@
       "line_id": "sample-size-3",
       "filename": "sample-size-sample-size-3.mp3",
       "path": "audio/narrations/clt/xiaoxiao/sample-size-sample-size-3.mp3",
-      "duration": 1.97,
-      "size": 31536,
-      "text": "如果原始分布本身就接近正态，更小的n就足够了。"
+      "duration": 1.98,
+      "size": 31680,
+      "text": "如果原始分布本身就接近正态，更小的 n 就足够了。"
     },
     {
       "script_id": "clt",
@@ -269,9 +269,9 @@
       "line_id": "sample-size-4",
       "filename": "sample-size-sample-size-4.mp3",
       "path": "audio/narrations/clt/xiaoxiao/sample-size-sample-size-4.mp3",
-      "duration": 1.52,
-      "size": 24336,
-      "text": "如果原始分布很偏斜，可能需要更大的n。"
+      "duration": 1.53,
+      "size": 24480,
+      "text": "如果原始分布很偏斜，可能需要更大的 n。"
     },
     {
       "script_id": "clt",
@@ -364,6 +364,7 @@
       "text": "希望通过这个实验，你对中心极限定理有了更直观的理解！"
     }
   ],
-  "total_duration": 66.39999999999999,
-  "total_size": 1062576
+  "total_duration": 66.75,
+  "total_size": 1068048,
+  "failed": []
 }

@@ -89,9 +89,9 @@
       "line_id": "tangent-line-2",
       "filename": "tangent-line-tangent-line-2.mp3",
       "path": "audio/narrations/calculus/xiaoxiao/tangent-line-tangent-line-2.mp3",
-      "duration": 1.84,
-      "size": 29520,
-      "text": "红色的直线是在某一点的切线，它刚好贴着曲线。"
+      "duration": 1.85,
+      "size": 29664,
+      "text": "红色的直线是在某一点的切线，它刚好\"贴着\"曲线。"
     },
     {
       "script_id": "calculus",
@@ -101,7 +101,7 @@
       "path": "audio/narrations/calculus/xiaoxiao/tangent-line-tangent-line-3.mp3",
       "duration": 2.02,
       "size": 32400,
-      "text": "拖动滑块改变x的位置，观察切线如何随之变化。"
+      "text": "拖动滑块改变 x 的位置，观察切线如何随之变化。"
     },
     {
       "script_id": "calculus",
@@ -159,9 +159,9 @@
       "line_id": "integral-concept-1",
       "filename": "integral-concept-integral-concept-1.mp3",
       "path": "audio/narrations/calculus/xiaoxiao/integral-concept-integral-concept-1.mp3",
-      "duration": 1.96,
-      "size": 31392,
-      "text": "现在让我们来看积分。积分可以理解为累加的过程。"
+      "duration": 1.97,
+      "size": 31536,
+      "text": "现在让我们来看积分。积分可以理解为\"累加\"的过程。"
     },
     {
       "script_id": "calculus",
@@ -189,9 +189,9 @@
       "line_id": "integral-concept-4",
       "filename": "integral-concept-integral-concept-4.mp3",
       "path": "audio/narrations/calculus/xiaoxiao/integral-concept-integral-concept-4.mp3",
-      "duration": 1.71,
-      "size": 27360,
-      "text": "积分符号像一个拉长的S，代表求和的意思。"
+      "duration": 1.74,
+      "size": 27792,
+      "text": "积分符号像一个拉长的S，代表\"求和\"的意思。"
     },
     {
       "script_id": "calculus",
@@ -364,6 +364,7 @@
       "text": "希望通过这个实验，你对微积分有了更直观的理解！"
     }
   ],
-  "total_duration": 72.57000000000004,
-  "total_size": 1161648
+  "total_duration": 72.62,
+  "total_size": 1162368,
+  "failed": []
 }
