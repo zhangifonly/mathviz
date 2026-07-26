@@ -72,8 +72,89 @@
       "duration": 1.65,
       "size": 26352,
       "text": "这就是几何深处的和谐之美，我们下次再见！"
+    },
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/nine-point-circle/yunxi/intro-intro-1.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "任意画一个三角形，它身上藏着一个惊人的定理。"
+    },
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/nine-point-circle/yunxi/intro-intro-2.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "有九个看似毫不相关的点，竟然全都落在同一个圆上。"
+    },
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/nine-point-circle/yunxi/intro-intro-3.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "这个圆就叫九点圆，它对每一个三角形都成立。"
+    },
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "mid",
+      "line_id": "def-2",
+      "filename": "mid-def-2.mp3",
+      "path": "audio/narrations/nine-point-circle/yunxi/mid-def-2.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "它们把三角形的每条边一分为二，是最容易找到的三个点。"
+    },
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/nine-point-circle/yunxi/interaction-int-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "奇妙的是,这九个点恰好都在同一个圆上,分毫不差。"
+    },
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/nine-point-circle/yunxi/interaction-int-2.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "它的圆心是外心与垂心的中点，半径正是外接圆的一半。"
+    },
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/nine-point-circle/yunxi/summary-sum-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "边中点、高垂足、垂心连线中点，九个点共处一圆。"
+    },
+    {
+      "script_id": "nine-point-circle",
+      "section_id": "mid",
+      "line_id": "def-1",
+      "filename": "mid-def-1.mp3",
+      "path": "audio/narrations/nine-point-circle/yunxi/mid-def-1.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "先看最简单的三个：三条边各自的中点。"
     }
   ],
-  "total_duration": 14.150000000000002,
-  "total_size": 226224
+  "total_duration": 29.93,
+  "total_size": 478800,
+  "failed": []
 }

@@ -2,6 +2,10 @@
   "script_id": "calculus",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "calculus",
@@ -365,9 +369,5 @@
     }
   ],
   "total_duration": 72.94,
-  "total_size": 1167264,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_size": 1167264
 }

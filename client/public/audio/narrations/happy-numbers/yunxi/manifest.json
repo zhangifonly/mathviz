@@ -142,8 +142,29 @@
       "duration": 1.72,
       "size": 27504,
       "text": "一条简单规则，分出两种命运，我们下次再见！"
+    },
+    {
+      "script_id": "happy-numbers",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/happy-numbers/yunxi/summary-sum-1.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "快乐数就是各位平方和迭代最终到达 1 的数。"
+    },
+    {
+      "script_id": "happy-numbers",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/happy-numbers/yunxi/summary-sum-2.mp3",
+      "duration": 1.61,
+      "size": 25776,
+      "text": "其余的数都会陷入那个著名的八数循环。"
     }
   ],
-  "total_duration": 25.029999999999994,
-  "total_size": 400464
+  "total_duration": 28.28,
+  "total_size": 452448,
+  "failed": []
 }

@@ -102,8 +102,79 @@
       "duration": 1.97,
       "size": 31536,
       "text": "一个简单的加减法，串起几何与拓扑，我们下次再见！"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "formula",
+      "line_id": "def-3",
+      "filename": "formula-def-3.mp3",
+      "path": "audio/narrations/euler-characteristic/yunxi/formula-def-3.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "这个组合叫做欧拉示性数，用希腊字母 χ 表示。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "convex",
+      "line_id": "con-1",
+      "filename": "convex-con-1.mp3",
+      "path": "audio/narrations/euler-characteristic/yunxi/convex-con-1.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "换成四面体、八面体、十二面体，逐一去数。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "convex",
+      "line_id": "con-2",
+      "filename": "convex-con-2.mp3",
+      "path": "audio/narrations/euler-characteristic/yunxi/convex-con-2.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "无论顶点棱面如何变化，V 减 E 加 F 始终等于 2。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "convex",
+      "line_id": "con-3",
+      "filename": "convex-con-3.mp3",
+      "path": "audio/narrations/euler-characteristic/yunxi/convex-con-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "所有凸多面体都服从这条铁律，与具体形状无关。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "topology",
+      "line_id": "top-1",
+      "filename": "topology-top-1.mp3",
+      "path": "audio/narrations/euler-characteristic/yunxi/topology-top-1.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "这个 2 其实是球面的标志，一个拓扑不变量。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "topology",
+      "line_id": "top-2",
+      "filename": "topology-top-2.mp3",
+      "path": "audio/narrations/euler-characteristic/yunxi/topology-top-2.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "把多面体吹成气球，它们都等价于一个球面。"
+    },
+    {
+      "script_id": "euler-characteristic",
+      "section_id": "topology",
+      "line_id": "top-3",
+      "filename": "topology-top-3.mp3",
+      "path": "audio/narrations/euler-characteristic/yunxi/topology-top-3.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "而甜甜圈形的环面中间有个洞，它的 χ 等于 0。"
     }
   ],
-  "total_duration": 19.39,
-  "total_size": 310320
+  "total_duration": 32.37,
+  "total_size": 517968,
+  "failed": []
 }

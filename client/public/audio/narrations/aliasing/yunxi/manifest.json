@@ -132,8 +132,49 @@
       "duration": 1.41,
       "size": 22608,
       "text": "看懂了车轮倒转的秘密，我们下次再见！"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "sample",
+      "line_id": "def-3",
+      "filename": "sample-def-3.mp3",
+      "path": "audio/narrations/aliasing/yunxi/sample-def-3.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "每秒取多少个点，叫做采样率，记作 fs。"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "undersample",
+      "line_id": "under-1",
+      "filename": "undersample-under-1.mp3",
+      "path": "audio/narrations/aliasing/yunxi/undersample-under-1.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "如果采样点太稀疏，就会漏掉波形中间的快速起伏。"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "undersample",
+      "line_id": "under-3",
+      "filename": "undersample-under-3.mp3",
+      "path": "audio/narrations/aliasing/yunxi/undersample-under-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "奈奎斯特定理告诉我们，采样率必须大于信号频率的两倍。"
+    },
+    {
+      "script_id": "aliasing",
+      "section_id": "apparent",
+      "line_id": "app-1",
+      "filename": "apparent-app-1.mp3",
+      "path": "audio/narrations/aliasing/yunxi/apparent-app-1.mp3",
+      "duration": 1.53,
+      "size": 24480,
+      "text": "混叠后看到的假频率，可以精确算出来。"
     }
   ],
-  "total_duration": 26.130000000000003,
-  "total_size": 417744
+  "total_duration": 33.48,
+  "total_size": 535248,
+  "failed": []
 }

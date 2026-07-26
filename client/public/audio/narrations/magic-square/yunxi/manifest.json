@@ -112,8 +112,59 @@
       "duration": 1.94,
       "size": 31104,
       "text": "愿你也能在方格间发现属于自己的规律，我们下次再见！"
+    },
+    {
+      "script_id": "magic-square",
+      "section_id": "build",
+      "line_id": "build-2",
+      "filename": "build-build-2.mp3",
+      "path": "audio/narrations/magic-square/yunxi/build-build-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "把 1 放在第一行正中央，然后每次朝右上方斜着走一格。"
+    },
+    {
+      "script_id": "magic-square",
+      "section_id": "property",
+      "line_id": "prop-1",
+      "filename": "property-prop-1.mp3",
+      "path": "audio/narrations/magic-square/yunxi/property-prop-1.mp3",
+      "duration": 2.64,
+      "size": 42192,
+      "text": "幻常数其实可以直接算出来，公式是 n 乘以 n 平方加一，再除以二。"
+    },
+    {
+      "script_id": "magic-square",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/magic-square/yunxi/interaction-int-2.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "再点亮不同的行、列或对角线，它们的和始终等于幻常数。"
+    },
+    {
+      "script_id": "magic-square",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/magic-square/yunxi/summary-sum-2.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "从洛书到暹罗法，数字里藏着人类对秩序的痴迷。"
+    },
+    {
+      "script_id": "magic-square",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/magic-square/yunxi/intro-intro-3.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "这个方阵里，无论横着加、竖着加、还是斜着加，得数都一样。"
     }
   ],
-  "total_duration": 23.409999999999997,
-  "total_size": 374544
+  "total_duration": 35.13,
+  "total_size": 562032,
+  "failed": []
 }

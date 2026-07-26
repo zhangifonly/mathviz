@@ -62,8 +62,119 @@
       "duration": 1.69,
       "size": 27072,
       "text": "一个幂级数装下整串数列，我们下次再见！"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/generating-functions/yunxi/intro-intro-2.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "有没有办法，把整串数列打包成一个整体来运算呢？"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/generating-functions/yunxi/intro-intro-3.mp3",
+      "duration": 1.4,
+      "size": 22320,
+      "text": "生成函数就是这样一个巧妙的工具。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "coeff",
+      "line_id": "def-1",
+      "filename": "coeff-def-1.mp3",
+      "path": "audio/narrations/generating-functions/yunxi/coeff-def-1.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "把数列的第 k 项，放到幂级数里 x 的 k 次方前面当系数。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "coeff",
+      "line_id": "def-2",
+      "filename": "coeff-def-2.mp3",
+      "path": "audio/narrations/generating-functions/yunxi/coeff-def-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "于是一整串数列，就浓缩成了一个多项式或幂级数。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "conv",
+      "line_id": "conv-1",
+      "filename": "conv-conv-1.mp3",
+      "path": "audio/narrations/generating-functions/yunxi/conv-conv-1.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "两个生成函数相乘时，x 的 k 次项系数怎么来？"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "conv",
+      "line_id": "conv-2",
+      "filename": "conv-conv-2.mp3",
+      "path": "audio/narrations/generating-functions/yunxi/conv-conv-2.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "它把所有下标相加等于 k 的系数两两相乘再求和，这叫卷积。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "apply",
+      "line_id": "app-1",
+      "filename": "apply-app-1.mp3",
+      "path": "audio/narrations/generating-functions/yunxi/apply-app-1.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "一颗骰子的生成函数是 x 加到 x 的六次方。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "apply",
+      "line_id": "app-2",
+      "filename": "apply-app-2.mp3",
+      "path": "audio/narrations/generating-functions/yunxi/apply-app-2.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "掷两颗骰子的和分布，就是它的平方，和为七的方案最多，共六种。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "apply",
+      "line_id": "app-3",
+      "filename": "apply-app-3.mp3",
+      "path": "audio/narrations/generating-functions/yunxi/apply-app-3.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "斐波那契数列则藏在 x 除以一减 x 减 x 平方的系数里。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/generating-functions/yunxi/intro-intro-1.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "我们常用一串数字来记录信息，比如每种点数出现多少次。"
+    },
+    {
+      "script_id": "generating-functions",
+      "section_id": "coeff",
+      "line_id": "def-3",
+      "filename": "coeff-def-3.mp3",
+      "path": "audio/narrations/generating-functions/yunxi/coeff-def-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "系数柱状图里，每根柱子的高度就是对应那一项的值。"
     }
   ],
-  "total_duration": 10.45,
-  "total_size": 167184
+  "total_duration": 32.72,
+  "total_size": 523296,
+  "failed": []
 }

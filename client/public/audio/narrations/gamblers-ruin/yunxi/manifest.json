@@ -82,8 +82,109 @@
       "duration": 2.54,
       "size": 40608,
       "text": "切换不同赌局设置，调整本金与胜率，看多局轨迹奔向哪道壁。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/intro-intro-1.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "一个赌徒带着一笔本金走进赌场，心里盘算着翻倍就收手。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "walk",
+      "line_id": "walk-1",
+      "filename": "walk-walk-1.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/walk-walk-1.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "每赌一局，资金就上下跳动一元，像在数轴上左右随机迈步。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "walk",
+      "line_id": "walk-3",
+      "filename": "walk-walk-3.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/walk-walk-3.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "只要一直玩下去，游走终究会撞上其中一道壁停下。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "formula",
+      "line_id": "form-3",
+      "filename": "formula-form-3.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/formula-form-3.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "若胜率不到一半，则要用输赢比的幂次公式来精确计算。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "fairness",
+      "line_id": "fair-1",
+      "filename": "fairness-fair-1.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/fairness-fair-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "公平赌局里，破产与达标的概率恰好由本金和目标的比例决定。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "fairness",
+      "line_id": "fair-2",
+      "filename": "fairness-fair-2.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/fairness-fair-2.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "可一旦胜率哪怕只低了一两个百分点，破产概率就急剧攀升。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/interaction-int-2.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "点击重新模拟，对照理论破产概率，感受红绿两色的此消彼长。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/summary-sum-1.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "赌徒破产，是一场带两道吸收壁的随机游走。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/summary-sum-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "公平时看本金比例，不公平时那点劣势会被无限放大。"
+    },
+    {
+      "script_id": "gamblers-ruin",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/gamblers-ruin/yunxi/summary-sum-3.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "数学早已告诉我们久赌必输的道理，我们下次再见！"
     }
   ],
-  "total_duration": 16.330000000000002,
-  "total_size": 261216
+  "total_duration": 37.81,
+  "total_size": 604944,
+  "failed": []
 }

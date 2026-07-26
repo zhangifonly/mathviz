@@ -1,16 +1,20 @@
 {
   "script_id": "fractions",
-  "voice": "zh-CN-XiaoxiaoNeural",
-  "voice_key": "xiaoxiao",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "fractions",
       "section_id": "intro",
       "line_id": "intro-1",
       "filename": "intro-intro-1.mp3",
-      "path": "audio/narrations/fractions/intro-intro-1.mp3",
-      "duration": 1.7,
-      "size": 27216,
+      "path": "audio/narrations/fractions/yunxi/intro-intro-1.mp3",
+      "duration": 1.67,
+      "size": 26640,
       "text": "小朋友们好！欢迎来到分数可视化实验。"
     },
     {
@@ -18,9 +22,9 @@
       "section_id": "intro",
       "line_id": "intro-2",
       "filename": "intro-intro-2.mp3",
-      "path": "audio/narrations/fractions/intro-intro-2.mp3",
-      "duration": 2.72,
-      "size": 43488,
+      "path": "audio/narrations/fractions/yunxi/intro-intro-2.mp3",
+      "duration": 2.65,
+      "size": 42480,
       "text": "你有没有分过蛋糕？把一个蛋糕切成几块，每人拿一块，这就是分数的来源！"
     },
     {
@@ -28,9 +32,9 @@
       "section_id": "intro",
       "line_id": "intro-3",
       "filename": "intro-intro-3.mp3",
-      "path": "audio/narrations/fractions/intro-intro-3.mp3",
-      "duration": 1.56,
-      "size": 24912,
+      "path": "audio/narrations/fractions/yunxi/intro-intro-3.mp3",
+      "duration": 1.57,
+      "size": 25200,
       "text": "今天，我们要用漂亮的图形来学习分数。"
     },
     {
@@ -38,9 +42,9 @@
       "section_id": "intro",
       "line_id": "intro-4",
       "filename": "intro-intro-4.mp3",
-      "path": "audio/narrations/fractions/intro-intro-4.mp3",
-      "duration": 1.22,
-      "size": 19440,
+      "path": "audio/narrations/fractions/yunxi/intro-intro-4.mp3",
+      "duration": 1.34,
+      "size": 21456,
       "text": "准备好了吗？让我们开始吧！"
     },
     {
@@ -48,9 +52,9 @@
       "section_id": "concept",
       "line_id": "concept-1",
       "filename": "concept-concept-1.mp3",
-      "path": "audio/narrations/fractions/concept-concept-1.mp3",
-      "duration": 2.12,
-      "size": 33840,
+      "path": "audio/narrations/fractions/yunxi/concept-concept-1.mp3",
+      "duration": 2.06,
+      "size": 32976,
       "text": "分数由两部分组成：上面的数叫分子，下面的数叫分母。"
     },
     {
@@ -58,9 +62,9 @@
       "section_id": "concept",
       "line_id": "concept-2",
       "filename": "concept-concept-2.mp3",
-      "path": "audio/narrations/fractions/concept-concept-2.mp3",
-      "duration": 2.56,
-      "size": 40896,
+      "path": "audio/narrations/fractions/yunxi/concept-concept-2.mp3",
+      "duration": 2.49,
+      "size": 39888,
       "text": "分母告诉我们把整体分成了多少份。比如分母是4，就是分成4份。"
     },
     {
@@ -68,9 +72,9 @@
       "section_id": "concept",
       "line_id": "concept-3",
       "filename": "concept-concept-3.mp3",
-      "path": "audio/narrations/fractions/concept-concept-3.mp3",
-      "duration": 2.32,
-      "size": 37152,
+      "path": "audio/narrations/fractions/yunxi/concept-concept-3.mp3",
+      "duration": 2.26,
+      "size": 36144,
       "text": "分子告诉我们取了其中的几份。比如分子是1，就是取了1份。"
     },
     {
@@ -78,9 +82,9 @@
       "section_id": "concept",
       "line_id": "concept-4",
       "filename": "concept-concept-4.mp3",
-      "path": "audio/narrations/fractions/concept-concept-4.mp3",
-      "duration": 1.95,
-      "size": 31248,
+      "path": "audio/narrations/fractions/yunxi/concept-concept-4.mp3",
+      "duration": 1.87,
+      "size": 29952,
       "text": "所以四分之一，就是把整体分成4份，取其中的1份。"
     },
     {
@@ -88,9 +92,9 @@
       "section_id": "concept",
       "line_id": "concept-5",
       "filename": "concept-concept-5.mp3",
-      "path": "audio/narrations/fractions/concept-concept-5.mp3",
-      "duration": 2.38,
-      "size": 38160,
+      "path": "audio/narrations/fractions/yunxi/concept-concept-5.mp3",
+      "duration": 2.31,
+      "size": 37008,
       "text": "看饼图！蓝色部分就是我们取的那一份，灰色部分是剩下的。"
     },
     {
@@ -98,9 +102,9 @@
       "section_id": "visualization",
       "line_id": "vis-1",
       "filename": "visualization-vis-1.mp3",
-      "path": "audio/narrations/fractions/visualization-vis-1.mp3",
-      "duration": 1.19,
-      "size": 19008,
+      "path": "audio/narrations/fractions/yunxi/visualization-vis-1.mp3",
+      "duration": 1.18,
+      "size": 18864,
       "text": "分数可以用不同的图形来表示。"
     },
     {
@@ -108,9 +112,9 @@
       "section_id": "visualization",
       "line_id": "vis-2",
       "filename": "visualization-vis-2.mp3",
-      "path": "audio/narrations/fractions/visualization-vis-2.mp3",
-      "duration": 1.44,
-      "size": 23040,
+      "path": "audio/narrations/fractions/yunxi/visualization-vis-2.mp3",
+      "duration": 1.47,
+      "size": 23472,
       "text": "饼图就像切蛋糕，把圆形分成几块。"
     },
     {
@@ -118,9 +122,9 @@
       "section_id": "visualization",
       "line_id": "vis-3",
       "filename": "visualization-vis-3.mp3",
-      "path": "audio/narrations/fractions/visualization-vis-3.mp3",
-      "duration": 1.57,
-      "size": 25056,
+      "path": "audio/narrations/fractions/yunxi/visualization-vis-3.mp3",
+      "duration": 1.63,
+      "size": 26064,
       "text": "条形图就像巧克力棒，把长条分成几段。"
     },
     {
@@ -128,9 +132,9 @@
       "section_id": "visualization",
       "line_id": "vis-4",
       "filename": "visualization-vis-4.mp3",
-      "path": "audio/narrations/fractions/visualization-vis-4.mp3",
-      "duration": 1.66,
-      "size": 26496,
+      "path": "audio/narrations/fractions/yunxi/visualization-vis-4.mp3",
+      "duration": 1.63,
+      "size": 26064,
       "text": "网格图就像格子纸，把方块分成几个小格。"
     },
     {
@@ -138,9 +142,9 @@
       "section_id": "visualization",
       "line_id": "vis-5",
       "filename": "visualization-vis-5.mp3",
-      "path": "audio/narrations/fractions/visualization-vis-5.mp3",
-      "duration": 1.58,
-      "size": 25344,
+      "path": "audio/narrations/fractions/yunxi/visualization-vis-5.mp3",
+      "duration": 1.66,
+      "size": 26496,
       "text": "不管用哪种图形，表示的分数都是一样的！"
     },
     {
@@ -148,9 +152,9 @@
       "section_id": "compare",
       "line_id": "compare-1",
       "filename": "compare-compare-1.mp3",
-      "path": "audio/narrations/fractions/compare-compare-1.mp3",
-      "duration": 1.42,
-      "size": 22752,
+      "path": "audio/narrations/fractions/yunxi/compare-compare-1.mp3",
+      "duration": 1.4,
+      "size": 22464,
       "text": "现在来学习怎么比较两个分数的大小。"
     },
     {
@@ -158,9 +162,9 @@
       "section_id": "compare",
       "line_id": "compare-2",
       "filename": "compare-compare-2.mp3",
-      "path": "audio/narrations/fractions/compare-compare-2.mp3",
-      "duration": 2.1,
-      "size": 33552,
+      "path": "audio/narrations/fractions/yunxi/compare-compare-2.mp3",
+      "duration": 2.18,
+      "size": 34848,
       "text": "看图最直观！哪个分数涂色的部分更多，哪个就更大。"
     },
     {
@@ -168,9 +172,9 @@
       "section_id": "compare",
       "line_id": "compare-3",
       "filename": "compare-compare-3.mp3",
-      "path": "audio/narrations/fractions/compare-compare-3.mp3",
-      "duration": 2.51,
-      "size": 40176,
+      "path": "audio/narrations/fractions/yunxi/compare-compare-3.mp3",
+      "duration": 2.48,
+      "size": 39600,
       "text": "比如四分之一和三分之二，三分之二涂色更多，所以三分之二更大。"
     },
     {
@@ -178,9 +182,9 @@
       "section_id": "compare",
       "line_id": "compare-4",
       "filename": "compare-compare-4.mp3",
-      "path": "audio/narrations/fractions/compare-compare-4.mp3",
-      "duration": 3.16,
-      "size": 50544,
+      "path": "audio/narrations/fractions/yunxi/compare-compare-4.mp3",
+      "duration": 2.8,
+      "size": 44784,
       "text": "也可以把分数变成小数来比较。四分之一等于0.25，三分之二约等于0.67。"
     },
     {
@@ -188,9 +192,9 @@
       "section_id": "compare",
       "line_id": "compare-5",
       "filename": "compare-compare-5.mp3",
-      "path": "audio/narrations/fractions/compare-compare-5.mp3",
-      "duration": 2.12,
-      "size": 33984,
+      "path": "audio/narrations/fractions/yunxi/compare-compare-5.mp3",
+      "duration": 2.09,
+      "size": 33408,
       "text": "0.67大于0.25，所以三分之二大于四分之一。"
     },
     {
@@ -198,9 +202,9 @@
       "section_id": "addition",
       "line_id": "add-1",
       "filename": "addition-add-1.mp3",
-      "path": "audio/narrations/fractions/addition-add-1.mp3",
-      "duration": 1.75,
-      "size": 27936,
+      "path": "audio/narrations/fractions/yunxi/addition-add-1.mp3",
+      "duration": 1.87,
+      "size": 29952,
       "text": "分数加法有一个小技巧：先通分，再相加。"
     },
     {
@@ -208,9 +212,9 @@
       "section_id": "addition",
       "line_id": "add-2",
       "filename": "addition-add-2.mp3",
-      "path": "audio/narrations/fractions/addition-add-2.mp3",
-      "duration": 1.48,
-      "size": 23616,
+      "path": "audio/narrations/fractions/yunxi/addition-add-2.mp3",
+      "duration": 1.49,
+      "size": 23904,
       "text": "通分就是把两个分数变成相同的分母。"
     },
     {
@@ -218,9 +222,9 @@
       "section_id": "addition",
       "line_id": "add-3",
       "filename": "addition-add-3.mp3",
-      "path": "audio/narrations/fractions/addition-add-3.mp3",
-      "duration": 2.1,
-      "size": 33552,
+      "path": "audio/narrations/fractions/yunxi/addition-add-3.mp3",
+      "duration": 2.08,
+      "size": 33264,
       "text": "比如四分之一加三分之二，公共分母是4乘3等于12。"
     },
     {
@@ -228,9 +232,9 @@
       "section_id": "addition",
       "line_id": "add-4",
       "filename": "addition-add-4.mp3",
-      "path": "audio/narrations/fractions/addition-add-4.mp3",
-      "duration": 2.08,
-      "size": 33264,
+      "path": "audio/narrations/fractions/yunxi/addition-add-4.mp3",
+      "duration": 1.99,
+      "size": 31824,
       "text": "四分之一变成十二分之三，三分之二变成十二分之八。"
     },
     {
@@ -238,9 +242,9 @@
       "section_id": "addition",
       "line_id": "add-5",
       "filename": "addition-add-5.mp3",
-      "path": "audio/narrations/fractions/addition-add-5.mp3",
-      "duration": 2.13,
-      "size": 34128,
+      "path": "audio/narrations/fractions/yunxi/addition-add-5.mp3",
+      "duration": 2.21,
+      "size": 35424,
       "text": "分子相加：3加8等于11。结果是十二分之十一！"
     },
     {
@@ -248,9 +252,9 @@
       "section_id": "multiplication",
       "line_id": "mul-1",
       "filename": "multiplication-mul-1.mp3",
-      "path": "audio/narrations/fractions/multiplication-mul-1.mp3",
-      "duration": 2.11,
-      "size": 33696,
+      "path": "audio/narrations/fractions/yunxi/multiplication-mul-1.mp3",
+      "duration": 2.21,
+      "size": 35280,
       "text": "分数乘法比加法简单！分子乘分子，分母乘分母。"
     },
     {
@@ -258,9 +262,9 @@
       "section_id": "multiplication",
       "line_id": "mul-2",
       "filename": "multiplication-mul-2.mp3",
-      "path": "audio/narrations/fractions/multiplication-mul-2.mp3",
-      "duration": 1.08,
-      "size": 17280,
+      "path": "audio/narrations/fractions/yunxi/multiplication-mul-2.mp3",
+      "duration": 1.18,
+      "size": 18864,
       "text": "比如四分之一乘三分之二。"
     },
     {
@@ -268,9 +272,9 @@
       "section_id": "multiplication",
       "line_id": "mul-3",
       "filename": "multiplication-mul-3.mp3",
-      "path": "audio/narrations/fractions/multiplication-mul-3.mp3",
-      "duration": 2.02,
-      "size": 32256,
+      "path": "audio/narrations/fractions/yunxi/multiplication-mul-3.mp3",
+      "duration": 2.18,
+      "size": 34848,
       "text": "分子：1乘2等于2。分母：4乘3等于12。"
     },
     {
@@ -278,9 +282,9 @@
       "section_id": "multiplication",
       "line_id": "mul-4",
       "filename": "multiplication-mul-4.mp3",
-      "path": "audio/narrations/fractions/multiplication-mul-4.mp3",
-      "duration": 1.57,
-      "size": 25056,
+      "path": "audio/narrations/fractions/yunxi/multiplication-mul-4.mp3",
+      "duration": 1.49,
+      "size": 23760,
       "text": "结果是十二分之二，约分后是六分之一。"
     },
     {
@@ -288,9 +292,9 @@
       "section_id": "multiplication",
       "line_id": "mul-5",
       "filename": "multiplication-mul-5.mp3",
-      "path": "audio/narrations/fractions/multiplication-mul-5.mp3",
-      "duration": 1.4,
-      "size": 22320,
+      "path": "audio/narrations/fractions/yunxi/multiplication-mul-5.mp3",
+      "duration": 1.42,
+      "size": 22752,
       "text": "分数乘法的意思是\"取一部分的一部分\"。"
     },
     {
@@ -298,9 +302,9 @@
       "section_id": "simplify",
       "line_id": "simp-1",
       "filename": "simplify-simp-1.mp3",
-      "path": "audio/narrations/fractions/simplify-simp-1.mp3",
-      "duration": 1.62,
-      "size": 25920,
+      "path": "audio/narrations/fractions/yunxi/simplify-simp-1.mp3",
+      "duration": 1.68,
+      "size": 26928,
       "text": "约分就是把分数变得更简单，但大小不变。"
     },
     {
@@ -308,9 +312,9 @@
       "section_id": "simplify",
       "line_id": "simp-2",
       "filename": "simplify-simp-2.mp3",
-      "path": "audio/narrations/fractions/simplify-simp-2.mp3",
-      "duration": 2.18,
-      "size": 34848,
+      "path": "audio/narrations/fractions/yunxi/simplify-simp-2.mp3",
+      "duration": 2.26,
+      "size": 36144,
       "text": "方法是：找到分子和分母的最大公约数，然后同时除以它。"
     },
     {
@@ -318,9 +322,9 @@
       "section_id": "simplify",
       "line_id": "simp-3",
       "filename": "simplify-simp-3.mp3",
-      "path": "audio/narrations/fractions/simplify-simp-3.mp3",
-      "duration": 1.76,
-      "size": 28224,
+      "path": "audio/narrations/fractions/yunxi/simplify-simp-3.mp3",
+      "duration": 1.78,
+      "size": 28512,
       "text": "比如十二分之四，4和12的最大公约数是4。"
     },
     {
@@ -328,9 +332,9 @@
       "section_id": "simplify",
       "line_id": "simp-4",
       "filename": "simplify-simp-4.mp3",
-      "path": "audio/narrations/fractions/simplify-simp-4.mp3",
-      "duration": 1.74,
-      "size": 27792,
+      "path": "audio/narrations/fractions/yunxi/simplify-simp-4.mp3",
+      "duration": 1.7,
+      "size": 27216,
       "text": "分子4除以4等于1，分母12除以4等于3。"
     },
     {
@@ -338,9 +342,9 @@
       "section_id": "simplify",
       "line_id": "simp-5",
       "filename": "simplify-simp-5.mp3",
-      "path": "audio/narrations/fractions/simplify-simp-5.mp3",
-      "duration": 2.59,
-      "size": 41472,
+      "path": "audio/narrations/fractions/yunxi/simplify-simp-5.mp3",
+      "duration": 2.71,
+      "size": 43344,
       "text": "所以十二分之四约分后是三分之一。看图，它们涂色的面积是一样的！"
     },
     {
@@ -348,9 +352,9 @@
       "section_id": "parameters",
       "line_id": "param-1",
       "filename": "parameters-param-1.mp3",
-      "path": "audio/narrations/fractions/parameters-param-1.mp3",
-      "duration": 0.84,
-      "size": 13392,
+      "path": "audio/narrations/fractions/yunxi/parameters-param-1.mp3",
+      "duration": 0.86,
+      "size": 13824,
       "text": "现在轮到你来试试了！"
     },
     {
@@ -358,9 +362,9 @@
       "section_id": "parameters",
       "line_id": "param-2",
       "filename": "parameters-param-2.mp3",
-      "path": "audio/narrations/fractions/parameters-param-2.mp3",
-      "duration": 2.65,
-      "size": 42480,
+      "path": "audio/narrations/fractions/yunxi/parameters-param-2.mp3",
+      "duration": 2.92,
+      "size": 46656,
       "text": "在右边的控制面板，你可以选择不同的操作：比较、加法、乘法或约分。"
     },
     {
@@ -368,9 +372,9 @@
       "section_id": "parameters",
       "line_id": "param-3",
       "filename": "parameters-param-3.mp3",
-      "path": "audio/narrations/fractions/parameters-param-3.mp3",
-      "duration": 2.13,
-      "size": 34128,
+      "path": "audio/narrations/fractions/yunxi/parameters-param-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
       "text": "拖动滑块可以改变分子和分母。看看图形会怎么变化？"
     },
     {
@@ -378,9 +382,9 @@
       "section_id": "parameters",
       "line_id": "param-4",
       "filename": "parameters-param-4.mp3",
-      "path": "audio/narrations/fractions/parameters-param-4.mp3",
-      "duration": 2.52,
-      "size": 40320,
+      "path": "audio/narrations/fractions/yunxi/parameters-param-4.mp3",
+      "duration": 2.65,
+      "size": 42480,
       "text": "试试切换不同的图形：饼图、条形图、网格图，哪个最容易理解？"
     },
     {
@@ -388,9 +392,9 @@
       "section_id": "parameters",
       "line_id": "param-5",
       "filename": "parameters-param-5.mp3",
-      "path": "audio/narrations/fractions/parameters-param-5.mp3",
-      "duration": 1.47,
-      "size": 23472,
+      "path": "audio/narrations/fractions/yunxi/parameters-param-5.mp3",
+      "duration": 1.5,
+      "size": 24048,
       "text": "多试几组数字，你会发现分数的规律！"
     },
     {
@@ -398,9 +402,9 @@
       "section_id": "application",
       "line_id": "app-1",
       "filename": "application-app-1.mp3",
-      "path": "audio/narrations/fractions/application-app-1.mp3",
-      "duration": 1.19,
-      "size": 19008,
+      "path": "audio/narrations/fractions/yunxi/application-app-1.mp3",
+      "duration": 1.22,
+      "size": 19584,
       "text": "分数在生活中到处都能用到！"
     },
     {
@@ -408,9 +412,9 @@
       "section_id": "application",
       "line_id": "app-2",
       "filename": "application-app-2.mp3",
-      "path": "audio/narrations/fractions/application-app-2.mp3",
-      "duration": 1.47,
-      "size": 23472,
+      "path": "audio/narrations/fractions/yunxi/application-app-2.mp3",
+      "duration": 1.55,
+      "size": 24768,
       "text": "分蛋糕、分披萨，每人拿几分之几。"
     },
     {
@@ -418,9 +422,9 @@
       "section_id": "application",
       "line_id": "app-3",
       "filename": "application-app-3.mp3",
-      "path": "audio/narrations/fractions/application-app-3.mp3",
-      "duration": 1.57,
-      "size": 25200,
+      "path": "audio/narrations/fractions/yunxi/application-app-3.mp3",
+      "duration": 1.49,
+      "size": 23904,
       "text": "看时间，半小时就是一小时的二分之一。"
     },
     {
@@ -428,9 +432,9 @@
       "section_id": "application",
       "line_id": "app-4",
       "filename": "application-app-4.mp3",
-      "path": "audio/narrations/fractions/application-app-4.mp3",
-      "duration": 1.55,
-      "size": 24768,
+      "path": "audio/narrations/fractions/yunxi/application-app-4.mp3",
+      "duration": 1.53,
+      "size": 24480,
       "text": "打折促销，打五折就是原价的二分之一。"
     },
     {
@@ -438,9 +442,9 @@
       "section_id": "application",
       "line_id": "app-5",
       "filename": "application-app-5.mp3",
-      "path": "audio/narrations/fractions/application-app-5.mp3",
-      "duration": 1.57,
-      "size": 25056,
+      "path": "audio/narrations/fractions/yunxi/application-app-5.mp3",
+      "duration": 1.61,
+      "size": 25776,
       "text": "学好分数，你就能解决很多生活中的问题啦！"
     },
     {
@@ -448,9 +452,9 @@
       "section_id": "summary",
       "line_id": "summary-1",
       "filename": "summary-summary-1.mp3",
-      "path": "audio/narrations/fractions/summary-summary-1.mp3",
-      "duration": 1.45,
-      "size": 23184,
+      "path": "audio/narrations/fractions/yunxi/summary-summary-1.mp3",
+      "duration": 1.4,
+      "size": 22464,
       "text": "今天我们学习了分数，让我们来回顾一下。"
     },
     {
@@ -458,9 +462,9 @@
       "section_id": "summary",
       "line_id": "summary-2",
       "filename": "summary-summary-2.mp3",
-      "path": "audio/narrations/fractions/summary-summary-2.mp3",
-      "duration": 2.4,
-      "size": 38448,
+      "path": "audio/narrations/fractions/yunxi/summary-summary-2.mp3",
+      "duration": 2.48,
+      "size": 39600,
       "text": "分数由分子和分母组成，表示把整体分成几份，取其中几份。"
     },
     {
@@ -468,9 +472,9 @@
       "section_id": "summary",
       "line_id": "summary-3",
       "filename": "summary-summary-3.mp3",
-      "path": "audio/narrations/fractions/summary-summary-3.mp3",
-      "duration": 1.7,
-      "size": 27216,
+      "path": "audio/narrations/fractions/yunxi/summary-summary-3.mp3",
+      "duration": 1.72,
+      "size": 27504,
       "text": "分数可以用饼图、条形图、网格图来表示。"
     },
     {
@@ -478,9 +482,9 @@
       "section_id": "summary",
       "line_id": "summary-4",
       "filename": "summary-summary-4.mp3",
-      "path": "audio/narrations/fractions/summary-summary-4.mp3",
-      "duration": 1.4,
-      "size": 22320,
+      "path": "audio/narrations/fractions/yunxi/summary-summary-4.mp3",
+      "duration": 1.35,
+      "size": 21600,
       "text": "比较分数可以看图，也可以转成小数。"
     },
     {
@@ -488,9 +492,9 @@
       "section_id": "summary",
       "line_id": "summary-5",
       "filename": "summary-summary-5.mp3",
-      "path": "audio/narrations/fractions/summary-summary-5.mp3",
-      "duration": 2.31,
-      "size": 37008,
+      "path": "audio/narrations/fractions/yunxi/summary-summary-5.mp3",
+      "duration": 2.35,
+      "size": 37584,
       "text": "分数加法要先通分，分数乘法是分子乘分子、分母乘分母。"
     },
     {
@@ -498,16 +502,12 @@
       "section_id": "summary",
       "line_id": "summary-6",
       "filename": "summary-summary-6.mp3",
-      "path": "audio/narrations/fractions/summary-summary-6.mp3",
-      "duration": 3.12,
-      "size": 49968,
+      "path": "audio/narrations/fractions/yunxi/summary-summary-6.mp3",
+      "duration": 3.13,
+      "size": 50112,
       "text": "太棒了！你已经掌握了分数的基本知识。继续探索其他实验，发现更多数学的乐趣吧！"
     }
   ],
-  "total_duration": 94.23,
-  "total_size": 1507104,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_duration": 94.82,
+  "total_size": 1517328
 }

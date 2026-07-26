@@ -172,8 +172,19 @@
       "duration": 1.76,
       "size": 28224,
       "text": "同一座迷宫，两种走法各有妙用，我们下次再见！"
+    },
+    {
+      "script_id": "bfs-dfs",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/bfs-dfs/yunxi/summary-sum-2.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "前者在无权图上给出最短路，后者胜在实现简洁省空间。"
     }
   ],
-  "total_duration": 33.620000000000005,
-  "total_size": 538128
+  "total_duration": 35.93,
+  "total_size": 575136,
+  "failed": []
 }

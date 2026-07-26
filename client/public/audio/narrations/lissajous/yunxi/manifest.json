@@ -132,8 +132,59 @@
       "duration": 2.08,
       "size": 33264,
       "text": "简单的三角函数，藏着无穷的对称之美，我们下次再见！"
+    },
+    {
+      "script_id": "lissajous",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/lissajous/yunxi/intro-intro-4.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "今天，我们就来欣赏这些由频率和角度编织出的对称之美。"
+    },
+    {
+      "script_id": "lissajous",
+      "section_id": "lissajous",
+      "line_id": "lis-1",
+      "filename": "lissajous-lis-1.mp3",
+      "path": "audio/narrations/lissajous/yunxi/lissajous-lis-1.mp3",
+      "duration": 3.0,
+      "size": 47952,
+      "text": "利萨茹图形的方程是：x 等于 sin(a t 加相位 δ)，y 等于 sin(b t)。"
+    },
+    {
+      "script_id": "lissajous",
+      "section_id": "lissajous",
+      "line_id": "lis-2",
+      "filename": "lissajous-lis-2.mp3",
+      "path": "audio/narrations/lissajous/yunxi/lissajous-lis-2.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "当频率比 a 比 b 是 1 比 1，相位差 90 度时，画出一个正圆。"
+    },
+    {
+      "script_id": "lissajous",
+      "section_id": "rose",
+      "line_id": "rose-3",
+      "filename": "rose-rose-3.mp3",
+      "path": "audio/narrations/lissajous/yunxi/rose-rose-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "当 k 是偶数，比如 4，花瓣数翻倍，开出 8 片。"
+    },
+    {
+      "script_id": "lissajous",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/lissajous/yunxi/interaction-int-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "点击右边切换不同的频率比和花瓣数，看图形如何变化。"
     }
   ],
-  "total_duration": 27.740000000000002,
-  "total_size": 443664
+  "total_duration": 39.63,
+  "total_size": 633888,
+  "failed": []
 }

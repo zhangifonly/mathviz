@@ -92,8 +92,89 @@
       "duration": 2.23,
       "size": 35712,
       "text": "逐行观察，确认任意相邻两行始终只有一个格子在变化。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "adjacent",
+      "line_id": "adj-1",
+      "filename": "adjacent-adj-1.mp3",
+      "path": "audio/narrations/gray-code/yunxi/adjacent-adj-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "格雷码的规矩很简单：相邻的两个码，只允许一位发生变化。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "adjacent",
+      "line_id": "adj-3",
+      "filename": "adjacent-adj-3.mp3",
+      "path": "audio/narrations/gray-code/yunxi/adjacent-adj-3.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "看画面里高亮的橙色格子，那就是唯一改变的那一位。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "convert",
+      "line_id": "conv-1",
+      "filename": "convert-conv-1.mp3",
+      "path": "audio/narrations/gray-code/yunxi/convert-conv-1.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "从二进制得到格雷码，只需一步：让它和右移一位的自己做异或。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "convert",
+      "line_id": "conv-3",
+      "filename": "convert-conv-3.mp3",
+      "path": "audio/narrations/gray-code/yunxi/convert-conv-3.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "反过来还原时，把格雷码逐位向右做前缀异或即可。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "karnaugh",
+      "line_id": "kar-1",
+      "filename": "karnaugh-kar-1.mp3",
+      "path": "audio/narrations/gray-code/yunxi/karnaugh-kar-1.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "数字电路里的卡诺图，行列标号正是用格雷码排列的。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/gray-code/yunxi/summary-sum-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "格雷码让相邻数字只差一位，避免了多位同变的读数错误。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/gray-code/yunxi/summary-sum-2.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "一个异或运算，就能在二进制和格雷码之间自由转换。"
+    },
+    {
+      "script_id": "gray-code",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/gray-code/yunxi/summary-sum-3.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "从编码器到卡诺图，它无处不在，我们下次再见！"
     }
   ],
-  "total_duration": 17.58,
-  "total_size": 281376
+  "total_duration": 34.11,
+  "total_size": 545760,
+  "failed": []
 }

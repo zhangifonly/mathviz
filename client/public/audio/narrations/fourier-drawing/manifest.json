@@ -2,6 +2,10 @@
   "script_id": "fourier-drawing",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "fourier-drawing",
@@ -245,9 +249,5 @@
     }
   ],
   "total_duration": 38.41,
-  "total_size": 614448,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_size": 614448
 }

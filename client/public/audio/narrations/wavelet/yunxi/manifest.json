@@ -172,8 +172,19 @@
       "duration": 2.44,
       "size": 39024,
       "text": "在时间与频率之间自由穿梭，这正是小波变换的魅力，我们下次再见。"
+    },
+    {
+      "script_id": "wavelet",
+      "section_id": "concept-scaleogram",
+      "line_id": "scale-1",
+      "filename": "concept-scaleogram-scale-1.mp3",
+      "path": "audio/narrations/wavelet/yunxi/concept-scaleogram-scale-1.mp3",
+      "duration": 3.19,
+      "size": 51120,
+      "text": "把所有位置和所有尺度的系数铺成一张图，横轴是时间，纵轴是尺度，这就是尺度图。"
     }
   ],
-  "total_duration": 45.48,
-  "total_size": 727632
+  "total_duration": 48.67,
+  "total_size": 778752,
+  "failed": []
 }

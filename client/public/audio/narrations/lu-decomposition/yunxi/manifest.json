@@ -152,8 +152,19 @@
       "duration": 2.29,
       "size": 36576,
       "text": "把消元过程记成账本，这就是 LU 分解的智慧，我们下次再见！"
+    },
+    {
+      "script_id": "lu-decomposition",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/lu-decomposition/yunxi/interaction-int-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "切换不同的示例矩阵，观察 L 和 U 分别长什么样子。"
     }
   ],
-  "total_duration": 32.050000000000004,
-  "total_size": 512928
+  "total_duration": 34.12,
+  "total_size": 546048,
+  "failed": []
 }

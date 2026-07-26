@@ -2,6 +2,10 @@
   "script_id": "clt",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "clt",
@@ -365,9 +369,5 @@
     }
   ],
   "total_duration": 66.53,
-  "total_size": 1064736,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_size": 1064736
 }

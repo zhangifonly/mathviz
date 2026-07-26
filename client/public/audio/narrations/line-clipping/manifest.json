@@ -2,33 +2,107 @@
   "script_id": "line-clipping",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
+    {
+      "script_id": "line-clipping",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/intro-intro-1.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "屏幕上只有一个矩形窗口，我们只想看到窗口里面的画面。"
+    },
     {
       "script_id": "line-clipping",
       "section_id": "intro",
       "line_id": "intro-2",
       "filename": "intro-intro-2.mp3",
-      "path": "audio/narrations/line-clipping/intro-intro-2.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/intro-intro-2.mp3",
       "duration": 1.94,
       "size": 30960,
       "text": "可线段常常伸到窗口外面，超出的部分必须被剪掉。"
     },
     {
       "script_id": "line-clipping",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/intro-intro-3.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "如何又快又准地剪掉窗外的部分？这就是线段裁剪问题。"
+    },
+    {
+      "script_id": "line-clipping",
+      "section_id": "concept-code",
+      "line_id": "code-1",
+      "filename": "concept-code-code-1.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/concept-code-code-1.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "窗口的四条边把平面分成九个区域。"
+    },
+    {
+      "script_id": "line-clipping",
+      "section_id": "concept-code",
+      "line_id": "code-2",
+      "filename": "concept-code-code-2.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/concept-code-code-2.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "给每个点一个四位编码，分别记录它在上、下、右、左哪个方向出界。"
+    },
+    {
+      "script_id": "line-clipping",
+      "section_id": "concept-code",
+      "line_id": "code-3",
+      "filename": "concept-code-code-3.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/concept-code-code-3.mp3",
+      "duration": 1.3,
+      "size": 20880,
+      "text": "窗口内的点，四位全是零。"
+    },
+    {
+      "script_id": "line-clipping",
       "section_id": "concept-trivial",
       "line_id": "triv-1",
       "filename": "concept-trivial-triv-1.mp3",
-      "path": "audio/narrations/line-clipping/concept-trivial-triv-1.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/concept-trivial-triv-1.mp3",
       "duration": 1.93,
       "size": 30816,
       "text": "两端编码都是零，说明整段都在窗内，直接接受。"
     },
     {
       "script_id": "line-clipping",
+      "section_id": "concept-trivial",
+      "line_id": "triv-2",
+      "filename": "concept-trivial-triv-2.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/concept-trivial-triv-2.mp3",
+      "duration": 2.74,
+      "size": 43776,
+      "text": "两端编码按位与不为零，说明它们同在某条边外侧，整段可直接拒绝。"
+    },
+    {
+      "script_id": "line-clipping",
+      "section_id": "concept-trivial",
+      "line_id": "triv-3",
+      "filename": "concept-trivial-triv-3.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/concept-trivial-triv-3.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "这两步只用位运算，快到几乎不花时间。"
+    },
+    {
+      "script_id": "line-clipping",
       "section_id": "concept-iterate",
       "line_id": "iter-1",
       "filename": "concept-iterate-iter-1.mp3",
-      "path": "audio/narrations/line-clipping/concept-iterate-iter-1.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/concept-iterate-iter-1.mp3",
       "duration": 2.18,
       "size": 34848,
       "text": "其余情况，就取一个在外的端点，求线段与那条边的交点。"
@@ -36,9 +110,19 @@
     {
       "script_id": "line-clipping",
       "section_id": "concept-iterate",
+      "line_id": "iter-2",
+      "filename": "concept-iterate-iter-2.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/concept-iterate-iter-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "用交点替换外面的端点，重新编码，再判断一次。"
+    },
+    {
+      "script_id": "line-clipping",
+      "section_id": "concept-iterate",
       "line_id": "iter-3",
       "filename": "concept-iterate-iter-3.mp3",
-      "path": "audio/narrations/line-clipping/concept-iterate-iter-3.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/concept-iterate-iter-3.mp3",
       "duration": 1.84,
       "size": 29376,
       "text": "如此反复，最多几步就收窄成窗口内的那一段。"
@@ -46,9 +130,19 @@
     {
       "script_id": "line-clipping",
       "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/interaction-int-1.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "点击画布移动测试线段的端点，看粉色的可见部分如何变化。"
+    },
+    {
+      "script_id": "line-clipping",
+      "section_id": "interaction",
       "line_id": "int-2",
       "filename": "interaction-int-2.mp3",
-      "path": "audio/narrations/line-clipping/interaction-int-2.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/interaction-int-2.mp3",
       "duration": 2.03,
       "size": 32544,
       "text": "把整条线段拖到窗外，它会被整体拒绝，一点都不显示。"
@@ -56,9 +150,19 @@
     {
       "script_id": "line-clipping",
       "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/summary-sum-1.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "区域码让我们用位运算快速接受或拒绝大多数线段。"
+    },
+    {
+      "script_id": "line-clipping",
+      "section_id": "summary",
       "line_id": "sum-2",
       "filename": "summary-sum-2.mp3",
-      "path": "audio/narrations/line-clipping/summary-sum-2.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/summary-sum-2.mp3",
       "duration": 1.69,
       "size": 27072,
       "text": "剩下的靠迭代求交，几步就能剪到窗口边界上。"
@@ -68,16 +172,12 @@
       "section_id": "summary",
       "line_id": "sum-3",
       "filename": "summary-sum-3.mp3",
-      "path": "audio/narrations/line-clipping/summary-sum-3.mp3",
+      "path": "audio/narrations/line-clipping/yunxi/summary-sum-3.mp3",
       "duration": 2.17,
       "size": 34704,
       "text": "简洁的编码加位运算，成就了图形学的经典算法，我们下次再见！"
     }
   ],
-  "total_duration": 13.78,
-  "total_size": 220320,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_duration": 34.02,
+  "total_size": 544176
 }

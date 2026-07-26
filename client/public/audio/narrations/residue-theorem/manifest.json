@@ -2,13 +2,17 @@
   "script_id": "residue-theorem",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "residue-theorem",
       "section_id": "intro",
       "line_id": "intro-1",
       "filename": "intro-intro-1.mp3",
-      "path": "audio/narrations/residue-theorem/intro-intro-1.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/intro-intro-1.mp3",
       "duration": 1.72,
       "size": 27504,
       "text": "我们在复平面上，沿着一条闭合曲线做积分。"
@@ -18,7 +22,7 @@
       "section_id": "intro",
       "line_id": "intro-2",
       "filename": "intro-intro-2.mp3",
-      "path": "audio/narrations/residue-theorem/intro-intro-2.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/intro-intro-2.mp3",
       "duration": 2.13,
       "size": 34128,
       "text": "你可能以为要老老实实沿着曲线一点点算，其实不用。"
@@ -28,7 +32,7 @@
       "section_id": "intro",
       "line_id": "intro-3",
       "filename": "intro-intro-3.mp3",
-      "path": "audio/narrations/residue-theorem/intro-intro-3.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/intro-intro-3.mp3",
       "duration": 2.03,
       "size": 32544,
       "text": "留数定理告诉我们，整条曲线的积分只由几个特殊点决定。"
@@ -38,7 +42,7 @@
       "section_id": "singularity",
       "line_id": "sing-1",
       "filename": "singularity-sing-1.mp3",
-      "path": "audio/narrations/residue-theorem/singularity-sing-1.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/singularity-sing-1.mp3",
       "duration": 1.95,
       "size": 31248,
       "text": "被积函数在某些点会发散，这些点叫做孤立奇点。"
@@ -48,7 +52,7 @@
       "section_id": "singularity",
       "line_id": "sing-2",
       "filename": "singularity-sing-2.mp3",
-      "path": "audio/narrations/residue-theorem/singularity-sing-2.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/singularity-sing-2.mp3",
       "duration": 2.4,
       "size": 38448,
       "text": "在每个简单极点附近，函数近似等于一个系数除以到该点的距离。"
@@ -58,7 +62,7 @@
       "section_id": "singularity",
       "line_id": "sing-3",
       "filename": "singularity-sing-3.mp3",
-      "path": "audio/narrations/residue-theorem/singularity-sing-3.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/singularity-sing-3.mp3",
       "duration": 2.22,
       "size": 35568,
       "text": "这个系数就是该点的留数，它抓住了函数在奇点处的核心信息。"
@@ -68,7 +72,7 @@
       "section_id": "theorem",
       "line_id": "thm-1",
       "filename": "theorem-thm-1.mp3",
-      "path": "audio/narrations/residue-theorem/theorem-thm-1.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/theorem-thm-1.mp3",
       "duration": 2.75,
       "size": 44064,
       "text": "留数定理说：闭曲线积分等于二派乘以虚数单位，再乘以内部所有留数之和。"
@@ -78,7 +82,7 @@
       "section_id": "theorem",
       "line_id": "thm-2",
       "filename": "theorem-thm-2.mp3",
-      "path": "audio/narrations/residue-theorem/theorem-thm-2.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/theorem-thm-2.mp3",
       "duration": 2.37,
       "size": 37872,
       "text": "注意关键词，内部。只有落在曲线里面的奇点才参与求和。"
@@ -88,7 +92,7 @@
       "section_id": "theorem",
       "line_id": "thm-3",
       "filename": "theorem-thm-3.mp3",
-      "path": "audio/narrations/residue-theorem/theorem-thm-3.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/theorem-thm-3.mp3",
       "duration": 1.93,
       "size": 30816,
       "text": "曲线外面的奇点，无论留数多大，都不贡献一分一毫。"
@@ -98,7 +102,7 @@
       "section_id": "geometry",
       "line_id": "geo-1",
       "filename": "geometry-geo-1.mp3",
-      "path": "audio/narrations/residue-theorem/geometry-geo-1.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/geometry-geo-1.mp3",
       "duration": 1.58,
       "size": 25344,
       "text": "看这个圆形围道，它把两个奇点包在了里面。"
@@ -108,7 +112,7 @@
       "section_id": "geometry",
       "line_id": "geo-2",
       "filename": "geometry-geo-2.mp3",
-      "path": "audio/narrations/residue-theorem/geometry-geo-2.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/geometry-geo-2.mp3",
       "duration": 1.88,
       "size": 30096,
       "text": "积分值就等于二派虚数单位，乘以这两个留数相加。"
@@ -118,7 +122,7 @@
       "section_id": "geometry",
       "line_id": "geo-3",
       "filename": "geometry-geo-3.mp3",
-      "path": "audio/narrations/residue-theorem/geometry-geo-3.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/geometry-geo-3.mp3",
       "duration": 2.19,
       "size": 34992,
       "text": "如果围道里一个奇点都没有，积分直接等于零，这就是柯西定理。"
@@ -128,7 +132,7 @@
       "section_id": "interaction",
       "line_id": "int-1",
       "filename": "interaction-int-1.mp3",
-      "path": "audio/narrations/residue-theorem/interaction-int-1.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/interaction-int-1.mp3",
       "duration": 2.16,
       "size": 34560,
       "text": "切换不同的布局，看看哪些奇点被围道包住，哪些被排除。"
@@ -138,7 +142,7 @@
       "section_id": "interaction",
       "line_id": "int-2",
       "filename": "interaction-int-2.mp3",
-      "path": "audio/narrations/residue-theorem/interaction-int-2.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/interaction-int-2.mp3",
       "duration": 2.19,
       "size": 34992,
       "text": "对比理论值和数值积分，你会发现两者几乎完全吻合。"
@@ -148,7 +152,7 @@
       "section_id": "summary",
       "line_id": "sum-1",
       "filename": "summary-sum-1.mp3",
-      "path": "audio/narrations/residue-theorem/summary-sum-1.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/summary-sum-1.mp3",
       "duration": 1.91,
       "size": 30528,
       "text": "复围道积分等于二派虚数单位乘以内部留数之和。"
@@ -158,7 +162,7 @@
       "section_id": "summary",
       "line_id": "sum-2",
       "filename": "summary-sum-2.mp3",
-      "path": "audio/narrations/residue-theorem/summary-sum-2.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/summary-sum-2.mp3",
       "duration": 1.95,
       "size": 31248,
       "text": "一个看似复杂的积分，被浓缩成几个点上的简单数字。"
@@ -168,16 +172,12 @@
       "section_id": "summary",
       "line_id": "sum-3",
       "filename": "summary-sum-3.mp3",
-      "path": "audio/narrations/residue-theorem/summary-sum-3.mp3",
+      "path": "audio/narrations/residue-theorem/yunxi/summary-sum-3.mp3",
       "duration": 1.49,
       "size": 23904,
       "text": "这就是留数定理的威力，我们下次再见。"
     }
   ],
   "total_duration": 34.85,
-  "total_size": 557856,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_size": 557856
 }

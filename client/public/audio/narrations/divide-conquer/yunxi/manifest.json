@@ -82,8 +82,89 @@
       "duration": 2.15,
       "size": 34416,
       "text": "两个指针各指一段头部，每次取较小的放入结果，逐步归并。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "divide",
+      "line_id": "div-3",
+      "filename": "divide-div-3.mp3",
+      "path": "audio/narrations/divide-conquer/yunxi/divide-div-3.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "单个元素天然有序，这就是递归的终点。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "conquer",
+      "line_id": "con-1",
+      "filename": "conquer-con-1.mp3",
+      "path": "audio/narrations/divide-conquer/yunxi/conquer-con-1.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "每个子问题都用同样的方法处理，这就是递归求解。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "merge",
+      "line_id": "mer-3",
+      "filename": "merge-mer-3.mp3",
+      "path": "audio/narrations/divide-conquer/yunxi/merge-mer-3.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "从叶子一路合并回根，整个数组就排好了序。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/divide-conquer/yunxi/interaction-int-1.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "看着递归树逐层展开，感受问题如何被拆到最小。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/divide-conquer/yunxi/interaction-int-2.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "再顺着合并的方向回收，观察有序结果一层层拼起来。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/divide-conquer/yunxi/summary-sum-1.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "分治就是分解、递归求解、再合并这三步。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/divide-conquer/yunxi/summary-sum-2.mp3",
+      "duration": 2.22,
+      "size": 35568,
+      "text": "归并排序、快速排序、最大子数组，都是它的经典应用。"
+    },
+    {
+      "script_id": "divide-conquer",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/divide-conquer/yunxi/summary-sum-3.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "化整为零，再聚零为整，我们下次再见！"
     }
   ],
-  "total_duration": 16.34,
-  "total_size": 261360
+  "total_duration": 31.45,
+  "total_size": 503136,
+  "failed": []
 }

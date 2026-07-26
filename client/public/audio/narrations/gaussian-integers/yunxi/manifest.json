@@ -152,8 +152,29 @@
       "duration": 2.02,
       "size": 32256,
       "text": "一次到二维的推广，让素数世界焕然一新，我们下次再见！"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/gaussian-integers/yunxi/interaction-int-2.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "你会发现它关于两条轴、还关于对角线，呈现完美的八重对称。"
+    },
+    {
+      "script_id": "gaussian-integers",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/gaussian-integers/yunxi/summary-sum-2.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "高斯素数按简单规则判定，分布对称而优美。"
     }
   ],
-  "total_duration": 33.410000000000004,
-  "total_size": 534528
+  "total_duration": 37.73,
+  "total_size": 603648,
+  "failed": []
 }

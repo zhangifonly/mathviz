@@ -2,6 +2,10 @@
   "script_id": "heat-equation",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "heat-equation",
@@ -244,10 +248,6 @@
       "text": "希望这次实验能帮助你理解偏微分方程的物理意义。"
     }
   ],
-  "total_duration": 40.589999999999996,
-  "total_size": 649296,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_duration": 40.59,
+  "total_size": 649296
 }

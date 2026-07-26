@@ -142,8 +142,29 @@
       "duration": 1.79,
       "size": 28656,
       "text": "简单规则藏着深刻的空间智慧，我们下次再见！"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/hilbert-curve/yunxi/intro-intro-3.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "他画出一条连续的曲线，走遍网格里每一个格子而不重复。"
+    },
+    {
+      "script_id": "hilbert-curve",
+      "section_id": "construct",
+      "line_id": "con-1",
+      "filename": "construct-con-1.mp3",
+      "path": "audio/narrations/hilbert-curve/yunxi/construct-con-1.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "最基础的一阶曲线，就是一个简单的 U 字形，连起四个格子。"
     }
   ],
-  "total_duration": 29.209999999999997,
-  "total_size": 467424
+  "total_duration": 33.37,
+  "total_size": 534096,
+  "failed": []
 }

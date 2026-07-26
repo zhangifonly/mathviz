@@ -102,8 +102,89 @@
       "duration": 2.01,
       "size": 32112,
       "text": "一个错位相乘的巧思，就听懂了信号的节拍，我们下次再见！"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/autocorrelation/yunxi/intro-intro-1.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "这是一段忽上忽下、看起来杂乱无章的信号。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/autocorrelation/yunxi/intro-intro-2.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "可它并不是纯噪声，里面藏着一个稳定的周期。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/autocorrelation/yunxi/intro-intro-4.mp3",
+      "duration": 1.14,
+      "size": 18288,
+      "text": "这个方法就是自相关。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/autocorrelation/yunxi/define-def-1.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "自相关，就是拿信号和它自己延迟一段后的副本作比较。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/autocorrelation/yunxi/define-def-2.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "延迟的样本数叫做 lag，也就是错开的距离。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "peak",
+      "line_id": "peak-3",
+      "filename": "peak-peak-3.mp3",
+      "path": "audio/narrations/autocorrelation/yunxi/peak-peak-3.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "于是第一个显著峰的位置，就是我们要找的周期。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/autocorrelation/yunxi/define-def-3.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "错开之后仍然很像自己，自相关就高。"
+    },
+    {
+      "script_id": "autocorrelation",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/autocorrelation/yunxi/interaction-int-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "切换不同信号，看噪声再大，周期峰依然稳稳出现。"
     }
   ],
-  "total_duration": 19.04,
-  "total_size": 304560
+  "total_duration": 32.52,
+  "total_size": 520272,
+  "failed": []
 }

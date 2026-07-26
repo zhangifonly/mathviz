@@ -2,6 +2,10 @@
   "script_id": "taylor",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "taylor",
@@ -365,9 +369,5 @@
     }
   ],
   "total_duration": 69.63,
-  "total_size": 1113840,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_size": 1113840
 }

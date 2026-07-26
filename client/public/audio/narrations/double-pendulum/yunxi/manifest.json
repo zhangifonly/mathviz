@@ -142,8 +142,29 @@
       "duration": 1.89,
       "size": 30240,
       "text": "双摆用最简单的结构，演示了确定性系统里的混沌。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/double-pendulum/yunxi/summary-sum-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "方程完全确定，长期行为却因初值敏感而不可预测。"
+    },
+    {
+      "script_id": "double-pendulum",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/double-pendulum/yunxi/summary-sum-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "这正是非线性世界的魅力所在，我们下次再见。"
     }
   ],
-  "total_duration": 28.330000000000002,
-  "total_size": 453312
+  "total_duration": 32.27,
+  "total_size": 516240,
+  "failed": []
 }

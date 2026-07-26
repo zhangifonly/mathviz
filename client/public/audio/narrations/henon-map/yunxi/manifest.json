@@ -72,8 +72,99 @@
       "duration": 2.11,
       "size": 33696,
       "text": "再放大，细线里还有细线，这种自我重复就是分形。"
+    },
+    {
+      "script_id": "henon-map",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/henon-map/yunxi/intro-intro-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "答案是一片既杂乱又有序的点云，这就是埃农吸引子。"
+    },
+    {
+      "script_id": "henon-map",
+      "section_id": "attractor",
+      "line_id": "att-2",
+      "filename": "attractor-att-2.mp3",
+      "path": "audio/narrations/henon-map/yunxi/attractor-att-2.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "丢掉暂态后，所有轨道都被吸进同一个形状里，无论从哪出发。"
+    },
+    {
+      "script_id": "henon-map",
+      "section_id": "attractor",
+      "line_id": "att-3",
+      "filename": "attractor-att-3.mp3",
+      "path": "audio/narrations/henon-map/yunxi/attractor-att-3.mp3",
+      "duration": 1.4,
+      "size": 22320,
+      "text": "这个逃不出去的形状，就叫做吸引子。"
+    },
+    {
+      "script_id": "henon-map",
+      "section_id": "fractal",
+      "line_id": "frac-1",
+      "filename": "fractal-frac-1.mp3",
+      "path": "audio/narrations/henon-map/yunxi/fractal-frac-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "放大吸引子的任意一条曲线，会发现它其实由更多细线组成。"
+    },
+    {
+      "script_id": "henon-map",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/henon-map/yunxi/interaction-int-1.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "调整参数 a，看吸引子如何被拉伸或折叠。"
+    },
+    {
+      "script_id": "henon-map",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/henon-map/yunxi/interaction-int-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "改变参数 b，观察点云从聚拢到散开的变化。"
+    },
+    {
+      "script_id": "henon-map",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/henon-map/yunxi/summary-sum-1.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "埃农映射用两条简单公式反复迭代平面上的点。"
+    },
+    {
+      "script_id": "henon-map",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/henon-map/yunxi/summary-sum-2.mp3",
+      "duration": 1.33,
+      "size": 21312,
+      "text": "轨道收敛到一个自相似的分形吸引子。"
+    },
+    {
+      "script_id": "henon-map",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/henon-map/yunxi/summary-sum-3.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "简单孕育复杂，这正是混沌之美，我们下次再见！"
     }
   ],
-  "total_duration": 13.909999999999998,
-  "total_size": 222336
+  "total_duration": 30.5,
+  "total_size": 487728,
+  "failed": []
 }

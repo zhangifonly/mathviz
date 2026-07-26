@@ -132,8 +132,39 @@
       "duration": 1.92,
       "size": 30672,
       "text": "简单的概率原则，撑起强大的分类器，我们下次再见！"
+    },
+    {
+      "script_id": "naive-bayes",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/naive-bayes/yunxi/intro-intro-1.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "桌上散落着两类样本，一类靛蓝，一类品红。"
+    },
+    {
+      "script_id": "naive-bayes",
+      "section_id": "bayes",
+      "line_id": "def-3",
+      "filename": "bayes-def-3.mp3",
+      "path": "audio/narrations/naive-bayes/yunxi/bayes-def-3.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "哪个类别的后验更大，我们就把样本判给谁。"
+    },
+    {
+      "script_id": "naive-bayes",
+      "section_id": "naive",
+      "line_id": "naive-1",
+      "filename": "naive-naive-1.mp3",
+      "path": "audio/narrations/naive-bayes/yunxi/naive-naive-1.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "样本有多个特征，联合似然本来很难估计。"
     }
   ],
-  "total_duration": 25.65,
-  "total_size": 410256
+  "total_duration": 30.66,
+  "total_size": 490464,
+  "failed": []
 }

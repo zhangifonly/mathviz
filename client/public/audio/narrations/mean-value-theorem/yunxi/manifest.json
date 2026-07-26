@@ -122,8 +122,49 @@
       "duration": 1.65,
       "size": 26352,
       "text": "罗尔定理是它水平时的特例，我们下次再见！"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "mvt",
+      "line_id": "mvt-1",
+      "filename": "mvt-mvt-1.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/mvt-mvt-1.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "拉格朗日中值定理说：只要函数连续又光滑，区间内必有一点 c。"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "mvt",
+      "line_id": "mvt-2",
+      "filename": "mvt-mvt-2.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/mvt-mvt-2.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "在这一点，切线斜率恰好等于割线斜率，两条线彼此平行。"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "mvt",
+      "line_id": "mvt-3",
+      "filename": "mvt-mvt-3.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/mvt-mvt-3.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "也就是说，瞬时变化率总会在某处追平平均变化率。"
+    },
+    {
+      "script_id": "mean-value-theorem",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/mean-value-theorem/yunxi/interaction-int-2.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "注意那条绿色切线始终与割线平行，中值点 c 也随之改变。"
     }
   ],
-  "total_duration": 24.86,
-  "total_size": 397728
+  "total_duration": 34.12,
+  "total_size": 545760,
+  "failed": []
 }

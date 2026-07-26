@@ -132,8 +132,39 @@
       "duration": 2.01,
       "size": 32112,
       "text": "看懂了核与像，就看懂了线性映射的骨架，我们下次再见！"
+    },
+    {
+      "script_id": "kernel-image",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/kernel-image/yunxi/intro-intro-3.mp3",
+      "duration": 2.0,
+      "size": 31968,
+      "text": "那么问题来了：这台机器最终把整个平面送到了哪里？"
+    },
+    {
+      "script_id": "kernel-image",
+      "section_id": "kernel",
+      "line_id": "ker-1",
+      "filename": "kernel-ker-1.mp3",
+      "path": "audio/narrations/kernel-image/yunxi/kernel-ker-1.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "有些方向很特别，无论向量多长，映射后都变成了零向量。"
+    },
+    {
+      "script_id": "kernel-image",
+      "section_id": "kernel",
+      "line_id": "ker-3",
+      "filename": "kernel-ker-3.mp3",
+      "path": "audio/narrations/kernel-image/yunxi/kernel-ker-3.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "满秩的映射没有核，而降秩时，核就是那条被压没的直线。"
     }
   ],
-  "total_duration": 26.03,
-  "total_size": 416304
+  "total_duration": 32.49,
+  "total_size": 519696,
+  "failed": []
 }

@@ -112,8 +112,69 @@
       "duration": 2.11,
       "size": 33696,
       "text": "行进方块：逐格判断四角，查表连边，插值定点。"
+    },
+    {
+      "script_id": "marching-squares",
+      "section_id": "lookup",
+      "line_id": "case-3",
+      "filename": "lookup-case-3.mp3",
+      "path": "audio/narrations/marching-squares/yunxi/lookup-case-3.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "每种组合都对应一张查找表，直接告诉我们该连哪几条边。"
+    },
+    {
+      "script_id": "marching-squares",
+      "section_id": "interp",
+      "line_id": "lerp-1",
+      "filename": "interp-lerp-1.mp3",
+      "path": "audio/narrations/marching-squares/yunxi/interp-lerp-1.mp3",
+      "duration": 1.46,
+      "size": 23328,
+      "text": "等高线穿过某条边时，交点在哪里呢？"
+    },
+    {
+      "script_id": "marching-squares",
+      "section_id": "interp",
+      "line_id": "lerp-2",
+      "filename": "interp-lerp-2.mp3",
+      "path": "audio/narrations/marching-squares/yunxi/interp-lerp-2.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "用两个端点的值做线性插值，阈值越靠近哪端，交点就越靠哪端。"
+    },
+    {
+      "script_id": "marching-squares",
+      "section_id": "interp",
+      "line_id": "lerp-3",
+      "filename": "interp-lerp-3.mp3",
+      "path": "audio/narrations/marching-squares/yunxi/interp-lerp-3.mp3",
+      "duration": 2.13,
+      "size": 34128,
+      "text": "正是这一步插值，让锯齿状的格子变成了顺滑的曲线。"
+    },
+    {
+      "script_id": "marching-squares",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/marching-squares/yunxi/summary-sum-2.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "地形等高线、气象等压线、医学等值面，背后都是它。"
+    },
+    {
+      "script_id": "marching-squares",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/marching-squares/yunxi/summary-sum-3.mp3",
+      "duration": 1.73,
+      "size": 27648,
+      "text": "离散网格里藏着连续的曲线，我们下次再见！"
     }
   ],
-  "total_duration": 22.09,
-  "total_size": 353376
+  "total_duration": 34.27,
+  "total_size": 548064,
+  "failed": []
 }

@@ -82,8 +82,99 @@
       "duration": 2.09,
       "size": 33408,
       "text": "它把括号、二叉树、三角剖分等问题串成一家。"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/catalan-numbers/yunxi/intro-intro-1.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "有一个数列：一、一、二、五、十四、四十二。"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "paren",
+      "line_id": "def-1",
+      "filename": "paren-def-1.mp3",
+      "path": "audio/narrations/catalan-numbers/yunxi/paren-def-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "先看括号：n 对括号能排出多少种合法写法？"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "paren",
+      "line_id": "def-2",
+      "filename": "paren-def-2.mp3",
+      "path": "audio/narrations/catalan-numbers/yunxi/paren-def-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "合法意味着任何前缀里，右括号都不多于左括号。"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "tree",
+      "line_id": "tree-1",
+      "filename": "tree-tree-1.mp3",
+      "path": "audio/narrations/catalan-numbers/yunxi/tree-tree-1.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "再看二叉树：n 个内部节点能长出多少种不同形态？"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "poly",
+      "line_id": "poly-1",
+      "filename": "poly-poly-1.mp3",
+      "path": "audio/narrations/catalan-numbers/yunxi/poly-poly-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "第三个面孔：把凸多边形用不相交的对角线切成三角形。"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "poly",
+      "line_id": "poly-2",
+      "filename": "poly-poly-2.mp3",
+      "path": "audio/narrations/catalan-numbers/yunxi/poly-poly-2.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "一个 n 加二 边形的剖分方案数，恰好是 C n。"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/catalan-numbers/yunxi/summary-sum-1.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "卡特兰数由简单递推生成，也有闭式 C 二n 取 n 再除以 n 加一。"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/catalan-numbers/yunxi/summary-sum-3.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "一串数，多种面孔，这就是组合数学的奇妙，我们下次再见！"
+    },
+    {
+      "script_id": "catalan-numbers",
+      "section_id": "tree",
+      "line_id": "tree-3",
+      "filename": "tree-tree-3.mp3",
+      "path": "audio/narrations/catalan-numbers/yunxi/tree-tree-3.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "于是它们的数目完全相同，都是卡特兰数。"
     }
   ],
-  "total_duration": 16.35,
-  "total_size": 261648
+  "total_duration": 35.29,
+  "total_size": 564768,
+  "failed": []
 }

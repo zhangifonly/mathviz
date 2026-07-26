@@ -132,8 +132,39 @@
       "duration": 1.95,
       "size": 31248,
       "text": "直到所有点都落在正确的一侧，正确率升到百分之百。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/perceptron/yunxi/summary-sum-1.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "感知机用加权求和加符号激活,把平面切成两半。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/perceptron/yunxi/summary-sum-2.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "靠误分类更新权重,一步步把分隔线转到正确位置。"
+    },
+    {
+      "script_id": "perceptron",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/perceptron/yunxi/summary-sum-3.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "从一个神经元到深度网络,起点就在这里,我们下次再见！"
     }
   ],
-  "total_duration": 25.360000000000003,
-  "total_size": 406080
+  "total_duration": 31.26,
+  "total_size": 500400,
+  "failed": []
 }

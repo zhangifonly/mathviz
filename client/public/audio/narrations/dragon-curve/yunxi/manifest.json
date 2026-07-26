@@ -152,8 +152,39 @@
       "duration": 1.99,
       "size": 31824,
       "text": "一次简单的对折，折出无穷的几何之美，我们下次再见！"
+    },
+    {
+      "script_id": "dragon-curve",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/dragon-curve/yunxi/intro-intro-1.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "拿一张细长的纸条，把右端向左对折一次。"
+    },
+    {
+      "script_id": "dragon-curve",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/dragon-curve/yunxi/intro-intro-3.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "展开纸条，把每道折痕都掰成直角。"
+    },
+    {
+      "script_id": "dragon-curve",
+      "section_id": "fold",
+      "line_id": "fold-1",
+      "filename": "fold-fold-1.mp3",
+      "path": "audio/narrations/dragon-curve/yunxi/fold-fold-1.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "每对折一次，折痕数量都会比原来多一倍再加一。"
     }
   ],
-  "total_duration": 28.769999999999996,
-  "total_size": 460368
+  "total_duration": 33.94,
+  "total_size": 543024,
+  "failed": []
 }

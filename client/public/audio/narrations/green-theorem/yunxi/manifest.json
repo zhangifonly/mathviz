@@ -162,8 +162,19 @@
       "duration": 1.73,
       "size": 27648,
       "text": "边界与内部在这里紧紧相连, 我们下次再见。"
+    },
+    {
+      "script_id": "green-theorem",
+      "section_id": "theorem",
+      "line_id": "thm-1",
+      "filename": "theorem-thm-1.mp3",
+      "path": "audio/narrations/green-theorem/yunxi/theorem-thm-1.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "格林公式说: 沿闭曲线的线积分, 等于区域内旋度的二重积分。"
     }
   ],
-  "total_duration": 36.34,
-  "total_size": 581616
+  "total_duration": 38.63,
+  "total_size": 618192,
+  "failed": []
 }

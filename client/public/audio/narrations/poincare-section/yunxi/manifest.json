@@ -132,8 +132,49 @@
       "duration": 1.98,
       "size": 31680,
       "text": "一次巧妙的降维，让混沌现出原形，我们下次再见！"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/poincare-section/yunxi/intro-intro-1.mp3",
+      "duration": 2.46,
+      "size": 39312,
+      "text": "一个受迫摆动的振子，轨迹在相空间里绕来绕去，缠成一团乱麻。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "strobe",
+      "line_id": "def-1",
+      "filename": "strobe-def-1.mp3",
+      "path": "audio/narrations/poincare-section/yunxi/strobe-def-1.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "驱动力有固定周期，就像一盏按节拍闪烁的频闪灯。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "strobe",
+      "line_id": "def-2",
+      "filename": "strobe-def-2.mp3",
+      "path": "audio/narrations/poincare-section/yunxi/strobe-def-2.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "每过一个驱动周期，我们只记录此刻的位置和速度，其余时间都不看。"
+    },
+    {
+      "script_id": "poincare-section",
+      "section_id": "strobe",
+      "line_id": "def-3",
+      "filename": "strobe-def-3.mp3",
+      "path": "audio/narrations/poincare-section/yunxi/strobe-def-3.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "连续的轨迹于是被抽稀成一串离散的采样点。"
     }
   ],
-  "total_duration": 25.61,
-  "total_size": 409968
+  "total_duration": 34.09,
+  "total_size": 545616,
+  "failed": []
 }

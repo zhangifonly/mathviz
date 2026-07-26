@@ -142,8 +142,39 @@
       "duration": 2.2,
       "size": 35136,
       "text": "有限里藏着无限，愿你继续探索数学之美，我们下次再见！"
+    },
+    {
+      "script_id": "koch-snowflake",
+      "section_id": "perimeter",
+      "line_id": "peri-2",
+      "filename": "perimeter-peri-2.mp3",
+      "path": "audio/narrations/koch-snowflake/yunxi/perimeter-peri-2.mp3",
+      "duration": 2.57,
+      "size": 41184,
+      "text": "算下来总周长每次都乘以四分之三的倒数，也就是变成四分之三倍的倒数。"
+    },
+    {
+      "script_id": "koch-snowflake",
+      "section_id": "area",
+      "line_id": "area-3",
+      "filename": "area-area-3.mp3",
+      "path": "audio/narrations/koch-snowflake/yunxi/area-area-3.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "最后面积稳稳停在初始三角形的八分之五那么大，一点不多。"
+    },
+    {
+      "script_id": "koch-snowflake",
+      "section_id": "area",
+      "line_id": "area-1",
+      "filename": "area-area-1.mp3",
+      "path": "audio/narrations/koch-snowflake/yunxi/area-area-1.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "奇怪的是，雪花始终被一个外接圆牢牢框住，跑不出去。"
     }
   ],
-  "total_duration": 30.59,
-  "total_size": 489312
+  "total_duration": 37.31,
+  "total_size": 596880,
+  "failed": []
 }

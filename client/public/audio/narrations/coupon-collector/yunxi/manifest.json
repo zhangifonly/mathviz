@@ -142,8 +142,29 @@
       "duration": 2.33,
       "size": 37296,
       "text": "下次抽卡凑不齐时，你会知道那是数学的必然，我们下次再见！"
+    },
+    {
+      "script_id": "coupon-collector",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/coupon-collector/yunxi/intro-intro-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "小时候集干脆面卡片，为了凑齐一整套，你买了多少包？"
+    },
+    {
+      "script_id": "coupon-collector",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/coupon-collector/yunxi/intro-intro-3.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "这背后藏着一个漂亮的数学问题，叫赠券收集问题。"
     }
   ],
-  "total_duration": 33.010000000000005,
-  "total_size": 528048
+  "total_duration": 36.96,
+  "total_size": 591264,
+  "failed": []
 }

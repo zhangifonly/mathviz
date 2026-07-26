@@ -122,8 +122,49 @@
       "duration": 2.03,
       "size": 32544,
       "text": "简单却强大，它是机器学习分类的基石，我们下次再见！"
+    },
+    {
+      "script_id": "logistic-regression",
+      "section_id": "sigmoid",
+      "line_id": "sig-3",
+      "filename": "sigmoid-sig-3.mp3",
+      "path": "audio/narrations/logistic-regression/yunxi/sigmoid-sig-3.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "得分为零时概率恰好是 0.5，这就是分界处。"
+    },
+    {
+      "script_id": "logistic-regression",
+      "section_id": "loss",
+      "line_id": "loss-2",
+      "filename": "loss-loss-2.mp3",
+      "path": "audio/narrations/logistic-regression/yunxi/loss-loss-2.mp3",
+      "duration": 2.75,
+      "size": 44064,
+      "text": "预测越接近真实标签，损失越小；把红点判成蓝点，就会付出很大代价。"
+    },
+    {
+      "script_id": "logistic-regression",
+      "section_id": "gradient",
+      "line_id": "grad-1",
+      "filename": "gradient-grad-1.mp3",
+      "path": "audio/narrations/logistic-regression/yunxi/gradient-grad-1.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "训练就是不断调整权重，让总损失一点点变小。"
+    },
+    {
+      "script_id": "logistic-regression",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/logistic-regression/yunxi/interaction-int-1.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "点击单步训练，看背景的概率梯度和黑色边界如何一步步调整。"
     }
   ],
-  "total_duration": 27.300000000000004,
-  "total_size": 436752
+  "total_duration": 36.01,
+  "total_size": 576144,
+  "failed": []
 }

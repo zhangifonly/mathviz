@@ -172,8 +172,19 @@
       "duration": 2.02,
       "size": 32400,
       "text": "简单的一乘再乘，问出了矩阵最强的方向，我们下次再见！"
+    },
+    {
+      "script_id": "power-iteration",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/power-iteration/yunxi/intro-intro-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "我们想找到它，却又不想去解复杂的特征方程。"
     }
   ],
-  "total_duration": 34.74,
-  "total_size": 555840
+  "total_duration": 36.58,
+  "total_size": 585360,
+  "failed": []
 }

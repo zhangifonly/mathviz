@@ -102,8 +102,69 @@
       "duration": 1.44,
       "size": 23040,
       "text": "填充密度衡量圆填满空间的效率。"
+    },
+    {
+      "script_id": "circle-packing",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/circle-packing/yunxi/intro-intro-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "给你一个盒子，要塞进尽可能多的同样大小的圆，你会怎么摆？"
+    },
+    {
+      "script_id": "circle-packing",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/circle-packing/yunxi/intro-intro-3.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "我们用填充密度来衡量：圆的总面积，占盒子面积的比例。"
+    },
+    {
+      "script_id": "circle-packing",
+      "section_id": "square",
+      "line_id": "sq-2",
+      "filename": "square-sq-2.mp3",
+      "path": "audio/narrations/circle-packing/yunxi/square-sq-2.mp3",
+      "duration": 1.64,
+      "size": 26208,
+      "text": "每四个圆的中间，都空出一块弯曲的四角缝隙。"
+    },
+    {
+      "script_id": "circle-packing",
+      "section_id": "random",
+      "line_id": "rand-2",
+      "filename": "random-rand-2.mp3",
+      "path": "audio/narrations/circle-packing/yunxi/random-rand-2.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "圆挤成一团,缝隙杂乱无章,密度往往明显低于规则排布。"
+    },
+    {
+      "script_id": "circle-packing",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/circle-packing/yunxi/summary-sum-2.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "六边形最密堆积约九成密度,远胜方形与随机。"
+    },
+    {
+      "script_id": "circle-packing",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/circle-packing/yunxi/summary-sum-3.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "蜜蜂和大自然早就懂得这个道理,我们下次再见!"
     }
   ],
-  "total_duration": 20.96,
-  "total_size": 335376
+  "total_duration": 32.69,
+  "total_size": 522720,
+  "failed": []
 }

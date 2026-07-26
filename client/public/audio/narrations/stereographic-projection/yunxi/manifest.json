@@ -122,8 +122,69 @@
       "duration": 1.99,
       "size": 31824,
       "text": "它保角、又把圆变成圆，是地图学与复分析的基石。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "circle",
+      "line_id": "circ-1",
+      "filename": "circle-circ-1.mp3",
+      "path": "audio/narrations/stereographic-projection/yunxi/circle-circ-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "还有一条奇妙的规律：球面上的圆，投影后依然是圆。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "circle",
+      "line_id": "circ-3",
+      "filename": "circle-circ-3.mp3",
+      "path": "audio/narrations/stereographic-projection/yunxi/circle-circ-3.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "于是纬线变成一圈圈同心圆，经线变成从原点放射的直线。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/stereographic-projection/yunxi/interaction-int-1.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "拖动滑块旋转球面，看左边的网格如何转动。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/stereographic-projection/yunxi/interaction-int-2.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "再看右边平面上的像，同心圆与放射线随之优雅地舒展。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/stereographic-projection/yunxi/summary-sum-1.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "球极投影从北极出发，把球面一一映到平面。"
+    },
+    {
+      "script_id": "stereographic-projection",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/stereographic-projection/yunxi/summary-sum-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "一次投射,让弯曲的世界摊成平面,我们下次再见！"
     }
   ],
-  "total_duration": 23.799999999999997,
-  "total_size": 380880
+  "total_duration": 35.89,
+  "total_size": 574272,
+  "failed": []
 }

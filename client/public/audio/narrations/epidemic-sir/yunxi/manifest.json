@@ -162,8 +162,19 @@
       "duration": 2.32,
       "size": 37152,
       "text": "简单的规则，深刻的洞见，这就是数学建模的力量，我们下次再见！"
+    },
+    {
+      "script_id": "epidemic-sir",
+      "section_id": "equations",
+      "line_id": "eq-2",
+      "filename": "equations-eq-2.mp3",
+      "path": "audio/narrations/epidemic-sir/yunxi/equations-eq-2.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "同时，感染者会按康复率稳定地转为康复者。"
     }
   ],
-  "total_duration": 41.510000000000005,
-  "total_size": 664128
+  "total_duration": 43.43,
+  "total_size": 694800,
+  "failed": []
 }

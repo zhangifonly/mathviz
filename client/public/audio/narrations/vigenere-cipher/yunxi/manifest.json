@@ -152,8 +152,19 @@
       "duration": 1.89,
       "size": 30240,
       "text": "一张小小的方阵，藏着三百年的秘密，我们下次再见！"
+    },
+    {
+      "script_id": "vigenere-cipher",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/vigenere-cipher/yunxi/intro-intro-1.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "十六世纪，人们发明了一种被誉为不可破译的密码。"
     }
   ],
-  "total_duration": 29.950000000000003,
-  "total_size": 479232
+  "total_duration": 31.75,
+  "total_size": 508032,
+  "failed": []
 }

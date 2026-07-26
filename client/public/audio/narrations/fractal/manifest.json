@@ -2,6 +2,10 @@
   "script_id": "fractal",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "fractal",
@@ -244,10 +248,6 @@
       "text": "希望你能继续探索这个迷人的数学领域。"
     }
   ],
-  "total_duration": 47.309999999999995,
-  "total_size": 757296,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_duration": 47.31,
+  "total_size": 757296
 }

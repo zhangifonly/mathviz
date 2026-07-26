@@ -142,8 +142,39 @@
       "duration": 1.86,
       "size": 29808,
       "text": "简单的规则,涌现出聪明的群体,我们下次再见!"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "position",
+      "line_id": "pos-2",
+      "filename": "position-pos-2.mp3",
+      "path": "audio/narrations/particle-swarm/yunxi/position-pos-2.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "位置代表一个候选答案,我们要找的是让目标函数最小的地方。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "best",
+      "line_id": "best-1",
+      "filename": "best-best-1.mp3",
+      "path": "audio/narrations/particle-swarm/yunxi/best-best-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "每个粒子记着自己飞过的最好位置,这是个体最优。"
+    },
+    {
+      "script_id": "particle-swarm",
+      "section_id": "update",
+      "line_id": "upd-3",
+      "filename": "update-upd-3.mp3",
+      "path": "audio/narrations/particle-swarm/yunxi/update-upd-3.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "三者加权相加,粒子便在探索与聚拢之间取得平衡。"
     }
   ],
-  "total_duration": 27.59,
-  "total_size": 441936
+  "total_duration": 33.69,
+  "total_size": 539568,
+  "failed": []
 }

@@ -2,6 +2,10 @@
   "script_id": "regression",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "regression",
@@ -404,10 +408,6 @@
       "text": "希望通过这个实验，你对回归分析有了更直观的理解！"
     }
   ],
-  "total_duration": 72.32000000000001,
-  "total_size": 1157328,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_duration": 72.32,
+  "total_size": 1157328
 }

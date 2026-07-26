@@ -132,8 +132,49 @@
       "duration": 1.67,
       "size": 26640,
       "text": "小小的九，藏着大大的巧思，我们下次再见！"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/digital-root/yunxi/intro-intro-1.mp3",
+      "duration": 1.56,
+      "size": 24912,
+      "text": "随便写一个大数，比如一万两千三百四十五。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/digital-root/yunxi/intro-intro-3.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "如果还不止一位，就再加一次，直到只剩一位数为止。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/digital-root/yunxi/define-def-3.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "这个坍缩的过程，就像把一个数不断折叠到最简。"
+    },
+    {
+      "script_id": "digital-root",
+      "section_id": "casting",
+      "line_id": "cast-2",
+      "filename": "casting-cast-2.mp3",
+      "path": "audio/narrations/digital-root/yunxi/casting-cast-2.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "把两个加数或因数各求数字根，再按同样运算合起来。"
     }
   ],
-  "total_duration": 23.699999999999996,
-  "total_size": 379296
+  "total_duration": 31.25,
+  "total_size": 499968,
+  "failed": []
 }

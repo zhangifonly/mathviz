@@ -112,8 +112,69 @@
       "duration": 1.92,
       "size": 30672,
       "text": "分得越细越精确，取样方式决定高估还是低估。"
+    },
+    {
+      "script_id": "riemann-sum",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/riemann-sum/yunxi/intro-intro-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "古老而聪明的办法，是用许多小矩形去把它拼出来。"
+    },
+    {
+      "script_id": "riemann-sum",
+      "section_id": "split",
+      "line_id": "def-1",
+      "filename": "split-def-1.mp3",
+      "path": "audio/narrations/riemann-sum/yunxi/split-def-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "把区间平均切成 n 段，每一段配一个细长的矩形。"
+    },
+    {
+      "script_id": "riemann-sum",
+      "section_id": "limit",
+      "line_id": "lim-3",
+      "filename": "limit-lim-3.mp3",
+      "path": "audio/narrations/riemann-sum/yunxi/limit-lim-3.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "这个极限，正是曲线下面积的准确度量，也就是定积分。"
+    },
+    {
+      "script_id": "riemann-sum",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/riemann-sum/yunxi/interaction-int-1.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "增大分段数 n，看误差一步步减小,矩形一点点贴紧曲线。"
+    },
+    {
+      "script_id": "riemann-sum",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/riemann-sum/yunxi/summary-sum-1.mp3",
+      "duration": 1.46,
+      "size": 23328,
+      "text": "黎曼和用一排矩形逼近曲线下的面积。"
+    },
+    {
+      "script_id": "riemann-sum",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/riemann-sum/yunxi/summary-sum-3.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "分割到无穷,黎曼和便化作定积分,我们下次再见！"
     }
   ],
-  "total_duration": 23.330000000000005,
-  "total_size": 373104
+  "total_duration": 34.7,
+  "total_size": 555120,
+  "failed": []
 }

@@ -182,8 +182,19 @@
       "duration": 2.19,
       "size": 34992,
       "text": "向大自然学来的一点随机,换来了全局最优的可能,我们下次再见！"
+    },
+    {
+      "script_id": "simulated-annealing",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/simulated-annealing/yunxi/summary-sum-1.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "模拟退火用温度控制探索:高温大胆试错,低温精细收敛。"
     }
   ],
-  "total_duration": 39.019999999999996,
-  "total_size": 624096
+  "total_duration": 41.34,
+  "total_size": 661248,
+  "failed": []
 }

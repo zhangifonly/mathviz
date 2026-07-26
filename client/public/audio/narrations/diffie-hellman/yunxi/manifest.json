@@ -122,8 +122,59 @@
       "duration": 2.37,
       "size": 37872,
       "text": "窃听者只有 A 和 B，想反推私钥要解离散对数，几乎不可能。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/interaction-int-1.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "试着给 Alice 和 Bob 各选一个私钥，看看两边的共享密钥。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/interaction-int-2.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "无论怎么换，只要参数不变，两边算出的密钥总是一致。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/summary-sum-1.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "公开 p、g、A、B，私钥却始终不出门。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/summary-sum-2.mp3",
+      "duration": 1.81,
+      "size": 28944,
+      "text": "快速幂让计算轻松，离散对数让破解无望。"
+    },
+    {
+      "script_id": "diffie-hellman",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/diffie-hellman/yunxi/summary-sum-3.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "这把在阳光下协商出的钥匙，撑起了今天的加密世界，我们下次再见！"
     }
   ],
-  "total_duration": 24.700000000000003,
-  "total_size": 395280
+  "total_duration": 35.12,
+  "total_size": 561888,
+  "failed": []
 }

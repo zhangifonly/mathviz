@@ -62,8 +62,119 @@
       "duration": 2.08,
       "size": 33264,
       "text": "画面上的双曲线，正是方程的几何身影，解点端坐其上。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/pell-equation/yunxi/intro-intro-1.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "有一类方程，只允许整数登场，它们被称为丢番图方程。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/pell-equation/yunxi/intro-intro-3.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "它就是佩尔方程，形如 x 的平方减去 N 乘 y 的平方等于一。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "define",
+      "line_id": "def-3",
+      "filename": "define-def-3.mp3",
+      "path": "audio/narrations/pell-equation/yunxi/define-def-3.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "看似简单，却曾让无数数学家着迷了上千年。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "cf",
+      "line_id": "cf-1",
+      "filename": "cf-cf-1.mp3",
+      "path": "audio/narrations/pell-equation/yunxi/cf-cf-1.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "解开它的钥匙，是根号 N 的连分数展开。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "cf",
+      "line_id": "cf-2",
+      "filename": "cf-cf-2.mp3",
+      "path": "audio/narrations/pell-equation/yunxi/cf-cf-2.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "根号 N 的连分数是周期循环的，它的渐近分数越来越逼近真值。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "recur",
+      "line_id": "rec-2",
+      "filename": "recur-rec-2.mp3",
+      "path": "audio/narrations/pell-equation/yunxi/recur-rec-2.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "把基本解看成 x 加 y 根号 N，不断自乘方，就滚出下一个又一个解。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "recur",
+      "line_id": "rec-3",
+      "filename": "recur-rec-3.mp3",
+      "path": "audio/narrations/pell-equation/yunxi/recur-rec-3.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "于是从一个解出发，佩尔方程拥有无穷多组整数解。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/pell-equation/yunxi/interaction-int-1.mp3",
+      "duration": 2.5,
+      "size": 40032,
+      "text": "选择不同的 N，看基本解如何随之跳变，有时小巧，有时惊人地大。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/pell-equation/yunxi/summary-sum-1.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "佩尔方程求 x 平方减 N 倍 y 平方等于一的整数解。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/pell-equation/yunxi/summary-sum-2.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "连分数找出基本解，递推展开无穷多解，几何上落在双曲线上。"
+    },
+    {
+      "script_id": "pell-equation",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/pell-equation/yunxi/summary-sum-3.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "一个古老方程，连起数论与几何，我们下次再见！"
     }
   ],
-  "total_duration": 12.64,
-  "total_size": 202320
+  "total_duration": 35.87,
+  "total_size": 573984,
+  "failed": []
 }

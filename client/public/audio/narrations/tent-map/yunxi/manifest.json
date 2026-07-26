@@ -162,8 +162,19 @@
       "duration": 1.93,
       "size": 30816,
       "text": "最简单的折线里藏着最深的混沌，我们下次再见！"
+    },
+    {
+      "script_id": "tent-map",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/tent-map/yunxi/summary-sum-2.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "mu 等于二时达到满混沌，对初值极其敏感。"
     }
   ],
-  "total_duration": 30.929999999999996,
-  "total_size": 495072
+  "total_duration": 32.61,
+  "total_size": 522000,
+  "failed": []
 }

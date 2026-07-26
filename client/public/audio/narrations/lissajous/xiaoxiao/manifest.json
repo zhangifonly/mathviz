@@ -132,8 +132,59 @@
       "duration": 2.02,
       "size": 32400,
       "text": "简单的三角函数，藏着无穷的对称之美，我们下次再见！"
+    },
+    {
+      "script_id": "lissajous",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/lissajous/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "而在极坐标里，一个简单的余弦函数能开出一朵朵玫瑰。"
+    },
+    {
+      "script_id": "lissajous",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/lissajous/xiaoxiao/intro-intro-4.mp3",
+      "duration": 2.14,
+      "size": 34272,
+      "text": "今天，我们就来欣赏这些由频率和角度编织出的对称之美。"
+    },
+    {
+      "script_id": "lissajous",
+      "section_id": "lissajous",
+      "line_id": "lis-1",
+      "filename": "lissajous-lis-1.mp3",
+      "path": "audio/narrations/lissajous/xiaoxiao/lissajous-lis-1.mp3",
+      "duration": 2.69,
+      "size": 43056,
+      "text": "利萨茹图形的方程是：x 等于 sin(a t 加相位 δ)，y 等于 sin(b t)。"
+    },
+    {
+      "script_id": "lissajous",
+      "section_id": "lissajous",
+      "line_id": "lis-2",
+      "filename": "lissajous-lis-2.mp3",
+      "path": "audio/narrations/lissajous/xiaoxiao/lissajous-lis-2.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "当频率比 a 比 b 是 1 比 1，相位差 90 度时，画出一个正圆。"
+    },
+    {
+      "script_id": "lissajous",
+      "section_id": "rose",
+      "line_id": "rose-2",
+      "filename": "rose-rose-2.mp3",
+      "path": "audio/narrations/lissajous/xiaoxiao/rose-rose-2.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "当 k 是奇数，比如 3，玫瑰开出 3 片花瓣。"
     }
   ],
-  "total_duration": 27.67,
-  "total_size": 442944
+  "total_duration": 38.59,
+  "total_size": 617760,
+  "failed": []
 }

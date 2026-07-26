@@ -162,8 +162,19 @@
       "duration": 2.33,
       "size": 37296,
       "text": "从系数到矩阵再到曲面，这正是线性代数的优雅，我们下次再见！"
+    },
+    {
+      "script_id": "quadratic-form",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/quadratic-form/yunxi/interaction-int-1.mp3",
+      "duration": 2.59,
+      "size": 41472,
+      "text": "拖动 a、b、c 三个滑块，看等高线在椭圆和双曲线之间切换。"
     }
   ],
-  "total_duration": 35.85999999999999,
-  "total_size": 573840
+  "total_duration": 38.45,
+  "total_size": 615312,
+  "failed": []
 }

@@ -142,8 +142,29 @@
       "duration": 2.21,
       "size": 35280,
       "text": "从圆周率到黄金比例，连分数让我们看清数的本性，我们下次再见！"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "approx",
+      "line_id": "apx-1",
+      "filename": "approx-apx-1.mp3",
+      "path": "audio/narrations/continued-fraction/yunxi/approx-apx-1.mp3",
+      "duration": 2.9,
+      "size": 46368,
+      "text": "连分数的渐近分数有一个惊人的性质：在同样大小的分母下，它是最精确的有理逼近。"
+    },
+    {
+      "script_id": "continued-fraction",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/continued-fraction/yunxi/define-def-2.mp3",
+      "duration": 2.5,
+      "size": 40032,
+      "text": "每一步都取出当前数的整数部分，再对剩下的小数取倒数，继续展开。"
     }
   ],
-  "total_duration": 32.91,
-  "total_size": 526464
+  "total_duration": 38.31,
+  "total_size": 612864,
+  "failed": []
 }

@@ -132,8 +132,59 @@
       "duration": 1.69,
       "size": 27072,
       "text": "简单的规则藏着惊人的增长，我们下次再见！"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "stirling",
+      "line_id": "stir-2",
+      "filename": "stirling-stir-2.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/stirling-stir-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "把 k 从 1 加到 n 的所有斯特林数相加，得到的正是贝尔数。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/interaction-int-1.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "调整行数，看贝尔三角如何一行行生长。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/interaction-int-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "盯住每行末尾的高亮数字，那串数就是贝尔数序列。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/summary-sum-1.mp3",
+      "duration": 1.45,
+      "size": 23184,
+      "text": "贝尔数数清了一个集合所有可能的划分方式。"
+    },
+    {
+      "script_id": "bell-numbers",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/bell-numbers/yunxi/summary-sum-2.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "贝尔三角用简单的加法，就把它们层层生成出来。"
     }
   ],
-  "total_duration": 26.17,
-  "total_size": 418896
+  "total_duration": 35.22,
+  "total_size": 563760,
+  "failed": []
 }

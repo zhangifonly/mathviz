@@ -82,8 +82,99 @@
       "duration": 1.84,
       "size": 29376,
       "text": "从地图到调度，图着色无处不在，我们下次再见！"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/intro-intro-2.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "问题来了：最少需要准备几种颜色，才能涂完整张地图？"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/intro-intro-3.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "把每个区域看成一个点，相邻区域之间连一条线，地图就变成了一张图。"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "constraint",
+      "line_id": "def-1",
+      "filename": "constraint-def-1.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/constraint-def-1.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "图着色的唯一规则是：任何一条边连接的两个节点，颜色必须不同。"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "constraint",
+      "line_id": "def-2",
+      "filename": "constraint-def-2.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/constraint-def-2.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "如果两个相邻节点涂成了同色，这条边就成了冲突边，我们把它标红。"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "constraint",
+      "line_id": "def-3",
+      "filename": "constraint-def-3.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/constraint-def-3.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "目标是用尽量少的颜色，让所有边都不冲突。"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/interaction-int-1.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "切换不同的图，看看贪心着色分别用了几种颜色。"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "greedy",
+      "line_id": "greedy-1",
+      "filename": "greedy-greedy-1.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/greedy-greedy-1.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "一个简单办法是贪心法：按顺序处理每个节点。"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/summary-sum-1.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "图着色要在相邻不同色的约束下，用最少的颜色涂满全图。"
+    },
+    {
+      "script_id": "graph-coloring",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/graph-coloring/yunxi/summary-sum-2.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "贪心法快而不一定最优，回溯法能求出真正的色数。"
     }
   ],
-  "total_duration": 16.98,
-  "total_size": 271584
+  "total_duration": 36.23,
+  "total_size": 579744,
+  "failed": []
 }

@@ -152,8 +152,29 @@
       "duration": 2.16,
       "size": 34560,
       "text": "它们的相邻比都趋向黄金比,并由简洁的公式紧紧相连。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/interaction-int-1.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "调整显示项数，看方块越叠越高，看比值曲线越来越平。"
+    },
+    {
+      "script_id": "lucas-numbers",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/lucas-numbers/yunxi/summary-sum-3.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "同样的规则,不同的开始,一样的美,我们下次再见！"
     }
   ],
-  "total_duration": 33.099999999999994,
-  "total_size": 529488
+  "total_duration": 37.28,
+  "total_size": 596304,
+  "failed": []
 }

@@ -2,6 +2,10 @@
   "script_id": "chaos",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "chaos",
@@ -244,10 +248,6 @@
       "text": "希望这次实验能激发你对非线性动力学的兴趣。"
     }
   ],
-  "total_duration": 46.670000000000016,
-  "total_size": 746640,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_duration": 46.67,
+  "total_size": 746640
 }

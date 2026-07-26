@@ -142,8 +142,49 @@
       "duration": 4.89,
       "size": 78192,
       "text": "它满足 Γ(n)=(n-1)!、递推 Γ(x+1)=xΓ(x)，还有 Γ(1/2)=√π。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "factorial",
+      "line_id": "fac-1",
+      "filename": "factorial-fac-1.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/factorial-fac-1.mp3",
+      "duration": 3.11,
+      "size": 49824,
+      "text": "对每个正整数 n，伽马函数满足 Γ(n) 等于 (n-1) 的阶乘。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "factorial",
+      "line_id": "fac-3",
+      "filename": "factorial-fac-3.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/factorial-fac-3.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "于是整数的阶乘，只是这条连续曲线上的一串离散刻度。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "recur",
+      "line_id": "rec-1",
+      "filename": "recur-rec-1.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/recur-rec-1.mp3",
+      "duration": 3.28,
+      "size": 52416,
+      "text": "伽马函数遵守一条优美的递推：Γ(x+1) 等于 x 乘以 Γ(x)。"
+    },
+    {
+      "script_id": "gamma-function",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/gamma-function/yunxi/summary-sum-3.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "一条曲线连起离散与连续，数学之美如此，我们下次再见！"
     }
   ],
-  "total_duration": 31.450000000000003,
-  "total_size": 502992
+  "total_duration": 41.94,
+  "total_size": 670752,
+  "failed": []
 }

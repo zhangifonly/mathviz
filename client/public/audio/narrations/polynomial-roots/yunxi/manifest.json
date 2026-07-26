@@ -92,8 +92,89 @@
       "duration": 2.21,
       "size": 35424,
       "text": "求根就是找曲线与x轴的交点，n次多项式共有n个复根。"
+    },
+    {
+      "script_id": "polynomial-roots",
+      "section_id": "count",
+      "line_id": "cnt-3",
+      "filename": "count-cnt-3.mp3",
+      "path": "audio/narrations/polynomial-roots/yunxi/count-cnt-3.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "只不过这些根里，有的落在实数轴上，有的藏进了复数平面。"
+    },
+    {
+      "script_id": "polynomial-roots",
+      "section_id": "complex",
+      "line_id": "cpx-1",
+      "filename": "complex-cpx-1.mp3",
+      "path": "audio/narrations/polynomial-roots/yunxi/complex-cpx-1.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "曲线与x轴的交点，就是我们能直接看到的实根。"
+    },
+    {
+      "script_id": "polynomial-roots",
+      "section_id": "complex",
+      "line_id": "cpx-3",
+      "filename": "complex-cpx-3.mp3",
+      "path": "audio/narrations/polynomial-roots/yunxi/complex-cpx-3.mp3",
+      "duration": 2.01,
+      "size": 32112,
+      "text": "实系数多项式的复根总是成对出现，就像一对影子。"
+    },
+    {
+      "script_id": "polynomial-roots",
+      "section_id": "numeric",
+      "line_id": "num-1",
+      "filename": "numeric-num-1.mp3",
+      "path": "audio/narrations/polynomial-roots/yunxi/numeric-num-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "高于四次的方程没有通用求根公式，我们改用数值方法逼近。"
+    },
+    {
+      "script_id": "polynomial-roots",
+      "section_id": "numeric",
+      "line_id": "num-3",
+      "filename": "numeric-num-3.mp3",
+      "path": "audio/narrations/polynomial-roots/yunxi/numeric-num-3.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "牛顿法则借助切线，用导数指路，收敛得又快又准。"
+    },
+    {
+      "script_id": "polynomial-roots",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/polynomial-roots/yunxi/interaction-int-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "拖动系数滑块，看曲线怎样上下起伏、左右摆动。"
+    },
+    {
+      "script_id": "polynomial-roots",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/polynomial-roots/yunxi/summary-sum-2.mp3",
+      "duration": 2.21,
+      "size": 35280,
+      "text": "实根看得见，复根成对藏，数值方法帮我们把它们一一逼近。"
+    },
+    {
+      "script_id": "polynomial-roots",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/polynomial-roots/yunxi/summary-sum-3.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "系数一动，根就起舞，这就是代数与几何的默契，我们下次再见！"
     }
   ],
-  "total_duration": 19.550000000000004,
-  "total_size": 312768
+  "total_duration": 36.34,
+  "total_size": 581184,
+  "failed": []
 }

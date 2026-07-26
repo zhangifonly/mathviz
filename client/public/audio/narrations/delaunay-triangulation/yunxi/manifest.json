@@ -92,8 +92,79 @@
       "duration": 1.95,
       "size": 31248,
       "text": "调整点的数量,看三角网如何从稀疏变得密实。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "circle",
+      "line_id": "def-3",
+      "filename": "circle-def-3.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/circle-def-3.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "增量算法正是靠它:插入新点时,凡外接圆包住它的三角形都要重连。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "angle",
+      "line_id": "ang-2",
+      "filename": "angle-ang-2.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/angle-ang-2.mp3",
+      "duration": 2.58,
+      "size": 41328,
+      "text": "换句话说,它极力避免又瘦又尖的三角形,让网格更接近正三角。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "dual",
+      "line_id": "dual-2",
+      "filename": "dual-dual-2.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/dual-dual-2.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "两者互为对偶:一个管三角连边,一个管领地划分,是同一枚硬币的两面。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/interaction-int-2.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "点开外接圆,亲眼验证每个圆内部都干干净净。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/summary-sum-1.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "Delaunay 三角剖分用空圆性质,连出一张最优的三角网。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/summary-sum-2.mp3",
+      "duration": 1.65,
+      "size": 26352,
+      "text": "它最大化最小角,又与沃罗诺伊图完美对偶。"
+    },
+    {
+      "script_id": "delaunay-triangulation",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/delaunay-triangulation/yunxi/summary-sum-3.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "一条简单的空圆法则,撑起了整个计算几何,我们下次再见!"
     }
   ],
-  "total_duration": 19.709999999999997,
-  "total_size": 315360
+  "total_duration": 35.18,
+  "total_size": 562752,
+  "failed": []
 }

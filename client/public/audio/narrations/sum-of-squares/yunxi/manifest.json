@@ -152,8 +152,39 @@
       "duration": 1.86,
       "size": 29808,
       "text": "一条简洁的定律，串起数论与几何，我们下次再见！"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/sum-of-squares/yunxi/intro-intro-3.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "究竟哪些数是两平方和？这背后藏着一条优雅的定律。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "circle",
+      "line_id": "cir-2",
+      "filename": "circle-cir-2.mp3",
+      "path": "audio/narrations/sum-of-squares/yunxi/circle-cir-2.mp3",
+      "duration": 1.75,
+      "size": 28080,
+      "text": "圆上每一个整数坐标点，都对应一种平方和的表示。"
+    },
+    {
+      "script_id": "sum-of-squares",
+      "section_id": "circle",
+      "line_id": "cir-3",
+      "filename": "circle-cir-3.mp3",
+      "path": "audio/narrations/sum-of-squares/yunxi/circle-cir-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "于是数论问题，变成了数一数圆上有几个格点。"
     }
   ],
-  "total_duration": 30.029999999999998,
-  "total_size": 480240
+  "total_duration": 35.72,
+  "total_size": 571248,
+  "failed": []
 }

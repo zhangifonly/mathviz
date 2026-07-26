@@ -92,8 +92,89 @@
       "duration": 2.65,
       "size": 42480,
       "text": "皮亚诺曲线用 3x3 自相似递归，让一维曲线填满二维正方形。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "continuous",
+      "line_id": "con-1",
+      "filename": "continuous-con-1.mp3",
+      "path": "audio/narrations/peano-curve/yunxi/continuous-con-1.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "曲线从头到尾一笔画成，中间从不间断，所以它是连续的。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "continuous",
+      "line_id": "con-2",
+      "filename": "continuous-con-2.mp3",
+      "path": "audio/narrations/peano-curve/yunxi/continuous-con-2.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "但它在每一点都急转弯，找不到任何一处的切线方向。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "continuous",
+      "line_id": "con-3",
+      "filename": "continuous-con-3.mp3",
+      "path": "audio/narrations/peano-curve/yunxi/continuous-con-3.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "连续却处处不可导，这正是它当年最惊人的地方。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "hilbert",
+      "line_id": "hil-1",
+      "filename": "hilbert-hil-1.mp3",
+      "path": "audio/narrations/peano-curve/yunxi/hilbert-hil-1.mp3",
+      "duration": 2.19,
+      "size": 34992,
+      "text": "几年后希尔伯特给出了更简洁的版本，基于二乘二的四宫格。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "hilbert",
+      "line_id": "hil-2",
+      "filename": "hilbert-hil-2.mp3",
+      "path": "audio/narrations/peano-curve/yunxi/hilbert-hil-2.mp3",
+      "duration": 2.39,
+      "size": 38304,
+      "text": "皮亚诺用九宫格、希尔伯特用四宫格，本质都是自相似的空间填充。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/peano-curve/yunxi/interaction-int-1.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "调高阶数，看曲线如何一步步逼近填满整个正方形。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/peano-curve/yunxi/summary-sum-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "它连续却处处不可导，改写了人们对维度和曲线的直觉。"
+    },
+    {
+      "script_id": "peano-curve",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/peano-curve/yunxi/summary-sum-3.mp3",
+      "duration": 1.92,
+      "size": 30672,
+      "text": "一条永不停歇的折线，铺满了整个平面，我们下次再见！"
     }
   ],
-  "total_duration": 20.369999999999997,
-  "total_size": 326016
+  "total_duration": 37.17,
+  "total_size": 594864,
+  "failed": []
 }

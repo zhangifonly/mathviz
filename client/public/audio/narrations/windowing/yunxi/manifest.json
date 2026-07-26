@@ -112,8 +112,69 @@
       "duration": 1.76,
       "size": 28224,
       "text": "窄主瓣与低旁瓣不可兼得，要按需求取舍。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "window",
+      "line_id": "win-1",
+      "filename": "window-win-1.mp3",
+      "path": "audio/narrations/windowing/yunxi/window-win-1.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "解决办法是给信号乘上一个两端渐渐归零的窗函数。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "window",
+      "line_id": "win-2",
+      "filename": "window-win-2.mp3",
+      "path": "audio/narrations/windowing/yunxi/window-win-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "汉宁、汉明、布莱克曼窗，都是让边缘平滑过渡的曲线。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "tradeoff",
+      "line_id": "trade-2",
+      "filename": "tradeoff-trade-2.mp3",
+      "path": "audio/narrations/windowing/yunxi/tradeoff-trade-2.mp3",
+      "duration": 2.1,
+      "size": 33552,
+      "text": "矩形窗主瓣最窄、分辨率高，但旁瓣高、泄漏重。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/windowing/yunxi/interaction-int-1.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "切换不同的窗，观察下方频谱旁瓣的高低变化。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/windowing/yunxi/interaction-int-2.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "从矩形到布莱克曼，看杂散能量一点点被压下去。"
+    },
+    {
+      "script_id": "windowing",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/windowing/yunxi/summary-sum-3.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "一扇合适的窗，让频谱更清晰，我们下次再见！"
     }
   ],
-  "total_duration": 21.15,
-  "total_size": 338400
+  "total_duration": 33.18,
+  "total_size": 530928,
+  "failed": []
 }

@@ -142,8 +142,39 @@
       "duration": 2.02,
       "size": 32400,
       "text": "简单的角度规则，铺出无尽的秩序之美，我们下次再见！"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "three",
+      "line_id": "thr-4",
+      "filename": "three-thr-4.mp3",
+      "path": "audio/narrations/tessellation/yunxi/three-thr-4.mp3",
+      "duration": 2.51,
+      "size": 40176,
+      "text": "正五边形内角108度，无论几个都凑不出360度，所以铺不满。"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "semi",
+      "line_id": "semi-2",
+      "filename": "semi-semi-2.mp3",
+      "path": "audio/narrations/tessellation/yunxi/semi-semi-2.mp3",
+      "duration": 1.66,
+      "size": 26496,
+      "text": "这类混合的规则密铺，被称为半正则镶嵌。"
+    },
+    {
+      "script_id": "tessellation",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/tessellation/yunxi/interaction-int-1.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "切换三角形、正方形、正六边形，看它们如何铺满整个画面。"
     }
   ],
-  "total_duration": 29.199999999999996,
-  "total_size": 467136
+  "total_duration": 35.92,
+  "total_size": 574560,
+  "failed": []
 }

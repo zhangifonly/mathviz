@@ -82,8 +82,99 @@
       "duration": 1.89,
       "size": 30240,
       "text": "一个二进制的小技巧，换来巨大的加速，我们下次再见！"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/fast-exponentiation/yunxi/intro-intro-1.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "假如要算 2 的 100 次方，你会怎么做？"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "naive",
+      "line_id": "naive-2",
+      "filename": "naive-naive-2.mp3",
+      "path": "audio/narrations/fast-exponentiation/yunxi/naive-naive-2.mp3",
+      "duration": 1.82,
+      "size": 29088,
+      "text": "指数一旦上百万，这种做法就慢得无法接受。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "naive",
+      "line_id": "naive-3",
+      "filename": "naive-naive-3.mp3",
+      "path": "audio/narrations/fast-exponentiation/yunxi/naive-naive-3.mp3",
+      "duration": 1.22,
+      "size": 19584,
+      "text": "我们需要一个增长慢得多的办法。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "binary",
+      "line_id": "bin-1",
+      "filename": "binary-bin-1.mp3",
+      "path": "audio/narrations/fast-exponentiation/yunxi/binary-bin-1.mp3",
+      "duration": 1.37,
+      "size": 21888,
+      "text": "关键在于把指数写成二进制。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "binary",
+      "line_id": "bin-2",
+      "filename": "binary-bin-2.mp3",
+      "path": "audio/narrations/fast-exponentiation/yunxi/binary-bin-2.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "比如 13 等于 1101，也就是 8 加 4 加 1。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "squaremul",
+      "line_id": "sq-2",
+      "filename": "squaremul-sq-2.mp3",
+      "path": "audio/narrations/fast-exponentiation/yunxi/squaremul-sq-2.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "遇到为 1 的位，就把当前底数乘进结果里。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/fast-exponentiation/yunxi/interaction-int-1.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "试着输入不同的底数和指数，看每一步的平方与累乘。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "naive",
+      "line_id": "naive-1",
+      "filename": "naive-naive-1.mp3",
+      "path": "audio/narrations/fast-exponentiation/yunxi/naive-naive-1.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "朴素做法是把底数连乘指数次，乘法次数随指数线性增长。"
+    },
+    {
+      "script_id": "fast-exponentiation",
+      "section_id": "squaremul",
+      "line_id": "sq-1",
+      "filename": "squaremul-sq-1.mp3",
+      "path": "audio/narrations/fast-exponentiation/yunxi/squaremul-sq-1.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "从低位到高位扫描，底数每一步都平方一次。"
     }
   ],
-  "total_duration": 14.23,
-  "total_size": 227520
+  "total_duration": 29.95,
+  "total_size": 479088,
+  "failed": []
 }

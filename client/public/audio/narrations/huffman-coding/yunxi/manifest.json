@@ -182,8 +182,19 @@
       "duration": 2.49,
       "size": 39888,
       "text": "它是 ZIP、JPEG 背后的老功臣，一个贪心创造的压缩魔法，我们下次再见！"
+    },
+    {
+      "script_id": "huffman-coding",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/huffman-coding/yunxi/intro-intro-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "一段文字存进电脑，每个字符都要用若干个 0 和 1 来表示。"
     }
   ],
-  "total_duration": 38.529999999999994,
-  "total_size": 616320
+  "total_duration": 40.68,
+  "total_size": 650736,
+  "failed": []
 }

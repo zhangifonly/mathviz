@@ -152,8 +152,29 @@
       "duration": 1.69,
       "size": 27072,
       "text": "高维之美，在投影中向我们显现，我们下次再见！"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/intro-intro-2.mp3",
+      "duration": 1.89,
+      "size": 30240,
+      "text": "霍普夫纤维化，就是一场四维空间中的优雅纠缠。"
+    },
+    {
+      "script_id": "hopf-fibration",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/hopf-fibration/yunxi/summary-sum-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "纤维互相环绕不交，是纤维丛最经典的非平凡例子。"
     }
   ],
-  "total_duration": 28.240000000000006,
-  "total_size": 451728
+  "total_duration": 32.12,
+  "total_size": 513792,
+  "failed": []
 }

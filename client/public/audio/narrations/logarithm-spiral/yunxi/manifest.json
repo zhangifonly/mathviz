@@ -112,8 +112,59 @@
       "duration": 2.1,
       "size": 33552,
       "text": "从贝壳到星系，它把生长的秘密写进螺线，我们下次再见！"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "equation",
+      "line_id": "eq-3",
+      "filename": "equation-eq-3.mp3",
+      "path": "audio/narrations/logarithm-spiral/yunxi/equation-eq-3.mp3",
+      "duration": 1.68,
+      "size": 26928,
+      "text": "常数 a 定起点大小，常数 b 控制螺线的松紧。"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "selfsimilar",
+      "line_id": "self-2",
+      "filename": "selfsimilar-self-2.mp3",
+      "path": "audio/narrations/logarithm-spiral/yunxi/selfsimilar-self-2.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "于是把螺线放大或缩小，看上去和原来一模一样，这就是自相似。"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "selfsimilar",
+      "line_id": "self-3",
+      "filename": "selfsimilar-self-3.mp3",
+      "path": "audio/narrations/logarithm-spiral/yunxi/selfsimilar-self-3.mp3",
+      "duration": 2.86,
+      "size": 45792,
+      "text": "相比之下，阿基米德螺线 r 等于 a 加 b theta，半径是线性增长，圈距均匀。"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/logarithm-spiral/yunxi/summary-sum-1.mp3",
+      "duration": 2.26,
+      "size": 36144,
+      "text": "对数螺线由 r 等于 a e 的 b theta 次方描述，半径指数增长。"
+    },
+    {
+      "script_id": "logarithm-spiral",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/logarithm-spiral/yunxi/summary-sum-2.mp3",
+      "duration": 2.35,
+      "size": 37584,
+      "text": "它处处等角，每转一圈按固定倍数放大，因而完美自相似。"
     }
   ],
-  "total_duration": 23.34,
-  "total_size": 373680
+  "total_duration": 34.84,
+  "total_size": 557712,
+  "failed": []
 }

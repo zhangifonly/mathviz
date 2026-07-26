@@ -142,8 +142,39 @@
       "duration": 1.84,
       "size": 29520,
       "text": "一道跳变，藏着九个百分点的秘密，我们下次再见！"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "overshoot",
+      "line_id": "ovs-3",
+      "filename": "overshoot-ovs-3.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/yunxi/overshoot-ovs-3.mp3",
+      "duration": 1.79,
+      "size": 28656,
+      "text": "这个顶峰，永远比方波的真实电平高出一截。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "gibbs",
+      "line_id": "gib-3",
+      "filename": "gibbs-gib-3.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/yunxi/gibbs-gib-3.mp3",
+      "duration": 2.5,
+      "size": 40032,
+      "text": "增加项数只让振铃越挤越窄，峰却压不下去，这就是吉布斯现象。"
+    },
+    {
+      "script_id": "gibbs-phenomenon",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/gibbs-phenomenon/yunxi/interaction-int-1.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "调大项数，看平坦段迅速变平，逼近越来越好。"
     }
   ],
-  "total_duration": 27.099999999999998,
-  "total_size": 433872
+  "total_duration": 33.41,
+  "total_size": 534816,
+  "failed": []
 }

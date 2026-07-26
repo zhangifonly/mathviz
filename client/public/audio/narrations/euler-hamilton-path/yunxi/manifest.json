@@ -72,8 +72,109 @@
       "duration": 1.89,
       "size": 30240,
       "text": "一笔画看边的度数，全偶成回路，两奇成路径。"
+    },
+    {
+      "script_id": "euler-hamilton-path",
+      "section_id": "euler",
+      "line_id": "def-1",
+      "filename": "euler-def-1.mp3",
+      "path": "audio/narrations/euler-hamilton-path/yunxi/euler-def-1.mp3",
+      "duration": 1.59,
+      "size": 25488,
+      "text": "一个顶点连出的边数，我们叫它的度数。"
+    },
+    {
+      "script_id": "euler-hamilton-path",
+      "section_id": "euler",
+      "line_id": "def-3",
+      "filename": "euler-def-3.mp3",
+      "path": "audio/narrations/euler-hamilton-path/yunxi/euler-def-3.mp3",
+      "duration": 2.63,
+      "size": 42048,
+      "text": "所以能一笔画走遍每条边并回到原点，全部顶点度数就必须是偶数。"
+    },
+    {
+      "script_id": "euler-hamilton-path",
+      "section_id": "condition",
+      "line_id": "cond-1",
+      "filename": "condition-cond-1.mp3",
+      "path": "audio/narrations/euler-hamilton-path/yunxi/condition-cond-1.mp3",
+      "duration": 2.38,
+      "size": 38160,
+      "text": "如果恰好有两个奇度顶点，就能画出一条欧拉路径，从一个奇点走到另一个。"
+    },
+    {
+      "script_id": "euler-hamilton-path",
+      "section_id": "condition",
+      "line_id": "cond-3",
+      "filename": "condition-cond-3.mp3",
+      "path": "audio/narrations/euler-hamilton-path/yunxi/condition-cond-3.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "满足条件时，用 Hierholzer 算法就能真正拼出这条一笔画路线。"
+    },
+    {
+      "script_id": "euler-hamilton-path",
+      "section_id": "hamilton",
+      "line_id": "ham-1",
+      "filename": "hamilton-ham-1.mp3",
+      "path": "audio/narrations/euler-hamilton-path/yunxi/hamilton-ham-1.mp3",
+      "duration": 2.12,
+      "size": 33840,
+      "text": "换个问题：能不能走遍每个顶点恰好一次再回到起点？"
+    },
+    {
+      "script_id": "euler-hamilton-path",
+      "section_id": "hamilton",
+      "line_id": "ham-2",
+      "filename": "hamilton-ham-2.mp3",
+      "path": "audio/narrations/euler-hamilton-path/yunxi/hamilton-ham-2.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "这叫哈密顿回路，看似相似，却出奇地难。"
+    },
+    {
+      "script_id": "euler-hamilton-path",
+      "section_id": "hamilton",
+      "line_id": "ham-3",
+      "filename": "hamilton-ham-3.mp3",
+      "path": "audio/narrations/euler-hamilton-path/yunxi/hamilton-ham-3.mp3",
+      "duration": 2.29,
+      "size": 36720,
+      "text": "欧拉只需数度数，哈密顿至今没有简单判据，只能小图暴力搜索。"
+    },
+    {
+      "script_id": "euler-hamilton-path",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/euler-hamilton-path/yunxi/interaction-int-1.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "选一个图形，看它属于欧拉回路、欧拉路径还是无法一笔画。"
+    },
+    {
+      "script_id": "euler-hamilton-path",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/euler-hamilton-path/yunxi/summary-sum-2.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "哈密顿走遍顶点，是图论中著名的难题。"
+    },
+    {
+      "script_id": "euler-hamilton-path",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/euler-hamilton-path/yunxi/summary-sum-3.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "一座桥引出一门学问，这就是数学的魅力，我们下次再见！"
     }
   ],
-  "total_duration": 14.929999999999998,
-  "total_size": 239040
+  "total_duration": 35.89,
+  "total_size": 574560,
+  "failed": []
 }

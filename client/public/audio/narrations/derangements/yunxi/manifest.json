@@ -162,8 +162,19 @@
       "duration": 2.08,
       "size": 33264,
       "text": "一个装错信封的小故事，藏着自然常数 e，我们下次再见！"
+    },
+    {
+      "script_id": "derangements",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/derangements/yunxi/summary-sum-2.mp3",
+      "duration": 4.57,
+      "size": 73152,
+      "text": "它由递推 D(n)=(n-1)(D(n-1)+D(n-2)) 生成，比值趋于 1/e。"
     }
   ],
-  "total_duration": 38.63,
-  "total_size": 618192
+  "total_duration": 43.2,
+  "total_size": 691344,
+  "failed": []
 }

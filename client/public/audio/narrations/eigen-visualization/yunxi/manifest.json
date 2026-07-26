@@ -162,8 +162,19 @@
       "duration": 2.23,
       "size": 35712,
       "text": "看清了特征结构，就看清了一个线性变换的灵魂，我们下次再见！"
+    },
+    {
+      "script_id": "eigen-visualization",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/eigen-visualization/yunxi/interaction-int-1.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "切换到对称矩阵，你会发现它的两条特征向量恰好相互垂直。"
     }
   ],
-  "total_duration": 42.319999999999986,
-  "total_size": 676944
+  "total_duration": 44.87,
+  "total_size": 717696,
+  "failed": []
 }

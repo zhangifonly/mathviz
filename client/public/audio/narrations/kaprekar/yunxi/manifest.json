@@ -82,8 +82,89 @@
       "duration": 1.96,
       "size": 31392,
       "text": "数学的惊喜常常藏在最朴素的规则里，我们下次再见！"
+    },
+    {
+      "script_id": "kaprekar",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/kaprekar/yunxi/intro-intro-1.mp3",
+      "duration": 1.98,
+      "size": 31680,
+      "text": "有一个数字，藏着让人吃惊的魔力，它叫 6174。"
+    },
+    {
+      "script_id": "kaprekar",
+      "section_id": "rule",
+      "line_id": "rule-3",
+      "filename": "rule-rule-3.mp3",
+      "path": "audio/narrations/kaprekar/yunxi/rule-rule-3.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "用最大数减去最小数，就得到下一个四位数。"
+    },
+    {
+      "script_id": "kaprekar",
+      "section_id": "converge",
+      "line_id": "conv-1",
+      "filename": "converge-conv-1.mp3",
+      "path": "audio/narrations/kaprekar/yunxi/converge-conv-1.mp3",
+      "duration": 1.86,
+      "size": 29808,
+      "text": "拿这个结果再做一次重排相减，然后一次又一次。"
+    },
+    {
+      "script_id": "kaprekar",
+      "section_id": "converge",
+      "line_id": "conv-3",
+      "filename": "converge-conv-3.mp3",
+      "path": "audio/narrations/kaprekar/yunxi/converge-conv-3.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "而且最多只要七步，绝不会更多。"
+    },
+    {
+      "script_id": "kaprekar",
+      "section_id": "constant",
+      "line_id": "const-1",
+      "filename": "constant-const-1.mp3",
+      "path": "audio/narrations/kaprekar/yunxi/constant-const-1.mp3",
+      "duration": 3.09,
+      "size": 49392,
+      "text": "到了 6174，再算一次：7641 减 1467，结果还是 6174。"
+    },
+    {
+      "script_id": "kaprekar",
+      "section_id": "constant",
+      "line_id": "const-2",
+      "filename": "constant-const-2.mp3",
+      "path": "audio/narrations/kaprekar/yunxi/constant-const-2.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "它把自己牢牢锁住，这就是印度数学家卡普雷卡发现的常数。"
+    },
+    {
+      "script_id": "kaprekar",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/kaprekar/yunxi/interaction-int-2.mp3",
+      "duration": 1.72,
+      "size": 27504,
+      "text": "试试不同的数，比较谁走得快，谁绕得远。"
+    },
+    {
+      "script_id": "kaprekar",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/kaprekar/yunxi/summary-sum-2.mp3",
+      "duration": 1.75,
+      "size": 27936,
+      "text": "最多七步收敛，是隐藏在数字里的奇妙秩序。"
     }
   ],
-  "total_duration": 16.27,
-  "total_size": 260496
+  "total_duration": 31.96,
+  "total_size": 511344,
+  "failed": []
 }

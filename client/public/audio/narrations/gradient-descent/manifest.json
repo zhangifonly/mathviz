@@ -2,6 +2,10 @@
   "script_id": "gradient-descent",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "gradient-descent",
@@ -245,9 +249,5 @@
     }
   ],
   "total_duration": 44.87,
-  "total_size": 718128,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_size": 718128
 }

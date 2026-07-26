@@ -92,8 +92,89 @@
       "duration": 2.16,
       "size": 34560,
       "text": "外心配外接圆，内心配内切圆，而三心又共处欧拉线。"
+    },
+    {
+      "script_id": "triangle-centers",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/triangle-centers/yunxi/intro-intro-1.mp3",
+      "duration": 1.52,
+      "size": 24336,
+      "text": "一个普通的三角形，藏着好几个特别的点。"
+    },
+    {
+      "script_id": "triangle-centers",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/triangle-centers/yunxi/intro-intro-3.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "今天我们来认识其中最经典的四个：重心、外心、内心、垂心。"
+    },
+    {
+      "script_id": "triangle-centers",
+      "section_id": "centroid-circum",
+      "line_id": "cc-1",
+      "filename": "centroid-circum-cc-1.mp3",
+      "path": "audio/narrations/triangle-centers/yunxi/centroid-circum-cc-1.mp3",
+      "duration": 2.09,
+      "size": 33408,
+      "text": "重心是三条中线的交点，正好是三个顶点坐标的平均值。"
+    },
+    {
+      "script_id": "triangle-centers",
+      "section_id": "centroid-circum",
+      "line_id": "cc-3",
+      "filename": "centroid-circum-cc-3.mp3",
+      "path": "audio/narrations/triangle-centers/yunxi/centroid-circum-cc-3.mp3",
+      "duration": 1.95,
+      "size": 31248,
+      "text": "外心是三条边垂直平分线的交点，到三个顶点距离相等。"
+    },
+    {
+      "script_id": "triangle-centers",
+      "section_id": "centroid-circum",
+      "line_id": "cc-4",
+      "filename": "centroid-circum-cc-4.mp3",
+      "path": "audio/narrations/triangle-centers/yunxi/centroid-circum-cc-4.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "以外心为圆心，就能画出穿过三个顶点的外接圆。"
+    },
+    {
+      "script_id": "triangle-centers",
+      "section_id": "euler",
+      "line_id": "eu-1",
+      "filename": "euler-eu-1.mp3",
+      "path": "audio/narrations/triangle-centers/yunxi/euler-eu-1.mp3",
+      "duration": 2.57,
+      "size": 41184,
+      "text": "奇妙的是，重心、外心、垂心这三个点，总是落在同一条直线上。"
+    },
+    {
+      "script_id": "triangle-centers",
+      "section_id": "euler",
+      "line_id": "eu-2",
+      "filename": "euler-eu-2.mp3",
+      "path": "audio/narrations/triangle-centers/yunxi/euler-eu-2.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "这条线叫欧拉线，而且重心恰好把外心到垂心的线段分成一比二。"
+    },
+    {
+      "script_id": "triangle-centers",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/triangle-centers/yunxi/summary-sum-3.mp3",
+      "duration": 1.4,
+      "size": 22464,
+      "text": "小小三角形里的大秩序，我们下次再见！"
     }
   ],
-  "total_duration": 19.889999999999997,
-  "total_size": 318240
+  "total_duration": 36.6,
+  "total_size": 585792,
+  "failed": []
 }

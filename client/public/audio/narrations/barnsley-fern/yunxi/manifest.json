@@ -152,8 +152,29 @@
       "duration": 1.51,
       "size": 24192,
       "text": "这就是迭代函数系统的魔力，我们下次再见!"
+    },
+    {
+      "script_id": "barnsley-fern",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/barnsley-fern/yunxi/interaction-int-2.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "单独高亮某个变换，就能看清它究竟负责哪一部分。"
+    },
+    {
+      "script_id": "barnsley-fern",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/barnsley-fern/yunxi/summary-sum-1.mp3",
+      "duration": 1.77,
+      "size": 28368,
+      "text": "四个仿射变换，加上概率选择，反复迭代。"
     }
   ],
-  "total_duration": 28.67,
-  "total_size": 458784
+  "total_duration": 32.37,
+  "total_size": 517968,
+  "failed": []
 }

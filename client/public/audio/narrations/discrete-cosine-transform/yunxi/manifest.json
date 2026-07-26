@@ -102,8 +102,79 @@
       "duration": 1.89,
       "size": 30240,
       "text": "一组余弦波，撑起了整个数字图像世界，我们下次再见！"
+    },
+    {
+      "script_id": "discrete-cosine-transform",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/discrete-cosine-transform/yunxi/intro-intro-1.mp3",
+      "duration": 2.17,
+      "size": 34704,
+      "text": "一张照片动辄几百万像素，为什么存成文件却小得多？"
+    },
+    {
+      "script_id": "discrete-cosine-transform",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/discrete-cosine-transform/yunxi/intro-intro-3.mp3",
+      "duration": 1.51,
+      "size": 24192,
+      "text": "它是 JPEG 图像压缩的数学核心。"
+    },
+    {
+      "script_id": "discrete-cosine-transform",
+      "section_id": "basis",
+      "line_id": "basis-1",
+      "filename": "basis-basis-1.mp3",
+      "path": "audio/narrations/discrete-cosine-transform/yunxi/basis-basis-1.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "任何一段信号，都可以写成一系列不同频率余弦波的叠加。"
+    },
+    {
+      "script_id": "discrete-cosine-transform",
+      "section_id": "basis",
+      "line_id": "basis-2",
+      "filename": "basis-basis-2.mp3",
+      "path": "audio/narrations/discrete-cosine-transform/yunxi/basis-basis-2.mp3",
+      "duration": 1.58,
+      "size": 25344,
+      "text": "低频余弦缓慢起伏，勾勒信号的大轮廓。"
+    },
+    {
+      "script_id": "discrete-cosine-transform",
+      "section_id": "coeff",
+      "line_id": "coeff-2",
+      "filename": "coeff-coeff-2.mp3",
+      "path": "audio/narrations/discrete-cosine-transform/yunxi/coeff-coeff-2.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "对平滑信号来说，能量几乎全都集中在最左侧的低频系数上。"
+    },
+    {
+      "script_id": "discrete-cosine-transform",
+      "section_id": "coeff",
+      "line_id": "coeff-3",
+      "filename": "coeff-coeff-3.mp3",
+      "path": "audio/narrations/discrete-cosine-transform/yunxi/coeff-coeff-3.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "右侧那些高频系数往往很小，接近于零。"
+    },
+    {
+      "script_id": "discrete-cosine-transform",
+      "section_id": "compress",
+      "line_id": "comp-1",
+      "filename": "compress-comp-1.mp3",
+      "path": "audio/narrations/discrete-cosine-transform/yunxi/compress-comp-1.mp3",
+      "duration": 2.11,
+      "size": 33696,
+      "text": "既然高频系数很小，我们干脆把它们丢掉，只留前几个。"
     }
   ],
-  "total_duration": 19.46,
-  "total_size": 311184
+  "total_duration": 32.56,
+  "total_size": 520704,
+  "failed": []
 }

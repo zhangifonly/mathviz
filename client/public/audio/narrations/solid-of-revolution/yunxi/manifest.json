@@ -152,8 +152,29 @@
       "duration": 2.26,
       "size": 36144,
       "text": "一样的立体，两种视角，这就是微积分的美妙，我们下次再见！"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/solid-of-revolution/yunxi/intro-intro-3.mp3",
+      "duration": 1.57,
+      "size": 25200,
+      "text": "问题来了：这个立体的体积，该怎么算？"
+    },
+    {
+      "script_id": "solid-of-revolution",
+      "section_id": "integral",
+      "line_id": "int-1",
+      "filename": "integral-int-1.mp3",
+      "path": "audio/narrations/solid-of-revolution/yunxi/integral-int-1.mp3",
+      "duration": 2.28,
+      "size": 36432,
+      "text": "把所有圆盘的体积加起来，让厚度趋于零，求和就变成了积分。"
     }
   ],
-  "total_duration": 31.259999999999998,
-  "total_size": 500256
+  "total_duration": 35.11,
+  "total_size": 561888,
+  "failed": []
 }

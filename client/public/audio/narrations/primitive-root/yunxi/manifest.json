@@ -142,8 +142,29 @@
       "duration": 1.91,
       "size": 30528,
       "text": "它连接着费马小定理、离散对数与现代密码学。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/primitive-root/yunxi/summary-sum-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "原根是模 p 乘法循环群的生成元，幂能遍历所有非零余数。"
+    },
+    {
+      "script_id": "primitive-root",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/primitive-root/yunxi/summary-sum-3.mp3",
+      "duration": 2.03,
+      "size": 32544,
+      "text": "小小的一圈余数，藏着深邃的数论之美，我们下次再见！"
     }
   ],
-  "total_duration": 29.790000000000003,
-  "total_size": 476928
+  "total_duration": 33.89,
+  "total_size": 542592,
+  "failed": []
 }

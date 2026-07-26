@@ -172,8 +172,19 @@
       "duration": 1.82,
       "size": 29088,
       "text": "一个行列式的比值，藏着方程的答案，我们下次再见！"
+    },
+    {
+      "script_id": "cramers-rule",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/cramers-rule/yunxi/interaction-int-1.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "切换不同的方程组，看两条直线的交点如何移动。"
     }
   ],
-  "total_duration": 33.22,
-  "total_size": 531792
+  "total_duration": 35.13,
+  "total_size": 562320,
+  "failed": []
 }

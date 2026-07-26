@@ -152,8 +152,29 @@
       "duration": 1.75,
       "size": 28080,
       "text": "一刀刀轴对齐的切分，拼出可解释的分类区域。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/decision-tree/yunxi/interaction-int-2.mp3",
+      "duration": 1.54,
+      "size": 24624,
+      "text": "太深会紧贴每个点，那就是过拟合的样子。"
+    },
+    {
+      "script_id": "decision-tree",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/decision-tree/yunxi/summary-sum-3.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "简单的提问，串成聪明的判断，我们下次再见！"
     }
   ],
-  "total_duration": 26.81,
-  "total_size": 428832
+  "total_duration": 30.13,
+  "total_size": 481968,
+  "failed": []
 }

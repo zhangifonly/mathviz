@@ -162,8 +162,19 @@
       "duration": 1.97,
       "size": 31536,
       "text": "简单规则层层堆叠，就有了智能的雏形，我们下次再见！"
+    },
+    {
+      "script_id": "neural-network-forward",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/neural-network-forward/yunxi/summary-sum-1.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "神经元做加权求和加偏置，再过激活函数。"
     }
   ],
-  "total_duration": 30.119999999999997,
-  "total_size": 482112
+  "total_duration": 31.9,
+  "total_size": 510624,
+  "failed": []
 }

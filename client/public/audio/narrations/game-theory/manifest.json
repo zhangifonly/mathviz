@@ -2,6 +2,10 @@
   "script_id": "game-theory",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "game-theory",
@@ -244,10 +248,6 @@
       "text": "希望这次实验能帮助你更好地理解策略思维。"
     }
   ],
-  "total_duration": 46.25000000000001,
-  "total_size": 740304,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_duration": 46.25,
+  "total_size": 740304
 }

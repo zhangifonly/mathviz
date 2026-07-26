@@ -2,6 +2,10 @@
   "script_id": "complex",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "complex",
@@ -374,10 +378,6 @@
       "text": "希望通过这个实验，你对复数有了更直观的理解！"
     }
   ],
-  "total_duration": 72.83000000000001,
-  "total_size": 1165536,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_duration": 72.83,
+  "total_size": 1165536
 }

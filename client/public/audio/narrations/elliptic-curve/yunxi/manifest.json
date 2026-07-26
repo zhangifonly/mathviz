@@ -142,8 +142,49 @@
       "duration": 2.11,
       "size": 33696,
       "text": "这套优雅的几何规则守护着今天的信息安全，我们下次再见！"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "infinity",
+      "line_id": "inf-3",
+      "filename": "infinity-inf-3.mp3",
+      "path": "audio/narrations/elliptic-curve/yunxi/infinity-inf-3.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "O 就是这个群的单位元，任何点加 O 还是它自己。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/elliptic-curve/yunxi/interaction-int-1.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "拖动滑块选择 P 和 Q 的位置，看割线如何找出第三点。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/elliptic-curve/yunxi/interaction-int-2.mp3",
+      "duration": 1.84,
+      "size": 29376,
+      "text": "观察绿色的 P 加 Q，它始终乖乖落在曲线上。"
+    },
+    {
+      "script_id": "elliptic-curve",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/elliptic-curve/yunxi/summary-sum-1.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "椭圆曲线上的点，用弦切法定义加法，构成一个交换群。"
     }
   ],
-  "total_duration": 26.019999999999996,
-  "total_size": 416448
+  "total_duration": 34.04,
+  "total_size": 544752,
+  "failed": []
 }

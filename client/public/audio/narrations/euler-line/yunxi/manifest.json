@@ -52,8 +52,129 @@
       "duration": 2.14,
       "size": 34272,
       "text": "简单三角形里的深刻秩序，正是数学之美，我们下次再见！"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/euler-line/yunxi/intro-intro-1.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "一个普通的三角形里，藏着好几个特别的中心。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "centers",
+      "line_id": "def-2",
+      "filename": "centers-def-2.mp3",
+      "path": "audio/narrations/euler-line/yunxi/centers-def-2.mp3",
+      "duration": 1.85,
+      "size": 29664,
+      "text": "外心是三边垂直平分线的交点，到三个顶点距离相等。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "centers",
+      "line_id": "def-3",
+      "filename": "centers-def-3.mp3",
+      "path": "audio/narrations/euler-line/yunxi/centers-def-3.mp3",
+      "duration": 1.94,
+      "size": 30960,
+      "text": "垂心是三条高线的交点，来自顶点向对边作垂线。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "collinear",
+      "line_id": "col-1",
+      "filename": "collinear-col-1.mp3",
+      "path": "audio/narrations/euler-line/yunxi/collinear-col-1.mp3",
+      "duration": 2.67,
+      "size": 42768,
+      "text": "把外心、重心、垂心同时画出来，你会发现它们排成一条直线。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "ratio",
+      "line_id": "rat-3",
+      "filename": "ratio-rat-3.mp3",
+      "path": "audio/narrations/euler-line/yunxi/ratio-rat-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "外心到重心是一份，重心到垂心正好是两份。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "interaction",
+      "line_id": "int-2",
+      "filename": "interaction-int-2.mp3",
+      "path": "audio/narrations/euler-line/yunxi/interaction-int-2.mp3",
+      "duration": 2.41,
+      "size": 38592,
+      "text": "试着靠近等边三角形，三心会重合，欧拉线随之退化消失。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/euler-line/yunxi/summary-sum-1.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "重心、外心、垂心，三个各自独立的中心竟然共线。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/euler-line/yunxi/summary-sum-2.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "这条欧拉线上，重心把外心到垂心分成整齐的一比二。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/euler-line/yunxi/intro-intro-2.mp3",
+      "duration": 2.12,
+      "size": 33984,
+      "text": "重心、外心、垂心，它们各自由完全不同的方式确定。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/euler-line/yunxi/intro-intro-3.mp3",
+      "duration": 1.63,
+      "size": 26064,
+      "text": "可就在两百多年前，欧拉发现了一个惊人的秘密。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "collinear",
+      "line_id": "col-2",
+      "filename": "collinear-col-2.mp3",
+      "path": "audio/narrations/euler-line/yunxi/collinear-col-2.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "这条直线就叫欧拉线，对几乎所有三角形都成立。"
+    },
+    {
+      "script_id": "euler-line",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/euler-line/yunxi/interaction-int-1.mp3",
+      "duration": 1.88,
+      "size": 30096,
+      "text": "切换不同的三角形，欧拉线始终穿过这三颗心。"
     }
   ],
-  "total_duration": 9.59,
-  "total_size": 153504
+  "total_duration": 33.65,
+  "total_size": 538848,
+  "failed": []
 }

@@ -162,8 +162,19 @@
       "duration": 1.85,
       "size": 29664,
       "text": "从字体到曲面，处处都有它的身影，我们下次再见！"
+    },
+    {
+      "script_id": "b-spline",
+      "section_id": "compare",
+      "line_id": "cmp-3",
+      "filename": "compare-cmp-3.mp3",
+      "path": "audio/narrations/b-spline/yunxi/compare-cmp-3.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "这让 B 样条在处理很多控制点的复杂形状时得心应手。"
     }
   ],
-  "total_duration": 33.79,
-  "total_size": 540576
+  "total_duration": 35.73,
+  "total_size": 571680,
+  "failed": []
 }

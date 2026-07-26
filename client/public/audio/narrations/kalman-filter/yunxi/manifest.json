@@ -152,8 +152,29 @@
       "duration": 2.11,
       "size": 33696,
       "text": "从导航到雷达再到金融，它无处不在，我们下次再见！"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/intro-intro-3.mp3",
+      "duration": 2.18,
+      "size": 34848,
+      "text": "卡尔曼滤波能从这团噪声里，估计出一条平滑又准确的轨迹。"
+    },
+    {
+      "script_id": "kalman-filter",
+      "section_id": "predict",
+      "line_id": "predict-1",
+      "filename": "predict-predict-1.mp3",
+      "path": "audio/narrations/kalman-filter/yunxi/predict-predict-1.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "滤波器先根据上一时刻的估计，预测这一时刻物体会在哪里。"
     }
   ],
-  "total_duration": 31.740000000000006,
-  "total_size": 507744
+  "total_duration": 36.0,
+  "total_size": 575856,
+  "failed": []
 }

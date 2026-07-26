@@ -142,8 +142,39 @@
       "duration": 2.17,
       "size": 34704,
       "text": "一个简单的链接投票，撑起了整个搜索时代，我们下次再见！"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/pagerank/yunxi/intro-intro-3.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "它的核心想法很朴素：被越多重要网页链接的页面，本身就越重要。"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "surfer",
+      "line_id": "def-2",
+      "filename": "surfer-def-2.mp3",
+      "path": "audio/narrations/pagerank/yunxi/surfer-def-2.mp3",
+      "duration": 1.76,
+      "size": 28224,
+      "text": "他停留在某个网页的概率，就是这个网页的 PageRank 值。"
+    },
+    {
+      "script_id": "pagerank",
+      "section_id": "iterate",
+      "line_id": "iter-2",
+      "filename": "iterate-iter-2.mp3",
+      "path": "audio/narrations/pagerank/yunxi/iterate-iter-2.mp3",
+      "duration": 1.84,
+      "size": 29520,
+      "text": "每迭代一步，权重就沿着链接重新分配一次。"
     }
   ],
-  "total_duration": 28.11,
-  "total_size": 449856
+  "total_duration": 34.01,
+  "total_size": 544464,
+  "failed": []
 }

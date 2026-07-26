@@ -72,8 +72,109 @@
       "duration": 2.15,
       "size": 34416,
       "text": "记住这条对称的镜子，反函数就不再神秘，我们下次再见！"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/inverse-function/yunxi/intro-intro-3.mp3",
+      "duration": 1.74,
+      "size": 27792,
+      "text": "这个把输出送回输入的过程，就是反函数在做的事。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "define",
+      "line_id": "def-1",
+      "filename": "define-def-1.mp3",
+      "path": "audio/narrations/inverse-function/yunxi/define-def-1.mp3",
+      "duration": 2.86,
+      "size": 45792,
+      "text": "如果先用 f 把 x 变成 y，再用 g 把 y 变回 x，我们就说 g 是 f 的反函数。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "define",
+      "line_id": "def-2",
+      "filename": "define-def-2.mp3",
+      "path": "audio/narrations/inverse-function/yunxi/define-def-2.mp3",
+      "duration": 2.91,
+      "size": 46512,
+      "text": "一去一回，恰好回到原点，也就是 g 作用在 f(x) 上又得到 x。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "symmetry",
+      "line_id": "sym-1",
+      "filename": "symmetry-sym-1.mp3",
+      "path": "audio/narrations/inverse-function/yunxi/symmetry-sym-1.mp3",
+      "duration": 1.9,
+      "size": 30384,
+      "text": "交换输入输出，在图象上就是交换横纵坐标。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "symmetry",
+      "line_id": "sym-2",
+      "filename": "symmetry-sym-2.mp3",
+      "path": "audio/narrations/inverse-function/yunxi/symmetry-sym-2.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "点 (a, b) 在原函数上，那么 (b, a) 一定在反函数上。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "symmetry",
+      "line_id": "sym-3",
+      "filename": "symmetry-sym-3.mp3",
+      "path": "audio/narrations/inverse-function/yunxi/symmetry-sym-3.mp3",
+      "duration": 2.59,
+      "size": 41472,
+      "text": "而 (a, b) 和 (b, a) 恰好关于直线 y=x 互为镜像。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "monotone",
+      "line_id": "mono-1",
+      "filename": "monotone-mono-1.mp3",
+      "path": "audio/narrations/inverse-function/yunxi/monotone-mono-1.mp3",
+      "duration": 2.06,
+      "size": 32976,
+      "text": "要能从输出唯一找回输入，每个输出只能对应一个输入。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "monotone",
+      "line_id": "mono-2",
+      "filename": "monotone-mono-2.mp3",
+      "path": "audio/narrations/inverse-function/yunxi/monotone-mono-2.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "用水平线检验：一条横线只与图象相交一次，函数才可逆。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "monotone",
+      "line_id": "mono-3",
+      "filename": "monotone-mono-3.mp3",
+      "path": "audio/narrations/inverse-function/yunxi/monotone-mono-3.mp3",
+      "duration": 1.87,
+      "size": 29952,
+      "text": "所以单调递增或递减的函数，才拥有反函数。"
+    },
+    {
+      "script_id": "inverse-function",
+      "section_id": "interaction",
+      "line_id": "int-1",
+      "filename": "interaction-int-1.mp3",
+      "path": "audio/narrations/inverse-function/yunxi/interaction-int-1.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "切换不同的函数，观察它和反函数如何隔着 y=x 彼此镜像。"
     }
   ],
-  "total_duration": 14.72,
-  "total_size": 235584
+  "total_duration": 38.04,
+  "total_size": 608688,
+  "failed": []
 }

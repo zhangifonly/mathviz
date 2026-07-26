@@ -2,6 +2,10 @@
   "script_id": "conic-sections",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "conic-sections",
@@ -365,9 +369,5 @@
     }
   ],
   "total_duration": 70.95,
-  "total_size": 1135008,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_size": 1135008
 }

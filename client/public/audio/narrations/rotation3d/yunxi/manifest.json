@@ -142,8 +142,39 @@
       "duration": 1.68,
       "size": 26928,
       "text": "旋转的世界既严谨又有趣，我们下次再见！"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/rotation3d/yunxi/intro-intro-3.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "要精确描述这种旋转，就得请出三维旋转矩阵。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "axis",
+      "line_id": "def-1",
+      "filename": "axis-def-1.mp3",
+      "path": "audio/narrations/rotation3d/yunxi/axis-def-1.mp3",
+      "duration": 1.6,
+      "size": 25632,
+      "text": "最基本的旋转，是绕着某一根坐标轴转动。"
+    },
+    {
+      "script_id": "rotation3d",
+      "section_id": "axis",
+      "line_id": "def-2",
+      "filename": "axis-def-2.mp3",
+      "path": "audio/narrations/rotation3d/yunxi/axis-def-2.mp3",
+      "duration": 2.97,
+      "size": 47520,
+      "text": "绕 X 轴、绕 Y 轴、绕 Z 轴，各有一个三阶矩阵，只由正弦和余弦拼成。"
     }
   ],
-  "total_duration": 26.1,
-  "total_size": 417456
+  "total_duration": 32.58,
+  "total_size": 521136,
+  "failed": []
 }

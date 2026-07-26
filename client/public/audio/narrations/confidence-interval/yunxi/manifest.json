@@ -122,8 +122,49 @@
       "duration": 2.02,
       "size": 32256,
       "text": "读懂这份分寸感，数据才真正会说话，我们下次再见！"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "meaning",
+      "line_id": "mean-2",
+      "filename": "meaning-mean-2.mp3",
+      "path": "audio/narrations/confidence-interval/yunxi/meaning-mean-2.mp3",
+      "duration": 2.57,
+      "size": 41184,
+      "text": "所谓95%置信，不是说真值有95%概率落在这一个区间里。"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "meaning",
+      "line_id": "mean-3",
+      "filename": "meaning-mean-3.mp3",
+      "path": "audio/narrations/confidence-interval/yunxi/meaning-mean-3.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "而是说这套方法反复用下去，约95%的区间会罩住真值。"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "coverage",
+      "line_id": "cov-1",
+      "filename": "coverage-cov-1.mp3",
+      "path": "audio/narrations/confidence-interval/yunxi/coverage-cov-1.mp3",
+      "duration": 2.25,
+      "size": 36000,
+      "text": "看这些横条，绿色的成功盖住了真值竖线，红色的错过了。"
+    },
+    {
+      "script_id": "confidence-interval",
+      "section_id": "meaning",
+      "line_id": "mean-1",
+      "filename": "meaning-mean-1.mp3",
+      "path": "audio/narrations/confidence-interval/yunxi/meaning-mean-1.mp3",
+      "duration": 2.29,
+      "size": 36576,
+      "text": "注意，真值是固定的，随机的其实是我们每次算出的区间。"
     }
   ],
-  "total_duration": 23.06,
-  "total_size": 368928
+  "total_duration": 32.65,
+  "total_size": 522288,
+  "failed": []
 }

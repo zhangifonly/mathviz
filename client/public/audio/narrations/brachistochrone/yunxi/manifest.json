@@ -152,8 +152,29 @@
       "duration": 1.46,
       "size": 23328,
       "text": "最速降线告诉我们：最短不等于最快。"
+    },
+    {
+      "script_id": "brachistochrone",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/brachistochrone/yunxi/summary-sum-3.mp3",
+      "duration": 1.91,
+      "size": 30528,
+      "text": "数学之美，常藏在反直觉的答案里，我们下次再见！"
+    },
+    {
+      "script_id": "brachistochrone",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/brachistochrone/yunxi/summary-sum-2.mp3",
+      "duration": 2.02,
+      "size": 32256,
+      "text": "一条摆线，串起了牛顿、伯努利与变分法的诞生。"
     }
   ],
-  "total_duration": 27.460000000000004,
-  "total_size": 439632
+  "total_duration": 31.39,
+  "total_size": 502416,
+  "failed": []
 }

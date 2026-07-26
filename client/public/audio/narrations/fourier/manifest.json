@@ -2,6 +2,10 @@
   "script_id": "fourier",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "fourier",
@@ -424,10 +428,6 @@
       "text": "希望通过这个实验，你对傅里叶变换有了更直观的理解。继续探索其他实验，发现更多数学之美！"
     }
   ],
-  "total_duration": 103.46000000000001,
-  "total_size": 1655424,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_duration": 105.76,
+  "total_size": 1692288
 }

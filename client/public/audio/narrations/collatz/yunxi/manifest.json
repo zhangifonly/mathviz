@@ -112,8 +112,59 @@
       "duration": 1.75,
       "size": 28080,
       "text": "简单的规则藏着最深的谜题，我们下次再见！"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/collatz/yunxi/intro-intro-1.mp3",
+      "duration": 1.67,
+      "size": 26784,
+      "text": "有一个游戏，规则简单到小学生都会玩。"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/collatz/yunxi/intro-intro-3.mp3",
+      "duration": 2.15,
+      "size": 34416,
+      "text": "奇怪的是，无论从哪里出发，最后似乎都会掉进同一个终点。"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "rule",
+      "line_id": "rule-1",
+      "filename": "rule-rule-1.mp3",
+      "path": "audio/narrations/collatz/yunxi/rule-rule-1.mp3",
+      "duration": 1.3,
+      "size": 20880,
+      "text": "如果这个数是偶数，就把它除以 2。"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "rule",
+      "line_id": "rule-3",
+      "filename": "rule-rule-3.mp3",
+      "path": "audio/narrations/collatz/yunxi/rule-rule-3.mp3",
+      "duration": 1.83,
+      "size": 29232,
+      "text": "得到新数后，重复判断奇偶，再走对应的那条路。"
+    },
+    {
+      "script_id": "collatz",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/collatz/yunxi/summary-sum-2.mp3",
+      "duration": 1.94,
+      "size": 31104,
+      "text": "轨迹却像冰雹般难以预测，是否总归 1 仍是悬案。"
     }
   ],
-  "total_duration": 19.54,
-  "total_size": 312912
+  "total_duration": 28.43,
+  "total_size": 455328,
+  "failed": []
 }

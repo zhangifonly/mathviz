@@ -2,6 +2,10 @@
   "script_id": "interpolation",
   "voice": "zh-CN-YunxiNeural",
   "voice_key": "yunxi",
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ],
   "files": [
     {
       "script_id": "interpolation",
@@ -244,10 +248,6 @@
       "text": "希望这次实验能帮助你理解数据拟合的数学原理。"
     }
   ],
-  "total_duration": 41.62999999999999,
-  "total_size": 665712,
-  "availableVoices": [
-    "yunxi",
-    "xiaoxiao"
-  ]
+  "total_duration": 41.63,
+  "total_size": 665712
 }

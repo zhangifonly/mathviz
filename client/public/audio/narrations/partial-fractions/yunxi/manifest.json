@@ -102,8 +102,69 @@
       "duration": 1.57,
       "size": 25200,
       "text": "化繁为简是数学的常用魔法，我们下次再见！"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/partial-fractions/yunxi/intro-intro-1.mp3",
+      "duration": 2.2,
+      "size": 35136,
+      "text": "遇到一个分母能因式分解的有理分式，直接积分往往无从下手。"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/partial-fractions/yunxi/intro-intro-2.mp3",
+      "duration": 2.86,
+      "size": 45792,
+      "text": "比如三x加一，除以x减一再乘x加二，这个式子看着就让人头疼。"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/partial-fractions/yunxi/intro-intro-3.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "有没有办法把它变简单？答案是把它拆开。"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "split",
+      "line_id": "def-2",
+      "filename": "split-def-2.mp3",
+      "path": "audio/narrations/partial-fractions/yunxi/split-def-2.mp3",
+      "duration": 1.62,
+      "size": 25920,
+      "text": "每个简单分式的分母，正是原来的一个一次因式。"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "residue",
+      "line_id": "res-1",
+      "filename": "residue-res-1.mp3",
+      "path": "audio/narrations/partial-fractions/yunxi/residue-res-1.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "留数法非常巧妙：想求某个因式对应的系数，就把它从分母里盖住。"
+    },
+    {
+      "script_id": "partial-fractions",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/partial-fractions/yunxi/summary-sum-2.mp3",
+      "duration": 1.67,
+      "size": 26640,
+      "text": "用留数法盖住因式代根，系数一步到位。"
     }
   ],
-  "total_duration": 21.29,
-  "total_size": 340560
+  "total_duration": 33.76,
+  "total_size": 540000,
+  "failed": []
 }

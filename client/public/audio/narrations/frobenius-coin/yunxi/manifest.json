@@ -132,8 +132,59 @@
       "duration": 2.13,
       "size": 34128,
       "text": "两枚硬币用 ab 减 a 减 b，多枚硬币交给动态规划。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/intro-intro-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "3 元、5 元、6 元、8 元都能不多不少地凑出来。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "intro",
+      "line_id": "intro-4",
+      "filename": "intro-intro-4.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/intro-intro-4.mp3",
+      "duration": 1.97,
+      "size": 31536,
+      "text": "一个自然的问题浮现：凑不出的最大金额到底是多少？"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "formula",
+      "line_id": "form-2",
+      "filename": "formula-form-2.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/formula-form-2.mp3",
+      "duration": 1.99,
+      "size": 31824,
+      "text": "最大凑不出的金额正好是 a 乘 b 再减去 a 减去 b。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "mcnugget",
+      "line_id": "mcn-1",
+      "filename": "mcnugget-mcn-1.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/mcnugget-mcn-1.mp3",
+      "duration": 1.96,
+      "size": 31392,
+      "text": "曾经麦乐鸡只有 6 块、9 块和 20 块三种包装。"
+    },
+    {
+      "script_id": "frobenius-coin",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/frobenius-coin/yunxi/summary-sum-3.mp3",
+      "duration": 1.8,
+      "size": 28800,
+      "text": "一枚硬币里藏着深刻的数论，我们下次再见！"
     }
   ],
-  "total_duration": 25.56,
-  "total_size": 409104
+  "total_duration": 35.55,
+  "total_size": 568944,
+  "failed": []
 }

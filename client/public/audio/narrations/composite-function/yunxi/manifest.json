@@ -162,8 +162,19 @@
       "duration": 2.5,
       "size": 40032,
       "text": "学会拆解与组合函数，你就掌握了搭建复杂关系的积木，我们下次再见！"
+    },
+    {
+      "script_id": "composite-function",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/composite-function/yunxi/intro-intro-3.mp3",
+      "duration": 2.04,
+      "size": 32688,
+      "text": "函数也能这样接力：一个的输出，正好是另一个的输入。"
     }
   ],
-  "total_duration": 37.089999999999996,
-  "total_size": 593568
+  "total_duration": 39.13,
+  "total_size": 626256,
+  "failed": []
 }

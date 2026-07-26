@@ -142,8 +142,29 @@
       "duration": 1.85,
       "size": 29664,
       "text": "最简单的异或，撑起最坚固的保密，我们下次再见！"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "xor",
+      "line_id": "xor-2",
+      "filename": "xor-xor-2.mp3",
+      "path": "audio/narrations/one-time-pad/yunxi/xor-xor-2.mp3",
+      "duration": 2.08,
+      "size": 33264,
+      "text": "异或有个奇妙性质，对同一个数异或两次会回到原样。"
+    },
+    {
+      "script_id": "one-time-pad",
+      "section_id": "perfect",
+      "line_id": "per-1",
+      "filename": "perfect-per-1.mp3",
+      "path": "audio/narrations/one-time-pad/yunxi/perfect-per-1.mp3",
+      "duration": 2.02,
+      "size": 32400,
+      "text": "拿到密文，换一把密钥就能解出任意等长的明文。"
     }
   ],
-  "total_duration": 27.999999999999996,
-  "total_size": 448128
+  "total_duration": 32.1,
+  "total_size": 513792,
+  "failed": []
 }
