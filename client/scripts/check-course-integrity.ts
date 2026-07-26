@@ -266,6 +266,42 @@ function checkLineSceneCoverage(courseId: string): string[] {
   return problems
 }
 
+/**
+ * 配音 manifest 里登记的 text 必须与讲解稿逐字一致。
+ *
+ * 改了稿件却忘了重新生成音频时, 页面字幕显示新文本、耳朵听到旧文本,
+ * 没有任何报错。这类不一致曾经在 18 门课里累积到 248 行, 只能静态查。
+ * 修法: 删掉对应 mp3 后跑 `python3 scripts/repair_audio.py <课程>`。
+ */
+const AUDIO_ROOT = path.join(ROOT, 'public/audio/narrations')
+
+function checkAudioTextSync(courseId: string): string[] {
+  const scriptPath = path.join(NARRATIONS_DIR, `${courseId}.json`)
+  if (!fs.existsSync(scriptPath)) return []
+  const script = JSON.parse(fs.readFileSync(scriptPath, 'utf-8'))
+  const want = new Map<string, string>()
+  for (const section of script.sections ?? []) {
+    for (const line of section.lines ?? []) want.set(line.id, String(line.text).trim())
+  }
+
+  const stale: string[] = []
+  for (const voice of ['yunxi', 'xiaoxiao']) {
+    const mp = path.join(AUDIO_ROOT, courseId, voice, 'manifest.json')
+    if (!fs.existsSync(mp)) continue
+    const manifest = JSON.parse(fs.readFileSync(mp, 'utf-8'))
+    for (const f of manifest.files ?? []) {
+      const expected = want.get(f.line_id)
+      if (expected === undefined) continue
+      if (String(f.text ?? '').trim() !== expected) stale.push(`${voice}/${f.line_id}`)
+    }
+  }
+  if (stale.length === 0) return []
+  return [
+    `❌ [${courseId}] ${stale.length} 条配音的文本与讲解稿不一致（字幕与朗读会对不上）: ` +
+    `${stale.slice(0, 4).join(', ')}${stale.length > 4 ? ' …' : ''}`,
+  ]
+}
+
 function main() {
   console.log('🔍 检查课程完整性...\n')
 
@@ -344,6 +380,13 @@ function main() {
   const coverageProblems = courseIds.flatMap(checkLineSceneCoverage)
   if (coverageProblems.length > 0) {
     errors.push(...coverageProblems)
+    hasErrors = true
+  }
+
+  // 配音文本与讲解稿一致性
+  const audioProblems = courseIds.flatMap(checkAudioTextSync)
+  if (audioProblems.length > 0) {
+    errors.push(...audioProblems)
     hasErrors = true
   }
 

@@ -29,6 +29,9 @@ from pathlib import Path
 from typing import Optional
 import edge_tts
 
+sys.path.insert(0, str(Path(__file__).parent))
+from tts_text import normalize_for_tts  # noqa: E402
+
 # 语音角色映射
 VOICE_MAP = {
     'xiaoxiao': 'zh-CN-XiaoxiaoNeural',
@@ -82,11 +85,16 @@ async def generate_audio_for_line(
     # 确保输出目录存在
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
+    # 字幕要显示 π/4、x²+y²、P(A|B) 这类符号, 但 edge-tts 会把它们吞掉
+    # (实测 `π/4` 比口语版短 0.46s, 斜杠整个没读)。朗读时转成中文说法,
+    # manifest 仍记录调用方传进来的原始文本, 便于逐字校验一致性。
+    speak_text = normalize_for_tts(text)
+
     last_err: Optional[Exception] = None
     for attempt in range(1, max_retries + 1):
         try:
             communicate = edge_tts.Communicate(
-                text=text,
+                text=speak_text,
                 voice=voice,
                 rate=rate,
                 volume=volume,
