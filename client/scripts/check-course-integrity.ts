@@ -26,6 +26,12 @@ interface CheckResult {
   registeredInFactory: boolean
   registeredInPresenter: boolean
   registeredInCustomList: boolean
+  /** 是否在 catalog.ts 中（决定首页是否出现卡片） */
+  inCatalog: boolean
+  /** 是否在 Sidebar.tsx 中（决定左侧导航是否出现入口） */
+  inSidebar: boolean
+  /** 是否在 App.tsx 中配了路由（决定链接点开是否 404） */
+  hasRoute: boolean
 }
 
 // 不需要专属渲染器的课程（使用默认傅里叶渲染）
@@ -108,6 +114,25 @@ function checkRegisteredInCustomList(courseId: string): boolean {
   return customListMatch[1].includes(`'${courseId}'`)
 }
 
+// 三个前端集成点的内容只读一次, 300 门课逐个 readFileSync 太浪费
+const catalogContent = fs.readFileSync(path.join(ROOT, 'src/experiments/catalog.ts'), 'utf-8')
+const sidebarContent = fs.readFileSync(path.join(ROOT, 'src/components/Layout/Sidebar.tsx'), 'utf-8')
+const appContent = fs.readFileSync(path.join(ROOT, 'src/App.tsx'), 'utf-8')
+
+function checkInCatalog(courseId: string): boolean {
+  // catalog 条目形如 path: '/course-id'
+  return new RegExp(`path:\\s*'/${courseId}'`).test(catalogContent)
+}
+
+function checkInSidebar(courseId: string): boolean {
+  return new RegExp(`path:\\s*'/${courseId}'`).test(sidebarContent)
+}
+
+function checkHasRoute(courseId: string): boolean {
+  // App.tsx 里是相对路径的嵌套路由: <Route path="course-id" ...>
+  return new RegExp(`path="/?${courseId}"`).test(appContent)
+}
+
 function toCamelCase(str: string): string {
   return str.replace(/-([a-z])/g, (_, c) => c.toUpperCase())
 }
@@ -126,6 +151,9 @@ function checkCourse(courseId: string): CheckResult {
     registeredInFactory: checkRegisteredInFactory(courseId),
     registeredInPresenter: checkRegisteredInPresenter(courseId),
     registeredInCustomList: checkRegisteredInCustomList(courseId),
+    inCatalog: checkInCatalog(courseId),
+    inSidebar: checkInSidebar(courseId),
+    hasRoute: checkHasRoute(courseId),
   }
 }
 
@@ -159,6 +187,20 @@ function main() {
     // 检查场景配置注册表(按需加载)
     if (!result.registeredInPresenter) {
       errors.push(`❌ [${result.courseId}] 未在 sceneFiles.ts 的 SCENE_FILES 中注册, 或注册项指向的 xxxScenes.ts 不存在`)
+      hasErrors = true
+    }
+
+    // 前端集成点: 漏掉任一处, 构建仍会通过, 但用户找不到或点不开这个实验
+    if (!result.hasRoute) {
+      errors.push(`❌ [${result.courseId}] 未在 App.tsx 中配置路由（链接会 404）`)
+      hasErrors = true
+    }
+    if (!result.inCatalog) {
+      errors.push(`❌ [${result.courseId}] 未在 catalog.ts 中登记（首页无卡片）`)
+      hasErrors = true
+    }
+    if (!result.inSidebar) {
+      errors.push(`❌ [${result.courseId}] 未在 Sidebar.tsx 中登记（左侧导航无入口）`)
       hasErrors = true
     }
 
