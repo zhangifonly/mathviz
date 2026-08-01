@@ -1,0 +1,190 @@
+{
+  "script_id": "spherical-triangle",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/intro-intro-1.mp3",
+      "duration": 3.54,
+      "size": 56592,
+      "text": "在球面上走最短路径，走出来的不是直线，而是大圆的一段弧。大圆就是过球心的平面切出的那个圆。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/intro-intro-2.mp3",
+      "duration": 3.54,
+      "size": 56592,
+      "text": "把欧氏几何里的直线换成大圆，其余公理照旧，就得到球面几何。它是最容易上手的非欧几何。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/intro-intro-3.mp3",
+      "duration": 3.53,
+      "size": 56448,
+      "text": "但换掉这一条，后果比想象的严重得多。平行公理首先崩了：任意两个大圆必定相交，根本没有平行线。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "excess",
+      "line_id": "ex-1",
+      "filename": "excess-ex-1.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/excess-ex-1.mp3",
+      "duration": 3.29,
+      "size": 52704,
+      "text": "先看最直观的差异。欧氏三角形内角和恒等于一百八十度，球面三角形一定大于这个数。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "excess",
+      "line_id": "ex-2",
+      "filename": "excess-ex-2.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/excess-ex-2.mp3",
+      "duration": 3.8,
+      "size": 60768,
+      "text": "超出的部分叫球面盈余。吉拉尔发现了一件极其漂亮的事：在单位球上，盈余的数值恰好等于三角形的面积。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "excess",
+      "line_id": "ex-3",
+      "filename": "excess-ex-3.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/excess-ex-3.mp3",
+      "duration": 3.96,
+      "size": 63360,
+      "text": "验证一下最简单的例子。取三个坐标轴的端点作顶点，三个内角都是直角，内角和二百七十度，盈余是二分之圆周率。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "octant",
+      "line_id": "oc-1",
+      "filename": "octant-oc-1.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/octant-oc-1.mp3",
+      "duration": 3.43,
+      "size": 54864,
+      "text": "这个三角形正好是球面的八分之一。单位球总面积是四倍圆周率，八分之一就是二分之圆周率。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "octant",
+      "line_id": "oc-2",
+      "filename": "octant-oc-2.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/octant-oc-2.mp3",
+      "duration": 4.0,
+      "size": 63936,
+      "text": "而它的盈余算出来也是二分之圆周率，两个数字精确相同。屏幕上的面积占比读数显示百分之十二点五，正是八分之一。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "octant",
+      "line_id": "oc-3",
+      "filename": "octant-oc-3.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/octant-oc-3.mp3",
+      "duration": 3.81,
+      "size": 60912,
+      "text": "请切到接近半球的那个预设。三个内角都趋近一百八十度，面积占比逼近百分之五十，盈余趋于二倍圆周率。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "nosimilar",
+      "line_id": "ns-1",
+      "filename": "nosimilar-ns-1.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/nosimilar-ns-1.mp3",
+      "duration": 3.32,
+      "size": 53136,
+      "text": "既然面积由角度唯一决定，就推出一个惊人结论：球面上不存在形状相同而大小不同的三角形。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "nosimilar",
+      "line_id": "ns-2",
+      "filename": "nosimilar-ns-2.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/nosimilar-ns-2.mp3",
+      "duration": 3.3,
+      "size": 52848,
+      "text": "欧氏几何里放大缩小不改变角度，这是相似三角形的基础。球面上一缩小，角度立刻跟着变。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "nosimilar",
+      "line_id": "ns-3",
+      "filename": "nosimilar-ns-3.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/nosimilar-ns-3.mp3",
+      "duration": 3.68,
+      "size": 58896,
+      "text": "请拖动缩放滑块。八分之一球面的内角和从二百七十度一路降到一百八十点零二度，形状缩小角度就变了。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "pythagoras",
+      "line_id": "py-1",
+      "filename": "pythagoras-py-1.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/pythagoras-py-1.mp3",
+      "duration": 3.62,
+      "size": 57888,
+      "text": "最后看直角三角形。欧氏勾股定理是斜边平方等于两腰平方之和，球面上完全不是这个形式。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "pythagoras",
+      "line_id": "py-2",
+      "filename": "pythagoras-py-2.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/pythagoras-py-2.mp3",
+      "duration": 3.37,
+      "size": 53856,
+      "text": "球面版本是：斜边的余弦等于两腰余弦的乘积。注意根本没有平方项，是三个余弦相乘的关系。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "pythagoras",
+      "line_id": "py-3",
+      "filename": "pythagoras-py-3.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/pythagoras-py-3.mp3",
+      "duration": 4.72,
+      "size": 75600,
+      "text": "有趣的是当三角形很小时，把余弦按泰勒展开到二阶，这个式子就退化成了欧氏勾股定理。屏幕上的残差读数验证了精确成立。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/summary-sum-1.mp3",
+      "duration": 2.74,
+      "size": 43776,
+      "text": "第一，球面几何把直线换成大圆，平行公理不成立，任两大圆必相交。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/summary-sum-2.mp3",
+      "duration": 2.92,
+      "size": 46800,
+      "text": "第二，吉拉尔定理说面积等于球面盈余，所以角度决定了大小，不存在相似三角形。"
+    },
+    {
+      "script_id": "spherical-triangle",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/spherical-triangle/yunxi/summary-sum-3.mp3",
+      "duration": 4.24,
+      "size": 67824,
+      "text": "第三，球面勾股定理是斜边余弦等于两腰余弦之积，小三角形时退化为欧氏形式。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 64.80999999999999,
+  "total_size": 1036800
+}
