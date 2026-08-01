@@ -436,6 +436,7 @@ const SpaceCurveFrenetSceneRenderer = lazy(() => import('./SpaceCurveFrenet/Spac
 const VivianiCurveSceneRenderer = lazy(() => import('./VivianiCurve/VivianiCurveSceneRenderer'))
 const ConicalSpiralSceneRenderer = lazy(() => import('./ConicalSpiral/ConicalSpiralSceneRenderer'))
 const SphericalSpiralSceneRenderer = lazy(() => import('./SphericalSpiral/SphericalSpiralSceneRenderer'))
+const PlatonicSolidsSceneRenderer = lazy(() => import('./PlatonicSolids/PlatonicSolidsSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -774,6 +775,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'viviani-curve': VivianiCurveSceneRenderer,
   'conical-spiral': ConicalSpiralSceneRenderer,
   'spherical-spiral': SphericalSpiralSceneRenderer,
+  'platonic-solids': PlatonicSolidsSceneRenderer,
 }
 
 // 获取场景渲染器

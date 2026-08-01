@@ -341,4 +341,5 @@ export const SCENE_FILES: Record<string, string> = {
   'viviani-curve': 'vivianiCurveScenes',
   'conical-spiral': 'conicalSpiralScenes',
   'spherical-spiral': 'sphericalSpiralScenes',
+  'platonic-solids': 'platonicSolidsScenes',
 }

@@ -192,6 +192,7 @@ const navCategories: NavCategory[] = [
       { path: '/viviani-curve', label: '维维亚尼曲线', icon: '🎽' },
       { path: '/conical-spiral', label: '圆锥螺线', icon: '🐚' },
       { path: '/spherical-spiral', label: '球面螺线', icon: '🧭' },
+      { path: '/platonic-solids', label: '柏拉图立体', icon: '🎲' },
     ],
   },
   {

@@ -3714,4 +3714,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/platonic-solids',
+    title: '柏拉图立体',
+    description: '正多面体恰好只有五种，一个顶点角的不等式就框定了全部答案，欧几里得两千年前已证明。',
+    icon: '🎲',
+    difficulty: 'intermediate',
+    ageRange: '高中 15-18岁',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]
