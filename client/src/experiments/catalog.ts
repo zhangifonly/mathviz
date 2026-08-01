@@ -3725,4 +3725,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/archimedean-solids',
+    title: '阿基米德立体',
+    description: '把柏拉图立体的顶点削平，得到面为多种正多边形而顶点仍全等的半正多面体，共十三种。',
+    icon: '⚽',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

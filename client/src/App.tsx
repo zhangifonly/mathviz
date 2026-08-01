@@ -357,6 +357,7 @@ const VivianiCurveExperiment = lazyRetry(() => import('./experiments/viviani-cur
 const ConicalSpiralExperiment = lazyRetry(() => import('./experiments/conical-spiral/ConicalSpiralExperiment'))
 const SphericalSpiralExperiment = lazyRetry(() => import('./experiments/spherical-spiral/SphericalSpiralExperiment'))
 const PlatonicSolidsExperiment = lazyRetry(() => import('./experiments/platonic-solids/PlatonicSolidsExperiment'))
+const ArchimedeanSolidsExperiment = lazyRetry(() => import('./experiments/archimedean-solids/ArchimedeanSolidsExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -711,6 +712,7 @@ export default function App() {
             <Route path="conical-spiral" element={<ConicalSpiralExperiment />} />
             <Route path="spherical-spiral" element={<SphericalSpiralExperiment />} />
             <Route path="platonic-solids" element={<PlatonicSolidsExperiment />} />
+            <Route path="archimedean-solids" element={<ArchimedeanSolidsExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

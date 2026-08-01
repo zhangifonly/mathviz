@@ -266,6 +266,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'aizawa-attractor', 'sprott-attractor', 'lorenz-atmosphere',
       'space-curve-frenet', 'viviani-curve', 'conical-spiral', 'spherical-spiral',
       'platonic-solids',
+      'archimedean-solids',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
