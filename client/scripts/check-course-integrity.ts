@@ -302,6 +302,50 @@ function checkAudioTextSync(courseId: string): string[] {
   ]
 }
 
+/**
+ * 配音必须「每条讲解行都有、且文件真的在」。
+ *
+ * checkAudioTextSync 只比对已登记条目的文本，某一行的 mp3 根本没生成时它照样
+ * 报绿 —— 2026-08 platonic-solids 少了 dl-3 一条就是这么漏过去的，全绿通过。
+ *
+ * ⚠️ 判据必须按 manifest 里的 path 查文件，不能数某个目录下的文件个数：
+ * 项目里两种布局并存，老课 path 指向 `<id>/yunxi/xxx.mp3`，
+ * 新课（finalize 过的）指向 `<id>/xxx.mp3`。按目录计数会把 300 门老课全误判。
+ */
+function checkAudioCompleteness(courseId: string): string[] {
+  const scriptPath = path.join(NARRATIONS_DIR, `${courseId}.json`)
+  const manifestPath = path.join(AUDIO_ROOT, courseId, 'manifest.json')
+  if (!fs.existsSync(scriptPath) || !fs.existsSync(manifestPath)) return []
+
+  const script = JSON.parse(fs.readFileSync(scriptPath, 'utf-8'))
+  const wantIds: string[] = (script.sections ?? []).flatMap(
+    (s: { lines?: Array<{ id: string }> }) => (s.lines ?? []).map((l) => l.id),
+  )
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf-8'))
+  const files: Array<{ line_id?: string; path?: string }> = manifest.files ?? []
+  const registered = new Set(files.map((f) => f.line_id))
+
+  const problems: string[] = []
+  const unregistered = wantIds.filter((id) => !registered.has(id))
+  if (unregistered.length > 0) {
+    problems.push(
+      `❌ [${courseId}] ${unregistered.length} 条讲解行没有配音登记（讲解到这里会没声音）: ` +
+      `${unregistered.slice(0, 4).join(', ')}${unregistered.length > 4 ? ' …' : ''}`
+    )
+  }
+
+  const missing = files
+    .filter((f) => f.path && !fs.existsSync(path.join(ROOT, 'public', f.path)))
+    .map((f) => f.path as string)
+  if (missing.length > 0) {
+    problems.push(
+      `❌ [${courseId}] ${missing.length} 个已登记的配音文件不存在: ` +
+      `${missing.slice(0, 3).join(', ')}${missing.length > 3 ? ' …' : ''}`
+    )
+  }
+  return problems
+}
+
 function main() {
   console.log('🔍 检查课程完整性...\n')
 
@@ -387,6 +431,13 @@ function main() {
   const audioProblems = courseIds.flatMap(checkAudioTextSync)
   if (audioProblems.length > 0) {
     errors.push(...audioProblems)
+    hasErrors = true
+  }
+
+  // 配音完整性: 每条讲解行都要有登记, 且登记的文件真的存在
+  const audioMissing = courseIds.flatMap(checkAudioCompleteness)
+  if (audioMissing.length > 0) {
+    errors.push(...audioMissing)
     hasErrors = true
   }
 
