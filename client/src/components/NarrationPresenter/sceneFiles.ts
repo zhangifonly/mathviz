@@ -343,4 +343,5 @@ export const SCENE_FILES: Record<string, string> = {
   'spherical-spiral': 'sphericalSpiralScenes',
   'platonic-solids': 'platonicSolidsScenes',
   'archimedean-solids': 'archimedeanSolidsScenes',
+  'stellated-polyhedra': 'stellatedPolyhedraScenes',
 }

@@ -3736,4 +3736,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/stellated-polyhedra',
+    title: '星形多面体',
+    description: '把每个面拉出尖刺，形状剧变而欧拉特征数纹丝不动，三项变化恰好相互抵消。',
+    icon: '✨',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

@@ -347,6 +347,7 @@ export { conicalSpiralNarration } from './scripts/conical-spiral'
 export { sphericalSpiralNarration } from './scripts/spherical-spiral'
 export { platonicSolidsNarration } from './scripts/platonic-solids'
 export { archimedeanSolidsNarration } from './scripts/archimedean-solids'
+export { stellatedPolyhedraNarration } from './scripts/stellated-polyhedra'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -682,6 +683,7 @@ import { conicalSpiralNarration } from './scripts/conical-spiral'
 import { sphericalSpiralNarration } from './scripts/spherical-spiral'
 import { platonicSolidsNarration } from './scripts/platonic-solids'
 import { archimedeanSolidsNarration } from './scripts/archimedean-solids'
+import { stellatedPolyhedraNarration } from './scripts/stellated-polyhedra'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1021,6 +1023,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'spherical-spiral': sphericalSpiralNarration,
   'platonic-solids': platonicSolidsNarration,
   'archimedean-solids': archimedeanSolidsNarration,
+  'stellated-polyhedra': stellatedPolyhedraNarration,
 }
 
 // 获取稿件

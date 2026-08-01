@@ -438,6 +438,7 @@ const ConicalSpiralSceneRenderer = lazy(() => import('./ConicalSpiral/ConicalSpi
 const SphericalSpiralSceneRenderer = lazy(() => import('./SphericalSpiral/SphericalSpiralSceneRenderer'))
 const PlatonicSolidsSceneRenderer = lazy(() => import('./PlatonicSolids/PlatonicSolidsSceneRenderer'))
 const ArchimedeanSolidsSceneRenderer = lazy(() => import('./ArchimedeanSolids/ArchimedeanSolidsSceneRenderer'))
+const StellatedPolyhedraSceneRenderer = lazy(() => import('./StellatedPolyhedra/StellatedPolyhedraSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -778,6 +779,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'spherical-spiral': SphericalSpiralSceneRenderer,
   'platonic-solids': PlatonicSolidsSceneRenderer,
   'archimedean-solids': ArchimedeanSolidsSceneRenderer,
+  'stellated-polyhedra': StellatedPolyhedraSceneRenderer,
 }
 
 // 获取场景渲染器

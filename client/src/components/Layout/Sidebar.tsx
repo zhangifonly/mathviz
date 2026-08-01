@@ -327,6 +327,7 @@ const navCategories: NavCategory[] = [
       { path: '/aizawa-attractor', label: '相泽吸引子', icon: '🧿' },
       { path: '/space-curve-frenet', label: '空间曲线标架', icon: '🎢' },
       { path: '/archimedean-solids', label: '阿基米德立体', icon: '⚽' },
+      { path: '/stellated-polyhedra', label: '星形多面体', icon: '✨' },
     ],
   },
   {

@@ -267,6 +267,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'space-curve-frenet', 'viviani-curve', 'conical-spiral', 'spherical-spiral',
       'platonic-solids',
       'archimedean-solids',
+      'stellated-polyhedra',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

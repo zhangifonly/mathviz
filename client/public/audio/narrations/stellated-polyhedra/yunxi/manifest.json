@@ -1,0 +1,190 @@
+{
+  "script_id": "stellated-polyhedra",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/intro-intro-1.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "拿一个正十二面体，在每个五边形面上向外拉出一个尖，就得到一个带十二根尖刺的星形立体。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/intro-intro-2.mp3",
+      "duration": 2.89,
+      "size": 46224,
+      "text": "这个操作叫星化。它把光滑的凸多面体变成扎手的星形，外形变化剧烈。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/intro-intro-3.mp3",
+      "duration": 2.87,
+      "size": 45936,
+      "text": "但今天的重点是：有一个量在这个剧烈变化中完全不动。它就是欧拉特征数。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "count",
+      "line_id": "ct-1",
+      "filename": "count-ct-1.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/count-ct-1.mp3",
+      "duration": 3.73,
+      "size": 59616,
+      "text": "先算顶点。原来的顶点都留着，每个面又多出一个尖顶，所以新顶点数是原顶点数加原面数。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "count",
+      "line_id": "ct-2",
+      "filename": "count-ct-2.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/count-ct-2.mp3",
+      "duration": 4.8,
+      "size": 76752,
+      "text": "再算棱。原来的棱都留着，另外每个面的每条边都要连一条到尖顶。所有面的边数之和等于两倍棱数，所以新棱数是原棱数的三倍。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "count",
+      "line_id": "ct-3",
+      "filename": "count-ct-3.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/count-ct-3.mp3",
+      "duration": 4.02,
+      "size": 64368,
+      "text": "最后算面。原来的面都消失了，换成一圈三角形。三角形总数也等于所有面的边数之和，也就是两倍原棱数。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "invariant",
+      "line_id": "iv-1",
+      "filename": "invariant-iv-1.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/invariant-iv-1.mp3",
+      "duration": 3.95,
+      "size": 63216,
+      "text": "现在把三个数代进欧拉公式。新顶点减新棱加新面，等于原顶点加原面，减去三倍原棱，再加两倍原棱。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "invariant",
+      "line_id": "iv-2",
+      "filename": "invariant-iv-2.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/invariant-iv-2.mp3",
+      "duration": 3.87,
+      "size": 61920,
+      "text": "整理一下：负三倍棱加两倍棱等于负一倍棱，于是式子变回原顶点减原棱加原面，正是原来的欧拉特征数。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "invariant",
+      "line_id": "iv-3",
+      "filename": "invariant-iv-3.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/invariant-iv-3.mp3",
+      "duration": 3.77,
+      "size": 60336,
+      "text": "所以星化前后特征数完全相同，都是二。屏幕上五种立体逐个验证，实际计数与公式预测一项不差。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "topology",
+      "line_id": "tp-1",
+      "filename": "topology-tp-1.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/topology-tp-1.mp3",
+      "duration": 3.46,
+      "size": 55296,
+      "text": "这个巧合不是偶然。欧拉特征数是拓扑不变量，它只关心曲面有几个洞，不关心形状多么扭曲。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "topology",
+      "line_id": "tp-2",
+      "filename": "topology-tp-2.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/topology-tp-2.mp3",
+      "duration": 3.74,
+      "size": 59904,
+      "text": "星化虽然拉出了尖刺，但没有戳穿曲面，也没有粘合任何两处。曲面仍然与球面同构，特征数当然还是二。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "topology",
+      "line_id": "tp-3",
+      "filename": "topology-tp-3.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/topology-tp-3.mp3",
+      "duration": 3.94,
+      "size": 63072,
+      "text": "请拖动尖刺高度，从零一直拉到很长。形状变化巨大，而屏幕上的特征数读数始终是二，纹丝不动。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "kepler",
+      "line_id": "kp-1",
+      "filename": "kepler-kp-1.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/kepler-kp-1.mp3",
+      "duration": 3.87,
+      "size": 61920,
+      "text": "这里必须澄清一件事。数学上真正的星形正多面体叫开普勒-普安索立体，一共四种，本实验做的不是它们。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "kepler",
+      "line_id": "kp-2",
+      "filename": "kepler-kp-2.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/kepler-kp-2.mp3",
+      "duration": 3.54,
+      "size": 56592,
+      "text": "它们的面不是三角形，而是相互穿插的五角星。曲面自己穿过自己，已经不是普通的球面拓扑了。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "kepler",
+      "line_id": "kp-3",
+      "filename": "kepler-kp-3.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/kepler-kp-3.mp3",
+      "duration": 4.59,
+      "size": 73440,
+      "text": "后果很直接：欧拉公式对它们失效。小星形十二面体的特征数是负六，而不是二。本实验的面锥星化不自交，所以仍是二。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/summary-sum-1.mp3",
+      "duration": 3.2,
+      "size": 51264,
+      "text": "第一，星化把每个面拉出尖顶：顶点变原顶点加原面，棱变三倍，面变两倍棱。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/summary-sum-2.mp3",
+      "duration": 2.61,
+      "size": 41760,
+      "text": "第二，三个变化恰好抵消，欧拉特征数保持为二，因为星化不改变拓扑。"
+    },
+    {
+      "script_id": "stellated-polyhedra",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/stellated-polyhedra/yunxi/summary-sum-3.mp3",
+      "duration": 3.8,
+      "size": 60768,
+      "text": "第三，真正的开普勒-普安索立体面自相交，欧拉公式失效，与本实验不同。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 65.58,
+  "total_size": 1049328
+}
