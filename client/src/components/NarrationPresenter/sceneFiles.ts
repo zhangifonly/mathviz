@@ -327,4 +327,5 @@ export const SCENE_FILES: Record<string, string> = {
   'gaussian-curvature': 'gaussianCurvatureScenes',
   'trefoil-surface': 'trefoilSurfaceScenes',
   'developable-surface': 'developableSurfaceScenes',
+  'torus-knot-surface': 'torusKnotSurfaceScenes',
 }

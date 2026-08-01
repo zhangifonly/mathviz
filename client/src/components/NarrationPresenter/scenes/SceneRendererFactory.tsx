@@ -422,6 +422,7 @@ const SphericalHarmonicsSceneRenderer = lazy(() => import('./SphericalHarmonics/
 const GaussianCurvatureSceneRenderer = lazy(() => import('./GaussianCurvature/GaussianCurvatureSceneRenderer'))
 const TrefoilSurfaceSceneRenderer = lazy(() => import('./TrefoilSurface/TrefoilSurfaceSceneRenderer'))
 const DevelopableSurfaceSceneRenderer = lazy(() => import('./DevelopableSurface/DevelopableSurfaceSceneRenderer'))
+const TorusKnotSurfaceSceneRenderer = lazy(() => import('./TorusKnotSurface/TorusKnotSurfaceSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -746,6 +747,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'gaussian-curvature': GaussianCurvatureSceneRenderer,
   'trefoil-surface': TrefoilSurfaceSceneRenderer,
   'developable-surface': DevelopableSurfaceSceneRenderer,
+  'torus-knot-surface': TorusKnotSurfaceSceneRenderer,
 }
 
 // 获取场景渲染器

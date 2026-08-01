@@ -7,6 +7,7 @@
 
 import { makeCamera, bounds, type Vec3 } from '../../lib/proj3d'
 import { drawSurface, drawAxes3D } from '../../lib/draw3d'
+import { buildTubeGrid } from '../../lib/tube3d'
 import { torusKnot, isKnot, gcd, CROSSING_NUMBER } from './trefoilSurface'
 
 export interface DrawOptions {
@@ -33,7 +34,9 @@ export function drawTrefoil(canvas: HTMLCanvasElement, opts: DrawOptions): void 
     yaw, pitch: 0.32, scale: Math.min(W, H) * 0.34, cx: W / 2, cy: H / 2,
   })
 
-  const grid = buildTube(p, q, radius)
+  const grid = buildTubeGrid(
+    (t) => torusKnot(t, p, q), [0, 2 * Math.PI], radius, 260, 16,
+  )
   const { center, radius: rad } = bounds(grid.flat())
   const k = 1 / rad
   const norm = grid.map((row) => row.map((pt) => [
@@ -43,57 +46,6 @@ export function drawTrefoil(canvas: HTMLCanvasElement, opts: DrawOptions): void 
   drawAxes3D(ctx, cam, 1.4)
   drawSurface(ctx, norm, cam, { ramp, colorBy: 'u', stroke: 'rgba(255,255,255,0.08)' })
   drawLabel(ctx, p, q, W, showInfo)
-}
-
-/**
- * 沿环面纽结生成管面。用 Frenet 标架保证截面垂直于曲线,
- * 否则交叉处的穿插关系会被扭曲。
- */
-function buildTube(p: number, q: number, r: number): Vec3[][] {
-  const nT = 260
-  const nTheta = 16
-  const grid: Vec3[][] = []
-  for (let i = 0; i <= nT; i++) {
-    const t = (2 * Math.PI * i) / nT
-    const c = torusKnot(t, p, q)
-    const { N, B } = frame(t, p, q)
-    const row: Vec3[] = []
-    for (let j = 0; j <= nTheta; j++) {
-      const th = (2 * Math.PI * j) / nTheta
-      row.push([
-        c[0] + r * (Math.cos(th) * N[0] + Math.sin(th) * B[0]),
-        c[1] + r * (Math.cos(th) * N[1] + Math.sin(th) * B[1]),
-        c[2] + r * (Math.cos(th) * N[2] + Math.sin(th) * B[2]),
-      ])
-    }
-    grid.push(row)
-  }
-  return grid
-}
-
-function frame(t: number, p: number, q: number): { N: Vec3; B: Vec3 } {
-  const h = 1e-4
-  const g = (s: number) => torusKnot(s, p, q)
-  const T = unit(diff(g, t, h))
-  const dT = diff((s) => unit(diff(g, s, h)), t, h)
-  const N = unit(dT)
-  return { N, B: cross(T, N) }
-}
-
-function diff(fn: (t: number) => Vec3, at: number, h: number): Vec3 {
-  const a = fn(at - h)
-  const b = fn(at + h)
-  return [(b[0] - a[0]) / (2 * h), (b[1] - a[1]) / (2 * h), (b[2] - a[2]) / (2 * h)]
-}
-
-function unit(v: Vec3): Vec3 {
-  const n = Math.hypot(v[0], v[1], v[2])
-  if (n < 1e-12) return [0, 0, 1]
-  return [v[0] / n, v[1] / n, v[2] / n]
-}
-
-function cross(a: Vec3, b: Vec3): Vec3 {
-  return [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]]
 }
 
 function drawLabel(

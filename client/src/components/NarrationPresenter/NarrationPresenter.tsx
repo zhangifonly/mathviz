@@ -258,6 +258,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'gaussian-curvature',
       'trefoil-surface',
       'developable-surface',
+      'torus-knot-surface',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

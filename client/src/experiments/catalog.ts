@@ -3560,4 +3560,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/torus-knot-surface',
+    title: '环面纽结管',
+    description: '在环面上绕 p 圈经线 q 圈纬线的闭曲线，套上圆管就成了三叶结等经典纽结。',
+    icon: '🎗️',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['geometry', 'discrete'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

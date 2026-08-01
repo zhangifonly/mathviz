@@ -316,6 +316,7 @@ const navCategories: NavCategory[] = [
       { path: '/gaussian-curvature', label: '高斯曲率', icon: '🎨' },
       { path: '/trefoil-surface', label: '三叶结曲面', icon: '☘️' },
       { path: '/developable-surface', label: '可展曲面', icon: '📜' },
+      { path: '/torus-knot-surface', label: '环面纽结管', icon: '🎗️' },
     ],
   },
   {
