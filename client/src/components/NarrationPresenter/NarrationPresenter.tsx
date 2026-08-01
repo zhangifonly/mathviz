@@ -249,6 +249,8 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'roman-surface', 'cross-cap',
       'boy-surface',
       'hyperbolic-paraboloid',
+      'quadric-surfaces',
+      'supertoroid', 'superquadric',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

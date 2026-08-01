@@ -409,6 +409,9 @@ const RomanSurfaceSceneRenderer = lazy(() => import('./RomanSurface/RomanSurface
 const CrossCapSceneRenderer = lazy(() => import('./CrossCap/CrossCapSceneRenderer'))
 const BoySurfaceSceneRenderer = lazy(() => import('./BoySurface/BoySurfaceSceneRenderer'))
 const HyperbolicParaboloidSceneRenderer = lazy(() => import('./HyperbolicParaboloid/HyperbolicParaboloidSceneRenderer'))
+const QuadricSurfacesSceneRenderer = lazy(() => import('./QuadricSurfaces/QuadricSurfacesSceneRenderer'))
+const SupertoroidSceneRenderer = lazy(() => import('./Supertoroid/SupertoroidSceneRenderer'))
+const SuperquadricSceneRenderer = lazy(() => import('./Superquadric/SuperquadricSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -720,6 +723,9 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'cross-cap': CrossCapSceneRenderer,
   'boy-surface': BoySurfaceSceneRenderer,
   'hyperbolic-paraboloid': HyperbolicParaboloidSceneRenderer,
+  'quadric-surfaces': QuadricSurfacesSceneRenderer,
+  'supertoroid': SupertoroidSceneRenderer,
+  'superquadric': SuperquadricSceneRenderer,
 }
 
 // 获取场景渲染器

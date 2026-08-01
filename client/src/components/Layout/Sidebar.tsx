@@ -183,6 +183,9 @@ const navCategories: NavCategory[] = [
       { path: '/inclusion-exclusion', label: '容斥原理', icon: '🔵' },
       { path: '/derangements', label: '错排问题', icon: '✉️' },
       { path: '/hyperbolic-paraboloid', label: '双曲抛物面', icon: '🏇' },
+      { path: '/quadric-surfaces', label: '二次曲面分类', icon: '🥚' },
+      { path: '/supertoroid', label: '超环面族', icon: '🍩' },
+      { path: '/superquadric', label: '超二次曲面', icon: '🎲' },
     ],
   },
   {

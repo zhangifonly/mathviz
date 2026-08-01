@@ -318,6 +318,9 @@ export { romanSurfaceNarration } from './scripts/roman-surface'
 export { crossCapNarration } from './scripts/cross-cap'
 export { boySurfaceNarration } from './scripts/boy-surface'
 export { hyperbolicParaboloidNarration } from './scripts/hyperbolic-paraboloid'
+export { quadricSurfacesNarration } from './scripts/quadric-surfaces'
+export { supertoroidNarration } from './scripts/supertoroid'
+export { superquadricNarration } from './scripts/superquadric'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -624,6 +627,9 @@ import { romanSurfaceNarration } from './scripts/roman-surface'
 import { crossCapNarration } from './scripts/cross-cap'
 import { boySurfaceNarration } from './scripts/boy-surface'
 import { hyperbolicParaboloidNarration } from './scripts/hyperbolic-paraboloid'
+import { quadricSurfacesNarration } from './scripts/quadric-surfaces'
+import { supertoroidNarration } from './scripts/supertoroid'
+import { superquadricNarration } from './scripts/superquadric'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -934,6 +940,9 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'cross-cap': crossCapNarration,
   'boy-surface': boySurfaceNarration,
   'hyperbolic-paraboloid': hyperbolicParaboloidNarration,
+  'quadric-surfaces': quadricSurfacesNarration,
+  'supertoroid': supertoroidNarration,
+  'superquadric': superquadricNarration,
 }
 
 // 获取稿件

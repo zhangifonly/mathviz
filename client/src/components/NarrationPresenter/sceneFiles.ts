@@ -314,4 +314,7 @@ export const SCENE_FILES: Record<string, string> = {
   'cross-cap': 'crossCapScenes',
   'boy-surface': 'boySurfaceScenes',
   'hyperbolic-paraboloid': 'hyperbolicParaboloidScenes',
+  'quadric-surfaces': 'quadricSurfacesScenes',
+  'supertoroid': 'supertoroidScenes',
+  'superquadric': 'superquadricScenes',
 }
