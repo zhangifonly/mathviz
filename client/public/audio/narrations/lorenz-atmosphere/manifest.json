@@ -1,0 +1,194 @@
+{
+  "script_id": "lorenz-atmosphere",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/intro-intro-1.mp3",
+      "duration": 4.46,
+      "size": 71280,
+      "text": "一九六三年那个著名的洛伦兹系统，三个变量的物理含义其实相当抽象。二十一年后洛伦兹又提出一个模型，含义要具体得多。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/intro-intro-2.mp3",
+      "duration": 3.75,
+      "size": 60048,
+      "text": "第一个变量 X 是西风急流的强度，也就是东西向的平均气流。后两个变量 Y 和 Z 是涡旋波的两个相位分量。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/intro-intro-3.mp3",
+      "duration": 3.58,
+      "size": 57312,
+      "text": "参数也有意义：F 代表南北温差造成的热力强迫，对应季节；G 代表海陆对比造成的非对称强迫。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "waveflow",
+      "line_id": "wf-1",
+      "filename": "waveflow-wf-1.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/waveflow-wf-1.mp3",
+      "duration": 3.1,
+      "size": 49536,
+      "text": "看第一个方程，里面有一项是负的 Y 平方加 Z 平方。这个组合正是涡旋波的总能量。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "waveflow",
+      "line_id": "wf-2",
+      "filename": "waveflow-wf-2.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/waveflow-wf-2.mp3",
+      "duration": 4.1,
+      "size": 65664,
+      "text": "它带负号出现在西风的方程里，含义很清楚：涡旋越强，消耗的西风动能越多。这就是气象学里的波流相互作用。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "waveflow",
+      "line_id": "wf-3",
+      "filename": "waveflow-wf-3.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/waveflow-wf-3.mp3",
+      "duration": 4.16,
+      "size": 66528,
+      "text": "反过来看后两个方程，里面的 X 乘 Y 和 X 乘 Z 说明西风也在驱动涡旋。两者互相喂养，构成了反馈回路。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "divergence",
+      "line_id": "dv-1",
+      "filename": "divergence-dv-1.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/divergence-dv-1.mp3",
+      "duration": 2.96,
+      "size": 47376,
+      "text": "算散度会得到负 a 减二再加两倍 X。注意它依赖 X，也就是依赖西风的强弱。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "divergence",
+      "line_id": "dv-2",
+      "filename": "divergence-dv-2.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/divergence-dv-2.mp3",
+      "duration": 4.06,
+      "size": 64944,
+      "text": "临界值是 a 加二再除以二，标准参数下等于一点一二五。西风弱于这个值时相空间收缩，强于它时反而膨胀。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "divergence",
+      "line_id": "dv-3",
+      "filename": "divergence-dv-3.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/divergence-dv-3.mp3",
+      "duration": 3.84,
+      "size": 61488,
+      "text": "这和蔡氏电路是同一个机制：混沌来自膨胀与收缩的交替，而不是处处收缩。系统在两种状态间反复穿越。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "blocking",
+      "line_id": "bl-1",
+      "filename": "blocking-bl-1.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/blocking-bl-1.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "观察西风强度 X 的时间演化，会看到它在强弱之间不规则切换，没有固定周期。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "blocking",
+      "line_id": "bl-2",
+      "filename": "blocking-bl-2.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/blocking-bl-2.mp3",
+      "duration": 4.64,
+      "size": 74304,
+      "text": "这对应真实大气里的两种状态。西风强时是正常环流，天气系统快速东移；西风弱时形成阻塞高压，天气长时间停滞。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "blocking",
+      "line_id": "bl-3",
+      "filename": "blocking-bl-3.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/blocking-bl-3.mp3",
+      "duration": 3.94,
+      "size": 63072,
+      "text": "切换时机的不可预测，正是天气预报有效期限只有一周左右的根本原因。这就是洛伦兹提出这个模型要回答的问题。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "season",
+      "line_id": "ss-1",
+      "filename": "season-ss-1.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/season-ss-1.mp3",
+      "duration": 3.62,
+      "size": 57888,
+      "text": "请切换季节预设。F 等于六代表夏季，南北温差小，李雅普诺夫指数约零点零零二，接近临界。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "season",
+      "line_id": "ss-2",
+      "filename": "season-ss-2.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/season-ss-2.mp3",
+      "duration": 4.1,
+      "size": 65664,
+      "text": "F 等于八代表冬季，温差大，指数升到零点一四二。混沌明显更强，所以冬季天气确实比夏季难预报。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "season",
+      "line_id": "ss-3",
+      "filename": "season-ss-3.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/season-ss-3.mp3",
+      "duration": 4.84,
+      "size": 77472,
+      "text": "但要注意一个陷阱：这不是单调关系。实测 F 等于九时指数反而变成负零点零零六，系统锁定到规则解。强迫过大不等于更混沌。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/summary-sum-1.mp3",
+      "duration": 2.94,
+      "size": 47088,
+      "text": "第一，洛伦兹84的三个变量分别是西风急流强度与两个涡旋波分量，含义具体。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/summary-sum-2.mp3",
+      "duration": 3.02,
+      "size": 48240,
+      "text": "第二，散度依赖西风强弱，临界值一点一二五两侧异号，混沌来自膨胀收缩交替。"
+    },
+    {
+      "script_id": "lorenz-atmosphere",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/lorenz-atmosphere/summary-sum-3.mp3",
+      "duration": 3.95,
+      "size": 63216,
+      "text": "第三，冬季强迫下混沌更强，但强迫再加大反而回到规则解，并非单调关系。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 67.99,
+  "total_size": 1088064,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

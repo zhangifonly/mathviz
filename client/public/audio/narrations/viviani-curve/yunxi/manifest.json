@@ -1,0 +1,190 @@
+{
+  "script_id": "viviani-curve",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "viviani-curve",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/intro-intro-1.mp3",
+      "duration": 4.13,
+      "size": 66096,
+      "text": "一六九二年，伽利略的学生维维亚尼提出了一个问题：在半球的顶上开一个窗，怎么开才能让剩下的曲面面积可以用尺规算出来？"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/intro-intro-2.mp3",
+      "duration": 3.05,
+      "size": 48816,
+      "text": "曲面面积通常都带着圆周率，尺规作图做不出来。他要的是一个不含圆周率的答案。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/intro-intro-3.mp3",
+      "duration": 4.1,
+      "size": 65664,
+      "text": "答案是用一个圆柱去切球面。切出来的交线就是今天的主角，剩余面积恰好是四倍的半径平方，干净得不含圆周率。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "setup",
+      "line_id": "st-1",
+      "filename": "setup-st-1.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/setup-st-1.mp3",
+      "duration": 2.82,
+      "size": 45072,
+      "text": "关键在圆柱的摆法。球的半径取 2a，圆柱的半径取 a，正好是球半径的一半。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "setup",
+      "line_id": "st-2",
+      "filename": "setup-st-2.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/setup-st-2.mp3",
+      "duration": 3.82,
+      "size": 61056,
+      "text": "更重要的是位置：圆柱的轴不过球心，而是让圆柱面恰好通过球心。这样切出来的交线才是维维亚尼曲线。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "setup",
+      "line_id": "st-3",
+      "filename": "setup-st-3.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/setup-st-3.mp3",
+      "duration": 3.73,
+      "size": 59616,
+      "text": "参数化写出来只有三行：横坐标是 a 乘一加余弦，纵坐标是 a 乘正弦，竖坐标是 2a 乘半角正弦。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "verify",
+      "line_id": "vf-1",
+      "filename": "verify-vf-1.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/verify-vf-1.mp3",
+      "duration": 3.19,
+      "size": 51120,
+      "text": "怎么确认它真的是交线？把参数化的点代进两个曲面方程，看残差是不是零。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "verify",
+      "line_id": "vf-2",
+      "filename": "verify-vf-2.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/verify-vf-2.mp3",
+      "duration": 3.81,
+      "size": 60912,
+      "text": "球面方程是三个坐标平方和等于四倍 a 平方，圆柱方程是横坐标减 a 的平方加纵坐标平方等于 a 平方。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "verify",
+      "line_id": "vf-3",
+      "filename": "verify-vf-3.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/verify-vf-3.mp3",
+      "duration": 3.31,
+      "size": 52992,
+      "text": "两个残差都精确为零，误差在十的负十六次方量级。这就是严格的验证，不是画出来看着像。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "period",
+      "line_id": "pd-1",
+      "filename": "period-pd-1.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/period-pd-1.mp3",
+      "duration": 2.98,
+      "size": 47664,
+      "text": "这里有个最容易画错的地方。横纵坐标里是余弦和正弦，周期都是二倍圆周率。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "period",
+      "line_id": "pd-2",
+      "filename": "period-pd-2.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/period-pd-2.mp3",
+      "duration": 4.23,
+      "size": 67680,
+      "text": "但竖坐标里是半角正弦，它的周期是四倍圆周率。参数只跑到二倍圆周率，竖坐标恒非负，只画出上半条曲线。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "period",
+      "line_id": "pd-3",
+      "filename": "period-pd-3.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/period-pd-3.mp3",
+      "duration": 4.28,
+      "size": 68544,
+      "text": "必须跑满四倍圆周率，才能画出完整的双环形状。屏幕上验证过：只取一半时竖坐标最小值是零，取满才有负值。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "projection",
+      "line_id": "pj-1",
+      "filename": "projection-pj-1.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/projection-pj-1.mp3",
+      "duration": 3.1,
+      "size": 49536,
+      "text": "这条曲线还有个漂亮性质。把它投影到三个坐标平面上，得到三种完全不同的平面曲线。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "projection",
+      "line_id": "pj-2",
+      "filename": "projection-pj-2.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/projection-pj-2.mp3",
+      "duration": 2.86,
+      "size": 45792,
+      "text": "投到水平面得到一个圆，就是那个圆柱的截面。投到含竖轴的一个平面得到抛物线。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "projection",
+      "line_id": "pj-3",
+      "filename": "projection-pj-3.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/projection-pj-3.mp3",
+      "duration": 3.69,
+      "size": 59040,
+      "text": "投到另一个含竖轴的平面得到双纽线，一个八字形。三个投影的方程都在屏幕上验证过，残差都是零。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/summary-sum-1.mp3",
+      "duration": 2.68,
+      "size": 42912,
+      "text": "第一，维维亚尼曲线是半径 2a 的球面与半径 a、过球心的圆柱面的交线。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/summary-sum-2.mp3",
+      "duration": 2.31,
+      "size": 37008,
+      "text": "第二，参数周期是四倍圆周率，只取一半会漏掉下半条曲线。"
+    },
+    {
+      "script_id": "viviani-curve",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/viviani-curve/yunxi/summary-sum-3.mp3",
+      "duration": 3.12,
+      "size": 49968,
+      "text": "第三，三个坐标投影分别给出圆、抛物线和双纽线。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 61.21,
+  "total_size": 979488
+}

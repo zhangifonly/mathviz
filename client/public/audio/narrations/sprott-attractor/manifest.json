@@ -1,0 +1,194 @@
+{
+  "script_id": "sprott-attractor",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/sprott-attractor/intro-intro-1.mp3",
+      "duration": 3.15,
+      "size": 50400,
+      "text": "洛伦兹系统展开后有七项，其中两个非线性项。罗斯勒系统也是七项，一个非线性项。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/sprott-attractor/intro-intro-2.mp3",
+      "duration": 3.7,
+      "size": 59184,
+      "text": "一九九四年斯普罗特问了个尖锐的问题：产生混沌到底最少需要多复杂的方程？能不能比七项更少？"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/sprott-attractor/intro-intro-3.mp3",
+      "duration": 3.98,
+      "size": 63648,
+      "text": "他的做法很直接：让计算机穷举所有可能的三维二次系统，逐个检验是否混沌。这是计算机辅助数学发现的经典案例。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "answer",
+      "line_id": "an-1",
+      "filename": "answer-an-1.mp3",
+      "path": "audio/narrations/sprott-attractor/answer-an-1.mp3",
+      "duration": 4.06,
+      "size": 64944,
+      "text": "穷举的结果是十九个系统，全都只有五项或六项。斯普罗特按字母给它们编号，从 Case A 一直到 Case S。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "answer",
+      "line_id": "an-2",
+      "filename": "answer-an-2.mp3",
+      "path": "audio/narrations/sprott-attractor/answer-an-2.mp3",
+      "duration": 4.25,
+      "size": 67968,
+      "text": "本实验收录三个代表。Case A 的方程是 x 导数等于 y，y 导数等于负 x 加 y z，z 导数等于一减 y 平方。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "answer",
+      "line_id": "an-3",
+      "filename": "answer-an-3.mp3",
+      "path": "audio/narrations/sprott-attractor/answer-an-3.mp3",
+      "duration": 3.78,
+      "size": 60480,
+      "text": "数一数：三个方程加起来正好五项，其中两个是二次项。比洛伦兹少了整整两项，这就是极简的含金量。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "conservative",
+      "line_id": "cs-1",
+      "filename": "conservative-cs-1.mp3",
+      "path": "audio/narrations/sprott-attractor/conservative-cs-1.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "Case A 有个特别之处。算它的散度，得到的结果是 z，而不是一个负常数。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "conservative",
+      "line_id": "cs-2",
+      "filename": "conservative-cs-2.mp3",
+      "path": "audio/narrations/sprott-attractor/conservative-cs-2.mp3",
+      "duration": 4.54,
+      "size": 72720,
+      "text": "散度不是常数，那它是耗散还是保守？要看沿轨道的时间平均。实测这个平均值是负零点零零四，几乎正好是零。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "conservative",
+      "line_id": "cs-3",
+      "filename": "conservative-cs-3.mp3",
+      "path": "audio/narrations/sprott-attractor/conservative-cs-3.mp3",
+      "duration": 4.09,
+      "size": 65376,
+      "text": "也就是说 Case A 是保守系统，相空间体积长期不变。但它的李雅普诺夫指数是正零点零四三，确确实实混沌。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "misconception",
+      "line_id": "ms-1",
+      "filename": "misconception-ms-1.mp3",
+      "path": "audio/narrations/sprott-attractor/misconception-ms-1.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "很多介绍会说混沌系统必须耗散。Case A 直接推翻了这个说法。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "misconception",
+      "line_id": "ms-2",
+      "filename": "misconception-ms-2.mp3",
+      "path": "audio/narrations/sprott-attractor/misconception-ms-2.mp3",
+      "duration": 4.4,
+      "size": 70416,
+      "text": "正确的表述是：耗散是存在吸引子的条件，不是存在混沌的条件。保守系统里的混沌轨道不收缩到低维集合上，但依然指数分离。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "misconception",
+      "line_id": "ms-3",
+      "filename": "misconception-ms-3.mp3",
+      "path": "audio/narrations/sprott-attractor/misconception-ms-3.mp3",
+      "duration": 3.95,
+      "size": 63216,
+      "text": "对比 Case B 和 Case C，它们的散度恒等于负一，是真正的耗散系统。三者都混沌，说明混沌与耗散确实独立。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "compare",
+      "line_id": "cm-1",
+      "filename": "compare-cm-1.mp3",
+      "path": "audio/narrations/sprott-attractor/compare-cm-1.mp3",
+      "duration": 3.2,
+      "size": 51264,
+      "text": "请依次切换三个 Case，留意散度读数的差别。Case A 随位置变化，Case B 和 C 恒为负一。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "compare",
+      "line_id": "cm-2",
+      "filename": "compare-cm-2.mp3",
+      "path": "audio/narrations/sprott-attractor/compare-cm-2.mp3",
+      "duration": 3.92,
+      "size": 62784,
+      "text": "Case B 和 C 的差别只在第三个方程：一个是一减 x 乘 y，另一个是一减 x 平方。前两个方程完全相同。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "compare",
+      "line_id": "cm-3",
+      "filename": "compare-cm-3.mp3",
+      "path": "audio/narrations/sprott-attractor/compare-cm-3.mp3",
+      "duration": 3.21,
+      "size": 51408,
+      "text": "这么小的差别却给出不同的吸引子形状，说明在极简系统里每一项都举足轻重，没有冗余可以删。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/sprott-attractor/summary-sum-1.mp3",
+      "duration": 2.83,
+      "size": 45360,
+      "text": "第一，斯普罗特用计算机穷举证明五项方程足以产生混沌，比洛伦兹少两项。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/sprott-attractor/summary-sum-2.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "第二，Case A 的散度时间平均为零，是保守系统，却依然混沌。"
+    },
+    {
+      "script_id": "sprott-attractor",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/sprott-attractor/summary-sum-3.mp3",
+      "duration": 3.58,
+      "size": 57312,
+      "text": "第三，耗散是存在吸引子的条件，不是存在混沌的条件，两者相互独立。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 64.27000000000001,
+  "total_size": 1028448,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

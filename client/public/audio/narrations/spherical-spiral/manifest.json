@@ -1,0 +1,194 @@
+{
+  "script_id": "spherical-spiral",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/spherical-spiral/intro-intro-1.mp3",
+      "duration": 3.07,
+      "size": 49104,
+      "text": "大航海时代有个实际问题：船长手里只有罗盘，怎么才能保持一个固定的航向一直开下去？"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/spherical-spiral/intro-intro-2.mp3",
+      "duration": 3.18,
+      "size": 50832,
+      "text": "保持罗盘方向不变，意味着航迹与所有经线的夹角都相同。这样的球面曲线叫等角航线。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/spherical-spiral/intro-intro-3.mp3",
+      "duration": 3.85,
+      "size": 61632,
+      "text": "问题是在普通地图上，等角航线画出来是一条弯曲的线，很难用尺规规划。这个困难催生了墨卡托投影。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "mercator",
+      "line_id": "mc-1",
+      "filename": "mercator-mc-1.mp3",
+      "path": "audio/narrations/spherical-spiral/mercator-mc-1.mp3",
+      "duration": 3.65,
+      "size": 58464,
+      "text": "一五六九年墨卡托设计了一种投影，专门让等角航线变成直线。代价是高纬度地区被严重放大。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "mercator",
+      "line_id": "mc-2",
+      "filename": "mercator-mc-2.mp3",
+      "path": "audio/narrations/spherical-spiral/mercator-mc-2.mp3",
+      "duration": 3.7,
+      "size": 59184,
+      "text": "格陵兰在墨卡托地图上看起来比非洲还大，实际只有非洲的十四分之一。这个失真是为了航海便利付出的代价。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "mercator",
+      "line_id": "mc-3",
+      "filename": "mercator-mc-3.mp3",
+      "path": "audio/narrations/spherical-spiral/mercator-mc-3.mp3",
+      "duration": 4.34,
+      "size": 69408,
+      "text": "等角航线的参数化里出现了对数：方位角等于半角正切的对数，再除以夹角的正切。这个对数正是墨卡托投影的数学核心。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "confusion",
+      "line_id": "cf-1",
+      "filename": "confusion-cf-1.mp3",
+      "path": "audio/narrations/spherical-spiral/confusion-cf-1.mp3",
+      "duration": 3.23,
+      "size": 51696,
+      "text": "有另一条球面曲线常被误认为等角航线：方位角与极角成正比的那条，可以叫球面阿基米德螺线。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "confusion",
+      "line_id": "cf-2",
+      "filename": "confusion-cf-2.mp3",
+      "path": "audio/narrations/spherical-spiral/confusion-cf-2.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "它绕圈很均匀，看起来很像等角航线。但它与经线的夹角并不恒定。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "confusion",
+      "line_id": "cf-3",
+      "filename": "confusion-cf-3.mp3",
+      "path": "audio/narrations/spherical-spiral/confusion-cf-3.mp3",
+      "duration": 3.83,
+      "size": 61200,
+      "text": "实测差别很明显：等角航线的夹角在五个不同纬度处完全一致，而阿基米德螺线的夹角极差有十七到三十二度。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "length",
+      "line_id": "ln-1",
+      "filename": "length-ln-1.mp3",
+      "path": "audio/narrations/spherical-spiral/length-ln-1.mp3",
+      "duration": 3.08,
+      "size": 49248,
+      "text": "等角航线有个反直觉的性质。它从北极出发绕到南极，途中要绕无穷多圈。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "length",
+      "line_id": "ln-2",
+      "filename": "length-ln-2.mp3",
+      "path": "audio/narrations/spherical-spiral/length-ln-2.mp3",
+      "duration": 3.48,
+      "size": 55728,
+      "text": "越接近极点，圈越密，绕的次数没有上限。屏幕上可以看到绕圈量随着靠近极点单调发散。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "length",
+      "line_id": "ln-3",
+      "filename": "length-ln-3.mp3",
+      "path": "audio/narrations/spherical-spiral/length-ln-3.mp3",
+      "duration": 3.35,
+      "size": 53568,
+      "text": "但它的总弧长是有限的，等于圆周率乘半径再除以夹角的正弦。绕无穷多圈，走有限的路。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "compare",
+      "line_id": "cp-1",
+      "filename": "compare-cp-1.mp3",
+      "path": "audio/narrations/spherical-spiral/compare-cp-1.mp3",
+      "duration": 2.82,
+      "size": 45072,
+      "text": "请切换两种螺线，留意夹角读数。等角航线的读数无论在哪个纬度都不动。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "compare",
+      "line_id": "cp-2",
+      "filename": "compare-cp-2.mp3",
+      "path": "audio/narrations/spherical-spiral/compare-cp-2.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "阿基米德螺线的读数在赤道附近最大，往两极递减，差别一目了然。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "compare",
+      "line_id": "cp-3",
+      "filename": "compare-cp-3.mp3",
+      "path": "audio/narrations/spherical-spiral/compare-cp-3.mp3",
+      "duration": 4.26,
+      "size": 68112,
+      "text": "再调节等角航线的夹角参数。夹角越小越贴近经线走，弧长越短，下界是圆周率乘半径，也就是沿经线直接走。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/spherical-spiral/summary-sum-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "第一，等角航线与所有经线成固定角，是罗盘航向不变的航迹。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/spherical-spiral/summary-sum-2.mp3",
+      "duration": 2.82,
+      "size": 45072,
+      "text": "第二，墨卡托投影专为让等角航线成为直线而设计，代价是高纬度失真。"
+    },
+    {
+      "script_id": "spherical-spiral",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/spherical-spiral/summary-sum-3.mp3",
+      "duration": 3.83,
+      "size": 61200,
+      "text": "第三，它绕极点无穷多圈但弧长有限，等于圆周率乘半径除以夹角正弦。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 59.97999999999999,
+  "total_size": 959328,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}
