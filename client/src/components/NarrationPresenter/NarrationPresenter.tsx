@@ -259,6 +259,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'trefoil-surface',
       'developable-surface',
       'torus-knot-surface',
+      'klein-bottle-figure8',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

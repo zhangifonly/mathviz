@@ -3571,4 +3571,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/klein-bottle-figure8',
+    title: '8字形克莱因瓶',
+    description: '克莱因瓶除了瓶状浸入还有 8 字形浸入，把 8 字截面绕圈翻转一次即可得到。',
+    icon: '🎱',
+    difficulty: 'expert',
+    ageRange: '研究生+',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

@@ -363,6 +363,7 @@ const navCategories: NavCategory[] = [
       { path: '/boy-surface', label: '博伊曲面', icon: '🎭' },
       { path: '/whitney-umbrella', label: '惠特尼伞', icon: '☂️' },
       { path: '/spherical-harmonics', label: '球谐函数', icon: '⚛️' },
+      { path: '/klein-bottle-figure8', label: '8字形克莱因瓶', icon: '🎱' },
     ],
   },
 ]

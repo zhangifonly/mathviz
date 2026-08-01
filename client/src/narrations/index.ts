@@ -332,6 +332,7 @@ export { gaussianCurvatureNarration } from './scripts/gaussian-curvature'
 export { trefoilSurfaceNarration } from './scripts/trefoil-surface'
 export { developableSurfaceNarration } from './scripts/developable-surface'
 export { torusKnotSurfaceNarration } from './scripts/torus-knot-surface'
+export { kleinBottleFigure8Narration } from './scripts/klein-bottle-figure8'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -652,6 +653,7 @@ import { gaussianCurvatureNarration } from './scripts/gaussian-curvature'
 import { trefoilSurfaceNarration } from './scripts/trefoil-surface'
 import { developableSurfaceNarration } from './scripts/developable-surface'
 import { torusKnotSurfaceNarration } from './scripts/torus-knot-surface'
+import { kleinBottleFigure8Narration } from './scripts/klein-bottle-figure8'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -976,6 +978,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'trefoil-surface': trefoilSurfaceNarration,
   'developable-surface': developableSurfaceNarration,
   'torus-knot-surface': torusKnotSurfaceNarration,
+  'klein-bottle-figure8': kleinBottleFigure8Narration,
 }
 
 // 获取稿件

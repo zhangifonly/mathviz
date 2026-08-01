@@ -343,6 +343,7 @@ const GaussianCurvatureExperiment = lazyRetry(() => import('./experiments/gaussi
 const TrefoilSurfaceExperiment = lazyRetry(() => import('./experiments/trefoil-surface/TrefoilSurfaceExperiment'))
 const DevelopableSurfaceExperiment = lazyRetry(() => import('./experiments/developable-surface/DevelopableSurfaceExperiment'))
 const TorusKnotSurfaceExperiment = lazyRetry(() => import('./experiments/torus-knot-surface/TorusKnotSurfaceExperiment'))
+const KleinBottleFigure8Experiment = lazyRetry(() => import('./experiments/klein-bottle-figure8/KleinBottleFigure8Experiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -683,6 +684,7 @@ export default function App() {
             <Route path="trefoil-surface" element={<TrefoilSurfaceExperiment />} />
             <Route path="developable-surface" element={<DevelopableSurfaceExperiment />} />
             <Route path="torus-knot-surface" element={<TorusKnotSurfaceExperiment />} />
+            <Route path="klein-bottle-figure8" element={<KleinBottleFigure8Experiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

@@ -328,4 +328,5 @@ export const SCENE_FILES: Record<string, string> = {
   'trefoil-surface': 'trefoilSurfaceScenes',
   'developable-surface': 'developableSurfaceScenes',
   'torus-knot-surface': 'torusKnotSurfaceScenes',
+  'klein-bottle-figure8': 'kleinBottleFigure8Scenes',
 }
