@@ -270,6 +270,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'stellated-polyhedra',
       'prism-antiprism',
       'space-filling-solids',
+      'spherical-triangle',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

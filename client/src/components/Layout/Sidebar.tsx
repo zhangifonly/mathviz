@@ -330,6 +330,7 @@ const navCategories: NavCategory[] = [
       { path: '/archimedean-solids', label: '阿基米德立体', icon: '⚽' },
       { path: '/stellated-polyhedra', label: '星形多面体', icon: '✨' },
       { path: '/space-filling-solids', label: '空间填充多面体', icon: '🧊' },
+      { path: '/spherical-triangle', label: '球面三角形', icon: '🌐' },
     ],
   },
   {

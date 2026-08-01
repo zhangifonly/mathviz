@@ -350,6 +350,7 @@ export { archimedeanSolidsNarration } from './scripts/archimedean-solids'
 export { stellatedPolyhedraNarration } from './scripts/stellated-polyhedra'
 export { prismAntiprismNarration } from './scripts/prism-antiprism'
 export { spaceFillingSolidsNarration } from './scripts/space-filling-solids'
+export { sphericalTriangleNarration } from './scripts/spherical-triangle'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -688,6 +689,7 @@ import { archimedeanSolidsNarration } from './scripts/archimedean-solids'
 import { stellatedPolyhedraNarration } from './scripts/stellated-polyhedra'
 import { prismAntiprismNarration } from './scripts/prism-antiprism'
 import { spaceFillingSolidsNarration } from './scripts/space-filling-solids'
+import { sphericalTriangleNarration } from './scripts/spherical-triangle'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1030,6 +1032,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'stellated-polyhedra': stellatedPolyhedraNarration,
   'prism-antiprism': prismAntiprismNarration,
   'space-filling-solids': spaceFillingSolidsNarration,
+  'spherical-triangle': sphericalTriangleNarration,
 }
 
 // 获取稿件

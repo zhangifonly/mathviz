@@ -3769,4 +3769,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/spherical-triangle',
+    title: '球面三角形',
+    description: '把直线换成大圆就得到非欧几何：内角和大于 180°，超出量恰好等于面积，因而没有相似三角形。',
+    icon: '🌐',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

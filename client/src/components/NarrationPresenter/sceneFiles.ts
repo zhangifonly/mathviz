@@ -346,4 +346,5 @@ export const SCENE_FILES: Record<string, string> = {
   'stellated-polyhedra': 'stellatedPolyhedraScenes',
   'prism-antiprism': 'prismAntiprismScenes',
   'space-filling-solids': 'spaceFillingSolidsScenes',
+  'spherical-triangle': 'sphericalTriangleScenes',
 }
