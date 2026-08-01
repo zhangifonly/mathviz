@@ -303,6 +303,7 @@ const navCategories: NavCategory[] = [
       { path: '/helicoid-catenoid', label: '螺旋面与悬链面', icon: '🌀' },
       { path: '/pseudosphere', label: '伪球面', icon: '📡' },
       { path: '/dini-surface', label: '迪尼曲面', icon: '🐚' },
+      { path: '/cross-cap', label: '交叉帽', icon: '🧢' },
     ],
   },
   {
@@ -345,6 +346,8 @@ const navCategories: NavCategory[] = [
       { path: '/brachistochrone', label: '最速降线', icon: '🎿' },
       { path: '/backpropagation', label: '反向传播', icon: '🔙' },
       { path: '/enneper-surface', label: '恩内佩尔曲面', icon: '🍀' },
+      { path: '/roman-surface', label: '罗马曲面', icon: '🏛️' },
+      { path: '/boy-surface', label: '博伊曲面', icon: '🎭' },
     ],
   },
 ]

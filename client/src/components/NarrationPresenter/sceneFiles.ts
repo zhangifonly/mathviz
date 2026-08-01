@@ -310,4 +310,7 @@ export const SCENE_FILES: Record<string, string> = {
   'pseudosphere': 'pseudosphereScenes',
   'enneper-surface': 'enneperSurfaceScenes',
   'dini-surface': 'diniSurfaceScenes',
+  'roman-surface': 'romanSurfaceScenes',
+  'cross-cap': 'crossCapScenes',
+  'boy-surface': 'boySurfaceScenes',
 }

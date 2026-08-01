@@ -405,6 +405,9 @@ const HelicoidCatenoidSceneRenderer = lazy(() => import('./HelicoidCatenoid/Heli
 const PseudosphereSceneRenderer = lazy(() => import('./Pseudosphere/PseudosphereSceneRenderer'))
 const EnneperSurfaceSceneRenderer = lazy(() => import('./EnneperSurface/EnneperSurfaceSceneRenderer'))
 const DiniSurfaceSceneRenderer = lazy(() => import('./DiniSurface/DiniSurfaceSceneRenderer'))
+const RomanSurfaceSceneRenderer = lazy(() => import('./RomanSurface/RomanSurfaceSceneRenderer'))
+const CrossCapSceneRenderer = lazy(() => import('./CrossCap/CrossCapSceneRenderer'))
+const BoySurfaceSceneRenderer = lazy(() => import('./BoySurface/BoySurfaceSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -712,6 +715,9 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'pseudosphere': PseudosphereSceneRenderer,
   'enneper-surface': EnneperSurfaceSceneRenderer,
   'dini-surface': DiniSurfaceSceneRenderer,
+  'roman-surface': RomanSurfaceSceneRenderer,
+  'cross-cap': CrossCapSceneRenderer,
+  'boy-surface': BoySurfaceSceneRenderer,
 }
 
 // 获取场景渲染器

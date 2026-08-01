@@ -246,6 +246,8 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'helicoid-catenoid',
       'pseudosphere',
       'enneper-surface', 'dini-surface',
+      'roman-surface', 'cross-cap',
+      'boy-surface',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
