@@ -1,0 +1,190 @@
+{
+  "script_id": "mean-curvature-flow",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/intro-intro-1.mp3",
+      "duration": 3.62,
+      "size": 57888,
+      "text": "热方程会让温度分布越来越均匀，凹凸不平的初始状态最终趋于平坦。几何上有没有类似的东西？"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/intro-intro-2.mp3",
+      "duration": 3.72,
+      "size": 59472,
+      "text": "有，就是平均曲率流。规则很简单：让曲面上每一点沿着法线方向移动，速度等于该点的平均曲率。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/intro-intro-3.mp3",
+      "duration": 3.38,
+      "size": 54000,
+      "text": "凸的地方向内收，凹的地方向外鼓，于是曲面越来越圆润。这是几何分析里最重要的流之一。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "sphere",
+      "line_id": "sp-1",
+      "filename": "sphere-sp-1.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/sphere-sp-1.mp3",
+      "duration": 3.69,
+      "size": 59040,
+      "text": "球面是最简单的例子。半径为 R 的球面，两个主曲率都是 R 的倒数，所以平均曲率等于二除以 R。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "sphere",
+      "line_id": "sp-2",
+      "filename": "sphere-sp-2.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/sphere-sp-2.mp3",
+      "duration": 3.24,
+      "size": 51840,
+      "text": "代入流方程得到半径的微分方程，解出来是 R 的平方等于初始半径平方减去四倍时间。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "sphere",
+      "line_id": "sp-3",
+      "filename": "sphere-sp-3.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/sphere-sp-3.mp3",
+      "duration": 4.54,
+      "size": 72576,
+      "text": "这意味着球面在有限时间内缩成一点，时刻是初始半径平方除以四。而且过程中始终是球，形状不变，这叫自相似收缩。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "cylinder",
+      "line_id": "cy-1",
+      "filename": "cylinder-cy-1.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/cylinder-cy-1.mp3",
+      "duration": 3.46,
+      "size": 55440,
+      "text": "圆柱面就不一样了。它沿母线方向完全不弯，那个主曲率是零，所以平均曲率只有一除以 R。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "cylinder",
+      "line_id": "cy-2",
+      "filename": "cylinder-cy-2.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/cylinder-cy-2.mp3",
+      "duration": 3.23,
+      "size": 51696,
+      "text": "曲率只有球面的一半，收缩自然更慢。解出来是 R 平方等于初始平方减去二倍时间。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "cylinder",
+      "line_id": "cy-3",
+      "filename": "cylinder-cy-3.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/cylinder-cy-3.mp3",
+      "duration": 3.68,
+      "size": 58896,
+      "text": "所以同样半径的圆柱，坍塌时刻恰好是球面消失时刻的两倍。它最终塌成一条直线而不是一个点。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "singular",
+      "line_id": "sg-1",
+      "filename": "singular-sg-1.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/singular-sg-1.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "有趣的情形出现在形状不规则时。看哑铃：两端粗，中间一根细腰。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "singular",
+      "line_id": "sg-2",
+      "filename": "singular-sg-2.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/singular-sg-2.mp3",
+      "duration": 3.49,
+      "size": 55872,
+      "text": "细腰处曲率大，收缩得快；两端粗的地方曲率小，收缩得慢。于是腰越来越细，最后断开。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "singular",
+      "line_id": "sg-3",
+      "filename": "singular-sg-3.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/singular-sg-3.mp3",
+      "duration": 3.1,
+      "size": 49536,
+      "text": "断开的瞬间叫奇点。研究奇点如何形成、断开后怎么继续，是这个领域的核心难题。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "monotone",
+      "line_id": "mn-1",
+      "filename": "monotone-mn-1.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/monotone-mn-1.mp3",
+      "duration": 3.04,
+      "size": 48672,
+      "text": "流有几个必然单调减少的量，可以当作正确性的检验。首先是面积，它一直在减小。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "monotone",
+      "line_id": "mn-2",
+      "filename": "monotone-mn-2.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/monotone-mn-2.mp3",
+      "duration": 2.98,
+      "size": 47664,
+      "text": "体积也在减小。请观察屏幕上的两个读数，无论初始形状如何，它们都只降不升。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "monotone",
+      "line_id": "mn-3",
+      "filename": "monotone-mn-3.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/monotone-mn-3.mp3",
+      "duration": 4.12,
+      "size": 65952,
+      "text": "顺带一提，花生形演化时腰部会逐渐变粗，整体趋于球形。Huisken 在一九八四年证明了凸闭曲面必然如此。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "第一，平均曲率流让每点沿法向以平均曲率的速度移动，是几何版的热方程。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/summary-sum-2.mp3",
+      "duration": 3.15,
+      "size": 50400,
+      "text": "第二，球面自相似收缩，时刻是初始半径平方除以四；圆柱坍塌时刻是它的两倍。"
+    },
+    {
+      "script_id": "mean-curvature-flow",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/mean-curvature-flow/xiaoxiao/summary-sum-3.mp3",
+      "duration": 3.44,
+      "size": 55008,
+      "text": "第三，细腰处会形成奇点，而面积与体积始终单调减少。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 61.37,
+  "total_size": 981792
+}

@@ -1,0 +1,190 @@
+{
+  "script_id": "costa-surface",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "costa-surface",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/intro-intro-1.mp3",
+      "duration": 4.18,
+      "size": 66960,
+      "text": "极小曲面研究了两百多年。如果要求它同时是完备的和嵌入的，也就是无限延伸且不自交，人们长期只找到三种。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/intro-intro-2.mp3",
+      "duration": 3.71,
+      "size": 59328,
+      "text": "这三种是平面、悬链面、螺旋面。欧拉在一七四四年找到悬链面，此后两百多年再无新发现。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/intro-intro-3.mp3",
+      "duration": 3.3,
+      "size": 52848,
+      "text": "于是数学界形成了一种共识：也许就只有这三种了。这个信念持续到一九八二年被打破。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "discovery",
+      "line_id": "dc-1",
+      "filename": "discovery-dc-1.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/discovery-dc-1.mp3",
+      "duration": 3.53,
+      "size": 56448,
+      "text": "巴西数学家科斯塔那年构造出了第四种。它完备、嵌入、处处平均曲率为零，样样符合要求。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "discovery",
+      "line_id": "dc-2",
+      "filename": "discovery-dc-2.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/discovery-dc-2.mp3",
+      "duration": 3.9,
+      "size": 62352,
+      "text": "关键区别在拓扑。前三种的亏格都是零，也就是没有洞。而科斯塔曲面的亏格是一，本质上是一个环面。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "discovery",
+      "line_id": "dc-3",
+      "filename": "discovery-dc-3.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/discovery-dc-3.mp3",
+      "duration": 3.28,
+      "size": 52416,
+      "text": "更准确地说，它是一个环面去掉三个点。去掉的那三个点，就是曲面伸向无穷远的三个端。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "topology",
+      "line_id": "tp-1",
+      "filename": "topology-tp-1.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/topology-tp-1.mp3",
+      "duration": 3.53,
+      "size": 56448,
+      "text": "算一下它的欧拉示性数。亏格为 g 的闭曲面去掉 n 个点，示性数等于二减去二倍 g 再减去 n。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "topology",
+      "line_id": "tp-2",
+      "filename": "topology-tp-2.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/topology-tp-2.mp3",
+      "duration": 3.39,
+      "size": 54288,
+      "text": "代入亏格一、三个端，得到二减二减三，也就是负三。这个负数说明曲面的拓扑相当复杂。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "topology",
+      "line_id": "tp-3",
+      "filename": "topology-tp-3.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/topology-tp-3.mp3",
+      "duration": 3.68,
+      "size": 58896,
+      "text": "三个端各有分工：两个张开成悬链面那样的喇叭口，第三个摊平成平面状。这种混搭是它的独特之处。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "symmetry",
+      "line_id": "sm-1",
+      "filename": "symmetry-sm-1.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/symmetry-sm-1.mp3",
+      "duration": 3.19,
+      "size": 51120,
+      "text": "科斯塔曲面外观上最醒目的特征是四重对称。绕中轴转九十度，形状完全复原。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "symmetry",
+      "line_id": "sm-2",
+      "filename": "symmetry-sm-2.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/symmetry-sm-2.mp3",
+      "duration": 3.64,
+      "size": 58176,
+      "text": "腰部因此呈现四叶形，像一朵有四个花瓣的花。屏幕上转动时可以数一数，恰好四个凸起四个凹陷。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "symmetry",
+      "line_id": "sm-3",
+      "filename": "symmetry-sm-3.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/symmetry-sm-3.mp3",
+      "duration": 3.49,
+      "size": 55872,
+      "text": "这个对称性不是装饰。它来自构造中用到的椭圆函数的周期格，是深层代数结构的外在表现。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "honest",
+      "line_id": "hn-1",
+      "filename": "honest-hn-1.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/honest-hn-1.mp3",
+      "duration": 3.55,
+      "size": 56736,
+      "text": "这里必须坦白一件事。科斯塔曲面的精确参数化需要 Weierstrass 椭圆函数，数值实现代价很高。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "honest",
+      "line_id": "hn-2",
+      "filename": "honest-hn-2.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/honest-hn-2.mp3",
+      "duration": 4.0,
+      "size": 64080,
+      "text": "所以本演示用的是一个结构等价模型：保留了亏格一、三个端、四重对称这些关键特征，但用初等函数拼装。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "honest",
+      "line_id": "hn-3",
+      "filename": "honest-hn-3.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/honest-hn-3.mp3",
+      "duration": 4.38,
+      "size": 70128,
+      "text": "换句话说，你看到的拓扑与对称性是真的，而平均曲率恒为零这一条只是近似。精确版本请参考文献里的椭圆函数实现。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.67,
+      "size": 42768,
+      "text": "第一，完备嵌入极小曲面曾被认为只有平面、悬链面、螺旋面三种。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.87,
+      "size": 45936,
+      "text": "第二，一九八二年科斯塔给出第四种，亏格为一带三个端，示性数是负三。"
+    },
+    {
+      "script_id": "costa-surface",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/costa-surface/xiaoxiao/summary-sum-3.mp3",
+      "duration": 3.22,
+      "size": 51552,
+      "text": "第三，它有四重对称，来自构造中椭圆函数的周期格。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 63.51,
+  "total_size": 1016352
+}

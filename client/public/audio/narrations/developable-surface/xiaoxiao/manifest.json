@@ -1,0 +1,190 @@
+{
+  "script_id": "developable-surface",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "developable-surface",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/intro-intro-1.mp3",
+      "duration": 3.52,
+      "size": 56304,
+      "text": "拿一张纸卷成筒，它弯了但没皱。再想把纸贴成一个球面，你会发现无论怎么弄都会起皱或撕裂。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/intro-intro-2.mp3",
+      "duration": 4.05,
+      "size": 64800,
+      "text": "能不撕不皱摊平成平面的曲面叫可展曲面。它在工程上极其重要：钣金件、船体外板、服装打版都靠它。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.98,
+      "size": 47664,
+      "text": "问题是，哪些曲面可展？答案出人意料地干净：只有三类，一个不多一个不少。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "three",
+      "line_id": "th-1",
+      "filename": "three-th-1.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/three-th-1.mp3",
+      "duration": 3.64,
+      "size": 58176,
+      "text": "第一类是柱面。取一条曲线作准线，每一点上都朝同一个固定方向拉出直线，得到平行的直线族。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "three",
+      "line_id": "th-2",
+      "filename": "three-th-2.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/three-th-2.mp3",
+      "duration": 2.84,
+      "size": 45504,
+      "text": "第二类是锥面。所有直线不再平行，而是全都通过同一个顶点，像一顶帽子。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "three",
+      "line_id": "th-3",
+      "filename": "three-th-3.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/three-th-3.mp3",
+      "duration": 4.1,
+      "size": 65664,
+      "text": "第三类叫切线面，最容易被忽略。取一条空间曲线，把它每一点的切线都画出来，这些切线张成的曲面就是可展的。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "criterion",
+      "line_id": "cr-1",
+      "filename": "criterion-cr-1.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/criterion-cr-1.mp3",
+      "duration": 4.39,
+      "size": 70272,
+      "text": "怎么严格判断？有两条完全等价的路径。第一条是代数的：把准线的导数、直线方向、方向的导数排成三阶行列式。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "criterion",
+      "line_id": "cr-2",
+      "filename": "criterion-cr-2.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/criterion-cr-2.mp3",
+      "duration": 2.83,
+      "size": 45216,
+      "text": "行列式恒等于零就可展。这条判据的好处是纯代数运算，不需要碰曲率。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "criterion",
+      "line_id": "cr-3",
+      "filename": "criterion-cr-3.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/criterion-cr-3.mp3",
+      "duration": 3.76,
+      "size": 60192,
+      "text": "第二条是几何的：直接算高斯曲率，恒为零就可展。屏幕上同时显示两个数值，它们的结论必须一致。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "notdev",
+      "line_id": "nd-1",
+      "filename": "notdev-nd-1.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/notdev-nd-1.mp3",
+      "duration": 3.64,
+      "size": 58176,
+      "text": "为了看清判据真的在起作用，我们放一个反例进来：螺旋面。它同样是由直线扫出的，标准的直纹面。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "notdev",
+      "line_id": "nd-2",
+      "filename": "notdev-nd-2.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/notdev-nd-2.mp3",
+      "duration": 3.45,
+      "size": 55152,
+      "text": "但切换到它，你会看到行列式跳到零点三三，高斯曲率跳到四点八七，两个数字都明显不为零。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "notdev",
+      "line_id": "nd-3",
+      "filename": "notdev-nd-3.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/notdev-nd-3.mp3",
+      "duration": 3.65,
+      "size": 58464,
+      "text": "这就是关键区别：直纹面只要求由直线织成，可展面还要求这些直线足够听话。直纹不等于可展。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "apply",
+      "line_id": "ap-1",
+      "filename": "apply-ap-1.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/apply-ap-1.mp3",
+      "duration": 3.21,
+      "size": 51408,
+      "text": "请依次切换四种曲面，留意两个判据的读数。三种可展曲面的数值都精确显示为零。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "apply",
+      "line_id": "ap-2",
+      "filename": "apply-ap-2.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/apply-ap-2.mp3",
+      "duration": 4.07,
+      "size": 65088,
+      "text": "这不只是数学趣味。造船时外板必须用平钢板压制，所以船体曲面必须设计成可展的，否则加工不出来。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "apply",
+      "line_id": "ap-3",
+      "filename": "apply-ap-3.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/apply-ap-3.mp3",
+      "duration": 3.61,
+      "size": 57744,
+      "text": "服装打版同理：先在平面上裁片，再缝成立体。裁片能对上，前提就是那块曲面近似可展。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.99,
+      "size": 47808,
+      "text": "第一，可展曲面能不撕不皱摊平，完备分类只有柱面、锥面、切线面三类。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.88,
+      "size": 46080,
+      "text": "第二，两条等价判据：行列式恒零，或高斯曲率恒零，二者结论必然一致。"
+    },
+    {
+      "script_id": "developable-surface",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/developable-surface/xiaoxiao/summary-sum-3.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "第三，直纹不等于可展，螺旋面就是最好的反例。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 62.540000000000006,
+  "total_size": 1000656
+}

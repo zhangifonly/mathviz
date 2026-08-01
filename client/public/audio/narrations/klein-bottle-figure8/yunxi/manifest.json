@@ -1,0 +1,190 @@
+{
+  "script_id": "klein-bottle-figure8",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/intro-intro-1.mp3",
+      "duration": 3.47,
+      "size": 55584,
+      "text": "克莱因瓶最出名的形象是一个瓶子，瓶口绕回去穿过瓶身。但这只是它在三维空间中的一种浸入方式。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/intro-intro-2.mp3",
+      "duration": 2.78,
+      "size": 44496,
+      "text": "还有一种画法叫 8 字形浸入，看起来完全不像瓶子，更像一条打了结的环形管道。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/intro-intro-3.mp3",
+      "duration": 3.37,
+      "size": 53856,
+      "text": "两种画法描述的是同一个拓扑曲面。今天我们用 8 字形版本，因为它的构造机制更容易讲清楚。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "section",
+      "line_id": "sc-1",
+      "filename": "section-sc-1.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/section-sc-1.mp3",
+      "duration": 3.27,
+      "size": 52272,
+      "text": "构造从截面开始。取一条 8 字形曲线，用参数写出来就是正弦 v 和正弦二 v 这一对。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "section",
+      "line_id": "sc-2",
+      "filename": "section-sc-2.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/section-sc-2.mp3",
+      "duration": 3.39,
+      "size": 54288,
+      "text": "这条曲线在 v 等于零和 v 等于圆周率两处都经过原点，所以它自己交叉一次，这正是 8 字的腰。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "section",
+      "line_id": "sc-3",
+      "filename": "section-sc-3.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/section-sc-3.mp3",
+      "duration": 3.66,
+      "size": 58608,
+      "text": "现在把这个 8 字形截面沿着一个圆周搬运一圈。如果搬运途中截面朝向不变，得到的只是一个普通的管道。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "twist",
+      "line_id": "tw-1",
+      "filename": "twist-tw-1.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/twist-tw-1.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "关键动作在这里：搬运时让截面同步旋转，但转速只有搬运速度的一半。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "twist",
+      "line_id": "tw-2",
+      "filename": "twist-tw-2.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/twist-tw-2.mp3",
+      "duration": 3.45,
+      "size": 55152,
+      "text": "方程里体现为 u 除以二这个角度。搬运走完一整圈也就是二倍圆周率时，截面只转过半圈。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "twist",
+      "line_id": "tw-3",
+      "filename": "twist-tw-3.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/twist-tw-3.mp3",
+      "duration": 3.63,
+      "size": 58032,
+      "text": "这个机制和莫比乌斯带完全一样。半圈的错位使得曲面绕回来时上下颠倒，于是无法定义统一的正反面。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "gluing",
+      "line_id": "gl-1",
+      "filename": "gluing-gl-1.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/gluing-gl-1.mp3",
+      "duration": 3.43,
+      "size": 54864,
+      "text": "怎么严格描述这个错位？看曲面在参数域上的粘合关系。直觉上 u 加二倍圆周率应该回到原处。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "gluing",
+      "line_id": "gl-2",
+      "filename": "gluing-gl-2.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/gluing-gl-2.mp3",
+      "duration": 3.07,
+      "size": 49104,
+      "text": "但实测偏差是二点三五，明显不重合。正确的粘合是 u 加二倍圆周率的同时把 v 取反。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "gluing",
+      "line_id": "gl-3",
+      "filename": "gluing-gl-3.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/gluing-gl-3.mp3",
+      "duration": 3.34,
+      "size": 53424,
+      "text": "换成这个关系后偏差降到十的负十六次方。这条 v 取反的要求就是克莱因瓶的定义性粘合。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "invariant",
+      "line_id": "iv-1",
+      "filename": "invariant-iv-1.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/invariant-iv-1.mp3",
+      "duration": 2.95,
+      "size": 47232,
+      "text": "克莱因瓶的欧拉示性数是零，和环面完全一样。那么这两个曲面能不能算同一个？"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "invariant",
+      "line_id": "iv-2",
+      "filename": "invariant-iv-2.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/invariant-iv-2.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "不能。因为可定向性不同：环面有明确的内外两面，克莱因瓶只有一个面。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "invariant",
+      "line_id": "iv-3",
+      "filename": "invariant-iv-3.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/invariant-iv-3.mp3",
+      "duration": 3.3,
+      "size": 52848,
+      "text": "这说明欧拉示性数与可定向性是两个独立的不变量。判断闭曲面必须两个一起看，缺一不可。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/summary-sum-1.mp3",
+      "duration": 2.52,
+      "size": 40320,
+      "text": "第一，8 字形浸入把 8 字截面沿圆周搬运，途中让它转过半圈。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/summary-sum-2.mp3",
+      "duration": 2.92,
+      "size": 46656,
+      "text": "第二，粘合关系是 u 加二倍圆周率配合 v 取反，这半圈错位造成了不可定向。"
+    },
+    {
+      "script_id": "klein-bottle-figure8",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/klein-bottle-figure8/yunxi/summary-sum-3.mp3",
+      "duration": 3.46,
+      "size": 55296,
+      "text": "第三，它与环面示性数相同但可定向性不同，二者是独立的不变量。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 57.330000000000005,
+  "total_size": 917136
+}

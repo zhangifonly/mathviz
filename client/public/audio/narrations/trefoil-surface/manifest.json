@@ -1,0 +1,194 @@
+{
+  "script_id": "trefoil-surface",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/trefoil-surface/intro-intro-1.mp3",
+      "duration": 3.74,
+      "size": 59904,
+      "text": "拿一根绳子随手打个结，再把两端粘起来。现在问一个看似简单的问题：这个结能不能在不剪断的前提下解开？"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/trefoil-surface/intro-intro-2.mp3",
+      "duration": 3.39,
+      "size": 54288,
+      "text": "你可以拉扯半天都解不开，但这只说明你没找到方法，不能算证明。数学要的是严格的不可能性。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/trefoil-surface/intro-intro-3.mp3",
+      "duration": 3.66,
+      "size": 58608,
+      "text": "解决办法是找不变量：一个在连续变形下不改的量。如果两个纽结的不变量不同，它们就绝不可能互变。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "crossing",
+      "line_id": "cr-1",
+      "filename": "crossing-cr-1.mp3",
+      "path": "audio/narrations/trefoil-surface/crossing-cr-1.mp3",
+      "duration": 4.07,
+      "size": 65088,
+      "text": "最直观的不变量是交叉数。把纽结投影到平面上，数一数曲线自己交叉了几次，取所有投影方式中最少的那个数。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "crossing",
+      "line_id": "cr-2",
+      "filename": "crossing-cr-2.mp3",
+      "path": "audio/narrations/trefoil-surface/crossing-cr-2.mp3",
+      "duration": 3.43,
+      "size": 54864,
+      "text": "平凡纽结的交叉数是零，因为它可以摊成一个圆。可以证明交叉数为一和为二的纽结也都是平凡的。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "crossing",
+      "line_id": "cr-3",
+      "filename": "crossing-cr-3.mp3",
+      "path": "audio/narrations/trefoil-surface/crossing-cr-3.mp3",
+      "duration": 4.0,
+      "size": 63936,
+      "text": "三叶结的交叉数是三，这是非平凡纽结能达到的最小值。所以它是最简单的真结，纽结表上编号排第一。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "polynomial",
+      "line_id": "pl-1",
+      "filename": "polynomial-pl-1.mp3",
+      "path": "audio/narrations/trefoil-surface/polynomial-pl-1.mp3",
+      "duration": 3.2,
+      "size": 51264,
+      "text": "交叉数虽然直观，但不好算，因为要遍历所有投影。更实用的不变量是亚历山大多项式。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "polynomial",
+      "line_id": "pl-2",
+      "filename": "polynomial-pl-2.mp3",
+      "path": "audio/narrations/trefoil-surface/polynomial-pl-2.mp3",
+      "duration": 3.3,
+      "size": 52848,
+      "text": "平凡纽结的亚历山大多项式恒等于一。而三叶结的是 t 平方减 t 加一，明显不是常数。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "polynomial",
+      "line_id": "pl-3",
+      "filename": "polynomial-pl-3.mp3",
+      "path": "audio/narrations/trefoil-surface/polynomial-pl-3.mp3",
+      "duration": 4.04,
+      "size": 64656,
+      "text": "两者不同，就严格证明了三叶结无法解开。注意在 t 等于一时两者都等于一，所以必须换个点取值才能区分。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "torusknot",
+      "line_id": "tk-1",
+      "filename": "torusknot-tk-1.mp3",
+      "path": "audio/narrations/trefoil-surface/torusknot-tk-1.mp3",
+      "duration": 3.82,
+      "size": 61056,
+      "text": "三叶结属于一个大家族，叫环面纽结。做法是在环面表面上绕行：绕 p 圈经线，同时绕 q 圈纬线。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "torusknot",
+      "line_id": "tk-2",
+      "filename": "torusknot-tk-2.mp3",
+      "path": "audio/narrations/trefoil-surface/torusknot-tk-2.mp3",
+      "duration": 3.16,
+      "size": 50544,
+      "text": "三叶结就是 p 等于二、q 等于三的情形。换成二和五得到五叶结，交叉数变成五。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "torusknot",
+      "line_id": "tk-3",
+      "filename": "torusknot-tk-3.mp3",
+      "path": "audio/narrations/trefoil-surface/torusknot-tk-3.mp3",
+      "duration": 3.53,
+      "size": 56448,
+      "text": "但要小心：只有当 p 和 q 互素时才得到单一闭曲线。屏幕上显示的最大公约数读数就是这个判据。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "link",
+      "line_id": "lk-1",
+      "filename": "link-lk-1.mp3",
+      "path": "audio/narrations/trefoil-surface/link-lk-1.mp3",
+      "duration": 2.82,
+      "size": 45072,
+      "text": "请把参数切到二和四。这时最大公约数是二，绕行路径没有回到起点就闭合了。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "link",
+      "line_id": "lk-2",
+      "filename": "link-lk-2.mp3",
+      "path": "audio/narrations/trefoil-surface/link-lk-2.mp3",
+      "duration": 3.56,
+      "size": 56880,
+      "text": "结果不是一根绳子打结，而是两根绳子套在一起。这种对象叫链环，是纽结理论的另一大类研究对象。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "link",
+      "line_id": "lk-3",
+      "filename": "link-lk-3.mp3",
+      "path": "audio/narrations/trefoil-surface/link-lk-3.mp3",
+      "duration": 3.89,
+      "size": 62208,
+      "text": "顺带提一个有趣的事实：三叶结有左手和右手两个版本，它们镜像对称却无法互相变形，是最简单的手性纽结。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/trefoil-surface/summary-sum-1.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "第一，三叶结是交叉数最小的非平凡纽结，交叉数为三。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/trefoil-surface/summary-sum-2.mp3",
+      "duration": 3.07,
+      "size": 49104,
+      "text": "第二，亚历山大多项式 t 平方减 t 加一不等于常数一，这严格证明了它打不开。"
+    },
+    {
+      "script_id": "trefoil-surface",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/trefoil-surface/summary-sum-3.mp3",
+      "duration": 3.41,
+      "size": 54576,
+      "text": "第三，环面纽结要求 p 与 q 互素，否则得到的是链环而非纽结。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 62.32000000000001,
+  "total_size": 997056,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}
