@@ -193,6 +193,7 @@ const navCategories: NavCategory[] = [
       { path: '/conical-spiral', label: '圆锥螺线', icon: '🐚' },
       { path: '/spherical-spiral', label: '球面螺线', icon: '🧭' },
       { path: '/platonic-solids', label: '柏拉图立体', icon: '🎲' },
+      { path: '/prism-antiprism', label: '棱柱与反棱柱', icon: '🔷' },
     ],
   },
   {
@@ -328,6 +329,7 @@ const navCategories: NavCategory[] = [
       { path: '/space-curve-frenet', label: '空间曲线标架', icon: '🎢' },
       { path: '/archimedean-solids', label: '阿基米德立体', icon: '⚽' },
       { path: '/stellated-polyhedra', label: '星形多面体', icon: '✨' },
+      { path: '/space-filling-solids', label: '空间填充多面体', icon: '🧊' },
     ],
   },
   {

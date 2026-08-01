@@ -268,6 +268,8 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'platonic-solids',
       'archimedean-solids',
       'stellated-polyhedra',
+      'prism-antiprism',
+      'space-filling-solids',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
