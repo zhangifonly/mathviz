@@ -408,6 +408,7 @@ const DiniSurfaceSceneRenderer = lazy(() => import('./DiniSurface/DiniSurfaceSce
 const RomanSurfaceSceneRenderer = lazy(() => import('./RomanSurface/RomanSurfaceSceneRenderer'))
 const CrossCapSceneRenderer = lazy(() => import('./CrossCap/CrossCapSceneRenderer'))
 const BoySurfaceSceneRenderer = lazy(() => import('./BoySurface/BoySurfaceSceneRenderer'))
+const HyperbolicParaboloidSceneRenderer = lazy(() => import('./HyperbolicParaboloid/HyperbolicParaboloidSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -718,6 +719,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'roman-surface': RomanSurfaceSceneRenderer,
   'cross-cap': CrossCapSceneRenderer,
   'boy-surface': BoySurfaceSceneRenderer,
+  'hyperbolic-paraboloid': HyperbolicParaboloidSceneRenderer,
 }
 
 // 获取场景渲染器

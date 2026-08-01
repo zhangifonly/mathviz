@@ -313,4 +313,5 @@ export const SCENE_FILES: Record<string, string> = {
   'roman-surface': 'romanSurfaceScenes',
   'cross-cap': 'crossCapScenes',
   'boy-surface': 'boySurfaceScenes',
+  'hyperbolic-paraboloid': 'hyperbolicParaboloidScenes',
 }

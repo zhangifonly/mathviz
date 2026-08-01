@@ -3406,4 +3406,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/hyperbolic-paraboloid',
+    title: '双曲抛物面',
+    description: '马鞍面上每点都是鞍点，却能被两族直线完全铺满，薯片和屋顶都用它。',
+    icon: '🏇',
+    difficulty: 'intermediate',
+    ageRange: '高中 15-18岁',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

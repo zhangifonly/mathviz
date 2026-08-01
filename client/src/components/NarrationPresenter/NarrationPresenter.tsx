@@ -248,6 +248,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'enneper-surface', 'dini-surface',
       'roman-surface', 'cross-cap',
       'boy-surface',
+      'hyperbolic-paraboloid',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

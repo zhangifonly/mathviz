@@ -182,6 +182,7 @@ const navCategories: NavCategory[] = [
       { path: '/latin-square', label: '拉丁方', icon: '🔲' },
       { path: '/inclusion-exclusion', label: '容斥原理', icon: '🔵' },
       { path: '/derangements', label: '错排问题', icon: '✉️' },
+      { path: '/hyperbolic-paraboloid', label: '双曲抛物面', icon: '🏇' },
     ],
   },
   {

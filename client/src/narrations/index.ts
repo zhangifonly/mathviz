@@ -317,6 +317,7 @@ export { diniSurfaceNarration } from './scripts/dini-surface'
 export { romanSurfaceNarration } from './scripts/roman-surface'
 export { crossCapNarration } from './scripts/cross-cap'
 export { boySurfaceNarration } from './scripts/boy-surface'
+export { hyperbolicParaboloidNarration } from './scripts/hyperbolic-paraboloid'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -622,6 +623,7 @@ import { diniSurfaceNarration } from './scripts/dini-surface'
 import { romanSurfaceNarration } from './scripts/roman-surface'
 import { crossCapNarration } from './scripts/cross-cap'
 import { boySurfaceNarration } from './scripts/boy-surface'
+import { hyperbolicParaboloidNarration } from './scripts/hyperbolic-paraboloid'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -931,6 +933,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'roman-surface': romanSurfaceNarration,
   'cross-cap': crossCapNarration,
   'boy-surface': boySurfaceNarration,
+  'hyperbolic-paraboloid': hyperbolicParaboloidNarration,
 }
 
 // 获取稿件

@@ -328,6 +328,7 @@ const DiniSurfaceExperiment = lazyRetry(() => import('./experiments/dini-surface
 const RomanSurfaceExperiment = lazyRetry(() => import('./experiments/roman-surface/RomanSurfaceExperiment'))
 const CrossCapExperiment = lazyRetry(() => import('./experiments/cross-cap/CrossCapExperiment'))
 const BoySurfaceExperiment = lazyRetry(() => import('./experiments/boy-surface/BoySurfaceExperiment'))
+const HyperbolicParaboloidExperiment = lazyRetry(() => import('./experiments/hyperbolic-paraboloid/HyperbolicParaboloidExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -653,6 +654,7 @@ export default function App() {
             <Route path="roman-surface" element={<RomanSurfaceExperiment />} />
             <Route path="cross-cap" element={<CrossCapExperiment />} />
             <Route path="boy-surface" element={<BoySurfaceExperiment />} />
+            <Route path="hyperbolic-paraboloid" element={<HyperbolicParaboloidExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />
