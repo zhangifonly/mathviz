@@ -1,0 +1,190 @@
+{
+  "script_id": "dini-surface",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "dini-surface",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/intro-intro-1.mp3",
+      "duration": 4.16,
+      "size": 66528,
+      "text": "如果你见过伪球面，就知道它是常负曲率曲面的经典代表。那么问题来了：常负曲率的曲面，是不是只有伪球面这一种形状？"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/intro-intro-2.mp3",
+      "duration": 3.93,
+      "size": 62928,
+      "text": "答案是否定的，而且差得很远。存在一整个家族的曲面，高斯曲率同样是处处相等的负数，形状却各不相同。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/intro-intro-3.mp3",
+      "duration": 3.52,
+      "size": 56304,
+      "text": "今天要看的迪尼曲面就是其中一员，由意大利数学家迪尼给出。它看起来像一支无限延伸的螺旋海螺。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "build",
+      "line_id": "build-1",
+      "filename": "build-build-1.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/build-build-1.mp3",
+      "duration": 3.46,
+      "size": 55296,
+      "text": "构造思路很直接。伪球面是把曳物线绕轴旋转得到的，旋转时母线只是转圈，不上升。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "build",
+      "line_id": "build-2",
+      "filename": "build-build-2.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/build-build-2.mp3",
+      "duration": 4.4,
+      "size": 70416,
+      "text": "现在改一下规则：让母线一边绕轴旋转，一边匀速上升。转出来的曲面就不再闭合成一圈，而是像螺纹一样一直往上延伸。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "build",
+      "line_id": "build-3",
+      "filename": "build-build-3.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/build-build-3.mp3",
+      "duration": 3.58,
+      "size": 57312,
+      "text": "方程里多出来的那一项就是这个上升量，写成 b 乘以 u。参数 b 控制上升的快慢，我们叫它螺距系数。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "curvature",
+      "line_id": "curv-1",
+      "filename": "curvature-curv-1.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/curvature-curv-1.mp3",
+      "duration": 3.35,
+      "size": 53568,
+      "text": "让人惊讶的是，加了螺旋之后，高斯曲率居然还是常数。它等于负一除以 a 平方加 b 平方。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "curvature",
+      "line_id": "curv-2",
+      "filename": "curvature-curv-2.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/curvature-curv-2.mp3",
+      "duration": 4.28,
+      "size": 68544,
+      "text": "注意这个式子里完全没有 u 和 v。也就是说无论你在曲面上哪个位置，无论是在粗的地方还是在细的尾巴上，弯曲程度都一样。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "curvature",
+      "line_id": "curv-3",
+      "filename": "curvature-curv-3.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/curvature-curv-3.mp3",
+      "duration": 3.19,
+      "size": 51120,
+      "text": "这说明曲率和形状是可以解耦的。同一个负曲率值，对应着无穷多种看起来毫不相干的曲面。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "degenerate",
+      "line_id": "deg-1",
+      "filename": "degenerate-deg-1.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/degenerate-deg-1.mp3",
+      "duration": 3.05,
+      "size": 48816,
+      "text": "现在看一个特殊情形。把螺距系数 b 调到零，上升量就消失了，母线只剩纯旋转。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "degenerate",
+      "line_id": "deg-2",
+      "filename": "degenerate-deg-2.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/degenerate-deg-2.mp3",
+      "duration": 3.38,
+      "size": 54000,
+      "text": "这时迪尼曲面精确地退化成伪球面，曲率公式也随之简化为负一除以 a 平方，正是伪球面的曲率。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "degenerate",
+      "line_id": "deg-3",
+      "filename": "degenerate-deg-3.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/degenerate-deg-3.mp3",
+      "duration": 2.94,
+      "size": 47088,
+      "text": "所以伪球面并不是一个孤立的特例，而是这个螺旋家族在 b 等于零处的边界成员。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "explore",
+      "line_id": "exp-1",
+      "filename": "explore-exp-1.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/explore-exp-1.mp3",
+      "duration": 4.27,
+      "size": 68256,
+      "text": "请先拖动螺距系数 b。你会看到曲面从闭合的伪球面逐渐被拉成螺旋，每绕一圈上升的高度恰好是二倍圆周率乘以 b。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "explore",
+      "line_id": "exp-2",
+      "filename": "explore-exp-2.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/explore-exp-2.mp3",
+      "duration": 4.74,
+      "size": 75888,
+      "text": "再拖动粗细参数 a，曲面整体变胖或变瘦。注意左上角的曲率读数，它随着两个参数一起变，但在任一时刻都是全曲面统一的值。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "explore",
+      "line_id": "exp-3",
+      "filename": "explore-exp-3.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/explore-exp-3.mp3",
+      "duration": 4.85,
+      "size": 77616,
+      "text": "试着让 a 和 b 一起变，但保持 a 平方加 b 平方不变。这时形状明显改变，曲率却纹丝不动，这就是曲率与形状解耦的直观演示。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/summary-sum-1.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "第一，迪尼曲面是把伪球面的母线一边旋转一边抬升得到的螺旋曲面。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/summary-sum-2.mp3",
+      "duration": 3.19,
+      "size": 51120,
+      "text": "第二，它的高斯曲率等于负一除以 a 平方加 b 平方，与位置无关，b 等于零时退化为伪球面。"
+    },
+    {
+      "script_id": "dini-surface",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/dini-surface/yunxi/summary-sum-3.mp3",
+      "duration": 3.68,
+      "size": 58896,
+      "text": "第三，常负曲率曲面构成一整个家族，同一曲率可以对应完全不同的形状。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 66.58999999999999,
+  "total_size": 1065600
+}

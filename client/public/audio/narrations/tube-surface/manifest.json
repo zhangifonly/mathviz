@@ -1,0 +1,194 @@
+{
+  "script_id": "tube-surface",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "tube-surface",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/tube-surface/intro-intro-1.mp3",
+      "duration": 3.57,
+      "size": 57168,
+      "text": "想象你要给一根弯曲的铁丝套上一层等厚的橡胶皮。听起来简单，实际做起来有个关键问题必须先解决。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/tube-surface/intro-intro-2.mp3",
+      "duration": 4.2,
+      "size": 67248,
+      "text": "橡胶皮的每个圆截面必须垂直于铁丝，否则套出来的管子会歪。而且相邻截面不能突然扭转，否则管子会自己拧起来。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/tube-surface/intro-intro-3.mp3",
+      "duration": 3.05,
+      "size": 48816,
+      "text": "这就要求我们在曲线的每一点上，都有一套稳定的坐标框架。数学上的答案叫 Frenet 标架。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "frame",
+      "line_id": "fr-1",
+      "filename": "frame-fr-1.mp3",
+      "path": "audio/narrations/tube-surface/frame-fr-1.mp3",
+      "duration": 4.07,
+      "size": 65088,
+      "text": "Frenet 标架由三个单位向量组成。第一个是切向量 T，指向曲线前进的方向，就是位置对参数求导再归一化。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "frame",
+      "line_id": "fr-2",
+      "filename": "frame-fr-2.mp3",
+      "path": "audio/narrations/tube-surface/frame-fr-2.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "第二个是主法向量 N，由切向量的导数归一化得到，它指向曲线弯曲的那一侧。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "frame",
+      "line_id": "fr-3",
+      "filename": "frame-fr-3.mp3",
+      "path": "audio/narrations/tube-surface/frame-fr-3.mp3",
+      "duration": 4.7,
+      "size": 75168,
+      "text": "第三个是副法向量 B，等于 T 叉乘 N。这三个向量两两垂直，构成随曲线一路移动的正交坐标系。画面上绿红蓝三根轴就是它们。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "build",
+      "line_id": "bd-1",
+      "filename": "build-bd-1.mp3",
+      "path": "audio/narrations/tube-surface/build-bd-1.mp3",
+      "duration": 3.2,
+      "size": 51264,
+      "text": "有了标架，管面就好写了。在每个点上，用 N 和 B 张成的平面里画一个半径固定的圆。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "build",
+      "line_id": "bd-2",
+      "filename": "build-bd-2.mp3",
+      "path": "audio/narrations/tube-surface/build-bd-2.mp3",
+      "duration": 3.35,
+      "size": 53568,
+      "text": "这个圆自动垂直于曲线，因为 N 和 B 都垂直于切向量 T。把所有圆连起来，管面就成型了。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "build",
+      "line_id": "bd-3",
+      "filename": "build-bd-3.mp3",
+      "path": "audio/narrations/tube-surface/build-bd-3.mp3",
+      "duration": 2.97,
+      "size": 47520,
+      "text": "可以验证：管面上任意一点到中心曲线对应点的距离，精确等于管半径，一点误差都没有。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "curves",
+      "line_id": "cv-1",
+      "filename": "curves-cv-1.mp3",
+      "path": "audio/narrations/tube-surface/curves-cv-1.mp3",
+      "duration": 3.83,
+      "size": 61200,
+      "text": "先看螺旋线。它的曲率和挠率都是常数，所以套出来的管子粗细均匀、扭转速率恒定，像一根弹簧。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "curves",
+      "line_id": "cv-2",
+      "filename": "curves-cv-2.mp3",
+      "path": "audio/narrations/tube-surface/curves-cv-2.mp3",
+      "duration": 4.33,
+      "size": 69264,
+      "text": "再看三叶结。它是最简单的非平凡纽结，三个交叉无论怎么拉伸都消不掉。套上管子后，纽结的结构一眼就看清了。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "curves",
+      "line_id": "cv-3",
+      "filename": "curves-cv-3.mp3",
+      "path": "audio/narrations/tube-surface/curves-cv-3.mp3",
+      "duration": 3.65,
+      "size": 58320,
+      "text": "第三条是维维亚尼曲线，它是球面与圆柱面的交线。你可以验证它同时满足球面方程和柱面方程。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "caveat",
+      "line_id": "cw-1",
+      "filename": "caveat-cw-1.mp3",
+      "path": "audio/narrations/tube-surface/caveat-cw-1.mp3",
+      "duration": 3.76,
+      "size": 60192,
+      "text": "这套方法有个重要限制。主法向量是由切向量的导数归一化得到的，如果这个导数为零，归一化就没法进行。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "caveat",
+      "line_id": "cw-2",
+      "filename": "caveat-cw-2.mp3",
+      "path": "audio/narrations/tube-surface/caveat-cw-2.mp3",
+      "duration": 4.26,
+      "size": 68112,
+      "text": "切向量导数为零意味着曲率为零，也就是曲线在那里是直的，或者处于拐点。此时 Frenet 标架完全失去定义。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "caveat",
+      "line_id": "cw-3",
+      "filename": "caveat-cw-3.mp3",
+      "path": "audio/narrations/tube-surface/caveat-cw-3.mp3",
+      "duration": 4.46,
+      "size": 71424,
+      "text": "本实验选的三条曲线曲率都处处大于零点二，避开了这个问题。工程上遇到直线段时要换成 Bishop 标架，也叫旋转最小标架。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/tube-surface/summary-sum-1.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "第一，管面的难点在截面朝向，需要沿曲线移动的正交标架。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/tube-surface/summary-sum-2.mp3",
+      "duration": 2.92,
+      "size": 46800,
+      "text": "第二，Frenet 标架由切向量、主法向量、副法向量组成，三者两两垂直。"
+    },
+    {
+      "script_id": "tube-surface",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/tube-surface/summary-sum-3.mp3",
+      "duration": 3.17,
+      "size": 50688,
+      "text": "第三，曲率为零处标架失效，此时须改用 Bishop 标架。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 64.41999999999999,
+  "total_size": 1030752,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

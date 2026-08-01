@@ -1,0 +1,194 @@
+{
+  "script_id": "boy-surface",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "boy-surface",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/boy-surface/intro-intro-1.mp3",
+      "duration": 3.68,
+      "size": 58896,
+      "text": "一九零一年，希尔伯特给他的学生维尔纳·博伊出了一道题，让他证明射影平面不可能无分支点地浸入三维空间。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/boy-surface/intro-intro-2.mp3",
+      "duration": 3.26,
+      "size": 52128,
+      "text": "博伊没有证明出来，反而找到了一个反例。他造出了一张处处光滑、没有任何分支点的射影平面浸入。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/boy-surface/intro-intro-3.mp3",
+      "duration": 3.46,
+      "size": 55440,
+      "text": "这个反例就是今天的主角，博伊曲面。它推翻了导师的猜测，也成了拓扑学里最著名的图形之一。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "smooth",
+      "line_id": "sm-1",
+      "filename": "smooth-sm-1.mp3",
+      "path": "audio/narrations/boy-surface/smooth-sm-1.mp3",
+      "duration": 3.79,
+      "size": 60624,
+      "text": "先说清楚一件容易混淆的事。博伊曲面仍然会自己穿过自己，它有自交，这一点和交叉帽、罗马曲面一样。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "smooth",
+      "line_id": "sm-2",
+      "filename": "smooth-sm-2.mp3",
+      "path": "audio/narrations/boy-surface/smooth-sm-2.mp3",
+      "duration": 4.06,
+      "size": 64944,
+      "text": "光滑指的不是没有自交，而是没有分支点。交叉帽有两个分支点，罗马曲面有六个，在那些点上曲面被捏成了尖。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "smooth",
+      "line_id": "sm-3",
+      "filename": "smooth-sm-3.mp3",
+      "path": "audio/narrations/boy-surface/smooth-sm-3.mp3",
+      "duration": 3.36,
+      "size": 53712,
+      "text": "博伊曲面一个分支点都没有。曲面的每一小块都平滑得像张纸，只是纸和纸之间互相穿过而已。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "construct",
+      "line_id": "con-1",
+      "filename": "construct-con-1.mp3",
+      "path": "audio/narrations/boy-surface/construct-con-1.mp3",
+      "duration": 3.88,
+      "size": 62064,
+      "text": "要写出它的方程并不容易。目前最简洁的是布莱恩特和库斯纳给出的参数化，用一个复数在单位圆盘上取值。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "construct",
+      "line_id": "con-2",
+      "filename": "construct-con-2.mp3",
+      "path": "audio/narrations/boy-surface/construct-con-2.mp3",
+      "duration": 4.37,
+      "size": 69984,
+      "text": "分母是 w 的六次方，加根号五乘 w 的三次方，再减一。这个根号五不是凑数，它让分母的六个根落在正二十面体的对称位置上。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "construct",
+      "line_id": "con-3",
+      "filename": "construct-con-3.mp3",
+      "path": "audio/narrations/boy-surface/construct-con-3.mp3",
+      "duration": 3.08,
+      "size": 49248,
+      "text": "正是这个选择同时办成了两件事：让曲面获得三重对称，并且把所有分支点全部消掉。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "projective",
+      "line_id": "proj-1",
+      "filename": "projective-proj-1.mp3",
+      "path": "audio/narrations/boy-surface/projective-proj-1.mp3",
+      "duration": 2.72,
+      "size": 43488,
+      "text": "定义域是单位圆盘，那它凭什么是射影平面而不是圆盘？关键在边界。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "projective",
+      "line_id": "proj-2",
+      "filename": "projective-proj-2.mp3",
+      "path": "audio/narrations/boy-surface/projective-proj-2.mp3",
+      "duration": 4.2,
+      "size": 67248,
+      "text": "在圆盘边界上，复数 w 和负 w 这一对对径点，被映到空间中同一个位置。你可以在屏幕上看到偏差读数，它精确为零。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "projective",
+      "line_id": "proj-3",
+      "filename": "projective-proj-3.mp3",
+      "path": "audio/narrations/boy-surface/projective-proj-3.mp3",
+      "duration": 3.98,
+      "size": 63648,
+      "text": "这正是射影平面的构造方式：圆盘加上边界对径点粘合。所以博伊曲面确实是射影平面，而非普通的圆盘。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "explore",
+      "line_id": "exp-1",
+      "filename": "explore-exp-1.mp3",
+      "path": "audio/narrations/boy-surface/explore-exp-1.mp3",
+      "duration": 3.46,
+      "size": 55296,
+      "text": "请旋转视角，从上方俯视这张曲面。你会看到三片花瓣状的结构围绕中轴均匀分布。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "explore",
+      "line_id": "exp-2",
+      "filename": "explore-exp-2.mp3",
+      "path": "audio/narrations/boy-surface/explore-exp-2.mp3",
+      "duration": 3.48,
+      "size": 55728,
+      "text": "把参数绕原点转一百二十度，得到的点到原点的距离完全不变。这就是三重旋转对称的数学表述。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "explore",
+      "line_id": "exp-3",
+      "filename": "explore-exp-3.mp3",
+      "path": "audio/narrations/boy-surface/explore-exp-3.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "自交线也遵循这个对称：它拧成一个三叶的形状，在中心汇成唯一的三重点。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/boy-surface/summary-sum-1.mp3",
+      "duration": 2.75,
+      "size": 43920,
+      "text": "第一，博伊曲面是射影平面的浸入，有自交但没有任何分支点，处处光滑。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/boy-surface/summary-sum-2.mp3",
+      "duration": 2.58,
+      "size": 41328,
+      "text": "第二，它是博伊为推翻希尔伯特的猜测而造出的反例，一九零一年问世。"
+    },
+    {
+      "script_id": "boy-surface",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/boy-surface/summary-sum-3.mp3",
+      "duration": 3.48,
+      "size": 55728,
+      "text": "第三，方程里的根号五带来了三重对称，也是消掉全部分支点的关键。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 62.14999999999999,
+  "total_size": 994320,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

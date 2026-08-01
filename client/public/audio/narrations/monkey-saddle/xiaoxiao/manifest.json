@@ -1,0 +1,190 @@
+{
+  "script_id": "monkey-saddle",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/intro-intro-1.mp3",
+      "duration": 3.97,
+      "size": 63504,
+      "text": "普通的马鞍面有两个下坡，正好放骑手的两条腿。但如果骑手是一只猴子，它还有一条尾巴，得再来一个下坡。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/intro-intro-2.mp3",
+      "duration": 3.02,
+      "size": 48240,
+      "text": "满足这个要求的曲面叫猴鞍面，方程是 x 的三次方减去三倍的 x 乘 y 的平方。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/intro-intro-3.mp3",
+      "duration": 3.69,
+      "size": 59040,
+      "text": "它有三个上坡三个下坡交替排列。但这张面的真正价值不在形状，而在它揭示的一个重要数学事实。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "polar",
+      "line_id": "pl-1",
+      "filename": "polar-pl-1.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/polar-pl-1.mp3",
+      "duration": 3.88,
+      "size": 62064,
+      "text": "直角坐标形式看不出对称性。换成极坐标后，方程变得极其干净：z 等于半径的三次方乘以余弦三倍角。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "polar",
+      "line_id": "pl-2",
+      "filename": "polar-pl-2.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/polar-pl-2.mp3",
+      "duration": 4.37,
+      "size": 69840,
+      "text": "这个形式一眼就能看出三重对称。角度每转一百二十度，余弦三倍角完全复原，所以曲面转一百二十度和原来一样。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "polar",
+      "line_id": "pl-3",
+      "filename": "polar-pl-3.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/polar-pl-3.mp3",
+      "duration": 3.83,
+      "size": 61200,
+      "text": "角度每转六十度，余弦三倍角变号，也就是上坡变下坡。转一整圈符号变化六次，正好三上三下。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "degenerate",
+      "line_id": "dg-1",
+      "filename": "degenerate-dg-1.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/degenerate-dg-1.mp3",
+      "duration": 4.09,
+      "size": 65520,
+      "text": "现在说重点。判断一个临界点是极大、极小还是鞍点，标准方法是看二阶偏导构成的 Hesse 矩阵的行列式。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "degenerate",
+      "line_id": "dg-2",
+      "filename": "degenerate-dg-2.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/degenerate-dg-2.mp3",
+      "duration": 2.9,
+      "size": 46368,
+      "text": "对普通鞍面，原点处这个行列式等于负四，小于零，判定为鞍点，一切正常。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "degenerate",
+      "line_id": "dg-3",
+      "filename": "degenerate-dg-3.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/degenerate-dg-3.mp3",
+      "duration": 4.03,
+      "size": 64512,
+      "text": "但对猴鞍面，原点处的 Hesse 矩阵三个分量全是零，行列式也是零。二阶判别法给不出任何结论，彻底失效了。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "higher",
+      "line_id": "hg-1",
+      "filename": "higher-hg-1.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/higher-hg-1.mp3",
+      "duration": 3.64,
+      "size": 58176,
+      "text": "为什么会这样？因为猴鞍面的最低次项是三次的。泰勒展开到二阶时，所有二阶项的系数都是零。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "higher",
+      "line_id": "hg-2",
+      "filename": "higher-hg-2.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/higher-hg-2.mp3",
+      "duration": 3.39,
+      "size": 54288,
+      "text": "要判断原点的性质，必须展开到三阶。这类临界点叫退化临界点，是奇点理论研究的起点。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "higher",
+      "line_id": "hg-3",
+      "filename": "higher-hg-3.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/higher-hg-3.mp3",
+      "duration": 3.07,
+      "size": 49104,
+      "text": "猴鞍面因此成了教科书上最标准的例子，专门用来说明二阶判别法有它的适用边界。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "general",
+      "line_id": "gn-1",
+      "filename": "general-gn-1.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/general-gn-1.mp3",
+      "duration": 3.02,
+      "size": 48384,
+      "text": "这个构造可以推广。取复数 x 加 i y 的 n 次方，只留实部，就得到 n 重鞍面。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "general",
+      "line_id": "gn-2",
+      "filename": "general-gn-2.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/general-gn-2.mp3",
+      "duration": 3.86,
+      "size": 61776,
+      "text": "请切换重数观察。n 等于二是普通鞍面，两上两下；n 等于三是猴鞍面；n 等于四则有四上四下。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "general",
+      "line_id": "gn-3",
+      "filename": "general-gn-3.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/general-gn-3.mp3",
+      "duration": 4.0,
+      "size": 63936,
+      "text": "留意 Hesse 行列式读数：只有 n 等于二时它不为零。n 大于等于三时最低次项高于二次，判别法一律失效。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.91,
+      "size": 46512,
+      "text": "第一，猴鞍面有三个上坡三个下坡，极坐标下是半径三次方乘余弦三倍角。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.75,
+      "size": 44064,
+      "text": "第二，它在原点处 Hesse 矩阵全为零，二阶判别法失效，必须看三阶项。"
+    },
+    {
+      "script_id": "monkey-saddle",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/monkey-saddle/xiaoxiao/summary-sum-3.mp3",
+      "duration": 3.12,
+      "size": 49968,
+      "text": "第三，复数的 n 次方取实部给出 n 重鞍面的统一构造。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 63.54,
+  "total_size": 1016496
+}

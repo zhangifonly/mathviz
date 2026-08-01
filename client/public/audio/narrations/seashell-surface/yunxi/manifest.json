@@ -1,0 +1,190 @@
+{
+  "script_id": "seashell-surface",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "seashell-surface",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/intro-intro-1.mp3",
+      "duration": 3.49,
+      "size": 55872,
+      "text": "捡起一枚海螺，你会发现一件奇怪的事：它从幼体长到成体，形状几乎没变，只是整体变大了。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/intro-intro-2.mp3",
+      "duration": 3.35,
+      "size": 53568,
+      "text": "这不是巧合。海螺的生长遵循一条极简的规律：每转一圈，所有尺寸乘上同一个固定倍数。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/intro-intro-3.mp3",
+      "duration": 2.88,
+      "size": 46080,
+      "text": "这条规律叫自相似生长，它在数学上对应一条特殊的曲线，叫对数螺线。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "logspiral",
+      "line_id": "lg-1",
+      "filename": "logspiral-lg-1.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/logspiral-lg-1.mp3",
+      "duration": 3.37,
+      "size": 53856,
+      "text": "对数螺线有一个漂亮得不可思议的性质。从原点向曲线上任意一点画一条线，再画出该点的切线。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "logspiral",
+      "line_id": "lg-2",
+      "filename": "logspiral-lg-2.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/logspiral-lg-2.mp3",
+      "duration": 3.29,
+      "size": 52704,
+      "text": "这两条线的夹角，在螺线上每一个点都完全相同。无论离原点多近多远，角度纹丝不动。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "logspiral",
+      "line_id": "lg-3",
+      "filename": "logspiral-lg-3.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/logspiral-lg-3.mp3",
+      "duration": 4.07,
+      "size": 65088,
+      "text": "这个恒定的角就是生长角，我们叫它 α。屏幕上显示的实测值处处等于 α，误差在小数点后五位以内。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "growth",
+      "line_id": "gr-1",
+      "filename": "growth-gr-1.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/growth-gr-1.mp3",
+      "duration": 4.23,
+      "size": 67680,
+      "text": "定角性质的代价是半径必须按指数增长。具体说，半径等于 e 的 u 乘余切 α 次方，其中 u 是盘绕角。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "growth",
+      "line_id": "gr-2",
+      "filename": "growth-gr-2.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/growth-gr-2.mp3",
+      "duration": 4.37,
+      "size": 69984,
+      "text": "由此可以算出每绕一圈的放大倍数：e 的二倍圆周率乘余切 α 次方。这是一个只依赖 α 的常数。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "growth",
+      "line_id": "gr-3",
+      "filename": "growth-gr-3.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/growth-gr-3.mp3",
+      "duration": 3.74,
+      "size": 59904,
+      "text": "把这个因子同时作用在螺线半径和管截面半径上，海螺的形状就出来了。截面跟着放大，所以形状不变。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "verify",
+      "line_id": "vf-1",
+      "filename": "verify-vf-1.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/verify-vf-1.mp3",
+      "duration": 3.61,
+      "size": 57744,
+      "text": "怎么确认真的自相似？取曲面上任意一点，再取盘绕角增加二倍圆周率后的对应点，也就是转了整整一圈。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "verify",
+      "line_id": "vf-2",
+      "filename": "verify-vf-2.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/verify-vf-2.mp3",
+      "duration": 3.57,
+      "size": 57168,
+      "text": "比较这两点的横坐标之比和纵坐标之比。如果自相似成立，两个比值应该相等，而且都等于那个放大倍数。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "verify",
+      "line_id": "vf-3",
+      "filename": "verify-vf-3.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/verify-vf-3.mp3",
+      "duration": 2.97,
+      "size": 47520,
+      "text": "实测结果精确吻合到小数点后八位。这就是自相似的严格验证，不是看起来像而已。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "tune",
+      "line_id": "tn-1",
+      "filename": "tune-tn-1.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/tune-tn-1.mp3",
+      "duration": 3.65,
+      "size": 58464,
+      "text": "请拖动生长角滑块。α 越接近九十度，余切越小，放大倍数越接近一，螺体就越扁平。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "tune",
+      "line_id": "tn-2",
+      "filename": "tune-tn-2.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/tune-tn-2.mp3",
+      "duration": 3.72,
+      "size": 59472,
+      "text": "α 减小则放大迅速。标准海螺取一点四七，每圈放大约一点八九倍，绕三圈累计六点七倍。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "tune",
+      "line_id": "tn-3",
+      "filename": "tune-tn-3.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/tune-tn-3.mp3",
+      "duration": 4.26,
+      "size": 68112,
+      "text": "注意别把 α 调得太小。取一点三五时每圈放大四倍，绕三圈就是六十八倍，最外圈会占满整个画面。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/summary-sum-1.mp3",
+      "duration": 2.92,
+      "size": 46656,
+      "text": "第一，海螺的生长是自相似的：每转一圈所有尺寸乘同一常数，所以形状不变。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/summary-sum-2.mp3",
+      "duration": 2.86,
+      "size": 45792,
+      "text": "第二，对数螺线的定角性质是这一切的根源，径向与切向的夹角处处相同。"
+    },
+    {
+      "script_id": "seashell-surface",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/seashell-surface/yunxi/summary-sum-3.mp3",
+      "duration": 4.09,
+      "size": 65376,
+      "text": "第三，放大倍数等于 e 的二倍圆周率乘余切 α 次方，只由生长角决定。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 64.44,
+  "total_size": 1031040
+}

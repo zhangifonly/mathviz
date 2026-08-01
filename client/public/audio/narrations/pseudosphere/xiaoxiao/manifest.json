@@ -1,0 +1,190 @@
+{
+  "script_id": "pseudosphere",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "pseudosphere",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/intro-intro-1.mp3",
+      "duration": 4.92,
+      "size": 78768,
+      "text": "球面上每一点都向同一侧弯曲，我们说它的高斯曲率是正的，而且处处相等。这种处处一样的均匀性，让球面成了几何学里最完美的对象之一。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/intro-intro-2.mp3",
+      "duration": 3.59,
+      "size": 57456,
+      "text": "那么反过来问：有没有一张曲面，每一点都像马鞍那样朝两个方向反向弯曲，而且弯曲的程度处处相同？"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/intro-intro-3.mp3",
+      "duration": 4.04,
+      "size": 64656,
+      "text": "答案就是今天的主角，伪球面。它的高斯曲率处处等于负一除以半径的平方，是球面在负曲率世界里的镜像。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "tractrix",
+      "line_id": "tract-1",
+      "filename": "tractrix-tract-1.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/tractrix-tract-1.mp3",
+      "duration": 5.12,
+      "size": 81936,
+      "text": "要造出伪球面，先要找到它的母线。这条曲线叫曳物线，来历很有画面感：你用一根绳子拖着一块石头，自己沿直线走，石头划出的轨迹就是它。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "tractrix",
+      "line_id": "tract-2",
+      "filename": "tractrix-tract-2.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/tractrix-tract-2.mp3",
+      "duration": 3.99,
+      "size": 63792,
+      "text": "曳物线有一条漂亮的定义性质：从曲线上任何一点沿切线画到那条直线，这段线段的长度永远等于绳长，一点不差。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "tractrix",
+      "line_id": "tract-3",
+      "filename": "tractrix-tract-3.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/tractrix-tract-3.mp3",
+      "duration": 3.7,
+      "size": 59184,
+      "text": "你可以在屏幕上看到，曲线越往远处走越贴近直线，但永远碰不到它。这条直线就是曳物线的渐近线。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "surface",
+      "line_id": "surf-1",
+      "filename": "surface-surf-1.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/surface-surf-1.mp3",
+      "duration": 4.72,
+      "size": 75600,
+      "text": "现在把这条曳物线绕着它的渐近线旋转一整圈，扫出来的曲面就是伪球面。上面是一圈锋利的边缘，下面拖出一条无限细长的尾巴。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "surface",
+      "line_id": "surf-2",
+      "filename": "surface-surf-2.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/surface-surf-2.mp3",
+      "duration": 4.82,
+      "size": 77040,
+      "text": "算一下它的高斯曲率，你会得到一个和位置完全无关的常数：负一除以半径平方。无论在腰上还是在尾巴上，弯曲程度都一模一样。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "surface",
+      "line_id": "surf-3",
+      "filename": "surface-surf-3.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/surface-surf-3.mp3",
+      "duration": 5.06,
+      "size": 80928,
+      "text": "还有个有趣的巧合：伪球面的总面积等于四倍圆周率乘以半径平方，和同样半径的球面面积恰好相等。这也是它名字里那个球字的来历之一。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "hyperbolic",
+      "line_id": "hyp-1",
+      "filename": "hyperbolic-hyp-1.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/hyperbolic-hyp-1.mp3",
+      "duration": 4.95,
+      "size": 79200,
+      "text": "伪球面的历史地位远比它的外形重要。十九世纪前，数学家争论了两千年：平行公理能不能被推翻，双曲几何到底是不是真实存在的东西。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "hyperbolic",
+      "line_id": "hyp-2",
+      "filename": "hyperbolic-hyp-2.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/hyperbolic-hyp-2.mp3",
+      "duration": 4.94,
+      "size": 79056,
+      "text": "一八六八年，意大利数学家贝尔特拉米指出，伪球面上的几何就是双曲几何。测地线充当直线，于是过一点可以画出无穷多条平行线。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "hyperbolic",
+      "line_id": "hyp-3",
+      "filename": "hyperbolic-hyp-3.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/hyperbolic-hyp-3.mp3",
+      "duration": 4.76,
+      "size": 76176,
+      "text": "这一下把双曲几何从纸上的逻辑推演，变成了手里摸得到的曲面。非欧几何从此不再是可疑的怪物，而是和欧氏几何平起平坐的存在。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "limit",
+      "line_id": "lim-1",
+      "filename": "limit-lim-1.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/limit-lim-1.mp3",
+      "duration": 4.37,
+      "size": 69984,
+      "text": "请拖动滑块改变半径，观察曲率读数。半径越小曲率越负，曲面越尖锐；半径越大曲率越接近零，曲面越平缓。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "limit",
+      "line_id": "lim-2",
+      "filename": "limit-lim-2.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/limit-lim-2.mp3",
+      "duration": 3.93,
+      "size": 62928,
+      "text": "但你会注意到一个问题：腰部那圈边缘始终存在，曲面在那里断掉了。这不是画图的偷懒，而是数学上无法避免的。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "limit",
+      "line_id": "lim-3",
+      "filename": "limit-lim-3.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/limit-lim-3.mp3",
+      "duration": 4.69,
+      "size": 75024,
+      "text": "希尔伯特证明了，三维欧氏空间里不存在完备的常负曲率曲面。所以伪球面只能装下双曲平面的一小块，装不下整个双曲世界。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/summary-sum-1.mp3",
+      "duration": 3.1,
+      "size": 49680,
+      "text": "第一，伪球面由曳物线绕渐近线旋转而成，高斯曲率处处等于负一除以半径平方。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "第二，它是双曲几何的局部模型，贝尔特拉米靠它让非欧几何落了地。"
+    },
+    {
+      "script_id": "pseudosphere",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/pseudosphere/xiaoxiao/summary-sum-3.mp3",
+      "duration": 3.32,
+      "size": 53136,
+      "text": "第三，希尔伯特定理告诉我们它注定不完备，那圈边缘去不掉。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 76.64,
+  "total_size": 1226448
+}

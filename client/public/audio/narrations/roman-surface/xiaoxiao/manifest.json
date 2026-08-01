@@ -1,0 +1,190 @@
+{
+  "script_id": "roman-surface",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "roman-surface",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/intro-intro-1.mp3",
+      "duration": 4.28,
+      "size": 68400,
+      "text": "一八四四年，瑞士数学家雅各布·斯坦纳访问罗马时发现了一张奇特的曲面。后人就用发现地给它命名，叫罗马曲面。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/intro-intro-2.mp3",
+      "duration": 3.7,
+      "size": 59184,
+      "text": "它和交叉帽一样，是实射影平面在三维空间中的浸入。但它的对称性要漂亮得多，方程也更加规整。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/intro-intro-3.mp3",
+      "duration": 3.19,
+      "size": 51120,
+      "text": "屏幕上这个形状看起来像四片花瓣拧在一起，实际上它是三条自交线相互穿插的结果。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "equation",
+      "line_id": "eq-1",
+      "filename": "equation-eq-1.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/equation-eq-1.mp3",
+      "duration": 3.61,
+      "size": 57744,
+      "text": "罗马曲面可以用两种方式描述。参数形式用两个角度 u 和 v，三个坐标都是它们正弦余弦的乘积。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "equation",
+      "line_id": "eq-2",
+      "filename": "equation-eq-2.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/equation-eq-2.mp3",
+      "duration": 3.95,
+      "size": 63216,
+      "text": "隐式形式更漂亮：x 方 y 方加 y 方 z 方加 z 方 x 方，等于 a 方乘以 x y z。这是一个四次代数曲面。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "equation",
+      "line_id": "eq-3",
+      "filename": "equation-eq-3.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/equation-eq-3.mp3",
+      "duration": 3.65,
+      "size": 58320,
+      "text": "你可以在屏幕上看到隐式方程的残差读数。参数方程给出的每一个点，代进隐式方程都精确地等于零。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "projective",
+      "line_id": "proj-1",
+      "filename": "projective-proj-1.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/projective-proj-1.mp3",
+      "duration": 4.45,
+      "size": 71136,
+      "text": "怎么看出它是射影平面？关键在一个恒等式：参数 u 和 v 与 u 加圆周率、圆周率减 v 这一对，映到空间中完全相同的点。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "projective",
+      "line_id": "proj-2",
+      "filename": "projective-proj-2.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/projective-proj-2.mp3",
+      "duration": 3.64,
+      "size": 58176,
+      "text": "这正是射影平面的定义方式。把球面上每一对对径点认同为同一个点，得到的商空间就是射影平面。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "projective",
+      "line_id": "proj-3",
+      "filename": "projective-proj-3.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/projective-proj-3.mp3",
+      "duration": 3.38,
+      "size": 54000,
+      "text": "所以参数域虽然是个矩形，但因为这种成对认同，它实际描述的是一张不可定向的闭曲面。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "singular",
+      "line_id": "sing-1",
+      "filename": "singular-sing-1.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/singular-sing-1.mp3",
+      "duration": 3.74,
+      "size": 59904,
+      "text": "罗马曲面的奇异结构比交叉帽丰富。首先是三条自交线，它们分别沿着 x 轴、y 轴和 z 轴伸展。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "singular",
+      "line_id": "sing-2",
+      "filename": "singular-sing-2.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/singular-sing-2.mp3",
+      "duration": 3.15,
+      "size": 50400,
+      "text": "每条自交线段的两端各有一个分支点，三条线一共六个。这也是它比交叉帽复杂的地方。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "singular",
+      "line_id": "sing-3",
+      "filename": "singular-sing-3.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/singular-sing-3.mp3",
+      "duration": 4.09,
+      "size": 65376,
+      "text": "最特别的是原点。三条自交线在那里交汇，曲面在这一点有三片同时穿过，这叫三重点，整张曲面只有一个。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "symmetry",
+      "line_id": "sym-1",
+      "filename": "symmetry-sym-1.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/symmetry-sym-1.mp3",
+      "duration": 3.65,
+      "size": 58464,
+      "text": "请旋转视角观察这张曲面。你会发现无论从 x、y 还是 z 方向看过去，看到的形状都是一样的。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "symmetry",
+      "line_id": "sym-2",
+      "filename": "symmetry-sym-2.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/symmetry-sym-2.mp3",
+      "duration": 4.33,
+      "size": 69264,
+      "text": "这不是巧合。隐式方程里三个变量的地位完全对称，任意交换 x、y、z 方程都不变，所以曲面必然有这种对称性。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "symmetry",
+      "line_id": "sym-3",
+      "filename": "symmetry-sym-3.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/symmetry-sym-3.mp3",
+      "duration": 3.47,
+      "size": 55584,
+      "text": "拖动尺度滑块时注意，整个曲面按 a 的平方等比缩放，三条自交线的半长恰好是 a 平方除以二。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/summary-sum-1.mp3",
+      "duration": 3.1,
+      "size": 49680,
+      "text": "第一，罗马曲面是斯坦纳一八四四年发现的四次代数曲面，也是射影平面的一种浸入。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "第二，它有三条沿坐标轴的自交线、六个分支点和一个位于原点的三重点。"
+    },
+    {
+      "script_id": "roman-surface",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/roman-surface/xiaoxiao/summary-sum-3.mp3",
+      "duration": 3.83,
+      "size": 61200,
+      "text": "第三，隐式方程中三个变量完全对称，这直接决定了曲面的高度对称外形。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 65.86,
+  "total_size": 1053648
+}

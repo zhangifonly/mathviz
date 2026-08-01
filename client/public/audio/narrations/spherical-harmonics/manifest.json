@@ -1,0 +1,194 @@
+{
+  "script_id": "spherical-harmonics",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/spherical-harmonics/intro-intro-1.mp3",
+      "duration": 3.17,
+      "size": 50688,
+      "text": "拉紧一根弦，它的振动可以分解成一系列正弦波，这就是傅里叶级数。那么一个球面呢？"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/spherical-harmonics/intro-intro-2.mp3",
+      "duration": 3.2,
+      "size": 51264,
+      "text": "球面也有自己的振动模态，它们叫球谐函数。任何定义在球面上的函数，都能按它们展开。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/spherical-harmonics/intro-intro-3.mp3",
+      "duration": 3.98,
+      "size": 63648,
+      "text": "这套函数的用处大到惊人：原子轨道、地球重力场、地磁场、宇宙微波背景辐射，甚至游戏里的环境光照压缩。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "quantum",
+      "line_id": "qt-1",
+      "filename": "quantum-qt-1.mp3",
+      "path": "audio/narrations/spherical-harmonics/quantum-qt-1.mp3",
+      "duration": 3.19,
+      "size": 50976,
+      "text": "每个球谐函数由两个整数标记。第一个是 l，叫角量子数，它决定振动的总复杂度。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "quantum",
+      "line_id": "qt-2",
+      "filename": "quantum-qt-2.mp3",
+      "path": "audio/narrations/spherical-harmonics/quantum-qt-2.mp3",
+      "duration": 3.82,
+      "size": 61056,
+      "text": "第二个是 m，叫磁量子数，取值范围是从负 l 到正 l。它决定函数绕竖直轴转一圈变化几个周期。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "quantum",
+      "line_id": "qt-3",
+      "filename": "quantum-qt-3.mp3",
+      "path": "audio/narrations/spherical-harmonics/quantum-qt-3.mp3",
+      "duration": 3.31,
+      "size": 52992,
+      "text": "化学里的轨道命名就是它：l 等于零是 s 轨道，一是 p 轨道，二是 d 轨道，三是 f 轨道。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "nodal",
+      "line_id": "nd-1",
+      "filename": "nodal-nd-1.mp3",
+      "path": "audio/narrations/spherical-harmonics/nodal-nd-1.mp3",
+      "duration": 3.19,
+      "size": 51120,
+      "text": "看画面上的形状。半径取球谐函数的绝对值，红色表示函数为正，蓝色表示为负。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "nodal",
+      "line_id": "nd-2",
+      "filename": "nodal-nd-2.mp3",
+      "path": "audio/narrations/spherical-harmonics/nodal-nd-2.mp3",
+      "duration": 2.97,
+      "size": 47520,
+      "text": "红蓝交界处函数值为零，这些交界线叫节线。节线的分布有个漂亮的规律。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "nodal",
+      "line_id": "nd-3",
+      "filename": "nodal-nd-3.mp3",
+      "path": "audio/narrations/spherical-harmonics/nodal-nd-3.mp3",
+      "duration": 3.56,
+      "size": 57024,
+      "text": "纬向节线有 l 减去 m 的绝对值那么多条，经向节线有 m 的绝对值那么多条。两者相加恒等于 l。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "ortho",
+      "line_id": "or-1",
+      "filename": "ortho-or-1.mp3",
+      "path": "audio/narrations/spherical-harmonics/ortho-or-1.mp3",
+      "duration": 3.95,
+      "size": 63216,
+      "text": "球谐函数最重要的性质是正交归一。任取两个不同的球谐，在整个球面上求它们乘积的积分，结果精确为零。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "ortho",
+      "line_id": "or-2",
+      "filename": "ortho-or-2.mp3",
+      "path": "audio/narrations/spherical-harmonics/ortho-or-2.mp3",
+      "duration": 3.83,
+      "size": 61200,
+      "text": "而任何球谐与自身的积分恰好等于一。这正是傅里叶展开能成立的前提，也是归一化系数被那样设计的原因。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "ortho",
+      "line_id": "or-3",
+      "filename": "ortho-or-3.mp3",
+      "path": "audio/narrations/spherical-harmonics/ortho-or-3.mp3",
+      "duration": 3.83,
+      "size": 61344,
+      "text": "这条性质可以数值验证。屏幕上的内积读数在不同模态间是十的负十六次方量级，与自身则精确为一。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "apply",
+      "line_id": "ap-1",
+      "filename": "apply-ap-1.mp3",
+      "path": "audio/narrations/spherical-harmonics/apply-ap-1.mp3",
+      "duration": 3.58,
+      "size": 57312,
+      "text": "请切换不同的量子数组合。l 等于零时是一个正球，这对应氢原子的 s 轨道，电子云球对称分布。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "apply",
+      "line_id": "ap-2",
+      "filename": "apply-ap-2.mp3",
+      "path": "audio/narrations/spherical-harmonics/apply-ap-2.mp3",
+      "duration": 3.98,
+      "size": 63648,
+      "text": "l 等于一 m 等于零是两个叶片上下排列，这就是 p z 轨道。l 等于二 m 等于二则是四个叶片，那是 d 轨道。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "apply",
+      "line_id": "ap-3",
+      "filename": "apply-ap-3.mp3",
+      "path": "audio/narrations/spherical-harmonics/apply-ap-3.mp3",
+      "duration": 4.09,
+      "size": 65520,
+      "text": "同一套函数换个场景就是宇宙学。微波背景辐射的温度涨落按球谐展开，各个 l 的功率就是那条著名的功率谱。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/spherical-harmonics/summary-sum-1.mp3",
+      "duration": 2.77,
+      "size": 44352,
+      "text": "第一，球谐函数是球面上的振动模态，由角量子数 l 与磁量子数 m 标记。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/spherical-harmonics/summary-sum-2.mp3",
+      "duration": 3.1,
+      "size": 49680,
+      "text": "第二，节线总数恒等于 l，其中纬向 l 减 m 的绝对值条，经向 m 的绝对值条。"
+    },
+    {
+      "script_id": "spherical-harmonics",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/spherical-harmonics/summary-sum-3.mp3",
+      "duration": 3.27,
+      "size": 52272,
+      "text": "第三，它们构成球面上的正交归一基，这是一切球面展开的基础。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 62.79,
+  "total_size": 1004832,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

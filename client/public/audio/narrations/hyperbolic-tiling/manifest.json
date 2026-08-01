@@ -153,9 +153,9 @@
       "line_id": "sum-1",
       "filename": "summary-sum-1.mp3",
       "path": "audio/narrations/hyperbolic-tiling/yunxi/summary-sum-1.mp3",
-      "duration": 2.34,
-      "size": 37440,
-      "text": "双曲镶嵌让每个顶点挤进更多正多边形，这是欧氏平面办不到的。"
+      "duration": 1.94,
+      "size": 30960,
+      "text": "庞加莱圆盘把无限的双曲平面，收进一个有限的圆里。"
     },
     {
       "script_id": "hyperbolic-tiling",
@@ -178,6 +178,6 @@
       "text": "有限中藏着无限，这正是双曲几何的浪漫，我们下次再见！"
     }
   ],
-  "total_duration": 40.54,
-  "total_size": 648576
+  "total_duration": 40.14,
+  "total_size": 642096
 }

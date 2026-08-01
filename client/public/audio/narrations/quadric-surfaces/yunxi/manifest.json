@@ -1,0 +1,190 @@
+{
+  "script_id": "quadric-surfaces",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/intro-intro-1.mp3",
+      "duration": 4.5,
+      "size": 72000,
+      "text": "在平面上，二元二次方程给出的曲线只有三类：椭圆、抛物线、双曲线。这个结论很干净，也是解析几何最漂亮的成果之一。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/intro-intro-2.mp3",
+      "duration": 2.91,
+      "size": 46512,
+      "text": "那么升到三维会怎样？三元二次方程的项数从六个涨到十个，看起来复杂得多。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/intro-intro-3.mp3",
+      "duration": 2.91,
+      "size": 46512,
+      "text": "但答案同样干净：非退化的实二次曲面，一共只有六类。今天我们把它们一次看全。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "bounded",
+      "line_id": "bd-1",
+      "filename": "bounded-bd-1.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/bounded-bd-1.mp3",
+      "duration": 3.58,
+      "size": 57312,
+      "text": "第一类是椭球面，方程是三个平方项相加等于一。三个系数全都同号，这是它区别于其他类型的标志。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "bounded",
+      "line_id": "bd-2",
+      "filename": "bounded-bd-2.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/bounded-bd-2.mp3",
+      "duration": 3.37,
+      "size": 53856,
+      "text": "它是六类里唯一有界的曲面，像一个被压扁或拉长的球。三个半轴相等时就退化成标准的球面。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "bounded",
+      "line_id": "bd-3",
+      "filename": "bounded-bd-3.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/bounded-bd-3.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "地球的形状就近似是一个椭球面，赤道方向略胖，两极方向略扁。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "hyperboloid",
+      "line_id": "hy-1",
+      "filename": "hyperboloid-hy-1.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/hyperboloid-hy-1.mp3",
+      "duration": 3.9,
+      "size": 62352,
+      "text": "把椭球面方程里一个平方项前面的加号改成减号，就得到单叶双曲面。它的腰部收紧，上下两端向外张开。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "hyperboloid",
+      "line_id": "hy-2",
+      "filename": "hyperboloid-hy-2.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/hyperboloid-hy-2.mp3",
+      "duration": 4.34,
+      "size": 69408,
+      "text": "这个形状你一定见过：火力发电厂的冷却塔就是它。选它不是为了好看，而是因为它是直纹面，能用笔直的钢筋搭出来。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "hyperboloid",
+      "line_id": "hy-3",
+      "filename": "hyperboloid-hy-3.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/hyperboloid-hy-3.mp3",
+      "duration": 3.5,
+      "size": 56016,
+      "text": "再改一个符号变成两个负号，曲面就断成了两片，这叫双叶双曲面。它是六类里唯一不连通的曲面。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "paraboloid",
+      "line_id": "pa-1",
+      "filename": "paraboloid-pa-1.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/paraboloid-pa-1.mp3",
+      "duration": 3.51,
+      "size": 56160,
+      "text": "如果方程里 z 只出现一次方，得到的是抛物面。两个平方项同号时是椭圆抛物面，一个标准的碗。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "paraboloid",
+      "line_id": "pa-2",
+      "filename": "paraboloid-pa-2.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/paraboloid-pa-2.mp3",
+      "duration": 2.88,
+      "size": 46080,
+      "text": "卫星天线和探照灯反射镜用的就是这个形状，因为它能把平行光精确聚到一个焦点上。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "paraboloid",
+      "line_id": "pa-3",
+      "filename": "paraboloid-pa-3.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/paraboloid-pa-3.mp3",
+      "duration": 3.46,
+      "size": 55296,
+      "text": "两个平方项反号时变成双曲抛物面，也就是马鞍面。它既处处是鞍点，又能被两族直线铺满。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "cone",
+      "line_id": "co-1",
+      "filename": "cone-co-1.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/cone-co-1.mp3",
+      "duration": 3.1,
+      "size": 49680,
+      "text": "最后一类是二次锥面。它的方程和单叶双曲面几乎一样，只是右边的一不见了，变成了零。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "cone",
+      "line_id": "co-2",
+      "filename": "cone-co-2.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/cone-co-2.mp3",
+      "duration": 3.71,
+      "size": 59328,
+      "text": "少了这个一，曲面的腰部就收缩成一个点。请拖动参数观察，锥面正是双曲面腰部收紧到极限的结果。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "cone",
+      "line_id": "co-3",
+      "filename": "cone-co-3.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/cone-co-3.mp3",
+      "duration": 4.18,
+      "size": 66816,
+      "text": "注意顶点那里曲面不光滑，所以严格说它是退化情形。用平面切它，切出来的正好是平面上那三类圆锥曲线。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/summary-sum-1.mp3",
+      "duration": 3.58,
+      "size": 57312,
+      "text": "第一，非退化实二次曲面只有六类：椭球面、单叶与双叶双曲面、椭圆与双曲抛物面、二次锥面。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/summary-sum-2.mp3",
+      "duration": 2.74,
+      "size": 43776,
+      "text": "第二，决定类型的是平方项系数的符号组合，系数大小只改变胖瘦。"
+    },
+    {
+      "script_id": "quadric-surfaces",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/quadric-surfaces/yunxi/summary-sum-3.mp3",
+      "duration": 3.67,
+      "size": 58752,
+      "text": "第三，单叶双曲面和双曲抛物面都是直纹面，这让它们在建筑上格外好用。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 62.39000000000001,
+  "total_size": 997920
+}

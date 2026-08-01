@@ -1,0 +1,190 @@
+{
+  "script_id": "whitney-umbrella",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/intro-intro-1.mp3",
+      "duration": 3.69,
+      "size": 59040,
+      "text": "把一张平面光滑地映到三维空间里，通常得到一张曲面。但有时会出毛病，曲面上出现不光滑的地方。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/intro-intro-2.mp3",
+      "duration": 3.09,
+      "size": 49392,
+      "text": "惠特尼在一九四四年问了一个根本问题：这些毛病有多少种？答案出人意料地简洁。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/intro-intro-3.mp3",
+      "duration": 3.82,
+      "size": 61056,
+      "text": "在一般位置下只有两类：两片横截相交成一条线，以及自交线终止于一个尖点。后者就是惠特尼伞。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "map",
+      "line_id": "mp-1",
+      "filename": "map-mp-1.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/map-mp-1.mp3",
+      "duration": 3.46,
+      "size": 55296,
+      "text": "惠特尼伞的映射简单到只有三个单项式。参数 u 和 v 映到 u 乘 v、u 本身、以及 v 的平方。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "map",
+      "line_id": "mp-2",
+      "filename": "map-mp-2.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/map-mp-2.mp3",
+      "duration": 3.46,
+      "size": 55440,
+      "text": "消去参数可以得到隐式方程：x 的平方等于 y 的平方乘 z。屏幕上的残差读数精确为零。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "map",
+      "line_id": "mp-3",
+      "filename": "map-mp-3.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/map-mp-3.mp3",
+      "duration": 2.92,
+      "size": 46800,
+      "text": "注意 z 等于 v 的平方，所以 z 永远非负。整张曲面只存在于上半空间。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "selfcross",
+      "line_id": "sc-1",
+      "filename": "selfcross-sc-1.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/selfcross-sc-1.mp3",
+      "duration": 3.02,
+      "size": 48240,
+      "text": "先找自交。取 u 等于零，那么横坐标和纵坐标都是零，只剩 z 等于 v 的平方。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "selfcross",
+      "line_id": "sc-2",
+      "filename": "selfcross-sc-2.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/selfcross-sc-2.mp3",
+      "duration": 3.72,
+      "size": 59472,
+      "text": "关键在于 v 和负 v 给出同一个 z。也就是说参数平面上两条不同的线被映到了空间中同一条线上。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "selfcross",
+      "line_id": "sc-3",
+      "filename": "selfcross-sc-3.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/selfcross-sc-3.mp3",
+      "duration": 3.1,
+      "size": 49680,
+      "text": "这条重合的线就是自交线，它位于 z 轴的正半轴。画面上高亮的那条竖线就是它。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "jacobian",
+      "line_id": "jc-1",
+      "filename": "jacobian-jc-1.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/jacobian-jc-1.mp3",
+      "duration": 3.32,
+      "size": 53136,
+      "text": "自交本身不算奇点，两片光滑曲面穿过彼此是允许的。真正的奇点在于映射不再是浸入。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "jacobian",
+      "line_id": "jc-2",
+      "filename": "jacobian-jc-2.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/jacobian-jc-2.mp3",
+      "duration": 3.68,
+      "size": 58896,
+      "text": "浸入的判据是雅可比矩阵满秩。这里雅可比的两列分别是 v、一、零，以及 u、零、二 v。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "jacobian",
+      "line_id": "jc-3",
+      "filename": "jacobian-jc-3.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/jacobian-jc-3.mp3",
+      "duration": 3.59,
+      "size": 57456,
+      "text": "在原点处第二列全是零，秩从二掉到一，映射不再是浸入。这个点就是伞点，也是自交线的终点。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "distinguish",
+      "line_id": "ds-1",
+      "filename": "distinguish-ds-1.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/distinguish-ds-1.mp3",
+      "duration": 2.69,
+      "size": 43056,
+      "text": "怎么直观区分伞点和普通的横截自交？看两片曲面在自交线上的夹角。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "distinguish",
+      "line_id": "ds-2",
+      "filename": "distinguish-ds-2.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/distinguish-ds-2.mp3",
+      "duration": 3.21,
+      "size": 51408,
+      "text": "沿自交线向伞点靠近时，夹角越来越小。在离伞点很近的地方，两片几乎完全贴合。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "distinguish",
+      "line_id": "ds-3",
+      "filename": "distinguish-ds-3.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/distinguish-ds-3.mp3",
+      "duration": 3.7,
+      "size": 59184,
+      "text": "而普通的横截自交处，夹角始终保持有限。请留意屏幕上的夹角读数，它从近八十度一路降到几度。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "第一，平面到空间的光滑映射在一般位置下只有两类稳定奇点。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "第二，惠特尼伞是其中一类的标准模型，映射为 u v、u、v 的平方。"
+    },
+    {
+      "script_id": "whitney-umbrella",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/whitney-umbrella/xiaoxiao/summary-sum-3.mp3",
+      "duration": 3.56,
+      "size": 57024,
+      "text": "第三，原点处雅可比退化，不再是浸入，两片曲面在此贴合。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 59.01999999999999,
+  "total_size": 944496
+}

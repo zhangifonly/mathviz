@@ -1,0 +1,190 @@
+{
+  "script_id": "supertoroid",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "files": [
+    {
+      "script_id": "supertoroid",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/intro-intro-1.mp3",
+      "duration": 4.37,
+      "size": 69984,
+      "text": "标准的环面就像一个甜甜圈：一根圆管弯成一个圆圈。它由两个半径决定，主半径管圆圈有多大，管半径管管子有多粗。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/intro-intro-2.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "现在给它加上两个形状指数，一个管圆圈的走向，一个管管子的截面。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/intro-intro-3.mp3",
+      "duration": 3.78,
+      "size": 60480,
+      "text": "调这两个数，甜甜圈能变成方框、方管、菱形截面的环，形状差别巨大。但有一样东西始终不变。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "two",
+      "line_id": "tw-1",
+      "filename": "two-tw-1.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/two-tw-1.mp3",
+      "duration": 2.89,
+      "size": 46224,
+      "text": "先看第一个指数。它作用在绕轴的那个角度上，控制的是俯视时看到的轮廓。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "two",
+      "line_id": "tw-2",
+      "filename": "two-tw-2.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/two-tw-2.mp3",
+      "duration": 4.06,
+      "size": 64944,
+      "text": "把它调小，俯视轮廓从圆变成方框。注意这时管中心线不再是圆，径向距离甚至会超出主半径加管半径。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "two",
+      "line_id": "tw-3",
+      "filename": "two-tw-3.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/two-tw-3.mp3",
+      "duration": 3.08,
+      "size": 49248,
+      "text": "第二个指数作用在管截面上。调小它，圆管变方管；调到二，截面变成菱形。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "invariant",
+      "line_id": "iv-1",
+      "filename": "invariant-iv-1.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/invariant-iv-1.mp3",
+      "duration": 3.42,
+      "size": 54720,
+      "text": "现在说那个不变的东西。无论两个指数怎么调，只要主半径大于管半径，中间那个洞就一直在。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "invariant",
+      "line_id": "iv-2",
+      "filename": "invariant-iv-2.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/invariant-iv-2.mp3",
+      "duration": 3.76,
+      "size": 60192,
+      "text": "有一个洞，用拓扑学的语言说就是亏格等于一。由此欧拉示性数等于二减去二倍亏格，也就是零。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "invariant",
+      "line_id": "iv-3",
+      "filename": "invariant-iv-3.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/invariant-iv-3.mp3",
+      "duration": 3.02,
+      "size": 48240,
+      "text": "还有一个细节值得留意：竖直方向的范围永远是正负管半径，两个指数都改不了它。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "topology",
+      "line_id": "tp-1",
+      "filename": "topology-tp-1.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/topology-tp-1.mp3",
+      "duration": 2.92,
+      "size": 46656,
+      "text": "这就引出一个重要区分。几何关心的是形状、长度、角度这些能量出来的东西。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "topology",
+      "line_id": "tp-2",
+      "filename": "topology-tp-2.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/topology-tp-2.mp3",
+      "duration": 4.16,
+      "size": 66528,
+      "text": "拓扑关心的是连通性、洞的个数这些在连续变形下不改的东西。方框环和圆环几何上差别很大，拓扑上完全一样。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "topology",
+      "line_id": "tp-3",
+      "filename": "topology-tp-3.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/topology-tp-3.mp3",
+      "duration": 2.84,
+      "size": 45504,
+      "text": "这也是那句名言的来历：拓扑学家分不清咖啡杯和甜甜圈，因为它们都只有一个洞。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "explore",
+      "line_id": "ex-1",
+      "filename": "explore-ex-1.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/explore-ex-1.mp3",
+      "duration": 3.25,
+      "size": 51984,
+      "text": "请分别拖动两个指数滑块，观察它们各自的作用范围。第一个改俯视轮廓，第二个改管截面。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "explore",
+      "line_id": "ex-2",
+      "filename": "explore-ex-2.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/explore-ex-2.mp3",
+      "duration": 3.49,
+      "size": 55872,
+      "text": "试着把主半径调到小于管半径。这时中间的洞会闭合，环面自交退化，拓扑性质也就变了。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "explore",
+      "line_id": "ex-3",
+      "filename": "explore-ex-3.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/explore-ex-3.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "只要保持主半径大于管半径，无论形状怎么怪，它始终是那个亏格一的环面。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/summary-sum-1.mp3",
+      "duration": 3.03,
+      "size": 48528,
+      "text": "第一，两个形状指数分别控制俯视轮廓与管截面，可以造出方框方管等各种变形。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "第二，只要主半径大于管半径，亏格恒为一，欧拉示性数恒为零。"
+    },
+    {
+      "script_id": "supertoroid",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/supertoroid/xiaoxiao/summary-sum-3.mp3",
+      "duration": 3.22,
+      "size": 51552,
+      "text": "第三，几何形状可以千变万化，而拓扑性质纹丝不动。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 58.800000000000004,
+  "total_size": 940752
+}

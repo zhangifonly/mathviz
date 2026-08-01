@@ -1,0 +1,190 @@
+{
+  "script_id": "helicoid-catenoid",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/intro-intro-1.mp3",
+      "duration": 4.69,
+      "size": 75024,
+      "text": "把铁丝弯成一个圈，浸进肥皂水里再拿出来，你会看到一层绷紧的膜。这层膜的形状不是随便长的，它总是让自己的面积尽可能小。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/intro-intro-2.mp3",
+      "duration": 3.83,
+      "size": 61200,
+      "text": "数学家把这类面积局部最小的曲面叫做极小曲面。判断标准非常干净：曲面上每一点的平均曲率都等于零。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/intro-intro-3.mp3",
+      "duration": 3.62,
+      "size": 57888,
+      "text": "今天我们要看两张最经典的极小曲面，螺旋面和悬链面。更妙的是，它们之间可以连续地互相变过去。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "helicoid",
+      "line_id": "heli-1",
+      "filename": "helicoid-heli-1.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/helicoid-heli-1.mp3",
+      "duration": 4.47,
+      "size": 71568,
+      "text": "先看螺旋面。想象一段水平的线段绕着竖直的中轴匀速旋转，同时匀速上升，它扫过的轨迹就是螺旋面，像一段旋转楼梯。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "helicoid",
+      "line_id": "heli-2",
+      "filename": "helicoid-heli-2.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/helicoid-heli-2.mp3",
+      "duration": 4.14,
+      "size": 66240,
+      "text": "注意画面上高亮的那些黄线。螺旋面虽然整体是弯的，但它上面每一点都有一条笔直的直线穿过，这种曲面叫做直纹面。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "helicoid",
+      "line_id": "heli-3",
+      "filename": "helicoid-heli-3.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/helicoid-heli-3.mp3",
+      "duration": 4.0,
+      "size": 63936,
+      "text": "除了平面之外，螺旋面是唯一既是极小曲面又是直纹面的曲面。这个结论由法国数学家卡塔兰在一八四二年证明。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "catenoid",
+      "line_id": "cat-1",
+      "filename": "catenoid-cat-1.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/catenoid-cat-1.mp3",
+      "duration": 3.83,
+      "size": 61200,
+      "text": "再看悬链面。取一条自然下垂的链条形成的曲线，也就是双曲余弦函数的图象，让它绕着竖直轴旋转一周。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "catenoid",
+      "line_id": "cat-2",
+      "filename": "catenoid-cat-2.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/catenoid-cat-2.mp3",
+      "duration": 3.94,
+      "size": 63072,
+      "text": "转出来的这个腰部收紧的形状就是悬链面。把两个铁圈平行放好一起浸入肥皂水，拉开时中间那层膜正是它。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "catenoid",
+      "line_id": "cat-3",
+      "filename": "catenoid-cat-3.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/catenoid-cat-3.mp3",
+      "duration": 3.65,
+      "size": 58464,
+      "text": "悬链面是除平面以外最早被发现的极小曲面，欧拉在一七四四年就找到了它。它也是唯一的极小旋转面。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "family",
+      "line_id": "fam-1",
+      "filename": "family-fam-1.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/family-fam-1.mp3",
+      "duration": 3.47,
+      "size": 55584,
+      "text": "这两张面看起来毫不相干，一个是螺旋楼梯，一个是收腰的花瓶。但它们其实是同一族曲面的两个端点。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "family",
+      "line_id": "fam-2",
+      "filename": "family-fam-2.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/family-fam-2.mp3",
+      "duration": 4.21,
+      "size": 67392,
+      "text": "引入一个角度参数西塔。西塔等于零时是螺旋面，西塔等于九十度时是悬链面，中间每一个取值都给出一张新的曲面。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "family",
+      "line_id": "fam-3",
+      "filename": "family-fam-3.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/family-fam-3.mp3",
+      "duration": 4.05,
+      "size": 64800,
+      "text": "关键在于，这一整族曲面全都是极小曲面。你可以盯着屏幕上的平均曲率读数，整个变形过程中它一直贴在零附近。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "isometry",
+      "line_id": "iso-1",
+      "filename": "isometry-iso-1.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/isometry-iso-1.mp3",
+      "duration": 4.26,
+      "size": 68112,
+      "text": "现在请拖动滑块，亲手让螺旋面卷成悬链面。留意右边第一基本形式的三个系数，E 和 G 始终相等，F 始终是零。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "isometry",
+      "line_id": "iso-2",
+      "filename": "isometry-iso-2.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/isometry-iso-2.mp3",
+      "duration": 4.52,
+      "size": 72288,
+      "text": "更重要的是，这三个数在整个变形过程中一个都没变。这说明变形是等距的，曲面上任意两点之间的最短距离全程不改。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "isometry",
+      "line_id": "iso-3",
+      "filename": "isometry-iso-3.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/isometry-iso-3.mp3",
+      "duration": 4.1,
+      "size": 65664,
+      "text": "换句话说，如果你在螺旋面上画一只蚂蚁，它爬行的感受不会因为曲面卷成了悬链面而有任何变化。这就是内蕴几何的含义。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/summary-sum-1.mp3",
+      "duration": 3.07,
+      "size": 49104,
+      "text": "我们记住三件事。极小曲面的判据是平均曲率处处为零，它对应肥皂膜的形状。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/summary-sum-2.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "螺旋面是唯一的极小直纹面，悬链面是唯一的极小旋转面，它们互为伴随曲面。"
+    },
+    {
+      "script_id": "helicoid-catenoid",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/helicoid-catenoid/yunxi/summary-sum-3.mp3",
+      "duration": 3.57,
+      "size": 57168,
+      "text": "连接两者的这族变形是等距的，弯曲的方式变了，内在的度量却一点没动。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 70.11999999999999,
+  "total_size": 1121904
+}

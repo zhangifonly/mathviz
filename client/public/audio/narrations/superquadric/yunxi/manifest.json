@@ -1,0 +1,190 @@
+{
+  "script_id": "superquadric",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "superquadric",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/superquadric/yunxi/intro-intro-1.mp3",
+      "duration": 4.24,
+      "size": 67824,
+      "text": "球是圆的，立方体是方的，这两者看起来毫无关系。但如果我告诉你，它们其实是同一个方程在不同参数下的两副面孔呢？"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/superquadric/yunxi/intro-intro-2.mp3",
+      "duration": 3.02,
+      "size": 48240,
+      "text": "秘密藏在指数里。把球面方程里的平方，换成一个可以调节的指数，方与圆之间就打通了。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/superquadric/yunxi/intro-intro-3.mp3",
+      "duration": 3.44,
+      "size": 55008,
+      "text": "这类曲面叫超二次曲面，由巴尔在一九八一年引入计算机图形学，是几何建模最省参数的砖块之一。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "signed",
+      "line_id": "sg-1",
+      "filename": "signed-sg-1.mp3",
+      "path": "audio/narrations/superquadric/yunxi/signed-sg-1.mp3",
+      "duration": 3.78,
+      "size": 60480,
+      "text": "写方程前要先解决一个技术问题。余弦在第二三象限是负的，而负数的零点五次方在实数范围里没有定义。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "signed",
+      "line_id": "sg-2",
+      "filename": "signed-sg-2.mp3",
+      "path": "audio/narrations/superquadric/yunxi/signed-sg-2.mp3",
+      "duration": 4.06,
+      "size": 64944,
+      "text": "解决办法是带符号幂：先取绝对值做幂运算，再把原来的符号乘回去。这样负三的零点五次方就得到负的根号三。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "signed",
+      "line_id": "sg-3",
+      "filename": "signed-sg-3.mp3",
+      "path": "audio/narrations/superquadric/yunxi/signed-sg-3.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "有了它，参数方程在整个参数域上都有定义，曲面才能完整地闭合起来。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "family",
+      "line_id": "fm-1",
+      "filename": "family-fm-1.mp3",
+      "path": "audio/narrations/superquadric/yunxi/family-fm-1.mp3",
+      "duration": 3.02,
+      "size": 48384,
+      "text": "现在看指数的效果。两个指数都等于一时，得到的是标准的椭球，也就是被拉伸的球面。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "family",
+      "line_id": "fm-2",
+      "filename": "family-fm-2.mp3",
+      "path": "audio/narrations/superquadric/yunxi/family-fm-2.mp3",
+      "duration": 3.56,
+      "size": 56880,
+      "text": "把指数往小调，曲面的棱角逐渐显现。指数趋于零时，它变成一个立方体，六个面平平整整。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "family",
+      "line_id": "fm-3",
+      "filename": "family-fm-3.mp3",
+      "path": "audio/narrations/superquadric/yunxi/family-fm-3.mp3",
+      "duration": 3.69,
+      "size": 59040,
+      "text": "反过来把指数调大。等于二时得到八面体，也就是双锥；继续加大，各个面开始向内凹陷，成了星形。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "volume",
+      "line_id": "vl-1",
+      "filename": "volume-vl-1.mp3",
+      "path": "audio/narrations/superquadric/yunxi/volume-vl-1.mp3",
+      "duration": 3.79,
+      "size": 60624,
+      "text": "怎么确认这些形状真的对？看体积。指数都是一时，体积应该等于球的体积，也就是三分之四倍圆周率。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "volume",
+      "line_id": "vl-2",
+      "filename": "volume-vl-2.mp3",
+      "path": "audio/narrations/superquadric/yunxi/volume-vl-2.mp3",
+      "duration": 3.7,
+      "size": 59184,
+      "text": "指数趋于零时，曲面填满整个外接立方体，体积应该趋于八。指数等于二的八面体，体积应该是三分之四。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "volume",
+      "line_id": "vl-3",
+      "filename": "volume-vl-3.mp3",
+      "path": "audio/narrations/superquadric/yunxi/volume-vl-3.mp3",
+      "duration": 3.61,
+      "size": 57744,
+      "text": "这三个数字都可以用数值积分算出来验证，结果与理论值完全吻合。这比单凭眼睛看形状可靠得多。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "explore",
+      "line_id": "ex-1",
+      "filename": "explore-ex-1.mp3",
+      "path": "audio/narrations/superquadric/yunxi/explore-ex-1.mp3",
+      "duration": 2.56,
+      "size": 40896,
+      "text": "请拖动两个指数滑块。第一个控制纵向的形状，第二个控制横向的截面。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "explore",
+      "line_id": "ex-2",
+      "filename": "explore-ex-2.mp3",
+      "path": "audio/narrations/superquadric/yunxi/explore-ex-2.mp3",
+      "duration": 3.57,
+      "size": 57168,
+      "text": "试着把两个指数调成不同的值。比如纵向保持圆润、横向调成方形，就得到一个方柱状的立体。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "explore",
+      "line_id": "ex-3",
+      "filename": "explore-ex-3.mp3",
+      "path": "audio/narrations/superquadric/yunxi/explore-ex-3.mp3",
+      "duration": 3.35,
+      "size": 53568,
+      "text": "无论怎么调，隐式方程的残差始终贴在零上。参数方程与隐式定义描述的是同一张曲面。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/superquadric/yunxi/summary-sum-1.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "第一，超二次曲面用两个形状指数覆盖了从方到圆到星的连续谱。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/superquadric/yunxi/summary-sum-2.mp3",
+      "duration": 2.56,
+      "size": 41040,
+      "text": "第二，负数取分数次幂需要带符号幂运算，否则曲面无法完整闭合。"
+    },
+    {
+      "script_id": "superquadric",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/superquadric/yunxi/summary-sum-3.mp3",
+      "duration": 3.38,
+      "size": 54000,
+      "text": "第三，体积的数值验证与理论值吻合，确认了参数化的正确性。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 60.350000000000016,
+  "total_size": 965376
+}
