@@ -418,6 +418,7 @@ const TubeSurfaceSceneRenderer = lazy(() => import('./TubeSurface/TubeSurfaceSce
 const MonkeySaddleSceneRenderer = lazy(() => import('./MonkeySaddle/MonkeySaddleSceneRenderer'))
 const SeashellSurfaceSceneRenderer = lazy(() => import('./SeashellSurface/SeashellSurfaceSceneRenderer'))
 const WhitneyUmbrellaSceneRenderer = lazy(() => import('./WhitneyUmbrella/WhitneyUmbrellaSceneRenderer'))
+const SphericalHarmonicsSceneRenderer = lazy(() => import('./SphericalHarmonics/SphericalHarmonicsSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -738,6 +739,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'monkey-saddle': MonkeySaddleSceneRenderer,
   'seashell-surface': SeashellSurfaceSceneRenderer,
   'whitney-umbrella': WhitneyUmbrellaSceneRenderer,
+  'spherical-harmonics': SphericalHarmonicsSceneRenderer,
 }
 
 // 获取场景渲染器

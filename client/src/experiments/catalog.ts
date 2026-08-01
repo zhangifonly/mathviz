@@ -3516,4 +3516,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/spherical-harmonics',
+    title: '球谐函数',
+    description: '球面上的振动模态，从原子轨道到地球重力场，凡是球对称的展开都靠它。',
+    icon: '⚛️',
+    difficulty: 'expert',
+    ageRange: '研究生+',
+    topics: ['calculus', 'geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

@@ -338,6 +338,7 @@ const TubeSurfaceExperiment = lazyRetry(() => import('./experiments/tube-surface
 const MonkeySaddleExperiment = lazyRetry(() => import('./experiments/monkey-saddle/MonkeySaddleExperiment'))
 const SeashellSurfaceExperiment = lazyRetry(() => import('./experiments/seashell-surface/SeashellSurfaceExperiment'))
 const WhitneyUmbrellaExperiment = lazyRetry(() => import('./experiments/whitney-umbrella/WhitneyUmbrellaExperiment'))
+const SphericalHarmonicsExperiment = lazyRetry(() => import('./experiments/spherical-harmonics/SphericalHarmonicsExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -673,6 +674,7 @@ export default function App() {
             <Route path="monkey-saddle" element={<MonkeySaddleExperiment />} />
             <Route path="seashell-surface" element={<SeashellSurfaceExperiment />} />
             <Route path="whitney-umbrella" element={<WhitneyUmbrellaExperiment />} />
+            <Route path="spherical-harmonics" element={<SphericalHarmonicsExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

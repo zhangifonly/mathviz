@@ -254,6 +254,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'ruled-surfaces', 'surface-revolution',
       'tube-surface', 'monkey-saddle',
       'seashell-surface', 'whitney-umbrella',
+      'spherical-harmonics',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

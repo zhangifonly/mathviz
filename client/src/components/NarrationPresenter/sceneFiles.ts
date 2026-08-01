@@ -323,4 +323,5 @@ export const SCENE_FILES: Record<string, string> = {
   'monkey-saddle': 'monkeySaddleScenes',
   'seashell-surface': 'seashellSurfaceScenes',
   'whitney-umbrella': 'whitneyUmbrellaScenes',
+  'spherical-harmonics': 'sphericalHarmonicsScenes',
 }
