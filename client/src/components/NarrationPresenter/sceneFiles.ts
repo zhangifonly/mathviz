@@ -319,4 +319,6 @@ export const SCENE_FILES: Record<string, string> = {
   'superquadric': 'superquadricScenes',
   'ruled-surfaces': 'ruledSurfacesScenes',
   'surface-revolution': 'surfaceRevolutionScenes',
+  'tube-surface': 'tubeSurfaceScenes',
+  'monkey-saddle': 'monkeySaddleScenes',
 }

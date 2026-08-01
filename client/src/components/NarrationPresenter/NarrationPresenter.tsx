@@ -252,6 +252,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'quadric-surfaces',
       'supertoroid', 'superquadric',
       'ruled-surfaces', 'surface-revolution',
+      'tube-surface', 'monkey-saddle',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

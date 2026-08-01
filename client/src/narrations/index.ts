@@ -323,6 +323,8 @@ export { supertoroidNarration } from './scripts/supertoroid'
 export { superquadricNarration } from './scripts/superquadric'
 export { ruledSurfacesNarration } from './scripts/ruled-surfaces'
 export { surfaceRevolutionNarration } from './scripts/surface-revolution'
+export { tubeSurfaceNarration } from './scripts/tube-surface'
+export { monkeySaddleNarration } from './scripts/monkey-saddle'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -634,6 +636,8 @@ import { supertoroidNarration } from './scripts/supertoroid'
 import { superquadricNarration } from './scripts/superquadric'
 import { ruledSurfacesNarration } from './scripts/ruled-surfaces'
 import { surfaceRevolutionNarration } from './scripts/surface-revolution'
+import { tubeSurfaceNarration } from './scripts/tube-surface'
+import { monkeySaddleNarration } from './scripts/monkey-saddle'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -949,6 +953,8 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'superquadric': superquadricNarration,
   'ruled-surfaces': ruledSurfacesNarration,
   'surface-revolution': surfaceRevolutionNarration,
+  'tube-surface': tubeSurfaceNarration,
+  'monkey-saddle': monkeySaddleNarration,
 }
 
 // 获取稿件

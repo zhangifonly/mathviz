@@ -334,6 +334,8 @@ const SupertoroidExperiment = lazyRetry(() => import('./experiments/supertoroid/
 const SuperquadricExperiment = lazyRetry(() => import('./experiments/superquadric/SuperquadricExperiment'))
 const RuledSurfacesExperiment = lazyRetry(() => import('./experiments/ruled-surfaces/RuledSurfacesExperiment'))
 const SurfaceRevolutionExperiment = lazyRetry(() => import('./experiments/surface-revolution/SurfaceRevolutionExperiment'))
+const TubeSurfaceExperiment = lazyRetry(() => import('./experiments/tube-surface/TubeSurfaceExperiment'))
+const MonkeySaddleExperiment = lazyRetry(() => import('./experiments/monkey-saddle/MonkeySaddleExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -665,6 +667,8 @@ export default function App() {
             <Route path="superquadric" element={<SuperquadricExperiment />} />
             <Route path="ruled-surfaces" element={<RuledSurfacesExperiment />} />
             <Route path="surface-revolution" element={<SurfaceRevolutionExperiment />} />
+            <Route path="tube-surface" element={<TubeSurfaceExperiment />} />
+            <Route path="monkey-saddle" element={<MonkeySaddleExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

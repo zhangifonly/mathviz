@@ -414,6 +414,8 @@ const SupertoroidSceneRenderer = lazy(() => import('./Supertoroid/SupertoroidSce
 const SuperquadricSceneRenderer = lazy(() => import('./Superquadric/SuperquadricSceneRenderer'))
 const RuledSurfacesSceneRenderer = lazy(() => import('./RuledSurfaces/RuledSurfacesSceneRenderer'))
 const SurfaceRevolutionSceneRenderer = lazy(() => import('./SurfaceRevolution/SurfaceRevolutionSceneRenderer'))
+const TubeSurfaceSceneRenderer = lazy(() => import('./TubeSurface/TubeSurfaceSceneRenderer'))
+const MonkeySaddleSceneRenderer = lazy(() => import('./MonkeySaddle/MonkeySaddleSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -730,6 +732,8 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'superquadric': SuperquadricSceneRenderer,
   'ruled-surfaces': RuledSurfacesSceneRenderer,
   'surface-revolution': SurfaceRevolutionSceneRenderer,
+  'tube-surface': TubeSurfaceSceneRenderer,
+  'monkey-saddle': MonkeySaddleSceneRenderer,
 }
 
 // 获取场景渲染器
