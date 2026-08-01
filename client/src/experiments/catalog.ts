@@ -3582,4 +3582,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/mean-curvature-flow',
+    title: '平均曲率流',
+    description: '让曲面沿法向以平均曲率速度收缩，凸曲面会越来越圆最终缩成一点。',
+    icon: '💧',
+    difficulty: 'expert',
+    ageRange: '研究生+',
+    topics: ['geometry', 'calculus'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

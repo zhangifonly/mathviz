@@ -364,6 +364,7 @@ const navCategories: NavCategory[] = [
       { path: '/whitney-umbrella', label: '惠特尼伞', icon: '☂️' },
       { path: '/spherical-harmonics', label: '球谐函数', icon: '⚛️' },
       { path: '/klein-bottle-figure8', label: '8字形克莱因瓶', icon: '🎱' },
+      { path: '/mean-curvature-flow', label: '平均曲率流', icon: '💧' },
     ],
   },
 ]
