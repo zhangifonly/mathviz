@@ -3593,4 +3593,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/costa-surface',
+    title: '科斯塔曲面',
+    description: '1982 年发现的完备嵌入极小曲面，打破了平面、悬链面、螺旋面之外别无他物的百年猜想。',
+    icon: '🕸️',
+    difficulty: 'expert',
+    ageRange: '研究生+',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

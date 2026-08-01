@@ -334,6 +334,7 @@ export { developableSurfaceNarration } from './scripts/developable-surface'
 export { torusKnotSurfaceNarration } from './scripts/torus-knot-surface'
 export { kleinBottleFigure8Narration } from './scripts/klein-bottle-figure8'
 export { meanCurvatureFlowNarration } from './scripts/mean-curvature-flow'
+export { costaSurfaceNarration } from './scripts/costa-surface'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -656,6 +657,7 @@ import { developableSurfaceNarration } from './scripts/developable-surface'
 import { torusKnotSurfaceNarration } from './scripts/torus-knot-surface'
 import { kleinBottleFigure8Narration } from './scripts/klein-bottle-figure8'
 import { meanCurvatureFlowNarration } from './scripts/mean-curvature-flow'
+import { costaSurfaceNarration } from './scripts/costa-surface'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -982,6 +984,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'torus-knot-surface': torusKnotSurfaceNarration,
   'klein-bottle-figure8': kleinBottleFigure8Narration,
   'mean-curvature-flow': meanCurvatureFlowNarration,
+  'costa-surface': costaSurfaceNarration,
 }
 
 // 获取稿件

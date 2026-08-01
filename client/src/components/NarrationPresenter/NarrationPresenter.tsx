@@ -261,6 +261,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'torus-knot-surface',
       'klein-bottle-figure8',
       'mean-curvature-flow',
+      'costa-surface',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

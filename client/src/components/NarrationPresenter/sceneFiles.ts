@@ -330,4 +330,5 @@ export const SCENE_FILES: Record<string, string> = {
   'torus-knot-surface': 'torusKnotSurfaceScenes',
   'klein-bottle-figure8': 'kleinBottleFigure8Scenes',
   'mean-curvature-flow': 'meanCurvatureFlowScenes',
+  'costa-surface': 'costaSurfaceScenes',
 }
