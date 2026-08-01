@@ -189,6 +189,9 @@ const navCategories: NavCategory[] = [
       { path: '/surface-revolution', label: '旋转曲面', icon: '🏺' },
       { path: '/monkey-saddle', label: '猴鞍面', icon: '🐒' },
       { path: '/seashell-surface', label: '海螺曲面', icon: '🐌' },
+      { path: '/viviani-curve', label: '维维亚尼曲线', icon: '🎽' },
+      { path: '/conical-spiral', label: '圆锥螺线', icon: '🐚' },
+      { path: '/spherical-spiral', label: '球面螺线', icon: '🧭' },
     ],
   },
   {
@@ -321,6 +324,7 @@ const navCategories: NavCategory[] = [
       { path: '/halvorsen-attractor', label: '哈尔沃森吸引子', icon: '🌪️' },
       { path: '/thomas-attractor', label: '托马斯吸引子', icon: '🔄' },
       { path: '/aizawa-attractor', label: '相泽吸引子', icon: '🧿' },
+      { path: '/space-curve-frenet', label: '空间曲线标架', icon: '🎢' },
     ],
   },
   {

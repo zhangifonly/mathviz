@@ -341,6 +341,10 @@ export { thomasAttractorNarration } from './scripts/thomas-attractor'
 export { aizawaAttractorNarration } from './scripts/aizawa-attractor'
 export { sprottAttractorNarration } from './scripts/sprott-attractor'
 export { lorenzAtmosphereNarration } from './scripts/lorenz-atmosphere'
+export { spaceCurveFrenetNarration } from './scripts/space-curve-frenet'
+export { vivianiCurveNarration } from './scripts/viviani-curve'
+export { conicalSpiralNarration } from './scripts/conical-spiral'
+export { sphericalSpiralNarration } from './scripts/spherical-spiral'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -670,6 +674,10 @@ import { thomasAttractorNarration } from './scripts/thomas-attractor'
 import { aizawaAttractorNarration } from './scripts/aizawa-attractor'
 import { sprottAttractorNarration } from './scripts/sprott-attractor'
 import { lorenzAtmosphereNarration } from './scripts/lorenz-atmosphere'
+import { spaceCurveFrenetNarration } from './scripts/space-curve-frenet'
+import { vivianiCurveNarration } from './scripts/viviani-curve'
+import { conicalSpiralNarration } from './scripts/conical-spiral'
+import { sphericalSpiralNarration } from './scripts/spherical-spiral'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1003,6 +1011,10 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'aizawa-attractor': aizawaAttractorNarration,
   'sprott-attractor': sprottAttractorNarration,
   'lorenz-atmosphere': lorenzAtmosphereNarration,
+  'space-curve-frenet': spaceCurveFrenetNarration,
+  'viviani-curve': vivianiCurveNarration,
+  'conical-spiral': conicalSpiralNarration,
+  'spherical-spiral': sphericalSpiralNarration,
 }
 
 // 获取稿件

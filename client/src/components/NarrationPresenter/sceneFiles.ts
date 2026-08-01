@@ -337,4 +337,8 @@ export const SCENE_FILES: Record<string, string> = {
   'aizawa-attractor': 'aizawaAttractorScenes',
   'sprott-attractor': 'sprottAttractorScenes',
   'lorenz-atmosphere': 'lorenzAtmosphereScenes',
+  'space-curve-frenet': 'spaceCurveFrenetScenes',
+  'viviani-curve': 'vivianiCurveScenes',
+  'conical-spiral': 'conicalSpiralScenes',
+  'spherical-spiral': 'sphericalSpiralScenes',
 }

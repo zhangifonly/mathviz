@@ -1,0 +1,101 @@
+/**
+ * 球面螺线 讲解场景渲染器
+ *
+ * 曲线用 Canvas 2D + lib/drawCurve 绘制(不用 Plotly, 见 draw3d.ts 顶部说明)。
+ * 需要两个参数: kind 选螺线类型, param 是它的形状参数(含义随类型变)。
+ */
+import { useEffect, useRef } from 'react'
+import type { SceneRendererProps } from '../SceneRendererFactory'
+import { drawSpaceCurve } from '../../../../lib/drawCurve'
+import {
+  sphericalSpiral, infoOf, THETA_RANGE, SPIRAL_KINDS, type SpiralKind,
+} from '../../../../experiments/spherical-spiral/sphericalSpiral'
+
+const W = 640
+const H = 540
+const TITLES: Record<string, { title: string; subtitle: string }> = {
+  'intro-1': { title: '球面螺线', subtitle: '航海用的那条线' },
+  'sum-3': { title: '感谢观看', subtitle: '探索数学之美' },
+}
+const SUMMARIES: Record<string, string[]> = {
+  'sum-1': ['等角航线与经线成固定角', '罗盘航向不变的航迹', '大航海时代的实际需求'],
+  'sum-2': ['墨卡托投影为它而设计', '代价是高纬度严重失真', '绕无穷多圈却弧长有限'],
+}
+
+function TitleScene({ sceneId }: { sceneId: string }) {
+  const { title, subtitle } = TITLES[sceneId] || { title: '球面螺线', subtitle: '' }
+  return (
+    <div className="flex flex-col items-center justify-center h-full">
+      <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">{title}</h1>
+      <p className="text-xl md:text-2xl text-white/70">{subtitle}</p>
+    </div>
+  )
+}
+
+function SummaryScene({ sceneId }: { sceneId: string }) {
+  return (
+    <div className="flex flex-col items-center justify-center h-full gap-4">
+      <h2 className="text-3xl font-bold text-white mb-2">回顾</h2>
+      {(SUMMARIES[sceneId] || []).map((t) => (
+        <div key={t} className="text-xl text-white/80 flex items-center gap-3">
+          <span className="text-emerald-400">✓</span>{t}
+        </div>
+      ))}
+    </div>
+  )
+}
+
+function CurveCanvas({ kind, param }: { kind: SpiralKind; param: number }) {
+  const ref = useRef<HTMLCanvasElement>(null)
+
+  useEffect(() => {
+    const canvas = ref.current
+    if (!canvas) return
+    let raf = 0
+    let t0 = 0
+    const loop = (ts: number) => {
+      if (!t0) t0 = ts
+      const el = (ts - t0) / 1000
+      drawSpaceCurve(canvas, {
+        curve: sphericalSpiral(kind, param),
+        tRange: THETA_RANGE,
+        title: infoOf(kind).label,
+        subtitle: infoOf(kind).note,
+        steps: 1400,
+        ramp: kind === 'loxodrome' ? 'ocean' : 'coolwarm',
+        yaw: 0.6 + el * 0.22,
+        progress: Math.min(1, el / 3),
+      })
+      raf = requestAnimationFrame(loop)
+    }
+    raf = requestAnimationFrame(loop)
+    return () => cancelAnimationFrame(raf)
+  }, [kind, param])
+
+  return (
+    <div className="flex items-center justify-center h-full w-full">
+      <canvas ref={ref} width={W} height={H} className="max-w-full max-h-full rounded-lg" />
+    </div>
+  )
+}
+
+export default function SphericalSpiralSceneRenderer({ scene }: SceneRendererProps) {
+  if (!scene) return <CurveCanvas kind="loxodrome" param={1.0} />
+  const id = scene.scene.id
+  const type = scene.scene.type
+  if (type === 'title') return <TitleScene sceneId={id} />
+  if (type === 'summary') return <SummaryScene sceneId={id} />
+  const p = scene.lineState?.params ?? {}
+  const raw = p.kind
+  const kind = (SPIRAL_KINDS as readonly string[]).includes(raw as string)
+    ? (raw as SpiralKind)
+    : 'loxodrome'
+  // 参数含义随类型变: 等角航线是 β(弧度), 阿基米德是绕圈系数
+  const fallback = kind === 'loxodrome' ? 1.0 : 6
+  return (
+    <CurveCanvas
+      kind={kind}
+      param={typeof p.param === 'number' ? p.param : fallback}
+    />
+  )
+}

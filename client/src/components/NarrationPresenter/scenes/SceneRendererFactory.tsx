@@ -432,6 +432,10 @@ const ThomasAttractorSceneRenderer = lazy(() => import('./ThomasAttractor/Thomas
 const AizawaAttractorSceneRenderer = lazy(() => import('./AizawaAttractor/AizawaAttractorSceneRenderer'))
 const SprottAttractorSceneRenderer = lazy(() => import('./SprottAttractor/SprottAttractorSceneRenderer'))
 const LorenzAtmosphereSceneRenderer = lazy(() => import('./LorenzAtmosphere/LorenzAtmosphereSceneRenderer'))
+const SpaceCurveFrenetSceneRenderer = lazy(() => import('./SpaceCurveFrenet/SpaceCurveFrenetSceneRenderer'))
+const VivianiCurveSceneRenderer = lazy(() => import('./VivianiCurve/VivianiCurveSceneRenderer'))
+const ConicalSpiralSceneRenderer = lazy(() => import('./ConicalSpiral/ConicalSpiralSceneRenderer'))
+const SphericalSpiralSceneRenderer = lazy(() => import('./SphericalSpiral/SphericalSpiralSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -766,6 +770,10 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'aizawa-attractor': AizawaAttractorSceneRenderer,
   'sprott-attractor': SprottAttractorSceneRenderer,
   'lorenz-atmosphere': LorenzAtmosphereSceneRenderer,
+  'space-curve-frenet': SpaceCurveFrenetSceneRenderer,
+  'viviani-curve': VivianiCurveSceneRenderer,
+  'conical-spiral': ConicalSpiralSceneRenderer,
+  'spherical-spiral': SphericalSpiralSceneRenderer,
 }
 
 // 获取场景渲染器

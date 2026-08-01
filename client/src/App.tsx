@@ -352,6 +352,10 @@ const ThomasAttractorExperiment = lazyRetry(() => import('./experiments/thomas-a
 const AizawaAttractorExperiment = lazyRetry(() => import('./experiments/aizawa-attractor/AizawaAttractorExperiment'))
 const SprottAttractorExperiment = lazyRetry(() => import('./experiments/sprott-attractor/SprottAttractorExperiment'))
 const LorenzAtmosphereExperiment = lazyRetry(() => import('./experiments/lorenz-atmosphere/LorenzAtmosphereExperiment'))
+const SpaceCurveFrenetExperiment = lazyRetry(() => import('./experiments/space-curve-frenet/SpaceCurveFrenetExperiment'))
+const VivianiCurveExperiment = lazyRetry(() => import('./experiments/viviani-curve/VivianiCurveExperiment'))
+const ConicalSpiralExperiment = lazyRetry(() => import('./experiments/conical-spiral/ConicalSpiralExperiment'))
+const SphericalSpiralExperiment = lazyRetry(() => import('./experiments/spherical-spiral/SphericalSpiralExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -701,6 +705,10 @@ export default function App() {
             <Route path="aizawa-attractor" element={<AizawaAttractorExperiment />} />
             <Route path="sprott-attractor" element={<SprottAttractorExperiment />} />
             <Route path="lorenz-atmosphere" element={<LorenzAtmosphereExperiment />} />
+            <Route path="space-curve-frenet" element={<SpaceCurveFrenetExperiment />} />
+            <Route path="viviani-curve" element={<VivianiCurveExperiment />} />
+            <Route path="conical-spiral" element={<ConicalSpiralExperiment />} />
+            <Route path="spherical-spiral" element={<SphericalSpiralExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />
