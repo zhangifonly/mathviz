@@ -1,0 +1,194 @@
+{
+  "script_id": "space-filling-solids",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/space-filling-solids/intro-intro-1.mp3",
+      "duration": 3.66,
+      "size": 58608,
+      "text": "先看平面。哪些正多边形能不留缝隙铺满地面？判据很简单：内角要能整除三百六十度。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/space-filling-solids/intro-intro-2.mp3",
+      "duration": 3.48,
+      "size": 55728,
+      "text": "算一下只有三种：正三角形六个凑一圈，正方形四个，正六边形三个。五边形七边形都不行。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/space-filling-solids/intro-intro-3.mp3",
+      "duration": 4.18,
+      "size": 66816,
+      "text": "现在升到空间。柏拉图立体有五种，能填满空间的有几种？直觉说应该也有两三种，实际答案是只有一种。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "dihedral",
+      "line_id": "dh-1",
+      "filename": "dihedral-dh-1.mp3",
+      "path": "audio/narrations/space-filling-solids/dihedral-dh-1.mp3",
+      "duration": 3.53,
+      "size": 56448,
+      "text": "判据从内角换成二面角，也就是相邻两个面之间的夹角。绕一条棱把立体一个个贴上去，要恰好合拢。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "dihedral",
+      "line_id": "dh-2",
+      "filename": "dihedral-dh-2.mp3",
+      "path": "audio/narrations/space-filling-solids/dihedral-dh-2.mp3",
+      "duration": 3.78,
+      "size": 60480,
+      "text": "所以条件是三百六十度除以二面角必须是整数。立方体的二面角是九十度，除得四，正好四个合拢。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "dihedral",
+      "line_id": "dh-3",
+      "filename": "dihedral-dh-3.mp3",
+      "path": "audio/narrations/space-filling-solids/dihedral-dh-3.mp3",
+      "duration": 3.58,
+      "size": 57312,
+      "text": "其余四种全部不整除。正八面体是一百零九点四七度，正十二面体一百一十六点五七度，都除不尽。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "aristotle",
+      "line_id": "ar-1",
+      "filename": "aristotle-ar-1.mp3",
+      "path": "audio/narrations/space-filling-solids/aristotle-ar-1.mp3",
+      "duration": 3.82,
+      "size": 61056,
+      "text": "最有名的失手来自亚里士多德。他断言正四面体也能填满空间，这个说法被当作定论流传了一千八百年。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "aristotle",
+      "line_id": "ar-2",
+      "filename": "aristotle-ar-2.mp3",
+      "path": "audio/narrations/space-filling-solids/aristotle-ar-2.mp3",
+      "duration": 3.83,
+      "size": 61344,
+      "text": "算一下就知道错在哪。正四面体的二面角是七十点五二八八度，三百六十除以它得五点一零，不是整数。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "aristotle",
+      "line_id": "ar-3",
+      "filename": "aristotle-ar-3.mp3",
+      "path": "audio/narrations/space-filling-solids/aristotle-ar-3.mp3",
+      "duration": 4.56,
+      "size": 73008,
+      "text": "绕一条棱堆五个，用掉三百五十二点六四度，还剩七点三五六一度的缝。屏幕上那道红色扇形就是这条缝，一直到十五世纪才有人指出来。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "others",
+      "line_id": "ot-1",
+      "filename": "others-ot-1.mp3",
+      "path": "audio/narrations/space-filling-solids/others-ot-1.mp3",
+      "duration": 3.65,
+      "size": 58320,
+      "text": "如果不限于正多面体，能填充的立体就多了。十三种阿基米德立体里恰好有一个能单独做到，是截角八面体。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "others",
+      "line_id": "ot-2",
+      "filename": "others-ot-2.mp3",
+      "path": "audio/narrations/space-filling-solids/others-ot-2.mp3",
+      "duration": 3.63,
+      "size": 58032,
+      "text": "还有菱形十二面体，十二个菱形面。它的来历很特别：把最密堆积的球换成各自的势力范围，得到的就是它。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "others",
+      "line_id": "ot-3",
+      "filename": "others-ot-3.mp3",
+      "path": "audio/narrations/space-filling-solids/others-ot-3.mp3",
+      "duration": 3.75,
+      "size": 60048,
+      "text": "正六棱柱也行，那正是蜂巢结构的三维版本。蜜蜂用六边形铺平面，把它拉成柱体就填满了空间。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "kepler",
+      "line_id": "kp-1",
+      "filename": "kepler-kp-1.mp3",
+      "path": "audio/narrations/space-filling-solids/kepler-kp-1.mp3",
+      "duration": 3.03,
+      "size": 48528,
+      "text": "顺着菱形十二面体往下想。既然它是最密球堆积的势力范围，那球本身能占多少体积？"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "kepler",
+      "line_id": "kp-2",
+      "filename": "kepler-kp-2.mp3",
+      "path": "audio/narrations/space-filling-solids/kepler-kp-2.mp3",
+      "duration": 3.99,
+      "size": 63792,
+      "text": "答案是圆周率除以三倍根号二，约百分之七十四。这就是开普勒猜想，一六一一年提出，一九九八年才被证明。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "kepler",
+      "line_id": "kp-3",
+      "filename": "kepler-kp-3.mp3",
+      "path": "audio/narrations/space-filling-solids/kepler-kp-3.mp3",
+      "duration": 4.4,
+      "size": 70416,
+      "text": "剩下百分之二十六是球之间的空隙。而多面体填充的密度恰好是百分之百，一点缝都不留。请切换堆叠数量亲自看看。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/space-filling-solids/summary-sum-1.mp3",
+      "duration": 3.19,
+      "size": 50976,
+      "text": "第一，填充判据是三百六十度除以二面角为整数，五种柏拉图立体里只有立方体满足。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/space-filling-solids/summary-sum-2.mp3",
+      "duration": 3.09,
+      "size": 49392,
+      "text": "第二，正四面体堆五个留七点三六度缝隙，亚里士多德的这个错误流传了一千八百年。"
+    },
+    {
+      "script_id": "space-filling-solids",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/space-filling-solids/summary-sum-3.mp3",
+      "duration": 3.74,
+      "size": 59904,
+      "text": "第三，放宽条件后截角八面体、菱形十二面体、正六棱柱都能填充。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 66.89,
+  "total_size": 1070208,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}
