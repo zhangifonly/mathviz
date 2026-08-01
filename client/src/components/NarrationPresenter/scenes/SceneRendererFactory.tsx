@@ -403,6 +403,8 @@ const CatenarySceneRenderer = lazy(() => import('./Catenary/CatenarySceneRendere
 const BrachistochroneSceneRenderer = lazy(() => import('./Brachistochrone/BrachistochroneSceneRenderer'))
 const HelicoidCatenoidSceneRenderer = lazy(() => import('./HelicoidCatenoid/HelicoidCatenoidSceneRenderer'))
 const PseudosphereSceneRenderer = lazy(() => import('./Pseudosphere/PseudosphereSceneRenderer'))
+const EnneperSurfaceSceneRenderer = lazy(() => import('./EnneperSurface/EnneperSurfaceSceneRenderer'))
+const DiniSurfaceSceneRenderer = lazy(() => import('./DiniSurface/DiniSurfaceSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -708,6 +710,8 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'brachistochrone': BrachistochroneSceneRenderer,
   'helicoid-catenoid': HelicoidCatenoidSceneRenderer,
   'pseudosphere': PseudosphereSceneRenderer,
+  'enneper-surface': EnneperSurfaceSceneRenderer,
+  'dini-surface': DiniSurfaceSceneRenderer,
 }
 
 // 获取场景渲染器

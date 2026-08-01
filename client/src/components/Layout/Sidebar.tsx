@@ -302,6 +302,7 @@ const navCategories: NavCategory[] = [
       { path: '/stirling-numbers', label: '斯特林数', icon: '🔢' },
       { path: '/helicoid-catenoid', label: '螺旋面与悬链面', icon: '🌀' },
       { path: '/pseudosphere', label: '伪球面', icon: '📡' },
+      { path: '/dini-surface', label: '迪尼曲面', icon: '🐚' },
     ],
   },
   {
@@ -343,6 +344,7 @@ const navCategories: NavCategory[] = [
       { path: '/bessel-functions', label: '贝塞尔函数', icon: '🥁' },
       { path: '/brachistochrone', label: '最速降线', icon: '🎿' },
       { path: '/backpropagation', label: '反向传播', icon: '🔙' },
+      { path: '/enneper-surface', label: '恩内佩尔曲面', icon: '🍀' },
     ],
   },
 ]

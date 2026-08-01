@@ -308,4 +308,6 @@ export const SCENE_FILES: Record<string, string> = {
   'brachistochrone': 'brachistochroneScenes',
   'helicoid-catenoid': 'helicoidCatenoidScenes',
   'pseudosphere': 'pseudosphereScenes',
+  'enneper-surface': 'enneperSurfaceScenes',
+  'dini-surface': 'diniSurfaceScenes',
 }

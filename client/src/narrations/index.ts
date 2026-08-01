@@ -312,6 +312,8 @@ export { catenaryNarration } from './scripts/catenary'
 export { brachistochroneNarration } from './scripts/brachistochrone'
 export { helicoidCatenoidNarration } from './scripts/helicoid-catenoid'
 export { pseudosphereNarration } from './scripts/pseudosphere'
+export { enneperSurfaceNarration } from './scripts/enneper-surface'
+export { diniSurfaceNarration } from './scripts/dini-surface'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -612,6 +614,8 @@ import { catenaryNarration } from './scripts/catenary'
 import { brachistochroneNarration } from './scripts/brachistochrone'
 import { helicoidCatenoidNarration } from './scripts/helicoid-catenoid'
 import { pseudosphereNarration } from './scripts/pseudosphere'
+import { enneperSurfaceNarration } from './scripts/enneper-surface'
+import { diniSurfaceNarration } from './scripts/dini-surface'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -916,6 +920,8 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'brachistochrone': brachistochroneNarration,
   'helicoid-catenoid': helicoidCatenoidNarration,
   'pseudosphere': pseudosphereNarration,
+  'enneper-surface': enneperSurfaceNarration,
+  'dini-surface': diniSurfaceNarration,
 }
 
 // 获取稿件

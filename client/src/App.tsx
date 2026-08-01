@@ -323,6 +323,8 @@ const CatenaryExperiment = lazyRetry(() => import('./experiments/catenary/Catena
 const BrachistochroneExperiment = lazyRetry(() => import('./experiments/brachistochrone/BrachistochroneExperiment'))
 const HelicoidCatenoidExperiment = lazyRetry(() => import('./experiments/helicoid-catenoid/HelicoidCatenoidExperiment'))
 const PseudosphereExperiment = lazyRetry(() => import('./experiments/pseudosphere/PseudosphereExperiment'))
+const EnneperSurfaceExperiment = lazyRetry(() => import('./experiments/enneper-surface/EnneperSurfaceExperiment'))
+const DiniSurfaceExperiment = lazyRetry(() => import('./experiments/dini-surface/DiniSurfaceExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -643,6 +645,8 @@ export default function App() {
             <Route path="brachistochrone" element={<BrachistochroneExperiment />} />
             <Route path="helicoid-catenoid" element={<HelicoidCatenoidExperiment />} />
             <Route path="pseudosphere" element={<PseudosphereExperiment />} />
+            <Route path="enneper-surface" element={<EnneperSurfaceExperiment />} />
+            <Route path="dini-surface" element={<DiniSurfaceExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

@@ -1,21 +1,21 @@
 /**
- * 伪球面 讲解场景渲染器
+ * 恩内佩尔曲面 讲解场景渲染器
  *
  * 曲面用 Canvas 2D + lib/draw3d 逐帧自转(不用 Plotly, 见 draw3d.ts 顶部说明)。
  */
 import { useEffect, useRef } from 'react'
 import type { SceneRendererProps } from '../SceneRendererFactory'
-import { drawPseudosphere } from '../../../../experiments/pseudosphere/draw'
+import { drawEnneperSurface } from '../../../../experiments/enneper-surface/draw'
 
 const W = 640
 const H = 540
 
 function TitleScene({ sceneId }: { sceneId: string }) {
   const titles: Record<string, { title: string; subtitle: string }> = {
-    'intro-1': { title: '伪球面', subtitle: '常负曲率的双曲模型' },
+    'intro-1': { title: '恩内佩尔曲面', subtitle: '会自交的极小曲面' },
     'sum-3': { title: '感谢观看', subtitle: '探索数学之美' },
   }
-  const { title, subtitle } = titles[sceneId] || { title: '伪球面', subtitle: '' }
+  const { title, subtitle } = titles[sceneId] || { title: '恩内佩尔曲面', subtitle: '' }
   return (
     <div className="flex flex-col items-center justify-center h-full">
       <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">{title}</h1>
@@ -26,8 +26,8 @@ function TitleScene({ sceneId }: { sceneId: string }) {
 
 function SummaryScene({ sceneId }: { sceneId: string }) {
   const items: Record<string, string[]> = {
-    'sum-1': ['曳物线绕渐近线旋转', '高斯曲率处处为 -1/a²', '双曲几何的局部模型'],
-    'sum-2': ['贝尔特拉米让非欧几何落地', '测地线充当直线', '过一点有无穷多平行线'],
+    'sum-1': ['三次多项式给出的极小曲面', '平均曲率处处为零', '高斯曲率处处为负'],
+    'sum-2': ['四片花瓣两两自交', '浸入而非嵌入', '极小是局部, 自交是全局'],
   }
   const list = items[sceneId] || []
   return (
@@ -43,10 +43,10 @@ function SummaryScene({ sceneId }: { sceneId: string }) {
 }
 
 interface SurfaceProps {
-  a: number
+  scale: number
 }
 
-function SurfaceCanvas({ a }: SurfaceProps) {
+function SurfaceCanvas({ scale }: SurfaceProps) {
   const ref = useRef<HTMLCanvasElement>(null)
 
   // 参数全部进依赖数组: 切句时参数变了要重启动画。
@@ -60,15 +60,15 @@ function SurfaceCanvas({ a }: SurfaceProps) {
     const loop = (ts: number) => {
       if (!start) start = ts
       const el = (ts - start) / 1000
-      drawPseudosphere(canvas, {
-        a,
+      drawEnneperSurface(canvas, {
+        scale,
         yaw: 0.6 + el * 0.28,
       })
       raf = requestAnimationFrame(loop)
     }
     raf = requestAnimationFrame(loop)
     return () => cancelAnimationFrame(raf)
-  }, [a])
+  }, [scale])
 
   return (
     <div className="flex items-center justify-center h-full w-full">
@@ -77,8 +77,8 @@ function SurfaceCanvas({ a }: SurfaceProps) {
   )
 }
 
-export default function PseudosphereSceneRenderer({ scene }: SceneRendererProps) {
-  if (!scene) return <SurfaceCanvas a={1} />
+export default function EnneperSurfaceSceneRenderer({ scene }: SceneRendererProps) {
+  if (!scene) return <SurfaceCanvas scale={1} />
   const id = scene.scene.id
   const type = scene.scene.type
   if (type === 'title') return <TitleScene sceneId={id} />
@@ -86,7 +86,7 @@ export default function PseudosphereSceneRenderer({ scene }: SceneRendererProps)
   const p = scene.lineState?.params ?? {}
   return (
     <SurfaceCanvas
-      a={typeof p.a === 'number' ? p.a : 1}
+      scale={typeof p.scale === 'number' ? p.scale : 1}
     />
   )
 }
