@@ -1,0 +1,190 @@
+{
+  "script_id": "archimedean-solids",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/intro-intro-1.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "柏拉图立体要求所有面是同一种正多边形，这个条件太严，只留下五种。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/intro-intro-2.mp3",
+      "duration": 3.89,
+      "size": 62208,
+      "text": "现在放宽一点：允许出现两种或更多正多边形，但仍要求所有顶点长得一样，也就是每个顶点周围的面型排列相同。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/intro-intro-3.mp3",
+      "duration": 3.74,
+      "size": 59904,
+      "text": "这样得到的立体叫阿基米德立体，共十三种。今天不去硬记这十三组坐标，而是用一个几何操作把它们造出来。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "truncate",
+      "line_id": "tr-1",
+      "filename": "truncate-tr-1.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/truncate-tr-1.mp3",
+      "duration": 2.48,
+      "size": 39744,
+      "text": "操作叫截角：拿一把刀，把多面体的每个顶点削掉，切口成为一个新的面。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "truncate",
+      "line_id": "tr-2",
+      "filename": "truncate-tr-2.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/truncate-tr-2.mp3",
+      "duration": 3.35,
+      "size": 53568,
+      "text": "原来的面还在，只是每个角被削平，边数翻倍。三角形变六边形，正方形变八边形。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "truncate",
+      "line_id": "tr-3",
+      "filename": "truncate-tr-3.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/truncate-tr-3.mp3",
+      "duration": 3.56,
+      "size": 57024,
+      "text": "切口面的边数等于原顶点的度数。柏拉图立体每顶点度数是三或四，所以切口是三角形或四边形。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "verify",
+      "line_id": "vf-1",
+      "filename": "verify-vf-1.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/verify-vf-1.mp3",
+      "duration": 4.19,
+      "size": 67104,
+      "text": "截角后的顶点数、棱数、面数都能预先算出来。每条原棱上产生两个新顶点，所以顶点数是原棱数的两倍。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "verify",
+      "line_id": "vf-2",
+      "filename": "verify-vf-2.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/verify-vf-2.mp3",
+      "duration": 3.41,
+      "size": 54576,
+      "text": "面数是原面数加原顶点数，因为每个原顶点贡献一个切口面。屏幕上的读数逐项验证过。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "verify",
+      "line_id": "vf-3",
+      "filename": "verify-vf-3.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/verify-vf-3.mp3",
+      "duration": 3.21,
+      "size": 51408,
+      "text": "更关键的是欧拉公式：顶点减棱加面仍然等于二。这一条通不过，说明生成的数据错了。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "ratio",
+      "line_id": "rt-1",
+      "filename": "ratio-rt-1.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/ratio-rt-1.mp3",
+      "duration": 3.77,
+      "size": 60336,
+      "text": "切的深浅由一个比例控制。切太浅，切口小而原面的边长不齐；切太深，相邻切口就要相接了。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "ratio",
+      "line_id": "rt-2",
+      "filename": "ratio-rt-2.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/ratio-rt-2.mp3",
+      "duration": 3.55,
+      "size": 56736,
+      "text": "要让所有面都是正多边形，比例必须恰到好处。三角形面的立体取三分之一，但立方体不行。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "ratio",
+      "line_id": "rt-3",
+      "filename": "ratio-rt-3.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/ratio-rt-3.mp3",
+      "duration": 4.78,
+      "size": 76464,
+      "text": "立方体的正确比例是一除以二加根号二，约零点二九。原因是切口边长取决于顶点处邻边的夹角，正方形的夹角和三角形不同。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "rectify",
+      "line_id": "rc-1",
+      "filename": "rectify-rc-1.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/rectify-rc-1.mp3",
+      "duration": 2.94,
+      "size": 47088,
+      "text": "把比例调到二分之一会发生什么？相邻切口在棱的中点相接，原来的棱完全消失。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "rectify",
+      "line_id": "rc-2",
+      "filename": "rectify-rc-2.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/rectify-rc-2.mp3",
+      "duration": 3.08,
+      "size": 49248,
+      "text": "这个极限情形叫截半。立方体截半得到立方八面体，八个三角形加六个正方形。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "rectify",
+      "line_id": "rc-3",
+      "filename": "rectify-rc-3.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/rectify-rc-3.mp3",
+      "duration": 3.88,
+      "size": 62064,
+      "text": "有趣的是正八面体截半也得到同一个立体。对偶的一对多面体，截半结果相同。四面体截半则得到正八面体。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/summary-sum-1.mp3",
+      "duration": 2.83,
+      "size": 45216,
+      "text": "第一，阿基米德立体允许多种正多边形面，但要求所有顶点等价，共十三种。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/summary-sum-2.mp3",
+      "duration": 3.1,
+      "size": 49680,
+      "text": "第二，截角操作把顶点削平：顶点数变原棱数两倍，面数变原面数加原顶点数。"
+    },
+    {
+      "script_id": "archimedean-solids",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/archimedean-solids/yunxi/summary-sum-3.mp3",
+      "duration": 3.42,
+      "size": 54720,
+      "text": "第三，理想截角比例随面型而变，切到二分之一则退化为截半。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 61.78,
+  "total_size": 988704
+}
