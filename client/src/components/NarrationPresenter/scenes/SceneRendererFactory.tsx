@@ -401,6 +401,8 @@ const ProjectileMotionSceneRenderer = lazy(() => import('./ProjectileMotion/Proj
 const DampedOscillationSceneRenderer = lazy(() => import('./DampedOscillation/DampedOscillationSceneRenderer'))
 const CatenarySceneRenderer = lazy(() => import('./Catenary/CatenarySceneRenderer'))
 const BrachistochroneSceneRenderer = lazy(() => import('./Brachistochrone/BrachistochroneSceneRenderer'))
+const HelicoidCatenoidSceneRenderer = lazy(() => import('./HelicoidCatenoid/HelicoidCatenoidSceneRenderer'))
+const PseudosphereSceneRenderer = lazy(() => import('./Pseudosphere/PseudosphereSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -704,6 +706,8 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'damped-oscillation': DampedOscillationSceneRenderer,
   'catenary': CatenarySceneRenderer,
   'brachistochrone': BrachistochroneSceneRenderer,
+  'helicoid-catenoid': HelicoidCatenoidSceneRenderer,
+  'pseudosphere': PseudosphereSceneRenderer,
 }
 
 // 获取场景渲染器

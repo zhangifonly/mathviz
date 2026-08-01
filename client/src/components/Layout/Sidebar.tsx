@@ -300,6 +300,8 @@ const navCategories: NavCategory[] = [
       { path: '/decision-tree', label: '决策树', icon: '🌳' },
       { path: '/bell-numbers', label: '贝尔数', icon: '🔔' },
       { path: '/stirling-numbers', label: '斯特林数', icon: '🔢' },
+      { path: '/helicoid-catenoid', label: '螺旋面与悬链面', icon: '🌀' },
+      { path: '/pseudosphere', label: '伪球面', icon: '📡' },
     ],
   },
   {

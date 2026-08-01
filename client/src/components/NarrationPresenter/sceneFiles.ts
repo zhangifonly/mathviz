@@ -306,4 +306,6 @@ export const SCENE_FILES: Record<string, string> = {
   'damped-oscillation': 'dampedOscillationScenes',
   'catenary': 'catenaryScenes',
   'brachistochrone': 'brachistochroneScenes',
+  'helicoid-catenoid': 'helicoidCatenoidScenes',
+  'pseudosphere': 'pseudosphereScenes',
 }

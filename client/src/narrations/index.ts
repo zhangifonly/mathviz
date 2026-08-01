@@ -310,6 +310,8 @@ export { projectileMotionNarration } from './scripts/projectile-motion'
 export { dampedOscillationNarration } from './scripts/damped-oscillation'
 export { catenaryNarration } from './scripts/catenary'
 export { brachistochroneNarration } from './scripts/brachistochrone'
+export { helicoidCatenoidNarration } from './scripts/helicoid-catenoid'
+export { pseudosphereNarration } from './scripts/pseudosphere'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -608,6 +610,8 @@ import { projectileMotionNarration } from './scripts/projectile-motion'
 import { dampedOscillationNarration } from './scripts/damped-oscillation'
 import { catenaryNarration } from './scripts/catenary'
 import { brachistochroneNarration } from './scripts/brachistochrone'
+import { helicoidCatenoidNarration } from './scripts/helicoid-catenoid'
+import { pseudosphereNarration } from './scripts/pseudosphere'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -910,6 +914,8 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'damped-oscillation': dampedOscillationNarration,
   'catenary': catenaryNarration,
   'brachistochrone': brachistochroneNarration,
+  'helicoid-catenoid': helicoidCatenoidNarration,
+  'pseudosphere': pseudosphereNarration,
 }
 
 // 获取稿件
