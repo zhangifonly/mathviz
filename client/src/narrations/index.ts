@@ -325,6 +325,8 @@ export { ruledSurfacesNarration } from './scripts/ruled-surfaces'
 export { surfaceRevolutionNarration } from './scripts/surface-revolution'
 export { tubeSurfaceNarration } from './scripts/tube-surface'
 export { monkeySaddleNarration } from './scripts/monkey-saddle'
+export { seashellSurfaceNarration } from './scripts/seashell-surface'
+export { whitneyUmbrellaNarration } from './scripts/whitney-umbrella'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -638,6 +640,8 @@ import { ruledSurfacesNarration } from './scripts/ruled-surfaces'
 import { surfaceRevolutionNarration } from './scripts/surface-revolution'
 import { tubeSurfaceNarration } from './scripts/tube-surface'
 import { monkeySaddleNarration } from './scripts/monkey-saddle'
+import { seashellSurfaceNarration } from './scripts/seashell-surface'
+import { whitneyUmbrellaNarration } from './scripts/whitney-umbrella'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -955,6 +959,8 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'surface-revolution': surfaceRevolutionNarration,
   'tube-surface': tubeSurfaceNarration,
   'monkey-saddle': monkeySaddleNarration,
+  'seashell-surface': seashellSurfaceNarration,
+  'whitney-umbrella': whitneyUmbrellaNarration,
 }
 
 // 获取稿件

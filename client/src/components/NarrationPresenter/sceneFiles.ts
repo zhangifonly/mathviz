@@ -321,4 +321,6 @@ export const SCENE_FILES: Record<string, string> = {
   'surface-revolution': 'surfaceRevolutionScenes',
   'tube-surface': 'tubeSurfaceScenes',
   'monkey-saddle': 'monkeySaddleScenes',
+  'seashell-surface': 'seashellSurfaceScenes',
+  'whitney-umbrella': 'whitneyUmbrellaScenes',
 }

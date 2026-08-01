@@ -416,6 +416,8 @@ const RuledSurfacesSceneRenderer = lazy(() => import('./RuledSurfaces/RuledSurfa
 const SurfaceRevolutionSceneRenderer = lazy(() => import('./SurfaceRevolution/SurfaceRevolutionSceneRenderer'))
 const TubeSurfaceSceneRenderer = lazy(() => import('./TubeSurface/TubeSurfaceSceneRenderer'))
 const MonkeySaddleSceneRenderer = lazy(() => import('./MonkeySaddle/MonkeySaddleSceneRenderer'))
+const SeashellSurfaceSceneRenderer = lazy(() => import('./SeashellSurface/SeashellSurfaceSceneRenderer'))
+const WhitneyUmbrellaSceneRenderer = lazy(() => import('./WhitneyUmbrella/WhitneyUmbrellaSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -734,6 +736,8 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'surface-revolution': SurfaceRevolutionSceneRenderer,
   'tube-surface': TubeSurfaceSceneRenderer,
   'monkey-saddle': MonkeySaddleSceneRenderer,
+  'seashell-surface': SeashellSurfaceSceneRenderer,
+  'whitney-umbrella': WhitneyUmbrellaSceneRenderer,
 }
 
 // 获取场景渲染器

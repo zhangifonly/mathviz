@@ -188,6 +188,7 @@ const navCategories: NavCategory[] = [
       { path: '/superquadric', label: '超二次曲面', icon: '🎲' },
       { path: '/surface-revolution', label: '旋转曲面', icon: '🏺' },
       { path: '/monkey-saddle', label: '猴鞍面', icon: '🐒' },
+      { path: '/seashell-surface', label: '海螺曲面', icon: '🐌' },
     ],
   },
   {
@@ -356,6 +357,7 @@ const navCategories: NavCategory[] = [
       { path: '/enneper-surface', label: '恩内佩尔曲面', icon: '🍀' },
       { path: '/roman-surface', label: '罗马曲面', icon: '🏛️' },
       { path: '/boy-surface', label: '博伊曲面', icon: '🎭' },
+      { path: '/whitney-umbrella', label: '惠特尼伞', icon: '☂️' },
     ],
   },
 ]
