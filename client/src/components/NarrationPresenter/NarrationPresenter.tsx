@@ -251,6 +251,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'hyperbolic-paraboloid',
       'quadric-surfaces',
       'supertoroid', 'superquadric',
+      'ruled-surfaces', 'surface-revolution',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

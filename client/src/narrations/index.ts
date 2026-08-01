@@ -321,6 +321,8 @@ export { hyperbolicParaboloidNarration } from './scripts/hyperbolic-paraboloid'
 export { quadricSurfacesNarration } from './scripts/quadric-surfaces'
 export { supertoroidNarration } from './scripts/supertoroid'
 export { superquadricNarration } from './scripts/superquadric'
+export { ruledSurfacesNarration } from './scripts/ruled-surfaces'
+export { surfaceRevolutionNarration } from './scripts/surface-revolution'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -630,6 +632,8 @@ import { hyperbolicParaboloidNarration } from './scripts/hyperbolic-paraboloid'
 import { quadricSurfacesNarration } from './scripts/quadric-surfaces'
 import { supertoroidNarration } from './scripts/supertoroid'
 import { superquadricNarration } from './scripts/superquadric'
+import { ruledSurfacesNarration } from './scripts/ruled-surfaces'
+import { surfaceRevolutionNarration } from './scripts/surface-revolution'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -943,6 +947,8 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'quadric-surfaces': quadricSurfacesNarration,
   'supertoroid': supertoroidNarration,
   'superquadric': superquadricNarration,
+  'ruled-surfaces': ruledSurfacesNarration,
+  'surface-revolution': surfaceRevolutionNarration,
 }
 
 // 获取稿件

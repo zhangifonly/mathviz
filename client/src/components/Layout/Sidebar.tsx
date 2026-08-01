@@ -186,6 +186,7 @@ const navCategories: NavCategory[] = [
       { path: '/quadric-surfaces', label: '二次曲面分类', icon: '🥚' },
       { path: '/supertoroid', label: '超环面族', icon: '🍩' },
       { path: '/superquadric', label: '超二次曲面', icon: '🎲' },
+      { path: '/surface-revolution', label: '旋转曲面', icon: '🏺' },
     ],
   },
   {
@@ -308,6 +309,7 @@ const navCategories: NavCategory[] = [
       { path: '/pseudosphere', label: '伪球面', icon: '📡' },
       { path: '/dini-surface', label: '迪尼曲面', icon: '🐚' },
       { path: '/cross-cap', label: '交叉帽', icon: '🧢' },
+      { path: '/ruled-surfaces', label: '直纹曲面', icon: '📏' },
     ],
   },
   {
