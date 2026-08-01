@@ -324,4 +324,6 @@ export const SCENE_FILES: Record<string, string> = {
   'seashell-surface': 'seashellSurfaceScenes',
   'whitney-umbrella': 'whitneyUmbrellaScenes',
   'spherical-harmonics': 'sphericalHarmonicsScenes',
+  'gaussian-curvature': 'gaussianCurvatureScenes',
+  'trefoil-surface': 'trefoilSurfaceScenes',
 }

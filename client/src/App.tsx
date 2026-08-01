@@ -339,6 +339,8 @@ const MonkeySaddleExperiment = lazyRetry(() => import('./experiments/monkey-sadd
 const SeashellSurfaceExperiment = lazyRetry(() => import('./experiments/seashell-surface/SeashellSurfaceExperiment'))
 const WhitneyUmbrellaExperiment = lazyRetry(() => import('./experiments/whitney-umbrella/WhitneyUmbrellaExperiment'))
 const SphericalHarmonicsExperiment = lazyRetry(() => import('./experiments/spherical-harmonics/SphericalHarmonicsExperiment'))
+const GaussianCurvatureExperiment = lazyRetry(() => import('./experiments/gaussian-curvature/GaussianCurvatureExperiment'))
+const TrefoilSurfaceExperiment = lazyRetry(() => import('./experiments/trefoil-surface/TrefoilSurfaceExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -675,6 +677,8 @@ export default function App() {
             <Route path="seashell-surface" element={<SeashellSurfaceExperiment />} />
             <Route path="whitney-umbrella" element={<WhitneyUmbrellaExperiment />} />
             <Route path="spherical-harmonics" element={<SphericalHarmonicsExperiment />} />
+            <Route path="gaussian-curvature" element={<GaussianCurvatureExperiment />} />
+            <Route path="trefoil-surface" element={<TrefoilSurfaceExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

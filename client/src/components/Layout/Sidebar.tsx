@@ -313,6 +313,8 @@ const navCategories: NavCategory[] = [
       { path: '/cross-cap', label: '交叉帽', icon: '🧢' },
       { path: '/ruled-surfaces', label: '直纹曲面', icon: '📏' },
       { path: '/tube-surface', label: '管状曲面', icon: '🪢' },
+      { path: '/gaussian-curvature', label: '高斯曲率', icon: '🎨' },
+      { path: '/trefoil-surface', label: '三叶结曲面', icon: '☘️' },
     ],
   },
   {
