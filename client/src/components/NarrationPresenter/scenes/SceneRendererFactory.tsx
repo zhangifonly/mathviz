@@ -421,6 +421,7 @@ const WhitneyUmbrellaSceneRenderer = lazy(() => import('./WhitneyUmbrella/Whitne
 const SphericalHarmonicsSceneRenderer = lazy(() => import('./SphericalHarmonics/SphericalHarmonicsSceneRenderer'))
 const GaussianCurvatureSceneRenderer = lazy(() => import('./GaussianCurvature/GaussianCurvatureSceneRenderer'))
 const TrefoilSurfaceSceneRenderer = lazy(() => import('./TrefoilSurface/TrefoilSurfaceSceneRenderer'))
+const DevelopableSurfaceSceneRenderer = lazy(() => import('./DevelopableSurface/DevelopableSurfaceSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -744,6 +745,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'spherical-harmonics': SphericalHarmonicsSceneRenderer,
   'gaussian-curvature': GaussianCurvatureSceneRenderer,
   'trefoil-surface': TrefoilSurfaceSceneRenderer,
+  'developable-surface': DevelopableSurfaceSceneRenderer,
 }
 
 // 获取场景渲染器

@@ -257,6 +257,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'spherical-harmonics',
       'gaussian-curvature',
       'trefoil-surface',
+      'developable-surface',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

@@ -330,6 +330,7 @@ export { whitneyUmbrellaNarration } from './scripts/whitney-umbrella'
 export { sphericalHarmonicsNarration } from './scripts/spherical-harmonics'
 export { gaussianCurvatureNarration } from './scripts/gaussian-curvature'
 export { trefoilSurfaceNarration } from './scripts/trefoil-surface'
+export { developableSurfaceNarration } from './scripts/developable-surface'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -648,6 +649,7 @@ import { whitneyUmbrellaNarration } from './scripts/whitney-umbrella'
 import { sphericalHarmonicsNarration } from './scripts/spherical-harmonics'
 import { gaussianCurvatureNarration } from './scripts/gaussian-curvature'
 import { trefoilSurfaceNarration } from './scripts/trefoil-surface'
+import { developableSurfaceNarration } from './scripts/developable-surface'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -970,6 +972,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'spherical-harmonics': sphericalHarmonicsNarration,
   'gaussian-curvature': gaussianCurvatureNarration,
   'trefoil-surface': trefoilSurfaceNarration,
+  'developable-surface': developableSurfaceNarration,
 }
 
 // 获取稿件

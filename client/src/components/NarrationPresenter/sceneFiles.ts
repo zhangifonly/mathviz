@@ -326,4 +326,5 @@ export const SCENE_FILES: Record<string, string> = {
   'spherical-harmonics': 'sphericalHarmonicsScenes',
   'gaussian-curvature': 'gaussianCurvatureScenes',
   'trefoil-surface': 'trefoilSurfaceScenes',
+  'developable-surface': 'developableSurfaceScenes',
 }

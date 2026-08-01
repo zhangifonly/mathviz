@@ -3549,4 +3549,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/developable-surface',
+    title: '可展曲面',
+    description: '高斯曲率恒为零的曲面能不撕不皱地摊平，圆柱、圆锥、切线面就是全部三类。',
+    icon: '📜',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]
