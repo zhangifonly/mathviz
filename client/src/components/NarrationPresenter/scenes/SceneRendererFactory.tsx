@@ -429,6 +429,9 @@ const CostaSurfaceSceneRenderer = lazy(() => import('./CostaSurface/CostaSurface
 const ChuaAttractorSceneRenderer = lazy(() => import('./ChuaAttractor/ChuaAttractorSceneRenderer'))
 const HalvorsenAttractorSceneRenderer = lazy(() => import('./HalvorsenAttractor/HalvorsenAttractorSceneRenderer'))
 const ThomasAttractorSceneRenderer = lazy(() => import('./ThomasAttractor/ThomasAttractorSceneRenderer'))
+const AizawaAttractorSceneRenderer = lazy(() => import('./AizawaAttractor/AizawaAttractorSceneRenderer'))
+const SprottAttractorSceneRenderer = lazy(() => import('./SprottAttractor/SprottAttractorSceneRenderer'))
+const LorenzAtmosphereSceneRenderer = lazy(() => import('./LorenzAtmosphere/LorenzAtmosphereSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -760,6 +763,9 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'chua-attractor': ChuaAttractorSceneRenderer,
   'halvorsen-attractor': HalvorsenAttractorSceneRenderer,
   'thomas-attractor': ThomasAttractorSceneRenderer,
+  'aizawa-attractor': AizawaAttractorSceneRenderer,
+  'sprott-attractor': SprottAttractorSceneRenderer,
+  'lorenz-atmosphere': LorenzAtmosphereSceneRenderer,
 }
 
 // 获取场景渲染器

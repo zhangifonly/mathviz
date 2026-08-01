@@ -349,6 +349,9 @@ const CostaSurfaceExperiment = lazyRetry(() => import('./experiments/costa-surfa
 const ChuaAttractorExperiment = lazyRetry(() => import('./experiments/chua-attractor/ChuaAttractorExperiment'))
 const HalvorsenAttractorExperiment = lazyRetry(() => import('./experiments/halvorsen-attractor/HalvorsenAttractorExperiment'))
 const ThomasAttractorExperiment = lazyRetry(() => import('./experiments/thomas-attractor/ThomasAttractorExperiment'))
+const AizawaAttractorExperiment = lazyRetry(() => import('./experiments/aizawa-attractor/AizawaAttractorExperiment'))
+const SprottAttractorExperiment = lazyRetry(() => import('./experiments/sprott-attractor/SprottAttractorExperiment'))
+const LorenzAtmosphereExperiment = lazyRetry(() => import('./experiments/lorenz-atmosphere/LorenzAtmosphereExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -695,6 +698,9 @@ export default function App() {
             <Route path="chua-attractor" element={<ChuaAttractorExperiment />} />
             <Route path="halvorsen-attractor" element={<HalvorsenAttractorExperiment />} />
             <Route path="thomas-attractor" element={<ThomasAttractorExperiment />} />
+            <Route path="aizawa-attractor" element={<AizawaAttractorExperiment />} />
+            <Route path="sprott-attractor" element={<SprottAttractorExperiment />} />
+            <Route path="lorenz-atmosphere" element={<LorenzAtmosphereExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

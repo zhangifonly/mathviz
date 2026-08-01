@@ -338,6 +338,9 @@ export { costaSurfaceNarration } from './scripts/costa-surface'
 export { chuaAttractorNarration } from './scripts/chua-attractor'
 export { halvorsenAttractorNarration } from './scripts/halvorsen-attractor'
 export { thomasAttractorNarration } from './scripts/thomas-attractor'
+export { aizawaAttractorNarration } from './scripts/aizawa-attractor'
+export { sprottAttractorNarration } from './scripts/sprott-attractor'
+export { lorenzAtmosphereNarration } from './scripts/lorenz-atmosphere'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -664,6 +667,9 @@ import { costaSurfaceNarration } from './scripts/costa-surface'
 import { chuaAttractorNarration } from './scripts/chua-attractor'
 import { halvorsenAttractorNarration } from './scripts/halvorsen-attractor'
 import { thomasAttractorNarration } from './scripts/thomas-attractor'
+import { aizawaAttractorNarration } from './scripts/aizawa-attractor'
+import { sprottAttractorNarration } from './scripts/sprott-attractor'
+import { lorenzAtmosphereNarration } from './scripts/lorenz-atmosphere'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -994,6 +1000,9 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'chua-attractor': chuaAttractorNarration,
   'halvorsen-attractor': halvorsenAttractorNarration,
   'thomas-attractor': thomasAttractorNarration,
+  'aizawa-attractor': aizawaAttractorNarration,
+  'sprott-attractor': sprottAttractorNarration,
+  'lorenz-atmosphere': lorenzAtmosphereNarration,
 }
 
 // 获取稿件

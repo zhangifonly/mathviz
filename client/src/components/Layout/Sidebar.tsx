@@ -320,6 +320,7 @@ const navCategories: NavCategory[] = [
       { path: '/chua-attractor', label: '蔡氏吸引子', icon: '⚡' },
       { path: '/halvorsen-attractor', label: '哈尔沃森吸引子', icon: '🌪️' },
       { path: '/thomas-attractor', label: '托马斯吸引子', icon: '🔄' },
+      { path: '/aizawa-attractor', label: '相泽吸引子', icon: '🧿' },
     ],
   },
   {
@@ -369,6 +370,8 @@ const navCategories: NavCategory[] = [
       { path: '/klein-bottle-figure8', label: '8字形克莱因瓶', icon: '🎱' },
       { path: '/mean-curvature-flow', label: '平均曲率流', icon: '💧' },
       { path: '/costa-surface', label: '科斯塔曲面', icon: '🕸️' },
+      { path: '/sprott-attractor', label: '斯普罗特吸引子', icon: '🎯' },
+      { path: '/lorenz-atmosphere', label: '洛伦兹84模型', icon: '🌍' },
     ],
   },
 ]

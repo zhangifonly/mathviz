@@ -334,4 +334,7 @@ export const SCENE_FILES: Record<string, string> = {
   'chua-attractor': 'chuaAttractorScenes',
   'halvorsen-attractor': 'halvorsenAttractorScenes',
   'thomas-attractor': 'thomasAttractorScenes',
+  'aizawa-attractor': 'aizawaAttractorScenes',
+  'sprott-attractor': 'sprottAttractorScenes',
+  'lorenz-atmosphere': 'lorenzAtmosphereScenes',
 }

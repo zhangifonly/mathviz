@@ -263,6 +263,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'mean-curvature-flow',
       'costa-surface',
       'chua-attractor', 'halvorsen-attractor', 'thomas-attractor',
+      'aizawa-attractor', 'sprott-attractor', 'lorenz-atmosphere',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
