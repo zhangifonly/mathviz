@@ -317,6 +317,9 @@ const navCategories: NavCategory[] = [
       { path: '/trefoil-surface', label: '三叶结曲面', icon: '☘️' },
       { path: '/developable-surface', label: '可展曲面', icon: '📜' },
       { path: '/torus-knot-surface', label: '环面纽结管', icon: '🎗️' },
+      { path: '/chua-attractor', label: '蔡氏吸引子', icon: '⚡' },
+      { path: '/halvorsen-attractor', label: '哈尔沃森吸引子', icon: '🌪️' },
+      { path: '/thomas-attractor', label: '托马斯吸引子', icon: '🔄' },
     ],
   },
   {

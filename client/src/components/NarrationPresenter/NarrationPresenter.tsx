@@ -262,6 +262,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'klein-bottle-figure8',
       'mean-curvature-flow',
       'costa-surface',
+      'chua-attractor', 'halvorsen-attractor', 'thomas-attractor',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

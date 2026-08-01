@@ -426,6 +426,9 @@ const TorusKnotSurfaceSceneRenderer = lazy(() => import('./TorusKnotSurface/Toru
 const KleinBottleFigure8SceneRenderer = lazy(() => import('./KleinBottleFigure8/KleinBottleFigure8SceneRenderer'))
 const MeanCurvatureFlowSceneRenderer = lazy(() => import('./MeanCurvatureFlow/MeanCurvatureFlowSceneRenderer'))
 const CostaSurfaceSceneRenderer = lazy(() => import('./CostaSurface/CostaSurfaceSceneRenderer'))
+const ChuaAttractorSceneRenderer = lazy(() => import('./ChuaAttractor/ChuaAttractorSceneRenderer'))
+const HalvorsenAttractorSceneRenderer = lazy(() => import('./HalvorsenAttractor/HalvorsenAttractorSceneRenderer'))
+const ThomasAttractorSceneRenderer = lazy(() => import('./ThomasAttractor/ThomasAttractorSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -754,6 +757,9 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'klein-bottle-figure8': KleinBottleFigure8SceneRenderer,
   'mean-curvature-flow': MeanCurvatureFlowSceneRenderer,
   'costa-surface': CostaSurfaceSceneRenderer,
+  'chua-attractor': ChuaAttractorSceneRenderer,
+  'halvorsen-attractor': HalvorsenAttractorSceneRenderer,
+  'thomas-attractor': ThomasAttractorSceneRenderer,
 }
 
 // 获取场景渲染器

@@ -42,6 +42,15 @@ export function chuaDiode(x: number, m0: number, m1: number): number {
   return m1 * x + ((m0 - m1) / 2) * (Math.abs(x + 1) - Math.abs(x - 1))
 }
 
+/**
+ * 只调 α 的便捷接口。
+ * β 与二极管斜率固定为经典值 —— 讲解与实验页只暴露 α, 因为它是
+ * 决定「混沌还是收敛」的主控参数(β 与斜率改的是涡卷形状)。
+ */
+export function chuaFieldAlpha(alpha: number): Field3D {
+  return chuaField({ ...CLASSIC, alpha })
+}
+
 /** 构造向量场 */
 export function chuaField(p: ChuaParams = CLASSIC): Field3D {
   return ([x, y, z]) => [
@@ -77,10 +86,15 @@ export function diodeSlope(x: number, p: ChuaParams = CLASSIC, h = 1e-7): number
 
 export const START: Vec3 = [0.7, 0, 0]
 
+/**
+ * 预设只改 α（β 固定为经典的 28）。
+ * λ₁ 是实测值: α=10 时为负说明此时并不混沌 —— 保留这一档正是为了
+ * 让「λ₁>0 才是混沌」有个对照, 而不是所有参数都混沌。
+ */
 export const PRESETS = [
-  { alpha: 15.6, beta: 28, label: '经典双涡卷', note: 'α=15.6 β=28' },
-  { alpha: 10, beta: 28, label: '单涡卷', note: 'α 降低' },
-  { alpha: 18, beta: 33, label: '强混沌', note: 'α,β 提高' },
+  { alpha: 10, label: '收敛(非混沌)', note: 'α=10 · λ₁<0' },
+  { alpha: 15.6, label: '经典双涡卷', note: 'α=15.6 · λ₁≈0.42' },
+  { alpha: 18, label: '强混沌', note: 'α=18' },
 ] as const
 
 /** 由预设构造完整参数 */

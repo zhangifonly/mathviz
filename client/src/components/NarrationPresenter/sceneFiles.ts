@@ -331,4 +331,7 @@ export const SCENE_FILES: Record<string, string> = {
   'klein-bottle-figure8': 'kleinBottleFigure8Scenes',
   'mean-curvature-flow': 'meanCurvatureFlowScenes',
   'costa-surface': 'costaSurfaceScenes',
+  'chua-attractor': 'chuaAttractorScenes',
+  'halvorsen-attractor': 'halvorsenAttractorScenes',
+  'thomas-attractor': 'thomasAttractorScenes',
 }

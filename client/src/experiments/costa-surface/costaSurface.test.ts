@@ -21,8 +21,10 @@ describe('科斯塔曲面 - 拓扑不变量', () => {
       expect(s.genus).toBe(0)
     }
     expect(COSTA_INFO.genus).toBe(1)
-    // 这正是它成为「第四种」的原因
-    expect(CLASSICAL_THREE.every((s) => s.genus !== COSTA_INFO.genus)).toBe(true)
+    // 这正是它成为「第四种」的原因。用 Number() 拆掉字面量类型,
+    // 否则 tsc 认为 0 与 1 无重叠而拒绝这个比较
+    const costaGenus: number = COSTA_INFO.genus
+    expect(CLASSICAL_THREE.every((s) => Number(s.genus) !== costaGenus)).toBe(true)
   })
 
   it('经典三种各自的端点数与史实一致', () => {

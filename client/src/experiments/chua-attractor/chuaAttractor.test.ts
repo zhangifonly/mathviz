@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import {
-  chuaDiode, chuaField, equilibria, equilibriumResidual, diodeSlope,
-  paramsOf, CLASSIC, START, PRESETS,
+  chuaDiode, chuaField, chuaFieldAlpha, equilibria, equilibriumResidual,
+  diodeSlope, paramsOf, CLASSIC, START, PRESETS,
 } from './chuaAttractor'
 import { lyapunovExponent, divergence, orbit, orbitExtent } from '../../lib/attractor3d'
 
@@ -104,10 +104,13 @@ describe('蔡氏电路吸引子', () => {
     expect(p.m1).toBe(CLASSIC.m1)
   })
 
-  it('PRESETS 的三档参数都为正', () => {
-    for (const p of PRESETS) {
-      expect(p.alpha).toBeGreaterThan(0)
-      expect(p.beta).toBeGreaterThan(0)
+  it('PRESETS 的 α 递增, 且首档故意取非混沌值作对照', () => {
+    for (let i = 0; i < PRESETS.length; i++) {
+      expect(PRESETS[i].alpha).toBeGreaterThan(0)
+      if (i > 0) expect(PRESETS[i].alpha).toBeGreaterThan(PRESETS[i - 1].alpha)
     }
+    // 首档 α=10 的 λ₁ 应为负 —— 有对照才能说明「λ₁>0 才是混沌」
+    const l = lyapunovExponent(chuaFieldAlpha(PRESETS[0].alpha), START, 0.005, 12000)
+    expect(l).toBeLessThan(0.05)
   })
 })

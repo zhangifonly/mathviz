@@ -335,6 +335,9 @@ export { torusKnotSurfaceNarration } from './scripts/torus-knot-surface'
 export { kleinBottleFigure8Narration } from './scripts/klein-bottle-figure8'
 export { meanCurvatureFlowNarration } from './scripts/mean-curvature-flow'
 export { costaSurfaceNarration } from './scripts/costa-surface'
+export { chuaAttractorNarration } from './scripts/chua-attractor'
+export { halvorsenAttractorNarration } from './scripts/halvorsen-attractor'
+export { thomasAttractorNarration } from './scripts/thomas-attractor'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -658,6 +661,9 @@ import { torusKnotSurfaceNarration } from './scripts/torus-knot-surface'
 import { kleinBottleFigure8Narration } from './scripts/klein-bottle-figure8'
 import { meanCurvatureFlowNarration } from './scripts/mean-curvature-flow'
 import { costaSurfaceNarration } from './scripts/costa-surface'
+import { chuaAttractorNarration } from './scripts/chua-attractor'
+import { halvorsenAttractorNarration } from './scripts/halvorsen-attractor'
+import { thomasAttractorNarration } from './scripts/thomas-attractor'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -985,6 +991,9 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'klein-bottle-figure8': kleinBottleFigure8Narration,
   'mean-curvature-flow': meanCurvatureFlowNarration,
   'costa-surface': costaSurfaceNarration,
+  'chua-attractor': chuaAttractorNarration,
+  'halvorsen-attractor': halvorsenAttractorNarration,
+  'thomas-attractor': thomasAttractorNarration,
 }
 
 // 获取稿件

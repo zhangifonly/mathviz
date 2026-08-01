@@ -346,6 +346,9 @@ const TorusKnotSurfaceExperiment = lazyRetry(() => import('./experiments/torus-k
 const KleinBottleFigure8Experiment = lazyRetry(() => import('./experiments/klein-bottle-figure8/KleinBottleFigure8Experiment'))
 const MeanCurvatureFlowExperiment = lazyRetry(() => import('./experiments/mean-curvature-flow/MeanCurvatureFlowExperiment'))
 const CostaSurfaceExperiment = lazyRetry(() => import('./experiments/costa-surface/CostaSurfaceExperiment'))
+const ChuaAttractorExperiment = lazyRetry(() => import('./experiments/chua-attractor/ChuaAttractorExperiment'))
+const HalvorsenAttractorExperiment = lazyRetry(() => import('./experiments/halvorsen-attractor/HalvorsenAttractorExperiment'))
+const ThomasAttractorExperiment = lazyRetry(() => import('./experiments/thomas-attractor/ThomasAttractorExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -689,6 +692,9 @@ export default function App() {
             <Route path="klein-bottle-figure8" element={<KleinBottleFigure8Experiment />} />
             <Route path="mean-curvature-flow" element={<MeanCurvatureFlowExperiment />} />
             <Route path="costa-surface" element={<CostaSurfaceExperiment />} />
+            <Route path="chua-attractor" element={<ChuaAttractorExperiment />} />
+            <Route path="halvorsen-attractor" element={<HalvorsenAttractorExperiment />} />
+            <Route path="thomas-attractor" element={<ThomasAttractorExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />
