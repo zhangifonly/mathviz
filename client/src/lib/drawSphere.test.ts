@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { baryPointForTest } from './drawSphere'
+import { baryPointForTest, drawPolylineForTest } from './drawSphere'
 import { sphericalDistance, unit, norm } from './sphere3d'
 import type { SphericalTriangle } from './sphere3d'
 import type { Vec3 } from './proj3d'
@@ -64,6 +64,34 @@ describe('drawSphere - 重心坐标填充', () => {
     }
     // 三角形网格的小片总数应为 N²
     expect(count).toBe(N * N)
+  })
+
+  it('折线分段不丢点: 每个相邻点对都要被连一次', () => {
+    // drawPolyline 曾在换面时先 stroke 再 moveTo, 导致跨轮廓线处丢一小段
+    // (绕道路径的红线断在半空)。这里用一个假 ctx 记录 lineTo 调用次数,
+    // 它必须等于 pts.length−1 —— 每个相邻点对恰好连一次。
+    const calls: string[] = []
+    const fakeCtx = {
+      beginPath: () => calls.push('begin'),
+      moveTo: () => calls.push('moveTo'),
+      lineTo: () => calls.push('lineTo'),
+      stroke: () => calls.push('stroke'),
+      strokeStyle: '',
+      lineWidth: 0,
+    } as unknown as CanvasRenderingContext2D
+
+    // 造一条穿过正背面的路径(绕整个大圆一圈必然跨轮廓两次)
+    const pts: Vec3[] = []
+    const N = 24
+    for (let i = 0; i <= N; i++) {
+      const a = (2 * Math.PI * i) / N
+      pts.push([Math.cos(a), Math.sin(a), 0])
+    }
+    drawPolylineForTest(fakeCtx, pts)
+    const lineTos = calls.filter((c) => c === 'lineTo').length
+    expect(lineTos).toBe(pts.length - 1)
+    // 且确实发生了换面(不止一次 stroke)
+    expect(calls.filter((c) => c === 'stroke').length).toBeGreaterThan(1)
   })
 
   it('对一般三角形也成立(不只是八分之一球面)', () => {

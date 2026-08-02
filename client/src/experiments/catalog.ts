@@ -3791,4 +3791,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/geodesic-shortest-path',
+    title: '球面测地线',
+    description: '北京到纽约走大圆要爬到北纬 84 度，比沿纬线飞省三千多公里，测地曲率为零才算球面上的直线。',
+    icon: '✈️',
+    difficulty: 'intermediate',
+    ageRange: '高中 15-18岁',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

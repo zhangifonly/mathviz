@@ -348,4 +348,5 @@ export const SCENE_FILES: Record<string, string> = {
   'space-filling-solids': 'spaceFillingSolidsScenes',
   'spherical-triangle': 'sphericalTriangleScenes',
   'spherical-tiling': 'sphericalTilingScenes',
+  'geodesic-shortest-path': 'geodesicShortestPathScenes',
 }

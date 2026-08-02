@@ -443,6 +443,7 @@ const PrismAntiprismSceneRenderer = lazy(() => import('./PrismAntiprism/PrismAnt
 const SpaceFillingSolidsSceneRenderer = lazy(() => import('./SpaceFillingSolids/SpaceFillingSolidsSceneRenderer'))
 const SphericalTriangleSceneRenderer = lazy(() => import('./SphericalTriangle/SphericalTriangleSceneRenderer'))
 const SphericalTilingSceneRenderer = lazy(() => import('./SphericalTiling/SphericalTilingSceneRenderer'))
+const GeodesicShortestPathSceneRenderer = lazy(() => import('./GeodesicShortestPath/GeodesicShortestPathSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -788,6 +789,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'space-filling-solids': SpaceFillingSolidsSceneRenderer,
   'spherical-triangle': SphericalTriangleSceneRenderer,
   'spherical-tiling': SphericalTilingSceneRenderer,
+  'geodesic-shortest-path': GeodesicShortestPathSceneRenderer,
 }
 
 // 获取场景渲染器

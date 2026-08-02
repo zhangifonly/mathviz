@@ -18,6 +18,22 @@ export interface SphericalPatch {
   fill: string
 }
 
+/** 球面上的一条路径 */
+export interface SpherePath {
+  points: Vec3[]
+  color: string
+  width?: number
+  /** 图例标签 */
+  label?: string
+}
+
+/** 球面上标注的一个点 */
+export interface SphereMarker {
+  point: Vec3
+  label: string
+  color?: string
+}
+
 export interface SphereDrawOptions {
   title?: string
   subtitle?: string
@@ -29,6 +45,10 @@ export interface SphereDrawOptions {
   patches?: SphericalPatch[]
   /** 额外的大圆（法向量列表） */
   greatCircles?: Vec3[]
+  /** 要画的路径（已在单位球上的点列），用于比较不同航线 */
+  paths?: SpherePath[]
+  /** 标出的点（城市等） */
+  markers?: SphereMarker[]
   /** 显示经纬网格 */
   showGrid?: boolean
   /** 三角形填充色 */
@@ -52,7 +72,7 @@ export function drawSphereScene(
     title = '', subtitle = '', yaw = 0.6, pitch = 0.3,
     triangle, patches = [], greatCircles = [], showGrid = true,
     fill = 'rgba(251, 191, 36, 0.42)', readout = '', labels,
-    showVertices = false,
+    showVertices = false, paths = [], markers = [],
   } = opts
   const { width: W, height: H } = canvas
 
@@ -71,6 +91,12 @@ export function drawSphereScene(
   for (const n of greatCircles) drawGreatCircleCurve(ctx, cam, n, isFront)
   for (const patch of patches) drawPatch(ctx, cam, patch, isFront, showVertices)
   if (triangle) drawTriangle(ctx, cam, triangle, fill, isFront, labels)
+  for (const path of paths) {
+    drawPolyline(ctx, cam, path.points.map(unit), isFront,
+      path.color, fadeColor(path.color), path.width ?? 2.4)
+  }
+  for (const m of markers) drawMarker(ctx, cam, m, isFront)
+  if (paths.some((p) => p.label)) drawLegend(ctx, H, paths)
   drawLabel(ctx, W, title, subtitle, readout)
 }
 
@@ -131,7 +157,13 @@ function sampleLon(lon: number, steps = 48): Vec3[] {
   return out
 }
 
-/** 分段画折线，正面与背面用不同颜色 */
+/**
+ * 分段画折线，正面与背面用不同颜色。
+ *
+ * ⚠️ 换面时新段必须**从上一个点起笔**，不能直接 moveTo 当前点 ——
+ * 否则每次跨越轮廓线就丢掉一小段，路径看着是断的。
+ * 这个 bug 在绕道路径上很明显（红线断在半空），是截图发现的。
+ */
 function drawPolyline(
   ctx: CanvasRenderingContext2D,
   cam: Camera,
@@ -141,28 +173,31 @@ function drawPolyline(
   backColor: string,
   width = 0,
 ): void {
-  let prevFront: boolean | null = null
+  if (pts.length < 2) return
+  const stroke = (front: boolean) => {
+    ctx.strokeStyle = front ? frontColor : backColor
+    if (width) ctx.lineWidth = width
+    ctx.stroke()
+  }
+
+  let segFront = isFront(pts[0])
+  const first = project(unit(pts[0]), cam)
   ctx.beginPath()
-  for (let i = 0; i < pts.length; i++) {
+  ctx.moveTo(first.x, first.y)
+  for (let i = 1; i < pts.length; i++) {
     const f = isFront(pts[i])
     const s = project(unit(pts[i]), cam)
-    if (prevFront === null || f !== prevFront) {
-      // 换面时收笔重开, 避免正背面用同一颜色
-      if (prevFront !== null) {
-        ctx.strokeStyle = prevFront ? frontColor : backColor
-        if (width) ctx.lineWidth = width
-        ctx.stroke()
-      }
+    // 这一小段仍属当前段: 直接连过去
+    ctx.lineTo(s.x, s.y)
+    if (f !== segFront) {
+      // 到此为止的段用当前颜色收笔, 新段从**这个点**继续, 不留缺口
+      stroke(segFront)
+      segFront = f
       ctx.beginPath()
       ctx.moveTo(s.x, s.y)
-      prevFront = f
-    } else {
-      ctx.lineTo(s.x, s.y)
     }
   }
-  ctx.strokeStyle = prevFront ? frontColor : backColor
-  if (width) ctx.lineWidth = width
-  ctx.stroke()
+  stroke(segFront)
 }
 
 function drawGreatCircleCurve(
@@ -334,6 +369,59 @@ function baryPoint(t: SphericalTriangle, u: number, v: number): Vec3 {
   ])
 }
 
+/** 把颜色调淡，用于背面的线段 */
+function fadeColor(color: string): string {
+  // rgba(...) 形式把 alpha 压到 0.22; 其余形式直接返回一个灰调
+  const m = color.match(/^rgba?\(([^)]+)\)$/)
+  if (!m) return 'rgba(148,163,184,0.22)'
+  const parts = m[1].split(',').map((s) => s.trim())
+  return `rgba(${parts[0]}, ${parts[1]}, ${parts[2]}, 0.22)`
+}
+
+/** 标一个点并写标签 */
+function drawMarker(
+  ctx: CanvasRenderingContext2D, cam: Camera, m: SphereMarker,
+  isFront: (p: Vec3) => boolean,
+): void {
+  const p = unit(m.point)
+  const front = isFront(p)
+  const s = project(p, cam)
+  ctx.save()
+  ctx.beginPath()
+  ctx.arc(s.x, s.y, front ? 5.5 : 3, 0, Math.PI * 2)
+  ctx.fillStyle = front
+    ? (m.color ?? 'rgba(253,224,71,1)')
+    : 'rgba(253,224,71,0.28)'
+  ctx.fill()
+  if (front) {
+    ctx.fillStyle = 'rgba(255,255,255,0.95)'
+    ctx.font = 'bold 14px sans-serif'
+    ctx.fillText(m.label, s.x + 9, s.y - 8)
+  }
+  ctx.restore()
+}
+
+/** 路径图例 */
+function drawLegend(
+  ctx: CanvasRenderingContext2D, H: number, paths: SpherePath[],
+): void {
+  const labelled = paths.filter((p) => p.label)
+  ctx.save()
+  ctx.font = '13px sans-serif'
+  labelled.forEach((p, i) => {
+    const y = H - 20 - (labelled.length - 1 - i) * 22
+    ctx.strokeStyle = p.color
+    ctx.lineWidth = 3
+    ctx.beginPath()
+    ctx.moveTo(18, y - 4)
+    ctx.lineTo(48, y - 4)
+    ctx.stroke()
+    ctx.fillStyle = 'rgba(255,255,255,0.85)'
+    ctx.fillText(p.label as string, 56, y)
+  })
+  ctx.restore()
+}
+
 function drawLabel(
   ctx: CanvasRenderingContext2D, W: number,
   title: string, subtitle: string, readout: string,
@@ -357,6 +445,18 @@ function drawLabel(
 /** 供单测使用: 暴露重心坐标映射, 守住那三个曾在截图里暴露的 bug */
 export function baryPointForTest(t: SphericalTriangle, u: number, v: number): Vec3 {
   return baryPoint(t, u, v)
+}
+
+/**
+ * 供单测使用: 用固定相机跑一遍 drawPolyline，
+ * 守住「换面时不丢线段」这条（红线断裂那个 bug）。
+ */
+export function drawPolylineForTest(
+  ctx: CanvasRenderingContext2D, pts: Vec3[],
+): void {
+  const cam = makeCamera({ yaw: 0.6, pitch: 0.3, scale: 100, cx: 0, cy: 0 })
+  drawPolyline(ctx, cam, pts, (p) => project(unit(p), cam).depth < 0,
+    'rgba(255,0,0,1)', 'rgba(0,0,255,1)', 2)
 }
 
 /** 判断点是否朝向观察者（供外部复用） */

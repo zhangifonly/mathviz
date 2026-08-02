@@ -272,6 +272,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'space-filling-solids',
       'spherical-triangle',
       'spherical-tiling',
+      'geodesic-shortest-path',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
