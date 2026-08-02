@@ -3780,4 +3780,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/spherical-tiling',
+    title: '球面镶嵌',
+    description: '把柏拉图立体吹成球面得到五种正规镶嵌，面积必须配平到 4π，而同一个不等式划分出球面、平面、双曲三种几何。',
+    icon: '🎨',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

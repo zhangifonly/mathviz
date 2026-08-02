@@ -12,6 +12,12 @@ import {
   type SphericalTriangle,
 } from './sphere3d'
 
+/** 一块球面多边形：顶点（已在单位球上）+ 填充色 */
+export interface SphericalPatch {
+  vertices: Vec3[]
+  fill: string
+}
+
 export interface SphereDrawOptions {
   title?: string
   subtitle?: string
@@ -19,6 +25,8 @@ export interface SphereDrawOptions {
   pitch?: number
   /** 要画的球面三角形 */
   triangle?: SphericalTriangle
+  /** 要画的球面多边形（镶嵌用，可多块） */
+  patches?: SphericalPatch[]
   /** 额外的大圆（法向量列表） */
   greatCircles?: Vec3[]
   /** 显示经纬网格 */
@@ -29,6 +37,8 @@ export interface SphereDrawOptions {
   readout?: string
   /** 顶点标签 */
   labels?: [string, string, string]
+  /** 标出顶点 */
+  showVertices?: boolean
 }
 
 const R_SCREEN = 0.42
@@ -40,8 +50,9 @@ export function drawSphereScene(
   if (!ctx) return
   const {
     title = '', subtitle = '', yaw = 0.6, pitch = 0.3,
-    triangle, greatCircles = [], showGrid = true,
+    triangle, patches = [], greatCircles = [], showGrid = true,
     fill = 'rgba(251, 191, 36, 0.42)', readout = '', labels,
+    showVertices = false,
   } = opts
   const { width: W, height: H } = canvas
 
@@ -58,6 +69,7 @@ export function drawSphereScene(
   drawGlobe(ctx, W, H, scale)
   if (showGrid) drawGraticule(ctx, cam, isFront)
   for (const n of greatCircles) drawGreatCircleCurve(ctx, cam, n, isFront)
+  for (const patch of patches) drawPatch(ctx, cam, patch, isFront, showVertices)
   if (triangle) drawTriangle(ctx, cam, triangle, fill, isFront, labels)
   drawLabel(ctx, W, title, subtitle, readout)
 }
@@ -190,43 +202,12 @@ function drawTriangle(
   isFront: (p: Vec3) => boolean,
   labels?: [string, string, string],
 ): void {
-  const N = 26
   ctx.save()
   ctx.fillStyle = fill
-  // 把重心坐标网格铺满内部。
-  // ⚠️ 每个格子要画**两个**小三角片(上三角 + 下三角), 只画一个会留下
-  // 网格状缝隙 —— 截图里看得很明显, 是视觉检查才发现的。
-  const P = (u: number, v: number) => baryPoint(t, u, v)
-  const emit = (a: Vec3, b: Vec3, c: Vec3) => {
-    // 按小片**中心**判正背面。
-    // ⚠️ 不能用「三点全在背面才跳过」: 那样跨越轮廓线的片会被放行,
-    // 背面的三角形就透到正面来了 —— 截图里左侧那片黄色就是这么来的。
-    const mid = unit([
-      (a[0] + b[0] + c[0]) / 3, (a[1] + b[1] + c[1]) / 3, (a[2] + b[2] + c[2]) / 3,
-    ])
-    if (!isFront(mid)) return
-    const s1 = project(a, cam)
-    const s2 = project(b, cam)
-    const s3 = project(c, cam)
-    ctx.beginPath()
-    ctx.moveTo(s1.x, s1.y)
-    ctx.lineTo(s2.x, s2.y)
-    ctx.lineTo(s3.x, s3.y)
-    ctx.closePath()
-    ctx.fill()
-  }
-  for (let i = 0; i < N; i++) {
-    for (let j = 0; i + j < N; j++) {
-      const u0 = i / N
-      const u1 = (i + 1) / N
-      const v0 = j / N
-      const v1 = (j + 1) / N
-      // 上三角: 总在域内
-      emit(P(u0, v0), P(u1, v0), P(u0, v1))
-      // 下三角: 仅当 (u1,v1) 仍在 u+v≤1 内
-      if (i + j + 2 <= N) emit(P(u1, v0), P(u1, v1), P(u0, v1))
-    }
-  }
+  // 填充逻辑抽到 fillSphericalTriangle, 与 drawPatch 共用。
+  // 那里注明了两个曾在截图里暴露的坑: 必须画上下两类小片(否则有网格缝),
+  // 且按小片中心判正背面(否则背面透到正面)。
+  fillSphericalTriangle(ctx, cam, t, isFront, 26)
   // 三条边
   const edges: Array<[Vec3, Vec3]> = [[t.A, t.B], [t.B, t.C], [t.C, t.A]]
   for (const [p, q] of edges) {
@@ -249,6 +230,89 @@ function drawTriangle(
     }
   })
   ctx.restore()
+}
+
+/**
+ * 画一块球面多边形（镶嵌的一个面）。
+ *
+ * 从面心把多边形切成 n 个球面三角形，各自用重心坐标铺色 ——
+ * 直接把顶点连成屏幕多边形会把球面的弯曲吃掉，边界成直线段就不像球面了。
+ */
+function drawPatch(
+  ctx: CanvasRenderingContext2D,
+  cam: Camera,
+  patch: SphericalPatch,
+  isFront: (p: Vec3) => boolean,
+  showVerts: boolean,
+): void {
+  const vs = patch.vertices.map(unit)
+  if (vs.length < 3) return
+  // 面心：顶点平均后归一化
+  const center = unit([
+    vs.reduce((s, v) => s + v[0], 0),
+    vs.reduce((s, v) => s + v[1], 0),
+    vs.reduce((s, v) => s + v[2], 0),
+  ])
+  ctx.save()
+  ctx.fillStyle = patch.fill
+  for (let i = 0; i < vs.length; i++) {
+    const t: SphericalTriangle = {
+      A: center, B: vs[i], C: vs[(i + 1) % vs.length],
+    }
+    fillSphericalTriangle(ctx, cam, t, isFront, 10)
+  }
+  // 描边：每条边是大圆弧
+  for (let i = 0; i < vs.length; i++) {
+    drawPolyline(ctx, cam, greatCircleArc(vs[i], vs[(i + 1) % vs.length], 40), isFront,
+      'rgba(255,255,255,0.75)', 'rgba(255,255,255,0.12)', 1.6)
+  }
+  if (showVerts) {
+    for (const v of vs) {
+      if (!isFront(v)) continue
+      const s = project(v, cam)
+      ctx.beginPath()
+      ctx.arc(s.x, s.y, 3, 0, Math.PI * 2)
+      ctx.fillStyle = 'rgba(253,224,71,0.95)'
+      ctx.fill()
+    }
+  }
+  ctx.restore()
+}
+
+/** 用重心坐标网格铺满一个球面三角形（供 drawTriangle 与 drawPatch 共用） */
+function fillSphericalTriangle(
+  ctx: CanvasRenderingContext2D,
+  cam: Camera,
+  t: SphericalTriangle,
+  isFront: (p: Vec3) => boolean,
+  N: number,
+): void {
+  const P = (u: number, v: number) => baryPoint(t, u, v)
+  const emit = (a: Vec3, b: Vec3, c: Vec3) => {
+    const mid = unit([
+      (a[0] + b[0] + c[0]) / 3, (a[1] + b[1] + c[1]) / 3, (a[2] + b[2] + c[2]) / 3,
+    ])
+    if (!isFront(mid)) return
+    const s1 = project(a, cam)
+    const s2 = project(b, cam)
+    const s3 = project(c, cam)
+    ctx.beginPath()
+    ctx.moveTo(s1.x, s1.y)
+    ctx.lineTo(s2.x, s2.y)
+    ctx.lineTo(s3.x, s3.y)
+    ctx.closePath()
+    ctx.fill()
+  }
+  for (let i = 0; i < N; i++) {
+    for (let j = 0; i + j < N; j++) {
+      const u0 = i / N
+      const u1 = (i + 1) / N
+      const v0 = j / N
+      const v1 = (j + 1) / N
+      emit(P(u0, v0), P(u1, v0), P(u0, v1))
+      if (i + j + 2 <= N) emit(P(u1, v0), P(u1, v1), P(u0, v1))
+    }
+  }
 }
 
 /**

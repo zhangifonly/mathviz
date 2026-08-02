@@ -442,6 +442,7 @@ const StellatedPolyhedraSceneRenderer = lazy(() => import('./StellatedPolyhedra/
 const PrismAntiprismSceneRenderer = lazy(() => import('./PrismAntiprism/PrismAntiprismSceneRenderer'))
 const SpaceFillingSolidsSceneRenderer = lazy(() => import('./SpaceFillingSolids/SpaceFillingSolidsSceneRenderer'))
 const SphericalTriangleSceneRenderer = lazy(() => import('./SphericalTriangle/SphericalTriangleSceneRenderer'))
+const SphericalTilingSceneRenderer = lazy(() => import('./SphericalTiling/SphericalTilingSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -786,6 +787,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'prism-antiprism': PrismAntiprismSceneRenderer,
   'space-filling-solids': SpaceFillingSolidsSceneRenderer,
   'spherical-triangle': SphericalTriangleSceneRenderer,
+  'spherical-tiling': SphericalTilingSceneRenderer,
 }
 
 // 获取场景渲染器

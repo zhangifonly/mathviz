@@ -362,6 +362,7 @@ const StellatedPolyhedraExperiment = lazyRetry(() => import('./experiments/stell
 const PrismAntiprismExperiment = lazyRetry(() => import('./experiments/prism-antiprism/PrismAntiprismExperiment'))
 const SpaceFillingSolidsExperiment = lazyRetry(() => import('./experiments/space-filling-solids/SpaceFillingSolidsExperiment'))
 const SphericalTriangleExperiment = lazyRetry(() => import('./experiments/spherical-triangle/SphericalTriangleExperiment'))
+const SphericalTilingExperiment = lazyRetry(() => import('./experiments/spherical-tiling/SphericalTilingExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -721,6 +722,7 @@ export default function App() {
             <Route path="prism-antiprism" element={<PrismAntiprismExperiment />} />
             <Route path="space-filling-solids" element={<SpaceFillingSolidsExperiment />} />
             <Route path="spherical-triangle" element={<SphericalTriangleExperiment />} />
+            <Route path="spherical-tiling" element={<SphericalTilingExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

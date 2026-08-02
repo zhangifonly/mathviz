@@ -331,6 +331,7 @@ const navCategories: NavCategory[] = [
       { path: '/stellated-polyhedra', label: '星形多面体', icon: '✨' },
       { path: '/space-filling-solids', label: '空间填充多面体', icon: '🧊' },
       { path: '/spherical-triangle', label: '球面三角形', icon: '🌐' },
+      { path: '/spherical-tiling', label: '球面镶嵌', icon: '🎨' },
     ],
   },
   {

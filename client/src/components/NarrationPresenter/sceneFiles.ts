@@ -347,4 +347,5 @@ export const SCENE_FILES: Record<string, string> = {
   'prism-antiprism': 'prismAntiprismScenes',
   'space-filling-solids': 'spaceFillingSolidsScenes',
   'spherical-triangle': 'sphericalTriangleScenes',
+  'spherical-tiling': 'sphericalTilingScenes',
 }

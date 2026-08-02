@@ -271,6 +271,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'prism-antiprism',
       'space-filling-solids',
       'spherical-triangle',
+      'spherical-tiling',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
