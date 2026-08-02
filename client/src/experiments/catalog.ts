@@ -3813,4 +3813,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/map-projections',
+    title: '地图投影与失真',
+    description: '球面摊不平是高斯绝妙定理的推论，Tissot 指示椭圆把失真量化，格陵兰在墨卡托上被放大十倍多。',
+    icon: '🗺️',
+    difficulty: 'intermediate',
+    ageRange: '高中 15-18岁',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

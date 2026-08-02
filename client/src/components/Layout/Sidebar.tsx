@@ -195,6 +195,7 @@ const navCategories: NavCategory[] = [
       { path: '/platonic-solids', label: '柏拉图立体', icon: '🎲' },
       { path: '/prism-antiprism', label: '棱柱与反棱柱', icon: '🔷' },
       { path: '/geodesic-shortest-path', label: '球面测地线', icon: '✈️' },
+      { path: '/map-projections', label: '地图投影失真', icon: '🗺️' },
     ],
   },
   {

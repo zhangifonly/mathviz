@@ -274,6 +274,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'spherical-tiling',
       'geodesic-shortest-path',
       'spherical-lune',
+      'map-projections',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
