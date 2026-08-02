@@ -275,6 +275,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'geodesic-shortest-path',
       'spherical-lune',
       'map-projections',
+      'hyperbolic-triangle',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

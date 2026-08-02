@@ -351,4 +351,5 @@ export const SCENE_FILES: Record<string, string> = {
   'geodesic-shortest-path': 'geodesicShortestPathScenes',
   'spherical-lune': 'sphericalLuneScenes',
   'map-projections': 'mapProjectionsScenes',
+  'hyperbolic-triangle': 'hyperbolicTriangleScenes',
 }

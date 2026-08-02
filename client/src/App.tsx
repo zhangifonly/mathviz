@@ -366,6 +366,7 @@ const SphericalTilingExperiment = lazyRetry(() => import('./experiments/spherica
 const GeodesicShortestPathExperiment = lazyRetry(() => import('./experiments/geodesic-shortest-path/GeodesicShortestPathExperiment'))
 const SphericalLuneExperiment = lazyRetry(() => import('./experiments/spherical-lune/SphericalLuneExperiment'))
 const MapProjectionsExperiment = lazyRetry(() => import('./experiments/map-projections/MapProjectionsExperiment'))
+const HyperbolicTriangleExperiment = lazyRetry(() => import('./experiments/hyperbolic-triangle/HyperbolicTriangleExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -729,6 +730,7 @@ export default function App() {
             <Route path="geodesic-shortest-path" element={<GeodesicShortestPathExperiment />} />
             <Route path="spherical-lune" element={<SphericalLuneExperiment />} />
             <Route path="map-projections" element={<MapProjectionsExperiment />} />
+            <Route path="hyperbolic-triangle" element={<HyperbolicTriangleExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

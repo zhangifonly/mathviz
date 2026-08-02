@@ -335,6 +335,7 @@ const navCategories: NavCategory[] = [
       { path: '/spherical-triangle', label: '球面三角形', icon: '🌐' },
       { path: '/spherical-tiling', label: '球面镶嵌', icon: '🎨' },
       { path: '/spherical-lune', label: '球面二角形', icon: '🌙' },
+      { path: '/hyperbolic-triangle', label: '双曲三角形角亏', icon: '🔻' },
     ],
   },
   {

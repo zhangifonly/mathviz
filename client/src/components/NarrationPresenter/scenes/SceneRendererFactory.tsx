@@ -446,6 +446,7 @@ const SphericalTilingSceneRenderer = lazy(() => import('./SphericalTiling/Spheri
 const GeodesicShortestPathSceneRenderer = lazy(() => import('./GeodesicShortestPath/GeodesicShortestPathSceneRenderer'))
 const SphericalLuneSceneRenderer = lazy(() => import('./SphericalLune/SphericalLuneSceneRenderer'))
 const MapProjectionsSceneRenderer = lazy(() => import('./MapProjections/MapProjectionsSceneRenderer'))
+const HyperbolicTriangleSceneRenderer = lazy(() => import('./HyperbolicTriangle/HyperbolicTriangleSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -794,6 +795,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'geodesic-shortest-path': GeodesicShortestPathSceneRenderer,
   'spherical-lune': SphericalLuneSceneRenderer,
   'map-projections': MapProjectionsSceneRenderer,
+  'hyperbolic-triangle': HyperbolicTriangleSceneRenderer,
 }
 
 // 获取场景渲染器

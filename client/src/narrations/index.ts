@@ -355,6 +355,7 @@ export { sphericalTilingNarration } from './scripts/spherical-tiling'
 export { geodesicShortestPathNarration } from './scripts/geodesic-shortest-path'
 export { sphericalLuneNarration } from './scripts/spherical-lune'
 export { mapProjectionsNarration } from './scripts/map-projections'
+export { hyperbolicTriangleNarration } from './scripts/hyperbolic-triangle'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -698,6 +699,7 @@ import { sphericalTilingNarration } from './scripts/spherical-tiling'
 import { geodesicShortestPathNarration } from './scripts/geodesic-shortest-path'
 import { sphericalLuneNarration } from './scripts/spherical-lune'
 import { mapProjectionsNarration } from './scripts/map-projections'
+import { hyperbolicTriangleNarration } from './scripts/hyperbolic-triangle'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1045,6 +1047,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'geodesic-shortest-path': geodesicShortestPathNarration,
   'spherical-lune': sphericalLuneNarration,
   'map-projections': mapProjectionsNarration,
+  'hyperbolic-triangle': hyperbolicTriangleNarration,
 }
 
 // 获取稿件

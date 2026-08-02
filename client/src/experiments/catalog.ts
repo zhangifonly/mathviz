@@ -3824,4 +3824,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/hyperbolic-triangle',
+    title: '双曲三角形与角亏',
+    description: '双曲三角形内角和小于 180°，不足的角亏恰等于面积，而面积竟有上界 π，永远撑不过这道门。',
+    icon: '🔻',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]
