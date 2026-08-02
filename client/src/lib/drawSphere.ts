@@ -16,6 +16,12 @@ import {
 export interface SphericalPatch {
   vertices: Vec3[]
   fill: string
+  /**
+   * 是否描边。默认描。
+   * 用许多小片拼一个大区域时必须设 false，否则每片都描边会拼出难看的网格
+   * （二角形用经纬网格填充时踩过这个坑）。
+   */
+  stroke?: boolean
 }
 
 /** 球面上的一条路径 */
@@ -296,10 +302,12 @@ function drawPatch(
     }
     fillSphericalTriangle(ctx, cam, t, isFront, 10)
   }
-  // 描边：每条边是大圆弧
-  for (let i = 0; i < vs.length; i++) {
-    drawPolyline(ctx, cam, greatCircleArc(vs[i], vs[(i + 1) % vs.length], 40), isFront,
-      'rgba(255,255,255,0.75)', 'rgba(255,255,255,0.12)', 1.6)
+  // 描边：每条边是大圆弧。拼小片时要关掉, 否则拼出网格
+  if (patch.stroke !== false) {
+    for (let i = 0; i < vs.length; i++) {
+      drawPolyline(ctx, cam, greatCircleArc(vs[i], vs[(i + 1) % vs.length], 40), isFront,
+        'rgba(255,255,255,0.75)', 'rgba(255,255,255,0.12)', 1.6)
+    }
   }
   if (showVerts) {
     for (const v of vs) {

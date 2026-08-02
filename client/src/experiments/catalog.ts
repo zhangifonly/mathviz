@@ -3802,4 +3802,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/spherical-lune',
+    title: '球面二角形',
+    description: '两个大圆交于对径两点夹出月牙，这是平面上不存在的两边形，面积恰好等于二倍夹角。',
+    icon: '🌙',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

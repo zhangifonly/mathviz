@@ -273,6 +273,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'spherical-triangle',
       'spherical-tiling',
       'geodesic-shortest-path',
+      'spherical-lune',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
