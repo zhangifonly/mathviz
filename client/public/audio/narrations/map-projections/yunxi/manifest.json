@@ -1,0 +1,190 @@
+{
+  "script_id": "map-projections",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "map-projections",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/map-projections/yunxi/intro-intro-1.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "打开常见的世界地图，格陵兰岛看起来和整个非洲差不多大，甚至更大一些。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/map-projections/yunxi/intro-intro-2.mp3",
+      "duration": 3.43,
+      "size": 54864,
+      "text": "但真实面积是：非洲三千零三十七万平方公里，格陵兰只有二百一十七万。非洲是它的十四倍。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/map-projections/yunxi/intro-intro-3.mp3",
+      "duration": 2.58,
+      "size": 41328,
+      "text": "这不是地图印错了。这是把球面摊成平面时，几何上无法避免的代价。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "impossible",
+      "line_id": "ip-1",
+      "filename": "impossible-ip-1.mp3",
+      "path": "audio/narrations/map-projections/yunxi/impossible-ip-1.mp3",
+      "duration": 2.89,
+      "size": 46224,
+      "text": "高斯绝妙定理给出了根本原因：高斯曲率不为零的曲面，无法不失真地摊成平面。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "impossible",
+      "line_id": "ip-2",
+      "filename": "impossible-ip-2.mp3",
+      "path": "audio/narrations/map-projections/yunxi/impossible-ip-2.mp3",
+      "duration": 3.7,
+      "size": 59184,
+      "text": "球面的高斯曲率恒等于一，不是零。所以任何地图投影都必然失真，这不是制图技术不够好。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "impossible",
+      "line_id": "ip-3",
+      "filename": "impossible-ip-3.mp3",
+      "path": "audio/narrations/map-projections/yunxi/impossible-ip-3.mp3",
+      "duration": 3.87,
+      "size": 61920,
+      "text": "既然躲不开，能选的只是失真什么。保角度就得牺牲面积，保面积就得牺牲角度，两者不可兼得。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "tissot",
+      "line_id": "ts-1",
+      "filename": "tissot-ts-1.mp3",
+      "path": "audio/narrations/map-projections/yunxi/tissot-ts-1.mp3",
+      "duration": 4.39,
+      "size": 70272,
+      "text": "怎么把失真变成数字？在球面上画一个无穷小的圆，看它投影后变成什么形状。答案是椭圆，叫 Tissot 指示椭圆。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "tissot",
+      "line_id": "ts-2",
+      "filename": "tissot-ts-2.mp3",
+      "path": "audio/narrations/map-projections/yunxi/tissot-ts-2.mp3",
+      "duration": 3.93,
+      "size": 62928,
+      "text": "椭圆的两个半轴就是两个方向的伸缩率：沿经线的记作 h，沿纬线的记作 k。屏幕上黄色椭圆就是它们画出来的。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "tissot",
+      "line_id": "ts-3",
+      "filename": "tissot-ts-3.mp3",
+      "path": "audio/narrations/map-projections/yunxi/tissot-ts-3.mp3",
+      "duration": 3.9,
+      "size": 62352,
+      "text": "等角投影的判据是 h 等于 k，此时椭圆退化成圆，只是大小不同。等积投影的判据是面积因子恒等于一。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "mercator",
+      "line_id": "mc-1",
+      "filename": "mercator-mc-1.mp3",
+      "path": "audio/narrations/map-projections/yunxi/mercator-mc-1.mp3",
+      "duration": 3.22,
+      "size": 51552,
+      "text": "墨卡托投影是等角的，屏幕上所有椭圆都是标准的圆，这一点数值验证到十的负六次方。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "mercator",
+      "line_id": "mc-2",
+      "filename": "mercator-mc-2.mp3",
+      "path": "audio/narrations/map-projections/yunxi/mercator-mc-2.mp3",
+      "duration": 3.82,
+      "size": 61056,
+      "text": "代价在面积。它的面积失真恰好等于纬度余弦的平方的倒数。北纬四十五度放大两倍，六十度放大四倍。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "mercator",
+      "line_id": "mc-3",
+      "filename": "mercator-mc-3.mp3",
+      "path": "audio/narrations/map-projections/yunxi/mercator-mc-3.mp3",
+      "duration": 4.43,
+      "size": 70848,
+      "text": "格陵兰中心在北纬七十二度，放大倍数是十点四七倍。二百一十七万乘上它，看着就成了两千二百七十万，接近非洲的三千万。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "tradeoff",
+      "line_id": "td-1",
+      "filename": "tradeoff-td-1.mp3",
+      "path": "audio/narrations/map-projections/yunxi/tradeoff-td-1.mp3",
+      "duration": 3.17,
+      "size": 50688,
+      "text": "请切到兰伯特圆柱等积投影。它的面积因子精确等于一，格陵兰终于恢复了真实大小。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "tradeoff",
+      "line_id": "td-2",
+      "filename": "tradeoff-td-2.mp3",
+      "path": "audio/narrations/map-projections/yunxi/tradeoff-td-2.mp3",
+      "duration": 4.0,
+      "size": 64080,
+      "text": "但看椭圆：高纬度的椭圆被压成了扁扁的横条。面积对了，形状歪了，角度失真在六十度处高达零点六。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "tradeoff",
+      "line_id": "td-3",
+      "filename": "tradeoff-td-3.mp3",
+      "path": "audio/narrations/map-projections/yunxi/tradeoff-td-3.mp3",
+      "duration": 4.27,
+      "size": 68256,
+      "text": "还有个细节值得一提。正弦投影也是等积的，但它的经纬网格是斜的，此时不能简单用两个半轴相乘算面积，必须用雅可比行列式。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/map-projections/yunxi/summary-sum-1.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "第一，球面曲率不为零，所以任何地图投影都必然失真，这是几何上的不可能。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/map-projections/yunxi/summary-sum-2.mp3",
+      "duration": 2.98,
+      "size": 47664,
+      "text": "第二，Tissot 指示椭圆把失真量化：等角要求两个半轴相等，等积要求面积因子为一。"
+    },
+    {
+      "script_id": "map-projections",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/map-projections/yunxi/summary-sum-3.mp3",
+      "duration": 3.79,
+      "size": 60624,
+      "text": "第三，墨卡托的面积失真是纬度余弦平方的倒数，格陵兰因此被放大十倍多。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 63.76,
+  "total_size": 1020096
+}
