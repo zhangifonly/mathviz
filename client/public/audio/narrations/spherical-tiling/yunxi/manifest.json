@@ -1,0 +1,190 @@
+{
+  "script_id": "spherical-tiling",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/intro-intro-1.mp3",
+      "duration": 3.92,
+      "size": 62640,
+      "text": "拿一个正十二面体，把它的顶点全部推到外接球面上，棱换成大圆弧。原来的平面五边形就变成了球面五边形。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/intro-intro-2.mp3",
+      "duration": 3.41,
+      "size": 54576,
+      "text": "整个球面被十二块球面五边形不留缝隙地铺满，这叫球面镶嵌。五种柏拉图立体各给出一种。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/intro-intro-3.mp3",
+      "duration": 3.95,
+      "size": 63216,
+      "text": "记法用一对花括号：第一个数是每个面几条边，第二个数是每个顶点聚集几个面。正十二面体镶嵌就是五和三。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "area",
+      "line_id": "ar-1",
+      "filename": "area-ar-1.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/area-ar-1.mp3",
+      "duration": 3.79,
+      "size": 60624,
+      "text": "怎么确认镶嵌数据没错？有一条极强的判据：所有面的面积加起来必须精确等于球面总面积，也就是四倍圆周率。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "area",
+      "line_id": "ar-2",
+      "filename": "area-ar-2.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/area-ar-2.mp3",
+      "duration": 3.47,
+      "size": 55584,
+      "text": "每块球面多边形的面积怎么算？从面心切成若干球面三角形，每个用球面盈余算，加起来即可。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "area",
+      "line_id": "ar-3",
+      "filename": "area-ar-3.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/area-ar-3.mp3",
+      "duration": 3.97,
+      "size": 63504,
+      "text": "五种镶嵌逐个验算，总面积都是十二点五六六三七一，与四倍圆周率精确相同，相对误差在十的负十五次方量级。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "angle",
+      "line_id": "an-1",
+      "filename": "angle-an-1.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/angle-an-1.mp3",
+      "duration": 3.12,
+      "size": 49968,
+      "text": "现在看一个关键差异。平面上正三角形的内角是六十度，但球面上的正三角形内角更大。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "angle",
+      "line_id": "an-2",
+      "filename": "angle-an-2.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/angle-an-2.mp3",
+      "duration": 4.65,
+      "size": 74448,
+      "text": "以正四面体镶嵌为例，每个球面三角形的内角是一百二十度，整整多了六十度。正八面体镶嵌是九十度，正二十面体镶嵌是七十二度。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "angle",
+      "line_id": "an-3",
+      "filename": "angle-an-3.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/angle-an-3.mp3",
+      "duration": 4.69,
+      "size": 75024,
+      "text": "为什么必须更大？因为球面上顶点周围要恰好铺满三百六十度。每顶点聚集的面角之和精确等于三百六十度，屏幕上的读数验证了这一点。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "defect",
+      "line_id": "df-1",
+      "filename": "defect-df-1.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/defect-df-1.mp3",
+      "duration": 3.39,
+      "size": 54288,
+      "text": "反过来想：如果把这些面按平面正多边形的尺寸拼，顶点处就凑不满三百六十度，差额叫角亏。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "defect",
+      "line_id": "df-2",
+      "filename": "defect-df-2.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/defect-df-2.mp3",
+      "duration": 4.13,
+      "size": 66096,
+      "text": "正四面体每顶点三个正三角形，三乘六十度是一百八十度，角亏一百八十度。四个顶点加起来七百二十度。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "defect",
+      "line_id": "df-3",
+      "filename": "defect-df-3.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/defect-df-3.mp3",
+      "duration": 3.9,
+      "size": 62352,
+      "text": "但球面版的笛卡尔定理说角亏总和是四倍圆周率，也就是七百二十度。屏幕上五种镶嵌逐个核对，全部吻合。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "three",
+      "line_id": "th-1",
+      "filename": "three-th-1.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/three-th-1.mp3",
+      "duration": 2.98,
+      "size": 47664,
+      "text": "最后是全局图景。把每顶点面数减二，乘上每面边数减二，这个乘积决定一切。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "three",
+      "line_id": "th-2",
+      "filename": "three-th-2.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/three-th-2.mp3",
+      "duration": 4.06,
+      "size": 64944,
+      "text": "小于四时角亏为正，围成闭合球面，这样的组合恰好只有五种。等于四时角亏为零，铺成无限平面，只有三种。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "three",
+      "line_id": "th-3",
+      "filename": "three-th-3.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/three-th-3.mp3",
+      "duration": 4.34,
+      "size": 69408,
+      "text": "大于四时角亏为负，必须靠负曲率才能容纳，那就是双曲镶嵌，而这样的组合有无穷多种。同一个不等式，三种几何。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/summary-sum-1.mp3",
+      "duration": 2.95,
+      "size": 47232,
+      "text": "第一，把柏拉图立体的顶点推到球面得到五种正规球面镶嵌，用花括号记法表示。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/summary-sum-2.mp3",
+      "duration": 2.83,
+      "size": 45216,
+      "text": "第二，所有面的面积之和必须精确等于四倍圆周率，这是检验数据自洽的强判据。"
+    },
+    {
+      "script_id": "spherical-tiling",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/spherical-tiling/yunxi/summary-sum-3.mp3",
+      "duration": 4.07,
+      "size": 65088,
+      "text": "第三，判别式小于四、等于四、大于四分别对应球面、平面、双曲三种几何。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 67.62,
+  "total_size": 1081872
+}
