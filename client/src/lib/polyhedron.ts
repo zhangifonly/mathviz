@@ -244,3 +244,99 @@ export function faceSizeHistogram(p: Polyhedron): Record<number, number> {
   for (const f of p.faces) h[f.length] = (h[f.length] ?? 0) + 1
   return h
 }
+
+// ============ 五种柏拉图立体 ============
+//
+// 此前 dual-polyhedra 与 minkowski-steiner 各自重写了一遍顶点表，
+// 抄两次就有抄错两次的机会。统一放这里，各实验只管取用。
+// 顶点坐标未归一化：各家取最方便的形式（立方体 ±1、八面体单位轴等），
+// 需要外接球归一时用 normalizeToSphere。
+
+const PHI = (1 + Math.sqrt(5)) / 2
+
+/** 正四面体：取立方体的四个交错顶点，棱长 2√2 */
+export function makeTetrahedron(): Polyhedron {
+  return {
+    name: '正四面体',
+    vertices: [[1, 1, 1], [1, -1, -1], [-1, 1, -1], [-1, -1, 1]],
+    faces: [[0, 1, 2], [0, 2, 3], [0, 3, 1], [1, 3, 2]],
+  }
+}
+
+/** 立方体：顶点 ±1，棱长 2 */
+export function makeCube(): Polyhedron {
+  return {
+    name: '立方体',
+    vertices: [
+      [-1, -1, -1], [1, -1, -1], [1, 1, -1], [-1, 1, -1],
+      [-1, -1, 1], [1, -1, 1], [1, 1, 1], [-1, 1, 1],
+    ],
+    faces: [
+      [0, 3, 2, 1], [4, 5, 6, 7], [0, 1, 5, 4],
+      [2, 3, 7, 6], [1, 2, 6, 5], [0, 4, 7, 3],
+    ],
+  }
+}
+
+/** 正八面体：六个单位轴向顶点 */
+export function makeOctahedron(): Polyhedron {
+  return {
+    name: '正八面体',
+    vertices: [
+      [1, 0, 0], [-1, 0, 0], [0, 1, 0], [0, -1, 0], [0, 0, 1], [0, 0, -1],
+    ],
+    faces: [
+      [0, 2, 4], [2, 1, 4], [1, 3, 4], [3, 0, 4],
+      [2, 0, 5], [1, 2, 5], [3, 1, 5], [0, 3, 5],
+    ],
+  }
+}
+
+/** 正二十面体：三个互相垂直的黄金矩形，12 顶点 20 面 */
+export function makeIcosahedron(): Polyhedron {
+  return {
+    name: '正二十面体',
+    vertices: [
+      [0, 1, PHI], [0, -1, PHI], [0, 1, -PHI], [0, -1, -PHI],
+      [1, PHI, 0], [-1, PHI, 0], [1, -PHI, 0], [-1, -PHI, 0],
+      [PHI, 0, 1], [PHI, 0, -1], [-PHI, 0, 1], [-PHI, 0, -1],
+    ],
+    faces: [
+      [0, 1, 8], [0, 8, 4], [0, 4, 5], [0, 5, 10], [0, 10, 1],
+      [1, 10, 7], [1, 7, 6], [1, 6, 8], [8, 6, 9], [8, 9, 4],
+      [4, 9, 2], [4, 2, 5], [5, 2, 11], [5, 11, 10], [10, 11, 7],
+      [3, 7, 11], [3, 11, 2], [3, 2, 9], [3, 9, 6], [3, 6, 7],
+    ],
+  }
+}
+
+/** 正十二面体：由正二十面体取对偶得到（面心即顶点） */
+export function makeDodecahedron(): Polyhedron {
+  return { ...dualOf(makeIcosahedron()), name: '正十二面体' }
+}
+
+/** 把顶点缩放到外接球半径为 r */
+export function normalizeToSphere(p: Polyhedron, r = 1): Polyhedron {
+  const k = r / (circumradius(p) || 1)
+  return {
+    ...p,
+    vertices: p.vertices.map((v) => [v[0] * k, v[1] * k, v[2] * k] as Vec3),
+  }
+}
+
+export const PLATONIC_SOLIDS = [
+  makeTetrahedron, makeCube, makeOctahedron, makeDodecahedron, makeIcosahedron,
+] as const
+
+export type PlatonicId =
+  | 'tetrahedron' | 'cube' | 'octahedron' | 'dodecahedron' | 'icosahedron'
+
+export function platonicOf(id: PlatonicId): Polyhedron {
+  switch (id) {
+    case 'cube': return makeCube()
+    case 'octahedron': return makeOctahedron()
+    case 'dodecahedron': return makeDodecahedron()
+    case 'icosahedron': return makeIcosahedron()
+    default: return makeTetrahedron()
+  }
+}

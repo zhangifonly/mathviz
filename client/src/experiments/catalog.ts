@@ -3901,4 +3901,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/descartes-defect',
+    title: 'Descartes 角亏定理',
+    description: '多面体每个顶点都合不拢，差的那部分叫角亏，所有角亏加起来永远是 4π，与形状无关。',
+    icon: '📐',
+    difficulty: 'intermediate',
+    ageRange: '高中 15-18岁',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

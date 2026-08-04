@@ -1,0 +1,194 @@
+{
+  "files": [
+    {
+      "script_id": "descartes-defect",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/descartes-defect/intro-intro-1.mp3",
+      "duration": 3.55,
+      "size": 56736,
+      "text": "拿一个立方体，看它的任意一个顶点。三个正方形面在这里交汇，每个贡献九十度，加起来两百七十度。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/descartes-defect/intro-intro-2.mp3",
+      "duration": 3.46,
+      "size": 55296,
+      "text": "但平面上一圈是三百六十度。所以还差九十度，合不拢。正是这个差额让平面弯成了立体。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/descartes-defect/intro-intro-3.mp3",
+      "duration": 2.82,
+      "size": 45072,
+      "text": "这个差额叫角亏。屏幕上每个顶点画了一个黄色圆盘，越大表示角亏越多。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "theorem",
+      "line_id": "th-1",
+      "filename": "theorem-th-1.mp3",
+      "path": "audio/narrations/descartes-defect/theorem-th-1.mp3",
+      "duration": 3.0,
+      "size": 47952,
+      "text": "笛卡尔在一六三零年代发现了一件事：把所有顶点的角亏加起来，结果永远是四倍圆周率。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "theorem",
+      "line_id": "th-2",
+      "filename": "theorem-th-2.mp3",
+      "path": "audio/narrations/descartes-defect/theorem-th-2.mp3",
+      "duration": 2.47,
+      "size": 39456,
+      "text": "立方体八个顶点，每个九十度，加起来七百二十度，正好是四倍圆周率。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "theorem",
+      "line_id": "th-3",
+      "filename": "theorem-th-3.mp3",
+      "path": "audio/narrations/descartes-defect/theorem-th-3.mp3",
+      "duration": 3.61,
+      "size": 57744,
+      "text": "正四面体只有四个顶点，但每个角亏是一百八十度，乘四还是七百二十度。请切换立体验证。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "invariant",
+      "line_id": "iv-1",
+      "filename": "invariant-iv-1.mp3",
+      "path": "audio/narrations/descartes-defect/invariant-iv-1.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "这个总和与多面体长什么样完全无关。顶点越多，每个顶点分到的角亏就越少。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "invariant",
+      "line_id": "iv-2",
+      "filename": "invariant-iv-2.mp3",
+      "path": "audio/narrations/descartes-defect/invariant-iv-2.mp3",
+      "duration": 2.88,
+      "size": 46080,
+      "text": "正十二面体有二十个顶点，每个只有三十六度；正二十面体十二个顶点，每个六十度。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "invariant",
+      "line_id": "iv-3",
+      "filename": "invariant-iv-3.mp3",
+      "path": "audio/narrations/descartes-defect/invariant-iv-3.mp3",
+      "duration": 3.64,
+      "size": 58176,
+      "text": "但乘起来都是七百二十度。屏幕右侧的残差读数显示，五种立体的偏差都在十的负十四次方量级。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "euler",
+      "line_id": "eu-1",
+      "filename": "euler-eu-1.mp3",
+      "path": "audio/narrations/descartes-defect/euler-eu-1.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "这个定理比欧拉公式早了一百多年，而且两者其实是同一件事。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "euler",
+      "line_id": "eu-2",
+      "filename": "euler-eu-2.mp3",
+      "path": "audio/narrations/descartes-defect/euler-eu-2.mp3",
+      "duration": 4.49,
+      "size": 71856,
+      "text": "推导只需两步。角亏总和等于两倍圆周率乘顶点数，减去所有面角之和。而每个 n 边形的内角和是 n 减二再乘圆周率。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "euler",
+      "line_id": "eu-3",
+      "filename": "euler-eu-3.mp3",
+      "path": "audio/narrations/descartes-defect/euler-eu-3.mp3",
+      "duration": 4.89,
+      "size": 78192,
+      "text": "把面的边数总和等于两倍棱数代进去，整理得到：角亏总和等于两倍圆周率乘上顶点减棱加面。令它等于四倍圆周率，就是欧拉公式。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "curvature",
+      "line_id": "cv-1",
+      "filename": "curvature-cv-1.mp3",
+      "path": "audio/narrations/descartes-defect/curvature-cv-1.mp3",
+      "duration": 2.55,
+      "size": 40752,
+      "text": "为什么恰好是四倍圆周率，而不是别的数？因为那正是单位球面的面积。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "curvature",
+      "line_id": "cv-2",
+      "filename": "curvature-cv-2.mp3",
+      "path": "audio/narrations/descartes-defect/curvature-cv-2.mp3",
+      "duration": 3.23,
+      "size": 51696,
+      "text": "把多面体想成球面的粗糙近似，曲率全都集中在顶点上。角亏就是那一点的离散高斯曲率。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "curvature",
+      "line_id": "cv-3",
+      "filename": "curvature-cv-3.mp3",
+      "path": "audio/narrations/descartes-defect/curvature-cv-3.mp3",
+      "duration": 4.69,
+      "size": 75024,
+      "text": "于是这条定理就是高斯-博内定理在多面体上的样子。我们之前讲过的球面盈余、双曲角亏，与它是同一件事的三种面孔。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/descartes-defect/summary-sum-1.mp3",
+      "duration": 2.68,
+      "size": 42912,
+      "text": "第一，顶点角亏等于两倍圆周率减去该点的面角和，凸多面体上恒为正。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/descartes-defect/summary-sum-2.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "第二，所有角亏之和永远是四倍圆周率，与顶点个数和形状都无关。"
+    },
+    {
+      "script_id": "descartes-defect",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/descartes-defect/summary-sum-3.mp3",
+      "duration": 3.53,
+      "size": 56448,
+      "text": "第三，这条定理与欧拉公式等价，本质是高斯-博内定理的离散形式。感谢观看，我们下次再见。"
+    }
+  ],
+  "script_id": "descartes-defect",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 59.42,
+  "total_size": 950400,
+  "failed": [],
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

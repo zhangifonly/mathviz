@@ -282,6 +282,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'dual-polyhedra',
       'kissing-number',
       'dehn-invariant',
+      'descartes-defect',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

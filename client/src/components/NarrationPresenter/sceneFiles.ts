@@ -358,4 +358,5 @@ export const SCENE_FILES: Record<string, string> = {
   'dual-polyhedra': 'dualPolyhedraScenes',
   'kissing-number': 'kissingNumberScenes',
   'dehn-invariant': 'dehnInvariantScenes',
+  'descartes-defect': 'descartesDefectScenes',
 }

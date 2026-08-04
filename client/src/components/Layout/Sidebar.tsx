@@ -199,6 +199,7 @@ const navCategories: NavCategory[] = [
       { path: '/tetrahedron-volume', label: '四面体体积', icon: '📐' },
       { path: '/solid-angle', label: '立体角球面度', icon: '🔆' },
       { path: '/dual-polyhedra', label: '对偶多面体', icon: '🔷' },
+      { path: '/descartes-defect', label: 'Descartes 角亏', icon: '📐' },
     ],
   },
   {
