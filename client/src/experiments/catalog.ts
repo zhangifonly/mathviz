@@ -3934,4 +3934,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/cavalieri',
+    title: 'Cavalieri 原理',
+    description: '两个立体若被任意平行平面截得的面积总相等，体积就相等，阿基米德用它算出了球体积。',
+    icon: '🍰',
+    difficulty: 'intermediate',
+    ageRange: '高中 15-18岁',
+    topics: ['geometry', 'calculus'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

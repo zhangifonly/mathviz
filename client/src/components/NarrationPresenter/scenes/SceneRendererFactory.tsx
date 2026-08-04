@@ -456,6 +456,7 @@ const DehnInvariantSceneRenderer = lazy(() => import('./DehnInvariant/DehnInvari
 const DescartesDefectSceneRenderer = lazy(() => import('./DescartesDefect/DescartesDefectSceneRenderer'))
 const TruncationSceneRenderer = lazy(() => import('./Truncation/TruncationSceneRenderer'))
 const PolyhedronSliceSceneRenderer = lazy(() => import('./PolyhedronSlice/PolyhedronSliceSceneRenderer'))
+const CavalieriSceneRenderer = lazy(() => import('./Cavalieri/CavalieriSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -814,6 +815,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'descartes-defect': DescartesDefectSceneRenderer,
   'truncation': TruncationSceneRenderer,
   'polyhedron-slice': PolyhedronSliceSceneRenderer,
+  'cavalieri': CavalieriSceneRenderer,
 }
 
 // 获取场景渲染器

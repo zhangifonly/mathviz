@@ -285,6 +285,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'descartes-defect',
       'truncation',
       'polyhedron-slice',
+      'cavalieri',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

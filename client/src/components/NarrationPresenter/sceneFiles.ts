@@ -361,4 +361,5 @@ export const SCENE_FILES: Record<string, string> = {
   'descartes-defect': 'descartesDefectScenes',
   'truncation': 'truncationScenes',
   'polyhedron-slice': 'polyhedronSliceScenes',
+  'cavalieri': 'cavalieriScenes',
 }
