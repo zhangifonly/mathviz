@@ -196,6 +196,8 @@ const navCategories: NavCategory[] = [
       { path: '/prism-antiprism', label: '棱柱与反棱柱', icon: '🔷' },
       { path: '/geodesic-shortest-path', label: '球面测地线', icon: '✈️' },
       { path: '/map-projections', label: '地图投影失真', icon: '🗺️' },
+      { path: '/tetrahedron-volume', label: '四面体体积', icon: '📐' },
+      { path: '/solid-angle', label: '立体角球面度', icon: '🔆' },
     ],
   },
   {
@@ -336,6 +338,7 @@ const navCategories: NavCategory[] = [
       { path: '/spherical-tiling', label: '球面镶嵌', icon: '🎨' },
       { path: '/spherical-lune', label: '球面二角形', icon: '🌙' },
       { path: '/hyperbolic-triangle', label: '双曲三角形角亏', icon: '🔻' },
+      { path: '/minkowski-steiner', label: '闵可夫斯基和', icon: '🫧' },
     ],
   },
   {

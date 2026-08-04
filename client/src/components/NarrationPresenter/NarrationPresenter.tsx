@@ -276,6 +276,9 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'spherical-lune',
       'map-projections',
       'hyperbolic-triangle',
+      'tetrahedron-volume',
+      'solid-angle',
+      'minkowski-steiner',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

@@ -447,6 +447,9 @@ const GeodesicShortestPathSceneRenderer = lazy(() => import('./GeodesicShortestP
 const SphericalLuneSceneRenderer = lazy(() => import('./SphericalLune/SphericalLuneSceneRenderer'))
 const MapProjectionsSceneRenderer = lazy(() => import('./MapProjections/MapProjectionsSceneRenderer'))
 const HyperbolicTriangleSceneRenderer = lazy(() => import('./HyperbolicTriangle/HyperbolicTriangleSceneRenderer'))
+const TetrahedronVolumeSceneRenderer = lazy(() => import('./TetrahedronVolume/TetrahedronVolumeSceneRenderer'))
+const SolidAngleSceneRenderer = lazy(() => import('./SolidAngle/SolidAngleSceneRenderer'))
+const MinkowskiSteinerSceneRenderer = lazy(() => import('./MinkowskiSteiner/MinkowskiSteinerSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -796,6 +799,9 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'spherical-lune': SphericalLuneSceneRenderer,
   'map-projections': MapProjectionsSceneRenderer,
   'hyperbolic-triangle': HyperbolicTriangleSceneRenderer,
+  'tetrahedron-volume': TetrahedronVolumeSceneRenderer,
+  'solid-angle': SolidAngleSceneRenderer,
+  'minkowski-steiner': MinkowskiSteinerSceneRenderer,
 }
 
 // 获取场景渲染器

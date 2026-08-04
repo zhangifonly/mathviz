@@ -1,0 +1,194 @@
+{
+  "script_id": "tetrahedron-volume",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "files": [
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/tetrahedron-volume/intro-intro-1.mp3",
+      "duration": 3.43,
+      "size": 54864,
+      "text": "平面上，二阶行列式的绝对值等于两个向量张成的平行四边形面积。这个结论很多人都知道。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/tetrahedron-volume/intro-intro-2.mp3",
+      "duration": 3.34,
+      "size": 53424,
+      "text": "空间里会怎样？三个向量张成一个平行六面体，它的体积恰好是三阶行列式的绝对值。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/tetrahedron-volume/intro-intro-3.mp3",
+      "duration": 4.01,
+      "size": 64224,
+      "text": "这个量有个专门的名字，叫标量三重积：第一个向量点乘后两个的叉积。屏幕上红绿蓝三条棱就是行列式的三列。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "sixth",
+      "line_id": "sx-1",
+      "filename": "sixth-sx-1.mp3",
+      "path": "audio/narrations/tetrahedron-volume/sixth-sx-1.mp3",
+      "duration": 2.81,
+      "size": 44928,
+      "text": "四面体的体积公式是行列式绝对值再除以六。这个六是从哪来的？"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "sixth",
+      "line_id": "sx-2",
+      "filename": "sixth-sx-2.mp3",
+      "path": "audio/narrations/tetrahedron-volume/sixth-sx-2.mp3",
+      "duration": 4.28,
+      "size": 68544,
+      "text": "答案是几何的：一个平行六面体恰好能切成六个等体积的四面体。先对半切成两个三棱柱，每个三棱柱再切成三个四面体。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "sixth",
+      "line_id": "sx-3",
+      "filename": "sixth-sx-3.mp3",
+      "path": "audio/narrations/tetrahedron-volume/sixth-sx-3.mp3",
+      "duration": 3.37,
+      "size": 53856,
+      "text": "请点击切成六块那个按钮，六个不同颜色的四面体会依次显示出来，拼起来正好填满整个六面体。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "factorial",
+      "line_id": "fc-1",
+      "filename": "factorial-fc-1.mp3",
+      "path": "audio/narrations/tetrahedron-volume/factorial-fc-1.mp3",
+      "duration": 2.89,
+      "size": 46224,
+      "text": "更一般的规律是：n 维空间里，单纯形的体积等于行列式绝对值除以 n 的阶乘。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "factorial",
+      "line_id": "fc-2",
+      "filename": "factorial-fc-2.mp3",
+      "path": "audio/narrations/tetrahedron-volume/factorial-fc-2.mp3",
+      "duration": 4.12,
+      "size": 65952,
+      "text": "二维时阶乘是二，三角形面积等于行列式的一半，这与我们熟悉的结论一致。三维时阶乘是六，正是四面体的情形。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "factorial",
+      "line_id": "fc-3",
+      "filename": "factorial-fc-3.mp3",
+      "path": "audio/narrations/tetrahedron-volume/factorial-fc-3.mp3",
+      "duration": 3.27,
+      "size": 52272,
+      "text": "所以那个六并不特殊，它只是三的阶乘。四维单纯形要除二十四，五维除一百二十。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "sign",
+      "line_id": "sn-1",
+      "filename": "sign-sn-1.mp3",
+      "path": "audio/narrations/tetrahedron-volume/sign-sn-1.mp3",
+      "duration": 2.83,
+      "size": 45360,
+      "text": "行列式还带正负号，这个符号编码了三条棱的定向，也就是右手系还是左手系。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "sign",
+      "line_id": "sn-2",
+      "filename": "sign-sn-2.mp3",
+      "path": "audio/narrations/tetrahedron-volume/sign-sn-2.mp3",
+      "duration": 3.48,
+      "size": 55728,
+      "text": "请切到反定向那个预设，它把前两条棱交换了。屏幕上带符号体积变成负数，而绝对值完全没变。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "sign",
+      "line_id": "sn-3",
+      "filename": "sign-sn-3.mp3",
+      "path": "audio/narrations/tetrahedron-volume/sign-sn-3.mp3",
+      "duration": 3.83,
+      "size": 61200,
+      "text": "这正是行列式的反对称性：交换任意两列，符号翻转。屏幕上的交换变号误差读数验证了它精确成立。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "coplanar",
+      "line_id": "cp-1",
+      "filename": "coplanar-cp-1.mp3",
+      "path": "audio/narrations/tetrahedron-volume/coplanar-cp-1.mp3",
+      "duration": 3.33,
+      "size": 53280,
+      "text": "最后看退化情形。如果三条棱共面，平行六面体就被压扁成一张平板，体积变成零。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "coplanar",
+      "line_id": "cp-2",
+      "filename": "coplanar-cp-2.mp3",
+      "path": "audio/narrations/tetrahedron-volume/coplanar-cp-2.mp3",
+      "duration": 3.46,
+      "size": 55296,
+      "text": "反过来也成立：行列式为零就说明三个向量线性相关，必定共面。这是判定共面最快的方法。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "coplanar",
+      "line_id": "cp-3",
+      "filename": "coplanar-cp-3.mp3",
+      "path": "audio/narrations/tetrahedron-volume/coplanar-cp-3.mp3",
+      "duration": 3.59,
+      "size": 57456,
+      "text": "屏幕上还用两种独立算法交叉验证体积：三重积法与底面积乘高再除三。两者残差精确为零。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/tetrahedron-volume/summary-sum-1.mp3",
+      "duration": 2.7,
+      "size": 43200,
+      "text": "第一，平行六面体体积等于三阶行列式的绝对值，四面体是它的六分之一。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/tetrahedron-volume/summary-sum-2.mp3",
+      "duration": 2.34,
+      "size": 37440,
+      "text": "第二，那个六就是三的阶乘，n 维单纯形要除以 n 的阶乘。"
+    },
+    {
+      "script_id": "tetrahedron-volume",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/tetrahedron-volume/summary-sum-3.mp3",
+      "duration": 3.45,
+      "size": 55152,
+      "text": "第三，行列式的符号表示定向，为零则三棱共面、四面体退化。感谢观看，我们下次再见。"
+    }
+  ],
+  "failed": [],
+  "total_duration": 60.53,
+  "total_size": 968400,
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

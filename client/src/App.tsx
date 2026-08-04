@@ -367,6 +367,9 @@ const GeodesicShortestPathExperiment = lazyRetry(() => import('./experiments/geo
 const SphericalLuneExperiment = lazyRetry(() => import('./experiments/spherical-lune/SphericalLuneExperiment'))
 const MapProjectionsExperiment = lazyRetry(() => import('./experiments/map-projections/MapProjectionsExperiment'))
 const HyperbolicTriangleExperiment = lazyRetry(() => import('./experiments/hyperbolic-triangle/HyperbolicTriangleExperiment'))
+const TetrahedronVolumeExperiment = lazyRetry(() => import('./experiments/tetrahedron-volume/TetrahedronVolumeExperiment'))
+const SolidAngleExperiment = lazyRetry(() => import('./experiments/solid-angle/SolidAngleExperiment'))
+const MinkowskiSteinerExperiment = lazyRetry(() => import('./experiments/minkowski-steiner/MinkowskiSteinerExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -731,6 +734,9 @@ export default function App() {
             <Route path="spherical-lune" element={<SphericalLuneExperiment />} />
             <Route path="map-projections" element={<MapProjectionsExperiment />} />
             <Route path="hyperbolic-triangle" element={<HyperbolicTriangleExperiment />} />
+            <Route path="tetrahedron-volume" element={<TetrahedronVolumeExperiment />} />
+            <Route path="solid-angle" element={<SolidAngleExperiment />} />
+            <Route path="minkowski-steiner" element={<MinkowskiSteinerExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

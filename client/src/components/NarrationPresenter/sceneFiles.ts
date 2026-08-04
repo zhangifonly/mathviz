@@ -352,4 +352,7 @@ export const SCENE_FILES: Record<string, string> = {
   'spherical-lune': 'sphericalLuneScenes',
   'map-projections': 'mapProjectionsScenes',
   'hyperbolic-triangle': 'hyperbolicTriangleScenes',
+  'tetrahedron-volume': 'tetrahedronVolumeScenes',
+  'solid-angle': 'solidAngleScenes',
+  'minkowski-steiner': 'minkowskiSteinerScenes',
 }
