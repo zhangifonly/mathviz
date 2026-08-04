@@ -3923,4 +3923,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/polyhedron-slice',
+    title: '多面体截面',
+    description: '一个只有正方形面的立方体，沿体对角线切下去竟然是正六边形，而正四面体能切出正方形。',
+    icon: '🔪',
+    difficulty: 'intermediate',
+    ageRange: '高中 15-18岁',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

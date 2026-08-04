@@ -284,6 +284,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'dehn-invariant',
       'descartes-defect',
       'truncation',
+      'polyhedron-slice',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

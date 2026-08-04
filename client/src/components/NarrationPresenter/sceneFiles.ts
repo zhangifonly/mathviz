@@ -360,4 +360,5 @@ export const SCENE_FILES: Record<string, string> = {
   'dehn-invariant': 'dehnInvariantScenes',
   'descartes-defect': 'descartesDefectScenes',
   'truncation': 'truncationScenes',
+  'polyhedron-slice': 'polyhedronSliceScenes',
 }

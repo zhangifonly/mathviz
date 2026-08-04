@@ -455,6 +455,7 @@ const KissingNumberSceneRenderer = lazy(() => import('./KissingNumber/KissingNum
 const DehnInvariantSceneRenderer = lazy(() => import('./DehnInvariant/DehnInvariantSceneRenderer'))
 const DescartesDefectSceneRenderer = lazy(() => import('./DescartesDefect/DescartesDefectSceneRenderer'))
 const TruncationSceneRenderer = lazy(() => import('./Truncation/TruncationSceneRenderer'))
+const PolyhedronSliceSceneRenderer = lazy(() => import('./PolyhedronSlice/PolyhedronSliceSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -812,6 +813,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'dehn-invariant': DehnInvariantSceneRenderer,
   'descartes-defect': DescartesDefectSceneRenderer,
   'truncation': TruncationSceneRenderer,
+  'polyhedron-slice': PolyhedronSliceSceneRenderer,
 }
 
 // 获取场景渲染器

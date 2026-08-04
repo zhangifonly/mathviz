@@ -364,6 +364,7 @@ export { kissingNumberNarration } from './scripts/kissing-number'
 export { dehnInvariantNarration } from './scripts/dehn-invariant'
 export { descartesDefectNarration } from './scripts/descartes-defect'
 export { truncationNarration } from './scripts/truncation'
+export { polyhedronSliceNarration } from './scripts/polyhedron-slice'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -716,6 +717,7 @@ import { kissingNumberNarration } from './scripts/kissing-number'
 import { dehnInvariantNarration } from './scripts/dehn-invariant'
 import { descartesDefectNarration } from './scripts/descartes-defect'
 import { truncationNarration } from './scripts/truncation'
+import { polyhedronSliceNarration } from './scripts/polyhedron-slice'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1072,6 +1074,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'dehn-invariant': dehnInvariantNarration,
   'descartes-defect': descartesDefectNarration,
   'truncation': truncationNarration,
+  'polyhedron-slice': polyhedronSliceNarration,
 }
 
 // 获取稿件

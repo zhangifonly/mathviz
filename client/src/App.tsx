@@ -375,6 +375,7 @@ const KissingNumberExperiment = lazyRetry(() => import('./experiments/kissing-nu
 const DehnInvariantExperiment = lazyRetry(() => import('./experiments/dehn-invariant/DehnInvariantExperiment'))
 const DescartesDefectExperiment = lazyRetry(() => import('./experiments/descartes-defect/DescartesDefectExperiment'))
 const TruncationExperiment = lazyRetry(() => import('./experiments/truncation/TruncationExperiment'))
+const PolyhedronSliceExperiment = lazyRetry(() => import('./experiments/polyhedron-slice/PolyhedronSliceExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -747,6 +748,7 @@ export default function App() {
             <Route path="dehn-invariant" element={<DehnInvariantExperiment />} />
             <Route path="descartes-defect" element={<DescartesDefectExperiment />} />
             <Route path="truncation" element={<TruncationExperiment />} />
+            <Route path="polyhedron-slice" element={<PolyhedronSliceExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

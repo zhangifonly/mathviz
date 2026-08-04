@@ -1,0 +1,190 @@
+{
+  "files": [
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/intro-intro-1.mp3",
+      "duration": 2.16,
+      "size": 34560,
+      "text": "拿一个立方体，用一个平面把它切开。切口是什么形状？"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/intro-intro-2.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "平行于面切，得到正方形，这个不奇怪。斜着切呢？"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/intro-intro-3.mp3",
+      "duration": 4.03,
+      "size": 64512,
+      "text": "如果沿着体对角线的垂直方向、从正中间切过去，切口是一个正六边形。一个只有正方形面的立体，却能切出六边形。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "algorithm",
+      "line_id": "al-1",
+      "filename": "algorithm-al-1.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/algorithm-al-1.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "算法很直接。对立体的每一个面，求这个平面与该面的交线段。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "algorithm",
+      "line_id": "al-2",
+      "filename": "algorithm-al-2.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/algorithm-al-2.mp3",
+      "duration": 3.56,
+      "size": 57024,
+      "text": "具体做法是看每条棱的两个端点在平面的哪一侧。异号说明这条棱穿过平面，用线性插值算出交点。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "algorithm",
+      "line_id": "al-3",
+      "filename": "algorithm-al-3.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/algorithm-al-3.mp3",
+      "duration": 3.9,
+      "size": 62352,
+      "text": "最后一步最关键：把所有线段首尾相接排成一个环。线段的产生顺序是任意的，不排序就画成一团乱线。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "hexagon",
+      "line_id": "hx-1",
+      "filename": "hexagon-hx-1.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/hexagon-hx-1.mp3",
+      "duration": 2.72,
+      "size": 43488,
+      "text": "为什么中间那一刀恰好是正的？因为体对角线是立方体的三重对称轴。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "hexagon",
+      "line_id": "hx-2",
+      "filename": "hexagon-hx-2.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/hexagon-hx-2.mp3",
+      "duration": 3.27,
+      "size": 52272,
+      "text": "绕这根轴转一百二十度，立方体回到自己。截面也必须回到自己，所以它有三重对称。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "hexagon",
+      "line_id": "hx-3",
+      "filename": "hexagon-hx-3.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/hexagon-hx-3.mp3",
+      "duration": 3.98,
+      "size": 63648,
+      "text": "再加上过中心的对称性，六条边只能全部等长。屏幕上的读数确认：边长极差为零，内角都是一百二十度。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "sweep",
+      "line_id": "sw-1",
+      "filename": "sweep-sw-1.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/sweep-sw-1.mp3",
+      "duration": 1.78,
+      "size": 28512,
+      "text": "请拖动位置滑块，让切平面从一头扫到另一头。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "sweep",
+      "line_id": "sw-2",
+      "filename": "sweep-sw-2.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/sweep-sw-2.mp3",
+      "duration": 3.27,
+      "size": 52272,
+      "text": "一开始切到一个角，是正三角形。往中间移动，三角形的角被削掉，变成六边形。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "sweep",
+      "line_id": "sw-3",
+      "filename": "sweep-sw-3.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/sweep-sw-3.mp3",
+      "duration": 3.91,
+      "size": 62496,
+      "text": "注意只有正中间那一刀是正六边形。两侧虽然也是六边形，但边长不齐，屏幕上的正多边形判定会显示否。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "others",
+      "line_id": "ot-1",
+      "filename": "others-ot-1.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/others-ot-1.mp3",
+      "duration": 3.26,
+      "size": 52128,
+      "text": "正四面体更反直觉。它只有四个三角形面，但在中间高度水平切，截面是正方形。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "others",
+      "line_id": "ot-2",
+      "filename": "others-ot-2.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/others-ot-2.mp3",
+      "duration": 2.97,
+      "size": 47520,
+      "text": "正八面体沿三重轴切，同样得到正六边形，与立方体那一刀呼应，因为两者互为对偶。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "others",
+      "line_id": "ot-3",
+      "filename": "others-ot-3.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/others-ot-3.mp3",
+      "duration": 2.91,
+      "size": 46512,
+      "text": "有个通用的上界：截面的边数不会超过立体的面数，因为切口的每条边都来自某一个面。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/summary-sum-1.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "第一，平面切多面体的算法是逐面求交，再把线段接成环。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/summary-sum-2.mp3",
+      "duration": 3.02,
+      "size": 48384,
+      "text": "第二，立方体沿体对角线过中心切出正六边形，正四面体能切出正方形。"
+    },
+    {
+      "script_id": "polyhedron-slice",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/polyhedron-slice/yunxi/summary-sum-3.mp3",
+      "duration": 3.64,
+      "size": 58176,
+      "text": "第三，截面边数不超过面数，而对称轴决定了哪一刀切出的是正多边形。感谢观看，我们下次再见。"
+    }
+  ],
+  "script_id": "polyhedron-slice",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 55.46,
+  "total_size": 887040,
+  "failed": []
+}
