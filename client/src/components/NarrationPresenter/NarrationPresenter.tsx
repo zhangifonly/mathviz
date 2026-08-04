@@ -283,6 +283,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'kissing-number',
       'dehn-invariant',
       'descartes-defect',
+      'truncation',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

@@ -359,4 +359,5 @@ export const SCENE_FILES: Record<string, string> = {
   'kissing-number': 'kissingNumberScenes',
   'dehn-invariant': 'dehnInvariantScenes',
   'descartes-defect': 'descartesDefectScenes',
+  'truncation': 'truncationScenes',
 }

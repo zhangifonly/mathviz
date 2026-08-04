@@ -1,0 +1,190 @@
+{
+  "files": [
+    {
+      "script_id": "truncation",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/intro-intro-1.mp3",
+      "duration": 2.8,
+      "size": 44784,
+      "text": "拿一个正二十面体，把每个顶点削掉一刀。原来尖尖的地方就变成了一个小平面。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/intro-intro-2.mp3",
+      "duration": 3.05,
+      "size": 48816,
+      "text": "削到恰当深度时，得到的立体你天天见：十二个五边形加二十个六边形，这就是足球。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/intro-intro-3.mp3",
+      "duration": 2.9,
+      "size": 46368,
+      "text": "它的正式名字叫截角二十面体，是十三种阿基米德立体之一。屏幕上就是它。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "counting",
+      "line_id": "ct-1",
+      "filename": "counting-ct-1.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/counting-ct-1.mp3",
+      "duration": 2.05,
+      "size": 32832,
+      "text": "截角后的顶点、棱、面各是多少？可以直接数出来。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "counting",
+      "line_id": "ct-2",
+      "filename": "counting-ct-2.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/counting-ct-2.mp3",
+      "duration": 3.94,
+      "size": 63072,
+      "text": "每条原棱被削成一段，两端各留一个新顶点，所以新顶点数是原棱数的两倍。新棱数是原棱数的三倍。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "counting",
+      "line_id": "ct-3",
+      "filename": "counting-ct-3.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/counting-ct-3.mp3",
+      "duration": 3.94,
+      "size": 63072,
+      "text": "面数则是原面数加原顶点数，因为每削一个顶点就多一个面。代回欧拉公式验算，仍然等于二，拓扑没变。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "standard",
+      "line_id": "sd-1",
+      "filename": "standard-sd-1.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/standard-sd-1.mp3",
+      "duration": 2.89,
+      "size": 46224,
+      "text": "削浅了新面太小，削深了原面变形。要让所有边等长，深度必须恰到好处。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "standard",
+      "line_id": "sd-2",
+      "filename": "standard-sd-2.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/standard-sd-2.mp3",
+      "duration": 3.74,
+      "size": 59904,
+      "text": "设削掉的长度占原棱的 t 倍。要让新边与剩下的原边等长，解出 t 等于二加二倍正弦半内角的倒数。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "standard",
+      "line_id": "sd-3",
+      "filename": "standard-sd-3.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/standard-sd-3.mp3",
+      "duration": 4.52,
+      "size": 72288,
+      "text": "注意这个值与面的边数有关。三角面给三分之一，四边面给零点二九，五边面给零点二八。不是所有立体都用三分之一。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "rectify",
+      "line_id": "rc-1",
+      "filename": "rectify-rc-1.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/rectify-rc-1.mp3",
+      "duration": 3.48,
+      "size": 55728,
+      "text": "现在把滑块继续往右拖。当 t 等于二分之一时，每条棱正好被削到中点，原来的边完全消失。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "rectify",
+      "line_id": "rc-2",
+      "filename": "rectify-rc-2.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/rectify-rc-2.mp3",
+      "duration": 2.87,
+      "size": 45936,
+      "text": "这一步叫整流。立方体整流后得到立方八面体，八个三角面加六个四边面。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "rectify",
+      "line_id": "rc-3",
+      "filename": "rectify-rc-3.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/rectify-rc-3.mp3",
+      "duration": 3.61,
+      "size": 57744,
+      "text": "有意思的是，正八面体整流后得到的是同一个立方八面体。互为对偶的两个立体，整流到同一个地方。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "family",
+      "line_id": "fm-1",
+      "filename": "family-fm-1.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/family-fm-1.mp3",
+      "duration": 3.73,
+      "size": 59616,
+      "text": "所以这根滑块把三样东西连了起来：左端是柏拉图立体，中间是阿基米德立体，右端是整流后的立体。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "family",
+      "line_id": "fm-2",
+      "filename": "family-fm-2.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/family-fm-2.mp3",
+      "duration": 3.7,
+      "size": 59184,
+      "text": "请依次切换五种原立体，注意标准 t 值会跟着变。屏幕上棱等长那个勾表示确实得到了阿基米德立体。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "family",
+      "line_id": "fm-3",
+      "filename": "family-fm-3.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/family-fm-3.mp3",
+      "duration": 3.13,
+      "size": 50112,
+      "text": "还可以打开叠加原立体，蓝色半透明的外壳就是削之前的样子，能看出削掉了哪些角。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/summary-sum-1.mp3",
+      "duration": 3.77,
+      "size": 60336,
+      "text": "第一，截角把每个顶点削成一个面，新顶点数是原棱数的两倍，新棱数是三倍，面数是原面加原顶点。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.6,
+      "size": 41616,
+      "text": "第二，标准截角深度由面的边数决定，只有三角面才恰好是三分之一。"
+    },
+    {
+      "script_id": "truncation",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/truncation/xiaoxiao/summary-sum-3.mp3",
+      "duration": 3.42,
+      "size": 54720,
+      "text": "第三，削到棱中点叫整流，互为对偶的两个立体会整流到同一个。感谢观看，我们下次再见。"
+    }
+  ],
+  "script_id": "truncation",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "total_duration": 60.14,
+  "total_size": 962352,
+  "failed": []
+}

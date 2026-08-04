@@ -3912,4 +3912,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/truncation',
+    title: '截角变换',
+    description: '把顶点削掉一刀，柏拉图立体就变成阿基米德立体，足球正是截角二十面体。',
+    icon: '⚽',
+    difficulty: 'intermediate',
+    ageRange: '高中 15-18岁',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

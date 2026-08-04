@@ -200,6 +200,7 @@ const navCategories: NavCategory[] = [
       { path: '/solid-angle', label: '立体角球面度', icon: '🔆' },
       { path: '/dual-polyhedra', label: '对偶多面体', icon: '🔷' },
       { path: '/descartes-defect', label: 'Descartes 角亏', icon: '📐' },
+      { path: '/truncation', label: '截角变换', icon: '⚽' },
     ],
   },
   {
