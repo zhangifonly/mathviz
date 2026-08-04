@@ -281,6 +281,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'minkowski-steiner',
       'dual-polyhedra',
       'kissing-number',
+      'dehn-invariant',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

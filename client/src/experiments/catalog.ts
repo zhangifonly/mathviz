@@ -3890,4 +3890,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/dehn-invariant',
+    title: 'Dehn 不变量',
+    description: '等体积的正四面体与立方体剪不成对方，二面角与 π 是否可通约决定一切，这是希尔伯特第三问题的答案。',
+    icon: '✂️',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['geometry', 'algebra'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

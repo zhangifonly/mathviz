@@ -357,4 +357,5 @@ export const SCENE_FILES: Record<string, string> = {
   'minkowski-steiner': 'minkowskiSteinerScenes',
   'dual-polyhedra': 'dualPolyhedraScenes',
   'kissing-number': 'kissingNumberScenes',
+  'dehn-invariant': 'dehnInvariantScenes',
 }

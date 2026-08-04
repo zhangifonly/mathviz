@@ -341,6 +341,7 @@ const navCategories: NavCategory[] = [
       { path: '/hyperbolic-triangle', label: '双曲三角形角亏', icon: '🔻' },
       { path: '/minkowski-steiner', label: '闵可夫斯基和', icon: '🫧' },
       { path: '/kissing-number', label: '接吻数问题', icon: '⚪' },
+      { path: '/dehn-invariant', label: 'Dehn 不变量', icon: '✂️' },
     ],
   },
   {

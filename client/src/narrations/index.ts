@@ -361,6 +361,7 @@ export { solidAngleNarration } from './scripts/solid-angle'
 export { minkowskiSteinerNarration } from './scripts/minkowski-steiner'
 export { dualPolyhedraNarration } from './scripts/dual-polyhedra'
 export { kissingNumberNarration } from './scripts/kissing-number'
+export { dehnInvariantNarration } from './scripts/dehn-invariant'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -710,6 +711,7 @@ import { solidAngleNarration } from './scripts/solid-angle'
 import { minkowskiSteinerNarration } from './scripts/minkowski-steiner'
 import { dualPolyhedraNarration } from './scripts/dual-polyhedra'
 import { kissingNumberNarration } from './scripts/kissing-number'
+import { dehnInvariantNarration } from './scripts/dehn-invariant'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1063,6 +1065,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'minkowski-steiner': minkowskiSteinerNarration,
   'dual-polyhedra': dualPolyhedraNarration,
   'kissing-number': kissingNumberNarration,
+  'dehn-invariant': dehnInvariantNarration,
 }
 
 // 获取稿件

@@ -452,6 +452,7 @@ const SolidAngleSceneRenderer = lazy(() => import('./SolidAngle/SolidAngleSceneR
 const MinkowskiSteinerSceneRenderer = lazy(() => import('./MinkowskiSteiner/MinkowskiSteinerSceneRenderer'))
 const DualPolyhedraSceneRenderer = lazy(() => import('./DualPolyhedra/DualPolyhedraSceneRenderer'))
 const KissingNumberSceneRenderer = lazy(() => import('./KissingNumber/KissingNumberSceneRenderer'))
+const DehnInvariantSceneRenderer = lazy(() => import('./DehnInvariant/DehnInvariantSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -806,6 +807,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'minkowski-steiner': MinkowskiSteinerSceneRenderer,
   'dual-polyhedra': DualPolyhedraSceneRenderer,
   'kissing-number': KissingNumberSceneRenderer,
+  'dehn-invariant': DehnInvariantSceneRenderer,
 }
 
 // 获取场景渲染器
