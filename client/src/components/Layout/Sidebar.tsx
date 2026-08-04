@@ -340,6 +340,7 @@ const navCategories: NavCategory[] = [
       { path: '/spherical-lune', label: '球面二角形', icon: '🌙' },
       { path: '/hyperbolic-triangle', label: '双曲三角形角亏', icon: '🔻' },
       { path: '/minkowski-steiner', label: '闵可夫斯基和', icon: '🫧' },
+      { path: '/kissing-number', label: '接吻数问题', icon: '⚪' },
     ],
   },
   {

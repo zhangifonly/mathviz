@@ -1,0 +1,220 @@
+{
+  "files": [
+    {
+      "script_id": "kissing-number",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/intro-intro-1.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "一个球周围最多能同时贴上几个同样大小的球？这个数叫接吻数。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/intro-intro-2.mp3",
+      "duration": 2.76,
+      "size": 44208,
+      "text": "二维很简单，六个圆围一圈，正好合拢，一点缝都没有。答案就是六。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/intro-intro-3.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "三维呢？答案是十二。但这个十二，数学家争论了两百五十年才定下来。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "criterion",
+      "line_id": "cr-1",
+      "filename": "criterion-cr-1.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/criterion-cr-1.mp3",
+      "duration": 2.66,
+      "size": 42624,
+      "text": "先把问题变成可算的。两个球都贴住中心球，球心到中心的距离都是二。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "criterion",
+      "line_id": "cr-2",
+      "filename": "criterion-cr-2.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/criterion-cr-2.mp3",
+      "duration": 3.7,
+      "size": 59184,
+      "text": "它们互不重叠，要求球心之间距离至少是二。代入余弦定理，等价于两个方向的夹角至少六十度。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "criterion",
+      "line_id": "cr-3",
+      "filename": "criterion-cr-3.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/criterion-cr-3.mp3",
+      "duration": 4.18,
+      "size": 66816,
+      "text": "所以问题变成：单位球面上最多能放几个点，使得两两夹角都不小于六十度。屏幕上的最小角距读数就是这个判据。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "dispute",
+      "line_id": "dp-1",
+      "filename": "dispute-dp-1.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/dispute-dp-1.mp3",
+      "duration": 3.57,
+      "size": 57168,
+      "text": "一六九四年，牛顿和格雷戈里讨论这个问题。牛顿说最多十二个，格雷戈里觉得也许能塞下十三个。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "dispute",
+      "line_id": "dp-2",
+      "filename": "dispute-dp-2.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/dispute-dp-2.mp3",
+      "duration": 4.05,
+      "size": 64800,
+      "text": "争论的根源在于余量。请看二十面体排列，十二个球的相邻角距是六十三点四三度，比要求的六十度多出三点四三度。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "dispute",
+      "line_id": "dp-3",
+      "filename": "dispute-dp-3.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/dispute-dp-3.mp3",
+      "duration": 3.88,
+      "size": 62064,
+      "text": "这些余量加起来相当可观。屏幕上球冠覆盖率只有百分之八十，还剩两成球面是空的。看着够第十三个球。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "bound",
+      "line_id": "bd-1",
+      "filename": "bound-bd-1.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/bound-bd-1.mp3",
+      "duration": 2.88,
+      "size": 46080,
+      "text": "最朴素的证明思路是数面积。每个邻球在中心球面上占一个半角三十度的球冠。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "bound",
+      "line_id": "bd-2",
+      "filename": "bound-bd-2.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/bound-bd-2.mp3",
+      "duration": 2.69,
+      "size": 43056,
+      "text": "球冠立体角是零点八四球面度，用整个球面四派去除，得到十四点九三。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "bound",
+      "line_id": "bd-3",
+      "filename": "bound-bd-3.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/bound-bd-3.mp3",
+      "duration": 4.93,
+      "size": 78912,
+      "text": "问题就在这里。这个上界是十四点九三，它挡得住十五，却挡不住十三。所以争论持续了两百五十年，直到一九五三年才有严格证明。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "gap",
+      "line_id": "gp-1",
+      "filename": "gap-gp-1.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/gap-gp-1.mp3",
+      "duration": 3.36,
+      "size": 53712,
+      "text": "现在打开最大空位那个开关。程序会在球面上密集搜索，找与所有已有球夹角最大的方向。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "gap",
+      "line_id": "gp-2",
+      "filename": "gap-gp-2.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/gap-gp-2.mp3",
+      "duration": 3.82,
+      "size": 61056,
+      "text": "二十面体排列的最大空位只有三十七度，远不到六十度。空隙确实存在，但都是零碎的，凑不成一整块。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "gap",
+      "line_id": "gp-3",
+      "filename": "gap-gp-3.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/gap-gp-3.mp3",
+      "duration": 3.6,
+      "size": 57600,
+      "text": "再看立方八面体排列，它是最密堆积里的样子，相邻角距恰好六十度，一点余量都没有，同样塞不下第十三个。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "local",
+      "line_id": "lc-1",
+      "filename": "local-lc-1.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/local-lc-1.mp3",
+      "duration": 3.34,
+      "size": 53424,
+      "text": "最后看一个反直觉的例子。六个球放在坐标轴方向，相邻角距九十度，看起来松松垮垮。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "local",
+      "line_id": "lc-2",
+      "filename": "local-lc-2.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/local-lc-2.mp3",
+      "duration": 4.11,
+      "size": 65808,
+      "text": "但它已经加不进第七个球了。最大的空位在体对角线方向，角距是根号三分之一的反余弦，等于五十四点七四度，不到六十度。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "local",
+      "line_id": "lc-3",
+      "filename": "local-lc-3.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/local-lc-3.mp3",
+      "duration": 4.14,
+      "size": 66240,
+      "text": "这说明摆得松不等于还有位置。要达到十二，必须整体换一种摆法，而不是在原有基础上补。这正是接吻数问题的难处。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/summary-sum-1.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "第一，接吻数问题等价于球面上放点，两两夹角不小于六十度，三维答案是十二。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/summary-sum-2.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "第二，十二个球只覆盖球面的百分之八十，空隙看着够第十三个，但凑不到一起。"
+    },
+    {
+      "script_id": "kissing-number",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/kissing-number/yunxi/summary-sum-3.mp3",
+      "duration": 4.15,
+      "size": 66384,
+      "text": "第三，球冠上界给十四点九三，挡不住十三，所以牛顿的直觉过了两百五十年才被证明。感谢观看，我们下次再见。"
+    }
+  ],
+  "script_id": "kissing-number",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 73.05,
+  "total_size": 1168992,
+  "failed": []
+}

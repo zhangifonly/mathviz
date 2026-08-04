@@ -280,6 +280,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'solid-angle',
       'minkowski-steiner',
       'dual-polyhedra',
+      'kissing-number',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

@@ -356,4 +356,5 @@ export const SCENE_FILES: Record<string, string> = {
   'solid-angle': 'solidAngleScenes',
   'minkowski-steiner': 'minkowskiSteinerScenes',
   'dual-polyhedra': 'dualPolyhedraScenes',
+  'kissing-number': 'kissingNumberScenes',
 }

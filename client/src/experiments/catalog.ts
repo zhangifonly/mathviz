@@ -3879,4 +3879,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/kissing-number',
+    title: '接吻数问题',
+    description: '一个球周围最多贴 12 个同样大的球，牛顿与格雷戈里为此争论，1953 年才有严格证明。',
+    icon: '⚪',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]
