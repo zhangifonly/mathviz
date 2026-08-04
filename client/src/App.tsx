@@ -370,6 +370,7 @@ const HyperbolicTriangleExperiment = lazyRetry(() => import('./experiments/hyper
 const TetrahedronVolumeExperiment = lazyRetry(() => import('./experiments/tetrahedron-volume/TetrahedronVolumeExperiment'))
 const SolidAngleExperiment = lazyRetry(() => import('./experiments/solid-angle/SolidAngleExperiment'))
 const MinkowskiSteinerExperiment = lazyRetry(() => import('./experiments/minkowski-steiner/MinkowskiSteinerExperiment'))
+const DualPolyhedraExperiment = lazyRetry(() => import('./experiments/dual-polyhedra/DualPolyhedraExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -737,6 +738,7 @@ export default function App() {
             <Route path="tetrahedron-volume" element={<TetrahedronVolumeExperiment />} />
             <Route path="solid-angle" element={<SolidAngleExperiment />} />
             <Route path="minkowski-steiner" element={<MinkowskiSteinerExperiment />} />
+            <Route path="dual-polyhedra" element={<DualPolyhedraExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

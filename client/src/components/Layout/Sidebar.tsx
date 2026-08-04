@@ -198,6 +198,7 @@ const navCategories: NavCategory[] = [
       { path: '/map-projections', label: '地图投影失真', icon: '🗺️' },
       { path: '/tetrahedron-volume', label: '四面体体积', icon: '📐' },
       { path: '/solid-angle', label: '立体角球面度', icon: '🔆' },
+      { path: '/dual-polyhedra', label: '对偶多面体', icon: '🔷' },
     ],
   },
   {

@@ -3868,4 +3868,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/dual-polyhedra',
+    title: '对偶多面体',
+    description: '把面换成顶点、顶点换成面，棱数不变，五种柏拉图立体两两配对，而正四面体是自己的对偶。',
+    icon: '🔷',
+    difficulty: 'intermediate',
+    ageRange: '高中 15-18岁',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

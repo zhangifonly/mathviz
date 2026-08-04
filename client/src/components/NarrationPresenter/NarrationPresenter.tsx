@@ -279,6 +279,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'tetrahedron-volume',
       'solid-angle',
       'minkowski-steiner',
+      'dual-polyhedra',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

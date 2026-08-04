@@ -359,6 +359,7 @@ export { hyperbolicTriangleNarration } from './scripts/hyperbolic-triangle'
 export { tetrahedronVolumeNarration } from './scripts/tetrahedron-volume'
 export { solidAngleNarration } from './scripts/solid-angle'
 export { minkowskiSteinerNarration } from './scripts/minkowski-steiner'
+export { dualPolyhedraNarration } from './scripts/dual-polyhedra'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -706,6 +707,7 @@ import { hyperbolicTriangleNarration } from './scripts/hyperbolic-triangle'
 import { tetrahedronVolumeNarration } from './scripts/tetrahedron-volume'
 import { solidAngleNarration } from './scripts/solid-angle'
 import { minkowskiSteinerNarration } from './scripts/minkowski-steiner'
+import { dualPolyhedraNarration } from './scripts/dual-polyhedra'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1057,6 +1059,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'tetrahedron-volume': tetrahedronVolumeNarration,
   'solid-angle': solidAngleNarration,
   'minkowski-steiner': minkowskiSteinerNarration,
+  'dual-polyhedra': dualPolyhedraNarration,
 }
 
 // 获取稿件

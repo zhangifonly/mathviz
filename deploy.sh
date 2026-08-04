@@ -28,6 +28,19 @@ if npm run check-courses 2>&1 | grep -q "❌"; then
   exit 1
 fi
 
+# 空音频体检。
+# generate_audio.py 偶发静默失败：报「✅ 完成」但留下 0 字节 mp3，
+# 或干脆一个都没生成。已经连着两轮靠人工发现，放这里挡住。
+echo "==> 空音频体检"
+EMPTY=$(find public/audio/narrations -name '*.mp3' -size -1k | wc -l | tr -d ' ')
+if [ "$EMPTY" -gt 0 ]; then
+  echo "发现 $EMPTY 个 0 字节音频，中止部署。修复："
+  find public/audio/narrations -name '*.mp3' -size -1k | head -5 | sed 's|^|  |'
+  echo "  python3 scripts/repair_audio.py <课程id>"
+  exit 1
+fi
+echo "✅ 无 0 字节音频"
+
 STAMP=$(date +%Y%m%d_%H%M%S)
 echo "==> 备份线上到 ${REMOTE}.bak.${STAMP}"
 ssh "$HOST" "cp -a ${REMOTE} ${REMOTE}.bak.${STAMP}"

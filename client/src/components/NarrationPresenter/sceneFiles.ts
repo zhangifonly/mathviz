@@ -355,4 +355,5 @@ export const SCENE_FILES: Record<string, string> = {
   'tetrahedron-volume': 'tetrahedronVolumeScenes',
   'solid-angle': 'solidAngleScenes',
   'minkowski-steiner': 'minkowskiSteinerScenes',
+  'dual-polyhedra': 'dualPolyhedraScenes',
 }
