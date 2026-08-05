@@ -1,0 +1,220 @@
+{
+  "files": [
+    {
+      "script_id": "focus-directrix",
+      "section_id": "problem",
+      "line_id": "pr-1",
+      "filename": "problem-pr-1.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/problem-pr-1.mp3",
+      "duration": 4.44,
+      "size": 70992,
+      "text": "课本讲圆锥曲线，通常给三个定义。椭圆是到两定点距离之和不变，双曲线是距离之差不变，抛物线是到一点和一线距离相等。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "problem",
+      "line_id": "pr-2",
+      "filename": "problem-pr-2.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/problem-pr-2.mp3",
+      "duration": 3.79,
+      "size": 60624,
+      "text": "三条规则，形式完全不同。所以很容易觉得，这是三种毫不相干的曲线，只是恰好都能从圆锥上切出来。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "problem",
+      "line_id": "pr-3",
+      "filename": "problem-pr-3.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/problem-pr-3.mp3",
+      "duration": 2.83,
+      "size": 45216,
+      "text": "其实有一条定义能同时管住三种。只需要一个焦点、一条准线，和一个数。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "unified",
+      "line_id": "un-1",
+      "filename": "unified-un-1.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/unified-un-1.mp3",
+      "duration": 4.16,
+      "size": 66528,
+      "text": "取一个定点叫焦点，一条定直线叫准线。看所有这样的点：它到焦点的距离，除以它到准线的距离，等于一个固定的数。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "unified",
+      "line_id": "un-2",
+      "filename": "unified-un-2.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/unified-un-2.mp3",
+      "duration": 3.8,
+      "size": 60768,
+      "text": "这个固定的数就是离心率，记作 e。屏幕上蓝色实线是到焦点的距离，青色虚线是到准线的距离。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "unified",
+      "line_id": "un-3",
+      "filename": "unified-un-3.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/unified-un-3.mp3",
+      "duration": 3.92,
+      "size": 62640,
+      "text": "请点扫描按钮，让动点沿曲线跑一圈。两条线段的长度一直在变，但右上角的比值一动不动，始终等于 e。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "three",
+      "line_id": "th-1",
+      "filename": "three-th-1.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/three-th-1.mp3",
+      "duration": 3.53,
+      "size": 56448,
+      "text": "现在拖动 e 滑块。e 小于一的时候曲线闭合，是椭圆。e 越接近零，椭圆越圆。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "three",
+      "line_id": "th-2",
+      "filename": "three-th-2.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/three-th-2.mp3",
+      "duration": 3.59,
+      "size": 57456,
+      "text": "e 等于零是极限情形，准线被推到无穷远，曲线变成正圆。屏幕上会提示准线已在无穷远处。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "three",
+      "line_id": "th-3",
+      "filename": "three-th-3.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/three-th-3.mp3",
+      "duration": 3.89,
+      "size": 62208,
+      "text": "继续加大。e 等于一时曲线恰好不再闭合，那是抛物线。再往上，曲线裂成两支，成为双曲线。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "polar",
+      "line_id": "po-1",
+      "filename": "polar-po-1.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/polar-po-1.mp3",
+      "duration": 3.46,
+      "size": 55296,
+      "text": "把焦点放在原点，用极坐标写出来，这条定义变成一个公式：r 等于 l 除以一加 e 乘 cos θ。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "polar",
+      "line_id": "po-2",
+      "filename": "polar-po-2.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/polar-po-2.mp3",
+      "duration": 3.6,
+      "size": 57600,
+      "text": "分子上的 l 叫半正焦弦，决定曲线大小。分母里的 e 决定形状。三种曲线共用这一个式子。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "polar",
+      "line_id": "po-3",
+      "filename": "polar-po-3.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/polar-po-3.mp3",
+      "duration": 4.21,
+      "size": 67392,
+      "text": "这就是天体力学用极坐标的原因：不管行星走椭圆、彗星走抛物线、星际天体走双曲线，方程只有 e 不同，而太阳恒在原点。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "far",
+      "line_id": "fa-1",
+      "filename": "far-fa-1.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/far-fa-1.mp3",
+      "duration": 3.22,
+      "size": 51552,
+      "text": "双曲线有个细节值得单独说。e 大于一时，分母一加 e 乘 cos θ 会变成负数。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "far",
+      "line_id": "fa-2",
+      "filename": "far-fa-2.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/far-fa-2.mp3",
+      "duration": 3.9,
+      "size": 62352,
+      "text": "很容易以为这些方向上没有点，直接跳过。但负的 r 表示沿反方向量出长度，落点正是双曲线的另一支。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "far",
+      "line_id": "fa-3",
+      "filename": "far-fa-3.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/far-fa-3.mp3",
+      "duration": 5.84,
+      "size": 93456,
+      "text": "这一支同样满足那条比值定义。以 e 等于一点三为例，远顶点到焦点的距离是六点六六七，到准线是五点一二八，相除恰好一点三。所以它属于轨迹，不能丢。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "astro",
+      "line_id": "as-1",
+      "filename": "astro-as-1.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/astro-as-1.mp3",
+      "duration": 3.78,
+      "size": 60480,
+      "text": "e 不是抽象参数。地球轨道的 e 是零点零一六七，非常接近圆，这也是四季温差不主要由距离造成的原因。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "astro",
+      "line_id": "as-2",
+      "filename": "astro-as-2.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/astro-as-2.mp3",
+      "duration": 4.17,
+      "size": 66672,
+      "text": "水星的 e 是零点二零六，明显更扁。哈雷彗星是零点九六七，一个极扁的椭圆，所以它大部分时间都在太阳系外围。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "astro",
+      "line_id": "as-3",
+      "filename": "astro-as-3.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/astro-as-3.mp3",
+      "duration": 4.64,
+      "size": 74304,
+      "text": "二零一九年发现的 2I 鲍里索夫，e 等于三点三六，大于一。这说明它走的是双曲线，从星际空间来，掠过太阳一次就永远离开。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/summary-sum-1.mp3",
+      "duration": 2.96,
+      "size": 47376,
+      "text": "第一，圆锥曲线只需要一条定义：到焦点的距离与到准线的距离之比恒等于离心率。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/summary-sum-2.mp3",
+      "duration": 3.75,
+      "size": 60048,
+      "text": "第二，e 小于一是椭圆，等于一是抛物线，大于一是双曲线；e 等于零时准线退到无穷远，退化成圆。"
+    },
+    {
+      "script_id": "focus-directrix",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/focus-directrix/yunxi/summary-sum-3.mp3",
+      "duration": 6.31,
+      "size": 100944,
+      "text": "第三，极坐标方程 r 等于 l 除以一加 e 乘 cos θ 对三类统一成立，焦点恒在原点。三种曲线不是三件东西，是同一条规则的三段取值。感谢观看，我们下次再见。"
+    }
+  ],
+  "script_id": "focus-directrix",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 83.79,
+  "total_size": 1340352,
+  "failed": []
+}

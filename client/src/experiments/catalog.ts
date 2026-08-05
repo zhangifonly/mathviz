@@ -3967,4 +3967,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/focus-directrix',
+    title: '焦点准线统一定义',
+    description: '一条比值 PF/Pd = e 定出椭圆、抛物线、双曲线',
+    icon: '🎯',
+    difficulty: 'intermediate',
+    ageRange: '高中 15-18岁',
+    topics: ['圆锥曲线', '离心率', '准线', '解析几何'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

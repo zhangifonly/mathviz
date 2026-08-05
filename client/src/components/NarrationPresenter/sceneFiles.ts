@@ -364,4 +364,5 @@ export const SCENE_FILES: Record<string, string> = {
   'cavalieri': 'cavalieriScenes',
   'prismatoid': 'prismatoidScenes',
   'dandelin': 'dandelinScenes',
+  'focus-directrix': 'focusDirectrixScenes',
 }

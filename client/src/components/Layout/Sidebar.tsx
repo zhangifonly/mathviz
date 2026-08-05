@@ -205,6 +205,7 @@ const navCategories: NavCategory[] = [
       { path: '/cavalieri', label: 'Cavalieri 原理', icon: '🍰' },
       { path: '/prismatoid', label: '拟柱体公式', icon: '📐' },
       { path: '/dandelin', label: 'Dandelin 双球', icon: '🔮' },
+      { path: '/focus-directrix', label: '焦点准线统一定义', icon: '🎯' },
     ],
   },
   {

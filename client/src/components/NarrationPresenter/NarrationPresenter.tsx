@@ -288,6 +288,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'cavalieri',
       'prismatoid',
       'dandelin',
+      'focus-directrix',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
