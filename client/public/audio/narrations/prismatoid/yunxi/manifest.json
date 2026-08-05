@@ -1,0 +1,190 @@
+{
+  "files": [
+    {
+      "script_id": "prismatoid",
+      "section_id": "intro",
+      "line_id": "intro-1",
+      "filename": "intro-intro-1.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/intro-intro-1.mp3",
+      "duration": 2.45,
+      "size": 39168,
+      "text": "上一讲说过，体积等于截面积的积分。那要量无穷多个截面才行吗？"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "intro",
+      "line_id": "intro-2",
+      "filename": "intro-intro-2.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/intro-intro-2.mp3",
+      "duration": 2.64,
+      "size": 42192,
+      "text": "不用。有一条公式只需要三个截面：下底、正中间、上顶。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "intro",
+      "line_id": "intro-3",
+      "filename": "intro-intro-3.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/intro-intro-3.mp3",
+      "duration": 3.45,
+      "size": 55152,
+      "text": "体积等于高除以六，乘上下底面积加四倍中间面积加上顶面积。这叫拟柱体公式。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "exact",
+      "line_id": "ex-1",
+      "filename": "exact-ex-1.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/exact-ex-1.mp3",
+      "duration": 3.29,
+      "size": 52560,
+      "text": "容易以为这只是个估算，但只要截面积随高度的变化是三次以内的多项式，公式就精确成立。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "exact",
+      "line_id": "ex-2",
+      "filename": "exact-ex-2.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/exact-ex-2.mp3",
+      "duration": 2.44,
+      "size": 39024,
+      "text": "原因在辛普森公式：用一条抛物线穿过三个采样点，再积这条抛物线。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "exact",
+      "line_id": "ex-3",
+      "filename": "exact-ex-3.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/exact-ex-3.mp3",
+      "duration": 3.65,
+      "size": 58320,
+      "text": "屏幕右边绿线是真实截面积曲线，黄虚线是穿过三点的抛物线。两条线重合时，公式就精确。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "cases",
+      "line_id": "cs-1",
+      "filename": "cases-cs-1.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/cases-cs-1.mp3",
+      "duration": 2.4,
+      "size": 38448,
+      "text": "哪些立体的截面积是三次以内的？答案是：常见的全都是。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "cases",
+      "line_id": "cs-2",
+      "filename": "cases-cs-2.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/cases-cs-2.mp3",
+      "duration": 3.8,
+      "size": 60768,
+      "text": "柱体的截面积是常数，零次。楔体线性，一次。锥体、台体、球都是二次。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "cases",
+      "line_id": "cs-3",
+      "filename": "cases-cs-3.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/cases-cs-3.mp3",
+      "duration": 3.84,
+      "size": 61488,
+      "text": "所以柱、楔、锥、台、球这五个体积公式，全是同一条拟柱体公式的特例。请依次切换验证。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "sphere",
+      "line_id": "sp-1",
+      "filename": "sphere-sp-1.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/sphere-sp-1.mp3",
+      "duration": 2.74,
+      "size": 43776,
+      "text": "球的情形值得单独看。它的上下两端都是一个点，截面积都是零。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "sphere",
+      "line_id": "sp-2",
+      "filename": "sphere-sp-2.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/sphere-sp-2.mp3",
+      "duration": 2.49,
+      "size": 39888,
+      "text": "于是公式里只剩中间那一项：高除以六，乘四倍中间截面积。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "sphere",
+      "line_id": "sp-3",
+      "filename": "sphere-sp-3.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/sphere-sp-3.mp3",
+      "duration": 4.36,
+      "size": 69696,
+      "text": "高是二倍半径，中间截面是半径 r 的圆。代进去算出三分之四倍圆周率乘 r 立方，正是球的体积。只靠一刀就定出来了。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "limit",
+      "line_id": "lm-1",
+      "filename": "limit-lm-1.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/limit-lm-1.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "既然有适用范围，就该看看越界会怎样。请切到四次截面那个人造例子。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "limit",
+      "line_id": "lm-2",
+      "filename": "limit-lm-2.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/limit-lm-2.mp3",
+      "duration": 3.68,
+      "size": 58896,
+      "text": "这时两条曲线明显分开了。抛物线穿过三点，但在点之间偏离真实曲线，积出来的体积就不对。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "limit",
+      "line_id": "lm-3",
+      "filename": "limit-lm-3.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/limit-lm-3.mp3",
+      "duration": 4.34,
+      "size": 69408,
+      "text": "屏幕上相对误差跳到百分之三点二，判定也从精确变成失效。这条边界很清楚：三次以内精确，四次开始只是近似。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/summary-sum-1.mp3",
+      "duration": 3.73,
+      "size": 59616,
+      "text": "第一，拟柱体公式用下底、中间、上顶三个截面算体积，系数是一、四、一，再除以六。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/summary-sum-2.mp3",
+      "duration": 3.4,
+      "size": 54432,
+      "text": "第二，截面积次数不超过三时公式精确，柱、楔、锥、台、球全部满足。"
+    },
+    {
+      "script_id": "prismatoid",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/prismatoid/yunxi/summary-sum-3.mp3",
+      "duration": 3.87,
+      "size": 61920,
+      "text": "第三，本质是辛普森公式：积的其实是穿过三点的那条抛物线，四次以上就会偏。感谢观看，我们下次再见。"
+    }
+  ],
+  "script_id": "prismatoid",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 59.36,
+  "total_size": 949392,
+  "failed": []
+}

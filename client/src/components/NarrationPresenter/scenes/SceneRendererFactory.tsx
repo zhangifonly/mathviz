@@ -457,6 +457,7 @@ const DescartesDefectSceneRenderer = lazy(() => import('./DescartesDefect/Descar
 const TruncationSceneRenderer = lazy(() => import('./Truncation/TruncationSceneRenderer'))
 const PolyhedronSliceSceneRenderer = lazy(() => import('./PolyhedronSlice/PolyhedronSliceSceneRenderer'))
 const CavalieriSceneRenderer = lazy(() => import('./Cavalieri/CavalieriSceneRenderer'))
+const PrismatoidSceneRenderer = lazy(() => import('./Prismatoid/PrismatoidSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -816,6 +817,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'truncation': TruncationSceneRenderer,
   'polyhedron-slice': PolyhedronSliceSceneRenderer,
   'cavalieri': CavalieriSceneRenderer,
+  'prismatoid': PrismatoidSceneRenderer,
 }
 
 // 获取场景渲染器

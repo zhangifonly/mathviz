@@ -366,6 +366,7 @@ export { descartesDefectNarration } from './scripts/descartes-defect'
 export { truncationNarration } from './scripts/truncation'
 export { polyhedronSliceNarration } from './scripts/polyhedron-slice'
 export { cavalieriNarration } from './scripts/cavalieri'
+export { prismatoidNarration } from './scripts/prismatoid'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -720,6 +721,7 @@ import { descartesDefectNarration } from './scripts/descartes-defect'
 import { truncationNarration } from './scripts/truncation'
 import { polyhedronSliceNarration } from './scripts/polyhedron-slice'
 import { cavalieriNarration } from './scripts/cavalieri'
+import { prismatoidNarration } from './scripts/prismatoid'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1078,6 +1080,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'truncation': truncationNarration,
   'polyhedron-slice': polyhedronSliceNarration,
   'cavalieri': cavalieriNarration,
+  'prismatoid': prismatoidNarration,
 }
 
 // 获取稿件

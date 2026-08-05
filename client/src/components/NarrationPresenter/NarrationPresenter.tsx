@@ -286,6 +286,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'truncation',
       'polyhedron-slice',
       'cavalieri',
+      'prismatoid',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

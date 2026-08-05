@@ -203,6 +203,7 @@ const navCategories: NavCategory[] = [
       { path: '/truncation', label: '截角变换', icon: '⚽' },
       { path: '/polyhedron-slice', label: '多面体截面', icon: '🔪' },
       { path: '/cavalieri', label: 'Cavalieri 原理', icon: '🍰' },
+      { path: '/prismatoid', label: '拟柱体公式', icon: '📐' },
     ],
   },
   {

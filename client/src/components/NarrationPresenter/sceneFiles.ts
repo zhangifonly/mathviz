@@ -362,4 +362,5 @@ export const SCENE_FILES: Record<string, string> = {
   'truncation': 'truncationScenes',
   'polyhedron-slice': 'polyhedronSliceScenes',
   'cavalieri': 'cavalieriScenes',
+  'prismatoid': 'prismatoidScenes',
 }

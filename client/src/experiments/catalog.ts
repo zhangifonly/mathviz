@@ -3945,4 +3945,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/prismatoid',
+    title: '拟柱体公式',
+    description: '只量下底、正中、上顶三个截面就能算出体积，柱锥台球五个公式全是它的特例。',
+    icon: '📐',
+    difficulty: 'intermediate',
+    ageRange: '高中 15-18岁',
+    topics: ['geometry', 'calculus'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]
