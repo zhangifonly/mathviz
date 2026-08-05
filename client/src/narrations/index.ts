@@ -367,6 +367,7 @@ export { truncationNarration } from './scripts/truncation'
 export { polyhedronSliceNarration } from './scripts/polyhedron-slice'
 export { cavalieriNarration } from './scripts/cavalieri'
 export { prismatoidNarration } from './scripts/prismatoid'
+export { dandelinNarration } from './scripts/dandelin'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -722,6 +723,7 @@ import { truncationNarration } from './scripts/truncation'
 import { polyhedronSliceNarration } from './scripts/polyhedron-slice'
 import { cavalieriNarration } from './scripts/cavalieri'
 import { prismatoidNarration } from './scripts/prismatoid'
+import { dandelinNarration } from './scripts/dandelin'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1081,6 +1083,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'polyhedron-slice': polyhedronSliceNarration,
   'cavalieri': cavalieriNarration,
   'prismatoid': prismatoidNarration,
+  'dandelin': dandelinNarration,
 }
 
 // 获取稿件

@@ -3956,4 +3956,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/dandelin',
+    title: 'Dandelin 双球',
+    description: '在圆锥里塞两个球，就能证明斜切的切口真是椭圆，两球与平面的切点正是焦点。',
+    icon: '🔮',
+    difficulty: 'intermediate',
+    ageRange: '高中 15-18岁',
+    topics: ['geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]
