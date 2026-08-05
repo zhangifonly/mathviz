@@ -204,6 +204,7 @@ const navCategories: NavCategory[] = [
       { path: '/polyhedron-slice', label: '多面体截面', icon: '🔪' },
       { path: '/cavalieri', label: 'Cavalieri 原理', icon: '🍰' },
       { path: '/prismatoid', label: '拟柱体公式', icon: '📐' },
+      { path: '/dandelin', label: 'Dandelin 双球', icon: '🔮' },
     ],
   },
   {

@@ -458,6 +458,7 @@ const TruncationSceneRenderer = lazy(() => import('./Truncation/TruncationSceneR
 const PolyhedronSliceSceneRenderer = lazy(() => import('./PolyhedronSlice/PolyhedronSliceSceneRenderer'))
 const CavalieriSceneRenderer = lazy(() => import('./Cavalieri/CavalieriSceneRenderer'))
 const PrismatoidSceneRenderer = lazy(() => import('./Prismatoid/PrismatoidSceneRenderer'))
+const DandelinSceneRenderer = lazy(() => import('./Dandelin/DandelinSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -818,6 +819,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'polyhedron-slice': PolyhedronSliceSceneRenderer,
   'cavalieri': CavalieriSceneRenderer,
   'prismatoid': PrismatoidSceneRenderer,
+  'dandelin': DandelinSceneRenderer,
 }
 
 // 获取场景渲染器

@@ -363,4 +363,5 @@ export const SCENE_FILES: Record<string, string> = {
   'polyhedron-slice': 'polyhedronSliceScenes',
   'cavalieri': 'cavalieriScenes',
   'prismatoid': 'prismatoidScenes',
+  'dandelin': 'dandelinScenes',
 }

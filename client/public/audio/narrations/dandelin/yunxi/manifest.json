@@ -1,0 +1,220 @@
+{
+  "files": [
+    {
+      "script_id": "dandelin",
+      "section_id": "question",
+      "line_id": "q-1",
+      "filename": "question-q-1.mp3",
+      "path": "audio/narrations/dandelin/yunxi/question-q-1.mp3",
+      "duration": 2.79,
+      "size": 44640,
+      "text": "课本上说，用平面斜切圆锥，切口是椭圆。这句话我们都背过。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "question",
+      "line_id": "q-2",
+      "filename": "question-q-2.mp3",
+      "path": "audio/narrations/dandelin/yunxi/question-q-2.mp3",
+      "duration": 3.12,
+      "size": 49968,
+      "text": "但椭圆的定义是：到两个定点距离之和为常数的点的轨迹。凭什么切口上每个点都满足这个？"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "question",
+      "line_id": "q-3",
+      "filename": "question-q-3.mp3",
+      "path": "audio/narrations/dandelin/yunxi/question-q-3.mp3",
+      "duration": 3.53,
+      "size": 56448,
+      "text": "那两个定点又在哪里？课本通常直接跳过。一八二二年，Dandelin 给了一个不用算坐标的漂亮回答。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "setup",
+      "line_id": "s-1",
+      "filename": "setup-s-1.mp3",
+      "path": "audio/narrations/dandelin/yunxi/setup-s-1.mp3",
+      "duration": 2.74,
+      "size": 43776,
+      "text": "他的做法是：在圆锥内部塞进两个球，一个在切平面上方，一个在下方。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "setup",
+      "line_id": "s-2",
+      "filename": "setup-s-2.mp3",
+      "path": "audio/narrations/dandelin/yunxi/setup-s-2.mp3",
+      "duration": 3.39,
+      "size": 54288,
+      "text": "每个球都要同时满足两个条件：与圆锥的侧面相切，也与切平面相切。这样的球恰好各有一个。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "setup",
+      "line_id": "s-3",
+      "filename": "setup-s-3.mp3",
+      "path": "audio/narrations/dandelin/yunxi/setup-s-3.mp3",
+      "duration": 3.59,
+      "size": 57456,
+      "text": "球与锥面相切形成一个圆，屏幕上用加粗的圈标出。球与切平面相切只有一个点，那个点就是答案。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "lemma",
+      "line_id": "l-1",
+      "filename": "lemma-l-1.mp3",
+      "path": "audio/narrations/dandelin/yunxi/lemma-l-1.mp3",
+      "duration": 3.01,
+      "size": 48096,
+      "text": "整个证明只用一条初等事实：从球外一点出发，画到这个球的所有切线段，长度都相等。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "lemma",
+      "line_id": "l-2",
+      "filename": "lemma-l-2.mp3",
+      "path": "audio/narrations/dandelin/yunxi/lemma-l-2.mp3",
+      "duration": 4.05,
+      "size": 64800,
+      "text": "为什么？切线段长等于点到球心距离的平方减半径平方，再开根号。这个式子里没有方向，只有距离。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "lemma",
+      "line_id": "l-3",
+      "filename": "lemma-l-3.mp3",
+      "path": "audio/narrations/dandelin/yunxi/lemma-l-3.mp3",
+      "duration": 3.35,
+      "size": 53568,
+      "text": "所以从同一点出发的切线段必然一样长，不管切到球面的哪里。屏幕上的读数验证了这点。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "proof",
+      "line_id": "p-1",
+      "filename": "proof-p-1.mp3",
+      "path": "audio/narrations/dandelin/yunxi/proof-p-1.mp3",
+      "duration": 3.9,
+      "size": 62352,
+      "text": "现在取切口上任意一点 P。过 P 的那条母线，会穿过上球的切圆一次，穿过下球的切圆一次，记作 T 一和 T 二。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "proof",
+      "line_id": "p-2",
+      "filename": "proof-p-2.mp3",
+      "path": "audio/narrations/dandelin/yunxi/proof-p-2.mp3",
+      "duration": 3.31,
+      "size": 52992,
+      "text": "第一步：P 到上球的切点 F 一，与 P 到 T 一，都是到上球的切线段，所以等长。下球同理。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "proof",
+      "line_id": "p-3",
+      "filename": "proof-p-3.mp3",
+      "path": "audio/narrations/dandelin/yunxi/proof-p-3.mp3",
+      "duration": 2.9,
+      "size": 46368,
+      "text": "第二步：把两式相加，P 到 F 一加 P 到 F 二，就等于 T 一到 T 二这一段母线长。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "conclusion",
+      "line_id": "c-1",
+      "filename": "conclusion-c-1.mp3",
+      "path": "audio/narrations/dandelin/yunxi/conclusion-c-1.mp3",
+      "duration": 3.6,
+      "size": 57600,
+      "text": "第三步是点睛之笔。T 一到 T 二是母线上被两个切圆截出的一段。而两个切圆都是水平的圆。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "conclusion",
+      "line_id": "c-2",
+      "filename": "conclusion-c-2.mp3",
+      "path": "audio/narrations/dandelin/yunxi/conclusion-c-2.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "所以不管取哪条母线，截出来的这一段都一样长。它与 P 的位置完全无关。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "conclusion",
+      "line_id": "c-3",
+      "filename": "conclusion-c-3.mp3",
+      "path": "audio/narrations/dandelin/yunxi/conclusion-c-3.mp3",
+      "duration": 4.54,
+      "size": 72576,
+      "text": "请拖动方位角滑块。屏幕右上角两个数字始终相等，全曲线极差是十的负十五次方。距离之和恒定，切口就是椭圆。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "eccentricity",
+      "line_id": "e-1",
+      "filename": "eccentricity-e-1.mp3",
+      "path": "audio/narrations/dandelin/yunxi/eccentricity-e-1.mp3",
+      "duration": 3.2,
+      "size": 51264,
+      "text": "这个构造还顺手给出了离心率。它等于切平面倾角的正弦，除以圆锥半顶角的余弦。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "eccentricity",
+      "line_id": "e-2",
+      "filename": "eccentricity-e-2.mp3",
+      "path": "audio/narrations/dandelin/yunxi/eccentricity-e-2.mp3",
+      "duration": 2.99,
+      "size": 47808,
+      "text": "倾角为零时离心率为零，切口是圆，两个焦点重合成一点。倾角越大越扁。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "eccentricity",
+      "line_id": "e-3",
+      "filename": "eccentricity-e-3.mp3",
+      "path": "audio/narrations/dandelin/yunxi/eccentricity-e-3.mp3",
+      "duration": 4.65,
+      "size": 74448,
+      "text": "当倾角增大到九十度减去半顶角时，离心率趋于一，上球被推到无穷远，椭圆退化成抛物线。屏幕上会提示切口不再是椭圆。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/dandelin/yunxi/summary-sum-1.mp3",
+      "duration": 3.12,
+      "size": 49968,
+      "text": "第一，圆锥内塞两个球，同时与锥面和切平面相切，它们与平面的切点就是椭圆的焦点。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/dandelin/yunxi/summary-sum-2.mp3",
+      "duration": 2.74,
+      "size": 43776,
+      "text": "第二，靠切线段等长这一条，把两个焦距之和换成了母线上的固定一段。"
+    },
+    {
+      "script_id": "dandelin",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/dandelin/yunxi/summary-sum-3.mp3",
+      "duration": 4.57,
+      "size": 73152,
+      "text": "第三，这一段与母线的选择无关，所以距离之和恒定，切口是椭圆。整个证明没用一次坐标计算。感谢观看，我们下次再见。"
+    }
+  ],
+  "script_id": "dandelin",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 72.02,
+  "total_size": 1152288,
+  "failed": []
+}

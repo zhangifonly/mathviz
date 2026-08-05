@@ -287,6 +287,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'polyhedron-slice',
       'cavalieri',
       'prismatoid',
+      'dandelin',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
