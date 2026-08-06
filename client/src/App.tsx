@@ -384,6 +384,7 @@ const ConicReflectionExperiment = lazyRetry(() => import('./experiments/conic-re
 const ConfocalQuadricsExperiment = lazyRetry(() => import('./experiments/confocal-quadrics/ConfocalQuadricsExperiment'))
 const QuaternionRotationExperiment = lazyRetry(() => import('./experiments/quaternion-rotation/QuaternionRotationExperiment'))
 const SO3TopologyExperiment = lazyRetry(() => import('./experiments/so3-topology/SO3TopologyExperiment'))
+const LieAlgebraSO3Experiment = lazyRetry(() => import('./experiments/lie-algebra-so3/LieAlgebraSO3Experiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -765,6 +766,7 @@ export default function App() {
             <Route path="confocal-quadrics" element={<ConfocalQuadricsExperiment />} />
             <Route path="quaternion-rotation" element={<QuaternionRotationExperiment />} />
             <Route path="so3-topology" element={<SO3TopologyExperiment />} />
+            <Route path="lie-algebra-so3" element={<LieAlgebraSO3Experiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

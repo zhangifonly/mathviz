@@ -369,4 +369,5 @@ export const SCENE_FILES: Record<string, string> = {
   'confocal-quadrics': 'confocalQuadricsScenes',
   'quaternion-rotation': 'quaternionRotationScenes',
   'so3-topology': 'so3TopologyScenes',
+  'lie-algebra-so3': 'lieAlgebraSO3Scenes',
 }
