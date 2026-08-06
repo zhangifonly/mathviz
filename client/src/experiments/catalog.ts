@@ -4088,4 +4088,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/perron-frobenius',
+    title: 'Perron-Frobenius 定理',
+    description: '马氏链稳态与 PageRank 都断言「收敛到唯一稳态」却没说为什么。本原矩阵有唯一占优的正特征值，谱隙决定收敛速度；周期与可约是两种不同的失败，而 PageRank 的阻尼因子一举消除两者',
+    icon: '🔺',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['linear-algebra', 'probability'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

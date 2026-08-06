@@ -299,6 +299,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'jordan-form',
       'gershgorin',
       'pseudoinverse',
+      'perron-frobenius',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

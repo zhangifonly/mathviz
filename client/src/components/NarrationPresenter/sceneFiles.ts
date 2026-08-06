@@ -375,4 +375,5 @@ export const SCENE_FILES: Record<string, string> = {
   'jordan-form': 'jordanFormScenes',
   'gershgorin': 'gershgorinScenes',
   'pseudoinverse': 'pseudoinverseScenes',
+  'perron-frobenius': 'perronFrobeniusScenes',
 }
