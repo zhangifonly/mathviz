@@ -472,6 +472,7 @@ const GershgorinSceneRenderer = lazy(() => import('./Gershgorin/GershgorinSceneR
 const PseudoinverseSceneRenderer = lazy(() => import('./Pseudoinverse/PseudoinverseSceneRenderer'))
 const PerronFrobeniusSceneRenderer = lazy(() => import('./PerronFrobenius/PerronFrobeniusSceneRenderer'))
 const ConcentrationSceneRenderer = lazy(() => import('./Concentration/ConcentrationSceneRenderer'))
+const EntropyCodingSceneRenderer = lazy(() => import('./EntropyCoding/EntropyCodingSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -846,6 +847,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'pseudoinverse': PseudoinverseSceneRenderer,
   'perron-frobenius': PerronFrobeniusSceneRenderer,
   'concentration': ConcentrationSceneRenderer,
+  'entropy-coding': EntropyCodingSceneRenderer,
 }
 
 // 获取场景渲染器
