@@ -362,6 +362,7 @@ const navCategories: NavCategory[] = [
       { path: '/entropy-coding', label: '熵与信源编码', icon: '🗜️' },
       { path: '/kl-divergence', label: 'KL 散度', icon: '📊' },
       { path: '/mutual-information', label: '互信息与信道', icon: '📡' },
+      { path: '/banach-fixed-point', label: 'Banach 不动点', icon: '🎯' },
     ],
   },
   {

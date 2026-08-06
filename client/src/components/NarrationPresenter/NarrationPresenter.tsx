@@ -304,6 +304,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'entropy-coding',
       'kl-divergence',
       'mutual-information',
+      'banach-fixed-point',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
