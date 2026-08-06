@@ -470,6 +470,7 @@ const ConditionNumberSceneRenderer = lazy(() => import('./ConditionNumber/Condit
 const JordanFormSceneRenderer = lazy(() => import('./JordanForm/JordanFormSceneRenderer'))
 const GershgorinSceneRenderer = lazy(() => import('./Gershgorin/GershgorinSceneRenderer'))
 const PseudoinverseSceneRenderer = lazy(() => import('./Pseudoinverse/PseudoinverseSceneRenderer'))
+const PerronFrobeniusSceneRenderer = lazy(() => import('./PerronFrobenius/PerronFrobeniusSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -842,6 +843,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'jordan-form': JordanFormSceneRenderer,
   'gershgorin': GershgorinSceneRenderer,
   'pseudoinverse': PseudoinverseSceneRenderer,
+  'perron-frobenius': PerronFrobeniusSceneRenderer,
 }
 
 // 获取场景渲染器

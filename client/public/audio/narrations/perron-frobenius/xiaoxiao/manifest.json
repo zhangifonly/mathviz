@@ -1,0 +1,300 @@
+{
+  "files": [
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "why",
+      "line_id": "wh-1",
+      "filename": "why-wh-1.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/why-wh-1.mp3",
+      "duration": 4.96,
+      "size": 79344,
+      "text": "这个项目里有两课用到同一件事：马氏链稳态那课说，转移矩阵反复作用，分布会收敛到唯一的稳态；PageRank 那课直接拿这个结论去排网页。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "why",
+      "line_id": "wh-2",
+      "filename": "why-wh-2.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/why-wh-2.mp3",
+      "duration": 4.01,
+      "size": 64224,
+      "text": "但两课都只是断言，没说为什么。更要紧的是，都没说什么时候它会失败——而它确实会失败，有两种不同的失败法。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "why",
+      "line_id": "wh-3",
+      "filename": "why-wh-3.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/why-wh-3.mp3",
+      "duration": 4.74,
+      "size": 75888,
+      "text": "给出保证的是 Perron-Frobenius 定理。它说：非负方阵如果某个幂处处为正，那么它有一个最大的实特征值，严格大于其余所有特征值的模。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "why",
+      "line_id": "wh-4",
+      "filename": "why-wh-4.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/why-wh-4.mp3",
+      "duration": 5.25,
+      "size": 83952,
+      "text": "这个特征值叫 Perron 根，对应的特征向量可以取成处处为正。任何非负的初始分布迭代下去，都会收敛到它。这就是稳态存在且唯一的全部理由。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "gap",
+      "line_id": "gp-1",
+      "filename": "gap-gp-1.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/gap-gp-1.mp3",
+      "duration": 1.93,
+      "size": 30816,
+      "text": "关键的量叫谱隙：最大特征值的模，减去次大的模。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "gap",
+      "line_id": "gp-2",
+      "filename": "gap-gp-2.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/gap-gp-2.mp3",
+      "duration": 5.64,
+      "size": 90288,
+      "text": "为什么是它？把初始分布按特征向量展开，迭代一次，每个分量各自乘以自己的特征值。归一化之后，主分量保持不变，其余分量都乘以一个小于一的比值。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "gap",
+      "line_id": "gp-3",
+      "filename": "gap-gp-3.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/gap-gp-3.mp3",
+      "duration": 4.24,
+      "size": 67824,
+      "text": "这个比值就是次大模除以最大模。所以每迭代一次，偏离稳态的成分就缩小这么多倍。谱隙越大，收敛越快。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "gap",
+      "line_id": "gp-4",
+      "filename": "gap-gp-4.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/gap-gp-4.mp3",
+      "duration": 6.16,
+      "size": 98496,
+      "text": "看画面右边的复平面。外圈虚线是单位圆，黄点是 Perron 根，正好落在圆上——行随机矩阵的谱半径恒为一。里面那圈橙色虚线是次大模，两圈之间的距离就是谱隙。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "gap",
+      "line_id": "gp-5",
+      "filename": "gap-gp-5.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/gap-gp-5.mp3",
+      "duration": 5.22,
+      "size": 83520,
+      "text": "正矩阵那个预设，谱隙是零点七，收敛率零点三，迭代几步就到位了。切到「几乎可约」那个，谱隙只有零点零三，收敛率零点九七，要迭代几百步。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "fail1",
+      "line_id": "f1-1",
+      "filename": "fail1-f1-1.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/fail1-f1-1.mp3",
+      "duration": 3.92,
+      "size": 62640,
+      "text": "现在看它什么时候失败。切到「周期」那个预设，这是一个循环置换：状态一必到二，二必到三，三必回到一。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "fail1",
+      "line_id": "f1-2",
+      "filename": "fail1-f1-2.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/fail1-f1-2.mp3",
+      "duration": 3.72,
+      "size": 59472,
+      "text": "看右边的复平面。三个特征值全都落在单位圆上——一，以及两个三次单位根。谱隙精确地等于零。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "fail1",
+      "line_id": "f1-3",
+      "filename": "fail1-f1-3.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/fail1-f1-3.mp3",
+      "duration": 3.83,
+      "size": 61344,
+      "text": "后果在左边看得很清楚。三条轨迹不是爬向某个点，而是在单纯形的三个顶点之间绕圈，永远绕下去。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "fail1",
+      "line_id": "f1-4",
+      "filename": "fail1-f1-4.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/fail1-f1-4.mp3",
+      "duration": 5.78,
+      "size": 92448,
+      "text": "这个矩阵是不可约的——任意两个状态都互相可达，有向图强连通。所以不可约不够，还得本原：某个幂处处为正。循环置换的任何幂都是置换矩阵，永远有零。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "fail1",
+      "line_id": "f1-5",
+      "filename": "fail1-f1-5.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/fail1-f1-5.mp3",
+      "duration": 6.88,
+      "size": 110016,
+      "text": "顺带提一个坑。判断周期性时初始分布不能取均匀分布，因为均匀分布是循环置换的不动点，迭代纹丝不动，看上去像收敛了。本课第一版就踩了这个坑，得换个偏心的起点才能暴露周期性。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "fail2",
+      "line_id": "f2-1",
+      "filename": "fail2-f2-1.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/fail2-f2-1.mp3",
+      "duration": 4.28,
+      "size": 68544,
+      "text": "第二种失败更隐蔽。切到「可约」那个预设：前两个状态互相流动，第三个状态自己指向自己，从它出不去，也进不来。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "fail2",
+      "line_id": "f2-2",
+      "filename": "fail2-f2-2.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/fail2-f2-2.mp3",
+      "duration": 2.8,
+      "size": 44784,
+      "text": "这次迭代是收敛的。三条轨迹都很快停住，不再动了。末步变化是零。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "fail2",
+      "line_id": "f2-3",
+      "filename": "fail2-f2-3.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/fail2-f2-3.mp3",
+      "duration": 4.96,
+      "size": 79344,
+      "text": "但看它们停在哪。从状态一和状态二出发的两条，收敛到同一个点；从状态三出发的那条，停在状态三自己身上。三条轨迹的终点不一样。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "fail2",
+      "line_id": "f2-4",
+      "filename": "fail2-f2-4.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/fail2-f2-4.mp3",
+      "duration": 5.48,
+      "size": 87696,
+      "text": "也就是说，稳态不唯一。特征值一是重根，对应两个独立的稳态分布，收敛到哪完全取决于从哪出发。PageRank 如果撞上这种图，排名就没有意义了。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "fail2",
+      "line_id": "f2-5",
+      "filename": "fail2-f2-5.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/fail2-f2-5.mp3",
+      "duration": 7.53,
+      "size": 120528,
+      "text": "这里有个方法论上的教训：两种失败需要两个不同的检测手段。周期的表现是迭代不停，可约的表现是迭代停了但终点依赖初值。只看「收不收敛」会漏掉可约，只看「换初值一不一样」会漏掉周期。缺一不可。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "damping",
+      "line_id": "dp-1",
+      "filename": "damping-dp-1.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/damping-dp-1.mp3",
+      "duration": 5.37,
+      "size": 85968,
+      "text": "真实的网页链接图两种毛病都有：有的页面群互相链接却不指向外面，就是可约；也可能出现周期结构。所以 PageRank 不能直接用原始的链接矩阵。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "damping",
+      "line_id": "dp-2",
+      "filename": "damping-dp-2.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/damping-dp-2.mp3",
+      "duration": 5.68,
+      "size": 90864,
+      "text": "Google 的做法是阻尼：把矩阵乘以一个系数 d，再给每个元素加上均匀的一份。直观解释是，冲浪者有 d 的概率顺着链接走，有一减 d 的概率随机跳到任意页面。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "damping",
+      "line_id": "dp-3",
+      "filename": "damping-dp-3.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/damping-dp-3.mp3",
+      "duration": 5.99,
+      "size": 95904,
+      "text": "数学上，这一步把任何非负矩阵**强行变成正矩阵**。正矩阵一定本原，于是 Perron-Frobenius 的条件无条件满足，收敛且唯一，两种失败一起消失。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "damping",
+      "line_id": "dp-4",
+      "filename": "damping-dp-4.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/damping-dp-4.mp3",
+      "duration": 4.98,
+      "size": 79632,
+      "text": "拖动那个阻尼滑块试试。周期和可约两个预设，谱隙立刻从零变成零点一五，稳态变成唯一，三条轨迹的终点差异掉到十的负十五次方。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "damping",
+      "line_id": "dp-5",
+      "filename": "damping-dp-5.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/damping-dp-5.mp3",
+      "duration": 7.31,
+      "size": 116928,
+      "text": "还有一个不那么显然的好处：加了阻尼后，次大特征值的模不超过 d 本身。也就是说收敛率有了一个**与图结构完全无关**的上界。实测阻尼零点八五时，五个预设的收敛率全都不超过零点八五。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "damping",
+      "line_id": "dp-6",
+      "filename": "damping-dp-6.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/damping-dp-6.mp3",
+      "duration": 6.49,
+      "size": 103824,
+      "text": "这才是那个 0.85 真正买到的东西：不管网页图长成什么样，迭代多少步能收敛是可以事先算出来的。d 取小一点收敛更快，但会更多地抹掉原始链接结构，零点八五是这两者之间的折中。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/summary-sum-1.mp3",
+      "duration": 4.51,
+      "size": 72144,
+      "text": "Perron-Frobenius 定理给了马氏链收敛的理由：非负矩阵若本原，就有唯一的最大实特征值，特征向量处处为正，任何初值都收敛到它。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/summary-sum-2.mp3",
+      "duration": 3.65,
+      "size": 58320,
+      "text": "收敛速度由谱隙决定，收敛率就是次大模比最大模。谱隙为零就不收敛，或者收敛到不唯一的地方。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/summary-sum-3.mp3",
+      "duration": 5.45,
+      "size": 87120,
+      "text": "两种失败：周期是迭代永远打转，可约是迭代停了但终点看初值。PageRank 的阻尼因子把矩阵变正，一举消除两者，并给出与图无关的收敛率上界。"
+    },
+    {
+      "script_id": "perron-frobenius",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/perron-frobenius/xiaoxiao/summary-sum-4.mp3",
+      "duration": 0.9,
+      "size": 14400,
+      "text": "继续探索数学之美！"
+    }
+  ],
+  "script_id": "perron-frobenius",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "total_duration": 141.66,
+  "total_size": 2266272,
+  "failed": []
+}
