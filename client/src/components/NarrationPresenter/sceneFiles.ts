@@ -378,4 +378,5 @@ export const SCENE_FILES: Record<string, string> = {
   'perron-frobenius': 'perronFrobeniusScenes',
   'concentration': 'concentrationScenes',
   'entropy-coding': 'entropyCodingScenes',
+  'kl-divergence': 'klDivergenceScenes',
 }
