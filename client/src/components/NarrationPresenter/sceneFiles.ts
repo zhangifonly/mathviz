@@ -371,4 +371,5 @@ export const SCENE_FILES: Record<string, string> = {
   'so3-topology': 'so3TopologyScenes',
   'lie-algebra-so3': 'lieAlgebraSO3Scenes',
   'screw-motion': 'screwMotionScenes',
+  'condition-number': 'conditionNumberScenes',
 }

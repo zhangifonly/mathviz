@@ -375,6 +375,7 @@ export { quaternionRotationNarration } from './scripts/quaternion-rotation'
 export { so3TopologyNarration } from './scripts/so3-topology'
 export { lieAlgebraSO3Narration } from './scripts/lie-algebra-so3'
 export { screwMotionNarration } from './scripts/screw-motion'
+export { conditionNumberNarration } from './scripts/condition-number'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -738,6 +739,7 @@ import { quaternionRotationNarration } from './scripts/quaternion-rotation'
 import { so3TopologyNarration } from './scripts/so3-topology'
 import { lieAlgebraSO3Narration } from './scripts/lie-algebra-so3'
 import { screwMotionNarration } from './scripts/screw-motion'
+import { conditionNumberNarration } from './scripts/condition-number'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1105,6 +1107,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'so3-topology': so3TopologyNarration,
   'lie-algebra-so3': lieAlgebraSO3Narration,
   'screw-motion': screwMotionNarration,
+  'condition-number': conditionNumberNarration,
 }
 
 // 获取稿件

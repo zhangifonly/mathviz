@@ -295,6 +295,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'so3-topology',
       'lie-algebra-so3',
       'screw-motion',
+      'condition-number',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
