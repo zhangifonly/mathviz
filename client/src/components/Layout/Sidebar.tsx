@@ -403,6 +403,7 @@ const navCategories: NavCategory[] = [
       { path: '/costa-surface', label: '科斯塔曲面', icon: '🕸️' },
       { path: '/sprott-attractor', label: '斯普罗特吸引子', icon: '🎯' },
       { path: '/lorenz-atmosphere', label: '洛伦兹84模型', icon: '🌍' },
+      { path: '/so3-topology', label: 'SO(3) 的拓扑', icon: '🔄' },
     ],
   },
 ]

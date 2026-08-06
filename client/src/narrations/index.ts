@@ -372,6 +372,7 @@ export { focusDirectrixNarration } from './scripts/focus-directrix'
 export { conicReflectionNarration } from './scripts/conic-reflection'
 export { confocalQuadricsNarration } from './scripts/confocal-quadrics'
 export { quaternionRotationNarration } from './scripts/quaternion-rotation'
+export { so3TopologyNarration } from './scripts/so3-topology'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -732,6 +733,7 @@ import { focusDirectrixNarration } from './scripts/focus-directrix'
 import { conicReflectionNarration } from './scripts/conic-reflection'
 import { confocalQuadricsNarration } from './scripts/confocal-quadrics'
 import { quaternionRotationNarration } from './scripts/quaternion-rotation'
+import { so3TopologyNarration } from './scripts/so3-topology'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1096,6 +1098,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'conic-reflection': conicReflectionNarration,
   'confocal-quadrics': confocalQuadricsNarration,
   'quaternion-rotation': quaternionRotationNarration,
+  'so3-topology': so3TopologyNarration,
 }
 
 // 获取稿件
