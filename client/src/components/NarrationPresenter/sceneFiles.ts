@@ -376,4 +376,5 @@ export const SCENE_FILES: Record<string, string> = {
   'gershgorin': 'gershgorinScenes',
   'pseudoinverse': 'pseudoinverseScenes',
   'perron-frobenius': 'perronFrobeniusScenes',
+  'concentration': 'concentrationScenes',
 }

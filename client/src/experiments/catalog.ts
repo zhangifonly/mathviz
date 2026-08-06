@@ -4099,4 +4099,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/concentration',
+    title: '集中不等式',
+    description: '大数定律只说会收敛。Markov→Chebyshev→Hoeffding 三个界层层收紧，回答「偏离超过 t 的概率多大」与「要多少样本」。Chebyshev 线性衰减、Hoeffding 指数衰减，但指数并非总更紧——有交叉点',
+    icon: '📉',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['probability', 'analysis'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]
