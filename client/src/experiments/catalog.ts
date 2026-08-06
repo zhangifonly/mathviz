@@ -4044,4 +4044,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/condition-number',
+    title: '矩阵条件数与数值稳定性',
+    description: 'A 把单位球映成椭球，三条半轴就是奇异值，κ=σ₁/σ₃ 正是椭球有多扁。它是误差放大的上界且在最坏方向取到；κ=10ᵏ 就丢 k 位有效数字。顺带澄清「行列式小就是病态」这个误解',
+    icon: '📐',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['linear-algebra', 'applied'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

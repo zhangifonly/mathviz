@@ -353,6 +353,7 @@ const navCategories: NavCategory[] = [
       { path: '/confocal-quadrics', label: '共焦二次曲面', icon: '🔮' },
       { path: '/quaternion-rotation', label: '四元数与旋转', icon: '🎲' },
       { path: '/screw-motion', label: '螺旋运动', icon: '🔩' },
+      { path: '/condition-number', label: '条件数与稳定性', icon: '📐' },
     ],
   },
   {
