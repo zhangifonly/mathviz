@@ -294,6 +294,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'quaternion-rotation',
       'so3-topology',
       'lie-algebra-so3',
+      'screw-motion',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

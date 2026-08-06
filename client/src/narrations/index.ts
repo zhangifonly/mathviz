@@ -374,6 +374,7 @@ export { confocalQuadricsNarration } from './scripts/confocal-quadrics'
 export { quaternionRotationNarration } from './scripts/quaternion-rotation'
 export { so3TopologyNarration } from './scripts/so3-topology'
 export { lieAlgebraSO3Narration } from './scripts/lie-algebra-so3'
+export { screwMotionNarration } from './scripts/screw-motion'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -736,6 +737,7 @@ import { confocalQuadricsNarration } from './scripts/confocal-quadrics'
 import { quaternionRotationNarration } from './scripts/quaternion-rotation'
 import { so3TopologyNarration } from './scripts/so3-topology'
 import { lieAlgebraSO3Narration } from './scripts/lie-algebra-so3'
+import { screwMotionNarration } from './scripts/screw-motion'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1102,6 +1104,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'quaternion-rotation': quaternionRotationNarration,
   'so3-topology': so3TopologyNarration,
   'lie-algebra-so3': lieAlgebraSO3Narration,
+  'screw-motion': screwMotionNarration,
 }
 
 // 获取稿件

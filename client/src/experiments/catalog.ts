@@ -4033,4 +4033,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/screw-motion',
+    title: '螺旋运动与 Chasles 定理',
+    description: '任何刚体运动都能写成绕某条轴旋转 θ 同时沿同一条轴平移 d——一个螺旋。把平移对轴分解：沿轴的消不掉即螺距，垂直的靠把轴挪到合适位置消掉。轴上的点走直线，其余点走螺旋线',
+    icon: '🔩',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['geometry', 'algebra'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]
