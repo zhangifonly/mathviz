@@ -373,4 +373,5 @@ export const SCENE_FILES: Record<string, string> = {
   'screw-motion': 'screwMotionScenes',
   'condition-number': 'conditionNumberScenes',
   'jordan-form': 'jordanFormScenes',
+  'gershgorin': 'gershgorinScenes',
 }

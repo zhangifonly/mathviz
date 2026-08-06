@@ -297,6 +297,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'screw-motion',
       'condition-number',
       'jordan-form',
+      'gershgorin',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

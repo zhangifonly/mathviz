@@ -4066,4 +4066,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/gershgorin',
+    title: 'Gershgorin 圆盘定理',
+    description: '以对角元为圆心、该行其余元素绝对值之和为半径画圆，每个特征值都跑不出这些圆盘——证明只要三行。加强版：k 个连成一片的圆盘里恰好有 k 个特征值。不解方程就能判可逆、估谱半径',
+    icon: '⭕',
+    difficulty: 'intermediate',
+    ageRange: '高中 15-18岁',
+    topics: ['linear-algebra', 'analysis'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

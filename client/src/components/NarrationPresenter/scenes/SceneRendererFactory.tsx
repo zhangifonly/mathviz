@@ -468,6 +468,7 @@ const LieAlgebraSO3SceneRenderer = lazy(() => import('./LieAlgebraSO3/LieAlgebra
 const ScrewMotionSceneRenderer = lazy(() => import('./ScrewMotion/ScrewMotionSceneRenderer'))
 const ConditionNumberSceneRenderer = lazy(() => import('./ConditionNumber/ConditionNumberSceneRenderer'))
 const JordanFormSceneRenderer = lazy(() => import('./JordanForm/JordanFormSceneRenderer'))
+const GershgorinSceneRenderer = lazy(() => import('./Gershgorin/GershgorinSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -838,6 +839,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'screw-motion': ScrewMotionSceneRenderer,
   'condition-number': ConditionNumberSceneRenderer,
   'jordan-form': JordanFormSceneRenderer,
+  'gershgorin': GershgorinSceneRenderer,
 }
 
 // 获取场景渲染器

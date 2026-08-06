@@ -207,6 +207,7 @@ const navCategories: NavCategory[] = [
       { path: '/dandelin', label: 'Dandelin 双球', icon: '🔮' },
       { path: '/focus-directrix', label: '焦点准线统一定义', icon: '🎯' },
       { path: '/conic-reflection', label: '圆锥曲线反射', icon: '🔦' },
+      { path: '/gershgorin', label: 'Gershgorin 圆盘', icon: '⭕' },
     ],
   },
   {
