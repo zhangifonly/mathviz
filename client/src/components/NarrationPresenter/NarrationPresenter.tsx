@@ -300,6 +300,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'gershgorin',
       'pseudoinverse',
       'perron-frobenius',
+      'concentration',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

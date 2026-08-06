@@ -1,0 +1,314 @@
+{
+  "files": [
+    {
+      "script_id": "concentration",
+      "section_id": "ask",
+      "line_id": "as-1",
+      "filename": "ask-as-1.mp3",
+      "path": "audio/narrations/concentration/ask-as-1.mp3",
+      "duration": 4.0,
+      "size": 64080,
+      "text": "这个项目里有一课讲大数定律。它告诉你，样本量越大，样本均值越靠近真实期望，还画了波动随 n 变小的图。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "ask",
+      "line_id": "as-2",
+      "filename": "ask-as-2.mp3",
+      "path": "audio/narrations/concentration/ask-as-2.mp3",
+      "duration": 5.56,
+      "size": 88992,
+      "text": "但它没回答两个真正要紧的问题。第一，偏离超过某个数 t 的概率到底有多大？第二，反过来，我要多少个样本，才能有百分之九十五的把握说误差不超过 t？"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "ask",
+      "line_id": "as-3",
+      "filename": "ask-as-3.mp3",
+      "path": "audio/narrations/concentration/ask-as-3.mp3",
+      "duration": 4.61,
+      "size": 73728,
+      "text": "第二个问题尤其实际。做民意调查、做 A/B 测试、训练模型，都得先回答\"要采多少样本\"。集中不等式就是干这个的。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "ask",
+      "line_id": "as-4",
+      "filename": "ask-as-4.mp3",
+      "path": "audio/narrations/concentration/ask-as-4.mp3",
+      "duration": 2.33,
+      "size": 37296,
+      "text": "这门课讲三个不等式，一个比一个紧，但要求的条件也一个比一个多。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "three",
+      "line_id": "th-1",
+      "filename": "three-th-1.mp3",
+      "path": "audio/narrations/concentration/three-th-1.mp3",
+      "duration": 3.96,
+      "size": 63360,
+      "text": "第一个是 Markov 不等式：非负随机变量超过 a 的概率，不超过它的期望除以 a。条件极弱，只要变量非负。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "three",
+      "line_id": "th-2",
+      "filename": "three-th-2.mp3",
+      "path": "audio/narrations/concentration/three-th-2.mp3",
+      "duration": 2.43,
+      "size": 38880,
+      "text": "它当然很松，但它是另外两个的**来源**，所以不能跳过。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "three",
+      "line_id": "th-3",
+      "filename": "three-th-3.mp3",
+      "path": "audio/narrations/concentration/three-th-3.mp3",
+      "duration": 4.17,
+      "size": 66672,
+      "text": "第二个是 Chebyshev：把 Markov 用在偏差的平方上。得到偏离超过 t 的概率不超过方差除以 t 的平方。这需要知道方差。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "three",
+      "line_id": "th-4",
+      "filename": "three-th-4.mp3",
+      "path": "audio/narrations/concentration/three-th-4.mp3",
+      "duration": 4.47,
+      "size": 71568,
+      "text": "用在 n 个独立同分布变量的样本均值上，方差要再除以 n。所以界是方差除以 n 乘 t 平方 —— 随 n **线性**衰减。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "three",
+      "line_id": "th-5",
+      "filename": "three-th-5.mp3",
+      "path": "audio/narrations/concentration/three-th-5.mp3",
+      "duration": 4.52,
+      "size": 72288,
+      "text": "第三个是 Hoeffding：把 Markov 用在指数函数上，再优化那个指数参数。结果是二倍的 e 的负二 n t 平方次方，除以取值范围的平方。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "three",
+      "line_id": "th-6",
+      "filename": "three-th-6.mp3",
+      "path": "audio/narrations/concentration/three-th-6.mp3",
+      "duration": 4.84,
+      "size": 77472,
+      "text": "这个随 n **指数**衰减，快得多。但它多要一个条件：变量必须有界。这就是三个界的递进关系——假设越多，界越紧。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "shape",
+      "line_id": "sh-1",
+      "filename": "shape-sh-1.mp3",
+      "path": "audio/narrations/concentration/shape-sh-1.mp3",
+      "duration": 3.13,
+      "size": 50112,
+      "text": "画面上是三张曲面，铺在同一个底面上。底面的两个方向分别是样本量 n 和容差 t。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "shape",
+      "line_id": "sh-2",
+      "filename": "shape-sh-2.mp3",
+      "path": "audio/narrations/concentration/shape-sh-2.mp3",
+      "duration": 7.34,
+      "size": 117504,
+      "text": "要特别注意竖轴是**对数**刻度。这三个量能跨越几十个数量级——n 等于一千、t 等于零点二时，真实概率是十的负三十七次方。线性刻度上除了最前面几步全都贴在底上，什么也看不出来。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "shape",
+      "line_id": "sh-3",
+      "filename": "shape-sh-3.mp3",
+      "path": "audio/narrations/concentration/shape-sh-3.mp3",
+      "duration": 4.17,
+      "size": 66672,
+      "text": "绿色是真实的尾概率，黄色是 Chebyshev，蓝色是 Hoeffding。两个界的曲面都在绿色之上——这是它们作为上界的定义。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "shape",
+      "line_id": "sh-4",
+      "filename": "shape-sh-4.mp3",
+      "path": "audio/narrations/concentration/shape-sh-4.mp3",
+      "duration": 5.13,
+      "size": 82080,
+      "text": "沿着 n 的方向看形状。黄色是一道缓坡，因为线性衰减在对数轴上是对数曲线；蓝色是一道直下的陡崖，因为指数衰减在对数轴上就是直线。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "shape",
+      "line_id": "sh-5",
+      "filename": "shape-sh-5.mp3",
+      "path": "audio/narrations/concentration/shape-sh-5.mp3",
+      "duration": 4.18,
+      "size": 66960,
+      "text": "这正是为什么要用三维。二维只能固定一个变量看另一个，而这里的要点恰恰是两个方向的形状不同，以及两张曲面之间那条交线。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "cross",
+      "line_id": "cr-1",
+      "filename": "cross-cr-1.mp3",
+      "path": "audio/narrations/concentration/cross-cr-1.mp3",
+      "duration": 2.38,
+      "size": 38016,
+      "text": "有个很容易犯的错：以为指数衰减一定比线性衰减紧。不对。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "cross",
+      "line_id": "cr-2",
+      "filename": "cross-cr-2.mp3",
+      "path": "audio/narrations/concentration/cross-cr-2.mp3",
+      "duration": 4.49,
+      "size": 71856,
+      "text": "实测数据：n 等于十、t 等于零点二时，Chebyshev 给出零点六二五，Hoeffding 给出零点八九九。这时候反而是 Chebyshev 更紧。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "cross",
+      "line_id": "cr-3",
+      "filename": "cross-cr-3.mp3",
+      "path": "audio/narrations/concentration/cross-cr-3.mp3",
+      "duration": 3.65,
+      "size": 58464,
+      "text": "原因是 Hoeffding 那个二倍的系数。指数虽然衰减快，但前面压着一个二，n 小的时候还没跑起来。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "cross",
+      "line_id": "cr-4",
+      "filename": "cross-cr-4.mp3",
+      "path": "audio/narrations/concentration/cross-cr-4.mp3",
+      "duration": 5.51,
+      "size": 88128,
+      "text": "两条曲线会有一个交叉点。t 等于零点三时交叉点大约在 n 等于十二，t 等于零点二时约二十七，t 等于零点一时约一百零八。容差越严，Hoeffding 越晚才领先。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "cross",
+      "line_id": "cr-5",
+      "filename": "cross-cr-5.mp3",
+      "path": "audio/narrations/concentration/cross-cr-5.mp3",
+      "duration": 4.34,
+      "size": 69408,
+      "text": "所以正确的说法不是\"Hoeffding 更好\"，而是\"n 够大时 Hoeffding 更好\"，而\"够大\"取决于 t。这就是画面上两张曲面的交线告诉你的事。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "sample",
+      "line_id": "sa-1",
+      "filename": "sample-sa-1.mp3",
+      "path": "audio/narrations/concentration/sample-sa-1.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "实践中最常用的是反过来用：给定容差和把握，解出需要多少样本。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "sample",
+      "line_id": "sa-2",
+      "filename": "sample-sa-2.mp3",
+      "path": "audio/narrations/concentration/sample-sa-2.mp3",
+      "duration": 3.59,
+      "size": 57456,
+      "text": "比如要求误差不超过零点一，把握百分之九十五。Chebyshev 解出来要五百个样本，Hoeffding 要一百八十五个。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "sample",
+      "line_id": "sa-3",
+      "filename": "sample-sa-3.mp3",
+      "path": "audio/narrations/concentration/sample-sa-3.mp3",
+      "duration": 3.37,
+      "size": 53856,
+      "text": "而真实需要多少？一百零六个。也就是说 Hoeffding 多要了近一倍，Chebyshev 多要了近五倍。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "sample",
+      "line_id": "sa-4",
+      "filename": "sample-sa-4.mp3",
+      "path": "audio/narrations/concentration/sample-sa-4.mp3",
+      "duration": 6.53,
+      "size": 104400,
+      "text": "既然这么松，为什么还用它们？因为真实概率**得先知道分布**才算得出来。而 Hoeffding 只要求有界，对任何分布都成立。做实验设计时你往往并不知道分布长什么样。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "sample",
+      "line_id": "sa-5",
+      "filename": "sample-sa-5.mp3",
+      "path": "audio/narrations/concentration/sample-sa-5.mp3",
+      "duration": 7.54,
+      "size": 120672,
+      "text": "而且这类不等式能推广。Hoeffding 可以推广到鞅上，叫 Azuma 不等式；可以推广到矩阵上，叫 Matrix Chernoff。机器学习里的泛化误差界、PAC 学习理论、多臂老虎机的置信区间，全都建立在这上面。真实概率没有这种推广能力。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "sample",
+      "line_id": "sa-6",
+      "filename": "sample-sa-6.mp3",
+      "path": "audio/narrations/concentration/sample-sa-6.mp3",
+      "duration": 10.13,
+      "size": 162144,
+      "text": "顺带说一个实现上的坑。二项分布是离散的，判据里那个 k 除以 n 减 p 大于等于 t，随着 n 变化，满足条件的整数 k 的集合会跳变，所以真实尾概率**并不随 n 单调下降**。本课实测一到一百二十之间有四十八次回升。要算\"至少需要多少个样本\"，不能取第一个满足的 n，得取最后一次违反之后的那个。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/concentration/summary-sum-1.mp3",
+      "duration": 4.28,
+      "size": 68400,
+      "text": "三个界层层收紧：Markov 只要非负，Chebyshev 还要方差，Hoeffding 还要有界。后两个都是把 Markov 用在别的函数上得到的。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/concentration/summary-sum-2.mp3",
+      "duration": 4.46,
+      "size": 71424,
+      "text": "Chebyshev 随 n 线性衰减，Hoeffding 指数衰减。但指数不总是更紧——n 小时反而是 Chebyshev 领先，交叉点随容差变严而右移。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/concentration/summary-sum-3.mp3",
+      "duration": 4.22,
+      "size": 67536,
+      "text": "这些界虽然松，却不需要知道分布，还能反解样本量、能推广到鞅和矩阵。这才是它们在机器学习理论里无处不在的原因。"
+    },
+    {
+      "script_id": "concentration",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/concentration/summary-sum-4.mp3",
+      "duration": 1.0,
+      "size": 15984,
+      "text": "继续探索数学之美！"
+    }
+  ],
+  "script_id": "concentration",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 132.65,
+  "total_size": 2122560,
+  "failed": [],
+  "availableVoices": [
+    "yunxi",
+    "xiaoxiao"
+  ]
+}

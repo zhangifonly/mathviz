@@ -358,6 +358,7 @@ const navCategories: NavCategory[] = [
       { path: '/jordan-form', label: 'Jordan 标准型', icon: '🧩' },
       { path: '/pseudoinverse', label: '伪逆', icon: '➕' },
       { path: '/perron-frobenius', label: 'Perron-Frobenius', icon: '🔺' },
+      { path: '/concentration', label: '集中不等式', icon: '📉' },
     ],
   },
   {

@@ -380,6 +380,7 @@ export { jordanFormNarration } from './scripts/jordan-form'
 export { gershgorinNarration } from './scripts/gershgorin'
 export { pseudoinverseNarration } from './scripts/pseudoinverse'
 export { perronFrobeniusNarration } from './scripts/perron-frobenius'
+export { concentrationNarration } from './scripts/concentration'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -748,6 +749,7 @@ import { jordanFormNarration } from './scripts/jordan-form'
 import { gershgorinNarration } from './scripts/gershgorin'
 import { pseudoinverseNarration } from './scripts/pseudoinverse'
 import { perronFrobeniusNarration } from './scripts/perron-frobenius'
+import { concentrationNarration } from './scripts/concentration'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1120,6 +1122,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'gershgorin': gershgorinNarration,
   'pseudoinverse': pseudoinverseNarration,
   'perron-frobenius': perronFrobeniusNarration,
+  'concentration': concentrationNarration,
 }
 
 // 获取稿件

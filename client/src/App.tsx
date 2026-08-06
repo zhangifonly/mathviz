@@ -391,6 +391,7 @@ const JordanFormExperiment = lazyRetry(() => import('./experiments/jordan-form/J
 const GershgorinExperiment = lazyRetry(() => import('./experiments/gershgorin/GershgorinExperiment'))
 const PseudoinverseExperiment = lazyRetry(() => import('./experiments/pseudoinverse/PseudoinverseExperiment'))
 const PerronFrobeniusExperiment = lazyRetry(() => import('./experiments/perron-frobenius/PerronFrobeniusExperiment'))
+const ConcentrationExperiment = lazyRetry(() => import('./experiments/concentration/ConcentrationExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -779,6 +780,7 @@ export default function App() {
             <Route path="gershgorin" element={<GershgorinExperiment />} />
             <Route path="pseudoinverse" element={<PseudoinverseExperiment />} />
             <Route path="perron-frobenius" element={<PerronFrobeniusExperiment />} />
+            <Route path="concentration" element={<ConcentrationExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />
