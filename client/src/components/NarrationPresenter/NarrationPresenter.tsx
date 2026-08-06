@@ -290,6 +290,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'dandelin',
       'focus-directrix',
       'conic-reflection',
+      'confocal-quadrics',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

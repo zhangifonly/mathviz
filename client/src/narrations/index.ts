@@ -370,6 +370,7 @@ export { prismatoidNarration } from './scripts/prismatoid'
 export { dandelinNarration } from './scripts/dandelin'
 export { focusDirectrixNarration } from './scripts/focus-directrix'
 export { conicReflectionNarration } from './scripts/conic-reflection'
+export { confocalQuadricsNarration } from './scripts/confocal-quadrics'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -728,6 +729,7 @@ import { prismatoidNarration } from './scripts/prismatoid'
 import { dandelinNarration } from './scripts/dandelin'
 import { focusDirectrixNarration } from './scripts/focus-directrix'
 import { conicReflectionNarration } from './scripts/conic-reflection'
+import { confocalQuadricsNarration } from './scripts/confocal-quadrics'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1090,6 +1092,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'dandelin': dandelinNarration,
   'focus-directrix': focusDirectrixNarration,
   'conic-reflection': conicReflectionNarration,
+  'confocal-quadrics': confocalQuadricsNarration,
 }
 
 // 获取稿件
