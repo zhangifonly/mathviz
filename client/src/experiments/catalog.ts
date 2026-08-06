@@ -4143,4 +4143,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/banach-fixed-point',
+    title: 'Banach 不动点定理',
+    description: '「不动点迭代」只讲了一维收敛条件。Banach 定理一次给出存在性、唯一性与误差界：先验界只用第一步就能算出要迭代多少次。但压缩只是充分条件——范数 3.08 的剪切阵照样收敛',
+    icon: '🎯',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['analysis', 'calculus'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

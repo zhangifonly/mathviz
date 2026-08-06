@@ -475,6 +475,7 @@ const ConcentrationSceneRenderer = lazy(() => import('./Concentration/Concentrat
 const EntropyCodingSceneRenderer = lazy(() => import('./EntropyCoding/EntropyCodingSceneRenderer'))
 const KLDivergenceSceneRenderer = lazy(() => import('./KLDivergence/KLDivergenceSceneRenderer'))
 const MutualInformationSceneRenderer = lazy(() => import('./MutualInformation/MutualInformationSceneRenderer'))
+const BanachFixedPointSceneRenderer = lazy(() => import('./BanachFixedPoint/BanachFixedPointSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -852,6 +853,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'entropy-coding': EntropyCodingSceneRenderer,
   'kl-divergence': KLDivergenceSceneRenderer,
   'mutual-information': MutualInformationSceneRenderer,
+  'banach-fixed-point': BanachFixedPointSceneRenderer,
 }
 
 // 获取场景渲染器

@@ -1,0 +1,340 @@
+{
+  "files": [
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "gap",
+      "line_id": "ga-1",
+      "filename": "gap-ga-1.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/gap-ga-1.mp3",
+      "duration": 5.18,
+      "size": 82944,
+      "text": "项目里「不动点迭代」那课讲了一维的情形：反复代入，看是否收敛到 g(x)=x 的解，还画了蛛网图，给出收敛条件是导数的绝对值小于一。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "gap",
+      "line_id": "ga-2",
+      "filename": "gap-ga-2.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/gap-ga-2.mp3",
+      "duration": 4.24,
+      "size": 67824,
+      "text": "但它停在那儿了，有三个更要紧的问题没回答。第一，不动点真的存在吗？那课是默认它存在的，只讨论迭代收不收敛。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "gap",
+      "line_id": "ga-3",
+      "filename": "gap-ga-3.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/gap-ga-3.mp3",
+      "duration": 2.24,
+      "size": 35856,
+      "text": "第二，不动点唯一吗？会不会换个初值就跑到另一个不动点去了？"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "gap",
+      "line_id": "ga-4",
+      "filename": "gap-ga-4.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/gap-ga-4.mp3",
+      "duration": 3.76,
+      "size": 60192,
+      "text": "第三，也是工程上最要紧的：迭代 n 步之后，误差至多是多少？能不能在开始之前就算出来「要迭代多少次」？"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "gap",
+      "line_id": "ga-5",
+      "filename": "gap-ga-5.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/gap-ga-5.mp3",
+      "duration": 3.96,
+      "size": 63360,
+      "text": "Banach 不动点定理一次回答全部三个，而且不限于一维。这门课讲二维的情形，因为二维才能把「收敛快慢」这件事画出来。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "theorem",
+      "line_id": "th-1",
+      "filename": "theorem-th-1.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/theorem-th-1.mp3",
+      "duration": 4.65,
+      "size": 74448,
+      "text": "设 T 是完备度量空间到自身的映射。如果存在一个小于一的常数 q，使得任意两点经 T 作用后的距离，不超过原距离的 q 倍——这就叫压缩映射。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "theorem",
+      "line_id": "th-2",
+      "filename": "theorem-th-2.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/theorem-th-2.mp3",
+      "duration": 3.92,
+      "size": 62640,
+      "text": "结论有三条。第一，T 有不动点；第二，这个不动点唯一；第三，从任何初值出发迭代，都收敛到它。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "theorem",
+      "line_id": "th-3",
+      "filename": "theorem-th-3.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/theorem-th-3.mp3",
+      "duration": 4.89,
+      "size": 78192,
+      "text": "证明思路很直接：每迭代一次，相邻两点的距离就乘以 q，于是整个序列是柯西列。完备性保证柯西列有极限——这就是为什么必须要求空间完备。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "theorem",
+      "line_id": "th-4",
+      "filename": "theorem-th-4.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/theorem-th-4.mp3",
+      "duration": 5.79,
+      "size": 92592,
+      "text": "完备性不是可有可无的技术条件。在有理数上考虑 x 映到 x 加二除以 x 再除以二，它是压缩的，但不动点是根号二，不在有理数里。迭代收敛不到任何有理点。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "theorem",
+      "line_id": "th-5",
+      "filename": "theorem-th-5.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/theorem-th-5.mp3",
+      "duration": 3.26,
+      "size": 52128,
+      "text": "第四条结论是误差界：第 n 步与不动点的距离，不超过 q 的 n 次方除以一减 q，再乘以第一步走的距离。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "theorem",
+      "line_id": "th-6",
+      "filename": "theorem-th-6.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/theorem-th-6.mp3",
+      "duration": 4.15,
+      "size": 66384,
+      "text": "注意这个界只用到第一步的位移，不需要知道不动点在哪。所以它叫先验界——事先就能算，这是它最有用的地方。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "space",
+      "line_id": "sp-1",
+      "filename": "space-sp-1.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/space-sp-1.mp3",
+      "duration": 3.78,
+      "size": 60480,
+      "text": "看画面。二维映射的迭代轨迹本身是平面上的一条折线——底面那条虚线就是它，相当于原来的平面轨迹图。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "space",
+      "line_id": "sp-2",
+      "filename": "space-sp-2.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/space-sp-2.mp3",
+      "duration": 3.55,
+      "size": 56736,
+      "text": "但平面图只告诉你「往哪走」，看不出「走多快」。这里把步数拉成第三个方向，轨迹就成了一条空间折线。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "space",
+      "line_id": "sp-3",
+      "filename": "space-sp-3.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/space-sp-3.mp3",
+      "duration": 3.91,
+      "size": 62496,
+      "text": "绿色那根竖线是不动点所在的位置。轨迹绕着它盘旋上升，越靠上离它越近——收敛的快慢直接读作「收得多陡」。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "space",
+      "line_id": "sp-4",
+      "filename": "space-sp-4.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/space-sp-4.mp3",
+      "duration": 3.38,
+      "size": 54000,
+      "text": "黄色那些圈是理论包络：每一层的半径就是那一步的先验误差界。定理保证轨迹永远落在包络里面。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "space",
+      "line_id": "sp-5",
+      "filename": "space-sp-5.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/space-sp-5.mp3",
+      "duration": 5.54,
+      "size": 88704,
+      "text": "本课实测了四十步，先验界一次也没被越过。而且它不算松：强压缩那个例子，第十步实际误差是四点八八乘十的负四次方，界给七点三四乘十的负四次方。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "space",
+      "line_id": "sp-6",
+      "filename": "space-sp-6.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/space-sp-6.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "切到「旋转收缩」那个预设，轨迹会螺旋着收进去——压缩不一定是笔直往里走的。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "apriori",
+      "line_id": "ap-1",
+      "filename": "apriori-ap-1.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/apriori-ap-1.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "先验界最实用的用法是反过来解：给定精度要求，解出需要迭代多少步。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "apriori",
+      "line_id": "ap-2",
+      "filename": "apriori-ap-2.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/apriori-ap-2.mp3",
+      "duration": 5.0,
+      "size": 80064,
+      "text": "强压缩那个例子，q 约零点四二。要精度一千分之一，解出来要十步；要百万分之一，十八步。实测第十步误差确实小于千分之一。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "apriori",
+      "line_id": "ap-3",
+      "filename": "apriori-ap-3.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/apriori-ap-3.mp3",
+      "duration": 2.27,
+      "size": 36288,
+      "text": "但要提醒：这个估计是保守的，而且 q 越接近一越保守。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "apriori",
+      "line_id": "ap-4",
+      "filename": "apriori-ap-4.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/apriori-ap-4.mp3",
+      "duration": 5.12,
+      "size": 81936,
+      "text": "弱压缩那个例子 q 是零点九九一九，先验界要求一千四百步才能到千分之一。而实际迭代到三百八十七步，误差就已经跌破千分之一了——保守了三点六倍。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "apriori",
+      "line_id": "ap-5",
+      "filename": "apriori-ap-5.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/apriori-ap-5.mp3",
+      "duration": 5.67,
+      "size": 90720,
+      "text": "原因是先验界只用了第一步的位移，看不见后面实际收得更快。想要更紧的估计，可以用后验界：它用最近一步的位移，实测弱压缩时先验给八十点五，后验只有十五点四。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "apriori",
+      "line_id": "ap-6",
+      "filename": "apriori-ap-6.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/apriori-ap-6.mp3",
+      "duration": 4.05,
+      "size": 64800,
+      "text": "代价是后验界必须先迭代到第 n 步才算得出来。两者各有各的用处：先验用来做规划，后验用来做停止判据。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "necessary",
+      "line_id": "nc-1",
+      "filename": "necessary-nc-1.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/necessary-nc-1.mp3",
+      "duration": 3.67,
+      "size": 58752,
+      "text": "有一点很容易记反，必须说清楚：压缩是收敛的充分条件，不是必要条件。不满足压缩，不等于不收敛。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "necessary",
+      "line_id": "nc-2",
+      "filename": "necessary-nc-2.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/necessary-nc-2.mp3",
+      "duration": 3.54,
+      "size": 56592,
+      "text": "切到「范数大于一但仍收敛」那个预设。这个矩阵是零点五、三、零、零点五，一个剪切加缩放。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "necessary",
+      "line_id": "nc-3",
+      "filename": "necessary-nc-3.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/necessary-nc-3.mp3",
+      "duration": 2.88,
+      "size": 46080,
+      "text": "它的谱范数是三点零八，远大于一，Banach 的条件完全不满足。定理用不上。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "necessary",
+      "line_id": "nc-4",
+      "filename": "necessary-nc-4.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/necessary-nc-4.mp3",
+      "duration": 5.62,
+      "size": 90000,
+      "text": "但它的谱半径只有零点五。实测迭代：第五步误差还有二点三一，第十步降到零点一三，第四十步是十的负十次方，第六十步精确等于零。收敛得干干净净。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "necessary",
+      "line_id": "nc-5",
+      "filename": "necessary-nc-5.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/necessary-nc-5.mp3",
+      "duration": 5.26,
+      "size": 84240,
+      "text": "道理是：线性映射收不收敛，由**谱半径**决定，而压缩要求的是**范数**。非正规矩阵这两个可以差很远。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "necessary",
+      "line_id": "nc-6",
+      "filename": "necessary-nc-6.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/necessary-nc-6.mp3",
+      "duration": 5.64,
+      "size": 90288,
+      "text": "真正发散要谱半径大于一。切到最后那个预设，谱半径一点一，误差从十一涨到二十七再到一百八十。有意思的是，这时不动点仍然存在——它只是不吸引周围的点。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/summary-sum-1.mp3",
+      "duration": 5.64,
+      "size": 90288,
+      "text": "Banach 定理一次给三样东西：不动点存在、唯一、任何初值都收敛到它。前提是压缩映射加上空间完备——完备性缺不得，有理数上的根号二就是反例。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/summary-sum-2.mp3",
+      "duration": 5.77,
+      "size": 92304,
+      "text": "先验误差界只用第一步就能算出「要迭代多少次」，这是它在工程上最有用的地方；但 q 接近一时相当保守，实测差了三点六倍。想更紧就用后验界，代价是必须先迭代。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/summary-sum-3.mp3",
+      "duration": 3.99,
+      "size": 63792,
+      "text": "最后记住：压缩是充分不必要。线性映射看谱半径而不是谱范数，范数三点零八的剪切阵照样收敛到零。"
+    },
+    {
+      "script_id": "banach-fixed-point",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/banach-fixed-point/yunxi/summary-sum-4.mp3",
+      "duration": 1.0,
+      "size": 15984,
+      "text": "继续探索数学之美！"
+    }
+  ],
+  "script_id": "banach-fixed-point",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 136.39,
+  "total_size": 2182176,
+  "failed": []
+}

@@ -384,6 +384,7 @@ export { concentrationNarration } from './scripts/concentration'
 export { entropyCodingNarration } from './scripts/entropy-coding'
 export { klDivergenceNarration } from './scripts/kl-divergence'
 export { mutualInformationNarration } from './scripts/mutual-information'
+export { banachFixedPointNarration } from './scripts/banach-fixed-point'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -756,6 +757,7 @@ import { concentrationNarration } from './scripts/concentration'
 import { entropyCodingNarration } from './scripts/entropy-coding'
 import { klDivergenceNarration } from './scripts/kl-divergence'
 import { mutualInformationNarration } from './scripts/mutual-information'
+import { banachFixedPointNarration } from './scripts/banach-fixed-point'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1132,6 +1134,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'entropy-coding': entropyCodingNarration,
   'kl-divergence': klDivergenceNarration,
   'mutual-information': mutualInformationNarration,
+  'banach-fixed-point': banachFixedPointNarration,
 }
 
 // 获取稿件

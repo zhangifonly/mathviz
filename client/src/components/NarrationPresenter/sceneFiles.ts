@@ -380,4 +380,5 @@ export const SCENE_FILES: Record<string, string> = {
   'entropy-coding': 'entropyCodingScenes',
   'kl-divergence': 'klDivergenceScenes',
   'mutual-information': 'mutualInformationScenes',
+  'banach-fixed-point': 'banachFixedPointScenes',
 }
