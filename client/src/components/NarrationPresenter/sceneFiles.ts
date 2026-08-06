@@ -377,4 +377,5 @@ export const SCENE_FILES: Record<string, string> = {
   'pseudoinverse': 'pseudoinverseScenes',
   'perron-frobenius': 'perronFrobeniusScenes',
   'concentration': 'concentrationScenes',
+  'entropy-coding': 'entropyCodingScenes',
 }

@@ -1,0 +1,320 @@
+{
+  "files": [
+    {
+      "script_id": "entropy-coding",
+      "section_id": "gap",
+      "line_id": "ga-1",
+      "filename": "gap-ga-1.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/gap-ga-1.mp3",
+      "duration": 5.14,
+      "size": 82224,
+      "text": "这个项目里有两课碰到了熵。决策树那课把它当分裂准则用，说了两类各半时熵等于一、全同一类时熵等于零。但没说为什么偏偏是这个式子。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "gap",
+      "line_id": "ga-2",
+      "filename": "gap-ga-2.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/gap-ga-2.mp3",
+      "duration": 4.51,
+      "size": 72144,
+      "text": "哈夫曼编码那课造出了最优的前缀码，贪心合并，很漂亮。但也没说这个最优到底能优到哪 —— 有没有可能存在更好的编码方式？"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "gap",
+      "line_id": "ga-3",
+      "filename": "gap-ga-3.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/gap-ga-3.mp3",
+      "duration": 4.48,
+      "size": 71712,
+      "text": "这门课把两头接上。答案是：熵就是编码长度的下界，而哈夫曼就是能逼近这个下界的构造。两件事其实是同一件事。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "gap",
+      "line_id": "ga-4",
+      "filename": "gap-ga-4.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/gap-ga-4.mp3",
+      "duration": 4.99,
+      "size": 79776,
+      "text": "精确的说法叫信源编码定理：最优平均码长大于等于熵，且小于熵加一。左边说谁也不可能比熵更短，右边说哈夫曼最多浪费不到一个比特。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "why",
+      "line_id": "wh-1",
+      "filename": "why-wh-1.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/why-wh-1.mp3",
+      "duration": 3.03,
+      "size": 48528,
+      "text": "先回答决策树那课没答的问题：为什么不确定性的度量必须是负的 p 乘 log p 求和？"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "why",
+      "line_id": "wh-2",
+      "filename": "why-wh-2.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/why-wh-2.mp3",
+      "duration": 3.7,
+      "size": 59184,
+      "text": "Shannon 的做法是反过来：先列出这个度量该满足什么，然后证明满足这些的只有这一个。他只要三条。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "why",
+      "line_id": "wh-3",
+      "filename": "why-wh-3.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/why-wh-3.mp3",
+      "duration": 4.07,
+      "size": 65088,
+      "text": "第一条连续性：概率微小变化时，不确定性也只微小变化。第二条单调性：n 个等概率的选项，n 越大越不确定。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "why",
+      "line_id": "wh-4",
+      "filename": "why-wh-4.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/why-wh-4.mp3",
+      "duration": 3.61,
+      "size": 57744,
+      "text": "第三条是最强的，叫可加性：两个独立信源合起来看，不确定性应该相加，而不是相乘或者别的什么。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "why",
+      "line_id": "wh-5",
+      "filename": "why-wh-5.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/why-wh-5.mp3",
+      "duration": 3.91,
+      "size": 62496,
+      "text": "这三条一摆，度量就被唯一确定了，只差一个常数因子——那个因子就是对数的底。取二为底，单位就叫比特。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "why",
+      "line_id": "wh-6",
+      "filename": "why-wh-6.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/why-wh-6.mp3",
+      "duration": 3.89,
+      "size": 62208,
+      "text": "本课验证了可加性：把分布自乘 k 次得到乘积分布，它的熵精确等于 k 倍原熵，误差在十的负十五次方量级。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "surface",
+      "line_id": "sf-1",
+      "filename": "surface-sf-1.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/surface-sf-1.mp3",
+      "duration": 3.52,
+      "size": 56304,
+      "text": "画面上底下那个三角形，是所有三元概率分布的集合。三个顶点是三种确定情形，中心是均匀分布。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "surface",
+      "line_id": "sf-2",
+      "filename": "surface-sf-2.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/surface-sf-2.mp3",
+      "duration": 4.52,
+      "size": 72288,
+      "text": "绿色那张曲面是熵。它在中心最高，等于以二为底三的对数，约一点五八五；在三个顶点降到零 —— 完全确定的时候没有任何不确定性。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "surface",
+      "line_id": "sf-3",
+      "filename": "surface-sf-3.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/surface-sf-3.mp3",
+      "duration": 3.38,
+      "size": 54144,
+      "text": "注意它是一个**光滑的穹顶**，处处可导，向下凹。这是熵作为连续函数的样子。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "surface",
+      "line_id": "sf-4",
+      "filename": "surface-sf-4.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/surface-sf-4.mp3",
+      "duration": 3.38,
+      "size": 54000,
+      "text": "黄色那张是哈夫曼的平均码长。它整体在绿色之上——这就是定理的左半边，码长不可能比熵短。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "surface",
+      "line_id": "sf-5",
+      "filename": "surface-sf-5.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/surface-sf-5.mp3",
+      "duration": 4.71,
+      "size": 75312,
+      "text": "但形状完全不同：黄色是**阶梯状**的，有明显的折线和平台。原因很简单，码长必须是整数比特，没法取小数。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "surface",
+      "line_id": "sf-6",
+      "filename": "surface-sf-6.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/surface-sf-6.mp3",
+      "duration": 4.45,
+      "size": 71136,
+      "text": "光滑的穹顶和阶梯之间的缝隙，就是整数约束造成的浪费。这个形状对比，二维图里画不出来 —— 这也是这门课要用三维的理由。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "exact",
+      "line_id": "ex-1",
+      "filename": "exact-ex-1.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/exact-ex-1.mp3",
+      "duration": 4.09,
+      "size": 65376,
+      "text": "有些位置上，两张曲面是贴合的，缝隙为零。切到「二进制」那个预设看看：分布是二分之一、四分之一、四分之一。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "exact",
+      "line_id": "ex-2",
+      "filename": "exact-ex-2.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/exact-ex-2.mp3",
+      "duration": 2.21,
+      "size": 35424,
+      "text": "熵是一点五，哈夫曼平均码长也是一点五，冗余精确等于零。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "exact",
+      "line_id": "ex-3",
+      "filename": "exact-ex-3.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/exact-ex-3.mp3",
+      "duration": 4.6,
+      "size": 73584,
+      "text": "规律是：当所有概率都是二的负整数次幂时，最优码长恰好等于负的以二为底的对数——也就是说，理想码长本来就是整数，没有取整损失。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "exact",
+      "line_id": "ex-4",
+      "filename": "exact-ex-4.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/exact-ex-4.mp3",
+      "duration": 4.25,
+      "size": 67968,
+      "text": "反过来，概率不是二的幂时就一定有浪费。均匀分布三分之一的熵是一点五八五，哈夫曼给一点六六七，浪费零点零八二。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "exact",
+      "line_id": "ex-5",
+      "filename": "exact-ex-5.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/exact-ex-5.mp3",
+      "duration": 6.02,
+      "size": 96336,
+      "text": "最极端的情形在顶点附近。切到「几乎确定」那个预设，概率零点九八、零点零一、零点零一，熵只有零点一六一，但哈夫曼要一点零二比特，浪费零点八五九，接近定理允许的上限一。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "block",
+      "line_id": "bl-1",
+      "filename": "block-bl-1.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/block-bl-1.mp3",
+      "duration": 4.56,
+      "size": 73008,
+      "text": "最扎眼的例子是二元信源。概率零点九和零点一，熵只有零点四六九比特，可哈夫曼只能给一比特 —— 因为一个符号总不能用半个比特来编。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "block",
+      "line_id": "bl-2",
+      "filename": "block-bl-2.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/block-bl-2.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "浪费了一倍多。怎么办？把多个符号打包成一个\"超符号\"再编码。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "block",
+      "line_id": "bl-3",
+      "filename": "block-bl-3.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/block-bl-3.mp3",
+      "duration": 5.0,
+      "size": 79920,
+      "text": "两个一组，字母表从二涨到四，每符号的平均码长降到零点六四五。三个一组降到零点五三三，四个一组零点四九三 —— 已经很接近零点四六九了。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "block",
+      "line_id": "bl-4",
+      "filename": "block-bl-4.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/block-bl-4.mp3",
+      "duration": 4.76,
+      "size": 76176,
+      "text": "定理的精确说法是：k 个一组时，每符号码长落在熵到熵加 k 分之一之间。那个碍事的\"加一\"被 k 摊薄了。这就是\"渐近可达\"的确切含义。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "block",
+      "line_id": "bl-5",
+      "filename": "block-bl-5.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/block-bl-5.mp3",
+      "duration": 8.7,
+      "size": 139248,
+      "text": "但要提醒一点：它**不是每一步都更好**。实测三元分布零点七、零点二、零点一时，k 等于三反而比 k 等于二差一点。因为码长要取整，超符号的概率落在哪些整数格上并不随 k 平滑变化。定理保证的是上界随 k 收紧，不是每一步都改善。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "block",
+      "line_id": "bl-6",
+      "filename": "block-bl-6.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/block-bl-6.mp3",
+      "duration": 4.43,
+      "size": 70848,
+      "text": "这也解释了为什么真实的压缩算法不用哈夫曼逐符号编码，而用算术编码或区间编码——它们可以给出分数比特，直接绕开取整损失。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/summary-sum-1.mp3",
+      "duration": 3.65,
+      "size": 58464,
+      "text": "熵不是随便定义的：连续性、单调性、可加性三条要求，就唯一确定了负 p 乘 log p 求和这个式子。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/summary-sum-2.mp3",
+      "duration": 3.83,
+      "size": 61344,
+      "text": "信源编码定理说，最优平均码长夹在熵和熵加一之间。熵是压缩的硬极限，哈夫曼是能逼近它的构造。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/summary-sum-3.mp3",
+      "duration": 5.46,
+      "size": 87408,
+      "text": "概率是二的幂时一比特不浪费；否则有缺口，而分组编码能把这个缺口摊薄到 k 分之一。光滑的熵穹顶与阶梯状的码长曲面之间那道缝，就是整数约束的代价。"
+    },
+    {
+      "script_id": "entropy-coding",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/entropy-coding/yunxi/summary-sum-4.mp3",
+      "duration": 1.0,
+      "size": 15984,
+      "text": "继续探索数学之美！"
+    }
+  ],
+  "script_id": "entropy-coding",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 130.39,
+  "total_size": 2085984,
+  "failed": []
+}

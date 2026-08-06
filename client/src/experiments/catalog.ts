@@ -4110,4 +4110,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/entropy-coding',
+    title: '信息熵与信源编码定理',
+    description: '决策树用熵当准则、哈夫曼造出最优码，但都没说熵为什么是它、最优能优到哪。Shannon 定理 H≤L<H+1 把两头接上：熵是压缩的硬极限，二进制概率时哈夫曼零浪费，分组编码把 +1 摊薄成 +1/k',
+    icon: '🗜️',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['probability', 'discrete'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

@@ -301,6 +301,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'pseudoinverse',
       'perron-frobenius',
       'concentration',
+      'entropy-coding',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

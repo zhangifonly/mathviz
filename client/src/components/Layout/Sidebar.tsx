@@ -359,6 +359,7 @@ const navCategories: NavCategory[] = [
       { path: '/pseudoinverse', label: '伪逆', icon: '➕' },
       { path: '/perron-frobenius', label: 'Perron-Frobenius', icon: '🔺' },
       { path: '/concentration', label: '集中不等式', icon: '📉' },
+      { path: '/entropy-coding', label: '熵与信源编码', icon: '🗜️' },
     ],
   },
   {
