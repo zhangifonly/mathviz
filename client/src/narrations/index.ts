@@ -376,6 +376,7 @@ export { so3TopologyNarration } from './scripts/so3-topology'
 export { lieAlgebraSO3Narration } from './scripts/lie-algebra-so3'
 export { screwMotionNarration } from './scripts/screw-motion'
 export { conditionNumberNarration } from './scripts/condition-number'
+export { jordanFormNarration } from './scripts/jordan-form'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -740,6 +741,7 @@ import { so3TopologyNarration } from './scripts/so3-topology'
 import { lieAlgebraSO3Narration } from './scripts/lie-algebra-so3'
 import { screwMotionNarration } from './scripts/screw-motion'
 import { conditionNumberNarration } from './scripts/condition-number'
+import { jordanFormNarration } from './scripts/jordan-form'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1108,6 +1110,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'lie-algebra-so3': lieAlgebraSO3Narration,
   'screw-motion': screwMotionNarration,
   'condition-number': conditionNumberNarration,
+  'jordan-form': jordanFormNarration,
 }
 
 // 获取稿件
