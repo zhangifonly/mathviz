@@ -1,0 +1,280 @@
+{
+  "files": [
+    {
+      "script_id": "screw-motion",
+      "section_id": "claim",
+      "line_id": "cl-1",
+      "filename": "claim-cl-1.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/claim-cl-1.mp3",
+      "duration": 4.62,
+      "size": 73872,
+      "text": "上一课讲李代数时提到一句，机器人学里每个关节对应一个旋量。旋量是什么，当时没展开。这门课补上，顺便讲它背后那条定理。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "claim",
+      "line_id": "cl-2",
+      "filename": "claim-cl-2.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/claim-cl-2.mp3",
+      "duration": 4.87,
+      "size": 77904,
+      "text": "先说结论。任何刚体运动 —— 不管它看起来多复杂 —— 都可以写成：绕某一条轴转一个角度，同时沿着同一条轴平移一段距离。就像拧一颗螺丝。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "claim",
+      "line_id": "cl-3",
+      "filename": "claim-cl-3.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/claim-cl-3.mp3",
+      "duration": 5.49,
+      "size": 87840,
+      "text": "这条定理叫 Chasles 定理。第一次听会觉得不对：一般的刚体运动是先转再平移，转轴过原点，而平移方向可以任意，跟转轴一点关系都没有。凭什么它俩能重合？"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "claim",
+      "line_id": "cl-4",
+      "filename": "claim-cl-4.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/claim-cl-4.mp3",
+      "duration": 5.1,
+      "size": 81648,
+      "text": "关键在于，转轴的位置是可以挪的。绕原点转，和绕一条平行的、不过原点的轴转，差的正好是一个平移。这个自由度就是定理成立的空间。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "split",
+      "line_id": "sp-1",
+      "filename": "split-sp-1.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/split-sp-1.mp3",
+      "duration": 4.59,
+      "size": 73440,
+      "text": "具体怎么做。第一步，从旋转矩阵里取出转轴方向和转角，这就是上一课的对数映射。轴的方向定了，但位置还没定。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "split",
+      "line_id": "sp-2",
+      "filename": "split-sp-2.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/split-sp-2.mp3",
+      "duration": 6.16,
+      "size": 98496,
+      "text": "第二步，把平移向量对着这根轴分解。一部分平行于轴，一部分垂直于轴。画面上那三根箭头画的就是这件事：粉色是原始平移，黄色是沿轴的那部分，青色是垂直的那部分。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "split",
+      "line_id": "sp-3",
+      "filename": "split-sp-3.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/split-sp-3.mp3",
+      "duration": 4.9,
+      "size": 78336,
+      "text": "这两部分的命运完全不同。沿着轴的那部分，无论把轴挪到哪里都消不掉 —— 因为挪轴产生的平移总是垂直于轴的。所以它就是最终的螺距。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "split",
+      "line_id": "sp-4",
+      "filename": "split-sp-4.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/split-sp-4.mp3",
+      "duration": 3.1,
+      "size": 49536,
+      "text": "而垂直的那部分，恰好可以靠挪轴完全消掉。这就是第三步：找出该把轴挪到哪儿。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "split",
+      "line_id": "sp-5",
+      "filename": "split-sp-5.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/split-sp-5.mp3",
+      "duration": 7.43,
+      "size": 118944,
+      "text": "设新轴过点 c，条件是单位阵减 R 作用在 c 上等于垂直分量。注意这个方程在整个空间里是无解的，因为单位阵减 R 是奇异的，它的零空间正好是轴方向。但限制到垂直于轴的那个平面上，它就可逆了，c 唯一确定。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "axis",
+      "line_id": "ax-1",
+      "filename": "axis-ax-1.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/axis-ax-1.mp3",
+      "duration": 3.83,
+      "size": 61344,
+      "text": "画面上紫色那条线就是解出来的螺旋轴。注意它一般不过原点 —— 默认这个例子里，它挪到了负零点五、一点五那个位置。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "axis",
+      "line_id": "ax-2",
+      "filename": "axis-ax-2.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/axis-ax-2.mp3",
+      "duration": 3.5,
+      "size": 56016,
+      "text": "怎么确认轴找对了？看轴上的点。如果轴是对的，轴上的点应该只沿着轴平移，完全不绕转。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "axis",
+      "line_id": "ax-3",
+      "filename": "axis-ax-3.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/axis-ax-3.mp3",
+      "duration": 4.65,
+      "size": 74448,
+      "text": "绿色那条就是轴上一点的轨迹。它是一条笔直的线段，没有任何弯曲。而蓝色那几条是物体上其它点的轨迹，全都是螺旋线。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "axis",
+      "line_id": "ax-4",
+      "filename": "axis-ax-4.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/axis-ax-4.mp3",
+      "duration": 4.09,
+      "size": 65520,
+      "text": "离轴越远，螺旋的半径越大，但每转一圈前进的距离是一样的 —— 螺距是整个运动的属性，跟看哪个点无关。这正是螺丝的样子。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "axis",
+      "line_id": "ax-5",
+      "filename": "axis-ax-5.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/axis-ax-5.mp3",
+      "duration": 5.26,
+      "size": 84096,
+      "text": "切到「平移完全垂直于轴」那个预设。螺距变成了零，运动退化成一个纯旋转 —— 但绕的不是原来那根轴，而是挪过位置的新轴。垂直的平移被完全吸收掉了。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "degenerate",
+      "line_id": "de-1",
+      "filename": "degenerate-de-1.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/degenerate-de-1.mp3",
+      "duration": 4.09,
+      "size": 65376,
+      "text": "有两个情形要单独说。第一个是转角为零，也就是纯平移。这时候根本没有转轴可言，前面那套推导整个失效。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "degenerate",
+      "line_id": "de-2",
+      "filename": "degenerate-de-2.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/degenerate-de-2.mp3",
+      "duration": 3.83,
+      "size": 61200,
+      "text": "但有意思的是，公式是连续地失效的。求轴位置的式子里有一个二分之θ的余切，转角趋于零时它趋于无穷。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "degenerate",
+      "line_id": "de-3",
+      "filename": "degenerate-de-3.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/degenerate-de-3.mp3",
+      "duration": 4.56,
+      "size": 73008,
+      "text": "切到「转角极小」那个预设看看。转角只有零点零八弧度，轴被推到了很远的地方。实测转角取万分之一时，轴跑到了两万这个量级。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "degenerate",
+      "line_id": "de-4",
+      "filename": "degenerate-de-4.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/degenerate-de-4.mp3",
+      "duration": 4.18,
+      "size": 66816,
+      "text": "所以纯平移可以理解成：绕一条无穷远处的轴，转一个无穷小的角。这不是文字游戏，射影几何里就是这么统一处理的。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "degenerate",
+      "line_id": "de-5",
+      "filename": "degenerate-de-5.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/degenerate-de-5.mp3",
+      "duration": 6.39,
+      "size": 102240,
+      "text": "第二个情形是转角等于 π。这时候从旋转矩阵取轴的常用公式要除以 sin π，也就是除以零。得换一个分支，从 R 加单位阵里取轴 —— 和上一课对数映射遇到的是同一个坎。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "use",
+      "line_id": "us-1",
+      "filename": "use-us-1.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/use-us-1.mp3",
+      "duration": 5.98,
+      "size": 95616,
+      "text": "机器人学。上一课说的旋量，就是这条轴加上螺距打包成的六维对象。整条机械臂的正运动学写成一串旋量指数的连乘，叫指数积公式，比逐级拼变换矩阵干净得多。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "use",
+      "line_id": "us-2",
+      "filename": "use-us-2.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/use-us-2.mp3",
+      "duration": 5.88,
+      "size": 94032,
+      "text": "运动插补。要让机械臂末端从一个位姿走到另一个位姿，最自然的走法就是沿着螺旋走 —— 转和移同步进行。分别插旋转和平移的话，路径会绕，而且中间过程不唯一。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "use",
+      "line_id": "us-3",
+      "filename": "use-us-3.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/use-us-3.mp3",
+      "duration": 5.58,
+      "size": 89280,
+      "text": "机构学里有个直接的对应物：螺旋副，也就是丝杠。它是唯一一种同时约束转动和移动的运动副，转一圈必然前进一个固定的距离。那个固定距离就是螺距。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "use",
+      "line_id": "us-4",
+      "filename": "use-us-4.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/use-us-4.mp3",
+      "duration": 3.62,
+      "size": 57888,
+      "text": "还有更远的：DNA 的双螺旋结构，它的对称群就是一个螺旋运动群。晶体学里的螺旋轴也是同一套概念。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/summary-sum-1.mp3",
+      "duration": 3.18,
+      "size": 50832,
+      "text": "Chasles 定理：任何刚体运动都是一个螺旋运动 —— 绕某条轴转 θ，同时沿这条轴移 d。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/summary-sum-2.mp3",
+      "duration": 3.8,
+      "size": 60768,
+      "text": "做法是把平移对轴分解。沿轴的部分消不掉，就是螺距；垂直的部分靠把轴平移到合适位置完全消掉。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/summary-sum-3.mp3",
+      "duration": 3.22,
+      "size": 51552,
+      "text": "判断轴找对没有，看轨迹：轴上的点走直线段，其余的点走螺旋线，而且螺距处处相同。"
+    },
+    {
+      "script_id": "screw-motion",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/screw-motion/yunxi/summary-sum-4.mp3",
+      "duration": 1.0,
+      "size": 15984,
+      "text": "继续探索数学之美！"
+    }
+  ],
+  "script_id": "screw-motion",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 122.9,
+  "total_size": 1966032,
+  "failed": []
+}

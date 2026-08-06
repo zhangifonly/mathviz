@@ -352,6 +352,7 @@ const navCategories: NavCategory[] = [
       { path: '/dehn-invariant', label: 'Dehn 不变量', icon: '✂️' },
       { path: '/confocal-quadrics', label: '共焦二次曲面', icon: '🔮' },
       { path: '/quaternion-rotation', label: '四元数与旋转', icon: '🎲' },
+      { path: '/screw-motion', label: '螺旋运动', icon: '🔩' },
     ],
   },
   {
