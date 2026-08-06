@@ -4121,4 +4121,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/kl-divergence',
+    title: 'KL 散度与交叉熵',
+    description: '以为分布是 q 实际是 p，多付的比特数就是 KL 散度。Gibbs 不等式保证它非负且只在 p=q 时为零；但它不对称、不满足三角不等式，不是距离。交叉熵=熵+KL，这就是分类损失的来历',
+    icon: '📊',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['probability', 'applied'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

@@ -382,6 +382,7 @@ export { pseudoinverseNarration } from './scripts/pseudoinverse'
 export { perronFrobeniusNarration } from './scripts/perron-frobenius'
 export { concentrationNarration } from './scripts/concentration'
 export { entropyCodingNarration } from './scripts/entropy-coding'
+export { klDivergenceNarration } from './scripts/kl-divergence'
 
 // 稿件映射表（按实验 ID 索引）
 import { basicArithmeticNarration } from './scripts/basic-arithmetic'
@@ -752,6 +753,7 @@ import { pseudoinverseNarration } from './scripts/pseudoinverse'
 import { perronFrobeniusNarration } from './scripts/perron-frobenius'
 import { concentrationNarration } from './scripts/concentration'
 import { entropyCodingNarration } from './scripts/entropy-coding'
+import { klDivergenceNarration } from './scripts/kl-divergence'
 import type { NarrationScript } from './types'
 
 export const narrationScripts: Record<string, NarrationScript> = {
@@ -1126,6 +1128,7 @@ export const narrationScripts: Record<string, NarrationScript> = {
   'perron-frobenius': perronFrobeniusNarration,
   'concentration': concentrationNarration,
   'entropy-coding': entropyCodingNarration,
+  'kl-divergence': klDivergenceNarration,
 }
 
 // 获取稿件

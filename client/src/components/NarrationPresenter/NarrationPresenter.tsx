@@ -302,6 +302,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'perron-frobenius',
       'concentration',
       'entropy-coding',
+      'kl-divergence',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
