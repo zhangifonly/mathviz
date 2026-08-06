@@ -1,0 +1,370 @@
+{
+  "files": [
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "why",
+      "line_id": "wh-1",
+      "filename": "why-wh-1.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/why-wh-1.mp3",
+      "duration": 4.42,
+      "size": 70704,
+      "text": "三维旋转矩阵那一课讲到万向锁的时候，结尾留了一句：工程上常改用四元数来绕开这个麻烦。这门课就接着那句往下讲。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "why",
+      "line_id": "wh-2",
+      "filename": "why-wh-2.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/why-wh-2.mp3",
+      "duration": 3.98,
+      "size": 63648,
+      "text": "四元数是哈密顿在一八四三年发现的。他想把复数从平面推广到空间，卡了十几年，最后发现三个数不行，得用四个。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "why",
+      "line_id": "wh-3",
+      "filename": "why-wh-3.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/why-wh-3.mp3",
+      "duration": 5.17,
+      "size": 82656,
+      "text": "一个四元数写成 w 加 x i 加 y j 加 z k。乘法规则只有一条：i 平方、j 平方、k 平方，还有 i j k，全都等于负一。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "why",
+      "line_id": "wh-4",
+      "filename": "why-wh-4.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/why-wh-4.mp3",
+      "duration": 5.12,
+      "size": 81936,
+      "text": "从这一条能推出 i 乘 j 等于 k，但 j 乘 i 等于负 k。乘法不可交换。这不是缺陷，恰恰是它能描述旋转的原因 —— 三维旋转本来就不可交换。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "half",
+      "line_id": "ha-1",
+      "filename": "half-ha-1.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/half-ha-1.mp3",
+      "duration": 5.12,
+      "size": 81936,
+      "text": "绕单位轴 n 转 θ 角，对应的四元数是：w 取 θ 一半的余弦，向量部取 θ 一半的正弦乘以 n。注意是半角。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "half",
+      "line_id": "ha-2",
+      "filename": "half-ha-2.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/half-ha-2.mp3",
+      "duration": 2.64,
+      "size": 42192,
+      "text": "很多人第一次见都觉得这个二分之一很别扭，像是硬凑的。其实它是被逼出来的。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "half",
+      "line_id": "ha-3",
+      "filename": "half-ha-3.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/half-ha-3.mp3",
+      "duration": 3.84,
+      "size": 61488,
+      "text": "四元数作用在向量上的方式，不是简单相乘，而是共轭：把向量写成一个纯四元数 v，然后算 q 乘 v 乘 q 的逆。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "half",
+      "line_id": "ha-4",
+      "filename": "half-ha-4.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/half-ha-4.mp3",
+      "duration": 5.54,
+      "size": 88560,
+      "text": "关键在于 q 出现了两次，一次在左边一次在右边。每一次贡献半个角，两次合起来正好是 θ。所以半角不是凑的，是共轭作用的必然结果。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "half",
+      "line_id": "ha-5",
+      "filename": "half-ha-5.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/half-ha-5.mp3",
+      "duration": 5.26,
+      "size": 84096,
+      "text": "画面上是绕 z 轴转九十度。四元数是零点七零七、零、零、零点七零七，也就是四十五度的余弦和正弦。而 x 轴确实被送到了 y 轴。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "double",
+      "line_id": "do-1",
+      "filename": "double-do-1.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/double-do-1.mp3",
+      "duration": 2.23,
+      "size": 35712,
+      "text": "现在看一件有点古怪的事。把 q 换成负 q，旋转会变吗？"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "double",
+      "line_id": "do-2",
+      "filename": "double-do-2.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/double-do-2.mp3",
+      "duration": 4.62,
+      "size": 73872,
+      "text": "不会。共轭式里 q 用了两次，两个负号相消。所以 q 和负 q 表示的是同一个旋转，一模一样，小数点后十几位都一样。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "double",
+      "line_id": "do-3",
+      "filename": "double-do-3.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/double-do-3.mp3",
+      "duration": 3.62,
+      "size": 57888,
+      "text": "换句话说，单位四元数构成的三维球面，是旋转群的双重覆盖：每个旋转对应球面上两个点，一对对跖点。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "double",
+      "line_id": "do-4",
+      "filename": "double-do-4.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/double-do-4.mp3",
+      "duration": 4.83,
+      "size": 77328,
+      "text": "这带来一个反直觉的结论。绕 z 轴转三百六十度，物体明明回到原位了，但四元数变成了负一，不是一。要转满七百二十度，四元数才回到一。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "double",
+      "line_id": "do-5",
+      "filename": "double-do-5.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/double-do-5.mp3",
+      "duration": 4.98,
+      "size": 79632,
+      "text": "这不是数学上的小瑕疵。电子的自旋就是这个性质，转一圈不复原、转两圈才复原。所谓的盘子把戏、腰带把戏，演示的也是同一件事。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "slerp",
+      "line_id": "sl-1",
+      "filename": "slerp-sl-1.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/slerp-sl-1.mp3",
+      "duration": 3.25,
+      "size": 51984,
+      "text": "现在说工程上换用四元数的真正理由。躲万向锁只是好处之一，甚至不是最主要的。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "slerp",
+      "line_id": "sl-2",
+      "filename": "slerp-sl-2.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/slerp-sl-2.mp3",
+      "duration": 5.41,
+      "size": 86544,
+      "text": "真正的问题是插值。动画里给定起始姿态和结束姿态，中间的每一帧要算出来。用欧拉角的话，最自然的做法是三个角各自线性地从起点走到终点。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "slerp",
+      "line_id": "sl-3",
+      "filename": "slerp-sl-3.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/slerp-sl-3.mp3",
+      "duration": 4.07,
+      "size": 65088,
+      "text": "看画面右边这条橙色轨迹，就是这么插出来的。再看左边蓝色的，是四元数的球面线性插值，简称 SLERP。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "slerp",
+      "line_id": "sl-4",
+      "filename": "slerp-sl-4.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/slerp-sl-4.mp3",
+      "duration": 5.86,
+      "size": 93744,
+      "text": "轨迹上的点是按相同的参数间隔取的。点距均匀，说明转速均匀；点距忽疏忽密，说明忽快忽慢。蓝色那条点距处处相同，橙色那条明显有疏有密。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "slerp",
+      "line_id": "sl-5",
+      "filename": "slerp-sl-5.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/slerp-sl-5.mp3",
+      "duration": 5.01,
+      "size": 80208,
+      "text": "左下角是实测数字。SLERP 的每步转角，最大值除以最小值等于一点零零零，严格匀速。欧拉插值这个比值是一点二九七，快慢差了三成。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "slerp",
+      "line_id": "sl-6",
+      "filename": "slerp-sl-6.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/slerp-sl-6.mp3",
+      "duration": 4.1,
+      "size": 65664,
+      "text": "还不只是不匀。SLERP 走过的总角度，正好等于两个姿态之间的夹角，也就是最短路径。欧拉插值多走了百分之十五的冤枉路。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "slerp",
+      "line_id": "sl-7",
+      "filename": "slerp-sl-7.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/slerp-sl-7.mp3",
+      "duration": 4.15,
+      "size": 66384,
+      "text": "换到万向锁那个预设，差距会夸张得多。俯仰角在九十度附近时，偏航和滚转其实是同一个自由度，转哪个效果都一样。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "slerp",
+      "line_id": "sl-8",
+      "filename": "slerp-sl-8.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/slerp-sl-8.mp3",
+      "duration": 5.78,
+      "size": 92448,
+      "text": "这时让偏航和滚转反向变化，两者互相抵消，欧拉插值就得绕一大圈才能到。实测：明明只差十八度的两个姿态，欧拉插值转了三百四十三度，多走将近十八倍。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "slerp",
+      "line_id": "sl-9",
+      "filename": "slerp-sl-9.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/slerp-sl-9.mp3",
+      "duration": 6.27,
+      "size": 100368,
+      "text": "值得留意的是，这个例子里欧拉插值的快慢比恰好是一点零零零，全程匀速。所以两个指标测的是两种不同的毛病：快慢比看匀不匀，总转角看冤不冤。只看一个会漏掉另一个。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "how",
+      "line_id": "ho-1",
+      "filename": "how-ho-1.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/how-ho-1.mp3",
+      "duration": 3.17,
+      "size": 50688,
+      "text": "道理其实很直白。单位四元数都住在四维空间的单位球面上，两个姿态就是球面上两个点。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "how",
+      "line_id": "ho-2",
+      "filename": "how-ho-2.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/how-ho-2.mp3",
+      "duration": 4.55,
+      "size": 72864,
+      "text": "球面上两点之间最短的路是大圆弧。沿这条大圆弧匀速走，得到的姿态序列自然就是匀速的、最短的。SLERP 干的就是这件事。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "how",
+      "line_id": "ho-3",
+      "filename": "how-ho-3.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/how-ho-3.mp3",
+      "duration": 5.17,
+      "size": 82800,
+      "text": "公式里有两个坑必须处理。第一个是取近路：因为 q 和负 q 是同一个旋转，如果两个四元数的点积是负的，直接插值会沿着大圆的长弧走，物体会反着转一大圈。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "how",
+      "line_id": "ho-4",
+      "filename": "how-ho-4.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/how-ho-4.mp3",
+      "duration": 4.93,
+      "size": 78912,
+      "text": "所以先检查点积，是负的就把其中一个取反。本课的实现里，点积等于负零点九八的情形，取近路走二十二点九度，不取就要走三百三十七度。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "how",
+      "line_id": "ho-5",
+      "filename": "how-ho-5.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/how-ho-5.mp3",
+      "duration": 4.46,
+      "size": 71424,
+      "text": "第二个坑是两个姿态几乎重合的时候，公式里的分母趋于零。这时退回普通的线性插值再归一化就行，两者差别可以忽略。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "use",
+      "line_id": "us-1",
+      "filename": "use-us-1.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/use-us-1.mp3",
+      "duration": 4.26,
+      "size": 68112,
+      "text": "游戏和动画里，角色骨骼的每一根都有姿态，关键帧之间的过渡几乎一律用 SLERP。用欧拉角插值的话，胳膊会走出奇怪的弧线。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "use",
+      "line_id": "us-2",
+      "filename": "use-us-2.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/use-us-2.mp3",
+      "duration": 4.31,
+      "size": 68976,
+      "text": "无人机和手机里的姿态解算，也在四元数上做。陀螺仪的积分如果用欧拉角，飞到接近垂直的姿态就会数值爆掉，四元数没有这个问题。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "use",
+      "line_id": "us-3",
+      "filename": "use-us-3.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/use-us-3.mp3",
+      "duration": 3.45,
+      "size": 55152,
+      "text": "航天器的姿态控制系统同样存四元数。太空里没有天然的水平面，欧拉角的那套约定本来就不方便。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "use",
+      "line_id": "us-4",
+      "filename": "use-us-4.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/use-us-4.mp3",
+      "duration": 5.08,
+      "size": 81216,
+      "text": "还有一个好处是数值上的。矩阵连乘很多次以后会因为舍入误差而不再正交，得定期重新正交化；四元数只要归一化一下，四个数除以模长，就干净了。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/summary-sum-1.mp3",
+      "duration": 5.08,
+      "size": 81216,
+      "text": "单位四元数编码旋转：绕轴 n 转 θ，就是 θ 一半的余弦配上 θ 一半的正弦乘 n。半角来自共轭作用里 q 用了两次。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/summary-sum-2.mp3",
+      "duration": 3.59,
+      "size": 57456,
+      "text": "q 与负 q 是同一个旋转，所以单位四元数球面是旋转群的双重覆盖，转七百二十度才真正复原。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/summary-sum-3.mp3",
+      "duration": 4.14,
+      "size": 66240,
+      "text": "而工程上真正离不开它的，是 SLERP：沿球面大圆匀速走，给出匀速且最短的姿态插值。躲万向锁只是顺带的好处。"
+    },
+    {
+      "script_id": "quaternion-rotation",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/quaternion-rotation/yunxi/summary-sum-4.mp3",
+      "duration": 1.0,
+      "size": 15984,
+      "text": "继续探索数学之美！"
+    }
+  ],
+  "script_id": "quaternion-rotation",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 158.46,
+  "total_size": 2535120,
+  "failed": []
+}

@@ -351,6 +351,7 @@ const navCategories: NavCategory[] = [
       { path: '/kissing-number', label: '接吻数问题', icon: '⚪' },
       { path: '/dehn-invariant', label: 'Dehn 不变量', icon: '✂️' },
       { path: '/confocal-quadrics', label: '共焦二次曲面', icon: '🔮' },
+      { path: '/quaternion-rotation', label: '四元数与旋转', icon: '🎲' },
     ],
   },
   {

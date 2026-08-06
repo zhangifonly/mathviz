@@ -291,6 +291,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'focus-directrix',
       'conic-reflection',
       'confocal-quadrics',
+      'quaternion-rotation',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
