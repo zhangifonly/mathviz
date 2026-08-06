@@ -3989,4 +3989,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/confocal-quadrics',
+    title: '共焦二次曲面',
+    description: '只改分母不改分子，一族曲面共用同一组焦点：λ 的三段取值给出椭球面、单叶双曲面、双叶双曲面。过空间任一点恰有三张，而且两两垂直——Jacobi 定理与椭球坐标',
+    icon: '🔮',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['geometry', 'analysis'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

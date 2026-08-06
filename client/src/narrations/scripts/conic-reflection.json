@@ -70,7 +70,7 @@
     },
     {
       "id": "why",
-      "type": "principle",
+      "type": "formula",
       "title": "为什么一定等角",
       "lines": [
         {
@@ -124,7 +124,7 @@
     },
     {
       "id": "billiard",
-      "type": "exploration",
+      "type": "interaction",
       "title": "椭圆台球桌",
       "lines": [
         {

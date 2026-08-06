@@ -1,0 +1,290 @@
+{
+  "files": [
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "family",
+      "line_id": "fa-1",
+      "filename": "family-fa-1.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/family-fa-1.mp3",
+      "duration": 6.61,
+      "size": 105696,
+      "text": "先固定三个数，a 大于 b 大于 c，都是正的。然后写下这个方程：x 平方除以 a 平方减 λ，加 y 平方除以 b 平方减 λ，加 z 平方除以 c 平方减 λ，等于一。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "family",
+      "line_id": "fa-2",
+      "filename": "family-fa-2.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/family-fa-2.mp3",
+      "duration": 5.01,
+      "size": 80208,
+      "text": "注意 λ 只出现在分母里。分子始终是 x 平方、y 平方、z 平方，一个没变。让 λ 跑遍实数，就得到一族曲面。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "family",
+      "line_id": "fa-3",
+      "filename": "family-fa-3.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/family-fa-3.mp3",
+      "duration": 5.62,
+      "size": 89856,
+      "text": "这一族叫共焦二次曲面。共焦的意思是，整族曲面共用同一组焦点，就像平面上共焦的椭圆和双曲线共用那两个焦点一样。改变 λ 不会挪动焦点。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "family",
+      "line_id": "fa-4",
+      "filename": "family-fa-4.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/family-fa-4.mp3",
+      "duration": 3.21,
+      "size": 51408,
+      "text": "这门课要讲的，是这一族曲面藏着的一个漂亮结论。它只在三维里成立，在平面上看不到。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "three",
+      "line_id": "th-1",
+      "filename": "three-th-1.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/three-th-1.mp3",
+      "duration": 2.62,
+      "size": 41904,
+      "text": "先看 λ 变化时曲面怎么变。关键是三个分母的正负号。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "three",
+      "line_id": "th-2",
+      "filename": "three-th-2.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/three-th-2.mp3",
+      "duration": 4.31,
+      "size": 68976,
+      "text": "当 λ 小于 c 平方，三个分母全是正的，方程是三个正项之和等于一，这是一个椭球面。画面上蓝色那张就是。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "three",
+      "line_id": "th-3",
+      "filename": "three-th-3.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/three-th-3.mp3",
+      "duration": 5.08,
+      "size": 81216,
+      "text": "λ 越过 c 平方以后，第三个分母变负了。z 那一项变成减号，方程成了两正一负，这是单叶双曲面，橙色那张，中间细腰、上下张开。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "three",
+      "line_id": "th-4",
+      "filename": "three-th-4.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/three-th-4.mp3",
+      "duration": 5.32,
+      "size": 85104,
+      "text": "λ 再越过 b 平方，y 那一项也变负。现在是一正两负，只有 x 方向还是实轴，曲面裂成分居两侧的两片，这是双叶双曲面，紫色那两片。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "three",
+      "line_id": "th-5",
+      "filename": "three-th-5.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/three-th-5.mp3",
+      "duration": 4.65,
+      "size": 74448,
+      "text": "λ 超过 a 平方以后三项全负，左边不可能等于一，没有实点。所以有意义的 λ 恰好被分成三段，一段一种曲面。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "jacobi",
+      "line_id": "ja-1",
+      "filename": "jacobi-ja-1.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/jacobi-ja-1.mp3",
+      "duration": 2.32,
+      "size": 37152,
+      "text": "现在反过来问：给定空间中的一个点 P，有几张共焦曲面经过它？"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "jacobi",
+      "line_id": "ja-2",
+      "filename": "jacobi-ja-2.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/jacobi-ja-2.mp3",
+      "duration": 4.31,
+      "size": 68976,
+      "text": "把 P 的坐标代进方程，未知数就只剩 λ 了。通分之后是一个关于 λ 的三次方程，所以最多三个根。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "jacobi",
+      "line_id": "ja-3",
+      "filename": "jacobi-ja-3.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/jacobi-ja-3.mp3",
+      "duration": 8.1,
+      "size": 129600,
+      "text": "而且这三个根的位置是被锁死的。当 λ 从下方逼近 c 平方，z 平方除以 c 平方减 λ 会趋于正无穷；从上方逼近时趋于负无穷。函数在 c 平方两侧异号，中间必有一个根。b 平方、a 平方处同理。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "jacobi",
+      "line_id": "ja-4",
+      "filename": "jacobi-ja-4.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/jacobi-ja-4.mp3",
+      "duration": 5.87,
+      "size": 93888,
+      "text": "于是三个根分别落在三段区间里，一段一个。换句话说，过空间中任何一点，恰好有三张共焦曲面：一张椭球面、一张单叶双曲面、一张双叶双曲面，不多不少。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "jacobi",
+      "line_id": "ja-5",
+      "filename": "jacobi-ja-5.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/jacobi-ja-5.mp3",
+      "duration": 3.45,
+      "size": 55152,
+      "text": "画面上这三张面就是过 P 点的那三张。拖动 P，三张面跟着变形，但永远是这三种，各一张。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "ortho",
+      "line_id": "or-1",
+      "filename": "ortho-or-1.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/ortho-or-1.mp3",
+      "duration": 2.3,
+      "size": 36864,
+      "text": "真正漂亮的是下一步。这三张面在 P 点相交，交角是多少？"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "ortho",
+      "line_id": "or-2",
+      "filename": "ortho-or-2.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/ortho-or-2.mp3",
+      "duration": 6.87,
+      "size": 109872,
+      "text": "看 P 点伸出的三条箭头，它们是三张面各自的法向量。法向量的方向就是梯度方向，可以直接写出来：分量是 x 除以 a 平方减 λ，y 除以 b 平方减 λ，z 除以 c 平方减 λ。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "ortho",
+      "line_id": "or-3",
+      "filename": "ortho-or-3.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/ortho-or-3.mp3",
+      "duration": 5.43,
+      "size": 86832,
+      "text": "把任意两条法向量做点积，代入这个点满足两张面方程这个条件，化简之后结果恰好是零。这就是 Jacobi 的定理：三张共焦曲面在交点处两两正交。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "ortho",
+      "line_id": "or-4",
+      "filename": "ortho-or-4.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/ortho-or-4.mp3",
+      "duration": 5.27,
+      "size": 84384,
+      "text": "左下角三个角度就是实测的结果。三对法向量的夹角，都是九十度，小数点后六位全是零。旋转视角，换个位置的 P，这三个数一直不动。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "ortho",
+      "line_id": "or-5",
+      "filename": "ortho-or-5.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/ortho-or-5.mp3",
+      "duration": 5.33,
+      "size": 85248,
+      "text": "要强调的是，这不是任意三张曲面都有的巧合。把其中一张换成同族里别的 λ，交角立刻就偏离九十度了。正交性来自共焦这个条件本身。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "coord",
+      "line_id": "co-1",
+      "filename": "coord-co-1.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/coord-co-1.mp3",
+      "duration": 5.62,
+      "size": 89856,
+      "text": "既然过每一点都有三张互相垂直的面，那就可以拿这三个 λ 当坐标用。给出 λ₁、λ₂、λ₃，就唯一确定了空间中的一个点，最多差几个符号。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "coord",
+      "line_id": "co-2",
+      "filename": "coord-co-2.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/coord-co-2.mp3",
+      "duration": 3.62,
+      "size": 57888,
+      "text": "这套坐标叫椭球坐标。它和直角坐标、柱坐标、球坐标一样是正交坐标系，但形状灵活得多。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "coord",
+      "line_id": "co-3",
+      "filename": "coord-co-3.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/coord-co-3.mp3",
+      "duration": 5.79,
+      "size": 92592,
+      "text": "正交为什么重要？因为拉普拉斯方程在正交坐标系里才有希望分离变量。椭球坐标是三维里少数几个能做到这件事的坐标系之一，分离之后得到的是 Lamé 函数。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "coord",
+      "line_id": "co-4",
+      "filename": "coord-co-4.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/coord-co-4.mp3",
+      "duration": 4.1,
+      "size": 65664,
+      "text": "实际用处是算椭球形物体的引力势和静电势。地球不是正球，是个椭球，算它的引力场就自然落到这套坐标上。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "coord",
+      "line_id": "co-5",
+      "filename": "coord-co-5.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/coord-co-5.mp3",
+      "duration": 5.95,
+      "size": 95184,
+      "text": "还有一个更几何的用处：椭球面上的测地线，总是与同一族里某张共焦曲面相切。这条性质让椭球面上的测地流成为可积系统，也是 Jacobi 当年研究这一族曲面的起点。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/summary-sum-1.mp3",
+      "duration": 3.85,
+      "size": 61632,
+      "text": "一个参数 λ，一族共焦曲面。λ 的三段取值给出椭球面、单叶双曲面、双叶双曲面。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/summary-sum-2.mp3",
+      "duration": 2.68,
+      "size": 42912,
+      "text": "过空间任一点恰有三张，一种一张，而且两两垂直。这是 Jacobi 定理。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/summary-sum-3.mp3",
+      "duration": 4.72,
+      "size": 75456,
+      "text": "平面上过一点只有两条共焦曲线，正交是一眼的事。三张曲面两两正交，必须真的到空间里才看得见 —— 这就是为什么这门课是三维的。"
+    },
+    {
+      "script_id": "confocal-quadrics",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/confocal-quadrics/xiaoxiao/summary-sum-4.mp3",
+      "duration": 0.9,
+      "size": 14400,
+      "text": "继续探索数学之美！"
+    }
+  ],
+  "script_id": "confocal-quadrics",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "total_duration": 128.91,
+  "total_size": 2062368,
+  "failed": []
+}

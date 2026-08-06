@@ -366,4 +366,5 @@ export const SCENE_FILES: Record<string, string> = {
   'dandelin': 'dandelinScenes',
   'focus-directrix': 'focusDirectrixScenes',
   'conic-reflection': 'conicReflectionScenes',
+  'confocal-quadrics': 'confocalQuadricsScenes',
 }
