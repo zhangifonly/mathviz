@@ -361,6 +361,7 @@ const navCategories: NavCategory[] = [
       { path: '/concentration', label: '集中不等式', icon: '📉' },
       { path: '/entropy-coding', label: '熵与信源编码', icon: '🗜️' },
       { path: '/kl-divergence', label: 'KL 散度', icon: '📊' },
+      { path: '/mutual-information', label: '互信息与信道', icon: '📡' },
     ],
   },
   {

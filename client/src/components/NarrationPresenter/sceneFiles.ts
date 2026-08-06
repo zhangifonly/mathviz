@@ -379,4 +379,5 @@ export const SCENE_FILES: Record<string, string> = {
   'concentration': 'concentrationScenes',
   'entropy-coding': 'entropyCodingScenes',
   'kl-divergence': 'klDivergenceScenes',
+  'mutual-information': 'mutualInformationScenes',
 }

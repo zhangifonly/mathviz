@@ -1,0 +1,330 @@
+{
+  "files": [
+    {
+      "script_id": "mutual-information",
+      "section_id": "two",
+      "line_id": "tw-1",
+      "filename": "two-tw-1.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/two-tw-1.mp3",
+      "duration": 3.71,
+      "size": 59328,
+      "text": "前两课的地基已经铺好：熵是编码的下界，KL 散度是用错分布的代价。这门课把它们用到两个随机变量上。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "two",
+      "line_id": "tw-2",
+      "filename": "two-tw-2.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/two-tw-2.mp3",
+      "duration": 3.2,
+      "size": 51264,
+      "text": "问题是这样的：我关心 X，但只能观测到 Y。知道了 Y 之后，关于 X 的不确定性减少了多少？"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "two",
+      "line_id": "tw-3",
+      "filename": "two-tw-3.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/two-tw-3.mp3",
+      "duration": 5.51,
+      "size": 88128,
+      "text": "答案叫互信息，写作 I(X 分号 Y)。定义是 X 的熵，减去在已知 Y 的条件下 X 的熵。前者是原本的不确定性，后者是剩下的，差就是被消除掉的那部分。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "two",
+      "line_id": "tw-4",
+      "filename": "two-tw-4.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/two-tw-4.mp3",
+      "duration": 4.7,
+      "size": 75168,
+      "text": "有意思的是它是对称的。知道 Y 后 X 减少了多少，就等于知道 X 后 Y 减少了多少。所以叫\"互\"信息，而不是\"Y 关于 X 的信息\"。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "two",
+      "line_id": "tw-5",
+      "filename": "two-tw-5.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/two-tw-5.mp3",
+      "duration": 5.48,
+      "size": 87696,
+      "text": "顺带提一句：项目里决策树那课，一直在用信息增益来选分裂特征。信息增益就是互信息 —— 标签与某个特征之间的互信息。那课没点破这层关系，这里补上。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "four",
+      "line_id": "fr-1",
+      "filename": "four-fr-1.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/four-fr-1.mp3",
+      "duration": 2.42,
+      "size": 38736,
+      "text": "互信息有四个等价的表达式，每一个都从不同角度说明它是什么。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "four",
+      "line_id": "fr-2",
+      "filename": "four-fr-2.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/four-fr-2.mp3",
+      "duration": 4.18,
+      "size": 66816,
+      "text": "第一个刚说过：H(X) 减 H(X 给定 Y)。第二个是对称的那个：H(Y) 减 H(Y 给定 X)。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "four",
+      "line_id": "fr-3",
+      "filename": "four-fr-3.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/four-fr-3.mp3",
+      "duration": 5.79,
+      "size": 92592,
+      "text": "第三个是 H(X) 加 H(Y) 减去联合熵 H(X, Y)。画成维恩图就是两个圆的交集面积 —— 各自的信息量相加，减去总共的，剩下的就是重叠部分。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "four",
+      "line_id": "fr-4",
+      "filename": "four-fr-4.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/four-fr-4.mp3",
+      "duration": 3.72,
+      "size": 59472,
+      "text": "第四个最深刻，也把这门课接回上一课：互信息等于实际联合分布，与\"假装 X 和 Y 独立\"那个乘积分布之间的 KL 散度。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "four",
+      "line_id": "fr-5",
+      "filename": "four-fr-5.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/four-fr-5.mp3",
+      "duration": 6.33,
+      "size": 101232,
+      "text": "换句话说，互信息度量的是\"离独立有多远\"。这一下就解释了两件事：为什么互信息永远非负 —— 因为 KL 非负，Gibbs 不等式；以及为什么独立时恰好为零 —— 因为那时联合分布就等于乘积分布。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "four",
+      "line_id": "fr-6",
+      "filename": "four-fr-6.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/four-fr-6.mp3",
+      "duration": 2.74,
+      "size": 43776,
+      "text": "本课对每个预设都验证了这四个写法给出同一个数，误差在十的负十六次方量级。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "channel",
+      "line_id": "ch-1",
+      "filename": "channel-ch-1.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/channel-ch-1.mp3",
+      "duration": 3.42,
+      "size": 54720,
+      "text": "现在把互信息用到通信上。所谓信道，就是一个把输入 X 变成输出 Y 的随机映射，由条件概率描述。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "channel",
+      "line_id": "ch-2",
+      "filename": "channel-ch-2.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/channel-ch-2.mp3",
+      "duration": 4.46,
+      "size": 71424,
+      "text": "最简单的是二元对称信道：传一个比特，以概率 e 被翻转。互信息 I(X 分号 Y) 就是这条信道每次实际能传过去多少信息。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "channel",
+      "line_id": "ch-3",
+      "filename": "channel-ch-3.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/channel-ch-3.mp3",
+      "duration": 4.09,
+      "size": 65520,
+      "text": "但 I 不只取决于信道，还取决于你怎么用它 —— 也就是输入分布。画面上的曲面就是 I 关于输入分布 a 和噪声 e 的函数。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "channel",
+      "line_id": "ch-4",
+      "filename": "channel-ch-4.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/channel-ch-4.mp3",
+      "duration": 4.25,
+      "size": 67968,
+      "text": "沿噪声方向看，曲面单调下降，噪声越大传得越少。沿输入分布方向看，却是一个隆起的峰 —— 有一个最好的输入分布。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "channel",
+      "line_id": "ch-5",
+      "filename": "channel-ch-5.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/channel-ch-5.mp3",
+      "duration": 4.17,
+      "size": 66672,
+      "text": "峰顶的那个值就是信道容量：对所有可能的输入分布取最大。红色那条脊线，就是每个噪声下的峰顶连起来的轨迹。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "channel",
+      "line_id": "ch-6",
+      "filename": "channel-ch-6.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/channel-ch-6.mp3",
+      "duration": 4.74,
+      "size": 75888,
+      "text": "对二元对称信道，容量有个漂亮的闭式：一减去 e 的二元熵。数值搜索的结果与它吻合到十的负十六次方，而且最优输入正好是均匀分布。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "channel",
+      "line_id": "ch-7",
+      "filename": "channel-ch-7.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/channel-ch-7.mp3",
+      "duration": 5.93,
+      "size": 94896,
+      "text": "切到\"输入不均匀\"那个预设看看。同样的噪声零点一，输入取零点三而不是零点五，互信息只有零点四五六，而容量是零点五三一。容量是最大值，不是随便一个输入都能达到。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "compare",
+      "line_id": "cp-1",
+      "filename": "compare-cp-1.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/compare-cp-1.mp3",
+      "duration": 3.33,
+      "size": 53280,
+      "text": "换一种噪声看看。二元擦除信道：以概率 e 把这一位变成\"擦除\"符号，其余原样传过去。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "compare",
+      "line_id": "cp-2",
+      "filename": "compare-cp-2.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/compare-cp-2.mp3",
+      "duration": 5.35,
+      "size": 85536,
+      "text": "它的容量是一减 e，形状比对称信道的一减 H(e) 简单得多，数值也高得多。同样是零点一的噪声，擦除信道能传零点九，对称信道只有零点五三一。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "compare",
+      "line_id": "cp-3",
+      "filename": "compare-cp-3.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/compare-cp-3.mp3",
+      "duration": 6.25,
+      "size": 99936,
+      "text": "差别的根源在于接收方知道什么。擦除时，接收方**知道自己丢了哪一位**；翻转时，接收方拿到一个比特，却**不知道它对不对**。后者要糟糕得多。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "compare",
+      "line_id": "cp-4",
+      "filename": "compare-cp-4.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/compare-cp-4.mp3",
+      "duration": 3.83,
+      "size": 61200,
+      "text": "最极端的情形是翻转概率恰好等于二分之一。这时容量精确等于零 —— 不管你怎么编码，一个比特也传不过去。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "compare",
+      "line_id": "cp-5",
+      "filename": "compare-cp-5.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/compare-cp-5.mp3",
+      "duration": 4.61,
+      "size": 73728,
+      "text": "道理是：翻转一半时，输出与输入完全独立，收到的比特跟抛硬币没有区别。这不是\"传得慢\"，是**根本传不了**。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "compare",
+      "line_id": "cp-6",
+      "filename": "compare-cp-6.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/compare-cp-6.mp3",
+      "duration": 7.76,
+      "size": 124128,
+      "text": "还有第三种，Z 信道：零一定传对，一有概率变成零。它不对称，所以最优输入也不对称 —— 实测最优的 a 在零点五四到零点六二之间，从来不是零点五。这正说明为什么容量必须定义成一个最大化问题，而不能想当然地取均匀输入。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "use",
+      "line_id": "us-1",
+      "filename": "use-us-1.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/use-us-1.mp3",
+      "duration": 4.2,
+      "size": 67248,
+      "text": "Shannon 信道编码定理说：只要码率低于容量，就存在编码方案使错误率任意小；高于容量则不可能。这是通信理论的基石。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "use",
+      "line_id": "us-2",
+      "filename": "use-us-2.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/use-us-2.mp3",
+      "duration": 4.99,
+      "size": 79776,
+      "text": "注意这是个存在性结论，它没告诉你怎么构造那个码。从香农一九四八年提出，到 Turbo 码和 LDPC 码真正逼近容量，中间隔了将近五十年。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "use",
+      "line_id": "us-3",
+      "filename": "use-us-3.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/use-us-3.mp3",
+      "duration": 4.72,
+      "size": 75456,
+      "text": "机器学习里，特征选择常用互信息来衡量特征与标签的相关性 —— 它比相关系数强，因为能捕捉非线性关系。决策树的信息增益就是这个。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "use",
+      "line_id": "us-4",
+      "filename": "use-us-4.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/use-us-4.mp3",
+      "duration": 4.45,
+      "size": 71136,
+      "text": "还有信息瓶颈方法：在保留与标签的互信息的同时，压缩与输入的互信息，得到\"够用但不冗余\"的表示。这被用来解释深度网络学到了什么。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/summary-sum-1.mp3",
+      "duration": 4.68,
+      "size": 74880,
+      "text": "互信息是知道一个变量后，另一个变量不确定性的减少量。四个等价写法里最深刻的一个说：它就是实际联合分布与\"假装独立\"之间的 KL 散度。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/summary-sum-2.mp3",
+      "duration": 5.0,
+      "size": 79920,
+      "text": "信道容量是互信息对输入分布取最大。对称信道是一减 H(e)，在均匀输入取到；擦除信道是一减 e，高得多，因为接收方知道自己丢了哪一位。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/summary-sum-3.mp3",
+      "duration": 5.61,
+      "size": 89712,
+      "text": "翻转概率等于二分之一时容量为零 —— 输出与输入独立，一个比特也传不了。而不对称的 Z 信道最优输入不是均匀的，这说明容量为什么必须写成最大化问题。"
+    },
+    {
+      "script_id": "mutual-information",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/mutual-information/yunxi/summary-sum-4.mp3",
+      "duration": 1.0,
+      "size": 15984,
+      "text": "继续探索数学之美！"
+    }
+  ],
+  "script_id": "mutual-information",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 144.62,
+  "total_size": 2313216,
+  "failed": []
+}

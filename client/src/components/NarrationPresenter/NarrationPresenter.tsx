@@ -303,6 +303,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'concentration',
       'entropy-coding',
       'kl-divergence',
+      'mutual-information',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

@@ -4132,4 +4132,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/mutual-information',
+    title: '互信息与信道容量',
+    description: '知道 Y 后 X 的不确定性减少多少。四个等价写法里最深刻的一个：互信息就是「离独立有多远」的 KL 散度。信道容量是对输入分布取最大——BSC 是 1−H(e)，BEC 是 1−e，e=0.5 时根本传不了',
+    icon: '📡',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['probability', 'applied'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

@@ -394,6 +394,7 @@ const PerronFrobeniusExperiment = lazyRetry(() => import('./experiments/perron-f
 const ConcentrationExperiment = lazyRetry(() => import('./experiments/concentration/ConcentrationExperiment'))
 const EntropyCodingExperiment = lazyRetry(() => import('./experiments/entropy-coding/EntropyCodingExperiment'))
 const KLDivergenceExperiment = lazyRetry(() => import('./experiments/kl-divergence/KLDivergenceExperiment'))
+const MutualInformationExperiment = lazyRetry(() => import('./experiments/mutual-information/MutualInformationExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -785,6 +786,7 @@ export default function App() {
             <Route path="concentration" element={<ConcentrationExperiment />} />
             <Route path="entropy-coding" element={<EntropyCodingExperiment />} />
             <Route path="kl-divergence" element={<KLDivergenceExperiment />} />
+            <Route path="mutual-information" element={<MutualInformationExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />
