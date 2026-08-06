@@ -4022,4 +4022,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/lie-algebra-so3',
+    title: '矩阵指数与李代数 so(3)',
+    description: 'so(3) 是 SO(3) 在单位元处的切空间——全体反对称矩阵。hat 映射把叉积变成矩阵乘法；因为 K³=−K，指数级数精确收成 Rodrigues 三项闭式；李括号在 so(3) 上就是叉积，度量旋转的不可交换',
+    icon: '♾️',
+    difficulty: 'expert',
+    ageRange: '研究生+',
+    topics: ['algebra', 'geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

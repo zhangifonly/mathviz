@@ -404,6 +404,7 @@ const navCategories: NavCategory[] = [
       { path: '/sprott-attractor', label: '斯普罗特吸引子', icon: '🎯' },
       { path: '/lorenz-atmosphere', label: '洛伦兹84模型', icon: '🌍' },
       { path: '/so3-topology', label: 'SO(3) 的拓扑', icon: '🔄' },
+      { path: '/lie-algebra-so3', label: '李代数 so(3)', icon: '♾️' },
     ],
   },
 ]

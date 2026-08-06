@@ -293,6 +293,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'confocal-quadrics',
       'quaternion-rotation',
       'so3-topology',
+      'lie-algebra-so3',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
