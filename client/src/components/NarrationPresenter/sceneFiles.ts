@@ -374,4 +374,5 @@ export const SCENE_FILES: Record<string, string> = {
   'condition-number': 'conditionNumberScenes',
   'jordan-form': 'jordanFormScenes',
   'gershgorin': 'gershgorinScenes',
+  'pseudoinverse': 'pseudoinverseScenes',
 }

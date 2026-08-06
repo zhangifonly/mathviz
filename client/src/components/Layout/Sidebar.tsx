@@ -356,6 +356,7 @@ const navCategories: NavCategory[] = [
       { path: '/screw-motion', label: '螺旋运动', icon: '🔩' },
       { path: '/condition-number', label: '条件数与稳定性', icon: '📐' },
       { path: '/jordan-form', label: 'Jordan 标准型', icon: '🧩' },
+      { path: '/pseudoinverse', label: '伪逆', icon: '➕' },
     ],
   },
   {
