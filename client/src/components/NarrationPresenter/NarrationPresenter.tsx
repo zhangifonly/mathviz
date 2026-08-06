@@ -292,6 +292,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'conic-reflection',
       'confocal-quadrics',
       'quaternion-rotation',
+      'so3-topology',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

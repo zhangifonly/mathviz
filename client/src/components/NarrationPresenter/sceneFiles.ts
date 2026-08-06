@@ -368,4 +368,5 @@ export const SCENE_FILES: Record<string, string> = {
   'conic-reflection': 'conicReflectionScenes',
   'confocal-quadrics': 'confocalQuadricsScenes',
   'quaternion-rotation': 'quaternionRotationScenes',
+  'so3-topology': 'so3TopologyScenes',
 }

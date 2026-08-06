@@ -4011,4 +4011,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/so3-topology',
+    title: 'SO(3) 的拓扑',
+    description: '整圈旋转是 SO(3) 里的环路，提升到 S³ 后终点是 (−1)^圈数：奇数圈落在 −1、不闭合、收不成一点，偶数圈闭合、可收缩。于是 π₁(SO(3))=ℤ₂——电子自旋与腰带把戏的共同来源',
+    icon: '🔄',
+    difficulty: 'expert',
+    ageRange: '研究生+',
+    topics: ['geometry', 'algebra'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

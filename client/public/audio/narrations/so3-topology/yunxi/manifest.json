@@ -1,0 +1,290 @@
+{
+  "files": [
+    {
+      "script_id": "so3-topology",
+      "section_id": "loop",
+      "line_id": "lo-1",
+      "filename": "loop-lo-1.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/loop-lo-1.mp3",
+      "duration": 4.82,
+      "size": 77040,
+      "text": "上一课讲四元数时提到，q 和负 q 是同一个旋转，还顺带说了一句：转三百六十度不复原，转七百二十度才复原。这门课就把那句话说清楚。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "loop",
+      "line_id": "lo-2",
+      "filename": "loop-lo-2.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/loop-lo-2.mp3",
+      "duration": 5.03,
+      "size": 80496,
+      "text": "先换个看法。所有的三维旋转组成一个集合，叫 SO(3)。让物体绕固定轴从零度连续转到某个角度，就在这个集合里画出了一条道路。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "loop",
+      "line_id": "lo-3",
+      "filename": "loop-lo-3.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/loop-lo-3.mp3",
+      "duration": 3.87,
+      "size": 61920,
+      "text": "如果转满三百六十度，物体回到了原来的姿态，道路的终点和起点是同一个旋转。这样的道路首尾相接，是一条环路。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "loop",
+      "line_id": "lo-4",
+      "filename": "loop-lo-4.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/loop-lo-4.mp3",
+      "duration": 4.67,
+      "size": 74736,
+      "text": "现在问一个纯拓扑的问题：这条环路能不能连续地收缩成一个点？也就是说，能不能一边保持它是环路、一边让它缩得越来越小，最后缩没？"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "lift",
+      "line_id": "li-1",
+      "filename": "lift-li-1.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/lift-li-1.mp3",
+      "duration": 4.14,
+      "size": 66240,
+      "text": "直接在 SO(3) 里想不太好想。换个办法：借助上一课的双重覆盖，把这条环路提到单位四元数球面上去。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "lift",
+      "line_id": "li-2",
+      "filename": "lift-li-2.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/lift-li-2.mp3",
+      "duration": 4.95,
+      "size": 79200,
+      "text": "提升的公式就是上一课的半角式子：转到角度 θ 时，四元数是 θ 一半的余弦，配上 θ 一半的正弦乘以转轴。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "lift",
+      "line_id": "li-3",
+      "filename": "lift-li-3.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/lift-li-3.mp3",
+      "duration": 5.45,
+      "size": 87120,
+      "text": "起点 θ 等于零，四元数是一。现在把 θ 推到三百六十度：半角是一百八十度，余弦是负一。所以提升的终点是负一，不是一。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "lift",
+      "line_id": "li-4",
+      "filename": "lift-li-4.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/lift-li-4.mp3",
+      "duration": 4.01,
+      "size": 64224,
+      "text": "这是关键。物体的姿态确实回到了原样，但它的提升没有回到起点，而是跑到了球面的正对面。提升不闭合。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "lift",
+      "line_id": "li-5",
+      "filename": "lift-li-5.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/lift-li-5.mp3",
+      "duration": 4.82,
+      "size": 77040,
+      "text": "再推到七百二十度：半角是三百六十度，余弦是正一。这一次提升回到了起点，闭合了。一般地，转 n 圈的提升终点是负一的 n 次方。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "see",
+      "line_id": "se-1",
+      "filename": "see-se-1.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/see-se-1.mp3",
+      "duration": 4.02,
+      "size": 64368,
+      "text": "四元数住在四维球面上，没法直接看。用立体投影压到三维：从负一那个点往外打，把球面铺开到普通空间里。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "see",
+      "line_id": "se-2",
+      "filename": "see-se-2.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/see-se-2.mp3",
+      "duration": 4.81,
+      "size": 76896,
+      "text": "这个投影有个正好的性质：单位元一落在原点，而负一被送到了无穷远。于是\"提升终点是正一还是负一\"这件事，在画面上变得极其显眼。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "see",
+      "line_id": "se-3",
+      "filename": "see-se-3.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/see-se-3.mp3",
+      "duration": 4.41,
+      "size": 70560,
+      "text": "看画面左边。转一圈时，曲线从原点出发，越走越远，最后一路冲出画面 —— 因为它要去的地方是无穷远。它不闭合。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "see",
+      "line_id": "se-4",
+      "filename": "see-se-4.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/see-se-4.mp3",
+      "duration": 3.9,
+      "size": 62352,
+      "text": "切到转两圈。曲线出去一趟，穿过无穷远那一下断了一次，然后从另一头回来，最终回到原点。它闭合了。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "see",
+      "line_id": "se-5",
+      "filename": "see-se-5.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/see-se-5.mp3",
+      "duration": 5.68,
+      "size": 90864,
+      "text": "再看右边的物体。无论转一圈还是两圈，它的姿态都回到了原样，两边看不出区别。区别只在左边，只在提升里 —— 这正是双重覆盖的意思：姿态一样，提升可以不一样。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "pi1",
+      "line_id": "p1-1",
+      "filename": "pi1-p1-1.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/pi1-p1-1.mp3",
+      "duration": 3.95,
+      "size": 63216,
+      "text": "现在可以回答开头那个问题了。S³ 这个四维球面是单连通的，上面任何闭环都能收缩成一点，这一点没有争议。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "pi1",
+      "line_id": "p1-2",
+      "filename": "pi1-p1-2.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/pi1-p1-2.mp3",
+      "duration": 6.68,
+      "size": 106848,
+      "text": "所以 SO(3) 里的环路能不能收缩，完全取决于它的提升闭不闭合。提升闭合，就能顺着 S³ 里的收缩压下来；提升不闭合，那它根本不是环路，收缩会要求端点移动，而端点是钉死的。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "pi1",
+      "line_id": "p1-3",
+      "filename": "pi1-p1-3.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/pi1-p1-3.mp3",
+      "duration": 3.26,
+      "size": 52128,
+      "text": "结论：转偶数圈的环路可以收缩，转奇数圈的不行。环路只分两类，标记成零和一。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "pi1",
+      "line_id": "p1-4",
+      "filename": "pi1-p1-4.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/pi1-p1-4.mp3",
+      "duration": 4.31,
+      "size": 68976,
+      "text": "两条环路首尾接起来，圈数相加，类别就是圈数之和的奇偶。所以这个群的运算是模二加法 —— 它就是 ℤ₂，只有两个元素的群。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "pi1",
+      "line_id": "p1-5",
+      "filename": "pi1-p1-5.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/pi1-p1-5.mp3",
+      "duration": 5.38,
+      "size": 86112,
+      "text": "有个特征值得留意：非平凡的那个元素是自己的逆。一加一等于零，也就是说，两条转一圈的环路接起来，得到的是可以收缩的。这在画面右下角的加法表里写着。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "phys",
+      "line_id": "ph-1",
+      "filename": "phys-ph-1.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/phys-ph-1.mp3",
+      "duration": 5.07,
+      "size": 81072,
+      "text": "这条纯拓扑的结论有实实在在的物理后果。电子的波函数在空间转一圈之后会变号，转两圈才复原。这类粒子叫费米子，它的态由旋量描述。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "phys",
+      "line_id": "ph-2",
+      "filename": "phys-ph-2.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/phys-ph-2.mp3",
+      "duration": 5.55,
+      "size": 88848,
+      "text": "旋量之所以是这个样子，原因就是刚才那件事：物理态住在双重覆盖 S³ 上，而不是住在 SO(3) 上。转一圈把一提到了负一，波函数就跟着变号。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "phys",
+      "line_id": "ph-3",
+      "filename": "phys-ph-3.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/phys-ph-3.mp3",
+      "duration": 4.65,
+      "size": 74448,
+      "text": "还有一个人人都能上手的演示，叫腰带把戏。腰带一端固定，另一端拧三百六十度，然后不许再转端头，只准平移和绕开，你没法把它捋平。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "phys",
+      "line_id": "ph-4",
+      "filename": "phys-ph-4.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/phys-ph-4.mp3",
+      "duration": 4.48,
+      "size": 71712,
+      "text": "拧七百二十度反而可以捋平。这听上去违反直觉，拧得更多却更容易解开，但它正是刚才那条定理：偶数圈的环路可以收缩。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "phys",
+      "line_id": "ph-5",
+      "filename": "phys-ph-5.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/phys-ph-5.mp3",
+      "duration": 6.27,
+      "size": 100368,
+      "text": "需要说明的是，本课没有做腰带把戏的动画。那个显式的形变构造相当微妙，与其放一个自己都验证不了的示意动画，不如老实展示提升曲线 —— 它才是把戏成立的真正原因，而且每个数字都可以检验。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/summary-sum-1.mp3",
+      "duration": 3.33,
+      "size": 53280,
+      "text": "整圈旋转在 SO(3) 里是一条环路，把它提升到 S³，终点是负一的圈数次方。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/summary-sum-2.mp3",
+      "duration": 4.29,
+      "size": 68688,
+      "text": "S³ 单连通，所以环路能否收缩只看提升闭不闭合。偶数圈闭合、可收缩，奇数圈不闭合、不可收缩。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/summary-sum-3.mp3",
+      "duration": 4.18,
+      "size": 66960,
+      "text": "环路因此只分两类，加法模二。π₁ 的 SO(3) 等于 ℤ₂。电子自旋和腰带把戏，说的都是这一件事。"
+    },
+    {
+      "script_id": "so3-topology",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/so3-topology/yunxi/summary-sum-4.mp3",
+      "duration": 1.0,
+      "size": 15984,
+      "text": "继续探索数学之美！"
+    }
+  ],
+  "script_id": "so3-topology",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 126.98,
+  "total_size": 2031696,
+  "failed": []
+}

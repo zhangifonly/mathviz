@@ -463,6 +463,7 @@ const FocusDirectrixSceneRenderer = lazy(() => import('./FocusDirectrix/FocusDir
 const ConicReflectionSceneRenderer = lazy(() => import('./ConicReflection/ConicReflectionSceneRenderer'))
 const ConfocalQuadricsSceneRenderer = lazy(() => import('./ConfocalQuadrics/ConfocalQuadricsSceneRenderer'))
 const QuaternionRotationSceneRenderer = lazy(() => import('./QuaternionRotation/QuaternionRotationSceneRenderer'))
+const SO3TopologySceneRenderer = lazy(() => import('./SO3Topology/SO3TopologySceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -828,6 +829,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'conic-reflection': ConicReflectionSceneRenderer,
   'confocal-quadrics': ConfocalQuadricsSceneRenderer,
   'quaternion-rotation': QuaternionRotationSceneRenderer,
+  'so3-topology': SO3TopologySceneRenderer,
 }
 
 // 获取场景渲染器
