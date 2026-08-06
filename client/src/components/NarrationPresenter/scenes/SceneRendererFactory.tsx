@@ -474,6 +474,7 @@ const PerronFrobeniusSceneRenderer = lazy(() => import('./PerronFrobenius/Perron
 const ConcentrationSceneRenderer = lazy(() => import('./Concentration/ConcentrationSceneRenderer'))
 const EntropyCodingSceneRenderer = lazy(() => import('./EntropyCoding/EntropyCodingSceneRenderer'))
 const KLDivergenceSceneRenderer = lazy(() => import('./KLDivergence/KLDivergenceSceneRenderer'))
+const MutualInformationSceneRenderer = lazy(() => import('./MutualInformation/MutualInformationSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -850,6 +851,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'concentration': ConcentrationSceneRenderer,
   'entropy-coding': EntropyCodingSceneRenderer,
   'kl-divergence': KLDivergenceSceneRenderer,
+  'mutual-information': MutualInformationSceneRenderer,
 }
 
 // 获取场景渲染器
