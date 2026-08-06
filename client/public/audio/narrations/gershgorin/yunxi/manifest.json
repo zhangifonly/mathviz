@@ -1,0 +1,320 @@
+{
+  "files": [
+    {
+      "script_id": "gershgorin",
+      "section_id": "ask",
+      "line_id": "as-1",
+      "filename": "ask-as-1.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/ask-as-1.mp3",
+      "duration": 4.24,
+      "size": 67824,
+      "text": "上一课讲 Jordan 型时说到一个让人有点泄气的结论：在浮点运算里，你永远无法确定特征值到底在哪，因为任意小的扰动就能把重根劈开。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "ask",
+      "line_id": "as-2",
+      "filename": "ask-as-2.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/ask-as-2.mp3",
+      "duration": 4.4,
+      "size": 70416,
+      "text": "那还有什么是确定的吗？有。这门课讲的定理，不算特征值，却能把它们圈起来 —— 而且圈得非常廉价，扫一眼矩阵就能画出来。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "ask",
+      "line_id": "as-3",
+      "filename": "ask-as-3.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/ask-as-3.mp3",
+      "duration": 3.99,
+      "size": 63792,
+      "text": "规则是这样：对每一行，以对角元为圆心，画一个圆；半径取这一行**其余**元素绝对值之和。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "ask",
+      "line_id": "as-4",
+      "filename": "ask-as-4.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/ask-as-4.mp3",
+      "duration": 3.97,
+      "size": 63504,
+      "text": "定理说：矩阵的每个特征值，至少落在其中一个圆盘里。三行矩阵三个圆盘，全部特征值都跑不出这三个圆的并集。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "proof",
+      "line_id": "pf-1",
+      "filename": "proof-pf-1.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/proof-pf-1.mp3",
+      "duration": 2.07,
+      "size": 33120,
+      "text": "这个定理的证明短得可以背下来，而且思路很朴素。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "proof",
+      "line_id": "pf-2",
+      "filename": "proof-pf-2.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/proof-pf-2.mp3",
+      "duration": 4.62,
+      "size": 73872,
+      "text": "设 λ 是特征值，x 是对应的特征向量。特征向量可以随便缩放，所以我们盯住它模最大的那个分量，设它是第 i 个。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "proof",
+      "line_id": "pf-3",
+      "filename": "proof-pf-3.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/proof-pf-3.mp3",
+      "duration": 6.2,
+      "size": 99216,
+      "text": "把 A 乘 x 等于 λ 乘 x 的第 i 行写出来，然后把含 a_ii 的项挪到左边：λ 减 a_ii，再乘以 x_i，等于其余项 a_ij 乘 x_j 的和。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "proof",
+      "line_id": "pf-4",
+      "filename": "proof-pf-4.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/proof-pf-4.mp3",
+      "duration": 4.58,
+      "size": 73296,
+      "text": "两边同时除以 x_i。因为 x_i 是模最大的分量，其余的 x_j 除以 x_i，绝对值都不超过一。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "proof",
+      "line_id": "pf-5",
+      "filename": "proof-pf-5.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/proof-pf-5.mp3",
+      "duration": 4.61,
+      "size": 73728,
+      "text": "于是取模之后得到：λ 减 a_ii 的绝对值，不超过那一行其余元素绝对值之和。这正是第 i 个圆盘的定义。证完了。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "proof",
+      "line_id": "pf-6",
+      "filename": "proof-pf-6.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/proof-pf-6.mp3",
+      "duration": 4.99,
+      "size": 79776,
+      "text": "注意这里没有假设 λ 是实数。特征值可以是复的，圆盘就画在复平面上 —— 画面上那两层网格都是复平面，横轴实部，纵轴虚部。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "complex",
+      "line_id": "cx-1",
+      "filename": "complex-cx-1.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/complex-cx-1.mp3",
+      "duration": 4.04,
+      "size": 64656,
+      "text": "切到「复特征值」那个预设看看。这个矩阵是一个平面旋转再配一个缩放，它的特征值是正负二倍的虚数单位，还有一个五。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "complex",
+      "line_id": "cx-2",
+      "filename": "complex-cx-2.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/complex-cx-2.mp3",
+      "duration": 3.74,
+      "size": 59904,
+      "text": "也就是说，有两个特征值完全不在实轴上。画面上那两个黄点明显浮在虚轴方向，标着正负二 i。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "complex",
+      "line_id": "cx-3",
+      "filename": "complex-cx-3.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/complex-cx-3.mp3",
+      "duration": 5.13,
+      "size": 82080,
+      "text": "但它们照样老老实实待在圆盘里。前两行的对角元都是零，非对角元是二，所以那两个圆盘都是以原点为心、半径二的圆 —— 正负二 i 正好在边界上。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "complex",
+      "line_id": "cx-4",
+      "filename": "complex-cx-4.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/complex-cx-4.mp3",
+      "duration": 3.64,
+      "size": 58176,
+      "text": "这就是圆盘定理比「在实轴上找根」强的地方：它对复特征值一视同仁，不需要事先知道特征值是实是复。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "complex",
+      "line_id": "cx-5",
+      "filename": "complex-cx-5.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/complex-cx-5.mp3",
+      "duration": 5.89,
+      "size": 94176,
+      "text": "再看下面那一层。那是列圆盘，对转置矩阵做同样的事得到的。特征值在两层里都被圈住，虚线把同一个特征值在两层的位置连了起来。两组圆盘取交集，估计会更紧。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "strong",
+      "line_id": "st-1",
+      "filename": "strong-st-1.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/strong-st-1.mp3",
+      "duration": 3.15,
+      "size": 50400,
+      "text": "「至少落在某个圆盘里」还不够好用，因为它没说哪个圆盘里有几个。加强版补上了这一点。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "strong",
+      "line_id": "st-2",
+      "filename": "strong-st-2.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/strong-st-2.mp3",
+      "duration": 4.44,
+      "size": 70992,
+      "text": "如果若干个圆盘连成一片，而这一片和其余圆盘不相交，那么这一片里**恰好**有那么多个特征值，按重数算。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "strong",
+      "line_id": "st-3",
+      "filename": "strong-st-3.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/strong-st-3.mp3",
+      "duration": 4.87,
+      "size": 77904,
+      "text": "切到「一个圆盘被孤立」那个预设。第一行对角元是十，非对角元只有一和一，所以那个圆盘以十为心、半径二，和另外两个离得远远的。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "strong",
+      "line_id": "st-4",
+      "filename": "strong-st-4.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/strong-st-4.mp3",
+      "duration": 5.87,
+      "size": 93888,
+      "text": "定理保证：那个孤立圆盘里恰好有一个特征值。实测确实如此，最大的特征值是十点二九五五，稳稳落在里面。另外两个盘连成一片，里面恰好两个特征值。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "strong",
+      "line_id": "st-5",
+      "filename": "strong-st-5.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/strong-st-5.mp3",
+      "duration": 3.82,
+      "size": 61056,
+      "text": "画面上同一个连通分量用同一种颜色，左下角写着每个分量是几个盘、几个值。这两个数字永远相等。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "strong",
+      "line_id": "st-6",
+      "filename": "strong-st-6.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/strong-st-6.mp3",
+      "duration": 3.33,
+      "size": 53280,
+      "text": "这一条才真正有用：它能把特征值一个个隔离到很小的范围里，而这一切都不需要解特征方程。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "use",
+      "line_id": "us-1",
+      "filename": "use-us-1.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/use-us-1.mp3",
+      "duration": 4.5,
+      "size": 72000,
+      "text": "第一个用处是一眼判可逆。如果每一行的对角元绝对值都严格大于该行其余之和 —— 这叫严格对角占优 —— 那么所有圆盘都不含原点。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "use",
+      "line_id": "us-2",
+      "filename": "use-us-2.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/use-us-2.mp3",
+      "duration": 3.44,
+      "size": 55008,
+      "text": "零不在任何圆盘里，就说明零不是特征值，矩阵一定可逆。不用算行列式，扫一眼就知道。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "use",
+      "line_id": "us-3",
+      "filename": "use-us-3.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/use-us-3.mp3",
+      "duration": 4.85,
+      "size": 77616,
+      "text": "第二个用处在迭代法里。Jacobi 迭代和 Gauss-Seidel 迭代收敛的经典充分条件，正是系数矩阵严格对角占优。这条件的来源就是圆盘定理。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "use",
+      "line_id": "us-4",
+      "filename": "use-us-4.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/use-us-4.mp3",
+      "duration": 4.93,
+      "size": 78912,
+      "text": "第三个用处是判稳定。微分方程组稳不稳定，取决于所有特征值的实部是不是都为负。如果所有圆盘整个都落在左半平面里，那就一定稳定。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "use",
+      "line_id": "us-5",
+      "filename": "use-us-5.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/use-us-5.mp3",
+      "duration": 6.07,
+      "size": 97056,
+      "text": "要提醒的是，圆盘给的是上界，可能很松。「非对角元很大」那个预设里，上界是九，真实谱半径只有八点一二；反过来「几乎对角」那个预设，圆盘小得可怜，估计精确到小数点后一位。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "use",
+      "line_id": "us-6",
+      "filename": "use-us-6.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/use-us-6.mp3",
+      "duration": 3.83,
+      "size": 61344,
+      "text": "所以它的价值不在精确，而在便宜：不用算，就能说出确定的话。非对角元越小，说的话就越准。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/summary-sum-1.mp3",
+      "duration": 5.08,
+      "size": 81216,
+      "text": "每个特征值至少落在一个 Gershgorin 圆盘里。圆心是对角元，半径是那一行其余元素绝对值之和。证明只要三行：盯住特征向量里模最大的分量。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/summary-sum-2.mp3",
+      "duration": 3.56,
+      "size": 56880,
+      "text": "加强版说，k 个连成一片又与其余隔开的圆盘里，恰好有 k 个特征值。这才让它能真正隔离特征值。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/summary-sum-3.mp3",
+      "duration": 3.77,
+      "size": 60336,
+      "text": "严格对角占优时圆盘都不含原点，矩阵必可逆；圆盘全在左半平面时系统必稳定。都不用解方程。"
+    },
+    {
+      "script_id": "gershgorin",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/gershgorin/yunxi/summary-sum-4.mp3",
+      "duration": 1.0,
+      "size": 15984,
+      "text": "继续探索数学之美！"
+    }
+  ],
+  "script_id": "gershgorin",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 132.62,
+  "total_size": 2121408,
+  "failed": []
+}

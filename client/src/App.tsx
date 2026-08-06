@@ -388,6 +388,7 @@ const LieAlgebraSO3Experiment = lazyRetry(() => import('./experiments/lie-algebr
 const ScrewMotionExperiment = lazyRetry(() => import('./experiments/screw-motion/ScrewMotionExperiment'))
 const ConditionNumberExperiment = lazyRetry(() => import('./experiments/condition-number/ConditionNumberExperiment'))
 const JordanFormExperiment = lazyRetry(() => import('./experiments/jordan-form/JordanFormExperiment'))
+const GershgorinExperiment = lazyRetry(() => import('./experiments/gershgorin/GershgorinExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -773,6 +774,7 @@ export default function App() {
             <Route path="screw-motion" element={<ScrewMotionExperiment />} />
             <Route path="condition-number" element={<ConditionNumberExperiment />} />
             <Route path="jordan-form" element={<JordanFormExperiment />} />
+            <Route path="gershgorin" element={<GershgorinExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />
