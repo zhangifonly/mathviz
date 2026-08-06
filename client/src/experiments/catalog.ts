@@ -4077,4 +4077,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/pseudoinverse',
+    title: 'Moore-Penrose 伪逆',
+    description: '最小二乘只讲了超定满秩一种情形。伪逆把四种统一：x=A⁺b 总是残差最小的解，若不唯一还是范数最小的那个。由 SVD 造出，Σ⁺ 把非零奇异值取倒数而零仍取零——这正是范数最小的来源',
+    icon: '➕',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['linear-algebra', 'applied'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

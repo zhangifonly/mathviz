@@ -298,6 +298,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'condition-number',
       'jordan-form',
       'gershgorin',
+      'pseudoinverse',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

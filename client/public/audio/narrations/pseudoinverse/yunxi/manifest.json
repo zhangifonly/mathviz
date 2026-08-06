@@ -1,0 +1,340 @@
+{
+  "files": [
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "gap",
+      "line_id": "ga-1",
+      "filename": "gap-ga-1.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/gap-ga-1.mp3",
+      "duration": 4.51,
+      "size": 72144,
+      "text": "这个项目里有一课讲最小二乘法。它处理的是这样的问题：方程比未知数多，一般解不了，那就退而求其次，找一个让残差最小的解。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "gap",
+      "line_id": "ga-2",
+      "filename": "gap-ga-2.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/gap-ga-2.mp3",
+      "duration": 3.62,
+      "size": 57888,
+      "text": "但那一课只讲了一种情形：超定，而且列满秩。这时候正规方程有唯一解，一切都好。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "gap",
+      "line_id": "ga-3",
+      "filename": "gap-ga-3.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/gap-ga-3.mp3",
+      "duration": 6.13,
+      "size": 98064,
+      "text": "还有三种情况它没碰。第一，方程比未知数少，解有无穷多个，该取哪个？第二，列不独立，A 转置乘 A 根本不可逆，正规方程整个失效。第三，两样都占。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "gap",
+      "line_id": "ga-4",
+      "filename": "gap-ga-4.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/gap-ga-4.mp3",
+      "duration": 4.01,
+      "size": 64224,
+      "text": "伪逆把四种情形统一成一句话：x 等于 A 加号乘 b，总是残差最小的解；如果这样的解不止一个，它还是其中范数最小的那个。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "gap",
+      "line_id": "ga-5",
+      "filename": "gap-ga-5.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/gap-ga-5.mp3",
+      "duration": 2.36,
+      "size": 37728,
+      "text": "一个公式管所有情况，包括零矩阵。这门课讲它怎么做到的。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "build",
+      "line_id": "bu-1",
+      "filename": "build-bu-1.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/build-bu-1.mp3",
+      "duration": 3.08,
+      "size": 49248,
+      "text": "构造出奇地简单。先做奇异值分解，A 等于 U 乘 Σ 乘 V 转置。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "build",
+      "line_id": "bu-2",
+      "filename": "build-bu-2.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/build-bu-2.mp3",
+      "duration": 5.38,
+      "size": 86112,
+      "text": "然后伪逆就是 V 乘 Σ 加号乘 U 转置。U 和 V 是正交阵，转置就是逆，没什么可说的。全部玄机都在 Σ 加号上。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "build",
+      "line_id": "bu-3",
+      "filename": "build-bu-3.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/build-bu-3.mp3",
+      "duration": 4.63,
+      "size": 74016,
+      "text": "Σ 是对角阵，装着奇异值。Σ 加号的做法是：非零的奇异值取倒数，而**零仍然取零**。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "build",
+      "line_id": "bu-4",
+      "filename": "build-bu-4.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/build-bu-4.mp3",
+      "duration": 2.92,
+      "size": 46800,
+      "text": "一除以零本该是无穷大，这里却直接写零。这不是回避问题，而是正确答案。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "build",
+      "line_id": "bu-5",
+      "filename": "build-bu-5.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/build-bu-5.mp3",
+      "duration": 4.95,
+      "size": 79200,
+      "text": "几何上是这样：奇异值为零，意味着 A 把那个方向整个压扁到了原点。反解的时候，那个方向上的信息已经彻底没了，恢复不了，也不该乱猜。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "build",
+      "line_id": "bu-6",
+      "filename": "build-bu-6.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/build-bu-6.mp3",
+      "duration": 4.66,
+      "size": 74592,
+      "text": "于是伪逆的选择是：在那个方向上取零。这样得到的解，在所有同样好的解里面，长度最短。零取零，换来的就是范数最小。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "twoproj",
+      "line_id": "tp-1",
+      "filename": "twoproj-tp-1.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/twoproj-tp-1.mp3",
+      "duration": 2.48,
+      "size": 39600,
+      "text": "画面上是两幅图，对应伪逆做的两件事。先看左边，b 的世界。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "twoproj",
+      "line_id": "tp-2",
+      "filename": "twoproj-tp-2.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/twoproj-tp-2.mp3",
+      "duration": 4.06,
+      "size": 64944,
+      "text": "蓝色那张面是列空间，也就是 A 能够到的所有向量。黄色箭头是 b。如果 b 不在这张面上，方程根本无解。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "twoproj",
+      "line_id": "tp-3",
+      "filename": "twoproj-tp-3.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/twoproj-tp-3.mp3",
+      "duration": 5.0,
+      "size": 79920,
+      "text": "伪逆的做法是先把 b 垂直投影到列空间上，绿色那根箭头就是投影，红色虚线是残差。残差与列空间垂直——这就是残差最小的几何含义。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "twoproj",
+      "line_id": "tp-4",
+      "filename": "twoproj-tp-4.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/twoproj-tp-4.mp3",
+      "duration": 3.65,
+      "size": 58320,
+      "text": "用矩阵说，A 乘 A 加号正好是到列空间的正交投影矩阵。可以验证它幂等而且对称，迹等于秩。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "twoproj",
+      "line_id": "tp-5",
+      "filename": "twoproj-tp-5.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/twoproj-tp-5.mp3",
+      "duration": 4.0,
+      "size": 64080,
+      "text": "再看右边，x 的世界。粉色那张面是零空间：解沿着它平移，残差一点不变，因为 A 把这些方向都送到零。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "twoproj",
+      "line_id": "tp-6",
+      "filename": "twoproj-tp-6.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/twoproj-tp-6.mp3",
+      "duration": 3.59,
+      "size": 57456,
+      "text": "所以解不唯一的时候，整张粉面上的点都是同样好的解。伪逆挑的是哪一个？拖动那个滑块试试。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "twoproj",
+      "line_id": "tp-7",
+      "filename": "twoproj-tp-7.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/twoproj-tp-7.mp3",
+      "duration": 5.1,
+      "size": 81648,
+      "text": "沿零空间挪动，读数里的残差纹丝不动，但向量长度立刻变大。x 加号是垂直于零空间的那一个，也就是离原点最近的那个。它落在绿色的行空间里。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "penrose",
+      "line_id": "pe-1",
+      "filename": "penrose-pe-1.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/penrose-pe-1.mp3",
+      "duration": 3.79,
+      "size": 60624,
+      "text": "有个问题必须回答：奇异值分解不唯一，比如奇异向量可以整体变号。那按它造出来的伪逆会不会也不唯一？"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "penrose",
+      "line_id": "pe-2",
+      "filename": "penrose-pe-2.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/penrose-pe-2.mp3",
+      "duration": 2.53,
+      "size": 40464,
+      "text": "不会。Penrose 给了四个条件，满足这四条的矩阵存在而且唯一。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "penrose",
+      "line_id": "pe-3",
+      "filename": "penrose-pe-3.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/penrose-pe-3.mp3",
+      "duration": 5.0,
+      "size": 80064,
+      "text": "第一条，A 乘 A 加号再乘 A 等于 A。第二条，A 加号乘 A 再乘 A 加号等于 A 加号。这两条说的是它们互为某种意义上的逆。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "penrose",
+      "line_id": "pe-4",
+      "filename": "penrose-pe-4.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/penrose-pe-4.mp3",
+      "duration": 5.55,
+      "size": 88848,
+      "text": "第三条和第四条要求 A 乘 A 加号、A 加号乘 A 这两个乘积都是对称的。对称的幂等矩阵就是正交投影——刚才画面上看到的那两个投影，正是被这两条钉死的。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "penrose",
+      "line_id": "pe-5",
+      "filename": "penrose-pe-5.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/penrose-pe-5.mp3",
+      "duration": 4.1,
+      "size": 65664,
+      "text": "本课对每个预设都验证了这四条，偏差都在十的负十五次方量级。所以不管用哪个 SVD 算，得到的都是同一个伪逆。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "practice",
+      "line_id": "pr-1",
+      "filename": "practice-pr-1.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/practice-pr-1.mp3",
+      "duration": 4.16,
+      "size": 66528,
+      "text": "教科书上常见两个公式：列满秩时伪逆等于 A 转置 A 的逆再乘 A 转置；行满秩时等于 A 转置乘 A A 转置的逆。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "practice",
+      "line_id": "pr-2",
+      "filename": "practice-pr-2.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/practice-pr-2.mp3",
+      "duration": 4.23,
+      "size": 67680,
+      "text": "这两个公式在各自的前提下是对的，但秩亏时全废——要求逆的那个矩阵本身就奇异。所以实际算伪逆一律走 SVD。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "practice",
+      "line_id": "pr-3",
+      "filename": "practice-pr-3.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/practice-pr-3.mp3",
+      "duration": 5.68,
+      "size": 90864,
+      "text": "还有一个更隐蔽的理由：正规方程会把条件数平方。条件数那一课讲过，条件数是十的 k 次方就丢 k 位有效数字，平方之后就丢两倍。SVD 没有这个问题。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "practice",
+      "line_id": "pr-4",
+      "filename": "practice-pr-4.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/practice-pr-4.mp3",
+      "duration": 3.86,
+      "size": 61776,
+      "text": "本课自己也在同一个坑边上走过。我算奇异值时用的是 A 转置乘 A 再取特征值，这一步同样把精度减半。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "practice",
+      "line_id": "pr-5",
+      "filename": "practice-pr-5.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/practice-pr-5.mp3",
+      "duration": 6.65,
+      "size": 106416,
+      "text": "后果是：数学上精确为零的奇异值，实际算出来在十的负八次方量级。我一开始把判零的容差设成十的负十次方，结果一个真实秩为二的矩阵被判成满秩，伪逆整个是错的，Penrose 第四条偏差到了十一。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "practice",
+      "line_id": "pr-6",
+      "filename": "practice-pr-6.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/practice-pr-6.mp3",
+      "duration": 4.91,
+      "size": 78480,
+      "text": "把容差放宽到十的负七次方才修好。判秩本质上就是决定「多小算零」，这个阈值是全部主观性所在——藏起来就会出事，所以本课把它显式暴露出来。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/summary-sum-1.mp3",
+      "duration": 4.05,
+      "size": 64800,
+      "text": "伪逆一句话：x 等于 A 加号乘 b，总是残差最小的解；若不唯一，还是范数最小的那个。四种情形，一个公式。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/summary-sum-2.mp3",
+      "duration": 4.76,
+      "size": 76176,
+      "text": "构造是 V 乘 Σ 加号乘 U 转置，Σ 加号把非零奇异值取倒数、零仍取零。零取零换来的正是范数最小。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/summary-sum-3.mp3",
+      "duration": 4.97,
+      "size": 79488,
+      "text": "A 乘 A 加号是到列空间的投影，给出残差最小；A 加号乘 A 是到行空间的投影，给出范数最小。四条 Penrose 条件保证这一切唯一。"
+    },
+    {
+      "script_id": "pseudoinverse",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/pseudoinverse/yunxi/summary-sum-4.mp3",
+      "duration": 1.0,
+      "size": 15984,
+      "text": "继续探索数学之美！"
+    }
+  ],
+  "script_id": "pseudoinverse",
+  "voice": "zh-CN-YunxiNeural",
+  "voice_key": "yunxi",
+  "total_duration": 139.37,
+  "total_size": 2229840,
+  "failed": []
+}
