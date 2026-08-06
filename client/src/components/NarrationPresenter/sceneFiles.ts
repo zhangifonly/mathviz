@@ -367,4 +367,5 @@ export const SCENE_FILES: Record<string, string> = {
   'focus-directrix': 'focusDirectrixScenes',
   'conic-reflection': 'conicReflectionScenes',
   'confocal-quadrics': 'confocalQuadricsScenes',
+  'quaternion-rotation': 'quaternionRotationScenes',
 }

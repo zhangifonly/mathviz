@@ -382,6 +382,7 @@ const DandelinExperiment = lazyRetry(() => import('./experiments/dandelin/Dandel
 const FocusDirectrixExperiment = lazyRetry(() => import('./experiments/focus-directrix/FocusDirectrixExperiment'))
 const ConicReflectionExperiment = lazyRetry(() => import('./experiments/conic-reflection/ConicReflectionExperiment'))
 const ConfocalQuadricsExperiment = lazyRetry(() => import('./experiments/confocal-quadrics/ConfocalQuadricsExperiment'))
+const QuaternionRotationExperiment = lazyRetry(() => import('./experiments/quaternion-rotation/QuaternionRotationExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -761,6 +762,7 @@ export default function App() {
             <Route path="focus-directrix" element={<FocusDirectrixExperiment />} />
             <Route path="conic-reflection" element={<ConicReflectionExperiment />} />
             <Route path="confocal-quadrics" element={<ConfocalQuadricsExperiment />} />
+            <Route path="quaternion-rotation" element={<QuaternionRotationExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

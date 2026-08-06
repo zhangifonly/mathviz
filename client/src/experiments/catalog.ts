@@ -4000,4 +4000,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/quaternion-rotation',
+    title: '四元数与三维旋转',
+    description: '绕轴 n 转 θ 对应 q=(cos(θ/2), sin(θ/2)·n)——半角来自共轭作用里 q 用了两次。q 与 −q 是同一旋转（双重覆盖），而工程上真正离不开它的是 SLERP：匀速且最短的姿态插值',
+    icon: '🎲',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['algebra', 'geometry'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]
