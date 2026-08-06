@@ -1,0 +1,330 @@
+{
+  "files": [
+    {
+      "script_id": "conic-reflection",
+      "section_id": "three",
+      "line_id": "th-1",
+      "filename": "three-th-1.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/three-th-1.mp3",
+      "duration": 4.46,
+      "size": 71424,
+      "text": "课本上，圆锥曲线的反射性质是分三次出现的。椭圆那一节说，从一个焦点射出的光，碰到椭圆反弹后，一定经过另一个焦点。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "three",
+      "line_id": "th-2",
+      "filename": "three-th-2.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/three-th-2.mp3",
+      "duration": 4.92,
+      "size": 78768,
+      "text": "抛物线那一节说，从焦点射出的光，反弹后全部平行于对称轴。这就是探照灯和车灯的原理，灯泡装在焦点上，射出去的是一束平行光。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "three",
+      "line_id": "th-3",
+      "filename": "three-th-3.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/three-th-3.mp3",
+      "duration": 3.25,
+      "size": 51984,
+      "text": "双曲线那一节说，射向一个焦点的光，被另一支挡住反弹后，看上去像是从另一个焦点发出来的。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "three",
+      "line_id": "th-4",
+      "filename": "three-th-4.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/three-th-4.mp3",
+      "duration": 3.46,
+      "size": 55296,
+      "text": "三条性质，三种说法，通常也就分别背下来。但它们其实是同一件事，而且只需要一个理由。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "equal",
+      "line_id": "eq-1",
+      "filename": "equal-eq-1.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/equal-eq-1.mp3",
+      "duration": 4.51,
+      "size": 72144,
+      "text": "把三条话改写一下。光的反射定律说，入射角等于反射角，角是相对镜面量的。这里的镜面，就是曲线在反射点处的切线。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "equal",
+      "line_id": "eq-2",
+      "filename": "equal-eq-2.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/equal-eq-2.mp3",
+      "duration": 4.36,
+      "size": 69696,
+      "text": "于是三条性质都变成同一句：曲线的切线，与两条焦半径成相等的角。焦半径就是反射点分别连向两个焦点的线段。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "equal",
+      "line_id": "eq-3",
+      "filename": "equal-eq-3.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/equal-eq-3.mp3",
+      "duration": 4.21,
+      "size": 67392,
+      "text": "你看画面上这两段圆弧，一段是入射线与切线的夹角，一段是出射线与切线的夹角。右上角把两个角的度数都打了出来。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "equal",
+      "line_id": "eq-4",
+      "filename": "equal-eq-4.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/equal-eq-4.mp3",
+      "duration": 4.72,
+      "size": 75456,
+      "text": "拖动反射点，让它绕椭圆走一圈。两个角度的数值一直在变，但它们始终相等，差是零，不是近似的零，是到小数点后十五位的零。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "why",
+      "line_id": "wh-1",
+      "filename": "why-wh-1.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/why-wh-1.mp3",
+      "duration": 2.54,
+      "size": 40608,
+      "text": "现在问为什么。这里有一个不用算的理由，只要换个角度看椭圆的定义。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "why",
+      "line_id": "wh-2",
+      "filename": "why-wh-2.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/why-wh-2.mp3",
+      "duration": 5.54,
+      "size": 88704,
+      "text": "椭圆是「到两焦点距离之和等于定值」的点。也就是说，如果我们定义一个函数，它在每一点的值是这点到两焦点的距离之和，那么椭圆就是这个函数的一条等值线。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "why",
+      "line_id": "wh-3",
+      "filename": "why-wh-3.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/why-wh-3.mp3",
+      "duration": 4.74,
+      "size": 75888,
+      "text": "一个函数的梯度，指向它增长最快的方向。距离之和的梯度，是两个单位向量相加：一个从第一焦点指向该点，一个从第二焦点指向该点。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "why",
+      "line_id": "wh-4",
+      "filename": "why-wh-4.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/why-wh-4.mp3",
+      "duration": 4.99,
+      "size": 79776,
+      "text": "两个单位向量相加，得到的是一个菱形的对角线。菱形的对角线，恰好平分它的顶角。所以梯度方向，就是这两条焦半径夹角的角平分线。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "why",
+      "line_id": "wh-5",
+      "filename": "why-wh-5.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/why-wh-5.mp3",
+      "duration": 4.67,
+      "size": 74736,
+      "text": "而等值线永远垂直于梯度。切线垂直于角平分线，那么切线与两条焦半径的夹角自然相等。等角性质，到这里就证完了。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "other",
+      "line_id": "ot-1",
+      "filename": "other-ot-1.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/other-ot-1.mp3",
+      "duration": 4.27,
+      "size": 68256,
+      "text": "刚才那段推理里，椭圆只出现在一个地方：距离之和。双曲线的定义是距离之差，那就把和换成差，其余一字不改。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "other",
+      "line_id": "ot-2",
+      "filename": "other-ot-2.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/other-ot-2.mp3",
+      "duration": 4.78,
+      "size": 76464,
+      "text": "距离之差的梯度，是两个单位向量相减。相减得到的是菱形的另一条对角线，它平分的是外角。所以切线这次垂直于外角平分线。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "other",
+      "line_id": "ot-3",
+      "filename": "other-ot-3.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/other-ot-3.mp3",
+      "duration": 6.34,
+      "size": 101376,
+      "text": "结果就是，反射线不再走向另一个焦点，而是沿着另一焦点与反射点连线的延长线跑出去。倒推回去看，它像是从那个焦点发出来的。画面上那条虚线，画的就是这条延长线。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "other",
+      "line_id": "ot-4",
+      "filename": "other-ot-4.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/other-ot-4.mp3",
+      "duration": 4.36,
+      "size": 69696,
+      "text": "抛物线更省事，它是离心率趋于一的极限。第二个焦点退到了无穷远处。指向无穷远的方向是固定的，就是对称轴方向。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "other",
+      "line_id": "ot-5",
+      "filename": "other-ot-5.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/other-ot-5.mp3",
+      "duration": 3.52,
+      "size": 56304,
+      "text": "所以「经过第二焦点」这句话，在抛物线上要读作「平行于对称轴」。三条性质，到这里合成了一条。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "billiard",
+      "line_id": "bi-1",
+      "filename": "billiard-bi-1.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/billiard-bi-1.mp3",
+      "duration": 3.81,
+      "size": 60912,
+      "text": "把这条性质反复用，会得到一个漂亮的结论。设想一张椭圆形的台球桌，从一个焦点把球击出去，方向随便。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "billiard",
+      "line_id": "bi-2",
+      "filename": "billiard-bi-2.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/billiard-bi-2.mp3",
+      "duration": 4.35,
+      "size": 69552,
+      "text": "球撞到边上弹回来，按刚才的性质，它一定经过另一个焦点。再撞一次，又回到第一个焦点。球就在两个焦点之间来回穿。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "billiard",
+      "line_id": "bi-3",
+      "filename": "billiard-bi-3.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/billiard-bi-3.mp3",
+      "duration": 3.79,
+      "size": 60624,
+      "text": "但它并不是原路重复。看画面上的折线，每弹一次，轨迹就更贴近长轴一点，很快就几乎压在长轴上了。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "billiard",
+      "line_id": "bi-4",
+      "filename": "billiard-bi-4.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/billiard-bi-4.mp3",
+      "duration": 5.89,
+      "size": 94320,
+      "text": "贴近的速度是个干净的式子：每弹一次，离长轴的距离乘以一减离心率再除以一加离心率。这个椭圆的离心率是零点八，比率就是九分之一，每弹一次只剩九分之一。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "billiard",
+      "line_id": "bi-5",
+      "filename": "billiard-bi-5.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/billiard-bi-5.mp3",
+      "duration": 5.06,
+      "size": 80928,
+      "text": "所以椭圆台球从焦点开球，无论朝哪个方向，几秒钟之内轨迹都会塌到长轴上。这不是巧合，是那条等角性质用了很多次的必然结果。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "made",
+      "line_id": "ma-1",
+      "filename": "made-ma-1.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/made-ma-1.mp3",
+      "duration": 5.42,
+      "size": 86688,
+      "text": "这三条性质，都被造成了实物。抛物面天线接收卫星信号，来自远处的电磁波近似平行，反射后全部汇到焦点，接收机就装在那根伸出来的杆子顶端。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "made",
+      "line_id": "ma-2",
+      "filename": "made-ma-2.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/made-ma-2.mp3",
+      "duration": 4.32,
+      "size": 69120,
+      "text": "反过来用就是车灯和探照灯。灯泡放在焦点，射出的是平行光束。同一个曲面，光路反过来走，聚光变成了投光。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "made",
+      "line_id": "ma-3",
+      "filename": "made-ma-3.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/made-ma-3.mp3",
+      "duration": 5.7,
+      "size": 91152,
+      "text": "椭圆的那条被造成了回音壁。北京天坛的回音壁、伦敦圣保罗大教堂的低语廊，都是这个道理：站在一个焦点低声说话，另一个焦点听得清清楚楚，中间的人反而听不见。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "made",
+      "line_id": "ma-4",
+      "filename": "made-ma-4.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/made-ma-4.mp3",
+      "duration": 4.85,
+      "size": 77616,
+      "text": "医院里的体外碎石机也是椭圆的。冲击波源放在一个焦点，病人的结石对准另一个焦点，能量精确地聚过去，中间的组织基本不受影响。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "made",
+      "line_id": "ma-5",
+      "filename": "made-ma-5.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/made-ma-5.mp3",
+      "duration": 4.94,
+      "size": 79056,
+      "text": "双曲线那条用在望远镜里。卡塞格林式望远镜的副镜是双曲面，靠「像是从另一个焦点发出」这条性质，把光路折回来穿过主镜中间的孔。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.81,
+      "size": 44928,
+      "text": "一条几何事实：圆锥曲线的切线，与两条焦半径成等角。这就是全部。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/summary-sum-2.mp3",
+      "duration": 4.36,
+      "size": 69696,
+      "text": "理由也只有一条：曲线是距离和或距离差的等值线，梯度沿角平分线，切线垂直于梯度。三种曲线换的只是那个函数。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/summary-sum-3.mp3",
+      "duration": 3.68,
+      "size": 58896,
+      "text": "记住这条，比分别记三句话省力得多，而且它顺带告诉你天线为什么是抛物面、回音壁为什么是椭圆。"
+    },
+    {
+      "script_id": "conic-reflection",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/conic-reflection/xiaoxiao/summary-sum-4.mp3",
+      "duration": 0.9,
+      "size": 14400,
+      "text": "继续探索数学之美！"
+    }
+  ],
+  "script_id": "conic-reflection",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "total_duration": 139.52,
+  "total_size": 2231856,
+  "failed": []
+}
