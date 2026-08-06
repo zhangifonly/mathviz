@@ -296,6 +296,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'lie-algebra-so3',
       'screw-motion',
       'condition-number',
+      'jordan-form',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {

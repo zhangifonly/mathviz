@@ -1,0 +1,300 @@
+{
+  "files": [
+    {
+      "script_id": "jordan-form",
+      "section_id": "gap",
+      "line_id": "ga-1",
+      "filename": "gap-ga-1.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/gap-ga-1.mp3",
+      "duration": 4.77,
+      "size": 76320,
+      "text": "这个项目里有两课讲特征值。一课讲一般情形，一课讲对称矩阵。对称矩阵那课的结论很漂亮：总能正交对角化，一定成功。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "gap",
+      "line_id": "ga-2",
+      "filename": "gap-ga-2.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/gap-ga-2.mp3",
+      "duration": 2.65,
+      "size": 42480,
+      "text": "但两课都没碰一个基本问题：不对称的矩阵呢？对角化什么时候会失败？"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "gap",
+      "line_id": "ga-3",
+      "filename": "gap-ga-3.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/gap-ga-3.mp3",
+      "duration": 4.46,
+      "size": 71424,
+      "text": "失败的原因只有一个，说出来非常朴素：特征向量不够用。三维空间需要三个线性无关的方向才撑得满，有些矩阵凑不出来。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "gap",
+      "line_id": "ga-4",
+      "filename": "gap-ga-4.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/gap-ga-4.mp3",
+      "duration": 3.09,
+      "size": 49392,
+      "text": "这种矩阵叫亏损矩阵。这门课讲它长什么样、为什么会这样、以及数学家怎么补救。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "two",
+      "line_id": "tw-1",
+      "filename": "two-tw-1.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/two-tw-1.mp3",
+      "duration": 1.47,
+      "size": 23472,
+      "text": "要说清楚，得先分开两个容易混的概念。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "two",
+      "line_id": "tw-2",
+      "filename": "two-tw-2.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/two-tw-2.mp3",
+      "duration": 3.27,
+      "size": 52272,
+      "text": "第一个叫代数重数：某个特征值作为特征多项式的根，重复了几次。它数的是方程的根。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "two",
+      "line_id": "tw-3",
+      "filename": "two-tw-3.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/two-tw-3.mp3",
+      "duration": 4.97,
+      "size": 79488,
+      "text": "第二个叫几何重数：这个特征值对应的特征空间有几维，也就是 A 减去 λ 倍单位阵之后，核空间的维数。它数的是真正独立的方向。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "two",
+      "line_id": "tw-4",
+      "filename": "two-tw-4.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/two-tw-4.mp3",
+      "duration": 4.18,
+      "size": 66960,
+      "text": "关系是：几何重数至少是一，至多等于代数重数。两者相等时可以对角化；几何严格小于代数时，就是亏损。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "two",
+      "line_id": "tw-5",
+      "filename": "two-tw-5.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/two-tw-5.mp3",
+      "duration": 6.04,
+      "size": 96624,
+      "text": "看画面上的二阶 Jordan 块。特征值二的代数重数是二，但几何重数只有一。左下角写着「代数 2 / 几何 1」，标红了。三维空间里只找出两条特征方向，少了一条。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "why",
+      "line_id": "wh-1",
+      "filename": "why-wh-1.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/why-wh-1.mp3",
+      "duration": 4.67,
+      "size": 74736,
+      "text": "这件事在画面上是看得见的。绿色的箭头是特征方向。切到可对角化的对角阵，三条绿箭头，互相独立，撑满整个空间。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "why",
+      "line_id": "wh-2",
+      "filename": "why-wh-2.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/why-wh-2.mp3",
+      "duration": 3.56,
+      "size": 56880,
+      "text": "再切到三阶 Jordan 块。整个三维空间，只剩一条绿箭头。代数重数是三，几何重数是一。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "why",
+      "line_id": "wh-3",
+      "filename": "why-wh-3.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/why-wh-3.mp3",
+      "duration": 5.42,
+      "size": 86688,
+      "text": "为什么会这样？最简单的例子是剪切。剪切把水平方向的向量留在原地不转向，但竖直方向的向量会被推歪。所以只有水平这一条是特征方向。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "why",
+      "line_id": "wh-4",
+      "filename": "why-wh-4.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/why-wh-4.mp3",
+      "duration": 5.19,
+      "size": 83088,
+      "text": "蓝色的线是轨道：反复用 A 作用在一个向量上，看它往哪跑。这些轨道已经逐点归一化到球面上了，因为我们关心方向往哪去，不关心长度涨多快。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "why",
+      "line_id": "wh-5",
+      "filename": "why-wh-5.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/why-wh-5.mp3",
+      "duration": 5.25,
+      "size": 83952,
+      "text": "注意亏损时所有轨道的终点。它们全都挤到同一条特征方向上 —— 因为可去的方向只有那一条。可对角化时轨道会分散到不同的特征方向，各归各的。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "fix",
+      "line_id": "fi-1",
+      "filename": "fix-fi-1.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/fix-fi-1.mp3",
+      "duration": 5.64,
+      "size": 90288,
+      "text": "既然凑不出足够的特征向量，那就退一步。特征向量满足 A 减 λ 作用后等于零；如果找不到那么多，就找作用后等于**已有特征向量**的。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "fix",
+      "line_id": "fi-2",
+      "filename": "fix-fi-2.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/fix-fi-2.mp3",
+      "duration": 5.66,
+      "size": 90576,
+      "text": "也就是解 A 减 λ 倍单位阵，作用在 v2 上，等于 v1。这个 v2 不是特征向量，但它满足：连作用两次就归零。这种向量叫广义特征向量。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "fix",
+      "line_id": "fi-3",
+      "filename": "fix-fi-3.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/fix-fi-3.mp3",
+      "duration": 3.78,
+      "size": 60480,
+      "text": "画面上粉色的虚线箭头就是它。旁边那条更细的虚线，画的是 A 减 λ 把它推回 v1 的那一步。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "fix",
+      "line_id": "fi-4",
+      "filename": "fix-fi-4.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/fix-fi-4.mp3",
+      "duration": 4.54,
+      "size": 72720,
+      "text": "这样一个接一个串起来，得到 v1、v2、v3……叫 Jordan 链。链有多长，对应的 Jordan 块就有多大。三阶块的链长就是三。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "fix",
+      "line_id": "fi-5",
+      "filename": "fix-fi-5.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/fix-fi-5.mp3",
+      "duration": 5.77,
+      "size": 92304,
+      "text": "用这组基，矩阵变成 Jordan 标准型：对角线上是特征值，紧挨着的上对角线上是一。那个一，就是「差一点才能对角化」的精确量化。链断在哪，一就出现在哪。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "fragile",
+      "line_id": "fr-1",
+      "filename": "fragile-fr-1.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/fragile-fr-1.mp3",
+      "duration": 4.89,
+      "size": 78192,
+      "text": "Jordan 标准型在理论上非常漂亮：它是相似变换下的完全不变量，两个矩阵相似当且仅当 Jordan 型相同。但在数值计算里，它几乎不能用。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "fragile",
+      "line_id": "fr-2",
+      "filename": "fragile-fr-2.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/fragile-fr-2.mp3",
+      "duration": 4.06,
+      "size": 64944,
+      "text": "原因是亏损这个性质极其脆弱。给亏损矩阵加一个任意小的扰动，重根就会裂开，矩阵立刻变回可对角化的。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "fragile",
+      "line_id": "fr-3",
+      "filename": "fragile-fr-3.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/fragile-fr-3.mp3",
+      "duration": 6.26,
+      "size": 100224,
+      "text": "而且裂开的幅度大得吓人。可对角化的矩阵，扰动多大特征值就动多大，是线性的。亏损矩阵不是：二阶块上，特征值的偏离正比于扰动的**平方根**。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "fragile",
+      "line_id": "fr-4",
+      "filename": "fragile-fr-4.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/fragile-fr-4.mp3",
+      "duration": 5.35,
+      "size": 85536,
+      "text": "实测数字：给二阶块加一个十的负十二次方的扰动，特征值偏离了十的负六次方。放大了一百万倍。而且这个比值在各个量级上都精确等于一。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "fragile",
+      "line_id": "fr-5",
+      "filename": "fragile-fr-5.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/fragile-fr-5.mp3",
+      "duration": 5.41,
+      "size": 86544,
+      "text": "所以在浮点运算里，你永远无法确定一个矩阵到底是真亏损，还是只是特征值挨得很近。这就是为什么数值软件宁可用 Schur 分解，也不去算 Jordan 型。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "fragile",
+      "line_id": "fr-6",
+      "filename": "fragile-fr-6.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/fragile-fr-6.mp3",
+      "duration": 7.7,
+      "size": 123264,
+      "text": "顺带说一句，本课自己的三次求根器也有分辨率极限：二阶块上这条平方根定律全程测得出来，三阶块只在扰动大于千分之一时才看得见，更小的裂开会被求根器当成重根收回去。这是工具的局限，不是矩阵的性质。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "summary",
+      "line_id": "sum-1",
+      "filename": "summary-sum-1.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/summary-sum-1.mp3",
+      "duration": 2.93,
+      "size": 46944,
+      "text": "对角化失败的唯一原因是特征向量不够用：几何重数小于代数重数，就叫亏损。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "summary",
+      "line_id": "sum-2",
+      "filename": "summary-sum-2.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/summary-sum-2.mp3",
+      "duration": 4.8,
+      "size": 76752,
+      "text": "补救办法是广义特征向量：解 A 减 λ 等于前一个向量，串成 Jordan 链。链长就是 Jordan 块的大小，块里那个 1 就是差的那一点。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "summary",
+      "line_id": "sum-3",
+      "filename": "summary-sum-3.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/summary-sum-3.mp3",
+      "duration": 4.49,
+      "size": 71856,
+      "text": "但亏损在数值上极其脆弱：二阶块上，十的负十二次方的扰动会让特征值偏离十的负六次方。理论上完美，实践中慎用。"
+    },
+    {
+      "script_id": "jordan-form",
+      "section_id": "summary",
+      "line_id": "sum-4",
+      "filename": "summary-sum-4.mp3",
+      "path": "audio/narrations/jordan-form/xiaoxiao/summary-sum-4.mp3",
+      "duration": 0.9,
+      "size": 14400,
+      "text": "继续探索数学之美！"
+    }
+  ],
+  "script_id": "jordan-form",
+  "voice": "zh-CN-XiaoxiaoNeural",
+  "voice_key": "xiaoxiao",
+  "total_duration": 131.17,
+  "total_size": 2098800,
+  "failed": []
+}

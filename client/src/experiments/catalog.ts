@@ -4055,4 +4055,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/jordan-form',
+    title: '亏损矩阵与 Jordan 标准型',
+    description: '对角化失败的唯一原因是特征向量不够用：几何重数<代数重数即「亏损」。补救办法是解 (A−λI)v₂=v₁ 得广义特征向量，串成 Jordan 链。但亏损极其脆弱——1e−12 的扰动能让特征值偏离 1e−6',
+    icon: '🧩',
+    difficulty: 'advanced',
+    ageRange: '大学本科',
+    topics: ['linear-algebra', 'algebra'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

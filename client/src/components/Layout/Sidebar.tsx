@@ -354,6 +354,7 @@ const navCategories: NavCategory[] = [
       { path: '/quaternion-rotation', label: '四元数与旋转', icon: '🎲' },
       { path: '/screw-motion', label: '螺旋运动', icon: '🔩' },
       { path: '/condition-number', label: '条件数与稳定性', icon: '📐' },
+      { path: '/jordan-form', label: 'Jordan 标准型', icon: '🧩' },
     ],
   },
   {

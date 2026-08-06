@@ -372,4 +372,5 @@ export const SCENE_FILES: Record<string, string> = {
   'lie-algebra-so3': 'lieAlgebraSO3Scenes',
   'screw-motion': 'screwMotionScenes',
   'condition-number': 'conditionNumberScenes',
+  'jordan-form': 'jordanFormScenes',
 }
