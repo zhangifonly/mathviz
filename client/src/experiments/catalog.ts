@@ -3978,4 +3978,15 @@ export const experiments: Experiment[] = [
     hasAnimation: true,
     hasSteps: true,
   },
+  {
+    path: '/conic-reflection',
+    title: '圆锥曲线的反射性质',
+    description: '入射角等于反射角：椭圆两焦点互通、抛物线聚平行光、双曲线像从另一焦点发出，三条性质其实是同一条——切线与两条焦半径等角',
+    icon: '🔦',
+    difficulty: 'intermediate',
+    ageRange: '高中 15-18岁',
+    topics: ['geometry', 'analysis'],
+    hasAnimation: true,
+    hasSteps: true,
+  },
 ]

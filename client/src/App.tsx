@@ -380,6 +380,7 @@ const CavalieriExperiment = lazyRetry(() => import('./experiments/cavalieri/Cava
 const PrismatoidExperiment = lazyRetry(() => import('./experiments/prismatoid/PrismatoidExperiment'))
 const DandelinExperiment = lazyRetry(() => import('./experiments/dandelin/DandelinExperiment'))
 const FocusDirectrixExperiment = lazyRetry(() => import('./experiments/focus-directrix/FocusDirectrixExperiment'))
+const ConicReflectionExperiment = lazyRetry(() => import('./experiments/conic-reflection/ConicReflectionExperiment'))
 const BugAdminPage = lazyRetry(() => import('./pages/BugAdminPage'))
 const ValentineMobile = lazyRetry(() => import('./components/ValentineMobile/ValentineMobile'))
 
@@ -757,6 +758,7 @@ export default function App() {
             <Route path="prismatoid" element={<PrismatoidExperiment />} />
             <Route path="dandelin" element={<DandelinExperiment />} />
             <Route path="focus-directrix" element={<FocusDirectrixExperiment />} />
+            <Route path="conic-reflection" element={<ConicReflectionExperiment />} />
           </Route>
           <Route path="/admin" element={<BugAdminPage />} />
           <Route path="/valentine" element={<Suspense fallback={<div className="fixed inset-0 bg-[#0a050f]" />}><ValentineMobile /></Suspense>} />

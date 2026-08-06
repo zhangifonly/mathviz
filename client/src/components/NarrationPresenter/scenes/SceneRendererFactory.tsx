@@ -460,6 +460,7 @@ const CavalieriSceneRenderer = lazy(() => import('./Cavalieri/CavalieriSceneRend
 const PrismatoidSceneRenderer = lazy(() => import('./Prismatoid/PrismatoidSceneRenderer'))
 const DandelinSceneRenderer = lazy(() => import('./Dandelin/DandelinSceneRenderer'))
 const FocusDirectrixSceneRenderer = lazy(() => import('./FocusDirectrix/FocusDirectrixSceneRenderer'))
+const ConicReflectionSceneRenderer = lazy(() => import('./ConicReflection/ConicReflectionSceneRenderer'))
 
 // 场景渲染器映射
 const rendererMap: Record<string, ReturnType<typeof lazy>> = {
@@ -822,6 +823,7 @@ const rendererMap: Record<string, ReturnType<typeof lazy>> = {
   'prismatoid': PrismatoidSceneRenderer,
   'dandelin': DandelinSceneRenderer,
   'focus-directrix': FocusDirectrixSceneRenderer,
+  'conic-reflection': ConicReflectionSceneRenderer,
 }
 
 // 获取场景渲染器

@@ -289,6 +289,7 @@ export default function NarrationPresenter({ onExit }: NarrationPresenterProps) 
       'prismatoid',
       'dandelin',
       'focus-directrix',
+      'conic-reflection',
     ]
 
     if (scriptId && experimentsWithCustomRenderer.includes(scriptId)) {
